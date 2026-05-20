@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA Elo Rankings — EloRankings</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html">EloRankings</a>
+    <ul class="nav-links">
+      <li><a href="nba.html" class="active">NBA</a></li>
+      <li><a href="cbb.html">CBB</a></li>
+      <li><a href="nfl.html">NFL</a></li>
+      <li><a href="cfb.html">CFB</a></li>
+      <li><a href="mlb.html">MLB</a></li>
+      <li><a href="cbase.html">College Baseball</a></li>
+      <li><a href="nhl.html">NHL</a></li>
+      <li><a href="soccer.html">Soccer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="page-header fade-up">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / NBA</div>
+    <h1>🏀 <em>NBA</em></h1>
+    <p>Margin-adjusted Elo · 30 teams · 2002–present · Updated twice daily</p>
+  </div>
+
+  <!-- Season picker -->
+  <div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.75rem">Season</div>
+  <div class="season-picker" id="seasonPicker"></div>
+
+  <!-- Summary cards -->
+  <div class="summary-bar">
+    <div class="stat-card"><div class="stat-card-label">Top Rated</div><div class="stat-card-val" id="s-top" style="font-size:1.1rem">—</div><div class="stat-card-sub" id="s-top-elo"></div></div>
+    <div class="stat-card"><div class="stat-card-label">Avg Elo</div><div class="stat-card-val" id="s-avg">—</div></div>
+    <div class="stat-card"><div class="stat-card-label">Teams</div><div class="stat-card-val" id="s-teams">—</div></div>
+    <div class="stat-card"><div class="stat-card-label">Divisions</div><div class="stat-card-val" id="s-confs">—</div></div>
+    <div class="stat-card"><div class="stat-card-label">Updated</div><div class="stat-card-val" style="font-size:0.9rem" id="s-updated">—</div></div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab" data-tab="rankings">Rankings</button>
+    <button class="tab" data-tab="byconf">By Conference</button>
+    <button class="tab" data-tab="predictor">Game Predictor</button>
+  </div>
+
+  <!-- Rankings panel -->
+  <div id="panel-rankings">
+    <div class="controls">
+      <div class="ctrl-group">
+        <span class="ctrl-label">Division</span>
+        <select id="confFilter"></select>
+      </div>
+      <div class="ctrl-group">
+        <span class="ctrl-label">Min games</span>
+        <select id="minGames">
+          <option value="0">Any</option>
+          <option value="4" selected>4+</option>
+          <option value="10">10+</option>
+          <option value="20">20+</option>
+        </select>
+      </div>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="search" id="teamSearch" placeholder="Search team…">
+      </div>
+      <button class="btn" id="exportBtn">↓ Export CSV</button>
+    </div>
+  </div>
+
+  <!-- Other panels -->
+  <div id="panel-byconf" hidden></div>
+  <div id="panel-predictor" hidden>
+    <div class="predictor-card">
+      <h3>Head-to-head Win Probability</h3>
+      <div class="pred-row">
+        <div>
+          <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.35rem">Team A</div>
+          <select id="teamA" style="width:100%"></select>
+        </div>
+        <div class="pred-vs">vs</div>
+        <div>
+          <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.35rem">Team B</div>
+          <select id="teamB" style="width:100%"></select>
+        </div>
+      </div>
+      <div class="hca-row">
+        <input type="checkbox" id="hcaCheck" checked>
+        <label for="hcaCheck">Team A has home advantage</label>
+      </div>
+      <div id="predResult"></div>
+    </div>
+  </div>
+  
+
+</div><!-- .page -->
+
+<script src="../js/utils.js"></script>
+<script src="../js/sport-page.js"></script>
+<script>
+initSportPage({
+  sport:     'NBA',
+  dataPath:  '../../NBA/data/NBA_Elo_',
+  seasons:   [2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015,2014,2013,2012,2011,2010,2009,2008,2007,2006,2005,2004,2003,2002],
+  hca:       60,
+  confLabel: 'Division',
+  kFactor:   25,
+  tabs:      ["rankings", "byconf", "predictor"],
+});
+</script>
+</body>
+</html>
