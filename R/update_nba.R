@@ -14,7 +14,7 @@ source("R/elo_engine.R")
 
 CURRENT_SEASON <- most_recent_nba_season()
 SEASONS        <- 2002:CURRENT_SEASON
-OUT_DIR        <- "NBA/data"
+OUT_DIR        <- "docs/NBA/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
 DIVS <- c(

@@ -16,7 +16,7 @@ suppressPackageStartupMessages({
 source("R/elo_engine.R")
 
 SEASONS <- 2001:as.integer(format(Sys.Date(), "%Y"))
-OUT_DIR <- "MLB/data"
+OUT_DIR <- "docs/MLB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
 # ── Division map ──────────────────────────────────────────────

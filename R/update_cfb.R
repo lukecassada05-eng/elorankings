@@ -20,7 +20,7 @@ CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
 if (as.integer(format(Sys.Date(), "%m")) < 8) CURRENT_YEAR <- CURRENT_YEAR - 1
 # ESPN historical CFB data is solid from 2014 onward
 SEASONS <- 2014:CURRENT_YEAR
-OUT_DIR  <- "CFB/data"
+OUT_DIR  <- "docs/CFB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
 CONFS <- c(

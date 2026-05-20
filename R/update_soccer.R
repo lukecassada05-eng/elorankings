@@ -11,7 +11,7 @@ suppressPackageStartupMessages({
 })
 source("R/elo_engine.R")
 
-OUT_DIR <- "Soccer/data"
+OUT_DIR <- "docs/Soccer/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
 # Season end-years to process (2002 = 2001-02 season)

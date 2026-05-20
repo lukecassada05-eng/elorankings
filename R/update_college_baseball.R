@@ -17,7 +17,7 @@ source("R/elo_engine.R")
 
 CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
 SEASONS      <- 2018:CURRENT_YEAR   # ESPN baseball reliable from ~2018
-OUT_DIR      <- "CollegeBaseball/data"
+OUT_DIR      <- "docs/CollegeBaseball/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
 CONFS <- c(
