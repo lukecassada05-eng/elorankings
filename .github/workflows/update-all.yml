@@ -1,0 +1,279 @@
+name: Update All Elo Rankings
+
+on:
+  schedule:
+    - cron: '0 7 * * *'    # 7 AM UTC (3 AM ET)
+    - cron: '0 19 * * *'   # 7 PM UTC (3 PM ET)
+  workflow_dispatch:        # manual trigger from Actions tab
+
+permissions:
+  contents: write           # required to git push CSV updates
+
+env:
+  R_VERSION: '4.4.2'
+
+# ──────────────────────────────────────────────────────────────
+# Each sport is an independent job. Failures are isolated —
+# one bad sport API day won't prevent all others from updating.
+# Each job installs its own packages (cached per sport).
+# Each job commits + pushes immediately after writing CSVs.
+# ──────────────────────────────────────────────────────────────
+
+jobs:
+
+  # ── NFL ──────────────────────────────────────────────────────
+  nfl:
+    name: Update NFL
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-nfl-${{ runner.os }}-${{ env.R_VERSION }}
+
+      - name: Install R packages
+        run: Rscript -e "install.packages(c('nflreadr','dplyr','readr'), repos='https://cloud.r-project.org', quiet=TRUE)"
+
+      - name: Run update
+        run: Rscript R/update_nfl.R
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add NFL/data/
+          git diff --staged --quiet || git commit -m "data(nfl): auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+  # ── NBA ──────────────────────────────────────────────────────
+  nba:
+    name: Update NBA
+    runs-on: ubuntu-latest
+    needs: nfl          # stagger starts so git pushes don't conflict
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-nba-${{ runner.os }}-${{ env.R_VERSION }}
+
+      - name: Install R packages
+        run: Rscript -e "install.packages(c('hoopR','dplyr','readr'), repos='https://cloud.r-project.org', quiet=TRUE)"
+
+      - name: Run update
+        run: Rscript R/update_nba.R
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add NBA/data/
+          git diff --staged --quiet || git commit -m "data(nba): auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+  # ── MLB ──────────────────────────────────────────────────────
+  mlb:
+    name: Update MLB
+    runs-on: ubuntu-latest
+    needs: nba
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-mlb-${{ runner.os }}-${{ env.R_VERSION }}
+
+      - name: Install R packages
+        run: Rscript -e "install.packages(c('baseballr','dplyr','readr'), repos='https://cloud.r-project.org', quiet=TRUE)"
+
+      - name: Run update
+        run: Rscript R/update_mlb.R
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add MLB/data/
+          git diff --staged --quiet || git commit -m "data(mlb): auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+  # ── CBB ──────────────────────────────────────────────────────
+  cbb:
+    name: Update College Basketball
+    runs-on: ubuntu-latest
+    needs: mlb
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-cbb-${{ runner.os }}-${{ env.R_VERSION }}
+
+      - name: Install R packages
+        run: Rscript -e "install.packages(c('hoopR','dplyr','readr','lubridate'), repos='https://cloud.r-project.org', quiet=TRUE)"
+
+      - name: Run update
+        run: Rscript R/update_cbb.R
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add CBB/data/
+          git diff --staged --quiet || git commit -m "data(cbb): auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+  # ── CFB ──────────────────────────────────────────────────────
+  cfb:
+    name: Update College Football
+    runs-on: ubuntu-latest
+    needs: cbb
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-cfb-${{ runner.os }}-${{ env.R_VERSION }}
+
+      - name: Install R packages
+        run: Rscript -e "install.packages(c('cfbfastR','dplyr','readr'), repos='https://cloud.r-project.org', quiet=TRUE)"
+
+      - name: Run update
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: Rscript R/update_cfb.R
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add CFB/data/
+          git diff --staged --quiet || git commit -m "data(cfb): auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+  # ── NHL ──────────────────────────────────────────────────────
+  nhl:
+    name: Update NHL
+    runs-on: ubuntu-latest
+    needs: cfb
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-nhl-${{ runner.os }}-${{ env.R_VERSION }}
+
+      - name: Install R packages
+        run: Rscript -e "install.packages(c('fastRhockey','dplyr','readr'), repos='https://cloud.r-project.org', quiet=TRUE)"
+
+      - name: Run update
+        run: Rscript R/update_nhl.R
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add NHL/data/
+          git diff --staged --quiet || git commit -m "data(nhl): auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+  # ── Soccer ───────────────────────────────────────────────────
+  soccer:
+    name: Update Soccer
+    runs-on: ubuntu-latest
+    needs: nhl
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-soccer-${{ runner.os }}-${{ env.R_VERSION }}
+
+      - name: Install R packages
+        run: Rscript -e "install.packages(c('dplyr','readr'), repos='https://cloud.r-project.org', quiet=TRUE)"
+
+      - name: Run update
+        run: Rscript R/update_soccer.R
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add Soccer/data/
+          git diff --staged --quiet || git commit -m "data(soccer): auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+  # ── College Baseball ─────────────────────────────────────────
+  college-baseball:
+    name: Update College Baseball
+    runs-on: ubuntu-latest
+    needs: soccer
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-cbase-${{ runner.os }}-${{ env.R_VERSION }}
+
+      - name: Install R packages
+        run: Rscript -e "install.packages(c('dplyr','readr','httr','jsonlite'), repos='https://cloud.r-project.org', quiet=TRUE)"
+
+      - name: Run update
+        run: Rscript R/update_college_baseball.R
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add CollegeBaseball/data/
+          git diff --staged --quiet || git commit -m "data(cbase): auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin main
