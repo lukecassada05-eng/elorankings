@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EloRankings — Sports Power Ratings</title>
+<meta name="description" content="Margin-adjusted Elo power ratings across 8 major sports, updated every 12 hours automatically from real game data.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">EloRankings</a>
+    <ul class="nav-links">
+      <li><a href="sports/nba.html">NBA</a></li>
+      <li><a href="sports/cbb.html">CBB</a></li>
+      <li><a href="sports/nfl.html">NFL</a></li>
+      <li><a href="sports/cfb.html">CFB</a></li>
+      <li><a href="sports/mlb.html">MLB</a></li>
+      <li><a href="sports/cbase.html">College Baseball</a></li>
+      <li><a href="sports/nhl.html">NHL</a></li>
+      <li><a href="sports/soccer.html">Soccer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+  <section class="hero fade-up">
+    <div class="eyebrow">Sports Analytics</div>
+    <div class="live-badge"><span class="pulse"></span>Auto-updating every 12 hours</div>
+    <h1>Rankings built<br>on <em>data</em></h1>
+    <p class="hero-sub">Margin-adjusted Elo power ratings across 8 major sports — computed directly from game scores, updated twice daily, with interactive predictions and conference analytics.</p>
+  </section>
+
+  <div class="stat-strip fade-up-2">
+    <div class="stat-item"><div class="stat-val">8</div><div class="stat-lbl">Sports</div></div>
+    <div class="stat-item"><div class="stat-val">900+</div><div class="stat-lbl">Teams tracked</div></div>
+    <div class="stat-item"><div class="stat-val">12h</div><div class="stat-lbl">Update cycle</div></div>
+    <div class="stat-item"><div class="stat-val">2001</div><div class="stat-lbl">Data since</div></div>
+    <div class="stat-item"><div class="stat-val">Elo</div><div class="stat-lbl">Rating method</div></div>
+  </div>
+
+  <div style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-dim);margin-bottom:1.25rem" class="fade-up-3">All Sports</div>
+
+  <div class="sports-grid fade-up-3">
+    <a class="sport-card" href="sports/nba.html">
+      <span class="card-arrow">→</span>
+      <span class="card-num">01</span>
+      <div class="card-emoji">🏀</div>
+      <div class="card-title">NBA</div>
+      <div class="card-desc">Pro basketball Elo from 2002 — team ratings, divisional breakdowns, game predictor, and playoff probability.</div>
+      <span class="card-tag tag-live">Live · 2025</span>
+    </a>
+    <a class="sport-card" href="sports/cbb.html">
+      <span class="card-arrow">→</span>
+      <span class="card-num">02</span>
+      <div class="card-emoji">🎓</div>
+      <div class="card-title">College Basketball</div>
+      <div class="card-desc">Elo for 350+ Division I programs with conference standings, bracketology seeding, and head-to-head predictor.</div>
+      <span class="card-tag tag-live">Live · 2026</span>
+    </a>
+    <a class="sport-card" href="sports/nfl.html">
+      <span class="card-arrow">→</span>
+      <span class="card-num">03</span>
+      <div class="card-emoji">🏈</div>
+      <div class="card-title">NFL</div>
+      <div class="card-desc">Pro football power ratings with home-field adjustment, divisional comparisons, and game predictions since 2001.</div>
+      <span class="card-tag tag-live">Live · 2025</span>
+    </a>
+    <a class="sport-card" href="sports/cfb.html">
+      <span class="card-arrow">→</span>
+      <span class="card-num">04</span>
+      <div class="card-emoji">🏟</div>
+      <div class="card-title">College Football</div>
+      <div class="card-desc">FBS Elo from 2001 — resume scores, best wins, conference Elo rankings, and CFP projection seeding.</div>
+      <span class="card-tag tag-off">Off-season</span>
+    </a>
+    <a class="sport-card" href="sports/mlb.html">
+      <span class="card-arrow">→</span>
+      <span class="card-num">05</span>
+      <div class="card-emoji">⚾</div>
+      <div class="card-title">MLB</div>
+      <div class="card-desc">Baseball Elo across the 162-game season with run-differential margin weighting and division standings.</div>
+      <span class="card-tag tag-live">Live · 2025</span>
+    </a>
+    <a class="sport-card" href="sports/cbase.html">
+      <span class="card-arrow">→</span>
+      <span class="card-num">06</span>
+      <div class="card-emoji">🎓⚾</div>
+      <div class="card-title">College Baseball</div>
+      <div class="card-desc">NCAA D1 Baseball Elo — conference rankings, College World Series projection seeding, and resume scoring.</div>
+      <span class="card-tag tag-live">Live · 2026</span>
+    </a>
+    <a class="sport-card" href="sports/nhl.html">
+      <span class="card-arrow">→</span>
+      <span class="card-num">07</span>
+      <div class="card-emoji">🏒</div>
+      <div class="card-title">NHL</div>
+      <div class="card-desc">Hockey Elo from 2012 — overtime context, divisional strength, game predictor with spread estimate.</div>
+      <span class="card-tag tag-live">Live · 2025</span>
+    </a>
+    <a class="sport-card" href="sports/soccer.html">
+      <span class="card-arrow">→</span>
+      <span class="card-num">08</span>
+      <div class="card-emoji">⚽</div>
+      <div class="card-title">European Soccer</div>
+      <div class="card-desc">Club Elo across Premier League, La Liga, Bundesliga, Serie A, Ligue 1 and more — updated every matchday.</div>
+      <span class="card-tag tag-live">Live · 2025–26</span>
+    </a>
+  </div>
+
+  <!-- How it works -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding:3rem 0 5rem;border-top:1px solid var(--border)">
+    <div>
+      <div style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-dim);margin-bottom:1rem">Methodology</div>
+      <h2 style="font-family:var(--font-display);font-size:1.75rem;font-weight:700;line-height:1.2;margin-bottom:1rem">Elo ratings, <em style="font-style:italic;font-weight:200;color:var(--accent)">margin-adjusted</em></h2>
+      <p style="color:var(--text-muted);font-size:0.87rem;line-height:1.85;font-weight:300;margin-bottom:0.85rem">Standard Elo treats every win identically. We multiply the K-factor by a log-scaled margin of victory — a 30-point blowout earns more than a 1-point squeaker, but with diminishing returns to prevent rating inflation.</p>
+      <p style="color:var(--text-muted);font-size:0.87rem;line-height:1.85;font-weight:300">Each season's games are processed 10× for convergence. Teams with fewer than 4 games receive a rating penalty to suppress early-season noise. All ratings start at 1500 each season.</p>
+    </div>
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;font-family:var(--font-mono);font-size:0.77rem;line-height:2.1;color:var(--text-muted)">
+      <div style="color:var(--text-dim);font-size:0.65rem;margin-bottom:0.25rem"># expected win probability</div>
+      E<sub>A</sub> = <span style="color:var(--accent)">1 / (1 + 10<sup>((R<sub>B</sub>−R<sub>A</sub>) / 400)</sup>)</span><br><br>
+      <div style="color:var(--text-dim);font-size:0.65rem"># margin-of-victory K adjustment</div>
+      K<sub>adj</sub> = <span style="color:var(--accent)">K × ln(|margin| + 1)</span><br><br>
+      <div style="color:var(--text-dim);font-size:0.65rem"># updated rating after game</div>
+      R<sub>A</sub>′ = <span style="color:var(--accent)">R<sub>A</sub> + K<sub>adj</sub> × (S<sub>A</sub> − E<sub>A</sub>)</span><br><br>
+      <div style="color:var(--text-dim);font-size:0.65rem"># iterated 10× · baseline 1500 · K varies by sport</div>
+    </div>
+  </div>
+
+  <!-- Data sources -->
+  <div style="padding-bottom:4rem">
+    <div style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-dim);margin-bottom:1.25rem">Data sources</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:0.65rem">
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.9rem">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem">NBA + College Hoops + CBB</div>
+        <div style="font-size:0.85rem;font-weight:500">hoopR</div>
+        <div style="font-size:0.73rem;color:var(--text-muted)">ESPN + NBA Stats API</div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.9rem">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem">NFL</div>
+        <div style="font-size:0.85rem;font-weight:500">nflreadr</div>
+        <div style="font-size:0.73rem;color:var(--text-muted)">nflverse / ESPN</div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.9rem">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem">College Football</div>
+        <div style="font-size:0.85rem;font-weight:500">cfbfastR</div>
+        <div style="font-size:0.73rem;color:var(--text-muted)">CollegeFootballData.com</div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.9rem">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem">MLB</div>
+        <div style="font-size:0.85rem;font-weight:500">baseballr</div>
+        <div style="font-size:0.73rem;color:var(--text-muted)">MLB StatsAPI</div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.9rem">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem">College Baseball</div>
+        <div style="font-size:0.85rem;font-weight:500">ESPN JSON API</div>
+        <div style="font-size:0.73rem;color:var(--text-muted)">site.api.espn.com</div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.9rem">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem">NHL</div>
+        <div style="font-size:0.85rem;font-weight:500">fastRhockey</div>
+        <div style="font-size:0.73rem;color:var(--text-muted)">NHL Stats API</div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.9rem">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem">European Soccer</div>
+        <div style="font-size:0.85rem;font-weight:500">football-data.co.uk</div>
+        <div style="font-size:0.73rem;color:var(--text-muted)">Free CSV feeds</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 EloRankings · Data for research &amp; analysis only</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="https://github.com/YOUR_USERNAME/elorankings" target="_blank">GitHub</a>
+      <a href="SETUP.md">Setup Guide</a>
+    </div>
+  </footer>
+</div>
+
+<script src="js/utils.js"></script>
+</body>
+</html>
