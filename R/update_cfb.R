@@ -1,15 +1,11 @@
 # ================================================================
-# R/update_cfb.R
-# College Football Elo by season, 2005-current
-# Data source: ESPN public scoreboard API (NO KEY REQUIRED)
-# Endpoint: site.api.espn.com/apis/site/v2/sports/football/
-#           college-football/scoreboard
-# Verified fields from live API (tested 2025-05-20):
-#   competitors[].team.shortDisplayName
-#   competitors[].score
-#   competitors[].homeAway
-#   status.type.completed
-# groups=80 = FBS (Division I-A)
+# R/update_cfb.R  —  College Football Elo, 2014-current
+# Data: ESPN core API (historical season/week endpoint)
+# URL pattern:
+#   https://site.api.espn.com/apis/site/v2/sports/football/
+#   college-football/scoreboard?groups=80&seasontype=2&week=N&dates=YYYY
+# The scoreboard endpoint DOES support historical data when you
+# pass ?dates=YYYY (year only, not a full date) together with &week=N
 # ================================================================
 
 suppressPackageStartupMessages({
@@ -22,11 +18,11 @@ source("R/elo_engine.R")
 
 CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
 if (as.integer(format(Sys.Date(), "%m")) < 8) CURRENT_YEAR <- CURRENT_YEAR - 1
-SEASONS <- 2005:CURRENT_YEAR
+# ESPN historical CFB data is solid from 2014 onward
+SEASONS <- 2014:CURRENT_YEAR
 OUT_DIR  <- "CFB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
-# ── Conference map (short ESPN display names) ─────────────────
 CONFS <- c(
   "Clemson"="ACC","Florida St"="ACC","Miami"="ACC","NC State"="ACC",
   "North Carolina"="ACC","Duke"="ACC","Virginia"="ACC","Virginia Tech"="ACC",
@@ -66,78 +62,118 @@ CONFS <- c(
   "Louisiana Tech"="C-USA","UTSA"="C-USA","Rice"="C-USA"
 )
 
-# ── Fetch one week from ESPN ──────────────────────────────────
-fetch_week <- function(date_str) {
-  resp <- tryCatch(
-    GET("https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
-        query = list(limit = 300, dates = date_str, groups = 80),
-        timeout(25)),
-    error = function(e) NULL
-  )
-  if (is.null(resp) || status_code(resp) != 200) return(NULL)
-
-  data <- tryCatch(
-    fromJSON(rawToChar(resp$content), simplifyDataFrame = FALSE),
-    error = function(e) NULL
-  )
-  if (is.null(data) || length(data$events) == 0) return(NULL)
-
-  results <- lapply(data$events, function(ev) {
-    tryCatch({
-      comp <- ev$competitions[[1]]
-      if (!isTRUE(comp$status$type$completed)) return(NULL)
-      competitors <- comp$competitors
-      if (length(competitors) != 2) return(NULL)
-      hi <- which(sapply(competitors, `[[`, "homeAway") == "home")
-      ai <- which(sapply(competitors, `[[`, "homeAway") == "away")
-      if (!length(hi) || !length(ai)) return(NULL)
-      hs  <- suppressWarnings(as.numeric(competitors[[hi]]$score))
-      as_ <- suppressWarnings(as.numeric(competitors[[ai]]$score))
-      hn  <- competitors[[hi]]$team$shortDisplayName
-      an  <- competitors[[ai]]$team$shortDisplayName
-      if (is.na(hs) || is.na(as_) || is.null(hn) || is.null(an) || hs == as_) return(NULL)
-      data.frame(winner = if(hs>as_) hn else an, loser = if(hs>as_) an else hn,
-                 winner_pts = max(hs,as_), loser_pts = min(hs,as_),
-                 stringsAsFactors = FALSE)
-    }, error = function(e) NULL)
-  })
-  bind_rows(Filter(Negate(is.null), results))
+# ── Parse one event from the JSON ─────────────────────────────
+parse_event <- function(ev) {
+  tryCatch({
+    comp <- ev$competitions[[1]]
+    if (!isTRUE(comp$status$type$completed)) return(NULL)
+    competitors <- comp$competitors
+    if (length(competitors) != 2) return(NULL)
+    hi <- which(sapply(competitors, `[[`, "homeAway") == "home")
+    ai <- which(sapply(competitors, `[[`, "homeAway") == "away")
+    if (!length(hi) || !length(ai)) return(NULL)
+    hs  <- suppressWarnings(as.numeric(competitors[[hi]]$score))
+    as_ <- suppressWarnings(as.numeric(competitors[[ai]]$score))
+    hn  <- competitors[[hi]]$team$shortDisplayName
+    an  <- competitors[[ai]]$team$shortDisplayName
+    if (is.na(hs)||is.na(as_)||is.null(hn)||is.null(an)||hn==""||an=="") return(NULL)
+    if (hs == as_) return(NULL)
+    # Return a simple named list (NOT a data.frame) to avoid list-column issues
+    list(winner=if(hs>as_)hn else an, loser=if(hs>as_)an else hn,
+         winner_pts=max(hs,as_), loser_pts=min(hs,as_))
+  }, error=function(e) NULL)
 }
 
-# ── Full season fetch (weekly dates Aug-Jan) ──────────────────
+# ── Fetch one week from ESPN (year + week number) ─────────────
+# Using ?dates=YYYY&week=N which ESPN supports for historical seasons
+fetch_week <- function(yr, week, season_type=2) {
+  resp <- tryCatch(
+    GET("https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+        query=list(groups=80, seasontype=season_type, week=week, dates=yr, limit=300),
+        timeout(30)),
+    error=function(e) NULL
+  )
+  if (is.null(resp) || status_code(resp) != 200) return(NULL)
+  data <- tryCatch(fromJSON(rawToChar(resp$content), simplifyDataFrame=FALSE),
+                   error=function(e) NULL)
+  if (is.null(data) || length(data$events)==0) return(NULL)
+
+  rows <- Filter(Negate(is.null), lapply(data$events, parse_event))
+  if (!length(rows)) return(NULL)
+
+  # Build data.frame manually from list to avoid list-column issues
+  data.frame(
+    winner     = sapply(rows, `[[`, "winner"),
+    loser      = sapply(rows, `[[`, "loser"),
+    winner_pts = as.numeric(sapply(rows, `[[`, "winner_pts")),
+    loser_pts  = as.numeric(sapply(rows, `[[`, "loser_pts")),
+    stringsAsFactors = FALSE
+  )
+}
+
+# ── Fetch full season (weeks 1-15 reg + weeks 1-5 postseason) ─
 fetch_cfb_season <- function(yr) {
   message("  ESPN API: CFB ", yr)
-  dates <- c(
-    seq(as.Date(paste0(yr,   "-08-24")), as.Date(paste0(yr,   "-12-10")), by="7 days"),
-    seq(as.Date(paste0(yr,   "-12-15")), as.Date(paste0(yr+1, "-01-25")), by="7 days")
-  )
-  dates <- dates[dates <= Sys.Date()]
-  if (!length(dates)) return(NULL)
+  all_games <- list()
 
-  games <- bind_rows(lapply(as.character(dates), function(d) {
-    res <- fetch_week(gsub("-","",d))
-    Sys.sleep(0.3)
-    res
-  }))
-  if (!nrow(games)) return(NULL)
-  distinct(filter(games, !is.na(winner), winner != "", winner != loser))
+  # Regular season: weeks 1-16
+  for (wk in 1:16) {
+    res <- fetch_week(yr, wk, season_type=2)
+    if (!is.null(res) && nrow(res) > 0) {
+      all_games <- c(all_games, list(res))
+      message("    Week ", wk, ": ", nrow(res), " games")
+    }
+    Sys.sleep(0.25)
+  }
+
+  # Postseason (bowl games, playoffs): season_type=3, weeks 1-6
+  for (wk in 1:6) {
+    res <- fetch_week(yr, wk, season_type=3)
+    if (!is.null(res) && nrow(res) > 0) {
+      all_games <- c(all_games, list(res))
+      message("    Bowl week ", wk, ": ", nrow(res), " games")
+    }
+    Sys.sleep(0.25)
+  }
+
+  if (!length(all_games)) return(NULL)
+
+  games <- do.call(rbind, all_games)
+  games <- games[!is.na(games$winner) & games$winner != "" &
+                 !is.na(games$loser)  & games$loser  != "" &
+                 games$winner != games$loser, ]
+  # Remove duplicates
+  games <- unique(games)
+  games
 }
 
 # ── Per-season Elo ─────────────────────────────────────────────
 for (yr in SEASONS) {
   message("CFB ", yr, "...")
   g <- fetch_cfb_season(yr)
-  if (is.null(g) || nrow(g) < 100) { message("  Skipping"); next }
-  message("  ", nrow(g), " games")
+  if (is.null(g) || nrow(g) < 50) {
+    message("  Skipping — only ", if(is.null(g)) 0 else nrow(g), " games")
+    next
+  }
+  message("  Total: ", nrow(g), " games")
+
   elo <- run_elo(g, k=30, iters=10, min_games=4)
   elo <- attach_best_wins(elo, g)
   sos <- compute_sos(g, elo)
   out <- build_output(elo, season=yr, conf_map=CONFS, sos_map=sos)
+
   elo_lup <- setNames(elo$elo, elo$team)
   resume  <- tapply(seq_len(nrow(g)), g$winner,
                     function(rows) sum(elo_lup[g$loser[rows]], na.rm=TRUE))
   out$resume_score <- round(resume[out$team], 1)
+
+  # Ensure all columns are atomic (no list columns)
+  out <- as.data.frame(lapply(out, function(x) {
+    if (is.list(x)) sapply(x, function(v) if(is.null(v)) NA else as.character(v))
+    else x
+  }), stringsAsFactors=FALSE)
+
   write_csv(out, file.path(OUT_DIR, paste0("CFB_Elo_", yr, ".csv")))
-  message("  -> ", nrow(out), " teams")
+  message("  -> Saved ", nrow(out), " teams for CFB ", yr)
 }
 message("CFB done.")
