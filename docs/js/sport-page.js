@@ -4,14 +4,8 @@ window.initSportPage = function(CFG) {
   let data = [], allSeasonData = {}, currentSeason = CFG.seasons[0];
 
   // ── Season picker ──────────────────────────────────────────
-  const picker = document.getElementById('seasonPicker');
-  if (picker) CFG.seasons.forEach(yr => {
-    const b = document.createElement('button');
-    b.className = 'season-btn' + (yr === currentSeason ? ' active' : '');
-    b.textContent = yr;
-    b.onclick = () => loadSeason(yr);
-    picker.appendChild(b);
-  });
+  // Picker is built dynamically after probeSeasons() discovers available CSVs
+  // (see findAvailableSeason / probeSeasons below)
 
   // ── Tab init ───────────────────────────────────────────────
   document.querySelectorAll('.tab').forEach(tab => {
@@ -839,18 +833,48 @@ window.initSportPage = function(CFG) {
   }
 
     // ── Auto-find available season ─────────────────────────────
-  async function findAvailableSeason() {
-    // Try from localStorage first
+async function findAvailableSeason() {
+    // Dynamic season probe — checks which CSVs actually exist
+    // This means new seasons auto-appear without any code changes
+    if (!CFG.seasons || CFG.seasons === null) {
+      CFG.seasons = await probeSeasons();
+      if (!CFG.seasons.length) {
+        CFG.seasons = [CFG.currentGuess || new Date().getFullYear()];
+      }
+      // Rebuild picker now that we know seasons
+      const picker = document.getElementById('seasonPicker');
+      if (picker) {
+        picker.innerHTML = '';
+        CFG.seasons.forEach(yr => {
+          const b = document.createElement('button');
+          b.className = 'season-btn';
+          b.textContent = yr;
+          b.onclick = () => loadSeason(yr);
+          picker.appendChild(b);
+        });
+      }
+    }
+    // Check localStorage for last-used season
     const saved = localStorage.getItem('elo_season_' + CFG.sport);
     if (saved && CFG.seasons.includes(parseInt(saved))) return parseInt(saved);
-    // Otherwise probe newest first
-    for (const yr of CFG.seasons) {
+    return CFG.seasons[0];
+  }
+
+  // ── Probe which season CSVs actually exist ───────────────────
+  async function probeSeasons() {
+    const guess = CFG.currentGuess || new Date().getFullYear() + 1;
+    const first = CFG.firstSeason  || 2001;
+    const found = [];
+    let   misses = 0;
+
+    for (let yr = guess + 2; yr >= first; yr--) {
       try {
         const r = await fetch(CFG.dataPath + yr + '.csv?t=' + Date.now(), {method:'HEAD'});
-        if (r.ok) return yr;
-      } catch(_) {}
+        if (r.ok) { found.push(yr); misses = 0; }
+        else       { misses++; if (yr < guess - 2 && misses >= 3) break; }
+      } catch(_) { misses++; }
     }
-    return CFG.seasons[0];
+    return found.sort((a,b) => b - a);  // newest first
   }
 
   // ── Init ──────────────────────────────────────────────────
