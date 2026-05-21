@@ -834,17 +834,12 @@ window.initSportPage = function(CFG) {
 
     // ── Auto-find available season ─────────────────────────────
 async function findAvailableSeason() {
+    // Check localStorage for last-used season
     const saved = localStorage.getItem('elo_season_' + CFG.sport);
     if (saved && CFG.seasons.includes(parseInt(saved))) return parseInt(saved);
-    // Check if a newer season CSV exists (e.g. 2027 when list goes to 2026)
-    await checkForNewerSeasons();
-    // Walk newest first until we find one with actual data
-    for (const yr of CFG.seasons) {
-      try {
-        const r = await fetch(CFG.dataPath + yr + '.csv?t=' + Date.now(), {method:'HEAD'});
-        if (r.ok) return yr;
-      } catch(_) {}
-    }
+    // Return newest season immediately — loadSeason shows empty state if no CSV
+    // checkForNewerSeasons runs in background after load
+    setTimeout(() => checkForNewerSeasons(), 2000);
     return CFG.seasons[0];
   }
 
