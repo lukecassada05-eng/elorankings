@@ -87,10 +87,9 @@ jobs:
       - name: Install R packages
         run: |
           Rscript -e "
-            install.packages(c('hoopR','dplyr','readr'),
-              repos=c(sportsdataverse='https://sportsdataverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=TRUE)
-            stopifnot(requireNamespace('hoopR',quietly=TRUE))
+            install.packages(c('dplyr','readr','httr','jsonlite'),
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+            stopifnot(requireNamespace('httr',quietly=TRUE))
             message('packages OK')
           "
       - name: Run update
