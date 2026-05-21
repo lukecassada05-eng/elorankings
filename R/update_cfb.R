@@ -20,366 +20,484 @@ dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 # Year-aware conference assignment
 # Handles ESPN shortDisplayName variants + all realignments
 # ================================================================
+# ================================================================
+# get_conf(team, year)
+# Year-aware conference assignment for all FBS teams 2001-present.
+#
+# Strategy:
+#   1. Normalise ESPN shortDisplayName → canonical name via ALIASES
+#   2. Look up canonical name in year-aware conference logic
+#
+# This handles all ESPN name variants (abbreviations, dot-notation,
+# historical names) and every conference realignment since 2001.
+# ================================================================
+
+# ── Alias map: every ESPN variant → canonical team name ────────
+# Add new variants here; the conference logic below stays clean.
+ALIASES <- c(
+  # Florida State
+  "Florida State"="Florida St","Fla. State"="Florida St","Fla St"="Florida St","FSU"="Florida St",
+  # NC State
+  "N.C. State"="NC State","North Carolina St"="NC State","N Carolina St"="NC State","NC St"="NC State",
+  # North Carolina
+  "N. Carolina"="North Carolina","UNC"="North Carolina","No. Carolina"="North Carolina",
+  # Virginia
+  "UVA"="Virginia","Va."="Virginia",
+  # Virginia Tech
+  "Va. Tech"="Virginia Tech","VaTech"="Virginia Tech","VT"="Virginia Tech",
+  # Georgia Tech
+  "Ga. Tech"="Georgia Tech","GT"="Georgia Tech",
+  # Boston College
+  "BC"="Boston College","Boston Col"="Boston College",
+  # Pittsburgh
+  "Pitt"="Pittsburgh",
+  # Miami
+  "Miami (FL)"="Miami","Miami FL"="Miami",
+  # Ohio State
+  "Ohio St"="Ohio State","Ohio St."="Ohio State",
+  # Penn State
+  "Penn St"="Penn State","Penn St."="Penn State",
+  # Michigan State
+  "Michigan St"="Michigan State","Michigan St."="Michigan State",
+  # Oklahoma State
+  "Oklahoma St"="Oklahoma State","Oklahoma St."="Oklahoma State","Okla. State"="Oklahoma State","Okla St"="Oklahoma State",
+  # Iowa State
+  "Iowa St"="Iowa State","Iowa St."="Iowa State",
+  # Kansas State
+  "Kansas St"="Kansas State","Kansas St."="Kansas State","K-State"="Kansas State","Kan. State"="Kansas State",
+  # West Virginia
+  "W. Virginia"="West Virginia","W Virginia"="West Virginia","WVU"="West Virginia","W. Va."="West Virginia",
+  # Texas A&M
+  "Texas A&M Aggies"="Texas A&M","TA&M"="Texas A&M",
+  # Mississippi State
+  "Mississippi St"="Miss St","Mississippi St."="Miss St","Miss State"="Miss St","Miss. State"="Miss St",
+  "Miss. St."="Miss St","Mississippi State"="Miss St",
+  # Ole Miss
+  "Mississippi"="Ole Miss","Mississippi Rebels"="Ole Miss",
+  # South Carolina
+  "S. Carolina"="South Carolina","S Carolina"="South Carolina",
+  # Oregon State
+  "Oregon St"="Oregon State","Oregon St."="Oregon State",
+  # Washington State
+  "Washington St"="Washington State","Washington St."="Washington State",
+  "Wash. State"="Washington State","Wash St"="Washington State",
+  # Arizona State
+  "Arizona St"="Arizona State","Arizona St."="Arizona State","Ariz. State"="Arizona State","Ariz St"="Arizona State",
+  # California
+  "Cal"="California","UC Berkeley"="California","California Bears"="California",
+  # Boise State
+  "Boise St"="Boise State","Boise St."="Boise State",
+  # Colorado State
+  "Colorado St"="Colorado State","Colorado St."="Colorado State","Colo. State"="Colorado State","Colo St"="Colorado State",
+  # Fresno State
+  "Fresno St"="Fresno State","Fresno St."="Fresno State",
+  # Utah State
+  "Utah St"="Utah State","Utah St."="Utah State",
+  # San Jose State
+  "San Jose St"="San Jose State","San José St"="San Jose State","San Jose St."="San Jose State","SJSU"="San Jose State",
+  "San José State"="San Jose State",
+  # San Diego State
+  "San Diego St"="San Diego State","San Diego St."="San Diego State","SDSU"="San Diego State",
+  # Hawai'i
+  "Hawaii"="Hawai'i","Haw."="Hawai'i",
+  # UNLV
+  "Nevada-Las Vegas"="UNLV",
+  # New Mexico
+  "N. Mexico"="New Mexico","NM"="New Mexico",
+  # South Florida
+  "S. Florida"="South Florida","South Fla"="South Florida","South Fla."="South Florida",
+  "USF"="South Florida","S Fla"="South Florida","South Fla."="South Florida",
+  # East Carolina
+  "E. Carolina"="East Carolina","ECU"="East Carolina","E Carolina"="East Carolina",
+  "E. Car."="East Carolina",
+  # UConn
+  "Connecticut"="UConn","Conn."="UConn",
+  # UCF
+  "Central Florida"="UCF","Cent. Florida"="UCF",
+  # SMU
+  "Southern Methodist"="SMU",
+  # Louisiana (UL Lafayette)
+  "Louisiana Lafayette"="Louisiana","UL Lafayette"="Louisiana","ULL"="Louisiana",
+  "Louisiana-Lafayette"="Louisiana","UL"="Louisiana",
+  # UL Monroe
+  "Louisiana Monroe"="UL Monroe","Louisiana-Monroe"="UL Monroe","La.-Monroe"="UL Monroe","ULM"="UL Monroe",
+  # Appalachian State
+  "Appalachian St"="App State","Appalachian State"="App State","App St"="App State","Appy State"="App State",
+  # Arkansas State
+  "Arkansas St"="Arkansas State","Arkansas St."="Arkansas State","Ark. State"="Arkansas State","Ark St"="Arkansas State",
+  # Georgia Southern
+  "Ga. Southern"="Georgia Southern","Ga Southern"="Georgia Southern",
+  "GA Southern"="Georgia Southern","Georgia So"="Georgia Southern",
+  # Georgia State
+  "Ga. State"="Georgia State","Ga State"="Georgia State","GA State"="Georgia State",
+  "GA St"="Georgia State","Ga St"="Georgia State",
+  # South Alabama
+  "S. Alabama"="South Alabama","S Alabama"="South Alabama",
+  "South Ala"="South Alabama","South Ala."="South Alabama","South Ala"="South Alabama",
+  # Texas State
+  "Texas St"="Texas State","Texas St."="Texas State","Tex. State"="Texas State","Tex St"="Texas State",
+  # Coastal Carolina
+  "Coastal Car"="Coastal Carolina","Coast. Carolina"="Coastal Carolina","Coastal Car."="Coastal Carolina",
+  # Southern Miss
+  "Southern Mississippi"="Southern Miss","S. Mississippi"="Southern Miss","Southern Miss."="Southern Miss",
+  # Old Dominion
+  "Old Dom."="Old Dominion","ODU"="Old Dominion",
+  # James Madison
+  "JMU"="James Madison","James Mad."="James Madison",
+  # Middle Tennessee
+  "Middle Tenn"="Middle Tennessee","Middle Tenn."="Middle Tennessee",
+  "MTSU"="Middle Tennessee","Mid Tenn"="Middle Tennessee","Mid Tennessee"="Middle Tennessee",
+  # Western Kentucky
+  "Western Ky"="Western Kentucky","Western Ky."="Western Kentucky",
+  "W. Kentucky"="Western Kentucky","WKU"="Western Kentucky","W Kentucky"="Western Kentucky",
+  # Florida Atlantic
+  "Fla. Atlantic"="Florida Atlantic","FAU"="Florida Atlantic",
+  "Fla Atlantic"="Florida Atlantic","Fla. Atl."="Florida Atlantic",
+  # FIU
+  "Florida International"="FIU","Fla. International"="FIU",
+  # Louisiana Tech
+  "La. Tech"="Louisiana Tech","La Tech"="Louisiana Tech","Louisiana Tech."="Louisiana Tech",
+  # New Mexico State
+  "New Mexico St"="New Mexico State","New Mexico St."="New Mexico State",
+  "NMSU"="New Mexico State","NM State"="New Mexico State",
+  # Jacksonville State
+  "Jacksonville St"="Jacksonville State","Jacksonville St."="Jacksonville State",
+  "Jax State"="Jacksonville State","Jax St"="Jacksonville State",
+  # Kennesaw State
+  "Kennesaw St"="Kennesaw State","KSU"="Kennesaw State","Kennesaw St."="Kennesaw State",
+  # Sam Houston
+  "Sam Houston State"="Sam Houston","Sam Houston St"="Sam Houston","SHSU"="Sam Houston",
+  # Central Michigan
+  "Cent. Michigan"="Central Michigan","C. Michigan"="Central Michigan",
+  "Central Mich"="Central Michigan","Central Mich."="Central Michigan",
+  "Cent Michigan"="Central Michigan","CMU"="Central Michigan",
+  # Eastern Michigan
+  "E. Michigan"="Eastern Michigan","E Michigan"="Eastern Michigan",
+  "Eastern Mich"="Eastern Michigan","Eastern Mich."="Eastern Michigan","EMU"="Eastern Michigan",
+  # Western Michigan
+  "W. Michigan"="Western Michigan","W Michigan"="Western Michigan",
+  "Western Mich"="Western Michigan","Western Mich."="Western Michigan","WMU"="Western Michigan",
+  # Northern Illinois
+  "N. Illinois"="Northern Illinois","N Illinois"="Northern Illinois",
+  "Northern Ill"="Northern Illinois","Northern Ill."="Northern Illinois",
+  "NIU"="Northern Illinois","No. Illinois"="Northern Illinois",
+  # Ball State
+  "Ball St"="Ball State","Ball St."="Ball State",
+  # Bowling Green
+  "Bowling Green St"="Bowling Green","BGSU"="Bowling Green","Bowl. Green"="Bowling Green",
+  # Buffalo
+  "UB"="Buffalo",
+  # Kent State
+  "Kent St"="Kent State","Kent St."="Kent State",
+  # Miami (OH)
+  "Miami OH"="Miami (OH)","Miami (Ohio)"="Miami (OH)","MiamiOH"="Miami (OH)",
+  # Massachusetts
+  "UMass"="Massachusetts","Mass."="Massachusetts",
+  # Tulsa
+  "Golden Hurricane"="Tulsa",
+  # Troy State historical
+  "Troy State"="Troy","Troy St"="Troy",
+  # Navy
+  "Navy Midshipmen"="Navy",
+  # Temple
+  "Owls"="Temple",
+  # Charlotte
+  "UNCC"="Charlotte",
+  # UAB
+  "Alabama-Birmingham"="UAB",
+  # UTSA
+  "UT San Antonio"="UTSA",
+  # UTEP
+  "Texas-El Paso"="UTEP","UT El Paso"="UTEP",
+  # Rice
+  "Rice Owls"="Rice",
+  # Louisiana Monroe name changes
+  "Northeastern Louisiana"="UL Monroe","NE Louisiana"="UL Monroe",
+  # Historical name changes
+  "Southwest Texas St"="Texas State","Southwest Texas"="Texas State",
+  "Indiana State"="Indiana",  # disambiguation: Indiana the B1G school
+  # BYU
+  "Brigham Young"="BYU",
+  # Notre Dame variants
+  "Notre Dame Fighting Irish"="Notre Dame","ND"="Notre Dame"
+)
+
+# ── Canonical conference map ────────────────────────────────────
+# Uses canonical names only (after alias resolution).
+# Year-aware via function logic below.
 get_conf <- function(team, year) {
   t <- trimws(team)
 
-  # ── ALWAYS INDEPENDENT ────────────────────────────────────
-  if (t %in% c("Notre Dame","Army","Notre Dame Fighting Irish")) return("Independent")
+  # Step 1: Resolve alias to canonical name
+  if (t %in% names(ALIASES)) t <- ALIASES[[t]]
+
+  # Step 2: Look up by canonical name with year logic
+
+  # ── Permanent independents ─────────────────────────────────
+  if (t == "Notre Dame") return("Independent")
+  if (t == "Army")       return("Independent")
   if (t == "Navy") {
     if (year >= 2015 && year <= 2023) return("AAC")
-    return("Independent")  # Navy was ind before AAC, and left AAC 2024
+    return("Independent")
   }
-  if (t %in% c("BYU","Brigham Young")) {
+  if (t == "BYU") {
     if (year <= 2010) return("Mountain West")
     if (year <= 2022) return("Independent")
     return("Big 12")
   }
-  if (t %in% c("UMass","Massachusetts") && year >= 2012) return("Independent")
-  if (t %in% c("UConn","Connecticut") && year >= 2020) return("Independent")
-  if (t == "Liberty" && year >= 2018 && year <= 2022) return("Independent")
-  if (t %in% c("New Mexico St","New Mexico State") && year >= 2018 && year <= 2022) return("Independent")
-  if (t == "UConn" && year <= 2019) return("AAC")
-
-  # ── ACC ────────────────────────────────────────────────────
-  # ESPN uses "FSU" not "Florida St" and "UNC" not "North Carolina"
-  acc_always <- c(
-    "Clemson","Miami","NC State","North Carolina St","Duke","Virginia",
-    "Virginia Tech","Georgia Tech","Wake Forest","Louisville","Pitt",
-    "Pittsburgh","Syracuse","Boston College",
-    # ESPN shortDisplayName variants
-    "UNC","FSU","GT","VT","BC"
-  )
-  acc_joined <- list(
-    "Florida St"=2001, "Florida State"=2001, "FSU"=2001,
-    "North Carolina"=2001, "UNC"=2001,
-    "Maryland"=2001,     # left after 2013
-    "Stanford"=2024,     "California"=2024, "Cal"=2024,
-    "SMU"=2024
-  )
-  if (t %in% acc_always) {
-    # Maryland left ACC after 2013
-    if (t == "Maryland" && year >= 2014) return("Big Ten")
-    return("ACC")
+  if (t == "Massachusetts") {
+    if (year >= 2012) return("Independent")
+    return(NA_character_)
   }
-  year_joined <- acc_joined[[t]]
-  if (!is.null(year_joined) && year >= year_joined) {
-    if (t %in% c("Maryland") && year >= 2014) return("Big Ten")
-    return("ACC")
-  }
-
-  # ── BIG TEN ────────────────────────────────────────────────
-  b10_always <- c(
-    "Michigan","Ohio St","Ohio State","Penn St","Penn State",
-    "Michigan St","Michigan State","Minnesota","Wisconsin",
-    "Iowa","Purdue","Illinois","Indiana","Northwestern","Nebraska"
-  )
-  if (t %in% b10_always) return("Big Ten")
-  if (t %in% c("Maryland","Rutgers") && year >= 2014) return("Big Ten")
-  if (t %in% c("UCLA","USC") && year >= 2024) return("Big Ten")
-  if (t %in% c("Washington") && year >= 2024) return("Big Ten")
-  if (t == "Oregon" && year >= 2024) return("Big Ten")
-  # Oregon was Pac-10/Pac-12 before 2024 — do NOT return "Big Ten" here
-
-  # ── BIG 12 ────────────────────────────────────────────────
-  b12_always <- c(
-    "Kansas","Kansas St","Kansas State","Iowa St","Iowa State",
-    "Baylor","TCU","Texas Christian","Texas Tech","West Virginia"
-  )
-  if (t %in% b12_always) return("Big 12")
-  b12_year <- list(
-    "Oklahoma St"=2001,"Oklahoma State"=2001,
-    "Texas"=2001,   # Texas left Big 12 after 2023
-    "Oklahoma"=2001,# Oklahoma left Big 12 after 2023
-    "Colorado"=2001,# Colorado left Big 12 after 2010
-    "Nebraska"=2001,# Nebraska left Big 12 after 2010
-    "Missouri"=2001,# Missouri left Big 12 after 2011
-    "Texas A&M"=2001,# Texas A&M left Big 12 after 2011
-    "BYU"=2023,
-    "Cincinnati"=2023,"UCF"=2023,"Houston"=2023,
-    "Arizona"=2024,"Arizona St"=2024,"Arizona State"=2024,
-    "Colorado"=2024,"Utah"=2024
-  )
-  for (nm in names(b12_year)) {
-    if (t == nm) {
-      yr_join <- b12_year[[nm]]
-      # Handle teams that left
-      if (t %in% c("Colorado","Nebraska") && year >= 2011) break  # moved to B1G/Pac-12
-      if (t %in% c("Missouri","Texas A&M") && year >= 2012) break  # moved to SEC
-      if (t %in% c("Texas","Oklahoma") && year >= 2024) break     # moved to SEC
-      if (year >= yr_join) return("Big 12")
-      break
-    }
-  }
-
-  # ── SEC ────────────────────────────────────────────────────
-  sec_always <- c(
-    "Alabama","Georgia","LSU","Florida","Tennessee","Auburn",
-    "Ole Miss","Miss St","Mississippi State","Arkansas",
-    "Kentucky","Missouri","South Carolina","Vanderbilt","Texas A&M",
-    "Mississippi St"
-  )
-  if (t %in% sec_always) {
-    if (t == "Missouri" && year <= 2011) return("Big 12")
-    if (t == "Texas A&M" && year <= 2011) return("Big 12")
-    return("SEC")
-  }
-  if (t %in% c("Texas","Oklahoma") && year >= 2024) return("SEC")
-
-  # ── PAC-10 / PAC-12 (2001–2023) ────────────────────────────
-  pac_always_old <- c(
-    "Oregon St","Oregon State","UCLA","USC","Arizona","Arizona St",
-    "Arizona State","Washington","Washington St","Washington State",
-    "California","Cal","Stanford"
-  )
-  pac_joined_2011 <- c("Utah","Colorado")
-
-  if (t == "Oregon") {
-    if (year <= 2023) return("Pac-12")
-    return("Big Ten")  # Oregon joined Big Ten 2024
-  }
-  if (t %in% pac_always_old) {
-    if (year >= 2024) {
-      if (t %in% c("UCLA","USC")) return("Big Ten")
-      if (t %in% c("Arizona","Arizona St","Arizona State","Colorado","Utah")) return("Big 12")
-      if (t %in% c("California","Cal","Stanford")) return("ACC")
-      return("Pac-12")  # Oregon St, Washington St remain as Pac-12 remnant
-    }
-    return("Pac-12")
-  }
-  if (t %in% pac_joined_2011) {
-    if (year >= 2011 && year <= 2023) return("Pac-12")
-    if (year <= 2010) {
-      if (t == "Utah") return("Mountain West")
-      if (t == "Colorado") return("Big 12")
-    }
-    if (year >= 2024) return("Big 12")
-  }
-  if (t == "Washington" && year <= 2023) return("Pac-12")
-
-  # ── MOUNTAIN WEST ──────────────────────────────────────────
-  mw_always <- c(
-    "Boise St","Boise State","San Diego St","San Diego State",
-    "Fresno St","Fresno State","Utah St","Utah State","UNLV",
-    "Wyoming","Nevada","New Mexico","Air Force","Colorado St",
-    "Colorado State","San José St","San Jose St","San Jose State",
-    "Hawai'i","Hawaii"
-  )
-  if (t %in% mw_always) return("Mountain West")
-  if (t == "BYU" && year <= 2010) return("Mountain West")
-  if (t == "TCU" && year <= 2011) return("Mountain West")
-  if (t %in% c("Utah","Colorado") && year <= 2010) return("Mountain West")
-
-  # ── BIG EAST football (2001–2012) / AAC (2013+) ────────────
-  # AAC teams — use ESPN shortDisplayName variants
-  aac_teams <- c(
-    "Tulane","Memphis","East Carolina","South Florida","Temple",
-    "USF",     # ESPN shortDisplayName for South Florida
-    "SMU","Tulsa","Wichita St","Cincinnati","UCF","Houston","Navy",
-    "Charlotte","UTSA"
-  )
-  big_east_fb <- c(
-    "Connecticut","UConn","South Florida","USF","Rutgers",
-    "Pittsburgh","Pitt","Cincinnati","West Virginia",
-    "Louisville","Syracuse","Temple"
-  )
-  if (t %in% big_east_fb && year <= 2012) return("Big East")
-  if (t %in% aac_teams) {
+  if (t == "UConn") {
+    if (year >= 2020) return("Independent")
     if (year >= 2013) return("AAC")
     return("Big East")
   }
-  if (t == "Tulane") {
-    if (year <= 2004) return("C-USA")
-    if (year >= 2022) return("AAC")
-    return("Independent")  # Tulane was in C-USA then ind briefly
+  if (t == "Liberty") {
+    if (year >= 2023) return("C-USA")
+    if (year >= 2018) return("Independent")
+    return(NA_character_)
   }
-  if (t == "North Texas" && year >= 2013 && year <= 2023) return("C-USA")
-  if (t == "North Texas" && year >= 2024) return("AAC")
-
-  # ── SUN BELT ────────────────────────────────────────────────
-  sunbelt <- c(
-    "Louisiana","App State","Appalachian State","Troy",
-    "GA Southern","Georgia So","Georgia Southern",
-    "Arkansas St","Arkansas State","South Alabama",
-    "James Madison","Old Dominion","GA St","Georgia St","Georgia State",
-    "UL Monroe","Southern Miss","Texas St","Texas State",
-    "Coastal","Coastal Car","Coastal Carolina",
-    "Marshall"   # Marshall joined Sun Belt 2022
-  )
-  if (t %in% sunbelt) {
-    if (t == "Marshall" && year <= 2004) return("MAC")
-    if (t == "Marshall" && year >= 2005 && year <= 2021) return("C-USA")
-    if (t == "Marshall" && year >= 2022) return("Sun Belt")
-    if (t == "Old Dominion" && year <= 2017) return("C-USA")
-    if (t == "Old Dominion" && year >= 2018 && year <= 2021) return("C-USA")
-    if (t == "Old Dominion" && year >= 2022) return("Sun Belt")
-    return("Sun Belt")
+  if (t == "New Mexico State") {
+    if (year >= 2023) return("C-USA")
+    if (year >= 2018) return("Independent")
+    return("WAC")
+  }
+  if (t == "Sam Houston") {
+    if (year >= 2021) return("C-USA")
+    return("FCS")
   }
 
-  # ── C-USA ──────────────────────────────────────────────────
-  cusa <- c(
-    "UAB","Western KY","Western Kentucky","MTSU","Middle Tennessee",
-    "Middle Tenn","Liberty","New Mexico St","New Mexico State",
-    "Sam Houston","Jax State","Jacksonville St","Jacksonville State",
-    "FIU","UTEP","Louisiana Tech","La Tech","UTSA","Rice",
-    "Kennesaw St","Kennesaw State","FAU","Florida Atlantic",
-    "Charlotte","North Texas","Delaware",
-    # Historical C-USA
-    "Tulane","USM","Southern Miss","East Carolina","UAB","Houston",
-    "TCU","SMU","Memphis","Marshall","Cincinnati","Louisville"
-  )
-  cusa_year <- list(
-    "North Texas"=list(join=2013, leave=2023),
-    "UTSA"=list(join=2013, leave=9999),
-    "Charlotte"=list(join=2015, leave=2023),
-    "Marshall"=list(join=2005, leave=2021),
-    "Old Dominion"=list(join=2018, leave=2021),
-    "Kennesaw St"=list(join=2022, leave=9999),
-    "Jax State"=list(join=2022, leave=9999),
-    "Jacksonville St"=list(join=2022, leave=9999),
-    "Sam Houston"=list(join=2021, leave=9999),
-    "Liberty"=list(join=2023, leave=9999),
-    "FAU"=list(join=2013, leave=9999),
-    "FIU"=list(join=2009, leave=9999),
-    "UTEP"=list(join=2005, leave=9999),
-    "Louisiana Tech"=list(join=2013, leave=9999),
-    "Rice"=list(join=2005, leave=9999),
-    "UAB"=list(join=2001, leave=9999),
-    "Western KY"=list(join=2009, leave=9999),
-    "Western Kentucky"=list(join=2009, leave=9999),
-    "MTSU"=list(join=2013, leave=9999),
-    "Middle Tennessee"=list(join=2013, leave=9999),
-    "New Mexico St"=list(join=2023, leave=9999),
-    "New Mexico State"=list(join=2023, leave=9999)
-  )
-  if (!is.null(cusa_year[[t]])) {
-    info <- cusa_year[[t]]
-    if (year >= info$join && year <= info$leave) return("C-USA")
-  } else if (t %in% cusa) {
+  # ── ACC ────────────────────────────────────────────────────
+  acc_stable <- c("Clemson","Miami","NC State","Duke","Virginia","Virginia Tech",
+                  "Georgia Tech","Wake Forest","Wake Forest","Boston College")
+  if (t %in% acc_stable) return("ACC")
+  if (t == "Pittsburgh") {
+    if (year >= 2013) return("ACC")
+    return("Big East")
+  }
+  if (t == "Syracuse") {
+    if (year >= 2013) return("ACC")
+    return("Big East")
+  }
+  if (t == "Louisville") {
+    if (year >= 2014) return("ACC")
+    return("Big East")
+  }
+  if (t == "Wake Forest") return("ACC")
+  if (t == "North Carolina") return("ACC")
+  if (t == "Florida St")     return("ACC")
+  if (t == "Maryland") {
+    if (year >= 2014) return("Big Ten")
+    return("ACC")
+  }
+  if (t %in% c("Stanford","California")) {
+    if (year >= 2024) return("ACC")
+    return("Pac-12")
+  }
+  if (t == "SMU") {
+    if (year >= 2024) return("ACC")
+    if (year >= 2013) return("AAC")
     return("C-USA")
   }
 
-  # ── MAC ────────────────────────────────────────────────────
-  mac <- c(
-    "W Michigan","Western Michigan","C Michigan","Central Michigan",
-    "E Michigan","Eastern Michigan","N Illinois","Northern Illinois",
-    "Ball State","Ohio","Toledo","Kent State","Kent St",
-    "Akron","Bowling Green","Buffalo","Miami OH","Miami (OH)",
-    "N Illinois","NIU"
-  )
-  if (t %in% mac) return("MAC")
+  # ── BIG TEN ────────────────────────────────────────────────
+  b10_stable <- c("Michigan","Ohio State","Penn State","Michigan State","Minnesota","Wisconsin",
+                  "Iowa","Purdue","Illinois","Indiana","Northwestern","Nebraska")
+  if (t %in% b10_stable) return("Big Ten")
+  if (t == "Maryland"  && year >= 2014) return("Big Ten")
+  if (t == "Rutgers") {
+    if (year >= 2014) return("Big Ten")
+    return("Big East")
+  }
+  if (t %in% c("UCLA","USC")       && year >= 2024) return("Big Ten")
+  if (t == "Washington"            && year >= 2024) return("Big Ten")
+  if (t == "Oregon"                && year >= 2024) return("Big Ten")
 
-  # ── WAC (historical pre-2012) ──────────────────────────────
-  wac <- c("Hawaii","Hawai'i","Nevada","Utah St","Utah State",
-           "Louisiana Tech","La Tech","Fresno St","Fresno State",
-           "San Jose St","San Jose State","UTEP","New Mexico St",
-           "New Mexico State","Idaho","Boise St","Boise State")
-  if (t %in% wac && year <= 2011) return("WAC")
+  # ── BIG 12 ────────────────────────────────────────────────
+  b12_stable <- c("Kansas","Kansas State","Iowa State","Baylor","TCU","Texas Tech","Oklahoma State")
+  if (t %in% b12_stable) return("Big 12")
+  if (t == "West Virginia") {
+    if (year >= 2012) return("Big 12")
+    return("Big East")
+  }
+  if (t == "Texas") {
+    if (year >= 2024) return("SEC")
+    return("Big 12")
+  }
+  if (t == "Oklahoma") {
+    if (year >= 2024) return("SEC")
+    return("Big 12")
+  }
+  if (t == "Colorado") {
+    if (year >= 2024) return("Big 12")
+    if (year >= 2011) return("Pac-12")
+    return("Big 12")
+  }
+  if (t == "Nebraska") {
+    if (year >= 2011) return("Big Ten")
+    return("Big 12")
+  }
+  if (t == "Missouri") {
+    if (year >= 2012) return("SEC")
+    return("Big 12")
+  }
+  if (t == "Texas A&M") {
+    if (year >= 2012) return("SEC")
+    return("Big 12")
+  }
+  if (t %in% c("BYU") && year >= 2023) return("Big 12")
+  if (t %in% c("Cincinnati","UCF","Houston") && year >= 2023) return("Big 12")
+  if (t %in% c("Arizona","Arizona State","Utah") && year >= 2024) return("Big 12")
 
-  # ── INDEPENDENTS (FBS non-power) ──────────────────────────
-  fbs_ind <- c("Army","BYU","UMass","Massachusetts","UConn","Connecticut",
-               "Liberty","New Mexico St","New Mexico State",
-               "Sam Houston","Jacksonville St","Jacksonville State",
-               "Kennesaw St","Kennesaw State","Jax State","Austin Peay",
-               "N Dakota St","North Dakota St")
-  if (t %in% fbs_ind) return("Independent")
+  # ── SEC ────────────────────────────────────────────────────
+  sec_stable <- c("Alabama","Georgia","LSU","Florida","Tennessee","Auburn",
+                  "Ole Miss","Miss St","Arkansas","Kentucky","South Carolina","Vanderbilt")
+  if (t %in% sec_stable) return("SEC")
+  if (t == "Missouri"  && year >= 2012) return("SEC")
+  if (t == "Texas A&M" && year >= 2012) return("SEC")
+  if (t == "Texas"     && year >= 2024) return("SEC")
+  if (t == "Oklahoma"  && year >= 2024) return("SEC")
 
-  # ── ADDITIONAL ESPN shortDisplayName variants ───────────────
-  # These are names ESPN uses that differ from the primary name above
+  # ── PAC-10 / PAC-12 ───────────────────────────────────────
+  pac_stable <- c("Oregon","Oregon State","UCLA","USC","Arizona","Arizona State",
+                  "Washington","Washington State","California","Stanford")
+  if (t %in% pac_stable) {
+    if (year >= 2024) {
+      if (t %in% c("UCLA","USC")) return("Big Ten")
+      if (t %in% c("Arizona","Arizona State")) return("Big 12")
+      if (t %in% c("California","Stanford")) return("ACC")
+      if (t == "Oregon") return("Big Ten")
+      return("Pac-12")  # Oregon State, Washington State remain
+    }
+    return("Pac-12")
+  }
+  if (t == "Utah") {
+    if (year >= 2024) return("Big 12")
+    if (year >= 2011) return("Pac-12")
+    return("Mountain West")
+  }
+  if (t == "Colorado") {
+    if (year >= 2024) return("Big 12")
+    if (year >= 2011) return("Pac-12")
+    return("Big 12")
+  }
 
-  # ACC variants
-  if (t == "UVA")               return("ACC")   # Virginia
-  if (t == "VaTech")            return("ACC")   # Virginia Tech
-  if (t %in% c("N Carolina","N.C. State","NCState")) return("ACC")
+  # ── MOUNTAIN WEST ──────────────────────────────────────────
+  mw_stable <- c("Boise State","San Diego State","Fresno State","Utah State","UNLV",
+                 "Wyoming","Nevada","New Mexico","Air Force","Colorado State",
+                 "San Jose State","Hawai'i")
+  if (t %in% mw_stable) return("Mountain West")
+  if (t == "Utah"     && year <= 2010) return("Mountain West")
+  if (t == "BYU"      && year <= 2010) return("Mountain West")
+  if (t == "TCU"      && year <= 2011) return("Mountain West")
+  if (t == "Colorado" && year <= 2010) return("Mountain West")
 
-  # AAC / Big East
-  if (t == "USF")               return(if (year >= 2013) "AAC" else "Big East")
-  if (t == "ECU")               return(if (year >= 2013) "AAC" else "C-USA")
-  if (t == "E Carolina")        return(if (year >= 2013) "AAC" else "C-USA")
+  # ── AAC (2013+) / BIG EAST football (2001-2012) ───────────
+  aac_founding <- c("South Florida","East Carolina","Memphis","Tulane","Temple",
+                    "Houston","UCF","Cincinnati","Tulsa","Navy","Wichita State","SMU")
+  big_east_fb  <- c("South Florida","Rutgers","Pittsburgh","Cincinnati","West Virginia",
+                    "Louisville","Syracuse","UConn","Navy","Temple")
+  if (t %in% big_east_fb && year <= 2012) return("Big East")
+  if (t %in% aac_founding) {
+    if (year >= 2013) return("AAC")
+    return("Big East")
+  }
+  if (t == "North Texas") {
+    if (year >= 2024) return("AAC")
+    if (year >= 2013) return("C-USA")
+    return("Sun Belt")
+  }
+  if (t == "Charlotte"   && year >= 2015 && year <= 2023) return("C-USA")
+  if (t == "UTSA"        && year >= 2013) return("C-USA")
 
-  # C-USA variants
-  if (t == "Mid Tennessee")     return(if (year >= 2013) "C-USA" else "Sun Belt")
-  if (t == "MTSU")              return(if (year >= 2013) "C-USA" else "Sun Belt")
-  if (t == "W Kentucky")        return(if (year >= 2009) "C-USA" else "Independent")
-  if (t == "WKU")               return(if (year >= 2009) "C-USA" else "Independent")
-  if (t == "Jax St")            return("C-USA")
+  # ── SUN BELT ──────────────────────────────────────────────
+  sunbelt_stable <- c("Louisiana","Troy","App State","Arkansas State","Georgia Southern",
+                      "Georgia State","South Alabama","UL Monroe","Southern Miss",
+                      "Texas State","Coastal Carolina","Old Dominion","James Madison",
+                      "Marshall")
+  if (t %in% sunbelt_stable) {
+    if (t == "Marshall") {
+      if (year >= 2022) return("Sun Belt")
+      if (year >= 2005) return("C-USA")
+      return("MAC")
+    }
+    if (t == "Old Dominion") {
+      if (year >= 2022) return("Sun Belt")
+      if (year >= 2014) return("C-USA")
+      return(NA_character_)
+    }
+    if (t == "App State") {
+      if (year >= 2014) return("Sun Belt")
+      return("FCS")
+    }
+    if (t == "James Madison") {
+      if (year >= 2023) return("Sun Belt")
+      return("FCS")
+    }
+    if (t == "South Alabama" && year < 2012) return(NA_character_)
+    if (t == "Georgia State" && year < 2013) return(NA_character_)
+    if (t == "Coastal Carolina" && year < 2017) return("FCS")
+    if (t %in% c("Southern Miss","Texas State") && year <= 2012) return("C-USA")
+    return("Sun Belt")
+  }
 
-  # MAC variants
-  if (t %in% c("Cent Michigan","C. Michigan","CMU"))
-                                return("MAC")
-  if (t %in% c("E Michigan","EMU"))   return("MAC")
-  if (t %in% c("W Michigan","WMU"))   return("MAC")
-  if (t %in% c("N Illinois","NIU","No. Illinois")) return("MAC")
-  if (t == "Bowling Green St")  return("MAC")
-  if (t %in% c("Ball St","Ball State")) return("MAC")
-  if (t %in% c("Kent St","Kent State")) return("MAC")
+  # ── C-USA ─────────────────────────────────────────────────
+  cusa_current <- c("UAB","Middle Tennessee","Western Kentucky","Florida Atlantic","FIU",
+                    "UTEP","Louisiana Tech","Rice","Kennesaw State","Jacksonville State",
+                    "Sam Houston","Liberty","New Mexico State","UTSA","Charlotte")
+  if (t %in% cusa_current) {
+    if (t == "Middle Tennessee" && year <= 2012) return("Sun Belt")
+    if (t == "Western Kentucky" && year < 2009)  return("FCS")
+    if (t == "FAU"  && year < 2001) return(NA_character_)
+    if (t == "FIU"  && year < 2009) return(NA_character_)
+    if (t == "UTSA" && year < 2013) return(NA_character_)
+    if (t == "Kennesaw State" && year < 2022) return(NA_character_)
+    if (t == "Jacksonville State" && year < 2022) return("FCS")
+    return("C-USA")
+  }
+  # Historical C-USA members that left
+  cusa_historical <- c("Tulane","East Carolina","Memphis","Houston","TCU","SMU",
+                       "Marshall","Southern Miss","Texas State","North Texas","Old Dominion")
+  if (t %in% cusa_historical && year <= 2012) return("C-USA")
 
-  # Mountain West variants
-  if (t == "Colorado St")       return("Mountain West")
-  if (t == "San Jose St")       return("Mountain West")
-  if (t == "Boise St")          return("Mountain West")
-  if (t == "Utah St")           return(if (year <= 2011) "WAC" else "Mountain West")
-  if (t == "Fresno St")         return(if (year <= 2011) "WAC" else "Mountain West")
+  # ── MAC ───────────────────────────────────────────────────
+  mac_stable <- c("Central Michigan","Eastern Michigan","Western Michigan","Northern Illinois",
+                  "Ball State","Bowling Green","Buffalo","Kent State","Miami (OH)",
+                  "Ohio","Toledo","Akron","Massachusetts")
+  if (t %in% mac_stable) {
+    if (t == "Massachusetts" && year >= 2016) return("Independent")
+    return("MAC")
+  }
 
-  # Sun Belt variants
-  if (t %in% c("Coastal Car","Coastal Carolina")) return("Sun Belt")
-  if (t %in% c("Ga Southern","GA Southern","Georgia So","Georgia Southern"))
-                                return("Sun Belt")
-  if (t %in% c("App State","Appalachian St","Appalachian State"))
-                                return(if (year >= 2014) "Sun Belt" else "FCS")
-  if (t %in% c("Ga St","GA St","Georgia St","Georgia State")) return("Sun Belt")
-  if (t %in% c("Ark State","Arkansas St","Arkansas State")) return("Sun Belt")
-  if (t %in% c("Tex State","Texas St","Texas State")) return("Sun Belt")
+  # ── WAC (historical, pre-Mountain West consolidation) ─────
+  wac_teams <- c("Hawai'i","Nevada","Utah State","Louisiana Tech","Fresno State",
+                 "San Jose State","UTEP","New Mexico State","Idaho","Boise State")
+  if (t %in% wac_teams && year <= 2011) return("WAC")
 
-  # Pac-10/Pac-12 — Oregon fallback (in case shortDisplayName varies)
-  if (t %in% c("Oregon","Oregon Ducks")) return(if (year >= 2024) "Big Ten" else "Pac-12")
-  if (t %in% c("Wash State","Washington St")) return(if (year >= 2024) "Pac-12" else "Pac-12")
-
-  # SEC variants
-  if (t == "Miss State")        return("SEC")
-  if (t == "Mississippi")       return("SEC")
-
-  # Big 12 variants
-  if (t == "Okla State")        return("Big 12")
-  if (t == "K-State")           return("Big 12")
-  if (t == "Iowa State")        return("Big 12")
-
-  # FCS teams that appear in FBS schedules — assign "FCS" so they
-  # show a conference label instead of NA
-  fcs_schools <- c(
-    "Appalachian St","Appalachian State","App State",
-    "JMU","James Madison",
-    "N Dakota St","North Dakota St","North Dakota State","NDSU",
-    "W Kentucky","WKU",
-    "Youngstown St","Youngstown State",
-    "UNH","New Hampshire",
-    "Portland State","Portland St",
-    "Coast Carolina","Coastal Carolina",
-    "Villanova",
-    "Towson",
-    "Wofford","Furman","The Citadel",
-    "Delaware",
-    "Northeastern",
-    "Liberty",
-    "SF Austin","Stephen F. Austin","SFA",
-    "Ga Southern","Georgia So","Georgia Southern",
-    "Montana St","Montana State",
-    "Bethune-Cookman","Bethune",
-    "Cal Poly",
-    "Maine",
-    "Nicholls","Nicholls St",
-    "SE Louisiana","Southeastern Louisiana",
-    "McNeese","McNeese St","McNeese State",
-    "Lamar",
-    "Sam Houston","Sam Houston St",
-    "SC State","South Carolina State",
-    "Chattanooga","UTC",
-    "Elon",
-    "William & Mary",
-    "Samford",
-    "UT Martin",
-    "Austin Peay"
-  )
-  if (t %in% fcs_schools) return("FCS")
+  # ── FCS schools that play FBS opponents ───────────────────
+  fcs_known <- c("App State","James Madison","North Dakota State","NDSU",
+                 "Western Kentucky","Jacksonville State","Kennesaw State",
+                 "Sam Houston","Georgia Southern","Coastal Carolina",
+                 "Youngstown State","UNH","New Hampshire","Portland State",
+                 "Villanova","Towson","Wofford","Furman","The Citadel","Delaware",
+                 "Northeastern","SF Austin","Stephen F. Austin",
+                 "Maine","Montana State","Montana","Bethune","Bethune-Cookman",
+                 "Cal Poly","Nicholls","Nicholls State","SE Louisiana",
+                 "McNeese","Lamar","SC State","South Carolina State","Chattanooga",
+                 "Elon","William & Mary","Samford","UT Martin","Austin Peay",
+                 "North Dakota","South Dakota","N. Iowa","Northern Iowa",
+                 "Albany","UAlbany","Rhode Island","New Hampshire","Yale","Harvard",
+                 "Princeton","Dartmouth","Columbia","Cornell","Brown","Penn","Colgate",
+                 "Fordham","Holy Cross","Bucknell","Georgetown","Lehigh","Lafayette",
+                 "Liberty","Delaware State","Morgan State","Howard",
+                 "Jackson State","Grambling","Prairie View","Southern",
+                 "Florida A&M","Bethune-Cookman","Alabama State","Alabama A&M",
+                 "Tennessee State","Tennessee Tech","Eastern Kentucky","Morehead State",
+                 "Southeast Missouri","Murray State","Eastern Illinois","Jacksonville",
+                 "Stetson","North Alabama","Lipscomb","North Florida")
+  if (t %in% fcs_known) return("FCS")
 
   return(NA_character_)
 }
