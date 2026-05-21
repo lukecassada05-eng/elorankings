@@ -1,36 +1,36 @@
 season,rank,team,conference,elo,wins,losses,games_played,win_pct,record,best_win_team,best_win_elo,sos,updated_at
-2019,1,Philadelphia Flyers,Metropolitan,1647.4,40,27,67,0.597,40-27,Boston Bruins,1627.8,1494.4,2026-05-20T22:22:36Z
-2019,2,Boston Bruins,Atlantic,1627.8,42,25,67,0.627,42-25,Philadelphia Flyers,1647.4,1493.5,2026-05-20T22:22:36Z
-2019,3,Tampa Bay Lightning,Atlantic,1611.2,43,27,70,0.614,43-27,Philadelphia Flyers,1647.4,1494.3,2026-05-20T22:22:36Z
-2019,4,Colorado Avalanche,Central,1590.6,42,26,68,0.618,42-26,Philadelphia Flyers,1647.4,1500.8,2026-05-20T22:22:36Z
-2019,5,St. Louis Blues,Central,1583.1,42,29,71,0.592,42-29,Tampa Bay Lightning,1611.2,1503,2026-05-20T22:22:36Z
-2019,6,Carolina Hurricanes,Metropolitan,1577,37,27,64,0.578,37-27,Philadelphia Flyers,1647.4,1496.1,2026-05-20T22:22:36Z
-2019,7,Vegas Golden Knights,Pacific,1570.1,38,31,69,0.551,38-31,Philadelphia Flyers,1647.4,1499.7,2026-05-20T22:22:36Z
-2019,8,Winnipeg Jets,Central,1562.1,36,34,70,0.514,36-34,Philadelphia Flyers,1647.4,1498.5,2026-05-20T22:22:36Z
-2019,9,New York Rangers,Metropolitan,1548.4,37,33,70,0.529,37-33,Tampa Bay Lightning,1611.2,1494,2026-05-20T22:22:36Z
-2019,10,Chicago Blackhawks,Central,1528.2,31,36,67,0.463,31-36,Boston Bruins,1627.8,1509.7,2026-05-20T22:22:36Z
-2019,11,Minnesota Wild,Central,1527.4,34,34,68,0.5,34-34,Philadelphia Flyers,1647.4,1502.3,2026-05-20T22:22:36Z
-2019,12,Edmonton Oilers,Pacific,1518.3,34,31,65,0.523,34-31,Philadelphia Flyers,1647.4,1503.7,2026-05-20T22:22:36Z
-2019,13,Calgary Flames,Pacific,1515.5,35,33,68,0.515,35-33,Philadelphia Flyers,1647.4,1501.9,2026-05-20T22:22:36Z
-2019,14,Toronto Maple Leafs,Atlantic,1514.8,36,32,68,0.529,36-32,Philadelphia Flyers,1647.4,1494.7,2026-05-20T22:22:36Z
-2019,15,Washington Capitals,Metropolitan,1508.7,39,28,67,0.582,39-28,Philadelphia Flyers,1647.4,1504.9,2026-05-20T22:22:36Z
-2019,16,Nashville Predators,Central,1499.6,35,34,69,0.507,35-34,Boston Bruins,1627.8,1499.1,2026-05-20T22:22:36Z
-2019,17,Pittsburgh Penguins,Metropolitan,1497.8,40,29,69,0.58,40-29,Philadelphia Flyers,1647.4,1495.7,2026-05-20T22:22:36Z
-2019,18,Florida Panthers,Atlantic,1495.7,35,33,68,0.515,35-33,Philadelphia Flyers,1647.4,1501,2026-05-20T22:22:36Z
-2019,19,Arizona Coyotes,Central,1491.5,33,37,70,0.471,33-37,Philadelphia Flyers,1647.4,1503.2,2026-05-20T22:22:36Z
-2019,20,Columbus Blue Jackets,Metropolitan,1491.2,32,35,67,0.478,32-35,Boston Bruins,1627.8,1493.2,2026-05-20T22:22:36Z
-2019,21,Vancouver Canucks,Pacific,1490.8,35,32,67,0.522,35-32,Philadelphia Flyers,1647.4,1499.4,2026-05-20T22:22:36Z
-2019,22,Dallas Stars,Central,1481.1,34,30,64,0.531,34-30,Philadelphia Flyers,1647.4,1507,2026-05-20T22:22:36Z
-2019,23,Los Angeles Kings,Pacific,1475.7,28,40,68,0.412,28-40,Philadelphia Flyers,1647.4,1500.1,2026-05-20T22:22:36Z
-2019,24,Montreal Canadiens,Atlantic,1457.6,30,39,69,0.435,30-39,Philadelphia Flyers,1647.4,1503.9,2026-05-20T22:22:36Z
-2019,25,New Jersey Devils,Metropolitan,1445.8,26,41,67,0.388,26-41,Philadelphia Flyers,1647.4,1506,2026-05-20T22:22:36Z
-2019,26,Anaheim Ducks,Pacific,1418.8,29,41,70,0.414,29-41,Colorado Avalanche,1590.6,1504.6,2026-05-20T22:22:36Z
-2019,27,New York Islanders,Metropolitan,1407.2,33,33,66,0.5,33-33,Philadelphia Flyers,1647.4,1505.4,2026-05-20T22:22:36Z
-2019,28,San Jose Sharks,Pacific,1406.3,27,39,66,0.409,27-39,Philadelphia Flyers,1647.4,1505.3,2026-05-20T22:22:36Z
-2019,29,Buffalo Sabres,Atlantic,1406.2,27,38,65,0.415,27-38,St. Louis Blues,1583.1,1493.5,2026-05-20T22:22:36Z
-2019,30,Ottawa Senators,Atlantic,1362.1,24,45,69,0.348,24-45,Philadelphia Flyers,1647.4,1499.5,2026-05-20T22:22:36Z
-2019,31,Detroit Red Wings,Atlantic,1242.1,16,51,67,0.239,16-51,Boston Bruins,1627.8,1503.7,2026-05-20T22:22:36Z
-2019,32,Pacific,NA,856,2,0,2,1,2-0,Atlantic,725.4,448.8,2026-05-20T22:22:36Z
-2019,33,Atlantic,NA,725.4,1,1,2,0.5,1-1,Metro,168.2,512.1,2026-05-20T22:22:36Z
-2019,34,Central,NA,172.2,0,1,1,0,0-1,NA,NA,856,2026-05-20T22:22:36Z
-2019,35,Metro,NA,168.2,0,1,1,0,0-1,NA,NA,725.4,2026-05-20T22:22:36Z
+2019,1,Philadelphia Flyers,Metropolitan,1647.4,40,27,67,0.597,40-27,Boston Bruins,1627.8,1494.4,2026-05-21T01:08:14Z
+2019,2,Boston Bruins,Atlantic,1627.8,42,25,67,0.627,42-25,Philadelphia Flyers,1647.4,1493.5,2026-05-21T01:08:14Z
+2019,3,Tampa Bay Lightning,Atlantic,1611.2,43,27,70,0.614,43-27,Philadelphia Flyers,1647.4,1494.3,2026-05-21T01:08:14Z
+2019,4,Colorado Avalanche,Central,1590.6,42,26,68,0.618,42-26,Philadelphia Flyers,1647.4,1500.8,2026-05-21T01:08:14Z
+2019,5,St. Louis Blues,Central,1583.1,42,29,71,0.592,42-29,Tampa Bay Lightning,1611.2,1503,2026-05-21T01:08:14Z
+2019,6,Carolina Hurricanes,Metropolitan,1577,37,27,64,0.578,37-27,Philadelphia Flyers,1647.4,1496.1,2026-05-21T01:08:14Z
+2019,7,Vegas Golden Knights,Pacific,1570.1,38,31,69,0.551,38-31,Philadelphia Flyers,1647.4,1499.7,2026-05-21T01:08:14Z
+2019,8,Winnipeg Jets,Central,1562.1,36,34,70,0.514,36-34,Philadelphia Flyers,1647.4,1498.5,2026-05-21T01:08:14Z
+2019,9,New York Rangers,Metropolitan,1548.4,37,33,70,0.529,37-33,Tampa Bay Lightning,1611.2,1494,2026-05-21T01:08:14Z
+2019,10,Chicago Blackhawks,Central,1528.2,31,36,67,0.463,31-36,Boston Bruins,1627.8,1509.7,2026-05-21T01:08:14Z
+2019,11,Minnesota Wild,Central,1527.4,34,34,68,0.5,34-34,Philadelphia Flyers,1647.4,1502.3,2026-05-21T01:08:14Z
+2019,12,Edmonton Oilers,Pacific,1518.3,34,31,65,0.523,34-31,Philadelphia Flyers,1647.4,1503.7,2026-05-21T01:08:14Z
+2019,13,Calgary Flames,Pacific,1515.5,35,33,68,0.515,35-33,Philadelphia Flyers,1647.4,1501.9,2026-05-21T01:08:14Z
+2019,14,Toronto Maple Leafs,Atlantic,1514.8,36,32,68,0.529,36-32,Philadelphia Flyers,1647.4,1494.7,2026-05-21T01:08:14Z
+2019,15,Washington Capitals,Metropolitan,1508.7,39,28,67,0.582,39-28,Philadelphia Flyers,1647.4,1504.9,2026-05-21T01:08:14Z
+2019,16,Nashville Predators,Central,1499.6,35,34,69,0.507,35-34,Boston Bruins,1627.8,1499.1,2026-05-21T01:08:14Z
+2019,17,Pittsburgh Penguins,Metropolitan,1497.8,40,29,69,0.58,40-29,Philadelphia Flyers,1647.4,1495.7,2026-05-21T01:08:14Z
+2019,18,Florida Panthers,Atlantic,1495.7,35,33,68,0.515,35-33,Philadelphia Flyers,1647.4,1501,2026-05-21T01:08:14Z
+2019,19,Arizona Coyotes,Central,1491.5,33,37,70,0.471,33-37,Philadelphia Flyers,1647.4,1503.2,2026-05-21T01:08:14Z
+2019,20,Columbus Blue Jackets,Metropolitan,1491.2,32,35,67,0.478,32-35,Boston Bruins,1627.8,1493.2,2026-05-21T01:08:14Z
+2019,21,Vancouver Canucks,Pacific,1490.8,35,32,67,0.522,35-32,Philadelphia Flyers,1647.4,1499.4,2026-05-21T01:08:14Z
+2019,22,Dallas Stars,Central,1481.1,34,30,64,0.531,34-30,Philadelphia Flyers,1647.4,1507,2026-05-21T01:08:14Z
+2019,23,Los Angeles Kings,Pacific,1475.7,28,40,68,0.412,28-40,Philadelphia Flyers,1647.4,1500.1,2026-05-21T01:08:14Z
+2019,24,Montreal Canadiens,Atlantic,1457.6,30,39,69,0.435,30-39,Philadelphia Flyers,1647.4,1503.9,2026-05-21T01:08:14Z
+2019,25,New Jersey Devils,Metropolitan,1445.8,26,41,67,0.388,26-41,Philadelphia Flyers,1647.4,1506,2026-05-21T01:08:14Z
+2019,26,Anaheim Ducks,Pacific,1418.8,29,41,70,0.414,29-41,Colorado Avalanche,1590.6,1504.6,2026-05-21T01:08:14Z
+2019,27,New York Islanders,Metropolitan,1407.2,33,33,66,0.5,33-33,Philadelphia Flyers,1647.4,1505.4,2026-05-21T01:08:14Z
+2019,28,San Jose Sharks,Pacific,1406.3,27,39,66,0.409,27-39,Philadelphia Flyers,1647.4,1505.3,2026-05-21T01:08:14Z
+2019,29,Buffalo Sabres,Atlantic,1406.2,27,38,65,0.415,27-38,St. Louis Blues,1583.1,1493.5,2026-05-21T01:08:14Z
+2019,30,Ottawa Senators,Atlantic,1362.1,24,45,69,0.348,24-45,Philadelphia Flyers,1647.4,1499.5,2026-05-21T01:08:14Z
+2019,31,Detroit Red Wings,Atlantic,1242.1,16,51,67,0.239,16-51,Boston Bruins,1627.8,1503.7,2026-05-21T01:08:14Z
+2019,32,Pacific,NA,856,2,0,2,1,2-0,Atlantic,725.4,448.8,2026-05-21T01:08:14Z
+2019,33,Atlantic,NA,725.4,1,1,2,0.5,1-1,Metro,168.2,512.1,2026-05-21T01:08:14Z
+2019,34,Central,NA,172.2,0,1,1,0,0-1,NA,NA,856,2026-05-21T01:08:14Z
+2019,35,Metro,NA,168.2,0,1,1,0,0-1,NA,NA,725.4,2026-05-21T01:08:14Z
