@@ -1,36 +1,32 @@
 season,rank,team,conference,elo,wins,losses,games_played,win_pct,record,best_win_team,best_win_elo,sos,updated_at
-2017,1,Washington Capitals,Metropolitan,1687.8,59,38,97,0.608,59-38,Winnipeg Jets,1646.9,1503.1,2026-05-21T01:05:26Z
-2017,2,Winnipeg Jets,Central,1646.9,57,36,93,0.613,57-36,Washington Capitals,1687.8,1514.7,2026-05-21T01:05:26Z
-2017,3,Nashville Predators,Central,1616.6,56,34,90,0.622,56-34,Washington Capitals,1687.8,1516.5,2026-05-21T01:05:26Z
-2017,4,Vegas Golden Knights,Pacific,1593.3,60,38,98,0.612,60-38,Washington Capitals,1687.8,1518.3,2026-05-21T01:05:26Z
-2017,5,San Jose Sharks,Pacific,1569.3,48,40,88,0.545,48-40,Winnipeg Jets,1646.9,1508.3,2026-05-21T01:05:26Z
-2017,6,Boston Bruins,Atlantic,1568.5,52,38,90,0.578,52-38,Winnipeg Jets,1646.9,1500.9,2026-05-21T01:05:26Z
-2017,7,Tampa Bay Lightning,Atlantic,1562.2,59,34,93,0.634,59-34,Washington Capitals,1687.8,1509.3,2026-05-21T01:05:26Z
-2017,8,Florida Panthers,Atlantic,1562.1,41,37,78,0.526,41-37,Washington Capitals,1687.8,1493.1,2026-05-21T01:05:26Z
-2017,9,Toronto Maple Leafs,Atlantic,1554.3,49,35,84,0.583,49-35,Washington Capitals,1687.8,1498.4,2026-05-21T01:05:26Z
-2017,10,Anaheim Ducks,Pacific,1550.3,43,39,82,0.524,43-39,Washington Capitals,1687.8,1501.6,2026-05-21T01:05:26Z
-2017,11,Columbus Blue Jackets,Metropolitan,1549.9,46,37,83,0.554,46-37,Washington Capitals,1687.8,1503.7,2026-05-21T01:05:26Z
-2017,12,Minnesota Wild,Central,1545,45,40,85,0.529,45-40,Winnipeg Jets,1646.9,1510.6,2026-05-21T01:05:26Z
-2017,13,Los Angeles Kings,Pacific,1539.4,42,34,76,0.553,42-34,Washington Capitals,1687.8,1504.7,2026-05-21T01:05:26Z
-2017,14,Pittsburgh Penguins,Metropolitan,1536.1,45,39,84,0.536,45-39,Washington Capitals,1687.8,1507.6,2026-05-21T01:05:26Z
-2017,15,Philadelphia Flyers,Metropolitan,1535.5,42,41,83,0.506,42-41,Washington Capitals,1687.8,1496.2,2026-05-21T01:05:26Z
-2017,16,New Jersey Devils,Metropolitan,1525.4,44,38,82,0.537,44-38,Washington Capitals,1687.8,1497.7,2026-05-21T01:05:26Z
-2017,17,Colorado Avalanche,Central,1518.6,42,41,83,0.506,42-41,Washington Capitals,1687.8,1510.2,2026-05-21T01:05:26Z
-2017,18,Dallas Stars,Central,1498.5,39,37,76,0.513,39-37,Nashville Predators,1616.6,1509.6,2026-05-21T01:05:26Z
-2017,19,St. Louis Blues,Central,1487,44,37,81,0.543,44-37,Winnipeg Jets,1646.9,1504.4,2026-05-21T01:05:26Z
-2017,20,Arizona Coyotes,Central,1475.3,29,51,80,0.362,29-51,Washington Capitals,1687.8,1501.8,2026-05-21T01:05:26Z
-2017,21,Edmonton Oilers,Pacific,1461,35,46,81,0.432,35-46,Vegas Golden Knights,1593.3,1504.7,2026-05-21T01:05:26Z
-2017,22,Carolina Hurricanes,Metropolitan,1450.1,36,45,81,0.444,36-45,Washington Capitals,1687.8,1501.9,2026-05-21T01:05:26Z
-2017,23,Vancouver Canucks,Pacific,1409.3,30,51,81,0.37,30-51,Washington Capitals,1687.8,1509.1,2026-05-21T01:05:26Z
-2017,24,Chicago Blackhawks,Central,1407.6,32,46,78,0.41,32-46,Washington Capitals,1687.8,1513.3,2026-05-21T01:05:26Z
-2017,25,Detroit Red Wings,Atlantic,1400.6,28,48,76,0.368,28-48,Washington Capitals,1687.8,1500.6,2026-05-21T01:05:26Z
-2017,26,Calgary Flames,Pacific,1399.4,35,43,78,0.449,35-43,Washington Capitals,1687.8,1505.3,2026-05-21T01:05:26Z
-2017,27,New York Islanders,Metropolitan,1387.9,35,46,81,0.432,35-46,Washington Capitals,1687.8,1503.8,2026-05-21T01:05:26Z
-2017,28,Montreal Canadiens,Atlantic,1377.4,28,48,76,0.368,28-48,Washington Capitals,1687.8,1497.4,2026-05-21T01:05:26Z
-2017,29,Buffalo Sabres,Atlantic,1377.1,25,51,76,0.329,25-51,Washington Capitals,1687.8,1498.9,2026-05-21T01:05:26Z
-2017,30,New York Rangers,Metropolitan,1368.3,32,45,77,0.416,32-45,Washington Capitals,1687.8,1503.6,2026-05-21T01:05:26Z
-2017,31,Ottawa Senators,Atlantic,1339.2,26,51,77,0.338,26-51,Nashville Predators,1616.6,1502.1,2026-05-21T01:05:26Z
-2017,32,Pacific,NA,896,2,0,2,1,2-0,Atlantic,675.9,425.5,2026-05-21T01:05:26Z
-2017,33,Atlantic,NA,675.9,1,1,2,0.5,1-1,Metro,168.6,532.3,2026-05-21T01:05:26Z
-2017,34,Central,NA,175.2,0,1,1,0,0-1,NA,NA,896,2026-05-21T01:05:26Z
-2017,35,Metro,NA,168.6,0,1,1,0,0-1,NA,NA,675.9,2026-05-21T01:05:26Z
+2017,1,Washington Capitals,Metropolitan,1686,58,37,95,0.611,58-37,Winnipeg Jets,1644.1,1505.4,2026-05-21T01:51:28Z
+2017,2,Winnipeg Jets,Central,1644.1,56,36,92,0.609,56-36,Washington Capitals,1686,1515.4,2026-05-21T01:51:28Z
+2017,3,Nashville Predators,Central,1613.2,54,34,88,0.614,54-34,Washington Capitals,1686,1515.1,2026-05-21T01:51:28Z
+2017,4,Vegas Golden Knights,Pacific,1589.3,59,37,96,0.615,59-37,Washington Capitals,1686,1517,2026-05-21T01:51:28Z
+2017,5,San Jose Sharks,Pacific,1568.2,48,40,88,0.545,48-40,Winnipeg Jets,1644.1,1508.2,2026-05-21T01:51:28Z
+2017,6,Boston Bruins,Atlantic,1567.7,52,38,90,0.578,52-38,Winnipeg Jets,1644.1,1500.6,2026-05-21T01:51:28Z
+2017,7,Florida Panthers,Atlantic,1564.3,40,36,76,0.526,40-36,Washington Capitals,1686,1494.3,2026-05-21T01:51:28Z
+2017,8,Tampa Bay Lightning,Atlantic,1561.9,59,34,93,0.634,59-34,Washington Capitals,1686,1509.3,2026-05-21T01:51:28Z
+2017,9,Anaheim Ducks,Pacific,1550.2,43,39,82,0.524,43-39,Washington Capitals,1686,1501.7,2026-05-21T01:51:28Z
+2017,10,Toronto Maple Leafs,Atlantic,1549.4,46,35,81,0.568,46-35,Washington Capitals,1686,1497.8,2026-05-21T01:51:28Z
+2017,11,Columbus Blue Jackets,Metropolitan,1549.1,44,37,81,0.543,44-37,Washington Capitals,1686,1505.4,2026-05-21T01:51:28Z
+2017,12,Los Angeles Kings,Pacific,1548,42,33,75,0.56,42-33,Washington Capitals,1686,1503.2,2026-05-21T01:51:28Z
+2017,13,Minnesota Wild,Central,1544.4,44,39,83,0.53,44-39,Winnipeg Jets,1644.1,1511.2,2026-05-21T01:51:28Z
+2017,14,Pittsburgh Penguins,Metropolitan,1535.8,45,39,84,0.536,45-39,Washington Capitals,1686,1507.4,2026-05-21T01:51:28Z
+2017,15,Philadelphia Flyers,Metropolitan,1534.8,41,39,80,0.512,41-39,Washington Capitals,1686,1495.7,2026-05-21T01:51:28Z
+2017,16,New Jersey Devils,Metropolitan,1526.2,44,37,81,0.543,44-37,Washington Capitals,1686,1497,2026-05-21T01:51:28Z
+2017,17,Colorado Avalanche,Central,1517.7,42,41,83,0.506,42-41,Washington Capitals,1686,1509.9,2026-05-21T01:51:28Z
+2017,18,Dallas Stars,Central,1498.2,39,37,76,0.513,39-37,Nashville Predators,1613.2,1509.3,2026-05-21T01:51:28Z
+2017,19,St. Louis Blues,Central,1484.7,43,37,80,0.537,43-37,Winnipeg Jets,1644.1,1506,2026-05-21T01:51:28Z
+2017,20,Edmonton Oilers,Pacific,1472.5,35,43,78,0.449,35-43,Vegas Golden Knights,1589.3,1505.4,2026-05-21T01:51:28Z
+2017,21,Arizona Coyotes,Central,1466.5,27,50,77,0.351,27-50,Washington Capitals,1686,1503.2,2026-05-21T01:51:28Z
+2017,22,Carolina Hurricanes,Metropolitan,1450.8,36,45,81,0.444,36-45,Washington Capitals,1686,1501.9,2026-05-21T01:51:28Z
+2017,23,Vancouver Canucks,Pacific,1415.7,29,49,78,0.372,29-49,Washington Capitals,1686,1507.2,2026-05-21T01:51:28Z
+2017,24,Chicago Blackhawks,Central,1407.6,32,46,78,0.41,32-46,Washington Capitals,1686,1513,2026-05-21T01:51:28Z
+2017,25,Detroit Red Wings,Atlantic,1406,28,46,74,0.378,28-46,Washington Capitals,1686,1499.5,2026-05-21T01:51:28Z
+2017,26,Calgary Flames,Pacific,1393.7,34,42,76,0.447,34-42,Washington Capitals,1686,1505.6,2026-05-21T01:51:28Z
+2017,27,New York Islanders,Metropolitan,1388,35,46,81,0.432,35-46,Washington Capitals,1686,1503.7,2026-05-21T01:51:28Z
+2017,28,Montreal Canadiens,Atlantic,1381.2,28,47,75,0.373,28-47,Washington Capitals,1686,1496.9,2026-05-21T01:51:28Z
+2017,29,Buffalo Sabres,Atlantic,1377.4,24,50,74,0.324,24-50,Washington Capitals,1686,1500.3,2026-05-21T01:51:28Z
+2017,30,New York Rangers,Metropolitan,1365.7,31,45,76,0.408,31-45,Winnipeg Jets,1644.1,1501.3,2026-05-21T01:51:28Z
+2017,31,Ottawa Senators,Atlantic,1341.5,26,50,76,0.342,26-50,Nashville Predators,1613.2,1501.2,2026-05-21T01:51:28Z

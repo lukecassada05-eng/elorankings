@@ -1,37 +1,33 @@
 season,rank,team,conference,elo,wins,losses,games_played,win_pct,record,best_win_team,best_win_elo,sos,updated_at
-2022,1,Boston Bruins,Atlantic,1722.2,67,21,88,0.761,67-21,Vegas Golden Knights,1700.4,1504,2026-05-21T01:12:18Z
-2022,2,Vegas Golden Knights,Pacific,1700.4,67,35,102,0.657,67-35,Boston Bruins,1722.2,1504.3,2026-05-21T01:12:18Z
-2022,3,Edmonton Oilers,Pacific,1653.5,55,38,93,0.591,55-38,Boston Bruins,1722.2,1508.5,2026-05-21T01:12:18Z
-2022,4,New York Rangers,Metropolitan,1643.9,49,35,84,0.583,49-35,Vegas Golden Knights,1700.4,1501.3,2026-05-21T01:12:18Z
-2022,5,Colorado Avalanche,Central,1637,55,32,87,0.632,55-32,Vegas Golden Knights,1700.4,1497.3,2026-05-21T01:12:18Z
-2022,6,New Jersey Devils,Metropolitan,1593.3,56,34,90,0.622,56-34,Boston Bruins,1722.2,1511.7,2026-05-21T01:12:18Z
-2022,7,Dallas Stars,Central,1584.9,52,44,96,0.542,52-44,Vegas Golden Knights,1700.4,1508.7,2026-05-21T01:12:18Z
-2022,8,Los Angeles Kings,Pacific,1577.5,49,40,89,0.551,49-40,Boston Bruins,1722.2,1509.3,2026-05-21T01:12:18Z
-2022,9,Florida Panthers,Atlantic,1558.9,48,49,97,0.495,48-49,Boston Bruins,1722.2,1527.5,2026-05-21T01:12:18Z
-2022,10,New York Islanders,Metropolitan,1558.5,47,41,88,0.534,47-41,Vegas Golden Knights,1700.4,1497.3,2026-05-21T01:12:18Z
-2022,11,Toronto Maple Leafs,Atlantic,1553.5,51,36,87,0.586,51-36,Boston Bruins,1722.2,1498.8,2026-05-21T01:12:18Z
-2022,12,Seattle Kraken,Pacific,1548.2,50,43,93,0.538,50-43,Boston Bruins,1722.2,1512.3,2026-05-21T01:12:18Z
-2022,13,Carolina Hurricanes,Metropolitan,1538.4,54,38,92,0.587,54-38,Boston Bruins,1722.2,1510.7,2026-05-21T01:12:18Z
-2022,14,Nashville Predators,Central,1528.9,42,39,81,0.519,42-39,Boston Bruins,1722.2,1497.2,2026-05-21T01:12:18Z
-2022,15,Calgary Flames,Pacific,1523.6,39,43,82,0.476,39-43,Vegas Golden Knights,1700.4,1498.9,2026-05-21T01:12:18Z
-2022,16,Tampa Bay Lightning,Atlantic,1521.7,49,40,89,0.551,49-40,Boston Bruins,1722.2,1505,2026-05-21T01:12:18Z
-2022,17,Minnesota Wild,Central,1505.5,47,39,86,0.547,47-39,Edmonton Oilers,1653.5,1499.1,2026-05-21T01:12:18Z
-2022,18,Ottawa Senators,Atlantic,1496.5,40,40,80,0.5,40-40,Boston Bruins,1722.2,1498.5,2026-05-21T01:12:18Z
-2022,19,Buffalo Sabres,Atlantic,1496.2,43,41,84,0.512,43-41,Boston Bruins,1722.2,1501.3,2026-05-21T01:12:18Z
-2022,20,Vancouver Canucks,Pacific,1490.1,38,46,84,0.452,38-46,Vegas Golden Knights,1700.4,1503.9,2026-05-21T01:12:18Z
-2022,21,Winnipeg Jets,Central,1489.7,44,39,83,0.53,44-39,Vegas Golden Knights,1700.4,1512.3,2026-05-21T01:12:18Z
-2022,22,Pittsburgh Penguins,Metropolitan,1471.1,41,42,83,0.494,41-42,Vegas Golden Knights,1700.4,1500.1,2026-05-21T01:12:18Z
-2022,23,St. Louis Blues,Central,1440,38,46,84,0.452,38-46,Vegas Golden Knights,1700.4,1498.9,2026-05-21T01:12:18Z
-2022,24,Washington Capitals,Metropolitan,1407.3,36,45,81,0.444,36-45,Boston Bruins,1722.2,1498.9,2026-05-21T01:12:18Z
-2022,25,Detroit Red Wings,Atlantic,1394.5,36,50,86,0.419,36-50,Boston Bruins,1722.2,1502.7,2026-05-21T01:12:18Z
-2022,26,Montreal Canadiens,Atlantic,1393.6,30,49,79,0.38,30-49,Edmonton Oilers,1653.5,1500.6,2026-05-21T01:12:18Z
-2022,27,Philadelphia Flyers,Metropolitan,1392.6,31,52,83,0.373,31-52,Edmonton Oilers,1653.5,1504.4,2026-05-21T01:12:18Z
-2022,28,Arizona Coyotes,Central,1354.3,28,56,84,0.333,28-56,Boston Bruins,1722.2,1510.1,2026-05-21T01:12:18Z
-2022,29,Columbus Blue Jackets,Metropolitan,1321.4,27,55,82,0.329,27-55,Edmonton Oilers,1653.5,1504.5,2026-05-21T01:12:18Z
-2022,30,Chicago Blackhawks,Central,1313.5,25,57,82,0.305,25-57,Boston Bruins,1722.2,1500.9,2026-05-21T01:12:18Z
-2022,31,San Jose Sharks,Pacific,1310.9,22,57,79,0.278,22-57,Vegas Golden Knights,1700.4,1509.2,2026-05-21T01:12:18Z
-2022,32,Anaheim Ducks,Pacific,1278.5,23,57,80,0.288,23-57,Vegas Golden Knights,1700.4,1512.3,2026-05-21T01:12:18Z
-2022,33,Atlantic,NA,881.3,2,0,2,1,2-0,Central,687.6,430.2,2026-05-21T01:12:18Z
-2022,34,Central,NA,687.6,1,1,2,0.5,1-1,Pacific,172.7,527,2026-05-21T01:12:18Z
-2022,35,Metro,NA,172.9,0,1,1,0,0-1,NA,NA,881.3,2026-05-21T01:12:18Z
-2022,36,Pacific,NA,172.7,0,1,1,0,0-1,NA,NA,687.6,2026-05-21T01:12:18Z
+2022,1,Boston Bruins,Atlantic,1724.4,67,20,87,0.77,67-20,Vegas Golden Knights,1698.5,1502.7,2026-05-21T01:57:03Z
+2022,2,Vegas Golden Knights,Pacific,1698.5,66,35,101,0.653,66-35,Boston Bruins,1724.4,1505.4,2026-05-21T01:57:03Z
+2022,3,Edmonton Oilers,Pacific,1653.1,55,38,93,0.591,55-38,Boston Bruins,1724.4,1508.1,2026-05-21T01:57:03Z
+2022,4,New York Rangers,Metropolitan,1643.4,48,35,83,0.578,48-35,Vegas Golden Knights,1698.5,1502.8,2026-05-21T01:57:03Z
+2022,5,Colorado Avalanche,Central,1636.4,54,31,85,0.635,54-31,Vegas Golden Knights,1698.5,1495.2,2026-05-21T01:57:03Z
+2022,6,New Jersey Devils,Metropolitan,1592.2,54,34,88,0.614,54-34,Boston Bruins,1724.4,1508.5,2026-05-21T01:57:03Z
+2022,7,Dallas Stars,Central,1581.5,51,44,95,0.537,51-44,Vegas Golden Knights,1698.5,1509.2,2026-05-21T01:57:03Z
+2022,8,Los Angeles Kings,Pacific,1576.1,48,40,88,0.545,48-40,Boston Bruins,1724.4,1509,2026-05-21T01:57:03Z
+2022,9,New York Islanders,Metropolitan,1560,47,40,87,0.54,47-40,Vegas Golden Knights,1698.5,1496.2,2026-05-21T01:57:03Z
+2022,10,Toronto Maple Leafs,Atlantic,1554.6,51,36,87,0.586,51-36,Boston Bruins,1724.4,1499.1,2026-05-21T01:57:03Z
+2022,11,Florida Panthers,Atlantic,1552.8,47,49,96,0.49,47-49,Boston Bruins,1724.4,1528.2,2026-05-21T01:57:03Z
+2022,12,Seattle Kraken,Pacific,1547.5,50,42,92,0.543,50-42,Boston Bruins,1724.4,1511.8,2026-05-21T01:57:03Z
+2022,13,Carolina Hurricanes,Metropolitan,1544.8,52,37,89,0.584,52-37,Boston Bruins,1724.4,1512.5,2026-05-21T01:57:03Z
+2022,14,Nashville Predators,Central,1529.7,42,38,80,0.525,42-38,Boston Bruins,1724.4,1497.6,2026-05-21T01:57:03Z
+2022,15,Tampa Bay Lightning,Atlantic,1525.6,49,39,88,0.557,49-39,Boston Bruins,1724.4,1506.8,2026-05-21T01:57:03Z
+2022,16,Calgary Flames,Pacific,1516.3,38,43,81,0.469,38-43,Vegas Golden Knights,1698.5,1498.7,2026-05-21T01:57:03Z
+2022,17,Minnesota Wild,Central,1509,46,37,83,0.554,46-37,Edmonton Oilers,1653.1,1496.9,2026-05-21T01:57:03Z
+2022,18,Buffalo Sabres,Atlantic,1497.1,43,41,84,0.512,43-41,Boston Bruins,1724.4,1501.5,2026-05-21T01:57:03Z
+2022,19,Ottawa Senators,Atlantic,1496.8,40,40,80,0.5,40-40,Boston Bruins,1724.4,1498.7,2026-05-21T01:57:03Z
+2022,20,Winnipeg Jets,Central,1489.9,44,39,83,0.53,44-39,Vegas Golden Knights,1698.5,1512,2026-05-21T01:57:03Z
+2022,21,Vancouver Canucks,Pacific,1489.4,38,46,84,0.452,38-46,Vegas Golden Knights,1698.5,1503.5,2026-05-21T01:57:03Z
+2022,22,Pittsburgh Penguins,Metropolitan,1472.1,41,42,83,0.494,41-42,Vegas Golden Knights,1698.5,1500.3,2026-05-21T01:57:03Z
+2022,23,St. Louis Blues,Central,1444.4,37,45,82,0.451,37-45,Vegas Golden Knights,1698.5,1497.3,2026-05-21T01:57:03Z
+2022,24,Washington Capitals,Metropolitan,1407,35,45,80,0.438,35-45,Boston Bruins,1724.4,1501.3,2026-05-21T01:57:03Z
+2022,25,Detroit Red Wings,Atlantic,1395.9,36,49,85,0.424,36-49,Boston Bruins,1724.4,1502.5,2026-05-21T01:57:03Z
+2022,26,Philadelphia Flyers,Metropolitan,1395.4,31,50,81,0.383,31-50,Edmonton Oilers,1653.1,1502.4,2026-05-21T01:57:03Z
+2022,27,Montreal Canadiens,Atlantic,1394.2,30,49,79,0.38,30-49,Edmonton Oilers,1653.1,1500.9,2026-05-21T01:57:03Z
+2022,28,Arizona Coyotes,Central,1347.6,27,56,83,0.325,27-56,Boston Bruins,1724.4,1509.9,2026-05-21T01:57:03Z
+2022,29,Columbus Blue Jackets,Metropolitan,1322.8,27,54,81,0.333,27-54,Edmonton Oilers,1653.1,1506,2026-05-21T01:57:03Z
+2022,30,Chicago Blackhawks,Central,1313.5,25,56,81,0.309,25-56,Boston Bruins,1724.4,1498.3,2026-05-21T01:57:03Z
+2022,31,San Jose Sharks,Pacific,1310.1,22,57,79,0.278,22-57,Vegas Golden Knights,1698.5,1508.9,2026-05-21T01:57:03Z
+2022,32,Anaheim Ducks,Pacific,1277.8,23,57,80,0.288,23-57,Vegas Golden Knights,1698.5,1512,2026-05-21T01:57:03Z
