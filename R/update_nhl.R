@@ -14,11 +14,14 @@ suppressPackageStartupMessages({
 })
 source("R/elo_engine.R")
 
-CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
-if (as.integer(format(Sys.Date(),"%m")) < 10) CURRENT_YEAR <- CURRENT_YEAR - 1
-# Only update current season — historical CSVs are already correct
-SEASONS <- CURRENT_YEAR  # single value
-message("NHL: updating season ", SEASONS, " only")
+CURRENT_YEAR  <- as.integer(format(Sys.Date(), "%Y"))
+CURRENT_MONTH <- as.integer(format(Sys.Date(), "%m"))
+# NHL season: Oct(yr) through Jun(yr+1); CSV named by spring year
+# e.g. 2024-25 season → season 2025
+CURRENT_SEASON <- if (CURRENT_MONTH >= 10) CURRENT_YEAR + 1L else CURRENT_YEAR
+NEXT_SEASON    <- CURRENT_SEASON + 1L
+SEASONS        <- c(CURRENT_SEASON, NEXT_SEASON)
+message("NHL: updating seasons ", paste(SEASONS, collapse=", "))
 OUT_DIR  <- "docs/NHL/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 

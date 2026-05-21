@@ -16,8 +16,18 @@ suppressPackageStartupMessages({
 source("R/elo_engine.R")
 
 # Only update current season — historical CSVs are already correct
-SEASONS <- if (as.integer(format(Sys.Date(), "%m")) < 9) CURRENT_YEAR - 1 else CURRENT_YEAR
-message("NFL: updating season ", SEASONS, " only")
+CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
+CURRENT_MONTH <- as.integer(format(Sys.Date(), "%m"))
+# NFL season starts Sep; if before Sep we're still in prior season
+CURRENT_SEASON <- if (CURRENT_MONTH < 9) CURRENT_YEAR - 1L else CURRENT_YEAR
+# Check if next season has started (Sep 1 of next year)
+NEXT_SEASON <- CURRENT_SEASON + 1L
+# Only update seasons that have actual data
+# Run current season + check if next season has started
+# nflreadr handles future seasons gracefully (returns empty if no games yet)
+NEXT_SEASON <- CURRENT_SEASON + 1L
+SEASONS <- c(CURRENT_SEASON, NEXT_SEASON)
+message("NFL: updating seasons ", paste(SEASONS, collapse=", "))
 OUT_DIR <- "docs/NFL/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 

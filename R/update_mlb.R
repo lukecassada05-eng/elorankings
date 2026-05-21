@@ -16,8 +16,13 @@ suppressPackageStartupMessages({
 source("R/elo_engine.R")
 
 # Only update current season — historical CSVs are already correct  
-SEASONS <- if (as.integer(format(Sys.Date(), "%m")) < 3) CURRENT_YEAR - 1 else CURRENT_YEAR
-message("MLB: updating season ", SEASONS, " only")
+CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
+CURRENT_MONTH <- as.integer(format(Sys.Date(), "%m"))
+# MLB season runs Mar-Oct; if before Mar we're still in prior year
+CURRENT_SEASON <- if (CURRENT_MONTH < 3) CURRENT_YEAR - 1L else CURRENT_YEAR
+NEXT_SEASON <- CURRENT_SEASON + 1L
+SEASONS <- c(CURRENT_SEASON, NEXT_SEASON)
+message("MLB: updating seasons ", paste(SEASONS, collapse=", "))
 OUT_DIR <- "docs/MLB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 

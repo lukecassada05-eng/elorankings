@@ -16,7 +16,7 @@ source("R/elo_engine.R")
 Sys.setenv(TZ = "America/New_York")
 
 CURRENT_SEASON <- most_recent_mbb_season()
-SEASONS        <- 2003:CURRENT_SEASON
+SEASONS        <- 2003:(CURRENT_SEASON + 1L)  # +1 catches next season if started
 OUT_DIR        <- "docs/CBB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 

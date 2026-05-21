@@ -20,8 +20,9 @@ cur_year  <- as.integer(format(Sys.Date(), "%Y"))
 # Season ends May/June; if Aug+ current season has started so end_year = next year
 LAST_END  <- if (cur_month >= 8) cur_year + 1 else cur_year
 # Only update current season — historical CSVs are already correct
-END_YEARS <- LAST_END  # single value: just the current season
-message("Soccer: updating season ending ", LAST_END, " only")
+# Include next season so it auto-populates when football-data.co.uk has data
+END_YEARS <- c(LAST_END, LAST_END + 1L)
+message("Soccer: updating seasons ending ", paste(END_YEARS, collapse=", "))
 
 # ── League definitions (EXACT same as your working code) ─────
 # code = football-data.co.uk file code

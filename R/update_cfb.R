@@ -12,7 +12,7 @@ source("R/elo_engine.R")
 
 CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
 if (as.integer(format(Sys.Date(), "%m")) < 8) CURRENT_YEAR <- CURRENT_YEAR - 1
-SEASONS <- 2001:CURRENT_YEAR
+SEASONS <- 2001:(CURRENT_YEAR + 1L)  # +1 catches next season if started
 OUT_DIR  <- "docs/CFB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
