@@ -617,7 +617,25 @@ window.initSportPage = function(CFG) {
         <div id="trackerEmpty"
              style="color:var(--text-muted);font-size:0.83rem;
                     text-align:center;padding:2rem;display:none"></div>
+        <div id="trackerSourceNote"
+             style="font-family:var(--font-mono);font-size:0.62rem;
+                    color:var(--text-dim);margin-top:0.75rem;line-height:1.7">
+        </div>
       </div>`;
+
+    // Set source accuracy note
+    const sourceNotes = {
+      CFB:   'Source: ESPN API (same as R script) — final Elo should match CSV exactly.',
+      NHL:   'Source: ESPN API (same as R script) — final Elo should match CSV exactly.',
+      CBASE: 'Source: ESPN API (same as R script) — final Elo should match CSV exactly.',
+      NBA:   'Source: ESPN API (R script uses hoopR/NBA Stats API) — small differences expected.',
+      CBB:   'Source: ESPN API (R script uses hoopR) — small differences expected.',
+      NFL:   'Source: ESPN API (R script uses nflreadr) — differences expected due to different data source.',
+      MLB:   'Source: ESPN API (R script uses MLB Stats API) — differences expected due to different data source.',
+      Soccer:'N/A'
+    };
+    const noteEl = document.getElementById('trackerSourceNote');
+    if (noteEl) noteEl.textContent = sourceNotes[CFG.sport] || '';
 
     // ── Populate select (called fresh each filter change) ─────
     const fillSelect = (q) => {
@@ -727,7 +745,7 @@ window.initSportPage = function(CFG) {
               </div>
               ${csvElo ? `<div style="font-size:0.67rem;color:var(--text-dim);
                                       font-family:var(--font-mono);margin-top:0.15rem">
-                CSV: ${csvElo}
+                CSV (R engine): ${csvElo}
                 ${diff !== null
                   ? `<span style="color:${Math.abs(parseFloat(diff))<1?'var(--text-dim)':parseFloat(diff)>0?'var(--green-hi)':'var(--red-hi)'};margin-left:0.3rem">
                       (${parseFloat(diff)>0?'+':''}${diff})
