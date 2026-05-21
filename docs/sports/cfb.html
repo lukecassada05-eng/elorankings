@@ -20,6 +20,13 @@
       <li><a href="nhl.html">NHL</a></li>
       <li><a href="soccer.html">Soccer</a></li>
     </ul>
+    <button class="nav-hamburger" id="navToggle" aria-label="Open menu">☰</button>
+  </div>
+  <div class="nav-mobile" id="navMobile" hidden>
+    <a href="nba.html">NBA</a><a href="cbb.html">College Basketball</a>
+    <a href="nfl.html">NFL</a><a href="cfb.html">College Football</a>
+    <a href="mlb.html">MLB</a><a href="cbase.html">College Baseball</a>
+    <a href="nhl.html">NHL</a><a href="soccer.html">Soccer</a>
   </div>
 </nav>
 
@@ -28,7 +35,7 @@
   <div class="page-header fade-up">
     <div class="breadcrumb"><a href="../index.html">Home</a> / CFB</div>
     <h1>🏟 <em>College Football</em></h1>
-    <p>Margin-adjusted Elo · FBS teams · 2001–present · Requires CFBD_API_KEY secret</p>
+    <p>Margin-adjusted Elo · FBS teams · 2001–present · Updated twice daily via ESPN API</p>
   </div>
 
   <!-- Season picker -->
@@ -50,6 +57,7 @@
     <button class="tab" data-tab="byconf">By Conference</button>
     <button class="tab" data-tab="resume">CFP Resume</button>
     <button class="tab" data-tab="predictor">Game Predictor</button>
+    <button class="tab" data-tab="history">Elo History</button>
   </div>
 
   <!-- Rankings panel -->
@@ -101,6 +109,9 @@
   </div>
   <div id="panel-resume" hidden></div>
 
+  <div id="panel-history" hidden>
+    <!-- populated by sport-page.js renderHistory() -->
+  </div>
 </div><!-- .page -->
 
 <script src="../js/utils.js"></script>

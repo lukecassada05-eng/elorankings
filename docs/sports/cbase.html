@@ -20,6 +20,13 @@
       <li><a href="nhl.html">NHL</a></li>
       <li><a href="soccer.html">Soccer</a></li>
     </ul>
+    <button class="nav-hamburger" id="navToggle" aria-label="Open menu">☰</button>
+  </div>
+  <div class="nav-mobile" id="navMobile" hidden>
+    <a href="nba.html">NBA</a><a href="cbb.html">College Basketball</a>
+    <a href="nfl.html">NFL</a><a href="cfb.html">College Football</a>
+    <a href="mlb.html">MLB</a><a href="cbase.html">College Baseball</a>
+    <a href="nhl.html">NHL</a><a href="soccer.html">Soccer</a>
   </div>
 </nav>
 
@@ -50,6 +57,7 @@
     <button class="tab" data-tab="byconf">By Conference</button>
     <button class="tab" data-tab="bracketology">Bracketology</button>
     <button class="tab" data-tab="predictor">Game Predictor</button>
+    <button class="tab" data-tab="history">Elo History</button>
   </div>
 
   <!-- Rankings panel -->
@@ -101,6 +109,9 @@
   </div>
   <div id="panel-bracketology" hidden><div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;margin-bottom:1rem;font-size:0.83rem;color:var(--text-muted);line-height:1.7">Auto bids go to the top-rated team per conference. At-large bids fill the 64-team CWS field. <span id="bracketInfo" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim)"></span></div><div id="bracketView"></div></div>
 
+  <div id="panel-history" hidden>
+    <!-- populated by sport-page.js renderHistory() -->
+  </div>
 </div><!-- .page -->
 
 <script src="../js/utils.js"></script>
