@@ -39,9 +39,10 @@ jobs:
       - name: Install R packages
         run: |
           Rscript -e "
-            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
-            pak::pak(c('dplyr','readr','httr','jsonlite'))
-            stopifnot(requireNamespace('httr', quietly=TRUE))
+            options(repos = c(CRAN = 'https://packagemanager.posit.co/cran/__linux__/noble/latest'))
+            install.packages(c('dplyr','readr','httr','jsonlite'))
+            stopifnot(requireNamespace('dplyr', quietly=TRUE))
+            stopifnot(requireNamespace('httr',  quietly=TRUE))
             message('packages OK')
           "
 
