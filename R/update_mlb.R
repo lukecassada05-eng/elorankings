@@ -51,6 +51,11 @@ DIVS <- c(
 
 # ── Helper: fetch one season (exact column names from your code) ──
 get_mlb_season <- function(yr) {
+  # Don't attempt future seasons — baseballr throws errors
+  if (yr > as.integer(format(Sys.Date(), "%Y"))) {
+    message("  Skipping ", yr, " — season hasn't started yet")
+    return(NULL)
+  }
   message("  Fetching MLB ", yr, "...")
   tryCatch({
     mlb_schedule(season = yr) %>%

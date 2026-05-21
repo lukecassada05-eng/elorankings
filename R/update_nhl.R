@@ -114,9 +114,14 @@ fetch_day <- function(ds) {
 }
 
 fetch_nhl_season <- function(yr) {
-  message("  ESPN API: NHL ", yr, "-", yr+1)
-  dates <- seq(as.Date(paste0(yr,"-10-01")),
-               min(as.Date(paste0(yr+1,"-06-30")), Sys.Date()), by="1 day")
+  seas_start <- as.Date(paste0(yr, "-10-01"))
+  seas_end   <- min(as.Date(paste0(yr + 1, "-06-30")), Sys.Date())
+  message("  ESPN API: NHL ", yr, "-", yr + 1)
+  if (seas_start > seas_end) {
+    message("  Season hasn't started yet — skipping")
+    return(NULL)
+  }
+  dates <- seq(seas_start, seas_end, by="1 day")
   all_games <- list()
   for (d in as.character(dates)) {
     res <- fetch_day(gsub("-","",d))

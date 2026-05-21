@@ -22,12 +22,11 @@ CURRENT_MONTH <- as.integer(format(Sys.Date(), "%m"))
 CURRENT_SEASON <- if (CURRENT_MONTH < 9) CURRENT_YEAR - 1L else CURRENT_YEAR
 # Check if next season has started (Sep 1 of next year)
 NEXT_SEASON <- CURRENT_SEASON + 1L
-# Only update seasons that have actual data
-# Run current season + check if next season has started
-# nflreadr handles future seasons gracefully (returns empty if no games yet)
-NEXT_SEASON <- CURRENT_SEASON + 1L
-SEASONS <- c(CURRENT_SEASON, NEXT_SEASON)
-message("NFL: updating seasons ", paste(SEASONS, collapse=", "))
+# Only include next season if Sep has passed (season has started)
+# nflreadr throws warnings/errors for years with no schedule data
+SEASONS <- if (CURRENT_MONTH >= 9 && NEXT_SEASON <= as.integer(format(Sys.Date(), "%Y")))
+             c(CURRENT_SEASON, NEXT_SEASON) else CURRENT_SEASON
+message("NFL: updating seasons ", paste(SEASONS, collapse=", "), "\n")
 OUT_DIR <- "docs/NFL/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 

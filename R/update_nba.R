@@ -166,10 +166,15 @@ fetch_day <- function(ds) {
 }
 
 fetch_nba_season <- function(s) {
-  start_yr <- s - 1
+  start_yr  <- s - 1
+  seas_start <- as.Date(paste0(start_yr, "-10-01"))
+  seas_end   <- min(as.Date(paste0(s, "-06-30")), Sys.Date())
   message("  ESPN API: NBA ", start_yr, "-", s)
-  dates <- seq(as.Date(paste0(start_yr,"-10-01")),
-               min(as.Date(paste0(s,"-06-30")), Sys.Date()), by="1 day")
+  if (seas_start > seas_end) {
+    message("  Season hasn't started yet — skipping")
+    return(NULL)
+  }
+  dates <- seq(seas_start, seas_end, by="1 day")
   all_games <- list()
   for (d in as.character(dates)) {
     res <- fetch_day(gsub("-","",d))
