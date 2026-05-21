@@ -220,6 +220,83 @@ ALIASES <- c(
   "Brigham Young"="BYU",
   # Notre Dame variants
   "Notre Dame Fighting Irish"="Notre Dame","ND"="Notre Dame",
+  # Short ESPN variants not yet covered
+  "Mich. St."="Michigan State","Mich St"="Michigan State",
+  "LA Tech"="Louisiana Tech","La Tech"="Louisiana Tech",
+  "C. Carolina"="Coastal Carolina","Coastal"="Coastal Carolina",
+  "OSU"="Ohio State",
+  "S Illinois"="Southern Illinois","S. Illinois"="Southern Illinois",
+  "S Dakota St"="South Dakota State","S. Dakota St"="South Dakota State",
+  "Georgia St"="Georgia State","Ga. St."="Georgia State",
+  "Western KY"="Western Kentucky","Western Ky."="Western Kentucky",
+  "C Michigan"="Central Michigan","C. Michigan"="Central Michigan",
+  "Missouri St"="Missouri State","Mo. State"="Missouri State",
+  "Montana St"="Montana State","Mont. State"="Montana State",
+  "Idaho St"="Idaho State","Id. State"="Idaho State",
+  "N Colorado"="Northern Colorado","No. Colorado"="Northern Colorado",
+  "NC A&T"="North Carolina A&T","N.C. A&T"="North Carolina A&T",
+  "N\'Western St"="Northwestern State","N. Western St"="Northwestern State",
+  "PV A&M"="Prairie View A&M","Prairie View"="Prairie View A&M",
+  "S Carolina St"="South Carolina State","SC State"="South Carolina State",
+  "Sacramento St"="Sacramento State","Sac. State"="Sacramento State",
+  "Tennessee St"="Tennessee State","Tenn. St."="Tennessee State",
+  "E Washington"="Eastern Washington","E. Washington"="Eastern Washington",
+  "URI"="Rhode Island","R. Island"="Rhode Island",
+  "Alcorn St"="Alcorn State","Alc. State"="Alcorn State",
+  "C Connecticut"="Central Connecticut State","C. Connecticut"="Central Connecticut State",
+  "Indiana St"="Indiana State","Ind. State"="Indiana State",
+  "Weber St"="Weber State","Web. State"="Weber State",
+  "Illinois St"="Illinois State","Ill. State"="Illinois State",
+  "Delaware St"="Delaware State","Del. State"="Delaware State",
+  "Norfolk St"="Norfolk State","Norf. State"="Norfolk State",
+  "AR-Pine Bluff"="Arkansas-Pine Bluff","Ark-Pine Bluff"="Arkansas-Pine Bluff",
+  "Houston Baptist"="Houston Christian","Hou. Baptist"="Houston Christian",
+  "Hou Christian"="Houston Christian","Hou. Christian"="Houston Christian",
+  "Abilene Chrstn"="Abilene Christian","Abil Christian"="Abilene Christian",
+  "Abil. Christian"="Abilene Christian",
+  "C Arkansas"="Central Arkansas","Cent. Arkansas"="Central Arkansas",
+  "Cent Arkansas"="Central Arkansas","Cen. Arkansas"="Central Arkansas",
+  "SE Missouri St"="Southeast Missouri","SE Mo. St."="Southeast Missouri",
+  "ETSU"="East Tennessee State","E. Tenn. State"="East Tennessee State",
+  "N Arizona"="Northern Arizona","No. Arizona"="Northern Arizona",
+  "W Carolina"="Western Carolina","W. Carolina"="Western Carolina",
+  "W Illinois"="Western Illinois","W. Illinois"="Western Illinois",
+  "W. Ill."="Western Illinois",
+  "Morgan St"="Morgan State","Morg. State"="Morgan State",
+  "Long Island"="Long Island University","LIU"="Long Island University",
+  "Utah Tech"="Utah Tech",
+  "Tarleton St"="Tarleton State","Trl. State"="Tarleton State",
+  "Sacred Heart"="Sacred Heart",
+  "Charleston So"="Charleston Southern","Ch. Southern"="Charleston Southern",
+  "Miss Valley St"="Mississippi Valley State","Miss. Valley"="Mississippi Valley State",
+  "Portland St"="Portland State","Port. State"="Portland State",
+  "Saint Francis"="Saint Francis (PA)",
+  "N\'Western St"="Northwestern State",
+  "Stony Brook"="Stony Brook",
+  "Gardner-Webb"="Gardner-Webb",
+  "Lindenwood"="Lindenwood",
+  "Merrimack"="Merrimack",
+  "East Texas A&M"="East Texas A&M",
+  "Kennesaw St"="Kennesaw State",
+  "Southern Utah"="Southern Utah",
+  "Hampton"="Hampton",
+  "Savannah State"="Savannah State","Sav. State"="Savannah State",
+  "Drake"="Drake","Drake Bulldogs"="Drake",
+  "NC Central"="NC Central","N.C. Central"="NC Central",
+  "Hofstra"="Hofstra",
+  "Rhode Island"="Rhode Island",
+  "SE Missouri"="Southeast Missouri",
+  "South Dakota State"="South Dakota State",
+  "South Dakota St"="South Dakota State",
+  "Missouri State"="Missouri State",
+  "Illinois State"="Illinois State",
+  "Weber State"="Weber State",
+  "Idaho State"="Idaho State",
+  "Montana State"="Montana State",
+  "Northern Arizona"="Northern Arizona",
+  "Northern Colorado"="Northern Colorado",
+  "UC Davis"="UC Davis",
+  "URI"="Rhode Island",
   # FCS teams that appear in FBS schedules
   "UNH"="New Hampshire",
   "Youngstown St"="Youngstown State",
@@ -583,7 +660,57 @@ get_conf <- function(team, year) {
                  "Stetson","North Alabama","Lipscomb","North Florida")
   if (t %in% fcs_known) return("FCS")
 
-  return(NA_character_)
+  fcs_schools <- c(
+    # Big South / CAA / MVFC / Big Sky / SoCon / OVC / ASUN / Patriot / etc.
+    "North Dakota State","South Dakota State","Northern Iowa","South Dakota",
+    "Montana State","Montana","Eastern Washington","Weber State","Sacramento State",
+    "Northern Arizona","UC Davis","Idaho State","Northern Colorado","Portland State",
+    "Southern Utah","Utah Tech","Cal Poly","UC Davis",
+    # CAA
+    "Delaware","Richmond","Villanova","Towson","Stony Brook","William & Mary",
+    "Elon","Rhode Island","New Hampshire","Maine","Albany","Hofstra",
+    "Charleston Southern","Coastal Carolina",
+    # SoCon
+    "Wofford","Furman","The Citadel","Western Carolina","Samford","Mercer",
+    "Chattanooga","VMI","East Tennessee State",
+    # OVC / ASUN
+    "Eastern Kentucky","Southeast Missouri","Tennessee State","Tennessee Tech",
+    "Murray State","UT Martin","Morehead State","Eastern Illinois","Lindenwood",
+    "Jacksonville State","North Alabama","Tarleton State","Austin Peay",
+    # Big South / CAA
+    "Campbell","Gardner-Webb","Presbyterian","Sacred Heart","Monmouth",
+    "Robert Morris","Saint Francis (PA)","Bryant","Wagner","Duquesne",
+    "Central Connecticut State","Long Island University","Merrimack","Stony Brook",
+    # SWAC / MEAC
+    "Grambling","Prairie View A&M","Southern","Alcorn State","Jackson State",
+    "Texas Southern","Alabama State","Alabama A&M","Florida A&M",
+    "Bethune-Cookman","South Carolina State","Howard","Morgan State",
+    "Delaware State","Norfolk State","North Carolina A&T","NC Central",
+    "Savannah State","Mississippi Valley State","Arkansas-Pine Bluff",
+    # Patriot
+    "Colgate","Fordham","Holy Cross","Bucknell","Lafayette","Lehigh","Georgetown",
+    # Ivy
+    "Yale","Harvard","Princeton","Dartmouth","Columbia","Cornell","Brown","Penn",
+    # Southland / WAC / Independents
+    "Incarnate Word","Houston Christian","Abilene Christian","Nicholls",
+    "SE Louisiana","McNeese","Lamar","Central Arkansas","Northwestern State",
+    "Stephen F. Austin","Hampton","Drake","Central Connecticut State",
+    "Western Illinois","Southern Illinois","Illinois State","Indiana State",
+    "Missouri State","North Dakota","Northern Colorado","Idaho",
+    # Big Sky
+    "Montana","Montana State","Eastern Washington","Weber State",
+    "Sacramento State","Northern Arizona","UC Davis","Idaho State",
+    "Portland State","Southern Utah","Utah Tech","Northern Colorado",
+    "Cal Poly",
+    # Independent FCS
+    "North Alabama","Tarleton State","East Texas A&M",
+    # Generic catch — any team with very few FBS wins is likely FCS
+    "Richmond","Elon","William & Mary","Hofstra",
+    "Youngstown State","Villanova","Towson"
+  )
+  if (t %in% fcs_schools) return("FCS")
+
+  return("FCS")  # default: unknown teams playing FBS are likely FCS
 }
 
 # ── Parse ESPN event ──────────────────────────────────────────
@@ -646,6 +773,25 @@ for (yr in SEASONS) {
 
   g <- unique(do.call(rbind, all_games))
   g <- g[!is.na(g$winner)&g$winner!=""&g$winner!=g$loser,]
+
+  # Filter out All-Star game teams, D2/NAIA teams, and other non-FBS/FCS entries
+  FAKE_TEAMS <- c(
+    # All-Star bowl teams
+    "West","East","American","National","EAST","WEST",
+    "Team 1","Team 2","Red","Blue","White",
+    # D2 / NAIA / non-college
+    "Wesley College","Chowan","Brevard","Kentucky Wesleyan","So Oregon",
+    "West Chester","Shippensburg","Lenoir-Rhyne","Tusculum","West Georgia",
+    "AR-Monticello","Missouri S&T","W Virginia Tech","Angelo St","Rhodes",
+    "Winston-Salem","Clark Atlanta","Lincoln (MO)","St Francis (IL)",
+    "St Francis (PA)","Ferris St","UNC Pembroke","So. Oregon"
+  )
+  # Also filter via alias resolution
+  resolve_team <- function(t) {
+    if (t %in% names(ALIASES)) ALIASES[[t]] else t
+  }
+  g <- g[!sapply(g$winner, resolve_team) %in% FAKE_TEAMS &
+         !sapply(g$loser,  resolve_team) %in% FAKE_TEAMS, ]
   if (nrow(g) < 50) { message("  Skip — only ", nrow(g), " games"); next }
   message("  ", nrow(g), " games")
 
