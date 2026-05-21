@@ -1,38 +1,31 @@
 season,rank,team,conference,elo,wins,losses,games_played,win_pct,record,best_win_team,best_win_elo,sos,updated_at
-2024,1,Boston Celtics,Atlantic,1880.9,84,22,106,0.792,84-22,Dallas Mavericks,1777.5,1504.8,2026-05-21T01:22:41Z
-2024,2,Dallas Mavericks,Southwest,1777.5,64,44,108,0.593,64-44,Boston Celtics,1880.9,1532.4,2026-05-21T01:22:41Z
-2024,3,Minnesota Timberwolves,Northwest,1726.5,70,33,103,0.68,70-33,Boston Celtics,1880.9,1532.5,2026-05-21T01:22:41Z
-2024,4,Oklahoma City Thunder,Northwest,1725.7,65,32,97,0.67,65-32,Boston Celtics,1880.9,1519,2026-05-21T01:22:41Z
-2024,5,Denver Nuggets,Northwest,1722.2,67,32,99,0.677,67-32,Boston Celtics,1880.9,1524.3,2026-05-21T01:22:41Z
-2024,6,Los Angeles Lakers,Pacific,1645.1,52,43,95,0.547,52-43,Boston Celtics,1880.9,1528.4,2026-05-21T01:22:41Z
-2024,7,Golden State Warriors,Pacific,1633.8,50,38,88,0.568,50-38,Boston Celtics,1880.9,1515.3,2026-05-21T01:22:41Z
-2024,8,Indiana Pacers,Central,1632.2,57,47,104,0.548,57-47,Boston Celtics,1880.9,1510.3,2026-05-21T01:22:41Z
-2024,9,Philadelphia 76ers,Atlantic,1594.5,52,41,93,0.559,52-41,Boston Celtics,1880.9,1496.4,2026-05-21T01:22:41Z
-2024,10,New York Knicks,Atlantic,1591,58,41,99,0.586,58-41,Boston Celtics,1880.9,1517,2026-05-21T01:22:41Z
-2024,11,Phoenix Suns,Pacific,1581,53,38,91,0.582,53-38,Dallas Mavericks,1777.5,1512.5,2026-05-21T01:22:41Z
-2024,12,Sacramento Kings,Pacific,1571.6,48,41,89,0.539,48-41,Dallas Mavericks,1777.5,1522.3,2026-05-21T01:22:41Z
-2024,13,Miami Heat,Southeast,1571.4,50,44,94,0.532,50-44,Boston Celtics,1880.9,1494.7,2026-05-21T01:22:41Z
-2024,14,Houston Rockets,Southwest,1559.1,45,42,87,0.517,45-42,Dallas Mavericks,1777.5,1511.6,2026-05-21T01:22:41Z
-2024,15,New Orleans Pelicans,Southwest,1551.7,51,41,92,0.554,51-41,Dallas Mavericks,1777.5,1522.7,2026-05-21T01:22:41Z
-2024,16,Milwaukee Bucks,Central,1502.7,54,39,93,0.581,54-39,Boston Celtics,1880.9,1505.9,2026-05-21T01:22:41Z
-2024,17,Orlando Magic,Southeast,1500.3,53,40,93,0.57,53-40,Boston Celtics,1880.9,1471.5,2026-05-21T01:22:41Z
-2024,18,LA Clippers,Pacific,1487,55,37,92,0.598,55-37,Boston Celtics,1880.9,1530,2026-05-21T01:22:41Z
-2024,19,Cleveland Cavaliers,Central,1485.6,54,44,98,0.551,54-44,Boston Celtics,1880.9,1501.8,2026-05-21T01:22:41Z
-2024,20,Chicago Bulls,Central,1469,41,48,89,0.461,41-48,Minnesota Timberwolves,1726.5,1494.3,2026-05-21T01:22:41Z
-2024,21,San Antonio Spurs,Southwest,1434.4,25,62,87,0.287,25-62,Minnesota Timberwolves,1726.5,1530,2026-05-21T01:22:41Z
-2024,22,Atlanta Hawks,Southeast,1393.9,39,49,88,0.443,39-49,Boston Celtics,1880.9,1495.7,2026-05-21T01:22:41Z
-2024,23,Brooklyn Nets,Atlantic,1375.9,34,52,86,0.395,34-52,Oklahoma City Thunder,1725.7,1489.2,2026-05-21T01:22:41Z
-2024,24,Charlotte Hornets,Southeast,1298,22,64,86,0.256,22-64,Boston Celtics,1880.9,1502,2026-05-21T01:22:41Z
-2024,25,Utah Jazz,Northwest,1275.6,34,53,87,0.391,34-53,Dallas Mavericks,1777.5,1516.8,2026-05-21T01:22:41Z
-2024,26,Memphis Grizzlies,Southwest,1259.5,29,58,87,0.333,29-58,Dallas Mavericks,1777.5,1523.6,2026-05-21T01:22:41Z
-2024,27,Detroit Pistons,Central,1235.9,16,70,86,0.186,16-70,Dallas Mavericks,1777.5,1508.7,2026-05-21T01:22:41Z
-2024,28,Portland Trail Blazers,Northwest,1230.3,22,64,86,0.256,22-64,Indiana Pacers,1632.2,1517.6,2026-05-21T01:22:41Z
-2024,29,Toronto Raptors,Atlantic,1211.2,29,57,86,0.337,29-57,Dallas Mavericks,1777.5,1491.5,2026-05-21T01:22:41Z
-2024,30,Washington Wizards,Southeast,1166.8,18,68,86,0.209,18-68,Indiana Pacers,1632.2,1486.8,2026-05-21T01:22:41Z
-2024,31,Ra'Anana,NA,670.8,0,3,3,0,0-3,NA,NA,1529.3,2026-05-21T01:22:41Z
-2024,32,New Zealand Breakers,NA,659.7,0,2,2,0,0-2,NA,NA,1252.9,2026-05-21T01:22:41Z
-2024,33,Cairns Taipans,NA,631.8,0,2,2,0,0-2,NA,NA,1189,2026-05-21T01:22:41Z
-2024,34,Real Madrid,NA,501.3,1,0,1,1,1-0,Dallas Mavericks,1777.5,1777.5,2026-05-21T01:22:41Z
-2024,35,Eastern Conf All-Stars,NA,356.5,1,0,1,1,1-0,Western Conf All-Stars,18.5,18.5,2026-05-21T01:22:41Z
-2024,36,Flamengo,NA,181.5,0,1,1,0,0-1,NA,NA,1500.3,2026-05-21T01:22:41Z
-2024,37,Western Conf All-Stars,NA,18.5,0,1,1,0,0-1,NA,NA,356.5,2026-05-21T01:22:41Z
+2024,1,Boston Celtics,Atlantic,1878,84,22,106,0.792,84-22,Dallas Mavericks,1774.5,1501.8,2026-05-21T02:13:52Z
+2024,2,Dallas Mavericks,Southwest,1774.5,64,43,107,0.598,64-43,Boston Celtics,1878,1539.1,2026-05-21T02:13:52Z
+2024,3,Minnesota Timberwolves,Northwest,1723.5,69,33,102,0.676,69-33,Boston Celtics,1878,1537.9,2026-05-21T02:13:52Z
+2024,4,Oklahoma City Thunder,Northwest,1722.7,65,32,97,0.67,65-32,Boston Celtics,1878,1516,2026-05-21T02:13:52Z
+2024,5,Denver Nuggets,Northwest,1719.3,67,32,99,0.677,67-32,Boston Celtics,1878,1521.3,2026-05-21T02:13:52Z
+2024,6,Los Angeles Lakers,Pacific,1642.2,52,43,95,0.547,52-43,Boston Celtics,1878,1525.4,2026-05-21T02:13:52Z
+2024,7,Golden State Warriors,Pacific,1630.8,50,38,88,0.568,50-38,Boston Celtics,1878,1512.3,2026-05-21T02:13:52Z
+2024,8,Indiana Pacers,Central,1629.2,57,47,104,0.548,57-47,Boston Celtics,1878,1507.3,2026-05-21T02:13:52Z
+2024,9,Philadelphia 76ers,Atlantic,1591.5,52,41,93,0.559,52-41,Boston Celtics,1878,1493.4,2026-05-21T02:13:52Z
+2024,10,New York Knicks,Atlantic,1588,58,41,99,0.586,58-41,Boston Celtics,1878,1514,2026-05-21T02:13:52Z
+2024,11,Phoenix Suns,Pacific,1578,53,38,91,0.582,53-38,Dallas Mavericks,1774.5,1509.6,2026-05-21T02:13:52Z
+2024,12,Sacramento Kings,Pacific,1568.7,48,41,89,0.539,48-41,Dallas Mavericks,1774.5,1519.3,2026-05-21T02:13:52Z
+2024,13,Miami Heat,Southeast,1568.4,50,44,94,0.532,50-44,Boston Celtics,1878,1491.7,2026-05-21T02:13:52Z
+2024,14,Houston Rockets,Southwest,1556.2,45,42,87,0.517,45-42,Dallas Mavericks,1774.5,1508.6,2026-05-21T02:13:52Z
+2024,15,New Orleans Pelicans,Southwest,1548.7,51,41,92,0.554,51-41,Dallas Mavericks,1774.5,1519.7,2026-05-21T02:13:52Z
+2024,16,Milwaukee Bucks,Central,1499.6,54,39,93,0.581,54-39,Boston Celtics,1878,1502.9,2026-05-21T02:13:52Z
+2024,17,Orlando Magic,Southeast,1497.3,52,40,92,0.565,52-40,Boston Celtics,1878,1482.5,2026-05-21T02:13:52Z
+2024,18,LA Clippers,Pacific,1484.1,55,37,92,0.598,55-37,Boston Celtics,1878,1527,2026-05-21T02:13:52Z
+2024,19,Cleveland Cavaliers,Central,1482.6,53,44,97,0.546,53-44,Boston Celtics,1878,1507.4,2026-05-21T02:13:52Z
+2024,20,Chicago Bulls,Central,1466,41,48,89,0.461,41-48,Minnesota Timberwolves,1723.5,1491.3,2026-05-21T02:13:52Z
+2024,21,San Antonio Spurs,Southwest,1431.4,25,62,87,0.287,25-62,Minnesota Timberwolves,1723.5,1527,2026-05-21T02:13:52Z
+2024,22,Atlanta Hawks,Southeast,1390.8,39,49,88,0.443,39-49,Boston Celtics,1878,1492.6,2026-05-21T02:13:52Z
+2024,23,Brooklyn Nets,Atlantic,1372.8,33,52,85,0.388,33-52,Oklahoma City Thunder,1722.7,1495.9,2026-05-21T02:13:52Z
+2024,24,Charlotte Hornets,Southeast,1294.9,22,64,86,0.256,22-64,Boston Celtics,1878,1499,2026-05-21T02:13:52Z
+2024,25,Utah Jazz,Northwest,1272.6,33,53,86,0.384,33-53,Dallas Mavericks,1774.5,1523.8,2026-05-21T02:13:52Z
+2024,26,Memphis Grizzlies,Southwest,1256.5,29,58,87,0.333,29-58,Dallas Mavericks,1774.5,1520.6,2026-05-21T02:13:52Z
+2024,27,Detroit Pistons,Central,1232.7,16,70,86,0.186,16-70,Dallas Mavericks,1774.5,1505.7,2026-05-21T02:13:52Z
+2024,28,Portland Trail Blazers,Northwest,1227.3,21,64,85,0.247,21-64,Indiana Pacers,1629.2,1524.7,2026-05-21T02:13:52Z
+2024,29,Toronto Raptors,Atlantic,1208.1,28,57,85,0.329,28-57,Dallas Mavericks,1774.5,1498.6,2026-05-21T02:13:52Z
+2024,30,Washington Wizards,Southeast,1163.6,17,68,85,0.2,17-68,Indiana Pacers,1629.2,1493.9,2026-05-21T02:13:52Z
