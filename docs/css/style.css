@@ -8,7 +8,7 @@
 :root{
   --bg:#0b0c0e; --bg2:#111316; --bg3:#181b1f; --bg4:#1e2228;
   --border:rgba(255,255,255,0.07); --border-md:rgba(255,255,255,0.13); --border-hi:rgba(255,255,255,0.22);
-  --text:#ede9e1; --text-muted:#8a8680; --text-dim:#474441;
+  --text:#f0ede8; --text-muted:#c0bcb6; --text-dim:#908c86;
   --accent:#e2c97e; --accent-dim:rgba(226,201,126,0.15);
   --green:#4a9e6e; --green-hi:#7dd4a8; --green-dim:rgba(74,158,110,0.12);
   --red:#c05a47; --red-hi:#e07a65;
@@ -33,7 +33,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,12,14,0.92);backdrop-fi
 .nav-logo{font-family:var(--font-mono);font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);text-decoration:none;flex-shrink:0}
 .nav-links{display:flex;align-items:center;list-style:none;overflow-x:auto;scrollbar-width:none;flex:1}
 .nav-links::-webkit-scrollbar{display:none}
-.nav-links a{font-size:0.7rem;font-family:var(--font-mono);letter-spacing:0.05em;color:var(--text-muted);text-decoration:none;padding:0 0.75rem;height:52px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:color 0.15s,border-color 0.15s;white-space:nowrap}
+.nav-links a{font-size:0.7rem;font-family:var(--font-mono);letter-spacing:0.05em;color:var(--text);text-decoration:none;padding:0 0.75rem;height:52px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:color 0.15s,border-color 0.15s;white-space:nowrap}
 .nav-links a:hover{color:var(--text)}
 .nav-links a.active{color:var(--accent);border-bottom-color:var(--accent)}
 
@@ -43,7 +43,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,12,14,0.92);backdrop-fi
 .eyebrow::before{content:'';width:22px;height:1px;background:var(--green-hi)}
 .hero h1{font-family:var(--font-display);font-size:clamp(3rem,7vw,5.5rem);font-weight:700;line-height:0.95;letter-spacing:-0.02em;margin-bottom:1.5rem}
 .hero h1 em{font-style:italic;font-weight:200;color:var(--accent)}
-.hero-sub{font-size:1rem;color:var(--text-muted);max-width:520px;font-weight:300;line-height:1.75}
+.hero-sub{font-size:1rem;color:var(--text);max-width:520px;font-weight:300;line-height:1.75;opacity:0.85}
 
 /* ── Live badge ── */
 .live-badge{display:inline-flex;align-items:center;gap:0.45rem;background:var(--green-dim);border:1px solid rgba(74,158,110,0.28);border-radius:100px;padding:0.3rem 0.8rem;font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.08em;color:var(--green-hi);margin-bottom:2rem}
@@ -66,7 +66,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,12,14,0.92);backdrop-fi
 .card-num{font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);letter-spacing:0.1em}
 .card-emoji{font-size:1.6rem;line-height:1;margin:0.2rem 0}
 .card-title{font-family:var(--font-display);font-size:1.25rem;font-weight:700;color:var(--text);line-height:1.2}
-.card-desc{font-size:0.8rem;color:var(--text-muted);font-weight:300;line-height:1.55;flex:1;padding-bottom:1.25rem}
+.card-desc{font-size:0.82rem;color:var(--text);font-weight:300;line-height:1.6;opacity:0.8;flex:1;padding-bottom:1.25rem}
 .card-tag{display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:100px;width:fit-content}
 .tag-live{background:var(--green-dim);color:var(--green-hi);border:1px solid rgba(74,158,110,0.22)}
 .tag-live::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--green-hi);animation:pulse 2.2s ease-in-out infinite}
@@ -91,21 +91,21 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,12,14,0.92);backdrop-fi
 /* ── Summary cards ── */
 .summary-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0.75rem;margin-bottom:1.75rem}
 .stat-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.9rem 1rem}
-.stat-card-label{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.35rem}
+.stat-card-label{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.35rem}
 .stat-card-val{font-family:var(--font-display);font-size:1.65rem;font-weight:700;color:var(--text);line-height:1}
 .stat-card-sub{font-size:0.72rem;color:var(--text-muted);margin-top:0.2rem}
 
 /* ── Tabs ── */
 .tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:1.75rem;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tab{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.06em;color:var(--text-muted);padding:0.7rem 1.1rem;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:color 0.15s,border-color 0.15s;white-space:nowrap}
+.tab{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.06em;color:var(--text);padding:0.7rem 1.1rem;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:color 0.15s,border-color 0.15s;white-space:nowrap}
 .tab:hover{color:var(--text)}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ── Controls ── */
 .controls{display:flex;flex-wrap:wrap;gap:0.6rem;align-items:center;margin-bottom:1.25rem}
 .ctrl-group{display:flex;align-items:center;gap:0.4rem}
-.ctrl-label{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim)}
+.ctrl-label{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted)}
 select,input[type=text],input[type=search]{background:var(--bg3);border:1px solid var(--border-md);border-radius:var(--radius);color:var(--text);font-family:var(--font-mono);font-size:0.75rem;padding:0.38rem 0.7rem;outline:none;transition:border-color 0.15s;cursor:pointer}
 select:hover,input:hover{border-color:var(--border-hi)}
 select:focus,input:focus{border-color:var(--accent)}
@@ -119,8 +119,8 @@ select:focus,input:focus{border-color:var(--accent)}
 /* ── Table ── */
 .table-wrap{border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
 .tbl{width:100%;border-collapse:collapse;font-size:0.83rem}
-.tbl thead th{background:var(--bg3);padding:0.65rem 0.85rem;text-align:left;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;transition:color 0.15s}
-.tbl thead th:hover{color:var(--text-muted)}
+.tbl thead th{background:var(--bg3);padding:0.65rem 0.85rem;text-align:left;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;transition:color 0.15s}
+.tbl thead th:hover{color:var(--text)}
 .tbl thead th.sorted{color:var(--accent)}
 .sort-icon{margin-left:0.3rem;opacity:0.5}
 .tbl thead th.sorted .sort-icon{opacity:1}
@@ -130,10 +130,10 @@ select:focus,input:focus{border-color:var(--accent)}
 .tbl td{padding:0.6rem 0.85rem;vertical-align:middle}
 td.rank{font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim);width:40px}
 td.team-name{font-weight:500;color:var(--text)}
-td.conf{font-family:var(--font-mono);font-size:0.66rem;color:var(--text-dim)}
+td.conf{font-family:var(--font-mono);font-size:0.70rem;color:var(--text-muted)}
 td.elo{font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--text);text-align:right}
-td.record{font-family:var(--font-mono);font-size:0.73rem;color:var(--text-muted);text-align:center}
-td.num{font-family:var(--font-mono);font-size:0.78rem;color:var(--text-muted);text-align:right}
+td.record{font-family:var(--font-mono);font-size:0.76rem;color:var(--text);text-align:center}
+td.num{font-family:var(--font-mono);font-size:0.80rem;color:var(--text);text-align:right}
 .elo-bar-wrap{display:flex;align-items:center;gap:0.5rem;justify-content:flex-end}
 .elo-bar{height:4px;border-radius:2px;background:var(--accent);min-width:2px}
 
@@ -151,7 +151,7 @@ input[type=checkbox]{accent-color:var(--accent)}
 
 /* ── Conf section ── */
 .conf-block{margin-bottom:1.25rem;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
-.conf-block-header{background:var(--bg3);padding:0.55rem 0.85rem;font-family:var(--font-mono);font-size:0.64rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);border-bottom:1px solid var(--border)}
+.conf-block-header{background:var(--bg3);padding:0.55rem 0.85rem;font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);border-bottom:1px solid var(--border)}
 
 /* ── Seed badges ── */
 .seed{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:4px;background:var(--bg4);border:1px solid var(--border-md);font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted)}
@@ -200,37 +200,6 @@ footer a:hover{color:var(--accent)}
   footer{flex-direction:column;align-items:flex-start}
   .summary-bar{grid-template-columns:1fr 1fr}
 }
-
-/* ── Mobile hamburger ── */
-.nav-hamburger {
-  display: none;
-  background: none;
-  border: 1px solid var(--border-md);
-  border-radius: var(--radius);
-  color: var(--text-muted);
-  font-size: 1.1rem;
-  padding: 0.25rem 0.6rem;
-  cursor: pointer;
-  margin-left: auto;
-}
-.nav-mobile {
-  display: flex;
-  flex-direction: column;
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-  padding: 0.5rem 1.5rem;
-}
-.nav-mobile a {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  text-decoration: none;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid var(--border);
-  letter-spacing: 0.05em;
-}
-.nav-mobile a:last-child { border-bottom: none; }
-.nav-mobile a:hover { color: var(--accent); }
 
 /* ── Elo trend arrows ── */
 .trend-up   { color: var(--green-hi); font-size: 0.75rem; }
@@ -307,5 +276,4 @@ footer a:hover{color:var(--accent)}
 
 @media(max-width:768px) {
   .nav-links { display: none; }
-  .nav-hamburger { display: block; }
 }
