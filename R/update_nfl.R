@@ -15,7 +15,9 @@ suppressPackageStartupMessages({
 })
 source("R/elo_engine.R")
 
-SEASONS <- 2001:as.integer(format(Sys.Date(), "%Y"))
+# Only update current season — historical CSVs are already correct
+SEASONS <- if (as.integer(format(Sys.Date(), "%m")) < 9) CURRENT_YEAR - 1 else CURRENT_YEAR
+message("NFL: updating season ", SEASONS, " only")
 OUT_DIR <- "docs/NFL/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 

@@ -183,7 +183,9 @@ fetch_nba_season <- function(s) {
 
 CURRENT_SEASON <- get_current_nba_season()
 message("Current NBA season: ", CURRENT_SEASON)
-SEASONS <- 2002:CURRENT_SEASON
+# Only update current season — historical CSVs are already correct
+SEASONS <- CURRENT_SEASON  # single value
+message("NBA: updating season ", CURRENT_SEASON, " only")
 
 for (s in SEASONS) {
   message("NBA ", s, "...")

@@ -16,7 +16,9 @@ source("R/elo_engine.R")
 
 CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
 if (as.integer(format(Sys.Date(),"%m")) < 10) CURRENT_YEAR <- CURRENT_YEAR - 1
-SEASONS <- 2013:CURRENT_YEAR
+# Only update current season — historical CSVs are already correct
+SEASONS <- CURRENT_YEAR  # single value
+message("NHL: updating season ", SEASONS, " only")
 OUT_DIR  <- "docs/NHL/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 

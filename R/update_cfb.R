@@ -192,7 +192,7 @@ ALIASES <- c(
   # Miami (OH)
   "Miami OH"="Miami (OH)","Miami (Ohio)"="Miami (OH)","MiamiOH"="Miami (OH)",
   # Massachusetts
-  "UMass"="Massachusetts","Mass."="Massachusetts",
+  "UMass"="Massachusetts","Mass."="Massachusetts","Massachusetts"="Massachusetts",
   # Tulsa
   "Golden Hurricane"="Tulsa",
   # Troy State historical
@@ -215,7 +215,7 @@ ALIASES <- c(
   "Northeastern Louisiana"="UL Monroe","NE Louisiana"="UL Monroe",
   # Historical name changes
   "Southwest Texas St"="Texas State","Southwest Texas"="Texas State",
-  "Indiana State"="Indiana",  # disambiguation: Indiana the B1G school
+  # Indiana State = FCS (Missouri Valley Conference) — NOT aliased to Indiana
   # BYU
   "Brigham Young"="BYU",
   # Notre Dame variants
@@ -403,7 +403,7 @@ get_conf <- function(team, year) {
   }
   if (t == "Massachusetts") {
     if (year >= 2012) return("Independent")
-    return(NA_character_)
+    return("MAC")  # MAC until 2011
   }
   if (t == "UConn") {
     if (year >= 2020) return("Independent")
@@ -413,7 +413,7 @@ get_conf <- function(team, year) {
   if (t == "Liberty") {
     if (year >= 2023) return("C-USA")
     if (year >= 2018) return("Independent")
-    return(NA_character_)
+    return("FCS")   # FCS Southland until 2017
   }
   if (t == "New Mexico State") {
     if (year >= 2023) return("C-USA")
@@ -587,7 +587,7 @@ get_conf <- function(team, year) {
     if (t == "Old Dominion") {
       if (year >= 2022) return("Sun Belt")
       if (year >= 2014) return("C-USA")
-      return(NA_character_)
+      return("FCS")  # FCS CAA until 2012
     }
     if (t == "App State") {
       if (year >= 2014) return("Sun Belt")
@@ -597,8 +597,8 @@ get_conf <- function(team, year) {
       if (year >= 2023) return("Sun Belt")
       return("FCS")
     }
-    if (t == "South Alabama" && year < 2012) return(NA_character_)
-    if (t == "Georgia State" && year < 2013) return(NA_character_)
+    if (t == "South Alabama" && year < 2012) return("FCS")
+    if (t == "Georgia State" && year < 2013) return("FCS")
     if (t == "Coastal Carolina" && year < 2017) return("FCS")
     if (t %in% c("Southern Miss","Texas State") && year <= 2012) return("C-USA")
     return("Sun Belt")
@@ -611,10 +611,10 @@ get_conf <- function(team, year) {
   if (t %in% cusa_current) {
     if (t == "Middle Tennessee" && year <= 2012) return("Sun Belt")
     if (t == "Western Kentucky" && year < 2009)  return("FCS")
-    if (t == "FAU"  && year < 2001) return(NA_character_)
-    if (t == "FIU"  && year < 2009) return(NA_character_)
-    if (t == "UTSA" && year < 2013) return(NA_character_)
-    if (t == "Kennesaw State" && year < 2022) return(NA_character_)
+    if (t == "FAU"  && year < 2001) return("FCS")
+    if (t == "FIU"  && year < 2009) return("Sun Belt")  # FIU Sun Belt 2001-2008
+    if (t == "UTSA" && year < 2013) return("FCS")
+    if (t == "Kennesaw State" && year < 2022) return("FCS")
     if (t == "Jacksonville State" && year < 2022) return("FCS")
     return("C-USA")
   }
