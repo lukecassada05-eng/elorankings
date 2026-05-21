@@ -118,7 +118,9 @@
 initSportPage({
   sport:     'NHL',
   dataPath:  '../NHL/data/NHL_Elo_',
-  seasons:   [2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015,2014,2013],
+  seasons:   null,  // probed dynamically — see initSportPage()
+  firstSeason:  2013,
+  currentGuess: 2026,
   hca:       50,
   confLabel: 'Division',
   kFactor:   25,
