@@ -538,71 +538,89 @@ window.initSportPage = function(CFG) {
   function renderSeasonTracker() {
     const el = document.getElementById('panel-tracker');
     if (!el) return;
-
-    // Sport name mapping for tracker
-    const trackerSport = {
-      'NFL':'NFL','NBA':'NBA','CBB':'CBB','NHL':'NHL',
-      'MLB':'MLB','CFB':'CFB','CBASE':'CBASE','Soccer':'Soccer'
-    }[CFG.sport];
+    if (!data.length) { el.innerHTML = '<div class="empty-state">Load a season first.</div>'; return; }
 
     el.innerHTML = `
       <div class="history-wrap">
-        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.75rem;margin-bottom:1rem">
-          <div class="ctrl-group">
-            <span class="ctrl-label">Track teams</span>
-            <select id="trackerTeams" multiple size="4" style="min-width:160px;height:90px">
-              ${[...data].sort((a,b)=>a.team.localeCompare(b.team))
-                  .map(r=>`<option value="${r.team}">${r.team}</option>`).join('')}
+        <div style="margin-bottom:1rem">
+          <div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.5rem">
+            Select teams to track (hold Ctrl/Cmd for multiple)
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end">
+            <select id="trackerTeams" multiple size="5" style="min-width:180px;font-family:var(--font-mono);font-size:0.75rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.25rem">
+              ${[...data].sort((a,b)=>a.team.localeCompare(b.team)).map(r=>`<option value="${r.team}">${r.team}</option>`).join('')}
             </select>
-          </div>
-          <div style="font-size:0.78rem;color:var(--text-muted);max-width:220px;line-height:1.5">
-            Hold Ctrl/Cmd to select multiple teams.<br>
-            Fetches live game data week by week.
-          </div>
-          <button class="btn primary" id="trackerRun">▶ Build tracker</button>
-        </div>
-        <div id="trackerProgress" style="display:none;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);margin-bottom:0.75rem">
-          <span id="trackerMsg">Fetching games…</span>
-          <div style="height:4px;background:var(--bg4);border-radius:2px;margin-top:0.4rem">
-            <div id="trackerBar" style="height:4px;background:var(--accent);border-radius:2px;width:0;transition:width 0.3s"></div>
+            <div>
+              <button class="btn primary" id="trackerRun" style="display:block;margin-bottom:0.4rem">▶ Build tracker</button>
+              <div style="font-size:0.72rem;color:var(--text-muted)">Fetches ESPN live data<br>week by week (~30s)</div>
+            </div>
           </div>
         </div>
-        <div class="history-canvas-wrap"><canvas id="trackerCanvas"></canvas></div>
-      </div>
-      <div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);margin-top:0.5rem">
-        Live data fetched from ESPN. May take 15–60 seconds for full season. Results not saved between sessions.
+        <div id="trackerStatus" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);margin-bottom:0.75rem;display:none">
+          <div id="trackerMsg">Starting…</div>
+          <div style="height:3px;background:var(--bg4);border-radius:2px;margin-top:0.4rem;overflow:hidden">
+            <div id="trackerBar" style="height:3px;background:var(--accent);width:0;transition:width 0.4s ease"></div>
+          </div>
+        </div>
+        <div class="history-canvas-wrap" style="display:none" id="trackerChartWrap">
+          <canvas id="trackerCanvas"></canvas>
+        </div>
+        <div id="trackerEmpty" style="color:var(--text-muted);font-size:0.83rem;text-align:center;padding:2rem;display:none"></div>
       </div>`;
 
     document.getElementById('trackerRun')?.addEventListener('click', async () => {
       const sel = document.getElementById('trackerTeams');
       const teams = [...sel.selectedOptions].map(o => o.value);
-      if (!teams.length) { alert('Select at least one team'); return; }
+      if (!teams.length) { return; }
 
-      const btn = document.getElementById('trackerRun');
-      const prog = document.getElementById('trackerProgress');
-      const msg  = document.getElementById('trackerMsg');
-      const bar  = document.getElementById('trackerBar');
+      const btn     = document.getElementById('trackerRun');
+      const status  = document.getElementById('trackerStatus');
+      const msgEl   = document.getElementById('trackerMsg');
+      const barEl   = document.getElementById('trackerBar');
+      const wrap    = document.getElementById('trackerChartWrap');
+      const emptyEl = document.getElementById('trackerEmpty');
+
       btn.disabled = true;
-      prog.style.display = 'block';
+      status.style.display = 'block';
+      wrap.style.display = 'none';
+      emptyEl.style.display = 'none';
 
       try {
         const result = await window.SeasonTracker.buildTracker(
-          trackerSport,
+          CFG.sport,
           currentSeason,
-          (done, total) => {
-            const pct = Math.round((done/total)*100);
-            msg.textContent = `Fetching week ${done}/${total}…`;
-            bar.style.width = pct + '%';
+          (done, total, gamesThisWeek) => {
+            const pct = Math.round(done / total * 100);
+            msgEl.textContent = `Week ${done}/${total} — ${gamesThisWeek} games found`;
+            barEl.style.width = pct + '%';
           }
         );
 
-        if (!result || !result.weeks.length) {
-          msg.textContent = 'No data found for this season.';
+        status.style.display = 'none';
+
+        if (!result) {
+          emptyEl.style.display = 'block';
+          emptyEl.textContent = 'No data available for this season.';
+          btn.disabled = false;
+          return;
+        }
+        if (result.noData) {
+          emptyEl.style.display = 'block';
+          emptyEl.textContent = result.reason || 'Live tracking not available for this sport.';
           btn.disabled = false;
           return;
         }
 
-        // Load Chart.js if needed
+        const { history, weeks } = result;
+        const hasData = teams.some(t => history[t] && history[t].length > 0);
+        if (!hasData) {
+          emptyEl.style.display = 'block';
+          emptyEl.textContent = 'No games found for selected teams. Try a different season or check that the sport is in-season.';
+          btn.disabled = false;
+          return;
+        }
+
+        // Load Chart.js
         if (!window.Chart) {
           await new Promise((resolve, reject) => {
             const s = document.createElement('script');
@@ -612,84 +630,69 @@ window.initSportPage = function(CFG) {
           });
         }
 
+        wrap.style.display = 'block';
         const canvas = document.getElementById('trackerCanvas');
-        if (window._trackerChart) window._trackerChart.destroy();
+        if (window._trackerChart) { window._trackerChart.destroy(); window._trackerChart = null; }
 
-        const COLORS = ['#e2c97e','#7eb5e8','#7dd4a8','#e07a65','#c07dcc','#f0a060','#60c0d0'];
+        const COLORS = ['#e2c97e','#7eb5e8','#7dd4a8','#e07a65','#c07dcc','#f0a060','#60d0c0'];
+
+        // Build label array from weeks (short MM/DD format)
+        const labels = weeks.map(w => w.slice(4,6) + '/' + w.slice(6,8));
 
         const datasets = teams.map((team, i) => {
-          const pts = result.history[team] || [];
-          return {
-            label: team,
-            data: pts.map(p => ({ x: parseInt(p.week.slice(0,4) + '.' +
-              (parseInt(p.week.slice(4,6)) + parseInt(p.week.slice(6,8))/31).toFixed(2).slice(1)),
-              y: p.elo, w: p.week })),
-            borderColor: COLORS[i % COLORS.length],
-            backgroundColor: COLORS[i % COLORS.length] + '20',
-            borderWidth: 2.5,
-            pointRadius: 3,
-            tension: 0.35,
-            fill: false
-          };
-        });
-
-        // Use week labels as x-axis categories
-        const allWeeks = result.weeks;
-        const labelMap = {};
-        allWeeks.forEach((w,i) => { labelMap[w] = i; });
-
-        const datasets2 = teams.map((team, i) => {
-          const pts = (result.history[team] || []);
-          // One point per week
+          const pts = history[team] || [];
           const byWeek = {};
           pts.forEach(p => { byWeek[p.week] = p.elo; });
           return {
             label: team,
-            data: allWeeks.map(w => byWeek[w] ?? null),
+            data: weeks.map(w => byWeek[w] ?? null),
             borderColor: COLORS[i % COLORS.length],
-            backgroundColor: COLORS[i % COLORS.length] + '20',
+            backgroundColor: COLORS[i % COLORS.length] + '18',
             borderWidth: 2.5,
             pointRadius: 3,
+            pointHoverRadius: 5,
             tension: 0.35,
             fill: false,
             spanGaps: true
           };
         });
 
-        const shortWeeks = allWeeks.map(w => w.slice(4,6) + '/' + w.slice(6,8));
-
         window._trackerChart = new Chart(canvas, {
           type: 'line',
-          data: { labels: shortWeeks, datasets: datasets2 },
+          data: { labels, datasets },
           options: {
-            responsive: true, maintainAspectRatio: false,
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { intersect: false, mode: 'index' },
             scales: {
-              x: { title:{ display:true, text:'Week', color:'var(--text-muted)' },
-                   ticks:{ color:'var(--text-muted)', maxTicksLimit:12, font:{size:11} },
-                   grid:{ color:'rgba(255,255,255,0.04)' } },
-              y: { title:{ display:true, text:'Elo Rating', color:'var(--text-muted)' },
-                   ticks:{ color:'var(--text-muted)' },
-                   grid:{ color:'rgba(255,255,255,0.06)' } }
+              x: {
+                ticks: { color: '#c0bcb6', maxTicksLimit: 14, font: { size: 11, family: 'monospace' } },
+                grid: { color: 'rgba(255,255,255,0.04)' }
+              },
+              y: {
+                title: { display: true, text: 'Elo Rating', color: '#c0bcb6', font: { size: 11 } },
+                ticks: { color: '#c0bcb6', font: { family: 'monospace', size: 11 } },
+                grid: { color: 'rgba(255,255,255,0.06)' }
+              }
             },
             plugins: {
-              legend: { labels:{ color:'var(--text-muted)', font:{ family:'monospace', size:11 } } },
-              tooltip: { callbacks: {
-                label: ctx => ctx.dataset.label + ': ' + (ctx.parsed.y||0).toFixed(1)
-              }}
+              legend: { labels: { color: '#c0bcb6', font: { family: 'monospace', size: 11 }, boxWidth: 16 } },
+              tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + (ctx.parsed.y || 0).toFixed(1) } }
             }
           }
         });
 
-        prog.style.display = 'none';
-      } catch(e) {
-        msg.textContent = 'Error: ' + e.message;
-        console.error(e);
+      } catch (e) {
+        status.style.display = 'none';
+        emptyEl.style.display = 'block';
+        emptyEl.textContent = 'Error: ' + e.message + '. Check your browser console for details.';
+        console.error('SeasonTracker error:', e);
       }
       btn.disabled = false;
     });
   }
 
-  // ── Auto-find available season ─────────────────────────────
+    // ── Auto-find available season ─────────────────────────────
   async function findAvailableSeason() {
     // Try from localStorage first
     const saved = localStorage.getItem('elo_season_' + CFG.sport);
