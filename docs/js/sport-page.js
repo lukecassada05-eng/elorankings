@@ -538,41 +538,56 @@ window.initSportPage = function(CFG) {
   function renderSeasonTracker() {
     const el = document.getElementById('panel-tracker');
     if (!el) return;
-    if (!data.length) { el.innerHTML = '<div class="empty-state">Load a season first.</div>'; return; }
+    if (!data.length) {
+      el.innerHTML = '<div class="empty-state">Load a season first.</div>';
+      return;
+    }
 
+    // Rebuild HTML every time tab is activated
     const allTeamNames = [...data].sort((a,b)=>a.team.localeCompare(b.team)).map(r=>r.team);
 
     el.innerHTML = `
       <div class="history-wrap">
         <div style="margin-bottom:1rem">
-          <div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.5rem">
+          <div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;
+                      text-transform:uppercase;color:var(--text-muted);margin-bottom:0.5rem">
             Search and select teams to track
           </div>
           <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-start">
 
-            <div style="flex:1;min-width:200px;max-width:280px">
-              <div class="search-wrap" style="margin-bottom:0.4rem">
-                <span class="search-icon">⌕</span>
-                <input type="search" id="trackerSearch" placeholder="Type team name…" style="width:100%">
-              </div>
-              <select id="trackerTeams" multiple size="6"
-                style="width:100%;font-family:var(--font-mono);font-size:0.75rem;
-                       background:var(--bg3);border:1px solid var(--border-md);
-                       color:var(--text);border-radius:var(--radius);padding:0.25rem">
+            <div style="flex:1;min-width:200px;max-width:300px">
+              <input type="text" id="trackerSearch"
+                     placeholder="Type team name to filter…"
+                     autocomplete="off"
+                     style="width:100%;box-sizing:border-box;margin-bottom:0.35rem;
+                            font-family:var(--font-mono);font-size:0.78rem;
+                            background:var(--bg3);border:1px solid var(--border-md);
+                            color:var(--text);border-radius:var(--radius);
+                            padding:0.35rem 0.6rem">
+              <select id="trackerTeams" multiple size="7"
+                      style="width:100%;box-sizing:border-box;
+                             font-family:var(--font-mono);font-size:0.75rem;
+                             background:var(--bg3);border:1px solid var(--border-md);
+                             color:var(--text);border-radius:var(--radius);padding:0.2rem">
               </select>
-              <div style="font-size:0.68rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.25rem">
-                Hold Ctrl/Cmd to select multiple
+              <div style="font-size:0.67rem;color:var(--text-dim);font-family:var(--font-mono);
+                          margin-top:0.2rem">
+                Ctrl/Cmd + click to select multiple
               </div>
             </div>
 
-            <div>
+            <div style="display:flex;flex-direction:column;gap:0.5rem;padding-top:0.1rem">
               <div id="trackerSelected"
-                   style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-muted);
-                          margin-bottom:0.5rem;min-height:1rem"></div>
-              <button class="btn primary" id="trackerRun" style="display:block;margin-bottom:0.4rem">
+                   style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);
+                          max-width:220px;line-height:1.5;min-height:1.2rem"></div>
+              <button id="trackerRun"
+                      style="background:var(--accent);color:#1a1611;border:none;
+                             border-radius:var(--radius);padding:0.45rem 1rem;
+                             font-family:var(--font-mono);font-size:0.78rem;
+                             font-weight:600;cursor:pointer;width:fit-content">
                 ▶ Build tracker
               </button>
-              <div style="font-size:0.7rem;color:var(--text-muted);line-height:1.5">
+              <div style="font-size:0.69rem;color:var(--text-muted);line-height:1.55">
                 Fetches live ESPN data<br>week by week (~30–60s)
               </div>
             </div>
@@ -584,70 +599,83 @@ window.initSportPage = function(CFG) {
              style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);
                     margin-bottom:0.75rem;display:none">
           <div id="trackerMsg">Starting…</div>
-          <div style="height:3px;background:var(--bg4);border-radius:2px;margin-top:0.4rem;overflow:hidden">
+          <div style="height:3px;background:var(--bg4);border-radius:2px;
+                      margin-top:0.4rem;overflow:hidden">
             <div id="trackerBar"
-                 style="height:3px;background:var(--accent);width:0;transition:width 0.4s ease"></div>
+                 style="height:3px;background:var(--accent);width:0;
+                        transition:width 0.4s ease"></div>
           </div>
         </div>
 
-        <div class="history-canvas-wrap" style="display:none" id="trackerChartWrap">
+        <div id="trackerFinalRatings"
+             style="display:none;margin-bottom:0.75rem;
+                    display:none;flex-wrap:wrap;gap:0.5rem"></div>
+
+        <div class="history-canvas-wrap" id="trackerChartWrap" style="display:none">
           <canvas id="trackerCanvas"></canvas>
         </div>
         <div id="trackerEmpty"
-             style="color:var(--text-muted);font-size:0.83rem;text-align:center;padding:2rem;display:none">
-        </div>
+             style="color:var(--text-muted);font-size:0.83rem;
+                    text-align:center;padding:2rem;display:none"></div>
       </div>`;
 
-    // ── Searchable team list ─────────────────────────────────
-    function populateTrackerList(filter) {
+    // ── Populate select (called fresh each filter change) ─────
+    const fillSelect = (q) => {
       const sel = document.getElementById('trackerTeams');
       if (!sel) return;
-      const q = (filter || '').toLowerCase();
-      const filtered = q ? allTeamNames.filter(t => t.toLowerCase().includes(q)) : allTeamNames;
-      // Keep currently selected teams
+      const lq = (q || '').toLowerCase().trim();
+      const filtered = lq
+        ? allTeamNames.filter(t => t.toLowerCase().includes(lq))
+        : allTeamNames;
       const selected = new Set([...sel.selectedOptions].map(o => o.value));
-      sel.innerHTML = filtered.map(t =>
-        `<option value="${t}" ${selected.has(t) ? 'selected' : ''}>${t}</option>`
-      ).join('');
-    }
-    populateTrackerList('');
+      sel.innerHTML = filtered
+        .map(t => `<option value="${t}"${selected.has(t)?' selected':''}>${t}</option>`)
+        .join('');
+    };
+    fillSelect('');
 
-    document.getElementById('trackerSearch')?.addEventListener('input', e => {
-      populateTrackerList(e.target.value);
+    // ── Wire up search input ───────────────────────────────────
+    const searchEl = document.getElementById('trackerSearch');
+    searchEl && searchEl.addEventListener('input', () => fillSelect(searchEl.value));
+
+    // ── Wire up select change → show selected names ────────────
+    const selEl = document.getElementById('trackerTeams');
+    const selDisp = document.getElementById('trackerSelected');
+    selEl && selEl.addEventListener('change', () => {
+      const names = [...selEl.selectedOptions].map(o => o.value);
+      if (selDisp) selDisp.textContent = names.length ? names.join(' · ') : '';
     });
 
-    document.getElementById('trackerTeams')?.addEventListener('change', () => {
-      const sel = document.getElementById('trackerTeams');
-      const names = [...sel.selectedOptions].map(o => o.value);
-      const d = document.getElementById('trackerSelected');
-      if (d) d.textContent = names.length ? names.join(', ') : 'No teams selected';
-    });
+    // ── Run button ─────────────────────────────────────────────
+    const runBtn  = document.getElementById('trackerRun');
+    const status  = document.getElementById('trackerStatus');
+    const msgEl   = document.getElementById('trackerMsg');
+    const barEl   = document.getElementById('trackerBar');
+    const wrap    = document.getElementById('trackerChartWrap');
+    const emptyEl = document.getElementById('trackerEmpty');
+    const finalsEl = document.getElementById('trackerFinalRatings');
 
-    document.getElementById('trackerRun')?.addEventListener('click', async () => {
-      const sel = document.getElementById('trackerTeams');
-      const teams = [...sel.selectedOptions].map(o => o.value);
-      if (!teams.length) { return; }
+    runBtn && runBtn.addEventListener('click', async () => {
+      const teams = [...(document.getElementById('trackerTeams')?.selectedOptions || [])]
+                     .map(o => o.value);
+      if (!teams.length) return;
 
-      const btn     = document.getElementById('trackerRun');
-      const status  = document.getElementById('trackerStatus');
-      const msgEl   = document.getElementById('trackerMsg');
-      const barEl   = document.getElementById('trackerBar');
-      const wrap    = document.getElementById('trackerChartWrap');
-      const emptyEl = document.getElementById('trackerEmpty');
-
-      btn.disabled = true;
+      runBtn.disabled = true;
       status.style.display = 'block';
       wrap.style.display = 'none';
       emptyEl.style.display = 'none';
+      finalsEl.style.display = 'none';
+      finalsEl.innerHTML = '';
+      msgEl.textContent = 'Starting…';
+      barEl.style.width = '0';
 
       try {
         const result = await window.SeasonTracker.buildTracker(
           CFG.sport,
           currentSeason,
-          (done, total, extra, msg) => {
-            const pct = Math.round(done / total * 100);
+          (done, total, _extra, msg) => {
+            barEl.style.width = Math.round(done / total * 100) + '%';
             msgEl.textContent = msg || ('Step ' + done + '/' + total);
-            barEl.style.width = pct + '%';
           }
         );
 
@@ -656,13 +684,13 @@ window.initSportPage = function(CFG) {
         if (!result) {
           emptyEl.style.display = 'block';
           emptyEl.textContent = 'No data available for this season.';
-          btn.disabled = false;
+          runBtn.disabled = false;
           return;
         }
         if (result.noData) {
           emptyEl.style.display = 'block';
           emptyEl.textContent = result.reason || 'Live tracking not available for this sport.';
-          btn.disabled = false;
+          runBtn.disabled = false;
           return;
         }
 
@@ -670,38 +698,69 @@ window.initSportPage = function(CFG) {
         const hasData = teams.some(t => history[t] && history[t].length > 0);
         if (!hasData) {
           emptyEl.style.display = 'block';
-          emptyEl.textContent = 'No games found for selected teams. Try a different season or check that the sport is in-season.';
-          btn.disabled = false;
+          emptyEl.textContent = 'No games found. Is this sport in-season for ' + currentSeason + '?';
+          runBtn.disabled = false;
           return;
         }
 
-        // Load Chart.js
+        // ── Final ratings cards ────────────────────────────────
+        const COLORS = ['#e2c97e','#7eb5e8','#7dd4a8','#e07a65','#c07dcc','#f0a060','#60d0c0'];
+        finalsEl.style.display = 'flex';
+        teams.forEach((team, i) => {
+          const pts = history[team] || [];
+          const finalElo = pts.length ? pts[pts.length - 1].elo.toFixed(1) : '—';
+          // Compare to CSV rating if available
+          const csvRow  = data.find(r => r.team === team);
+          const csvElo  = csvRow ? csvRow.elo.toFixed(1) : null;
+          const diff    = (csvRow && pts.length)
+            ? (pts[pts.length-1].elo - csvRow.elo).toFixed(1)
+            : null;
+          finalsEl.innerHTML += `
+            <div style="background:var(--bg3);border:1px solid var(--border);
+                        border-radius:var(--radius);padding:0.55rem 0.85rem;
+                        border-left:3px solid ${COLORS[i % COLORS.length]}">
+              <div style="font-family:var(--font-mono);font-size:0.6rem;
+                          color:var(--text-dim);margin-bottom:0.2rem;
+                          text-transform:uppercase;letter-spacing:0.1em">${team}</div>
+              <div style="font-size:1.1rem;font-weight:600;color:var(--text)">
+                ${finalElo}
+              </div>
+              ${csvElo ? `<div style="font-size:0.67rem;color:var(--text-dim);
+                                      font-family:var(--font-mono);margin-top:0.15rem">
+                CSV: ${csvElo}
+                ${diff !== null
+                  ? `<span style="color:${Math.abs(parseFloat(diff))<1?'var(--text-dim)':parseFloat(diff)>0?'var(--green-hi)':'var(--red-hi)'};margin-left:0.3rem">
+                      (${parseFloat(diff)>0?'+':''}${diff})
+                    </span>`
+                  : ''}
+              </div>` : ''}
+            </div>`;
+        });
+
+        // ── Chart ──────────────────────────────────────────────
         if (!window.Chart) {
-          await new Promise((resolve, reject) => {
+          await new Promise((res, rej) => {
             const s = document.createElement('script');
             s.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js';
-            s.onload = resolve; s.onerror = reject;
+            s.onload = res; s.onerror = rej;
             document.head.appendChild(s);
           });
         }
 
         wrap.style.display = 'block';
-        const canvas = document.getElementById('trackerCanvas');
         if (window._trackerChart) { window._trackerChart.destroy(); window._trackerChart = null; }
 
-        const COLORS = ['#e2c97e','#7eb5e8','#7dd4a8','#e07a65','#c07dcc','#f0a060','#60d0c0'];
-
-        // Build label array from weeks (short MM/DD format)
         const labels = weeks.map(w => w.slice(4,6) + '/' + w.slice(6,8));
 
         const datasets = teams.map((team, i) => {
-          const pts = history[team] || [];
           const byWeek = {};
-          pts.forEach(p => { byWeek[p.week] = p.elo; });
+          (history[team] || []).forEach(p => { byWeek[p.week] = p.elo; });
+          // For the final label, use the last non-null value
+          const pts = weeks.map(w => byWeek[w] ?? null);
           return {
-            label: team,
-            data: weeks.map(w => byWeek[w] ?? null),
-            borderColor: COLORS[i % COLORS.length],
+            label: team + ' (' + (pts.filter(Boolean).pop() || '—') + ')',
+            data:  pts,
+            borderColor:     COLORS[i % COLORS.length],
             backgroundColor: COLORS[i % COLORS.length] + '18',
             borderWidth: 2.5,
             pointRadius: 3,
@@ -712,7 +771,7 @@ window.initSportPage = function(CFG) {
           };
         });
 
-        window._trackerChart = new Chart(canvas, {
+        window._trackerChart = new Chart(document.getElementById('trackerCanvas'), {
           type: 'line',
           data: { labels, datasets },
           options: {
@@ -721,18 +780,32 @@ window.initSportPage = function(CFG) {
             interaction: { intersect: false, mode: 'index' },
             scales: {
               x: {
-                ticks: { color: '#c0bcb6', maxTicksLimit: 14, font: { size: 11, family: 'monospace' } },
-                grid: { color: 'rgba(255,255,255,0.04)' }
+                ticks: { color:'#c0bcb6', maxTicksLimit:14,
+                         font:{ size:11, family:'monospace' } },
+                grid:  { color:'rgba(255,255,255,0.04)' }
               },
               y: {
-                title: { display: true, text: 'Elo Rating', color: '#c0bcb6', font: { size: 11 } },
-                ticks: { color: '#c0bcb6', font: { family: 'monospace', size: 11 } },
-                grid: { color: 'rgba(255,255,255,0.06)' }
+                title: { display:true, text:'Elo Rating',
+                         color:'#c0bcb6', font:{ size:11 } },
+                ticks: { color:'#c0bcb6', font:{ family:'monospace', size:11 } },
+                grid:  { color:'rgba(255,255,255,0.06)' }
               }
             },
             plugins: {
-              legend: { labels: { color: '#c0bcb6', font: { family: 'monospace', size: 11 }, boxWidth: 16 } },
-              tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + (ctx.parsed.y || 0).toFixed(1) } }
+              legend: {
+                labels: { color:'#c0bcb6',
+                          font:{ family:'monospace', size:11 },
+                          boxWidth:16 }
+              },
+              tooltip: {
+                callbacks: {
+                  label: ctx => {
+                    const raw = ctx.parsed.y;
+                    return ctx.dataset.label.split(' (')[0] +
+                           ': ' + (raw != null ? raw.toFixed(1) : '—');
+                  }
+                }
+              }
             }
           }
         });
@@ -740,10 +813,10 @@ window.initSportPage = function(CFG) {
       } catch (e) {
         status.style.display = 'none';
         emptyEl.style.display = 'block';
-        emptyEl.textContent = 'Error: ' + e.message + '. Check your browser console for details.';
+        emptyEl.textContent = 'Error: ' + e.message;
         console.error('SeasonTracker error:', e);
       }
-      btn.disabled = false;
+      runBtn.disabled = false;
     });
   }
 
