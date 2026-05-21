@@ -540,33 +540,88 @@ window.initSportPage = function(CFG) {
     if (!el) return;
     if (!data.length) { el.innerHTML = '<div class="empty-state">Load a season first.</div>'; return; }
 
+    const allTeamNames = [...data].sort((a,b)=>a.team.localeCompare(b.team)).map(r=>r.team);
+
     el.innerHTML = `
       <div class="history-wrap">
         <div style="margin-bottom:1rem">
           <div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.5rem">
-            Select teams to track (hold Ctrl/Cmd for multiple)
+            Search and select teams to track
           </div>
-          <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end">
-            <select id="trackerTeams" multiple size="5" style="min-width:180px;font-family:var(--font-mono);font-size:0.75rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.25rem">
-              ${[...data].sort((a,b)=>a.team.localeCompare(b.team)).map(r=>`<option value="${r.team}">${r.team}</option>`).join('')}
-            </select>
-            <div>
-              <button class="btn primary" id="trackerRun" style="display:block;margin-bottom:0.4rem">▶ Build tracker</button>
-              <div style="font-size:0.72rem;color:var(--text-muted)">Fetches ESPN live data<br>week by week (~30s)</div>
+          <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-start">
+
+            <div style="flex:1;min-width:200px;max-width:280px">
+              <div class="search-wrap" style="margin-bottom:0.4rem">
+                <span class="search-icon">⌕</span>
+                <input type="search" id="trackerSearch" placeholder="Type team name…" style="width:100%">
+              </div>
+              <select id="trackerTeams" multiple size="6"
+                style="width:100%;font-family:var(--font-mono);font-size:0.75rem;
+                       background:var(--bg3);border:1px solid var(--border-md);
+                       color:var(--text);border-radius:var(--radius);padding:0.25rem">
+              </select>
+              <div style="font-size:0.68rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.25rem">
+                Hold Ctrl/Cmd to select multiple
+              </div>
             </div>
+
+            <div>
+              <div id="trackerSelected"
+                   style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-muted);
+                          margin-bottom:0.5rem;min-height:1rem"></div>
+              <button class="btn primary" id="trackerRun" style="display:block;margin-bottom:0.4rem">
+                ▶ Build tracker
+              </button>
+              <div style="font-size:0.7rem;color:var(--text-muted);line-height:1.5">
+                Fetches live ESPN data<br>week by week (~30–60s)
+              </div>
+            </div>
+
           </div>
         </div>
-        <div id="trackerStatus" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);margin-bottom:0.75rem;display:none">
+
+        <div id="trackerStatus"
+             style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);
+                    margin-bottom:0.75rem;display:none">
           <div id="trackerMsg">Starting…</div>
           <div style="height:3px;background:var(--bg4);border-radius:2px;margin-top:0.4rem;overflow:hidden">
-            <div id="trackerBar" style="height:3px;background:var(--accent);width:0;transition:width 0.4s ease"></div>
+            <div id="trackerBar"
+                 style="height:3px;background:var(--accent);width:0;transition:width 0.4s ease"></div>
           </div>
         </div>
+
         <div class="history-canvas-wrap" style="display:none" id="trackerChartWrap">
           <canvas id="trackerCanvas"></canvas>
         </div>
-        <div id="trackerEmpty" style="color:var(--text-muted);font-size:0.83rem;text-align:center;padding:2rem;display:none"></div>
+        <div id="trackerEmpty"
+             style="color:var(--text-muted);font-size:0.83rem;text-align:center;padding:2rem;display:none">
+        </div>
       </div>`;
+
+    // ── Searchable team list ─────────────────────────────────
+    function populateTrackerList(filter) {
+      const sel = document.getElementById('trackerTeams');
+      if (!sel) return;
+      const q = (filter || '').toLowerCase();
+      const filtered = q ? allTeamNames.filter(t => t.toLowerCase().includes(q)) : allTeamNames;
+      // Keep currently selected teams
+      const selected = new Set([...sel.selectedOptions].map(o => o.value));
+      sel.innerHTML = filtered.map(t =>
+        `<option value="${t}" ${selected.has(t) ? 'selected' : ''}>${t}</option>`
+      ).join('');
+    }
+    populateTrackerList('');
+
+    document.getElementById('trackerSearch')?.addEventListener('input', e => {
+      populateTrackerList(e.target.value);
+    });
+
+    document.getElementById('trackerTeams')?.addEventListener('change', () => {
+      const sel = document.getElementById('trackerTeams');
+      const names = [...sel.selectedOptions].map(o => o.value);
+      const d = document.getElementById('trackerSelected');
+      if (d) d.textContent = names.length ? names.join(', ') : 'No teams selected';
+    });
 
     document.getElementById('trackerRun')?.addEventListener('click', async () => {
       const sel = document.getElementById('trackerTeams');
@@ -589,9 +644,9 @@ window.initSportPage = function(CFG) {
         const result = await window.SeasonTracker.buildTracker(
           CFG.sport,
           currentSeason,
-          (done, total, gamesThisWeek) => {
+          (done, total, extra, msg) => {
             const pct = Math.round(done / total * 100);
-            msgEl.textContent = `Week ${done}/${total} — ${gamesThisWeek} games found`;
+            msgEl.textContent = msg || ('Step ' + done + '/' + total);
             barEl.style.width = pct + '%';
           }
         );
