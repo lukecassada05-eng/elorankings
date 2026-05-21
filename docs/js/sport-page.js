@@ -26,6 +26,7 @@ window.initSportPage = function(CFG) {
       if (tab.dataset.tab === 'bracketology') renderBracketology();
       if (tab.dataset.tab === 'resume')       renderResume();
       if (tab.dataset.tab === 'history')      renderHistory();
+      if (tab.dataset.tab === 'tracker')     renderSeasonTracker();
     });
   });
 
@@ -73,6 +74,7 @@ window.initSportPage = function(CFG) {
       if (pn === 'bracketology') renderBracketology();
       if (pn === 'resume')       renderResume();
       if (pn === 'history')      renderHistory();
+      if (pn === 'tracker')     renderSeasonTracker();
     }
   }
 
@@ -527,6 +529,162 @@ window.initSportPage = function(CFG) {
       });
 
       btn.textContent = 'Draw chart';
+      btn.disabled = false;
+    });
+  }
+
+
+  // ── Season Tracker (live in-season Elo progression) ───────
+  function renderSeasonTracker() {
+    const el = document.getElementById('panel-tracker');
+    if (!el) return;
+
+    // Sport name mapping for tracker
+    const trackerSport = {
+      'NFL':'NFL','NBA':'NBA','CBB':'CBB','NHL':'NHL',
+      'MLB':'MLB','CFB':'CFB','CBASE':'CBASE','Soccer':'Soccer'
+    }[CFG.sport];
+
+    el.innerHTML = `
+      <div class="history-wrap">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.75rem;margin-bottom:1rem">
+          <div class="ctrl-group">
+            <span class="ctrl-label">Track teams</span>
+            <select id="trackerTeams" multiple size="4" style="min-width:160px;height:90px">
+              ${[...data].sort((a,b)=>a.team.localeCompare(b.team))
+                  .map(r=>`<option value="${r.team}">${r.team}</option>`).join('')}
+            </select>
+          </div>
+          <div style="font-size:0.78rem;color:var(--text-muted);max-width:220px;line-height:1.5">
+            Hold Ctrl/Cmd to select multiple teams.<br>
+            Fetches live game data week by week.
+          </div>
+          <button class="btn primary" id="trackerRun">▶ Build tracker</button>
+        </div>
+        <div id="trackerProgress" style="display:none;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);margin-bottom:0.75rem">
+          <span id="trackerMsg">Fetching games…</span>
+          <div style="height:4px;background:var(--bg4);border-radius:2px;margin-top:0.4rem">
+            <div id="trackerBar" style="height:4px;background:var(--accent);border-radius:2px;width:0;transition:width 0.3s"></div>
+          </div>
+        </div>
+        <div class="history-canvas-wrap"><canvas id="trackerCanvas"></canvas></div>
+      </div>
+      <div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);margin-top:0.5rem">
+        Live data fetched from ESPN. May take 15–60 seconds for full season. Results not saved between sessions.
+      </div>`;
+
+    document.getElementById('trackerRun')?.addEventListener('click', async () => {
+      const sel = document.getElementById('trackerTeams');
+      const teams = [...sel.selectedOptions].map(o => o.value);
+      if (!teams.length) { alert('Select at least one team'); return; }
+
+      const btn = document.getElementById('trackerRun');
+      const prog = document.getElementById('trackerProgress');
+      const msg  = document.getElementById('trackerMsg');
+      const bar  = document.getElementById('trackerBar');
+      btn.disabled = true;
+      prog.style.display = 'block';
+
+      try {
+        const result = await window.SeasonTracker.buildTracker(
+          trackerSport,
+          currentSeason,
+          (done, total) => {
+            const pct = Math.round((done/total)*100);
+            msg.textContent = `Fetching week ${done}/${total}…`;
+            bar.style.width = pct + '%';
+          }
+        );
+
+        if (!result || !result.weeks.length) {
+          msg.textContent = 'No data found for this season.';
+          btn.disabled = false;
+          return;
+        }
+
+        // Load Chart.js if needed
+        if (!window.Chart) {
+          await new Promise((resolve, reject) => {
+            const s = document.createElement('script');
+            s.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js';
+            s.onload = resolve; s.onerror = reject;
+            document.head.appendChild(s);
+          });
+        }
+
+        const canvas = document.getElementById('trackerCanvas');
+        if (window._trackerChart) window._trackerChart.destroy();
+
+        const COLORS = ['#e2c97e','#7eb5e8','#7dd4a8','#e07a65','#c07dcc','#f0a060','#60c0d0'];
+
+        const datasets = teams.map((team, i) => {
+          const pts = result.history[team] || [];
+          return {
+            label: team,
+            data: pts.map(p => ({ x: parseInt(p.week.slice(0,4) + '.' +
+              (parseInt(p.week.slice(4,6)) + parseInt(p.week.slice(6,8))/31).toFixed(2).slice(1)),
+              y: p.elo, w: p.week })),
+            borderColor: COLORS[i % COLORS.length],
+            backgroundColor: COLORS[i % COLORS.length] + '20',
+            borderWidth: 2.5,
+            pointRadius: 3,
+            tension: 0.35,
+            fill: false
+          };
+        });
+
+        // Use week labels as x-axis categories
+        const allWeeks = result.weeks;
+        const labelMap = {};
+        allWeeks.forEach((w,i) => { labelMap[w] = i; });
+
+        const datasets2 = teams.map((team, i) => {
+          const pts = (result.history[team] || []);
+          // One point per week
+          const byWeek = {};
+          pts.forEach(p => { byWeek[p.week] = p.elo; });
+          return {
+            label: team,
+            data: allWeeks.map(w => byWeek[w] ?? null),
+            borderColor: COLORS[i % COLORS.length],
+            backgroundColor: COLORS[i % COLORS.length] + '20',
+            borderWidth: 2.5,
+            pointRadius: 3,
+            tension: 0.35,
+            fill: false,
+            spanGaps: true
+          };
+        });
+
+        const shortWeeks = allWeeks.map(w => w.slice(4,6) + '/' + w.slice(6,8));
+
+        window._trackerChart = new Chart(canvas, {
+          type: 'line',
+          data: { labels: shortWeeks, datasets: datasets2 },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            scales: {
+              x: { title:{ display:true, text:'Week', color:'var(--text-muted)' },
+                   ticks:{ color:'var(--text-muted)', maxTicksLimit:12, font:{size:11} },
+                   grid:{ color:'rgba(255,255,255,0.04)' } },
+              y: { title:{ display:true, text:'Elo Rating', color:'var(--text-muted)' },
+                   ticks:{ color:'var(--text-muted)' },
+                   grid:{ color:'rgba(255,255,255,0.06)' } }
+            },
+            plugins: {
+              legend: { labels:{ color:'var(--text-muted)', font:{ family:'monospace', size:11 } } },
+              tooltip: { callbacks: {
+                label: ctx => ctx.dataset.label + ': ' + (ctx.parsed.y||0).toFixed(1)
+              }}
+            }
+          }
+        });
+
+        prog.style.display = 'none';
+      } catch(e) {
+        msg.textContent = 'Error: ' + e.message;
+        console.error(e);
+      }
       btn.disabled = false;
     });
   }
