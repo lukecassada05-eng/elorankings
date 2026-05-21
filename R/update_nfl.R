@@ -23,21 +23,25 @@ dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 DIVS <- c(
   # AFC East
   BUF="AFC East", MIA="AFC East", NE="AFC East", NYJ="AFC East",
-  # AFC North
-  BAL="AFC North", CIN="AFC North", CLE="AFC North", PIT="AFC North",
-  # AFC South (HOU expansion 2002; TEN was OIL/Oilers pre-1999)
+  # AFC North — BLT (old Baltimore), CLV (old Cleveland) used in some eras
+  BAL="AFC North", BLT="AFC North", CIN="AFC North",
+  CLE="AFC North", CLV="AFC North", PIT="AFC North",
+  # AFC South — HOU expansion 2002; JAC alternate for JAX
   HOU="AFC South", IND="AFC South", JAX="AFC South", JAC="AFC South", TEN="AFC South",
-  # AFC West (OAK→LV 2020; SD→LAC 2017)
+  # AFC West — OAK→LV 2020; SD→LAC 2017
   DEN="AFC West", KC="AFC West", LV="AFC West", OAK="AFC West",
   LAC="AFC West", SD="AFC West",
-  # NFC East (WAS sometimes WSH)
+  # NFC East — WSH alternate for WAS
   DAL="NFC East", NYG="NFC East", PHI="NFC East", WAS="NFC East", WSH="NFC East",
   # NFC North
   CHI="NFC North", DET="NFC North", GB="NFC North", MIN="NFC North",
   # NFC South
   ATL="NFC South", CAR="NFC South", NO="NFC South", TB="NFC South",
-  # NFC West (STL→LAR 2016)
-  ARI="NFC West", LAR="NFC West", STL="NFC West", SF="NFC West", SEA="NFC West"
+  # NFC West — STL→LA 2016; LAR alternate; CRD (old Cardinals code)
+  # nflreadr normalizes STL→"LA", not "LAR"
+  ARI="NFC West", CRD="NFC West",
+  LA="NFC West", LAR="NFC West", STL="NFC West",
+  SF="NFC West", SEA="NFC West"
 )
 
 # ── Load all seasons ──────────────────────────────────────────

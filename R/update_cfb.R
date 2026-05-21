@@ -44,7 +44,7 @@ get_conf <- function(team, year) {
                 "Duke","Virginia","Virginia Tech","Georgia Tech",
                 "Wake Forest","Louisville","Pitt","Pittsburgh",
                 "Syracuse","Boston College")
-  acc_new  <- c("Notre Dame","SMU","Stanford","California","Cal")
+  acc_new  <- c("SMU","Stanford","California","Cal")  # Notre Dame is Independent in football
   if (t %in% acc_core) return("ACC")
   if (t %in% acc_new && year >= 2024) return("ACC")
   if (t == "Maryland" && year <= 2013) return("ACC")

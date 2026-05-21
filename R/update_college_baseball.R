@@ -120,11 +120,16 @@ parse_event <- function(ev) {
   }, error=function(e) NULL)
 }
 
+# Fetch games for a single date string (YYYYMMDD)
 fetch_date <- function(ds) {
-  for (q in list(list(dates=ds,limit=500), list(dates=ds,limit=500,groups=11))) {
+  # Try without groups first (returns ALL ncaa baseball), then with groups=11
+  for (q in list(
+    list(dates=ds, limit=1000),
+    list(dates=ds, limit=1000, groups=11)
+  )) {
     resp <- tryCatch(
       GET("https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard",
-          query=q, timeout(20)), error=function(e) NULL)
+          query=q, timeout(30)), error=function(e) NULL)
     if (is.null(resp)||status_code(resp)!=200) next
     data <- tryCatch(fromJSON(rawToChar(resp$content),simplifyDataFrame=FALSE),
                      error=function(e) NULL)
@@ -141,18 +146,60 @@ fetch_date <- function(ds) {
   NULL
 }
 
+# Fetch a week of games using date range parameter (YYYYMMDD-YYYYMMDD)
+# This is more efficient and often returns more results than single-day queries
+fetch_week_range <- function(start_date, end_date) {
+  ds <- paste0(gsub("-","",start_date), "-", gsub("-","",end_date))
+  resp <- tryCatch(
+    GET("https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard",
+        query=list(dates=ds, limit=1000), timeout(30)),
+    error=function(e) NULL)
+  if (is.null(resp)||status_code(resp)!=200) return(NULL)
+  data <- tryCatch(fromJSON(rawToChar(resp$content),simplifyDataFrame=FALSE),
+                   error=function(e) NULL)
+  if (is.null(data)||length(data$events)==0) return(NULL)
+  rows <- Filter(Negate(is.null), lapply(data$events, parse_event))
+  if (!length(rows)) return(NULL)
+  data.frame(
+    winner=sapply(rows,`[[`,"winner"), loser=sapply(rows,`[[`,"loser"),
+    winner_pts=as.numeric(sapply(rows,`[[`,"winner_pts")),
+    loser_pts=as.numeric(sapply(rows,`[[`,"loser_pts")),
+    stringsAsFactors=FALSE)
+}
+
 for (yr in SEASONS) {
   message("College Baseball ", yr, "...")
-  dates <- seq(as.Date(paste0(yr,"-02-14")),
-               min(as.Date(paste0(yr,"-06-30")), Sys.Date()), by="1 day")
-  all_games <- list()
-  n_days <- 0
-  for (d in as.character(dates)) {
-    res <- fetch_date(gsub("-","",d))
-    if (!is.null(res)&&nrow(res)>0) { all_games <- c(all_games, list(res)); n_days <- n_days+1 }
-    Sys.sleep(0.12)
+  season_start <- as.Date(paste0(yr, "-02-14"))
+  season_end   <- min(as.Date(paste0(yr, "-06-30")), Sys.Date())
+  all_games    <- list()
+  n_days       <- 0
+
+  if (season_start > Sys.Date()) {
+    message("  Season hasn't started yet"); next
   }
-  message("  Days with games: ", n_days)
+
+  # Strategy 1: fetch week-by-week ranges (more reliable, gets all games)
+  week_starts <- seq(season_start, season_end, by="7 days")
+  for (ws in as.character(week_starts)) {
+    we <- min(as.Date(ws) + 6, season_end)
+    res <- fetch_week_range(ws, as.character(we))
+    if (!is.null(res)&&nrow(res)>0) { all_games <- c(all_games, list(res)); n_days <- n_days+1 }
+    Sys.sleep(0.3)
+  }
+
+  # Strategy 2: fill in any gaps with individual day queries
+  days_covered <- nrow(do.call(rbind, c(all_games, list(data.frame(winner=character(0),loser=character(0),winner_pts=numeric(0),loser_pts=numeric(0)))))) > 0
+  if (!days_covered || length(all_games) < 5) {
+    message("  Week ranges sparse, trying daily fetch...")
+    dates <- seq(season_start, season_end, by="1 day")
+    for (d in as.character(dates)) {
+      res <- fetch_date(gsub("-","",d))
+      if (!is.null(res)&&nrow(res)>0) { all_games <- c(all_games, list(res)); n_days <- n_days+1 }
+      Sys.sleep(0.15)
+    }
+  }
+
+  message("  Batches/days with games: ", n_days)
   if (!length(all_games)) { message("  Skip"); next }
 
   g <- unique(do.call(rbind, all_games))

@@ -35,30 +35,42 @@ get_cbb_season <- function(season) {
     if (nrow(sched) == 0) return(NULL)
 
     # ── Build team->conference map ─────────────────────────────
-    # Strategy: for every game row, both teams are playing in some context.
-    # When conference_competition == TRUE, groups_name = the conference name.
-    # We can map EITHER team in that game to that conference.
-    conf_games <- sched %>%
+    # Use ALL rows with non-empty groups_name, not just conference_competition.
+    # This covers many more teams since non-conf games also carry groups_name.
+    # Priority: conference_competition games first, then any groups_name row.
+
+    # Step 1: from conference games (most reliable)
+    conf_rows <- sched %>%
       filter(isTRUE(conference_competition) | conference_competition == TRUE,
-             !is.na(groups_name), groups_name != "")
+             !is.na(groups_name), trimws(groups_name) != "")
 
-    # Map home team id -> conference
-    home_map <- conf_games %>%
-      select(team_id = home_id, team_name = home_short_display_name,
-             conference = groups_name) %>%
-      distinct(team_id, .keep_all = TRUE)
+    # Step 2: from ANY game with groups_name (catches remaining teams)
+    any_rows <- sched %>%
+      filter(!is.na(groups_name), trimws(groups_name) != "",
+             !grepl("^[0-9]+$", trimws(groups_name)))  # exclude numeric group IDs
 
-    # Map away team id -> conference (same conference as home in conf game)
-    away_map <- conf_games %>%
-      select(team_id = away_id, team_name = away_short_display_name,
-             conference = groups_name) %>%
-      distinct(team_id, .keep_all = TRUE)
+    # Build maps: team_name -> conference
+    build_map <- function(df) {
+      if (nrow(df) == 0) return(character(0))
+      home <- setNames(df$groups_name, df$home_short_display_name)
+      away <- setNames(df$groups_name, df$away_short_display_name)
+      both <- c(home, away)
+      # Deduplicate: prefer the first assignment
+      both[!duplicated(names(both))]
+    }
 
-    team_conf_df <- bind_rows(home_map, away_map) %>%
-      distinct(team_id, .keep_all = TRUE)
+    conf_map_priority <- build_map(conf_rows)
+    conf_map_any      <- build_map(any_rows)
 
-    conf_by_id   <- setNames(team_conf_df$conference, as.character(team_conf_df$team_id))
-    conf_by_name <- setNames(team_conf_df$conference, team_conf_df$team_name)
+    # Merge: priority map wins, fill gaps with any_rows map
+    all_names  <- unique(c(names(conf_map_priority), names(conf_map_any)))
+    conf_map <- ifelse(
+      !is.na(conf_map_priority[all_names]),
+      conf_map_priority[all_names],
+      conf_map_any[all_names]
+    )
+    names(conf_map) <- all_names
+    conf_map <- conf_map[!is.na(names(conf_map)) & names(conf_map) != ""]
 
     # ── Build games ────────────────────────────────────────────
     games <- sched %>%
@@ -76,9 +88,6 @@ get_cbb_season <- function(season) {
       select(winner, loser, winner_pts, loser_pts)
 
     if (nrow(games) == 0) return(NULL)
-
-    # Final conference map: by name (covers all teams that appeared in a conf game)
-    conf_map <- conf_by_name
 
     list(games = games, conf_map = conf_map)
   }, error = function(e) { message("  ERROR: ", e$message); NULL })
