@@ -200,3 +200,112 @@ footer a:hover{color:var(--accent)}
   footer{flex-direction:column;align-items:flex-start}
   .summary-bar{grid-template-columns:1fr 1fr}
 }
+
+/* ── Mobile hamburger ── */
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: 1px solid var(--border-md);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  padding: 0.5rem 1.5rem;
+}
+.nav-mobile a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.05em;
+}
+.nav-mobile a:last-child { border-bottom: none; }
+.nav-mobile a:hover { color: var(--accent); }
+
+/* ── Elo trend arrows ── */
+.trend-up   { color: var(--green-hi); font-size: 0.75rem; }
+.trend-down { color: var(--red-hi);   font-size: 0.75rem; }
+.trend-new  { color: var(--text-dim); font-size: 0.65rem; font-family: var(--font-mono); }
+
+/* ── Row expansion ── */
+.team-row { cursor: pointer; }
+.team-row:hover td.team-name { color: var(--accent); }
+.expand-row td {
+  background: var(--bg3);
+  padding: 0.75rem 0.85rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.expand-row .game-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+.game-chip {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: var(--bg4);
+  color: var(--text-muted);
+}
+.game-chip.win  { border-color: rgba(74,158,110,0.3); color: var(--green-hi); background: var(--green-dim); }
+.game-chip.loss { border-color: rgba(192,90,71,0.25);  color: var(--red-hi);   background: rgba(192,90,71,0.08); }
+
+/* ── Streak dots ── */
+.streak { display: flex; gap: 3px; align-items: center; }
+.streak-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+}
+.streak-dot.w { background: var(--green-hi); }
+.streak-dot.l { background: var(--red-hi); }
+
+/* ── History chart wrapper ── */
+.history-wrap {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.history-team-select {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.history-canvas-wrap { position: relative; height: 280px; }
+
+/* ── Last updated badge ── */
+.updated-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 0.2rem 0.65rem;
+  margin-top: 0.4rem;
+}
+
+@media(max-width:768px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: block; }
+}
