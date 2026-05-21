@@ -341,7 +341,8 @@ get_conf <- function(team, year) {
   if (t == "New Mexico State") {
     if (year >= 2023) return("C-USA")
     if (year >= 2018) return("Independent")
-    return("WAC")
+    if (year >= 2005) return("WAC")   # joined WAC 2005, dropped to FCS after 2017
+    return("FCS")   # FCS Southland until 2004
   }
   if (t == "Sam Houston") {
     if (year >= 2021) return("C-USA")
@@ -383,7 +384,7 @@ get_conf <- function(team, year) {
 
   # ── BIG TEN ────────────────────────────────────────────────
   b10_stable <- c("Michigan","Ohio State","Penn State","Michigan State","Minnesota","Wisconsin",
-                  "Iowa","Purdue","Illinois","Indiana","Northwestern","Nebraska")
+                  "Iowa","Purdue","Illinois","Indiana","Northwestern")
   if (t %in% b10_stable) return("Big Ten")
   if (t == "Maryland"  && year >= 2014) return("Big Ten")
   if (t == "Rutgers") {
@@ -395,8 +396,12 @@ get_conf <- function(team, year) {
   if (t == "Oregon"                && year >= 2024) return("Big Ten")
 
   # ── BIG 12 ────────────────────────────────────────────────
-  b12_stable <- c("Kansas","Kansas State","Iowa State","Baylor","TCU","Texas Tech","Oklahoma State")
+  b12_stable <- c("Kansas","Kansas State","Iowa State","Baylor","Texas Tech","Oklahoma State")
   if (t %in% b12_stable) return("Big 12")
+  if (t == "TCU") {
+    if (year >= 2012) return("Big 12")
+    return("Mountain West")
+  }
   if (t == "West Virginia") {
     if (year >= 2012) return("Big 12")
     return("Big East")
