@@ -1,7 +1,7 @@
 'use strict';
 
 window.initSportPage = function(CFG) {
-  let data = [], allSeasonData = {}, currentSeason = CFG.seasons[0];
+  let data = [], allSeasonData = {}, currentSeason = (CFG.seasons && CFG.seasons[0]) || new Date().getFullYear();
 
   // ── Season picker ──────────────────────────────────────────
   // Picker is built dynamically after probeSeasons() discovers available CSVs
@@ -47,7 +47,7 @@ window.initSportPage = function(CFG) {
 
     // Also pre-load prev season for trend arrows (async, no wait)
     const prevYr = yr - 1;
-    if (!allSeasonData[prevYr] && CFG.seasons.includes(prevYr)) {
+    if (!allSeasonData[prevYr] && CFG.seasons && CFG.seasons.includes(prevYr)) {
       fetchCSV(CFG.dataPath + prevYr + '.csv').then(raw => {
         if (raw) {
           allSeasonData[prevYr] = raw.map(coerceRow);
@@ -454,7 +454,7 @@ window.initSportPage = function(CFG) {
       btn.disabled = true;
 
       // Load all seasons
-      const seasonYears = CFG.seasons.slice().reverse(); // oldest first
+      const seasonYears = (CFG.seasons || []).slice().reverse(); // oldest first
       for (const yr of seasonYears) {
         if (!allSeasonData[yr]) {
           const raw = await fetchCSV(CFG.dataPath + yr + '.csv');
@@ -834,50 +834,60 @@ window.initSportPage = function(CFG) {
 
     // ── Auto-find available season ─────────────────────────────
 async function findAvailableSeason() {
-    // Dynamic season probe — checks which CSVs actually exist
-    // This means new seasons auto-appear without any code changes
-    if (!CFG.seasons || CFG.seasons === null) {
-      CFG.seasons = await probeSeasons();
-      if (!CFG.seasons.length) {
-        CFG.seasons = [CFG.currentGuess || new Date().getFullYear()];
-      }
-      // Rebuild picker now that we know seasons
-      const picker = document.getElementById('seasonPicker');
-      if (picker) {
-        picker.innerHTML = '';
-        CFG.seasons.forEach(yr => {
-          const b = document.createElement('button');
-          b.className = 'season-btn';
-          b.textContent = yr;
-          b.onclick = () => loadSeason(yr);
-          picker.appendChild(b);
-        });
-      }
-    }
-    // Check localStorage for last-used season
     const saved = localStorage.getItem('elo_season_' + CFG.sport);
     if (saved && CFG.seasons.includes(parseInt(saved))) return parseInt(saved);
+    // Check if a newer season CSV exists (e.g. 2027 when list goes to 2026)
+    await checkForNewerSeasons();
+    // Walk newest first until we find one with actual data
+    for (const yr of CFG.seasons) {
+      try {
+        const r = await fetch(CFG.dataPath + yr + '.csv?t=' + Date.now(), {method:'HEAD'});
+        if (r.ok) return yr;
+      } catch(_) {}
+    }
     return CFG.seasons[0];
   }
 
-  // ── Probe which season CSVs actually exist ───────────────────
-  async function probeSeasons() {
-    const guess = CFG.currentGuess || new Date().getFullYear() + 1;
-    const first = CFG.firstSeason  || 2001;
-    const found = [];
-    let   misses = 0;
-
-    for (let yr = guess + 2; yr >= first; yr--) {
+  async function checkForNewerSeasons() {
+    const newest = CFG.seasons[0];
+    const added  = [];
+    for (let yr = newest + 2; yr >= newest + 1; yr--) {
       try {
         const r = await fetch(CFG.dataPath + yr + '.csv?t=' + Date.now(), {method:'HEAD'});
-        if (r.ok) { found.push(yr); misses = 0; }
-        else       { misses++; if (yr < guess - 2 && misses >= 3) break; }
-      } catch(_) { misses++; }
+        if (r.ok) added.push(yr);
+      } catch(_) {}
     }
-    return found.sort((a,b) => b - a);  // newest first
+    if (!added.length) return;
+    for (const yr of added.sort((a,b) => b - a)) {
+      if (!CFG.seasons.includes(yr)) CFG.seasons.unshift(yr);
+    }
+    // Rebuild picker with new season buttons at the front
+    const picker = document.getElementById('seasonPicker');
+    if (picker) {
+      picker.innerHTML = '';
+      CFG.seasons.forEach(yr => {
+        const b = document.createElement('button');
+        b.className = 'season-btn';
+        b.textContent = yr;
+        b.onclick = () => loadSeason(yr);
+        picker.appendChild(b);
+      });
+    }
   }
 
-  // ── Init ──────────────────────────────────────────────────
+    // ── Init ──────────────────────────────────────────────────
+  // Build initial picker from hardcoded seasons, then load best season
+  const picker = document.getElementById('seasonPicker');
+  if (picker) {
+    CFG.seasons.forEach(yr => {
+      const b = document.createElement('button');
+      b.className = 'season-btn';
+      b.textContent = yr;
+      b.onclick = () => loadSeason(yr);
+      picker.appendChild(b);
+    });
+  }
+
   findAvailableSeason().then(yr => {
     document.querySelectorAll('.season-btn').forEach(b =>
       b.classList.toggle('active', parseInt(b.textContent) === yr));
