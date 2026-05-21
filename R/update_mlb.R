@@ -29,14 +29,15 @@ dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 # ── Division map ──────────────────────────────────────────────
 DIVS <- c(
   "New York Yankees"="AL East",    "Boston Red Sox"="AL East",
-  "Toronto Blue Jays"="AL East",   "Tampa Bay Rays"="AL East",
+  "Toronto Blue Jays"="AL East",   "Tampa Bay Rays"="AL East",    "Tampa Bay Devil Rays"="AL East",
   "Baltimore Orioles"="AL East",
   "Chicago White Sox"="AL Central","Cleveland Guardians"="AL Central",
   "Cleveland Indians"="AL Central","Detroit Tigers"="AL Central",
   "Kansas City Royals"="AL Central","Minnesota Twins"="AL Central",
   "Houston Astros"="AL West",      "Los Angeles Angels"="AL West",
-  "Oakland Athletics"="AL West",   "Seattle Mariners"="AL West",
-  "Texas Rangers"="AL West",       "Anaheim Angels"="AL West",
+  "Oakland Athletics"="AL West",   "Athletics"="AL West",
+  "Sacramento Athletics"="AL West", "Seattle Mariners"="AL West",
+  "Texas Rangers"="AL West",       "Anaheim Angels"="AL West",   "Los Angeles Angels of Anaheim"="AL West",
   "Atlanta Braves"="NL East",      "Miami Marlins"="NL East",
   "Florida Marlins"="NL East",     "New York Mets"="NL East",
   "Philadelphia Phillies"="NL East","Washington Nationals"="NL East",

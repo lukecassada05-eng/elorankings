@@ -402,8 +402,9 @@ get_conf <- function(team, year) {
     return("Big 12")
   }
   if (t == "Massachusetts") {
-    if (year >= 2012) return("Independent")
-    return("MAC")  # MAC until 2011
+    if (year >= 2024) return("MAC")       # rejoined MAC 2024
+    if (year >= 2012) return("Independent") # independent 2012-2023
+    return("MAC")                          # original MAC member until 2011
   }
   if (t == "UConn") {
     if (year >= 2020) return("Independent")
@@ -556,7 +557,7 @@ get_conf <- function(team, year) {
   if (t == "Colorado" && year <= 2010) return("Mountain West")
 
   # ── AAC (2013+) / BIG EAST football (2001-2012) ───────────
-  aac_founding <- c("South Florida","East Carolina","Memphis","Tulane","Temple",
+  aac_founding <- c("South Florida","Memphis","Temple",
                     "Houston","UCF","Cincinnati","Tulsa","Navy","Wichita State","SMU")
   big_east_fb  <- c("South Florida","Rutgers","Pittsburgh","Cincinnati","West Virginia",
                     "Louisville","Syracuse","UConn","Navy","Temple")
@@ -565,12 +566,24 @@ get_conf <- function(team, year) {
     if (year >= 2013) return("AAC")
     return("Big East")
   }
+  if (t == "East Carolina") {
+    if (year >= 2013) return("AAC")
+    return("C-USA")  # C-USA 2001-2012
+  }
+  if (t == "Tulane") {
+    if (year >= 2022) return("AAC")
+    if (year >= 2005) return("Independent")  # left C-USA after 2004, independent 2005-2021
+    return("C-USA")  # C-USA 2001-2004
+  }
   if (t == "North Texas") {
     if (year >= 2024) return("AAC")
     if (year >= 2013) return("C-USA")
     return("Sun Belt")
   }
-  if (t == "Charlotte"   && year >= 2015 && year <= 2023) return("C-USA")
+  if (t == "Charlotte") {
+    if (year >= 2015 && year <= 2023) return("C-USA")
+    return("FCS")  # pre-FBS or dropped program after 2023
+  }
   if (t == "UTSA"        && year >= 2013) return("C-USA")
 
   # ── SUN BELT ──────────────────────────────────────────────
@@ -607,7 +620,7 @@ get_conf <- function(team, year) {
   # ── C-USA ─────────────────────────────────────────────────
   cusa_current <- c("UAB","Middle Tennessee","Western Kentucky","Florida Atlantic","FIU",
                     "UTEP","Louisiana Tech","Rice","Kennesaw State","Jacksonville State",
-                    "Sam Houston","Liberty","New Mexico State","UTSA","Charlotte")
+                    "Sam Houston","Liberty","New Mexico State","UTSA")
   if (t %in% cusa_current) {
     if (t == "Middle Tennessee" && year <= 2012) return("Sun Belt")
     if (t == "Western Kentucky" && year < 2009)  return("FCS")
@@ -732,6 +745,11 @@ parse_event <- function(ev) {
          winner_pts=max(hs,as_), loser_pts=min(hs,as_))
   }, error=function(e) NULL)
 }
+
+# Known FBS Independents who might be missed by groups=80
+FBS_INDEPENDENTS <- c("Notre Dame","Army","Navy","Massachusetts","UMass",
+                      "Connecticut","UConn","BYU","Liberty","New Mexico State",
+                      "North Alabama","Incarnate Word","East Texas A&M")
 
 fetch_date <- function(ds) {
   resp <- tryCatch(
