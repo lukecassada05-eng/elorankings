@@ -226,6 +226,17 @@ ALIASES <- c(
   # America East
   "Binghamton"="Binghamton","UAlbany"="Albany",
   "UMass Lowell"="UMass Lowell","Hartford"="Hartford","UMBC"="UMBC",
+  # Missing from previous version
+  "Lindenwood"="Lindenwood",
+  "Charleston"="Charleston","Col. of Charleston"="Charleston","C. of Charleston"="Charleston",
+  "Little Rock"="Little Rock","Ark.-Little Rock"="Little Rock","Ark-Little Rock"="Little Rock",
+  "Oral Roberts"="Oral Roberts","ORU"="Oral Roberts",
+  "UIC"="Illinois-Chicago","Illinois-Chicago"="Illinois-Chicago",
+  "UT Arlington"="UT Arlington","UTA"="UT Arlington","Tex. Arlington"="UT Arlington",
+  "New Orleans"="New Orleans","UNO"="New Orleans",
+  "SIUE"="SIUE","SIU Edwardsville"="SIUE","SIU-E"="SIUE",
+  "Wichita St"="Wichita State","Wichita St."="Wichita State",
+,
   # Missing ESPN shortDisplayName variants
   "Wichita St"="Wichita State","Wichita St."="Wichita State",
   "C Arkansas"="Central Arkansas","Cent. Arkansas"="Central Arkansas",
@@ -335,7 +346,8 @@ get_conf_cbase <- function(team, year) {
   # ── AAC ───────────────────────────────────────────────────
   aac_stable <- c("East Carolina","Tulane","South Florida","Memphis","Temple",
                   "Houston","UCF","Cincinnati","Tulsa","Navy","Dallas Baptist",
-                  "Charlotte","UTSA","North Texas","Wichita State","Florida Atlantic")
+                  "Charlotte","UTSA","North Texas","Wichita State","Florida Atlantic",
+                  "Rice","Old Dominion")
   if (t %in% aac_stable) {
     if (year >= 2013) return("AAC")
     return("C-USA")
@@ -346,15 +358,14 @@ get_conf_cbase <- function(team, year) {
                       "Georgia Southern","Georgia State","South Alabama","UL Monroe",
                       "Southern Miss","Texas State","Coastal Carolina","Old Dominion",
                       "James Madison","Marshall","Louisiana Tech","Little Rock",
-                      "UT Arlington","UT Rio Grande Valley")
+                      "UT Arlington","Georgia State","New Orleans")
   if (t %in% sunbelt_stable) return("Sun Belt")
 
   # ── C-USA ─────────────────────────────────────────────────
   cusa_stable <- c("UAB","Middle Tennessee","Western Kentucky","Florida Atlantic",
                    "FIU","UTEP","Rice","Kennesaw State","Jacksonville State",
                    "Sam Houston","Liberty","New Mexico State","UTSA","Charlotte",
-                   "Dallas Baptist","North Texas","Old Dominion","Louisiana Tech",
-                   "Western Kentucky")
+                   "Dallas Baptist","North Texas","Old Dominion","Louisiana Tech")
   if (t %in% cusa_stable) return("C-USA")
 
   # ── MAC ───────────────────────────────────────────────────
@@ -377,7 +388,7 @@ get_conf_cbase <- function(team, year) {
   # ── WCC ───────────────────────────────────────────────────
   wcc <- c("Gonzaga","BYU","San Diego","Santa Clara","Pacific","Loyola Marymount",
            "Portland","San Francisco","Saint Mary's","Pepperdine","Oregon State",
-           "Washington State","LMU","Seattle")
+           "Washington State","LMU","Seattle","Seattle University")
   if (t %in% wcc) {
     if (t == "BYU" && year >= 2023) return("Big 12")  # BYU baseball moved to Big 12
     if (t == "BYU" && year < 2023)  return("WCC")
@@ -393,7 +404,8 @@ get_conf_cbase <- function(team, year) {
   # ── HORIZON ───────────────────────────────────────────────
   horizon <- c("Wright State","Milwaukee","Northern Kentucky","Oakland",
                "Purdue Fort Wayne","IU Indianapolis","Green Bay","Cleveland State",
-               "Detroit Mercy","Robert Morris","Youngstown State","Illinois-Chicago")
+               "Detroit Mercy","Robert Morris","Youngstown State","Illinois-Chicago",
+               "UIC","IUPUI")
   if (t %in% horizon) return("Horizon")
 
   # ── BIG SOUTH / CAA ───────────────────────────────────────
@@ -402,7 +414,8 @@ get_conf_cbase <- function(team, year) {
   if (t %in% big_south) return("Big South")
 
   caa <- c("Northeastern","Delaware","Towson","UNC Wilmington","Elon","Charleston",
-           "Hofstra","Stony Brook","William & Mary","Drexel")
+           "Hofstra","Stony Brook","William & Mary","Drexel","Charleston Southern",
+           "Col. of Charleston")
   if (t %in% caa) return("CAA")
 
   # ── SoCon ─────────────────────────────────────────────────
@@ -415,16 +428,15 @@ get_conf_cbase <- function(team, year) {
                 "UT Martin","Southeast Missouri","Austin Peay","Eastern Illinois",
                 "Bellarmine","North Alabama","Lipscomb","Jacksonville","Stetson",
                 "North Florida","Queens","Florida Gulf Coast","Lindenwood",
-                "Illinois-Chicago","SIUE","Southern Indiana","IUPUI")
+                "Illinois-Chicago","SIUE","Southern Indiana","IUPUI",
+                "UT Martin","Kennesaw State")
   if (t %in% asun_ovc) return("ASUN/OVC")
 
   # ── WAC / Southland ───────────────────────────────────────
   wac_south <- c("Sam Houston","Stephen F. Austin","Abilene Christian","Lamar",
                  "McNeese","Nicholls","SE Louisiana","Northwestern State",
                  "Incarnate Word","Houston Christian","Tarleton State","Grand Canyon",
-                 "Cal Baptist","Utah Tech","Southern Utah",
-                 "New Mexico State","Central Arkansas","UT Rio Grande Valley",
-                 "New Orleans","Southern Utah","Little Rock","UT Arlington")
+                 "Cal Baptist","Utah Tech","Central Arkansas","UT Rio Grande Valley","New Orleans")
   if (t %in% wac_south) return("WAC/Southland")
 
   # ── SWAC / MEAC ───────────────────────────────────────────
@@ -452,7 +464,7 @@ get_conf_cbase <- function(team, year) {
   # ── A-10 ──────────────────────────────────────────────────
   a10 <- c("VCU","Dayton","George Mason","Richmond","Davidson","Fordham","La Salle",
            "Saint Joseph's","Saint Louis","George Washington","Duquesne","Massachusetts",
-           "Rhode Island","UMass","St. Bonaventure")
+           "Rhode Island","UMass","St. Bonaventure","George Washington University")
   if (t %in% a10) {
     if (t == "Massachusetts" && year >= 2025) return("MAC")  # rejoined MAC
     return("A-10")
@@ -460,7 +472,8 @@ get_conf_cbase <- function(team, year) {
 
   # ── BIG EAST ──────────────────────────────────────────────
   big_east <- c("Georgetown","Providence","Creighton","Xavier","DePaul","Villanova",
-                "Butler","Marquette","UConn","Seton Hall","St. John's","St. John's University")
+                "Butler","Marquette","UConn","Seton Hall","St. John's",
+                "St. John's University","St. Johns")
   if (t %in% big_east) return("Big East")
 
   # ── AMERICA EAST ──────────────────────────────────────────
@@ -471,8 +484,8 @@ get_conf_cbase <- function(team, year) {
   # ── SUMMIT LEAGUE ─────────────────────────────────────────
   summit <- c("South Dakota State","North Dakota State","Oral Roberts","Omaha",
               "Denver","Western Illinois","Kansas City","South Dakota",
-              "St. Thomas","IUPUI","St. Thomas (MN)","North Dakota",
-              "UMKC","South Dakota")
+              "St. Thomas","IUPUI","North Dakota","UMKC",
+              "Kansas City Roos","Oral Roberts University")
   if (t %in% summit) return("Summit")
 
   # ── NEC ───────────────────────────────────────────────────
