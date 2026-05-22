@@ -21,6 +21,7 @@ window.initSportPage = function(CFG) {
       if (tab.dataset.tab === 'resume')       renderResume();
       if (tab.dataset.tab === 'history')      renderHistory();
       if (tab.dataset.tab === 'tracker')      renderSeasonTracker();
+      if (tab.dataset.tab === 'greatest')    renderGreatestTeams();
       if (tab.dataset.tab === 'confhistory') renderConfHistory();
     });
   });
@@ -70,6 +71,7 @@ window.initSportPage = function(CFG) {
       if (pn === 'resume')       renderResume();
       if (pn === 'history')      renderHistory();
       if (pn === 'tracker')      renderSeasonTracker();
+      if (pn === 'greatest')    renderGreatestTeams();
       if (pn === 'confhistory') renderConfHistory();
     }
   }
@@ -995,7 +997,112 @@ async function findAvailableSeason() {
     drawChart();
   }
 
-    async function checkForNewerSeasons() {
+    // ── Greatest Teams of All Time ────────────────────────────
+  // Scans every available season CSV, finds the top 50 by peak Elo,
+  // then displays a ranked table with season, record, conference, SOS.
+  async function renderGreatestTeams() {
+    const el = document.getElementById('panel-greatest');
+    if (!el) return;
+    el.innerHTML = '<div class="loading"><div class="spinner"></div>Loading all seasons…</div>';
+
+    // Load every season
+    const years = (CFG.seasons || []).slice().reverse();
+    for (const yr of years) {
+      if (!allSeasonData[yr]) {
+        const raw = await fetchCSV(CFG.dataPath + yr + '.csv');
+        if (raw) allSeasonData[yr] = raw.map(coerceRow);
+      }
+    }
+
+    // Collect every team-season with enough games
+    const candidates = [];
+    for (const yr of years) {
+      const d = allSeasonData[yr];
+      if (!d) continue;
+      for (const row of d) {
+        if (row.games_played < 4) continue;
+        candidates.push({
+          rank:      0,
+          team:      row.team,
+          season:    yr,
+          conference: row.conference || '—',
+          elo:       row.elo,
+          record:    row.record || (row.wins + '-' + row.losses),
+          win_pct:   row.win_pct,
+          sos:       row.sos,
+          best_win:  row.best_win_team || '—',
+          best_win_elo: row.best_win_elo || 0,
+          games_played: row.games_played,
+        });
+      }
+    }
+
+    if (!candidates.length) {
+      el.innerHTML = '<div class="empty-state">No data loaded yet.</div>';
+      return;
+    }
+
+    // Sort by Elo descending, take top 50
+    candidates.sort((a, b) => b.elo - a.elo);
+    const top = candidates.slice(0, 50);
+    top.forEach((r, i) => r.rank = i + 1);
+
+    const maxElo = top[0].elo;
+    const minElo = top[top.length - 1].elo;
+
+    const rows = top.map(r => {
+      const bar = Math.round(((r.elo - minElo) / (maxElo - minElo)) * 80);
+      const bwElo = r.best_win_elo > 0 ? r.best_win_elo.toFixed(1) : '';
+      return `<tr>
+        <td class="rank">${r.rank}</td>
+        <td class="team-name" style="font-weight:500">${r.team}</td>
+        <td class="num" style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.75rem">${r.season}</td>
+        <td class="conf">${r.conference}</td>
+        <td class="elo" data-val="${r.elo}">
+          <div class="elo-bar-wrap">
+            <span>${r.elo.toFixed(1)}</span>
+            <div class="elo-bar" style="width:${bar}px"></div>
+          </div>
+        </td>
+        <td class="record">${r.record}</td>
+        <td class="num">${fmt.pct(r.win_pct)}</td>
+        <td class="num">${r.sos > 0 ? r.sos.toFixed(1) : '—'}</td>
+        <td class="num" style="font-size:0.75rem">
+          <span title="${r.best_win}">${r.best_win !== '—' ? r.best_win.substring(0,16) : '—'}</span>
+          ${bwElo ? `<span style="color:var(--text-dim);font-size:0.62rem;margin-left:0.2rem">${bwElo}</span>` : ''}
+        </td>
+      </tr>`;
+    }).join('');
+
+    el.innerHTML = `
+      <div class="greatest-wrap">
+        <div style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);
+                    margin-bottom:1rem;line-height:1.6">
+          Top 50 single-season Elo ratings across all ${years.length} seasons.
+          Ranked by peak Elo — teams with fewer than 4 games excluded.
+        </div>
+        <div class="table-wrap">
+          <table class="tbl" id="greatestTable">
+            <thead><tr>
+              <th data-type="num">Rank</th>
+              <th>Team</th>
+              <th data-type="num">Season</th>
+              <th>${CFG.confLabel || 'Conference'}</th>
+              <th data-type="num">Elo</th>
+              <th>Record</th>
+              <th data-type="num">Win%</th>
+              <th data-type="num">SOS</th>
+              <th data-type="num">Best Win</th>
+            </tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      </div>`;
+
+    makeSortable(document.getElementById('greatestTable'));
+  }
+
+      async function checkForNewerSeasons() {
     const newest = CFG.seasons[0];
     const added  = [];
     for (let yr = newest + 2; yr >= newest + 1; yr--) {
