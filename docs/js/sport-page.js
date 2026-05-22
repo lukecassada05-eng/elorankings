@@ -1579,18 +1579,51 @@ async function findAvailableSeason() {
       var t=pkResolve(team);
       return eloMap[t]||eloMap[team]||1500;
     }
+    // Realistic CFB score pools — all valid football scores (multiples of TD/FG/safety)
+    // Grouped by how lopsided the game is expected to be
+    var SCORE_POOLS = [
+      // [maxDiff, winnerOpts, loserOpts]
+      [30,  [21,24,27,28,31,34,35],         [17,20,21,24,27,28,31]],
+      [80,  [24,27,28,31,34,35,38,41],      [14,17,20,21,24,27,28]],
+      [150, [28,31,34,35,38,41,42,45],      [10,13,14,17,20,21,24]],
+      [250, [35,38,41,42,45,48,49,52],      [7,10,13,14,17,20,21]],
+      [9999,[42,45,48,49,52,55,56,59],      [0,3,7,10,13,14,17]]
+    ];
+    function pickScore(pool){ return pool[Math.floor(Math.random()*pool.length)]; }
+
     var filled=0;
     _pk.schedule.forEach(function(g){
       if(g.completed) return;
       var eH=getElo(g.homeTeam)+(g.neutral?0:45), eA=getElo(g.awayTeam);
-      var diff=eH-eA;
-      var margin=Math.round(Math.log(Math.abs(diff)+1)*3.5);
-      var win=Math.min(24+Math.round(margin*0.9),56);
-      var lose=Math.max(0,win-Math.max(margin*2,3));
-      var jit=function(){return Math.floor(Math.random()*7)-3;};
-      var hs=Math.max(0,win+jit()), as_=Math.max(0,lose+jit());
-      if(diff<0){var tmp=hs;hs=as_;as_=tmp;}
-      if(hs===as_) hs>0?as_--:hs++;
+      var absDiff=Math.abs(eH-eA);
+      var favHome=(eH>=eA);
+
+      // Pick the right pool based on Elo gap
+      var pool=SCORE_POOLS[SCORE_POOLS.length-1];
+      for(var pi=0;pi<SCORE_POOLS.length;pi++){
+        if(absDiff<=SCORE_POOLS[pi][0]){ pool=SCORE_POOLS[pi]; break; }
+      }
+      var winScore  = pickScore(pool[1]);
+      var loseScore = pickScore(pool[2]);
+
+      // Ensure winner actually beats loser (pick again if needed)
+      var attempts=0;
+      while(winScore<=loseScore&&attempts<10){
+        winScore=pickScore(pool[1]); loseScore=pickScore(pool[2]); attempts++;
+      }
+      if(winScore<=loseScore) loseScore=Math.max(0,winScore-7);
+
+      // Add slight randomness: occasionally swap pool one tier (upset potential)
+      // ~15% chance of upset for close games, ~3% for mismatches
+      var upsetChance = absDiff<50 ? 0.42 : absDiff<150 ? 0.25 : absDiff<300 ? 0.10 : 0.03;
+      var favWins = Math.random() > upsetChance;
+
+      var hs, as_;
+      if(favHome===favWins){
+        hs=winScore; as_=loseScore;
+      } else {
+        hs=loseScore; as_=winScore;
+      }
       _pk.scores[g.id]={homeScore:hs,awayScore:as_};
       filled++;
     });
