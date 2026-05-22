@@ -769,13 +769,13 @@ fetch_date <- function(ds) {
 }
 
 cfb_game_dates <- function(yr) {
+  # Fetch EVERY calendar day — MAC plays Tue/Wed, Independents play anytime
+  # ESPN dates=YYYYMMDD returns only that day's completed games → no duplicates
   all_dates <- c(
-    seq(as.Date(paste0(yr,  "-08-24")), as.Date(paste0(yr,  "-12-07")), by="1 day"),
-    seq(as.Date(paste0(yr,  "-12-15")), as.Date(paste0(yr+1,"-01-22")), by="1 day")
+    seq(as.Date(paste0(yr,   "-08-24")), as.Date(paste0(yr,   "-12-10")), by="1 day"),
+    seq(as.Date(paste0(yr,   "-12-15")), as.Date(paste0(yr+1, "-01-25")), by="1 day")
   )
-  all_dates  <- all_dates[all_dates <= Sys.Date()]
-  in_bowl    <- all_dates >= as.Date(paste0(yr,"-12-15"))
-  all_dates[weekdays(all_dates) %in% c("Thursday","Friday","Saturday") | in_bowl]
+  all_dates[all_dates <= Sys.Date()]
 }
 
 for (yr in SEASONS) {
@@ -784,8 +784,12 @@ for (yr in SEASONS) {
   all_games <- list()
   for (d in as.character(dates)) {
     res <- fetch_date(gsub("-","",d))
-    if (!is.null(res)&&nrow(res)>0) all_games <- c(all_games, list(res))
-    Sys.sleep(0.2)
+    if (!is.null(res)&&nrow(res)>0) {
+      all_games <- c(all_games, list(res))
+      Sys.sleep(0.15)  # polite delay only on game days
+    } else {
+      Sys.sleep(0.02)  # minimal delay on non-game days
+    }
   }
   if (!length(all_games)) { message("  Skip"); next }
 
