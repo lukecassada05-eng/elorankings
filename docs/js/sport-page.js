@@ -1265,7 +1265,99 @@ async function findAvailableSeason() {
     pkFetchSchedule(pickYr);
   }
 
-  function pkShowShell() {
+  window.pkAutoPredict = async function() {
+    // Load Elo from the selected season
+    const selEl = document.getElementById('pk-elo-yr');
+    const eloYr = parseInt(selEl?.value) || currentSeason;
+
+    // Show loading state on button
+    const btn = document.querySelector('[onclick="pkAutoPredict()"]');
+    if (btn) { btn.textContent = 'Loading…'; btn.disabled = true; }
+
+    if (!allSeasonData[eloYr]) {
+      try {
+        const raw = await fetchCSV(CFG.dataPath + eloYr + '.csv');
+        if (raw) allSeasonData[eloYr] = raw.map(coerceRow);
+      } catch(_e) {}
+    }
+
+    // Build Elo lookup from selected season
+    const eloMap = {};
+    (allSeasonData[eloYr] || []).forEach(r => {
+      if (r.team && r.elo) eloMap[r.team] = parseFloat(r.elo);
+    });
+
+    if (!Object.keys(eloMap).length) {
+      if (btn) { btn.textContent = 'Fill all games →'; btn.disabled = false; }
+      alert('No Elo data found for ' + eloYr + '. Try a different season.');
+      return;
+    }
+
+    // Helper: get Elo for a team (fuzzy match if exact not found)
+    function getElo(team) {
+      if (eloMap[team]) return eloMap[team];
+      // Try partial match for ESPN shortDisplayName variants
+      const lower = team.toLowerCase();
+      for (const [k, v] of Object.entries(eloMap)) {
+        if (k.toLowerCase().includes(lower) || lower.includes(k.toLowerCase().substring(0,6))) {
+          return v;
+        }
+      }
+      return 1500; // default
+    }
+
+    // Predict every unplayed game
+    let filled = 0;
+    for (const g of _pk.schedule) {
+      if (g.completed) continue; // skip completed games
+
+      const eloHome = getElo(g.homeTeam) + (g.neutral ? 0 : 45); // home advantage
+      const eloAway = getElo(g.awayTeam);
+      const diff    = eloHome - eloAway;
+
+      // Win probability for home team
+      const pHome = 1 / (1 + Math.pow(10, -diff / 400));
+
+      // Generate realistic scores based on Elo gap
+      // Average CFB score ~27 pts, spread scales with Elo diff
+      const absDiff   = Math.abs(diff);
+      const margin    = Math.round(Math.log(absDiff + 1) * 3.5); // 0 diff → 0, 200 diff → ~18
+      const baseScore = 27;
+      const winScore  = Math.min(baseScore + Math.round(margin * 0.7), 56);
+      const loseScore = Math.max(winScore - margin, Math.floor(winScore * 0.45));
+
+      let homeScore, awayScore;
+      if (pHome >= 0.5) {
+        homeScore = winScore;
+        awayScore = loseScore;
+      } else {
+        homeScore = loseScore;
+        awayScore = winScore;
+      }
+
+      // Add small randomness so not every game is the same score
+      const jitter = () => Math.floor(Math.random() * 7) - 3;
+      homeScore = Math.max(0, homeScore + jitter());
+      awayScore = Math.max(0, awayScore + jitter());
+
+      // Ensure no ties
+      if (homeScore === awayScore) {
+        pHome >= 0.5 ? homeScore++ : awayScore++;
+      }
+
+      _pk.scores[g.id] = { homeScore, awayScore };
+      filled++;
+    }
+
+    pkBuildStandings();
+    pkRenderReg();
+
+    if (btn) { btn.textContent = 'Fill all games →'; btn.disabled = false; }
+    // Show count in a toast if available
+    if (window.toast) toast(`Auto-filled ${filled} games using ${eloYr} Elo ratings`);
+  };
+
+    function pkShowShell() {
     const el = document.getElementById('panel-pickem');
     if (!el) return;
     el.innerHTML = `
@@ -1293,6 +1385,30 @@ async function findAvailableSeason() {
                 margin-top:0.2rem;line-height:1.55">
       Every FBS game shown in order · enter scores → conf standings auto-calculate →
       pick conf championship games → CFP bracket + Top 25 generated
+    </div>
+    <!-- Auto-predict row -->
+    <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.6rem;
+                padding-top:0.6rem;border-top:1px solid var(--border);flex-wrap:wrap">
+      <span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">
+        ⚡ Auto-predict all games using
+      </span>
+      <select id="pk-elo-yr"
+        style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);
+               border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);
+               padding:0.2rem 0.4rem">
+        ${(CFG.seasons||[]).slice(0,5).map(y=>
+          `<option value="${y}">${y} Elo</option>`
+        ).join('')}
+      </select>
+      <button onclick="pkAutoPredict()"
+        style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
+               padding:0.28rem 0.85rem;font-family:var(--font-mono);font-size:0.7rem;
+               font-weight:600;cursor:pointer">
+        Fill all games →
+      </button>
+      <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">
+        (home-field advantage applied · scores based on Elo gap)
+      </span>
     </div>
   </div>
 
