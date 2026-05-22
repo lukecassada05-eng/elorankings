@@ -1125,7 +1125,8 @@ async function findAvailableSeason() {
 
   var _pk = {
     yr:null, schedule:[], scores:{}, confGames:[], confChamps:{},
-    wins:{}, losses:{}, confWins:{}, confLoss:{}, eloBase:{}, eloSim:{}
+    wins:{}, losses:{}, confWins:{}, confLoss:{}, eloBase:{}, eloSim:{},
+    playoffRating:{}
   };
 
   // ── 2025-26 EXACT conference rosters ─────────────────────
@@ -1344,11 +1345,6 @@ async function findAvailableSeason() {
     // Formula: PlayoffRating = Elo + sqrt(sum of beaten opponents' Elo)
     // This rewards beating strong teams (resume strength) on top of raw Elo
     _pk.playoffRating = {};
-    var allGames = _pk.schedule.concat(_pk.confGames.map(function(cg){
-      return {homeTeam:cg.homeTeam,awayTeam:cg.awayTeam,
-              scores:{homeScore:cg.homeScore,awayScore:cg.awayScore},
-              id:'cg_'+cg.conf};
-    }));
     // Collect wins per team
     var wins_by = {};
     for(var gi=0;gi<_pk.schedule.length;gi++){
@@ -1487,7 +1483,7 @@ async function findAvailableSeason() {
     for(var b=0;b<weeks.length;b+=BATCH){
       var batch=weeks.slice(b,b+BATCH);
       await Promise.all(batch.map(async function(wk){
-        var url='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&limit=900';
+        var url='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups=80&limit=300';
         try{
           var res=await fetch(url,{mode:'cors'});if(!res.ok) return;
           var data=await res.json();if(!data.events) return;
@@ -1513,6 +1509,37 @@ async function findAvailableSeason() {
             }catch(e){}
           });
         }catch(e){}
+        // Also fetch Group of 5 + independent conferences (groups=81) for Pac-12 etc.
+        try{
+          var url81='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups=81&limit=300';
+          var res81=await fetch(url81,{mode:'cors'});
+          if(res81.ok){
+            var data81=await res81.json();
+            if(data81.events){
+              data81.events.forEach(function(ev){
+                try{
+                  var comp=ev.competitions&&ev.competitions[0];if(!comp) return;
+                  var competitors=comp.competitors||[];
+                  var home81=null,away81=null;
+                  competitors.forEach(function(c){if(c.homeAway==='home')home81=c;else away81=c;});
+                  if(!home81||!away81) return;
+                  var key81=ev.id||(home81.team.id+'_'+away81.team.id+'_w'+wk);
+                  if(seen[key81]) return;seen[key81]=1;
+                  var hn81=home81.team.shortDisplayName,an81=away81.team.shortDisplayName;
+                  if(wk===15&&hn81!=='Army'&&hn81!=='Navy'&&an81!=='Army'&&an81!=='Navy') return;
+                  var completed81=!!(comp.status&&comp.status.type&&comp.status.type.completed);
+                  var dt81=ev.date?ev.date.slice(0,10):null;
+                  if(dt81&&dt81.startsWith('1970')) dt81=null;
+                  var hs81=completed81?(parseInt(home81.score)||null):null;
+                  var as81=completed81?(parseInt(away81.score)||null):null;
+                  games.push({id:key81,week:wk,date:dt81,homeTeam:hn81,awayTeam:an81,
+                    neutral:!!(comp.neutralSite),completed:completed81,homeScore:hs81,awayScore:as81});
+                  fetched++;
+                }catch(e2){}
+              });
+            }
+          }
+        }catch(e81){}
       }));
       pkSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' schedule… '+fetched+' games found</div>');
     }
