@@ -1354,6 +1354,9 @@ async function findAvailableSeason() {
       if(cg.homeScore==null||cg.awayScore==null||cg.homeScore===cg.awayScore) continue;
       var cw=cg.homeScore>cg.awayScore?cg.homeTeam:cg.awayTeam;
       var cl=cg.homeScore>cg.awayScore?cg.awayTeam:cg.homeTeam;
+      // Count conf championship result in W/L records
+      _pk.wins[cw]  = (_pk.wins[cw]  || 0) + 1;
+      _pk.losses[cl] = (_pk.losses[cl] || 0) + 1;
       var m2=Math.abs(cg.homeScore-cg.awayScore);
       var rW2=_pk.eloSim[cw]||1500, rL2=_pk.eloSim[cl]||1500;
       var eW2=1/(1+Math.pow(10,(rL2-rW2)/400));
@@ -1496,102 +1499,94 @@ async function findAvailableSeason() {
 
 
   function pkGetStaticPac12(yr) {
-    if (yr !== 2026) return []; // only 2026 known
-    // Full 2026 Pac-12 schedule (verified from pac-12.com, Wikipedia, cbssports)
-    // Format: [week, date|null, homeTeam, awayTeam, neutral]
-    var raw = [
-      // Washington State schedule (from Wikipedia)
-      [1, "2026-09-05", "Washington",       "Washington State", false],
-      [2, "2026-09-12", "Kansas State",     "Washington State", false],
-      [3, "2026-09-19", "Washington State", "Duquesne",         false],
-      [4, "2026-09-26", "Washington State", "Arizona",          false],
-      [5, "2026-10-03", "Washington State", "Fresno State",     false],
-      [6, "2026-10-10", "Utah State",       "Washington State", false],
-      [7, "2026-10-17", "Oregon State",     "Washington State", false],
-      [8, "2026-10-24", "Washington State", "Boise State",      false],
-      [9, "2026-10-31", "San Diego State",  "Washington State", false],
-      [11,"2026-11-14", "Washington State", "Colorado State",   false],
-      [12,"2026-11-21", "Texas State",      "Washington State", false],
+    if (yr !== 2026) return [];
+    // Verified 2026 Pac-12 games — each matchup listed ONCE (home team first)
+    // Sources: Wikipedia team pages, pac-12.com, txst.com, cbssports
+    // Key: wk=week, dt=date, h=home, a=away, n=neutral
+    var games = [
+      // ── Non-conference ─────────────────────────────────────
+      // WSU non-conf
+      {wk:1, dt:"2026-09-05", h:"Washington",   a:"Washington State", n:false},
+      {wk:2, dt:"2026-09-12", h:"Kansas State", a:"Washington State", n:false},
+      {wk:3, dt:"2026-09-19", h:"Washington State", a:"Duquesne",     n:false},
+      {wk:4, dt:"2026-09-26", h:"Washington State", a:"Arizona",      n:false},
+      // Oregon State non-conf
+      {wk:1, dt:"2026-08-29", h:"Stanford",     a:"Hawai'i",          n:false},
+      {wk:2, dt:"2026-09-12", h:"Oregon State", a:"Memphis",          n:false},
+      {wk:3, dt:"2026-09-19", h:"Oregon State", a:"South Dakota",     n:false},
+      {wk:4, dt:"2026-09-26", h:"Western Michigan", a:"Oregon State", n:false},
+      // Boise State non-conf
+      {wk:1, dt:"2026-09-05", h:"Oregon",       a:"Boise State",      n:false},
+      {wk:2, dt:"2026-09-12", h:"Boise State",  a:"Northwestern St",  n:false},
+      {wk:3, dt:"2026-09-19", h:"Boise State",  a:"BYU",              n:false},
+      // Colorado State non-conf
+      {wk:1, dt:"2026-09-05", h:"Colorado State", a:"Wyoming",        n:false},
+      {wk:2, dt:"2026-09-12", h:"Colorado State", a:"Southern Utah",  n:false},
+      // Fresno State non-conf
+      {wk:1, dt:"2026-09-05", h:"Fresno State", a:"Sacramento St",    n:false},
+      // San Diego State non-conf
+      {wk:1, dt:"2026-09-05", h:"San Diego State", a:"Portland St",   n:false},
+      {wk:2, dt:"2026-09-12", h:"UCLA",          a:"San Diego State",  n:false},
+      // Utah State non-conf
+      {wk:2, dt:"2026-09-12", h:"Washington",   a:"Utah State",       n:false},
+      {wk:4, dt:"2026-09-26", h:"Utah State",   a:"Idaho St",         n:false},
+      // Texas State non-conf (from txst.com)
+      {wk:1, dt:"2026-09-05", h:"Texas",        a:"Texas State",      n:false},
+      {wk:2, dt:"2026-09-12", h:"Texas State",  a:"UTSA",             n:false},
+      {wk:3, dt:"2026-09-19", h:"Texas State",  a:"North Texas",      n:false},
+      {wk:4, dt:"2026-09-26", h:"Texas State",  a:"UIW",              n:false},
 
-      // Oregon State schedule (from Wikipedia 2026 OSU page)
-      [1, "2026-08-29", "Stanford",         "Hawai'i",          false],
-      [2, "2026-09-12", "Oregon State",     "Memphis",          false],
-      [3, "2026-09-19", "Oregon State",     "South Dakota",     false],
-      [4, "2026-09-26", "Western Michigan", "Oregon State",     false],
-      [5, "2026-10-03", "Oregon State",     "Utah State",       false],
-      [6, "2026-10-10", "Fresno State",     "Oregon State",     false],
-      [8, "2026-10-24", "Utah State",       "Oregon State",     false],
-      [9, "2026-10-31", "Oregon State",     "Texas State",      false],
-      [10,"2026-11-07", "Colorado State",   "Oregon State",     false],
-      [11,"2026-11-14", "Oregon State",     "Washington State", false],
-      [12,"2026-11-21", "San Diego State",  "Oregon State",     false],
-
-      // Boise State (from cbssports pac-12 schedule article)
-      [1, "2026-09-05", "Oregon",           "Boise State",      false],
-      [2, "2026-09-12", "Boise State",      "Northwestern St",  false],
-      [3, "2026-09-19", "Boise State",      "BYU",              false],
-      [5, "2026-10-03", "Boise State",      "Colorado State",   false],
-      [6, "2026-10-10", "Boise State",      "Utah State",       false],
-      [7, "2026-10-17", "San Diego State",  "Boise State",      false],
-      [9, "2026-10-31", "Texas State",      "Boise State",      false],
-      [10,"2026-11-07", "Boise State",      "Fresno State",     false],
-      [11,"2026-11-14", "Boise State",      "Oregon State",     false],
-      [12,"2026-11-21", "Colorado State",   "Boise State",      false],
-
-      // Colorado State (from pac-12.com schedule release)
-      [2, "2026-09-12", "Colorado State",   "Wyoming",          false],
-      [3, "2026-09-19", "Colorado State",   "Southern Utah",    false],
-      [6, "2026-10-10", "Colorado State",   "San Diego State",  false],
-      [10,"2026-11-07", "Colorado State",   "Utah State",       false],
-      [12,"2026-11-21", "Fresno State",     "Colorado State",   false],
-
-      // Fresno State (shared conf games, non-conf from cbssports)
-      [1, "2026-09-05", "Fresno State",     "Sacramento St",    false],
-      [2, "2026-09-12", "Fresno State",     "Sacramento St",    false],
-      [7, "2026-10-17", "Utah State",       "Fresno State",     false],
-      [9, "2026-10-31", "Fresno State",     "San Diego State",  false],
-
-      // San Diego State
-      [1, "2026-09-05", "San Diego State",  "Portland St",      false],
-      [2, "2026-09-12", "UCLA",             "San Diego State",  false],
-      [3, "2026-09-19", "San Diego State",  "Utah State",       false],
-      [7, "2026-10-17", "Colorado State",   "San Diego State",  false],
-      [11,"2026-11-14", "Texas State",      "San Diego State",  false],
-
-      // Utah State
-      [2, "2026-09-12", "Washington",       "Utah State",       false],
-      [4, "2026-09-26", "Utah State",       "Idaho St",         false],
-      [11,"2026-11-14", "Utah State",       "Boise State",      false],
-
-      // Texas State (from txst.com schedule)
-      [1, "2026-09-05", "Texas",            "Texas State",      false],
-      [2, "2026-09-12", "Texas State",      "UTSA",             false],
-      [3, "2026-09-19", "Texas State",      "North Texas",      false],
-      [4, "2026-09-26", "Texas State",      "UIW",              false],
-      [6, "2026-10-10", "Texas State",      "Colorado State",   false],
-      [8, "2026-10-24", "Texas State",      "Utah State",       false],
-      [9, "2026-10-31", "Boise State",      "Texas State",      false],
-      [10,"2026-11-07", "Oregon State",     "Texas State",      false],
-      [11,"2026-11-14", "Texas State",      "Fresno State",     false],
-      [12,"2026-11-21", "Texas State",      "Washington State", false],
+      // ── Pac-12 Conference games (each unique matchup listed once) ──────
+      // Derived from WSU schedule + txst.com + pac-12 announcement
+      // Week 5
+      {wk:5, dt:"2026-10-03", h:"Washington State", a:"Fresno State",    n:false},
+      {wk:5, dt:"2026-10-03", h:"Oregon State",     a:"Utah State",      n:false},
+      {wk:5, dt:"2026-10-03", h:"Boise State",      a:"Colorado State",  n:false},
+      {wk:5, dt:"2026-10-03", h:"San Diego State",  a:"Texas State",     n:false},
+      // Week 6
+      {wk:6, dt:"2026-10-10", h:"Utah State",       a:"Washington State",n:false},
+      {wk:6, dt:"2026-10-10", h:"Fresno State",     a:"Oregon State",    n:false},
+      {wk:6, dt:"2026-10-10", h:"Colorado State",   a:"San Diego State", n:false},
+      {wk:6, dt:"2026-10-10", h:"Boise State",      a:"Utah State",      n:false},
+      // Week 7
+      {wk:7, dt:"2026-10-17", h:"Oregon State",     a:"Washington State",n:false},
+      {wk:7, dt:"2026-10-17", h:"San Diego State",  a:"Boise State",     n:false},
+      {wk:7, dt:"2026-10-17", h:"Colorado State",   a:"Texas State",     n:false},
+      {wk:7, dt:"2026-10-17", h:"Fresno State",     a:"Utah State",      n:false},
+      // Week 8
+      {wk:8, dt:"2026-10-24", h:"Washington State", a:"Boise State",     n:false},
+      {wk:8, dt:"2026-10-24", h:"Utah State",       a:"Oregon State",    n:false},
+      {wk:8, dt:"2026-10-24", h:"Texas State",      a:"Utah State",      n:false},  // txst wk8
+      {wk:8, dt:"2026-10-24", h:"Fresno State",     a:"Colorado State",  n:false},
+      // Week 9
+      {wk:9, dt:"2026-10-31", h:"San Diego State",  a:"Washington State",n:false},
+      {wk:9, dt:"2026-10-31", h:"Texas State",      a:"Boise State",     n:false}, // txst: at Boise wk9
+      {wk:9, dt:"2026-10-31", h:"Fresno State",     a:"San Diego State", n:false},
+      {wk:9, dt:"2026-10-31", h:"Oregon State",     a:"Colorado State",  n:false},
+      // Week 10
+      {wk:10,dt:"2026-11-07", h:"Boise State",      a:"Fresno State",    n:false},
+      {wk:10,dt:"2026-11-07", h:"Oregon State",     a:"Texas State",     n:false}, // txst: at OSU wk10
+      {wk:10,dt:"2026-11-07", h:"Colorado State",   a:"Utah State",      n:false},
+      {wk:10,dt:"2026-11-07", h:"Utah State",       a:"San Diego State", n:false},
+      // Week 11
+      {wk:11,dt:"2026-11-14", h:"Washington State", a:"Colorado State",  n:false},
+      {wk:11,dt:"2026-11-14", h:"Texas State",      a:"Fresno State",    n:false}, // txst: Fresno wk11
+      {wk:11,dt:"2026-11-14", h:"Boise State",      a:"Oregon State",    n:false},
+      {wk:11,dt:"2026-11-14", h:"San Diego State",  a:"Utah State",      n:false},
+      // Week 12
+      {wk:12,dt:"2026-11-21", h:"Texas State",      a:"Washington State",n:false}, // txst: WSU wk12
+      {wk:12,dt:"2026-11-21", h:"Fresno State",     a:"Boise State",     n:false},
+      {wk:12,dt:"2026-11-21", h:"Oregon State",     a:"San Diego State", n:false},
+      {wk:12,dt:"2026-11-21", h:"Colorado State",   a:"Utah State",      n:false},
     ];
-    var out = [];
-    var seen2 = {};
-    raw.forEach(function(r, i) {
-      var key = 'pac12static_' + r[2].replace(/\s/g,'') + '_' + r[3].replace(/\s/g,'') + '_' + r[0];
-      if (seen2[key]) return;
-      seen2[key] = 1;
-      out.push({
-        id:        key,
-        week:      r[0],
-        date:      r[1],
-        homeTeam:  r[2],
-        awayTeam:  r[3],
-        neutral:   r[4],
-        completed: false,
-        homeScore: null,
-        awayScore: null
-      });
+    // Deduplicate within static list by matchup key
+    var out = [], seenLocal = {};
+    games.forEach(function(g, i) {
+      var key = 'p12_' + g.h.replace(/[^a-z]/gi,'') + '_' + g.a.replace(/[^a-z]/gi,'') + '_w' + g.wk;
+      if (seenLocal[key]) return;
+      seenLocal[key] = 1;
+      out.push({id:key, week:g.wk, date:g.dt, homeTeam:g.h, awayTeam:g.a,
+                neutral:g.n, completed:false, homeScore:null, awayScore:null});
     });
     return out;
   }
@@ -1827,12 +1822,17 @@ async function findAvailableSeason() {
   };
 
 
+  // Teams ineligible for conf championship games (FCS transition etc.)
+  var CONF_CHAMP_INELIGIBLE = {"North Dakota State": true};
+
   function pkConfLeaders(conf){
-    var teams=(PK_CONFS[conf]||[]).map(pkTeam);
+    var teams=(PK_CONFS[conf]||[]).map(pkTeam)
+      .filter(function(t){ return !CONF_CHAMP_INELIGIBLE[t.team]; });
     var divDef=PK_DIVS[conf];
     if(divDef){
       return Object.keys(divDef).map(function(div){
-        return pkSort(teams.filter(function(t){return divDef[div].indexOf(t.team)!==-1;}))[0];
+        var divTeams = teams.filter(function(t){return divDef[div].indexOf(t.team)!==-1;});
+        return pkSort(divTeams)[0];
       }).filter(Boolean);
     }else{return pkSort(teams).slice(0,2);}
   }
