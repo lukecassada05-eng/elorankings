@@ -2110,7 +2110,7 @@ async function findAvailableSeason() {
     }
   }
 
-    // ── Init ──────────────────────────────────────────────────
+  // ── Init ──────────────────────────────────────────────────
   // Build initial picker from hardcoded seasons, then load best season
   const picker = document.getElementById('seasonPicker');
   if (picker) {
