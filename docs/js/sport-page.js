@@ -1745,7 +1745,9 @@ async function findAvailableSeason() {
       <div style="display:flex;justify-content:space-between;align-items:center;
                   margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem">
         <div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim)">
-          ${totalGames} games · ${completedGames} completed · ${pickedCount} picked
+          ${totalGames} games total ·
+          ${completedGames > 0 ? completedGames + ' final (ESPN) · ' : ''}
+          ${pickedCount} predicted
         </div>
         <button onclick="pkGo('conf')"
           style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
@@ -2010,16 +2012,15 @@ async function findAvailableSeason() {
           html += `<div>
             <div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);
                         text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.2rem">${div}</div>
-            ${divObjs.slice(0,5).map((t,i) => `
-              <div style="display:flex;gap:0.25rem;padding:0.1rem 0;font-size:0.7rem;
-                          color:${i===0?'var(--text)':'var(--text-muted)'}">
-                <span style="flex:1;font-weight:${i===0?600:400}">${t.team}</span>
-                <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">
-                  ${t.cw}–${t.cl}
-                </span>
-                <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);
-                             margin-left:0.2rem">(${t.w}–${t.l})</span>
-              </div>`).join('')}
+            ${divObjs.slice(0,5).map((t,i) => {
+              const color = i===0 ? 'var(--text)' : 'var(--text-muted)';
+              const fw = i===0 ? '600' : '400';
+              return '<div style="display:flex;gap:0.25rem;padding:0.1rem 0;font-size:0.7rem;color:'+color+'">'
+                + '<span style="flex:1;font-weight:'+fw+'">'+t.team+'</span>'
+                + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'–'+t.cl+'</span>'
+                + '<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'–'+t.l+')</span>'
+                + '</div>';
+            }).join('')}
           </div>`;
         }
         html += `</div>`;
@@ -2027,20 +2028,17 @@ async function findAvailableSeason() {
         // No divisions — show full conf standings
         const sorted = pkSortTeams(allTeamObjs);
         html += `<div style="margin-bottom:0.6rem">
-          ${sorted.slice(0,8).map((t,i) => `
-            <div style="display:flex;gap:0.3rem;padding:0.1rem 0;font-size:0.72rem;
-                        color:${i<2?'var(--text)':'var(--text-muted)'}">
-              <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);
-                           min-width:14px;text-align:right">${i+1}</span>
-              <span style="flex:1;font-weight:${i<2?600:400}">${t.team}</span>
-              <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">
-                ${t.cw}–${t.cl}
-              </span>
-              <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);
-                           margin-left:0.2rem">(${t.w}–${t.l})</span>
-            </div>`).join('')}
-          ${sorted.length>8?`<div style="font-size:0.6rem;color:var(--text-dim);
-            font-family:var(--font-mono);margin-top:0.1rem">+${sorted.length-8} more</div>`:''}
+          ${sorted.slice(0,8).map((t,i) => {
+            const color = i<2 ? 'var(--text)' : 'var(--text-muted)';
+            const fw = i<2 ? '600' : '400';
+            return '<div style="display:flex;gap:0.3rem;padding:0.1rem 0;font-size:0.72rem;color:'+color+'">'
+              + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);min-width:14px;text-align:right">'+(i+1)+'</span>'
+              + '<span style="flex:1;font-weight:'+fw+'">'+t.team+'</span>'
+              + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'–'+t.cl+'</span>'
+              + '<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'–'+t.l+')</span>'
+              + '</div>';
+          }).join('')}
+          ${sorted.length>8 ? '<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.1rem">+' + (sorted.length-8) + ' more</div>' : ''}
         </div>`;
       }
 
@@ -2110,7 +2108,7 @@ async function findAvailableSeason() {
         ? `Championship · <strong style="color:var(--accent)">${e.champ} wins</strong>`
         : `Championship game · ${homeT} vs ${awayT}`;
     }
-  };;
+  };
 
   // ── PHASE 3: CFP BRACKET + RANKINGS ──────────────────────
   // Records shown throughout: overall W–L and conf W–L
@@ -2260,22 +2258,19 @@ async function findAvailableSeason() {
         <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:32px;text-align:right">Conf</div>
         <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:38px;text-align:right">Elo</div>
       </div>
-      ${top25.map((t,i) => `
-        <div style="display:flex;align-items:center;gap:0.35rem;padding:0.22rem 0.6rem;
-                    border-bottom:1px solid var(--border)">
-          <div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);
-                      min-width:22px;text-align:right">${i+1}</div>
-          <div style="flex:1;font-size:0.75rem;font-weight:${champSet.has(t.team)?600:400}">${t.team}
-            ${champSet.has(t.team)?`<span style="font-size:0.5rem;color:var(--accent);
-                                               font-family:var(--font-mono);margin-left:0.2rem">★${t.conf}</span>`:''}
-          </div>
-          <div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-muted);
-                      min-width:36px;text-align:right">${rec(t)}</div>
-          <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);
-                      min-width:32px;text-align:right">${cRec(t)}</div>
-          <div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-dim);
-                      min-width:38px;text-align:right">${t.elo.toFixed(0)}</div>
-        </div>`).join('')}
+      ${top25.map((t,i) => {
+        const fw = champSet.has(t.team) ? '600' : '400';
+        const star = champSet.has(t.team)
+          ? '<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">★'+t.conf+'</span>'
+          : '';
+        return '<div style="display:flex;align-items:center;gap:0.35rem;padding:0.22rem 0.6rem;border-bottom:1px solid var(--border)">'
+          + '<div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);min-width:22px;text-align:right">'+(i+1)+'</div>'
+          + '<div style="flex:1;font-size:0.75rem;font-weight:'+fw+'">'+t.team+star+'</div>'
+          + '<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-muted);min-width:36px;text-align:right">'+rec(t)+'</div>'
+          + '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);min-width:32px;text-align:right">'+cRec(t)+'</div>'
+          + '<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-dim);min-width:38px;text-align:right">'+t.elo.toFixed(0)+'</div>'
+          + '</div>';
+      }).join('')}
     </div>
   </div>
 
@@ -2337,9 +2332,7 @@ async function findAvailableSeason() {
 </div>`;
   }
 
-
-
-    async function checkForNewerSeasons() {
+  async function checkForNewerSeasons() {
     const newest = CFG.seasons[0];
     const added  = [];
     for (let yr = newest + 2; yr >= newest + 1; yr--) {
