@@ -1158,18 +1158,17 @@ async function findAvailableSeason() {
     ],
     "Mountain West": [
       "Air Force","Hawai'i","Nevada","New Mexico","Northern Illinois",
-      "San Jose State","UNLV","UTEP","Wyoming"
+      "North Dakota State","San Jose State","UNLV","UTEP","Wyoming"
     ],
     "AAC": [
       "Army","Charlotte","East Carolina","FAU","Memphis","Navy",
-      "North Texas","Rice","South Florida","Temple","Tulane","Tulsa",
-      "UAB","UTSA"
+      "North Texas","Rice","South Florida","Temple","Tulane","UAB","UTSA"
     ],
     "Sun Belt": [
       "Appalachian State","Arkansas State","Coastal Carolina",
       "Georgia Southern","Georgia State","James Madison","Louisiana",
-      "Marshall","Old Dominion","South Alabama","Southern Miss",
-      "Troy","UL Monroe"
+      "Louisiana Tech","Marshall","Old Dominion","South Alabama",
+      "Southern Miss","Troy","UL Monroe"
     ],
     "MAC": [
       "Akron","Ball State","Bowling Green","Buffalo","Central Michigan",
@@ -1178,25 +1177,21 @@ async function findAvailableSeason() {
     ],
     "C-USA": [
       "Delaware","FIU","Jacksonville State","Kennesaw State","Liberty",
-      "Louisiana Tech","Middle Tennessee","Missouri State",
-      "New Mexico State","Sam Houston","Western Kentucky"
+      "Middle Tennessee","Missouri State","New Mexico State",
+      "Sam Houston","Western Kentucky"
     ],
     "Independent": ["Notre Dame","Connecticut"]
   };
 
-  // ── Divisions — ONLY Sun Belt & MAC still have them in 2025-26 ──
+  // ── Divisions — Sun Belt still has East/West in 2026 ─────
+  // MAC eliminated divisions (only 12 teams, no divisions in 2026)
+  // Sun Belt: only FBS conf still using divisions
   var PK_DIVS = {
     "Sun Belt": {
-      "East": ["Coastal Carolina","Georgia Southern","Georgia State",
-               "James Madison","Marshall","Old Dominion","South Alabama"],
-      "West": ["Appalachian State","Arkansas State","Louisiana",
+      "East": ["Appalachian State","Coastal Carolina","Georgia Southern",
+               "Georgia State","James Madison","Marshall","Old Dominion"],
+      "West": ["Arkansas State","Louisiana","Louisiana Tech","South Alabama",
                "Southern Miss","Troy","UL Monroe"]
-    },
-    "MAC": {
-      "East": ["Akron","Ball State","Bowling Green","Buffalo",
-               "Kent State","Massachusetts","Miami (OH)","Ohio"],
-      "West": ["Central Michigan","Eastern Michigan","Northern Illinois",
-               "Toledo","Western Michigan"]
     }
   };
 
@@ -1274,7 +1269,28 @@ async function findAvailableSeason() {
     "Sam Hous.":"Sam Houston","SHSU":"Sam Houston",
     "Liberty":"Liberty","Mo. State":"Missouri State","Missouri St":"Missouri State",
     // Independent
-    "UConn":"Connecticut","Notre Dame":"Notre Dame"
+    "UConn":"Connecticut","Notre Dame":"Notre Dame",
+    // New 2026 additions
+    "N Dakota St":"North Dakota State","ND State":"North Dakota State","NDSU":"North Dakota State",
+    "N. Dakota St":"North Dakota State",
+    "La. Tech":"Louisiana Tech","La Tech":"Louisiana Tech","LaTech":"Louisiana Tech",
+    "La Tech Bulldogs":"Louisiana Tech",
+    "Mass.":"Massachusetts","UMass":"Massachusetts","Massachusetts":"Massachusetts",
+    "Western KY":"Western Kentucky","WKU":"Western Kentucky","W. Kentucky":"Western Kentucky",
+    "Missouri St":"Missouri State","Mo. State":"Missouri State",
+    // Pac-12 aliases
+    "Wash. State":"Washington State","Wash St":"Washington State","WSU":"Washington State",
+    "Oregon St":"Oregon State","OSU":"Oregon State",
+    "Texas St":"Texas State","Tex. St.":"Texas State","Texas St.":"Texas State",
+    "Utah St":"Utah State","Utah St.":"Utah State","USU":"Utah State",
+    "Colorado St":"Colorado State","CSU":"Colorado State","Colo. St.":"Colorado State",
+    "Fresno St":"Fresno State","Fresno St.":"Fresno State",
+    "Boise St":"Boise State","Boise St.":"Boise State","BSU":"Boise State",
+    "San Diego St":"San Diego State","SDSU":"San Diego State",
+    // Mountain West aliases
+    "San José St":"San Jose State","San Jose St":"San Jose State","SJSU":"San Jose State",
+    "N Illinois":"Northern Illinois","No. Illinois":"Northern Illinois",
+    "Hawaii":"Hawai'i"
   };
 
   function pkResolve(t){ return PK_ALIAS[t] || t; }
@@ -1710,15 +1726,23 @@ async function findAvailableSeason() {
 
     // Step 1: determine each conf's champion
     var confChampions={};
+    // Teams ineligible for CFP due to FCS transition rules
+    var CFP_INELIGIBLE = {"North Dakota State": true}; // 2026-27: ineligible until 2028
+
     CFP_AUTO_CONF.forEach(function(conf){
       var picked=_pk.confChamps[conf];
       if(picked){
+        if(CFP_INELIGIBLE[picked]) return; // skip ineligible teams
         confChampions[conf]={team:picked,elo:_pk.eloSim[picked]||1500,conf:conf,
           w:_pk.wins[picked]||0,l:_pk.losses[picked]||0,
           cw:_pk.confWins[picked]||0,cl:_pk.confLoss[picked]||0};
       }else{
         var leaders=pkConfLeaders(conf);
-        var leader=leaders[0];
+        // Skip ineligible teams for conf championship auto-bid
+        var leader=null;
+        for(var li=0;li<leaders.length;li++){
+          if(!CFP_INELIGIBLE[leaders[li].team]){leader=leaders[li];break;}
+        }
         if(leader)confChampions[conf]={team:leader.team,elo:leader.elo,conf:conf,
           w:leader.w,l:leader.l,cw:leader.cw,cl:leader.cl};
       }
