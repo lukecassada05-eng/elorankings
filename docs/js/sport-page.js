@@ -1328,8 +1328,8 @@ async function findAvailableSeason() {
     _pk.eloSim = JSON.parse(JSON.stringify(_pk.eloBase));
     var K=30;
     // Dedup key: team_a + team_b + week — prevents same matchup same week counting twice
-    // (happens when ESPN scoreboard AND static Pac-12 schedule both have the same game)
-    // Different week = valid rematch, counted separately
+    // Main use case: ESPN scoreboard AND static Pac-12 schedule both return the same game
+    // Different week number = counted separately (e.g. home-and-home across two weeks)
     var counted={};
     for(var i=0;i<_pk.schedule.length;i++){
       var g=_pk.schedule[i];
