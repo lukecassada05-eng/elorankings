@@ -1571,6 +1571,43 @@ async function findAvailableSeason() {
       if(!a.date&&!b.date) return 0;if(!a.date) return 1;if(!b.date) return -1;
       return a.date<b.date?-1:a.date>b.date?1:0;
     });
+    // Supplement with Pac-12 team schedules (scoreboard API missing these)
+    var pac12Ids=[265,278,68,36,21,328,326,277];
+    await Promise.all(pac12Ids.map(async function(tid){
+      try{
+        var tu='https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/'+tid+'/schedule?season='+yr+'&seasontype=2';
+        var tr=await fetch(tu,{mode:'cors'});if(!tr.ok) return;
+        var td=await tr.json();
+        (td.events||[]).forEach(function(ev){
+          try{
+            var comp=ev.competitions&&ev.competitions[0];if(!comp) return;
+            var competitors=comp.competitors||[];
+            var home=null,away=null;
+            competitors.forEach(function(c){if(c.homeAway==='home')home=c;else away=c;});
+            if(!home||!away) return;
+            var key=ev.id;if(!key||seen[key]) return;seen[key]=1;
+            var hn=home.team.shortDisplayName,an=away.team.shortDisplayName;
+            if(!pkIsFBS(hn)&&!pkIsFBS(an)) return;
+            var wk=(ev.week&&ev.week.number)||0;
+            if(wk===15&&hn!=='Army'&&hn!=='Navy'&&an!=='Army'&&an!=='Navy') return;
+            var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
+            var dt=ev.date?ev.date.slice(0,10):null;
+            if(dt&&dt.startsWith('1970')) dt=null;
+            var hs=completed?(parseInt(home.score)||null):null;
+            var as_=completed?(parseInt(away.score)||null):null;
+            games.push({id:key,week:wk,date:dt,homeTeam:hn,awayTeam:an,
+              neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
+            fetched++;
+          }catch(e){}
+        });
+      }catch(e){}
+    }));
+    // Re-sort after adding Pac-12 games
+    games.sort(function(a,b){
+      if(a.week!==b.week) return a.week-b.week;
+      if(!a.date&&!b.date) return 0;if(!a.date) return 1;if(!b.date) return -1;
+      return a.date<b.date?-1:a.date>b.date?1:0;
+    });
     _pk.schedule=games;
     if(!games.length){
       pkSetReg('<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.78rem;color:var(--text-muted);text-align:center;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg)">'
