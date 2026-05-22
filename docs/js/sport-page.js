@@ -1225,7 +1225,26 @@ async function findAvailableSeason() {
     const el = document.getElementById('panel-pickem');
     if (!el || CFG.sport !== 'CFB') return;
 
-    // Load base Elo from current season CSV
+    // Determine which season to pick'em
+    // Off-season (May-Aug): show selector defaulting to NEXT season
+    // but also allow picking current/past seasons
+    const now = new Date();
+    const month = now.getMonth() + 1; // 1-12
+    // CFB season: Sep-Jan. Off-season: Feb-Aug
+    const inSeason = month >= 9 || month <= 1;
+    // Default: next upcoming season
+    const nextYr = currentSeason + 1;
+    const pickYr = inSeason ? currentSeason : nextYr;
+
+    // Load base Elo from the season BEFORE the pick year
+    const baseYr = pickYr - 1;
+    if (!allSeasonData[baseYr]) {
+      try {
+        const raw = await fetchCSV(CFG.dataPath + baseYr + '.csv');
+        if (raw) allSeasonData[baseYr] = raw.map(coerceRow);
+      } catch(_e) {}
+    }
+    // Also try current season as base if available
     if (!allSeasonData[currentSeason]) {
       try {
         const raw = await fetchCSV(CFG.dataPath + currentSeason + '.csv');
@@ -1233,18 +1252,17 @@ async function findAvailableSeason() {
       } catch(_e) {}
     }
     _pk.eloBase = {};
-    (allSeasonData[currentSeason]||[]).forEach(r => { _pk.eloBase[r.team]=r.elo; });
+    // Use the most recent available season as Elo base
+    const baseData = allSeasonData[currentSeason] || allSeasonData[baseYr] || [];
+    baseData.forEach(r => { _pk.eloBase[r.team]=r.elo; });
     _pk.eloSim = {..._pk.eloBase};
 
-    const nextYr = currentSeason + 1;
-    _pk.yr = nextYr;
-
-    // Reset state
+    _pk.yr = pickYr;
     _pk.schedule=[]; _pk.scores={}; _pk.confGames=[];
     _pk.confChamps={}; _pk.loaded=false;
 
     pkShowShell();
-    pkFetchSchedule(nextYr);
+    pkFetchSchedule(pickYr);
   }
 
   function pkShowShell() {
@@ -1255,8 +1273,21 @@ async function findAvailableSeason() {
   <!-- Header -->
   <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);
               padding:0.9rem 1.1rem;margin-bottom:1rem">
-    <div style="font-size:0.86rem;font-weight:600;color:var(--text)">
-      🏈 ${_pk.yr} CFB Season Pick'em
+    <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">
+      <div class="pk-title" style="font-size:0.86rem;font-weight:600;color:var(--text)">
+        🏈 ${_pk.yr} CFB Season Pick'em
+      </div>
+      <div style="display:flex;align-items:center;gap:0.4rem;margin-left:auto">
+        <span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">Season:</span>
+        <select onchange="pkLoadYear(parseInt(this.value))"
+          style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);
+                 border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);
+                 padding:0.2rem 0.4rem">
+          ${(CFG.seasons||[]).slice(0,5).map(y=>
+            `<option value="${y}" ${y===_pk.yr?'selected':''}>${y}</option>`
+          ).join('')}
+        </select>
+      </div>
     </div>
     <div style="font-size:0.68rem;color:var(--text-muted);font-family:var(--font-mono);
                 margin-top:0.2rem;line-height:1.55">
@@ -1300,84 +1331,151 @@ async function findAvailableSeason() {
   // ── SCHEDULE FETCH ─────────────────────────────────────────
   async function pkFetchSchedule(yr) {
     pkRenderReg('<div class="loading"><div class="spinner"></div>Loading '
-      +yr+' schedule from ESPN… (this takes a few seconds)</div>');
-
-    // Generate all Saturdays + known midweek dates for the CFB season
-    const start = new Date(`${yr}-08-23`);
-    const end   = new Date(`${yr}-12-07`);
-    // Bowl season
-    const bowlStart = new Date(`${yr}-12-14`);
-    const bowlEnd   = new Date(`${yr+1}-01-22`);
-
-    // Collect all dates
-    const allDates = [];
-    for (let d=new Date(start); d<=end; d.setDate(d.getDate()+1))
-      allDates.push(new Date(d));
-    for (let d=new Date(bowlStart); d<=bowlEnd; d.setDate(d.getDate()+1))
-      allDates.push(new Date(d));
-
-    const fmt = d => d.toISOString().slice(0,10).replace(/-/g,'');
+      +yr+' schedule from ESPN…</div>');
 
     const games = [];
     const seen  = new Set();
+
+    // ESPN scoreboard accepts week= + dates=YYYY for future seasons
+    // This captures ALL games including those with TBD dates/times
+    // Regular season: weeks 1-15, plus week 0 (late Aug)
+    const weeks = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+
+    // Fetch all weeks in parallel batches of 4
+    const BATCH = 4;
     let fetched = 0;
 
-    // Fetch in parallel batches of 6 dates at a time
-    const BATCH = 6;
-    for (let i=0; i<allDates.length; i+=BATCH) {
-      const batch = allDates.slice(i, i+BATCH);
-      await Promise.all(batch.map(async d => {
-        const ds = fmt(d);
-        try {
-          const params = new URLSearchParams({dates:ds, groups:80, limit:300});
-          const res = await fetch(
-            `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?${params}`,
-            {mode:'cors'});
-          if (!res.ok) return;
-          const data = await res.json();
-          for (const ev of (data.events||[])) {
-            try {
-              const comp = ev.competitions?.[0];
-              const competitors = comp?.competitors||[];
-              const home = competitors.find(c=>c.homeAway==='home');
-              const away = competitors.find(c=>c.homeAway==='away');
-              if (!home||!away) continue;
-              const key = ev.id || [home.team.shortDisplayName,away.team.shortDisplayName,ds].join('|');
-              if (seen.has(key)) return;
-              seen.add(key);
-              const completed = comp.status?.type?.completed||false;
-              games.push({
-                id:       key,
-                date:     ev.date ? ev.date.slice(0,10) : `${ds.slice(0,4)}-${ds.slice(4,6)}-${ds.slice(6,8)}`,
-                homeTeam: home.team.shortDisplayName,
-                awayTeam: away.team.shortDisplayName,
-                homeScore: completed ? (parseInt(home.score)||null) : null,
-                awayScore: completed ? (parseInt(away.score)||null) : null,
-                completed,
-              });
-              fetched++;
-            } catch(_e2) {}
-          }
-        } catch(_e) {}
+    for (let i = 0; i < weeks.length; i += BATCH) {
+      const batch = weeks.slice(i, i + BATCH);
+      await Promise.all(batch.map(async wk => {
+        // Try both with groups=80 (FBS only) and seasontype=2 (regular season)
+        const urls = [
+          `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=${yr}&seasontype=2&week=${wk}&groups=80&limit=300`,
+          `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=${yr}&seasontype=2&week=${wk}&limit=300`,
+        ];
+        for (const url of urls) {
+          try {
+            const res = await fetch(url, {mode:'cors'});
+            if (!res.ok) continue;
+            const data = await res.json();
+            for (const ev of (data.events || [])) {
+              try {
+                const comp = ev.competitions?.[0];
+                const competitors = comp?.competitors || [];
+                const home = competitors.find(c => c.homeAway === 'home');
+                const away = competitors.find(c => c.homeAway === 'away');
+                if (!home || !away) continue;
+
+                const key = ev.id || (home.team.id + '_' + away.team.id + '_wk' + wk);
+                if (seen.has(key)) continue;
+                seen.add(key);
+
+                const neutral = comp.neutralSite || false;
+                const completed = comp.status?.type?.completed || false;
+
+                // Date: use ev.date if available, otherwise mark as TBD
+                let gameDate = null;
+                let dateTBD  = false;
+                if (ev.date) {
+                  gameDate = ev.date.slice(0, 10);
+                  // ESPN uses 1970-01-01 as placeholder for TBD dates
+                  if (gameDate === '1970-01-01' || gameDate.startsWith('1970')) {
+                    gameDate = null;
+                    dateTBD  = true;
+                  }
+                } else {
+                  dateTBD = true;
+                }
+
+                games.push({
+                  id:        key,
+                  week:      wk,
+                  date:      gameDate,
+                  dateTBD,
+                  homeTeam:  home.team.shortDisplayName,
+                  awayTeam:  away.team.shortDisplayName,
+                  neutral,
+                  completed,
+                  homeScore: completed ? (parseInt(home.score) || null) : null,
+                  awayScore: completed ? (parseInt(away.score) || null) : null,
+                });
+                fetched++;
+              } catch(_e2) {}
+            }
+            break; // got data from this URL, skip fallback
+          } catch(_e) {}
+        }
       }));
+
       pkRenderReg(`<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;
-        color:var(--text-muted)">Loading schedule… ${fetched} games found so far</div>`);
+        color:var(--text-muted)">Loading ${yr} schedule… ${fetched} games found</div>`);
     }
 
-    // Sort by date
-    games.sort((a,b) => a.date.localeCompare(b.date));
-    _pk.schedule = games;
-    _pk.loaded = true;
+    // Sort: by week first, then by date within week (TBD at end of week)
+    games.sort((a, b) => {
+      if (a.week !== b.week) return a.week - b.week;
+      if (!a.date && !b.date) return 0;
+      if (!a.date) return 1;
+      if (!b.date) return -1;
+      return a.date.localeCompare(b.date);
+    });
 
-    // Pre-fill completed games into scores
+    _pk.schedule = games;
+    _pk.loaded   = true;
+
+    if (games.length === 0) {
+      // Week-based fetch also returned nothing — ESPN truly has no data yet
+      const altYr = yr - 1;
+      pkRenderReg(`<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.78rem;
+        color:var(--text-muted);text-align:center;background:var(--bg2);border:1px solid var(--border);
+        border-radius:var(--radius-lg)">
+        <div style="font-size:0.88rem;color:var(--text);margin-bottom:0.5rem">
+          📅 ${yr} schedule not available yet
+        </div>
+        ESPN hasn't published the ${yr} CFB schedule yet (typically released July–August).
+        <br><br>
+        <button onclick="pkLoadYear(${altYr})"
+          style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
+                 padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;
+                 font-weight:600;cursor:pointer">
+          Load ${altYr} season instead →
+        </button>
+      </div>`);
+      return;
+    }
+
+    // Pre-fill completed games
     for (const g of games) {
-      if (g.completed && g.homeScore!=null && g.awayScore!=null) {
-        _pk.scores[g.id] = {homeScore:g.homeScore, awayScore:g.awayScore};
+      if (g.completed && g.homeScore != null && g.awayScore != null) {
+        _pk.scores[g.id] = {homeScore: g.homeScore, awayScore: g.awayScore};
       }
     }
     pkBuildStandings();
     pkRenderReg();
   }
+
+  window.pkLoadYear = async function(yr) {
+    // Load base Elo from the season before
+    const baseYr = yr - 1;
+    if (!allSeasonData[baseYr]) {
+      try {
+        const raw = await fetchCSV(CFG.dataPath + baseYr + '.csv');
+        if (raw) allSeasonData[baseYr] = raw.map(coerceRow);
+      } catch(_e) {}
+    }
+    _pk.eloBase = {};
+    (allSeasonData[baseYr]||allSeasonData[currentSeason]||[]).forEach(r=>{_pk.eloBase[r.team]=r.elo;});
+    _pk.eloSim = {..._pk.eloBase};
+    _pk.yr = yr;
+    _pk.schedule=[]; _pk.scores={}; _pk.confGames=[];
+    _pk.confChamps={}; _pk.loaded=false;
+
+    // Update shell title
+    const titleEl = document.querySelector('.pk-wrap .pk-title');
+    if (titleEl) titleEl.textContent = yr + ' CFB Season Pick\'em';
+
+    pkFetchSchedule(yr);
+  };
 
   // ── PHASE 1: REGULAR SEASON ───────────────────────────────
   function pkRenderReg(placeholder) {
@@ -1397,12 +1495,12 @@ async function findAvailableSeason() {
     const totalGames    = _pk.schedule.length;
     const completedGames= _pk.schedule.filter(g=>g.completed).length;
 
-    // Group by date
-    const byDate = {};
+    // Group by week number
+    const byWeek = {};
     for (const g of _pk.schedule) {
-      const day = g.date;
-      if (!byDate[day]) byDate[day] = [];
-      byDate[day].push(g);
+      const wk = g.week ?? 0;
+      if (!byWeek[wk]) byWeek[wk] = [];
+      byWeek[wk].push(g);
     }
 
     let html = `
@@ -1419,14 +1517,26 @@ async function findAvailableSeason() {
         </button>
       </div>`;
 
-    for (const [day, games] of Object.entries(byDate)) {
-      const dateObj = new Date(day+'T12:00:00');
-      const dateLabel = dateObj.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+    for (const [wk, games] of Object.entries(byWeek)) {
+      const wkNum = parseInt(wk);
+      const wkLabel = wkNum === 0 ? 'Week 0' : `Week ${wkNum}`;
+      // Show date range if games have dates
+      const datedGames = games.filter(g => g.date);
+      let dateRange = '';
+      if (datedGames.length) {
+        const dates = datedGames.map(g => g.date).sort();
+        const first = new Date(dates[0]+'T12:00:00');
+        const last  = new Date(dates[dates.length-1]+'T12:00:00');
+        const fmt   = d => d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+        dateRange = first.toDateString()===last.toDateString()
+          ? ` — ${fmt(first)}`
+          : ` — ${fmt(first)}–${fmt(last)}`;
+      }
       html += `
         <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
                     text-transform:uppercase;color:var(--text-dim);margin:0.85rem 0 0.35rem;
                     padding-top:0.5rem;border-top:1px solid var(--border)">
-          ${dateLabel}
+          ${wkLabel}${dateRange} <span style="color:var(--text-dim);opacity:0.6">(${games.length} games)</span>
         </div>`;
 
       for (const g of games) {
@@ -1441,11 +1551,18 @@ async function findAvailableSeason() {
                       margin-bottom:0.18rem;border-radius:var(--radius);
                       background:${g.completed?'var(--bg2)':'var(--bg3)'};
                       border:1px solid ${g.completed?'var(--border)':'var(--border-md)'}">
+            <!-- Date / TBD -->
+            <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);
+                        min-width:36px;text-align:center">
+              ${g.date
+                ? new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'})
+                : 'TBD'}
+            </div>
             <!-- Home team -->
             <div style="flex:1;font-size:0.77rem;font-weight:${winner===g.homeTeam?600:400};
                         color:${winner===g.homeTeam?'var(--accent)':'var(--text)'}">
               ${g.homeTeam}
-              <span style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono)">H</span>
+              <span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono)">${g.neutral?'N':'H'}</span>
             </div>
             <!-- Score inputs -->
             <input type="number" min="0" max="99"
@@ -1472,7 +1589,7 @@ async function findAvailableSeason() {
             <!-- Away team -->
             <div style="flex:1;text-align:right;font-size:0.77rem;font-weight:${winner===g.awayTeam?600:400};
                         color:${winner===g.awayTeam?'var(--accent)':'var(--text)'}">
-              <span style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono)">A</span>
+              <span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono)">${g.neutral?'N':'A'}</span>
               ${g.awayTeam}
             </div>
             ${g.completed?`<span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);
