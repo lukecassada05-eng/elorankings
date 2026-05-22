@@ -1144,7 +1144,7 @@ async function findAvailableSeason() {
               "Kansas State","Oklahoma State","TCU","Texas Tech","UCF","Utah",
               "West Virginia","Arizona","Arizona State"],
     "ACC":["Boston College","California","Clemson","Duke","Florida State","Georgia Tech",
-           "Louisville","Miami","NC State","North Carolina","Notre Dame","Pittsburgh",
+           "Louisville","Miami","NC State","North Carolina","Pittsburgh",
            "SMU","Stanford","Syracuse","Virginia","Virginia Tech","Wake Forest"],
     "Mountain West":["Air Force","Boise State","Colorado State","Fresno State","Hawai'i",
                      "Nevada","New Mexico","San Diego State","San Jose State","UNLV",
@@ -1613,16 +1613,26 @@ async function findAvailableSeason() {
       }
       if(winScore<=loseScore) loseScore=Math.max(0,winScore-7);
 
-      // Add slight randomness: occasionally swap pool one tier (upset potential)
-      // ~15% chance of upset for close games, ~3% for mismatches
-      var upsetChance = absDiff<50 ? 0.42 : absDiff<150 ? 0.25 : absDiff<300 ? 0.10 : 0.03;
+      // Upset probability — favorites win most of the time
+      // Close game: ~30% upset, moderate: ~15%, big: ~6%, mismatch: ~2%
+      var upsetChance = absDiff<50 ? 0.30 : absDiff<150 ? 0.15 : absDiff<300 ? 0.06 : 0.02;
       var favWins = Math.random() > upsetChance;
 
       var hs, as_;
-      if(favHome===favWins){
-        hs=winScore; as_=loseScore;
+      if(!favWins) {
+        // Upset: always use the closest score pool so upsets look like upsets (close games)
+        var upsetPool = SCORE_POOLS[0]; // tightest margins
+        var uWin  = pickScore(upsetPool[1]);
+        var uLose = pickScore(upsetPool[2]);
+        var att=0;
+        while(uWin<=uLose&&att<10){uWin=pickScore(upsetPool[1]);uLose=pickScore(upsetPool[2]);att++;}
+        if(uWin<=uLose) uLose=Math.max(0,uWin-3);
+        // Underdog wins narrowly
+        if(favHome){ hs=uLose; as_=uWin; }   // away team upset
+        else        { hs=uWin;  as_=uLose; }  // home team upset (already underdog)
       } else {
-        hs=loseScore; as_=winScore;
+        if(favHome){ hs=winScore; as_=loseScore; }
+        else        { hs=loseScore; as_=winScore; }
       }
       _pk.scores[g.id]={homeScore:hs,awayScore:as_};
       filled++;
