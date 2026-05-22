@@ -1121,219 +1121,252 @@ async function findAvailableSeason() {
   
   // ──────────────────────────────────────────────────────────
   // CFB SEASON PICK'EM
-  // Isolated block — uses NO nested template literals.
-  // All HTML built with plain string concatenation.
   // ──────────────────────────────────────────────────────────
 
-  // ── State ─────────────────────────────────────────────────
   var _pk = {
-    yr: null, schedule: [], scores: {}, confGames: [], confChamps: {},
-    wins: {}, losses: {}, confWins: {}, confLoss: {},
-    eloBase: {}, eloSim: {}
+    yr:null, schedule:[], scores:{}, confGames:[], confChamps:{},
+    wins:{}, losses:{}, confWins:{}, confLoss:{}, eloBase:{}, eloSim:{}
   };
 
-  // ── Conference membership (canonical ESPN shortDisplayNames) ─
+  // ── 2025-26 EXACT conference rosters ─────────────────────
+  // Sources: Deseret News July 2025, ESPN standings, CFP rules
   var PK_CONFS = {
-    "SEC":["Alabama","Arkansas","Auburn","Florida","Georgia","Kentucky","LSU",
-           "Mississippi State","Missouri","Ole Miss","South Carolina","Tennessee",
-           "Texas","Texas A&M","Vanderbilt","Oklahoma"],
-    "Big Ten":["Illinois","Indiana","Iowa","Maryland","Michigan","Michigan State",
-               "Minnesota","Nebraska","Northwestern","Ohio State","Penn State",
-               "Purdue","Rutgers","Wisconsin","UCLA","USC","Oregon","Washington"],
-    "Big 12":["Baylor","BYU","Cincinnati","Colorado","Houston","Iowa State","Kansas",
-              "Kansas State","Oklahoma State","TCU","Texas Tech","UCF","Utah",
-              "West Virginia","Arizona","Arizona State"],
-    "ACC":["Boston College","California","Clemson","Duke","Florida State","Georgia Tech",
-           "Louisville","Miami","NC State","North Carolina","Pittsburgh",
-           "SMU","Stanford","Syracuse","Virginia","Virginia Tech","Wake Forest"],
-    "Mountain West":["Air Force","Boise State","Colorado State","Fresno State","Hawai'i",
-                     "Nevada","New Mexico","San Diego State","San Jose State","UNLV",
-                     "Utah State","Wyoming"],
-    "AAC":["Army","Charlotte","East Carolina","FAU","Memphis","Navy","North Texas",
-           "Rice","South Florida","Temple","Tulane","UTSA"],
-    "Sun Belt":["Appalachian State","Arkansas State","Coastal Carolina","Georgia Southern",
-                "Georgia State","James Madison","Louisiana","Marshall","Old Dominion",
-                "South Alabama","Southern Miss","Texas State","Troy","UL Monroe"],
-    "MAC":["Akron","Ball State","Bowling Green","Buffalo","Central Michigan",
-           "Eastern Michigan","Kent State","Massachusetts","Miami (OH)",
-           "Northern Illinois","Ohio","Toledo","Western Michigan"],
-    "C-USA":["FIU","Florida Atlantic","Jacksonville State","Kennesaw State","Liberty",
-             "Louisiana Tech","Middle Tennessee","New Mexico State","Sam Houston",
-             "UAB","UTEP","Western Kentucky"],
-    "Independent":["Notre Dame","Army","Navy","Connecticut","UMass"]
+    "SEC": [
+      "Alabama","Arkansas","Auburn","Florida","Georgia","Kentucky","LSU",
+      "Mississippi State","Missouri","Ole Miss","Oklahoma","South Carolina",
+      "Tennessee","Texas","Texas A&M","Vanderbilt"
+    ],
+    "Big Ten": [
+      "Illinois","Indiana","Iowa","Maryland","Michigan","Michigan State",
+      "Minnesota","Nebraska","Northwestern","Ohio State","Oregon",
+      "Penn State","Purdue","Rutgers","UCLA","USC","Washington","Wisconsin"
+    ],
+    "Big 12": [
+      "Arizona","Arizona State","Baylor","BYU","Cincinnati","Colorado",
+      "Houston","Iowa State","Kansas","Kansas State","Oklahoma State",
+      "TCU","Texas Tech","UCF","Utah","West Virginia"
+    ],
+    "ACC": [
+      "Boston College","California","Clemson","Duke","Florida State",
+      "Georgia Tech","Louisville","Miami","NC State","North Carolina",
+      "Pittsburgh","SMU","Stanford","Syracuse","Virginia","Virginia Tech",
+      "Wake Forest"
+    ],
+    "Pac-12": [
+      "Boise State","Colorado State","Fresno State","Oregon State",
+      "San Diego State","Texas State","Utah State","Washington State"
+    ],
+    "Mountain West": [
+      "Air Force","Hawai'i","Nevada","New Mexico","Northern Illinois",
+      "San Jose State","UNLV","UTEP","Wyoming"
+    ],
+    "AAC": [
+      "Army","Charlotte","East Carolina","FAU","Memphis","Navy",
+      "North Texas","Rice","South Florida","Temple","Tulane","Tulsa",
+      "UAB","UTSA"
+    ],
+    "Sun Belt": [
+      "Appalachian State","Arkansas State","Coastal Carolina",
+      "Georgia Southern","Georgia State","James Madison","Louisiana",
+      "Marshall","Old Dominion","South Alabama","Southern Miss",
+      "Troy","UL Monroe"
+    ],
+    "MAC": [
+      "Akron","Ball State","Bowling Green","Buffalo","Central Michigan",
+      "Eastern Michigan","Kent State","Massachusetts","Miami (OH)",
+      "Ohio","Toledo","Western Michigan"
+    ],
+    "C-USA": [
+      "Delaware","FIU","Jacksonville State","Kennesaw State","Liberty",
+      "Louisiana Tech","Middle Tennessee","Missouri State",
+      "New Mexico State","Sam Houston","Western Kentucky"
+    ],
+    "Independent": ["Notre Dame","Connecticut"]
   };
 
-  // ── Divisions (only Sun Belt & MAC have them in 2025-26) ──
+  // ── Divisions — ONLY Sun Belt & MAC still have them in 2025-26 ──
   var PK_DIVS = {
     "Sun Belt": {
-      "East":["Georgia Southern","Georgia State","South Alabama","Coastal Carolina",
-              "James Madison","Old Dominion"],
-      "West":["Louisiana","Troy","Arkansas State","UL Monroe","Southern Miss",
-              "Texas State","Marshall","Appalachian State"]
+      "East": ["Coastal Carolina","Georgia Southern","Georgia State",
+               "James Madison","Marshall","Old Dominion","South Alabama"],
+      "West": ["Appalachian State","Arkansas State","Louisiana",
+               "Southern Miss","Troy","UL Monroe"]
     },
     "MAC": {
-      "East":["Ohio","Miami (OH)","Bowling Green","Kent State","Buffalo",
-              "Akron","Massachusetts"],
-      "West":["Central Michigan","Western Michigan","Northern Illinois",
-              "Ball State","Eastern Michigan","Toledo"]
+      "East": ["Akron","Ball State","Bowling Green","Buffalo",
+               "Kent State","Massachusetts","Miami (OH)","Ohio"],
+      "West": ["Central Michigan","Eastern Michigan","Northern Illinois",
+               "Toledo","Western Michigan"]
     }
   };
 
-  // ── ESPN name → canonical name ─────────────────────────────
+  // ── CFP auto-bid conferences (eligible for automatic bids) ──
+  // Any conference with a championship game qualifies
+  // Independent schools (Notre Dame) can only receive at-large bids
+  var CFP_AUTO_CONF = ["SEC","Big Ten","Big 12","ACC","Pac-12",
+                       "Mountain West","AAC","Sun Belt","MAC","C-USA"];
+
+  // ── ESPN shortDisplayName → canonical PK_CONFS name ──────
   var PK_ALIAS = {
-    "Miss St":"Mississippi State","Mississippi St":"Mississippi State",
-    "Miss. St.":"Mississippi State","Ole Miss":"Ole Miss",
-    "Florida St":"Florida State","FSU":"Florida State","Fla. State":"Florida State",
-    "NC State":"NC State","N.C. State":"NC State",
-    "Georgia Tech":"Georgia Tech","Ga. Tech":"Georgia Tech",
+    // SEC
+    "Mississippi St":"Mississippi State","Miss St":"Mississippi State",
+    "Miss. St.":"Mississippi State",
+    // Big Ten
     "Ohio St":"Ohio State","Penn St":"Penn State",
     "Michigan St":"Michigan State","Mich. St.":"Michigan State",
+    // Big 12
     "Kansas St":"Kansas State","Iowa St":"Iowa State",
     "Oklahoma St":"Oklahoma State","Okla. St.":"Oklahoma State",
     "West Virginia":"West Virginia","WVU":"West Virginia",
+    // ACC
+    "Florida St":"Florida State","FSU":"Florida State","Fla. State":"Florida State",
+    "NC State":"NC State","N.C. State":"NC State",
+    "Georgia Tech":"Georgia Tech","Ga. Tech":"Georgia Tech",
+    "Pitt":"Pittsburgh","UNC":"North Carolina","UVA":"Virginia",
+    "Va. Tech":"Virginia Tech","BC":"Boston College",
+    // Pac-12
     "Boise St":"Boise State","Fresno St":"Fresno State",
     "Utah St":"Utah State","San Diego St":"San Diego State","SDSU":"San Diego State",
+    "Wash. State":"Washington State","Wash St":"Washington State",
+    "Oregon St":"Oregon State","Texas St":"Texas State","Tex. St.":"Texas State",
+    "Colorado St":"Colorado State","Colo. St.":"Colorado State",
+    // Mountain West
     "San José St":"San Jose State","San Jose St":"San Jose State","SJSU":"San Jose State",
-    "Colorado St":"Colorado State","Hawaii":"Hawai'i",
-    "ECU":"East Carolina","USF":"South Florida","UConn":"Connecticut",
+    "Hawaii":"Hawai'i","New Mexico":"New Mexico",
+    "N Illinois":"Northern Illinois","NIU":"Northern Illinois",
+    // AAC
+    "ECU":"East Carolina","USF":"South Florida","E. Carolina":"East Carolina",
+    "So. Florida":"South Florida",
+    "FAU":"FAU","UAB":"UAB","UTSA":"UTSA",
+    // Sun Belt
     "App State":"Appalachian State","Appalachian St":"Appalachian State",
-    "GA Southern":"Georgia Southern","Ga Southern":"Georgia Southern",
-    "Georgia St":"Georgia State","Ga St":"Georgia State",
+    "GA Southern":"Georgia Southern","Ga. Southern":"Georgia Southern",
+    "Georgia St":"Georgia State","Ga. State":"Georgia State","Ga St":"Georgia State",
     "Coastal":"Coastal Carolina","Coastal Car":"Coastal Carolina",
-    "S. Alabama":"South Alabama","South Ala":"South Alabama",
+    "Coastal Car.":"Coastal Carolina",
+    "S. Alabama":"South Alabama","South Ala.":"South Alabama",
     "ODU":"Old Dominion","Old Dom.":"Old Dominion",
     "Southern Miss":"Southern Miss","So. Miss":"Southern Miss",
     "UL Monroe":"UL Monroe","ULM":"UL Monroe",
-    "La.":"Louisiana","ULL":"Louisiana",
-    "Ark St":"Arkansas State","Arkansas St":"Arkansas State",
-    "Texas St":"Texas State","James Madison":"James Madison","JMU":"James Madison",
-    "C Michigan":"Central Michigan","CMU":"Central Michigan",
-    "E Michigan":"Eastern Michigan","EMU":"Eastern Michigan",
-    "W Michigan":"Western Michigan","WMU":"Western Michigan",
-    "N Illinois":"Northern Illinois","NIU":"Northern Illinois",
-    "Ball St":"Ball State","Kent St":"Kent State",
-    "Miami OH":"Miami (OH)","Miami (Ohio)":"Miami (OH)",
+    "La.":"Louisiana","ULL":"Louisiana","Louisiana":"Louisiana",
+    "Ark St":"Arkansas State","Arkansas St":"Arkansas State","Ark. State":"Arkansas State",
+    "James Madison":"James Madison","JMU":"James Madison",
+    "Marshall":"Marshall","Troy":"Troy",
+    // MAC
+    "C Michigan":"Central Michigan","CMU":"Central Michigan","Cent. Michigan":"Central Michigan",
+    "E Michigan":"Eastern Michigan","EMU":"Eastern Michigan","Eastern Mich.":"Eastern Michigan",
+    "W Michigan":"Western Michigan","WMU":"Western Michigan","Western Mich.":"Western Michigan",
+    "N. Illinois":"Northern Illinois",
+    "Ball St":"Ball State","Ball St.":"Ball State",
+    "Bowling Green":"Bowling Green","BGSU":"Bowling Green",
+    "Kent St":"Kent State","Kent St.":"Kent State",
+    "Miami OH":"Miami (OH)","Miami (Ohio)":"Miami (OH)","Miami-Ohio":"Miami (OH)",
+    "Ohio":"Ohio","Toledo":"Toledo","Akron":"Akron","Buffalo":"Buffalo",
     "UMass":"Massachusetts","Mass.":"Massachusetts",
-    "WKU":"Western Kentucky","W. Kentucky":"Western Kentucky","Western KY":"Western Kentucky",
-    "MTSU":"Middle Tennessee","Middle Tenn":"Middle Tennessee",
-    "FAU":"Florida Atlantic","Fla. Atlantic":"Florida Atlantic",
+    // C-USA
+    "Western KY":"Western Kentucky","WKU":"Western Kentucky","W. Kentucky":"Western Kentucky",
+    "MTSU":"Middle Tennessee","Middle Tenn":"Middle Tennessee","Middle Tenn.":"Middle Tennessee",
     "FIU":"FIU","La. Tech":"Louisiana Tech","La Tech":"Louisiana Tech",
     "New Mexico St":"New Mexico State","NMSU":"New Mexico State",
-    "Kennesaw St":"Kennesaw State","Jax State":"Jacksonville State",
-    "Jacksonville St":"Jacksonville State","Sam Hous.":"Sam Houston",
-    "N Dakota St":"North Dakota State","NDSU":"North Dakota State",
-    "Pitt":"Pittsburgh","UNC":"North Carolina","UVA":"Virginia"
+    "Kennesaw St":"Kennesaw State","Kenn. St.":"Kennesaw State",
+    "Jax State":"Jacksonville State","Jax St":"Jacksonville State",
+    "Jacksonville St":"Jacksonville State",
+    "Sam Hous.":"Sam Houston","SHSU":"Sam Houston",
+    "Liberty":"Liberty","Mo. State":"Missouri State","Missouri St":"Missouri State",
+    // Independent
+    "UConn":"Connecticut","Notre Dame":"Notre Dame"
   };
 
-  function pkResolve(t) { return PK_ALIAS[t] || t; }
+  function pkResolve(t){ return PK_ALIAS[t] || t; }
 
-  function pkConfOf(team) {
+  function pkConfOf(team){
     var t = pkResolve(team);
-    for (var conf in PK_CONFS) {
-      if (PK_CONFS[conf].indexOf(t) !== -1) return conf;
+    for(var conf in PK_CONFS){
+      if(PK_CONFS[conf].indexOf(t) !== -1) return conf;
     }
     return null;
   }
 
-  // ── Rebuild standings from all scores ─────────────────────
-  function pkBuild() {
+  function pkBuild(){
     _pk.wins={}; _pk.losses={}; _pk.confWins={}; _pk.confLoss={};
     _pk.eloSim = JSON.parse(JSON.stringify(_pk.eloBase));
-    var K = 30;
-
-    for (var i=0; i<_pk.schedule.length; i++) {
-      var g = _pk.schedule[i];
-      var s = _pk.scores[g.id];
-      if (!s || s.homeScore==='' || s.awayScore==='' ||
-          s.homeScore==null || s.awayScore==null) continue;
-      var hs = parseInt(s.homeScore), as_ = parseInt(s.awayScore);
-      if (isNaN(hs)||isNaN(as_)||hs===as_) continue;
-
-      var winner = pkResolve(hs>as_?g.homeTeam:g.awayTeam);
-      var loser  = pkResolve(hs>as_?g.awayTeam:g.homeTeam);
-      _pk.wins[winner]  = (_pk.wins[winner]  || 0) + 1;
-      _pk.losses[loser] = (_pk.losses[loser] || 0) + 1;
-
-      var cW = pkConfOf(winner), cL = pkConfOf(loser);
-      if (cW && cW===cL && cW!=='Independent') {
-        _pk.confWins[winner] = (_pk.confWins[winner]||0) + 1;
-        _pk.confLoss[loser]  = (_pk.confLoss[loser] ||0) + 1;
+    var K=30;
+    for(var i=0;i<_pk.schedule.length;i++){
+      var g=_pk.schedule[i];
+      var s=_pk.scores[g.id];
+      if(!s||s.homeScore===''||s.awayScore===''||s.homeScore==null||s.awayScore==null) continue;
+      var hs=parseInt(s.homeScore), as_=parseInt(s.awayScore);
+      if(isNaN(hs)||isNaN(as_)||hs===as_) continue;
+      var winner=pkResolve(hs>as_?g.homeTeam:g.awayTeam);
+      var loser=pkResolve(hs>as_?g.awayTeam:g.homeTeam);
+      _pk.wins[winner]=(_pk.wins[winner]||0)+1;
+      _pk.losses[loser]=(_pk.losses[loser]||0)+1;
+      var cW=pkConfOf(winner), cL=pkConfOf(loser);
+      if(cW&&cW===cL&&cW!=='Independent'){
+        _pk.confWins[winner]=(_pk.confWins[winner]||0)+1;
+        _pk.confLoss[loser]=(_pk.confLoss[loser]||0)+1;
       }
-      var margin = Math.abs(hs-as_);
-      var rW = _pk.eloSim[winner]||1500, rL = _pk.eloSim[loser]||1500;
-      var eW = 1/(1+Math.pow(10,(rL-rW)/400));
-      var delta = K*Math.log(margin+1)*(1-eW);
-      _pk.eloSim[winner] = rW+delta;
-      _pk.eloSim[loser]  = rL-delta;
+      var margin=Math.abs(hs-as_);
+      var rW=_pk.eloSim[winner]||1500, rL=_pk.eloSim[loser]||1500;
+      var eW=1/(1+Math.pow(10,(rL-rW)/400));
+      var delta=K*Math.log(margin+1)*(1-eW);
+      _pk.eloSim[winner]=rW+delta;
+      _pk.eloSim[loser]=rL-delta;
     }
-    // Apply conf champ game results
-    for (var j=0; j<_pk.confGames.length; j++) {
-      var cg = _pk.confGames[j];
-      if (cg.homeScore==null||cg.awayScore==null||cg.homeScore===cg.awayScore) continue;
-      var cw = cg.homeScore>cg.awayScore?cg.homeTeam:cg.awayTeam;
-      var cl = cg.homeScore>cg.awayScore?cg.awayTeam:cg.homeTeam;
-      var margin2 = Math.abs(cg.homeScore-cg.awayScore);
+    for(var j=0;j<_pk.confGames.length;j++){
+      var cg=_pk.confGames[j];
+      if(cg.homeScore==null||cg.awayScore==null||cg.homeScore===cg.awayScore) continue;
+      var cw=cg.homeScore>cg.awayScore?cg.homeTeam:cg.awayTeam;
+      var cl=cg.homeScore>cg.awayScore?cg.awayTeam:cg.homeTeam;
+      var m2=Math.abs(cg.homeScore-cg.awayScore);
       var rW2=_pk.eloSim[cw]||1500, rL2=_pk.eloSim[cl]||1500;
       var eW2=1/(1+Math.pow(10,(rL2-rW2)/400));
-      _pk.eloSim[cw]=rW2+K*Math.log(margin2+1)*(1-eW2);
-      _pk.eloSim[cl]=rL2-K*Math.log(margin2+1)*(1-eW2);
+      _pk.eloSim[cw]=rW2+K*Math.log(m2+1)*(1-eW2);
+      _pk.eloSim[cl]=rL2-K*Math.log(m2+1)*(1-eW2);
     }
   }
 
-  // Sort teams by conf record then H2H then overall then Elo
-  function pkSort(teams) {
+  function pkSort(teams){
     return teams.slice().sort(function(a,b){
       var acp=(a.cw+a.cl)?a.cw/(a.cw+a.cl):0, bcp=(b.cw+b.cl)?b.cw/(b.cw+b.cl):0;
-      if (Math.abs(bcp-acp)>0.001) return bcp-acp;
+      if(Math.abs(bcp-acp)>0.001) return bcp-acp;
       var awp=(a.w+a.l)?a.w/(a.w+a.l):0, bwp=(b.w+b.l)?b.w/(b.w+b.l):0;
-      if (Math.abs(bwp-awp)>0.001) return bwp-awp;
+      if(Math.abs(bwp-awp)>0.001) return bwp-awp;
       return (b.elo||1500)-(a.elo||1500);
     });
   }
 
-  function pkTeam(t) {
+  function pkTeam(t){
     return {team:t, cw:_pk.confWins[t]||0, cl:_pk.confLoss[t]||0,
             w:_pk.wins[t]||0, l:_pk.losses[t]||0,
             elo:_pk.eloSim[t]||_pk.eloBase[t]||1500};
   }
 
-  // ── Entry point ───────────────────────────────────────────
-  async function renderPickem() {
-    var el = document.getElementById('panel-pickem');
-    if (!el || CFG.sport !== 'CFB') return;
 
-    // Load base Elo from current season
-    if (!allSeasonData[currentSeason]) {
-      try {
-        var raw = await fetchCSV(CFG.dataPath + currentSeason + '.csv');
-        if (raw) allSeasonData[currentSeason] = raw.map(coerceRow);
-      } catch(e) {}
+  async function renderPickem(){
+    var el=document.getElementById('panel-pickem');
+    if(!el||CFG.sport!=='CFB') return;
+    if(!allSeasonData[currentSeason]){
+      try{var raw=await fetchCSV(CFG.dataPath+currentSeason+'.csv');if(raw)allSeasonData[currentSeason]=raw.map(coerceRow);}catch(e){}
     }
-    _pk.eloBase = {};
-    (allSeasonData[currentSeason]||[]).forEach(function(r){
-      if (r.team && r.elo) _pk.eloBase[r.team] = parseFloat(r.elo);
-    });
-    _pk.eloSim = JSON.parse(JSON.stringify(_pk.eloBase));
-    _pk.yr = currentSeason+1;
-    _pk.schedule=[]; _pk.scores={}; _pk.confGames=[]; _pk.confChamps={};
-
+    _pk.eloBase={};
+    (allSeasonData[currentSeason]||[]).forEach(function(r){if(r.team&&r.elo)_pk.eloBase[r.team]=parseFloat(r.elo);});
+    _pk.eloSim=JSON.parse(JSON.stringify(_pk.eloBase));
+    _pk.yr=currentSeason+1;
+    _pk.schedule=[];_pk.scores={};_pk.confGames=[];_pk.confChamps={};
     pkDrawShell();
     pkFetchSched(_pk.yr);
   }
 
-  // ── Shell UI ──────────────────────────────────────────────
-  function pkDrawShell() {
-    var el = document.getElementById('panel-pickem');
-    if (!el) return;
-    var seasonOpts = '';
+  function pkDrawShell(){
+    var el=document.getElementById('panel-pickem');
+    if(!el) return;
+    var seasonOpts='',eloOpts='';
     (CFG.seasons||[]).slice(0,5).forEach(function(y){
-      seasonOpts += '<option value="'+y+'">'+y+'</option>';
+      seasonOpts+='<option value="'+y+'">'+y+'</option>';
+      eloOpts+='<option value="'+y+'">'+y+' Elo</option>';
     });
-    var eloOpts = '';
-    (CFG.seasons||[]).slice(0,5).forEach(function(y){
-      eloOpts += '<option value="'+y+'">'+y+' Elo</option>';
-    });
-    el.innerHTML =
+    el.innerHTML=
       '<div style="max-width:920px">'
       +'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.9rem 1.1rem;margin-bottom:1rem">'
       +'<div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">'
@@ -1343,13 +1376,13 @@ async function findAvailableSeason() {
       +'<select onchange="pkLoadYear(parseInt(this.value))" style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.2rem 0.4rem">'+seasonOpts+'</select>'
       +'</div></div>'
       +'<div style="font-size:0.68rem;color:var(--text-muted);font-family:var(--font-mono);margin-top:0.4rem;line-height:1.55">'
-      +'Every FBS game in date/week order · enter scores → conf standings decide champ games → CFP bracket + Top 25'
+      +'Every FBS game in week order · enter scores → conf standings decide championship matchups → CFP bracket + Top 25'
       +'</div>'
       +'<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.6rem;padding-top:0.6rem;border-top:1px solid var(--border);flex-wrap:wrap">'
       +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">⚡ Auto-predict using</span>'
       +'<select id="pk-elo-yr" style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.2rem 0.4rem">'+eloOpts+'</select>'
       +'<button onclick="pkAutoPredict()" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.28rem 0.85rem;font-family:var(--font-mono);font-size:0.7rem;font-weight:600;cursor:pointer">Fill all games →</button>'
-      +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">(home-field +45 Elo · score from gap)</span>'
+      +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">(home +45 Elo · realistic score pools · upsets close)</span>'
       +'</div></div>'
       +'<div style="display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1rem">'
       +'<button onclick="pkTab(\'reg\')" id="pk-tab-reg" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid var(--accent);margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--accent)">📅 Regular Season</button>'
@@ -1362,64 +1395,51 @@ async function findAvailableSeason() {
       +'</div>';
   }
 
-  window.pkTab = function(ph) {
+  window.pkTab=function(ph){
     ['reg','conf','cfp'].forEach(function(p){
-      var panel = document.getElementById('pk-'+p);
-      var btn   = document.getElementById('pk-tab-'+p);
-      if (!panel || !btn) return;
-      if (p===ph) { panel.removeAttribute('hidden'); btn.style.borderBottomColor='var(--accent)'; btn.style.color='var(--accent)'; }
-      else        { panel.setAttribute('hidden',''); btn.style.borderBottomColor='transparent'; btn.style.color='var(--text-muted)'; }
+      var panel=document.getElementById('pk-'+p);
+      var btn=document.getElementById('pk-tab-'+p);
+      if(!panel||!btn) return;
+      if(p===ph){panel.removeAttribute('hidden');btn.style.borderBottomColor='var(--accent)';btn.style.color='var(--accent)';}
+      else{panel.setAttribute('hidden','');btn.style.borderBottomColor='transparent';btn.style.color='var(--text-muted)';}
     });
     pkBuild();
-    if (ph==='conf') pkDrawConf();
-    if (ph==='cfp')  pkDrawCFP();
+    if(ph==='conf') pkDrawConf();
+    if(ph==='cfp')  pkDrawCFP();
   };
 
-  window.pkLoadYear = async function(yr) {
-    var baseYr = yr-1;
-    if (!allSeasonData[baseYr]) {
-      try { var raw=await fetchCSV(CFG.dataPath+baseYr+'.csv'); if(raw) allSeasonData[baseYr]=raw.map(coerceRow); } catch(e){}
-    }
+  window.pkLoadYear=async function(yr){
+    var baseYr=yr-1;
+    if(!allSeasonData[baseYr]){try{var raw=await fetchCSV(CFG.dataPath+baseYr+'.csv');if(raw)allSeasonData[baseYr]=raw.map(coerceRow);}catch(e){}}
     _pk.eloBase={};
-    (allSeasonData[baseYr]||allSeasonData[currentSeason]||[]).forEach(function(r){
-      if(r.team&&r.elo) _pk.eloBase[r.team]=parseFloat(r.elo);
-    });
+    (allSeasonData[baseYr]||allSeasonData[currentSeason]||[]).forEach(function(r){if(r.team&&r.elo)_pk.eloBase[r.team]=parseFloat(r.elo);});
     _pk.eloSim=JSON.parse(JSON.stringify(_pk.eloBase));
-    _pk.yr=yr; _pk.schedule=[]; _pk.scores={}; _pk.confGames=[]; _pk.confChamps={};
-    pkDrawShell();
-    pkFetchSched(yr);
+    _pk.yr=yr;_pk.schedule=[];_pk.scores={};_pk.confGames=[];_pk.confChamps={};
+    pkDrawShell();pkFetchSched(yr);
   };
 
-  // ── Fetch schedule by week ────────────────────────────────
-  async function pkFetchSched(yr) {
+  async function pkFetchSched(yr){
     pkSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' schedule from ESPN…</div>');
-    var games=[], seen={};
-    // Weeks 0-13 regular season + 15 (Army-Navy only)
+    var games=[],seen={};
     var weeks=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,15];
-    var BATCH=4;
-    var fetched=0;
-    for (var b=0; b<weeks.length; b+=BATCH) {
+    var BATCH=4,fetched=0;
+    for(var b=0;b<weeks.length;b+=BATCH){
       var batch=weeks.slice(b,b+BATCH);
       await Promise.all(batch.map(async function(wk){
         var url='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups=80&limit=300';
-        try {
-          var res=await fetch(url,{mode:'cors'});
-          if(!res.ok) return;
-          var data=await res.json();
-          if(!data.events) return;
+        try{
+          var res=await fetch(url,{mode:'cors'});if(!res.ok) return;
+          var data=await res.json();if(!data.events) return;
           data.events.forEach(function(ev){
-            try {
-              var comp=ev.competitions&&ev.competitions[0];
-              if(!comp) return;
+            try{
+              var comp=ev.competitions&&ev.competitions[0];if(!comp) return;
               var competitors=comp.competitors||[];
               var home=null,away=null;
-              competitors.forEach(function(c){ if(c.homeAway==='home') home=c; else away=c; });
+              competitors.forEach(function(c){if(c.homeAway==='home')home=c;else away=c;});
               if(!home||!away) return;
               var key=ev.id||(home.team.id+'_'+away.team.id+'_w'+wk);
-              if(seen[key]) return;
-              seen[key]=1;
-              var hn=home.team.shortDisplayName, an=away.team.shortDisplayName;
-              // Week 15: only Army-Navy
+              if(seen[key]) return;seen[key]=1;
+              var hn=home.team.shortDisplayName,an=away.team.shortDisplayName;
               if(wk===15&&hn!=='Army'&&hn!=='Navy'&&an!=='Army'&&an!=='Navy') return;
               var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
               var dt=ev.date?ev.date.slice(0,10):null;
@@ -1427,20 +1447,17 @@ async function findAvailableSeason() {
               var hs=completed?(parseInt(home.score)||null):null;
               var as_=completed?(parseInt(away.score)||null):null;
               games.push({id:key,week:wk,date:dt,homeTeam:hn,awayTeam:an,
-                          neutral:!!(comp.neutralSite),completed:completed,
-                          homeScore:hs,awayScore:as_});
+                neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
               fetched++;
-            } catch(e){}
+            }catch(e){}
           });
-        } catch(e){}
+        }catch(e){}
       }));
-      pkSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' schedule… '+fetched+' games found so far</div>');
+      pkSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' schedule… '+fetched+' games found</div>');
     }
     games.sort(function(a,b){
       if(a.week!==b.week) return a.week-b.week;
-      if(!a.date&&!b.date) return 0;
-      if(!a.date) return 1;
-      if(!b.date) return -1;
+      if(!a.date&&!b.date) return 0;if(!a.date) return 1;if(!b.date) return -1;
       return a.date<b.date?-1:a.date>b.date?1:0;
     });
     _pk.schedule=games;
@@ -1452,228 +1469,156 @@ async function findAvailableSeason() {
         +'</div>');
       return;
     }
-    // Pre-fill completed games
     games.forEach(function(g){
       if(g.completed&&g.homeScore!=null&&g.awayScore!=null)
         _pk.scores[g.id]={homeScore:g.homeScore,awayScore:g.awayScore};
     });
-    pkBuild();
-    pkDrawReg();
+    pkBuild();pkDrawReg();
   }
 
-  function pkSetReg(html) {
-    var el=document.getElementById('pk-reg');
-    if(el) el.innerHTML=html;
-  }
+  function pkSetReg(html){var el=document.getElementById('pk-reg');if(el)el.innerHTML=html;}
 
-  // ── Draw regular season games ─────────────────────────────
-  function pkDrawReg() {
-    var el=document.getElementById('pk-reg');
-    if(!el) return;
+  function pkDrawReg(){
+    var el=document.getElementById('pk-reg');if(!el) return;
     var picked=0;
-    Object.keys(_pk.scores).forEach(function(id){
-      var s=_pk.scores[id];
-      if(s.homeScore!==''&&s.homeScore!=null&&s.awayScore!==''&&s.awayScore!=null) picked++;
-    });
+    Object.keys(_pk.scores).forEach(function(id){var s=_pk.scores[id];if(s.homeScore!==''&&s.homeScore!=null&&s.awayScore!==''&&s.awayScore!=null)picked++;});
     var total=_pk.schedule.length;
     var completed=_pk.schedule.filter(function(g){return g.completed;}).length;
-
     var html='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem">'
-      +'<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim)">'+total+' games'+(completed?' · '+completed+' final (ESPN)':'')+' · '+picked+' predicted</div>'
+      +'<div id="pk-count" style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim)">'+total+' games'+(completed?' · '+completed+' final':'')+' · '+picked+' predicted</div>'
       +'<button onclick="pkTab(\'conf\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.35rem 1rem;font-family:var(--font-mono);font-size:0.72rem;font-weight:600;cursor:pointer">Next: Conf Championships →</button>'
       +'</div>';
-
-    // Group by week
     var byWeek={};
-    _pk.schedule.forEach(function(g){
-      var wk=g.week||0;
-      if(!byWeek[wk]) byWeek[wk]=[];
-      byWeek[wk].push(g);
-    });
+    _pk.schedule.forEach(function(g){var wk=g.week||0;if(!byWeek[wk])byWeek[wk]=[];byWeek[wk].push(g);});
     Object.keys(byWeek).sort(function(a,b){return parseInt(a)-parseInt(b);}).forEach(function(wk){
       var games=byWeek[wk];
-      var label=parseInt(wk)===0?'Week 0':'Week '+wk;
+      var label=parseInt(wk)===0?'Week 0 (Kickoff)':parseInt(wk)===15?'Week 15 (Army-Navy)':'Week '+wk;
       var datedGames=games.filter(function(g){return g.date;});
       var range='';
       if(datedGames.length){
         var dates=datedGames.map(function(g){return g.date;}).sort();
-        var d0=new Date(dates[0]+'T12:00:00'), d1=new Date(dates[dates.length-1]+'T12:00:00');
+        var d0=new Date(dates[0]+'T12:00:00'),d1=new Date(dates[dates.length-1]+'T12:00:00');
         var fmt=function(d){return d.toLocaleDateString('en-US',{month:'short',day:'numeric'});};
         range=' — '+(d0.toDateString()===d1.toDateString()?fmt(d0):fmt(d0)+'–'+fmt(d1));
       }
-      html+='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.85rem 0 0.35rem;padding-top:0.5rem;border-top:1px solid var(--border)">'
-        +label+range+' <span style="opacity:0.6">('+games.length+' games)</span></div>';
+      html+='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.85rem 0 0.35rem;padding-top:0.5rem;border-top:1px solid var(--border)">'+label+range+' <span style="opacity:0.6">('+games.length+')</span></div>';
       games.forEach(function(g){
         var s=_pk.scores[g.id]||{};
         var hs=s.homeScore!=null?s.homeScore:'';
         var as_=s.awayScore!=null?s.awayScore:'';
-        var hsi=parseInt(hs), asi=parseInt(as_);
+        var hsi=parseInt(hs),asi=parseInt(as_);
         var homeWin=(!isNaN(hsi)&&!isNaN(asi)&&hsi!==asi&&hsi>asi);
         var awayWin=(!isNaN(hsi)&&!isNaN(asi)&&hsi!==asi&&asi>hsi);
         var dateStr=g.date?new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'TBD';
-        var hSide=g.neutral?'N':'H', aSide=g.neutral?'N':'A';
-        var hStyle='flex:1;font-size:0.77rem;font-weight:'+(homeWin?'600':'400')+';color:'+(homeWin?'var(--accent)':'var(--text)');
-        var aStyle='flex:1;text-align:right;font-size:0.77rem;font-weight:'+(awayWin?'600':'400')+';color:'+(awayWin?'var(--accent)':'var(--text)');
+        var hSide=g.neutral?'N':'H',aSide=g.neutral?'N':'A';
         html+='<div data-gid="'+g.id+'" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.55rem;margin-bottom:0.18rem;border-radius:var(--radius);background:'+(g.completed?'var(--bg2)':'var(--bg3)')+';border:1px solid '+(g.completed?'var(--border)':'var(--border-md)')+'">'
           +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:center">'+dateStr+'</div>'
-          +'<div class="pk-hn" style="'+hStyle+'">'+g.homeTeam+' <span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono)">'+hSide+'</span></div>'
-          +'<input type="number" min="0" max="99" value="'+hs+'" placeholder="–"'+(g.completed?' disabled':'')
-          +' onchange="pkScore(\''+g.id+'\',\'home\',this.value)"'
-          +' style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;background:'+(g.completed?'transparent':'var(--bg2)')+';border:'+(g.completed?'none':'1px solid var(--border-md)')+';color:var(--text);border-radius:var(--radius);padding:0.22rem;-moz-appearance:textfield;-webkit-appearance:none">'
+          +'<div class="pk-hn" style="flex:1;font-size:0.77rem;font-weight:'+(homeWin?'600':'400')+';color:'+(homeWin?'var(--accent)':'var(--text)')+'">'+g.homeTeam+' <span style="font-size:0.55rem;color:var(--text-dim)">'+hSide+'</span></div>'
+          +'<input type="number" min="0" max="99" value="'+hs+'" placeholder="–"'+(g.completed?' disabled':'')+' onchange="pkScore(\''+g.id+'\',\'home\',this.value)" style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;background:'+(g.completed?'transparent':'var(--bg2)')+';border:'+(g.completed?'none':'1px solid var(--border-md)')+';color:var(--text);border-radius:var(--radius);padding:0.22rem;-moz-appearance:textfield;-webkit-appearance:none">'
           +'<span style="color:var(--text-dim);font-size:0.78rem">–</span>'
-          +'<input type="number" min="0" max="99" value="'+as_+'" placeholder="–"'+(g.completed?' disabled':'')
-          +' onchange="pkScore(\''+g.id+'\',\'away\',this.value)"'
-          +' style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;background:'+(g.completed?'transparent':'var(--bg2)')+';border:'+(g.completed?'none':'1px solid var(--border-md)')+';color:var(--text);border-radius:var(--radius);padding:0.22rem;-moz-appearance:textfield;-webkit-appearance:none">'
-          +'<div class="pk-an" style="'+aStyle+'"><span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono)">'+aSide+'</span> '+g.awayTeam+'</div>'
-          +(g.completed?'<span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);min-width:32px;text-align:right">FINAL</span>':'')
+          +'<input type="number" min="0" max="99" value="'+as_+'" placeholder="–"'+(g.completed?' disabled':'')+' onchange="pkScore(\''+g.id+'\',\'away\',this.value)" style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;background:'+(g.completed?'transparent':'var(--bg2)')+';border:'+(g.completed?'none':'1px solid var(--border-md)')+';color:var(--text);border-radius:var(--radius);padding:0.22rem;-moz-appearance:textfield;-webkit-appearance:none">'
+          +'<div class="pk-an" style="flex:1;text-align:right;font-size:0.77rem;font-weight:'+(awayWin?'600':'400')+';color:'+(awayWin?'var(--accent)':'var(--text)')+'"><span style="font-size:0.55rem;color:var(--text-dim)">'+aSide+'</span> '+g.awayTeam+'</div>'
+          +(g.completed?'<span style="font-size:0.55rem;color:var(--text-dim);min-width:32px;text-align:right">FINAL</span>':'')
           +'</div>';
       });
     });
-    html+='<div style="margin-top:1rem;display:flex;justify-content:flex-end">'
-      +'<button onclick="pkTab(\'conf\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Next: Conf Championships →</button>'
-      +'</div>';
+    html+='<div style="margin-top:1rem;display:flex;justify-content:flex-end"><button onclick="pkTab(\'conf\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Next: Conf Championships →</button></div>';
     el.innerHTML=html;
   }
 
-  window.pkScore = function(id, side, val) {
-    if(!_pk.scores[id]) _pk.scores[id]={homeScore:'',awayScore:''};
+  window.pkScore=function(id,side,val){
+    if(!_pk.scores[id])_pk.scores[id]={homeScore:'',awayScore:''};
     var n=(val===''||val==null)?'':parseInt(val);
-    if(side==='home') _pk.scores[id].homeScore=n;
-    else              _pk.scores[id].awayScore=n;
-    // Update winner highlight on this row
+    if(side==='home')_pk.scores[id].homeScore=n;else _pk.scores[id].awayScore=n;
     var row=document.querySelector('[data-gid="'+id+'"]');
     if(row){
-      var s=_pk.scores[id];
-      var hs=parseInt(s.homeScore), as_=parseInt(s.awayScore);
-      var hn=row.querySelector('.pk-hn'), an=row.querySelector('.pk-an');
+      var s=_pk.scores[id];var hs=parseInt(s.homeScore),as_=parseInt(s.awayScore);
+      var hn=row.querySelector('.pk-hn'),an=row.querySelector('.pk-an');
       if(hn&&an&&!isNaN(hs)&&!isNaN(as_)&&hs!==as_){
-        hn.style.fontWeight=hs>as_?'600':'400'; hn.style.color=hs>as_?'var(--accent)':'var(--text)';
-        an.style.fontWeight=as_>hs?'600':'400'; an.style.color=as_>hs?'var(--accent)':'var(--text)';
+        hn.style.fontWeight=hs>as_?'600':'400';hn.style.color=hs>as_?'var(--accent)':'var(--text)';
+        an.style.fontWeight=as_>hs?'600':'400';an.style.color=as_>hs?'var(--accent)':'var(--text)';
       }
     }
-    // Update count
-    var picked=Object.keys(_pk.scores).filter(function(id2){
-      var s2=_pk.scores[id2];
-      return s2.homeScore!==''&&s2.homeScore!=null&&s2.awayScore!==''&&s2.awayScore!=null;
-    }).length;
-    var countEl=document.querySelector('#pk-reg div[style*="font-mono"]');
-    if(countEl) countEl.textContent=_pk.schedule.length+' games · '+picked+' predicted';
+    var picked=Object.keys(_pk.scores).filter(function(i2){var s2=_pk.scores[i2];return s2.homeScore!==''&&s2.homeScore!=null&&s2.awayScore!==''&&s2.awayScore!=null;}).length;
+    var el=document.getElementById('pk-count');
+    if(el)el.textContent=_pk.schedule.length+' games · '+picked+' predicted';
   };
 
-  // ── Auto-predict ──────────────────────────────────────────
-  window.pkAutoPredict = async function() {
+  window.pkAutoPredict=async function(){
     var selEl=document.getElementById('pk-elo-yr');
     var eloYr=parseInt(selEl&&selEl.value)||currentSeason;
     var btn=document.querySelector('[onclick="pkAutoPredict()"]');
     if(btn){btn.textContent='Loading…';btn.disabled=true;}
-    if(!allSeasonData[eloYr]){
-      try{var raw=await fetchCSV(CFG.dataPath+eloYr+'.csv');if(raw)allSeasonData[eloYr]=raw.map(coerceRow);}catch(e){}
-    }
+    if(!allSeasonData[eloYr]){try{var raw=await fetchCSV(CFG.dataPath+eloYr+'.csv');if(raw)allSeasonData[eloYr]=raw.map(coerceRow);}catch(e){}}
     var eloMap={};
     (allSeasonData[eloYr]||[]).forEach(function(r){if(r.team&&r.elo)eloMap[r.team]=parseFloat(r.elo);});
-    if(!Object.keys(eloMap).length){
-      if(btn){btn.textContent='Fill all games →';btn.disabled=false;}
-      return;
-    }
-    function getElo(team){
-      var t=pkResolve(team);
-      return eloMap[t]||eloMap[team]||1500;
-    }
-    // Realistic CFB score pools — all valid football scores (multiples of TD/FG/safety)
-    // Grouped by how lopsided the game is expected to be
-    var SCORE_POOLS = [
-      // [maxDiff, winnerOpts, loserOpts]
-      [30,  [21,24,27,28,31,34,35],         [17,20,21,24,27,28,31]],
-      [80,  [24,27,28,31,34,35,38,41],      [14,17,20,21,24,27,28]],
-      [150, [28,31,34,35,38,41,42,45],      [10,13,14,17,20,21,24]],
-      [250, [35,38,41,42,45,48,49,52],      [7,10,13,14,17,20,21]],
-      [9999,[42,45,48,49,52,55,56,59],      [0,3,7,10,13,14,17]]
-    ];
-    function pickScore(pool){ return pool[Math.floor(Math.random()*pool.length)]; }
+    if(!Object.keys(eloMap).length){if(btn){btn.textContent='Fill all games →';btn.disabled=false;}return;}
+    function getElo(team){var t=pkResolve(team);return eloMap[t]||eloMap[team]||1500;}
 
+    var POOLS=[
+      [30,  [21,24,27,28,31,34,35],      [17,20,21,24,27,28,31]],
+      [80,  [24,27,28,31,34,35,38,41],   [14,17,20,21,24,27,28]],
+      [150, [28,31,34,35,38,41,42,45],   [10,13,14,17,20,21,24]],
+      [250, [35,38,41,42,45,48,49,52],   [7,10,13,14,17,20,21]],
+      [9999,[42,45,48,49,52,55,56,59],   [0,3,7,10,13,14,17]]
+    ];
+    function pick(pool){return pool[Math.floor(Math.random()*pool.length)];}
     var filled=0;
     _pk.schedule.forEach(function(g){
       if(g.completed) return;
-      var eH=getElo(g.homeTeam)+(g.neutral?0:45), eA=getElo(g.awayTeam);
-      var absDiff=Math.abs(eH-eA);
-      var favHome=(eH>=eA);
-
-      // Pick the right pool based on Elo gap
-      var pool=SCORE_POOLS[SCORE_POOLS.length-1];
-      for(var pi=0;pi<SCORE_POOLS.length;pi++){
-        if(absDiff<=SCORE_POOLS[pi][0]){ pool=SCORE_POOLS[pi]; break; }
+      var eH=getElo(g.homeTeam)+(g.neutral?0:45),eA=getElo(g.awayTeam);
+      var absDiff=Math.abs(eH-eA);var favHome=(eH>=eA);
+      var pool=POOLS[POOLS.length-1];
+      for(var pi=0;pi<POOLS.length;pi++){if(absDiff<=POOLS[pi][0]){pool=POOLS[pi];break;}}
+      var wS=pick(pool[1]),lS=pick(pool[2]);
+      var att=0;while(wS<=lS&&att<8){wS=pick(pool[1]);lS=pick(pool[2]);att++;}
+      if(wS<=lS)lS=Math.max(0,wS-7);
+      var upsetChance=absDiff<50?0.30:absDiff<150?0.15:absDiff<300?0.06:0.02;
+      var favWins=Math.random()>upsetChance;
+      var hs,as_;
+      if(!favWins){
+        var uP=POOLS[0];var uW=pick(uP[1]),uL=pick(uP[2]);
+        var ua=0;while(uW<=uL&&ua<8){uW=pick(uP[1]);uL=pick(uP[2]);ua++;}
+        if(uW<=uL)uL=Math.max(0,uW-3);
+        if(favHome){hs=uL;as_=uW;}else{hs=uW;as_=uL;}
+      }else{
+        if(favHome){hs=wS;as_=lS;}else{hs=lS;as_=wS;}
       }
-      var winScore  = pickScore(pool[1]);
-      var loseScore = pickScore(pool[2]);
-
-      // Ensure winner actually beats loser (pick again if needed)
-      var attempts=0;
-      while(winScore<=loseScore&&attempts<10){
-        winScore=pickScore(pool[1]); loseScore=pickScore(pool[2]); attempts++;
-      }
-      if(winScore<=loseScore) loseScore=Math.max(0,winScore-7);
-
-      // Upset probability — favorites win most of the time
-      // Close game: ~30% upset, moderate: ~15%, big: ~6%, mismatch: ~2%
-      var upsetChance = absDiff<50 ? 0.30 : absDiff<150 ? 0.15 : absDiff<300 ? 0.06 : 0.02;
-      var favWins = Math.random() > upsetChance;
-
-      var hs, as_;
-      if(!favWins) {
-        // Upset: always use the closest score pool so upsets look like upsets (close games)
-        var upsetPool = SCORE_POOLS[0]; // tightest margins
-        var uWin  = pickScore(upsetPool[1]);
-        var uLose = pickScore(upsetPool[2]);
-        var att=0;
-        while(uWin<=uLose&&att<10){uWin=pickScore(upsetPool[1]);uLose=pickScore(upsetPool[2]);att++;}
-        if(uWin<=uLose) uLose=Math.max(0,uWin-3);
-        // Underdog wins narrowly
-        if(favHome){ hs=uLose; as_=uWin; }   // away team upset
-        else        { hs=uWin;  as_=uLose; }  // home team upset (already underdog)
-      } else {
-        if(favHome){ hs=winScore; as_=loseScore; }
-        else        { hs=loseScore; as_=winScore; }
-      }
-      _pk.scores[g.id]={homeScore:hs,awayScore:as_};
-      filled++;
+      _pk.scores[g.id]={homeScore:hs,awayScore:as_};filled++;
     });
-    pkBuild();
-    pkDrawReg();
+    pkBuild();pkDrawReg();
     if(btn){btn.textContent='Fill all games →';btn.disabled=false;}
-    if(window.toast) toast('Auto-filled '+filled+' games using '+eloYr+' Elo');
   };
 
-  // ── Draw conference championships ─────────────────────────
-  function pkDrawConf() {
-    var el=document.getElementById('pk-conf');
-    if(!el) return;
-    pkBuild();
 
+  function pkConfLeaders(conf){
+    var teams=(PK_CONFS[conf]||[]).map(pkTeam);
+    var divDef=PK_DIVS[conf];
+    if(divDef){
+      return Object.keys(divDef).map(function(div){
+        return pkSort(teams.filter(function(t){return divDef[div].indexOf(t.team)!==-1;}))[0];
+      }).filter(Boolean);
+    }else{return pkSort(teams).slice(0,2);}
+  }
+
+  function pkDrawConf(){
+    var el=document.getElementById('pk-conf');if(!el) return;
+    pkBuild();
     var html='<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);margin-bottom:1rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.75rem 1rem;line-height:1.6">'
-      +'Standings from your picks. <b style="color:var(--text)">Sun Belt &amp; MAC</b> use East/West division leaders. All others: top-2 by conf W% (tiebreaker: overall W% → Elo). Enter the championship score to set the conf champion.'
+      +'Standings from your picks. <b style="color:var(--text)">Sun Belt &amp; MAC</b> use East/West division leaders. All other conferences use top-2 by conf W% (tiebreaker: overall W% → Elo). Enter the championship score to lock in the conf champion.'
       +'</div>'
       +'<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1rem;margin-bottom:1.2rem">';
 
+    window._pkCGMap={};
     Object.keys(PK_CONFS).forEach(function(conf){
       if(conf==='Independent') return;
       var teams=(PK_CONFS[conf]||[]).map(pkTeam);
       var divDef=PK_DIVS[conf];
-      var homeT='',awayT='';
-
-      if(divDef){
-        var divNames=Object.keys(divDef);
-        var leaders=divNames.map(function(div){
-          var dt=divDef[div];
-          var filtered=teams.filter(function(t){return dt.indexOf(t.team)!==-1;});
-          return pkSort(filtered)[0];
-        }).filter(function(x){return x;});
-        homeT=(leaders[0]&&leaders[0].team)||'';
-        awayT=(leaders[1]&&leaders[1].team)||'';
-      } else {
-        var sorted=pkSort(teams);
-        homeT=(sorted[0]&&sorted[0].team)||'';
-        awayT=(sorted[1]&&sorted[1].team)||'';
-      }
+      var leaders=pkConfLeaders(conf);
+      var homeT=(leaders[0]&&leaders[0].team)||'';
+      var awayT=(leaders[1]&&leaders[1].team)||'';
+      var confKey=conf.replace(/[^a-zA-Z0-9]/g,'_');
+      window._pkCGMap[confKey]={conf:conf,homeT:homeT,awayT:awayT};
 
       var existing=null;
       for(var i=0;i<_pk.confGames.length;i++){if(_pk.confGames[i].conf===conf){existing=_pk.confGames[i];break;}}
@@ -1691,36 +1636,34 @@ async function findAvailableSeason() {
           var dt=divDef[div];
           var divObjs=pkSort(teams.filter(function(t){return dt.indexOf(t.team)!==-1;}));
           html+='<div><div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.2rem">'+div+'</div>';
-          for(var i=0;i<Math.min(divObjs.length,5);i++){
-            var t=divObjs[i];
-            var c=i===0?'var(--text)':'var(--text-muted)';
+          for(var i=0;i<Math.min(divObjs.length,6);i++){
+            var t=divObjs[i];var c=i===0?'var(--text)':'var(--text-muted)';
             html+='<div style="display:flex;gap:0.25rem;padding:0.1rem 0;font-size:0.7rem;color:'+c+'">'
               +'<span style="flex:1;font-weight:'+(i===0?'600':'400')+'">'+t.team+'</span>'
-              +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'–'+t.cl+'</span>'
-              +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'–'+t.l+')</span>'
+              +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'-'+t.cl+'</span>'
+              +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'-'+t.l+')</span>'
               +'</div>';
           }
           html+='</div>';
         });
         html+='</div>';
-      } else {
-        var sorted2=pkSort(teams);
+      }else{
+        var sorted=pkSort(teams);
         html+='<div style="margin-bottom:0.6rem">';
-        for(var i=0;i<Math.min(sorted2.length,8);i++){
-          var t=sorted2[i]; var c=i<2?'var(--text)':'var(--text-muted)';
+        for(var i=0;i<Math.min(sorted.length,8);i++){
+          var t=sorted[i];var c=i<2?'var(--text)':'var(--text-muted)';
           html+='<div style="display:flex;gap:0.3rem;padding:0.1rem 0;font-size:0.72rem;color:'+c+'">'
             +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);min-width:14px;text-align:right">'+(i+1)+'</span>'
             +'<span style="flex:1;font-weight:'+(i<2?'600':'400')+'">'+t.team+'</span>'
-            +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'–'+t.cl+'</span>'
-            +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'–'+t.l+')</span>'
+            +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'-'+t.cl+'</span>'
+            +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'-'+t.l+')</span>'
             +'</div>';
         }
-        if(sorted2.length>8) html+='<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.1rem">+'+(sorted2.length-8)+' more</div>';
+        if(sorted.length>8)html+='<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.1rem">+'+(sorted.length-8)+' more</div>';
         html+='</div>';
       }
 
-      var champLabel=champ?('Championship &middot; <strong style="color:var(--accent)">'+champ+' wins</strong>'):(homeT&&awayT?'Championship &middot; '+homeT+' vs '+awayT:'Championship &middot; TBD');
-      var confKey=conf.replace(/[^a-zA-Z0-9]/g,'_');
+      var champLabel=champ?('Championship · <b style="color:var(--accent)">'+champ+' wins</b>'):(homeT&&awayT?'Championship · '+homeT+' vs '+awayT:'Championship · TBD');
       html+='<div style="border-top:1px solid var(--border);padding-top:0.55rem">'
         +'<div id="pkcl-'+confKey+'" style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);margin-bottom:0.35rem">'+champLabel+'</div>'
         +'<div style="display:flex;align-items:center;gap:0.3rem;flex-wrap:wrap">'
@@ -1731,130 +1674,152 @@ async function findAvailableSeason() {
         +'<span style="flex:1;text-align:right;font-size:0.74rem;font-weight:600;min-width:90px">'+(awayT||'TBD')+'</span>'
         +'</div></div></div>';
     });
-
-    html+='</div><div style="display:flex;justify-content:flex-end">'
-      +'<button onclick="pkTab(\'cfp\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Generate CFP Bracket + Top 25 →</button>'
-      +'</div>';
+    html+='</div><div style="display:flex;justify-content:flex-end"><button onclick="pkTab(\'cfp\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Generate CFP Bracket + Top 25 →</button></div>';
     el.innerHTML=html;
-
-    // Store matchups for pkCG lookup
-    window._pkCGMap={};
-    Object.keys(PK_CONFS).forEach(function(conf){
-      if(conf==='Independent') return;
-      var teams=(PK_CONFS[conf]||[]).map(pkTeam);
-      var divDef=PK_DIVS[conf];
-      var homeT='',awayT='';
-      if(divDef){
-        var leaders=Object.keys(divDef).map(function(div){
-          var filtered=teams.filter(function(t){return divDef[div].indexOf(t.team)!==-1;});
-          return pkSort(filtered)[0];
-        }).filter(Boolean);
-        homeT=(leaders[0]&&leaders[0].team)||'';awayT=(leaders[1]&&leaders[1].team)||'';
-      } else {
-        var s=pkSort(teams);homeT=(s[0]&&s[0].team)||'';awayT=(s[1]&&s[1].team)||'';
-      }
-      window._pkCGMap[conf.replace(/[^a-zA-Z0-9]/g,'_')]={conf:conf,homeT:homeT,awayT:awayT};
-    });
   }
 
-  window.pkCG = function(input) {
+  window.pkCG=function(input){
     var confKey=input.getAttribute('data-conf-key');
     var side=input.getAttribute('data-side');
-    var val=input.value;
     var map=(window._pkCGMap&&window._pkCGMap[confKey])||{};
-    var conf=map.conf||confKey;
-    var homeT=map.homeT||'';
-    var awayT=map.awayT||'';
+    var conf=map.conf||confKey,homeT=map.homeT||'',awayT=map.awayT||'';
     var e=null;
     for(var i=0;i<_pk.confGames.length;i++){if(_pk.confGames[i].conf===conf){e=_pk.confGames[i];break;}}
     if(!e){e={conf:conf,homeTeam:homeT,awayTeam:awayT,homeScore:null,awayScore:null,champ:''};_pk.confGames.push(e);}
     e.homeTeam=homeT;e.awayTeam=awayT;
-    var n=parseInt(val);
-    if(side==='home') e.homeScore=isNaN(n)?null:n;
-    else              e.awayScore=isNaN(n)?null:n;
+    var n=parseInt(input.value);
+    if(side==='home')e.homeScore=isNaN(n)?null:n;else e.awayScore=isNaN(n)?null:n;
     if(e.homeScore!=null&&e.awayScore!=null&&e.homeScore!==e.awayScore){
       e.champ=e.homeScore>e.awayScore?e.homeTeam:e.awayTeam;
-      _pk.confChamps[conf]=e.champ;
-      pkBuild();
-    } else {e.champ='';delete _pk.confChamps[conf];}
+      _pk.confChamps[conf]=e.champ;pkBuild();
+    }else{e.champ='';delete _pk.confChamps[conf];}
     var lbl=document.getElementById('pkcl-'+confKey);
-    if(lbl) lbl.innerHTML=e.champ?('Championship &middot; <strong style="color:var(--accent)">'+e.champ+' wins</strong>'):'Championship &middot; '+homeT+' vs '+awayT;
+    if(lbl)lbl.innerHTML=e.champ?('Championship · <b style="color:var(--accent)">'+e.champ+' wins</b>'):'Championship · '+homeT+' vs '+awayT;
   };
 
-  // ── Draw CFP bracket + Top 25 ─────────────────────────────
-  function pkDrawCFP() {
-    var el=document.getElementById('pk-cfp');
-    if(!el) return;
+  // ── CFP BRACKET — 2025-26 RULES ──────────────────────────
+  // Rule: 5 highest-ranked conf champs get automatic bids
+  //       7 at-large bids fill remaining spots
+  //       Seeds 1-4 = four HIGHEST-RANKED teams overall (get bye) — NOT necessarily conf champs
+  //       Seeds 5-12 play first round (5v12, 6v11, 7v10, 8v9 at higher seed's campus)
+  //       If a conf champ ranked outside top 12 → bumped up to seed 12, 11, etc.
+  //       Independent teams (Notre Dame) can only receive at-large bids
+  function pkDrawCFP(){
+    var el=document.getElementById('pk-cfp');if(!el) return;
     pkBuild();
 
-    // Determine conf champions
-    var champions={};
-    Object.keys(PK_CONFS).forEach(function(conf){
-      if(conf==='Independent') return;
+    // Step 1: determine each conf's champion
+    var confChampions={};
+    CFP_AUTO_CONF.forEach(function(conf){
       var picked=_pk.confChamps[conf];
       if(picked){
-        champions[conf]={team:picked,elo:_pk.eloSim[picked]||1500,conf:conf,
+        confChampions[conf]={team:picked,elo:_pk.eloSim[picked]||1500,conf:conf,
           w:_pk.wins[picked]||0,l:_pk.losses[picked]||0,
           cw:_pk.confWins[picked]||0,cl:_pk.confLoss[picked]||0};
-      } else {
-        var teams=(PK_CONFS[conf]||[]).map(pkTeam);
-        var divDef=PK_DIVS[conf];
-        var leader;
-        if(divDef){
-          var leaders=Object.keys(divDef).map(function(div){
-            return pkSort(teams.filter(function(t){return divDef[div].indexOf(t.team)!==-1;}))[0];
-          }).filter(Boolean);
-          leader=leaders.sort(function(a,b){return (b.elo||0)-(a.elo||0);})[0];
-        } else {
-          leader=pkSort(teams)[0];
-        }
-        if(leader) champions[conf]={team:leader.team,elo:leader.elo,conf:conf,w:leader.w,l:leader.l,cw:leader.cw,cl:leader.cl};
+      }else{
+        var leaders=pkConfLeaders(conf);
+        var leader=leaders[0];
+        if(leader)confChampions[conf]={team:leader.team,elo:leader.elo,conf:conf,
+          w:leader.w,l:leader.l,cw:leader.cw,cl:leader.cl};
       }
     });
 
-    var champArr=Object.values(champions).sort(function(a,b){return b.elo-a.elo;});
-    var champSet={};champArr.forEach(function(c){champSet[c.team]=1;});
-
-    // All FBS teams by Elo
-    var allTeams={};
-    Object.values(PK_CONFS).forEach(function(arr){arr.forEach(function(t){allTeams[t]=1;});});
-    Object.keys(_pk.eloBase).forEach(function(t){allTeams[t]=1;});
-    var allFBS=Object.keys(allTeams).map(function(t){
+    // Step 2: rank ALL FBS teams by simulated Elo
+    var allTeamSet={};
+    Object.values(PK_CONFS).forEach(function(arr){arr.forEach(function(t){allTeamSet[t]=1;});});
+    Object.keys(_pk.eloBase).forEach(function(t){allTeamSet[t]=1;});
+    var allRanked=Object.keys(allTeamSet).map(function(t){
       return {team:t,elo:_pk.eloSim[t]||_pk.eloBase[t]||0,
               conf:pkConfOf(t)||'—',w:_pk.wins[t]||0,l:_pk.losses[t]||0,
               cw:_pk.confWins[t]||0,cl:_pk.confLoss[t]||0};
     }).filter(function(t){return t.elo>0;}).sort(function(a,b){return b.elo-a.elo;});
 
-    var top25=allFBS.slice(0,25);
+    // Step 3: identify the 5 highest-ranked conf champions
+    var champByTeam={};
+    Object.values(confChampions).forEach(function(c){champByTeam[c.team]=c;});
+    var top5Champs=[],seenConf={};
+    for(var ri=0;ri<allRanked.length&&top5Champs.length<5;ri++){
+      var t=allRanked[ri];
+      if(champByTeam[t.team]&&!seenConf[champByTeam[t.team].conf]){
+        top5Champs.push(Object.assign({},t,{conf:champByTeam[t.team].conf}));
+        seenConf[champByTeam[t.team].conf]=1;
+      }
+    }
 
-    // Seed field: top-4 champs get bye, rest are champs + at-large
-    var top4=champArr.slice(0,4);
-    var used={};top4.forEach(function(c){used[c.team]=1;});
-    var field=[];
-    champArr.slice(4).forEach(function(c){if(field.length<8&&!used[c.team]){field.push(c);used[c.team]=1;}});
-    allFBS.forEach(function(t){if(field.length<8&&!used[t.team]){field.push(t);used[t.team]=1;}});
+    // Step 4: build the 12-team field
+    // Seeds 1-4: four highest-ranked teams OVERALL (bye) — can be anyone
+    // Must include all 5 conf champs; remaining 7 spots = at-large
+    var inField={};
+    var seeds=[];
 
-    var seeds=top4.map(function(t,i){return Object.assign({},t,{seed:i+1,bye:true});})
-      .concat(field.map(function(t,i){return Object.assign({},t,{seed:i+5,bye:false});}));
+    // Pick seeds 1-4: top 4 from allRanked
+    for(var i=0;i<allRanked.length&&seeds.length<4;i++){
+      if(!inField[allRanked[i].team]){
+        seeds.push(Object.assign({},allRanked[i],{seed:seeds.length+1,bye:true,autoB:!!champByTeam[allRanked[i].team]}));
+        inField[allRanked[i].team]=1;
+      }
+    }
 
-    var r1=[[seeds[4],seeds[11]],[seeds[5],seeds[10]],[seeds[6],seeds[9]],[seeds[7],seeds[8]]];
+    // Collect remaining conf champs not already in field (auto-bids for seeds 5-12)
+    var remainingChamps=top5Champs.filter(function(c){return !inField[c.team];});
 
-    function rec(t){return t.w+'–'+t.l;}
-    function cRec(t){return (t.cw||t.cl)?t.cw+'–'+t.cl:'';}
+    // Seeds 5-12: fill from allRanked, ensuring remaining conf champs are included
+    var seeds5to12=[];
+    var champNeeded=remainingChamps.slice();
+    for(var i=0;i<allRanked.length&&seeds5to12.length<8;i++){
+      var t=allRanked[i];
+      if(inField[t.team]) continue;
+      // Remove from champNeeded if this is a conf champ
+      champNeeded=champNeeded.filter(function(c){return c.team!==t.team;});
+      seeds5to12.push(Object.assign({},t,{autoB:!!champByTeam[t.team]}));
+      inField[t.team]=1;
+    }
+    // If any required conf champs still missing, bump them in (replacing lowest seeds)
+    champNeeded.forEach(function(c){
+      if(!inField[c.team]){
+        // Remove the lowest-ranked non-champ from seeds5to12 and add this champ
+        for(var k=seeds5to12.length-1;k>=0;k--){
+          if(!seeds5to12[k].autoB){
+            seeds5to12.splice(k,1);
+            seeds5to12.push(Object.assign({},c,{autoB:true}));
+            inField[c.team]=1;
+            break;
+          }
+        }
+      }
+    });
+    // Re-sort seeds 5-12 by Elo
+    seeds5to12.sort(function(a,b){return b.elo-a.elo;});
+    seeds5to12.forEach(function(t,i){t.seed=i+5;t.bye=false;});
+    var allSeeds=seeds.concat(seeds5to12);
 
-    // Build Top 25 table
-    var t25html='<div style="margin-bottom:1.4rem"><div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">Top 25 — simulated Elo after all picks &nbsp;★ = conf champion</div>'
+    // Step 5: first round matchups (5v12, 6v11, 7v10, 8v9)
+    var r1=[[allSeeds[4],allSeeds[11]],[allSeeds[5],allSeeds[10]],[allSeeds[6],allSeeds[9]],[allSeeds[7],allSeeds[8]]];
+
+    // Top 25
+    var top25=allRanked.slice(0,25);
+
+    // Champion set for display
+    var champSet={};
+    Object.values(confChampions).forEach(function(c){champSet[c.team]=c.conf;});
+
+    function rec(t){return t.w+'-'+t.l;}
+    function cRec(t){return (t.cw||t.cl)?t.cw+'-'+t.cl:'';}
+
+    // Build Top 25 HTML
+    var t25='<div style="margin-bottom:1.4rem">'
+      +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">Top 25 — simulated Elo after all picks &nbsp;★ = conf champion</div>'
       +'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">'
       +'<div style="display:flex;gap:0.35rem;padding:0.2rem 0.6rem;background:var(--bg3);border-bottom:1px solid var(--border)">'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:22px;text-align:right">#</div>'
       +'<div style="flex:1;font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim)">Team</div>'
-      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:right">W–L</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:right">W-L</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:32px;text-align:right">Conf</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:38px;text-align:right">Elo</div>'
       +'</div>';
     top25.forEach(function(t,i){
-      var star=champSet[t.team]?('<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">★'+t.conf+'</span>'):'';
-      t25html+='<div style="display:flex;align-items:center;gap:0.35rem;padding:0.22rem 0.6rem;border-bottom:1px solid var(--border)">'
+      var star=champSet[t.team]?('<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">★'+champSet[t.team]+'</span>'):'';
+      t25+='<div style="display:flex;align-items:center;gap:0.35rem;padding:0.22rem 0.6rem;border-bottom:1px solid var(--border)">'
         +'<div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);min-width:22px;text-align:right">'+(i+1)+'</div>'
         +'<div style="flex:1;font-size:0.75rem;font-weight:'+(champSet[t.team]?'600':'400')+'">'+t.team+star+'</div>'
         +'<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-muted);min-width:36px;text-align:right">'+rec(t)+'</div>'
@@ -1862,17 +1827,21 @@ async function findAvailableSeason() {
         +'<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-dim);min-width:38px;text-align:right">'+t.elo.toFixed(0)+'</div>'
         +'</div>';
     });
-    t25html+='</div></div>';
+    t25+='</div></div>';
 
-    // Build seed list
-    var seedHtml='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.42rem">CFP Field — 12 Teams</div>'
-      +'<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-bottom:0.4rem">Seeds 1–4 (BYE): top 4 conf champs · 5–12: champs + at-large</div>';
-    seeds.forEach(function(s){
-      var bg=s.seed<=4?'rgba(226,201,126,0.09)':'var(--bg3)';
-      var bdr=s.seed<=4?'var(--accent)':'var(--border)';
+    // Build CFP field HTML
+    var fieldHtml='<div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">CFP Field — 12 Teams</div>'
+      +'<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-bottom:0.55rem;line-height:1.6">'
+      +'Seeds 1–4: highest-ranked teams overall (bye) · Seeds 5–12: ranked order, 5 conf champs guaranteed<br>'
+      +'★ = conf auto-bid · BYE = first-round bye · W-L · Conf W-L · Elo'
+      +'</div>';
+    allSeeds.forEach(function(s){
+      var bg=s.bye?'rgba(226,201,126,0.09)':'var(--bg3)';
+      var bdr=s.bye?'var(--accent)':'var(--border)';
       var byeSpan=s.bye?'<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">BYE</span>':'';
-      var starSpan=champSet[s.team]?('<span style="font-size:0.5rem;color:var(--text-dim);font-family:var(--font-mono);margin-left:0.15rem">'+s.conf+'★</span>'):'';
-      seedHtml+='<div style="display:flex;align-items:center;gap:0.35rem;padding:0.26rem 0.5rem;margin-bottom:0.18rem;border-radius:var(--radius);background:'+bg+';border:1px solid '+bdr+'">'
+      var starSpan=champSet[s.team]?('<span style="font-size:0.5rem;color:var(--text-dim);font-family:var(--font-mono);margin-left:0.15rem">'+champSet[s.team]+'★</span>'):'';
+      fieldHtml+='<div style="display:flex;align-items:center;gap:0.35rem;padding:0.26rem 0.5rem;margin-bottom:0.18rem;border-radius:var(--radius);background:'+bg+';border:1px solid '+bdr+'">'
         +'<div style="font-family:var(--font-mono);font-size:0.64rem;color:var(--text-dim);min-width:16px;text-align:right">'+s.seed+'</div>'
         +'<div style="flex:1;font-size:0.75rem;font-weight:500">'+s.team+byeSpan+starSpan+'</div>'
         +'<div style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);min-width:32px;text-align:right">'+rec(s)+'</div>'
@@ -1880,12 +1849,14 @@ async function findAvailableSeason() {
         +'<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">'+s.elo.toFixed(0)+'</div>'
         +'</div>';
     });
+    fieldHtml+='</div>';
 
-    // Build first round
-    var r1html='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.42rem">First Round — campus sites</div>';
+    // Build bracket HTML
+    var bracketHtml='<div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.42rem">First Round — on campus of higher seed</div>';
     r1.forEach(function(pair){
       var hi=pair[0],lo=pair[1];
-      r1html+='<div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.28rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.6rem">'
+      bracketHtml+='<div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.28rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.6rem">'
         +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">#'+hi.seed+'</span>'
         +'<span style="flex:1;font-size:0.75rem;font-weight:600">'+hi.team+'</span>'
         +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted)">'+rec(hi)+'</span>'
@@ -1896,17 +1867,22 @@ async function findAvailableSeason() {
         +'<span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);margin-left:0.25rem">@ #'+hi.seed+'</span>'
         +'</div>';
     });
-    r1html+='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">Quarterfinals</div>'
+    bracketHtml+='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">Quarterfinals (top seeds host)</div>'
       +'<div style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);line-height:1.9;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.55rem 0.7rem">';
-    seeds.slice(0,4).forEach(function(s){r1html+='#'+s.seed+' '+s.team+' ('+rec(s)+') hosts lowest remaining<br>';});
-    r1html+='</div><div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">Semifinals &amp; Championship</div>'
+    allSeeds.slice(0,4).forEach(function(s){
+      bracketHtml+='#'+s.seed+' '+s.team+' ('+rec(s)+') hosts lowest remaining seed<br>';
+    });
+    bracketHtml+='</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">Semifinals &amp; Championship</div>'
       +'<div style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);line-height:1.9;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.55rem 0.7rem">'
-      +'Semifinal 1 — Rose Bowl (Pasadena, Jan)<br>Semifinal 2 — Sugar Bowl (New Orleans, Jan)<br>Championship — Neutral site (Jan)'
-      +'</div>';
+      +'Semifinal 1 — Rose Bowl (Pasadena, CA)<br>'
+      +'Semifinal 2 — Sugar Bowl (New Orleans, LA)<br>'
+      +'National Championship — Hard Rock Stadium (Miami, FL)'
+      +'</div></div>';
 
-    el.innerHTML=t25html
-      +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem">'+seedHtml+'</div>'+r1html+'</div>'
-      +'<div style="margin-top:1rem;display:flex;gap:0.6rem">'
+    el.innerHTML=t25
+      +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1rem">'+fieldHtml+bracketHtml+'</div>'
+      +'<div style="display:flex;gap:0.6rem">'
       +'<button onclick="pkTab(\'conf\')" style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);font-size:0.67rem;cursor:pointer">← Conf Championships</button>'
       +'<button onclick="pkTab(\'reg\')" style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);font-size:0.67rem;cursor:pointer">← Regular Season</button>'
       +'</div>';
