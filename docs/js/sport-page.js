@@ -1118,1145 +1118,731 @@ async function findAvailableSeason() {
     _greatestRendered = true;
   }
 
-      // ── CFB Season Pick'em ─────────────────────────────────────
-  // Step 1: Load full season schedule from ESPN (all FBS games)
-  //         Show every game in date order — user fills in scores
-  // Step 2: Conference standings built from user scores →
-  //         show conf championship matchups → user fills scores
-  // Step 3: Top 25 by simulated Elo + 12-team CFP bracket
+  
+  // ──────────────────────────────────────────────────────────
+  // CFB SEASON PICK'EM
+  // Isolated block — uses NO nested template literals.
+  // All HTML built with plain string concatenation.
+  // ──────────────────────────────────────────────────────────
 
-  let _pk = {
-    yr:        null,
-    schedule:  [],    // all games from ESPN {id,date,homeTeam,awayTeam,homeScore,awayScore,completed}
-    scores:    {},    // gameId → {homeScore, awayScore}
-    wins:      {},    // team → total wins
-    losses:    {},    // team → total losses
-    confWins:  {},    // team → conf wins
-    confLoss:  {},    // team → conf losses
-    confChamps:{},    // conf → champion team name
-    confGames: [],    // conf championship game inputs
-    eloBase:   {},    // from last season CSV
-    eloSim:    {},    // updated as user enters scores
-    loaded:    false,
+  // ── State ─────────────────────────────────────────────────
+  var _pk = {
+    yr: null, schedule: [], scores: {}, confGames: [], confChamps: {},
+    wins: {}, losses: {}, confWins: {}, confLoss: {},
+    eloBase: {}, eloSim: {}
   };
 
-  // Conference structure — who plays in each conf
-  const PK_CONFS = {
-    "SEC":["Alabama","Arkansas","Auburn","Florida","Georgia","Kentucky","LSU","Mississippi State",
-           "Missouri","Ole Miss","South Carolina","Tennessee","Texas","Texas A&M","Vanderbilt","Oklahoma"],
-    "Big Ten":["Illinois","Indiana","Iowa","Maryland","Michigan","Michigan State","Minnesota",
-               "Nebraska","Northwestern","Ohio State","Penn State","Purdue","Rutgers","Wisconsin",
-               "UCLA","USC","Oregon","Washington"],
-    "Big 12":["Baylor","BYU","Cincinnati","Colorado","Houston","Iowa State","Kansas","Kansas State",
-              "Oklahoma State","TCU","Texas Tech","UCF","Utah","West Virginia","Arizona","Arizona State"],
-    "ACC":["Boston College","California","Clemson","Duke","Florida State","Georgia Tech","Louisville",
-           "Miami","NC State","North Carolina","Notre Dame","Pittsburgh","SMU","Stanford",
-           "Syracuse","Virginia","Virginia Tech","Wake Forest"],
-    "Mountain West":["Air Force","Boise State","Colorado State","Fresno State","Hawai'i","Nevada",
-                     "New Mexico","San Diego State","San Jose State","UNLV","Utah State","Wyoming"],
-    "AAC":["Army","Charlotte","East Carolina","FAU","Memphis","Navy","North Texas","Rice",
-           "South Florida","Temple","Tulane","UTSA"],
+  // ── Conference membership (canonical ESPN shortDisplayNames) ─
+  var PK_CONFS = {
+    "SEC":["Alabama","Arkansas","Auburn","Florida","Georgia","Kentucky","LSU",
+           "Mississippi State","Missouri","Ole Miss","South Carolina","Tennessee",
+           "Texas","Texas A&M","Vanderbilt","Oklahoma"],
+    "Big Ten":["Illinois","Indiana","Iowa","Maryland","Michigan","Michigan State",
+               "Minnesota","Nebraska","Northwestern","Ohio State","Penn State",
+               "Purdue","Rutgers","Wisconsin","UCLA","USC","Oregon","Washington"],
+    "Big 12":["Baylor","BYU","Cincinnati","Colorado","Houston","Iowa State","Kansas",
+              "Kansas State","Oklahoma State","TCU","Texas Tech","UCF","Utah",
+              "West Virginia","Arizona","Arizona State"],
+    "ACC":["Boston College","California","Clemson","Duke","Florida State","Georgia Tech",
+           "Louisville","Miami","NC State","North Carolina","Notre Dame","Pittsburgh",
+           "SMU","Stanford","Syracuse","Virginia","Virginia Tech","Wake Forest"],
+    "Mountain West":["Air Force","Boise State","Colorado State","Fresno State","Hawai'i",
+                     "Nevada","New Mexico","San Diego State","San Jose State","UNLV",
+                     "Utah State","Wyoming"],
+    "AAC":["Army","Charlotte","East Carolina","FAU","Memphis","Navy","North Texas",
+           "Rice","South Florida","Temple","Tulane","UTSA"],
     "Sun Belt":["Appalachian State","Arkansas State","Coastal Carolina","Georgia Southern",
                 "Georgia State","James Madison","Louisiana","Marshall","Old Dominion",
                 "South Alabama","Southern Miss","Texas State","Troy","UL Monroe"],
-    "MAC":["Akron","Ball State","Bowling Green","Buffalo","Central Michigan","Eastern Michigan",
-           "Kent State","Massachusetts","Miami (OH)","Northern Illinois","Ohio","Toledo","Western Michigan"],
-    "C-USA":["FIU","Florida Atlantic","Jacksonville State","Kennesaw State","Liberty","Louisiana Tech",
-             "Middle Tennessee","New Mexico State","Sam Houston","UAB","UTEP","Western Kentucky"],
-    "Independent":["Notre Dame","Army","Navy","Connecticut","UMass"],
+    "MAC":["Akron","Ball State","Bowling Green","Buffalo","Central Michigan",
+           "Eastern Michigan","Kent State","Massachusetts","Miami (OH)",
+           "Northern Illinois","Ohio","Toledo","Western Michigan"],
+    "C-USA":["FIU","Florida Atlantic","Jacksonville State","Kennesaw State","Liberty",
+             "Louisiana Tech","Middle Tennessee","New Mexico State","Sam Houston",
+             "UAB","UTEP","Western Kentucky"],
+    "Independent":["Notre Dame","Army","Navy","Connecticut","UMass"]
   };
 
-  // ESPN shortDisplayName → canonical name used in PK_CONFS
-  const PK_ALIAS = {
-    // SEC
-    "Mississippi St":"Mississippi State","Miss St":"Mississippi State",
+  // ── Divisions (only Sun Belt & MAC have them in 2025-26) ──
+  var PK_DIVS = {
+    "Sun Belt": {
+      "East":["Georgia Southern","Georgia State","South Alabama","Coastal Carolina",
+              "James Madison","Old Dominion"],
+      "West":["Louisiana","Troy","Arkansas State","UL Monroe","Southern Miss",
+              "Texas State","Marshall","Appalachian State"]
+    },
+    "MAC": {
+      "East":["Ohio","Miami (OH)","Bowling Green","Kent State","Buffalo",
+              "Akron","Massachusetts"],
+      "West":["Central Michigan","Western Michigan","Northern Illinois",
+              "Ball State","Eastern Michigan","Toledo"]
+    }
+  };
+
+  // ── ESPN name → canonical name ─────────────────────────────
+  var PK_ALIAS = {
+    "Miss St":"Mississippi State","Mississippi St":"Mississippi State",
     "Miss. St.":"Mississippi State","Ole Miss":"Ole Miss",
-    "S. Carolina":"South Carolina","South Car.":"South Carolina",
-    "Texas A&M Aggies":"Texas A&M",
-    // Big Ten
-    "Ohio St":"Ohio State","Penn St":"Penn State",
-    "Michigan St":"Michigan State","Mich. St.":"Michigan State",
-    "Northwestern":"Northwestern","Rutgers":"Rutgers",
-    // Big 12
-    "Kansas St":"Kansas State","Iowa St":"Iowa State",
-    "Oklahoma St":"Oklahoma State","Okla. St.":"Oklahoma State",
-    "Texas Tech":"Texas Tech","West Virginia":"West Virginia",
-    "WVU":"West Virginia","W. Virginia":"West Virginia",
-    // ACC
-    "Florida St":"Florida State","Fla. State":"Florida State","FSU":"Florida State",
+    "Florida St":"Florida State","FSU":"Florida State","Fla. State":"Florida State",
     "NC State":"NC State","N.C. State":"NC State",
     "Georgia Tech":"Georgia Tech","Ga. Tech":"Georgia Tech",
-    "Boston College":"Boston College","BC":"Boston College",
-    "Virginia Tech":"Virginia Tech","Va. Tech":"Virginia Tech",
-    "Notre Dame":"Notre Dame","UNC":"North Carolina",
-    "Pitt":"Pittsburgh","UVA":"Virginia",
-    // Mountain West
-    "Boise St":"Boise State","Boise St.":"Boise State",
-    "Fresno St":"Fresno State","Fresno St.":"Fresno State",
-    "Utah St":"Utah State","Utah St.":"Utah State",
-    "San Diego St":"San Diego State","SDSU":"San Diego State",
+    "Ohio St":"Ohio State","Penn St":"Penn State",
+    "Michigan St":"Michigan State","Mich. St.":"Michigan State",
+    "Kansas St":"Kansas State","Iowa St":"Iowa State",
+    "Oklahoma St":"Oklahoma State","Okla. St.":"Oklahoma State",
+    "West Virginia":"West Virginia","WVU":"West Virginia",
+    "Boise St":"Boise State","Fresno St":"Fresno State",
+    "Utah St":"Utah State","San Diego St":"San Diego State","SDSU":"San Diego State",
     "San José St":"San Jose State","San Jose St":"San Jose State","SJSU":"San Jose State",
-    "Colorado St":"Colorado State","Colo. St.":"Colorado State",
-    "Hawaii":"Hawai'i","Hawai'i":"Hawai'i",
-    "New Mexico":"New Mexico","Air Force":"Air Force","UNLV":"UNLV",
-    "Wyoming":"Wyoming","Nevada":"Nevada",
-    // AAC
-    "ECU":"East Carolina","E. Carolina":"East Carolina",
-    "USF":"South Florida","South Fla.":"South Florida",
-    "UConn":"Connecticut","UConn Huskies":"Connecticut",
-    "Tulsa":"Tulsa","Temple":"Temple","Memphis":"Memphis",
-    "Navy":"Navy","Army":"Army","Rice":"Rice",
-    "North Texas":"North Texas","Charlotte":"Charlotte","UTSA":"UTSA",
-    // Sun Belt
+    "Colorado St":"Colorado State","Hawaii":"Hawai'i",
+    "ECU":"East Carolina","USF":"South Florida","UConn":"Connecticut",
     "App State":"Appalachian State","Appalachian St":"Appalachian State",
-    "GA Southern":"Georgia Southern","Ga. Southern":"Georgia Southern",
-    "Ga Southern":"Georgia Southern","Georgia So":"Georgia Southern",
-    "Georgia St":"Georgia State","Ga. State":"Georgia State","Ga St":"Georgia State",
-    "Coastal":"Coastal Carolina","Coastal Car.":"Coastal Carolina",
-    "Coastal Car":"Coastal Carolina",
-    "S. Alabama":"South Alabama","South Ala.":"South Alabama",
-    "Old Dom.":"Old Dominion","ODU":"Old Dominion",
+    "GA Southern":"Georgia Southern","Ga Southern":"Georgia Southern",
+    "Georgia St":"Georgia State","Ga St":"Georgia State",
+    "Coastal":"Coastal Carolina","Coastal Car":"Coastal Carolina",
+    "S. Alabama":"South Alabama","South Ala":"South Alabama",
+    "ODU":"Old Dominion","Old Dom.":"Old Dominion",
     "Southern Miss":"Southern Miss","So. Miss":"Southern Miss",
-    "UL Monroe":"UL Monroe","La.-Monroe":"UL Monroe","ULM":"UL Monroe",
-    "Louisiana":"Louisiana","UL Lafayette":"Louisiana","ULL":"Louisiana",
-    "Ark State":"Arkansas State","Ark St":"Arkansas State",
-    "Arkansas St":"Arkansas State",
-    "Texas St":"Texas State","Tex. St.":"Texas State",
-    "James Madison":"James Madison","JMU":"James Madison",
-    "Marshall":"Marshall","Troy":"Troy",
-    // MAC
-    "C Michigan":"Central Michigan","Cent. Michigan":"Central Michigan","CMU":"Central Michigan",
-    "E Michigan":"Eastern Michigan","Eastern Mich.":"Eastern Michigan","EMU":"Eastern Michigan",
-    "W Michigan":"Western Michigan","Western Mich.":"Western Michigan","WMU":"Western Michigan",
-    "N Illinois":"Northern Illinois","No. Illinois":"Northern Illinois","NIU":"Northern Illinois",
-    "Ball St":"Ball State","Ball St.":"Ball State",
-    "Bowling Green":"Bowling Green","BGSU":"Bowling Green",
-    "Kent St":"Kent State","Kent St.":"Kent State",
+    "UL Monroe":"UL Monroe","ULM":"UL Monroe",
+    "La.":"Louisiana","ULL":"Louisiana",
+    "Ark St":"Arkansas State","Arkansas St":"Arkansas State",
+    "Texas St":"Texas State","James Madison":"James Madison","JMU":"James Madison",
+    "C Michigan":"Central Michigan","CMU":"Central Michigan",
+    "E Michigan":"Eastern Michigan","EMU":"Eastern Michigan",
+    "W Michigan":"Western Michigan","WMU":"Western Michigan",
+    "N Illinois":"Northern Illinois","NIU":"Northern Illinois",
+    "Ball St":"Ball State","Kent St":"Kent State",
     "Miami OH":"Miami (OH)","Miami (Ohio)":"Miami (OH)",
-    "N. Illinois":"Northern Illinois",
-    "Ohio":"Ohio","Toledo":"Toledo","Akron":"Akron","Buffalo":"Buffalo",
     "UMass":"Massachusetts","Mass.":"Massachusetts",
-    // C-USA
-    "Western KY":"Western Kentucky","WKU":"Western Kentucky",
-    "W. Kentucky":"Western Kentucky","Western Ky.":"Western Kentucky",
+    "WKU":"Western Kentucky","W. Kentucky":"Western Kentucky","Western KY":"Western Kentucky",
     "MTSU":"Middle Tennessee","Middle Tenn":"Middle Tennessee",
-    "Middle Tenn.":"Middle Tennessee",
     "FAU":"Florida Atlantic","Fla. Atlantic":"Florida Atlantic",
-    "FIU":"FIU","Florida Intl":"FIU",
-    "La. Tech":"Louisiana Tech","La Tech":"Louisiana Tech",
+    "FIU":"FIU","La. Tech":"Louisiana Tech","La Tech":"Louisiana Tech",
     "New Mexico St":"New Mexico State","NMSU":"New Mexico State",
-    "Kennesaw St":"Kennesaw State","Kenn. St.":"Kennesaw State",
-    "Jax State":"Jacksonville State","Jax St":"Jacksonville State",
-    "Jacksonville St":"Jacksonville State",
-    "Sam Hous.":"Sam Houston","SHSU":"Sam Houston",
-    "UAB":"UAB","UTEP":"UTEP","Liberty":"Liberty",
-    "N Dakota St":"North Dakota State","N. Dakota St":"North Dakota State","NDSU":"North Dakota State",
-    "Indiana St":"Indiana State","Illinois St":"Illinois State",
-    "Sacramento St":"Sacramento State","Sac. State":"Sacramento State",
-    "NC A&T":"North Carolina A&T",
-    "E Kentucky":"Eastern Kentucky","E. Kentucky":"Eastern Kentucky",
-    "SE Missouri":"Southeast Missouri","SE Missouri St":"Southeast Missouri",
-    "UT Martin":"UT Martin","Murray St":"Murray State",
-    "Tennessee St":"Tennessee State","Tennessee Tech":"Tennessee Tech",
-    "Hou Christian":"Houston Christian","Houston Baptist":"Houston Christian",
-    "Abil Christian":"Abilene Christian","Abilene Chrstn":"Abilene Christian",
-    "N'Western St":"Northwestern State","Northwestern St":"Northwestern State",
-    "Tarleton St":"Tarleton State","Nicholls St":"Nicholls",
-    "Grand Canyon":"Grand Canyon","Cal Baptist":"Cal Baptist","CA Baptist":"Cal Baptist",
-    "C Arkansas":"Central Arkansas","Cent. Arkansas":"Central Arkansas",
-    "Lamar":"Lamar","McNeese":"McNeese","SE Louisiana":"SE Louisiana",
+    "Kennesaw St":"Kennesaw State","Jax State":"Jacksonville State",
+    "Jacksonville St":"Jacksonville State","Sam Hous.":"Sam Houston",
+    "N Dakota St":"North Dakota State","NDSU":"North Dakota State",
+    "Pitt":"Pittsburgh","UNC":"North Carolina","UVA":"Virginia"
   };
 
-  function pkResolveName(team) {
-    return PK_ALIAS[team] || team;
-  }
+  function pkResolve(t) { return PK_ALIAS[t] || t; }
 
   function pkConfOf(team) {
-    const canonical = pkResolveName(team);
-    for (const [conf, teams] of Object.entries(PK_CONFS)) {
-      if (teams.includes(canonical)) return conf;
+    var t = pkResolve(team);
+    for (var conf in PK_CONFS) {
+      if (PK_CONFS[conf].indexOf(t) !== -1) return conf;
     }
     return null;
   }
 
-  // Rebuild all standings from current scores
-  function pkBuildStandings() {
+  // ── Rebuild standings from all scores ─────────────────────
+  function pkBuild() {
     _pk.wins={}; _pk.losses={}; _pk.confWins={}; _pk.confLoss={};
-    _pk.eloSim = {..._pk.eloBase};
+    _pk.eloSim = JSON.parse(JSON.stringify(_pk.eloBase));
+    var K = 30;
 
-    for (const g of _pk.schedule) {
-      const s = _pk.scores[g.id];
+    for (var i=0; i<_pk.schedule.length; i++) {
+      var g = _pk.schedule[i];
+      var s = _pk.scores[g.id];
       if (!s || s.homeScore==='' || s.awayScore==='' ||
           s.homeScore==null || s.awayScore==null) continue;
-      const hs = parseInt(s.homeScore), as_ = parseInt(s.awayScore);
+      var hs = parseInt(s.homeScore), as_ = parseInt(s.awayScore);
       if (isNaN(hs)||isNaN(as_)||hs===as_) continue;
 
-      // Resolve ESPN shortDisplayNames to canonical names for conf lookup
-      const rawWin  = hs > as_ ? g.homeTeam : g.awayTeam;
-      const rawLose = hs > as_ ? g.awayTeam : g.homeTeam;
-      const winner  = pkResolveName(rawWin);
-      const loser   = pkResolveName(rawLose);
+      var winner = pkResolve(hs>as_?g.homeTeam:g.awayTeam);
+      var loser  = pkResolve(hs>as_?g.awayTeam:g.homeTeam);
       _pk.wins[winner]  = (_pk.wins[winner]  || 0) + 1;
       _pk.losses[loser] = (_pk.losses[loser] || 0) + 1;
 
-      const cW = pkConfOf(winner), cL = pkConfOf(loser);
-      if (cW && cW === cL && cW !== 'Independent') {
-        _pk.confWins[winner] = (_pk.confWins[winner] || 0) + 1;
-        _pk.confLoss[loser]  = (_pk.confLoss[loser]  || 0) + 1;
+      var cW = pkConfOf(winner), cL = pkConfOf(loser);
+      if (cW && cW===cL && cW!=='Independent') {
+        _pk.confWins[winner] = (_pk.confWins[winner]||0) + 1;
+        _pk.confLoss[loser]  = (_pk.confLoss[loser] ||0) + 1;
       }
-
-      // Update Elo (using resolved canonical names)
-      const margin = Math.abs(hs - as_);
-      const rW = _pk.eloSim[winner]||_pk.eloBase[winner]||1500;
-      const rL = _pk.eloSim[loser] ||_pk.eloBase[loser] ||1500;
-      const eW = 1/(1+Math.pow(10,(rL-rW)/400));
-      const delta = 30*Math.log(margin+1)*(1-eW);
-      _pk.eloSim[winner] = rW + delta;
-      _pk.eloSim[loser]  = rL - delta;
-    }
-
-    // Apply conf championship scores
-    for (const cg of _pk.confGames) {
-      if (cg.homeScore==null||cg.awayScore==null||cg.homeScore===cg.awayScore) continue;
-      const winner = cg.homeScore>cg.awayScore ? cg.homeTeam : cg.awayTeam;
-      const loser  = cg.homeScore>cg.awayScore ? cg.awayTeam : cg.homeTeam;
-      const margin = Math.abs(cg.homeScore - cg.awayScore);
-      const rW = _pk.eloSim[winner]||1500, rL = _pk.eloSim[loser]||1500;
-      const eW = 1/(1+Math.pow(10,(rL-rW)/400));
-      const delta = 30*Math.log(margin+1)*(1-eW);
+      var margin = Math.abs(hs-as_);
+      var rW = _pk.eloSim[winner]||1500, rL = _pk.eloSim[loser]||1500;
+      var eW = 1/(1+Math.pow(10,(rL-rW)/400));
+      var delta = K*Math.log(margin+1)*(1-eW);
       _pk.eloSim[winner] = rW+delta;
       _pk.eloSim[loser]  = rL-delta;
-      _pk.confChamps[cg.conf] = winner;
+    }
+    // Apply conf champ game results
+    for (var j=0; j<_pk.confGames.length; j++) {
+      var cg = _pk.confGames[j];
+      if (cg.homeScore==null||cg.awayScore==null||cg.homeScore===cg.awayScore) continue;
+      var cw = cg.homeScore>cg.awayScore?cg.homeTeam:cg.awayTeam;
+      var cl = cg.homeScore>cg.awayScore?cg.awayTeam:cg.homeTeam;
+      var margin2 = Math.abs(cg.homeScore-cg.awayScore);
+      var rW2=_pk.eloSim[cw]||1500, rL2=_pk.eloSim[cl]||1500;
+      var eW2=1/(1+Math.pow(10,(rL2-rW2)/400));
+      _pk.eloSim[cw]=rW2+K*Math.log(margin2+1)*(1-eW2);
+      _pk.eloSim[cl]=rL2-K*Math.log(margin2+1)*(1-eW2);
     }
   }
 
-  // ── ENTRY POINT ───────────────────────────────────────────
-  async function renderPickem() {
-    const el = document.getElementById('panel-pickem');
-    if (!el || CFG.sport !== 'CFB') return;
-
-    // Determine which season to pick'em
-    // Off-season (May-Aug): show selector defaulting to NEXT season
-    // but also allow picking current/past seasons
-    const now = new Date();
-    const month = now.getMonth() + 1; // 1-12
-    // CFB season: Sep-Jan. Off-season: Feb-Aug
-    const inSeason = month >= 9 || month <= 1;
-    // Default: next upcoming season
-    const nextYr = currentSeason + 1;
-    const pickYr = inSeason ? currentSeason : nextYr;
-
-    // Load base Elo from the season BEFORE the pick year
-    const baseYr = pickYr - 1;
-    if (!allSeasonData[baseYr]) {
-      try {
-        const raw = await fetchCSV(CFG.dataPath + baseYr + '.csv');
-        if (raw) allSeasonData[baseYr] = raw.map(coerceRow);
-      } catch(_e) {}
-    }
-    // Also try current season as base if available
-    if (!allSeasonData[currentSeason]) {
-      try {
-        const raw = await fetchCSV(CFG.dataPath + currentSeason + '.csv');
-        if (raw) allSeasonData[currentSeason] = raw.map(coerceRow);
-      } catch(_e) {}
-    }
-    _pk.eloBase = {};
-    // Use the most recent available season as Elo base
-    const baseData = allSeasonData[currentSeason] || allSeasonData[baseYr] || [];
-    baseData.forEach(r => { _pk.eloBase[r.team]=r.elo; });
-    _pk.eloSim = {..._pk.eloBase};
-
-    _pk.yr = pickYr;
-    _pk.schedule=[]; _pk.scores={}; _pk.confGames=[];
-    _pk.confChamps={}; _pk.loaded=false;
-
-    pkShowShell();
-    pkFetchSchedule(pickYr);
-  }
-
-  window.pkAutoPredict = async function() {
-    // Load Elo from the selected season
-    const selEl = document.getElementById('pk-elo-yr');
-    const eloYr = parseInt(selEl?.value) || currentSeason;
-
-    // Show loading state on button
-    const btn = document.querySelector('[onclick="pkAutoPredict()"]');
-    if (btn) { btn.textContent = 'Loading…'; btn.disabled = true; }
-
-    if (!allSeasonData[eloYr]) {
-      try {
-        const raw = await fetchCSV(CFG.dataPath + eloYr + '.csv');
-        if (raw) allSeasonData[eloYr] = raw.map(coerceRow);
-      } catch(_e) {}
-    }
-
-    // Build Elo lookup from selected season
-    const eloMap = {};
-    (allSeasonData[eloYr] || []).forEach(r => {
-      if (r.team && r.elo) eloMap[r.team] = parseFloat(r.elo);
-    });
-
-    if (!Object.keys(eloMap).length) {
-      if (btn) { btn.textContent = 'Fill all games →'; btn.disabled = false; }
-      alert('No Elo data found for ' + eloYr + '. Try a different season.');
-      return;
-    }
-
-    // Helper: get Elo for a team (fuzzy match if exact not found)
-    function getElo(team) {
-      if (eloMap[team]) return eloMap[team];
-      // Try partial match for ESPN shortDisplayName variants
-      const lower = team.toLowerCase();
-      for (const [k, v] of Object.entries(eloMap)) {
-        if (k.toLowerCase().includes(lower) || lower.includes(k.toLowerCase().substring(0,6))) {
-          return v;
-        }
-      }
-      return 1500; // default
-    }
-
-    // Predict every unplayed game
-    let filled = 0;
-    for (const g of _pk.schedule) {
-      if (g.completed) continue; // skip completed games
-
-      const eloHome = getElo(g.homeTeam) + (g.neutral ? 0 : 45); // home advantage
-      const eloAway = getElo(g.awayTeam);
-      const diff    = eloHome - eloAway;
-
-      // Win probability for home team
-      const pHome = 1 / (1 + Math.pow(10, -diff / 400));
-
-      // Generate realistic scores based on Elo gap
-      // Average CFB score ~27 pts, spread scales with Elo diff
-      const absDiff   = Math.abs(diff);
-      const margin    = Math.round(Math.log(absDiff + 1) * 3.5); // 0 diff → 0, 200 diff → ~18
-      const baseScore = 27;
-      const winScore  = Math.min(baseScore + Math.round(margin * 0.7), 56);
-      const loseScore = Math.max(winScore - margin, Math.floor(winScore * 0.45));
-
-      let homeScore, awayScore;
-      if (pHome >= 0.5) {
-        homeScore = winScore;
-        awayScore = loseScore;
-      } else {
-        homeScore = loseScore;
-        awayScore = winScore;
-      }
-
-      // Add small randomness so not every game is the same score
-      const jitter = () => Math.floor(Math.random() * 7) - 3;
-      homeScore = Math.max(0, homeScore + jitter());
-      awayScore = Math.max(0, awayScore + jitter());
-
-      // Ensure no ties
-      if (homeScore === awayScore) {
-        pHome >= 0.5 ? homeScore++ : awayScore++;
-      }
-
-      _pk.scores[g.id] = { homeScore, awayScore };
-      filled++;
-    }
-
-    pkBuildStandings();
-    pkRenderReg();
-
-    if (btn) { btn.textContent = 'Fill all games →'; btn.disabled = false; }
-    // Show count in a toast if available
-    if (window.toast) toast(`Auto-filled ${filled} games using ${eloYr} Elo ratings`);
-  };
-
-    function pkShowShell() {
-    const el = document.getElementById('panel-pickem');
-    if (!el) return;
-    el.innerHTML = `
-<div style="max-width:920px">
-  <!-- Header -->
-  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);
-              padding:0.9rem 1.1rem;margin-bottom:1rem">
-    <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">
-      <div class="pk-title" style="font-size:0.86rem;font-weight:600;color:var(--text)">
-        🏈 ${_pk.yr} CFB Season Pick'em
-      </div>
-      <div style="display:flex;align-items:center;gap:0.4rem;margin-left:auto">
-        <span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">Season:</span>
-        <select onchange="pkLoadYear(parseInt(this.value))"
-          style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);
-                 border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);
-                 padding:0.2rem 0.4rem">
-          ${(CFG.seasons||[]).slice(0,5).map(function(y){return '<option value="'+y+'" '+(y===_pk.yr?'selected':'')+'>'+y+'</option>';}).join('')}
-        </select>
-      </div>
-    </div>
-    <div style="font-size:0.68rem;color:var(--text-muted);font-family:var(--font-mono);
-                margin-top:0.2rem;line-height:1.55">
-      Every FBS game shown in order · enter scores → conf standings auto-calculate →
-      pick conf championship games → CFP bracket + Top 25 generated
-    </div>
-    <!-- Auto-predict row -->
-    <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.6rem;
-                padding-top:0.6rem;border-top:1px solid var(--border);flex-wrap:wrap">
-      <span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">
-        ⚡ Auto-predict all games using
-      </span>
-      <select id="pk-elo-yr"
-        style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);
-               border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);
-               padding:0.2rem 0.4rem">
-        ${(CFG.seasons||[]).slice(0,5).map(function(y){return '<option value="'+y+'">'+y+' Elo</option>';}).join('')}
-      </select>
-      <button onclick="pkAutoPredict()"
-        style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
-               padding:0.28rem 0.85rem;font-family:var(--font-mono);font-size:0.7rem;
-               font-weight:600;cursor:pointer">
-        Fill all games →
-      </button>
-      <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">
-        (home-field advantage applied · scores based on Elo gap)
-      </span>
-    </div>
-  </div>
-
-  <!-- Phase tabs -->
-  <div style="display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1rem" id="pk-tabs">
-    ${[['reg','📅 Regular Season'],['conf','🏆 Conf Championships'],['cfp','🎯 CFP Bracket'.map(function(item,i){
-        var ph=item[0],lb=item[1];
-        var bc=i===0?'var(--accent)':'transparent';
-        var col=i===0?'var(--accent)':'var(--text-muted)';
-        return '<button onclick="pkGo(\''+ph+'\''+')" id="pk-tab-'+ph+'"'
-          +' style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.85rem;border:none;'
-          +'border-bottom:2px solid '+bc+';margin-bottom:-2px;background:transparent;cursor:pointer;'
-          +'white-space:nowrap;color:'+col+'">'+lb+'</button>';
-      }).join('')}
-  </div>
-
-  <div id="pk-panel-reg"></div>
-  <div id="pk-panel-conf" hidden></div>
-  <div id="pk-panel-cfp"  hidden></div>
-</div>`;
-    pkRenderReg(); // show placeholder while loading
-  }
-
-  window.pkGo = function(ph) {
-    ['reg','conf','cfp'].forEach(p => {
-      document.getElementById(`pk-panel-${p}`)?.toggleAttribute('hidden', p!==ph);
-      const b = document.getElementById(`pk-tab-${p}`);
-      if (!b) return;
-      b.style.borderBottomColor = p===ph?'var(--accent)':'transparent';
-      b.style.color = p===ph?'var(--accent)':'var(--text-muted)';
-    });
-    pkBuildStandings();
-    if (ph==='conf') pkRenderConf();
-    if (ph==='cfp')  pkRenderCFP();
-  };
-
-  // ── SCHEDULE FETCH ─────────────────────────────────────────
-  async function pkFetchSchedule(yr) {
-    pkRenderReg('<div class="loading"><div class="spinner"></div>Loading '
-      +yr+' schedule from ESPN…</div>');
-
-    const games = [];
-    const seen  = new Set();
-
-    // ESPN scoreboard accepts week= + dates=YYYY for future seasons
-    // This captures ALL games including those with TBD dates/times
-    // Regular season: weeks 1-15, plus week 0 (late Aug)
-    // Weeks 0-13 = regular season
-    // Week 14 = conf championships (excluded — determined by standings)
-    // Week 15 = Army-Navy game only (special rivalry, not a bowl)
-    const weeks = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,15];
-    // Army-Navy specific: week 15 filter applied after fetch
-
-    // Fetch all weeks in parallel batches of 4
-    const BATCH = 4;
-    let fetched = 0;
-
-    for (let i = 0; i < weeks.length; i += BATCH) {
-      const batch = weeks.slice(i, i + BATCH);
-      await Promise.all(batch.map(async wk => {
-        // Try both with groups=80 (FBS only) and seasontype=2 (regular season)
-        const urls = [
-          `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=${yr}&seasontype=2&week=${wk}&groups=80&limit=300`,
-          `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=${yr}&seasontype=2&week=${wk}&limit=300`,
-        ];
-        for (const url of urls) {
-          try {
-            const res = await fetch(url, {mode:'cors'});
-            if (!res.ok) continue;
-            const data = await res.json();
-            for (const ev of (data.events || [])) {
-              try {
-                const comp = ev.competitions?.[0];
-                const competitors = comp?.competitors || [];
-                const home = competitors.find(c => c.homeAway === 'home');
-                const away = competitors.find(c => c.homeAway === 'away');
-                if (!home || !away) continue;
-
-                const key = ev.id || (home.team.id + '_' + away.team.id + '_wk' + wk);
-                if (seen.has(key)) continue;
-                seen.add(key);
-
-                const neutral = comp.neutralSite || false;
-                const completed = comp.status?.type?.completed || false;
-
-                // Date: use ev.date if available, otherwise mark as TBD
-                let gameDate = null;
-                let dateTBD  = false;
-                if (ev.date) {
-                  gameDate = ev.date.slice(0, 10);
-                  // ESPN uses 1970-01-01 as placeholder for TBD dates
-                  if (gameDate === '1970-01-01' || gameDate.startsWith('1970')) {
-                    gameDate = null;
-                    dateTBD  = true;
-                  }
-                } else {
-                  dateTBD = true;
-                }
-
-                games.push({
-                  id:        key,
-                  week:      wk,
-                  date:      gameDate,
-                  dateTBD,
-                  homeTeam:  home.team.shortDisplayName,
-                  awayTeam:  away.team.shortDisplayName,
-                  neutral,
-                  completed,
-                  homeScore: completed ? (parseInt(home.score) || null) : null,
-                  awayScore: completed ? (parseInt(away.score) || null) : null,
-                });
-                fetched++;
-              } catch(_e2) {}
-            }
-            break; // got data from this URL, skip fallback
-          } catch(_e) {}
-        }
-      }));
-
-      pkRenderReg(`<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;
-        color:var(--text-muted)">Loading ${yr} schedule… ${fetched} games found</div>`);
-    }
-
-    // Week 15: keep only Army-Navy game, filter everything else
-    const armyNavy = new Set(['Army','Navy','Army Black Knights','Navy Midshipmen',
-                               'Army West Point']);
-    const filteredGames = games.filter(g =>
-      g.week !== 15 ||
-      armyNavy.has(g.homeTeam) || armyNavy.has(g.awayTeam)
-    );
-
-    // Sort: by week first, then by date within week (TBD at end of week)
-    filteredGames.sort((a, b) => {
-      if (a.week !== b.week) return a.week - b.week;
-      if (!a.date && !b.date) return 0;
-      if (!a.date) return 1;
-      if (!b.date) return -1;
-      return a.date.localeCompare(b.date);
-    });
-
-    _pk.schedule = filteredGames;
-    _pk.loaded   = true;
-
-    if (games.length === 0) {
-      // Week-based fetch also returned nothing — ESPN truly has no data yet
-      const altYr = yr - 1;
-      pkRenderReg(`<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.78rem;
-        color:var(--text-muted);text-align:center;background:var(--bg2);border:1px solid var(--border);
-        border-radius:var(--radius-lg)">
-        <div style="font-size:0.88rem;color:var(--text);margin-bottom:0.5rem">
-          📅 ${yr} schedule not available yet
-        </div>
-        ESPN hasn't published the ${yr} CFB schedule yet (typically released July–August).
-        <br><br>
-        <button onclick="pkLoadYear(${altYr})"
-          style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
-                 padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;
-                 font-weight:600;cursor:pointer">
-          Load ${altYr} season instead →
-        </button>
-      </div>`);
-      return;
-    }
-
-    // Pre-fill completed games
-    for (const g of games) {
-      if (g.completed && g.homeScore != null && g.awayScore != null) {
-        _pk.scores[g.id] = {homeScore: g.homeScore, awayScore: g.awayScore};
-      }
-    }
-    pkBuildStandings();
-    pkRenderReg();
-  }
-
-  window.pkLoadYear = async function(yr) {
-    // Load base Elo from the season before
-    const baseYr = yr - 1;
-    if (!allSeasonData[baseYr]) {
-      try {
-        const raw = await fetchCSV(CFG.dataPath + baseYr + '.csv');
-        if (raw) allSeasonData[baseYr] = raw.map(coerceRow);
-      } catch(_e) {}
-    }
-    _pk.eloBase = {};
-    (allSeasonData[baseYr]||allSeasonData[currentSeason]||[]).forEach(r=>{_pk.eloBase[r.team]=r.elo;});
-    _pk.eloSim = {..._pk.eloBase};
-    _pk.yr = yr;
-    _pk.schedule=[]; _pk.scores={}; _pk.confGames=[];
-    _pk.confChamps={}; _pk.loaded=false;
-
-    // Update shell title
-    const titleEl = document.querySelector('.pk-wrap .pk-title');
-    if (titleEl) titleEl.textContent = yr + ' CFB Season Pick\'em';
-
-    pkFetchSchedule(yr);
-  };
-
-  // ── PHASE 1: REGULAR SEASON ───────────────────────────────
-  function pkRenderReg(placeholder) {
-    const el = document.getElementById('pk-panel-reg');
-    if (!el) return;
-    if (placeholder) { el.innerHTML = placeholder; return; }
-
-    if (!_pk.loaded) {
-      el.innerHTML = '<div class="loading"><div class="spinner"></div>Loading schedule…</div>';
-      return;
-    }
-
-    const pickedCount   = Object.keys(_pk.scores).filter(id=>{
-      const s=_pk.scores[id];
-      return s.homeScore!==''&&s.homeScore!=null&&s.awayScore!==''&&s.awayScore!=null;
-    }).length;
-    const totalGames    = _pk.schedule.length;
-    const completedGames= _pk.schedule.filter(g=>g.completed).length;
-
-    // Group by week number
-    const byWeek = {};
-    for (const g of _pk.schedule) {
-      const wk = g.week ?? 0;
-      if (!byWeek[wk]) byWeek[wk] = [];
-      byWeek[wk].push(g);
-    }
-
-    let html = `
-      <div style="display:flex;justify-content:space-between;align-items:center;
-                  margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem">
-        <div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim)">
-          ${totalGames} games total ·
-          ${completedGames > 0 ? completedGames + ' final (ESPN) · ' : ''}
-          ${pickedCount} predicted
-        </div>
-        <button onclick="pkGo('conf')"
-          style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
-                 padding:0.35rem 1rem;font-family:var(--font-mono);font-size:0.72rem;
-                 font-weight:600;cursor:pointer">
-          Next: Conf Championships →
-        </button>
-      </div>`;
-
-    for (const [wk, games] of Object.entries(byWeek)) {
-      const wkNum = parseInt(wk);
-      const wkLabel = wkNum === 0 ? 'Week 0' : `Week ${wkNum}`;
-      // Show date range if games have dates
-      const datedGames = games.filter(g => g.date);
-      let dateRange = '';
-      if (datedGames.length) {
-        const dates = datedGames.map(g => g.date).sort();
-        const first = new Date(dates[0]+'T12:00:00');
-        const last  = new Date(dates[dates.length-1]+'T12:00:00');
-        const fmt   = d => d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
-        dateRange = first.toDateString()===last.toDateString()
-          ? ` — ${fmt(first)}`
-          : ` — ${fmt(first)}–${fmt(last)}`;
-      }
-      html += `
-        <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
-                    text-transform:uppercase;color:var(--text-dim);margin:0.85rem 0 0.35rem;
-                    padding-top:0.5rem;border-top:1px solid var(--border)">
-          ${wkLabel}${dateRange} <span style="color:var(--text-dim);opacity:0.6">(${games.length} games)</span>
-        </div>`;
-
-      for (const g of games) {
-        const s = _pk.scores[g.id] || {};
-        const hs = s.homeScore ?? (g.completed?g.homeScore:'');
-        const as_ = s.awayScore ?? (g.completed?g.awayScore:'');
-        const hasScore = hs!==''&&hs!=null&&as_!==''&&as_!=null;
-        const winner = hasScore ? (parseInt(hs)>parseInt(as_)?g.homeTeam:g.awayTeam) : null;
-
-        html += `
-          <div data-gid="${g.id}"
-               style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.55rem;
-                      margin-bottom:0.18rem;border-radius:var(--radius);
-                      background:${g.completed?'var(--bg2)':'var(--bg3)'};
-                      border:1px solid ${g.completed?'var(--border)':'var(--border-md)'}">
-            <!-- Date -->
-            <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);
-                        min-width:36px;text-align:center">
-              ${g.date ? new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : 'TBD'}
-            </div>
-            <!-- Home team -->
-            <div class="pk-home-name"
-                 style="flex:1;font-size:0.77rem;
-                        font-weight:${winner===g.homeTeam?600:400};
-                        color:${winner===g.homeTeam?'var(--accent)':'var(--text)'}">
-              ${g.homeTeam}
-              <span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono)">${g.neutral?'N':'H'}</span>
-            </div>
-            <!-- Score inputs -->
-            <input type="number" min="0" max="99" value="${hs}" placeholder="–"
-              ${g.completed ? 'disabled' : ''}
-              onchange="pkScore('${g.id}','home',this.value)"
-              style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;
-                     background:${g.completed?'transparent':'var(--bg2)'};
-                     border:${g.completed?'none':'1px solid var(--border-md)'};
-                     color:var(--text);border-radius:var(--radius);padding:0.22rem;
-                     -moz-appearance:textfield;-webkit-appearance:none">
-            <span style="color:var(--text-dim);font-size:0.78rem">–</span>
-            <input type="number" min="0" max="99" value="${as_}" placeholder="–"
-              ${g.completed ? 'disabled' : ''}
-              onchange="pkScore('${g.id}','away',this.value)"
-              style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;
-                     background:${g.completed?'transparent':'var(--bg2)'};
-                     border:${g.completed?'none':'1px solid var(--border-md)'};
-                     color:var(--text);border-radius:var(--radius);padding:0.22rem;
-                     -moz-appearance:textfield;-webkit-appearance:none">
-            <!-- Away team -->
-            <div class="pk-away-name"
-                 style="flex:1;text-align:right;font-size:0.77rem;
-                        font-weight:${winner===g.awayTeam?600:400};
-                        color:${winner===g.awayTeam?'var(--accent)':'var(--text)'}">
-              <span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono)">${g.neutral?'N':'A'}</span>
-              ${g.awayTeam}
-            </div>
-            ${g.completed ? '<span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);min-width:32px;text-align:right">FINAL</span>' : ''}
-          </div>`;
-      }
-    }
-
-    html += `
-      <div style="margin-top:1rem;display:flex;justify-content:flex-end">
-        <button onclick="pkGo('conf')"
-          style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
-                 padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;
-                 font-weight:600;cursor:pointer">
-          Next: Conf Championships →
-        </button>
-      </div>`;
-
-    el.innerHTML = html;
-  }
-
-  window.pkScore = function(id, side, val) {
-    if (!_pk.scores[id]) _pk.scores[id] = {homeScore:'',awayScore:''};
-    const n = (val==='' || val===null) ? '' : parseInt(val);
-    if (side==='home') _pk.scores[id].homeScore = n;
-    else               _pk.scores[id].awayScore  = n;
-    pkBuildStandings();
-    // Update winner highlight on this specific row without full re-render
-    pkHighlightRow(id);
-  };
-
-  function pkHighlightRow(id) {
-    const row = document.querySelector(`[data-gid="${id}"]`);
-    if (!row) return;
-    const s = _pk.scores[id];
-    if (!s || s.homeScore==='' || s.awayScore==='' ||
-        s.homeScore==null || s.awayScore==null) return;
-    const hs = parseInt(s.homeScore), as_ = parseInt(s.awayScore);
-    if (isNaN(hs) || isNaN(as_) || hs===as_) return;
-    const homeWin = hs > as_;
-    const homeEl = row.querySelector('.pk-home-name');
-    const awayEl = row.querySelector('.pk-away-name');
-    if (homeEl) {
-      homeEl.style.fontWeight = homeWin ? '600' : '400';
-      homeEl.style.color = homeWin ? 'var(--accent)' : 'var(--text)';
-    }
-    if (awayEl) {
-      awayEl.style.fontWeight = homeWin ? '400' : '600';
-      awayEl.style.color = homeWin ? 'var(--text)' : 'var(--accent)';
-    }
-  };
-
-  // ── PHASE 2: CONF CHAMPIONSHIPS ───────────────────────────
-  // ── Conference standings & tiebreakers ───────────────────
-  // 2025-26 division status:
-  //   HAS divisions: Sun Belt (East/West), MAC (East/West)
-  //   NO  divisions: SEC, Big Ten, ACC, Big 12, MW, AAC, C-USA (all abolished)
-
-  const CONF_DIV_MAP = {
-    "Sun Belt": {
-      "East": ["Georgia Southern","Georgia State","South Alabama","Coastal Carolina",
-               "James Madison","Old Dominion"],
-      "West": ["Louisiana","Troy","Arkansas State","UL Monroe","Southern Miss",
-               "Texas State","Marshall","Appalachian State"]
-    },
-    "MAC": {
-      "East": ["Ohio","Miami (OH)","Bowling Green","Kent State","Buffalo","Akron","Massachusetts"],
-      "West": ["Central Michigan","Western Michigan","Northern Illinois","Ball State",
-               "Eastern Michigan","Toledo"]
-    }
-  };
-  // All other conferences: top-2 by conf record (no divisions)
-
-  function pkGetH2H(teamA, teamB) {
-    for (const g of _pk.games) {
-      const s = _pk.scores[g.id];
-      if (!s) continue;
-      const hs = parseInt(s.homeScore), as_ = parseInt(s.awayScore);
-      if (isNaN(hs)||isNaN(as_)||hs===as_) continue;
-      // Resolve ESPN names to canonical for comparison
-      const home = pkResolveName(g.homeTeam);
-      const away = pkResolveName(g.awayTeam);
-      if (home===teamA && away===teamB) return hs>as_?teamA:teamB;
-      if (home===teamB && away===teamA) return hs>as_?teamB:teamA;
-    }
-    return null;
-  }
-
-  function pkSortTeams(teams) {
-    return [...teams].sort((a,b) => {
-      // 1. Conf win%
-      const aCP = (a.cw+a.cl)>0 ? a.cw/(a.cw+a.cl) : 0;
-      const bCP = (b.cw+b.cl)>0 ? b.cw/(b.cw+b.cl) : 0;
-      if (Math.abs(bCP-aCP) > 0.0001) return bCP-aCP;
-      // 2. Head-to-head
-      const h2h = pkGetH2H(a.team, b.team);
-      if (h2h===b.team) return  1;
-      if (h2h===a.team) return -1;
-      // 3. Overall win%
-      const aWP = (a.w+a.l)>0 ? a.w/(a.w+a.l) : 0;
-      const bWP = (b.w+b.l)>0 ? b.w/(b.w+b.l) : 0;
-      if (Math.abs(bWP-aWP) > 0.0001) return bWP-aWP;
-      // 4. Simulated Elo
+  // Sort teams by conf record then H2H then overall then Elo
+  function pkSort(teams) {
+    return teams.slice().sort(function(a,b){
+      var acp=(a.cw+a.cl)?a.cw/(a.cw+a.cl):0, bcp=(b.cw+b.cl)?b.cw/(b.cw+b.cl):0;
+      if (Math.abs(bcp-acp)>0.001) return bcp-acp;
+      var awp=(a.w+a.l)?a.w/(a.w+a.l):0, bwp=(b.w+b.l)?b.w/(b.w+b.l):0;
+      if (Math.abs(bwp-awp)>0.001) return bwp-awp;
       return (b.elo||1500)-(a.elo||1500);
     });
   }
 
-  function pkTeamObj(t) {
-    return {
-      team: t,
-      cw:  _pk.confWins[t]||0,
-      cl:  _pk.confLoss[t]||0,
-      w:   _pk.wins[t]||0,
-      l:   _pk.losses[t]||0,
-      elo: _pk.eloSim[t]||_pk.eloBase[t]||1500,
-    };
+  function pkTeam(t) {
+    return {team:t, cw:_pk.confWins[t]||0, cl:_pk.confLoss[t]||0,
+            w:_pk.wins[t]||0, l:_pk.losses[t]||0,
+            elo:_pk.eloSim[t]||_pk.eloBase[t]||1500};
   }
 
-  function pkGetChampMatchup(conf) {
-    const teams = (PK_CONFS[conf]||[]).map(pkTeamObj);
-    const divDef = CONF_DIV_MAP[conf];
-    if (divDef) {
-      // Division conference — each division leader meets
-      const divLeaders = Object.entries(divDef).map(([div, divTeams]) => {
-        const filtered = teams.filter(t => divTeams.includes(t.team));
-        return pkSortTeams(filtered)[0];
-      }).filter(Boolean);
-      return { hasDivisions: true, homeTeam: divLeaders[0], awayTeam: divLeaders[1] };
-    } else {
-      // No divisions — top 2 by conf record
-      const sorted = pkSortTeams(teams);
-      return { hasDivisions: false, homeTeam: sorted[0], awayTeam: sorted[1] };
+  // ── Entry point ───────────────────────────────────────────
+  async function renderPickem() {
+    var el = document.getElementById('panel-pickem');
+    if (!el || CFG.sport !== 'CFB') return;
+
+    // Load base Elo from current season
+    if (!allSeasonData[currentSeason]) {
+      try {
+        var raw = await fetchCSV(CFG.dataPath + currentSeason + '.csv');
+        if (raw) allSeasonData[currentSeason] = raw.map(coerceRow);
+      } catch(e) {}
     }
+    _pk.eloBase = {};
+    (allSeasonData[currentSeason]||[]).forEach(function(r){
+      if (r.team && r.elo) _pk.eloBase[r.team] = parseFloat(r.elo);
+    });
+    _pk.eloSim = JSON.parse(JSON.stringify(_pk.eloBase));
+    _pk.yr = currentSeason+1;
+    _pk.schedule=[]; _pk.scores={}; _pk.confGames=[]; _pk.confChamps={};
+
+    pkDrawShell();
+    pkFetchSched(_pk.yr);
   }
 
-  // ── PHASE 2: CONFERENCE CHAMPIONSHIPS ────────────────────
-  function pkRenderConf() {
-    const el = document.getElementById('pk-panel-conf');
+  // ── Shell UI ──────────────────────────────────────────────
+  function pkDrawShell() {
+    var el = document.getElementById('panel-pickem');
     if (!el) return;
-    pkBuildStandings();
+    var seasonOpts = '';
+    (CFG.seasons||[]).slice(0,5).forEach(function(y){
+      seasonOpts += '<option value="'+y+'">'+y+'</option>';
+    });
+    var eloOpts = '';
+    (CFG.seasons||[]).slice(0,5).forEach(function(y){
+      eloOpts += '<option value="'+y+'">'+y+' Elo</option>';
+    });
+    el.innerHTML =
+      '<div style="max-width:920px">'
+      +'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.9rem 1.1rem;margin-bottom:1rem">'
+      +'<div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">'
+      +'<div style="font-size:0.86rem;font-weight:600;color:var(--text)">🏈 '+_pk.yr+' CFB Season Pick\'em</div>'
+      +'<div style="display:flex;align-items:center;gap:0.4rem;margin-left:auto">'
+      +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">Season:</span>'
+      +'<select onchange="pkLoadYear(parseInt(this.value))" style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.2rem 0.4rem">'+seasonOpts+'</select>'
+      +'</div></div>'
+      +'<div style="font-size:0.68rem;color:var(--text-muted);font-family:var(--font-mono);margin-top:0.4rem;line-height:1.55">'
+      +'Every FBS game in date/week order · enter scores → conf standings decide champ games → CFP bracket + Top 25'
+      +'</div>'
+      +'<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.6rem;padding-top:0.6rem;border-top:1px solid var(--border);flex-wrap:wrap">'
+      +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">⚡ Auto-predict using</span>'
+      +'<select id="pk-elo-yr" style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.2rem 0.4rem">'+eloOpts+'</select>'
+      +'<button onclick="pkAutoPredict()" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.28rem 0.85rem;font-family:var(--font-mono);font-size:0.7rem;font-weight:600;cursor:pointer">Fill all games →</button>'
+      +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">(home-field +45 Elo · score from gap)</span>'
+      +'</div></div>'
+      +'<div style="display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1rem">'
+      +'<button onclick="pkTab(\'reg\')" id="pk-tab-reg" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid var(--accent);margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--accent)">📅 Regular Season</button>'
+      +'<button onclick="pkTab(\'conf\')" id="pk-tab-conf" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--text-muted)">🏆 Conf Championships</button>'
+      +'<button onclick="pkTab(\'cfp\')" id="pk-tab-cfp" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--text-muted)">🎯 CFP Bracket</button>'
+      +'</div>'
+      +'<div id="pk-reg"></div>'
+      +'<div id="pk-conf" hidden></div>'
+      +'<div id="pk-cfp" hidden></div>'
+      +'</div>';
+  }
 
-    let html = '<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);'
-      + 'margin-bottom:1rem;background:var(--bg2);border:1px solid var(--border);'
-      + 'border-radius:var(--radius-lg);padding:0.75rem 1rem;line-height:1.6">'
-      + 'Standings from your picks. <strong style="color:var(--text)">Sun Belt &amp; MAC</strong>'
-      + ' use East/West division leaders. All others: top-2 by conf W%'
-      + ' (tiebreaker: H2H from your picks → overall W% → Elo).'
-      + ' Enter the championship game score to set the conf champion.'
-      + '</div>'
-      + '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));'
-      + 'gap:1rem;margin-bottom:1.2rem">';
+  window.pkTab = function(ph) {
+    ['reg','conf','cfp'].forEach(function(p){
+      var panel = document.getElementById('pk-'+p);
+      var btn   = document.getElementById('pk-tab-'+p);
+      if (!panel || !btn) return;
+      if (p===ph) { panel.removeAttribute('hidden'); btn.style.borderBottomColor='var(--accent)'; btn.style.color='var(--accent)'; }
+      else        { panel.setAttribute('hidden',''); btn.style.borderBottomColor='transparent'; btn.style.color='var(--text-muted)'; }
+    });
+    pkBuild();
+    if (ph==='conf') pkDrawConf();
+    if (ph==='cfp')  pkDrawCFP();
+  };
 
-    for (const conf of Object.keys(PK_CONFS)) {
-      if (conf === 'Independent') continue;
-      const allTeamObjs = (PK_CONFS[conf] || []).map(pkTeamObj);
-      const matchup  = pkGetChampMatchup(conf);
-      const homeT    = (matchup.homeTeam && matchup.homeTeam.team) || '';
-      const awayT    = (matchup.awayTeam && matchup.awayTeam.team) || '';
-      const existing = _pk.confGames.find(function(g){ return g.conf === conf; });
-      if (existing) { existing.homeTeam = homeT; existing.awayTeam = awayT; }
-      const hs    = (existing && existing.homeScore != null) ? existing.homeScore : '';
-      const as_   = (existing && existing.awayScore != null) ? existing.awayScore : '';
-      const champ = (existing && existing.champ) || '';
-      const divDef = CONF_DIV_MAP[conf];
+  window.pkLoadYear = async function(yr) {
+    var baseYr = yr-1;
+    if (!allSeasonData[baseYr]) {
+      try { var raw=await fetchCSV(CFG.dataPath+baseYr+'.csv'); if(raw) allSeasonData[baseYr]=raw.map(coerceRow); } catch(e){}
+    }
+    _pk.eloBase={};
+    (allSeasonData[baseYr]||allSeasonData[currentSeason]||[]).forEach(function(r){
+      if(r.team&&r.elo) _pk.eloBase[r.team]=parseFloat(r.elo);
+    });
+    _pk.eloSim=JSON.parse(JSON.stringify(_pk.eloBase));
+    _pk.yr=yr; _pk.schedule=[]; _pk.scores={}; _pk.confGames=[]; _pk.confChamps={};
+    pkDrawShell();
+    pkFetchSched(yr);
+  };
 
-      html += '<div style="background:var(--bg2);border:1px solid var(--border);'
-            + 'border-radius:var(--radius-lg);padding:0.85rem">';
+  // ── Fetch schedule by week ────────────────────────────────
+  async function pkFetchSched(yr) {
+    pkSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' schedule from ESPN…</div>');
+    var games=[], seen={};
+    // Weeks 0-13 regular season + 15 (Army-Navy only)
+    var weeks=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,15];
+    var BATCH=4;
+    var fetched=0;
+    for (var b=0; b<weeks.length; b+=BATCH) {
+      var batch=weeks.slice(b,b+BATCH);
+      await Promise.all(batch.map(async function(wk){
+        var url='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups=80&limit=300';
+        try {
+          var res=await fetch(url,{mode:'cors'});
+          if(!res.ok) return;
+          var data=await res.json();
+          if(!data.events) return;
+          data.events.forEach(function(ev){
+            try {
+              var comp=ev.competitions&&ev.competitions[0];
+              if(!comp) return;
+              var competitors=comp.competitors||[];
+              var home=null,away=null;
+              competitors.forEach(function(c){ if(c.homeAway==='home') home=c; else away=c; });
+              if(!home||!away) return;
+              var key=ev.id||(home.team.id+'_'+away.team.id+'_w'+wk);
+              if(seen[key]) return;
+              seen[key]=1;
+              var hn=home.team.shortDisplayName, an=away.team.shortDisplayName;
+              // Week 15: only Army-Navy
+              if(wk===15&&hn!=='Army'&&hn!=='Navy'&&an!=='Army'&&an!=='Navy') return;
+              var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
+              var dt=ev.date?ev.date.slice(0,10):null;
+              if(dt&&dt.startsWith('1970')) dt=null;
+              var hs=completed?(parseInt(home.score)||null):null;
+              var as_=completed?(parseInt(away.score)||null):null;
+              games.push({id:key,week:wk,date:dt,homeTeam:hn,awayTeam:an,
+                          neutral:!!(comp.neutralSite),completed:completed,
+                          homeScore:hs,awayScore:as_});
+              fetched++;
+            } catch(e){}
+          });
+        } catch(e){}
+      }));
+      pkSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' schedule… '+fetched+' games found so far</div>');
+    }
+    games.sort(function(a,b){
+      if(a.week!==b.week) return a.week-b.week;
+      if(!a.date&&!b.date) return 0;
+      if(!a.date) return 1;
+      if(!b.date) return -1;
+      return a.date<b.date?-1:a.date>b.date?1:0;
+    });
+    _pk.schedule=games;
+    if(!games.length){
+      pkSetReg('<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.78rem;color:var(--text-muted);text-align:center;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg)">'
+        +'<div style="font-size:0.88rem;color:var(--text);margin-bottom:0.5rem">📅 '+yr+' schedule not available yet</div>'
+        +'ESPN hasn\'t published the '+yr+' CFB schedule yet (usually July–August).<br><br>'
+        +'<button onclick="pkLoadYear('+(yr-1)+')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Load '+(yr-1)+' season instead →</button>'
+        +'</div>');
+      return;
+    }
+    // Pre-fill completed games
+    games.forEach(function(g){
+      if(g.completed&&g.homeScore!=null&&g.awayScore!=null)
+        _pk.scores[g.id]={homeScore:g.homeScore,awayScore:g.awayScore};
+    });
+    pkBuild();
+    pkDrawReg();
+  }
 
-      // Conf name header
-      html += '<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;'
-            + 'text-transform:uppercase;color:var(--text-dim);margin-bottom:0.5rem">'
-            + conf
-            + '<span style="color:var(--text-dim);font-weight:400;text-transform:none;letter-spacing:0">'
-            + (divDef ? ' · East/West divisions' : ' · no divisions')
-            + '</span></div>';
+  function pkSetReg(html) {
+    var el=document.getElementById('pk-reg');
+    if(el) el.innerHTML=html;
+  }
 
-      if (divDef) {
-        // Show each division with its standings
-        html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.6rem">';
-        for (const div in divDef) {
-          const divTeams = divDef[div];
-          const divObjs  = pkSortTeams(allTeamObjs.filter(function(t){ return divTeams.indexOf(t.team) !== -1; }));
-          html += '<div>';
-          html += '<div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);'
-                + 'text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.2rem">' + div + '</div>';
-          for (let i = 0; i < Math.min(divObjs.length, 5); i++) {
-            const t     = divObjs[i];
-            const color = i === 0 ? 'var(--text)' : 'var(--text-muted)';
-            const fw    = i === 0 ? '600' : '400';
-            html += '<div style="display:flex;gap:0.25rem;padding:0.1rem 0;font-size:0.7rem;color:' + color + '">'
-                  + '<span style="flex:1;font-weight:' + fw + '">' + t.team + '</span>'
-                  + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">' + t.cw + '–' + t.cl + '</span>'
-                  + '<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">(' + t.w + '–' + t.l + ')</span>'
-                  + '</div>';
+  // ── Draw regular season games ─────────────────────────────
+  function pkDrawReg() {
+    var el=document.getElementById('pk-reg');
+    if(!el) return;
+    var picked=0;
+    Object.keys(_pk.scores).forEach(function(id){
+      var s=_pk.scores[id];
+      if(s.homeScore!==''&&s.homeScore!=null&&s.awayScore!==''&&s.awayScore!=null) picked++;
+    });
+    var total=_pk.schedule.length;
+    var completed=_pk.schedule.filter(function(g){return g.completed;}).length;
+
+    var html='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem">'
+      +'<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim)">'+total+' games'+(completed?' · '+completed+' final (ESPN)':'')+' · '+picked+' predicted</div>'
+      +'<button onclick="pkTab(\'conf\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.35rem 1rem;font-family:var(--font-mono);font-size:0.72rem;font-weight:600;cursor:pointer">Next: Conf Championships →</button>'
+      +'</div>';
+
+    // Group by week
+    var byWeek={};
+    _pk.schedule.forEach(function(g){
+      var wk=g.week||0;
+      if(!byWeek[wk]) byWeek[wk]=[];
+      byWeek[wk].push(g);
+    });
+    Object.keys(byWeek).sort(function(a,b){return parseInt(a)-parseInt(b);}).forEach(function(wk){
+      var games=byWeek[wk];
+      var label=parseInt(wk)===0?'Week 0':'Week '+wk;
+      var datedGames=games.filter(function(g){return g.date;});
+      var range='';
+      if(datedGames.length){
+        var dates=datedGames.map(function(g){return g.date;}).sort();
+        var d0=new Date(dates[0]+'T12:00:00'), d1=new Date(dates[dates.length-1]+'T12:00:00');
+        var fmt=function(d){return d.toLocaleDateString('en-US',{month:'short',day:'numeric'});};
+        range=' — '+(d0.toDateString()===d1.toDateString()?fmt(d0):fmt(d0)+'–'+fmt(d1));
+      }
+      html+='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.85rem 0 0.35rem;padding-top:0.5rem;border-top:1px solid var(--border)">'
+        +label+range+' <span style="opacity:0.6">('+games.length+' games)</span></div>';
+      games.forEach(function(g){
+        var s=_pk.scores[g.id]||{};
+        var hs=s.homeScore!=null?s.homeScore:'';
+        var as_=s.awayScore!=null?s.awayScore:'';
+        var hsi=parseInt(hs), asi=parseInt(as_);
+        var homeWin=(!isNaN(hsi)&&!isNaN(asi)&&hsi!==asi&&hsi>asi);
+        var awayWin=(!isNaN(hsi)&&!isNaN(asi)&&hsi!==asi&&asi>hsi);
+        var dateStr=g.date?new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'TBD';
+        var hSide=g.neutral?'N':'H', aSide=g.neutral?'N':'A';
+        var hStyle='flex:1;font-size:0.77rem;font-weight:'+(homeWin?'600':'400')+';color:'+(homeWin?'var(--accent)':'var(--text)');
+        var aStyle='flex:1;text-align:right;font-size:0.77rem;font-weight:'+(awayWin?'600':'400')+';color:'+(awayWin?'var(--accent)':'var(--text)');
+        html+='<div data-gid="'+g.id+'" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.55rem;margin-bottom:0.18rem;border-radius:var(--radius);background:'+(g.completed?'var(--bg2)':'var(--bg3)')+';border:1px solid '+(g.completed?'var(--border)':'var(--border-md)')+'">'
+          +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:center">'+dateStr+'</div>'
+          +'<div class="pk-hn" style="'+hStyle+'">'+g.homeTeam+' <span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono)">'+hSide+'</span></div>'
+          +'<input type="number" min="0" max="99" value="'+hs+'" placeholder="–"'+(g.completed?' disabled':'')
+          +' onchange="pkScore(\''+g.id+'\',\'home\',this.value)"'
+          +' style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;background:'+(g.completed?'transparent':'var(--bg2)')+';border:'+(g.completed?'none':'1px solid var(--border-md)')+';color:var(--text);border-radius:var(--radius);padding:0.22rem;-moz-appearance:textfield;-webkit-appearance:none">'
+          +'<span style="color:var(--text-dim);font-size:0.78rem">–</span>'
+          +'<input type="number" min="0" max="99" value="'+as_+'" placeholder="–"'+(g.completed?' disabled':'')
+          +' onchange="pkScore(\''+g.id+'\',\'away\',this.value)"'
+          +' style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;background:'+(g.completed?'transparent':'var(--bg2)')+';border:'+(g.completed?'none':'1px solid var(--border-md)')+';color:var(--text);border-radius:var(--radius);padding:0.22rem;-moz-appearance:textfield;-webkit-appearance:none">'
+          +'<div class="pk-an" style="'+aStyle+'"><span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono)">'+aSide+'</span> '+g.awayTeam+'</div>'
+          +(g.completed?'<span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);min-width:32px;text-align:right">FINAL</span>':'')
+          +'</div>';
+      });
+    });
+    html+='<div style="margin-top:1rem;display:flex;justify-content:flex-end">'
+      +'<button onclick="pkTab(\'conf\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Next: Conf Championships →</button>'
+      +'</div>';
+    el.innerHTML=html;
+  }
+
+  window.pkScore = function(id, side, val) {
+    if(!_pk.scores[id]) _pk.scores[id]={homeScore:'',awayScore:''};
+    var n=(val===''||val==null)?'':parseInt(val);
+    if(side==='home') _pk.scores[id].homeScore=n;
+    else              _pk.scores[id].awayScore=n;
+    // Update winner highlight on this row
+    var row=document.querySelector('[data-gid="'+id+'"]');
+    if(row){
+      var s=_pk.scores[id];
+      var hs=parseInt(s.homeScore), as_=parseInt(s.awayScore);
+      var hn=row.querySelector('.pk-hn'), an=row.querySelector('.pk-an');
+      if(hn&&an&&!isNaN(hs)&&!isNaN(as_)&&hs!==as_){
+        hn.style.fontWeight=hs>as_?'600':'400'; hn.style.color=hs>as_?'var(--accent)':'var(--text)';
+        an.style.fontWeight=as_>hs?'600':'400'; an.style.color=as_>hs?'var(--accent)':'var(--text)';
+      }
+    }
+    // Update count
+    var picked=Object.keys(_pk.scores).filter(function(id2){
+      var s2=_pk.scores[id2];
+      return s2.homeScore!==''&&s2.homeScore!=null&&s2.awayScore!==''&&s2.awayScore!=null;
+    }).length;
+    var countEl=document.querySelector('#pk-reg div[style*="font-mono"]');
+    if(countEl) countEl.textContent=_pk.schedule.length+' games · '+picked+' predicted';
+  };
+
+  // ── Auto-predict ──────────────────────────────────────────
+  window.pkAutoPredict = async function() {
+    var selEl=document.getElementById('pk-elo-yr');
+    var eloYr=parseInt(selEl&&selEl.value)||currentSeason;
+    var btn=document.querySelector('[onclick="pkAutoPredict()"]');
+    if(btn){btn.textContent='Loading…';btn.disabled=true;}
+    if(!allSeasonData[eloYr]){
+      try{var raw=await fetchCSV(CFG.dataPath+eloYr+'.csv');if(raw)allSeasonData[eloYr]=raw.map(coerceRow);}catch(e){}
+    }
+    var eloMap={};
+    (allSeasonData[eloYr]||[]).forEach(function(r){if(r.team&&r.elo)eloMap[r.team]=parseFloat(r.elo);});
+    if(!Object.keys(eloMap).length){
+      if(btn){btn.textContent='Fill all games →';btn.disabled=false;}
+      return;
+    }
+    function getElo(team){
+      var t=pkResolve(team);
+      return eloMap[t]||eloMap[team]||1500;
+    }
+    var filled=0;
+    _pk.schedule.forEach(function(g){
+      if(g.completed) return;
+      var eH=getElo(g.homeTeam)+(g.neutral?0:45), eA=getElo(g.awayTeam);
+      var diff=eH-eA;
+      var margin=Math.round(Math.log(Math.abs(diff)+1)*3.5);
+      var win=Math.min(24+Math.round(margin*0.9),56);
+      var lose=Math.max(0,win-Math.max(margin*2,3));
+      var jit=function(){return Math.floor(Math.random()*7)-3;};
+      var hs=Math.max(0,win+jit()), as_=Math.max(0,lose+jit());
+      if(diff<0){var tmp=hs;hs=as_;as_=tmp;}
+      if(hs===as_) hs>0?as_--:hs++;
+      _pk.scores[g.id]={homeScore:hs,awayScore:as_};
+      filled++;
+    });
+    pkBuild();
+    pkDrawReg();
+    if(btn){btn.textContent='Fill all games →';btn.disabled=false;}
+    if(window.toast) toast('Auto-filled '+filled+' games using '+eloYr+' Elo');
+  };
+
+  // ── Draw conference championships ─────────────────────────
+  function pkDrawConf() {
+    var el=document.getElementById('pk-conf');
+    if(!el) return;
+    pkBuild();
+
+    var html='<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);margin-bottom:1rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.75rem 1rem;line-height:1.6">'
+      +'Standings from your picks. <b style="color:var(--text)">Sun Belt &amp; MAC</b> use East/West division leaders. All others: top-2 by conf W% (tiebreaker: overall W% → Elo). Enter the championship score to set the conf champion.'
+      +'</div>'
+      +'<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1rem;margin-bottom:1.2rem">';
+
+    Object.keys(PK_CONFS).forEach(function(conf){
+      if(conf==='Independent') return;
+      var teams=(PK_CONFS[conf]||[]).map(pkTeam);
+      var divDef=PK_DIVS[conf];
+      var homeT='',awayT='';
+
+      if(divDef){
+        var divNames=Object.keys(divDef);
+        var leaders=divNames.map(function(div){
+          var dt=divDef[div];
+          var filtered=teams.filter(function(t){return dt.indexOf(t.team)!==-1;});
+          return pkSort(filtered)[0];
+        }).filter(function(x){return x;});
+        homeT=(leaders[0]&&leaders[0].team)||'';
+        awayT=(leaders[1]&&leaders[1].team)||'';
+      } else {
+        var sorted=pkSort(teams);
+        homeT=(sorted[0]&&sorted[0].team)||'';
+        awayT=(sorted[1]&&sorted[1].team)||'';
+      }
+
+      var existing=null;
+      for(var i=0;i<_pk.confGames.length;i++){if(_pk.confGames[i].conf===conf){existing=_pk.confGames[i];break;}}
+      if(existing){existing.homeTeam=homeT;existing.awayTeam=awayT;}
+      var hs=(existing&&existing.homeScore!=null)?existing.homeScore:'';
+      var as_=(existing&&existing.awayScore!=null)?existing.awayScore:'';
+      var champ=(existing&&existing.champ)||'';
+
+      html+='<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.85rem">';
+      html+='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.5rem">'+conf+'<span style="color:var(--text-dim);font-weight:400;text-transform:none;letter-spacing:0">'+(divDef?' · East/West divisions':' · no divisions')+'</span></div>';
+
+      if(divDef){
+        html+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.6rem">';
+        Object.keys(divDef).forEach(function(div){
+          var dt=divDef[div];
+          var divObjs=pkSort(teams.filter(function(t){return dt.indexOf(t.team)!==-1;}));
+          html+='<div><div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.2rem">'+div+'</div>';
+          for(var i=0;i<Math.min(divObjs.length,5);i++){
+            var t=divObjs[i];
+            var c=i===0?'var(--text)':'var(--text-muted)';
+            html+='<div style="display:flex;gap:0.25rem;padding:0.1rem 0;font-size:0.7rem;color:'+c+'">'
+              +'<span style="flex:1;font-weight:'+(i===0?'600':'400')+'">'+t.team+'</span>'
+              +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'–'+t.cl+'</span>'
+              +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'–'+t.l+')</span>'
+              +'</div>';
           }
-          html += '</div>';
-        }
-        html += '</div>';
+          html+='</div>';
+        });
+        html+='</div>';
       } else {
-        // No divisions — show full conf standings top 8
-        const sorted = pkSortTeams(allTeamObjs);
-        html += '<div style="margin-bottom:0.6rem">';
-        for (let i = 0; i < Math.min(sorted.length, 8); i++) {
-          const t     = sorted[i];
-          const color = i < 2 ? 'var(--text)' : 'var(--text-muted)';
-          const fw    = i < 2 ? '600' : '400';
-          html += '<div style="display:flex;gap:0.3rem;padding:0.1rem 0;font-size:0.72rem;color:' + color + '">'
-                + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);min-width:14px;text-align:right">' + (i+1) + '</span>'
-                + '<span style="flex:1;font-weight:' + fw + '">' + t.team + '</span>'
-                + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">' + t.cw + '–' + t.cl + '</span>'
-                + '<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">(' + t.w + '–' + t.l + ')</span>'
-                + '</div>';
+        var sorted2=pkSort(teams);
+        html+='<div style="margin-bottom:0.6rem">';
+        for(var i=0;i<Math.min(sorted2.length,8);i++){
+          var t=sorted2[i]; var c=i<2?'var(--text)':'var(--text-muted)';
+          html+='<div style="display:flex;gap:0.3rem;padding:0.1rem 0;font-size:0.72rem;color:'+c+'">'
+            +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);min-width:14px;text-align:right">'+(i+1)+'</span>'
+            +'<span style="flex:1;font-weight:'+(i<2?'600':'400')+'">'+t.team+'</span>'
+            +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'–'+t.cl+'</span>'
+            +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'–'+t.l+')</span>'
+            +'</div>';
         }
-        if (sorted.length > 8) {
-          html += '<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.1rem">+' + (sorted.length - 8) + ' more</div>';
-        }
-        html += '</div>';
+        if(sorted2.length>8) html+='<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.1rem">+'+(sorted2.length-8)+' more</div>';
+        html+='</div>';
       }
 
-      // Championship game input
-      let champLabel;
-      if (champ) {
-        champLabel = 'Championship &middot; <strong style="color:var(--accent)">' + champ + ' wins</strong>';
-      } else if (homeT && awayT) {
-        champLabel = 'Championship game &middot; ' + homeT + ' vs ' + awayT;
+      var champLabel=champ?('Championship &middot; <strong style="color:var(--accent)">'+champ+' wins</strong>'):(homeT&&awayT?'Championship &middot; '+homeT+' vs '+awayT:'Championship &middot; TBD');
+      var confKey=conf.replace(/[^a-zA-Z0-9]/g,'_');
+      html+='<div style="border-top:1px solid var(--border);padding-top:0.55rem">'
+        +'<div id="pkcl-'+confKey+'" style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);margin-bottom:0.35rem">'+champLabel+'</div>'
+        +'<div style="display:flex;align-items:center;gap:0.3rem;flex-wrap:wrap">'
+        +'<span style="flex:1;font-size:0.74rem;font-weight:600;min-width:90px">'+(homeT||'TBD')+'</span>'
+        +'<input type="number" min="0" max="99" value="'+hs+'" placeholder="—" data-conf-key="'+confKey+'" data-side="home" onchange="pkCG(this)" style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.8rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.25rem">'
+        +'<span style="color:var(--text-dim)">–</span>'
+        +'<input type="number" min="0" max="99" value="'+as_+'" placeholder="—" data-conf-key="'+confKey+'" data-side="away" onchange="pkCG(this)" style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.8rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.25rem">'
+        +'<span style="flex:1;text-align:right;font-size:0.74rem;font-weight:600;min-width:90px">'+(awayT||'TBD')+'</span>'
+        +'</div></div></div>';
+    });
+
+    html+='</div><div style="display:flex;justify-content:flex-end">'
+      +'<button onclick="pkTab(\'cfp\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Generate CFP Bracket + Top 25 →</button>'
+      +'</div>';
+    el.innerHTML=html;
+
+    // Store matchups for pkCG lookup
+    window._pkCGMap={};
+    Object.keys(PK_CONFS).forEach(function(conf){
+      if(conf==='Independent') return;
+      var teams=(PK_CONFS[conf]||[]).map(pkTeam);
+      var divDef=PK_DIVS[conf];
+      var homeT='',awayT='';
+      if(divDef){
+        var leaders=Object.keys(divDef).map(function(div){
+          var filtered=teams.filter(function(t){return divDef[div].indexOf(t.team)!==-1;});
+          return pkSort(filtered)[0];
+        }).filter(Boolean);
+        homeT=(leaders[0]&&leaders[0].team)||'';awayT=(leaders[1]&&leaders[1].team)||'';
       } else {
-        champLabel = 'Championship &middot; TBD';
+        var s=pkSort(teams);homeT=(s[0]&&s[0].team)||'';awayT=(s[1]&&s[1].team)||'';
       }
-
-      // Safe onchange: use data attributes to avoid quote escaping issues
-      const confId = conf.replace(/[^a-zA-Z0-9]/g, '_');
-
-      html += '<div style="border-top:1px solid var(--border);padding-top:0.55rem">'
-            + '<div data-conf-label="' + conf + '" style="font-family:var(--font-mono);font-size:0.58rem;'
-            + 'color:var(--text-dim);margin-bottom:0.35rem">' + champLabel + '</div>'
-            + '<div style="display:flex;align-items:center;gap:0.3rem;flex-wrap:wrap">'
-            + '<span style="flex:1;font-size:0.74rem;font-weight:600;min-width:90px">' + (homeT || 'TBD') + '</span>'
-            + '<input type="number" min="0" max="99" value="' + hs + '" placeholder="—"'
-            + ' data-conf="' + confId + '" data-side="home"'
-            + ' onchange="pkCGbyAttr(this)"'
-            + ' style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.8rem;'
-            + 'background:var(--bg3);border:1px solid var(--border-md);color:var(--text);'
-            + 'border-radius:var(--radius);padding:0.25rem">'
-            + '<span style="color:var(--text-dim)">–</span>'
-            + '<input type="number" min="0" max="99" value="' + as_ + '" placeholder="—"'
-            + ' data-conf="' + confId + '" data-side="away"'
-            + ' onchange="pkCGbyAttr(this)"'
-            + ' style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.8rem;'
-            + 'background:var(--bg3);border:1px solid var(--border-md);color:var(--text);'
-            + 'border-radius:var(--radius);padding:0.25rem">'
-            + '<span style="flex:1;text-align:right;font-size:0.74rem;font-weight:600;min-width:90px">' + (awayT || 'TBD') + '</span>'
-            + '</div></div>'
-            + '</div>';
-    }
-
-    html += '</div>'
-          + '<div style="display:flex;justify-content:flex-end">'
-          + '<button onclick="pkGo('cfp')" style="background:var(--accent);color:#1a1611;border:none;'
-          + 'border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);'
-          + 'font-size:0.73rem;font-weight:600;cursor:pointer">Generate CFP Bracket + Top 25 →</button>'
-          + '</div>';
-
-    el.innerHTML = html;
-
-    // Store homeT/awayT mapping by confId for pkCGbyAttr
-    window._pkConfMap = window._pkConfMap || {};
-    for (const conf of Object.keys(PK_CONFS)) {
-      if (conf === 'Independent') continue;
-      const matchup = pkGetChampMatchup(conf);
-      const confId  = conf.replace(/[^a-zA-Z0-9]/g, '_');
-      window._pkConfMap[confId] = {
-        conf,
-        homeT: (matchup.homeTeam && matchup.homeTeam.team) || '',
-        awayT: (matchup.awayTeam && matchup.awayTeam.team) || '',
-      };
-    }
+      window._pkCGMap[conf.replace(/[^a-zA-Z0-9]/g,'_')]={conf:conf,homeT:homeT,awayT:awayT};
+    });
   }
 
-  window.pkCG = function(conf, side, val, homeT, awayT) {
-    let e = _pk.confGames.find(g => g.conf === conf);
-    if (!e) {
-      e = {conf, homeTeam:homeT, awayTeam:awayT, homeScore:null, awayScore:null, champ:''};
-      _pk.confGames.push(e);
-    }
-    e.homeTeam = homeT;
-    e.awayTeam = awayT;
-    const n = parseInt(val);
-    if (side==='home') e.homeScore = isNaN(n) ? null : n;
-    else               e.awayScore = isNaN(n) ? null : n;
-    if (e.homeScore != null && e.awayScore != null && e.homeScore !== e.awayScore) {
-      e.champ = e.homeScore > e.awayScore ? e.homeTeam : e.awayTeam;
-      _pk.confChamps[conf] = e.champ;
-      pkBuildStandings();
-    } else {
-      e.champ = '';
-      delete _pk.confChamps[conf];
-    }
-    // Update just the champion label for this conf without re-rendering everything
-    const champLabel = document.querySelector(`[data-conf-label="${conf}"]`);
-    if (champLabel) {
-      champLabel.innerHTML = e.champ
-        ? `Championship · <strong style="color:var(--accent)">${e.champ} wins</strong>`
-        : `Championship game · ${homeT} vs ${awayT}`;
-    }
+  window.pkCG = function(input) {
+    var confKey=input.getAttribute('data-conf-key');
+    var side=input.getAttribute('data-side');
+    var val=input.value;
+    var map=(window._pkCGMap&&window._pkCGMap[confKey])||{};
+    var conf=map.conf||confKey;
+    var homeT=map.homeT||'';
+    var awayT=map.awayT||'';
+    var e=null;
+    for(var i=0;i<_pk.confGames.length;i++){if(_pk.confGames[i].conf===conf){e=_pk.confGames[i];break;}}
+    if(!e){e={conf:conf,homeTeam:homeT,awayTeam:awayT,homeScore:null,awayScore:null,champ:''};_pk.confGames.push(e);}
+    e.homeTeam=homeT;e.awayTeam=awayT;
+    var n=parseInt(val);
+    if(side==='home') e.homeScore=isNaN(n)?null:n;
+    else              e.awayScore=isNaN(n)?null:n;
+    if(e.homeScore!=null&&e.awayScore!=null&&e.homeScore!==e.awayScore){
+      e.champ=e.homeScore>e.awayScore?e.homeTeam:e.awayTeam;
+      _pk.confChamps[conf]=e.champ;
+      pkBuild();
+    } else {e.champ='';delete _pk.confChamps[conf];}
+    var lbl=document.getElementById('pkcl-'+confKey);
+    if(lbl) lbl.innerHTML=e.champ?('Championship &middot; <strong style="color:var(--accent)">'+e.champ+' wins</strong>'):'Championship &middot; '+homeT+' vs '+awayT;
   };
 
-  // Uses data-conf and data-side attributes — no quote escaping needed
-  window.pkCGbyAttr = function(input) {
-    const confId = input.getAttribute('data-conf');
-    const side   = input.getAttribute('data-side');
-    const val    = input.value;
-    const map    = (window._pkConfMap && window._pkConfMap[confId]) || {};
-    const conf   = map.conf   || confId.replace(/_/g, ' ');
-    const homeT  = map.homeT  || '';
-    const awayT  = map.awayT  || '';
-    pkCG(conf, side, val, homeT, awayT);
-  };
+  // ── Draw CFP bracket + Top 25 ─────────────────────────────
+  function pkDrawCFP() {
+    var el=document.getElementById('pk-cfp');
+    if(!el) return;
+    pkBuild();
 
-  // ── PHASE 3: CFP BRACKET + RANKINGS ──────────────────────
-  // Records shown throughout: overall W–L and conf W–L
-  // 12-team CFP: top-4 conf champs by ranking get BYE
-  // Seeds 5-8: next conf champs; Seeds 9-12: at-large by Elo
-
-  function pkRenderCFP() {
-    const el = document.getElementById('pk-panel-cfp');
-    if (!el) return;
-    pkBuildStandings();
-
-    const csvData = allSeasonData[currentSeason] || data || [];
-
-    // Determine conf champions (user pick or standings leader)
-    const champions = {};
-    for (const conf of Object.keys(PK_CONFS)) {
-      if (conf === 'Independent') continue;
-      const picked = _pk.confChamps[conf];
-      if (picked) {
-        champions[conf] = {
-          team: picked,
-          elo:  _pk.eloSim[picked] || _pk.eloBase[picked] || 1500,
-          conf,
-          w:    _pk.wins[picked]    || 0,
-          l:    _pk.losses[picked]  || 0,
-          cw:   _pk.confWins[picked]|| 0,
-          cl:   _pk.confLoss[picked]|| 0,
-        };
+    // Determine conf champions
+    var champions={};
+    Object.keys(PK_CONFS).forEach(function(conf){
+      if(conf==='Independent') return;
+      var picked=_pk.confChamps[conf];
+      if(picked){
+        champions[conf]={team:picked,elo:_pk.eloSim[picked]||1500,conf:conf,
+          w:_pk.wins[picked]||0,l:_pk.losses[picked]||0,
+          cw:_pk.confWins[picked]||0,cl:_pk.confLoss[picked]||0};
       } else {
-        const matchup = pkGetChampMatchup(conf);
-        const leader  = matchup.homeTeam;
-        if (leader) champions[conf] = {
-          team: leader.team,
-          elo:  leader.elo,
-          conf,
-          w:    leader.w,
-          l:    leader.l,
-          cw:   leader.cw,
-          cl:   leader.cl,
-        };
+        var teams=(PK_CONFS[conf]||[]).map(pkTeam);
+        var divDef=PK_DIVS[conf];
+        var leader;
+        if(divDef){
+          var leaders=Object.keys(divDef).map(function(div){
+            return pkSort(teams.filter(function(t){return divDef[div].indexOf(t.team)!==-1;}))[0];
+          }).filter(Boolean);
+          leader=leaders.sort(function(a,b){return (b.elo||0)-(a.elo||0);})[0];
+        } else {
+          leader=pkSort(teams)[0];
+        }
+        if(leader) champions[conf]={team:leader.team,elo:leader.elo,conf:conf,w:leader.w,l:leader.l,cw:leader.cw,cl:leader.cl};
       }
-    }
+    });
 
-    const champList = Object.values(champions).sort((a,b) => b.elo - a.elo);
-    const champSet  = new Set(champList.map(c => c.team));
+    var champArr=Object.values(champions).sort(function(a,b){return b.elo-a.elo;});
+    var champSet={};champArr.forEach(function(c){champSet[c.team]=1;});
 
-    // All FBS teams ranked by simulated Elo (with records)
-    const allFBS = [...new Set([
-      ...Object.values(PK_CONFS).flat(),
-      ...Object.keys(_pk.eloBase),
-    ])].map(t => {
-      const conf = pkConfOf(t) || (csvData.find(r=>r.team===t)?.conference) || '—';
-      return {
-        team: t,
-        elo:  _pk.eloSim[t] || _pk.eloBase[t] || 0,
-        conf,
-        w:    _pk.wins[t]    || 0,
-        l:    _pk.losses[t]  || 0,
-        cw:   _pk.confWins[t]|| 0,
-        cl:   _pk.confLoss[t]|| 0,
-      };
-    }).filter(t => t.elo > 0).sort((a,b) => b.elo - a.elo);
+    // All FBS teams by Elo
+    var allTeams={};
+    Object.values(PK_CONFS).forEach(function(arr){arr.forEach(function(t){allTeams[t]=1;});});
+    Object.keys(_pk.eloBase).forEach(function(t){allTeams[t]=1;});
+    var allFBS=Object.keys(allTeams).map(function(t){
+      return {team:t,elo:_pk.eloSim[t]||_pk.eloBase[t]||0,
+              conf:pkConfOf(t)||'—',w:_pk.wins[t]||0,l:_pk.losses[t]||0,
+              cw:_pk.confWins[t]||0,cl:_pk.confLoss[t]||0};
+    }).filter(function(t){return t.elo>0;}).sort(function(a,b){return b.elo-a.elo;});
 
-    const top25 = allFBS.slice(0, 25);
+    var top25=allFBS.slice(0,25);
 
-    // Seed the 12-team field
-    const top4   = champList.slice(0, 4);
-    const top4s  = new Set(top4.map(c => c.team));
-    const rest   = champList.slice(4);
-    const field  = [];
-    const used   = new Set(top4.map(c => c.team));
+    // Seed field: top-4 champs get bye, rest are champs + at-large
+    var top4=champArr.slice(0,4);
+    var used={};top4.forEach(function(c){used[c.team]=1;});
+    var field=[];
+    champArr.slice(4).forEach(function(c){if(field.length<8&&!used[c.team]){field.push(c);used[c.team]=1;}});
+    allFBS.forEach(function(t){if(field.length<8&&!used[t.team]){field.push(t);used[t.team]=1;}});
 
-    for (const c of rest) {
-      if (field.length >= 8) break;
-      if (!used.has(c.team)) { field.push({...c, autoB:true}); used.add(c.team); }
-    }
-    for (const t of allFBS) {
-      if (field.length >= 8) break;
-      if (!used.has(t.team)) { field.push({...t, autoB:false}); used.add(t.team); }
-    }
+    var seeds=top4.map(function(t,i){return Object.assign({},t,{seed:i+1,bye:true});})
+      .concat(field.map(function(t,i){return Object.assign({},t,{seed:i+5,bye:false});}));
 
-    const seeds = [
-      ...top4.map((t,i)  => ({...t, seed:i+1, bye:true})),
-      ...field.map((t,i) => ({...t, seed:i+5, bye:false})),
-    ];
+    var r1=[[seeds[4],seeds[11]],[seeds[5],seeds[10]],[seeds[6],seeds[9]],[seeds[7],seeds[8]]];
 
-    const r1 = [
-      [seeds[4], seeds[11]],
-      [seeds[5], seeds[10]],
-      [seeds[6], seeds[9]],
-      [seeds[7], seeds[8]],
-    ];
+    function rec(t){return t.w+'–'+t.l;}
+    function cRec(t){return (t.cw||t.cl)?t.cw+'–'+t.cl:'';}
 
-    const rec  = function(t){ return t.w+'–'+t.l; };
-    const cRec = function(t){ return (t.cw||t.cl) ? t.cw+'–'+t.cl : ''; };
+    // Build Top 25 table
+    var t25html='<div style="margin-bottom:1.4rem"><div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">Top 25 — simulated Elo after all picks &nbsp;★ = conf champion</div>'
+      +'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">'
+      +'<div style="display:flex;gap:0.35rem;padding:0.2rem 0.6rem;background:var(--bg3);border-bottom:1px solid var(--border)">'
+      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:22px;text-align:right">#</div>'
+      +'<div style="flex:1;font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim)">Team</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:right">W–L</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:32px;text-align:right">Conf</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:38px;text-align:right">Elo</div>'
+      +'</div>';
+    top25.forEach(function(t,i){
+      var star=champSet[t.team]?('<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">★'+t.conf+'</span>'):'';
+      t25html+='<div style="display:flex;align-items:center;gap:0.35rem;padding:0.22rem 0.6rem;border-bottom:1px solid var(--border)">'
+        +'<div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);min-width:22px;text-align:right">'+(i+1)+'</div>'
+        +'<div style="flex:1;font-size:0.75rem;font-weight:'+(champSet[t.team]?'600':'400')+'">'+t.team+star+'</div>'
+        +'<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-muted);min-width:36px;text-align:right">'+rec(t)+'</div>'
+        +'<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);min-width:32px;text-align:right">'+cRec(t)+'</div>'
+        +'<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-dim);min-width:38px;text-align:right">'+t.elo.toFixed(0)+'</div>'
+        +'</div>';
+    });
+    t25html+='</div></div>';
 
-    const seedRow = function(s) {
-      var bg  = s.seed<=4 ? 'rgba(226,201,126,0.09)' : 'var(--bg3)';
-      var bdr = s.seed<=4 ? 'var(--accent)' : 'var(--border)';
-      var bye = s.bye ? '<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">BYE</span>' : '';
-      var star = champSet.has(s.team) ? '<span style="font-size:0.5rem;color:var(--text-dim);font-family:var(--font-mono);margin-left:0.15rem">'+s.conf+'★</span>' : '';
-      return '<div style="display:flex;align-items:center;gap:0.35rem;padding:0.26rem 0.5rem;'
-        +'margin-bottom:0.18rem;border-radius:var(--radius);background:'+bg+';border:1px solid '+bdr+'">'
+    // Build seed list
+    var seedHtml='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.42rem">CFP Field — 12 Teams</div>'
+      +'<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-bottom:0.4rem">Seeds 1–4 (BYE): top 4 conf champs · 5–12: champs + at-large</div>';
+    seeds.forEach(function(s){
+      var bg=s.seed<=4?'rgba(226,201,126,0.09)':'var(--bg3)';
+      var bdr=s.seed<=4?'var(--accent)':'var(--border)';
+      var byeSpan=s.bye?'<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">BYE</span>':'';
+      var starSpan=champSet[s.team]?('<span style="font-size:0.5rem;color:var(--text-dim);font-family:var(--font-mono);margin-left:0.15rem">'+s.conf+'★</span>'):'';
+      seedHtml+='<div style="display:flex;align-items:center;gap:0.35rem;padding:0.26rem 0.5rem;margin-bottom:0.18rem;border-radius:var(--radius);background:'+bg+';border:1px solid '+bdr+'">'
         +'<div style="font-family:var(--font-mono);font-size:0.64rem;color:var(--text-dim);min-width:16px;text-align:right">'+s.seed+'</div>'
-        +'<div style="flex:1;font-size:0.75rem;font-weight:500">'+s.team+bye+star+'</div>'
+        +'<div style="flex:1;font-size:0.75rem;font-weight:500">'+s.team+byeSpan+starSpan+'</div>'
         +'<div style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);min-width:32px;text-align:right">'+rec(s)+'</div>'
         +'<div style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);min-width:26px;text-align:right">'+cRec(s)+'</div>'
         +'<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">'+s.elo.toFixed(0)+'</div>'
         +'</div>';
-    };
+    });
 
-    const r1Row = function(pair) {
-      var hi=pair[0], lo=pair[1];
-      return '<div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.28rem;'
-        +'background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.6rem">'
+    // Build first round
+    var r1html='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.42rem">First Round — campus sites</div>';
+    r1.forEach(function(pair){
+      var hi=pair[0],lo=pair[1];
+      r1html+='<div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.28rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.6rem">'
         +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">#'+hi.seed+'</span>'
         +'<span style="flex:1;font-size:0.75rem;font-weight:600">'+hi.team+'</span>'
         +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted)">'+rec(hi)+'</span>'
@@ -2266,102 +1852,26 @@ async function findAvailableSeason() {
         +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">#'+lo.seed+'</span>'
         +'<span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);margin-left:0.25rem">@ #'+hi.seed+'</span>'
         +'</div>';
-    };
+    });
+    r1html+='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">Quarterfinals</div>'
+      +'<div style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);line-height:1.9;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.55rem 0.7rem">';
+    seeds.slice(0,4).forEach(function(s){r1html+='#'+s.seed+' '+s.team+' ('+rec(s)+') hosts lowest remaining<br>';});
+    r1html+='</div><div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">Semifinals &amp; Championship</div>'
+      +'<div style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);line-height:1.9;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.55rem 0.7rem">'
+      +'Semifinal 1 — Rose Bowl (Pasadena, Jan)<br>Semifinal 2 — Sugar Bowl (New Orleans, Jan)<br>Championship — Neutral site (Jan)'
+      +'</div>';
 
-    el.innerHTML = `
-<div>
-  <!-- Top 25 with full records -->
-  <div style="margin-bottom:1.4rem">
-    <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
-                text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">
-      Top 25 — simulated Elo after all picks &nbsp;★ = conference champion
-    </div>
-    <div style="background:var(--bg2);border:1px solid var(--border);
-                border-radius:var(--radius-lg);overflow:hidden">
-      <!-- Header -->
-      <div style="display:flex;gap:0.35rem;padding:0.2rem 0.6rem;
-                  background:var(--bg3);border-bottom:1px solid var(--border)">
-        <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:22px;text-align:right">#</div>
-        <div style="flex:1;font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim)">Team</div>
-        <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:right">W–L</div>
-        <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:32px;text-align:right">Conf</div>
-        <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:38px;text-align:right">Elo</div>
-      </div>
-      ${top25.map((t,i) => {
-        const fw = champSet.has(t.team) ? '600' : '400';
-        const star = champSet.has(t.team)
-          ? '<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">★'+t.conf+'</span>'
-          : '';
-        return '<div style="display:flex;align-items:center;gap:0.35rem;padding:0.22rem 0.6rem;border-bottom:1px solid var(--border)">'
-          + '<div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);min-width:22px;text-align:right">'+(i+1)+'</div>'
-          + '<div style="flex:1;font-size:0.75rem;font-weight:'+fw+'">'+t.team+star+'</div>'
-          + '<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-muted);min-width:36px;text-align:right">'+rec(t)+'</div>'
-          + '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);min-width:32px;text-align:right">'+cRec(t)+'</div>'
-          + '<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-dim);min-width:38px;text-align:right">'+t.elo.toFixed(0)+'</div>'
-          + '</div>';
-      }).join('')}
-    </div>
-  </div>
-
-  <!-- CFP Field + Bracket -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem">
-    <div>
-      <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
-                  text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">
-        CFP Field — 12 Teams
-      </div>
-      <div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);
-                  margin-bottom:0.4rem">
-        Seeds 1–4 (BYE): top 4 conf champs · 5–12: champs + at-large
-        <span style="margin-left:0.5rem;color:var(--text-dim)">W–L · Conf · Elo</span>
-      </div>
-      ${seeds.map(function(s){return seedRow(s);}).join('')}
-    </div>
-    <div>
-      <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
-                  text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">
-        First Round — campus sites
-      </div>
-      ${r1.map(function(p){return r1Row(p);}).join('')}
-
-      <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
-                  text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">
-        Quarterfinals
-      </div>
-      <div style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);
-                  line-height:1.9;background:var(--bg2);border:1px solid var(--border);
-                  border-radius:var(--radius);padding:0.55rem 0.7rem">
-        ${seeds.slice(0,4).map(function(s){return '#'+s.seed+' '+s.team+' ('+rec(s)+') hosts lowest remaining';}).join('<br>')}
-      </div>
-
-      <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
-                  text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">
-        Semifinals &amp; Championship
-      </div>
-      <div style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);
-                  line-height:1.9;background:var(--bg2);border:1px solid var(--border);
-                  border-radius:var(--radius);padding:0.55rem 0.7rem">
-        Semifinal 1 — Rose Bowl (Pasadena, Jan)<br>
-        Semifinal 2 — Sugar Bowl (New Orleans, Jan)<br>
-        Championship — Allegiant Stadium, Las Vegas (Jan 25)
-      </div>
-    </div>
-  </div>
-
-  <div style="margin-top:1rem;display:flex;gap:0.6rem">
-    <button onclick="pkGo('conf')"
-      style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);
-             border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);
-             font-size:0.67rem;cursor:pointer">← Conf Championships</button>
-    <button onclick="pkGo('reg')"
-      style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);
-             border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);
-             font-size:0.67rem;cursor:pointer">← Regular Season</button>
-  </div>
-</div>`;
+    el.innerHTML=t25html
+      +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem">'+seedHtml+'</div>'+r1html+'</div>'
+      +'<div style="margin-top:1rem;display:flex;gap:0.6rem">'
+      +'<button onclick="pkTab(\'conf\')" style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);font-size:0.67rem;cursor:pointer">← Conf Championships</button>'
+      +'<button onclick="pkTab(\'reg\')" style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);font-size:0.67rem;cursor:pointer">← Regular Season</button>'
+      +'</div>';
   }
 
-  async function checkForNewerSeasons() {
+
+
+    async function checkForNewerSeasons() {
     const newest = CFG.seasons[0];
     const added  = [];
     for (let yr = newest + 2; yr >= newest + 1; yr--) {
