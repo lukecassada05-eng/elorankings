@@ -20,7 +20,8 @@ window.initSportPage = function(CFG) {
       if (tab.dataset.tab === 'bracketology') renderBracketology();
       if (tab.dataset.tab === 'resume')       renderResume();
       if (tab.dataset.tab === 'history')      renderHistory();
-      if (tab.dataset.tab === 'tracker')     renderSeasonTracker();
+      if (tab.dataset.tab === 'tracker')      renderSeasonTracker();
+      if (tab.dataset.tab === 'confhistory') renderConfHistory();
     });
   });
 
@@ -68,7 +69,8 @@ window.initSportPage = function(CFG) {
       if (pn === 'bracketology') renderBracketology();
       if (pn === 'resume')       renderResume();
       if (pn === 'history')      renderHistory();
-      if (pn === 'tracker')     renderSeasonTracker();
+      if (pn === 'tracker')      renderSeasonTracker();
+      if (pn === 'confhistory') renderConfHistory();
     }
   }
 
@@ -843,7 +845,157 @@ async function findAvailableSeason() {
     return CFG.seasons[0];
   }
 
-  async function checkForNewerSeasons() {
+  // ── Conference / Division / League History ────────────────
+  async function renderConfHistory() {
+    const el = document.getElementById('panel-confhistory');
+    if (!el) return;
+
+    el.innerHTML = '<div class="loading"><div class="spinner"></div>Loading all seasons…</div>';
+
+    const years = (CFG.seasons || []).slice().reverse();
+    for (const yr of years) {
+      if (!allSeasonData[yr]) {
+        const raw = await fetchCSV(CFG.dataPath + yr + '.csv');
+        if (raw) allSeasonData[yr] = raw.map(coerceRow);
+      }
+    }
+
+    const sport = CFG.sport;
+    const getGroups = (row) => {
+      const conf = (row.conference || '').trim();
+      if (!conf || conf === 'NA' || conf === 'FCS' || conf === 'Other D1') return [];
+      if (sport === 'NFL') {
+        const parts = conf.split(' ');
+        return parts.length >= 2 ? [conf, parts[0]] : [conf];
+      }
+      if (sport === 'NHL') {
+        const m = {'Atlantic':'Eastern','Metropolitan':'Eastern','Central':'Western','Pacific':'Western'};
+        return m[conf] ? [conf, m[conf] + ' Conference'] : [conf];
+      }
+      if (sport === 'MLB') {
+        const parts = conf.split(' ');
+        if (parts.length >= 2) {
+          const lg = parts[0] === 'AL' ? 'American League' : 'National League';
+          return [conf, lg];
+        }
+        return [conf];
+      }
+      return [conf];
+    };
+
+    const groupData = {};
+    for (const yr of years) {
+      const d = allSeasonData[yr];
+      if (!d) continue;
+      for (const row of d) {
+        if (row.games_played < 4) continue;
+        for (const g of getGroups(row)) {
+          if (!groupData[g]) groupData[g] = {};
+          if (!groupData[g][yr]) groupData[g][yr] = [];
+          groupData[g][yr].push(row.elo);
+        }
+      }
+    }
+
+    if (!Object.keys(groupData).length) {
+      el.innerHTML = '<div class="empty-state">No data available.</div>';
+      return;
+    }
+
+    const avgData = {};
+    for (const [g, ym] of Object.entries(groupData)) {
+      avgData[g] = {};
+      for (const [yr, elos] of Object.entries(ym)) {
+        avgData[g][yr] = Math.round((elos.reduce((a,b)=>a+b,0)/elos.length)*10)/10;
+      }
+    }
+
+    const lastYr = years[years.length-1];
+    const sortedGroups = Object.keys(avgData).sort((a,b)=>(avgData[b][lastYr]||0)-(avgData[a][lastYr]||0));
+
+    el.innerHTML = `
+      <div class="history-wrap">
+        <div style="margin-bottom:1rem;display:flex;gap:0.75rem;flex-wrap:wrap;align-items:flex-start">
+          <div>
+            <input type="text" id="confHistSearch" placeholder="Filter groups…"
+              style="width:190px;font-family:var(--font-mono);font-size:0.75rem;
+                     background:var(--bg3);border:1px solid var(--border-md);color:var(--text);
+                     border-radius:var(--radius);padding:0.3rem 0.6rem;margin-bottom:0.3rem;display:block">
+            <select id="confHistSelect" multiple size="7"
+              style="width:220px;font-family:var(--font-mono);font-size:0.73rem;
+                     background:var(--bg3);border:1px solid var(--border-md);color:var(--text);
+                     border-radius:var(--radius);padding:0.2rem">
+              ${sortedGroups.map((g,i)=>`<option value="${g}" ${i<5?'selected':''}>${g}</option>`).join('')}
+            </select>
+            <div style="font-size:0.65rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.2rem">
+              Ctrl/Cmd to select multiple
+            </div>
+          </div>
+          <button id="confHistDraw"
+            style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
+                   padding:0.45rem 1rem;font-family:var(--font-mono);font-size:0.78rem;
+                   font-weight:600;cursor:pointer;align-self:center">
+            ▶ Draw chart
+          </button>
+        </div>
+        <div class="history-canvas-wrap"><canvas id="confHistCanvas"></canvas></div>
+      </div>`;
+
+    const selEl = document.getElementById('confHistSelect');
+    document.getElementById('confHistSearch')?.addEventListener('input', e => {
+      const q = e.target.value.toLowerCase();
+      const sel = new Set([...selEl.selectedOptions].map(o=>o.value));
+      selEl.innerHTML = sortedGroups.filter(g=>!q||g.toLowerCase().includes(q))
+        .map(g=>`<option value="${g}" ${sel.has(g)?'selected':''}>${g}</option>`).join('');
+    });
+
+    const COLORS = ['#e2c97e','#7eb5e8','#7dd4a8','#e07a65','#c07dcc','#f0a060','#60d0c0','#a0e070','#e070a0','#70a0e0'];
+    const labels = years.map(String);
+
+    const drawChart = async () => {
+      const selected = [...(selEl?.selectedOptions||[])].map(o=>o.value);
+      if (!selected.length) return;
+      if (!window.Chart) {
+        await new Promise((res,rej)=>{
+          const s=document.createElement('script');
+          s.src='https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js';
+          s.onload=res; s.onerror=rej; document.head.appendChild(s);
+        });
+      }
+      if (window._confHistChart) { window._confHistChart.destroy(); window._confHistChart=null; }
+      window._confHistChart = new Chart(document.getElementById('confHistCanvas'), {
+        type: 'line',
+        data: {
+          labels,
+          datasets: selected.map((g,i)=>({
+            label: g,
+            data: labels.map(yr=>avgData[g][parseInt(yr)]??null),
+            borderColor: COLORS[i%COLORS.length],
+            backgroundColor: COLORS[i%COLORS.length]+'18',
+            borderWidth:2.5, pointRadius:3, tension:0.35, fill:false, spanGaps:true
+          }))
+        },
+        options: {
+          responsive:true, maintainAspectRatio:false,
+          interaction:{intersect:false,mode:'index'},
+          scales: {
+            x:{ticks:{color:'#c0bcb6',font:{size:11,family:'monospace'}},grid:{color:'rgba(255,255,255,0.04)'}},
+            y:{title:{display:true,text:'Avg Elo',color:'#c0bcb6',font:{size:11}},
+               ticks:{color:'#c0bcb6',font:{family:'monospace',size:11}},
+               grid:{color:'rgba(255,255,255,0.06)'}}
+          },
+          plugins:{
+            legend:{labels:{color:'#c0bcb6',font:{family:'monospace',size:11},boxWidth:16}},
+            tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+(ctx.parsed.y||0).toFixed(1)}}
+          }
+        }
+      });
+    };
+    document.getElementById('confHistDraw')?.addEventListener('click', drawChart);
+    drawChart();
+  }
+
+    async function checkForNewerSeasons() {
     const newest = CFG.seasons[0];
     const added  = [];
     for (let yr = newest + 2; yr >= newest + 1; yr--) {
