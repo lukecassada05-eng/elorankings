@@ -277,3 +277,153 @@ footer a:hover{color:var(--accent)}
 @media(max-width:768px) {
   .nav-links { display: none; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   MOBILE / TABLET RESPONSIVE
+   Breakpoints: tablet = 768px, mobile = 480px
+   Desktop layout unchanged above 768px.
+   ═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  /* Nav */
+  .nav-inner { padding: 0 1rem; }
+  .nav-links  { display: none; }   /* hide desktop links */
+  .nav-mobile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+  }
+  .nav-mobile-links a {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: var(--radius);
+    white-space: nowrap;
+  }
+  .nav-mobile-links a:hover { color: var(--accent); }
+
+  /* Page padding */
+  .page { padding: 0 1rem; }
+
+  /* Hero */
+  h1 { font-size: 2.5rem !important; }
+  .hero-sub { font-size: 0.88rem !important; }
+
+  /* Stat strip — 2 columns */
+  .stat-strip {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  /* Sport cards — 1 column */
+  .sports-grid { grid-template-columns: 1fr !important; }
+  .sport-card  { padding: 1rem !important; }
+
+  /* Methodology grid — stack */
+  div[style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Data sources grid */
+  div[style*="grid-template-columns:repeat(auto-fill"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Page header on sport pages */
+  .page-header h1 { font-size: 2rem !important; }
+
+  /* Season picker — scrollable row */
+  #seasonPicker {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0.4rem !important;
+    padding-bottom: 0.25rem !important;
+    scrollbar-width: none !important;
+  }
+  #seasonPicker::-webkit-scrollbar { display: none; }
+  .season-btn { flex-shrink: 0 !important; }
+
+  /* Tabs — horizontal scroll */
+  .tabs {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0 !important;
+    border-bottom: 1px solid var(--border) !important;
+    scrollbar-width: none !important;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex-shrink: 0 !important;
+    font-size: 0.68rem !important;
+    padding: 0.5rem 0.75rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* Summary cards — 2 columns */
+  .summary-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+  .stat-card-val { font-size: 1.4rem !important; }
+
+  /* Controls — stack */
+  .controls {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+  .ctrl-group { flex: 1 1 140px !important; }
+  .search-wrap { flex: 1 1 100% !important; }
+
+  /* Table — horizontal scroll */
+  .table-wrap {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin: 0 -1rem !important;
+    padding: 0 1rem !important;
+  }
+  .tbl { min-width: 600px !important; }
+  td.team-name { max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* Predictor — stack teams vertically */
+  .pred-result .prob-nums {
+    flex-direction: column !important;
+    gap: 0.25rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  /* History/tracker canvas — shorter */
+  .history-canvas-wrap { height: 220px !important; }
+
+  /* Conf history select */
+  #confHistSelect { width: 100% !important; }
+
+  /* Greatest teams table */
+  .greatest-wrap .table-wrap { margin: 0 -1rem !important; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2rem !important; }
+  .stat-strip { grid-template-columns: repeat(2, 1fr) !important; }
+  .summary-cards { grid-template-columns: 1fr 1fr !important; }
+  .sport-card { padding: 0.85rem !important; }
+  .tab { font-size: 0.62rem !important; padding: 0.4rem 0.55rem !important; }
+  .tbl { min-width: 480px !important; }
+  .page { padding: 0 0.75rem; }
+  .history-canvas-wrap { height: 180px !important; }
+}
+
+/* Nav mobile links visible only on mobile */
+.nav-mobile-links { display: none; }
+@media (max-width: 768px) {
+  .nav-mobile-links { display: flex; }
+}
