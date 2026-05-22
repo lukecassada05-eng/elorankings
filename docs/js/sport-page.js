@@ -1485,9 +1485,7 @@ async function findAvailableSeason() {
           style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);
                  border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);
                  padding:0.2rem 0.4rem">
-          ${(CFG.seasons||[]).slice(0,5).map(y=>
-            `<option value="${y}" ${y===_pk.yr?'selected':''}>${y}</option>`
-          ).join('')}
+          ${(CFG.seasons||[]).slice(0,5).map(function(y){return '<option value="'+y+'" '+(y===_pk.yr?'selected':'')+'>'+y+'</option>';}).join('')}
         </select>
       </div>
     </div>
@@ -1506,9 +1504,7 @@ async function findAvailableSeason() {
         style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);
                border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);
                padding:0.2rem 0.4rem">
-        ${(CFG.seasons||[]).slice(0,5).map(y=>
-          `<option value="${y}">${y} Elo</option>`
-        ).join('')}
+        ${(CFG.seasons||[]).slice(0,5).map(function(y){return '<option value="'+y+'">'+y+' Elo</option>';}).join('')}
       </select>
       <button onclick="pkAutoPredict()"
         style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
@@ -1524,14 +1520,15 @@ async function findAvailableSeason() {
 
   <!-- Phase tabs -->
   <div style="display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1rem" id="pk-tabs">
-    ${[['reg','📅 Regular Season'],['conf','🏆 Conf Championships'],['cfp','🎯 CFP Bracket']].map(([ph,lb],i)=>`
-      <button onclick="pkGo('${ph}')" id="pk-tab-${ph}"
-        style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.85rem;border:none;
-               border-bottom:2px solid ${i===0?'var(--accent)':'transparent'};margin-bottom:-2px;
-               background:transparent;cursor:pointer;white-space:nowrap;
-               color:${i===0?'var(--accent)':'var(--text-muted)'}">
-        ${lb}
-      </button>`).join('')}
+    ${[['reg','📅 Regular Season'],['conf','🏆 Conf Championships'],['cfp','🎯 CFP Bracket'.map(function(item,i){
+        var ph=item[0],lb=item[1];
+        var bc=i===0?'var(--accent)':'transparent';
+        var col=i===0?'var(--accent)':'var(--text-muted)';
+        return '<button onclick="pkGo(\''+ph+'\''+')" id="pk-tab-'+ph+'"'
+          +' style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.85rem;border:none;'
+          +'border-bottom:2px solid '+bc+';margin-bottom:-2px;background:transparent;cursor:pointer;'
+          +'white-space:nowrap;color:'+col+'">'+lb+'</button>';
+      }).join('')}
   </div>
 
   <div id="pk-panel-reg"></div>
@@ -1969,117 +1966,141 @@ async function findAvailableSeason() {
     if (!el) return;
     pkBuildStandings();
 
-    let html = `
-      <div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);
-                  margin-bottom:1rem;background:var(--bg2);border:1px solid var(--border);
-                  border-radius:var(--radius-lg);padding:0.75rem 1rem;line-height:1.6">
-        Standings built from your regular season picks.
-        <strong style="color:var(--text)">Sun Belt & MAC</strong> use division leaders.
-        All other conferences: top-2 by conf W% (tiebreaker: H2H → overall W% → Elo).
-        Enter the championship game score to finalize each conference champion.
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
-                  gap:1rem;margin-bottom:1.2rem">`;
+    let html = '<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);'
+      + 'margin-bottom:1rem;background:var(--bg2);border:1px solid var(--border);'
+      + 'border-radius:var(--radius-lg);padding:0.75rem 1rem;line-height:1.6">'
+      + 'Standings from your picks. <strong style="color:var(--text)">Sun Belt &amp; MAC</strong>'
+      + ' use East/West division leaders. All others: top-2 by conf W%'
+      + ' (tiebreaker: H2H from your picks → overall W% → Elo).'
+      + ' Enter the championship game score to set the conf champion.'
+      + '</div>'
+      + '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));'
+      + 'gap:1rem;margin-bottom:1.2rem">';
 
     for (const conf of Object.keys(PK_CONFS)) {
       if (conf === 'Independent') continue;
-      const allTeamObjs = (PK_CONFS[conf]||[]).map(pkTeamObj);
+      const allTeamObjs = (PK_CONFS[conf] || []).map(pkTeamObj);
       const matchup  = pkGetChampMatchup(conf);
-      const homeT    = matchup.homeTeam?.team || '';
-      const awayT    = matchup.awayTeam?.team || '';
-      const existing = _pk.confGames.find(g => g.conf === conf);
+      const homeT    = (matchup.homeTeam && matchup.homeTeam.team) || '';
+      const awayT    = (matchup.awayTeam && matchup.awayTeam.team) || '';
+      const existing = _pk.confGames.find(function(g){ return g.conf === conf; });
       if (existing) { existing.homeTeam = homeT; existing.awayTeam = awayT; }
-      const hs    = existing?.homeScore ?? '';
-      const as_   = existing?.awayScore ?? '';
-      const champ = existing?.champ || '';
+      const hs    = (existing && existing.homeScore != null) ? existing.homeScore : '';
+      const as_   = (existing && existing.awayScore != null) ? existing.awayScore : '';
+      const champ = (existing && existing.champ) || '';
       const divDef = CONF_DIV_MAP[conf];
 
-      html += `<div style="background:var(--bg2);border:1px solid var(--border);
-                            border-radius:var(--radius-lg);padding:0.85rem">
-        <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;
-                    text-transform:uppercase;color:var(--text-dim);margin-bottom:0.5rem">
-          ${conf}
-          <span style="color:var(--text-dim);font-weight:400;text-transform:none;letter-spacing:0">
-            ${divDef ? '· East/West divisions' : '· no divisions'}
-          </span>
-        </div>`;
+      html += '<div style="background:var(--bg2);border:1px solid var(--border);'
+            + 'border-radius:var(--radius-lg);padding:0.85rem">';
+
+      // Conf name header
+      html += '<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;'
+            + 'text-transform:uppercase;color:var(--text-dim);margin-bottom:0.5rem">'
+            + conf
+            + '<span style="color:var(--text-dim);font-weight:400;text-transform:none;letter-spacing:0">'
+            + (divDef ? ' · East/West divisions' : ' · no divisions')
+            + '</span></div>';
 
       if (divDef) {
-        // Show each division separately
-        html += `<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.6rem">`;
-        for (const [div, divTeams] of Object.entries(divDef)) {
-          const divObjs = pkSortTeams(allTeamObjs.filter(t => divTeams.includes(t.team)));
-          html += `<div>
-            <div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);
-                        text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.2rem">${div}</div>
-            ${divObjs.slice(0,5).map((t,i) => {
-              const color = i===0 ? 'var(--text)' : 'var(--text-muted)';
-              const fw = i===0 ? '600' : '400';
-              return '<div style="display:flex;gap:0.25rem;padding:0.1rem 0;font-size:0.7rem;color:'+color+'">'
-                + '<span style="flex:1;font-weight:'+fw+'">'+t.team+'</span>'
-                + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'–'+t.cl+'</span>'
-                + '<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'–'+t.l+')</span>'
-                + '</div>';
-            }).join('')}
-          </div>`;
+        // Show each division with its standings
+        html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.6rem">';
+        for (const div in divDef) {
+          const divTeams = divDef[div];
+          const divObjs  = pkSortTeams(allTeamObjs.filter(function(t){ return divTeams.indexOf(t.team) !== -1; }));
+          html += '<div>';
+          html += '<div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);'
+                + 'text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.2rem">' + div + '</div>';
+          for (let i = 0; i < Math.min(divObjs.length, 5); i++) {
+            const t     = divObjs[i];
+            const color = i === 0 ? 'var(--text)' : 'var(--text-muted)';
+            const fw    = i === 0 ? '600' : '400';
+            html += '<div style="display:flex;gap:0.25rem;padding:0.1rem 0;font-size:0.7rem;color:' + color + '">'
+                  + '<span style="flex:1;font-weight:' + fw + '">' + t.team + '</span>'
+                  + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">' + t.cw + '–' + t.cl + '</span>'
+                  + '<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">(' + t.w + '–' + t.l + ')</span>'
+                  + '</div>';
+          }
+          html += '</div>';
         }
-        html += `</div>`;
+        html += '</div>';
       } else {
-        // No divisions — show full conf standings
+        // No divisions — show full conf standings top 8
         const sorted = pkSortTeams(allTeamObjs);
-        html += `<div style="margin-bottom:0.6rem">
-          ${sorted.slice(0,8).map((t,i) => {
-            const color = i<2 ? 'var(--text)' : 'var(--text-muted)';
-            const fw = i<2 ? '600' : '400';
-            return '<div style="display:flex;gap:0.3rem;padding:0.1rem 0;font-size:0.72rem;color:'+color+'">'
-              + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);min-width:14px;text-align:right">'+(i+1)+'</span>'
-              + '<span style="flex:1;font-weight:'+fw+'">'+t.team+'</span>'
-              + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">'+t.cw+'–'+t.cl+'</span>'
-              + '<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">('+t.w+'–'+t.l+')</span>'
-              + '</div>';
-          }).join('')}
-          ${sorted.length>8 ? '<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.1rem">+' + (sorted.length-8) + ' more</div>' : ''}
-        </div>`;
+        html += '<div style="margin-bottom:0.6rem">';
+        for (let i = 0; i < Math.min(sorted.length, 8); i++) {
+          const t     = sorted[i];
+          const color = i < 2 ? 'var(--text)' : 'var(--text-muted)';
+          const fw    = i < 2 ? '600' : '400';
+          html += '<div style="display:flex;gap:0.3rem;padding:0.1rem 0;font-size:0.72rem;color:' + color + '">'
+                + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);min-width:14px;text-align:right">' + (i+1) + '</span>'
+                + '<span style="flex:1;font-weight:' + fw + '">' + t.team + '</span>'
+                + '<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">' + t.cw + '–' + t.cl + '</span>'
+                + '<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.2rem">(' + t.w + '–' + t.l + ')</span>'
+                + '</div>';
+        }
+        if (sorted.length > 8) {
+          html += '<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-top:0.1rem">+' + (sorted.length - 8) + ' more</div>';
+        }
+        html += '</div>';
       }
 
-      html += `
-        <div style="border-top:1px solid var(--border);padding-top:0.55rem">
-          <div data-conf-label="${conf}"
-               style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);
-                      margin-bottom:0.35rem">
-            ${champ
-              ? `Championship · <strong style="color:var(--accent)">${champ} wins</strong>`
-              : homeT&&awayT ? `Championship game · ${homeT} vs ${awayT}` : 'Championship · TBD'}
-          </div>
-          <div style="display:flex;align-items:center;gap:0.3rem;flex-wrap:wrap">
-            <span style="flex:1;font-size:0.74rem;font-weight:600;min-width:90px">${homeT||'TBD'}</span>
-            <input type="number" min="0" max="99" value="${hs}" placeholder="—"
-              onchange="pkCG('${conf}','home',this.value,'${homeT}','${awayT}')"
-              style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.8rem;
-                     background:var(--bg3);border:1px solid var(--border-md);color:var(--text);
-                     border-radius:var(--radius);padding:0.25rem">
-            <span style="color:var(--text-dim)">–</span>
-            <input type="number" min="0" max="99" value="${as_}" placeholder="—"
-              onchange="pkCG('${conf}','away',this.value,'${homeT}','${awayT}')"
-              style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.8rem;
-                     background:var(--bg3);border:1px solid var(--border-md);color:var(--text);
-                     border-radius:var(--radius);padding:0.25rem">
-            <span style="flex:1;text-align:right;font-size:0.74rem;font-weight:600;min-width:90px">${awayT||'TBD'}</span>
-          </div>
-        </div>
-      </div>`;
+      // Championship game input
+      let champLabel;
+      if (champ) {
+        champLabel = 'Championship &middot; <strong style="color:var(--accent)">' + champ + ' wins</strong>';
+      } else if (homeT && awayT) {
+        champLabel = 'Championship game &middot; ' + homeT + ' vs ' + awayT;
+      } else {
+        champLabel = 'Championship &middot; TBD';
+      }
+
+      // Safe onchange: use data attributes to avoid quote escaping issues
+      const confId = conf.replace(/[^a-zA-Z0-9]/g, '_');
+
+      html += '<div style="border-top:1px solid var(--border);padding-top:0.55rem">'
+            + '<div data-conf-label="' + conf + '" style="font-family:var(--font-mono);font-size:0.58rem;'
+            + 'color:var(--text-dim);margin-bottom:0.35rem">' + champLabel + '</div>'
+            + '<div style="display:flex;align-items:center;gap:0.3rem;flex-wrap:wrap">'
+            + '<span style="flex:1;font-size:0.74rem;font-weight:600;min-width:90px">' + (homeT || 'TBD') + '</span>'
+            + '<input type="number" min="0" max="99" value="' + hs + '" placeholder="—"'
+            + ' data-conf="' + confId + '" data-side="home"'
+            + ' onchange="pkCGbyAttr(this)"'
+            + ' style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.8rem;'
+            + 'background:var(--bg3);border:1px solid var(--border-md);color:var(--text);'
+            + 'border-radius:var(--radius);padding:0.25rem">'
+            + '<span style="color:var(--text-dim)">–</span>'
+            + '<input type="number" min="0" max="99" value="' + as_ + '" placeholder="—"'
+            + ' data-conf="' + confId + '" data-side="away"'
+            + ' onchange="pkCGbyAttr(this)"'
+            + ' style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.8rem;'
+            + 'background:var(--bg3);border:1px solid var(--border-md);color:var(--text);'
+            + 'border-radius:var(--radius);padding:0.25rem">'
+            + '<span style="flex:1;text-align:right;font-size:0.74rem;font-weight:600;min-width:90px">' + (awayT || 'TBD') + '</span>'
+            + '</div></div>'
+            + '</div>';
     }
 
-    html += `</div>
-      <div style="display:flex;justify-content:flex-end">
-        <button onclick="pkGo('cfp')"
-          style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);
-                 padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;
-                 font-weight:600;cursor:pointer">
-          Generate CFP Bracket + Top 25 →
-        </button>
-      </div>`;
+    html += '</div>'
+          + '<div style="display:flex;justify-content:flex-end">'
+          + '<button onclick="pkGo('cfp')" style="background:var(--accent);color:#1a1611;border:none;'
+          + 'border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);'
+          + 'font-size:0.73rem;font-weight:600;cursor:pointer">Generate CFP Bracket + Top 25 →</button>'
+          + '</div>';
+
     el.innerHTML = html;
+
+    // Store homeT/awayT mapping by confId for pkCGbyAttr
+    window._pkConfMap = window._pkConfMap || {};
+    for (const conf of Object.keys(PK_CONFS)) {
+      if (conf === 'Independent') continue;
+      const matchup = pkGetChampMatchup(conf);
+      const confId  = conf.replace(/[^a-zA-Z0-9]/g, '_');
+      window._pkConfMap[confId] = {
+        conf,
+        homeT: (matchup.homeTeam && matchup.homeTeam.team) || '',
+        awayT: (matchup.awayTeam && matchup.awayTeam.team) || '',
+      };
+    }
   }
 
   window.pkCG = function(conf, side, val, homeT, awayT) {
@@ -2108,6 +2129,18 @@ async function findAvailableSeason() {
         ? `Championship · <strong style="color:var(--accent)">${e.champ} wins</strong>`
         : `Championship game · ${homeT} vs ${awayT}`;
     }
+  };
+
+  // Uses data-conf and data-side attributes — no quote escaping needed
+  window.pkCGbyAttr = function(input) {
+    const confId = input.getAttribute('data-conf');
+    const side   = input.getAttribute('data-side');
+    const val    = input.value;
+    const map    = (window._pkConfMap && window._pkConfMap[confId]) || {};
+    const conf   = map.conf   || confId.replace(/_/g, ' ');
+    const homeT  = map.homeT  || '';
+    const awayT  = map.awayT  || '';
+    pkCG(conf, side, val, homeT, awayT);
   };
 
   // ── PHASE 3: CFP BRACKET + RANKINGS ──────────────────────
@@ -2202,42 +2235,38 @@ async function findAvailableSeason() {
       [seeds[7], seeds[8]],
     ];
 
-    const rec = t => `${t.w}–${t.l}`;
-    const cRec = t => (t.cw||t.cl) ? `${t.cw}–${t.cl}` : '';
+    const rec  = function(t){ return t.w+'–'+t.l; };
+    const cRec = function(t){ return (t.cw||t.cl) ? t.cw+'–'+t.cl : ''; };
 
-    const seedRow = s => `
-      <div style="display:flex;align-items:center;gap:0.35rem;padding:0.26rem 0.5rem;
-                  margin-bottom:0.18rem;border-radius:var(--radius);
-                  background:${s.seed<=4?'rgba(226,201,126,0.09)':'var(--bg3)'};
-                  border:1px solid ${s.seed<=4?'var(--accent)':'var(--border)'}">
-        <div style="font-family:var(--font-mono);font-size:0.64rem;color:var(--text-dim);
-                    min-width:16px;text-align:right">${s.seed}</div>
-        <div style="flex:1;font-size:0.75rem;font-weight:500">${s.team}
-          ${s.bye?`<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);
-                               margin-left:0.2rem">BYE</span>`:''}
-          ${champSet.has(s.team)?`<span style="font-size:0.5rem;color:var(--text-dim);
-                                              font-family:var(--font-mono);margin-left:0.15rem">
-                                    ${s.conf}★</span>`:''}
-        </div>
-        <div style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);min-width:32px;text-align:right">${rec(s)}</div>
-        <div style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);min-width:26px;text-align:right">${cRec(s)}</div>
-        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">${s.elo.toFixed(0)}</div>
-      </div>`;
+    const seedRow = function(s) {
+      var bg  = s.seed<=4 ? 'rgba(226,201,126,0.09)' : 'var(--bg3)';
+      var bdr = s.seed<=4 ? 'var(--accent)' : 'var(--border)';
+      var bye = s.bye ? '<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">BYE</span>' : '';
+      var star = champSet.has(s.team) ? '<span style="font-size:0.5rem;color:var(--text-dim);font-family:var(--font-mono);margin-left:0.15rem">'+s.conf+'★</span>' : '';
+      return '<div style="display:flex;align-items:center;gap:0.35rem;padding:0.26rem 0.5rem;'
+        +'margin-bottom:0.18rem;border-radius:var(--radius);background:'+bg+';border:1px solid '+bdr+'">'
+        +'<div style="font-family:var(--font-mono);font-size:0.64rem;color:var(--text-dim);min-width:16px;text-align:right">'+s.seed+'</div>'
+        +'<div style="flex:1;font-size:0.75rem;font-weight:500">'+s.team+bye+star+'</div>'
+        +'<div style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);min-width:32px;text-align:right">'+rec(s)+'</div>'
+        +'<div style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);min-width:26px;text-align:right">'+cRec(s)+'</div>'
+        +'<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">'+s.elo.toFixed(0)+'</div>'
+        +'</div>';
+    };
 
-    const r1Row = ([hi,lo]) => `
-      <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.28rem;
-                  background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);
-                  padding:0.32rem 0.6rem">
-        <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">#${hi.seed}</span>
-        <span style="flex:1;font-size:0.75rem;font-weight:600">${hi.team}</span>
-        <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted)">${rec(hi)}</span>
-        <span style="font-size:0.62rem;color:var(--text-dim);font-family:var(--font-mono);margin:0 0.2rem">vs</span>
-        <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted)">${rec(lo)}</span>
-        <span style="flex:1;font-size:0.75rem;text-align:right">${lo.team}</span>
-        <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">#${lo.seed}</span>
-        <span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);
-                     margin-left:0.25rem">@ #${hi.seed}</span>
-      </div>`;
+    const r1Row = function(pair) {
+      var hi=pair[0], lo=pair[1];
+      return '<div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.28rem;'
+        +'background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.6rem">'
+        +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">#'+hi.seed+'</span>'
+        +'<span style="flex:1;font-size:0.75rem;font-weight:600">'+hi.team+'</span>'
+        +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted)">'+rec(hi)+'</span>'
+        +'<span style="font-size:0.62rem;color:var(--text-dim);font-family:var(--font-mono);margin:0 0.2rem">vs</span>'
+        +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted)">'+rec(lo)+'</span>'
+        +'<span style="flex:1;font-size:0.75rem;text-align:right">'+lo.team+'</span>'
+        +'<span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim)">#'+lo.seed+'</span>'
+        +'<span style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);margin-left:0.25rem">@ #'+hi.seed+'</span>'
+        +'</div>';
+    };
 
     el.innerHTML = `
 <div>
@@ -2286,14 +2315,14 @@ async function findAvailableSeason() {
         Seeds 1–4 (BYE): top 4 conf champs · 5–12: champs + at-large
         <span style="margin-left:0.5rem;color:var(--text-dim)">W–L · Conf · Elo</span>
       </div>
-      ${seeds.map(seedRow).join('')}
+      ${seeds.map(function(s){return seedRow(s);}).join('')}
     </div>
     <div>
       <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
                   text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">
         First Round — campus sites
       </div>
-      ${r1.map(r1Row).join('')}
+      ${r1.map(function(p){return r1Row(p);}).join('')}
 
       <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
                   text-transform:uppercase;color:var(--text-dim);margin:0.8rem 0 0.4rem">
@@ -2302,7 +2331,7 @@ async function findAvailableSeason() {
       <div style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);
                   line-height:1.9;background:var(--bg2);border:1px solid var(--border);
                   border-radius:var(--radius);padding:0.55rem 0.7rem">
-        ${seeds.slice(0,4).map(s=>`#${s.seed} ${s.team} (${rec(s)}) hosts lowest remaining`).join('<br>')}
+        ${seeds.slice(0,4).map(function(s){return '#'+s.seed+' '+s.team+' ('+rec(s)+') hosts lowest remaining';}).join('<br>')}
       </div>
 
       <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;
