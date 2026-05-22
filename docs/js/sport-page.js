@@ -1340,6 +1340,51 @@ async function findAvailableSeason() {
       _pk.eloSim[cw]=rW2+K*Math.log(m2+1)*(1-eW2);
       _pk.eloSim[cl]=rL2-K*Math.log(m2+1)*(1-eW2);
     }
+    // Build playoff rating for every team
+    // Formula: PlayoffRating = Elo + sqrt(sum of beaten opponents' Elo)
+    // This rewards beating strong teams (resume strength) on top of raw Elo
+    _pk.playoffRating = {};
+    var allGames = _pk.schedule.concat(_pk.confGames.map(function(cg){
+      return {homeTeam:cg.homeTeam,awayTeam:cg.awayTeam,
+              scores:{homeScore:cg.homeScore,awayScore:cg.awayScore},
+              id:'cg_'+cg.conf};
+    }));
+    // Collect wins per team
+    var wins_by = {};
+    for(var gi=0;gi<_pk.schedule.length;gi++){
+      var g=_pk.schedule[gi];
+      var s=_pk.scores[g.id];
+      if(!s||s.homeScore==null||s.awayScore==null) continue;
+      var hs=parseInt(s.homeScore),as_=parseInt(s.awayScore);
+      if(isNaN(hs)||isNaN(as_)||hs===as_) continue;
+      var winner=pkResolve(hs>as_?g.homeTeam:g.awayTeam);
+      var loser=pkResolve(hs>as_?g.awayTeam:g.homeTeam);
+      if(!wins_by[winner]) wins_by[winner]=[];
+      wins_by[winner].push(loser);
+    }
+    for(var ci=0;ci<_pk.confGames.length;ci++){
+      var cg2=_pk.confGames[ci];
+      if(cg2.homeScore==null||cg2.awayScore==null||cg2.homeScore===cg2.awayScore) continue;
+      var cw2=cg2.homeScore>cg2.awayScore?cg2.homeTeam:cg2.awayTeam;
+      var cl2=cg2.homeScore>cg2.awayScore?cg2.awayTeam:cg2.homeTeam;
+      if(!wins_by[cw2]) wins_by[cw2]=[];
+      wins_by[cw2].push(cl2);
+    }
+    // Calculate playoff rating for each team
+    var allTeamNames = Object.keys(_pk.eloSim);
+    for(var ti=0;ti<allTeamNames.length;ti++){
+      var team=allTeamNames[ti];
+      var teamElo=_pk.eloSim[team]||1500;
+      var beaten=wins_by[team]||[];
+      var resumeSum=0;
+      for(var bi=0;bi<beaten.length;bi++){
+        var oppElo=_pk.eloSim[beaten[bi]]||_pk.eloBase[beaten[bi]]||1500;
+        resumeSum+=oppElo;
+      }
+      // sqrt of sum of beaten opponents' Elo = resume score
+      var resumeScore = beaten.length>0 ? Math.sqrt(resumeSum) : 0;
+      _pk.playoffRating[team] = teamElo + resumeScore;
+    }
   }
 
   function pkSort(teams){
@@ -1442,7 +1487,7 @@ async function findAvailableSeason() {
     for(var b=0;b<weeks.length;b+=BATCH){
       var batch=weeks.slice(b,b+BATCH);
       await Promise.all(batch.map(async function(wk){
-        var url='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups=80&limit=300';
+        var url='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&limit=900';
         try{
           var res=await fetch(url,{mode:'cors'});if(!res.ok) return;
           var data=await res.json();if(!data.events) return;
@@ -1519,6 +1564,17 @@ async function findAvailableSeason() {
       }
       html+='<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin:0.85rem 0 0.35rem;padding-top:0.5rem;border-top:1px solid var(--border)">'+label+range+' <span style="opacity:0.6">('+games.length+')</span></div>';
       games.forEach(function(g){
+        // Skip games where opponent is truly TBD (flex matchups not yet determined)
+        if(!g.homeTeam||!g.awayTeam||g.homeTeam==='TBD'||g.awayTeam==='TBD') {
+          html+='<div style="display:flex;align-items:center;gap:0.4rem;padding:0.25rem 0.55rem;margin-bottom:0.18rem;border-radius:var(--radius);background:var(--bg2);border:1px solid var(--border);opacity:0.5">'
+            +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:center">'+( g.date?new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'TBD')+'</div>'
+            +'<div style="flex:1;font-size:0.76rem;color:var(--text-muted)">'+(g.homeTeam&&g.homeTeam!=='TBD'?g.homeTeam:'TBD')+' H</div>'
+            +'<div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim);padding:0 0.5rem">vs</div>'
+            +'<div style="flex:1;text-align:right;font-size:0.76rem;color:var(--text-muted)">A '+(g.awayTeam&&g.awayTeam!=='TBD'?g.awayTeam:'TBD')+'</div>'
+            +'<div style="font-size:0.55rem;color:var(--text-dim);font-family:var(--font-mono);min-width:50px;text-align:right">Flex/TBD</div>'
+            +'</div>';
+          return;
+        }
         var s=_pk.scores[g.id]||{};
         var hs=s.homeScore!=null?s.homeScore:'';
         var as_=s.awayScore!=null?s.awayScore:'';
@@ -1582,6 +1638,7 @@ async function findAvailableSeason() {
     var filled=0;
     _pk.schedule.forEach(function(g){
       if(g.completed) return;
+      if(!g.homeTeam||!g.awayTeam||g.homeTeam==='TBD'||g.awayTeam==='TBD') return;
       var eH=getElo(g.homeTeam)+(g.neutral?0:45),eA=getElo(g.awayTeam);
       var absDiff=Math.abs(eH-eA);var favHome=(eH>=eA);
       var pool=POOLS[POOLS.length-1];
@@ -1748,15 +1805,18 @@ async function findAvailableSeason() {
       }
     });
 
-    // Step 2: rank ALL FBS teams by simulated Elo
+    // Step 2: rank ALL FBS teams by PLAYOFF RATING (Elo + resume)
     var allTeamSet={};
     Object.values(PK_CONFS).forEach(function(arr){arr.forEach(function(t){allTeamSet[t]=1;});});
     Object.keys(_pk.eloBase).forEach(function(t){allTeamSet[t]=1;});
     var allRanked=Object.keys(allTeamSet).map(function(t){
-      return {team:t,elo:_pk.eloSim[t]||_pk.eloBase[t]||0,
+      var elo=_pk.eloSim[t]||_pk.eloBase[t]||0;
+      return {team:t,elo:elo,
+              pr:_pk.playoffRating[t]||elo, // playoff rating
               conf:pkConfOf(t)||'—',w:_pk.wins[t]||0,l:_pk.losses[t]||0,
               cw:_pk.confWins[t]||0,cl:_pk.confLoss[t]||0};
-    }).filter(function(t){return t.elo>0;}).sort(function(a,b){return b.elo-a.elo;});
+    }).filter(function(t){return t.elo>0;})
+    .sort(function(a,b){return b.pr-a.pr;}); // sort by playoff rating
 
     // Step 3: identify the 5 highest-ranked conf champions
     var champByTeam={};
@@ -1832,22 +1892,28 @@ async function findAvailableSeason() {
 
     // Build Top 25 HTML
     var t25='<div style="margin-bottom:1.4rem">'
-      +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">Top 25 — simulated Elo after all picks &nbsp;★ = conf champion</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.2rem">Top 25 — Playoff Rankings &nbsp;★ = conf champion</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);margin-bottom:0.4rem">'
+      +'<span style="color:var(--accent)">PR</span> = Playoff Rating (Elo + √(sum of beaten opponents' Elo)) &nbsp;·&nbsp; Elo = power ranking'
+      +'</div>'
       +'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">'
       +'<div style="display:flex;gap:0.35rem;padding:0.2rem 0.6rem;background:var(--bg3);border-bottom:1px solid var(--border)">'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:22px;text-align:right">#</div>'
       +'<div style="flex:1;font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim)">Team</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:right">W-L</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:32px;text-align:right">Conf</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:42px;text-align:right" title="Playoff Rating = Elo + √(sum of beaten opponents Elo)">PR</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:38px;text-align:right">Elo</div>'
       +'</div>';
     top25.forEach(function(t,i){
       var star=champSet[t.team]?('<span style="font-size:0.5rem;color:var(--accent);font-family:var(--font-mono);margin-left:0.2rem">★'+champSet[t.team]+'</span>'):'';
+      var prVal=t.pr||t.elo;
       t25+='<div style="display:flex;align-items:center;gap:0.35rem;padding:0.22rem 0.6rem;border-bottom:1px solid var(--border)">'
         +'<div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);min-width:22px;text-align:right">'+(i+1)+'</div>'
         +'<div style="flex:1;font-size:0.75rem;font-weight:'+(champSet[t.team]?'600':'400')+'">'+t.team+star+'</div>'
         +'<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-muted);min-width:36px;text-align:right">'+rec(t)+'</div>'
         +'<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);min-width:32px;text-align:right">'+cRec(t)+'</div>'
+        +'<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--accent);min-width:42px;text-align:right" title="Playoff Rating">'+prVal.toFixed(0)+'</div>'
         +'<div style="font-family:var(--font-mono);font-size:0.63rem;color:var(--text-dim);min-width:38px;text-align:right">'+t.elo.toFixed(0)+'</div>'
         +'</div>';
     });
@@ -1857,8 +1923,8 @@ async function findAvailableSeason() {
     var fieldHtml='<div>'
       +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">CFP Field — 12 Teams</div>'
       +'<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-bottom:0.55rem;line-height:1.6">'
-      +'Seeds 1–4: highest-ranked teams overall (bye) · Seeds 5–12: ranked order, 5 conf champs guaranteed<br>'
-      +'★ = conf auto-bid · BYE = first-round bye · W-L · Conf W-L · Elo'
+      +'Seeds 1–4: highest playoff-rated teams overall (bye) · Seeds 5–12: ranked order, 5 conf champs guaranteed<br>'
+      +'★ = conf auto-bid · BYE = first-round bye · W-L · Conf W-L · PR = Playoff Rating'
       +'</div>';
     allSeeds.forEach(function(s){
       var bg=s.bye?'rgba(226,201,126,0.09)':'var(--bg3)';
