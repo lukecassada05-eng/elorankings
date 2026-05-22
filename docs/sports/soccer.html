@@ -21,6 +21,16 @@
       <li><a href="soccer.html" class="active">Soccer</a></li>
     </ul>
   </div>
+  <div class="nav-mobile-links">
+    <a href="../sports/nba.html">NBA</a>
+    <a href="../sports/cbb.html">CBB</a>
+    <a href="../sports/nfl.html">NFL</a>
+    <a href="../sports/cfb.html">CFB</a>
+    <a href="../sports/mlb.html">MLB</a>
+    <a href="../sports/cbase.html">C.Baseball</a>
+    <a href="../sports/nhl.html">NHL</a>
+    <a href="../sports/soccer.html">Soccer</a>
+  </div>
 </nav>
 
 <div class="page">
@@ -51,6 +61,7 @@
     <button class="tab" data-tab="predictor">Game Predictor</button>
     <button class="tab" data-tab="history">Elo History</button>
     <button class="tab" data-tab="tracker">Season Tracker</button>
+    <button class="tab" data-tab="greatest">Greatest Teams</button>
     <button class="tab" data-tab="confhistory">League History</button>
   </div>
 
@@ -109,6 +120,10 @@
 
   <div id="panel-tracker" hidden>
     <!-- populated by sport-page.js renderSeasonTracker() -->
+  </div>
+
+  <div id="panel-greatest" hidden>
+    <!-- populated by sport-page.js renderGreatestTeams() -->
   </div>
 
   <div id="panel-confhistory" hidden>
