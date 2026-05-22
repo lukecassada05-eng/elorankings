@@ -1921,7 +1921,7 @@ async function findAvailableSeason() {
     var t25='<div style="margin-bottom:1.4rem">'
       +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.2rem">Top 25 — Playoff Rankings &nbsp;★ = conf champion</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);margin-bottom:0.4rem">'
-      +'<span style="color:var(--accent)">PR</span> = Playoff Rating (Elo + √(sum of beaten opponents' Elo)) &nbsp;·&nbsp; Elo = power ranking'
+      +'<span style="color:var(--accent)">PR</span> = Playoff Rating (Elo + &#x221A;(sum of beaten opponents Elo)) &nbsp;&middot;&nbsp; Elo = power ranking'
       +'</div>'
       +'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">'
       +'<div style="display:flex;gap:0.35rem;padding:0.2rem 0.6rem;background:var(--bg3);border-bottom:1px solid var(--border)">'
