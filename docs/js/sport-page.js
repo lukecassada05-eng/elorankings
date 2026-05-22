@@ -200,6 +200,7 @@ window.initSportPage = function(CFG) {
           <div class="elo-bar-wrap"><span>${r.elo.toFixed(1)}</span>
           <div class="elo-bar" style="width:${bar}px"></div></div>
         </td>
+        ${CFG.sport==='CFB'?`<td class="num" data-val="${r.pr||r.elo}" style="color:var(--accent);font-weight:500">${(r.pr||r.elo).toFixed(1)}</td>`:''}
         <td class="record" data-val="${r.wins}">${r.record}</td>
         <td class="num" data-val="${r.win_pct}">${fmt.pct(r.win_pct)}</td>
         <td class="num" data-val="${r.sos}">${r.sos>0?r.sos.toFixed(1):'—'}</td>
@@ -214,7 +215,9 @@ window.initSportPage = function(CFG) {
     el.innerHTML = ctrlHtml + `<div class="table-wrap"><table class="tbl" id="mainTable">
       <thead><tr>
         <th data-type="num">Rank</th><th>Team</th><th>${CFG.confLabel}</th>
-        <th data-type="num">Elo</th><th data-type="num">Record</th>
+        <th data-type="num">Elo</th>
+        ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo + sqrt(Resume Score)">PR ⓘ</th>':''}
+        <th data-type="num">Record</th>
         <th data-type="num">Win%</th><th data-type="num">SOS</th>
         <th data-type="num">Best Win</th>${extraHeaders}
       </tr></thead><tbody>${rows}</tbody>
@@ -406,11 +409,12 @@ window.initSportPage = function(CFG) {
   function renderResume() {
     const el = document.getElementById('panel-resume');
     if (!el||!data.length) return;
-    const sorted = [...data].sort((a,b)=>(b.resume_score||0)-(a.resume_score||0));
+    const sorted = [...data].sort((a,b)=>CFG.sport==='CFB'?(b.pr||b.elo||0)-(a.pr||a.elo||0):(b.resume_score||0)-(a.resume_score||0));
     const rows = sorted.slice(0,120).map((r,i)=>`<tr>
       <td class="rank">${i+1}</td><td class="team-name">${r.team}</td>
       <td class="conf">${r.conference||'—'}</td>
       <td class="elo" data-val="${r.elo}">${r.elo.toFixed(1)}</td>
+      ${CFG.sport==='CFB'?`<td class="num" data-val="${r.pr||r.elo}" style="color:var(--accent);font-weight:500">${(r.pr||r.elo).toFixed(1)}</td>`:''}
       <td class="record">${r.record}</td>
       <td class="num" data-val="${r.resume_score||0}">${r.resume_score>0?Number(r.resume_score).toFixed(0):'—'}</td>
       <td class="num">${r.sos>0?r.sos.toFixed(1):'—'}</td>
@@ -418,7 +422,9 @@ window.initSportPage = function(CFG) {
     </tr>`).join('');
     el.innerHTML = `<div class="table-wrap"><table class="tbl" id="mainTable">
       <thead><tr><th data-type="num">Rank</th><th>Team</th><th>Conf</th>
-        <th data-type="num">Elo</th><th>Record</th>
+        <th data-type="num">Elo</th>
+        ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo + sqrt(Resume Score)">PR ⓘ</th>':''}
+        <th>Record</th>
         <th data-type="num">Resume Score</th><th data-type="num">SOS</th><th>Best Win</th>
       </tr></thead><tbody>${rows}</tbody></table></div>`;
     makeSortable(document.getElementById('mainTable'));
@@ -1294,6 +1300,19 @@ async function findAvailableSeason() {
     "Hawaii":"Hawai'i"
   };
 
+  // Set of all FBS team names for fast lookup
+  var _fbs_set = null;
+  function pkIsFBS(name) {
+    if (!_fbs_set) {
+      _fbs_set = new Set();
+      Object.values(PK_CONFS).forEach(function(arr){
+        arr.forEach(function(t){ _fbs_set.add(t); });
+      });
+      Object.keys(PK_ALIAS).forEach(function(k){ _fbs_set.add(k); });
+    }
+    return _fbs_set.has(name) || _fbs_set.has(PK_ALIAS[name]);
+  }
+
   function pkResolve(t){ return PK_ALIAS[t] || t; }
 
   function pkConfOf(team){
@@ -1503,15 +1522,17 @@ async function findAvailableSeason() {
               if(dt&&dt.startsWith('1970')) dt=null;
               var hs=completed?(parseInt(home.score)||null):null;
               var as_=completed?(parseInt(away.score)||null):null;
+              // Skip FCS-only games: require at least one FBS team
+              if(!pkIsFBS(hn)&&!pkIsFBS(an)) return;
               games.push({id:key,week:wk,date:dt,homeTeam:hn,awayTeam:an,
                 neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
               fetched++;
             }catch(e){}
           });
         }catch(e){}
-        // Also fetch Group of 5 + independent conferences (groups=81) for Pac-12 etc.
+        // Also fetch Pac-12 (group=9) which may not be in groups=80 for the new 2026 conference
         try{
-          var url81='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups=81&limit=300';
+          var url81='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups=9&limit=300';
           var res81=await fetch(url81,{mode:'cors'});
           if(res81.ok){
             var data81=await res81.json();
@@ -1532,6 +1553,8 @@ async function findAvailableSeason() {
                   if(dt81&&dt81.startsWith('1970')) dt81=null;
                   var hs81=completed81?(parseInt(home81.score)||null):null;
                   var as81=completed81?(parseInt(away81.score)||null):null;
+                  // Skip FCS-only games
+                  if(!pkIsFBS(hn81)&&!pkIsFBS(an81)) return;
                   games.push({id:key81,week:wk,date:dt81,homeTeam:hn81,awayTeam:an81,
                     neutral:!!(comp.neutralSite),completed:completed81,homeScore:hs81,awayScore:as81});
                   fetched++;

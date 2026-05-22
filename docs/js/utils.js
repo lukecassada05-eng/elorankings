@@ -183,16 +183,21 @@ window.setNavActive = function() {
 
 // ── Parse numeric fields on raw CSV rows ──────────────────────
 window.coerceRow = function(r) {
+  const elo          = parseFloat(r.elo)          || 0;
+  const resume_score = parseFloat(r.resume_score) || 0;
   return {
     ...r,
     rank:         parseInt(r.rank)          || 0,
-    elo:          parseFloat(r.elo)         || 0,
+    elo,
     wins:         parseInt(r.wins)          || 0,
     losses:       parseInt(r.losses)        || 0,
     games_played: parseInt(r.games_played)  || 0,
     win_pct:      parseFloat(r.win_pct)     || 0,
     sos:          parseFloat(r.sos)         || 0,
     best_win_elo: parseFloat(r.best_win_elo)|| 0,
+    resume_score,
+    // Playoff Rating: Elo + sqrt(resume_score) — rewards beating strong opponents
+    pr:           elo + Math.sqrt(resume_score),
   };
 };
 
