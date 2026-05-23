@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXB1QL8D8C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BXB1QL8D8C');
+  </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EloRankings — Sports Power Ratings</title>
@@ -176,5 +184,21 @@ document.getElementById('navToggle')?.addEventListener('click', () => {
   m.hidden = !m.hidden;
 });
 </script>
+  <script>
+    // Track sport card clicks from homepage
+    document.addEventListener('click', function(e) {
+      var card = e.target.closest('a[href]');
+      if (!card) return;
+      var href = card.getAttribute('href') || '';
+      var sport = href.replace(/.*\//, '').replace('.html', '').toUpperCase();
+      if (typeof gtag === 'function' && href.includes('sports/')) {
+        gtag('event', 'sport_click', {
+          event_category: 'Homepage',
+          event_label: sport,
+          sport: sport
+        });
+      }
+    });
+  </script>
 </body>
 </html>
