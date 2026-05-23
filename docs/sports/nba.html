@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXB1QL8D8C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BXB1QL8D8C');
+  </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NBA Elo Rankings — EloRankings</title>
@@ -115,25 +123,25 @@
   
 
   <div id="panel-history" hidden>
-    <!-- populated by sport-page.js renderHistory() -->
+    <!-- populated by sport-page.js?v=27 renderHistory() -->
   </div>
 
   <div id="panel-tracker" hidden>
-    <!-- populated by sport-page.js renderSeasonTracker() -->
+    <!-- populated by sport-page.js?v=27 renderSeasonTracker() -->
   </div>
 
   <div id="panel-greatest" hidden>
-    <!-- populated by sport-page.js renderGreatestTeams() -->
+    <!-- populated by sport-page.js?v=27 renderGreatestTeams() -->
   </div>
 
   <div id="panel-confhistory" hidden>
-    <!-- populated by sport-page.js renderConfHistory() -->
+    <!-- populated by sport-page.js?v=27 renderConfHistory() -->
   </div>
 </div><!-- .page -->
 
-<script src="../js/utils.js"></script>
-<script src="../js/season-tracker.js"></script>
-<script src="../js/sport-page.js"></script>
+<script src="../js/utils.js?v=27"></script>
+<script src="../js/season-tracker.js?v=27"></script>
+<script src="../js/sport-page.js?v=27"></script>
 <script>
 initSportPage({
   sport:     'NBA',
@@ -145,5 +153,22 @@ initSportPage({
   tabs:      ["rankings", "byconf", "predictor"],
 });
 </script>
+  <script>
+    // Track tab clicks as GA4 events
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('[data-tab]');
+      if (!btn) return;
+      var tab = btn.getAttribute('data-tab');
+      var sport = (typeof CFG !== 'undefined' && CFG.sport) ? CFG.sport : document.title;
+      if (typeof gtag === 'function') {
+        gtag('event', 'tab_click', {
+          event_category: 'Navigation',
+          event_label: sport + ' - ' + tab,
+          sport: sport,
+          tab_name: tab
+        });
+      }
+    });
+  </script>
 </body>
 </html>
