@@ -1217,7 +1217,7 @@ async function findAvailableSeason() {
     "MAC": [
       "Akron","Ball State","Bowling Green","Buffalo","Central Michigan",
       "Eastern Michigan","Kent State","Massachusetts","Miami (OH)",
-      "Ohio","Toledo","Western Michigan"
+      "Ohio","Toledo","W. Michigan"
     ],
     "C-USA": [
       "Delaware","FIU","Jacksonville State","Kennesaw State","Liberty",
@@ -1294,7 +1294,7 @@ async function findAvailableSeason() {
     // MAC
     "C Michigan":"Central Michigan","CMU":"Central Michigan","Cent. Michigan":"Central Michigan",
     "E Michigan":"Eastern Michigan","EMU":"Eastern Michigan","Eastern Mich.":"Eastern Michigan",
-    "W Michigan":"Western Michigan","WMU":"Western Michigan","Western Mich.":"Western Michigan",
+    "W Michigan":"W. Michigan","WMU":"W. Michigan","Western Mich.":"W. Michigan",
     "N. Illinois":"Northern Illinois",
     "Ball St":"Ball State","Ball St.":"Ball State",
     "Bowling Green":"Bowling Green","BGSU":"Bowling Green",
@@ -1347,7 +1347,7 @@ async function findAvailableSeason() {
     "Miami Ohio":"Miami (OH)","Miami-Ohio":"Miami (OH)",
     "Cent. Mich.":"Central Michigan","C. Michigan":"Central Michigan",
     "E. Mich.":"Eastern Michigan","E. Michigan":"Eastern Michigan",
-    "W. Mich.":"Western Michigan","W. Michigan":"Western Michigan",
+    "W. Mich.":"W. Michigan","W. Michigan":"W. Michigan",
     "Ball St.":"Ball State","Ball State":"Ball State",
     "Kent St.":"Kent State",
     "Coastal Car.":"Coastal Carolina",
@@ -1598,8 +1598,8 @@ async function findAvailableSeason() {
       // Oregon State
       {wk:1, dt:"2026-08-29", h:"Stanford",         a:"Hawai'i",          n:false},
       {wk:2, dt:"2026-09-12", h:"Oregon St",     a:"Memphis",          n:false},
-      {wk:3, dt:"2026-09-19", h:"Oregon St",     a:"South Dakota",     n:false},
-      {wk:4, dt:"2026-09-26", h:"Western Michigan", a:"Oregon St",     n:false},
+      {wk:3, dt:"2026-09-19", h:"Oregon St",     a:"S. Dakota",     n:false},
+      {wk:4, dt:"2026-09-26", h:"W. Michigan", a:"Oregon St",     n:false},
       // Boise State
       {wk:1, dt:"2026-09-05", h:"Oregon",           a:"Boise St",      n:false},
       {wk:2, dt:"2026-09-12", h:"Boise St",      a:"Northwestern St",  n:false},
@@ -1669,7 +1669,11 @@ async function findAvailableSeason() {
     "Oregon State":"Oregon St","Boise State":"Boise St",
     "Colorado State":"Colorado St","Fresno State":"Fresno St",
     "San Diego State":"San Diego St","Texas State":"Texas St",
-    "Kansas State":"Kansas St","Hawaii":"Hawai'i"
+    "Kansas State":"Kansas St","Hawaii":"Hawai'i",
+    "S. Dakota":"S. Dakota","W. Michigan":"W. Michigan",
+    "Southern Utah":"S. Utah","North Dakota":"N. Dakota",
+    "Sacramento State":"Sacramento St","Portland State":"Portland St",
+    "Idaho State":"Idaho St","Northwestern State":"Northwestern St"
   };
   function pkNorm(t){ return (_pk_norm[t]||t); }
 
