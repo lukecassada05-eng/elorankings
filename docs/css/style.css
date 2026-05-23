@@ -494,3 +494,73 @@ footer a:hover{color:var(--accent)}
 
 .lines-spd{ font-family:var(--font-mono); font-size:0.7rem; font-weight:600; color:var(--accent); margin-top:0.1rem; }
 .lines-spd-r{ text-align:right; }
+
+/* ── Lines & Odds ─────────────────────────────────────────── */
+.lines-filter-row{ display:flex; gap:0.4rem; flex-wrap:wrap; }
+.lines-filter-btn{
+  font-family:var(--font-mono); font-size:0.68rem;
+  padding:0.28rem 0.75rem; border-radius:2rem;
+  border:1px solid var(--border); background:var(--bg2);
+  color:var(--text-muted); cursor:pointer; transition:all 0.15s;
+}
+.lines-filter-btn:hover{ border-color:var(--accent); color:var(--accent); }
+.lines-filter-btn.active{ background:var(--accent); color:#1a1611; border-color:var(--accent); font-weight:600; }
+
+.lines-game-card{
+  background:var(--bg2); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:0.85rem 1rem;
+  margin-bottom:0.6rem;
+}
+.lines-meta{ display:flex; align-items:center; gap:0.45rem; margin-bottom:0.6rem; flex-wrap:wrap; }
+.lines-badge{
+  font-family:var(--font-mono); font-size:0.55rem; letter-spacing:0.08em;
+  text-transform:uppercase; background:var(--bg3); border:1px solid var(--border);
+  padding:0.12rem 0.45rem; border-radius:2rem; color:var(--text-dim);
+}
+.lines-time{ font-family:var(--font-mono); font-size:0.63rem; color:var(--text-dim); }
+.lines-neutral{ font-family:var(--font-mono); font-size:0.55rem; color:var(--accent); }
+
+.lines-matchup{ display:grid; grid-template-columns:1fr 180px 1fr; align-items:center; gap:0.75rem; }
+.lines-team{ display:flex; flex-direction:column; gap:0.1rem; }
+.lines-team-r{ text-align:right; }
+.lines-tname{ font-size:0.85rem; font-weight:600; }
+.lines-elo{ font-family:var(--font-mono); font-size:0.58rem; color:var(--text-dim); }
+
+.lines-mid{ display:flex; flex-direction:column; gap:0.28rem; }
+.lines-prob-bar{ height:5px; border-radius:3px; display:flex; overflow:hidden; }
+.lines-probs{
+  display:flex; justify-content:space-between; align-items:center;
+  font-family:var(--font-mono); font-size:0.72rem; font-weight:600;
+}
+.lines-draw{ font-size:0.58rem; color:var(--text-dim); font-weight:400; }
+
+/* Spread and odds rows */
+.lines-row2{
+  display:flex; justify-content:space-between; align-items:center;
+  border-top:1px solid var(--border); padding-top:0.22rem;
+}
+.lines-row2-label{
+  font-family:var(--font-mono); font-size:0.52rem;
+  text-transform:uppercase; letter-spacing:0.08em; color:var(--text-dim);
+}
+.lines-spd-val{
+  font-family:var(--font-mono); font-size:0.68rem; font-weight:600; color:var(--text);
+}
+.lines-ml{
+  font-family:var(--font-mono); font-size:0.72rem; font-weight:700;
+}
+.lines-fav{ color:var(--accent); }
+.lines-dog{ color:var(--blue-hi); }
+
+.lines-note{
+  margin-top:1rem; font-family:var(--font-mono); font-size:0.6rem;
+  color:var(--text-dim); line-height:1.6;
+  padding:0.6rem 0.75rem; background:var(--bg2);
+  border:1px solid var(--border); border-radius:var(--radius);
+}
+
+@media(max-width:600px){
+  .lines-matchup{ grid-template-columns:1fr; gap:0.5rem; }
+  .lines-team-r{ text-align:left; }
+  .lines-mid{ border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:0.4rem 0; }
+}
