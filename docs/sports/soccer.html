@@ -57,7 +57,7 @@
   <!-- Tabs -->
   <div class="tabs">
     <button class="tab" data-tab="rankings">Rankings</button>
-    <button class="tab" data-tab="byconf">By Conference</button>
+    <button class="tab" data-tab="byconf">By League</button>
     <button class="tab" data-tab="predictor">Game Predictor</button>
     <button class="tab" data-tab="history">Elo History</button>
     <button class="tab" data-tab="tracker">Season Tracker</button>
@@ -108,6 +108,10 @@
       <div class="hca-row">
         <input type="checkbox" id="hcaCheck" checked>
         <label for="hcaCheck">Team A has home advantage</label>
+      </div>
+      <div class="hca-row" style="margin-top:0.4rem">
+        <input type="checkbox" id="drawCheck" checked>
+        <label for="drawCheck">Include draw probability</label>
       </div>
       <div id="predResult"></div>
     </div>
