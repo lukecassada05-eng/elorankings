@@ -1653,6 +1653,10 @@ async function findAvailableSeason() {
               var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
               var dt=ev.date?ev.date.slice(0,10):null;
               if(dt&&dt.startsWith('1970')) dt=null;
+              // Skip games from wrong season (ESPN sometimes returns prior season data)
+              if(dt&&!dt.startsWith(String(yr))) return;
+              // Skip completed games with no date — likely prior season data
+              if(completed&&!dt) return;
               var hs=completed?(parseInt(home.score)||null):null;
               var as_=completed?(parseInt(away.score)||null):null;
               // Skip FCS-only games: require at least one FBS team
@@ -1684,13 +1688,22 @@ async function findAvailableSeason() {
       var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|');
       if(!symSeen[k]){symSeen[k]=1;seen[g.id]=1;games.push(g);fetched++;}
     });
-    // Final sort
-    games.sort(function(a,b){
+    // Final dedup pass: remove any remaining duplicates by resolved team pair
+    // Keeps first occurrence (ESPN real scores preferred over static placeholders)
+    var finalSeen={};
+    var dedupedGames=[];
+    games.forEach(function(g){
+      var ra=pkResolve(g.homeTeam), rb=pkResolve(g.awayTeam);
+      var k=[ra,rb].sort().join('|');
+      if(!finalSeen[k]){finalSeen[k]=1;dedupedGames.push(g);}
+    });
+    // Sort by week then date
+    dedupedGames.sort(function(a,b){
       if(a.week!==b.week) return a.week-b.week;
       if(!a.date&&!b.date) return 0;if(!a.date) return 1;if(!b.date) return -1;
       return a.date<b.date?-1:a.date>b.date?1:0;
     });
-    _pk.schedule=games;
+    _pk.schedule=dedupedGames;
     if(!games.length){
       pkSetReg('<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.78rem;color:var(--text-muted);text-align:center;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg)">'
         +'<div style="font-size:0.88rem;color:var(--text);margin-bottom:0.5rem">📅 '+yr+' schedule not available yet</div>'
