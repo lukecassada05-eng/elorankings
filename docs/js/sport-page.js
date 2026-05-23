@@ -331,40 +331,77 @@ window.initSportPage = function(CFG) {
 
   // ── Predictor ──────────────────────────────────────────────
   function renderPredictor() {
-    const el = document.getElementById('panel-predictor');
+    var el    = document.getElementById('panel-predictor');
     if (!el || !data.length) return;
-    const taEl = document.getElementById('teamA');
-    const tbEl = document.getElementById('teamB');
-    const hca  = document.getElementById('hcaCheck');
-    const res  = document.getElementById('predResult');
+    var taEl   = document.getElementById('teamA');
+    var tbEl   = document.getElementById('teamB');
+    var hca    = document.getElementById('hcaCheck');
+    var drawEl = document.getElementById('drawCheck');
+    var res    = document.getElementById('predResult');
     if (!taEl || !tbEl || !res) return;
 
+    var isSoccer = CFG.sport === 'Soccer';
+
     function calc() {
-      const ta = data.find(r=>r.team===taEl.value);
-      const tb = data.find(r=>r.team===tbEl.value);
-      if (!ta||!tb||ta.team===tb.team){res.innerHTML='';return;}
-      const hAdj = hca?.checked ? CFG.hca : 0;
-      const pA   = eloWinProb(ta.elo, tb.elo, hAdj);
-      const pB   = 1 - pA;
-      const sprd = eloSpread(ta.elo, tb.elo, hAdj);
-      res.innerHTML = `<div class="pred-result">
-        <div class="prob-nums">
-          <span style="color:var(--accent)">${(pA*100).toFixed(1)}%</span>
-          <span style="color:var(--text-dim);font-size:1rem;align-self:center">win probability</span>
-          <span style="color:var(--blue-hi)">${(pB*100).toFixed(1)}%</span>
-        </div>
-        <div class="prob-bar" style="margin:0.6rem 0">
-          <div style="width:${(pA*100).toFixed(1)}%;background:var(--accent)"></div>
-          <div style="flex:1;background:var(--blue-hi)"></div>
-        </div>
-        <div class="prob-detail">
-          <span>${ta.team} · Elo ${ta.elo.toFixed(1)}${hAdj?' (home)':''}</span>
-          <span>spread: <strong>${sprd>0?'+':''}${sprd}</strong></span>
-          <span>${tb.team} · Elo ${tb.elo.toFixed(1)}</span>
-        </div>
-      </div>`;
+      var ta = null, tb = null;
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].team === taEl.value) ta = data[i];
+        if (data[i].team === tbEl.value) tb = data[i];
+      }
+      if (!ta || !tb || ta.team === tb.team) { res.innerHTML = ''; return; }
+
+      var hAdj     = (hca && hca.checked) ? CFG.hca : 0;
+      var rawProb  = eloWinProb(ta.elo, tb.elo, hAdj);
+      var withDraws = isSoccer && drawEl && drawEl.checked;
+
+      // Soccer draw model: ~28% base draw rate, falls off with Elo gap
+      var eloDiff  = Math.abs(ta.elo + hAdj - tb.elo);
+      var drawProb = withDraws ? Math.max(0.03, 0.28 * Math.max(0, 1 - eloDiff / 500)) : 0;
+      var pA = (1 - drawProb) * rawProb;
+      var pB = (1 - drawProb) * (1 - rawProb);
+      var pD = drawProb;
+
+      // Soccer uses expected goal diff (xGD), others use point spread
+      var sprdVal  = isSoccer
+        ? ((ta.elo + hAdj - tb.elo) / 150).toFixed(2)
+        : eloSpread(ta.elo, tb.elo, hAdj);
+      var sprdLbl  = isSoccer ? 'xGD' : 'spread';
+      var sprdStr  = (parseFloat(sprdVal) > 0 ? '+' : '') + sprdVal;
+
+      var barA = (pA * 100).toFixed(1);
+      var barD = (pD * 100).toFixed(1);
+      var barB = (pB * 100).toFixed(1);
+
+      var drawSpan = withDraws
+        ? '<span style="color:var(--text-dim);font-size:0.85rem;align-self:center">' + barD + '% draw</span>'
+        : '';
+      var drawBar = withDraws
+        ? '<div style="width:' + barD + '%;background:var(--text-dim);opacity:0.5"></div>'
+        : '';
+      var winLabel = withDraws ? '' : '<span style="color:var(--text-dim);font-size:1rem;align-self:center">win probability</span>';
+
+      res.innerHTML =
+        '<div class="pred-result">'
+        + '<div class="prob-nums">'
+        + '<span style="color:var(--accent)">' + barA + '%</span>'
+        + drawSpan
+        + winLabel
+        + '<span style="color:var(--blue-hi)">' + barB + '%</span>'
+        + '</div>'
+        + '<div class="prob-bar" style="margin:0.6rem 0">'
+        + '<div style="width:' + barA + '%;background:var(--accent)"></div>'
+        + drawBar
+        + '<div style="flex:1;background:var(--blue-hi)"></div>'
+        + '</div>'
+        + '<div class="prob-detail">'
+        + '<span>' + ta.team + ' · Elo ' + ta.elo.toFixed(1) + (hAdj ? ' (home)' : '') + '</span>'
+        + '<span>' + sprdLbl + ': <strong>' + sprdStr + '</strong></span>'
+        + '<span>' + tb.team + ' · Elo ' + tb.elo.toFixed(1) + '</span>'
+        + '</div>'
+        + '</div>';
     }
-    [taEl,tbEl,hca].forEach(el => { if(el) el.addEventListener('change', calc); });
+
+    [taEl, tbEl, hca, drawEl].forEach(function(e) { if (e) e.addEventListener('change', calc); });
     calc();
   }
 
@@ -1229,7 +1266,7 @@ async function findAvailableSeason() {
     // Pac-12
     "Boise St":"Boise State","Fresno St":"Fresno State",
     "Utah St":"Utah State","San Diego St":"San Diego State","SDSU":"San Diego State",
-    "Wash. State":"Washington State","Wash St":"Washington State",
+    "Washington St":"Washington State","Wash. State":"Washington State","Wash St":"Washington State",
     "Oregon St":"Oregon State","Texas St":"Texas State","Tex. St.":"Texas State",
     "Colorado St":"Colorado State","Colo. St.":"Colorado State",
     // Mountain West
@@ -1286,9 +1323,8 @@ async function findAvailableSeason() {
     "Western KY":"Western Kentucky","WKU":"Western Kentucky","W. Kentucky":"Western Kentucky",
     "Missouri St":"Missouri State","Mo. State":"Missouri State",
     // Pac-12 aliases
-    "Wash. State":"Washington State","Wash St":"Washington State","WSU":"Washington State",
-    "Oregon St":"Oregon State","OSU":"Oregon State",
-    "Texas St":"Texas State","Tex. St.":"Texas State","Texas St.":"Texas State",
+    "Washington St":"Washington State","Wash. State":"Washington State","Wash St":"Washington State","WSU":"Washington State",
+    "Oregon St":"Oregon State","Texas St":"Texas State","Tex. St.":"Texas State","Texas St.":"Texas State",
     "Utah St":"Utah State","Utah St.":"Utah State","USU":"Utah State",
     "Colorado St":"Colorado State","CSU":"Colorado State","Colo. St.":"Colorado State",
     "Fresno St":"Fresno State","Fresno St.":"Fresno State",
