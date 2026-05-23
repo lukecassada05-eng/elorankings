@@ -1375,10 +1375,11 @@ async function findAvailableSeason() {
       if(isNaN(hs)||isNaN(as_)||hs===as_) continue;
       var winner=pkResolve(hs>as_?g.homeTeam:g.awayTeam);
       var loser=pkResolve(hs>as_?g.awayTeam:g.homeTeam);
-      // Build a canonical matchup key (alphabetical so A-vs-B = B-vs-A same key)
+      // Canonical pair key — no week number so ESPN week mismatches don't double-count
+      // (Each pair of FBS teams only plays once per regular season)
       var teams=[winner,loser].sort();
-      var dedupKey=teams[0]+'|'+teams[1]+'|w'+(g.week||0);
-      if(counted[dedupKey]) continue; // already counted this matchup this week
+      var dedupKey=teams[0]+'|'+teams[1];
+      if(counted[dedupKey]) continue;
       counted[dedupKey]=1;
       _pk.wins[winner]=(_pk.wins[winner]||0)+1;
       _pk.losses[loser]=(_pk.losses[loser]||0)+1;
@@ -1424,7 +1425,7 @@ async function findAvailableSeason() {
       var winner=pkResolve(hs>as_?g.homeTeam:g.awayTeam);
       var loser=pkResolve(hs>as_?g.awayTeam:g.homeTeam);
       var t2=[winner,loser].sort();
-      var dk2=t2[0]+'|'+t2[1]+'|w'+(g.week||0);
+      var dk2=t2[0]+'|'+t2[1];
       if(counted2[dk2]) continue;
       counted2[dk2]=1;
       if(!wins_by[winner]) wins_by[winner]=[];
@@ -1672,14 +1673,15 @@ async function findAvailableSeason() {
     });
     // Merge static Pac-12 schedule (ESPN scoreboard API doesn't have these yet)
     // Use symmetric key so ESPN game and static game for same matchup+week are treated as same
+    // Build symmetric pair set from ESPN-fetched games (NO week — catches week mismatches)
     var symSeen={};
     games.forEach(function(g){
-      var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|')+'|w'+(g.week||0);
+      var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|');
       symSeen[k]=1;
     });
     var staticGames=pkGetStaticPac12(yr);
     staticGames.forEach(function(g){
-      var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|')+'|w'+(g.week||0);
+      var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|');
       if(!symSeen[k]){symSeen[k]=1;seen[g.id]=1;games.push(g);fetched++;}
     });
     // Final sort
