@@ -1668,9 +1668,16 @@ async function findAvailableSeason() {
       return a.date<b.date?-1:a.date>b.date?1:0;
     });
     // Merge static Pac-12 schedule (ESPN scoreboard API doesn't have these yet)
+    // Use symmetric key so ESPN game and static game for same matchup+week are treated as same
+    var symSeen={};
+    games.forEach(function(g){
+      var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|')+'|w'+(g.week||0);
+      symSeen[k]=1;
+    });
     var staticGames=pkGetStaticPac12(yr);
     staticGames.forEach(function(g){
-      if(!seen[g.id]){seen[g.id]=1;games.push(g);fetched++;}
+      var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|')+'|w'+(g.week||0);
+      if(!symSeen[k]){symSeen[k]=1;seen[g.id]=1;games.push(g);fetched++;}
     });
     // Final sort
     games.sort(function(a,b){
