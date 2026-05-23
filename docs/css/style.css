@@ -491,3 +491,6 @@ footer a:hover{color:var(--accent)}
   .lines-team-r{ text-align:left; }
   .lines-mid{ border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:0.4rem 0; }
 }
+
+.lines-spd{ font-family:var(--font-mono); font-size:0.7rem; font-weight:600; color:var(--accent); margin-top:0.1rem; }
+.lines-spd-r{ text-align:right; }
