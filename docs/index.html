@@ -117,6 +117,12 @@
       <div class="card-desc">Club Elo across Premier League, La Liga, Bundesliga, Serie A, Ligue 1 and more — updated every matchday.</div>
       <span class="card-tag tag-live">Live · 2025–26</span>
     </a>
+    <a class="sport-card" href="lines.html">
+      <span class="card-arrow">→</span><span class="card-num">📈</span>
+      <div class="card-emoji">🎯</div>
+      <div class="card-title">Lines</div>
+      <div class="card-sub">Upcoming · Win % · Spread</div>
+    </a>
   </div>
 
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding:3rem 0 5rem;border-top:1px solid var(--border)">
@@ -185,12 +191,6 @@ document.getElementById('navToggle')?.addEventListener('click', () => {
 });
 </script>
 
-  <!-- Lines & Odds Section -->
-  <div style="margin-top:2.5rem;max-width:1100px;margin-left:auto;margin-right:auto;padding:0 1rem" class="fade-up-3">
-    <div style="font-size:0.72rem;font-family:var(--font-mono);letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:1.25rem">Upcoming Games &amp; Odds</div>
-    <div id="lines-root">
-      <div class="loading"><div class="spinner"></div>Loading upcoming games…</div>
-    </div>
   </div>
 
   <script>
@@ -209,13 +209,6 @@ document.getElementById('navToggle')?.addEventListener('click', () => {
       }
     });
   </script>
-  <script src="js/lines.js?v=27"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      if(document.getElementById('lines-root')) window.initLinesPage();
-    });
-  </script>
 </body>
 </html>
-
 
