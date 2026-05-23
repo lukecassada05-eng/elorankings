@@ -1435,6 +1435,14 @@ async function findAvailableSeason() {
       _pk.eloSim[cw]=rW2+K*Math.log(m2+1)*(1-eW2);
       _pk.eloSim[cl]=rL2-K*Math.log(m2+1)*(1-eW2);
     }
+    // Sanity check: log any team with >14 games (debugging)
+    if(typeof console!=='undefined'){
+      var allT=Object.keys(_pk.wins).concat(Object.keys(_pk.losses));
+      allT.forEach(function(t){
+        var tot=(_pk.wins[t]||0)+(_pk.losses[t]||0);
+        if(tot>14) console.warn('pkBuild: '+t+' has '+tot+' games (check for duplicates)');
+      });
+    }
     // Build playoff rating for every team
     // Formula: PlayoffRating = Elo + sqrt(sum of beaten opponents' Elo)
     // This rewards beating strong teams (resume strength) on top of raw Elo
@@ -1653,6 +1661,18 @@ async function findAvailableSeason() {
     return out;
   }
 
+
+  // ESPN shortDisplayName normalization — maps ESPN's inconsistent names to our static schedule names
+  // Applied at fetch time so all games use consistent names for dedup
+  var _pk_norm = {
+    "Utah State":"Utah St","Washington State":"Washington St",
+    "Oregon State":"Oregon St","Boise State":"Boise St",
+    "Colorado State":"Colorado St","Fresno State":"Fresno St",
+    "San Diego State":"San Diego St","Texas State":"Texas St",
+    "Kansas State":"Kansas St","Hawaii":"Hawai'i"
+  };
+  function pkNorm(t){ return (_pk_norm[t]||t); }
+
   async function pkFetchSched(yr){
     pkSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' schedule from ESPN…</div>');
     var games=[],seen={};
@@ -1675,6 +1695,8 @@ async function findAvailableSeason() {
               var key=ev.id||(home.team.id+'_'+away.team.id+'_w'+wk);
               if(seen[key]) return;seen[key]=1;
               var hn=home.team.shortDisplayName,an=away.team.shortDisplayName;
+              // Normalize ESPN names to match our static schedule names
+              hn=_pk_norm[hn]||hn; an=_pk_norm[an]||an;
               if(wk===15&&hn!=='Army'&&hn!=='Navy'&&an!=='Army'&&an!=='Navy') return;
               var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
               var dt=ev.date?ev.date.slice(0,10):null;
@@ -1693,7 +1715,7 @@ async function findAvailableSeason() {
               // Skip FCS-only games: require at least one FBS team
               if(!pkIsFBS(hn)&&!pkIsFBS(an)) return;
               // Pair-based dedup: prevents same matchup appearing multiple times
-              var pairKey=[pkResolve(hn),pkResolve(an)].sort().join('|');
+              var pairKey=[pkNorm(hn),pkNorm(an)].sort().join('|');
               if(seen['pair:'+pairKey]) return; seen['pair:'+pairKey]=1;
               games.push({id:key,week:wk,date:dt,homeTeam:hn,awayTeam:an,
                 neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
@@ -1711,15 +1733,15 @@ async function findAvailableSeason() {
     });
     // Merge static Pac-12 schedule (ESPN scoreboard API doesn't have these yet)
     // Use symmetric key so ESPN game and static game for same matchup+week are treated as same
-    // Build symmetric pair set from ESPN-fetched games (NO week — catches week mismatches)
+    // Build symmetric pair set from ESPN-fetched games
     var symSeen={};
     games.forEach(function(g){
-      var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|');
+      var k=[pkNorm(g.homeTeam),pkNorm(g.awayTeam)].sort().join('|');
       symSeen[k]=1;
     });
     var staticGames=pkGetStaticPac12(yr);
     staticGames.forEach(function(g){
-      var k=[pkResolve(g.homeTeam),pkResolve(g.awayTeam)].sort().join('|');
+      var k=[pkNorm(g.homeTeam),pkNorm(g.awayTeam)].sort().join('|');
       if(!symSeen[k]){symSeen[k]=1;seen[g.id]=1;games.push(g);fetched++;}
     });
     // Final dedup pass: remove any remaining duplicates by resolved team pair
@@ -1727,7 +1749,7 @@ async function findAvailableSeason() {
     var finalSeen={};
     var dedupedGames=[];
     games.forEach(function(g){
-      var ra=pkResolve(g.homeTeam), rb=pkResolve(g.awayTeam);
+      var ra=pkNorm(g.homeTeam), rb=pkNorm(g.awayTeam);
       var k=[ra,rb].sort().join('|');
       if(!finalSeen[k]){finalSeen[k]=1;dedupedGames.push(g);}
     });
