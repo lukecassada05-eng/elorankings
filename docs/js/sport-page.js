@@ -1333,7 +1333,33 @@ async function findAvailableSeason() {
     // Mountain West aliases
     "San José St":"San Jose State","San Jose St":"San Jose State","SJSU":"San Jose State",
     "N Illinois":"Northern Illinois","No. Illinois":"Northern Illinois",
-    "Hawaii":"Hawai'i"
+    "Hawaii":"Hawai'i",
+    // Additional ESPN shortDisplayName variants
+    "K-State":"Kansas State","Kan. St.":"Kansas State",
+    "So. California":"USC","S. Cal":"USC",
+    "Georgia St.":"Georgia State","Ga. St.":"Georgia State",
+    "N. Texas":"North Texas","North Tex.":"North Texas",
+    "S. Florida":"South Florida","So. Florida":"South Florida",
+    "N. Dakota St.":"North Dakota State","N.D. State":"North Dakota State",
+    "Jms. Madison":"James Madison",
+    "New Mex. St.":"New Mexico State","NM State":"New Mexico State",
+    "Kennesaw St.":"Kennesaw State",
+    "Miami Ohio":"Miami (OH)","Miami-Ohio":"Miami (OH)",
+    "Cent. Mich.":"Central Michigan","C. Michigan":"Central Michigan",
+    "E. Mich.":"Eastern Michigan","E. Michigan":"Eastern Michigan",
+    "W. Mich.":"Western Michigan","W. Michigan":"Western Michigan",
+    "Ball St.":"Ball State","Ball State":"Ball State",
+    "Kent St.":"Kent State",
+    "Coastal Car.":"Coastal Carolina",
+    "Old Dom.":"Old Dominion",
+    "ULL":"Louisiana","La.":"Louisiana",
+    "So. Miss.":"Southern Miss","S. Miss":"Southern Miss",
+    "La. Tech":"Louisiana Tech","LaTech":"Louisiana Tech",
+    "S. Alabama":"South Alabama","South Ala.":"South Alabama",
+    "Ark. State":"Arkansas State","Ark. St.":"Arkansas State",
+    "Jax State":"Jacksonville State","Jax St.":"Jacksonville State",
+    "Sam Hous.":"Sam Houston","SHSU":"Sam Houston",
+    "Wash. St.":"Washington State","Wash St.":"Washington State"
   };
 
   // Set of all FBS team names for fast lookup
@@ -1654,7 +1680,12 @@ async function findAvailableSeason() {
               var dt=ev.date?ev.date.slice(0,10):null;
               if(dt&&dt.startsWith('1970')) dt=null;
               // Skip games from wrong season (ESPN sometimes returns prior season data)
-              if(dt&&!dt.startsWith(String(yr))) return;
+              // Only accept regular season dates (Aug-Dec of target year)
+              if(dt){
+                if(!dt.startsWith(String(yr))) return;
+                var mo=parseInt(dt.slice(5,7));
+                if(mo<8||mo>12) return; // skip Jan-Jul dates (bowl/playoff games)
+              }
               // Skip completed games with no date — likely prior season data
               if(completed&&!dt) return;
               var hs=completed?(parseInt(home.score)||null):null;
