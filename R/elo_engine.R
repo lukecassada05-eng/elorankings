@@ -131,55 +131,89 @@ message("[elo_engine] loaded.")
 
 
 # ── Conference tournament champion detection ──────────────────────────────────
-# Fetches ESPN conference tournament results and returns a named vector
-# where names = team names and values = TRUE for the tournament champion
-# sport_path: ESPN path e.g. "basketball/mens-college-basketball"
-# groups_param: e.g. "&groups=50" for CBB, "&groups=11" for CBASE
-fetch_conf_champs <- function(sport_path, season_yr, groups_param = "") {
-  # Fetch from conference tournament dates (roughly March for CBB, May for CBASE)
-  base_url <- paste0(
-    "https://site.api.espn.com/apis/site/v2/sports/", sport_path,
-    "/scoreboard?limit=500&seasontype=3", groups_param
+# Fetches ESPN conference tournament results by scanning a date range
+# Returns named character vector: shortDisplayName → TRUE (for champs found)
+# sport_path: e.g. "basketball/mens-college-basketball"
+# date_from / date_to: YYYY-MM-DD strings covering the conference tournament window
+fetch_conf_champs <- function(sport_path, season_yr,
+                              date_from = NULL, date_to = NULL,
+                              groups_param = "") {
+  # Default date windows per sport
+  if (is.null(date_from)) {
+    if (grepl("basketball", sport_path)) {
+      # CBB conf tournaments: late Feb to mid-March
+      date_from <- paste0(season_yr, "-02-25")
+      date_to   <- paste0(season_yr, "-03-16")
+    } else {
+      # Baseball conf tournaments: mid-May to late May
+      date_from <- paste0(season_yr, "-05-15")
+      date_to   <- paste0(season_yr, "-05-28")
+    }
+  }
+
+  ds <- gsub("-","", date_from)
+  de <- gsub("-","", date_to)
+
+  # Try postseason scoreboard with date range
+  urls_to_try <- c(
+    paste0("https://site.api.espn.com/apis/site/v2/sports/", sport_path,
+           "/scoreboard?limit=500&dates=", ds, "-", de,
+           "&seasontype=3", groups_param),
+    paste0("https://site.api.espn.com/apis/site/v2/sports/", sport_path,
+           "/scoreboard?limit=500&dates=", ds, "-", de, groups_param)
   )
 
-  champs <- character(0)  # named vector: conf → team
+  champs <- character(0)  # conf_name → winner_shortDisplayName
 
-  data <- tryCatch(
-    jsonlite::fromJSON(base_url, simplifyVector = FALSE),
-    error = function(e) NULL
-  )
-  if (is.null(data) || !length(data$events)) return(champs)
+  for (url_str in urls_to_try) {
+    data <- tryCatch(
+      jsonlite::fromJSON(url_str, simplifyVector = FALSE),
+      error = function(e) NULL
+    )
+    if (is.null(data) || !length(data$events)) next
 
-  for (ev in data$events) {
-    tryCatch({
-      notes <- ev$notes
-      if (!length(notes)) return(NULL)
-      note_text <- paste(sapply(notes, function(n) n$headline %||% ""), collapse=" ")
+    for (ev in data$events) {
+      tryCatch({
+        # Check notes for "Championship"
+        notes     <- ev$notes %||% list()
+        note_text <- paste(sapply(notes, function(n) n$headline %||% ""), collapse=" ")
+        if (!grepl("Champion", note_text, ignore.case=TRUE)) next
 
-      # Only championship games
-      if (!grepl("Championship|champion", note_text, ignore.case=TRUE)) return(NULL)
+        comp <- ev$competitions[[1]]
+        if (!isTRUE(comp$status$type$completed)) next
+        comps <- comp$competitors
+        if (length(comps) < 2) next
 
-      comp  <- ev$competitions[[1]]
-      if (!isTRUE(comp$status$type$completed)) return(NULL)
-      comps <- comp$competitors
-      if (length(comps) < 2) return(NULL)
+        # Find winner by score
+        scores <- sapply(comps, function(c) suppressWarnings(as.numeric(c$score %||% NA)))
+        if (any(is.na(scores)) || scores[1] == scores[2]) next
+        winner_idx <- which.max(scores)
+        winner <- comps[[winner_idx]]$team$shortDisplayName %||%
+                  comps[[winner_idx]]$team$displayName %||% ""
+        if (!nchar(winner)) next
 
-      # Find winner (higher score)
-      hi <- which(sapply(comps, function(c) c$homeAway == "home"))
-      ai <- which(sapply(comps, function(c) c$homeAway == "away"))
-      if (!length(hi) || !length(ai)) return(NULL)
+        # Get conference name from notes or groups
+        conf_name <- ""
+        for (n in notes) {
+          h <- n$headline %||% ""
+          # e.g. "ACC Men's Basketball Tournament Championship"
+          conf_name <- gsub("(Men's|Women's|Basketball|Baseball|Tournament|Championship|Conference).*", "", h, ignore.case=TRUE)
+          conf_name <- trimws(conf_name)
+          if (nchar(conf_name) > 1) break
+        }
+        if (!nchar(conf_name)) {
+          grps <- ev$groups %||% list()
+          if (length(grps)) conf_name <- grps[[1]]$shortName %||% grps[[1]]$name %||% ""
+        }
 
-      hs <- suppressWarnings(as.numeric(comps[[hi[1]]]$score))
-      as_ <- suppressWarnings(as.numeric(comps[[ai[1]]]$score))
-      if (is.na(hs) || is.na(as_) || hs == as_) return(NULL)
+        if (nchar(conf_name) > 0 && !conf_name %in% names(champs)) {
+          champs[conf_name] <- winner
+          message("    Conf champ: ", conf_name, " → ", winner)
+        }
+      }, error = function(e) NULL)
+    }
 
-      winner <- if (hs > as_) comps[[hi[1]]]$team$shortDisplayName else comps[[ai[1]]]$team$shortDisplayName
-      conf_name <- ev$groups[[1]]$shortName %||% ""
-
-      if (nchar(winner) > 0 && nchar(conf_name) > 0) {
-        champs[conf_name] <- winner
-      }
-    }, error = function(e) NULL)
+    if (length(champs) > 0) break  # got results, stop trying
   }
 
   champs
