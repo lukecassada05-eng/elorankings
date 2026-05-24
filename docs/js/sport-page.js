@@ -991,37 +991,81 @@ window.initSportPage = function(CFG) {
   function renderBracketology() {
     const el = document.getElementById('panel-bracketology');
     if (!el || !data.length) return;
+
+    const EXCLUDE_CONFS = new Set(['NA','N/A','Unknown','Other D1','Independent','Ind','']);
+
+    const confTeams = {};
+    data.forEach(r => {
+      const c = r.conference || '';
+      if (!confTeams[c]) confTeams[c] = [];
+      confTeams[c].push(r);
+    });
+
     const byConf = {};
-    data.forEach(r => { const c=r.conference||'Unknown'; if(!byConf[c]||r.elo>byConf[c].elo) byConf[c]=r; });
+    Object.entries(confTeams).forEach(([conf, teams]) => {
+      if (EXCLUDE_CONFS.has(conf) || !conf) return;
+      if (teams.length < 2) return;
+      const champ = teams.find(r => String(r.conf_champ||'').toUpperCase() === 'TRUE');
+      if (champ) {
+        byConf[conf] = Object.assign({}, champ, {_champConfirmed: true});
+      } else {
+        const best = teams.slice().sort((a,b) => b.elo - a.elo)[0];
+        byConf[conf] = Object.assign({}, best, {_champConfirmed: false});
+      }
+    });
+
     const autoBids  = Object.values(byConf);
-    const autoTeams = new Set(autoBids.map(r=>r.team));
-    const total     = CFG.sport==='CBB' ? 68 : 64;
-    const atLarge   = data.filter(r=>!autoTeams.has(r.team)).sort((a,b)=>b.elo-a.elo).slice(0,total-autoBids.length);
-    const field     = [...autoBids,...atLarge].sort((a,b)=>b.elo-a.elo);
-    const seeds     = CFG.sport==='CBB'
+    const autoTeams = new Set(autoBids.map(r => r.team));
+    const total     = CFG.sport === 'CBB' ? 68 : 64;
+    const atLarge   = data
+      .filter(r => !autoTeams.has(r.team) && !EXCLUDE_CONFS.has(r.conference||''))
+      .sort((a,b) => b.elo - a.elo)
+      .slice(0, total - autoBids.length);
+
+    const field = [...autoBids, ...atLarge].sort((a,b) => b.elo - a.elo);
+
+    const seeds = CFG.sport === 'CBB'
       ? [1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,
          8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,
          12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,16,16]
       : Array.from({length:64},(_,i)=>Math.floor(i/4)+1);
-    field.forEach((r,i)=>{r._seed=seeds[i];r._auto=autoTeams.has(r.team);});
+
+    field.forEach((r,i) => {
+      r._seed = seeds[i];
+      r._auto = autoTeams.has(r.team);
+    });
+
+    const confirmed = autoBids.filter(r => r._champConfirmed).length;
+    const projected = autoBids.filter(r => !r._champConfirmed).length;
     const infoEl = document.getElementById('bracketInfo');
-    if (infoEl) infoEl.textContent = `${autoBids.length} auto bids · ${atLarge.length} at-large · ${field.length} total`;
+    if (infoEl) infoEl.textContent =
+      `${autoBids.length} auto bids (${confirmed} confirmed, ${projected} projected) · ${atLarge.length} at-large · ${field.length} total`;
+
     const bySeed = {};
-    field.forEach(r=>{if(!bySeed[r._seed])bySeed[r._seed]=[];bySeed[r._seed].push(r);});
-    el.innerHTML = `<div class="bracket-grid">${
-      Object.entries(bySeed).map(([seed,teams])=>`
-        <div class="bracket-card">
-          <div class="bracket-card-header">Seed ${seed}</div>
-          ${teams.map(r=>`<div class="bracket-line">
-            <div class="seed ${parseInt(seed)<=3?'s'+seed:''}">${seed}</div>
-            <div style="flex:1;min-width:0">
-              <div class="bracket-line-team">${r.team}</div>
-              <div class="bracket-line-conf">${r.conference||'—'} · ${r.elo.toFixed(1)}</div>
-            </div>
-            ${r._auto?'<span class="card-tag tag-live" style="font-size:0.55rem;padding:0.15rem 0.4rem">AUTO</span>':''}
-          </div>`).join('')}
-        </div>`).join('')}
-    </div>`;
+    field.forEach(r => { if(!bySeed[r._seed]) bySeed[r._seed]=[]; bySeed[r._seed].push(r); });
+
+    el.innerHTML = '<div class="bracket-grid">' +
+      Object.entries(bySeed).map(function([seed, teams]) {
+        return '<div class="bracket-card">' +
+          '<div class="bracket-card-header">Seed ' + seed + '</div>' +
+          teams.map(function(r) {
+            var tag = '';
+            if (r._auto && r._champConfirmed) tag = '<span class="card-tag tag-live" style="font-size:0.5rem;padding:0.12rem 0.35rem">CHAMP</span>';
+            else if (r._auto) tag = '<span class="card-tag" style="font-size:0.5rem;padding:0.12rem 0.35rem;background:var(--bg3)">AUTO*</span>';
+            return '<div class="bracket-line">' +
+              '<div class="seed ' + (parseInt(seed)<=3?'s'+seed:'') + '">' + seed + '</div>' +
+              '<div style="flex:1;min-width:0">' +
+                '<div class="bracket-line-team">' + r.team + '</div>' +
+                '<div class="bracket-line-conf">' + (r.conference||'—') + ' · ' + r.elo.toFixed(1) + '</div>' +
+              '</div>' + tag +
+            '</div>';
+          }).join('') +
+        '</div>';
+      }).join('') +
+    '</div>' +
+    '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.75rem;padding:0.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius)">' +
+    'CHAMP = confirmed conf tournament winner · AUTO* = projected (highest Elo, pre-tournament) · At-large by Elo' +
+    '</div>';
   }
 
   // ── Resume (CFB) ───────────────────────────────────────────
