@@ -121,7 +121,7 @@ window.initSportPage = function(CFG) {
         NHL:   { path:'icehockey/nhl',                          nf:'displayName',      hca:30,  scale:200, unit:'goals' },
         CFB:   { path:'football/college-football',              nf:'shortDisplayName', hca:55,  scale:28,  unit:'pts',  extra:'&groups=80', spreadCap:35 },
         CBB:   { path:'basketball/mens-college-basketball',     nf:'shortDisplayName', hca:90,  scale:12,  unit:'pts',  extra:'&groups=50' },
-        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs',  extra:'&groups=11' },
+        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs',  extraUrls:['&groups=11','&groups=100'] },
         Soccer:[
           { league:'EPL',          path:'soccer/eng.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
           { league:'La Liga',      path:'soccer/esp.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
@@ -283,8 +283,46 @@ window.initSportPage = function(CFG) {
         'Club Brugge':'Club Brugge','Anderlecht':'Anderlecht',
         'Gent':'Gent','Standard Liege':'Standard',
         // Scottish Premiership
-        'Celtic':'Celtic','Rangers':'Rangers','Heart of Midlothian':'Hearts',
-        'Aberdeen':'Aberdeen','Hibernian':'Hibernian',
+        'Celtic':'Celtic','Rangers':'Rangers',
+        'Celtic FC':'Celtic','Rangers FC':'Rangers',
+        'Heart of Midlothian':'Hearts','Heart of Midlothian FC':'Hearts',
+        'Aberdeen':'Aberdeen','Aberdeen FC':'Aberdeen',
+        'Hibernian':'Hibernian','Hibernian FC':'Hibernian',
+        'Motherwell FC':'Motherwell','St. Mirren FC':'St Mirren',
+        'Livingston FC':'Livingston','Ross County FC':'Ross County',
+        'Dundee FC':'Dundee','Dundee United FC':'Dundee Utd',
+        // Eredivisie
+        'Ajax Amsterdam':'Ajax','AZ Alkmaar':'AZ',
+        'KAA Gent':'Gent','KV Mechelen':'Mechelen',
+        'Sint-Truidense':'Sint-Truiden','Sint-Truiden VV':'Sint-Truiden',
+        'Union St.-Gilloise':'Union SG','Royale Union Saint-Gilloise':'Union SG',
+        'R. Antwerp':'Antwerp','Royal Antwerp FC':'Antwerp',
+        'Cercle Brugge KSV':'Cercle Brugge',
+        'Standard de Liege':'Standard','Standard Liège':'Standard',
+        'OH Leuven':'Oud-Heverlee Leuven',
+        'FC Westerlo':'Westerlo',
+        'Beerschot VA':'Beerschot',
+        'RSC Anderlecht':'Anderlecht',
+        'Club Brugge KV':'Club Brugge',
+        // Primeira Liga
+        'FC Porto':'Porto','SL Benfica':'Benfica',
+        'Sporting CP':'Sp Lisbon','Sporting Lisbon':'Sp Lisbon',
+        'SC Braga':'Braga','Vitoria SC':'Vitoria',
+        'FC Famalicao':'Famalicao','Estoril Praia':'Estoril',
+        'Moreirense FC':'Moreirense','CD Santa Clara':'Santa Clara',
+        'Rio Ave FC':'Rio Ave','GD Chaves':'Chaves',
+        // Süper Lig
+        'Galatasaray SK':'Galatasaray','Fenerbahce SK':'Fenerbahce',
+        'Besiktas JK':'Besiktas','Trabzonspor AS':'Trabzonspor',
+        'Basaksehir FK':'Basaksehir','Sivasspor':'Sivasspor',
+        'Alanyaspor':'Alanyaspor','Kayserispor':'Kayserispor',
+        // La Liga extras
+        'Atletico de Madrid':'Atletico Madrid',
+        'Athletic Club de Bilbao':'Ath Bilbao',
+        'Girona FC':'Girona','Deportivo Alaves':'Alaves',
+        'UD Las Palmas':'Las Palmas','RCD Mallorca':'Mallorca',
+        'RCD Espanyol':'Espanyol','Cadiz CF':'Cadiz',
+        'Elche CF':'Elche','Levante UD':'Levante',
         // MLS
         'Inter Miami CF':'Inter Miami','LA Galaxy':'LA Galaxy',
         'Los Angeles FC':'LAFC','Seattle Sounders FC':'Seattle Sounders',
@@ -326,22 +364,31 @@ window.initSportPage = function(CFG) {
         return p>=0.5 ? String(Math.round(-(p/(1-p))*100)) : '+'+Math.round(((1-p)/p)*100);
       }
 
-      function fetchESPN(path, extra, noPostseason) {
-        // Fetch all 14 days in parallel — ESPN scoreboard only returns one day at a time
-        // so we must request each date individually to get the full 2-week window
-        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=200'+(extra||'');
+      function fetchESPN(path, extra, noPostseason, extraPaths) {
+        // Use ESPN date range parameter — single request for 14 days
         var now = new Date();
-        var dateUrls = [];
-        for (var i = 0; i < 15; i++) {
-          var d = new Date(now.getTime() + i*24*60*60*1000);
-          var ds = d.getFullYear() +
+        var end = new Date(now.getTime() + 14*24*60*60*1000);
+        function fmt(d) {
+          return d.getFullYear() +
             String(d.getMonth()+1).padStart(2,'0') +
             String(d.getDate()).padStart(2,'0');
-          // Fetch regular season; also postseason for sports that need it (NBA/CBB playoffs)
-          dateUrls.push(base + '&dates=' + ds);
-          if (!noPostseason) dateUrls.push(base + '&dates=' + ds + '&seasontype=3');
         }
-        return Promise.all(dateUrls.map(function(url) {
+        var dateRange = fmt(now) + '-' + fmt(end);
+        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&dates='+dateRange+(extra||'');
+        var urls = [base];
+        if (!noPostseason) urls.push(base + '&seasontype=3');
+        // For sports with multiple group filters (e.g. CBASE: regular + tournament)
+        if (extraPaths && extraPaths.length) {
+          var now2 = now; var end2 = end;
+          extraPaths.forEach(function(ep) {
+            if (ep !== (extra||'')) {
+              var b2 = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&dates='+dateRange+ep;
+              urls.push(b2);
+              if (!noPostseason) urls.push(b2 + '&seasontype=3');
+            }
+          });
+        }
+        return Promise.all(urls.map(function(url) {
           return fetch(url, {mode:'cors'})
             .then(function(r){ return r.ok ? r.json() : {events:[]}; })
             .catch(function(){ return {events:[]}; });
@@ -512,7 +559,7 @@ window.initSportPage = function(CFG) {
           bindLeagueFilter();
         });
       } else {
-        fetchESPN(sportCfg.path, sportCfg.extra).then(function(resp) {
+        fetchESPN(sportCfg.path, sportCfg.extra, false, sportCfg.extraUrls).then(function(resp) {
           var games = parseEvents(resp.events, sportCfg);
           var isCollege = (CFG.sport === 'CFB' || CFG.sport === 'CBB' || CFG.sport === 'CBASE');
           if (isCollege && games.length) {
