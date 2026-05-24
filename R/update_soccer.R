@@ -181,14 +181,26 @@ if (!is.null(mls_games) && nrow(mls_games) > 0) {
     # Only process if MLS teams not already in the file
     if (!any(grepl("Galaxy|Inter Miami|LAFC|Sounders", existing$team))) {
       # Run Elo engine on MLS games
-      mls_elo <- run_elo(mls_games %>%
-        rename(home=home_team, away=away_team, hg=home_goals, ag=away_goals) %>%
-        mutate(league="MLS", country="USA"),
-        k=30, hca=65, init=1500)
-      mls_out <- mls_elo %>% mutate(conference="MLS", updated_at=format(Sys.time(), "%Y-%m-%d"))
-      combined <- dplyr::bind_rows(existing, mls_out)
-      readr::write_csv(combined, out_file)
-      message("  MLS Elo added to Soccer_Elo_", LAST_END, ".csv")
+      # Convert to winner/loser format that run_elo expects
+      mls_wl <- mls_games %>%
+        mutate(
+          winner      = ifelse(home_goals > away_goals, home_team, away_team),
+          loser       = ifelse(home_goals > away_goals, away_team, home_team),
+          winner_pts  = pmax(home_goals, away_goals),
+          loser_pts   = pmin(home_goals, away_goals)
+        ) %>%
+        filter(winner_pts > loser_pts) %>%  # exclude draws
+        select(winner, loser, winner_pts, loser_pts)
+      if (nrow(mls_wl) < 10) {
+        message("  MLS: not enough non-draw games, skipping")
+      } else {
+        mls_elo <- run_elo(mls_wl, k=30, iters=5, min_games=3)
+        mls_out <- mls_elo %>% 
+          mutate(conference="MLS", updated_at=format(Sys.time(), "%Y-%m-%d"))
+        combined <- dplyr::bind_rows(existing, mls_out)
+        readr::write_csv(combined, out_file)
+        message("  MLS Elo added to Soccer_Elo_", LAST_END, ".csv")
+      }
     }
   }
 }
