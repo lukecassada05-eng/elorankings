@@ -1,31 +1,31 @@
-season,rank,team,conference,elo,wins,losses,games_played,win_pct,record,best_win_team,best_win_elo,sos,updated_at
-2016,1,Pittsburgh Penguins,Metropolitan,1649.4,61,37,98,0.622,61-37,Washington Capitals,1629.3,1506.5,2026-05-21T19:18:49Z
-2016,2,Washington Capitals,Metropolitan,1629.3,59,31,90,0.656,59-31,Pittsburgh Penguins,1649.4,1509.4,2026-05-21T19:18:49Z
-2016,3,Edmonton Oilers,Pacific,1590.6,51,37,88,0.58,51-37,Washington Capitals,1629.3,1495.2,2026-05-21T19:18:49Z
-2016,4,Boston Bruins,Atlantic,1583.5,44,36,80,0.55,44-36,Pittsburgh Penguins,1649.4,1498.6,2026-05-21T19:18:49Z
-2016,5,St. Louis Blues,Central,1581.8,48,41,89,0.539,48-41,Pittsburgh Penguins,1649.4,1503.8,2026-05-21T19:18:49Z
-2016,6,Tampa Bay Lightning,Atlantic,1579.9,42,37,79,0.532,42-37,Washington Capitals,1629.3,1501.5,2026-05-21T19:18:49Z
-2016,7,Nashville Predators,Central,1579.3,50,45,95,0.526,50-45,Pittsburgh Penguins,1649.4,1513.8,2026-05-21T19:18:49Z
-2016,8,Anaheim Ducks,Pacific,1571.4,48,41,89,0.539,48-41,Washington Capitals,1629.3,1501.8,2026-05-21T19:18:49Z
-2016,9,Minnesota Wild,Central,1560.2,49,31,80,0.613,49-31,Pittsburgh Penguins,1649.4,1492.1,2026-05-21T19:18:49Z
-2016,10,Calgary Flames,Pacific,1535.7,40,39,79,0.506,40-39,Pittsburgh Penguins,1649.4,1496.5,2026-05-21T19:18:49Z
-2016,11,Chicago Blackhawks,Central,1533.9,49,34,83,0.59,49-34,Pittsburgh Penguins,1649.4,1494.8,2026-05-21T19:18:49Z
-2016,12,New York Islanders,Metropolitan,1532.8,41,40,81,0.506,41-40,Pittsburgh Penguins,1649.4,1498.8,2026-05-21T19:18:49Z
-2016,13,Ottawa Senators,Atlantic,1530.9,47,43,90,0.522,47-43,Pittsburgh Penguins,1649.4,1508.2,2026-05-21T19:18:49Z
-2016,14,Montreal Canadiens,Atlantic,1521.9,49,37,86,0.57,49-37,Pittsburgh Penguins,1649.4,1501,2026-05-21T19:18:49Z
-2016,15,Winnipeg Jets,Central,1519.6,39,43,82,0.476,39-43,St. Louis Blues,1581.8,1498.7,2026-05-21T19:18:49Z
-2016,16,New York Rangers,Metropolitan,1515.6,49,42,91,0.538,49-42,Pittsburgh Penguins,1649.4,1503.5,2026-05-21T19:18:49Z
-2016,17,Columbus Blue Jackets,Metropolitan,1514.4,50,35,85,0.588,50-35,Pittsburgh Penguins,1649.4,1513.6,2026-05-21T19:18:49Z
-2016,18,Toronto Maple Leafs,Atlantic,1500.8,37,46,83,0.446,37-46,Pittsburgh Penguins,1649.4,1507.2,2026-05-21T19:18:49Z
-2016,19,San Jose Sharks,Pacific,1500.4,44,35,79,0.557,44-35,Washington Capitals,1629.3,1508.7,2026-05-21T19:18:49Z
-2016,20,Philadelphia Flyers,Metropolitan,1497.1,37,41,78,0.474,37-41,Pittsburgh Penguins,1649.4,1505.5,2026-05-21T19:18:49Z
-2016,21,Los Angeles Kings,Pacific,1474.2,36,43,79,0.456,36-43,Pittsburgh Penguins,1649.4,1490.5,2026-05-21T19:18:49Z
-2016,22,Carolina Hurricanes,Metropolitan,1473.2,36,45,81,0.444,36-45,Washington Capitals,1629.3,1502.2,2026-05-21T19:18:49Z
-2016,23,Florida Panthers,Atlantic,1461.6,36,43,79,0.456,36-43,Washington Capitals,1629.3,1499.7,2026-05-21T19:18:49Z
-2016,24,Dallas Stars,Central,1429.5,33,46,79,0.418,33-46,Pittsburgh Penguins,1649.4,1501.2,2026-05-21T19:18:49Z
-2016,25,Buffalo Sabres,Atlantic,1422.8,35,48,83,0.422,35-48,Pittsburgh Penguins,1649.4,1506.9,2026-05-21T19:18:49Z
-2016,26,Detroit Red Wings,Atlantic,1410.3,34,44,78,0.436,34-44,Pittsburgh Penguins,1649.4,1504,2026-05-21T19:18:49Z
-2016,27,Arizona Coyotes,Central,1370.8,28,49,77,0.364,28-49,Pittsburgh Penguins,1649.4,1502.1,2026-05-21T19:18:49Z
-2016,28,Vancouver Canucks,Pacific,1333.3,27,49,76,0.355,27-49,Edmonton Oilers,1590.6,1507.6,2026-05-21T19:18:49Z
-2016,29,New Jersey Devils,Metropolitan,1313.7,27,55,82,0.329,27-55,Washington Capitals,1629.3,1514,2026-05-21T19:18:49Z
-2016,30,Colorado Avalanche,Central,1281.9,23,56,79,0.291,23-56,Pittsburgh Penguins,1649.4,1517,2026-05-21T19:18:49Z
+season,rank,team,conference,elo,wins,losses,games_played,win_pct,record,best_win_team,best_win_elo,sos,conf_champ,updated_at
+2016,1,Pittsburgh Penguins,Metropolitan,1681.3,59,39,98,0.602,59-39,San Jose Sharks,1633.5,1512.7,NA,2026-05-24T22:14:09Z
+2016,2,San Jose Sharks,Pacific,1633.5,55,41,96,0.573,55-41,Pittsburgh Penguins,1681.3,1505.7,NA,2026-05-24T22:14:09Z
+2016,3,Washington Capitals,Metropolitan,1622.6,57,28,85,0.671,57-28,Pittsburgh Penguins,1681.3,1513.9,NA,2026-05-24T22:14:09Z
+2016,4,Anaheim Ducks,Pacific,1615.2,44,35,79,0.557,44-35,Pittsburgh Penguins,1681.3,1491,NA,2026-05-24T22:14:09Z
+2016,5,Tampa Bay Lightning,Atlantic,1570.3,52,37,89,0.584,52-37,Pittsburgh Penguins,1681.3,1508.4,NA,2026-05-24T22:14:09Z
+2016,6,St. Louis Blues,Central,1565.1,53,40,93,0.57,53-40,Pittsburgh Penguins,1681.3,1507.5,NA,2026-05-24T22:14:09Z
+2016,7,Chicago Blackhawks,Central,1545.7,47,37,84,0.56,47-37,Pittsburgh Penguins,1681.3,1500.7,NA,2026-05-24T22:14:09Z
+2016,8,Dallas Stars,Central,1535.4,52,39,91,0.571,52-39,Pittsburgh Penguins,1681.3,1503.8,NA,2026-05-24T22:14:09Z
+2016,9,Philadelphia Flyers,Metropolitan,1534.1,40,42,82,0.488,40-42,Pittsburgh Penguins,1681.3,1506.6,NA,2026-05-24T22:14:09Z
+2016,10,Florida Panthers,Atlantic,1529.6,46,36,82,0.561,46-36,Pittsburgh Penguins,1681.3,1495.3,NA,2026-05-24T22:14:09Z
+2016,11,Los Angeles Kings,Pacific,1525.4,50,33,83,0.602,50-33,Pittsburgh Penguins,1681.3,1501.7,NA,2026-05-24T22:14:09Z
+2016,12,Nashville Predators,Central,1514.8,43,45,88,0.489,43-45,San Jose Sharks,1633.5,1512.1,NA,2026-05-24T22:14:09Z
+2016,13,New York Rangers,Metropolitan,1501.3,43,40,83,0.518,43-40,Pittsburgh Penguins,1681.3,1517.3,NA,2026-05-24T22:14:09Z
+2016,14,Minnesota Wild,Central,1495.7,38,41,79,0.481,38-41,San Jose Sharks,1633.5,1504.5,NA,2026-05-24T22:14:09Z
+2016,15,New York Islanders,Metropolitan,1491.9,47,42,89,0.528,47-42,Pittsburgh Penguins,1681.3,1510.9,NA,2026-05-24T22:14:09Z
+2016,16,Columbus Blue Jackets,Metropolitan,1486.3,33,46,79,0.418,33-46,Pittsburgh Penguins,1681.3,1502.2,NA,2026-05-24T22:14:09Z
+2016,17,Detroit Red Wings,Atlantic,1483.3,41,41,82,0.5,41-41,San Jose Sharks,1633.5,1500.8,NA,2026-05-24T22:14:09Z
+2016,18,Ottawa Senators,Atlantic,1483.3,38,42,80,0.475,38-42,San Jose Sharks,1633.5,1498.1,NA,2026-05-24T22:14:09Z
+2016,19,Buffalo Sabres,Atlantic,1482,34,45,79,0.43,34-45,San Jose Sharks,1633.5,1495.7,NA,2026-05-24T22:14:09Z
+2016,20,Boston Bruins,Atlantic,1481.1,39,38,77,0.506,39-38,Pittsburgh Penguins,1681.3,1498.4,NA,2026-05-24T22:14:09Z
+2016,21,New Jersey Devils,Metropolitan,1474.3,38,39,77,0.494,38-39,Pittsburgh Penguins,1681.3,1505.5,NA,2026-05-24T22:14:09Z
+2016,22,Winnipeg Jets,Central,1473.9,34,45,79,0.43,34-45,San Jose Sharks,1633.5,1497.9,NA,2026-05-24T22:14:09Z
+2016,23,Calgary Flames,Pacific,1459.4,34,44,78,0.436,34-44,Pittsburgh Penguins,1681.3,1498.7,NA,2026-05-24T22:14:09Z
+2016,24,Montreal Canadiens,Atlantic,1438.4,35,44,79,0.443,35-44,Pittsburgh Penguins,1681.3,1501.7,NA,2026-05-24T22:14:09Z
+2016,25,Carolina Hurricanes,Metropolitan,1434.9,31,39,70,0.443,31-39,Pittsburgh Penguins,1681.3,1515.5,NA,2026-05-24T22:14:09Z
+2016,26,Arizona Coyotes,Central,1419.5,30,44,74,0.405,30-44,Pittsburgh Penguins,1681.3,1503.8,NA,2026-05-24T22:14:09Z
+2016,27,Edmonton Oilers,Pacific,1404,29,49,78,0.372,29-49,Pittsburgh Penguins,1681.3,1494.7,NA,2026-05-24T22:14:09Z
+2016,28,Colorado Avalanche,Central,1396.7,37,44,81,0.457,37-44,San Jose Sharks,1633.5,1509.1,NA,2026-05-24T22:14:09Z
+2016,29,Toronto Maple Leafs,Atlantic,1379.7,26,50,76,0.342,26-50,Pittsburgh Penguins,1681.3,1503.8,NA,2026-05-24T22:14:09Z
+2016,30,Vancouver Canucks,Pacific,1341.4,30,50,80,0.375,30-50,San Jose Sharks,1633.5,1501.1,NA,2026-05-24T22:14:09Z
