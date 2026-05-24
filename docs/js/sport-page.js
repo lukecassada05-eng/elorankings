@@ -118,7 +118,7 @@ window.initSportPage = function(CFG) {
         NFL:   { path:'americanfootball/nfl',                  nf:'displayName',      hca:55,  scale:28,  unit:'pts'   },
         NBA:   { path:'basketball/nba',                         nf:'displayName',      hca:63,  scale:11,  unit:'pts'   },
         MLB:   { path:'baseball/mlb',                           nf:'displayName',      hca:25,  scale:180, unit:'runs'  },
-        NHL:   { path:'icehockey/nhl',                          nf:'displayName',      hca:30,  scale:200, unit:'goals' },
+        NHL:   { path:'hockey/nhl',                             nf:'displayName',      hca:30,  scale:200, unit:'goals' },
         CFB:   { path:'football/college-football',              nf:'shortDisplayName', hca:55,  scale:28,  unit:'pts',  extra:'&groups=80', spreadCap:35 },
         CBB:   { path:'basketball/mens-college-basketball',     nf:'shortDisplayName', hca:90,  scale:12,  unit:'pts',  extra:'&groups=50' },
         CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs' },
@@ -1055,60 +1055,78 @@ window.initSportPage = function(CFG) {
     // CBB: conf tournaments run late Feb–mid March (seasontype=3)
     // CBASE: conf tournaments run mid-May (seasontype=3)
     function fetchConfChamps() {
-      var path = isCBB
-        ? 'basketball/mens-college-basketball'
-        : 'baseball/college-baseball';
-      var extra = isCBB ? '&groups=50' : '&groups=11';
-
-      var yr = season;
-      var fromDate = isCBB ? (yr+'0225') : (yr+'0515');
-      var toDate   = isCBB ? (yr+'0316') : (yr+'0528');
-
-      var urls = [
-        'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&seasontype=3'+extra,
-        'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&dates='+fromDate+'-'+toDate+extra
-      ];
-
-      return Promise.all(urls.map(function(u) {
-        return fetch(u,{mode:'cors'}).then(function(r){return r.ok?r.json():{events:[]};}).catch(function(){return{events:[]};});
-      })).then(function(results) {
-        var seen={}, combined=[];
-        results.forEach(function(d){ (d.events||[]).forEach(function(ev){ if(!seen[ev.id]){seen[ev.id]=1;combined.push(ev);} }); });
-        return combined;
-      }).then(function(events) {
-        // Returns: { fullConfName(lower) → shortDisplayName, abbrev(lower) → shortDisplayName }
-        var champs = {};
-        events.forEach(function(ev) {
-          try {
-            var noteText = (ev.notes||[]).map(function(n){return n.headline||'';}).join(' ');
-            if (!/champion/i.test(noteText)) return;
-            var comp = (ev.competitions||[])[0];
-            if (!comp || !comp.status || !comp.status.type.completed) return;
-            var winner=null, maxScore=-1;
-            (comp.competitors||[]).forEach(function(c){
-              var s=parseFloat(c.score); if(!isNaN(s)&&s>maxScore){maxScore=s;winner=c;}
-            });
-            if (!winner) return;
-            var winnerName = winner.team.shortDisplayName || winner.team.displayName || '';
-            if (!winnerName) return;
-            // Store under BOTH full name and abbreviation (lowercase)
-            if (ev.groups && ev.groups[0]) {
-              var gFull  = (ev.groups[0].name      || '').toLowerCase().trim();
-              var gShort = (ev.groups[0].shortName  || '').toLowerCase().trim();
-              if (gFull)  champs[gFull]  = winnerName;
-              if (gShort) champs[gShort] = winnerName;
+      // For CBB: use the NCAA tournament bracket - gives us actual auto bid winners
+      // For CBASE: use conference tournament scoreboard
+      if (isCBB) {
+        // Try NCAA bracket API first (most reliable - has actual auto bid recipients)
+        var bracketUrl = 'https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/tournament/bracket?season=' + season;
+        return fetch(bracketUrl, {mode:'cors'})
+          .then(function(r){ return r.ok ? r.json() : null; })
+          .catch(function(){ return null; })
+          .then(function(data) {
+            var champs = {};
+            if (!data) return champs;
+            // Traverse bracket teams - each conf's auto bid team is marked
+            // ESPN bracket: groups of teams with seed info
+            var teams = data.teams || (data.bracket && data.bracket.teams) || [];
+            // Flatten nested structure
+            function extractTeams(obj) {
+              if (!obj) return;
+              if (obj.seed && obj.team) {
+                var t = obj.team;
+                var c = (t.conferenceId || t.conference || {}).name || '';
+                var n = t.shortDisplayName || t.displayName || '';
+                if (c && n) {
+                  // Lower seed number within a conf = auto bid winner
+                  if (!champs[c.toLowerCase()] || obj.seed < champs[c.toLowerCase()].seed) {
+                    champs[c.toLowerCase()] = {name: n, seed: obj.seed};
+                  }
+                }
+              }
+              Object.values(obj).forEach(function(v) {
+                if (v && typeof v === 'object') extractTeams(v);
+              });
             }
-            // Also extract from note headline
-            (ev.notes||[]).forEach(function(n) {
-              var h = n.headline || '';
-              // "ACC Men's Basketball Tournament Championship" → "ACC"
-              var m = h.match(/^([A-Z0-9 ]+?)\s+(?:Men|Women|Tournament|Championship|Baseball)/i);
-              if (m && m[1]) champs[m[1].trim().toLowerCase()] = winnerName;
-            });
-          } catch(e){}
+            extractTeams(data);
+            // Convert to simple name map
+            var result = {};
+            Object.keys(champs).forEach(function(k){ result[k] = champs[k].name; });
+            return result;
+          });
+      } else {
+        // CBASE: fetch conference tournament championship games
+        var yr = season;
+        var fromDate = yr + '0515'; var toDate = yr + '0528';
+        var urls = [
+          'https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard?limit=500&seasontype=3&groups=11',
+          'https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard?limit=500&dates='+fromDate+'-'+toDate+'&groups=11'
+        ];
+        return Promise.all(urls.map(function(u) {
+          return fetch(u,{mode:'cors'}).then(function(r){return r.ok?r.json():{events:[]};}).catch(function(){return{events:[]};});
+        })).then(function(results) {
+          var seen={}, events=[];
+          results.forEach(function(d){ (d.events||[]).forEach(function(ev){ if(!seen[ev.id]){seen[ev.id]=1;events.push(ev);} }); });
+          var champs = {};
+          events.forEach(function(ev) {
+            try {
+              var note = (ev.notes||[]).map(function(n){return n.headline||'';}).join(' ');
+              if (!/champion/i.test(note)) return;
+              var comp = (ev.competitions||[])[0];
+              if (!comp || !comp.status.type.completed) return;
+              var winner=null, max=-1;
+              (comp.competitors||[]).forEach(function(c){ var s=parseFloat(c.score); if(!isNaN(s)&&s>max){max=s;winner=c;} });
+              if (!winner) return;
+              var wn = winner.team.shortDisplayName || winner.team.displayName || '';
+              if (ev.groups && ev.groups[0]) {
+                var g = ev.groups[0]; 
+                if (g.name) champs[g.name.toLowerCase()] = wn;
+                if (g.shortName) champs[g.shortName.toLowerCase()] = wn;
+              }
+            } catch(e){}
+          });
+          return champs;
         });
-        return champs;
-      });
+      }
     }
 
     // ── Build bracket after fetching champs ───────────────────────────────────
