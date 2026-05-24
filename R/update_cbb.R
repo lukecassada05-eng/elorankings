@@ -102,9 +102,43 @@ for (s in SEASONS) {
   elo <- run_elo(res$games, k=30, iters=10, min_games=4)
   elo <- attach_best_wins(elo, res$games)
   sos <- compute_sos(res$games, elo)
-  out <- build_output(elo, season=s, conf_map=res$conf_map, sos_map=sos)
+
+  # ── Conference tournament champion detection ──────────────
+  # After conf tournaments end (early March), use actual champs for auto bids
+  champs_raw <- tryCatch(
+    fetch_conf_champs("basketball/mens-college-basketball", s, "&groups=50"),
+    error = function(e) character(0)
+  )
+  # Build champ_map: team_name → TRUE
+  # champs_raw is conf_name → team_shortDisplayName
+  # We need to match to our canonical team names via conf_map
+  conf_champ_map <- NULL
+  if (length(champs_raw) > 0) {
+    # Map shortDisplayName to canonical using existing conf_map
+    all_teams <- names(res$conf_map)
+    champ_teams <- character(0)
+    for (team in champs_raw) {
+      # Exact match first
+      if (team %in% all_teams) {
+        champ_teams <- c(champ_teams, team)
+      } else {
+        # Fuzzy: find closest match
+        matched <- agrep(team, all_teams, ignore.case=TRUE, value=TRUE, max.distance=0.15)
+        if (length(matched) > 0) champ_teams <- c(champ_teams, matched[1])
+      }
+    }
+    if (length(champ_teams) > 0) {
+      conf_champ_map <- setNames(rep(FALSE, length(all_teams)), all_teams)
+      conf_champ_map[champ_teams] <- TRUE
+      message("  Conf champs found: ", paste(champ_teams, collapse=", "))
+    }
+  }
+
+  out <- build_output(elo, season=s, conf_map=res$conf_map, sos_map=sos,
+                      conf_champ_map=conf_champ_map)
   write_csv(out, file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv")))
   message("  -> ", nrow(out), " teams, conf: ",
-          sum(!is.na(out$conference)), "/", nrow(out))
+          sum(!is.na(out$conference)), "/", nrow(out),
+          if (!is.null(conf_champ_map)) paste0(", champs: ", sum(out$conf_champ, na.rm=TRUE)) else "")
 }
 message("CBB done.")

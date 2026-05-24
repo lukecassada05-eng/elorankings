@@ -102,7 +102,7 @@ compute_sos <- function(games, elo_df) {
 #' @param season   integer year
 #' @param conf_map named character vector  team -> conference/division
 #' @param sos_map  named numeric vector    team -> SOS
-build_output <- function(elo_df, season, conf_map = NULL, sos_map = NULL) {
+build_output <- function(elo_df, season, conf_map = NULL, sos_map = NULL, conf_champ_map = NULL) {
 
   df <- elo_df[order(-elo_df$elo), ]
   df$rank       <- seq_len(nrow(df))
@@ -112,6 +112,10 @@ build_output <- function(elo_df, season, conf_map = NULL, sos_map = NULL) {
   df$record     <- paste0(df$wins, "-", df$losses)
   df$conference <- if (!is.null(conf_map)) conf_map[df$team]  else NA_character_
   df$sos        <- if (!is.null(sos_map))  round(sos_map[df$team], 1) else NA_real_
+  # conf_champ: TRUE if this team won their conference tournament
+  df$conf_champ <- if (!is.null(conf_champ_map)) {
+    as.logical(conf_champ_map[df$team])
+  } else NA
   df$updated_at <- format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC")
 
   if (!"best_win_team" %in% names(df)) df$best_win_team <- NA_character_
@@ -120,7 +124,66 @@ build_output <- function(elo_df, season, conf_map = NULL, sos_map = NULL) {
 
   df[, c("season","rank","team","conference","elo","wins","losses",
          "games_played","win_pct","record",
-         "best_win_team","best_win_elo","sos","updated_at")]
+         "best_win_team","best_win_elo","sos","conf_champ","updated_at")]
 }
 
 message("[elo_engine] loaded.")
+
+
+# ── Conference tournament champion detection ──────────────────────────────────
+# Fetches ESPN conference tournament results and returns a named vector
+# where names = team names and values = TRUE for the tournament champion
+# sport_path: ESPN path e.g. "basketball/mens-college-basketball"
+# groups_param: e.g. "&groups=50" for CBB, "&groups=11" for CBASE
+fetch_conf_champs <- function(sport_path, season_yr, groups_param = "") {
+  # Fetch from conference tournament dates (roughly March for CBB, May for CBASE)
+  base_url <- paste0(
+    "https://site.api.espn.com/apis/site/v2/sports/", sport_path,
+    "/scoreboard?limit=500&seasontype=3", groups_param
+  )
+
+  champs <- character(0)  # named vector: conf → team
+
+  data <- tryCatch(
+    jsonlite::fromJSON(base_url, simplifyVector = FALSE),
+    error = function(e) NULL
+  )
+  if (is.null(data) || !length(data$events)) return(champs)
+
+  for (ev in data$events) {
+    tryCatch({
+      notes <- ev$notes
+      if (!length(notes)) return(NULL)
+      note_text <- paste(sapply(notes, function(n) n$headline %||% ""), collapse=" ")
+
+      # Only championship games
+      if (!grepl("Championship|champion", note_text, ignore.case=TRUE)) return(NULL)
+
+      comp  <- ev$competitions[[1]]
+      if (!isTRUE(comp$status$type$completed)) return(NULL)
+      comps <- comp$competitors
+      if (length(comps) < 2) return(NULL)
+
+      # Find winner (higher score)
+      hi <- which(sapply(comps, function(c) c$homeAway == "home"))
+      ai <- which(sapply(comps, function(c) c$homeAway == "away"))
+      if (!length(hi) || !length(ai)) return(NULL)
+
+      hs <- suppressWarnings(as.numeric(comps[[hi[1]]]$score))
+      as_ <- suppressWarnings(as.numeric(comps[[ai[1]]]$score))
+      if (is.na(hs) || is.na(as_) || hs == as_) return(NULL)
+
+      winner <- if (hs > as_) comps[[hi[1]]]$team$shortDisplayName else comps[[ai[1]]]$team$shortDisplayName
+      conf_name <- ev$groups[[1]]$shortName %||% ""
+
+      if (nchar(winner) > 0 && nchar(conf_name) > 0) {
+        champs[conf_name] <- winner
+      }
+    }, error = function(e) NULL)
+  }
+
+  champs
+}
+
+# Null-coalescing helper
+`%||%` <- function(a, b) if (!is.null(a) && length(a) > 0 && !is.na(a[1])) a else b

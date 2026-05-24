@@ -792,17 +792,45 @@ for (yr in SEASONS) {
     sapply(elo$team, function(t) get_conf_cbase(t, yr)),
     elo$team
   )
-  out <- build_output(elo, season = yr, conf_map = conf_vec, sos_map = sos)
+  # ── Conference tournament champion detection ─────────────
+  champs_raw <- tryCatch(
+    fetch_conf_champs("baseball/college-baseball", yr, "&groups=11"),
+    error = function(e) character(0)
+  )
+  conf_champ_map <- NULL
+  if (length(champs_raw) > 0) {
+    all_teams <- elo$team
+    champ_teams <- character(0)
+    for (team in champs_raw) {
+      team_can <- ALIASES[team] %||% team
+      if (team_can %in% all_teams) {
+        champ_teams <- c(champ_teams, team_can)
+      } else {
+        matched <- agrep(team_can, all_teams, ignore.case=TRUE, value=TRUE, max.distance=0.15)
+        if (length(matched) > 0) champ_teams <- c(champ_teams, matched[1])
+      }
+    }
+    if (length(champ_teams) > 0) {
+      conf_champ_map <- setNames(rep(FALSE, length(all_teams)), all_teams)
+      conf_champ_map[champ_teams] <- TRUE
+      message("  Conf champs: ", paste(champ_teams, collapse=", "))
+    }
+  }
+
+  out <- build_output(elo, season=yr, conf_map=conf_vec, sos_map=sos,
+                      conf_champ_map=conf_champ_map)
   out <- as.data.frame(lapply(out, function(x) {
     if (is.list(x)) sapply(x, function(v) if (is.null(v)) NA else as.character(v))
     else x
-  }), stringsAsFactors = FALSE)
+  }), stringsAsFactors=FALSE)
 
   write_csv(out, file.path(OUT_DIR, paste0("CBASE_Elo_", yr, ".csv")))
 
   covered <- sum(!is.na(out$conference) & out$conference != "Other D1" &
                  out$games_played >= 5)
   total5  <- sum(out$games_played >= 5)
-  message("  -> ", nrow(out), " teams | conf coverage (5+ gp): ", covered, "/", total5)
+  champ_n <- if (!is.null(conf_champ_map)) sum(out$conf_champ, na.rm=TRUE) else 0
+  message("  -> ", nrow(out), " teams | conf coverage (5+ gp): ", covered, "/", total5,
+          " | champs: ", champ_n)
 }
 message("College Baseball done.")
