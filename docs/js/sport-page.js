@@ -133,7 +133,37 @@ window.initSportPage = function(CFG) {
         return;
       }
 
-      var NAME_FIX = { 'Athletics':'Sacramento Athletics', 'Oakland Athletics':'Sacramento Athletics' };
+      var NAME_FIX = {
+        // MLB
+        'Athletics':'Sacramento Athletics', 'Oakland Athletics':'Sacramento Athletics',
+        // Soccer: ESPN displayName → football-data.co.uk CSV name
+        'Manchester United':'Man United','Manchester City':'Man City',
+        'Wolverhampton Wanderers':'Wolves','Brighton & Hove Albion':'Brighton',
+        'Tottenham Hotspur':'Tottenham','West Ham United':'West Ham',
+        'Newcastle United':'Newcastle','Nottingham Forest':"Nott'm Forest",
+        'AFC Bournemouth':'Bournemouth','Leeds United':'Leeds',
+        'Leicester City':'Leicester','Ipswich Town':'Ipswich',
+        'Sheffield United':'Sheffield United','Blackburn Rovers':'Blackburn',
+        'Norwich City':'Norwich','Cardiff City':'Cardiff',
+        'Swansea City':'Swansea','Stoke City':'Stoke','Hull City':'Hull',
+        'Queens Park Rangers':'QPR','Coventry City':'Coventry',
+        // La Liga
+        'FC Barcelona':'Barcelona','Athletic Club':'Ath Bilbao','Athletic Bilbao':'Ath Bilbao',
+        'Real Betis':'Betis','Celta Vigo':'Celta','Rayo Vallecano':'Vallecano',
+        // Bundesliga
+        'Borussia Dortmund':'Dortmund','Bayer Leverkusen':'Leverkusen',
+        'Eintracht Frankfurt':'Ein Frankfurt','Borussia Monchengladbach':"M'gladbach",
+        'SC Freiburg':'Freiburg','VfB Stuttgart':'Stuttgart',
+        'FC Augsburg':'Augsburg','Mainz 05':'Mainz','FC Heidenheim':'Heidenheim',
+        'FC St. Pauli':'St Pauli',
+        // Serie A
+        'Internazionale':'Inter','AC Milan':'Milan','SSC Napoli':'Napoli',
+        'AS Roma':'Roma','Hellas Verona':'Verona',
+        // Ligue 1
+        'Paris Saint-Germain':'Paris SG','Olympique de Marseille':'Marseille',
+        'AS Monaco':'Monaco','Olympique Lyonnais':'Lyon','Stade Rennais':'Rennes',
+        'Saint-Etienne':'St Etienne'
+      };
 
       var NOW    = new Date();
       var CUTOFF = new Date(NOW.getTime() + 14*24*60*60*1000);
@@ -278,20 +308,25 @@ window.initSportPage = function(CFG) {
 
       function renderLeagueFilter(leagues) {
         var btns = ['All'].concat(leagues).map(function(l) {
-          return '<button onclick="window._linesLeague(\\"'+l+'\\")" class="lines-sub-btn'+(l==='All'?' active':'')+'" data-league="'+l+'">'+l+'</button>';
+          return '<button class="lines-sub-btn'+(l==='All'?' active':'')+'" data-league="'+l+'">'+l+'</button>';
         }).join('');
-        return '<div style="display:flex;gap:0.35rem;flex-wrap:wrap;margin-bottom:0.75rem">'+btns+'</div>';
+        return '<div id="leagueFilterBar" style="display:flex;gap:0.35rem;flex-wrap:wrap;margin-bottom:0.75rem">'+btns+'</div>';
       }
 
-      window._linesLeague = function(league) {
-        activeSoccerLeague = league;
-        document.querySelectorAll('.lines-sub-btn').forEach(function(b){
-          b.classList.toggle('active', b.getAttribute('data-league')===league);
+      function bindLeagueFilter() {
+        document.querySelectorAll('#leagueFilterBar .lines-sub-btn').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            activeSoccerLeague = btn.getAttribute('data-league');
+            document.querySelectorAll('#leagueFilterBar .lines-sub-btn').forEach(function(b){
+              b.classList.toggle('active', b === btn);
+            });
+            var filtered = activeSoccerLeague==='All' ? allLinesGames
+              : allLinesGames.filter(function(g){ return g.league===activeSoccerLeague; });
+            var gameArea = document.getElementById('linesGames');
+            if (gameArea) gameArea.innerHTML = renderGameCards(filtered);
+          });
         });
-        var filtered = league==='All' ? allLinesGames : allLinesGames.filter(function(g){return g.league===league;});
-        var gameArea = document.getElementById('linesGames');
-        if (gameArea) gameArea.innerHTML = renderGameCards(filtered);
-      };
+      }
 
       // Fetch and render
       if (Array.isArray(sportCfg)) {
@@ -304,11 +339,55 @@ window.initSportPage = function(CFG) {
           results.forEach(function(games){allLinesGames = allLinesGames.concat(games);});
           allLinesGames.sort(function(a,b){return new Date(a.date)-new Date(b.date);});
           panel.innerHTML = renderLeagueFilter(leagues)+'<div id="linesGames">'+renderGameCards(allLinesGames)+'</div>';
+          bindLeagueFilter();
         });
       } else {
         fetchESPN(sportCfg.path, sportCfg.extra).then(function(resp) {
           var games = parseEvents(resp.events, sportCfg);
-          panel.innerHTML = '<div id="linesGames">'+renderGameCards(games)+'</div>';
+          var isCollege = (CFG.sport === 'CFB' || CFG.sport === 'CBB' || CFG.sport === 'CBASE');
+          if (isCollege && games.length) {
+            // Build conference filter from game data
+            var confs = ['All'];
+            var confSet = {};
+            games.forEach(function(g) {
+              // Look up conference from current data
+              var homeRow = data.find(function(r){ return r.team === g.homeTeam; });
+              var awayRow = data.find(function(r){ return r.team === g.awayTeam; });
+              if (homeRow && homeRow.conference && !confSet[homeRow.conference]) {
+                confSet[homeRow.conference] = 1; confs.push(homeRow.conference);
+              }
+              if (awayRow && awayRow.conference && !confSet[awayRow.conference]) {
+                confSet[awayRow.conference] = 1; confs.push(awayRow.conference);
+              }
+            });
+            var allConfGames = games;
+            var activeConf = 'All';
+            function renderConfFilter() {
+              return '<div id="confFilterBar" style="display:flex;gap:0.35rem;flex-wrap:wrap;margin-bottom:0.75rem">'
+                + confs.map(function(c){
+                    return '<button class="lines-sub-btn'+(c===activeConf?' active':'')+'" data-conf="'+c+'">'+c+'</button>';
+                  }).join('')
+                + '</div>';
+            }
+            function renderWithConfFilter() {
+              var filtered = activeConf==='All' ? allConfGames
+                : allConfGames.filter(function(g){
+                    var hr = data.find(function(r){ return r.team===g.homeTeam; });
+                    var ar = data.find(function(r){ return r.team===g.awayTeam; });
+                    return (hr&&hr.conference===activeConf)||(ar&&ar.conference===activeConf);
+                  });
+              panel.innerHTML = renderConfFilter()+'<div id="linesGames">'+renderGameCards(filtered)+'</div>';
+              document.querySelectorAll('#confFilterBar .lines-sub-btn').forEach(function(btn){
+                btn.addEventListener('click', function(){
+                  activeConf = btn.getAttribute('data-conf');
+                  renderWithConfFilter();
+                });
+              });
+            }
+            renderWithConfFilter();
+          } else {
+            panel.innerHTML = '<div id="linesGames">'+renderGameCards(games)+'</div>';
+          }
         });
       }
     }
