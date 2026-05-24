@@ -20,8 +20,10 @@ CURRENT_MONTH <- as.integer(format(Sys.Date(), "%m"))
 # e.g. 2024-25 season → season 2025
 CURRENT_SEASON <- if (CURRENT_MONTH >= 10) CURRENT_YEAR + 1L else CURRENT_YEAR
 NEXT_SEASON    <- CURRENT_SEASON + 1L
-SEASONS        <- c(CURRENT_SEASON, NEXT_SEASON)
-message("NHL: updating seasons ", paste(SEASONS, collapse=", "))
+# Update all seasons from 2014 (first full season) through current
+# This fixes any historical inaccuracies and keeps current season fresh
+SEASONS <- 2014:CURRENT_SEASON
+message("NHL: updating seasons 2014-", CURRENT_SEASON)
 OUT_DIR  <- "docs/NHL/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 

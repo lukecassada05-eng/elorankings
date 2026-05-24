@@ -21,9 +21,9 @@ CURRENT_MONTH <- as.integer(format(Sys.Date(), "%m"))
 # MLB season runs Mar-Oct; if before Mar we're still in prior year
 CURRENT_SEASON <- if (CURRENT_MONTH < 3) CURRENT_YEAR - 1L else CURRENT_YEAR
 NEXT_SEASON <- CURRENT_SEASON + 1L
-# Update ALL seasons to fix historical CSVs, plus current and next
-SEASONS <- c(2001:CURRENT_SEASON, NEXT_SEASON)
-message("MLB: updating seasons 2001-", CURRENT_SEASON, " + ", NEXT_SEASON)
+# Only update current season — historical CSVs don't change
+SEASONS <- c(CURRENT_SEASON, NEXT_SEASON)
+message("MLB: updating seasons ", CURRENT_SEASON, ", ", NEXT_SEASON)
 OUT_DIR <- "docs/MLB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
