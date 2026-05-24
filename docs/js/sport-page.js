@@ -420,27 +420,35 @@ window.initSportPage = function(CFG) {
       }
 
       function fetchESPN(path, extra, noPostseason) {
-        // Use ESPN date range parameter — single request for 14 days
         var now = new Date();
-        var end = new Date(now.getTime() + 14*24*60*60*1000);
+        var endD = new Date(now.getTime() + 14*24*60*60*1000);
         function fmt(d) {
           return d.getFullYear() +
             String(d.getMonth()+1).padStart(2,'0') +
             String(d.getDate()).padStart(2,'0');
         }
-        var dateRange = fmt(now) + '-' + fmt(end);
-        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&dates='+dateRange+(extra||'');
-        var urls = [base];
-        if (!noPostseason) urls.push(base + '&seasontype=3');
-
+        var dateRange = fmt(now) + '-' + fmt(endD);
+        var espnBase = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard';
+        var ex = extra || '';
+        // Fetch 3 ways to maximize coverage:
+        // 1. Date range (regular season + future scheduled games)
+        // 2. Default scoreboard (returns current active phase - playoffs if active)
+        // 3. Explicit seasontype=3 (postseason - playoffs, conf tournaments)
+        var urls = [
+          espnBase + '?limit=500&dates=' + dateRange + ex,
+          espnBase + '?limit=500' + ex,
+        ];
+        if (!noPostseason) {
+          urls.push(espnBase + '?limit=500&seasontype=3' + ex);
+        }
         return Promise.all(urls.map(function(url) {
           return fetch(url, {mode:'cors'})
             .then(function(r){ return r.ok ? r.json() : {events:[]}; })
             .catch(function(){ return {events:[]}; });
         })).then(function(results) {
           var seen = {}, events = [];
-          results.forEach(function(data) {
-            (data.events||[]).forEach(function(ev) {
+          results.forEach(function(d) {
+            (d.events||[]).forEach(function(ev) {
               if (!seen[ev.id]) { seen[ev.id] = 1; events.push(ev); }
             });
           });
