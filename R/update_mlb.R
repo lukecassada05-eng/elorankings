@@ -76,7 +76,18 @@ get_mlb_season <- function(yr) {
         loser_pts  = pmin(teams_home_score, teams_away_score)
       ) %>%
       filter(!is.na(winner), !is.na(loser), winner != loser) %>%
-      select(winner, loser, winner_pts, loser_pts)
+      select(winner, loser, winner_pts, loser_pts) |>
+      # Normalize team names: keep consistent regardless of franchise moves
+      mutate(
+        winner = case_when(
+          winner %in% c("Oakland Athletics","Athletics") ~ "Sacramento Athletics",
+          TRUE ~ winner
+        ),
+        loser = case_when(
+          loser %in% c("Oakland Athletics","Athletics") ~ "Sacramento Athletics",
+          TRUE ~ loser
+        )
+      )
   }, error = function(e) { message("  ERROR: ", e$message); NULL })
 }
 
