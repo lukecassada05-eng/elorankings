@@ -173,10 +173,15 @@ window.initSportPage = function(CFG) {
 
       var NOW    = new Date();
       var CUTOFF = new Date(NOW.getTime() + 14*24*60*60*1000);
+      // Look back 2 days to catch games in any timezone
+      var LOOKBACK = new Date(NOW.getTime() - 2*24*60*60*1000);
 
       function inWindow(d) {
+        if (!d) return false;
         var dt = new Date(d);
-        return !isNaN(dt) && dt >= NOW && dt <= CUTOFF;
+        // Lower bound: 2 days ago (ESPN completed filter handles truly past games)
+        // Upper bound: 14 days from now
+        return !isNaN(dt) && dt >= LOOKBACK && dt <= CUTOFF;
       }
 
       function eloProb(eA, eB, hca) { return 1/(1+Math.pow(10,(eB-(eA+hca))/400)); }
