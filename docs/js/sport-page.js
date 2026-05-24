@@ -116,25 +116,20 @@ window.initSportPage = function(CFG) {
       // Soccer: D=500 model, draw suppresses win%, scale 140≈0.7goals/100Elo
       var cfgMap = {
         NFL:   { path:'americanfootball/nfl',                  nf:'displayName',      hca:55,  scale:28,  unit:'pts'   },
-        NBA:   { path:'basketball/nba',                         nf:'displayName',      hca:63,  scale:11,  unit:'pts'   },
+        NBA:   { path:'basketball/nba',                         nf:'displayName',      hca:100, scale:11,  unit:'pts'   },
         MLB:   { path:'baseball/mlb',                           nf:'displayName',      hca:25,  scale:180, unit:'runs'  },
         NHL:   { path:'icehockey/nhl',                          nf:'displayName',      hca:30,  scale:200, unit:'goals' },
         CFB:   { path:'football/college-football',              nf:'shortDisplayName', hca:55,  scale:28,  unit:'pts',  extra:'&groups=80', spreadCap:35 },
         CBB:   { path:'basketball/mens-college-basketball',     nf:'shortDisplayName', hca:90,  scale:12,  unit:'pts',  extra:'&groups=50' },
-        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs',  extra:'&groups=11' },
+        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs'  },
         Soccer:[
-          { league:'EPL',          path:'soccer/eng.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'La Liga',      path:'soccer/esp.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Bundesliga',   path:'soccer/ger.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Serie A',      path:'soccer/ita.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Ligue 1',      path:'soccer/fra.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'MLS',          path:'soccer/usa.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'UCL',          path:'soccer/uefa.champions',   nf:'displayName', hca:0,  scale:140, unit:'goals', draw:true },
-          { league:'Eredivisie',   path:'soccer/ned.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Primeira Liga',path:'soccer/por.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Süper Lig',    path:'soccer/tur.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Pro League',   path:'soccer/bel.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Scottish Prem',path:'soccer/sco.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'EPL',        path:'soccer/eng.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'La Liga',    path:'soccer/esp.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Bundesliga', path:'soccer/ger.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Serie A',    path:'soccer/ita.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Ligue 1',    path:'soccer/fra.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'MLS',        path:'soccer/usa.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'UCL',        path:'soccer/uefa.champions', nf:'displayName', hca:0,  scale:140, unit:'goals', draw:true },
         ]
       };
 
@@ -145,101 +140,6 @@ window.initSportPage = function(CFG) {
       }
 
       var NAME_FIX = {
-        // College Baseball: ESPN shortDisplayName → canonical name used in CBASE CSV
-        // (mirrors the ALIASES in update_college_baseball.R)
-        'Fla. State':'Florida State','Florida St':'Florida State','FSU':'Florida State',
-        'N.C. State':'NC State','N Carolina St':'NC State','Ohio St':'Ohio State',
-        'Penn St':'Penn State','Michigan St':'Michigan State','Mich. St.':'Michigan State',
-        'Oklahoma St':'Oklahoma State','Okla. State':'Oklahoma State',
-        'Iowa St':'Iowa State','Iowa St.':'Iowa State',
-        'Kansas St':'Kansas State','Kansas St.':'Kansas State','K-State':'Kansas State',
-        'Miss St':'Mississippi State','Miss. St.':'Mississippi State',
-        'Miss. State':'Mississippi State','Mississippi St':'Mississippi State',
-        'S. Carolina':'South Carolina','S Carolina':'South Carolina',
-        'Oregon St':'Oregon State','Ore. State':'Oregon State',
-        'Arizona St':'Arizona State','Ariz. St.':'Arizona State',
-        'Wash St':'Washington State','Washington St':'Washington State',
-        'Fresno St':'Fresno State','Utah St':'Utah State',
-        'San Jose St':'San Jose State','San José St':'San Jose State',
-        'San Diego St':'San Diego State','Boise St':'Boise State',
-        'Colorado St':'Colorado State',
-        'Hawaii':"Hawai\'i",
-        'USF':'South Florida','South Fla':'South Florida',
-        'ECU':'East Carolina','E. Carolina':'East Carolina',
-        'UConn':'UConn','Connecticut':'UConn',
-        'App State':'Appalachian State','Appalachian St':'Appalachian State',
-        'Ga. Southern':'Georgia Southern','GA Southern':'Georgia Southern',
-        'Ga. State':'Georgia State','GA St':'Georgia State','Georgia St':'Georgia State',
-        'Ark St':'Arkansas State','Arkansas St':'Arkansas State',
-        'Texas St':'Texas State','Tex St':'Texas State',
-        'Coastal Car':'Coastal Carolina','Coastal':'Coastal Carolina',
-        'S. Alabama':'South Alabama','South Ala':'South Alabama',
-        'ODU':'Old Dominion','Old Dom.':'Old Dominion',
-        'So. Miss':'Southern Miss',
-        'UL Monroe':'UL Monroe','La.-Monroe':'UL Monroe','ULM':'UL Monroe',
-        'ULL':'Louisiana','Louisiana Lafayette':'Louisiana','UL Lafayette':'Louisiana',
-        'WKU':'Western Kentucky','W. Kentucky':'Western Kentucky','Western KY':'Western Kentucky',
-        'Western Ky':'Western Kentucky','Western Ky.':'Western Kentucky',
-        'Middle Tenn':'Middle Tennessee','Middle Tenn.':'Middle Tennessee','MTSU':'Middle Tennessee',
-        'Fla. Atlantic':'Florida Atlantic','FAU':'Florida Atlantic',
-        'FIU Panthers':'FIU','Florida Intl':'FIU','Fla. Intl':'FIU',
-        'La. Tech':'Louisiana Tech','La Tech':'Louisiana Tech',
-        'New Mexico St':'New Mexico State','NMSU':'New Mexico State',
-        'Jax State':'Jacksonville State','Jax St':'Jacksonville State',
-        'Kennesaw St':'Kennesaw State',
-        'Sam Hous.':'Sam Houston','Sam Houston St':'Sam Houston','SHSU':'Sam Houston',
-        'C Michigan':'Central Michigan','Cent Michigan':'Central Michigan','CMU':'Central Michigan',
-        'E. Michigan':'Eastern Michigan','E Michigan':'Eastern Michigan','EMU':'Eastern Michigan',
-        'W. Michigan':'Western Michigan','W Michigan':'Western Michigan','WMU':'Western Michigan',
-        'N. Illinois':'Northern Illinois','N Illinois':'Northern Illinois','NIU':'Northern Illinois',
-        'Ball St':'Ball State','Ball St.':'Ball State',
-        'Bowling Green St':'Bowling Green','BGSU':'Bowling Green',
-        'UB':'Buffalo','Kent St':'Kent State','Kent St.':'Kent State',
-        'Miami OH':'Miami (OH)','Miami (Ohio)':'Miami (OH)',
-        'Santa Barbara':'UC Santa Barbara','UCSB':'UC Santa Barbara',
-        'Long Beach St':'Long Beach State','LBSU':'Long Beach State',
-        'CS Fullerton':'Cal State Fullerton','Fullerton':'Cal State Fullerton',
-        'Sacramento St':'Sacramento State','Sac. State':'Sacramento State',
-        'CS Northridge':'Cal State Northridge','CSUN':'Cal State Northridge',
-        'Bakersfield':'Cal State Bakersfield','CS Bakersfield':'Cal State Bakersfield',
-        'Missouri St':'Missouri State','Indiana St':'Indiana State',
-        'Illinois St':'Illinois State','S. Illinois':'Southern Illinois',
-        'N. Iowa':'Northern Iowa','UNI':'Northern Iowa',
-        'Wright St':'Wright State','N. Kentucky':'Northern Kentucky','N Kentucky':'Northern Kentucky',
-        'Purdue FW':'Purdue Fort Wayne','IU Indy':'IU Indianapolis','IUPUI':'IU Indianapolis',
-        'Dallas Baptist':'Dallas Baptist','DBU':'Dallas Baptist',
-        'GCU':'Grand Canyon','Grand Canyon':'Grand Canyon',
-        'Tarleton St':'Tarleton State','SFA':'Stephen F. Austin','SF Austin':'Stephen F. Austin',
-        'McNeese St':'McNeese','McNeese State':'McNeese',
-        'Nicholls St':'Nicholls','Nicholls State':'Nicholls',
-        'SE Louisiana':'SE Louisiana','Southeastern La.':'SE Louisiana',
-        'N\'Western St':'Northwestern State','Northwestern St':'Northwestern State',
-        'Hou Christian':'Houston Christian','Houston Baptist':'Houston Christian',
-        'Abil Christian':'Abilene Christian','Abilene Chrstn':'Abilene Christian',
-        'NC A&T':'North Carolina A&T','Delaware St':'Delaware State',
-        'Norfolk St':'Norfolk State','Morgan St':'Morgan State',
-        'Alabama St':'Alabama State','Bethune':'Bethune-Cookman',
-        'Fla. A&M':'Florida A&M','SC State':'South Carolina State',
-        'Miss Valley St':'Mississippi Valley State',
-        'Jackson St':'Jackson State','AR-Pine Bluff':'Arkansas-Pine Bluff',
-        'Alcorn St':'Alcorn State','Savannah St':'Savannah State',
-        'S Dakota St':'South Dakota State','N Dakota St':'North Dakota State','NDSU':'North Dakota State',
-        'So Indiana':'Southern Indiana','UT Rio Grande':'UT Rio Grande Valley','UTRGV':'UT Rio Grande Valley',
-        'W Illinois':'Western Illinois','W. Illinois':'Western Illinois',
-        'CA Baptist':'Cal Baptist','LMU':'Loyola Marymount',
-        'SE Missouri St':'Southeast Missouri','SE Missouri':'Southeast Missouri','SEMO':'Southeast Missouri',
-        'E. Illinois':'Eastern Illinois','E Illinois':'Eastern Illinois',
-        'C Arkansas':'Central Arkansas','Cent. Arkansas':'Central Arkansas',
-        'UMass Lowell':'UMass Lowell','UAlbany':'Albany',
-        'UIC':'Illinois-Chicago','UT Arlington':'UT Arlington','UTA':'UT Arlington',
-        'UNO':'New Orleans','SIUE':'SIUE','SIU Edwardsville':'SIUE',
-        'Wichita St':'Wichita State','Wichita St.':'Wichita State',
-        'St John\'s':'St. John\'s','St. Johns':'St. John\'s',
-        'St Thomas (MN)':'St. Thomas','St. Thomas (MN)':'St. Thomas',
-        'G Washington':'George Washington','GWU':'George Washington',
-        'C Connecticut':'Central Connecticut State','Cent. Conn.':'Central Connecticut State',
-        'FDU':'Fairleigh Dickinson','URI':'Rhode Island','UMass':'Massachusetts',
-        'Mass.':'Massachusetts','VCU':'VCU',
         // MLB
         'Athletics':'Sacramento Athletics', 'Oakland Athletics':'Sacramento Athletics',
         // Soccer: ESPN displayName → football-data.co.uk CSV name
@@ -268,39 +168,7 @@ window.initSportPage = function(CFG) {
         // Ligue 1
         'Paris Saint-Germain':'Paris SG','Olympique de Marseille':'Marseille',
         'AS Monaco':'Monaco','Olympique Lyonnais':'Lyon','Stade Rennais':'Rennes',
-        'Saint-Etienne':'St Etienne',
-        // Eredivisie
-        'Ajax':'Ajax','PSV Eindhoven':'PSV','Feyenoord':'Feyenoord',
-        'AZ Alkmaar':'AZ','Vitesse':'Vitesse','FC Utrecht':'Utrecht',
-        'SC Heerenveen':'Heerenveen','Sparta Rotterdam':'Sparta Rotterdam',
-        // Primeira Liga
-        'FC Porto':'Porto','SL Benfica':'Benfica','Sporting CP':'Sp Lisbon',
-        'Sporting Lisbon':'Sp Lisbon','SC Braga':'Braga','Vitoria SC':'Vitoria',
-        // Süper Lig
-        'Galatasaray':'Galatasaray','Fenerbahce':'Fenerbahce',
-        'Besiktas':'Besiktas','Trabzonspor':'Trabzonspor',
-        // Pro League (Belgium)
-        'Club Brugge':'Club Brugge','Anderlecht':'Anderlecht',
-        'Gent':'Gent','Standard Liege':'Standard',
-        // Scottish Premiership
-        'Celtic':'Celtic','Rangers':'Rangers','Heart of Midlothian':'Hearts',
-        'Aberdeen':'Aberdeen','Hibernian':'Hibernian',
-        // MLS
-        'Inter Miami CF':'Inter Miami','LA Galaxy':'LA Galaxy',
-        'Los Angeles FC':'LAFC','Seattle Sounders FC':'Seattle Sounders',
-        'Portland Timbers':'Portland Timbers','New England Revolution':'New England Rev',
-        'Red Bull New York':'NY Red Bulls','Atlanta United FC':'Atlanta United',
-        'Columbus Crew':'Columbus Crew','CF Montréal':'Montreal Impact',
-        'Toronto FC':'Toronto FC','Philadelphia Union':'Philadelphia Union',
-        'Orlando City SC':'Orlando City','FC Cincinnati':'Cincinnati',
-        'Nashville SC':'Nashville SC','Charlotte FC':'Charlotte FC',
-        'Chicago Fire FC':'Chicago Fire','New York City FC':'NYCFC',
-        'Sporting Kansas City':'Sporting KC','Minnesota United FC':'Minnesota Utd',
-        'Colorado Rapids':'Colorado Rapids','FC Dallas':'FC Dallas',
-        'Houston Dynamo FC':'Houston Dynamo','San Jose Earthquakes':'San Jose Earthquakes',
-        'Real Salt Lake':'Real Salt Lake','Vancouver Whitecaps':'Vancouver Whitecaps',
-        'Austin FC':'Austin FC','Portland Timbers':'Portland Timbers',
-        'San Diego FC':'San Diego FC'
+        'Saint-Etienne':'St Etienne'
       };
 
       var NOW    = new Date();
@@ -329,22 +197,21 @@ window.initSportPage = function(CFG) {
       }
 
       function fetchESPN(path, extra) {
-        // The default ESPN scoreboard auto-returns the current active phase
-        // (regular season OR playoffs) — no need to specify seasontype
-        // We also try seasontype=3 as fallback for sports mid-playoffs
-        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500'+(extra||'');
-        return fetch(base, {mode:'cors'})
-          .then(function(r){ return r.ok ? r.json() : {events:[]}; })
-          .then(function(data) {
-            // If default returns no events, try explicit postseason
-            if (!data.events || data.events.length === 0) {
-              return fetch(base+'&seasontype=3', {mode:'cors'})
-                .then(function(r){ return r.ok ? r.json() : {events:[]}; })
-                .catch(function(){ return {events:[]}; });
-            }
-            return data;
-          })
-          .catch(function(){ return {events:[]}; });
+        // Fetch both regular season (seasontype=2) and postseason (seasontype=3)
+        // to capture playoffs, conference tournaments, etc.
+        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=200'+(extra||'');
+        var urls = [base, base+'&seasontype=3'];
+        return Promise.all(urls.map(function(url){
+          return fetch(url,{mode:'cors'}).then(function(r){return r.ok?r.json():{events:[]};}).catch(function(){return {events:[]};});
+        })).then(function(results){
+          var seen = {}, events = [];
+          results.forEach(function(data){
+            (data.events||[]).forEach(function(ev){
+              if(!seen[ev.id]){seen[ev.id]=1;events.push(ev);}
+            });
+          });
+          return {events:events};
+        });
       }
 
       // Use the already-loaded Elo data (data array from current season)
