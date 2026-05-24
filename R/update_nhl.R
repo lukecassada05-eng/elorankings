@@ -10,7 +10,7 @@
 #  3. Scores <2 filtered as likely All-Star skill competition results
 # ================================================================
 suppressPackageStartupMessages({
-  library(dplyr); library(readr); library(httr); library(jsonlite)
+  library(dplyr); library(readr); library(jsonlite)
 })
 source("R/elo_engine.R")
 
@@ -97,17 +97,22 @@ parse_event <- function(ev) {
   }, error=function(e) NULL)
 }
 
-fetch_day <- function(ds) {
-  resp <- tryCatch(
-    GET("https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
-        query=list(dates=ds, limit=20), timeout(20)), error=function(e) NULL)
-  if (is.null(resp)||status_code(resp)!=200) return(NULL)
-  data <- tryCatch(fromJSON(rawToChar(resp$content),simplifyDataFrame=FALSE),
-                   error=function(e) NULL)
-  if (is.null(data)||length(data$events)==0) return(NULL)
+fetch_nhl_chunk <- function(date_from, date_to) {
+  # Fetch a date range in one request using the dates= range parameter
+  ds <- gsub("-", "", as.character(date_from))
+  de <- gsub("-", "", as.character(date_to))
+  url_str <- paste0(
+    "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+    "?dates=", ds, "-", de, "&limit=500"
+  )
+  data <- tryCatch(
+    jsonlite::fromJSON(url_str, simplifyVector = FALSE),
+    error = function(e) NULL
+  )
+  if (is.null(data) || length(data$events) == 0) return(NULL)
   rows <- Filter(Negate(is.null), lapply(data$events, parse_event))
   if (!length(rows)) return(NULL)
-  data.frame(winner=sapply(rows,`[[`,"winner"),loser=sapply(rows,`[[`,"loser"),
+  data.frame(winner=sapply(rows,`[[`,"winner"), loser=sapply(rows,`[[`,"loser"),
              winner_pts=as.numeric(sapply(rows,`[[`,"winner_pts")),
              loser_pts=as.numeric(sapply(rows,`[[`,"loser_pts")),
              stringsAsFactors=FALSE)
@@ -115,22 +120,25 @@ fetch_day <- function(ds) {
 
 fetch_nhl_season <- function(yr) {
   seas_start <- as.Date(paste0(yr, "-10-01"))
+  # Include playoffs: season ends by late June of following year
   seas_end   <- min(as.Date(paste0(yr + 1, "-06-30")), Sys.Date())
   message("  ESPN API: NHL ", yr, "-", yr + 1)
   if (seas_start > seas_end) {
-    message("  Season hasn't started yet — skipping")
+    message("  Season hasn\'t started yet — skipping")
     return(NULL)
   }
-  dates <- seq(seas_start, seas_end, by="1 day")
+  # Fetch in 14-day chunks (reduces 236 requests to ~17)
+  chunk_starts <- seq(seas_start, seas_end, by = "14 days")
   all_games <- list()
-  for (d in as.character(dates)) {
-    res <- fetch_day(gsub("-","",d))
-    if (!is.null(res)&&nrow(res)>0) all_games <- c(all_games, list(res))
-    Sys.sleep(0.1)
+  for (cs in as.character(chunk_starts)) {
+    ce <- min(as.Date(cs) + 13, seas_end)
+    res <- fetch_nhl_chunk(as.Date(cs), ce)
+    if (!is.null(res) && nrow(res) > 0) all_games <- c(all_games, list(res))
+    Sys.sleep(0.2)
   }
   if (!length(all_games)) return(NULL)
-  games <- do.call(rbind, all_games)
-  unique(games[!is.na(games$winner)&games$winner!=""&games$winner!=games$loser,])
+  games <- unique(do.call(rbind, all_games))
+  games[!is.na(games$winner) & games$winner != "" & games$winner != games$loser, ]
 }
 
 for (yr in SEASONS) {
