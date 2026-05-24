@@ -992,8 +992,18 @@ window.initSportPage = function(CFG) {
     const el = document.getElementById('panel-bracketology');
     if (!el || !data.length) return;
 
-    const EXCLUDE_CONFS = new Set(['NA','N/A','Unknown','Other D1','Independent','Ind','']);
+    // ── Bracket size by season ──────────────────────────────
+    // 2027+ (2026-27 season): 76 teams, 32 auto bids, 44 at-large
+    // ≤2026 (2025-26 season and earlier): 68 teams, 32 auto bids, 36 at-large
+    const season = currentSeason || CFG.seasons[0];
+    const is76   = (CFG.sport === 'CBB' && season >= 2027);
+    const total  = is76 ? 76 : (CFG.sport === 'CBB' ? 68 : 64);
+    const autoN  = CFG.sport === 'CBB' ? 32 : 31;  // CBASE has 31 conf auto bids
 
+    // ── Conferences to exclude from auto bids ───────────────
+    const EXCLUDE = new Set(['NA','N/A','Unknown','Other D1','Independent','Ind','']);
+
+    // Group by conference
     const confTeams = {};
     data.forEach(r => {
       const c = r.conference || '';
@@ -1001,62 +1011,89 @@ window.initSportPage = function(CFG) {
       confTeams[c].push(r);
     });
 
+    // Check if ANY team has conf_champ data (column exists in CSV)
+    const hasChampData = data.some(r => r.conf_champ === 'TRUE' || r.conf_champ === 'FALSE');
+
+    // Pick auto bid per conference
     const byConf = {};
     Object.entries(confTeams).forEach(([conf, teams]) => {
-      if (EXCLUDE_CONFS.has(conf) || !conf) return;
+      if (EXCLUDE.has(conf) || !conf) return;
       if (teams.length < 2) return;
-      const champ = teams.find(r => String(r.conf_champ||'').toUpperCase() === 'TRUE');
-      if (champ) {
-        byConf[conf] = Object.assign({}, champ, {_champConfirmed: true});
-      } else {
-        const best = teams.slice().sort((a,b) => b.elo - a.elo)[0];
-        byConf[conf] = Object.assign({}, best, {_champConfirmed: false});
+      if (hasChampData) {
+        const champ = teams.find(r => String(r.conf_champ||'').trim() === 'TRUE');
+        if (champ) {
+          byConf[conf] = Object.assign({}, champ, {_confirmed: true});
+          return;
+        }
       }
+      // Fallback: highest Elo = projected auto bid
+      const best = teams.slice().sort((a,b) => b.elo - a.elo)[0];
+      byConf[conf] = Object.assign({}, best, {_confirmed: false});
     });
 
     const autoBids  = Object.values(byConf);
     const autoTeams = new Set(autoBids.map(r => r.team));
-    const total     = CFG.sport === 'CBB' ? 68 : 64;
-    const atLarge   = data
-      .filter(r => !autoTeams.has(r.team) && !EXCLUDE_CONFS.has(r.conference||''))
+
+    // At-large: best remaining by Elo
+    const atLarge = data
+      .filter(r => !autoTeams.has(r.team) && !EXCLUDE.has(r.conference||''))
       .sort((a,b) => b.elo - a.elo)
       .slice(0, total - autoBids.length);
 
     const field = [...autoBids, ...atLarge].sort((a,b) => b.elo - a.elo);
 
-    const seeds = CFG.sport === 'CBB'
-      ? [1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,
-         8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,
-         12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,16,16]
-      : Array.from({length:64},(_,i)=>Math.floor(i/4)+1);
+    // ── Seeding ─────────────────────────────────────────────
+    var seeds;
+    if (CFG.sport === 'CBB' && is76) {
+      // 76-team bracket: seeds 1-19 get 4 teams each = 76
+      // Opening Round: lowest 4 auto qualifiers + lowest 4 at-large play in
+      // Seeds: 1×4, 2×4, ... 16×4, then 17×4 for opening round extras
+      // Simplified: assign seeds 1-19, 4 teams per seed
+      seeds = Array.from({length:76}, (_, i) => Math.floor(i/4)+1);
+    } else if (CFG.sport === 'CBB') {
+      // 68-team: seeds 1-16 with First Four at 11,16
+      seeds = [1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,
+               8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,
+               12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,16,16];
+    } else {
+      // CBASE 64-team
+      seeds = Array.from({length:64}, (_, i) => Math.floor(i/4)+1);
+    }
 
     field.forEach((r,i) => {
-      r._seed = seeds[i];
+      r._seed = seeds[i] || (Math.floor(i/4)+1);
       r._auto = autoTeams.has(r.team);
     });
 
-    const confirmed = autoBids.filter(r => r._champConfirmed).length;
-    const projected = autoBids.filter(r => !r._champConfirmed).length;
-    const infoEl = document.getElementById('bracketInfo');
-    if (infoEl) infoEl.textContent =
-      `${autoBids.length} auto bids (${confirmed} confirmed, ${projected} projected) · ${atLarge.length} at-large · ${field.length} total`;
+    const confirmed = autoBids.filter(r => r._confirmed).length;
+    const projected = autoBids.filter(r => !r._confirmed).length;
+    const infoEl    = document.getElementById('bracketInfo');
+    if (infoEl) {
+      var infoStr = autoBids.length + ' auto bids';
+      if (hasChampData) infoStr += ' (' + confirmed + ' confirmed\u00b7' + projected + ' projected)';
+      else infoStr += ' (projected \u2014 no champ data yet)';
+      infoStr += ' \u00b7 ' + atLarge.length + ' at-large \u00b7 ' + field.length + ' total';
+      if (is76) infoStr += ' \u00b7 76-team format';
+      infoEl.textContent = infoStr;
+    }
 
     const bySeed = {};
-    field.forEach(r => { if(!bySeed[r._seed]) bySeed[r._seed]=[]; bySeed[r._seed].push(r); });
+    field.forEach(r => { if (!bySeed[r._seed]) bySeed[r._seed]=[]; bySeed[r._seed].push(r); });
 
     el.innerHTML = '<div class="bracket-grid">' +
-      Object.entries(bySeed).map(function([seed, teams]) {
+      Object.entries(bySeed).map(function(entry) {
+        var seed = entry[0]; var teams = entry[1];
         return '<div class="bracket-card">' +
           '<div class="bracket-card-header">Seed ' + seed + '</div>' +
           teams.map(function(r) {
             var tag = '';
-            if (r._auto && r._champConfirmed) tag = '<span class="card-tag tag-live" style="font-size:0.5rem;padding:0.12rem 0.35rem">CHAMP</span>';
-            else if (r._auto) tag = '<span class="card-tag" style="font-size:0.5rem;padding:0.12rem 0.35rem;background:var(--bg3)">AUTO*</span>';
+            if (r._auto && r._confirmed)  tag = '<span class="card-tag tag-live" style="font-size:0.5rem;padding:0.1rem 0.35rem">CHAMP</span>';
+            else if (r._auto)             tag = '<span class="card-tag" style="font-size:0.5rem;padding:0.1rem 0.35rem;background:var(--bg3)">AUTO\u2605</span>';
             return '<div class="bracket-line">' +
               '<div class="seed ' + (parseInt(seed)<=3?'s'+seed:'') + '">' + seed + '</div>' +
               '<div style="flex:1;min-width:0">' +
                 '<div class="bracket-line-team">' + r.team + '</div>' +
-                '<div class="bracket-line-conf">' + (r.conference||'—') + ' · ' + r.elo.toFixed(1) + '</div>' +
+                '<div class="bracket-line-conf">' + (r.conference||'\u2014') + ' \u00b7 ' + r.elo.toFixed(1) + '</div>' +
               '</div>' + tag +
             '</div>';
           }).join('') +
@@ -1064,7 +1101,7 @@ window.initSportPage = function(CFG) {
       }).join('') +
     '</div>' +
     '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.75rem;padding:0.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius)">' +
-    'CHAMP = confirmed conf tournament winner · AUTO* = projected (highest Elo, pre-tournament) · At-large by Elo' +
+      'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected highest Elo (pre-tournament)\u2002\u00b7\u2002At-large by Elo rating' +
     '</div>';
   }
 
