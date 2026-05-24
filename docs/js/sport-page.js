@@ -372,7 +372,16 @@ window.initSportPage = function(CFG) {
         'Basaksehir FK':'Basaksehir','Sivasspor':'Sivasspor',
         'Alanyaspor':'Alanyaspor','Kayserispor':'Kayserispor',
         // La Liga extras
-        'Atletico de Madrid':'Atletico Madrid','Atlético Madrid':'Atletico Madrid','Atlético Madrid':'Atletico Madrid',
+        'Atletico de Madrid':'Atletico Madrid','Atlético Madrid':'Atletico Madrid',
+        'Club Atletico de Madrid':'Atletico Madrid',
+        'FC Bayern München':'Bayern Munich',
+        'Paris Saint-Germain FC':'Paris SG',
+        'Olympique de Marseille':'Marseille',
+        'AS Monaco FC':'Monaco',
+        'Stade Rennais FC':'Rennes',
+        'FC Nantes':'Nantes',
+        'Toulouse FC':'Toulouse','Atlético de Madrid':'Atletico Madrid',
+        'Atletico':'Atletico Madrid','Atlético Madrid':'Atletico Madrid',
         'Athletic Club de Bilbao':'Ath Bilbao',
         'Girona FC':'Girona','Deportivo Alaves':'Alaves',
         'UD Las Palmas':'Las Palmas','RCD Mallorca':'Mallorca',
@@ -402,9 +411,10 @@ window.initSportPage = function(CFG) {
       function inWindow(d) {
         if (!d) return false;
         var dt = new Date(d);
-        // Since we fetch specific dates, just exclude anything beyond 16 days
-        // The completed filter in parseEvents handles already-finished games
-        return !isNaN(dt) && dt <= CUTOFF;
+        // Lower bound: yesterday (catches timezone differences)
+        // Upper bound: 14 days out
+        var yesterday = new Date(NOW.getTime() - 24*60*60*1000);
+        return !isNaN(dt) && dt >= yesterday && dt <= CUTOFF;
       }
 
       function eloProb(eA, eB, hca) { return 1/(1+Math.pow(10,(eB-(eA+hca))/400)); }
@@ -1065,75 +1075,55 @@ window.initSportPage = function(CFG) {
         : 'baseball/college-baseball';
       var extra = isCBB ? '&groups=50' : '&groups=11';
 
-      // Date window covering conf tournament games
       var yr = season;
-      var fromDate, toDate;
-      if (isCBB) {
-        fromDate = yr + '0225'; toDate = yr + '0316';
-      } else {
-        fromDate = yr + '0515'; toDate = yr + '0528';
-      }
+      var fromDate = isCBB ? (yr+'0225') : (yr+'0515');
+      var toDate   = isCBB ? (yr+'0316') : (yr+'0528');
 
-      // Try seasontype=3 first, then plain dates (works for historical data)
       var urls = [
-        'https://site.api.espn.com/apis/site/v2/sports/' + path
-          + '/scoreboard?limit=500&seasontype=3' + extra,
-        'https://site.api.espn.com/apis/site/v2/sports/' + path
-          + '/scoreboard?limit=500&dates=' + fromDate + '-' + toDate + extra
+        'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&seasontype=3'+extra,
+        'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&dates='+fromDate+'-'+toDate+extra
       ];
 
-      // Try both URLs and combine results
       return Promise.all(urls.map(function(u) {
-        return fetch(u, {mode:'cors'})
-          .then(function(r){ return r.ok ? r.json() : {events:[]}; })
-          .catch(function(){ return {events:[]}; });
+        return fetch(u,{mode:'cors'}).then(function(r){return r.ok?r.json():{events:[]};}).catch(function(){return{events:[]};});
       })).then(function(results) {
-        var seen = {}, combined = [];
-        results.forEach(function(d) {
-          (d.events||[]).forEach(function(ev) {
-            if (!seen[ev.id]) { seen[ev.id]=1; combined.push(ev); }
-          });
+        var seen={}, combined=[];
+        results.forEach(function(d){ (d.events||[]).forEach(function(ev){ if(!seen[ev.id]){seen[ev.id]=1;combined.push(ev);} }); });
+        return combined;
+      }).then(function(events) {
+        // Returns: { fullConfName(lower) → shortDisplayName, abbrev(lower) → shortDisplayName }
+        var champs = {};
+        events.forEach(function(ev) {
+          try {
+            var noteText = (ev.notes||[]).map(function(n){return n.headline||'';}).join(' ');
+            if (!/champion/i.test(noteText)) return;
+            var comp = (ev.competitions||[])[0];
+            if (!comp || !comp.status || !comp.status.type.completed) return;
+            var winner=null, maxScore=-1;
+            (comp.competitors||[]).forEach(function(c){
+              var s=parseFloat(c.score); if(!isNaN(s)&&s>maxScore){maxScore=s;winner=c;}
+            });
+            if (!winner) return;
+            var winnerName = winner.team.shortDisplayName || winner.team.displayName || '';
+            if (!winnerName) return;
+            // Store under BOTH full name and abbreviation (lowercase)
+            if (ev.groups && ev.groups[0]) {
+              var gFull  = (ev.groups[0].name      || '').toLowerCase().trim();
+              var gShort = (ev.groups[0].shortName  || '').toLowerCase().trim();
+              if (gFull)  champs[gFull]  = winnerName;
+              if (gShort) champs[gShort] = winnerName;
+            }
+            // Also extract from note headline
+            (ev.notes||[]).forEach(function(n) {
+              var h = n.headline || '';
+              // "ACC Men's Basketball Tournament Championship" → "ACC"
+              var m = h.match(/^([A-Z0-9 ]+?)\s+(?:Men|Women|Tournament|Championship|Baseball)/i);
+              if (m && m[1]) champs[m[1].trim().toLowerCase()] = winnerName;
+            });
+          } catch(e){}
         });
-        return {events: combined};
-      }).then(function(data) { return data; })
-        .then(function(data) {
-          var champs = {}; // conf → team shortDisplayName
-          (data.events||[]).forEach(function(ev) {
-            try {
-              // Only championship games
-              var noteText = (ev.notes||[]).map(function(n){return n.headline||'';}).join(' ');
-              if (!/champion/i.test(noteText)) return;
-              var comp = (ev.competitions||[])[0];
-              if (!comp || !comp.status.type.completed) return;
-              var competitors = comp.competitors||[];
-              var winner = null;
-              var maxScore = -1;
-              competitors.forEach(function(c) {
-                var s = parseFloat(c.score);
-                if (!isNaN(s) && s > maxScore) { maxScore = s; winner = c; }
-              });
-              if (!winner) return;
-
-              // Get conf name from notes
-              var confName = '';
-              (ev.notes||[]).forEach(function(n) {
-                var h = n.headline || '';
-                // e.g. "ACC Men's Basketball Tournament Championship"
-                var m = h.match(/^([A-Z][^-]+?)\s+(?:Men|Women|Conference|Tournament|Baseball)/i);
-                if (m && m[1] && m[1].length > 1) confName = m[1].trim();
-              });
-              if (!confName && ev.groups && ev.groups[0]) {
-                confName = ev.groups[0].shortName || ev.groups[0].name || '';
-              }
-
-              var winnerName = winner.team.shortDisplayName || winner.team.displayName || '';
-              if (confName && winnerName) {
-                champs[confName.toLowerCase()] = winnerName;
-              }
-            } catch(e) {}
-          });
-          return champs;
-        });
+        return champs;
+      });
     }
 
     // ── Build bracket after fetching champs ───────────────────────────────────
@@ -1153,21 +1143,33 @@ window.initSportPage = function(CFG) {
         if (EXCLUDE.has(conf) || !conf) return;
         if (teams.length < 2) return;
 
-        // 1. Check ESPN-fetched champs (conf name fuzzy match)
+        // 1. Check ESPN-fetched champs
+        // champsByConf keys are full conf name + abbreviation, all lowercase
+        // CSV conference field: hoopR uses full names like "Atlantic Coast Conference"
         var champTeam = null;
-        var confLow = conf.toLowerCase();
-        Object.keys(champsByConf).forEach(function(k) {
-          if (confLow.includes(k) || k.includes(confLow) ||
-              confLow.replace(/[^a-z]/g,'').includes(k.replace(/[^a-z]/g,''))) {
-            var espnName = champsByConf[k];
-            // Find team in our data matching this ESPN name
+        var confLow   = conf.toLowerCase().replace(/\s+conference$/i,'').trim();
+        var confAlpha = conf.toLowerCase().replace(/[^a-z0-9]/g,'');
+        if (Object.keys(champsByConf).length > 0) {
+          var espnWinner = null;
+          // Direct match on full or short name
+          Object.keys(champsByConf).forEach(function(k) {
+            if (espnWinner) return;
+            var kAlpha = k.replace(/[^a-z0-9]/g,'');
+            if (k === confLow || kAlpha === confAlpha ||
+                confLow.includes(k) || k.includes(confLow) ||
+                confAlpha.includes(kAlpha) || kAlpha.includes(confAlpha)) {
+              espnWinner = champsByConf[k];
+            }
+          });
+          if (espnWinner) {
             var matched = teams.find(function(t) {
-              return t.team.toLowerCase().includes(espnName.toLowerCase()) ||
-                     espnName.toLowerCase().includes(t.team.toLowerCase());
+              return t.team.toLowerCase() === espnWinner.toLowerCase() ||
+                     t.team.toLowerCase().includes(espnWinner.toLowerCase()) ||
+                     espnWinner.toLowerCase().includes(t.team.toLowerCase());
             });
             if (matched) champTeam = {team: matched, confirmed: true};
           }
-        });
+        }
 
         // 2. Check CSV conf_champ column
         if (!champTeam) {
