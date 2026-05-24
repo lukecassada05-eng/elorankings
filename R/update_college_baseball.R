@@ -9,7 +9,7 @@
 #   - Mid-major conferences: WAC, Southland, OVC, ASUN, Big South, etc.
 # ================================================================
 suppressPackageStartupMessages({
-  library(dplyr); library(readr); library(httr); library(jsonlite)
+  library(dplyr); library(readr); library(jsonlite)
 })
 source("R/elo_engine.R")
 
@@ -715,35 +715,9 @@ parse_event <- function(ev) {
   }, error=function(e) NULL)
 }
 
-# ── Fetch one calendar day ────────────────────────────────────
-fetch_day_cbase <- function(ds) {
-  # Try with groups=11 (D1 baseball), then without for maximum coverage
-  for (q in list(
-    list(dates=ds, groups=11, limit=1000),
-    list(dates=ds, limit=1000)
-  )) {
-    resp <- tryCatch(
-      GET("https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard",
-          query=q, timeout(30)), error=function(e) NULL)
-    if (is.null(resp)||status_code(resp)!=200) next
-    data <- tryCatch(fromJSON(rawToChar(resp$content), simplifyDataFrame=FALSE),
-                     error=function(e) NULL)
-    if (is.null(data)||length(data$events)==0) next
-    rows <- Filter(Negate(is.null), lapply(data$events, parse_event))
-    if (length(rows) > 0) {
-      return(data.frame(
-        winner    = sapply(rows, `[[`, "winner"),
-        loser     = sapply(rows, `[[`, "loser"),
-        winner_pts= as.numeric(sapply(rows, `[[`, "winner_pts")),
-        loser_pts = as.numeric(sapply(rows, `[[`, "loser_pts")),
-        stringsAsFactors = FALSE
-      ))
-    }
-  }
-  NULL
-}
-
-# ── Fetch full season via daily fetching ──────────────────────
+# ── Fetch full season via date-range requests ─────────────────
+# Use jsonlite::fromJSON(url) with date ranges — much faster than day-by-day
+# ESPN scoreboard accepts ?dates=YYYYMMDD-YYYYMMDD for multi-day ranges
 fetch_cbase_season <- function(yr) {
   message("  ESPN: College Baseball ", yr)
   season_start <- as.Date(paste0(yr, "-02-14"))
@@ -753,20 +727,42 @@ fetch_cbase_season <- function(yr) {
     return(NULL)
   }
 
-  all_games     <- list()
-  total_fetched <- 0
-  dates         <- seq(season_start, season_end, by = "1 day")
+  # Fetch in ~2-week chunks to stay under ESPN limits
+  chunk_starts <- seq(season_start, season_end, by = "14 days")
+  all_games <- list()
 
-  for (d in as.character(dates)) {
-    ds  <- gsub("-", "", d)
-    res <- fetch_day_cbase(ds)
-    if (!is.null(res) && nrow(res) > 0) {
-      all_games     <- c(all_games, list(res))
-      total_fetched <- total_fetched + nrow(res)
-      Sys.sleep(0.12)
-    } else {
-      Sys.sleep(0.02)
+  for (d in as.character(chunk_starts)) {
+    d_end <- min(as.Date(d) + 13, season_end)
+    ds    <- gsub("-","", d)
+    de    <- gsub("-","", as.character(d_end))
+
+    # Try groups=11 first (D1 only), then without groups for tournament games
+    for (url_str in c(
+      paste0("https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard",
+             "?limit=1000&groups=11&dates=", ds, "-", de),
+      paste0("https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard",
+             "?limit=1000&dates=", ds, "-", de)
+    )) {
+      data <- tryCatch(
+        jsonlite::fromJSON(url_str, simplifyVector=FALSE),
+        error=function(e) NULL
+      )
+      if (!is.null(data) && length(data$events) > 0) {
+        rows <- Filter(Negate(is.null), lapply(data$events, parse_event))
+        if (length(rows) > 0) {
+          all_games <- c(all_games, list(data.frame(
+            winner     = sapply(rows, `[[`, "winner"),
+            loser      = sapply(rows, `[[`, "loser"),
+            winner_pts = as.numeric(sapply(rows, `[[`, "winner_pts")),
+            loser_pts  = as.numeric(sapply(rows, `[[`, "loser_pts")),
+            stringsAsFactors = FALSE
+          )))
+          break  # got data, no need to try without groups
+        }
+      }
+      Sys.sleep(0.1)
     }
+    Sys.sleep(0.2)
   }
 
   if (!length(all_games)) return(NULL)
@@ -775,11 +771,9 @@ fetch_cbase_season <- function(yr) {
   games <- games[!is.na(games$winner) & games$winner != "" &
                  !is.na(games$loser)  & games$loser  != "" &
                  games$winner != games$loser, ]
-
-  # Cap run margin to prevent blowouts inflating Elo
   games$winner_pts <- pmin(games$winner_pts, games$loser_pts + 12)
 
-  message("  Total: ", nrow(games), " unique games")
+  message("  Total: ", nrow(games), " unique games in ", yr)
   games
 }
 

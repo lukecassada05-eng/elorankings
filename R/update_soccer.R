@@ -9,6 +9,8 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(readr)
 })
+# Suppress curl fallback warnings from football-data.co.uk downloads
+options(warn = -1)
 source("R/elo_engine.R")
 
 OUT_DIR <- "docs/Soccer/data"
@@ -119,38 +121,38 @@ for (ey in END_YEARS) {
   write_csv(out, file.path(OUT_DIR, paste0("Soccer_Elo_", ey, ".csv")))
   message("  -> ", nrow(out), " clubs")
 }
+options(warn = 0)  # restore warnings
 message("Soccer done.")
 
 # ── MLS (ESPN API — football-data.co.uk doesn't cover MLS) ───────────
 message("Soccer: fetching MLS from ESPN API")
 
 fetch_mls_espn <- function(yr) {
-  # Fetch multiple dates to get full season (ESPN returns one day at a time)
-  # Use base R - no httr needed
+  # Fetch MLS season using jsonlite::fromJSON with URL directly (no httr needed)
+  # Use date range: MLS season runs Feb-Nov
   from_date <- as.Date(paste0(yr - 1, "-02-01"))
-  to_date   <- min(as.Date(paste0(yr,   "-11-30")), Sys.Date())
-  dates_seq <- seq(from_date, to_date, by = "7 days")  # weekly to limit requests
+  to_date   <- min(as.Date(paste0(yr, "-11-30")), Sys.Date())
+  
+  # Fetch in monthly chunks to avoid hitting limits
+  month_starts <- seq(from_date, to_date, by = "30 days")
   
   all_rows <- list()
-  for (d in as.character(dates_seq)) {
-    ds <- gsub("-", "", d)
-    # Fetch a week window around this date
-    url <- paste0(
+  for (d in as.character(month_starts)) {
+    d_end <- min(as.Date(d) + 29, to_date)
+    url_str <- paste0(
       "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard",
-      "?limit=200&dates=", ds,
-      "-", format(as.Date(d) + 6, "%Y%m%d")
+      "?limit=300&dates=", gsub("-","",d),
+      "-", gsub("-","",as.character(d_end))
     )
-    data <- tryCatch({
-      con <- url(url, open="rb")
-      on.exit(close(con), add=TRUE)
-      jsonlite::fromJSON(readLines(con, warn=FALSE), simplifyVector=FALSE)
-    }, error=function(e) NULL)
-    
-    if (is.null(data) || !length(data$events)) next
+    data <- tryCatch(
+      jsonlite::fromJSON(url_str, simplifyVector=FALSE),
+      error=function(e) NULL
+    )
+    if (is.null(data) || !length(data$events)) { Sys.sleep(0.2); next }
     
     rows <- lapply(data$events, function(ev) {
       tryCatch({
-        comp  <- ev$competitions[[1]]
+        comp <- ev$competitions[[1]]
         if (!isTRUE(comp$status$type$completed)) return(NULL)
         comps <- comp$competitors
         if (length(comps) < 2) return(NULL)
@@ -167,10 +169,12 @@ fetch_mls_espn <- function(yr) {
     })
     rows <- Filter(Negate(is.null), rows)
     if (length(rows)) all_rows <- c(all_rows, rows)
-    Sys.sleep(0.1)
+    Sys.sleep(0.2)
   }
-  if (!length(all_rows)) return(NULL)
-  unique(do.call(rbind, all_rows))
+  if (!length(all_rows)) { message("  MLS: no games fetched"); return(NULL) }
+  result <- unique(do.call(rbind, all_rows))
+  message("  MLS: fetched ", nrow(result), " completed games")
+  result
 }
 
 mls_games <- fetch_mls_espn(LAST_END)
