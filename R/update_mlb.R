@@ -77,14 +77,14 @@ get_mlb_season <- function(yr) {
       ) %>%
       filter(!is.na(winner), !is.na(loser), winner != loser) %>%
       select(winner, loser, winner_pts, loser_pts) |>
-      # Normalize team names: keep consistent regardless of franchise moves
+      # Normalize franchise name changes for consistency
       mutate(
         winner = case_when(
-          winner %in% c("Oakland Athletics","Athletics") ~ "Sacramento Athletics",
+          winner == "Oakland Athletics" ~ "Athletics",
           TRUE ~ winner
         ),
         loser = case_when(
-          loser %in% c("Oakland Athletics","Athletics") ~ "Sacramento Athletics",
+          loser == "Oakland Athletics" ~ "Athletics",
           TRUE ~ loser
         )
       )
