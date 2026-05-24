@@ -121,7 +121,7 @@ window.initSportPage = function(CFG) {
         NHL:   { path:'icehockey/nhl',                          nf:'displayName',      hca:30,  scale:200, unit:'goals' },
         CFB:   { path:'football/college-football',              nf:'shortDisplayName', hca:55,  scale:28,  unit:'pts',  extra:'&groups=80', spreadCap:35 },
         CBB:   { path:'basketball/mens-college-basketball',     nf:'shortDisplayName', hca:90,  scale:12,  unit:'pts',  extra:'&groups=50' },
-        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs',  extraUrls:['&groups=11','&groups=100'] },
+        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs' },
         Soccer:[
           { league:'EPL',          path:'soccer/eng.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
           { league:'La Liga',      path:'soccer/esp.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
@@ -372,7 +372,7 @@ window.initSportPage = function(CFG) {
         return p>=0.5 ? String(Math.round(-(p/(1-p))*100)) : '+'+Math.round(((1-p)/p)*100);
       }
 
-      function fetchESPN(path, extra, noPostseason, extraPaths) {
+      function fetchESPN(path, extra, noPostseason) {
         // Use ESPN date range parameter — single request for 14 days
         var now = new Date();
         var end = new Date(now.getTime() + 14*24*60*60*1000);
@@ -385,17 +385,7 @@ window.initSportPage = function(CFG) {
         var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&dates='+dateRange+(extra||'');
         var urls = [base];
         if (!noPostseason) urls.push(base + '&seasontype=3');
-        // For sports with multiple group filters (e.g. CBASE: regular + tournament)
-        if (extraPaths && extraPaths.length) {
-          var now2 = now; var end2 = end;
-          extraPaths.forEach(function(ep) {
-            if (ep !== (extra||'')) {
-              var b2 = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500&dates='+dateRange+ep;
-              urls.push(b2);
-              if (!noPostseason) urls.push(b2 + '&seasontype=3');
-            }
-          });
-        }
+
         return Promise.all(urls.map(function(url) {
           return fetch(url, {mode:'cors'})
             .then(function(r){ return r.ok ? r.json() : {events:[]}; })
@@ -567,7 +557,7 @@ window.initSportPage = function(CFG) {
           bindLeagueFilter();
         });
       } else {
-        fetchESPN(sportCfg.path, sportCfg.extra, false, sportCfg.extraUrls).then(function(resp) {
+        fetchESPN(sportCfg.path, sportCfg.extra).then(function(resp) {
           var games = parseEvents(resp.events, sportCfg);
           var isCollege = (CFG.sport === 'CFB' || CFG.sport === 'CBB' || CFG.sport === 'CBASE');
           if (isCollege && games.length) {
