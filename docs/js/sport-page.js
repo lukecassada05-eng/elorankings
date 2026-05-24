@@ -27,6 +27,294 @@ window.initSportPage = function(CFG) {
     });
   });
 
+
+  // ── Lines & Odds ──────────────────────────────────────────
+  // Separate section below tabs — visually distinct button
+  (function setupLines() {
+    // Insert Lines button below the tabs row
+    var tabsEl = document.querySelector('.tabs');
+    if (!tabsEl) return;
+
+    // Create the Lines toggle button
+    var btn = document.createElement('button');
+    btn.id = 'linesToggleBtn';
+    btn.innerHTML = '📈 Lines &amp; Odds';
+    btn.title = 'Elo-based win probability, spread and moneyline odds for upcoming games';
+    btn.style.cssText = [
+      'display:block','width:100%','margin:0.85rem 0 0',
+      'padding:0.6rem 1rem',
+      'background:var(--bg2)','border:2px solid var(--border)',
+      'border-radius:var(--radius-lg)','cursor:pointer',
+      'font-family:var(--font-mono)','font-size:0.78rem','font-weight:600',
+      'color:var(--text-muted)','text-align:left',
+      'transition:border-color 0.15s,color 0.15s',
+      'letter-spacing:0.02em'
+    ].join(';');
+
+    btn.addEventListener('mouseenter', function() {
+      if (!linesOpen) {
+        btn.style.borderColor = 'var(--accent)';
+        btn.style.color = 'var(--accent)';
+      }
+    });
+    btn.addEventListener('mouseleave', function() {
+      if (!linesOpen) {
+        btn.style.borderColor = 'var(--border)';
+        btn.style.color = 'var(--text-muted)';
+      }
+    });
+
+    tabsEl.parentNode.insertBefore(btn, tabsEl.nextSibling);
+
+    // Create the Lines panel (hidden by default)
+    var panel = document.createElement('div');
+    panel.id = 'linesPanel';
+    panel.hidden = true;
+    panel.style.cssText = 'margin-top:0.75rem';
+    btn.parentNode.insertBefore(panel, btn.nextSibling);
+
+    var linesOpen   = false;
+    var linesLoaded = false;
+
+    btn.addEventListener('click', function() {
+      linesOpen = !linesOpen;
+      panel.hidden = !linesOpen;
+
+      if (linesOpen) {
+        btn.style.cssText = btn.style.cssText
+          .replace('var(--bg2)', 'rgba(226,201,126,0.08)')
+          .replace(/border:[^;]+;/, 'border:2px solid var(--accent);');
+        btn.style.borderColor = 'var(--accent)';
+        btn.style.color = 'var(--accent)';
+        btn.innerHTML = '📈 Lines &amp; Odds &nbsp;<span style="font-size:0.68rem;opacity:0.7">▲ close</span>';
+        if (!linesLoaded) { linesLoaded = true; loadLines(); }
+      } else {
+        btn.style.borderColor = 'var(--border)';
+        btn.style.color = 'var(--text-muted)';
+        btn.style.background = 'var(--bg2)';
+        btn.innerHTML = '📈 Lines &amp; Odds';
+      }
+
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'lines_toggle', { sport: CFG.sport, open: linesOpen });
+      }
+    });
+
+    // Soccer league sub-filter state
+    var activeSoccerLeague = 'All';
+    var allLinesGames = [];
+
+    function loadLines() {
+      panel.innerHTML = '<div class="loading"><div class="spinner"></div>Loading upcoming games…</div>';
+
+      // ESPN configs per sport
+      var cfgMap = {
+        NFL:   { path:'americanfootball/nfl',                  nf:'displayName',      hca:45,  scale:35,  unit:'pts'   },
+        NBA:   { path:'basketball/nba',                         nf:'displayName',      hca:50,  scale:10,  unit:'pts'   },
+        MLB:   { path:'baseball/mlb',                           nf:'displayName',      hca:20,  scale:150, unit:'runs'  },
+        NHL:   { path:'icehockey/nhl',                          nf:'displayName',      hca:25,  scale:150, unit:'goals' },
+        CFB:   { path:'football/college-football',              nf:'shortDisplayName', hca:55,  scale:35,  unit:'pts',  extra:'&groups=80' },
+        CBB:   { path:'basketball/mens-college-basketball',     nf:'shortDisplayName', hca:60,  scale:10,  unit:'pts',  extra:'&groups=50' },
+        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:20,  scale:150, unit:'runs'  },
+        Soccer:[
+          { league:'EPL',        path:'soccer/eng.1',          nf:'displayName', hca:60, scale:150, unit:'goals', draw:true },
+          { league:'La Liga',    path:'soccer/esp.1',          nf:'displayName', hca:60, scale:150, unit:'goals', draw:true },
+          { league:'Bundesliga', path:'soccer/ger.1',          nf:'displayName', hca:60, scale:150, unit:'goals', draw:true },
+          { league:'Serie A',    path:'soccer/ita.1',          nf:'displayName', hca:60, scale:150, unit:'goals', draw:true },
+          { league:'Ligue 1',    path:'soccer/fra.1',          nf:'displayName', hca:60, scale:150, unit:'goals', draw:true },
+          { league:'MLS',        path:'soccer/usa.1',          nf:'displayName', hca:60, scale:150, unit:'goals', draw:true },
+          { league:'UCL',        path:'soccer/uefa.champions', nf:'displayName', hca:60, scale:150, unit:'goals', draw:true },
+        ]
+      };
+
+      var sportCfg = cfgMap[CFG.sport];
+      if (!sportCfg) {
+        panel.innerHTML = '<div class="empty-state" style="padding:1.5rem;text-align:center">Lines not available for this sport yet.</div>';
+        return;
+      }
+
+      var NAME_FIX = { 'Athletics':'Sacramento Athletics', 'Oakland Athletics':'Sacramento Athletics' };
+
+      var NOW    = new Date();
+      var CUTOFF = new Date(NOW.getTime() + 14*24*60*60*1000);
+
+      function inWindow(d) {
+        var dt = new Date(d);
+        return !isNaN(dt) && dt >= NOW && dt <= CUTOFF;
+      }
+
+      function eloProb(eA, eB, hca) { return 1/(1+Math.pow(10,(eB-(eA+hca))/400)); }
+      function eloSpread(eA, eB, hca, scale) { return ((eA+hca-eB)/scale).toFixed(1); }
+      function drawP(eA, eB, hca) { return Math.max(0.03, 0.28*Math.max(0,1-Math.abs(eA+hca-eB)/500)); }
+      function toAmerican(p) {
+        if (p<=0||p>=1) return '—';
+        return p>=0.5 ? String(Math.round(-(p/(1-p))*100)) : '+'+Math.round(((1-p)/p)*100);
+      }
+
+      function fetchESPN(path, extra) {
+        var url = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=200'+(extra||'');
+        return fetch(url,{mode:'cors'}).then(function(r){return r.ok?r.json():{events:[]};}).catch(function(){return {events:[]};});
+      }
+
+      // Use the already-loaded Elo data (data array from current season)
+      function getElo(teamName) {
+        var row = data.find(function(r){ return r.team === teamName; });
+        return row ? row.elo : 1500; // default 1500 = base Elo for new season
+      }
+
+      function parseEvents(events, lCfg) {
+        var games = [], seen = {};
+        (events||[]).forEach(function(ev) {
+          if (!inWindow(ev.date)) return;
+          var comp = (ev.competitions||[])[0];
+          if (!comp) return;
+          if (comp.status&&comp.status.type&&comp.status.type.completed) return;
+          var competitors = comp.competitors||[];
+          var home=null, away=null;
+          competitors.forEach(function(c){if(c.homeAway==='home')home=c;else away=c;});
+          if (!home||!away) return;
+          var hn=(home.team[lCfg.nf]||home.team.displayName||'').trim();
+          var an=(away.team[lCfg.nf]||away.team.displayName||'').trim();
+          if (!hn||!an) return;
+          if (hn.toLowerCase()==='tbd'||an.toLowerCase()==='tbd') return;
+          if (hn.toLowerCase().includes('flex')||an.toLowerCase().includes('flex')) return;
+          hn = NAME_FIX[hn]||hn; an = NAME_FIX[an]||an;
+          var key = ev.id||(hn+'|'+an+'|'+ev.date);
+          if (seen[key]) return; seen[key]=1;
+          var neutral = !!(comp.neutralSite);
+          var hca = neutral ? 0 : lCfg.hca;
+          var eH = getElo(hn), eA = getElo(an);
+          var pH = eloProb(eH, eA, hca);
+          var pA = 1 - pH;
+          var pD = lCfg.draw ? drawP(eH, eA, hca) : 0;
+          if (pD) { pH=(1-pD)*pH; pA=(1-pD)*pA; }
+          games.push({
+            league: lCfg.league||CFG.sport,
+            date: ev.date, id: key,
+            homeTeam:hn, awayTeam:an,
+            eH:eH, eA:eA, pH:pH, pA:pA, pD:pD,
+            spd: parseFloat(eloSpread(eH,eA,hca,lCfg.scale)),
+            unit: lCfg.unit, neutral:neutral,
+            isDefault: (eH===1500||eA===1500)
+          });
+        });
+        games.sort(function(a,b){return new Date(a.date)-new Date(b.date);});
+        return games;
+      }
+
+      function renderGameCards(games) {
+        if (!games.length) {
+          return '<div class="empty-state" style="padding:1.5rem;text-align:center">'
+            +'<div style="font-size:0.95rem;font-weight:600;margin-bottom:0.3rem">No upcoming games</div>'
+            +'<div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">'+CFG.sport+' is off-season or no games in the next 2 weeks</div>'
+            +'</div>';
+        }
+
+        var html = '<div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);margin-bottom:0.75rem">'
+          +games.length+' game'+(games.length!==1?'s':'')+' · next 14 days</div>';
+
+        games.forEach(function(g) {
+          var d = new Date(g.date);
+          var dateStr = isNaN(d) ? '—' :
+            d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'})
+            +' · '+d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+
+          var pH  = (g.pH*100).toFixed(1)+'%';
+          var pA  = (g.pA*100).toFixed(1)+'%';
+          var pD  = g.pD>0 ? (g.pD*100).toFixed(1)+'%' : null;
+          var mlH = toAmerican(g.pH), mlA = toAmerican(g.pA);
+          var absS = Math.abs(g.spd).toFixed(1);
+          var uL  = g.unit!=='pts' ? ' '+g.unit : '';
+          var spdH = g.spd>0.05?'-'+absS+uL:g.spd<-0.05?'+'+absS+uL:'PK';
+          var spdA = g.spd>0.05?'+'+absS+uL:g.spd<-0.05?'-'+absS+uL:'PK';
+          var barH = (g.pH*100).toFixed(1);
+          var barD = (g.pD*100).toFixed(1);
+
+          html += '<div class="lines-game-card">'
+            +'<div class="lines-meta">'
+              +(g.league&&g.league!==CFG.sport?'<span class="lines-badge">'+g.league+'</span>':'')
+              +'<span class="lines-time">'+dateStr+'</span>'
+              +(g.neutral?'<span class="lines-neutral">Neutral</span>':'')
+              +(g.isDefault?'<span style="font-family:var(--font-mono);font-size:0.52rem;color:var(--text-dim)">★ base Elo</span>':'')
+            +'</div>'
+            +'<div class="lines-matchup">'
+              +'<div class="lines-team">'
+                +'<div class="lines-tname">'+g.homeTeam+'</div>'
+                +'<div class="lines-elo">'+g.eH.toFixed(0)+' Elo</div>'
+              +'</div>'
+              +'<div class="lines-mid">'
+                +'<div class="lines-prob-bar">'
+                  +'<div style="width:'+barH+'%;background:var(--accent)"></div>'
+                  +(g.pD>0?'<div style="width:'+barD+'%;background:var(--text-dim);opacity:0.4"></div>':'')
+                  +'<div style="flex:1;background:var(--blue-hi)"></div>'
+                +'</div>'
+                +'<div class="lines-probs">'
+                  +'<span style="color:var(--accent)">'+pH+'</span>'
+                  +(pD?'<span class="lines-draw">'+pD+' draw</span>':'<span style="color:var(--text-dim)">vs</span>')
+                  +'<span style="color:var(--blue-hi)">'+pA+'</span>'
+                +'</div>'
+                +'<div class="lines-row2">'
+                  +'<span class="lines-spd-val">'+spdH+'</span>'
+                  +'<span class="lines-row2-label">Spread</span>'
+                  +'<span class="lines-spd-val">'+spdA+'</span>'
+                +'</div>'
+                +'<div class="lines-row2">'
+                  +'<span class="lines-ml '+(g.pH>=0.5?'lines-fav':'lines-dog')+'">'+mlH+'</span>'
+                  +'<span class="lines-row2-label">Elo Odds</span>'
+                  +'<span class="lines-ml '+(g.pA>=0.5?'lines-fav':'lines-dog')+'">'+mlA+'</span>'
+                +'</div>'
+              +'</div>'
+              +'<div class="lines-team lines-team-r">'
+                +'<div class="lines-tname">'+g.awayTeam+'</div>'
+                +'<div class="lines-elo">'+g.eA.toFixed(0)+' Elo</div>'
+              +'</div>'
+            +'</div>'
+            +'</div>';
+        });
+
+        html += '<div class="lines-note">Win %, spread &amp; odds from Elo · Home advantage applied unless neutral · ★ = team not in current CSV, using base Elo 1500 · Not financial advice</div>';
+        return html;
+      }
+
+      function renderLeagueFilter(leagues) {
+        var btns = ['All'].concat(leagues).map(function(l) {
+          return '<button onclick="window._linesLeague(\\"'+l+'\\")" class="lines-sub-btn'+(l==='All'?' active':'')+'" data-league="'+l+'">'+l+'</button>';
+        }).join('');
+        return '<div style="display:flex;gap:0.35rem;flex-wrap:wrap;margin-bottom:0.75rem">'+btns+'</div>';
+      }
+
+      window._linesLeague = function(league) {
+        activeSoccerLeague = league;
+        document.querySelectorAll('.lines-sub-btn').forEach(function(b){
+          b.classList.toggle('active', b.getAttribute('data-league')===league);
+        });
+        var filtered = league==='All' ? allLinesGames : allLinesGames.filter(function(g){return g.league===league;});
+        var gameArea = document.getElementById('linesGames');
+        if (gameArea) gameArea.innerHTML = renderGameCards(filtered);
+      };
+
+      // Fetch and render
+      if (Array.isArray(sportCfg)) {
+        // Soccer: fetch all leagues
+        var leagues = sportCfg.map(function(l){return l.league;});
+        Promise.all(sportCfg.map(function(lc){
+          return fetchESPN(lc.path).then(function(data){ return parseEvents(data.events, lc); });
+        })).then(function(results) {
+          allLinesGames = [];
+          results.forEach(function(games){allLinesGames = allLinesGames.concat(games);});
+          allLinesGames.sort(function(a,b){return new Date(a.date)-new Date(b.date);});
+          panel.innerHTML = renderLeagueFilter(leagues)+'<div id="linesGames">'+renderGameCards(allLinesGames)+'</div>';
+        });
+      } else {
+        fetchESPN(sportCfg.path, sportCfg.extra).then(function(resp) {
+          var games = parseEvents(resp.events, sportCfg);
+          panel.innerHTML = '<div id="linesGames">'+renderGameCards(games)+'</div>';
+        });
+      }
+    }
+  })();
+
+
   // ── Load season ────────────────────────────────────────────
   async function loadSeason(yr) {
     currentSeason = yr;
