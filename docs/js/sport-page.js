@@ -121,7 +121,7 @@ window.initSportPage = function(CFG) {
         NHL:   { path:'icehockey/nhl',                          nf:'displayName',      hca:30,  scale:200, unit:'goals' },
         CFB:   { path:'football/college-football',              nf:'shortDisplayName', hca:55,  scale:28,  unit:'pts',  extra:'&groups=80', spreadCap:35 },
         CBB:   { path:'basketball/mens-college-basketball',     nf:'shortDisplayName', hca:90,  scale:12,  unit:'pts',  extra:'&groups=50' },
-        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs'  },
+        CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs',  extra:'&groups=11' },
         Soccer:[
           { league:'EPL',        path:'soccer/eng.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
           { league:'La Liga',    path:'soccer/esp.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
@@ -199,7 +199,7 @@ window.initSportPage = function(CFG) {
       function fetchESPN(path, extra) {
         // Fetch both regular season (seasontype=2) and postseason (seasontype=3)
         // to capture playoffs, conference tournaments, etc.
-        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=200'+(extra||'');
+        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500'+(extra||'');
         var urls = [base, base+'&seasontype=3'];
         return Promise.all(urls.map(function(url){
           return fetch(url,{mode:'cors'}).then(function(r){return r.ok?r.json():{events:[]};}).catch(function(){return {events:[]};});
