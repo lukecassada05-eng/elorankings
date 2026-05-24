@@ -304,16 +304,14 @@ window.initSportPage = function(CFG) {
       };
 
       var NOW    = new Date();
-      var CUTOFF = new Date(NOW.getTime() + 14*24*60*60*1000);
-      // Look back 2 days to catch games in any timezone
-      var LOOKBACK = new Date(NOW.getTime() - 2*24*60*60*1000);
+      var CUTOFF = new Date(NOW.getTime() + 16*24*60*60*1000); // 16 days covers 15 fetched days
 
       function inWindow(d) {
         if (!d) return false;
         var dt = new Date(d);
-        // Lower bound: 2 days ago (ESPN completed filter handles truly past games)
-        // Upper bound: 14 days from now
-        return !isNaN(dt) && dt >= LOOKBACK && dt <= CUTOFF;
+        // Since we fetch specific dates, just exclude anything beyond 16 days
+        // The completed filter in parseEvents handles already-finished games
+        return !isNaN(dt) && dt <= CUTOFF;
       }
 
       function eloProb(eA, eB, hca) { return 1/(1+Math.pow(10,(eB-(eA+hca))/400)); }
@@ -328,23 +326,34 @@ window.initSportPage = function(CFG) {
         return p>=0.5 ? String(Math.round(-(p/(1-p))*100)) : '+'+Math.round(((1-p)/p)*100);
       }
 
-      function fetchESPN(path, extra) {
-        // The default ESPN scoreboard auto-returns the current active phase
-        // (regular season OR playoffs) — no need to specify seasontype
-        // We also try seasontype=3 as fallback for sports mid-playoffs
-        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500'+(extra||'');
-        return fetch(base, {mode:'cors'})
-          .then(function(r){ return r.ok ? r.json() : {events:[]}; })
-          .then(function(data) {
-            // If default returns no events, try explicit postseason
-            if (!data.events || data.events.length === 0) {
-              return fetch(base+'&seasontype=3', {mode:'cors'})
-                .then(function(r){ return r.ok ? r.json() : {events:[]}; })
-                .catch(function(){ return {events:[]}; });
-            }
-            return data;
-          })
-          .catch(function(){ return {events:[]}; });
+      function fetchESPN(path, extra, noPostseason) {
+        // Fetch all 14 days in parallel — ESPN scoreboard only returns one day at a time
+        // so we must request each date individually to get the full 2-week window
+        var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=200'+(extra||'');
+        var now = new Date();
+        var dateUrls = [];
+        for (var i = 0; i < 15; i++) {
+          var d = new Date(now.getTime() + i*24*60*60*1000);
+          var ds = d.getFullYear() +
+            String(d.getMonth()+1).padStart(2,'0') +
+            String(d.getDate()).padStart(2,'0');
+          // Fetch regular season; also postseason for sports that need it (NBA/CBB playoffs)
+          dateUrls.push(base + '&dates=' + ds);
+          if (!noPostseason) dateUrls.push(base + '&dates=' + ds + '&seasontype=3');
+        }
+        return Promise.all(dateUrls.map(function(url) {
+          return fetch(url, {mode:'cors'})
+            .then(function(r){ return r.ok ? r.json() : {events:[]}; })
+            .catch(function(){ return {events:[]}; });
+        })).then(function(results) {
+          var seen = {}, events = [];
+          results.forEach(function(data) {
+            (data.events||[]).forEach(function(ev) {
+              if (!seen[ev.id]) { seen[ev.id] = 1; events.push(ev); }
+            });
+          });
+          return {events: events};
+        });
       }
 
       // Use the already-loaded Elo data (data array from current season)
@@ -494,7 +503,7 @@ window.initSportPage = function(CFG) {
         // Soccer: fetch all leagues
         var leagues = sportCfg.map(function(l){return l.league;});
         Promise.all(sportCfg.map(function(lc){
-          return fetchESPN(lc.path).then(function(data){ return parseEvents(data.events, lc); });
+          return fetchESPN(lc.path, '', true).then(function(data){ return parseEvents(data.events, lc); });
         })).then(function(results) {
           allLinesGames = [];
           results.forEach(function(games){allLinesGames = allLinesGames.concat(games);});
