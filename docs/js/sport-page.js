@@ -123,13 +123,18 @@ window.initSportPage = function(CFG) {
         CBB:   { path:'basketball/mens-college-basketball',     nf:'shortDisplayName', hca:90,  scale:12,  unit:'pts',  extra:'&groups=50' },
         CBASE: { path:'baseball/college-baseball',              nf:'shortDisplayName', hca:25,  scale:160, unit:'runs',  extra:'&groups=11' },
         Soccer:[
-          { league:'EPL',        path:'soccer/eng.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'La Liga',    path:'soccer/esp.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Bundesliga', path:'soccer/ger.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Serie A',    path:'soccer/ita.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'Ligue 1',    path:'soccer/fra.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'MLS',        path:'soccer/usa.1',          nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
-          { league:'UCL',        path:'soccer/uefa.champions', nf:'displayName', hca:0,  scale:140, unit:'goals', draw:true },
+          { league:'EPL',          path:'soccer/eng.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'La Liga',      path:'soccer/esp.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Bundesliga',   path:'soccer/ger.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Serie A',      path:'soccer/ita.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Ligue 1',      path:'soccer/fra.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'MLS',          path:'soccer/usa.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'UCL',          path:'soccer/uefa.champions',   nf:'displayName', hca:0,  scale:140, unit:'goals', draw:true },
+          { league:'Eredivisie',   path:'soccer/ned.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Primeira Liga',path:'soccer/por.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Süper Lig',    path:'soccer/tur.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Pro League',   path:'soccer/bel.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
+          { league:'Scottish Prem',path:'soccer/sco.1',            nf:'displayName', hca:65, scale:140, unit:'goals', draw:true },
         ]
       };
 
@@ -168,7 +173,39 @@ window.initSportPage = function(CFG) {
         // Ligue 1
         'Paris Saint-Germain':'Paris SG','Olympique de Marseille':'Marseille',
         'AS Monaco':'Monaco','Olympique Lyonnais':'Lyon','Stade Rennais':'Rennes',
-        'Saint-Etienne':'St Etienne'
+        'Saint-Etienne':'St Etienne',
+        // Eredivisie
+        'Ajax':'Ajax','PSV Eindhoven':'PSV','Feyenoord':'Feyenoord',
+        'AZ Alkmaar':'AZ','Vitesse':'Vitesse','FC Utrecht':'Utrecht',
+        'SC Heerenveen':'Heerenveen','Sparta Rotterdam':'Sparta Rotterdam',
+        // Primeira Liga
+        'FC Porto':'Porto','SL Benfica':'Benfica','Sporting CP':'Sp Lisbon',
+        'Sporting Lisbon':'Sp Lisbon','SC Braga':'Braga','Vitoria SC':'Vitoria',
+        // Süper Lig
+        'Galatasaray':'Galatasaray','Fenerbahce':'Fenerbahce',
+        'Besiktas':'Besiktas','Trabzonspor':'Trabzonspor',
+        // Pro League (Belgium)
+        'Club Brugge':'Club Brugge','Anderlecht':'Anderlecht',
+        'Gent':'Gent','Standard Liege':'Standard',
+        // Scottish Premiership
+        'Celtic':'Celtic','Rangers':'Rangers','Heart of Midlothian':'Hearts',
+        'Aberdeen':'Aberdeen','Hibernian':'Hibernian',
+        // MLS
+        'Inter Miami CF':'Inter Miami','LA Galaxy':'LA Galaxy',
+        'Los Angeles FC':'LAFC','Seattle Sounders FC':'Seattle Sounders',
+        'Portland Timbers':'Portland Timbers','New England Revolution':'New England Rev',
+        'Red Bull New York':'NY Red Bulls','Atlanta United FC':'Atlanta United',
+        'Columbus Crew':'Columbus Crew','CF Montréal':'Montreal Impact',
+        'Toronto FC':'Toronto FC','Philadelphia Union':'Philadelphia Union',
+        'Orlando City SC':'Orlando City','FC Cincinnati':'Cincinnati',
+        'Nashville SC':'Nashville SC','Charlotte FC':'Charlotte FC',
+        'Chicago Fire FC':'Chicago Fire','New York City FC':'NYCFC',
+        'Sporting Kansas City':'Sporting KC','Minnesota United FC':'Minnesota Utd',
+        'Colorado Rapids':'Colorado Rapids','FC Dallas':'FC Dallas',
+        'Houston Dynamo FC':'Houston Dynamo','San Jose Earthquakes':'San Jose Earthquakes',
+        'Real Salt Lake':'Real Salt Lake','Vancouver Whitecaps':'Vancouver Whitecaps',
+        'Austin FC':'Austin FC','Portland Timbers':'Portland Timbers',
+        'San Diego FC':'San Diego FC'
       };
 
       var NOW    = new Date();
