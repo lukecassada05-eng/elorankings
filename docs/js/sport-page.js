@@ -1037,118 +1037,197 @@ window.initSportPage = function(CFG) {
   function renderBracketology() {
     const el = document.getElementById('panel-bracketology');
     if (!el || !data.length) return;
+    el.innerHTML = '<div class="loading"><div class="spinner"></div>Building bracket…</div>';
 
-    // ── Bracket size by season ──────────────────────────────
-    // 2027+ (2026-27 season): 76 teams, 32 auto bids, 44 at-large
-    // ≤2026 (2025-26 season and earlier): 68 teams, 32 auto bids, 36 at-large
-    const season = currentSeason || CFG.seasons[0];
-    const is76   = (CFG.sport === 'CBB' && season >= 2027);
-    const total  = is76 ? 76 : (CFG.sport === 'CBB' ? 68 : 64);
-    const autoN  = CFG.sport === 'CBB' ? 32 : 31;  // CBASE has 31 conf auto bids
-
-    // ── Conferences to exclude from auto bids ───────────────
+    // ── Config ────────────────────────────────────────────────────────────────
     const EXCLUDE = new Set(['NA','N/A','Unknown','Other D1','Independent','Ind','']);
+    const isCBB   = CFG.sport === 'CBB';
+    const isCBASE = CFG.sport === 'CBASE';
+    const season  = currentSeason || CFG.seasons[0];
+    const is76    = isCBB && season >= 2027;
+    const total   = is76 ? 76 : (isCBB ? 68 : 64);
 
-    // Group by conference
-    const confTeams = {};
-    data.forEach(r => {
-      const c = r.conference || '';
-      if (!confTeams[c]) confTeams[c] = [];
-      confTeams[c].push(r);
-    });
+    // ── Fetch conference tournament champions from ESPN ────────────────────────
+    // CBB: conf tournaments run late Feb–mid March (seasontype=3)
+    // CBASE: conf tournaments run mid-May (seasontype=3)
+    function fetchConfChamps() {
+      var path = isCBB
+        ? 'basketball/mens-college-basketball'
+        : 'baseball/college-baseball';
+      var extra = isCBB ? '&groups=50' : '&groups=11';
 
-    // Check if ANY team has conf_champ data (column exists in CSV)
-    const hasChampData = data.some(r => r.conf_champ === 'TRUE' || r.conf_champ === 'FALSE');
-
-    // Pick auto bid per conference
-    const byConf = {};
-    Object.entries(confTeams).forEach(([conf, teams]) => {
-      if (EXCLUDE.has(conf) || !conf) return;
-      if (teams.length < 2) return;
-      if (hasChampData) {
-        const champ = teams.find(r => String(r.conf_champ||'').trim() === 'TRUE');
-        if (champ) {
-          byConf[conf] = Object.assign({}, champ, {_confirmed: true});
-          return;
-        }
+      // Date window covering conf tournament games
+      var yr = season;
+      var fromDate, toDate;
+      if (isCBB) {
+        fromDate = yr + '0225'; toDate = yr + '0316';
+      } else {
+        fromDate = yr + '0515'; toDate = yr + '0528';
       }
-      // Fallback: highest Elo = projected auto bid
-      const best = teams.slice().sort((a,b) => b.elo - a.elo)[0];
-      byConf[conf] = Object.assign({}, best, {_confirmed: false});
-    });
 
-    const autoBids  = Object.values(byConf);
-    const autoTeams = new Set(autoBids.map(r => r.team));
+      var url = 'https://site.api.espn.com/apis/site/v2/sports/' + path
+        + '/scoreboard?limit=500&seasontype=3&dates=' + fromDate + '-' + toDate + extra;
 
-    // At-large: best remaining by Elo
-    const atLarge = data
-      .filter(r => !autoTeams.has(r.team) && !EXCLUDE.has(r.conference||''))
-      .sort((a,b) => b.elo - a.elo)
-      .slice(0, total - autoBids.length);
+      return fetch(url, {mode:'cors'})
+        .then(function(r){ return r.ok ? r.json() : {events:[]}; })
+        .catch(function(){ return {events:[]}; })
+        .then(function(data) {
+          var champs = {}; // conf → team shortDisplayName
+          (data.events||[]).forEach(function(ev) {
+            try {
+              // Only championship games
+              var noteText = (ev.notes||[]).map(function(n){return n.headline||'';}).join(' ');
+              if (!/champion/i.test(noteText)) return;
+              var comp = (ev.competitions||[])[0];
+              if (!comp || !comp.status.type.completed) return;
+              var competitors = comp.competitors||[];
+              var winner = null;
+              var maxScore = -1;
+              competitors.forEach(function(c) {
+                var s = parseFloat(c.score);
+                if (!isNaN(s) && s > maxScore) { maxScore = s; winner = c; }
+              });
+              if (!winner) return;
 
-    const field = [...autoBids, ...atLarge].sort((a,b) => b.elo - a.elo);
+              // Get conf name from notes
+              var confName = '';
+              (ev.notes||[]).forEach(function(n) {
+                var h = n.headline || '';
+                // e.g. "ACC Men's Basketball Tournament Championship"
+                var m = h.match(/^([A-Z][^-]+?)\s+(?:Men|Women|Conference|Tournament|Baseball)/i);
+                if (m && m[1] && m[1].length > 1) confName = m[1].trim();
+              });
+              if (!confName && ev.groups && ev.groups[0]) {
+                confName = ev.groups[0].shortName || ev.groups[0].name || '';
+              }
 
-    // ── Seeding ─────────────────────────────────────────────
-    var seeds;
-    if (CFG.sport === 'CBB' && is76) {
-      // 76-team bracket: seeds 1-19 get 4 teams each = 76
-      // Opening Round: lowest 4 auto qualifiers + lowest 4 at-large play in
-      // Seeds: 1×4, 2×4, ... 16×4, then 17×4 for opening round extras
-      // Simplified: assign seeds 1-19, 4 teams per seed
-      seeds = Array.from({length:76}, (_, i) => Math.floor(i/4)+1);
-    } else if (CFG.sport === 'CBB') {
-      // 68-team: seeds 1-16 with First Four at 11,16
-      seeds = [1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,
-               8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,
-               12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,16,16];
-    } else {
-      // CBASE 64-team
-      seeds = Array.from({length:64}, (_, i) => Math.floor(i/4)+1);
+              var winnerName = winner.team.shortDisplayName || winner.team.displayName || '';
+              if (confName && winnerName) {
+                champs[confName.toLowerCase()] = winnerName;
+              }
+            } catch(e) {}
+          });
+          return champs;
+        });
     }
 
-    field.forEach((r,i) => {
-      r._seed = seeds[i] || (Math.floor(i/4)+1);
-      r._auto = autoTeams.has(r.team);
-    });
+    // ── Build bracket after fetching champs ───────────────────────────────────
+    fetchConfChamps().then(function(champsByConf) {
+      // Build conf groups
+      var confTeams = {};
+      data.forEach(function(r) {
+        var c = r.conference || '';
+        if (!confTeams[c]) confTeams[c] = [];
+        confTeams[c].push(r);
+      });
 
-    const confirmed = autoBids.filter(r => r._confirmed).length;
-    const projected = autoBids.filter(r => !r._confirmed).length;
-    const infoEl    = document.getElementById('bracketInfo');
-    if (infoEl) {
-      var infoStr = autoBids.length + ' auto bids';
-      if (hasChampData) infoStr += ' (' + confirmed + ' confirmed\u00b7' + projected + ' projected)';
-      else infoStr += ' (projected \u2014 no champ data yet)';
-      infoStr += ' \u00b7 ' + atLarge.length + ' at-large \u00b7 ' + field.length + ' total';
-      if (is76) infoStr += ' \u00b7 76-team format';
-      infoEl.textContent = infoStr;
-    }
+      // Assign auto bids
+      var byConf = {};
+      Object.entries(confTeams).forEach(function(entry) {
+        var conf = entry[0]; var teams = entry[1];
+        if (EXCLUDE.has(conf) || !conf) return;
+        if (teams.length < 2) return;
 
-    const bySeed = {};
-    field.forEach(r => { if (!bySeed[r._seed]) bySeed[r._seed]=[]; bySeed[r._seed].push(r); });
+        // 1. Check ESPN-fetched champs (conf name fuzzy match)
+        var champTeam = null;
+        var confLow = conf.toLowerCase();
+        Object.keys(champsByConf).forEach(function(k) {
+          if (confLow.includes(k) || k.includes(confLow) ||
+              confLow.replace(/[^a-z]/g,'').includes(k.replace(/[^a-z]/g,''))) {
+            var espnName = champsByConf[k];
+            // Find team in our data matching this ESPN name
+            var matched = teams.find(function(t) {
+              return t.team.toLowerCase().includes(espnName.toLowerCase()) ||
+                     espnName.toLowerCase().includes(t.team.toLowerCase());
+            });
+            if (matched) champTeam = {team: matched, confirmed: true};
+          }
+        });
 
-    el.innerHTML = '<div class="bracket-grid">' +
-      Object.entries(bySeed).map(function(entry) {
-        var seed = entry[0]; var teams = entry[1];
-        return '<div class="bracket-card">' +
-          '<div class="bracket-card-header">Seed ' + seed + '</div>' +
-          teams.map(function(r) {
-            var tag = '';
-            if (r._auto && r._confirmed)  tag = '<span class="card-tag tag-live" style="font-size:0.5rem;padding:0.1rem 0.35rem">CHAMP</span>';
-            else if (r._auto)             tag = '<span class="card-tag" style="font-size:0.5rem;padding:0.1rem 0.35rem;background:var(--bg3)">AUTO\u2605</span>';
-            return '<div class="bracket-line">' +
-              '<div class="seed ' + (parseInt(seed)<=3?'s'+seed:'') + '">' + seed + '</div>' +
-              '<div style="flex:1;min-width:0">' +
-                '<div class="bracket-line-team">' + r.team + '</div>' +
-                '<div class="bracket-line-conf">' + (r.conference||'\u2014') + ' \u00b7 ' + r.elo.toFixed(1) + '</div>' +
-              '</div>' + tag +
-            '</div>';
-          }).join('') +
+        // 2. Check CSV conf_champ column
+        if (!champTeam) {
+          var csvChamp = teams.find(function(r) {
+            return String(r.conf_champ||'').trim().toUpperCase() === 'TRUE';
+          });
+          if (csvChamp) champTeam = {team: csvChamp, confirmed: true};
+        }
+
+        // 3. Fallback: highest Elo
+        if (!champTeam) {
+          var best = teams.slice().sort(function(a,b){return b.elo-a.elo;})[0];
+          champTeam = {team: best, confirmed: false};
+        }
+
+        byConf[conf] = Object.assign({}, champTeam.team, {_confirmed: champTeam.confirmed});
+      });
+
+      var autoBids  = Object.values(byConf);
+      var autoTeams = new Set(autoBids.map(function(r){return r.team;}));
+
+      var atLarge = data
+        .filter(function(r){ return !autoTeams.has(r.team) && !EXCLUDE.has(r.conference||''); })
+        .sort(function(a,b){ return b.elo - a.elo; })
+        .slice(0, total - autoBids.length);
+
+      var field = autoBids.concat(atLarge).sort(function(a,b){ return b.elo - a.elo; });
+
+      // Seeds
+      var seeds;
+      if (isCBB && is76) {
+        seeds = Array.from({length:76}, function(_,i){ return Math.floor(i/4)+1; });
+      } else if (isCBB) {
+        seeds = [1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,
+                 8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,
+                 12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,16,16];
+      } else {
+        seeds = Array.from({length:64}, function(_,i){ return Math.floor(i/4)+1; });
+      }
+
+      field.forEach(function(r,i){
+        r._seed = seeds[i] || (Math.floor(i/4)+1);
+        r._auto = autoTeams.has(r.team);
+      });
+
+      var confirmed = autoBids.filter(function(r){return r._confirmed;}).length;
+      var projected = autoBids.filter(function(r){return !r._confirmed;}).length;
+      var champCount = Object.keys(champsByConf).length;
+
+      var infoEl = document.getElementById('bracketInfo');
+      if (infoEl) {
+        var s = autoBids.length + ' auto bids';
+        if (champCount > 0) s += ' (' + confirmed + ' confirmed · ' + projected + ' projected)';
+        else s += ' (projected — champ data loading)';
+        s += ' · ' + atLarge.length + ' at-large · ' + field.length + ' total';
+        if (is76) s += ' · 76-team format (2026-27+)';
+        infoEl.textContent = s;
+      }
+
+      var bySeed = {};
+      field.forEach(function(r){ if(!bySeed[r._seed]) bySeed[r._seed]=[]; bySeed[r._seed].push(r); });
+
+      el.innerHTML = '<div class="bracket-grid">' +
+        Object.entries(bySeed).map(function(e) {
+          var seed = e[0]; var teams = e[1];
+          return '<div class="bracket-card">' +
+            '<div class="bracket-card-header">Seed ' + seed + '</div>' +
+            teams.map(function(r) {
+              var tag = r._auto && r._confirmed
+                ? '<span class="card-tag tag-live" style="font-size:0.5rem;padding:0.1rem 0.35rem">CHAMP</span>'
+                : r._auto
+                ? '<span class="card-tag" style="font-size:0.5rem;padding:0.1rem 0.35rem;background:var(--bg3)">AUTO\u2605</span>'
+                : '';
+              return '<div class="bracket-line">' +
+                '<div class="seed ' + (parseInt(seed)<=3?'s'+seed:'') + '">' + seed + '</div>' +
+                '<div style="flex:1;min-width:0">' +
+                  '<div class="bracket-line-team">' + r.team + '</div>' +
+                  '<div class="bracket-line-conf">' + (r.conference||'\u2014') + ' \u00b7 ' + r.elo.toFixed(1) + '</div>' +
+                '</div>' + tag + '</div>';
+            }).join('') + '</div>';
+        }).join('') + '</div>' +
+        '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.75rem;padding:0.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius)">' +
+        'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected (highest Elo)\u2002\u00b7\u2002At-large by Elo' +
         '</div>';
-      }).join('') +
-    '</div>' +
-    '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.75rem;padding:0.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius)">' +
-      'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected highest Elo (pre-tournament)\u2002\u00b7\u2002At-large by Elo rating' +
-    '</div>';
+    });
   }
 
   // ── Resume (CFB) ───────────────────────────────────────────
