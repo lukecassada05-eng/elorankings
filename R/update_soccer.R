@@ -120,3 +120,75 @@ for (ey in END_YEARS) {
   message("  -> ", nrow(out), " clubs")
 }
 message("Soccer done.")
+
+# ── MLS (ESPN API — football-data.co.uk doesn't cover MLS) ───────────
+message("Soccer: fetching MLS from ESPN API")
+
+fetch_mls_espn <- function(yr) {
+  base_url <- paste0(
+    "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard",
+    "?limit=500&seasontype=2"
+  )
+  tryCatch({
+    res <- httr::GET(base_url, httr::timeout(15))
+    if (httr::status_code(res) != 200) return(NULL)
+    data <- jsonlite::fromJSON(httr::content(res, "text", encoding="UTF-8"),
+                               simplifyVector=FALSE)
+    events <- data$events
+    if (!length(events)) return(NULL)
+    
+    rows <- lapply(events, function(ev) {
+      comp <- ev$competitions[[1]]
+      comps <- comp$competitors
+      if (length(comps) < 2) return(NULL)
+      
+      home_idx <- which(sapply(comps, function(c) c$homeAway == "home"))
+      away_idx <- which(sapply(comps, function(c) c$homeAway == "away"))
+      if (!length(home_idx) || !length(away_idx)) return(NULL)
+      
+      home <- comps[[home_idx[1]]]
+      away <- comps[[away_idx[1]]]
+      
+      completed <- isTRUE(comp$status$type$completed)
+      if (!completed) return(NULL)
+      
+      hs <- suppressWarnings(as.integer(home$score))
+      as_ <- suppressWarnings(as.integer(away$score))
+      if (is.na(hs) || is.na(as_)) return(NULL)
+      
+      data.frame(
+        home_team = home$team$displayName,
+        away_team = away$team$displayName,
+        home_goals = hs,
+        away_goals = as_,
+        date = substr(ev$date, 1, 10),
+        league = "MLS",
+        country = "USA",
+        stringsAsFactors = FALSE
+      )
+    })
+    do.call(rbind, Filter(Negate(is.null), rows))
+  }, error = function(e) { message("MLS ESPN error: ", e$message); NULL })
+}
+
+mls_games <- fetch_mls_espn(LAST_END)
+if (!is.null(mls_games) && nrow(mls_games) > 0) {
+  message("  MLS: ", nrow(mls_games), " completed games found")
+  # Add to existing soccer CSV for current season
+  out_file <- file.path(OUT_DIR, paste0("Soccer_Elo_", LAST_END, ".csv"))
+  if (file.exists(out_file)) {
+    existing <- readr::read_csv(out_file, show_col_types = FALSE)
+    # Only process if MLS teams not already in the file
+    if (!any(grepl("Galaxy|Inter Miami|LAFC|Sounders", existing$team))) {
+      # Run Elo engine on MLS games
+      mls_elo <- run_elo(mls_games %>%
+        rename(home=home_team, away=away_team, hg=home_goals, ag=away_goals) %>%
+        mutate(league="MLS", country="USA"),
+        k=30, hca=65, init=1500)
+      mls_out <- mls_elo %>% mutate(conference="MLS", updated_at=format(Sys.time(), "%Y-%m-%d"))
+      combined <- dplyr::bind_rows(existing, mls_out)
+      readr::write_csv(combined, out_file)
+      message("  MLS Elo added to Soccer_Elo_", LAST_END, ".csv")
+    }
+  }
+}
