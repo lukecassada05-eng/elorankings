@@ -116,7 +116,7 @@ window.initSportPage = function(CFG) {
       // Soccer: D=500 model, draw suppresses win%, scale 140≈0.7goals/100Elo
       var cfgMap = {
         NFL:   { path:'americanfootball/nfl',                  nf:'displayName',      hca:55,  scale:28,  unit:'pts'   },
-        NBA:   { path:'basketball/nba',                         nf:'displayName',      hca:100, scale:11,  unit:'pts'   },
+        NBA:   { path:'basketball/nba',                         nf:'displayName',      hca:63,  scale:11,  unit:'pts'   },
         MLB:   { path:'baseball/mlb',                           nf:'displayName',      hca:25,  scale:180, unit:'runs'  },
         NHL:   { path:'icehockey/nhl',                          nf:'displayName',      hca:30,  scale:200, unit:'goals' },
         CFB:   { path:'football/college-football',              nf:'shortDisplayName', hca:55,  scale:28,  unit:'pts',  extra:'&groups=80', spreadCap:35 },
@@ -145,6 +145,101 @@ window.initSportPage = function(CFG) {
       }
 
       var NAME_FIX = {
+        // College Baseball: ESPN shortDisplayName → canonical name used in CBASE CSV
+        // (mirrors the ALIASES in update_college_baseball.R)
+        'Fla. State':'Florida State','Florida St':'Florida State','FSU':'Florida State',
+        'N.C. State':'NC State','N Carolina St':'NC State','Ohio St':'Ohio State',
+        'Penn St':'Penn State','Michigan St':'Michigan State','Mich. St.':'Michigan State',
+        'Oklahoma St':'Oklahoma State','Okla. State':'Oklahoma State',
+        'Iowa St':'Iowa State','Iowa St.':'Iowa State',
+        'Kansas St':'Kansas State','Kansas St.':'Kansas State','K-State':'Kansas State',
+        'Miss St':'Mississippi State','Miss. St.':'Mississippi State',
+        'Miss. State':'Mississippi State','Mississippi St':'Mississippi State',
+        'S. Carolina':'South Carolina','S Carolina':'South Carolina',
+        'Oregon St':'Oregon State','Ore. State':'Oregon State',
+        'Arizona St':'Arizona State','Ariz. St.':'Arizona State',
+        'Wash St':'Washington State','Washington St':'Washington State',
+        'Fresno St':'Fresno State','Utah St':'Utah State',
+        'San Jose St':'San Jose State','San José St':'San Jose State',
+        'San Diego St':'San Diego State','Boise St':'Boise State',
+        'Colorado St':'Colorado State',
+        'Hawaii':"Hawai\'i",
+        'USF':'South Florida','South Fla':'South Florida',
+        'ECU':'East Carolina','E. Carolina':'East Carolina',
+        'UConn':'UConn','Connecticut':'UConn',
+        'App State':'Appalachian State','Appalachian St':'Appalachian State',
+        'Ga. Southern':'Georgia Southern','GA Southern':'Georgia Southern',
+        'Ga. State':'Georgia State','GA St':'Georgia State','Georgia St':'Georgia State',
+        'Ark St':'Arkansas State','Arkansas St':'Arkansas State',
+        'Texas St':'Texas State','Tex St':'Texas State',
+        'Coastal Car':'Coastal Carolina','Coastal':'Coastal Carolina',
+        'S. Alabama':'South Alabama','South Ala':'South Alabama',
+        'ODU':'Old Dominion','Old Dom.':'Old Dominion',
+        'So. Miss':'Southern Miss',
+        'UL Monroe':'UL Monroe','La.-Monroe':'UL Monroe','ULM':'UL Monroe',
+        'ULL':'Louisiana','Louisiana Lafayette':'Louisiana','UL Lafayette':'Louisiana',
+        'WKU':'Western Kentucky','W. Kentucky':'Western Kentucky','Western KY':'Western Kentucky',
+        'Western Ky':'Western Kentucky','Western Ky.':'Western Kentucky',
+        'Middle Tenn':'Middle Tennessee','Middle Tenn.':'Middle Tennessee','MTSU':'Middle Tennessee',
+        'Fla. Atlantic':'Florida Atlantic','FAU':'Florida Atlantic',
+        'FIU Panthers':'FIU','Florida Intl':'FIU','Fla. Intl':'FIU',
+        'La. Tech':'Louisiana Tech','La Tech':'Louisiana Tech',
+        'New Mexico St':'New Mexico State','NMSU':'New Mexico State',
+        'Jax State':'Jacksonville State','Jax St':'Jacksonville State',
+        'Kennesaw St':'Kennesaw State',
+        'Sam Hous.':'Sam Houston','Sam Houston St':'Sam Houston','SHSU':'Sam Houston',
+        'C Michigan':'Central Michigan','Cent Michigan':'Central Michigan','CMU':'Central Michigan',
+        'E. Michigan':'Eastern Michigan','E Michigan':'Eastern Michigan','EMU':'Eastern Michigan',
+        'W. Michigan':'Western Michigan','W Michigan':'Western Michigan','WMU':'Western Michigan',
+        'N. Illinois':'Northern Illinois','N Illinois':'Northern Illinois','NIU':'Northern Illinois',
+        'Ball St':'Ball State','Ball St.':'Ball State',
+        'Bowling Green St':'Bowling Green','BGSU':'Bowling Green',
+        'UB':'Buffalo','Kent St':'Kent State','Kent St.':'Kent State',
+        'Miami OH':'Miami (OH)','Miami (Ohio)':'Miami (OH)',
+        'Santa Barbara':'UC Santa Barbara','UCSB':'UC Santa Barbara',
+        'Long Beach St':'Long Beach State','LBSU':'Long Beach State',
+        'CS Fullerton':'Cal State Fullerton','Fullerton':'Cal State Fullerton',
+        'Sacramento St':'Sacramento State','Sac. State':'Sacramento State',
+        'CS Northridge':'Cal State Northridge','CSUN':'Cal State Northridge',
+        'Bakersfield':'Cal State Bakersfield','CS Bakersfield':'Cal State Bakersfield',
+        'Missouri St':'Missouri State','Indiana St':'Indiana State',
+        'Illinois St':'Illinois State','S. Illinois':'Southern Illinois',
+        'N. Iowa':'Northern Iowa','UNI':'Northern Iowa',
+        'Wright St':'Wright State','N. Kentucky':'Northern Kentucky','N Kentucky':'Northern Kentucky',
+        'Purdue FW':'Purdue Fort Wayne','IU Indy':'IU Indianapolis','IUPUI':'IU Indianapolis',
+        'Dallas Baptist':'Dallas Baptist','DBU':'Dallas Baptist',
+        'GCU':'Grand Canyon','Grand Canyon':'Grand Canyon',
+        'Tarleton St':'Tarleton State','SFA':'Stephen F. Austin','SF Austin':'Stephen F. Austin',
+        'McNeese St':'McNeese','McNeese State':'McNeese',
+        'Nicholls St':'Nicholls','Nicholls State':'Nicholls',
+        'SE Louisiana':'SE Louisiana','Southeastern La.':'SE Louisiana',
+        'N\'Western St':'Northwestern State','Northwestern St':'Northwestern State',
+        'Hou Christian':'Houston Christian','Houston Baptist':'Houston Christian',
+        'Abil Christian':'Abilene Christian','Abilene Chrstn':'Abilene Christian',
+        'NC A&T':'North Carolina A&T','Delaware St':'Delaware State',
+        'Norfolk St':'Norfolk State','Morgan St':'Morgan State',
+        'Alabama St':'Alabama State','Bethune':'Bethune-Cookman',
+        'Fla. A&M':'Florida A&M','SC State':'South Carolina State',
+        'Miss Valley St':'Mississippi Valley State',
+        'Jackson St':'Jackson State','AR-Pine Bluff':'Arkansas-Pine Bluff',
+        'Alcorn St':'Alcorn State','Savannah St':'Savannah State',
+        'S Dakota St':'South Dakota State','N Dakota St':'North Dakota State','NDSU':'North Dakota State',
+        'So Indiana':'Southern Indiana','UT Rio Grande':'UT Rio Grande Valley','UTRGV':'UT Rio Grande Valley',
+        'W Illinois':'Western Illinois','W. Illinois':'Western Illinois',
+        'CA Baptist':'Cal Baptist','LMU':'Loyola Marymount',
+        'SE Missouri St':'Southeast Missouri','SE Missouri':'Southeast Missouri','SEMO':'Southeast Missouri',
+        'E. Illinois':'Eastern Illinois','E Illinois':'Eastern Illinois',
+        'C Arkansas':'Central Arkansas','Cent. Arkansas':'Central Arkansas',
+        'UMass Lowell':'UMass Lowell','UAlbany':'Albany',
+        'UIC':'Illinois-Chicago','UT Arlington':'UT Arlington','UTA':'UT Arlington',
+        'UNO':'New Orleans','SIUE':'SIUE','SIU Edwardsville':'SIUE',
+        'Wichita St':'Wichita State','Wichita St.':'Wichita State',
+        'St John\'s':'St. John\'s','St. Johns':'St. John\'s',
+        'St Thomas (MN)':'St. Thomas','St. Thomas (MN)':'St. Thomas',
+        'G Washington':'George Washington','GWU':'George Washington',
+        'C Connecticut':'Central Connecticut State','Cent. Conn.':'Central Connecticut State',
+        'FDU':'Fairleigh Dickinson','URI':'Rhode Island','UMass':'Massachusetts',
+        'Mass.':'Massachusetts','VCU':'VCU',
         // MLB
         'Athletics':'Sacramento Athletics', 'Oakland Athletics':'Sacramento Athletics',
         // Soccer: ESPN displayName → football-data.co.uk CSV name
@@ -234,21 +329,22 @@ window.initSportPage = function(CFG) {
       }
 
       function fetchESPN(path, extra) {
-        // Fetch both regular season (seasontype=2) and postseason (seasontype=3)
-        // to capture playoffs, conference tournaments, etc.
+        // The default ESPN scoreboard auto-returns the current active phase
+        // (regular season OR playoffs) — no need to specify seasontype
+        // We also try seasontype=3 as fallback for sports mid-playoffs
         var base = 'https://site.api.espn.com/apis/site/v2/sports/'+path+'/scoreboard?limit=500'+(extra||'');
-        var urls = [base, base+'&seasontype=3'];
-        return Promise.all(urls.map(function(url){
-          return fetch(url,{mode:'cors'}).then(function(r){return r.ok?r.json():{events:[]};}).catch(function(){return {events:[]};});
-        })).then(function(results){
-          var seen = {}, events = [];
-          results.forEach(function(data){
-            (data.events||[]).forEach(function(ev){
-              if(!seen[ev.id]){seen[ev.id]=1;events.push(ev);}
-            });
-          });
-          return {events:events};
-        });
+        return fetch(base, {mode:'cors'})
+          .then(function(r){ return r.ok ? r.json() : {events:[]}; })
+          .then(function(data) {
+            // If default returns no events, try explicit postseason
+            if (!data.events || data.events.length === 0) {
+              return fetch(base+'&seasontype=3', {mode:'cors'})
+                .then(function(r){ return r.ok ? r.json() : {events:[]}; })
+                .catch(function(){ return {events:[]}; });
+            }
+            return data;
+          })
+          .catch(function(){ return {events:[]}; });
       }
 
       // Use the already-loaded Elo data (data array from current season)
