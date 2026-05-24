@@ -11,7 +11,7 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upcoming Games & Predictions — EloRankings</title>
+  <title>Lines — EloRankings</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -47,84 +47,56 @@
 
   <div class="page-header fade-up">
     <div class="breadcrumb"><a href="index.html">Home</a> / Lines</div>
-    <h1>📈 <em>Upcoming Games</em></h1>
-    <p>Elo-based win probability and predicted spread · All sports · Updated live from ESPN</p>
+    <h1>📈 <em>Lines</em></h1>
+    <p>Elo-based win probability, spread &amp; implied odds · Next 2 weeks · All sports</p>
   </div>
 
   <!-- Sport tabs -->
-  <div class="tabs" id="lineTabs">
-    <button class="tab active" data-tab="all">All</button>
-    <button class="tab" data-tab="NFL">NFL</button>
-    <button class="tab" data-tab="NBA">NBA</button>
-    <button class="tab" data-tab="MLB">MLB</button>
-    <button class="tab" data-tab="NHL">NHL</button>
-    <button class="tab" data-tab="CFB">CFB</button>
-    <button class="tab" data-tab="CBB">CBB</button>
-    <button class="tab" data-tab="CBASE">C. Baseball</button>
-    <button class="tab" data-tab="Soccer">Soccer ▾</button>
+  <div class="tabs" id="sportTabs">
+    <button class="tab active" data-sport="NFL">NFL</button>
+    <button class="tab" data-sport="NBA">NBA</button>
+    <button class="tab" data-sport="MLB">MLB</button>
+    <button class="tab" data-sport="NHL">NHL</button>
+    <button class="tab" data-sport="CFB">CFB</button>
+    <button class="tab" data-sport="CBB">CBB</button>
+    <button class="tab" data-sport="CBASE">C. Baseball</button>
+    <button class="tab" data-sport="Soccer">Soccer</button>
   </div>
 
-  <!-- Soccer league sub-tabs (shown when Soccer tab active) -->
-  <div id="soccer-subtabs" hidden style="display:flex;gap:0.35rem;flex-wrap:wrap;margin:0.5rem 0 0.75rem">
-    <button class="lines-filter-btn active" data-league="All Leagues" onclick="window._ll('All Leagues')">All Leagues</button>
-    <button class="lines-filter-btn" data-league="EPL" onclick="window._ll('EPL')">EPL</button>
-    <button class="lines-filter-btn" data-league="La Liga" onclick="window._ll('La Liga')">La Liga</button>
-    <button class="lines-filter-btn" data-league="Bundesliga" onclick="window._ll('Bundesliga')">Bundesliga</button>
-    <button class="lines-filter-btn" data-league="Serie A" onclick="window._ll('Serie A')">Serie A</button>
-    <button class="lines-filter-btn" data-league="Ligue 1" onclick="window._ll('Ligue 1')">Ligue 1</button>
-    <button class="lines-filter-btn" data-league="MLS" onclick="window._ll('MLS')">MLS</button>
-    <button class="lines-filter-btn" data-league="UCL" onclick="window._ll('UCL')">UCL</button>
+  <!-- Soccer league sub-tabs, hidden unless Soccer active -->
+  <div id="soccerLeagueTabs" hidden>
+    <div style="display:flex;gap:0.35rem;flex-wrap:wrap;margin:0.6rem 0 0.9rem">
+      <button class="lines-sub-btn active" data-league="All">All Leagues</button>
+      <button class="lines-sub-btn" data-league="EPL">EPL</button>
+      <button class="lines-sub-btn" data-league="La Liga">La Liga</button>
+      <button class="lines-sub-btn" data-league="Bundesliga">Bundesliga</button>
+      <button class="lines-sub-btn" data-league="Serie A">Serie A</button>
+      <button class="lines-sub-btn" data-league="Ligue 1">Ligue 1</button>
+      <button class="lines-sub-btn" data-league="MLS">MLS</button>
+      <button class="lines-sub-btn" data-league="UCL">UCL</button>
+    </div>
   </div>
 
-  <div id="lines-root" style="min-height:200px">
-    <div class="loading"><div class="spinner"></div>Loading upcoming games…</div>
+  <!-- Game cards render here -->
+  <div id="linesPanel">
+    <div class="loading"><div class="spinner"></div>Loading games…</div>
   </div>
 
-</div>
+</div><!-- /page -->
 
-<script src="js/lines.js?v=28"></script>
+<script src="js/lines.js?v=30"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Tab switching
-    var activeSport = 'all';
-    document.querySelectorAll('#lineTabs .tab').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('#lineTabs .tab').forEach(function(b){ b.classList.remove('active'); });
-        btn.classList.add('active');
-        activeSport = btn.getAttribute('data-tab');
-        // Show/hide soccer sub-tabs
-        var soccerSubs = document.getElementById('soccer-subtabs');
-        if (soccerSubs) soccerSubs.hidden = activeSport !== 'Soccer';
-        window._lf(activeSport === 'all' ? 'All' : activeSport);
-        if (typeof gtag !== 'undefined') gtag('event', 'tab_click', {sport:'Lines', tab_name: activeSport});
+  // Tab click tracking
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('[data-sport],[data-league]');
+    if (!btn) return;
+    if (typeof gtag === 'function') {
+      gtag('event', 'tab_click', {
+        sport: 'Lines',
+        tab_name: btn.getAttribute('data-sport') || btn.getAttribute('data-league')
       });
-    });
-    window.initLinesPage();
+    }
   });
-
-  // Soccer league filter
-  window._ll = function(league) {
-    document.querySelectorAll('[data-league]').forEach(function(b){
-      b.classList.toggle('active', b.getAttribute('data-league') === league);
-    });
-    window._lf('Soccer', league);
-  };
 </script>
-
-  <script>
-    // Track tab clicks
-    document.addEventListener('click', function(e) {
-      var btn = e.target.closest('[data-tab]');
-      if (!btn) return;
-      if (typeof gtag === 'function') {
-        gtag('event', 'tab_click', {
-          event_category: 'Navigation',
-          event_label: 'Lines - ' + btn.getAttribute('data-tab'),
-          sport: 'Lines',
-          tab_name: btn.getAttribute('data-tab')
-        });
-      }
-    });
-  </script>
 </body>
 </html>
