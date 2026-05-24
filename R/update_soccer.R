@@ -9,8 +9,6 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(readr)
 })
-# Suppress curl fallback warnings from football-data.co.uk downloads
-options(warn = -1)
 source("R/elo_engine.R")
 
 OUT_DIR <- "docs/Soccer/data"
@@ -54,7 +52,7 @@ fetch_league <- function(ey, lg) {
   url <- paste0("https://www.football-data.co.uk/mmz4281/",
                 season_code(ey), "/", lg$code, ".csv")
   tryCatch({
-    df <- read_csv(url, show_col_types = FALSE, progress = FALSE)
+    df <- suppressWarnings(read_csv(url, show_col_types = FALSE, progress = FALSE))
     needed <- c("HomeTeam","AwayTeam","FTHG","FTAG")
     if (!all(needed %in% names(df))) return(NULL)
     df %>%
@@ -121,59 +119,54 @@ for (ey in END_YEARS) {
   write_csv(out, file.path(OUT_DIR, paste0("Soccer_Elo_", ey, ".csv")))
   message("  -> ", nrow(out), " clubs")
 }
-options(warn = 0)  # restore warnings
 message("Soccer done.")
 
 # ── MLS (ESPN API — football-data.co.uk doesn't cover MLS) ───────────
 message("Soccer: fetching MLS from ESPN API")
 
 fetch_mls_espn <- function(yr) {
-  # Fetch MLS season using jsonlite::fromJSON with URL directly (no httr needed)
-  # Use date range: MLS season runs Feb-Nov
+  # MLS: fetch week by week using individual date requests
+  # (soccer date-range param behaves differently from other sports)
   from_date <- as.Date(paste0(yr - 1, "-02-01"))
   to_date   <- min(as.Date(paste0(yr, "-11-30")), Sys.Date())
+  week_starts <- seq(from_date, to_date, by = "7 days")
   
-  # Fetch in monthly chunks to avoid hitting limits
-  month_starts <- seq(from_date, to_date, by = "30 days")
-  
+  parse_mls_event <- function(ev) {
+    tryCatch({
+      comp <- ev$competitions[[1]]
+      if (!isTRUE(comp$status$type$completed)) return(NULL)
+      comps <- comp$competitors
+      if (length(comps) < 2) return(NULL)
+      hi <- which(sapply(comps, function(c) c$homeAway == "home"))
+      ai <- which(sapply(comps, function(c) c$homeAway == "away"))
+      if (!length(hi) || !length(ai)) return(NULL)
+      home <- comps[[hi[1]]]; away <- comps[[ai[1]]]
+      hs  <- suppressWarnings(as.integer(home$score))
+      as_ <- suppressWarnings(as.integer(away$score))
+      if (is.na(hs) || is.na(as_)) return(NULL)
+      data.frame(home_team=home$team$displayName, away_team=away$team$displayName,
+                 home_goals=hs, away_goals=as_, stringsAsFactors=FALSE)
+    }, error=function(e) NULL)
+  }
+
   all_rows <- list()
-  for (d in as.character(month_starts)) {
-    d_end <- min(as.Date(d) + 29, to_date)
+  for (d in as.character(week_starts)) {
+    ds <- gsub("-", "", d)
     url_str <- paste0(
       "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard",
-      "?limit=300&dates=", gsub("-","",d),
-      "-", gsub("-","",as.character(d_end))
+      "?limit=50&dates=", ds
     )
-    data <- tryCatch(
-      jsonlite::fromJSON(url_str, simplifyVector=FALSE),
-      error=function(e) NULL
-    )
-    if (is.null(data) || !length(data$events)) { Sys.sleep(0.2); next }
-    
-    rows <- lapply(data$events, function(ev) {
-      tryCatch({
-        comp <- ev$competitions[[1]]
-        if (!isTRUE(comp$status$type$completed)) return(NULL)
-        comps <- comp$competitors
-        if (length(comps) < 2) return(NULL)
-        hi <- which(sapply(comps, function(c) c$homeAway == "home"))
-        ai <- which(sapply(comps, function(c) c$homeAway == "away"))
-        if (!length(hi) || !length(ai)) return(NULL)
-        home <- comps[[hi[1]]]; away <- comps[[ai[1]]]
-        hs  <- suppressWarnings(as.integer(home$score))
-        as_ <- suppressWarnings(as.integer(away$score))
-        if (is.na(hs) || is.na(as_)) return(NULL)
-        data.frame(home_team=home$team$displayName, away_team=away$team$displayName,
-                   home_goals=hs, away_goals=as_, stringsAsFactors=FALSE)
-      }, error=function(e) NULL)
-    })
-    rows <- Filter(Negate(is.null), rows)
-    if (length(rows)) all_rows <- c(all_rows, rows)
-    Sys.sleep(0.2)
+    data <- tryCatch(jsonlite::fromJSON(url_str, simplifyVector=FALSE), error=function(e) NULL)
+    if (!is.null(data) && length(data$events) > 0) {
+      rows <- Filter(Negate(is.null), lapply(data$events, parse_mls_event))
+      if (length(rows)) all_rows <- c(all_rows, rows)
+    }
+    Sys.sleep(0.15)
   }
-  if (!length(all_rows)) { message("  MLS: no games fetched"); return(NULL) }
+  
+  if (!length(all_rows)) { message("  MLS: no completed games found"); return(NULL) }
   result <- unique(do.call(rbind, all_rows))
-  message("  MLS: fetched ", nrow(result), " completed games")
+  message("  MLS: ", nrow(result), " completed games")
   result
 }
 
