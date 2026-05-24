@@ -249,8 +249,9 @@ window.initSportPage = function(CFG) {
         'FDU':'Fairleigh Dickinson','URI':'Rhode Island','UMass':'Massachusetts',
         'Mass.':'Massachusetts','VCU':'VCU',
         // MLB
-        // MLB: ESPN uses 'Sacramento Athletics', R script normalizes to same
-        'Oakland Athletics':'Sacramento Athletics',
+        // MLB: ESPN returns 'Athletics' (no city), CSV also has 'Athletics'
+        'Oakland Athletics':'Athletics',
+        'Sacramento Athletics':'Athletics',
         // Soccer: ESPN displayName → football-data.co.uk CSV name
         'Manchester United':'Man United','Manchester City':'Man City',
         'Wolverhampton Wanderers':'Wolves','Brighton & Hove Albion':'Brighton',
@@ -1065,12 +1066,28 @@ window.initSportPage = function(CFG) {
         fromDate = yr + '0515'; toDate = yr + '0528';
       }
 
-      var url = 'https://site.api.espn.com/apis/site/v2/sports/' + path
-        + '/scoreboard?limit=500&seasontype=3&dates=' + fromDate + '-' + toDate + extra;
+      // Try seasontype=3 first, then plain dates (works for historical data)
+      var urls = [
+        'https://site.api.espn.com/apis/site/v2/sports/' + path
+          + '/scoreboard?limit=500&seasontype=3' + extra,
+        'https://site.api.espn.com/apis/site/v2/sports/' + path
+          + '/scoreboard?limit=500&dates=' + fromDate + '-' + toDate + extra
+      ];
 
-      return fetch(url, {mode:'cors'})
-        .then(function(r){ return r.ok ? r.json() : {events:[]}; })
-        .catch(function(){ return {events:[]}; })
+      // Try both URLs and combine results
+      return Promise.all(urls.map(function(u) {
+        return fetch(u, {mode:'cors'})
+          .then(function(r){ return r.ok ? r.json() : {events:[]}; })
+          .catch(function(){ return {events:[]}; });
+      })).then(function(results) {
+        var seen = {}, combined = [];
+        results.forEach(function(d) {
+          (d.events||[]).forEach(function(ev) {
+            if (!seen[ev.id]) { seen[ev.id]=1; combined.push(ev); }
+          });
+        });
+        return {events: combined};
+      }).then(function(data) { return data; })
         .then(function(data) {
           var champs = {}; // conf → team shortDisplayName
           (data.events||[]).forEach(function(ev) {
