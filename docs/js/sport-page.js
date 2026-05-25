@@ -2357,11 +2357,15 @@ async function findAvailableSeason() {
       var resumeSum=0;
       for(var bi=0;bi<beaten.length;bi++){
         var oppElo=_pk.eloSim[beaten[bi]]||_pk.eloBase[beaten[bi]]||1500;
-        resumeSum+=oppElo;
+        resumeSum+=Math.max(0, oppElo-1350); // quality threshold
       }
-      // sqrt of sum of beaten opponents' Elo = resume score
-      var resumeScore = beaten.length>0 ? Math.sqrt(resumeSum) : 0;
-      _pk.playoffRating[team] = teamElo + resumeScore;
+      // sqrt of quality-adjusted resume (only wins vs 1350+ Elo count)
+      var resumeScore = resumeSum>0 ? Math.sqrt(resumeSum) : 0;
+      // PR = Elo × win_pct^0.6 + resume (win% penalizes bad records)
+      var gp = (_pk.wins[team]||0) + (_pk.losses[team]||0);
+      var wp = gp > 0 ? (_pk.wins[team]||0) / gp : 0.5;
+      var wpFactor = Math.pow(Math.max(0.01, wp), 0.6);
+      _pk.playoffRating[team] = teamElo * wpFactor + resumeScore;
     }
   }
 
