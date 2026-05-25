@@ -784,6 +784,51 @@ window.initSportPage = function(CFG) {
 
   // ── Rankings table ─────────────────────────────────────────
 
+
+  // ── Team abbreviations for NBA / MLB / NHL ─────────────────
+  const TEAM_ABBR = {
+    // NBA
+    'Atlanta Hawks':'ATL','Boston Celtics':'BOS','Brooklyn Nets':'BKN',
+    'Charlotte Hornets':'CHA','Chicago Bulls':'CHI','Cleveland Cavaliers':'CLE',
+    'Dallas Mavericks':'DAL','Denver Nuggets':'DEN','Detroit Pistons':'DET',
+    'Golden State Warriors':'GSW','Houston Rockets':'HOU','Indiana Pacers':'IND',
+    'Los Angeles Clippers':'LAC','Los Angeles Lakers':'LAL','Memphis Grizzlies':'MEM',
+    'Miami Heat':'MIA','Milwaukee Bucks':'MIL','Minnesota Timberwolves':'MIN',
+    'New Orleans Pelicans':'NOP','New York Knicks':'NYK','Oklahoma City Thunder':'OKC',
+    'Orlando Magic':'ORL','Philadelphia 76ers':'PHI','Phoenix Suns':'PHX',
+    'Portland Trail Blazers':'POR','Sacramento Kings':'SAC','San Antonio Spurs':'SAS',
+    'Toronto Raptors':'TOR','Utah Jazz':'UTA','Washington Wizards':'WAS',
+    // MLB
+    'Arizona Diamondbacks':'ARI','Atlanta Braves':'ATL','Baltimore Orioles':'BAL',
+    'Boston Red Sox':'BOS','Chicago Cubs':'CHC','Chicago White Sox':'CWS',
+    'Cincinnati Reds':'CIN','Cleveland Guardians':'CLE','Colorado Rockies':'COL',
+    'Detroit Tigers':'DET','Houston Astros':'HOU','Kansas City Royals':'KC',
+    'Los Angeles Angels':'LAA','Los Angeles Dodgers':'LAD','Miami Marlins':'MIA',
+    'Milwaukee Brewers':'MIL','Minnesota Twins':'MIN','New York Mets':'NYM',
+    'New York Yankees':'NYY','Athletics':'OAK','Sacramento Athletics':'OAK',
+    'Philadelphia Phillies':'PHI','Pittsburgh Pirates':'PIT','San Diego Padres':'SD',
+    'San Francisco Giants':'SF','Seattle Mariners':'SEA','St. Louis Cardinals':'STL',
+    'Tampa Bay Rays':'TB','Texas Rangers':'TEX','Toronto Blue Jays':'TOR',
+    'Washington Nationals':'WSH',
+    // NHL
+    'Anaheim Ducks':'ANA','Arizona Coyotes':'ARI','Utah Hockey Club':'UTA','Utah HC':'UTA',
+    'Boston Bruins':'BOS','Buffalo Sabres':'BUF','Calgary Flames':'CGY',
+    'Carolina Hurricanes':'CAR','Chicago Blackhawks':'CHI','Colorado Avalanche':'COL',
+    'Columbus Blue Jackets':'CBJ','Dallas Stars':'DAL','Detroit Red Wings':'DET',
+    'Edmonton Oilers':'EDM','Florida Panthers':'FLA','Los Angeles Kings':'LAK',
+    'Minnesota Wild':'MIN','Montreal Canadiens':'MTL','Montréal Canadiens':'MTL',
+    'Nashville Predators':'NSH','New Jersey Devils':'NJD','New York Islanders':'NYI',
+    'New York Rangers':'NYR','Ottawa Senators':'OTT','Philadelphia Flyers':'PHI',
+    'Pittsburgh Penguins':'PIT','San Jose Sharks':'SJS','Seattle Kraken':'SEA',
+    'St. Louis Blues':'STL','Tampa Bay Lightning':'TBL','Toronto Maple Leafs':'TOR',
+    'Vancouver Canucks':'VAN','Vegas Golden Knights':'VGK','Washington Capitals':'WSH',
+    'Winnipeg Jets':'WPG',
+  };
+  function teamDisplay(name) {
+    if (!['NBA','MLB','NHL'].includes(CFG.sport)) return name;
+    return TEAM_ABBR[name] || name;
+  }
+
   function renderRankings() {
     const filtered = getFiltered();
     const el = document.getElementById('panel-rankings');
@@ -792,6 +837,7 @@ window.initSportPage = function(CFG) {
 
     const maxElo = Math.max(...filtered.map(r=>r.elo));
     const minElo = Math.min(...filtered.map(r=>r.elo));
+    const avgElo = filtered.reduce((s,r)=>s+r.elo,0)/(filtered.length||1);
     const searchQ = (document.getElementById('teamSearch')?.value || '').toLowerCase();
 
     const ctrlHtml = `<div class="controls">
@@ -825,19 +871,20 @@ window.initSportPage = function(CFG) {
         return `<td class="num" data-val="${v??''}">${v!=null?Number(v).toFixed(c.dec??0):'—'}</td>`;
       }).join('');
       const spreadVal = ((r.elo - 1500) / 35).toFixed(1);
+      const eloClr = r.elo >= avgElo ? 'var(--green-hi)' : r.elo < avgElo - 120 ? 'var(--red-hi)' : 'var(--accent)';
       return `<tr class="team-row" data-team="${r.team}">
         <td class="rank" data-val="${r.rank}">${r.rank}</td>
-        <td class="team-name">${r.team} ${trendHtml(r.team)}</td>
+        <td class="team-name">${teamDisplay(r.team)} ${trendHtml(r.team)}</td>
         <td class="conf" data-val="${r.conference||''}">${r.conference||'—'}</td>
         <td class="elo" data-val="${r.elo}">
-          <div class="elo-bar-wrap"><span>${r.elo.toFixed(1)}</span>
-          <div class="elo-bar" style="width:${bar}px"></div></div>
+          <div class="elo-bar-wrap"><span style="color:${eloClr};font-weight:600">${r.elo.toFixed(1)}</span>
+          <div class="elo-bar" style="width:${bar}px;background:${eloClr}"></div></div>
         </td>
         ${CFG.sport==='CFB'?`<td class="num" data-val="${r.pr||r.elo}" style="color:var(--accent);font-weight:500">${(r.pr||r.elo).toFixed(1)}</td>`:''}
         <td class="num" data-val="${r.wins||0}">${r.record||'—'}</td>
         <td class="num" data-val="${r.win_pct||0}">${r.win_pct!=null?(r.win_pct*100).toFixed(1)+'%':'—'}</td>
         <td class="num" data-val="${r.sos||0}">${r.sos!=null?Number(r.sos).toFixed(1):'—'}</td>
-        <td class="num" data-val="${r.best_win_elo||0}">${bwn?`<span title="${bwn}">${bw}</span>`:'—'}</td>
+        <td class="num" data-val="${r.best_win_elo||0}">${bwn?`<span style="font-size:0.78rem">${bwn} <span style="color:var(--text-dim);font-family:var(--font-mono);font-size:0.68rem">(${bw})</span></span>`:'—'}</td>
         ${extra}
       </tr>`;
     }).join('');
