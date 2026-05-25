@@ -783,44 +783,6 @@ window.initSportPage = function(CFG) {
   }
 
   // ── Rankings table ─────────────────────────────────────────
-  // ── Elo display helpers ───────────────────────────────────
-  function eloNick(name) {
-    // Show last meaningful word as nickname on mobile
-    const words = name.trim().split(' ');
-    // Skip articles/prepositions
-    const skip = new Set(['de','the','of','fc','sc','ac','afc','of','united','city','bay','red']);
-    for (let i = words.length-1; i >= 0; i--) {
-      if (!skip.has(words[i].toLowerCase())) return words[i];
-    }
-    return words[words.length-1];
-  }
-
-  function eloCell(elo, avg, max, min) {
-    // Color: green if above avg, red if below, gradient in between
-    const aboveAvg = elo >= avg;
-    const range    = aboveAvg ? (max - avg) : (avg - min);
-    const dist     = aboveAvg ? (elo - avg) : (avg - elo);
-    const pct      = range > 0 ? Math.min(dist / range, 1) : 0;
-
-    // Class based on deviation from avg
-    const cls = pct > 0.35
-      ? (aboveAvg ? 'elo-high' : 'elo-low')
-      : 'elo-mid';
-    const barCls = pct > 0.35
-      ? (aboveAvg ? 'bar-high' : 'bar-low')
-      : 'bar-mid';
-
-    // Bar width: relative to max
-    const barPct = max > 0 ? Math.round((elo / max) * 100) : 50;
-
-    return '<div class="elo-cell-wrap">'
-      + '<span class="elo-val ' + cls + '">' + elo.toFixed(1) + '</span>'
-      + '<div class="elo-bar-track">'
-        + '<div class="elo-bar-fill ' + barCls + '" style="width:' + barPct + '%"></div>'
-      + '</div>'
-      + '</div>';
-  }
-
   function renderRankings() {
     const filtered = getFiltered();
     const el = document.getElementById('panel-rankings');
@@ -829,7 +791,6 @@ window.initSportPage = function(CFG) {
 
     const maxElo = Math.max(...filtered.map(r=>r.elo));
     const minElo = Math.min(...filtered.map(r=>r.elo));
-    const avgElo = filtered.reduce((s,r)=>s+r.elo,0) / (filtered.length||1);
     const searchQ = (document.getElementById('teamSearch')?.value || '').toLowerCase();
 
     const ctrlHtml = `<div class="controls">
@@ -864,14 +825,13 @@ window.initSportPage = function(CFG) {
       }).join('');
       const spreadVal = ((r.elo - 1500) / 35).toFixed(1);
       return `<tr class="team-row" data-team="${r.team}">
-        <td class="rank col-rank" data-val="${r.rank}">${r.rank}</td>
-        <td class="team-name" data-val="${r.team}">
-          <span class="team-full">${r.team}</span>
-          <span class="team-nick">${eloNick(r.team)}</span>
-          ${trendHtml(r.team)}
-        </td>
-        <td class="conf col-conf" data-val="${r.conference||''}">${r.conference||'—'}</td>
-        <td class="elo col-elo" data-val="${r.elo}">${eloCell(r.elo, avgElo, maxElo, minElo)}</td>`;
+        <td class="rank" data-val="${r.rank}">${r.rank}</td>
+        <td class="team-name">${r.team} ${trendHtml(r.team)}</td>
+        <td class="conf" data-val="${r.conference||''}">${r.conference||'—'}</td>
+        <td class="elo" data-val="${r.elo}">
+          <div class="elo-bar-wrap"><span>${r.elo.toFixed(1)}</span>
+          <div class="elo-bar" style="width:${bar}px"></div></div>
+        </td>`;
     }).join('');
 
     el.innerHTML = ctrlHtml + `<div class="table-wrap"><table class="tbl" id="mainTable">
@@ -1382,14 +1342,6 @@ window.initSportPage = function(CFG) {
         document.head.appendChild(s);
         await new Promise(r => s.onload = r);
       }
-      // Load annotation plugin for mean line
-      if (!window.ChartAnnotation) {
-        const sa = document.createElement('script');
-        sa.src = 'https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js';
-        document.head.appendChild(sa);
-        await new Promise(r => sa.onload = r);
-        Chart.register(window['chartjs-plugin-annotation']);
-      }
 
       const canvas = document.getElementById('histCanvas');
       if (window._histChart) window._histChart.destroy();
@@ -1424,28 +1376,7 @@ window.initSportPage = function(CFG) {
           },
           plugins: {
             legend: { labels:{color:'#8a8680',font:{family:'monospace',size:11}} },
-            tooltip: { callbacks: { label: ctx => ctx.dataset.label+': '+ctx.parsed.y.toFixed(1) } },
-            annotation: {
-              annotations: {
-                meanLine: {
-                  type: 'line', scaleID: 'y',
-                  value: () => {
-                    // Mean Elo of current season's data
-                    if (!data.length) return 1500;
-                    return data.reduce((s,r)=>s+r.elo,0)/data.length;
-                  },
-                  borderColor: 'rgba(226,201,126,0.35)',
-                  borderWidth: 1,
-                  borderDash: [4,4],
-                  label: {
-                    display: true, content: 'Season avg',
-                    color: 'rgba(226,201,126,0.6)',
-                    font: {family:'monospace', size:10},
-                    position: 'end', yAdjust: -8
-                  }
-                }
-              }
-            }
+            tooltip: { callbacks: { label: ctx => ctx.dataset.label+': '+ctx.parsed.y.toFixed(1) } }
           }
         }
       });
