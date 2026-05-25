@@ -393,7 +393,7 @@ get_conf <- function(team, year) {
   if (t == "Notre Dame") return("Independent")
   if (t == "Army")       return("Independent")
   if (t == "Navy") {
-    if (year >= 2015 && year <= 2023) return("AAC")
+    if (year >= 2015) return("AAC")   # joined AAC 2015, still member
     return("Independent")
   }
   if (t == "BYU") {
@@ -402,9 +402,10 @@ get_conf <- function(team, year) {
     return("Big 12")
   }
   if (t == "Massachusetts") {
-    if (year >= 2024) return("MAC")       # rejoined MAC 2024
-    if (year >= 2012) return("Independent") # independent 2012-2023
-    return("MAC")                          # original MAC member until 2011
+    if (year >= 2024) return("MAC")        # rejoined MAC 2024
+    if (year >= 2016) return("Independent") # independent 2016-2023
+    if (year >= 2012) return("MAC")        # FBS MAC member 2012-2015
+    return("FCS")                          # FCS before 2012
   }
   if (t == "UConn") {
     if (year >= 2020) return("Independent")
@@ -547,50 +548,148 @@ get_conf <- function(team, year) {
   }
 
   # ── MOUNTAIN WEST ──────────────────────────────────────────
-  mw_stable <- c("Boise State","San Diego State","Fresno State","Utah State","UNLV",
-                 "Wyoming","Nevada","New Mexico","Air Force","Colorado State",
-                 "San Jose State","Hawai'i")
-  if (t %in% mw_stable) return("Mountain West")
+  # MWC teams that LEFT for re-formed Pac-12 in 2026
+  if (t %in% c("Boise State","Colorado State","Fresno State","San Diego State","Utah State")) {
+    if (year >= 2026) return("Pac-12")
+    if (t == "Boise State") {
+      if (year >= 2011) return("Mountain West")
+      return("WAC")
+    }
+    if (t %in% c("Fresno State","San Jose State")) {
+      if (year >= 2012) return("Mountain West")
+      return("WAC")
+    }
+    if (t == "Utah State") {
+      if (year >= 2013) return("Mountain West")
+      return("WAC")
+    }
+    return("Mountain West")  # Colorado State, San Diego State: MWC founding
+  }
+  # Pure MWC founding members staying in MWC
+  mw_founding <- c("UNLV","Wyoming","New Mexico","Air Force")
+  if (t %in% mw_founding) return("Mountain West")
+  # WAC teams that joined MWC and stayed
+  if (t %in% c("Nevada","San Jose State","Hawai'i")) {
+    if (year >= 2012) return("Mountain West")
+    return("WAC")
+  }
+  # NDSU joins MWC 2026
+  if (t %in% c("North Dakota State","NDSU")) {
+    if (year >= 2026) return("Mountain West")
+    return("FCS")
+  }
   if (t == "Utah"     && year <= 2010) return("Mountain West")
   if (t == "BYU"      && year <= 2010) return("Mountain West")
   if (t == "TCU"      && year <= 2011) return("Mountain West")
   if (t == "Colorado" && year <= 2010) return("Mountain West")
 
   # ── AAC (2013+) / BIG EAST football (2001-2012) ───────────
-  aac_founding <- c("South Florida","Memphis","Temple",
-                    "Houston","UCF","Cincinnati","Tulsa","Navy","Wichita State","SMU")
-  big_east_fb  <- c("South Florida","Rutgers","Pittsburgh","Cincinnati","West Virginia",
-                    "Louisville","Syracuse","UConn","Navy","Temple")
-  if (t %in% big_east_fb && year <= 2012) return("Big East")
-  if (t %in% aac_founding) {
+  # Per-team year logic for accurate conference history
+
+  # Cincinnati: Big East 2001-2012, AAC 2013-2022, Big 12 2023+
+  if (t == "Cincinnati") {
+    if (year >= 2023) return("Big 12")
     if (year >= 2013) return("AAC")
     return("Big East")
   }
+  # South Florida: Ind 2001-2004, Big East 2005-2012, AAC 2013+
+  if (t == "South Florida") {
+    if (year >= 2013) return("AAC")
+    if (year >= 2005) return("Big East")
+    return("Independent")
+  }
+  # Temple: MAC 2001-2011, Big East 2012, AAC 2013+
+  if (t == "Temple") {
+    if (year >= 2013) return("AAC")
+    if (year >= 2012) return("Big East")
+    return("MAC")
+  }
+  # Houston: C-USA 2001-2012, AAC 2013-2022, Big 12 2023+
+  if (t == "Houston") {
+    if (year >= 2023) return("Big 12")
+    if (year >= 2013) return("AAC")
+    return("C-USA")
+  }
+  # UCF: C-USA 2002-2012 (FCS before), AAC 2013-2022, Big 12 2023+
+  if (t == "UCF") {
+    if (year >= 2023) return("Big 12")
+    if (year >= 2013) return("AAC")
+    if (year >= 2002) return("C-USA")
+    return("FCS")
+  }
+  # Memphis: C-USA 2001-2012, AAC 2013+
+  if (t == "Memphis") {
+    if (year >= 2013) return("AAC")
+    return("C-USA")
+  }
+  # SMU: C-USA 2001-2012, AAC 2013-2023, ACC 2024+
+  if (t == "SMU") {
+    if (year >= 2024) return("ACC")
+    if (year >= 2013) return("AAC")
+    return("C-USA")
+  }
+  # Tulsa: WAC 2001-2004, C-USA 2005-2011, AAC 2012+
+  if (t == "Tulsa") {
+    if (year >= 2012) return("AAC")
+    if (year >= 2005) return("C-USA")
+    return("WAC")
+  }
+  # East Carolina: C-USA 2001-2012, AAC 2013+
   if (t == "East Carolina") {
     if (year >= 2013) return("AAC")
-    return("C-USA")  # C-USA 2001-2012
+    return("C-USA")
   }
+  # Tulane: C-USA 2001-2004, Independent 2005-2013, AAC 2014+
   if (t == "Tulane") {
-    if (year >= 2022) return("AAC")
-    if (year >= 2005) return("Independent")  # left C-USA after 2004, independent 2005-2021
-    return("C-USA")  # C-USA 2001-2004
+    if (year >= 2014) return("AAC")
+    if (year >= 2005) return("Independent")
+    return("C-USA")
   }
+  # North Texas: Sun Belt 2001-2012, C-USA 2013-2023, AAC 2024+
   if (t == "North Texas") {
     if (year >= 2024) return("AAC")
     if (year >= 2013) return("C-USA")
     return("Sun Belt")
   }
+  # UAB: C-USA all years (left 2014-2016, returned 2017), AAC 2024+
+  # (UAB suspended program 2015-2016, returned C-USA 2017)
+  if (t == "UAB") {
+    if (year >= 2024) return("AAC")
+    if (year >= 2017) return("C-USA")
+    if (year >= 2015) return("Independent")   # program suspended
+    return("C-USA")
+  }
+  # Wichita State: no football program
+  # Charlotte: C-USA 2015-2023, FCS before/after
   if (t == "Charlotte") {
     if (year >= 2015 && year <= 2023) return("C-USA")
-    return("FCS")  # pre-FBS or dropped program after 2023
+    return("FCS")
   }
-  if (t == "UTSA"        && year >= 2013) return("C-USA")
+  # UTSA: FCS until 2012, C-USA 2013+
+  if (t == "UTSA") {
+    if (year >= 2013) return("C-USA")
+    return("FCS")
+  }
+  # Big East football teams (2001-2012) not handled above
+  big_east_fb <- c("Rutgers","Pittsburgh","West Virginia","Louisville","Syracuse","UConn","Navy")
+  if (t %in% big_east_fb && year <= 2012) return("Big East")
 
   # ── SUN BELT ──────────────────────────────────────────────
   sunbelt_stable <- c("Louisiana","Troy","App State","Arkansas State","Georgia Southern",
-                      "Georgia State","South Alabama","UL Monroe","Southern Miss",
-                      "Texas State","Coastal Carolina","Old Dominion","James Madison",
+                      "Georgia State","South Alabama","UL Monroe",
+                      "Coastal Carolina","Old Dominion","James Madison",
                       "Marshall")
+  # Southern Miss: C-USA 2001-2012, Sun Belt 2013+
+  if (t == "Southern Miss") {
+    if (year >= 2013) return("Sun Belt")
+    return("C-USA")
+  }
+  # Texas State: FCS until 2011, WAC 2012, Sun Belt 2013+
+  if (t == "Texas State") {
+    if (year >= 2013) return("Sun Belt")
+    if (year >= 2012) return("WAC")
+    return("FCS")
+  }
   if (t %in% sunbelt_stable) {
     if (t == "Marshall") {
       if (year >= 2022) return("Sun Belt")
@@ -619,13 +718,40 @@ get_conf <- function(team, year) {
 
   # ── C-USA ─────────────────────────────────────────────────
   cusa_current <- c("UAB","Middle Tennessee","Western Kentucky","Florida Atlantic","FIU",
-                    "UTEP","Louisiana Tech","Rice","Kennesaw State","Jacksonville State",
+                    "UTEP","Rice","Kennesaw State","Jacksonville State",
                     "Sam Houston","Liberty","New Mexico State","UTSA")
+  # UTEP: WAC 2001-2004, C-USA 2005+
+  if (t == "UTEP") {
+    if (year >= 2005) return("C-USA")
+    return("WAC")
+  }
   if (t %in% cusa_current) {
-    if (t == "Middle Tennessee" && year <= 2012) return("Sun Belt")
-    if (t == "Western Kentucky" && year < 2009)  return("FCS")
-    if (t == "FAU"  && year < 2001) return("FCS")
-    if (t == "FIU"  && year < 2009) return("Sun Belt")  # FIU Sun Belt 2001-2008
+    if (t == "Louisiana Tech") {
+      if (year >= 2013) return("C-USA")
+      return("WAC")   # WAC 2001-2012
+    }
+    if (t == "Middle Tennessee") {
+      if (year >= 2024) return("AAC")   # joined AAC 2024
+      if (year >= 2013) return("C-USA")
+      return("Sun Belt")   # Sun Belt 2001-2012
+    }
+    if (t == "Western Kentucky") {
+      if (year >= 2013) return("C-USA")
+      if (year >= 2009) return("Sun Belt")
+      return("FCS")
+    }
+    if (t == "FAU") {
+      if (year >= 2023) return("Sun Belt")
+      if (year >= 2013) return("C-USA")
+      if (year >= 2001) return("Sun Belt")
+      return("FCS")
+    }
+    if (t == "FIU") {
+      if (year >= 2024) return("AAC")
+      if (year >= 2009) return("C-USA")
+      if (year >= 2001) return("Sun Belt")
+      return("FCS")
+    }
     if (t == "UTSA" && year < 2013) return("FCS")
     if (t == "Kennesaw State" && year < 2022) return("FCS")
     if (t == "Jacksonville State" && year < 2022) return("FCS")
@@ -637,9 +763,14 @@ get_conf <- function(team, year) {
   if (t %in% cusa_historical && year <= 2012) return("C-USA")
 
   # ── MAC ───────────────────────────────────────────────────
-  mac_stable <- c("Central Michigan","Eastern Michigan","Western Michigan","Northern Illinois",
+  # Northern Illinois: MAC through 2025, Mountain West 2026+
+  if (t == "Northern Illinois") {
+    if (year >= 2026) return("Mountain West")
+    return("MAC")
+  }
+  mac_stable <- c("Central Michigan","Eastern Michigan","Western Michigan",
                   "Ball State","Bowling Green","Buffalo","Kent State","Miami (OH)",
-                  "Ohio","Toledo","Akron","Massachusetts")
+                  "Ohio","Toledo","Akron")
   if (t %in% mac_stable) {
     if (t == "Massachusetts" && year >= 2016) return("Independent")
     return("MAC")
@@ -651,11 +782,27 @@ get_conf <- function(team, year) {
   if (t %in% wac_teams && year <= 2011) return("WAC")
 
   # ── FCS schools that play FBS opponents ───────────────────
-  fcs_known <- c("App State","James Madison","North Dakota State","NDSU",
+  # Delaware: FCS through 2024, C-USA 2025+
+  if (t == "Delaware") {
+    if (year >= 2025) return("C-USA")
+    return("FCS")
+  }
+  # Missouri State: FCS (MVFC) through 2024, C-USA 2025+
+  if (t == "Missouri State" || t == "Missouri St") {
+    if (year >= 2025) return("C-USA")
+    return("FCS")
+  }
+
+  # North Dakota State: FCS (MVFC) through 2025, Mountain West FBS 2026+
+  if (t %in% c("North Dakota State","NDSU","N Dakota St")) {
+    if (year >= 2026) return("Mountain West")
+    return("FCS")
+  }
+  fcs_known <- c("App State","James Madison",
                  "Western Kentucky","Jacksonville State","Kennesaw State",
                  "Sam Houston","Georgia Southern","Coastal Carolina",
                  "Youngstown State","UNH","New Hampshire","Portland State",
-                 "Villanova","Towson","Wofford","Furman","The Citadel","Delaware",
+                 "Villanova","Towson","Wofford","Furman","The Citadel",
                  "Northeastern","SF Austin","Stephen F. Austin",
                  "Maine","Montana State","Montana","Bethune","Bethune-Cookman",
                  "Cal Poly","Nicholls","Nicholls State","SE Louisiana",
