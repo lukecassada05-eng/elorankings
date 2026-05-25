@@ -832,7 +832,14 @@ window.initSportPage = function(CFG) {
         <td class="elo" data-val="${r.elo}">
           <div class="elo-bar-wrap"><span>${r.elo.toFixed(1)}</span>
           <div class="elo-bar" style="width:${bar}px"></div></div>
-        </td>`;
+        </td>
+        ${CFG.sport==='CFB'?`<td class="num" data-val="${r.pr||r.elo}" style="color:var(--accent);font-weight:500">${(r.pr||r.elo).toFixed(1)}</td>`:''}
+        <td class="num" data-val="${r.wins||0}">${r.record||'—'}</td>
+        <td class="num" data-val="${r.win_pct||0}">${r.win_pct!=null?(r.win_pct*100).toFixed(1)+'%':'—'}</td>
+        <td class="num" data-val="${r.sos||0}">${r.sos!=null?Number(r.sos).toFixed(1):'—'}</td>
+        <td class="num" data-val="${r.best_win_elo||0}">${bwn?`<span title="${bwn}">${bw}</span>`:'—'}</td>
+        ${extra}
+      </tr>`;
     }).join('');
 
     el.innerHTML = ctrlHtml + `<div class="table-wrap"><table class="tbl" id="mainTable">
