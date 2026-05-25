@@ -2375,7 +2375,7 @@ async function findAvailableSeason() {
       if(Math.abs(bcp-acp)>0.001) return bcp-acp;
       var awp=(a.w+a.l)?a.w/(a.w+a.l):0, bwp=(b.w+b.l)?b.w/(b.w+b.l):0;
       if(Math.abs(bwp-awp)>0.001) return bwp-awp;
-      return (b.elo||1500)-(a.elo||1500);
+      return (b.pr||b.elo||1500)-(a.pr||a.elo||1500); // PR tiebreaker
     });
   }
 
@@ -2475,14 +2475,15 @@ async function findAvailableSeason() {
       {wk:3, dt:"2026-09-19", h:"Washington St", a:"Duquesne",         n:false},
       {wk:4, dt:"2026-09-26", h:"Washington St", a:"Arizona",          n:false},
       // Oregon State
-      {wk:1, dt:"2026-08-29", h:"Stanford",         a:"Hawai'i",          n:false},
-      {wk:2, dt:"2026-09-12", h:"Oregon St",     a:"Memphis",          n:false},
+      {wk:2, dt:"2026-09-12", h:"Oregon St",     a:"Texas Tech",         n:false},
+      {wk:1, dt:"2026-08-29", h:"Oregon St",     a:"Hawai'i",          n:false},
+      
       {wk:3, dt:"2026-09-19", h:"Oregon St",     a:"S. Dakota",     n:false},
-      {wk:4, dt:"2026-09-26", h:"W. Michigan", a:"Oregon St",     n:false},
       // Boise State
       {wk:1, dt:"2026-09-05", h:"Oregon",           a:"Boise St",      n:false},
-      {wk:2, dt:"2026-09-12", h:"Boise St",      a:"Northwestern St",  n:false},
-      {wk:3, dt:"2026-09-19", h:"Boise St",      a:"BYU",              n:false},
+      {wk:2, dt:"2026-09-12", h:"Boise St",      a:"Memphis",           n:false},
+      {wk:4, dt:"2026-09-26", h:"W. Michigan",  a:"Boise St",          n:false},
+      {wk:3, dt:"2026-09-19", h:"Colorado St",   a:"BYU",              n:false},
       // Colorado State
       {wk:1, dt:"2026-09-05", h:"Colorado St",   a:"Wyoming",          n:false},
       {wk:2, dt:"2026-09-12", h:"Colorado St",   a:"Southern Utah",    n:false},
@@ -2496,14 +2497,25 @@ async function findAvailableSeason() {
       {wk:2, dt:"2026-09-12", h:"Washington",       a:"Utah St",       n:false},
       {wk:4, dt:"2026-09-26", h:"Utah St",       a:"Idaho St",         n:false},
       // Texas State (from txst.com)
-      {wk:1, dt:"2026-09-05", h:"Texas",            a:"Texas St",      n:false},
-      {wk:2, dt:"2026-09-12", h:"Texas St",      a:"UTSA",             n:false},
-      {wk:3, dt:"2026-09-19", h:"Texas St",      a:"North Texas",      n:false},
-      {wk:4, dt:"2026-09-26", h:"Texas St",      a:"UIW",              n:false},
+
+
+      // Texas State non-conf
+      {wk:1, dt:"2026-09-05", h:"Texas",          a:"Texas St",          n:false},
+      {wk:2, dt:"2026-09-12", h:"Texas St",        a:"UIW",               n:false},
+      {wk:3, dt:"2026-09-19", h:"Texas St",        a:"North Texas",       n:false},
+      {wk:4, dt:"2026-09-26", h:"Texas St",        a:"UTSA",              n:false},
+      // Texas State conference games
+      {wk:5,  dt:"2026-10-03", h:"San Diego St",   a:"Texas St",          n:false},
+      {wk:6,  dt:"2026-10-10", h:"Texas St",        a:"Fresno St",         n:false},
+      {wk:8,  dt:"2026-10-24", h:"Texas St",        a:"Utah St",           n:false},
+      {wk:9,  dt:"2026-10-31", h:"Boise St",        a:"Texas St",          n:false},
+      {wk:10, dt:"2026-11-07", h:"Oregon St",       a:"Texas St",          n:false},
+      {wk:11, dt:"2026-11-14", h:"Texas St",        a:"Colorado St",       n:false},
+      {wk:12, dt:"2026-11-21", h:"Washington St",   a:"Texas St",          n:false},
+      
       // ── Pac-12 Conference (28 unique games, 7 each) ─────────────────────────
       {wk:5, dt:"2026-10-03", h:"Colorado St", a:"Utah St", n:false},
       {wk:5, dt:"2026-10-03", h:"Oregon St", a:"Boise St", n:false},
-      {wk:5, dt:"2026-10-03", h:"San Diego St", a:"Texas St", n:false},
       {wk:5, dt:"2026-10-03", h:"Washington St", a:"Fresno St", n:false},
       {wk:6, dt:"2026-10-10", h:"Boise St", a:"Fresno St", n:false},
       {wk:6, dt:"2026-10-10", h:"Oregon St", a:"Colorado St", n:false},
@@ -2511,24 +2523,18 @@ async function findAvailableSeason() {
       {wk:7, dt:"2026-10-17", h:"Boise St", a:"San Diego St", n:false},
       {wk:7, dt:"2026-10-17", h:"Fresno St", a:"Utah St", n:false},
       {wk:7, dt:"2026-10-17", h:"Oregon St", a:"Washington St", n:false},
-      {wk:7, dt:"2026-10-17", h:"Texas St", a:"Colorado St", n:false},
       {wk:8, dt:"2026-10-24", h:"Colorado St", a:"San Diego St", n:false},
       {wk:8, dt:"2026-10-24", h:"Oregon St", a:"Fresno St", n:false},
-      {wk:8, dt:"2026-10-24", h:"Texas St", a:"Utah St", n:false},
       {wk:8, dt:"2026-10-24", h:"Washington St", a:"Boise St", n:false},
-      {wk:9, dt:"2026-10-31", h:"Boise St", a:"Texas St", n:false},
       {wk:9, dt:"2026-10-31", h:"Colorado St", a:"Fresno St", n:false},
       {wk:9, dt:"2026-10-31", h:"Oregon St", a:"Utah St", n:false},
       {wk:9, dt:"2026-10-31", h:"San Diego St", a:"Washington St", n:false},
       {wk:10, dt:"2026-11-07", h:"Boise St", a:"Colorado St", n:false},
       {wk:10, dt:"2026-11-07", h:"Fresno St", a:"San Diego St", n:false},
-      {wk:10, dt:"2026-11-07", h:"Oregon St", a:"Texas St", n:false},
       {wk:11, dt:"2026-11-14", h:"Boise St", a:"Utah St", n:false},
       {wk:11, dt:"2026-11-14", h:"Oregon St", a:"San Diego St", n:false},
-      {wk:11, dt:"2026-11-14", h:"Texas St", a:"Fresno St", n:false},
       {wk:11, dt:"2026-11-14", h:"Washington St", a:"Colorado St", n:false},
       {wk:12, dt:"2026-11-21", h:"San Diego St", a:"Utah St", n:false},
-      {wk:12, dt:"2026-11-21", h:"Texas St", a:"Washington St", n:false},
     ];
     var out=[], seen2={};
     games.forEach(function(g,i){
