@@ -810,6 +810,18 @@ window.initSportPage = function(CFG) {
     'San Francisco Giants':'SF','Seattle Mariners':'SEA','St. Louis Cardinals':'STL',
     'Tampa Bay Rays':'TB','Texas Rangers':'TEX','Toronto Blue Jays':'TOR',
     'Washington Nationals':'WSH',
+    // NFL
+    'Arizona Cardinals':'ARI','Atlanta Falcons':'ATL','Baltimore Ravens':'BAL',
+    'Buffalo Bills':'BUF','Carolina Panthers':'CAR','Chicago Bears':'CHI',
+    'Cincinnati Bengals':'CIN','Cleveland Browns':'CLE','Dallas Cowboys':'DAL',
+    'Denver Broncos':'DEN','Detroit Lions':'DET','Green Bay Packers':'GB',
+    'Houston Texans':'HOU','Indianapolis Colts':'IND','Jacksonville Jaguars':'JAX',
+    'Kansas City Chiefs':'KC','Las Vegas Raiders':'LV','Los Angeles Chargers':'LAC',
+    'Los Angeles Rams':'LAR','Miami Dolphins':'MIA','Minnesota Vikings':'MIN',
+    'New England Patriots':'NE','New Orleans Saints':'NO','New York Giants':'NYG',
+    'New York Jets':'NYJ','Philadelphia Eagles':'PHI','Pittsburgh Steelers':'PIT',
+    'San Francisco 49ers':'SF','Seattle Seahawks':'SEA','Tampa Bay Buccaneers':'TB',
+    'Tennessee Titans':'TEN','Washington Commanders':'WSH',
     // NHL
     'Anaheim Ducks':'ANA','Arizona Coyotes':'ARI','Utah Hockey Club':'UTA','Utah HC':'UTA',
     'Boston Bruins':'BOS','Buffalo Sabres':'BUF','Calgary Flames':'CGY',
@@ -825,7 +837,7 @@ window.initSportPage = function(CFG) {
     'Winnipeg Jets':'WPG',
   };
   function teamDisplay(name) {
-    if (!['NBA','MLB','NHL'].includes(CFG.sport)) return name;
+    if (!['NBA','MLB','NHL','NFL'].includes(CFG.sport)) return name;
     return TEAM_ABBR[name] || name;
   }
 
@@ -864,7 +876,7 @@ window.initSportPage = function(CFG) {
     const extraHeaders = (CFG.extraCols||[]).map(c=>`<th data-type="num">${c.label}</th>`).join('');
     const rows = filtered.map(r => {
       const bw   = r.best_win_elo > 0 ? r.best_win_elo.toFixed(1) : '—';
-      const bwn  = fmt.maybe(r.best_win_team);
+      const bwn  = (r.best_win_team && r.best_win_team !== 'NA') ? r.best_win_team : '';
       const bar  = eloBarWidth(r.elo, maxElo, minElo, 80);
       const extra = (CFG.extraCols||[]).map(c => {
         const v = r[c.key];
@@ -884,7 +896,7 @@ window.initSportPage = function(CFG) {
         <td class="num" data-val="${r.wins||0}">${r.record||'—'}</td>
         <td class="num" data-val="${r.win_pct||0}">${r.win_pct!=null?(r.win_pct*100).toFixed(1)+'%':'—'}</td>
         <td class="num" data-val="${r.sos||0}">${r.sos!=null?Number(r.sos).toFixed(1):'—'}</td>
-        <td class="num" data-val="${r.best_win_elo||0}">${bwn?`<span style="font-size:0.78rem">${bwn} <span style="color:var(--text-dim);font-family:var(--font-mono);font-size:0.68rem">(${bw})</span></span>`:'—'}</td>
+        <td class="num" data-val="${r.best_win_elo||0}">${bwn?('<span style="font-size:0.78rem">'+bwn+' <span style="color:var(--text-dim);font-family:var(--font-mono);font-size:0.68rem">('+bw+')</span></span>'):'—'}</td>
         ${extra}
       </tr>`;
     }).join('');
