@@ -824,9 +824,18 @@ for (yr in SEASONS) {
   out <- build_output(elo, season=yr, conf_map=conf_vec, sos_map=sos)
 
   elo_lup <- setNames(elo$elo, elo$team)
+  # Quality threshold: only credit wins vs opponents above 1350 Elo
+  # Prevents cupcake wins from inflating resume score
   resume  <- tapply(seq_len(nrow(g)), g$winner,
-                    function(rows) sum(elo_lup[g$loser[rows]], na.rm=TRUE))
+                    function(rows) sum(pmax(0, elo_lup[g$loser[rows]] - 1350), na.rm=TRUE))
   out$resume_score <- round(resume[out$team], 1)
+  # PR = Elo × win_pct^0.6 + √(quality_resume)
+  # win_pct^0.6 penalizes losing records (7-5 SEC team drops significantly)
+  out$pr <- round(
+    out$elo * (pmax(0.01, out$win_pct) ^ 0.6) +
+    sqrt(pmax(0, out$resume_score)),
+    1
+  )
   out <- as.data.frame(lapply(out, function(x) {
     if(is.list(x)) sapply(x, function(v) if(is.null(v)) NA else as.character(v))
     else x
