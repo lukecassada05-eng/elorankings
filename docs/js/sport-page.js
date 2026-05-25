@@ -905,7 +905,7 @@ window.initSportPage = function(CFG) {
       <thead><tr>
         <th data-type="num">Rank</th><th>Team</th><th>${CFG.confLabel}</th>
         <th data-type="num">Elo</th>
-        ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo + sqrt(Resume Score)">PR ⓘ</th>':''}
+        ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo × win_pct^0.6 + √(quality resume)">PR ⓘ</th>':''}
         <th data-type="num">Record</th>
         <th data-type="num">Win%</th><th data-type="num">SOS</th>
         <th data-type="num">Best Win</th>${extraHeaders}
@@ -1335,7 +1335,7 @@ window.initSportPage = function(CFG) {
     el.innerHTML = `<div class="table-wrap"><table class="tbl" id="mainTable">
       <thead><tr><th data-type="num">Rank</th><th>Team</th><th>Conf</th>
         <th data-type="num">Elo</th>
-        ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo + sqrt(Resume Score)">PR ⓘ</th>':''}
+        ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo × win_pct^0.6 + √(quality resume)">PR ⓘ</th>':''}
         <th>Record</th>
         <th data-type="num">Resume Score</th><th data-type="num">SOS</th><th>Best Win</th>
       </tr></thead><tbody>${rows}</tbody></table></div>`;
@@ -3020,7 +3020,7 @@ async function findAvailableSeason() {
     var t25='<div style="margin-bottom:1.4rem">'
       +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.2rem">Top 25 — Playoff Rankings &nbsp;★ = conf champion</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);margin-bottom:0.4rem">'
-      +'<span style="color:var(--accent)">PR</span> = Playoff Rating (Elo + &#x221A;(sum of beaten opponents Elo)) &nbsp;&middot;&nbsp; Elo = power ranking'
+      +'<span style="color:var(--accent)">PR</span> = Playoff Rating &nbsp;&middot;&nbsp; performance &times; record &times; resume &nbsp;&middot;&nbsp; Elo = power ranking'
       +'</div>'
       +'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">'
       +'<div style="display:flex;gap:0.35rem;padding:0.2rem 0.6rem;background:var(--bg3);border-bottom:1px solid var(--border)">'
@@ -3028,7 +3028,7 @@ async function findAvailableSeason() {
       +'<div style="flex:1;font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim)">Team</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:right">W-L</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:32px;text-align:right">Conf</div>'
-      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:42px;text-align:right" title="Playoff Rating = Elo + √(sum of beaten opponents Elo)">PR</div>'
+      +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:42px;text-align:right" title="Playoff Rating = Elo × win_pct^0.6 + √(quality resume)">PR</div>'
       +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:38px;text-align:right">Elo</div>'
       +'</div>';
     top25.forEach(function(t,i){
@@ -3050,7 +3050,7 @@ async function findAvailableSeason() {
       +'<div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">CFP Field — 12 Teams</div>'
       +'<div style="font-size:0.6rem;color:var(--text-dim);font-family:var(--font-mono);margin-bottom:0.55rem;line-height:1.6">'
       +'Seeds 1–4: highest playoff-rated teams overall (bye) · Seeds 5–12: ranked order, 5 conf champs guaranteed<br>'
-      +'★ = conf auto-bid · BYE = first-round bye · W-L · Conf W-L · PR = Playoff Rating'
+      +'★ = conf auto-bid · BYE = first-round bye · W-L · Conf W-L · PR = Playoff Rating (performance × record × resume)'
       +'</div>';
     allSeeds.forEach(function(s){
       var bg=s.bye?'rgba(226,201,126,0.09)':'var(--bg3)';
