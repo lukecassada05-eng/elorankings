@@ -185,6 +185,13 @@ window.setNavActive = function() {
 window.coerceRow = function(r) {
   const elo          = parseFloat(r.elo)          || 0;
   const resume_score = parseFloat(r.resume_score) || 0;
+  const win_pct      = parseFloat(r.win_pct)      || 0;
+  // Use pr from CSV if available (R computes: Elo × win_pct^0.6 + √quality_resume)
+  // Fall back to computing it client-side for sports that don't have a pr column
+  const pr_csv = parseFloat(r.pr);
+  const pr = !isNaN(pr_csv) && pr_csv > 0
+    ? pr_csv
+    : elo * Math.pow(Math.max(0.01, win_pct), 0.6) + Math.sqrt(resume_score);
   return {
     ...r,
     rank:         parseInt(r.rank)          || 0,
@@ -192,12 +199,11 @@ window.coerceRow = function(r) {
     wins:         parseInt(r.wins)          || 0,
     losses:       parseInt(r.losses)        || 0,
     games_played: parseInt(r.games_played)  || 0,
-    win_pct:      parseFloat(r.win_pct)     || 0,
+    win_pct,
     sos:          parseFloat(r.sos)         || 0,
     best_win_elo: parseFloat(r.best_win_elo)|| 0,
     resume_score,
-    // Playoff Rating: Elo + sqrt(resume_score) — rewards beating strong opponents
-    pr:           elo + Math.sqrt(resume_score),
+    pr,
   };
 };
 
