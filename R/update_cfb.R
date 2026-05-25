@@ -391,7 +391,10 @@ get_conf <- function(team, year) {
 
   # ── Permanent independents ─────────────────────────────────
   if (t == "Notre Dame") return("Independent")
-  if (t == "Army")       return("Independent")
+  if (t == "Army") {
+    if (year >= 2024) return("AAC")   # joined AAC 2024 as football-only member
+    return("Independent")
+  }
   if (t == "Navy") {
     if (year >= 2015) return("AAC")   # joined AAC 2015, still member
     return("Independent")
@@ -442,6 +445,7 @@ get_conf <- function(team, year) {
   }
   if (t == "Louisville") {
     if (year >= 2014) return("ACC")
+    if (year >= 2013) return("AAC")   # Big East renamed to AAC July 2013
     return("Big East")
   }
   if (t == "Wake Forest") return("ACC")
@@ -468,6 +472,7 @@ get_conf <- function(team, year) {
   if (t == "Maryland"  && year >= 2014) return("Big Ten")
   if (t == "Rutgers") {
     if (year >= 2014) return("Big Ten")
+    if (year >= 2013) return("AAC")   # Big East renamed to AAC July 2013
     return("Big East")
   }
   if (t %in% c("UCLA","USC")       && year >= 2024) return("Big Ten")
@@ -628,15 +633,15 @@ get_conf <- function(team, year) {
     if (year >= 2013) return("AAC")
     return("C-USA")
   }
-  # Tulsa: WAC 2001-2004, C-USA 2005-2011, AAC 2012+
+  # Tulsa: WAC 2001-2004, C-USA 2005-2013, AAC 2014+
   if (t == "Tulsa") {
-    if (year >= 2012) return("AAC")
+    if (year >= 2014) return("AAC")
     if (year >= 2005) return("C-USA")
     return("WAC")
   }
-  # East Carolina: C-USA 2001-2012, AAC 2013+
+  # East Carolina: C-USA 2001-2013, AAC 2014+
   if (t == "East Carolina") {
-    if (year >= 2013) return("AAC")
+    if (year >= 2014) return("AAC")
     return("C-USA")
   }
   # Tulane: C-USA 2001-2004, Independent 2005-2013, AAC 2014+
@@ -684,8 +689,9 @@ get_conf <- function(team, year) {
     if (year >= 2013) return("Sun Belt")
     return("C-USA")
   }
-  # Texas State: FCS until 2011, WAC 2012, Sun Belt 2013+
+  # Texas State: FCS until 2011, WAC 2012, Sun Belt 2013-2025, Pac-12 2026+
   if (t == "Texas State") {
+    if (year >= 2026) return("Pac-12")
     if (year >= 2013) return("Sun Belt")
     if (year >= 2012) return("WAC")
     return("FCS")
