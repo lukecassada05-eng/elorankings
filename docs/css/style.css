@@ -295,34 +295,21 @@ footer a:hover{color:var(--accent)}
   .nav-links  { display: none; }   /* hide desktop links */
   .nav-mobile-links {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0;
     background: var(--bg2);
     border-top: 1px solid var(--border);
-    padding: 0.35rem 0;
-    overflow-x: auto;
-    scrollbar-width: none;
-    /* Fade on right to signal scrollability */
-    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    position: relative;
+    padding: 0.5rem 1rem;
   }
-  .nav-mobile-links::-webkit-scrollbar { display: none; }
   .nav-mobile-links a {
     font-family: var(--font-mono);
     font-size: 0.7rem;
     color: var(--text-muted);
     text-decoration: none;
-    padding: 0.4rem 0.7rem;
+    padding: 0.4rem 0.6rem;
     border-radius: var(--radius);
     white-space: nowrap;
-    flex-shrink: 0;
-    transition: color 0.15s;
   }
-  .nav-mobile-links a:first-child { margin-left: 0.5rem; }
-  .nav-mobile-links a:last-child  { padding-right: 2.5rem; }
-  .nav-mobile-links a.active { color: var(--accent); }
-  .nav-mobile-links a:hover  { color: var(--text); }
   .nav-mobile-links a:hover { color: var(--accent); }
 
   /* Page padding */
@@ -548,107 +535,4 @@ footer a:hover{color:var(--accent)}
   .lines-matchup { grid-template-columns:1fr; gap:0.5rem; }
   .lines-team-r  { text-align:left; }
   .lines-mid     { border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:0.45rem 0; }
-}
-
-/* ── Elo gradient (green = above avg, red = below avg) ─────── */
-.elo-cell-wrap {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-}
-.elo-val {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  font-weight: 600;
-  min-width: 2.8rem;
-  text-align: right;
-}
-.elo-val.elo-high  { color: var(--green-hi); }
-.elo-val.elo-mid   { color: var(--text); }
-.elo-val.elo-low   { color: var(--red-hi); }
-.elo-bar-track {
-  flex: 1;
-  height: 4px;
-  border-radius: 2px;
-  background: var(--bg4);
-  overflow: hidden;
-  min-width: 40px;
-  max-width: 90px;
-}
-.elo-bar-fill {
-  height: 100%;
-  border-radius: 2px;
-  transition: width 0.3s;
-}
-.elo-bar-fill.bar-high { background: var(--green-hi); }
-.elo-bar-fill.bar-mid  { background: var(--accent); }
-.elo-bar-fill.bar-low  { background: var(--red-hi); }
-
-/* ── Rankings table mobile fix ─────────────────────────────── */
-.rankings-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.82rem;
-}
-.rankings-table th {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  padding: 0.55rem 0.75rem;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-  white-space: nowrap;
-}
-.rankings-table td {
-  padding: 0.6rem 0.75rem;
-  border-bottom: 1px solid var(--border);
-  vertical-align: middle;
-}
-.rankings-table tr:hover td { background: var(--bg3); }
-.rankings-table .rank {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-dim);
-  width: 2rem;
-}
-.rankings-table .team-name {
-  font-weight: 500;
-  /* Never truncate — flex handles it */
-}
-/* Mobile: hide conference, show nickname only */
-@media (max-width: 600px) {
-  .rankings-table .col-conf   { display: none; }
-  .rankings-table .col-record { display: none; }
-  .rankings-table .col-sos    { display: none; }
-  .team-full { display: none; }
-  .team-nick { display: inline; }
-  .elo-bar-track { max-width: 50px; }
-}
-@media (min-width: 601px) {
-  .team-nick { display: none; }
-  .team-full { display: inline; }
-}
-
-/* ── Chart mean line annotation ────────────────────────────── */
-.chart-mean-label {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  color: var(--text-dim);
-}
-
-/* ── Lines game card mobile ────────────────────────────────── */
-@media (max-width: 500px) {
-  .lines-matchup {
-    grid-template-columns: 1fr;
-    gap: 0.4rem;
-  }
-  .lines-team-r { text-align: left; }
-  .lines-mid {
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    padding: 0.4rem 0;
-  }
-  .lines-tname { font-size: 0.78rem; }
 }
