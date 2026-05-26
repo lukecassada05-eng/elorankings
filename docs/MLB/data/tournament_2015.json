@@ -1,0 +1,962 @@
+{
+  "year": 2015,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Orioles",
+      "loser": "Blue Jays",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Mets",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Reds",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Giants",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Brewers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Indians",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Braves",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Marlins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2015-10-01"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Angels",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2015-10-02"
+    },
+    {
+      "winner": "Royals",
+      "loser": "White Sox",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2015-10-02"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Rockies",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2015-10-02"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Reds",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2015-10-02"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Red Sox",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2015-10-02"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Rays",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2015-10-02"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Cardinals",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2015-10-02"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Rangers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "White Sox",
+      "loser": "Tigers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Brewers",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Twins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Diamondbacks",
+      "winner_score": 21,
+      "loser_score": 5,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Mariners",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Giants",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Yankees",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Twins",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Rangers",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Mets",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Rockies",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Phillies",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Blue Jays",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Reds",
+      "loser": "Pirates",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "White Sox",
+      "loser": "Tigers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Red Sox",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Mets",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Brewers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2015-10-03"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Diamondbacks",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Mariners",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Cardinals",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Yankees",
+      "winner_score": 9,
+      "loser_score": 4,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Angels",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Marlins",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Reds",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Giants",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "White Sox",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Red Sox",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Brewers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Twins",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Athletics",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Nationals",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Astros",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Blue Jays",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Cardinals",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2015-10-04"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2015-10-07"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Pirates",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2015-10-08"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Blue Jays",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2015-10-08"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Royals",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2015-10-08"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Blue Jays",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2015-10-09"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Astros",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2015-10-09"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Cubs",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2015-10-09"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Dodgers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-10"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Cardinals",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2015-10-10"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Mets",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2015-10-11"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Royals",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2015-10-11"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2015-10-12"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Astros",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2015-10-12"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Rangers",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2015-10-12"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Cardinals",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2015-10-12"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Dodgers",
+      "winner_score": 13,
+      "loser_score": 7,
+      "date": "2015-10-13"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Cardinals",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2015-10-13"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Mets",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-14"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Rangers",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2015-10-14"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Astros",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2015-10-15"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Dodgers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2015-10-16"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Blue Jays",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2015-10-17"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Blue Jays",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2015-10-17"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Cubs",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2015-10-18"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Cubs",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2015-10-19"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Royals",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2015-10-20"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Blue Jays",
+      "winner_score": 14,
+      "loser_score": 2,
+      "date": "2015-10-20"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Cubs",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2015-10-21"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Royals",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2015-10-21"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Cubs",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2015-10-22"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Blue Jays",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2015-10-24"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Mets",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2015-10-28"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Mets",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2015-10-29"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Royals",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2015-10-31"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Mets",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2015-11-01"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Mets",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2015-11-02"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Orioles",
+      "t2": "Blue Jays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Mets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cubs",
+      "t2": "Reds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Padres",
+      "t2": "Brewers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Red Sox",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Twins",
+      "t2": "Indians",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nationals",
+      "t2": "Braves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rays",
+      "t2": "Marlins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Angels",
+      "w1": 2,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Royals",
+      "t2": "White Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Diamondbacks",
+      "t2": "Rockies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pirates",
+      "t2": "Reds",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Indians",
+      "t2": "Red Sox",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Red Sox"
+    },
+    {
+      "t1": "Blue Jays",
+      "t2": "Rays",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Braves",
+      "t2": "Cardinals",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Cardinals"
+    },
+    {
+      "t1": "White Sox",
+      "t2": "Tigers",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cubs",
+      "t2": "Brewers",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Brewers"
+    },
+    {
+      "t1": "Royals",
+      "t2": "Twins",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Twins"
+    },
+    {
+      "t1": "Astros",
+      "t2": "Diamondbacks",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Athletics",
+      "t2": "Mariners",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Padres",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Padres"
+    },
+    {
+      "t1": "Rockies",
+      "t2": "Giants",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Orioles",
+      "t2": "Yankees",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Yankees"
+    },
+    {
+      "t1": "Nationals",
+      "t2": "Mets",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Marlins",
+      "t2": "Phillies",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Astros",
+      "t2": "Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cubs",
+      "t2": "Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Blue Jays",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Rangers"
+    },
+    {
+      "t1": "Astros",
+      "t2": "Royals",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Astros"
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Cubs",
+      "w1": 1,
+      "w2": 3,
+      "done": true,
+      "loser": "Cardinals"
+    },
+    {
+      "t1": "Mets",
+      "t2": "Dodgers",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Dodgers"
+    },
+    {
+      "t1": "Royals",
+      "t2": "Blue Jays",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Blue Jays"
+    },
+    {
+      "t1": "Mets",
+      "t2": "Cubs",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Cubs"
+    },
+    {
+      "t1": "Royals",
+      "t2": "Mets",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Mets"
+    }
+  ],
+  "eliminated": [
+    "Red Sox",
+    "Cardinals",
+    "Brewers",
+    "Twins",
+    "Padres",
+    "Yankees",
+    "Rangers",
+    "Astros",
+    "Dodgers",
+    "Blue Jays",
+    "Cubs",
+    "Mets"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

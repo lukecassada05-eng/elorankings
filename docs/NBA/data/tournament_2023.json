@@ -1,0 +1,765 @@
+{
+  "year": 2023,
+  "sport": "NBA",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 102,
+      "loser_score": 91,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Thunder",
+      "winner_score": 120,
+      "loser_score": 95,
+      "date": "2023-04-15"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 121,
+      "loser_score": 101,
+      "date": "2023-04-15"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Hawks",
+      "winner_score": 112,
+      "loser_score": 99,
+      "date": "2023-04-15"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Cavaliers",
+      "winner_score": 101,
+      "loser_score": 97,
+      "date": "2023-04-15"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Warriors",
+      "winner_score": 126,
+      "loser_score": 123,
+      "date": "2023-04-16"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Grizzlies",
+      "winner_score": 128,
+      "loser_score": 112,
+      "date": "2023-04-16"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bucks",
+      "winner_score": 130,
+      "loser_score": 117,
+      "date": "2023-04-16"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Suns",
+      "winner_score": 115,
+      "loser_score": 110,
+      "date": "2023-04-17"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Timberwolves",
+      "winner_score": 109,
+      "loser_score": 80,
+      "date": "2023-04-17"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 96,
+      "loser_score": 84,
+      "date": "2023-04-17"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Warriors",
+      "winner_score": 114,
+      "loser_score": 106,
+      "date": "2023-04-18"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Hawks",
+      "winner_score": 119,
+      "loser_score": 106,
+      "date": "2023-04-18"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Knicks",
+      "winner_score": 107,
+      "loser_score": 90,
+      "date": "2023-04-18"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Clippers",
+      "winner_score": 123,
+      "loser_score": 109,
+      "date": "2023-04-19"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Lakers",
+      "winner_score": 103,
+      "loser_score": 93,
+      "date": "2023-04-19"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Heat",
+      "winner_score": 138,
+      "loser_score": 122,
+      "date": "2023-04-20"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Timberwolves",
+      "winner_score": 122,
+      "loser_score": 113,
+      "date": "2023-04-20"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 102,
+      "loser_score": 97,
+      "date": "2023-04-20"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Kings",
+      "winner_score": 114,
+      "loser_score": 97,
+      "date": "2023-04-21"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Clippers",
+      "winner_score": 129,
+      "loser_score": 124,
+      "date": "2023-04-21"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Celtics",
+      "winner_score": 130,
+      "loser_score": 122,
+      "date": "2023-04-21"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Cavaliers",
+      "winner_score": 99,
+      "loser_score": 79,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Timberwolves",
+      "winner_score": 120,
+      "loser_score": 111,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 96,
+      "loser_score": 88,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Clippers",
+      "winner_score": 112,
+      "loser_score": 100,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bucks",
+      "winner_score": 121,
+      "loser_score": 99,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Grizzlies",
+      "winner_score": 111,
+      "loser_score": 101,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Cavaliers",
+      "winner_score": 102,
+      "loser_score": 93,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Kings",
+      "winner_score": 126,
+      "loser_score": 125,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Hawks",
+      "winner_score": 129,
+      "loser_score": 121,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Nuggets",
+      "winner_score": 114,
+      "loser_score": 108,
+      "date": "2023-04-24"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bucks",
+      "winner_score": 119,
+      "loser_score": 114,
+      "date": "2023-04-24"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Grizzlies",
+      "winner_score": 117,
+      "loser_score": 111,
+      "date": "2023-04-25"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Celtics",
+      "winner_score": 119,
+      "loser_score": 117,
+      "date": "2023-04-25"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Timberwolves",
+      "winner_score": 112,
+      "loser_score": 109,
+      "date": "2023-04-26"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Clippers",
+      "winner_score": 136,
+      "loser_score": 130,
+      "date": "2023-04-26"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Cavaliers",
+      "winner_score": 106,
+      "loser_score": 95,
+      "date": "2023-04-26"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Lakers",
+      "winner_score": 116,
+      "loser_score": 99,
+      "date": "2023-04-26"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bucks",
+      "winner_score": 128,
+      "loser_score": 126,
+      "date": "2023-04-27"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Kings",
+      "winner_score": 123,
+      "loser_score": 116,
+      "date": "2023-04-27"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Hawks",
+      "winner_score": 128,
+      "loser_score": 120,
+      "date": "2023-04-28"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Warriors",
+      "winner_score": 118,
+      "loser_score": 99,
+      "date": "2023-04-29"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Grizzlies",
+      "winner_score": 125,
+      "loser_score": 85,
+      "date": "2023-04-29"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Suns",
+      "winner_score": 125,
+      "loser_score": 107,
+      "date": "2023-04-30"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Knicks",
+      "winner_score": 108,
+      "loser_score": 101,
+      "date": "2023-04-30"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Kings",
+      "winner_score": 120,
+      "loser_score": 100,
+      "date": "2023-04-30"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Celtics",
+      "winner_score": 119,
+      "loser_score": 115,
+      "date": "2023-05-01"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Suns",
+      "winner_score": 97,
+      "loser_score": 87,
+      "date": "2023-05-02"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Heat",
+      "winner_score": 111,
+      "loser_score": 105,
+      "date": "2023-05-02"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Warriors",
+      "winner_score": 117,
+      "loser_score": 112,
+      "date": "2023-05-03"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "76ers",
+      "winner_score": 121,
+      "loser_score": 87,
+      "date": "2023-05-04"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Lakers",
+      "winner_score": 127,
+      "loser_score": 100,
+      "date": "2023-05-05"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "76ers",
+      "winner_score": 114,
+      "loser_score": 102,
+      "date": "2023-05-05"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Nuggets",
+      "winner_score": 121,
+      "loser_score": 114,
+      "date": "2023-05-06"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Knicks",
+      "winner_score": 105,
+      "loser_score": 86,
+      "date": "2023-05-06"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Warriors",
+      "winner_score": 127,
+      "loser_score": 97,
+      "date": "2023-05-07"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Celtics",
+      "winner_score": 116,
+      "loser_score": 115,
+      "date": "2023-05-07"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Nuggets",
+      "winner_score": 129,
+      "loser_score": 124,
+      "date": "2023-05-08"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Knicks",
+      "winner_score": 109,
+      "loser_score": 101,
+      "date": "2023-05-08"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Warriors",
+      "winner_score": 104,
+      "loser_score": 101,
+      "date": "2023-05-09"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Celtics",
+      "winner_score": 115,
+      "loser_score": 103,
+      "date": "2023-05-09"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Suns",
+      "winner_score": 118,
+      "loser_score": 102,
+      "date": "2023-05-10"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Heat",
+      "winner_score": 112,
+      "loser_score": 103,
+      "date": "2023-05-10"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Lakers",
+      "winner_score": 121,
+      "loser_score": 106,
+      "date": "2023-05-11"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "76ers",
+      "winner_score": 95,
+      "loser_score": 86,
+      "date": "2023-05-11"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Suns",
+      "winner_score": 125,
+      "loser_score": 100,
+      "date": "2023-05-12"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Knicks",
+      "winner_score": 96,
+      "loser_score": 92,
+      "date": "2023-05-12"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Warriors",
+      "winner_score": 122,
+      "loser_score": 101,
+      "date": "2023-05-13"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "76ers",
+      "winner_score": 112,
+      "loser_score": 88,
+      "date": "2023-05-14"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Lakers",
+      "winner_score": 132,
+      "loser_score": 126,
+      "date": "2023-05-17"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 123,
+      "loser_score": 116,
+      "date": "2023-05-18"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Lakers",
+      "winner_score": 108,
+      "loser_score": 103,
+      "date": "2023-05-19"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 111,
+      "loser_score": 105,
+      "date": "2023-05-20"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Lakers",
+      "winner_score": 119,
+      "loser_score": 108,
+      "date": "2023-05-21"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 128,
+      "loser_score": 102,
+      "date": "2023-05-22"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Lakers",
+      "winner_score": 113,
+      "loser_score": 111,
+      "date": "2023-05-23"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 116,
+      "loser_score": 99,
+      "date": "2023-05-24"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 110,
+      "loser_score": 97,
+      "date": "2023-05-26"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 104,
+      "loser_score": 103,
+      "date": "2023-05-28"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 103,
+      "loser_score": 84,
+      "date": "2023-05-30"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Heat",
+      "winner_score": 104,
+      "loser_score": 93,
+      "date": "2023-06-02"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nuggets",
+      "winner_score": 111,
+      "loser_score": 108,
+      "date": "2023-06-05"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Heat",
+      "winner_score": 109,
+      "loser_score": 94,
+      "date": "2023-06-08"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Heat",
+      "winner_score": 108,
+      "loser_score": 95,
+      "date": "2023-06-10"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Heat",
+      "winner_score": 94,
+      "loser_score": 89,
+      "date": "2023-06-13"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Heat",
+      "t2": "Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Timberwolves",
+      "t2": "Thunder",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "76ers",
+      "t2": "Nets",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Nets"
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Hawks",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Hawks"
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Cavaliers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Cavaliers"
+    },
+    {
+      "t1": "Kings",
+      "t2": "Warriors",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Kings"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Grizzlies",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Grizzlies"
+    },
+    {
+      "t1": "Heat",
+      "t2": "Bucks",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Bucks"
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Suns",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Clippers"
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Timberwolves",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Timberwolves"
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Suns",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Suns"
+    },
+    {
+      "t1": "Heat",
+      "t2": "Knicks",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Knicks"
+    },
+    {
+      "t1": "76ers",
+      "t2": "Celtics",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "76ers"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Warriors",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Warriors"
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Lakers",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Lakers"
+    },
+    {
+      "t1": "Heat",
+      "t2": "Celtics",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Celtics"
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Heat",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Heat"
+    }
+  ],
+  "eliminated": [
+    "Nets",
+    "Hawks",
+    "Cavaliers",
+    "Kings",
+    "Grizzlies",
+    "Bucks",
+    "Clippers",
+    "Timberwolves",
+    "Suns",
+    "Knicks",
+    "76ers",
+    "Warriors",
+    "Lakers",
+    "Celtics",
+    "Heat"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

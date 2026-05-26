@@ -1,0 +1,1140 @@
+{
+  "year": 2022,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Yankees",
+      "loser": "Orioles",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Phillies",
+      "winner_score": 13,
+      "loser_score": 4,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Reds",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Red Sox",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Giants",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Athletics",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Guardians",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Twins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Nationals",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Brewers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Pirates",
+      "winner_score": 13,
+      "loser_score": 3,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Mets",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Rays",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2022-10-01"
+    },
+    {
+      "winner": "Padres",
+      "loser": "White Sox",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rockies",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Twins",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Yankees",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Nationals",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Red Sox",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Royals",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Brewers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Rays",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Cardinals",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Reds",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Diamondbacks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Rangers",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "White Sox",
+      "loser": "Padres",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Dodgers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Mariners",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Mets",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2022-10-02"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Guardians",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2022-10-03"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Cardinals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-03"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Braves",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2022-10-03"
+    },
+    {
+      "winner": "Reds",
+      "loser": "Cubs",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2022-10-03"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Orioles",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2022-10-03"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2022-10-03"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2022-10-03"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Diamondbacks",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2022-10-03"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Astros",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "White Sox",
+      "loser": "Twins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Angels",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Mariners",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Giants",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Dodgers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Nationals",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Royals",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Tigers",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Pirates",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Marlins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Reds",
+      "loser": "Cubs",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Diamondbacks",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2022-10-04"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Yankees",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Phillies",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Nationals",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "White Sox",
+      "loser": "Twins",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Angels",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Giants",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Dodgers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Tigers",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Blue Jays",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Angels",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Orioles",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Cardinals",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Phillies",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Brewers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Royals",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Tigers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Braves",
+      "winner_score": 12,
+      "loser_score": 9,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Nationals",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Padres",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Reds",
+      "winner_score": 15,
+      "loser_score": 2,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Twins",
+      "loser": "White Sox",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rockies",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2022-10-05"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Rays",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2022-10-07"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Cardinals",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2022-10-07"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Blue Jays",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2022-10-07"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Mets",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2022-10-08"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Rays",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2022-10-08"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Blue Jays",
+      "winner_score": 10,
+      "loser_score": 9,
+      "date": "2022-10-08"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Padres",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2022-10-08"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Cardinals",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2022-10-09"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Mets",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2022-10-09"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Braves",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2022-10-11"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Mariners",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2022-10-11"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Guardians",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2022-10-11"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2022-10-12"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Phillies",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2022-10-12"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Dodgers",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2022-10-13"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Mariners",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-13"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-14"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Braves",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2022-10-14"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Dodgers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2022-10-15"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Braves",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2022-10-15"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Mariners",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2022-10-15"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Yankees",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2022-10-15"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Dodgers",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2022-10-16"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Guardians",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-16"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Guardians",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2022-10-18"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Padres",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2022-10-19"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Phillies",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2022-10-19"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-19"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-10-20"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Padres",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2022-10-21"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2022-10-22"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Padres",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2022-10-22"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Padres",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2022-10-23"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2022-10-24"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Astros",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2022-10-29"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2022-10-30"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Astros",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2022-11-02"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2022-11-03"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Phillies",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-11-04"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Phillies",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2022-11-06"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Yankees",
+      "t2": "Orioles",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nationals",
+      "t2": "Phillies",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cubs",
+      "t2": "Reds",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Reds"
+    },
+    {
+      "t1": "Blue Jays",
+      "t2": "Red Sox",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Diamondbacks",
+      "t2": "Giants",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mariners",
+      "t2": "Athletics",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Royals",
+      "t2": "Guardians",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Royals"
+    },
+    {
+      "t1": "Tigers",
+      "t2": "Twins",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Marlins",
+      "t2": "Brewers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Pirates",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Cardinals"
+    },
+    {
+      "t1": "Braves",
+      "t2": "Mets",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Astros",
+      "t2": "Rays",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Padres",
+      "t2": "White Sox",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Angels",
+      "t2": "Rangers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Rockies",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Dodgers"
+    },
+    {
+      "t1": "Marlins",
+      "t2": "Braves",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Blue Jays",
+      "t2": "Orioles",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Rangers",
+      "w1": 2,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Rays",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Rays"
+    },
+    {
+      "t1": "Brewers",
+      "t2": "Diamondbacks",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Astros",
+      "w1": 3,
+      "w2": 6,
+      "done": true,
+      "loser": "Phillies"
+    },
+    {
+      "t1": "White Sox",
+      "t2": "Twins",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Athletics",
+      "t2": "Angels",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Angels"
+    },
+    {
+      "t1": "Tigers",
+      "t2": "Mariners",
+      "w1": 1,
+      "w2": 3,
+      "done": true,
+      "loser": "Tigers"
+    },
+    {
+      "t1": "Padres",
+      "t2": "Giants",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mets",
+      "t2": "Nationals",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Nationals"
+    },
+    {
+      "t1": "Guardians",
+      "t2": "Rays",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Cardinals",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mariners",
+      "t2": "Blue Jays",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Padres",
+      "t2": "Mets",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Braves",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Braves"
+    },
+    {
+      "t1": "Astros",
+      "t2": "Mariners",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Mariners"
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Guardians",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Guardians"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Padres",
+      "w1": 1,
+      "w2": 3,
+      "done": true,
+      "loser": "Dodgers"
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Padres",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Padres"
+    },
+    {
+      "t1": "Astros",
+      "t2": "Yankees",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Yankees"
+    }
+  ],
+  "eliminated": [
+    "Reds",
+    "Royals",
+    "Cardinals",
+    "Dodgers",
+    "Rays",
+    "Phillies",
+    "Angels",
+    "Tigers",
+    "Nationals",
+    "Braves",
+    "Mariners",
+    "Guardians",
+    "Padres",
+    "Yankees"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

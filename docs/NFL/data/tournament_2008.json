@@ -1,0 +1,140 @@
+{
+  "year": 2008,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Ravens",
+      "loser": "Titans",
+      "winner_score": 13,
+      "loser_score": 10,
+      "date": "2009-01-10"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Panthers",
+      "winner_score": 33,
+      "loser_score": 13,
+      "date": "2009-01-11"
+    },
+    {
+      "winner": "Eagles",
+      "loser": "Giants",
+      "winner_score": 23,
+      "loser_score": 11,
+      "date": "2009-01-11"
+    },
+    {
+      "winner": "Steelers",
+      "loser": "Chargers",
+      "winner_score": 35,
+      "loser_score": 24,
+      "date": "2009-01-11"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Eagles",
+      "winner_score": 32,
+      "loser_score": 25,
+      "date": "2009-01-18"
+    },
+    {
+      "winner": "Steelers",
+      "loser": "Ravens",
+      "winner_score": 23,
+      "loser_score": 14,
+      "date": "2009-01-18"
+    },
+    {
+      "winner": "Steelers",
+      "loser": "Cardinals",
+      "winner_score": 27,
+      "loser_score": 23,
+      "date": "2009-02-01"
+    },
+    {
+      "winner": "NFC",
+      "loser": "AFC",
+      "winner_score": 30,
+      "loser_score": 21,
+      "date": "2009-02-08"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Ravens",
+      "t2": "Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Titans"
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Panthers"
+    },
+    {
+      "t1": "Eagles",
+      "t2": "Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Giants"
+    },
+    {
+      "t1": "Steelers",
+      "t2": "Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chargers"
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eagles"
+    },
+    {
+      "t1": "Steelers",
+      "t2": "Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ravens"
+    },
+    {
+      "t1": "Steelers",
+      "t2": "Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cardinals"
+    },
+    {
+      "t1": "NFC",
+      "t2": "AFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "AFC"
+    }
+  ],
+  "eliminated": [
+    "Titans",
+    "Panthers",
+    "Giants",
+    "Chargers",
+    "Eagles",
+    "Ravens",
+    "Cardinals",
+    "AFC"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

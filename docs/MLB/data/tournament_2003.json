@@ -1,0 +1,319 @@
+{
+  "year": 2003,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Marlins",
+      "loser": "Giants",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2003-10-01"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Cubs",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2003-10-01"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Red Sox",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2003-10-02"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Red Sox",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2003-10-02"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Twins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2003-10-03"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Giants",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2003-10-03"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Braves",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2003-10-04"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Twins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2003-10-04"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Giants",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2003-10-04"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Cubs",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2003-10-04"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Athletics",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2003-10-04"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Athletics",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2003-10-05"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Twins",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2003-10-05"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Braves",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2003-10-06"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Athletics",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2003-10-07"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Cubs",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2003-10-08"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Yankees",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2003-10-09"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Marlins",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2003-10-09"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Red Sox",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2003-10-10"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Marlins",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2003-10-11"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2003-10-12"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Marlins",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2003-10-12"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Cubs",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2003-10-13"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Yankees",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2003-10-14"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2003-10-14"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Cubs",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2003-10-15"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Yankees",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2003-10-15"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Cubs",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2003-10-16"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Red Sox",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2003-10-17"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Yankees",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2003-10-19"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Marlins",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2003-10-20"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Marlins",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2003-10-22"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2003-10-23"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Yankees",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2003-10-24"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Yankees",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2003-10-25"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Marlins",
+      "t2": "Giants",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Giants"
+    },
+    {
+      "t1": "Braves",
+      "t2": "Cubs",
+      "w1": 2,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Athletics",
+      "t2": "Red Sox",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Athletics"
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Twins",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Twins"
+    },
+    {
+      "t1": "Marlins",
+      "t2": "Cubs",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Cubs"
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Yankees",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Red Sox"
+    },
+    {
+      "t1": "Marlins",
+      "t2": "Yankees",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Yankees"
+    }
+  ],
+  "eliminated": [
+    "Giants",
+    "Athletics",
+    "Twins",
+    "Cubs",
+    "Red Sox",
+    "Yankees"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

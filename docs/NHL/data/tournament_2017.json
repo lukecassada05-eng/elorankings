@@ -1,0 +1,756 @@
+{
+  "year": 2017,
+  "sport": "NHL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Rangers",
+      "loser": "Canadiens",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2017-04-12"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Senators",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-04-12"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Blue Jackets",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-04-12"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Wild",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-04-13"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Oilers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-13"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Maple Leafs",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-13"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blackhawks",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2017-04-14"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Flames",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-14"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Rangers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-14"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Blue Jackets",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2017-04-14"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Wild",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-04-15"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Sharks",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2017-04-15"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-15"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Capitals",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-15"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blackhawks",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2017-04-16"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Flames",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-16"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Wild",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-04-16"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Blue Jackets",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2017-04-16"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-04-16"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Sharks",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2017-04-17"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-17"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Capitals",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-17"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blackhawks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-18"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Flames",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2017-04-18"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Canadiens",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-04-18"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Penguins",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2017-04-18"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Oilers",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2017-04-19"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Maple Leafs",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2017-04-19"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Bruins",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2017-04-19"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Blues",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2017-04-20"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Flames",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-04-20"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Canadiens",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-20"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Blue Jackets",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2017-04-20"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blackhawks",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2017-04-21"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Sharks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-21"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Maple Leafs",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-04-21"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Senators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-21"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Wild",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-22"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Canadiens",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-04-23"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Sharks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-04-23"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-23"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Maple Leafs",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-04-23"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blues",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-27"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Ducks",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2017-04-27"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Rangers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-04-27"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Capitals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-27"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Predators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-29"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Ducks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-04-29"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Rangers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2017-04-29"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Capitals",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2017-04-30"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-04-30"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Oilers",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2017-04-30"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-05-01"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Senators",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2017-05-02"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blues",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-05-03"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Capitals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-05-03"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Oilers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-05-04"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Senators",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2017-05-04"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Predators",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-05-06"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Oilers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-05-06"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2017-05-06"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2017-05-06"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-05-07"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Ducks",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2017-05-07"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Penguins",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2017-05-08"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Rangers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2017-05-09"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Capitals",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2017-05-10"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Oilers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-05-11"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-05-13"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Penguins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-05-13"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Predators",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2017-05-14"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Senators",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2017-05-16"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Ducks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-05-17"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Penguins",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2017-05-18"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Predators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-05-19"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Senators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-05-20"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-05-20"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Senators",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2017-05-21"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Ducks",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2017-05-23"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Penguins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-05-24"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Senators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-05-26"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Predators",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2017-05-30"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Predators",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2017-06-01"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Penguins",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2017-06-04"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2017-06-06"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Predators",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2017-06-09"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Predators",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2017-06-12"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Rangers",
+      "t2": "Canadiens",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Canadiens"
+    },
+    {
+      "t1": "Bruins",
+      "t2": "Senators",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Bruins"
+    },
+    {
+      "t1": "Penguins",
+      "t2": "Blue Jackets",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Blue Jackets"
+    },
+    {
+      "t1": "Blues",
+      "t2": "Wild",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Wild"
+    },
+    {
+      "t1": "Sharks",
+      "t2": "Oilers",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Sharks"
+    },
+    {
+      "t1": "Capitals",
+      "t2": "Maple Leafs",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Maple Leafs"
+    },
+    {
+      "t1": "Predators",
+      "t2": "Blackhawks",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Blackhawks"
+    },
+    {
+      "t1": "Ducks",
+      "t2": "Flames",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Flames"
+    },
+    {
+      "t1": "Predators",
+      "t2": "Blues",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Blues"
+    },
+    {
+      "t1": "Oilers",
+      "t2": "Ducks",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Oilers"
+    },
+    {
+      "t1": "Senators",
+      "t2": "Rangers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Rangers"
+    },
+    {
+      "t1": "Penguins",
+      "t2": "Capitals",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Capitals"
+    },
+    {
+      "t1": "Predators",
+      "t2": "Ducks",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Ducks"
+    },
+    {
+      "t1": "Senators",
+      "t2": "Penguins",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Senators"
+    },
+    {
+      "t1": "Penguins",
+      "t2": "Predators",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Predators"
+    }
+  ],
+  "eliminated": [
+    "Canadiens",
+    "Bruins",
+    "Blue Jackets",
+    "Wild",
+    "Sharks",
+    "Maple Leafs",
+    "Blackhawks",
+    "Flames",
+    "Blues",
+    "Oilers",
+    "Rangers",
+    "Capitals",
+    "Ducks",
+    "Senators",
+    "Predators"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

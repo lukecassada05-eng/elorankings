@@ -1,0 +1,286 @@
+{
+  "year": 2007,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Rockies",
+      "loser": "Padres",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2007-10-01"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Phillies",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2007-10-03"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Angels",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2007-10-03"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Cubs",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2007-10-04"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Phillies",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2007-10-04"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Yankees",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2007-10-04"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Cubs",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2007-10-05"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Yankees",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2007-10-05"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Angels",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2007-10-06"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Cubs",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2007-10-06"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Phillies",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2007-10-07"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Angels",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2007-10-07"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Indians",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2007-10-07"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Yankees",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2007-10-08"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Diamondbacks",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2007-10-12"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Indians",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2007-10-12"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Diamondbacks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2007-10-13"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Red Sox",
+      "winner_score": 13,
+      "loser_score": 6,
+      "date": "2007-10-14"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Diamondbacks",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2007-10-15"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2007-10-15"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Diamondbacks",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2007-10-16"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Red Sox",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2007-10-17"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Indians",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2007-10-19"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Indians",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2007-10-21"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Indians",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2007-10-22"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rockies",
+      "winner_score": 13,
+      "loser_score": 1,
+      "date": "2007-10-25"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rockies",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2007-10-26"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rockies",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2007-10-28"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rockies",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2007-10-29"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Rockies",
+      "t2": "Padres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rockies",
+      "t2": "Phillies",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Phillies"
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Angels",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Angels"
+    },
+    {
+      "t1": "Diamondbacks",
+      "t2": "Cubs",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Cubs"
+    },
+    {
+      "t1": "Indians",
+      "t2": "Yankees",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Yankees"
+    },
+    {
+      "t1": "Rockies",
+      "t2": "Diamondbacks",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Diamondbacks"
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Indians",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Indians"
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Rockies",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Rockies"
+    }
+  ],
+  "eliminated": [
+    "Phillies",
+    "Angels",
+    "Cubs",
+    "Yankees",
+    "Diamondbacks",
+    "Indians",
+    "Rockies"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

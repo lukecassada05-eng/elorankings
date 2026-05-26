@@ -1,0 +1,140 @@
+{
+  "year": 2018,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Chiefs",
+      "loser": "Colts",
+      "winner_score": 31,
+      "loser_score": 13,
+      "date": "2019-01-12"
+    },
+    {
+      "winner": "Rams",
+      "loser": "Cowboys",
+      "winner_score": 30,
+      "loser_score": 22,
+      "date": "2019-01-13"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Chargers",
+      "winner_score": 41,
+      "loser_score": 28,
+      "date": "2019-01-13"
+    },
+    {
+      "winner": "Saints",
+      "loser": "Eagles",
+      "winner_score": 20,
+      "loser_score": 14,
+      "date": "2019-01-13"
+    },
+    {
+      "winner": "Rams",
+      "loser": "Saints",
+      "winner_score": 26,
+      "loser_score": 23,
+      "date": "2019-01-20"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Chiefs",
+      "winner_score": 37,
+      "loser_score": 31,
+      "date": "2019-01-20"
+    },
+    {
+      "winner": "AFC",
+      "loser": "NFC",
+      "winner_score": 26,
+      "loser_score": 7,
+      "date": "2019-01-27"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Rams",
+      "winner_score": 13,
+      "loser_score": 3,
+      "date": "2019-02-03"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Chiefs",
+      "t2": "Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colts"
+    },
+    {
+      "t1": "Rams",
+      "t2": "Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cowboys"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chargers"
+    },
+    {
+      "t1": "Saints",
+      "t2": "Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eagles"
+    },
+    {
+      "t1": "Rams",
+      "t2": "Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saints"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Chiefs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chiefs"
+    },
+    {
+      "t1": "AFC",
+      "t2": "NFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NFC"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rams"
+    }
+  ],
+  "eliminated": [
+    "Colts",
+    "Cowboys",
+    "Chargers",
+    "Eagles",
+    "Saints",
+    "Chiefs",
+    "NFC",
+    "Rams"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

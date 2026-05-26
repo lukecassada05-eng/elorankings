@@ -1,0 +1,1181 @@
+{
+  "year": 2023,
+  "sport": "NHL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Bruins",
+      "loser": "Capitals",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-04-11"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Red Wings",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2023-04-11"
+    },
+    {
+      "winner": "Devils",
+      "loser": "Sabres",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2023-04-11"
+    },
+    {
+      "winner": "Flyers",
+      "loser": "Blue Jackets",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-11"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Lightning",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-11"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Penguins",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-04-11"
+    },
+    {
+      "winner": "Jets",
+      "loser": "Wild",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-04-12"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Avalanche",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-04-12"
+    },
+    {
+      "winner": "Canucks",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-12"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Kraken",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2023-04-12"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Canadiens",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-04-12"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-04-12"
+    },
+    {
+      "winner": "Flames",
+      "loser": "Sharks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-04-13"
+    },
+    {
+      "winner": "Sabres",
+      "loser": "Senators",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-13"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-13"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Panthers",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2023-04-13"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Canadiens",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-04-13"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-13"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Red Wings",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2023-04-13"
+    },
+    {
+      "winner": "Devils",
+      "loser": "Capitals",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-04-13"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Jets",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Wild",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Flyers",
+      "loser": "Blackhawks",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Sharks",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Ducks",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Canucks",
+      "loser": "Coyotes",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Kraken",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Sabres",
+      "loser": "Blue Jackets",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-04-14"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Predators",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-15"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-04-17"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Panthers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-04-17"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-18"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Oilers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-18"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Devils",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-04-18"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Maple Leafs",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2023-04-18"
+    },
+    {
+      "winner": "Jets",
+      "loser": "Golden Knights",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-04-19"
+    },
+    {
+      "winner": "Kraken",
+      "loser": "Avalanche",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-04-19"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Islanders",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-19"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Bruins",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2023-04-19"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Wild",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2023-04-20"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Kings",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-04-20"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Lightning",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2023-04-20"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Devils",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-04-20"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Kraken",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-21"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Jets",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-04-21"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Hurricanes",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-04-21"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Panthers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-04-21"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Stars",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Oilers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Jets",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Lightning",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-22"
+    },
+    {
+      "winner": "Devils",
+      "loser": "Rangers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Kraken",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Islanders",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Panthers",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Wild",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-23"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Kings",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-04-24"
+    },
+    {
+      "winner": "Devils",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-04-24"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Lightning",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-04-24"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Jets",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-04-25"
+    },
+    {
+      "winner": "Kraken",
+      "loser": "Avalanche",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-25"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Hurricanes",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-25"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Wild",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2023-04-26"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Kings",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2023-04-26"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-26"
+    },
+    {
+      "winner": "Kraken",
+      "loser": "Avalanche",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-04-27"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Maple Leafs",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-04-27"
+    },
+    {
+      "winner": "Devils",
+      "loser": "Rangers",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2023-04-27"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Jets",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2023-04-28"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-04-28"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Bruins",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2023-04-28"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Wild",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2023-04-29"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Kraken",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2023-04-29"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Lightning",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-04-29"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Devils",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-04-30"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Kings",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-04-30"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-04-30"
+    },
+    {
+      "winner": "Kraken",
+      "loser": "Avalanche",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-05-01"
+    },
+    {
+      "winner": "Devils",
+      "loser": "Rangers",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2023-05-02"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Maple Leafs",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-05-02"
+    },
+    {
+      "winner": "Kraken",
+      "loser": "Stars",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-05-03"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Devils",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-05-03"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Oilers",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2023-05-04"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Maple Leafs",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-05-04"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Kraken",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-05-05"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Devils",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2023-05-06"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Golden Knights",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-05-06"
+    },
+    {
+      "winner": "Devils",
+      "loser": "Hurricanes",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2023-05-07"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Maple Leafs",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-05-07"
+    },
+    {
+      "winner": "Kraken",
+      "loser": "Stars",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2023-05-08"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Oilers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-05-09"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Devils",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2023-05-09"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Kraken",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2023-05-10"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Panthers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-05-10"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Golden Knights",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2023-05-11"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Devils",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-05-11"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Kraken",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-05-12"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Maple Leafs",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-05-12"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Oilers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-05-13"
+    },
+    {
+      "winner": "Kraken",
+      "loser": "Stars",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2023-05-13"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Oilers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-05-15"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Kraken",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-05-16"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Hurricanes",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-05-19"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Stars",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-05-20"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Hurricanes",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-05-21"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-05-21"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Hurricanes",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2023-05-23"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Stars",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2023-05-24"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Hurricanes",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-05-25"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Golden Knights",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-05-26"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Golden Knights",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-05-28"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Stars",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2023-05-30"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Panthers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-06-04"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Panthers",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2023-06-06"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Golden Knights",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-06-09"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Panthers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-06-11"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Panthers",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2023-06-14"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Bruins",
+      "t2": "Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hurricanes",
+      "t2": "Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Devils",
+      "t2": "Sabres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Flyers",
+      "t2": "Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Maple Leafs",
+      "t2": "Lightning",
+      "w1": 5,
+      "w2": 2,
+      "done": true,
+      "loser": "Lightning"
+    },
+    {
+      "t1": "Blackhawks",
+      "t2": "Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jets",
+      "t2": "Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Oilers",
+      "t2": "Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Canucks",
+      "t2": "Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Golden Knights",
+      "t2": "Kraken",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Islanders",
+      "t2": "Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Stars",
+      "t2": "Blues",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Flames",
+      "t2": "Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Sabres",
+      "t2": "Senators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Blue Jackets",
+      "t2": "Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hurricanes",
+      "t2": "Panthers",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Hurricanes"
+    },
+    {
+      "t1": "Bruins",
+      "t2": "Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Maple Leafs",
+      "t2": "Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lightning",
+      "t2": "Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Devils",
+      "t2": "Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Avalanche",
+      "t2": "Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Predators",
+      "t2": "Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Flyers",
+      "t2": "Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Oilers",
+      "t2": "Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kings",
+      "t2": "Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Canucks",
+      "t2": "Coyotes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Sabres",
+      "t2": "Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Avalanche",
+      "t2": "Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hurricanes",
+      "t2": "Islanders",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Islanders"
+    },
+    {
+      "t1": "Bruins",
+      "t2": "Panthers",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Bruins"
+    },
+    {
+      "t1": "Wild",
+      "t2": "Stars",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Wild"
+    },
+    {
+      "t1": "Kings",
+      "t2": "Oilers",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Kings"
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Devils",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Rangers"
+    },
+    {
+      "t1": "Jets",
+      "t2": "Golden Knights",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Jets"
+    },
+    {
+      "t1": "Kraken",
+      "t2": "Avalanche",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Avalanche"
+    },
+    {
+      "t1": "Panthers",
+      "t2": "Maple Leafs",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Maple Leafs"
+    },
+    {
+      "t1": "Kraken",
+      "t2": "Stars",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Kraken"
+    },
+    {
+      "t1": "Hurricanes",
+      "t2": "Devils",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Devils"
+    },
+    {
+      "t1": "Golden Knights",
+      "t2": "Oilers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Oilers"
+    },
+    {
+      "t1": "Golden Knights",
+      "t2": "Stars",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Stars"
+    },
+    {
+      "t1": "Golden Knights",
+      "t2": "Panthers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Panthers"
+    }
+  ],
+  "eliminated": [
+    "Lightning",
+    "Hurricanes",
+    "Islanders",
+    "Bruins",
+    "Wild",
+    "Kings",
+    "Rangers",
+    "Jets",
+    "Avalanche",
+    "Maple Leafs",
+    "Kraken",
+    "Devils",
+    "Oilers",
+    "Stars",
+    "Panthers"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

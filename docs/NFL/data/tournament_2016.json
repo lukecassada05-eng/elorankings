@@ -1,0 +1,140 @@
+{
+  "year": 2016,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Falcons",
+      "loser": "Seahawks",
+      "winner_score": 36,
+      "loser_score": 20,
+      "date": "2017-01-14"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Texans",
+      "winner_score": 34,
+      "loser_score": 16,
+      "date": "2017-01-15"
+    },
+    {
+      "winner": "Packers",
+      "loser": "Cowboys",
+      "winner_score": 34,
+      "loser_score": 31,
+      "date": "2017-01-15"
+    },
+    {
+      "winner": "Steelers",
+      "loser": "Chiefs",
+      "winner_score": 18,
+      "loser_score": 16,
+      "date": "2017-01-16"
+    },
+    {
+      "winner": "Falcons",
+      "loser": "Packers",
+      "winner_score": 44,
+      "loser_score": 21,
+      "date": "2017-01-22"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Steelers",
+      "winner_score": 36,
+      "loser_score": 17,
+      "date": "2017-01-22"
+    },
+    {
+      "winner": "AFC",
+      "loser": "NFC",
+      "winner_score": 20,
+      "loser_score": 13,
+      "date": "2017-01-30"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Falcons",
+      "winner_score": 34,
+      "loser_score": 28,
+      "date": "2017-02-05"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Falcons",
+      "t2": "Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seahawks"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Texans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texans"
+    },
+    {
+      "t1": "Packers",
+      "t2": "Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cowboys"
+    },
+    {
+      "t1": "Steelers",
+      "t2": "Chiefs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chiefs"
+    },
+    {
+      "t1": "Falcons",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Steelers"
+    },
+    {
+      "t1": "AFC",
+      "t2": "NFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NFC"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Falcons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Falcons"
+    }
+  ],
+  "eliminated": [
+    "Seahawks",
+    "Texans",
+    "Cowboys",
+    "Chiefs",
+    "Packers",
+    "Steelers",
+    "NFC",
+    "Falcons"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

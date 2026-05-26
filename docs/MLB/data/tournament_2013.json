@@ -1,0 +1,357 @@
+{
+  "year": 2013,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Pirates",
+      "loser": "Reds",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2013-10-02"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Indians",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2013-10-03"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Pirates",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2013-10-03"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Braves",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2013-10-04"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Cardinals",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2013-10-04"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2013-10-04"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Dodgers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-10-04"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Athletics",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-10-05"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2013-10-05"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Tigers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2013-10-06"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Cardinals",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2013-10-06"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Braves",
+      "winner_score": 13,
+      "loser_score": 6,
+      "date": "2013-10-07"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Tigers",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2013-10-07"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Pirates",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-10-07"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Red Sox",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2013-10-07"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Braves",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-10-08"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Athletics",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2013-10-08"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-10-09"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Pirates",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2013-10-10"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Athletics",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2013-10-11"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Dodgers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-10-12"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Dodgers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2013-10-12"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Red Sox",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2013-10-13"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Tigers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2013-10-14"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cardinals",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2013-10-15"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Tigers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2013-10-15"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Dodgers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-10-16"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cardinals",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2013-10-16"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Red Sox",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2013-10-17"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Tigers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-10-18"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Dodgers",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2013-10-19"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Tigers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2013-10-20"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Cardinals",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2013-10-24"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-10-25"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Red Sox",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2013-10-27"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Cardinals",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-10-28"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Cardinals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-10-29"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Cardinals",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2013-10-31"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Pirates",
+      "t2": "Reds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rays",
+      "t2": "Indians",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Pirates",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Pirates"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Braves",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Braves"
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Rays",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Rays"
+    },
+    {
+      "t1": "Tigers",
+      "t2": "Athletics",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Athletics"
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Dodgers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Dodgers"
+    },
+    {
+      "t1": "Tigers",
+      "t2": "Red Sox",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Tigers"
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Cardinals",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Cardinals"
+    }
+  ],
+  "eliminated": [
+    "Pirates",
+    "Braves",
+    "Rays",
+    "Athletics",
+    "Dodgers",
+    "Tigers",
+    "Cardinals"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

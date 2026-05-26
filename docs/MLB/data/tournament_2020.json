@@ -1,0 +1,402 @@
+{
+  "year": 2020,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Braves",
+      "loser": "Reds",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2020-10-01"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "White Sox",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2020-10-01"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Cardinals",
+      "winner_score": 11,
+      "loser_score": 9,
+      "date": "2020-10-01"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Brewers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2020-10-02"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Cubs",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2020-10-02"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Cardinals",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2020-10-02"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Athletics",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2020-10-05"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Rays",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2020-10-06"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Marlins",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2020-10-06"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Athletics",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2020-10-06"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Yankees",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2020-10-07"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2020-10-07"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Marlins",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2020-10-07"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Astros",
+      "winner_score": 9,
+      "loser_score": 7,
+      "date": "2020-10-07"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Yankees",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2020-10-07"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2020-10-08"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Marlins",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2020-10-08"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Athletics",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2020-10-08"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Rays",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2020-10-08"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2020-10-09"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Yankees",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2020-10-09"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Astros",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2020-10-11"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Astros",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2020-10-12"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Dodgers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2020-10-13"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Dodgers",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2020-10-13"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Astros",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2020-10-14"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Braves",
+      "winner_score": 15,
+      "loser_score": 3,
+      "date": "2020-10-14"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2020-10-15"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2020-10-15"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Dodgers",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2020-10-16"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Rays",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2020-10-16"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Braves",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2020-10-17"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Braves",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2020-10-17"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Astros",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2020-10-18"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Braves",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2020-10-19"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rays",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2020-10-21"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Dodgers",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2020-10-22"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rays",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2020-10-24"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Dodgers",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2020-10-25"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2020-10-26"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rays",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2020-10-28"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Braves",
+      "t2": "Reds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Athletics",
+      "t2": "White Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Padres",
+      "t2": "Cardinals",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Brewers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Marlins",
+      "t2": "Cubs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Astros",
+      "t2": "Athletics",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Athletics"
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Rays",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Yankees"
+    },
+    {
+      "t1": "Braves",
+      "t2": "Marlins",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Marlins"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Padres",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Padres"
+    },
+    {
+      "t1": "Rays",
+      "t2": "Astros",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Astros"
+    },
+    {
+      "t1": "Braves",
+      "t2": "Dodgers",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Braves"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Rays",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Rays"
+    }
+  ],
+  "eliminated": [
+    "Athletics",
+    "Yankees",
+    "Marlins",
+    "Padres",
+    "Astros",
+    "Braves",
+    "Rays"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

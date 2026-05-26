@@ -1,0 +1,619 @@
+{
+  "year": 2023,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Red Sox",
+      "loser": "Orioles",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Giants",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Marlins",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Athletics",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Blue Jays",
+      "winner_score": 12,
+      "loser_score": 8,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cubs",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Guardians",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Diamondbacks",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Yankees",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Mets",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Padres",
+      "loser": "White Sox",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Rangers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Braves",
+      "winner_score": 10,
+      "loser_score": 9,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Twins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Reds",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-10-01"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2023-10-03"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Blue Jays",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-10-03"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Brewers",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2023-10-03"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Marlins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2023-10-04"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Rays",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2023-10-04"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Blue Jays",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2023-10-04"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Brewers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2023-10-04"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Marlins",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2023-10-05"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Orioles",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-10-07"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Twins",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2023-10-07"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Braves",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2023-10-07"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Dodgers",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2023-10-08"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Orioles",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2023-10-08"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Astros",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2023-10-09"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-10-09"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Dodgers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-10-10"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Twins",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2023-10-10"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Orioles",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2023-10-11"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Braves",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2023-10-11"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Twins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2023-10-11"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Dodgers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-10-12"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Braves",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-10-13"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Astros",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2023-10-16"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Astros",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-10-16"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Diamondbacks",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2023-10-17"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Diamondbacks",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2023-10-18"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Rangers",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2023-10-19"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Phillies",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2023-10-19"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Rangers",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2023-10-20"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-10-20"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Phillies",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2023-10-21"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Diamondbacks",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2023-10-22"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Astros",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2023-10-23"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2023-10-23"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Astros",
+      "winner_score": 11,
+      "loser_score": 4,
+      "date": "2023-10-24"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Phillies",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2023-10-25"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Diamondbacks",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2023-10-28"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Rangers",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2023-10-29"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Diamondbacks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2023-10-31"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Diamondbacks",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2023-11-01"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Diamondbacks",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2023-11-02"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Red Sox",
+      "t2": "Orioles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pirates",
+      "t2": "Marlins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Angels",
+      "t2": "Athletics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rays",
+      "t2": "Blue Jays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Brewers",
+      "t2": "Cubs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Tigers",
+      "t2": "Guardians",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Astros",
+      "t2": "Diamondbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Royals",
+      "t2": "Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Mets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Padres",
+      "t2": "White Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mariners",
+      "t2": "Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nationals",
+      "t2": "Braves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rockies",
+      "t2": "Twins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Reds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Rays",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Twins",
+      "t2": "Blue Jays",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Diamondbacks",
+      "t2": "Brewers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Marlins",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Orioles",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Orioles"
+    },
+    {
+      "t1": "Astros",
+      "t2": "Twins",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Twins"
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Braves",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Braves"
+    },
+    {
+      "t1": "Diamondbacks",
+      "t2": "Dodgers",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Dodgers"
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Astros",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Astros"
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Diamondbacks",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Phillies"
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Diamondbacks",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Diamondbacks"
+    }
+  ],
+  "eliminated": [
+    "Orioles",
+    "Twins",
+    "Braves",
+    "Dodgers",
+    "Astros",
+    "Phillies",
+    "Diamondbacks"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

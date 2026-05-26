@@ -1,0 +1,1280 @@
+{
+  "year": 2014,
+  "sport": "NBA",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Pacers",
+      "loser": "Thunder",
+      "winner_score": 102,
+      "loser_score": 97,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Pistons",
+      "winner_score": 116,
+      "loser_score": 107,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Magic",
+      "winner_score": 97,
+      "loser_score": 88,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Bulls",
+      "winner_score": 100,
+      "loser_score": 89,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Warriors",
+      "winner_score": 119,
+      "loser_score": 117,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Timberwolves",
+      "winner_score": 106,
+      "loser_score": 103,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Lakers",
+      "winner_score": 102,
+      "loser_score": 90,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Celtics",
+      "winner_score": 113,
+      "loser_score": 108,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Bucks",
+      "winner_score": 110,
+      "loser_score": 100,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Heat",
+      "winner_score": 114,
+      "loser_score": 93,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Bobcats",
+      "loser": "Hawks",
+      "winner_score": 95,
+      "loser_score": 93,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Magic",
+      "winner_score": 108,
+      "loser_score": 95,
+      "date": "2014-04-15"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Spurs",
+      "winner_score": 104,
+      "loser_score": 98,
+      "date": "2014-04-15"
+    },
+    {
+      "winner": "Pelicans",
+      "loser": "Thunder",
+      "winner_score": 101,
+      "loser_score": 89,
+      "date": "2014-04-15"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Jazz",
+      "winner_score": 119,
+      "loser_score": 104,
+      "date": "2014-04-15"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Suns",
+      "winner_score": 97,
+      "loser_score": 91,
+      "date": "2014-04-15"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Timberwolves",
+      "winner_score": 130,
+      "loser_score": 120,
+      "date": "2014-04-15"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Nets",
+      "winner_score": 109,
+      "loser_score": 98,
+      "date": "2014-04-16"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 117,
+      "loser_score": 105,
+      "date": "2014-04-16"
+    },
+    {
+      "winner": "Bobcats",
+      "loser": "Bulls",
+      "winner_score": 91,
+      "loser_score": 86,
+      "date": "2014-04-16"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Magic",
+      "winner_score": 101,
+      "loser_score": 86,
+      "date": "2014-04-16"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Mavericks",
+      "winner_score": 106,
+      "loser_score": 105,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bucks",
+      "winner_score": 111,
+      "loser_score": 103,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Timberwolves",
+      "winner_score": 136,
+      "loser_score": 130,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Pelicans",
+      "loser": "Rockets",
+      "winner_score": 105,
+      "loser_score": 100,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pistons",
+      "winner_score": 112,
+      "loser_score": 111,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 113,
+      "loser_score": 100,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Celtics",
+      "winner_score": 118,
+      "loser_score": 102,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Nets",
+      "winner_score": 114,
+      "loser_score": 85,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Heat",
+      "winner_score": 100,
+      "loser_score": 87,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Raptors",
+      "winner_score": 95,
+      "loser_score": 92,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Clippers",
+      "winner_score": 110,
+      "loser_score": 104,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Kings",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Nuggets",
+      "winner_score": 116,
+      "loser_score": 112,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Raptors",
+      "winner_score": 94,
+      "loser_score": 87,
+      "date": "2014-04-19"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Clippers",
+      "winner_score": 109,
+      "loser_score": 105,
+      "date": "2014-04-19"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Pacers",
+      "winner_score": 101,
+      "loser_score": 93,
+      "date": "2014-04-19"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 100,
+      "loser_score": 86,
+      "date": "2014-04-20"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 90,
+      "loser_score": 85,
+      "date": "2014-04-20"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bobcats",
+      "winner_score": 99,
+      "loser_score": 88,
+      "date": "2014-04-20"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Bulls",
+      "winner_score": 102,
+      "loser_score": 93,
+      "date": "2014-04-20"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Rockets",
+      "winner_score": 122,
+      "loser_score": 120,
+      "date": "2014-04-21"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 111,
+      "loser_score": 105,
+      "date": "2014-04-22"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Warriors",
+      "winner_score": 138,
+      "loser_score": 98,
+      "date": "2014-04-22"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Hawks",
+      "winner_score": 101,
+      "loser_score": 85,
+      "date": "2014-04-22"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Nets",
+      "winner_score": 100,
+      "loser_score": 95,
+      "date": "2014-04-22"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Bulls",
+      "winner_score": 101,
+      "loser_score": 99,
+      "date": "2014-04-23"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bobcats",
+      "winner_score": 101,
+      "loser_score": 97,
+      "date": "2014-04-23"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 113,
+      "loser_score": 92,
+      "date": "2014-04-24"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Rockets",
+      "winner_score": 112,
+      "loser_score": 105,
+      "date": "2014-04-24"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Pacers",
+      "winner_score": 98,
+      "loser_score": 85,
+      "date": "2014-04-24"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 98,
+      "loser_score": 95,
+      "date": "2014-04-25"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Warriors",
+      "winner_score": 98,
+      "loser_score": 96,
+      "date": "2014-04-25"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Raptors",
+      "winner_score": 102,
+      "loser_score": 98,
+      "date": "2014-04-25"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Wizards",
+      "winner_score": 100,
+      "loser_score": 97,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Trail Blazers",
+      "winner_score": 121,
+      "loser_score": 116,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Hawks",
+      "winner_score": 91,
+      "loser_score": 88,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 109,
+      "loser_score": 108,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bobcats",
+      "winner_score": 98,
+      "loser_score": 85,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 92,
+      "loser_score": 89,
+      "date": "2014-04-27"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Bulls",
+      "winner_score": 98,
+      "loser_score": 89,
+      "date": "2014-04-27"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Clippers",
+      "winner_score": 118,
+      "loser_score": 97,
+      "date": "2014-04-27"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Nets",
+      "winner_score": 87,
+      "loser_score": 79,
+      "date": "2014-04-27"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Rockets",
+      "winner_score": 123,
+      "loser_score": 120,
+      "date": "2014-04-28"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bobcats",
+      "winner_score": 109,
+      "loser_score": 98,
+      "date": "2014-04-28"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Pacers",
+      "winner_score": 107,
+      "loser_score": 97,
+      "date": "2014-04-29"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 93,
+      "loser_score": 89,
+      "date": "2014-04-29"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Bulls",
+      "winner_score": 75,
+      "loser_score": 69,
+      "date": "2014-04-30"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 100,
+      "loser_score": 99,
+      "date": "2014-04-30"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Warriors",
+      "winner_score": 113,
+      "loser_score": 103,
+      "date": "2014-04-30"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 109,
+      "loser_score": 103,
+      "date": "2014-04-30"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Nets",
+      "winner_score": 115,
+      "loser_score": 113,
+      "date": "2014-04-30"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Trail Blazers",
+      "winner_score": 108,
+      "loser_score": 98,
+      "date": "2014-05-01"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Hawks",
+      "winner_score": 95,
+      "loser_score": 88,
+      "date": "2014-05-01"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 104,
+      "loser_score": 84,
+      "date": "2014-05-02"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Clippers",
+      "winner_score": 100,
+      "loser_score": 99,
+      "date": "2014-05-02"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Raptors",
+      "winner_score": 97,
+      "loser_score": 83,
+      "date": "2014-05-02"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 113,
+      "loser_score": 111,
+      "date": "2014-05-03"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Rockets",
+      "winner_score": 99,
+      "loser_score": 98,
+      "date": "2014-05-03"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Hawks",
+      "winner_score": 92,
+      "loser_score": 80,
+      "date": "2014-05-03"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 120,
+      "loser_score": 109,
+      "date": "2014-05-04"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Warriors",
+      "winner_score": 126,
+      "loser_score": 121,
+      "date": "2014-05-04"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Raptors",
+      "winner_score": 104,
+      "loser_score": 103,
+      "date": "2014-05-04"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 119,
+      "loser_score": 96,
+      "date": "2014-05-04"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Pacers",
+      "winner_score": 102,
+      "loser_score": 96,
+      "date": "2014-05-05"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Thunder",
+      "winner_score": 122,
+      "loser_score": 105,
+      "date": "2014-05-06"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 107,
+      "loser_score": 86,
+      "date": "2014-05-06"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Trail Blazers",
+      "winner_score": 116,
+      "loser_score": 92,
+      "date": "2014-05-07"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Wizards",
+      "winner_score": 86,
+      "loser_score": 82,
+      "date": "2014-05-07"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Clippers",
+      "winner_score": 112,
+      "loser_score": 101,
+      "date": "2014-05-08"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 94,
+      "loser_score": 82,
+      "date": "2014-05-08"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Trail Blazers",
+      "winner_score": 114,
+      "loser_score": 97,
+      "date": "2014-05-09"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Wizards",
+      "winner_score": 85,
+      "loser_score": 63,
+      "date": "2014-05-10"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Clippers",
+      "winner_score": 118,
+      "loser_score": 112,
+      "date": "2014-05-10"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Heat",
+      "winner_score": 104,
+      "loser_score": 90,
+      "date": "2014-05-11"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Trail Blazers",
+      "winner_score": 118,
+      "loser_score": 103,
+      "date": "2014-05-11"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Thunder",
+      "winner_score": 101,
+      "loser_score": 99,
+      "date": "2014-05-11"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Wizards",
+      "winner_score": 95,
+      "loser_score": 92,
+      "date": "2014-05-12"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 102,
+      "loser_score": 96,
+      "date": "2014-05-13"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Spurs",
+      "winner_score": 103,
+      "loser_score": 92,
+      "date": "2014-05-13"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Pacers",
+      "winner_score": 102,
+      "loser_score": 79,
+      "date": "2014-05-13"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Clippers",
+      "winner_score": 105,
+      "loser_score": 104,
+      "date": "2014-05-14"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 96,
+      "loser_score": 94,
+      "date": "2014-05-14"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Trail Blazers",
+      "winner_score": 104,
+      "loser_score": 82,
+      "date": "2014-05-15"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Wizards",
+      "winner_score": 93,
+      "loser_score": 80,
+      "date": "2014-05-16"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Clippers",
+      "winner_score": 104,
+      "loser_score": 98,
+      "date": "2014-05-16"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Heat",
+      "winner_score": 107,
+      "loser_score": 96,
+      "date": "2014-05-18"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Thunder",
+      "winner_score": 122,
+      "loser_score": 105,
+      "date": "2014-05-20"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Pacers",
+      "winner_score": 87,
+      "loser_score": 83,
+      "date": "2014-05-21"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Thunder",
+      "winner_score": 112,
+      "loser_score": 77,
+      "date": "2014-05-22"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Pacers",
+      "winner_score": 99,
+      "loser_score": 87,
+      "date": "2014-05-25"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Spurs",
+      "winner_score": 106,
+      "loser_score": 97,
+      "date": "2014-05-26"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Pacers",
+      "winner_score": 102,
+      "loser_score": 90,
+      "date": "2014-05-27"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Spurs",
+      "winner_score": 105,
+      "loser_score": 92,
+      "date": "2014-05-28"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Heat",
+      "winner_score": 93,
+      "loser_score": 90,
+      "date": "2014-05-29"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Thunder",
+      "winner_score": 117,
+      "loser_score": 89,
+      "date": "2014-05-30"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Pacers",
+      "winner_score": 117,
+      "loser_score": 92,
+      "date": "2014-05-31"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Thunder",
+      "winner_score": 112,
+      "loser_score": 107,
+      "date": "2014-06-01"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Heat",
+      "winner_score": 110,
+      "loser_score": 95,
+      "date": "2014-06-06"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Spurs",
+      "winner_score": 98,
+      "loser_score": 96,
+      "date": "2014-06-09"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Heat",
+      "winner_score": 111,
+      "loser_score": 92,
+      "date": "2014-06-11"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Heat",
+      "winner_score": 107,
+      "loser_score": 86,
+      "date": "2014-06-13"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Heat",
+      "winner_score": 104,
+      "loser_score": 87,
+      "date": "2014-06-16"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Pacers",
+      "t2": "Thunder",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Raptors",
+      "t2": "Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nets",
+      "t2": "Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kings",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "76ers",
+      "t2": "Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Raptors",
+      "t2": "Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bobcats",
+      "t2": "Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rockets",
+      "t2": "Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pelicans",
+      "t2": "Thunder",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bobcats",
+      "t2": "Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jazz",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pelicans",
+      "t2": "Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Thunder",
+      "t2": "Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "76ers",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Clippers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Suns",
+      "t2": "Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nets",
+      "t2": "Raptors",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Raptors"
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Clippers",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Warriors"
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Pacers",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Hawks"
+    },
+    {
+      "t1": "Thunder",
+      "t2": "Grizzlies",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Grizzlies"
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Mavericks",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Mavericks"
+    },
+    {
+      "t1": "Heat",
+      "t2": "Bobcats",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Bobcats"
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Bulls",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Bulls"
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Rockets",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Rockets"
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Pacers",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Wizards"
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Thunder",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Clippers"
+    },
+    {
+      "t1": "Heat",
+      "t2": "Nets",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Nets"
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Trail Blazers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Trail Blazers"
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Heat",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Pacers"
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Thunder",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Thunder"
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Heat",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Heat"
+    }
+  ],
+  "eliminated": [
+    "Raptors",
+    "Warriors",
+    "Hawks",
+    "Grizzlies",
+    "Mavericks",
+    "Bobcats",
+    "Bulls",
+    "Rockets",
+    "Wizards",
+    "Clippers",
+    "Nets",
+    "Trail Blazers",
+    "Pacers",
+    "Thunder",
+    "Heat"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

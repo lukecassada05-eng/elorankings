@@ -1,0 +1,510 @@
+{
+  "year": 2006,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Indians",
+      "loser": "Devil Rays",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Tigers",
+      "winner_score": 10,
+      "loser_score": 8,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Yankees",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Astros",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Nationals",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Phillies",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Reds",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Orioles",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Twins",
+      "loser": "White Sox",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cardinals",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Rockies",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Angels",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Giants",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Diamondbacks",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2006-10-01"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Twins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2006-10-03"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Padres",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2006-10-03"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Tigers",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2006-10-04"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Twins",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2006-10-04"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Dodgers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2006-10-04"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2006-10-05"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Padres",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2006-10-05"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Dodgers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2006-10-06"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Twins",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2006-10-06"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Yankees",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2006-10-07"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Cardinals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2006-10-07"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Yankees",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2006-10-07"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Dodgers",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2006-10-08"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Padres",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2006-10-09"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Athletics",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2006-10-11"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Athletics",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2006-10-12"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Cardinals",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2006-10-13"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Athletics",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2006-10-13"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Mets",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2006-10-14"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Athletics",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2006-10-14"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Mets",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2006-10-15"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Cardinals",
+      "winner_score": 12,
+      "loser_score": 5,
+      "date": "2006-10-16"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Mets",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2006-10-18"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Cardinals",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2006-10-19"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Mets",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2006-10-20"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Tigers",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2006-10-22"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Cardinals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2006-10-23"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Tigers",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2006-10-25"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Tigers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2006-10-27"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Tigers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2006-10-28"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Indians",
+      "t2": "Devil Rays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Royals",
+      "t2": "Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Blue Jays",
+      "t2": "Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Braves",
+      "t2": "Astros",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mets",
+      "t2": "Nationals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Marlins",
+      "t2": "Phillies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pirates",
+      "t2": "Reds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Orioles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Twins",
+      "t2": "White Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Brewers",
+      "t2": "Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cubs",
+      "t2": "Rockies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Athletics",
+      "t2": "Angels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mariners",
+      "t2": "Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Padres",
+      "t2": "Diamondbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Athletics",
+      "t2": "Twins",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Twins"
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Padres",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Padres"
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Tigers",
+      "w1": 1,
+      "w2": 3,
+      "done": true,
+      "loser": "Yankees"
+    },
+    {
+      "t1": "Mets",
+      "t2": "Dodgers",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Dodgers"
+    },
+    {
+      "t1": "Tigers",
+      "t2": "Athletics",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Athletics"
+    },
+    {
+      "t1": "Mets",
+      "t2": "Cardinals",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Mets"
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Tigers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Tigers"
+    }
+  ],
+  "eliminated": [
+    "Twins",
+    "Padres",
+    "Yankees",
+    "Dodgers",
+    "Athletics",
+    "Mets",
+    "Tigers"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

@@ -1,0 +1,327 @@
+{
+  "year": 2011,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Brewers",
+      "loser": "Diamondbacks",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2011-10-01"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Cardinals",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2011-10-01"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Rays",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2011-10-01"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Yankees",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2011-10-02"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Diamondbacks",
+      "winner_score": 9,
+      "loser_score": 4,
+      "date": "2011-10-02"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2011-10-03"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2011-10-03"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Yankees",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2011-10-04"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2011-10-04"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Cardinals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2011-10-04"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Tigers",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2011-10-05"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Brewers",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2011-10-05"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2011-10-05"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Brewers",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2011-10-06"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Yankees",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2011-10-07"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Diamondbacks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2011-10-07"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Phillies",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2011-10-08"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Tigers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2011-10-09"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cardinals",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2011-10-09"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Tigers",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2011-10-10"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Brewers",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2011-10-11"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2011-10-12"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Tigers",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2011-10-12"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Brewers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2011-10-13"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Rangers",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2011-10-13"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cardinals",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2011-10-14"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Brewers",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2011-10-15"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Tigers",
+      "winner_score": 15,
+      "loser_score": 5,
+      "date": "2011-10-16"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Brewers",
+      "winner_score": 12,
+      "loser_score": 6,
+      "date": "2011-10-17"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2011-10-20"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Cardinals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2011-10-21"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Rangers",
+      "winner_score": 16,
+      "loser_score": 7,
+      "date": "2011-10-23"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Cardinals",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2011-10-24"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Cardinals",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2011-10-25"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Rangers",
+      "winner_score": 10,
+      "loser_score": 9,
+      "date": "2011-10-28"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Rangers",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2011-10-29"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Brewers",
+      "t2": "Diamondbacks",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Diamondbacks"
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Cardinals",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Phillies"
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Rays",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Rays"
+    },
+    {
+      "t1": "Tigers",
+      "t2": "Yankees",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Yankees"
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Tigers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Tigers"
+    },
+    {
+      "t1": "Brewers",
+      "t2": "Cardinals",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Brewers"
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Rangers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Rangers"
+    }
+  ],
+  "eliminated": [
+    "Diamondbacks",
+    "Phillies",
+    "Rays",
+    "Yankees",
+    "Tigers",
+    "Brewers",
+    "Rangers"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

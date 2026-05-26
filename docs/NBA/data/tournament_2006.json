@@ -1,0 +1,1560 @@
+{
+  "year": 2006,
+  "sport": "NBA",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Suns",
+      "loser": "Mavericks",
+      "winner_score": 117,
+      "loser_score": 104,
+      "date": "2006-04-13"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Spurs",
+      "winner_score": 92,
+      "loser_score": 80,
+      "date": "2006-04-13"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Knicks",
+      "winner_score": 91,
+      "loser_score": 87,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Bobcats",
+      "loser": "Hawks",
+      "winner_score": 116,
+      "loser_score": 110,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Hornets",
+      "winner_score": 105,
+      "loser_score": 104,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Wizards",
+      "winner_score": 103,
+      "loser_score": 101,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Pistons",
+      "winner_score": 108,
+      "loser_score": 103,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 79,
+      "loser_score": 74,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Suns",
+      "winner_score": 110,
+      "loser_score": 102,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Trail Blazers",
+      "winner_score": 110,
+      "loser_score": 99,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 104,
+      "loser_score": 85,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Knicks",
+      "winner_score": 97,
+      "loser_score": 80,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "SuperSonics",
+      "winner_score": 101,
+      "loser_score": 97,
+      "date": "2006-04-14"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Timberwolves",
+      "winner_score": 89,
+      "loser_score": 77,
+      "date": "2006-04-15"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Nuggets",
+      "winner_score": 100,
+      "loser_score": 82,
+      "date": "2006-04-15"
+    },
+    {
+      "winner": "Magic",
+      "loser": "76ers",
+      "winner_score": 102,
+      "loser_score": 97,
+      "date": "2006-04-15"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 86,
+      "loser_score": 81,
+      "date": "2006-04-15"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Rockets",
+      "winner_score": 93,
+      "loser_score": 81,
+      "date": "2006-04-15"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bucks",
+      "winner_score": 120,
+      "loser_score": 114,
+      "date": "2006-04-15"
+    },
+    {
+      "winner": "Bobcats",
+      "loser": "Pacers",
+      "winner_score": 92,
+      "loser_score": 91,
+      "date": "2006-04-15"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Suns",
+      "winner_score": 109,
+      "loser_score": 89,
+      "date": "2006-04-16"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Heat",
+      "winner_score": 117,
+      "loser_score": 93,
+      "date": "2006-04-16"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Timberwolves",
+      "winner_score": 103,
+      "loser_score": 90,
+      "date": "2006-04-16"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Knicks",
+      "winner_score": 103,
+      "loser_score": 97,
+      "date": "2006-04-16"
+    },
+    {
+      "winner": "SuperSonics",
+      "loser": "Clippers",
+      "winner_score": 114,
+      "loser_score": 98,
+      "date": "2006-04-16"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Hornets",
+      "winner_score": 96,
+      "loser_score": 79,
+      "date": "2006-04-16"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Cavaliers",
+      "winner_score": 104,
+      "loser_score": 92,
+      "date": "2006-04-16"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Jazz",
+      "winner_score": 111,
+      "loser_score": 95,
+      "date": "2006-04-16"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 95,
+      "loser_score": 93,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Nuggets",
+      "winner_score": 86,
+      "loser_score": 83,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pistons",
+      "winner_score": 113,
+      "loser_score": 93,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Magic",
+      "winner_score": 116,
+      "loser_score": 112,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Hornets",
+      "winner_score": 115,
+      "loser_score": 78,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Raptors",
+      "winner_score": 120,
+      "loser_score": 95,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Celtics",
+      "winner_score": 93,
+      "loser_score": 88,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 93,
+      "loser_score": 79,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Bobcats",
+      "loser": "Knicks",
+      "winner_score": 98,
+      "loser_score": 91,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Jazz",
+      "winner_score": 115,
+      "loser_score": 82,
+      "date": "2006-04-17"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Heat",
+      "winner_score": 103,
+      "loser_score": 100,
+      "date": "2006-04-18"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 91,
+      "loser_score": 88,
+      "date": "2006-04-18"
+    },
+    {
+      "winner": "Kings",
+      "loser": "SuperSonics",
+      "winner_score": 111,
+      "loser_score": 105,
+      "date": "2006-04-18"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Bucks",
+      "winner_score": 116,
+      "loser_score": 103,
+      "date": "2006-04-18"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Clippers",
+      "winner_score": 101,
+      "loser_score": 95,
+      "date": "2006-04-18"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Hawks",
+      "winner_score": 100,
+      "loser_score": 99,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Mavericks",
+      "winner_score": 85,
+      "loser_score": 71,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Rockets",
+      "winner_score": 89,
+      "loser_score": 87,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Magic",
+      "winner_score": 89,
+      "loser_score": 83,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Timberwolves",
+      "winner_score": 102,
+      "loser_score": 92,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Trail Blazers",
+      "winner_score": 106,
+      "loser_score": 96,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Warriors",
+      "winner_score": 105,
+      "loser_score": 102,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 85,
+      "loser_score": 78,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Raptors",
+      "winner_score": 127,
+      "loser_score": 106,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Pistons",
+      "winner_score": 96,
+      "loser_score": 80,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 115,
+      "loser_score": 95,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Nets",
+      "winner_score": 90,
+      "loser_score": 83,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "SuperSonics",
+      "loser": "Nuggets",
+      "winner_score": 109,
+      "loser_score": 98,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Bobcats",
+      "loser": "76ers",
+      "winner_score": 96,
+      "loser_score": 86,
+      "date": "2006-04-19"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Wizards",
+      "winner_score": 97,
+      "loser_score": 86,
+      "date": "2006-04-22"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Kings",
+      "winner_score": 122,
+      "loser_score": 88,
+      "date": "2006-04-22"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 89,
+      "loser_score": 87,
+      "date": "2006-04-22"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 111,
+      "loser_score": 106,
+      "date": "2006-04-23"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Lakers",
+      "winner_score": 107,
+      "loser_score": 102,
+      "date": "2006-04-23"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Nets",
+      "winner_score": 90,
+      "loser_score": 88,
+      "date": "2006-04-23"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Bucks",
+      "winner_score": 92,
+      "loser_score": 74,
+      "date": "2006-04-23"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Grizzlies",
+      "winner_score": 103,
+      "loser_score": 93,
+      "date": "2006-04-24"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 98,
+      "loser_score": 87,
+      "date": "2006-04-24"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 115,
+      "loser_score": 108,
+      "date": "2006-04-25"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Cavaliers",
+      "winner_score": 89,
+      "loser_score": 84,
+      "date": "2006-04-25"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pacers",
+      "winner_score": 90,
+      "loser_score": 75,
+      "date": "2006-04-26"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Kings",
+      "winner_score": 128,
+      "loser_score": 119,
+      "date": "2006-04-26"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Grizzlies",
+      "winner_score": 94,
+      "loser_score": 79,
+      "date": "2006-04-26"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Bucks",
+      "winner_score": 109,
+      "loser_score": 98,
+      "date": "2006-04-26"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Suns",
+      "winner_score": 99,
+      "loser_score": 93,
+      "date": "2006-04-26"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Heat",
+      "winner_score": 109,
+      "loser_score": 90,
+      "date": "2006-04-27"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Nets",
+      "winner_score": 107,
+      "loser_score": 95,
+      "date": "2006-04-27"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Clippers",
+      "winner_score": 94,
+      "loser_score": 87,
+      "date": "2006-04-28"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Spurs",
+      "winner_score": 94,
+      "loser_score": 93,
+      "date": "2006-04-28"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Suns",
+      "winner_score": 99,
+      "loser_score": 92,
+      "date": "2006-04-28"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Wizards",
+      "winner_score": 97,
+      "loser_score": 96,
+      "date": "2006-04-29"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pacers",
+      "winner_score": 97,
+      "loser_score": 88,
+      "date": "2006-04-29"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Grizzlies",
+      "winner_score": 94,
+      "loser_score": 89,
+      "date": "2006-04-29"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pistons",
+      "winner_score": 124,
+      "loser_score": 104,
+      "date": "2006-04-29"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 100,
+      "loser_score": 86,
+      "date": "2006-04-30"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Heat",
+      "winner_score": 93,
+      "loser_score": 87,
+      "date": "2006-04-30"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Suns",
+      "winner_score": 99,
+      "loser_score": 98,
+      "date": "2006-04-30"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Spurs",
+      "winner_score": 102,
+      "loser_score": 84,
+      "date": "2006-04-30"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Cavaliers",
+      "winner_score": 106,
+      "loser_score": 96,
+      "date": "2006-04-30"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Grizzlies",
+      "winner_score": 102,
+      "loser_score": 76,
+      "date": "2006-05-01"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 101,
+      "loser_score": 83,
+      "date": "2006-05-01"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Bucks",
+      "winner_score": 109,
+      "loser_score": 99,
+      "date": "2006-05-01"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pacers",
+      "winner_score": 92,
+      "loser_score": 86,
+      "date": "2006-05-02"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Lakers",
+      "winner_score": 114,
+      "loser_score": 97,
+      "date": "2006-05-02"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 92,
+      "loser_score": 78,
+      "date": "2006-05-03"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Kings",
+      "winner_score": 109,
+      "loser_score": 98,
+      "date": "2006-05-03"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Bucks",
+      "winner_score": 122,
+      "loser_score": 93,
+      "date": "2006-05-03"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Wizards",
+      "winner_score": 121,
+      "loser_score": 120,
+      "date": "2006-05-04"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 113,
+      "loser_score": 96,
+      "date": "2006-05-04"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pacers",
+      "winner_score": 96,
+      "loser_score": 90,
+      "date": "2006-05-04"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Lakers",
+      "winner_score": 126,
+      "loser_score": 118,
+      "date": "2006-05-04"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Kings",
+      "winner_score": 105,
+      "loser_score": 83,
+      "date": "2006-05-05"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Wizards",
+      "winner_score": 114,
+      "loser_score": 113,
+      "date": "2006-05-06"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Lakers",
+      "winner_score": 121,
+      "loser_score": 90,
+      "date": "2006-05-06"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 87,
+      "loser_score": 85,
+      "date": "2006-05-07"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Cavaliers",
+      "winner_score": 113,
+      "loser_score": 86,
+      "date": "2006-05-07"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Clippers",
+      "winner_score": 130,
+      "loser_score": 123,
+      "date": "2006-05-08"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Heat",
+      "winner_score": 100,
+      "loser_score": 88,
+      "date": "2006-05-09"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Cavaliers",
+      "winner_score": 97,
+      "loser_score": 91,
+      "date": "2006-05-09"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 113,
+      "loser_score": 91,
+      "date": "2006-05-10"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Suns",
+      "winner_score": 122,
+      "loser_score": 97,
+      "date": "2006-05-10"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 111,
+      "loser_score": 89,
+      "date": "2006-05-11"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Clippers",
+      "winner_score": 94,
+      "loser_score": 91,
+      "date": "2006-05-12"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 103,
+      "loser_score": 92,
+      "date": "2006-05-13"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Pistons",
+      "winner_score": 86,
+      "loser_score": 77,
+      "date": "2006-05-13"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 104,
+      "loser_score": 103,
+      "date": "2006-05-13"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 102,
+      "loser_score": 92,
+      "date": "2006-05-14"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Suns",
+      "winner_score": 114,
+      "loser_score": 107,
+      "date": "2006-05-14"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Pistons",
+      "winner_score": 74,
+      "loser_score": 72,
+      "date": "2006-05-15"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 123,
+      "loser_score": 118,
+      "date": "2006-05-16"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Clippers",
+      "winner_score": 125,
+      "loser_score": 118,
+      "date": "2006-05-16"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 106,
+      "loser_score": 105,
+      "date": "2006-05-17"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Pistons",
+      "winner_score": 86,
+      "loser_score": 84,
+      "date": "2006-05-17"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 98,
+      "loser_score": 97,
+      "date": "2006-05-18"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Suns",
+      "winner_score": 118,
+      "loser_score": 106,
+      "date": "2006-05-18"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Cavaliers",
+      "winner_score": 84,
+      "loser_score": 82,
+      "date": "2006-05-19"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 91,
+      "loser_score": 86,
+      "date": "2006-05-20"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Cavaliers",
+      "winner_score": 79,
+      "loser_score": 61,
+      "date": "2006-05-21"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 119,
+      "loser_score": 111,
+      "date": "2006-05-22"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Clippers",
+      "winner_score": 127,
+      "loser_score": 107,
+      "date": "2006-05-22"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Pistons",
+      "winner_score": 91,
+      "loser_score": 86,
+      "date": "2006-05-24"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Mavericks",
+      "winner_score": 121,
+      "loser_score": 118,
+      "date": "2006-05-24"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Heat",
+      "winner_score": 92,
+      "loser_score": 88,
+      "date": "2006-05-26"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Suns",
+      "winner_score": 105,
+      "loser_score": 98,
+      "date": "2006-05-26"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Pistons",
+      "winner_score": 98,
+      "loser_score": 83,
+      "date": "2006-05-28"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Suns",
+      "winner_score": 95,
+      "loser_score": 88,
+      "date": "2006-05-28"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Pistons",
+      "winner_score": 89,
+      "loser_score": 78,
+      "date": "2006-05-30"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Mavericks",
+      "winner_score": 106,
+      "loser_score": 86,
+      "date": "2006-05-30"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Heat",
+      "winner_score": 91,
+      "loser_score": 78,
+      "date": "2006-06-01"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Suns",
+      "winner_score": 117,
+      "loser_score": 101,
+      "date": "2006-06-01"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Pistons",
+      "winner_score": 95,
+      "loser_score": 78,
+      "date": "2006-06-03"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Suns",
+      "winner_score": 102,
+      "loser_score": 93,
+      "date": "2006-06-03"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 90,
+      "loser_score": 80,
+      "date": "2006-06-09"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 99,
+      "loser_score": 85,
+      "date": "2006-06-12"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Mavericks",
+      "winner_score": 98,
+      "loser_score": 96,
+      "date": "2006-06-14"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Mavericks",
+      "winner_score": 98,
+      "loser_score": 74,
+      "date": "2006-06-16"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Mavericks",
+      "winner_score": 101,
+      "loser_score": 100,
+      "date": "2006-06-19"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Mavericks",
+      "winner_score": 95,
+      "loser_score": 92,
+      "date": "2006-06-21"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Suns",
+      "t2": "Mavericks",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Suns"
+    },
+    {
+      "t1": "Magic",
+      "t2": "Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bobcats",
+      "t2": "Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jazz",
+      "t2": "Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Raptors",
+      "t2": "Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nets",
+      "t2": "Celtics",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Heat",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Clippers",
+      "t2": "SuperSonics",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kings",
+      "t2": "Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Magic",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Trail Blazers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bobcats",
+      "t2": "Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Suns",
+      "w1": 4,
+      "w2": 4,
+      "done": true,
+      "loser": "Suns"
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Heat",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Bulls"
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kings",
+      "t2": "Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Cavaliers",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Wizards"
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rockets",
+      "t2": "Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Pistons",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Bucks"
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Suns",
+      "t2": "Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bobcats",
+      "t2": "Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "76ers",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kings",
+      "t2": "SuperSonics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Clippers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Suns",
+      "t2": "Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jazz",
+      "t2": "Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "SuperSonics",
+      "t2": "Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bobcats",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Kings",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Kings"
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Nuggets",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Nuggets"
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Nets",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Pacers"
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Grizzlies",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Grizzlies"
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Mavericks",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Spurs"
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Cavaliers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Cavaliers"
+    },
+    {
+      "t1": "Suns",
+      "t2": "Clippers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Clippers"
+    },
+    {
+      "t1": "Nets",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Nets"
+    },
+    {
+      "t1": "Heat",
+      "t2": "Pistons",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Pistons"
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Heat",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Mavericks"
+    }
+  ],
+  "eliminated": [
+    "Suns",
+    "Bulls",
+    "Wizards",
+    "Bucks",
+    "Kings",
+    "Nuggets",
+    "Pacers",
+    "Grizzlies",
+    "Spurs",
+    "Cavaliers",
+    "Clippers",
+    "Nets",
+    "Pistons",
+    "Mavericks"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

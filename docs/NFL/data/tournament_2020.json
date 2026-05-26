@@ -1,0 +1,172 @@
+{
+  "year": 2020,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Ravens",
+      "loser": "Titans",
+      "winner_score": 20,
+      "loser_score": 13,
+      "date": "2021-01-10"
+    },
+    {
+      "winner": "Saints",
+      "loser": "Bears",
+      "winner_score": 21,
+      "loser_score": 9,
+      "date": "2021-01-10"
+    },
+    {
+      "winner": "Browns",
+      "loser": "Steelers",
+      "winner_score": 48,
+      "loser_score": 37,
+      "date": "2021-01-11"
+    },
+    {
+      "winner": "Packers",
+      "loser": "Rams",
+      "winner_score": 32,
+      "loser_score": 18,
+      "date": "2021-01-16"
+    },
+    {
+      "winner": "Bills",
+      "loser": "Ravens",
+      "winner_score": 17,
+      "loser_score": 3,
+      "date": "2021-01-17"
+    },
+    {
+      "winner": "Chiefs",
+      "loser": "Browns",
+      "winner_score": 22,
+      "loser_score": 17,
+      "date": "2021-01-17"
+    },
+    {
+      "winner": "Buccaneers",
+      "loser": "Saints",
+      "winner_score": 30,
+      "loser_score": 20,
+      "date": "2021-01-17"
+    },
+    {
+      "winner": "Buccaneers",
+      "loser": "Packers",
+      "winner_score": 31,
+      "loser_score": 26,
+      "date": "2021-01-24"
+    },
+    {
+      "winner": "Chiefs",
+      "loser": "Bills",
+      "winner_score": 38,
+      "loser_score": 24,
+      "date": "2021-01-24"
+    },
+    {
+      "winner": "Buccaneers",
+      "loser": "Chiefs",
+      "winner_score": 31,
+      "loser_score": 9,
+      "date": "2021-02-07"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Ravens",
+      "t2": "Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Titans"
+    },
+    {
+      "t1": "Saints",
+      "t2": "Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bears"
+    },
+    {
+      "t1": "Browns",
+      "t2": "Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Steelers"
+    },
+    {
+      "t1": "Packers",
+      "t2": "Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rams"
+    },
+    {
+      "t1": "Bills",
+      "t2": "Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ravens"
+    },
+    {
+      "t1": "Chiefs",
+      "t2": "Browns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Browns"
+    },
+    {
+      "t1": "Buccaneers",
+      "t2": "Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saints"
+    },
+    {
+      "t1": "Buccaneers",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Chiefs",
+      "t2": "Bills",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bills"
+    },
+    {
+      "t1": "Buccaneers",
+      "t2": "Chiefs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chiefs"
+    }
+  ],
+  "eliminated": [
+    "Titans",
+    "Bears",
+    "Steelers",
+    "Rams",
+    "Ravens",
+    "Browns",
+    "Saints",
+    "Packers",
+    "Bills",
+    "Chiefs"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

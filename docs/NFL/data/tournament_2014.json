@@ -1,0 +1,140 @@
+{
+  "year": 2014,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Patriots",
+      "loser": "Ravens",
+      "winner_score": 35,
+      "loser_score": 31,
+      "date": "2015-01-10"
+    },
+    {
+      "winner": "Seahawks",
+      "loser": "Panthers",
+      "winner_score": 31,
+      "loser_score": 17,
+      "date": "2015-01-11"
+    },
+    {
+      "winner": "Packers",
+      "loser": "Cowboys",
+      "winner_score": 26,
+      "loser_score": 21,
+      "date": "2015-01-11"
+    },
+    {
+      "winner": "Colts",
+      "loser": "Broncos",
+      "winner_score": 24,
+      "loser_score": 13,
+      "date": "2015-01-11"
+    },
+    {
+      "winner": "Seahawks",
+      "loser": "Packers",
+      "winner_score": 28,
+      "loser_score": 22,
+      "date": "2015-01-18"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Colts",
+      "winner_score": 45,
+      "loser_score": 7,
+      "date": "2015-01-18"
+    },
+    {
+      "winner": "Irvin",
+      "loser": "Carter",
+      "winner_score": 32,
+      "loser_score": 28,
+      "date": "2015-01-26"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Seahawks",
+      "winner_score": 28,
+      "loser_score": 24,
+      "date": "2015-02-01"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Patriots",
+      "t2": "Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ravens"
+    },
+    {
+      "t1": "Seahawks",
+      "t2": "Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Panthers"
+    },
+    {
+      "t1": "Packers",
+      "t2": "Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cowboys"
+    },
+    {
+      "t1": "Colts",
+      "t2": "Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Broncos"
+    },
+    {
+      "t1": "Seahawks",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colts"
+    },
+    {
+      "t1": "Irvin",
+      "t2": "Carter",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Carter"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seahawks"
+    }
+  ],
+  "eliminated": [
+    "Ravens",
+    "Panthers",
+    "Cowboys",
+    "Broncos",
+    "Packers",
+    "Colts",
+    "Carter",
+    "Seahawks"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

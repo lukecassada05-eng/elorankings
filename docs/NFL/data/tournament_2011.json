@@ -1,0 +1,140 @@
+{
+  "year": 2011,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "49ers",
+      "loser": "Saints",
+      "winner_score": 36,
+      "loser_score": 32,
+      "date": "2012-01-14"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Broncos",
+      "winner_score": 45,
+      "loser_score": 10,
+      "date": "2012-01-15"
+    },
+    {
+      "winner": "Ravens",
+      "loser": "Texans",
+      "winner_score": 20,
+      "loser_score": 13,
+      "date": "2012-01-15"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Packers",
+      "winner_score": 37,
+      "loser_score": 20,
+      "date": "2012-01-15"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Ravens",
+      "winner_score": 23,
+      "loser_score": 20,
+      "date": "2012-01-22"
+    },
+    {
+      "winner": "Giants",
+      "loser": "49ers",
+      "winner_score": 20,
+      "loser_score": 17,
+      "date": "2012-01-22"
+    },
+    {
+      "winner": "AFC",
+      "loser": "NFC",
+      "winner_score": 59,
+      "loser_score": 41,
+      "date": "2012-01-30"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Patriots",
+      "winner_score": 21,
+      "loser_score": 17,
+      "date": "2012-02-05"
+    }
+  ],
+  "series": [
+    {
+      "t1": "49ers",
+      "t2": "Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saints"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Broncos"
+    },
+    {
+      "t1": "Ravens",
+      "t2": "Texans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texans"
+    },
+    {
+      "t1": "Giants",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ravens"
+    },
+    {
+      "t1": "Giants",
+      "t2": "49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "49ers"
+    },
+    {
+      "t1": "AFC",
+      "t2": "NFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NFC"
+    },
+    {
+      "t1": "Giants",
+      "t2": "Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Patriots"
+    }
+  ],
+  "eliminated": [
+    "Saints",
+    "Broncos",
+    "Texans",
+    "Packers",
+    "Ravens",
+    "49ers",
+    "NFC",
+    "Patriots"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

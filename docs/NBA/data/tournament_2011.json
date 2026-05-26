@@ -1,0 +1,931 @@
+{
+  "year": 2011,
+  "sport": "NBA",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 112,
+      "loser_score": 102,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Nets",
+      "winner_score": 97,
+      "loser_score": 92,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Wizards",
+      "winner_score": 100,
+      "loser_score": 93,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Hornets",
+      "winner_score": 121,
+      "loser_score": 89,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Timberwolves",
+      "winner_score": 121,
+      "loser_score": 102,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Pacers",
+      "winner_score": 92,
+      "loser_score": 74,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "76ers",
+      "winner_score": 104,
+      "loser_score": 100,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Thunder",
+      "winner_score": 110,
+      "loser_score": 106,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Nuggets",
+      "winner_score": 107,
+      "loser_score": 103,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Raptors",
+      "winner_score": 97,
+      "loser_score": 79,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Bobcats",
+      "loser": "Hawks",
+      "winner_score": 96,
+      "loser_score": 85,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 110,
+      "loser_score": 86,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Grizzlies",
+      "winner_score": 110,
+      "loser_score": 103,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 106,
+      "loser_score": 103,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Kings",
+      "winner_score": 116,
+      "loser_score": 108,
+      "date": "2011-04-14"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Pacers",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2011-04-16"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 97,
+      "loser_score": 89,
+      "date": "2011-04-16"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 103,
+      "loser_score": 93,
+      "date": "2011-04-16"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 89,
+      "loser_score": 81,
+      "date": "2011-04-17"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Spurs",
+      "winner_score": 101,
+      "loser_score": 98,
+      "date": "2011-04-17"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Lakers",
+      "winner_score": 109,
+      "loser_score": 100,
+      "date": "2011-04-17"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 87,
+      "loser_score": 85,
+      "date": "2011-04-17"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 107,
+      "loser_score": 103,
+      "date": "2011-04-18"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 94,
+      "loser_score": 73,
+      "date": "2011-04-18"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Pacers",
+      "winner_score": 96,
+      "loser_score": 90,
+      "date": "2011-04-19"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 96,
+      "loser_score": 93,
+      "date": "2011-04-19"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 88,
+      "loser_score": 82,
+      "date": "2011-04-19"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 101,
+      "loser_score": 89,
+      "date": "2011-04-20"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 106,
+      "loser_score": 89,
+      "date": "2011-04-21"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Grizzlies",
+      "winner_score": 93,
+      "loser_score": 87,
+      "date": "2011-04-21"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 87,
+      "loser_score": 78,
+      "date": "2011-04-21"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Pacers",
+      "winner_score": 88,
+      "loser_score": 84,
+      "date": "2011-04-21"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 100,
+      "loser_score": 94,
+      "date": "2011-04-22"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Mavericks",
+      "winner_score": 97,
+      "loser_score": 92,
+      "date": "2011-04-22"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 113,
+      "loser_score": 96,
+      "date": "2011-04-22"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 88,
+      "loser_score": 84,
+      "date": "2011-04-23"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 100,
+      "loser_score": 86,
+      "date": "2011-04-23"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bulls",
+      "winner_score": 89,
+      "loser_score": 84,
+      "date": "2011-04-23"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Mavericks",
+      "winner_score": 84,
+      "loser_score": 82,
+      "date": "2011-04-23"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Spurs",
+      "winner_score": 91,
+      "loser_score": 88,
+      "date": "2011-04-23"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 97,
+      "loser_score": 94,
+      "date": "2011-04-24"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Heat",
+      "winner_score": 86,
+      "loser_score": 82,
+      "date": "2011-04-24"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 101,
+      "loser_score": 89,
+      "date": "2011-04-24"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 88,
+      "loser_score": 85,
+      "date": "2011-04-24"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Lakers",
+      "winner_score": 93,
+      "loser_score": 88,
+      "date": "2011-04-25"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Spurs",
+      "winner_score": 104,
+      "loser_score": 86,
+      "date": "2011-04-26"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 93,
+      "loser_score": 82,
+      "date": "2011-04-26"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Thunder",
+      "winner_score": 104,
+      "loser_score": 101,
+      "date": "2011-04-26"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 101,
+      "loser_score": 76,
+      "date": "2011-04-26"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Pacers",
+      "winner_score": 116,
+      "loser_score": 89,
+      "date": "2011-04-27"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 106,
+      "loser_score": 90,
+      "date": "2011-04-27"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 97,
+      "loser_score": 91,
+      "date": "2011-04-27"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Grizzlies",
+      "winner_score": 110,
+      "loser_score": 103,
+      "date": "2011-04-28"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 100,
+      "loser_score": 97,
+      "date": "2011-04-28"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 84,
+      "loser_score": 81,
+      "date": "2011-04-28"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 98,
+      "loser_score": 80,
+      "date": "2011-04-29"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 103,
+      "loser_score": 96,
+      "date": "2011-04-29"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Spurs",
+      "winner_score": 99,
+      "loser_score": 91,
+      "date": "2011-04-30"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 114,
+      "loser_score": 101,
+      "date": "2011-05-01"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 99,
+      "loser_score": 90,
+      "date": "2011-05-01"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bulls",
+      "winner_score": 103,
+      "loser_score": 95,
+      "date": "2011-05-03"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Lakers",
+      "winner_score": 96,
+      "loser_score": 94,
+      "date": "2011-05-03"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 102,
+      "loser_score": 91,
+      "date": "2011-05-03"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 111,
+      "loser_score": 102,
+      "date": "2011-05-04"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 86,
+      "loser_score": 73,
+      "date": "2011-05-05"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Lakers",
+      "winner_score": 93,
+      "loser_score": 81,
+      "date": "2011-05-05"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 99,
+      "loser_score": 82,
+      "date": "2011-05-06"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Lakers",
+      "winner_score": 98,
+      "loser_score": 92,
+      "date": "2011-05-07"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 101,
+      "loser_score": 93,
+      "date": "2011-05-07"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 97,
+      "loser_score": 81,
+      "date": "2011-05-08"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Lakers",
+      "winner_score": 122,
+      "loser_score": 86,
+      "date": "2011-05-08"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bulls",
+      "winner_score": 100,
+      "loser_score": 88,
+      "date": "2011-05-09"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 98,
+      "loser_score": 90,
+      "date": "2011-05-09"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 133,
+      "loser_score": 123,
+      "date": "2011-05-10"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 95,
+      "loser_score": 83,
+      "date": "2011-05-11"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 97,
+      "loser_score": 87,
+      "date": "2011-05-11"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 99,
+      "loser_score": 72,
+      "date": "2011-05-12"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 93,
+      "loser_score": 73,
+      "date": "2011-05-13"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 95,
+      "loser_score": 83,
+      "date": "2011-05-14"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 105,
+      "loser_score": 90,
+      "date": "2011-05-15"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Heat",
+      "winner_score": 103,
+      "loser_score": 82,
+      "date": "2011-05-16"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 121,
+      "loser_score": 112,
+      "date": "2011-05-18"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 85,
+      "loser_score": 75,
+      "date": "2011-05-19"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Mavericks",
+      "winner_score": 106,
+      "loser_score": 100,
+      "date": "2011-05-20"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 93,
+      "loser_score": 87,
+      "date": "2011-05-22"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 96,
+      "loser_score": 85,
+      "date": "2011-05-23"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 112,
+      "loser_score": 105,
+      "date": "2011-05-24"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 101,
+      "loser_score": 93,
+      "date": "2011-05-25"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 100,
+      "loser_score": 96,
+      "date": "2011-05-26"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 83,
+      "loser_score": 80,
+      "date": "2011-05-27"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Mavericks",
+      "winner_score": 92,
+      "loser_score": 84,
+      "date": "2011-06-01"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 95,
+      "loser_score": 93,
+      "date": "2011-06-03"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Mavericks",
+      "winner_score": 88,
+      "loser_score": 86,
+      "date": "2011-06-06"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 86,
+      "loser_score": 83,
+      "date": "2011-06-08"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 112,
+      "loser_score": 103,
+      "date": "2011-06-10"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 105,
+      "loser_score": 95,
+      "date": "2011-06-13"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Celtics",
+      "t2": "Knicks",
+      "w1": 5,
+      "w2": 0,
+      "done": true,
+      "loser": "Knicks"
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rockets",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Magic",
+      "t2": "Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pistons",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Thunder",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jazz",
+      "t2": "Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Heat",
+      "t2": "Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bobcats",
+      "t2": "Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Suns",
+      "t2": "Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Pacers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Pacers"
+    },
+    {
+      "t1": "Heat",
+      "t2": "76ers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "76ers"
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Magic",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Magic"
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Trail Blazers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Trail Blazers"
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Spurs",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Spurs"
+    },
+    {
+      "t1": "Hornets",
+      "t2": "Lakers",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Hornets"
+    },
+    {
+      "t1": "Thunder",
+      "t2": "Nuggets",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Nuggets"
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Thunder",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Grizzlies"
+    },
+    {
+      "t1": "Heat",
+      "t2": "Celtics",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Celtics"
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Bulls",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Hawks"
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Lakers",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Lakers"
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Bulls"
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Thunder",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Thunder"
+    },
+    {
+      "t1": "Heat",
+      "t2": "Mavericks",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Heat"
+    }
+  ],
+  "eliminated": [
+    "Knicks",
+    "Pacers",
+    "76ers",
+    "Magic",
+    "Trail Blazers",
+    "Spurs",
+    "Hornets",
+    "Nuggets",
+    "Grizzlies",
+    "Celtics",
+    "Hawks",
+    "Lakers",
+    "Bulls",
+    "Thunder",
+    "Heat"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

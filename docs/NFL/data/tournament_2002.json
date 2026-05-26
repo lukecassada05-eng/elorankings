@@ -1,0 +1,140 @@
+{
+  "year": 2002,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Titans",
+      "loser": "Steelers",
+      "winner_score": 34,
+      "loser_score": 31,
+      "date": "2003-01-11"
+    },
+    {
+      "winner": "Eagles",
+      "loser": "Falcons",
+      "winner_score": 20,
+      "loser_score": 6,
+      "date": "2003-01-12"
+    },
+    {
+      "winner": "Buccaneers",
+      "loser": "49ers",
+      "winner_score": 31,
+      "loser_score": 6,
+      "date": "2003-01-12"
+    },
+    {
+      "winner": "Raiders",
+      "loser": "Jets",
+      "winner_score": 30,
+      "loser_score": 10,
+      "date": "2003-01-12"
+    },
+    {
+      "winner": "Buccaneers",
+      "loser": "Eagles",
+      "winner_score": 27,
+      "loser_score": 10,
+      "date": "2003-01-19"
+    },
+    {
+      "winner": "Raiders",
+      "loser": "Titans",
+      "winner_score": 41,
+      "loser_score": 24,
+      "date": "2003-01-19"
+    },
+    {
+      "winner": "Buccaneers",
+      "loser": "Raiders",
+      "winner_score": 48,
+      "loser_score": 21,
+      "date": "2003-01-26"
+    },
+    {
+      "winner": "AFC",
+      "loser": "NFC",
+      "winner_score": 45,
+      "loser_score": 20,
+      "date": "2003-02-02"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Titans",
+      "t2": "Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Steelers"
+    },
+    {
+      "t1": "Eagles",
+      "t2": "Falcons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Falcons"
+    },
+    {
+      "t1": "Buccaneers",
+      "t2": "49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "49ers"
+    },
+    {
+      "t1": "Raiders",
+      "t2": "Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Jets"
+    },
+    {
+      "t1": "Buccaneers",
+      "t2": "Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eagles"
+    },
+    {
+      "t1": "Raiders",
+      "t2": "Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Titans"
+    },
+    {
+      "t1": "Buccaneers",
+      "t2": "Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Raiders"
+    },
+    {
+      "t1": "AFC",
+      "t2": "NFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NFC"
+    }
+  ],
+  "eliminated": [
+    "Steelers",
+    "Falcons",
+    "49ers",
+    "Jets",
+    "Eagles",
+    "Titans",
+    "Raiders",
+    "NFC"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

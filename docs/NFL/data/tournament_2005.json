@@ -1,0 +1,140 @@
+{
+  "year": 2005,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Seahawks",
+      "loser": "Redskins",
+      "winner_score": 20,
+      "loser_score": 10,
+      "date": "2006-01-14"
+    },
+    {
+      "winner": "Broncos",
+      "loser": "Patriots",
+      "winner_score": 27,
+      "loser_score": 13,
+      "date": "2006-01-15"
+    },
+    {
+      "winner": "Steelers",
+      "loser": "Colts",
+      "winner_score": 21,
+      "loser_score": 18,
+      "date": "2006-01-15"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Bears",
+      "winner_score": 29,
+      "loser_score": 21,
+      "date": "2006-01-15"
+    },
+    {
+      "winner": "Steelers",
+      "loser": "Broncos",
+      "winner_score": 34,
+      "loser_score": 17,
+      "date": "2006-01-22"
+    },
+    {
+      "winner": "Seahawks",
+      "loser": "Panthers",
+      "winner_score": 34,
+      "loser_score": 14,
+      "date": "2006-01-22"
+    },
+    {
+      "winner": "Steelers",
+      "loser": "Seahawks",
+      "winner_score": 21,
+      "loser_score": 10,
+      "date": "2006-02-05"
+    },
+    {
+      "winner": "NFC",
+      "loser": "AFC",
+      "winner_score": 23,
+      "loser_score": 17,
+      "date": "2006-02-12"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Seahawks",
+      "t2": "Redskins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Redskins"
+    },
+    {
+      "t1": "Broncos",
+      "t2": "Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Patriots"
+    },
+    {
+      "t1": "Steelers",
+      "t2": "Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colts"
+    },
+    {
+      "t1": "Panthers",
+      "t2": "Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bears"
+    },
+    {
+      "t1": "Steelers",
+      "t2": "Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Broncos"
+    },
+    {
+      "t1": "Seahawks",
+      "t2": "Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Panthers"
+    },
+    {
+      "t1": "Steelers",
+      "t2": "Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seahawks"
+    },
+    {
+      "t1": "NFC",
+      "t2": "AFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "AFC"
+    }
+  ],
+  "eliminated": [
+    "Redskins",
+    "Patriots",
+    "Colts",
+    "Bears",
+    "Broncos",
+    "Panthers",
+    "Seahawks",
+    "AFC"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

@@ -1,0 +1,716 @@
+{
+  "year": 2019,
+  "sport": "NHL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Maple Leafs",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-04-11"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Hurricanes",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-04-11"
+    },
+    {
+      "winner": "Flames",
+      "loser": "Avalanche",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2019-04-12"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Lightning",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-04-12"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-04-12"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Jets",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-13"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Sharks",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2019-04-13"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Hurricanes",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-13"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Stars",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-13"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Maple Leafs",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Flames",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Lightning",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Jets",
+      "loser": "Blues",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Sharks",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2019-04-15"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-15"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Capitals",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2019-04-15"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-16"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Flames",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2019-04-16"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Lightning",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2019-04-16"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-04-16"
+    },
+    {
+      "winner": "Jets",
+      "loser": "Blues",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-17"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Sharks",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2019-04-17"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Maple Leafs",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2019-04-17"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Predators",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-04-18"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Flames",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-18"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Capitals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-18"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Jets",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-19"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Golden Knights",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-04-19"
+    },
+    {
+      "winner": "Maple Leafs",
+      "loser": "Bruins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-19"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Flames",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-04-20"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Predators",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2019-04-20"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Jets",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-20"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Hurricanes",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2019-04-21"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Maple Leafs",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-04-21"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Golden Knights",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-21"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Capitals",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-04-22"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Predators",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-23"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Maple Leafs",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-04-23"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Golden Knights",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-04-24"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Capitals",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-24"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Blue Jackets",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-25"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-26"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Islanders",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2019-04-26"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Avalanche",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-04-27"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-04-27"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-28"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-28"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Sharks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-28"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Stars",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-30"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Bruins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-30"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Avalanche",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-05-01"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Islanders",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-05-01"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-05-02"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Blue Jackets",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-05-02"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Sharks",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2019-05-03"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Islanders",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-05-03"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-05-04"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Blue Jackets",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-05-04"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Avalanche",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-05-05"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Stars",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-05-05"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Blue Jackets",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2019-05-06"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Sharks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-05-07"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Stars",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-05-08"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Avalanche",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-05-09"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Hurricanes",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-05-10"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Blues",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2019-05-12"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Hurricanes",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2019-05-12"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Sharks",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-05-14"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Hurricanes",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-05-15"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Blues",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-05-16"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Hurricanes",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2019-05-17"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Sharks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-05-18"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Sharks",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2019-05-19"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Sharks",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-05-22"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Blues",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-05-28"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-05-30"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Blues",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2019-06-02"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-06-04"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Bruins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-06-07"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Blues",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-06-10"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-06-13"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Maple Leafs",
+      "t2": "Bruins",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Maple Leafs"
+    },
+    {
+      "t1": "Capitals",
+      "t2": "Hurricanes",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Capitals"
+    },
+    {
+      "t1": "Flames",
+      "t2": "Avalanche",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Flames"
+    },
+    {
+      "t1": "Blue Jackets",
+      "t2": "Lightning",
+      "w1": 3,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Islanders",
+      "t2": "Penguins",
+      "w1": 3,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Blues",
+      "t2": "Jets",
+      "w1": 3,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Golden Knights",
+      "t2": "Sharks",
+      "w1": 3,
+      "w2": 3,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Predators",
+      "t2": "Stars",
+      "w1": 2,
+      "w2": 3,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bruins",
+      "t2": "Blue Jackets",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Blue Jackets"
+    },
+    {
+      "t1": "Blues",
+      "t2": "Stars",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Stars"
+    },
+    {
+      "t1": "Hurricanes",
+      "t2": "Islanders",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Islanders"
+    },
+    {
+      "t1": "Sharks",
+      "t2": "Avalanche",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Avalanche"
+    },
+    {
+      "t1": "Bruins",
+      "t2": "Hurricanes",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Hurricanes"
+    },
+    {
+      "t1": "Sharks",
+      "t2": "Blues",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Sharks"
+    },
+    {
+      "t1": "Bruins",
+      "t2": "Blues",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Bruins"
+    }
+  ],
+  "eliminated": [
+    "Maple Leafs",
+    "Capitals",
+    "Flames",
+    "Blue Jackets",
+    "Stars",
+    "Islanders",
+    "Avalanche",
+    "Hurricanes",
+    "Sharks",
+    "Bruins"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

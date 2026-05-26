@@ -1,0 +1,408 @@
+{
+  "year": 2024,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Tigers",
+      "loser": "Astros",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2024-10-01"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Orioles",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2024-10-01"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Brewers",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2024-10-01"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Braves",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2024-10-02"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Astros",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2024-10-02"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Orioles",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2024-10-02"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Mets",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2024-10-02"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Braves",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2024-10-03"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Brewers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2024-10-03"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Tigers",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2024-10-05"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Phillies",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2024-10-05"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Royals",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2024-10-05"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2024-10-06"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Mets",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2024-10-06"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Dodgers",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2024-10-07"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Guardians",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2024-10-07"
+    },
+    {
+      "winner": "Royals",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2024-10-07"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Phillies",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2024-10-08"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Dodgers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2024-10-09"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Guardians",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2024-10-09"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Phillies",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2024-10-09"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Royals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2024-10-09"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2024-10-10"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Tigers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2024-10-10"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Royals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2024-10-11"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Padres",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2024-10-12"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Tigers",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2024-10-12"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Mets",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2024-10-14"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Dodgers",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2024-10-14"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Guardians",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2024-10-14"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Guardians",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2024-10-15"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Mets",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2024-10-17"
+    },
+    {
+      "winner": "Guardians",
+      "loser": "Yankees",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2024-10-17"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Mets",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2024-10-18"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Dodgers",
+      "winner_score": 12,
+      "loser_score": 6,
+      "date": "2024-10-18"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Guardians",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2024-10-19"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Guardians",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2024-10-20"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Mets",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2024-10-21"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Yankees",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2024-10-26"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2024-10-27"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2024-10-29"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Dodgers",
+      "winner_score": 11,
+      "loser_score": 4,
+      "date": "2024-10-30"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Yankees",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2024-10-31"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Tigers",
+      "t2": "Astros",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Royals",
+      "t2": "Orioles",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mets",
+      "t2": "Brewers",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Padres",
+      "t2": "Braves",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Guardians",
+      "t2": "Tigers",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Tigers"
+    },
+    {
+      "t1": "Mets",
+      "t2": "Phillies",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Phillies"
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Royals",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Royals"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Padres",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Padres"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Mets",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Mets"
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Guardians",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Guardians"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Yankees",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Yankees"
+    }
+  ],
+  "eliminated": [
+    "Tigers",
+    "Phillies",
+    "Royals",
+    "Padres",
+    "Mets",
+    "Guardians",
+    "Yankees"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

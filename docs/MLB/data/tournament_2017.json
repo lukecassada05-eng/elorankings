@@ -1,0 +1,574 @@
+{
+  "year": 2017,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Astros",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Yankees",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Athletics",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Nationals",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Mets",
+      "winner_score": 11,
+      "loser_score": 0,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Padres",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Mariners",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Indians",
+      "loser": "White Sox",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Tigers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rockies",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Braves",
+      "loser": "Marlins",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Orioles",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Royals",
+      "winner_score": 14,
+      "loser_score": 2,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cardinals",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Reds",
+      "loser": "Cubs",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-10-01"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Twins",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2017-10-04"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Rockies",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2017-10-05"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Red Sox",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2017-10-05"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2017-10-05"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Red Sox",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2017-10-06"
+    },
+    {
+      "winner": "Indians",
+      "loser": "Yankees",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2017-10-06"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Nationals",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2017-10-06"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Diamondbacks",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2017-10-07"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Cubs",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2017-10-07"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Diamondbacks",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2017-10-08"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Astros",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2017-10-08"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Indians",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2017-10-08"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Red Sox",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2017-10-09"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Nationals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-10-09"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Indians",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2017-10-09"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Diamondbacks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-10-10"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Cubs",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2017-10-11"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Indians",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2017-10-12"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Nationals",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2017-10-13"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-10-14"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2017-10-14"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cubs",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2017-10-15"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cubs",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2017-10-15"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Astros",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2017-10-17"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Astros",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2017-10-17"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cubs",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2017-10-18"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Astros",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2017-10-18"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Dodgers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-10-19"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cubs",
+      "winner_score": 11,
+      "loser_score": 1,
+      "date": "2017-10-20"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2017-10-21"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Yankees",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2017-10-22"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Astros",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-10-25"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Dodgers",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2017-10-26"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Dodgers",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2017-10-28"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Astros",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2017-10-29"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Dodgers",
+      "winner_score": 13,
+      "loser_score": 12,
+      "date": "2017-10-30"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Astros",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2017-11-01"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Dodgers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2017-11-02"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Astros",
+      "t2": "Red Sox",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Red Sox"
+    },
+    {
+      "t1": "Blue Jays",
+      "t2": "Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Athletics",
+      "t2": "Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pirates",
+      "t2": "Nationals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Mets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Giants",
+      "t2": "Padres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Angels",
+      "t2": "Mariners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Indians",
+      "t2": "White Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Twins",
+      "t2": "Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Rockies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Braves",
+      "t2": "Marlins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rays",
+      "t2": "Orioles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Diamondbacks",
+      "t2": "Royals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Brewers",
+      "t2": "Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Reds",
+      "t2": "Cubs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Twins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Diamondbacks",
+      "t2": "Rockies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Indians",
+      "t2": "Yankees",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Indians"
+    },
+    {
+      "t1": "Cubs",
+      "t2": "Nationals",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Nationals"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Diamondbacks",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Diamondbacks"
+    },
+    {
+      "t1": "Astros",
+      "t2": "Yankees",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Yankees"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Cubs",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Cubs"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Astros",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Dodgers"
+    }
+  ],
+  "eliminated": [
+    "Red Sox",
+    "Indians",
+    "Nationals",
+    "Diamondbacks",
+    "Yankees",
+    "Cubs",
+    "Dodgers"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

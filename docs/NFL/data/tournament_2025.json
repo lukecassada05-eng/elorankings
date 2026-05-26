@@ -1,0 +1,236 @@
+{
+  "year": 2025,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Rams",
+      "loser": "Panthers",
+      "winner_score": 34,
+      "loser_score": 31,
+      "date": "2026-01-10"
+    },
+    {
+      "winner": "Bears",
+      "loser": "Packers",
+      "winner_score": 31,
+      "loser_score": 27,
+      "date": "2026-01-11"
+    },
+    {
+      "winner": "Bills",
+      "loser": "Jaguars",
+      "winner_score": 27,
+      "loser_score": 24,
+      "date": "2026-01-11"
+    },
+    {
+      "winner": "49ers",
+      "loser": "Eagles",
+      "winner_score": 23,
+      "loser_score": 19,
+      "date": "2026-01-11"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Chargers",
+      "winner_score": 16,
+      "loser_score": 3,
+      "date": "2026-01-12"
+    },
+    {
+      "winner": "Texans",
+      "loser": "Steelers",
+      "winner_score": 30,
+      "loser_score": 6,
+      "date": "2026-01-13"
+    },
+    {
+      "winner": "Broncos",
+      "loser": "Bills",
+      "winner_score": 33,
+      "loser_score": 30,
+      "date": "2026-01-17"
+    },
+    {
+      "winner": "Seahawks",
+      "loser": "49ers",
+      "winner_score": 41,
+      "loser_score": 6,
+      "date": "2026-01-18"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Texans",
+      "winner_score": 28,
+      "loser_score": 16,
+      "date": "2026-01-18"
+    },
+    {
+      "winner": "Rams",
+      "loser": "Bears",
+      "winner_score": 20,
+      "loser_score": 17,
+      "date": "2026-01-18"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Broncos",
+      "winner_score": 10,
+      "loser_score": 7,
+      "date": "2026-01-25"
+    },
+    {
+      "winner": "Seahawks",
+      "loser": "Rams",
+      "winner_score": 31,
+      "loser_score": 27,
+      "date": "2026-01-25"
+    },
+    {
+      "winner": "NFC",
+      "loser": "AFC",
+      "winner_score": 66,
+      "loser_score": 52,
+      "date": "2026-02-04"
+    },
+    {
+      "winner": "Seahawks",
+      "loser": "Patriots",
+      "winner_score": 29,
+      "loser_score": 13,
+      "date": "2026-02-08"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Rams",
+      "t2": "Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Panthers"
+    },
+    {
+      "t1": "Bears",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Bills",
+      "t2": "Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Jaguars"
+    },
+    {
+      "t1": "49ers",
+      "t2": "Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eagles"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chargers"
+    },
+    {
+      "t1": "Texans",
+      "t2": "Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Steelers"
+    },
+    {
+      "t1": "Broncos",
+      "t2": "Bills",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bills"
+    },
+    {
+      "t1": "Seahawks",
+      "t2": "49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "49ers"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Texans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texans"
+    },
+    {
+      "t1": "Rams",
+      "t2": "Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bears"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Broncos"
+    },
+    {
+      "t1": "Seahawks",
+      "t2": "Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rams"
+    },
+    {
+      "t1": "NFC",
+      "t2": "AFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "AFC"
+    },
+    {
+      "t1": "Seahawks",
+      "t2": "Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Patriots"
+    }
+  ],
+  "eliminated": [
+    "Panthers",
+    "Packers",
+    "Jaguars",
+    "Eagles",
+    "Chargers",
+    "Steelers",
+    "Bills",
+    "49ers",
+    "Texans",
+    "Bears",
+    "Broncos",
+    "Rams",
+    "AFC",
+    "Patriots"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

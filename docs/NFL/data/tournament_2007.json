@@ -1,0 +1,140 @@
+{
+  "year": 2007,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Packers",
+      "loser": "Seahawks",
+      "winner_score": 42,
+      "loser_score": 20,
+      "date": "2008-01-12"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Jaguars",
+      "winner_score": 31,
+      "loser_score": 20,
+      "date": "2008-01-13"
+    },
+    {
+      "winner": "Chargers",
+      "loser": "Colts",
+      "winner_score": 28,
+      "loser_score": 24,
+      "date": "2008-01-13"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Cowboys",
+      "winner_score": 21,
+      "loser_score": 17,
+      "date": "2008-01-13"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Chargers",
+      "winner_score": 21,
+      "loser_score": 12,
+      "date": "2008-01-20"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Packers",
+      "winner_score": 23,
+      "loser_score": 20,
+      "date": "2008-01-20"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Patriots",
+      "winner_score": 17,
+      "loser_score": 14,
+      "date": "2008-02-03"
+    },
+    {
+      "winner": "NFC",
+      "loser": "AFC",
+      "winner_score": 42,
+      "loser_score": 30,
+      "date": "2008-02-10"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Packers",
+      "t2": "Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seahawks"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Jaguars"
+    },
+    {
+      "t1": "Chargers",
+      "t2": "Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colts"
+    },
+    {
+      "t1": "Giants",
+      "t2": "Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cowboys"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chargers"
+    },
+    {
+      "t1": "Giants",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Giants",
+      "t2": "Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Patriots"
+    },
+    {
+      "t1": "NFC",
+      "t2": "AFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "AFC"
+    }
+  ],
+  "eliminated": [
+    "Seahawks",
+    "Jaguars",
+    "Colts",
+    "Cowboys",
+    "Chargers",
+    "Packers",
+    "Patriots",
+    "AFC"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

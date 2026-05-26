@@ -1,0 +1,299 @@
+{
+  "year": 2008,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Phillies",
+      "loser": "Brewers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2008-10-01"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cubs",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2008-10-01"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Angels",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2008-10-02"
+    },
+    {
+      "winner": "Rays",
+      "loser": "White Sox",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2008-10-02"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Brewers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2008-10-02"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cubs",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2008-10-03"
+    },
+    {
+      "winner": "Rays",
+      "loser": "White Sox",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2008-10-03"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Angels",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2008-10-04"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Phillies",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2008-10-04"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cubs",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2008-10-05"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Brewers",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2008-10-05"
+    },
+    {
+      "winner": "White Sox",
+      "loser": "Rays",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2008-10-05"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Red Sox",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2008-10-05"
+    },
+    {
+      "winner": "Rays",
+      "loser": "White Sox",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2008-10-06"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Angels",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2008-10-07"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2008-10-10"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2008-10-10"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2008-10-11"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Red Sox",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2008-10-12"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Phillies",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2008-10-13"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Red Sox",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2008-10-13"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2008-10-14"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Red Sox",
+      "winner_score": 13,
+      "loser_score": 4,
+      "date": "2008-10-15"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2008-10-16"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2008-10-17"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2008-10-19"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Red Sox",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2008-10-20"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Rays",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2008-10-23"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Phillies",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2008-10-24"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Rays",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2008-10-26"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Rays",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2008-10-27"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Rays",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2008-10-28"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Phillies",
+      "t2": "Brewers",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Brewers"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Cubs",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Cubs"
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Angels",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Angels"
+    },
+    {
+      "t1": "Rays",
+      "t2": "White Sox",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "White Sox"
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Dodgers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Dodgers"
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Rays",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Red Sox"
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Rays",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Rays"
+    }
+  ],
+  "eliminated": [
+    "Brewers",
+    "Cubs",
+    "Angels",
+    "White Sox",
+    "Dodgers",
+    "Red Sox",
+    "Rays"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

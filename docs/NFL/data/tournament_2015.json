@@ -1,0 +1,172 @@
+{
+  "year": 2015,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Seahawks",
+      "loser": "Vikings",
+      "winner_score": 10,
+      "loser_score": 9,
+      "date": "2016-01-10"
+    },
+    {
+      "winner": "Packers",
+      "loser": "Redskins",
+      "winner_score": 35,
+      "loser_score": 18,
+      "date": "2016-01-10"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Chiefs",
+      "winner_score": 27,
+      "loser_score": 20,
+      "date": "2016-01-16"
+    },
+    {
+      "winner": "Cardinals",
+      "loser": "Packers",
+      "winner_score": 26,
+      "loser_score": 20,
+      "date": "2016-01-17"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Seahawks",
+      "winner_score": 31,
+      "loser_score": 24,
+      "date": "2016-01-17"
+    },
+    {
+      "winner": "Broncos",
+      "loser": "Steelers",
+      "winner_score": 23,
+      "loser_score": 16,
+      "date": "2016-01-17"
+    },
+    {
+      "winner": "Broncos",
+      "loser": "Patriots",
+      "winner_score": 20,
+      "loser_score": 18,
+      "date": "2016-01-24"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Cardinals",
+      "winner_score": 49,
+      "loser_score": 15,
+      "date": "2016-01-24"
+    },
+    {
+      "winner": "Irvin",
+      "loser": "Rice",
+      "winner_score": 49,
+      "loser_score": 27,
+      "date": "2016-02-01"
+    },
+    {
+      "winner": "Broncos",
+      "loser": "Panthers",
+      "winner_score": 24,
+      "loser_score": 10,
+      "date": "2016-02-07"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Seahawks",
+      "t2": "Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vikings"
+    },
+    {
+      "t1": "Packers",
+      "t2": "Redskins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Redskins"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Chiefs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chiefs"
+    },
+    {
+      "t1": "Cardinals",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Panthers",
+      "t2": "Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seahawks"
+    },
+    {
+      "t1": "Broncos",
+      "t2": "Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Steelers"
+    },
+    {
+      "t1": "Broncos",
+      "t2": "Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Patriots"
+    },
+    {
+      "t1": "Panthers",
+      "t2": "Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cardinals"
+    },
+    {
+      "t1": "Irvin",
+      "t2": "Rice",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rice"
+    },
+    {
+      "t1": "Broncos",
+      "t2": "Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Panthers"
+    }
+  ],
+  "eliminated": [
+    "Vikings",
+    "Redskins",
+    "Chiefs",
+    "Packers",
+    "Seahawks",
+    "Steelers",
+    "Patriots",
+    "Cardinals",
+    "Rice",
+    "Panthers"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

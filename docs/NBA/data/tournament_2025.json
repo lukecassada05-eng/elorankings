@@ -1,0 +1,1026 @@
+{
+  "year": 2025,
+  "sport": "NBA",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 117,
+      "loser_score": 105,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Hornets",
+      "winner_score": 93,
+      "loser_score": 86,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Nets",
+      "winner_score": 113,
+      "loser_score": 105,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Cavaliers",
+      "winner_score": 126,
+      "loser_score": 118,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Heat",
+      "winner_score": 119,
+      "loser_score": 118,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "76ers",
+      "winner_score": 122,
+      "loser_score": 102,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pistons",
+      "winner_score": 140,
+      "loser_score": 133,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Rockets",
+      "winner_score": 126,
+      "loser_score": 111,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Mavericks",
+      "winner_score": 132,
+      "loser_score": 97,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Jazz",
+      "winner_score": 116,
+      "loser_score": 105,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pelicans",
+      "winner_score": 115,
+      "loser_score": 100,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Raptors",
+      "winner_score": 125,
+      "loser_score": 118,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Warriors",
+      "winner_score": 124,
+      "loser_score": 119,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Lakers",
+      "winner_score": 109,
+      "loser_score": 81,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Suns",
+      "winner_score": 109,
+      "loser_score": 98,
+      "date": "2025-04-13"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 120,
+      "loser_score": 95,
+      "date": "2025-04-15"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Grizzlies",
+      "winner_score": 121,
+      "loser_score": 116,
+      "date": "2025-04-16"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 109,
+      "loser_score": 90,
+      "date": "2025-04-16"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Kings",
+      "winner_score": 120,
+      "loser_score": 106,
+      "date": "2025-04-17"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Hawks",
+      "winner_score": 123,
+      "loser_score": 114,
+      "date": "2025-04-18"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Mavericks",
+      "winner_score": 120,
+      "loser_score": 106,
+      "date": "2025-04-19"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bucks",
+      "winner_score": 117,
+      "loser_score": 98,
+      "date": "2025-04-19"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Clippers",
+      "winner_score": 112,
+      "loser_score": 110,
+      "date": "2025-04-19"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pistons",
+      "winner_score": 123,
+      "loser_score": 112,
+      "date": "2025-04-19"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Lakers",
+      "winner_score": 117,
+      "loser_score": 95,
+      "date": "2025-04-20"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 131,
+      "loser_score": 80,
+      "date": "2025-04-20"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Magic",
+      "winner_score": 103,
+      "loser_score": 86,
+      "date": "2025-04-20"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Heat",
+      "winner_score": 121,
+      "loser_score": 100,
+      "date": "2025-04-20"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Rockets",
+      "winner_score": 95,
+      "loser_score": 85,
+      "date": "2025-04-21"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Knicks",
+      "winner_score": 100,
+      "loser_score": 94,
+      "date": "2025-04-21"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 105,
+      "loser_score": 102,
+      "date": "2025-04-22"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bucks",
+      "winner_score": 123,
+      "loser_score": 115,
+      "date": "2025-04-22"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 118,
+      "loser_score": 99,
+      "date": "2025-04-22"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Timberwolves",
+      "winner_score": 94,
+      "loser_score": 85,
+      "date": "2025-04-23"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Magic",
+      "winner_score": 109,
+      "loser_score": 100,
+      "date": "2025-04-23"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Heat",
+      "winner_score": 121,
+      "loser_score": 112,
+      "date": "2025-04-23"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Warriors",
+      "winner_score": 109,
+      "loser_score": 94,
+      "date": "2025-04-24"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pistons",
+      "winner_score": 118,
+      "loser_score": 116,
+      "date": "2025-04-24"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 114,
+      "loser_score": 108,
+      "date": "2025-04-25"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 117,
+      "loser_score": 83,
+      "date": "2025-04-25"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Celtics",
+      "winner_score": 95,
+      "loser_score": 93,
+      "date": "2025-04-25"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pacers",
+      "winner_score": 117,
+      "loser_score": 101,
+      "date": "2025-04-26"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Lakers",
+      "winner_score": 116,
+      "loser_score": 104,
+      "date": "2025-04-26"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Heat",
+      "winner_score": 124,
+      "loser_score": 87,
+      "date": "2025-04-26"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 117,
+      "loser_score": 115,
+      "date": "2025-04-26"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Clippers",
+      "winner_score": 101,
+      "loser_score": 99,
+      "date": "2025-04-26"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Rockets",
+      "winner_score": 104,
+      "loser_score": 93,
+      "date": "2025-04-27"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pistons",
+      "winner_score": 94,
+      "loser_score": 93,
+      "date": "2025-04-27"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Lakers",
+      "winner_score": 116,
+      "loser_score": 113,
+      "date": "2025-04-27"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Magic",
+      "winner_score": 107,
+      "loser_score": 98,
+      "date": "2025-04-27"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bucks",
+      "winner_score": 129,
+      "loser_score": 103,
+      "date": "2025-04-28"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Heat",
+      "winner_score": 138,
+      "loser_score": 83,
+      "date": "2025-04-28"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Rockets",
+      "winner_score": 109,
+      "loser_score": 106,
+      "date": "2025-04-29"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bucks",
+      "winner_score": 119,
+      "loser_score": 118,
+      "date": "2025-04-29"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Knicks",
+      "winner_score": 106,
+      "loser_score": 103,
+      "date": "2025-04-29"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Magic",
+      "winner_score": 120,
+      "loser_score": 89,
+      "date": "2025-04-30"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Clippers",
+      "winner_score": 131,
+      "loser_score": 115,
+      "date": "2025-04-30"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Warriors",
+      "winner_score": 131,
+      "loser_score": 116,
+      "date": "2025-04-30"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Lakers",
+      "winner_score": 103,
+      "loser_score": 96,
+      "date": "2025-05-01"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pistons",
+      "winner_score": 116,
+      "loser_score": 113,
+      "date": "2025-05-01"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 111,
+      "loser_score": 105,
+      "date": "2025-05-02"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Warriors",
+      "winner_score": 115,
+      "loser_score": 107,
+      "date": "2025-05-03"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Clippers",
+      "winner_score": 120,
+      "loser_score": 101,
+      "date": "2025-05-03"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Cavaliers",
+      "winner_score": 121,
+      "loser_score": 112,
+      "date": "2025-05-04"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Rockets",
+      "winner_score": 103,
+      "loser_score": 89,
+      "date": "2025-05-05"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Celtics",
+      "winner_score": 108,
+      "loser_score": 105,
+      "date": "2025-05-05"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Thunder",
+      "winner_score": 121,
+      "loser_score": 119,
+      "date": "2025-05-06"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Cavaliers",
+      "winner_score": 120,
+      "loser_score": 119,
+      "date": "2025-05-06"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Timberwolves",
+      "winner_score": 99,
+      "loser_score": 88,
+      "date": "2025-05-07"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Celtics",
+      "winner_score": 91,
+      "loser_score": 90,
+      "date": "2025-05-07"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 149,
+      "loser_score": 106,
+      "date": "2025-05-08"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Warriors",
+      "winner_score": 117,
+      "loser_score": 93,
+      "date": "2025-05-09"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Pacers",
+      "winner_score": 126,
+      "loser_score": 104,
+      "date": "2025-05-09"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Thunder",
+      "winner_score": 113,
+      "loser_score": 104,
+      "date": "2025-05-10"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 115,
+      "loser_score": 93,
+      "date": "2025-05-10"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Warriors",
+      "winner_score": 102,
+      "loser_score": 97,
+      "date": "2025-05-11"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 92,
+      "loser_score": 87,
+      "date": "2025-05-11"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Cavaliers",
+      "winner_score": 129,
+      "loser_score": 109,
+      "date": "2025-05-12"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Celtics",
+      "winner_score": 121,
+      "loser_score": 113,
+      "date": "2025-05-12"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Warriors",
+      "winner_score": 117,
+      "loser_score": 110,
+      "date": "2025-05-13"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Cavaliers",
+      "winner_score": 114,
+      "loser_score": 105,
+      "date": "2025-05-13"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 112,
+      "loser_score": 105,
+      "date": "2025-05-14"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 127,
+      "loser_score": 102,
+      "date": "2025-05-14"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Warriors",
+      "winner_score": 121,
+      "loser_score": 110,
+      "date": "2025-05-15"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Thunder",
+      "winner_score": 119,
+      "loser_score": 107,
+      "date": "2025-05-16"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Celtics",
+      "winner_score": 119,
+      "loser_score": 81,
+      "date": "2025-05-17"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 125,
+      "loser_score": 93,
+      "date": "2025-05-18"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Timberwolves",
+      "winner_score": 114,
+      "loser_score": 88,
+      "date": "2025-05-21"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 138,
+      "loser_score": 135,
+      "date": "2025-05-22"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Timberwolves",
+      "winner_score": 118,
+      "loser_score": 103,
+      "date": "2025-05-23"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 114,
+      "loser_score": 109,
+      "date": "2025-05-24"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Thunder",
+      "winner_score": 143,
+      "loser_score": 101,
+      "date": "2025-05-25"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pacers",
+      "winner_score": 106,
+      "loser_score": 100,
+      "date": "2025-05-26"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Timberwolves",
+      "winner_score": 128,
+      "loser_score": 126,
+      "date": "2025-05-27"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 130,
+      "loser_score": 121,
+      "date": "2025-05-28"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Timberwolves",
+      "winner_score": 124,
+      "loser_score": 94,
+      "date": "2025-05-29"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pacers",
+      "winner_score": 111,
+      "loser_score": 94,
+      "date": "2025-05-30"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 125,
+      "loser_score": 108,
+      "date": "2025-06-01"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Thunder",
+      "winner_score": 111,
+      "loser_score": 110,
+      "date": "2025-06-06"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pacers",
+      "winner_score": 123,
+      "loser_score": 107,
+      "date": "2025-06-09"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Thunder",
+      "winner_score": 116,
+      "loser_score": 107,
+      "date": "2025-06-12"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pacers",
+      "winner_score": 111,
+      "loser_score": 104,
+      "date": "2025-06-14"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pacers",
+      "winner_score": 120,
+      "loser_score": 109,
+      "date": "2025-06-17"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Thunder",
+      "winner_score": 108,
+      "loser_score": 91,
+      "date": "2025-06-20"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pacers",
+      "winner_score": 103,
+      "loser_score": 91,
+      "date": "2025-06-23"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Hawks",
+      "t2": "Magic",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Cavaliers",
+      "w1": 5,
+      "w2": 1,
+      "done": true,
+      "loser": "Cavaliers"
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bulls",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Mavericks",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Timberwolves",
+      "t2": "Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Thunder",
+      "t2": "Pelicans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kings",
+      "t2": "Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Heat",
+      "t2": "Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Heat",
+      "t2": "Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Bucks",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Bucks"
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Clippers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Clippers"
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Pistons",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Pistons"
+    },
+    {
+      "t1": "Timberwolves",
+      "t2": "Lakers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Lakers"
+    },
+    {
+      "t1": "Thunder",
+      "t2": "Grizzlies",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Grizzlies"
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Magic",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Magic"
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Heat",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Heat"
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Rockets",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Rockets"
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Celtics",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Celtics"
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Thunder",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Nuggets"
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Warriors"
+    },
+    {
+      "t1": "Thunder",
+      "t2": "Timberwolves",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Timberwolves"
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Knicks",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Knicks"
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Thunder",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Pacers"
+    }
+  ],
+  "eliminated": [
+    "Cavaliers",
+    "Bucks",
+    "Clippers",
+    "Pistons",
+    "Lakers",
+    "Grizzlies",
+    "Magic",
+    "Heat",
+    "Rockets",
+    "Celtics",
+    "Nuggets",
+    "Warriors",
+    "Timberwolves",
+    "Knicks",
+    "Pacers"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

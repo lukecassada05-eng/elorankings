@@ -1,0 +1,1257 @@
+{
+  "year": 2002,
+  "sport": "NBA",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Mavericks",
+      "loser": "SuperSonics",
+      "winner_score": 116,
+      "loser_score": 99,
+      "date": "2002-04-13"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Cavaliers",
+      "winner_score": 128,
+      "loser_score": 123,
+      "date": "2002-04-13"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Suns",
+      "winner_score": 98,
+      "loser_score": 94,
+      "date": "2002-04-13"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Grizzlies",
+      "winner_score": 113,
+      "loser_score": 92,
+      "date": "2002-04-13"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Bulls",
+      "winner_score": 124,
+      "loser_score": 106,
+      "date": "2002-04-13"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Warriors",
+      "winner_score": 109,
+      "loser_score": 101,
+      "date": "2002-04-13"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Clippers",
+      "winner_score": 101,
+      "loser_score": 98,
+      "date": "2002-04-13"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Magic",
+      "winner_score": 95,
+      "loser_score": 89,
+      "date": "2002-04-14"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Wizards",
+      "winner_score": 86,
+      "loser_score": 80,
+      "date": "2002-04-14"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Hornets",
+      "winner_score": 98,
+      "loser_score": 91,
+      "date": "2002-04-14"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Lakers",
+      "winner_score": 128,
+      "loser_score": 120,
+      "date": "2002-04-14"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Nets",
+      "winner_score": 101,
+      "loser_score": 82,
+      "date": "2002-04-14"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Kings",
+      "winner_score": 113,
+      "loser_score": 100,
+      "date": "2002-04-14"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Rockets",
+      "winner_score": 98,
+      "loser_score": 95,
+      "date": "2002-04-14"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Heat",
+      "winner_score": 94,
+      "loser_score": 67,
+      "date": "2002-04-15"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Timberwolves",
+      "winner_score": 93,
+      "loser_score": 90,
+      "date": "2002-04-15"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "76ers",
+      "winner_score": 98,
+      "loser_score": 96,
+      "date": "2002-04-15"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "SuperSonics",
+      "winner_score": 111,
+      "loser_score": 104,
+      "date": "2002-04-15"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Cavaliers",
+      "winner_score": 99,
+      "loser_score": 95,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Rockets",
+      "winner_score": 101,
+      "loser_score": 70,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Raptors",
+      "winner_score": 105,
+      "loser_score": 89,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Warriors",
+      "winner_score": 120,
+      "loser_score": 106,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Knicks",
+      "winner_score": 116,
+      "loser_score": 112,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 102,
+      "loser_score": 95,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Jazz",
+      "winner_score": 96,
+      "loser_score": 87,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Grizzlies",
+      "winner_score": 92,
+      "loser_score": 84,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Heat",
+      "winner_score": 88,
+      "loser_score": 81,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Suns",
+      "winner_score": 95,
+      "loser_score": 71,
+      "date": "2002-04-16"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Nets",
+      "winner_score": 103,
+      "loser_score": 98,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Hawks",
+      "winner_score": 89,
+      "loser_score": 81,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Bulls",
+      "winner_score": 112,
+      "loser_score": 106,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "76ers",
+      "winner_score": 103,
+      "loser_score": 80,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Nuggets",
+      "winner_score": 104,
+      "loser_score": 90,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Mavericks",
+      "winner_score": 87,
+      "loser_score": 76,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Rockets",
+      "winner_score": 92,
+      "loser_score": 79,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "SuperSonics",
+      "loser": "Grizzlies",
+      "winner_score": 109,
+      "loser_score": 94,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Jazz",
+      "winner_score": 86,
+      "loser_score": 84,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Cavaliers",
+      "winner_score": 103,
+      "loser_score": 85,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Bucks",
+      "winner_score": 123,
+      "loser_score": 89,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Clippers",
+      "winner_score": 107,
+      "loser_score": 103,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Kings",
+      "winner_score": 109,
+      "loser_score": 95,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Knicks",
+      "winner_score": 99,
+      "loser_score": 94,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Magic",
+      "winner_score": 103,
+      "loser_score": 89,
+      "date": "2002-04-17"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Jazz",
+      "winner_score": 89,
+      "loser_score": 86,
+      "date": "2002-04-20"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Nets",
+      "winner_score": 89,
+      "loser_score": 83,
+      "date": "2002-04-20"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "SuperSonics",
+      "winner_score": 110,
+      "loser_score": 89,
+      "date": "2002-04-20"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Magic",
+      "winner_score": 80,
+      "loser_score": 79,
+      "date": "2002-04-21"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "76ers",
+      "winner_score": 92,
+      "loser_score": 82,
+      "date": "2002-04-21"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Timberwolves",
+      "winner_score": 101,
+      "loser_score": 94,
+      "date": "2002-04-21"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Trail Blazers",
+      "winner_score": 95,
+      "loser_score": 87,
+      "date": "2002-04-21"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Raptors",
+      "winner_score": 85,
+      "loser_score": 63,
+      "date": "2002-04-22"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pacers",
+      "winner_score": 95,
+      "loser_score": 79,
+      "date": "2002-04-22"
+    },
+    {
+      "winner": "SuperSonics",
+      "loser": "Spurs",
+      "winner_score": 98,
+      "loser_score": 90,
+      "date": "2002-04-23"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Kings",
+      "winner_score": 93,
+      "loser_score": 86,
+      "date": "2002-04-23"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hornets",
+      "winner_score": 111,
+      "loser_score": 103,
+      "date": "2002-04-24"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Raptors",
+      "winner_score": 96,
+      "loser_score": 91,
+      "date": "2002-04-24"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Timberwolves",
+      "winner_score": 122,
+      "loser_score": 110,
+      "date": "2002-04-25"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Trail Blazers",
+      "winner_score": 103,
+      "loser_score": 96,
+      "date": "2002-04-25"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "76ers",
+      "winner_score": 93,
+      "loser_score": 85,
+      "date": "2002-04-26"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pacers",
+      "winner_score": 85,
+      "loser_score": 84,
+      "date": "2002-04-26"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Magic",
+      "winner_score": 110,
+      "loser_score": 100,
+      "date": "2002-04-27"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Jazz",
+      "winner_score": 90,
+      "loser_score": 87,
+      "date": "2002-04-27"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "SuperSonics",
+      "winner_score": 102,
+      "loser_score": 75,
+      "date": "2002-04-27"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Pistons",
+      "winner_score": 94,
+      "loser_score": 84,
+      "date": "2002-04-28"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Celtics",
+      "winner_score": 108,
+      "loser_score": 103,
+      "date": "2002-04-28"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Timberwolves",
+      "winner_score": 115,
+      "loser_score": 102,
+      "date": "2002-04-28"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Trail Blazers",
+      "winner_score": 92,
+      "loser_score": 91,
+      "date": "2002-04-28"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Pistons",
+      "winner_score": 89,
+      "loser_score": 83,
+      "date": "2002-04-29"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Jazz",
+      "winner_score": 91,
+      "loser_score": 86,
+      "date": "2002-04-30"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Magic",
+      "winner_score": 102,
+      "loser_score": 85,
+      "date": "2002-04-30"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Nets",
+      "winner_score": 97,
+      "loser_score": 74,
+      "date": "2002-05-01"
+    },
+    {
+      "winner": "SuperSonics",
+      "loser": "Spurs",
+      "winner_score": 91,
+      "loser_score": 79,
+      "date": "2002-05-01"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Celtics",
+      "winner_score": 83,
+      "loser_score": 81,
+      "date": "2002-05-02"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pacers",
+      "winner_score": 120,
+      "loser_score": 109,
+      "date": "2002-05-02"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Raptors",
+      "winner_score": 85,
+      "loser_score": 82,
+      "date": "2002-05-03"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "76ers",
+      "winner_score": 120,
+      "loser_score": 87,
+      "date": "2002-05-03"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "SuperSonics",
+      "winner_score": 101,
+      "loser_score": 78,
+      "date": "2002-05-04"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Mavericks",
+      "winner_score": 108,
+      "loser_score": 91,
+      "date": "2002-05-04"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Hornets",
+      "winner_score": 99,
+      "loser_score": 93,
+      "date": "2002-05-05"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 86,
+      "loser_score": 80,
+      "date": "2002-05-05"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Celtics",
+      "winner_score": 96,
+      "loser_score": 84,
+      "date": "2002-05-05"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Kings",
+      "winner_score": 110,
+      "loser_score": 102,
+      "date": "2002-05-06"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Lakers",
+      "winner_score": 88,
+      "loser_score": 85,
+      "date": "2002-05-07"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Hornets",
+      "winner_score": 102,
+      "loser_score": 88,
+      "date": "2002-05-08"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pistons",
+      "winner_score": 85,
+      "loser_score": 77,
+      "date": "2002-05-09"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Nets",
+      "winner_score": 115,
+      "loser_score": 97,
+      "date": "2002-05-09"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Mavericks",
+      "winner_score": 125,
+      "loser_score": 119,
+      "date": "2002-05-10"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pistons",
+      "winner_score": 66,
+      "loser_score": 64,
+      "date": "2002-05-10"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 99,
+      "loser_score": 89,
+      "date": "2002-05-11"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Mavericks",
+      "winner_score": 115,
+      "loser_score": 113,
+      "date": "2002-05-11"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Hornets",
+      "winner_score": 89,
+      "loser_score": 79,
+      "date": "2002-05-12"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pistons",
+      "winner_score": 90,
+      "loser_score": 79,
+      "date": "2002-05-12"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 87,
+      "loser_score": 85,
+      "date": "2002-05-12"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Mavericks",
+      "winner_score": 114,
+      "loser_score": 101,
+      "date": "2002-05-13"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 93,
+      "loser_score": 87,
+      "date": "2002-05-14"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pistons",
+      "winner_score": 90,
+      "loser_score": 81,
+      "date": "2002-05-15"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Hornets",
+      "winner_score": 103,
+      "loser_score": 95,
+      "date": "2002-05-16"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Kings",
+      "winner_score": 106,
+      "loser_score": 99,
+      "date": "2002-05-18"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 104,
+      "loser_score": 97,
+      "date": "2002-05-19"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Lakers",
+      "winner_score": 96,
+      "loser_score": 90,
+      "date": "2002-05-20"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Nets",
+      "winner_score": 93,
+      "loser_score": 86,
+      "date": "2002-05-22"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Lakers",
+      "winner_score": 103,
+      "loser_score": 90,
+      "date": "2002-05-24"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Nets",
+      "winner_score": 94,
+      "loser_score": 90,
+      "date": "2002-05-25"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Kings",
+      "winner_score": 100,
+      "loser_score": 99,
+      "date": "2002-05-26"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 94,
+      "loser_score": 92,
+      "date": "2002-05-27"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Lakers",
+      "winner_score": 92,
+      "loser_score": 91,
+      "date": "2002-05-28"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 103,
+      "loser_score": 92,
+      "date": "2002-05-30"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Kings",
+      "winner_score": 106,
+      "loser_score": 102,
+      "date": "2002-05-31"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 96,
+      "loser_score": 88,
+      "date": "2002-05-31"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Kings",
+      "winner_score": 112,
+      "loser_score": 106,
+      "date": "2002-06-02"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Nets",
+      "winner_score": 99,
+      "loser_score": 94,
+      "date": "2002-06-05"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Nets",
+      "winner_score": 106,
+      "loser_score": 83,
+      "date": "2002-06-07"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Nets",
+      "winner_score": 106,
+      "loser_score": 103,
+      "date": "2002-06-10"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Nets",
+      "winner_score": 113,
+      "loser_score": 107,
+      "date": "2002-06-13"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Mavericks",
+      "t2": "SuperSonics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jazz",
+      "t2": "Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Timberwolves",
+      "t2": "Clippers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "76ers",
+      "t2": "Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Lakers",
+      "w1": 1,
+      "w2": 3,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Raptors",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Kings",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Mavericks"
+    },
+    {
+      "t1": "Grizzlies",
+      "t2": "Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bulls",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "SuperSonics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kings",
+      "t2": "Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Magic",
+      "t2": "Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hornets",
+      "t2": "Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hornets",
+      "t2": "Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Timberwolves",
+      "t2": "Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Suns",
+      "t2": "Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "SuperSonics",
+      "t2": "Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Raptors",
+      "t2": "Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Clippers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Kings",
+      "w1": 5,
+      "w2": 3,
+      "done": true,
+      "loser": "Kings"
+    },
+    {
+      "t1": "Nets",
+      "t2": "Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Heat",
+      "t2": "Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kings",
+      "t2": "Jazz",
+      "w1": 3,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Nets",
+      "w1": 2,
+      "w2": 3,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Spurs",
+      "t2": "SuperSonics",
+      "w1": 3,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hornets",
+      "t2": "Magic",
+      "w1": 3,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Celtics",
+      "t2": "76ers",
+      "w1": 3,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Timberwolves",
+      "w1": 3,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Raptors",
+      "w1": 3,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nets",
+      "t2": "Hornets",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Hornets"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Spurs",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Spurs"
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Celtics",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Pistons"
+    },
+    {
+      "t1": "Nets",
+      "t2": "Celtics",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Celtics"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Nets",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Nets"
+    }
+  ],
+  "eliminated": [
+    "Mavericks",
+    "Kings",
+    "Hornets",
+    "Spurs",
+    "Pistons",
+    "Celtics",
+    "Nets"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

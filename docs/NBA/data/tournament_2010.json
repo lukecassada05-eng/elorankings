@@ -1,0 +1,983 @@
+{
+  "year": 2010,
+  "sport": "NBA",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Bulls",
+      "loser": "Celtics",
+      "winner_score": 101,
+      "loser_score": 93,
+      "date": "2010-04-14"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Warriors",
+      "winner_score": 103,
+      "loser_score": 94,
+      "date": "2010-04-14"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Kings",
+      "winner_score": 106,
+      "loser_score": 100,
+      "date": "2010-04-14"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Nuggets",
+      "winner_score": 123,
+      "loser_score": 101,
+      "date": "2010-04-14"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Cavaliers",
+      "winner_score": 99,
+      "loser_score": 83,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Celtics",
+      "winner_score": 106,
+      "loser_score": 95,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 96,
+      "loser_score": 89,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Rockets",
+      "winner_score": 123,
+      "loser_score": 115,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Nets",
+      "winner_score": 94,
+      "loser_score": 86,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Timberwolves",
+      "winner_score": 103,
+      "loser_score": 98,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Magic",
+      "loser": "76ers",
+      "winner_score": 125,
+      "loser_score": 111,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 114,
+      "loser_score": 105,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Wizards",
+      "loser": "Pacers",
+      "winner_score": 98,
+      "loser_score": 97,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Knicks",
+      "winner_score": 131,
+      "loser_score": 113,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Bobcats",
+      "winner_score": 98,
+      "loser_score": 89,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Lakers",
+      "winner_score": 107,
+      "loser_score": 91,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 122,
+      "loser_score": 116,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Jazz",
+      "winner_score": 100,
+      "loser_score": 86,
+      "date": "2010-04-15"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Bulls",
+      "winner_score": 96,
+      "loser_score": 83,
+      "date": "2010-04-17"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bucks",
+      "winner_score": 102,
+      "loser_score": 92,
+      "date": "2010-04-17"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 85,
+      "loser_score": 76,
+      "date": "2010-04-18"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Jazz",
+      "winner_score": 126,
+      "loser_score": 113,
+      "date": "2010-04-18"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Thunder",
+      "winner_score": 87,
+      "loser_score": 79,
+      "date": "2010-04-18"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Bobcats",
+      "winner_score": 98,
+      "loser_score": 89,
+      "date": "2010-04-18"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 100,
+      "loser_score": 94,
+      "date": "2010-04-19"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Suns",
+      "winner_score": 105,
+      "loser_score": 100,
+      "date": "2010-04-19"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Bulls",
+      "winner_score": 112,
+      "loser_score": 102,
+      "date": "2010-04-20"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Nuggets",
+      "winner_score": 114,
+      "loser_score": 111,
+      "date": "2010-04-20"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bucks",
+      "winner_score": 96,
+      "loser_score": 86,
+      "date": "2010-04-20"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 106,
+      "loser_score": 77,
+      "date": "2010-04-21"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Trail Blazers",
+      "winner_score": 119,
+      "loser_score": 90,
+      "date": "2010-04-21"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Thunder",
+      "winner_score": 95,
+      "loser_score": 92,
+      "date": "2010-04-21"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Bobcats",
+      "winner_score": 92,
+      "loser_score": 77,
+      "date": "2010-04-21"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 102,
+      "loser_score": 88,
+      "date": "2010-04-22"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Cavaliers",
+      "winner_score": 108,
+      "loser_score": 106,
+      "date": "2010-04-22"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Lakers",
+      "winner_score": 101,
+      "loser_score": 96,
+      "date": "2010-04-23"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Trail Blazers",
+      "winner_score": 108,
+      "loser_score": 89,
+      "date": "2010-04-23"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 100,
+      "loser_score": 98,
+      "date": "2010-04-23"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 94,
+      "loser_score": 90,
+      "date": "2010-04-24"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Nuggets",
+      "winner_score": 105,
+      "loser_score": 93,
+      "date": "2010-04-24"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Bobcats",
+      "winner_score": 90,
+      "loser_score": 86,
+      "date": "2010-04-24"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Suns",
+      "winner_score": 96,
+      "loser_score": 87,
+      "date": "2010-04-24"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Hawks",
+      "winner_score": 107,
+      "loser_score": 89,
+      "date": "2010-04-24"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Lakers",
+      "winner_score": 110,
+      "loser_score": 89,
+      "date": "2010-04-25"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 101,
+      "loser_score": 92,
+      "date": "2010-04-25"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Bulls",
+      "winner_score": 121,
+      "loser_score": 98,
+      "date": "2010-04-25"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 92,
+      "loser_score": 89,
+      "date": "2010-04-25"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Nuggets",
+      "winner_score": 117,
+      "loser_score": 106,
+      "date": "2010-04-26"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Bobcats",
+      "winner_score": 99,
+      "loser_score": 90,
+      "date": "2010-04-27"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Hawks",
+      "winner_score": 111,
+      "loser_score": 104,
+      "date": "2010-04-27"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Trail Blazers",
+      "winner_score": 107,
+      "loser_score": 88,
+      "date": "2010-04-27"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 96,
+      "loser_score": 86,
+      "date": "2010-04-27"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Bulls",
+      "winner_score": 96,
+      "loser_score": 94,
+      "date": "2010-04-28"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 103,
+      "loser_score": 81,
+      "date": "2010-04-28"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Thunder",
+      "winner_score": 111,
+      "loser_score": 87,
+      "date": "2010-04-28"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Hawks",
+      "winner_score": 91,
+      "loser_score": 87,
+      "date": "2010-04-29"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Jazz",
+      "winner_score": 116,
+      "loser_score": 102,
+      "date": "2010-04-29"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 97,
+      "loser_score": 87,
+      "date": "2010-04-30"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Trail Blazers",
+      "winner_score": 99,
+      "loser_score": 90,
+      "date": "2010-04-30"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bucks",
+      "winner_score": 83,
+      "loser_score": 69,
+      "date": "2010-04-30"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Thunder",
+      "winner_score": 95,
+      "loser_score": 94,
+      "date": "2010-05-01"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Nuggets",
+      "winner_score": 112,
+      "loser_score": 104,
+      "date": "2010-05-01"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Celtics",
+      "winner_score": 101,
+      "loser_score": 93,
+      "date": "2010-05-02"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bucks",
+      "winner_score": 95,
+      "loser_score": 74,
+      "date": "2010-05-02"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Jazz",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2010-05-02"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Cavaliers",
+      "winner_score": 104,
+      "loser_score": 86,
+      "date": "2010-05-04"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 111,
+      "loser_score": 102,
+      "date": "2010-05-04"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 114,
+      "loser_score": 71,
+      "date": "2010-05-05"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Jazz",
+      "winner_score": 111,
+      "loser_score": 103,
+      "date": "2010-05-05"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 110,
+      "loser_score": 102,
+      "date": "2010-05-06"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 112,
+      "loser_score": 98,
+      "date": "2010-05-07"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Celtics",
+      "winner_score": 124,
+      "loser_score": 95,
+      "date": "2010-05-07"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 110,
+      "loser_score": 96,
+      "date": "2010-05-08"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 105,
+      "loser_score": 75,
+      "date": "2010-05-08"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Jazz",
+      "winner_score": 111,
+      "loser_score": 110,
+      "date": "2010-05-09"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Cavaliers",
+      "winner_score": 97,
+      "loser_score": 87,
+      "date": "2010-05-09"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 107,
+      "loser_score": 101,
+      "date": "2010-05-10"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 98,
+      "loser_score": 84,
+      "date": "2010-05-11"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Jazz",
+      "winner_score": 111,
+      "loser_score": 96,
+      "date": "2010-05-11"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Cavaliers",
+      "winner_score": 120,
+      "loser_score": 88,
+      "date": "2010-05-12"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Cavaliers",
+      "winner_score": 94,
+      "loser_score": 85,
+      "date": "2010-05-14"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Magic",
+      "winner_score": 92,
+      "loser_score": 88,
+      "date": "2010-05-16"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Suns",
+      "winner_score": 128,
+      "loser_score": 107,
+      "date": "2010-05-18"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Magic",
+      "winner_score": 95,
+      "loser_score": 92,
+      "date": "2010-05-19"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Suns",
+      "winner_score": 124,
+      "loser_score": 112,
+      "date": "2010-05-20"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Magic",
+      "winner_score": 94,
+      "loser_score": 71,
+      "date": "2010-05-23"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Lakers",
+      "winner_score": 118,
+      "loser_score": 109,
+      "date": "2010-05-24"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Celtics",
+      "winner_score": 96,
+      "loser_score": 92,
+      "date": "2010-05-25"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Lakers",
+      "winner_score": 115,
+      "loser_score": 106,
+      "date": "2010-05-26"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Celtics",
+      "winner_score": 113,
+      "loser_score": 92,
+      "date": "2010-05-27"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Suns",
+      "winner_score": 103,
+      "loser_score": 101,
+      "date": "2010-05-28"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Magic",
+      "winner_score": 96,
+      "loser_score": 84,
+      "date": "2010-05-29"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Suns",
+      "winner_score": 111,
+      "loser_score": 103,
+      "date": "2010-05-30"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Celtics",
+      "winner_score": 102,
+      "loser_score": 89,
+      "date": "2010-06-04"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Lakers",
+      "winner_score": 103,
+      "loser_score": 94,
+      "date": "2010-06-07"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Celtics",
+      "winner_score": 91,
+      "loser_score": 84,
+      "date": "2010-06-09"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Lakers",
+      "winner_score": 96,
+      "loser_score": 89,
+      "date": "2010-06-11"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Lakers",
+      "winner_score": 92,
+      "loser_score": 86,
+      "date": "2010-06-14"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Celtics",
+      "winner_score": 89,
+      "loser_score": 67,
+      "date": "2010-06-16"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Celtics",
+      "winner_score": 83,
+      "loser_score": 79,
+      "date": "2010-06-18"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Bulls",
+      "t2": "Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jazz",
+      "t2": "Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Suns",
+      "t2": "Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Spurs",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Mavericks"
+    },
+    {
+      "t1": "Hornets",
+      "t2": "Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Heat",
+      "t2": "Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Magic",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Thunder",
+      "t2": "Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wizards",
+      "t2": "Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Raptors",
+      "t2": "Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bulls",
+      "t2": "Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Suns",
+      "t2": "Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Bulls",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Bulls"
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Bucks",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Bucks"
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Heat",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Heat"
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Jazz",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Nuggets"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Thunder",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Thunder"
+    },
+    {
+      "t1": "Magic",
+      "t2": "Bobcats",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Bobcats"
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Suns",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Trail Blazers"
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Celtics",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Cavaliers"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Jazz",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Jazz"
+    },
+    {
+      "t1": "Suns",
+      "t2": "Spurs",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Spurs"
+    },
+    {
+      "t1": "Magic",
+      "t2": "Hawks",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Hawks"
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Magic",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Magic"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Suns",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Suns"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Celtics",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Celtics"
+    }
+  ],
+  "eliminated": [
+    "Mavericks",
+    "Bulls",
+    "Bucks",
+    "Heat",
+    "Nuggets",
+    "Thunder",
+    "Bobcats",
+    "Trail Blazers",
+    "Cavaliers",
+    "Jazz",
+    "Spurs",
+    "Hawks",
+    "Magic",
+    "Suns",
+    "Celtics"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

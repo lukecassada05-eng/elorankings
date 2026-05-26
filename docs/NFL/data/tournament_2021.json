@@ -1,0 +1,236 @@
+{
+  "year": 2021,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Bengals",
+      "loser": "Raiders",
+      "winner_score": 26,
+      "loser_score": 19,
+      "date": "2022-01-15"
+    },
+    {
+      "winner": "Bills",
+      "loser": "Patriots",
+      "winner_score": 47,
+      "loser_score": 17,
+      "date": "2022-01-16"
+    },
+    {
+      "winner": "Buccaneers",
+      "loser": "Eagles",
+      "winner_score": 31,
+      "loser_score": 15,
+      "date": "2022-01-16"
+    },
+    {
+      "winner": "49ers",
+      "loser": "Cowboys",
+      "winner_score": 23,
+      "loser_score": 17,
+      "date": "2022-01-16"
+    },
+    {
+      "winner": "Chiefs",
+      "loser": "Steelers",
+      "winner_score": 42,
+      "loser_score": 21,
+      "date": "2022-01-17"
+    },
+    {
+      "winner": "Rams",
+      "loser": "Cardinals",
+      "winner_score": 34,
+      "loser_score": 11,
+      "date": "2022-01-18"
+    },
+    {
+      "winner": "Bengals",
+      "loser": "Titans",
+      "winner_score": 19,
+      "loser_score": 16,
+      "date": "2022-01-22"
+    },
+    {
+      "winner": "49ers",
+      "loser": "Packers",
+      "winner_score": 13,
+      "loser_score": 10,
+      "date": "2022-01-23"
+    },
+    {
+      "winner": "Rams",
+      "loser": "Buccaneers",
+      "winner_score": 30,
+      "loser_score": 27,
+      "date": "2022-01-23"
+    },
+    {
+      "winner": "Chiefs",
+      "loser": "Bills",
+      "winner_score": 42,
+      "loser_score": 36,
+      "date": "2022-01-23"
+    },
+    {
+      "winner": "Bengals",
+      "loser": "Chiefs",
+      "winner_score": 27,
+      "loser_score": 24,
+      "date": "2022-01-30"
+    },
+    {
+      "winner": "Rams",
+      "loser": "49ers",
+      "winner_score": 20,
+      "loser_score": 17,
+      "date": "2022-01-30"
+    },
+    {
+      "winner": "AFC",
+      "loser": "NFC",
+      "winner_score": 41,
+      "loser_score": 35,
+      "date": "2022-02-06"
+    },
+    {
+      "winner": "Rams",
+      "loser": "Bengals",
+      "winner_score": 23,
+      "loser_score": 20,
+      "date": "2022-02-13"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Bengals",
+      "t2": "Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Raiders"
+    },
+    {
+      "t1": "Bills",
+      "t2": "Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Patriots"
+    },
+    {
+      "t1": "Buccaneers",
+      "t2": "Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eagles"
+    },
+    {
+      "t1": "49ers",
+      "t2": "Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cowboys"
+    },
+    {
+      "t1": "Chiefs",
+      "t2": "Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Steelers"
+    },
+    {
+      "t1": "Rams",
+      "t2": "Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cardinals"
+    },
+    {
+      "t1": "Bengals",
+      "t2": "Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Titans"
+    },
+    {
+      "t1": "49ers",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Rams",
+      "t2": "Buccaneers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Buccaneers"
+    },
+    {
+      "t1": "Chiefs",
+      "t2": "Bills",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bills"
+    },
+    {
+      "t1": "Bengals",
+      "t2": "Chiefs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chiefs"
+    },
+    {
+      "t1": "Rams",
+      "t2": "49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "49ers"
+    },
+    {
+      "t1": "AFC",
+      "t2": "NFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NFC"
+    },
+    {
+      "t1": "Rams",
+      "t2": "Bengals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bengals"
+    }
+  ],
+  "eliminated": [
+    "Raiders",
+    "Patriots",
+    "Eagles",
+    "Cowboys",
+    "Steelers",
+    "Cardinals",
+    "Titans",
+    "Packers",
+    "Buccaneers",
+    "Bills",
+    "Chiefs",
+    "49ers",
+    "NFC",
+    "Bengals"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

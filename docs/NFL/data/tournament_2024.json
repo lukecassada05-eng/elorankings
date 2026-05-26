@@ -1,0 +1,236 @@
+{
+  "year": 2024,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Texans",
+      "loser": "Chargers",
+      "winner_score": 32,
+      "loser_score": 12,
+      "date": "2025-01-11"
+    },
+    {
+      "winner": "Ravens",
+      "loser": "Steelers",
+      "winner_score": 28,
+      "loser_score": 14,
+      "date": "2025-01-12"
+    },
+    {
+      "winner": "Bills",
+      "loser": "Broncos",
+      "winner_score": 31,
+      "loser_score": 7,
+      "date": "2025-01-12"
+    },
+    {
+      "winner": "Eagles",
+      "loser": "Packers",
+      "winner_score": 22,
+      "loser_score": 10,
+      "date": "2025-01-12"
+    },
+    {
+      "winner": "Commanders",
+      "loser": "Buccaneers",
+      "winner_score": 23,
+      "loser_score": 20,
+      "date": "2025-01-13"
+    },
+    {
+      "winner": "Rams",
+      "loser": "Vikings",
+      "winner_score": 27,
+      "loser_score": 9,
+      "date": "2025-01-14"
+    },
+    {
+      "winner": "Chiefs",
+      "loser": "Texans",
+      "winner_score": 23,
+      "loser_score": 14,
+      "date": "2025-01-18"
+    },
+    {
+      "winner": "Commanders",
+      "loser": "Lions",
+      "winner_score": 45,
+      "loser_score": 31,
+      "date": "2025-01-19"
+    },
+    {
+      "winner": "Eagles",
+      "loser": "Rams",
+      "winner_score": 28,
+      "loser_score": 22,
+      "date": "2025-01-19"
+    },
+    {
+      "winner": "Bills",
+      "loser": "Ravens",
+      "winner_score": 27,
+      "loser_score": 25,
+      "date": "2025-01-19"
+    },
+    {
+      "winner": "Eagles",
+      "loser": "Commanders",
+      "winner_score": 55,
+      "loser_score": 23,
+      "date": "2025-01-26"
+    },
+    {
+      "winner": "Chiefs",
+      "loser": "Bills",
+      "winner_score": 32,
+      "loser_score": 29,
+      "date": "2025-01-26"
+    },
+    {
+      "winner": "NFC",
+      "loser": "AFC",
+      "winner_score": 76,
+      "loser_score": 63,
+      "date": "2025-02-02"
+    },
+    {
+      "winner": "Eagles",
+      "loser": "Chiefs",
+      "winner_score": 40,
+      "loser_score": 22,
+      "date": "2025-02-09"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Texans",
+      "t2": "Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chargers"
+    },
+    {
+      "t1": "Ravens",
+      "t2": "Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Steelers"
+    },
+    {
+      "t1": "Bills",
+      "t2": "Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Broncos"
+    },
+    {
+      "t1": "Eagles",
+      "t2": "Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Packers"
+    },
+    {
+      "t1": "Commanders",
+      "t2": "Buccaneers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Buccaneers"
+    },
+    {
+      "t1": "Rams",
+      "t2": "Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vikings"
+    },
+    {
+      "t1": "Chiefs",
+      "t2": "Texans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texans"
+    },
+    {
+      "t1": "Commanders",
+      "t2": "Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Lions"
+    },
+    {
+      "t1": "Eagles",
+      "t2": "Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rams"
+    },
+    {
+      "t1": "Bills",
+      "t2": "Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ravens"
+    },
+    {
+      "t1": "Eagles",
+      "t2": "Commanders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Commanders"
+    },
+    {
+      "t1": "Chiefs",
+      "t2": "Bills",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bills"
+    },
+    {
+      "t1": "NFC",
+      "t2": "AFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "AFC"
+    },
+    {
+      "t1": "Eagles",
+      "t2": "Chiefs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chiefs"
+    }
+  ],
+  "eliminated": [
+    "Chargers",
+    "Steelers",
+    "Broncos",
+    "Packers",
+    "Buccaneers",
+    "Vikings",
+    "Texans",
+    "Lions",
+    "Rams",
+    "Ravens",
+    "Commanders",
+    "Bills",
+    "AFC",
+    "Chiefs"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

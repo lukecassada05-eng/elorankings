@@ -1,0 +1,867 @@
+{
+  "year": 2009,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Cardinals",
+      "loser": "Reds",
+      "winner_score": 13,
+      "loser_score": 0,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Tigers",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Brewers",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Diamondbacks",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Angels",
+      "winner_score": 11,
+      "loser_score": 3,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Braves",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Astros",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Rays",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Indians",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2009-10-01"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Athletics",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Cubs",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Blue Jays",
+      "winner_score": 13,
+      "loser_score": 7,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "White Sox",
+      "loser": "Tigers",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Phillies",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Indians",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Pirates",
+      "loser": "Reds",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Astros",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Braves",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Yankees",
+      "winner_score": 13,
+      "loser_score": 4,
+      "date": "2009-10-02"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Royals",
+      "winner_score": 10,
+      "loser_score": 7,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cardinals",
+      "winner_score": 12,
+      "loser_score": 6,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Athletics",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Padres",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Mariners",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Dodgers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Diamondbacks",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Astros",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cardinals",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Athletics",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Royals",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Braves",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Marlins",
+      "loser": "Phillies",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Blue Jays",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "White Sox",
+      "loser": "Tigers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Rays",
+      "loser": "Yankees",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Indians",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Reds",
+      "loser": "Pirates",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2009-10-03"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Rangers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Giants",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rockies",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "White Sox",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Reds",
+      "loser": "Pirates",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Mets",
+      "loser": "Astros",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Nationals",
+      "loser": "Braves",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Orioles",
+      "loser": "Blue Jays",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Red Sox",
+      "loser": "Indians",
+      "winner_score": 12,
+      "loser_score": 7,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Marlins",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Rays",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Royals",
+      "winner_score": 13,
+      "loser_score": 4,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cardinals",
+      "winner_score": 9,
+      "loser_score": 7,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Diamondbacks",
+      "loser": "Cubs",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Athletics",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Giants",
+      "loser": "Padres",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Rangers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Rockies",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2009-10-04"
+    },
+    {
+      "winner": "Twins",
+      "loser": "Tigers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2009-10-06"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Rockies",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2009-10-07"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Twins",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2009-10-07"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cardinals",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2009-10-08"
+    },
+    {
+      "winner": "Rockies",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2009-10-08"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cardinals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2009-10-08"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Red Sox",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2009-10-09"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Twins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2009-10-09"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2009-10-10"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Cardinals",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2009-10-10"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Red Sox",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2009-10-11"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Twins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2009-10-11"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Rockies",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2009-10-12"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Rockies",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2009-10-12"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2009-10-16"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Phillies",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2009-10-16"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Angels",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2009-10-16"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Angels",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2009-10-17"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 11,
+      "loser_score": 0,
+      "date": "2009-10-19"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Yankees",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2009-10-19"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2009-10-20"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Angels",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2009-10-20"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2009-10-22"
+    },
+    {
+      "winner": "Angels",
+      "loser": "Yankees",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2009-10-22"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Angels",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2009-10-26"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Yankees",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2009-10-28"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Phillies",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2009-10-29"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Phillies",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2009-10-31"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Phillies",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2009-11-02"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Yankees",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2009-11-03"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Phillies",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2009-11-05"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Cardinals",
+      "t2": "Reds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Twins",
+      "t2": "Tigers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rockies",
+      "t2": "Brewers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Giants",
+      "t2": "Diamondbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Angels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nationals",
+      "t2": "Braves",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Braves"
+    },
+    {
+      "t1": "Astros",
+      "t2": "Phillies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Orioles",
+      "t2": "Rays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Red Sox",
+      "t2": "Indians",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Indians"
+    },
+    {
+      "t1": "Mariners",
+      "t2": "Athletics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Diamondbacks",
+      "t2": "Cubs",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Orioles",
+      "t2": "Blue Jays",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Blue Jays"
+    },
+    {
+      "t1": "White Sox",
+      "t2": "Tigers",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Marlins",
+      "t2": "Phillies",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Pirates",
+      "t2": "Reds",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mets",
+      "t2": "Astros",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Astros"
+    },
+    {
+      "t1": "Rays",
+      "t2": "Yankees",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Twins",
+      "t2": "Royals",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Royals"
+    },
+    {
+      "t1": "Brewers",
+      "t2": "Cardinals",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Cardinals"
+    },
+    {
+      "t1": "Angels",
+      "t2": "Athletics",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Athletics"
+    },
+    {
+      "t1": "Giants",
+      "t2": "Padres",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Mariners",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rockies",
+      "t2": "Dodgers",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Rockies",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Rockies"
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Twins",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Twins"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Cardinals",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Cardinals"
+    },
+    {
+      "t1": "Angels",
+      "t2": "Red Sox",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Red Sox"
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Dodgers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Dodgers"
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Angels",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Angels"
+    },
+    {
+      "t1": "Phillies",
+      "t2": "Yankees",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Phillies"
+    }
+  ],
+  "eliminated": [
+    "Braves",
+    "Indians",
+    "Blue Jays",
+    "Astros",
+    "Royals",
+    "Cardinals",
+    "Athletics",
+    "Rockies",
+    "Twins",
+    "Red Sox",
+    "Dodgers",
+    "Angels",
+    "Phillies"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

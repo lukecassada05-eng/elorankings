@@ -1,0 +1,1172 @@
+{
+  "year": 2014,
+  "sport": "NHL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Capitals",
+      "loser": "Blackhawks",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2014-04-11"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Red Wings",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-04-11"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Blue Jackets",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-11"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Devils",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-11"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2014-04-12"
+    },
+    {
+      "winner": "Jets",
+      "loser": "Flames",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2014-04-12"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Avalanche",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2014-04-12"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Sabres",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2014-04-12"
+    },
+    {
+      "winner": "Flyers",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-12"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Rangers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2014-04-12"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Maple Leafs",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2014-04-12"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Panthers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-12"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Blackhawks",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Coyotes",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Oilers",
+      "loser": "Canucks",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Kings",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Red Wings",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Devils",
+      "loser": "Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Hurricanes",
+      "loser": "Flyers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Capitals",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Sabres",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Senators",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-13"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Wild",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Avalanche",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Canucks",
+      "loser": "Flames",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Coyotes",
+      "loser": "Stars",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-04-14"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Lightning",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2014-04-16"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Blue Jackets",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-16"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Stars",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Flyers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2014-04-17"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Blackhawks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-18"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Wild",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2014-04-18"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Kings",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2014-04-18"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Lightning",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2014-04-18"
+    },
+    {
+      "winner": "Red Wings",
+      "loser": "Bruins",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2014-04-18"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-19"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Blackhawks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-19"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-19"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Wild",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-04-20"
+    },
+    {
+      "winner": "Flyers",
+      "loser": "Rangers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-04-20"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Red Wings",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2014-04-20"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Lightning",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-20"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Kings",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2014-04-21"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Blue Jackets",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-21"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Avalanche",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2014-04-21"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Blues",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2014-04-22"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2014-04-22"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Lightning",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-22"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Red Wings",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2014-04-22"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Flyers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2014-04-23"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Kings",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-23"
+    },
+    {
+      "winner": "Blue Jackets",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-23"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Ducks",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-04-24"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Blues",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-24"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Red Wings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-25"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Avalanche",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-04-25"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Sharks",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2014-04-25"
+    },
+    {
+      "winner": "Flyers",
+      "loser": "Rangers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-04-25"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Stars",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Red Wings",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Blue Jackets",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2014-04-26"
+    },
+    {
+      "winner": "Avalanche",
+      "loser": "Wild",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-27"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Sharks",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2014-04-27"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Flyers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-04-27"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Blues",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2014-04-27"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Stars",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2014-04-28"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Blue Jackets",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-04-28"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Avalanche",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2014-04-29"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Sharks",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2014-04-29"
+    },
+    {
+      "winner": "Flyers",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2014-04-29"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Flyers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-04-30"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Avalanche",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2014-05-01"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Sharks",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2014-05-01"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-05-01"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-05-02"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Wild",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2014-05-03"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Canadiens",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2014-05-03"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-05-04"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Wild",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2014-05-04"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2014-05-04"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Rangers",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2014-05-05"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2014-05-06"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-05-06"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Blackhawks",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2014-05-07"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Rangers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-05-07"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Canadiens",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2014-05-08"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Kings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-05-09"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Penguins",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2014-05-09"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Blackhawks",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-05-10"
+    },
+    {
+      "winner": "Bruins",
+      "loser": "Canadiens",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2014-05-10"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Kings",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2014-05-11"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2014-05-11"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Wild",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-05-12"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Bruins",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2014-05-12"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Kings",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-05-13"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Penguins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-05-13"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Wild",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-05-14"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Bruins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2014-05-14"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Ducks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-05-15"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Ducks",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2014-05-17"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Canadiens",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2014-05-17"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Kings",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2014-05-18"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Canadiens",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2014-05-20"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Blackhawks",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2014-05-22"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-05-23"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Blackhawks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-05-25"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Canadiens",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-05-26"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Blackhawks",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2014-05-27"
+    },
+    {
+      "winner": "Canadiens",
+      "loser": "Rangers",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2014-05-28"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Kings",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2014-05-29"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Canadiens",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2014-05-30"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Kings",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2014-05-31"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Blackhawks",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2014-06-02"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-06-05"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2014-06-07"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2014-06-10"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Kings",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2014-06-12"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-06-14"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Capitals",
+      "t2": "Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hurricanes",
+      "t2": "Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lightning",
+      "t2": "Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Islanders",
+      "t2": "Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Stars",
+      "t2": "Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jets",
+      "t2": "Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Sharks",
+      "t2": "Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bruins",
+      "t2": "Sabres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Flyers",
+      "t2": "Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Canadiens",
+      "t2": "Rangers",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Canadiens"
+    },
+    {
+      "t1": "Senators",
+      "t2": "Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Blue Jackets",
+      "t2": "Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Predators",
+      "t2": "Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Sharks",
+      "t2": "Coyotes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Oilers",
+      "t2": "Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Ducks",
+      "t2": "Kings",
+      "w1": 4,
+      "w2": 4,
+      "done": true,
+      "loser": "Kings"
+    },
+    {
+      "t1": "Red Wings",
+      "t2": "Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Devils",
+      "t2": "Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Hurricanes",
+      "t2": "Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Lightning",
+      "t2": "Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Islanders",
+      "t2": "Sabres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Senators",
+      "t2": "Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Predators",
+      "t2": "Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Ducks",
+      "t2": "Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Canucks",
+      "t2": "Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Coyotes",
+      "t2": "Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Canadiens",
+      "t2": "Lightning",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Lightning"
+    },
+    {
+      "t1": "Penguins",
+      "t2": "Blue Jackets",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Blue Jackets"
+    },
+    {
+      "t1": "Ducks",
+      "t2": "Stars",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Stars"
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Flyers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Flyers"
+    },
+    {
+      "t1": "Blues",
+      "t2": "Blackhawks",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Blues"
+    },
+    {
+      "t1": "Avalanche",
+      "t2": "Wild",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Avalanche"
+    },
+    {
+      "t1": "Sharks",
+      "t2": "Kings",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Sharks"
+    },
+    {
+      "t1": "Red Wings",
+      "t2": "Bruins",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Red Wings"
+    },
+    {
+      "t1": "Canadiens",
+      "t2": "Bruins",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Bruins"
+    },
+    {
+      "t1": "Rangers",
+      "t2": "Penguins",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Penguins"
+    },
+    {
+      "t1": "Blackhawks",
+      "t2": "Wild",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Wild"
+    },
+    {
+      "t1": "Blackhawks",
+      "t2": "Kings",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Blackhawks"
+    },
+    {
+      "t1": "Kings",
+      "t2": "Rangers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Rangers"
+    }
+  ],
+  "eliminated": [
+    "Canadiens",
+    "Kings",
+    "Lightning",
+    "Blue Jackets",
+    "Stars",
+    "Flyers",
+    "Blues",
+    "Avalanche",
+    "Sharks",
+    "Red Wings",
+    "Bruins",
+    "Penguins",
+    "Wild",
+    "Blackhawks",
+    "Rangers"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

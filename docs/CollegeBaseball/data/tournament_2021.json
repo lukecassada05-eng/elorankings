@@ -1,0 +1,3319 @@
+{
+  "year": 2021,
+  "sport": "CBASE",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Fairfield",
+      "loser": "Canisius",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Sam Houston",
+      "loser": "Texas A&M-CC",
+      "winner_score": 14,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "TCU",
+      "loser": "Texas Tech",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Stony Brook",
+      "loser": "UAlbany",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Tennessee",
+      "loser": "Alabama",
+      "winner_score": 11,
+      "loser_score": 0,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Charleston",
+      "loser": "William & Mary",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Campbell",
+      "loser": "SC Upstate",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "VCU",
+      "loser": "Rhode Island",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Liberty",
+      "loser": "Kennesaw St",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Virginia",
+      "loser": "Notre Dame",
+      "winner_score": 14,
+      "loser_score": 1,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "UT Arlington",
+      "loser": "Troy",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "S Dakota St",
+      "loser": "Omaha",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Murray St",
+      "loser": "Morehead St",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Dallas Baptist",
+      "loser": "Bradley",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Sacred Heart",
+      "loser": "Long Island",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Rider",
+      "loser": "Fairfield",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "SE Louisiana",
+      "loser": "New Orleans",
+      "winner_score": 15,
+      "loser_score": 13,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "East Carolina",
+      "loser": "Memphis",
+      "winner_score": 12,
+      "loser_score": 0,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "NJIT",
+      "loser": "Maine",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Kansas St",
+      "loser": "Texas Tech",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Ole Miss",
+      "loser": "Vanderbilt",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Seattle U",
+      "loser": "New Mexico St",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Bryant",
+      "loser": "C Connecticut",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "SE Missouri",
+      "loser": "Murray St",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Wright St",
+      "loser": "UIC",
+      "winner_score": 15,
+      "loser_score": 4,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "GA Southern",
+      "loser": "UL Monroe",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Charleston",
+      "loser": "Elon",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Presbyterian",
+      "loser": "Gardner-Webb",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Indiana St",
+      "loser": "S Illinois",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Jacksonville",
+      "loser": "North Florida",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Florida St",
+      "loser": "Miami",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Dayton",
+      "loser": "Rhode Island",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Wofford",
+      "loser": "Mercer",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "N Dakota St",
+      "loser": "Oral Roberts",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "FAU",
+      "loser": "MTSU",
+      "winner_score": 14,
+      "loser_score": 8,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Tulane",
+      "loser": "Wichita St",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Austin Peay",
+      "loser": "Morehead St",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Sam Houston",
+      "loser": "Abilene Chrstn",
+      "winner_score": 14,
+      "loser_score": 12,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "UT Rio Grande",
+      "loser": "Seattle U",
+      "winner_score": 19,
+      "loser_score": 9,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "UC Irvine",
+      "loser": "Fullerton",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Oklahoma St",
+      "loser": "West Virginia",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Milwaukee",
+      "loser": "UIC",
+      "winner_score": 14,
+      "loser_score": 11,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "UNC Wilmington",
+      "loser": "Northeastern",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Liberty",
+      "loser": "North Florida",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Louisiana Tech",
+      "loser": "Western KY",
+      "winner_score": 14,
+      "loser_score": 4,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "S Illinois",
+      "loser": "Valparaiso",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "Campbell",
+      "loser": "Gardner-Webb",
+      "winner_score": 13,
+      "loser_score": 9,
+      "date": "2021-05-28"
+    },
+    {
+      "winner": "UCLA",
+      "loser": "Arizona St",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "McNeese",
+      "loser": "SE Louisiana",
+      "winner_score": 18,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Utah Tech",
+      "loser": "Arizona",
+      "winner_score": 11,
+      "loser_score": 9,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Oral Roberts",
+      "loser": "S Dakota St",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "North Carolina",
+      "loser": "NC State",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "San Diego",
+      "loser": "Gonzaga",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "California",
+      "loser": "Oregon",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Stanford",
+      "loser": "Oregon St",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Texas",
+      "loser": "West Virginia",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Grand Canyon",
+      "loser": "Sacramento St",
+      "winner_score": 11,
+      "loser_score": 0,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Xavier",
+      "loser": "Seton Hall",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "East Carolina",
+      "loser": "UCF",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Old Dominion",
+      "loser": "FAU",
+      "winner_score": 13,
+      "loser_score": 5,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Kansas St",
+      "loser": "TCU",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Presbyterian",
+      "loser": "Campbell",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Dallas Baptist",
+      "loser": "Indiana St",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "C Connecticut",
+      "loser": "Sacred Heart",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "UConn",
+      "loser": "Creighton",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Tulane",
+      "loser": "South Florida",
+      "winner_score": 16,
+      "loser_score": 6,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Duke",
+      "loser": "Virginia",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Tennessee",
+      "loser": "Florida",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Northeastern",
+      "loser": "Charleston",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Murray St",
+      "loser": "Austin Peay",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Wright St",
+      "loser": "Milwaukee",
+      "winner_score": 21,
+      "loser_score": 3,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Jacksonville",
+      "loser": "Liberty",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "South Alabama",
+      "loser": "UT Arlington",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Stony Brook",
+      "loser": "Maine",
+      "winner_score": 15,
+      "loser_score": 9,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Louisiana Tech",
+      "loser": "Southern Miss",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Oklahoma St",
+      "loser": "Texas",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Sam Houston",
+      "loser": "Abilene Chrstn",
+      "winner_score": 15,
+      "loser_score": 13,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Samford",
+      "loser": "W Carolina",
+      "winner_score": 19,
+      "loser_score": 7,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Oral Roberts",
+      "loser": "N Dakota St",
+      "winner_score": 15,
+      "loser_score": 5,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "UCLA",
+      "loser": "Arizona St",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "San Diego",
+      "loser": "Gonzaga",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Oregon",
+      "loser": "California",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "UC Irvine",
+      "loser": "Fullerton",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Oregon St",
+      "loser": "Stanford",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Indiana St",
+      "loser": "S Illinois",
+      "winner_score": 9,
+      "loser_score": 7,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Xavier",
+      "loser": "Creighton",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Arkansas",
+      "loser": "Ole Miss",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "VCU",
+      "loser": "Dayton",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "NC State",
+      "loser": "Georgia Tech",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Northeastern",
+      "loser": "UNC Wilmington",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "UT Rio Grande",
+      "loser": "Sacramento St",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "GA Southern",
+      "loser": "Louisiana",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "W Carolina",
+      "loser": "Wofford",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "UCF",
+      "loser": "East Carolina",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "TCU",
+      "loser": "Kansas St",
+      "winner_score": 17,
+      "loser_score": 7,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "Murray St",
+      "loser": "SE Missouri",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "UC Irvine",
+      "loser": "Fullerton",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "N Dakota St",
+      "loser": "Oral Roberts",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "McNeese",
+      "loser": "Sam Houston",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-29"
+    },
+    {
+      "winner": "C Connecticut",
+      "loser": "Bryant",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Louisiana Tech",
+      "loser": "Southern Miss",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Grand Canyon",
+      "loser": "UT Rio Grande",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "South Florida",
+      "loser": "Tulane",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Arizona",
+      "loser": "Utah Tech",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Arkansas",
+      "loser": "Tennessee",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "South Florida",
+      "loser": "UCF",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Duke",
+      "loser": "NC State",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Samford",
+      "loser": "W Carolina",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Dallas Baptist",
+      "loser": "Indiana St",
+      "winner_score": 12,
+      "loser_score": 8,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "SE Missouri",
+      "loser": "Murray St",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Northeastern",
+      "loser": "UNC Wilmington",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Xavier",
+      "loser": "UConn",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Old Dominion",
+      "loser": "Louisiana Tech",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "South Alabama",
+      "loser": "GA Southern",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "UC Irvine",
+      "loser": "Fullerton",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "C Connecticut",
+      "loser": "Bryant",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "UConn",
+      "loser": "Xavier",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "TCU",
+      "loser": "Oklahoma St",
+      "winner_score": 10,
+      "loser_score": 7,
+      "date": "2021-05-30"
+    },
+    {
+      "winner": "Liberty",
+      "loser": "Duke",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "South Florida",
+      "loser": "Florida",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Texas Tech",
+      "loser": "Army",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "South Carolina",
+      "loser": "Virginia",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "East Carolina",
+      "loser": "Norfolk St",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Notre Dame",
+      "loser": "C Michigan",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Georgia Tech",
+      "loser": "Indiana St",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Texas",
+      "loser": "Southern",
+      "winner_score": 11,
+      "loser_score": 0,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Dallas Baptist",
+      "loser": "Oregon St",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "NC State",
+      "loser": "Alabama",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Florida St",
+      "loser": "Southern Miss",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Mississippi St",
+      "loser": "Samford",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Arkansas",
+      "loser": "NJIT",
+      "winner_score": 13,
+      "loser_score": 8,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Stanford",
+      "loser": "N Dakota St",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Santa Barbara",
+      "loser": "Oklahoma St",
+      "winner_score": 14,
+      "loser_score": 4,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Oregon",
+      "loser": "C Connecticut",
+      "winner_score": 13,
+      "loser_score": 10,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Tennessee",
+      "loser": "Wright St",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Charlotte",
+      "loser": "Maryland",
+      "winner_score": 13,
+      "loser_score": 10,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Miami",
+      "loser": "South Alabama",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Vanderbilt",
+      "loser": "Presbyterian",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "North Carolina",
+      "loser": "UCLA",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "UConn",
+      "loser": "Michigan",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Old Dominion",
+      "loser": "Jacksonville",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "TCU",
+      "loser": "McNeese",
+      "winner_score": 12,
+      "loser_score": 4,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Louisiana Tech",
+      "loser": "Rider",
+      "winner_score": 18,
+      "loser_score": 2,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "Arizona St",
+      "loser": "Fairfield",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2021-06-04"
+    },
+    {
+      "winner": "VCU",
+      "loser": "Campbell",
+      "winner_score": 19,
+      "loser_score": 4,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Ole Miss",
+      "loser": "SE Missouri",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Nebraska",
+      "loser": "Northeastern",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "UC Irvine",
+      "loser": "Nevada",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Gonzaga",
+      "loser": "LSU",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Arizona",
+      "loser": "Grand Canyon",
+      "winner_score": 12,
+      "loser_score": 6,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Duke",
+      "loser": "Wright St",
+      "winner_score": 14,
+      "loser_score": 6,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "South Alabama",
+      "loser": "Florida",
+      "winner_score": 19,
+      "loser_score": 1,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Virginia",
+      "loser": "Jacksonville",
+      "winner_score": 13,
+      "loser_score": 8,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "C Michigan",
+      "loser": "Michigan",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Southern Miss",
+      "loser": "SE Missouri",
+      "winner_score": 21,
+      "loser_score": 0,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Oregon St",
+      "loser": "McNeese",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Maryland",
+      "loser": "Norfolk St",
+      "winner_score": 16,
+      "loser_score": 0,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Fairfield",
+      "loser": "Southern",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Indiana St",
+      "loser": "Presbyterian",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "UCLA",
+      "loser": "Army",
+      "winner_score": 13,
+      "loser_score": 6,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Campbell",
+      "loser": "Samford",
+      "winner_score": 16,
+      "loser_score": 13,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "NJIT",
+      "loser": "Northeastern",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Alabama",
+      "loser": "Rider",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "LSU",
+      "loser": "C Connecticut",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Oklahoma St",
+      "loser": "Grand Canyon",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "N Dakota St",
+      "loser": "Nevada",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Notre Dame",
+      "loser": "UConn",
+      "winner_score": 26,
+      "loser_score": 3,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Tennessee",
+      "loser": "Liberty",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "East Carolina",
+      "loser": "Charlotte",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "South Florida",
+      "loser": "Miami",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Vanderbilt",
+      "loser": "Georgia Tech",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Ole Miss",
+      "loser": "Florida St",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2021-06-05"
+    },
+    {
+      "winner": "Old Dominion",
+      "loser": "South Carolina",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Dallas Baptist",
+      "loser": "TCU",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "NC State",
+      "loser": "Louisiana Tech",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Texas Tech",
+      "loser": "North Carolina",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Stanford",
+      "loser": "UC Irvine",
+      "winner_score": 12,
+      "loser_score": 4,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Arkansas",
+      "loser": "Nebraska",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Texas",
+      "loser": "Arizona St",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Mississippi St",
+      "loser": "VCU",
+      "winner_score": 16,
+      "loser_score": 4,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Oregon",
+      "loser": "Gonzaga",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Arizona",
+      "loser": "Santa Barbara",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Virginia",
+      "loser": "South Carolina",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "South Alabama",
+      "loser": "Miami",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "C Michigan",
+      "loser": "UConn",
+      "winner_score": 14,
+      "loser_score": 9,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Maryland",
+      "loser": "Charlotte",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Fairfield",
+      "loser": "Arizona St",
+      "winner_score": 9,
+      "loser_score": 7,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Oregon St",
+      "loser": "TCU",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Liberty",
+      "loser": "Duke",
+      "winner_score": 15,
+      "loser_score": 4,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Southern Miss",
+      "loser": "Florida St",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Louisiana Tech",
+      "loser": "Alabama",
+      "winner_score": 10,
+      "loser_score": 8,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "UCLA",
+      "loser": "North Carolina",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Santa Barbara",
+      "loser": "Oklahoma St",
+      "winner_score": 13,
+      "loser_score": 3,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Nebraska",
+      "loser": "NJIT",
+      "winner_score": 18,
+      "loser_score": 4,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Georgia Tech",
+      "loser": "Indiana St",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "UC Irvine",
+      "loser": "N Dakota St",
+      "winner_score": 18,
+      "loser_score": 3,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Notre Dame",
+      "loser": "C Michigan",
+      "winner_score": 14,
+      "loser_score": 2,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "LSU",
+      "loser": "Gonzaga",
+      "winner_score": 9,
+      "loser_score": 4,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "South Alabama",
+      "loser": "South Florida",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Tennessee",
+      "loser": "Liberty",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Oregon St",
+      "loser": "Dallas Baptist",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "NC State",
+      "loser": "Louisiana Tech",
+      "winner_score": 14,
+      "loser_score": 7,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Southern Miss",
+      "loser": "Ole Miss",
+      "winner_score": 10,
+      "loser_score": 7,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Virginia",
+      "loser": "Old Dominion",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Campbell",
+      "loser": "VCU",
+      "winner_score": 19,
+      "loser_score": 10,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "Texas Tech",
+      "loser": "UCLA",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2021-06-06"
+    },
+    {
+      "winner": "East Carolina",
+      "loser": "Maryland",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Texas",
+      "loser": "Fairfield",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Nebraska",
+      "loser": "Arkansas",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "UC Irvine",
+      "loser": "Stanford",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Vanderbilt",
+      "loser": "Georgia Tech",
+      "winner_score": 14,
+      "loser_score": 11,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Arizona",
+      "loser": "Santa Barbara",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "LSU",
+      "loser": "Oregon",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Mississippi St",
+      "loser": "Campbell",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Ole Miss",
+      "loser": "Southern Miss",
+      "winner_score": 12,
+      "loser_score": 9,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Dallas Baptist",
+      "loser": "Oregon St",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "South Florida",
+      "loser": "South Alabama",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Arkansas",
+      "loser": "Nebraska",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2021-06-07"
+    },
+    {
+      "winner": "Stanford",
+      "loser": "UC Irvine",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2021-06-08"
+    },
+    {
+      "winner": "LSU",
+      "loser": "Oregon",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2021-06-08"
+    },
+    {
+      "winner": "Virginia",
+      "loser": "Old Dominion",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2021-06-08"
+    },
+    {
+      "winner": "Vanderbilt",
+      "loser": "East Carolina",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2021-06-11"
+    },
+    {
+      "winner": "Stanford",
+      "loser": "Texas Tech",
+      "winner_score": 15,
+      "loser_score": 3,
+      "date": "2021-06-11"
+    },
+    {
+      "winner": "Arkansas",
+      "loser": "NC State",
+      "winner_score": 21,
+      "loser_score": 2,
+      "date": "2021-06-11"
+    },
+    {
+      "winner": "Arizona",
+      "loser": "Ole Miss",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2021-06-12"
+    },
+    {
+      "winner": "Vanderbilt",
+      "loser": "East Carolina",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2021-06-12"
+    },
+    {
+      "winner": "Dallas Baptist",
+      "loser": "Virginia",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-06-12"
+    },
+    {
+      "winner": "Mississippi St",
+      "loser": "Notre Dame",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2021-06-12"
+    },
+    {
+      "winner": "NC State",
+      "loser": "Arkansas",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-06-12"
+    },
+    {
+      "winner": "Stanford",
+      "loser": "Texas Tech",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2021-06-12"
+    },
+    {
+      "winner": "Tennessee",
+      "loser": "LSU",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2021-06-12"
+    },
+    {
+      "winner": "Texas",
+      "loser": "South Florida",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2021-06-13"
+    },
+    {
+      "winner": "Ole Miss",
+      "loser": "Arizona",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2021-06-13"
+    },
+    {
+      "winner": "Virginia",
+      "loser": "Dallas Baptist",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2021-06-13"
+    },
+    {
+      "winner": "Tennessee",
+      "loser": "LSU",
+      "winner_score": 15,
+      "loser_score": 6,
+      "date": "2021-06-13"
+    },
+    {
+      "winner": "NC State",
+      "loser": "Arkansas",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-06-13"
+    },
+    {
+      "winner": "Notre Dame",
+      "loser": "Mississippi St",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2021-06-13"
+    },
+    {
+      "winner": "Texas",
+      "loser": "South Florida",
+      "winner_score": 12,
+      "loser_score": 4,
+      "date": "2021-06-14"
+    },
+    {
+      "winner": "Arizona",
+      "loser": "Ole Miss",
+      "winner_score": 16,
+      "loser_score": 3,
+      "date": "2021-06-14"
+    },
+    {
+      "winner": "Virginia",
+      "loser": "Dallas Baptist",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-06-14"
+    },
+    {
+      "winner": "Mississippi St",
+      "loser": "Notre Dame",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2021-06-14"
+    },
+    {
+      "winner": "NC State",
+      "loser": "Stanford",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2021-06-19"
+    },
+    {
+      "winner": "Vanderbilt",
+      "loser": "Arizona",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2021-06-19"
+    },
+    {
+      "winner": "Virginia",
+      "loser": "Tennessee",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2021-06-20"
+    },
+    {
+      "winner": "Mississippi St",
+      "loser": "Texas",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-06-20"
+    },
+    {
+      "winner": "Stanford",
+      "loser": "Arizona",
+      "winner_score": 14,
+      "loser_score": 5,
+      "date": "2021-06-21"
+    },
+    {
+      "winner": "NC State",
+      "loser": "Vanderbilt",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2021-06-21"
+    },
+    {
+      "winner": "Texas",
+      "loser": "Tennessee",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2021-06-22"
+    },
+    {
+      "winner": "Mississippi St",
+      "loser": "Virginia",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-06-22"
+    },
+    {
+      "winner": "Vanderbilt",
+      "loser": "Stanford",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-06-23"
+    },
+    {
+      "winner": "Texas",
+      "loser": "Virginia",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2021-06-24"
+    },
+    {
+      "winner": "Vanderbilt",
+      "loser": "NC State",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2021-06-25"
+    },
+    {
+      "winner": "Texas",
+      "loser": "Mississippi St",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-06-25"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Fairfield",
+      "t2": "Canisius",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Sam Houston",
+      "t2": "Texas A&M-CC",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "TCU",
+      "t2": "Texas Tech",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Stony Brook",
+      "t2": "UAlbany",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Tennessee",
+      "t2": "Alabama",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Charleston",
+      "t2": "William & Mary",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Campbell",
+      "t2": "SC Upstate",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "VCU",
+      "t2": "Rhode Island",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Liberty",
+      "t2": "Kennesaw St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Virginia",
+      "t2": "Notre Dame",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UT Arlington",
+      "t2": "Troy",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "S Dakota St",
+      "t2": "Omaha",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Murray St",
+      "t2": "Morehead St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dallas Baptist",
+      "t2": "Bradley",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Sacred Heart",
+      "t2": "Long Island",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Rider",
+      "t2": "Fairfield",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "SE Louisiana",
+      "t2": "New Orleans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "East Carolina",
+      "t2": "Memphis",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "NJIT",
+      "t2": "Maine",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kansas St",
+      "t2": "Texas Tech",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Ole Miss",
+      "t2": "Vanderbilt",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Seattle U",
+      "t2": "New Mexico St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Bryant",
+      "t2": "C Connecticut",
+      "w1": 1,
+      "w2": 2,
+      "done": true,
+      "loser": "Bryant"
+    },
+    {
+      "t1": "SE Missouri",
+      "t2": "Murray St",
+      "w1": 2,
+      "w2": 1,
+      "done": true,
+      "loser": "Murray St"
+    },
+    {
+      "t1": "Wright St",
+      "t2": "UIC",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "GA Southern",
+      "t2": "UL Monroe",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Charleston",
+      "t2": "Elon",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Presbyterian",
+      "t2": "Gardner-Webb",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Indiana St",
+      "t2": "S Illinois",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "S Illinois"
+    },
+    {
+      "t1": "Jacksonville",
+      "t2": "North Florida",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Florida St",
+      "t2": "Miami",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dayton",
+      "t2": "Rhode Island",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wofford",
+      "t2": "Mercer",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "N Dakota St",
+      "t2": "Oral Roberts",
+      "w1": 2,
+      "w2": 1,
+      "done": true,
+      "loser": "Oral Roberts"
+    },
+    {
+      "t1": "FAU",
+      "t2": "MTSU",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Tulane",
+      "t2": "Wichita St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Austin Peay",
+      "t2": "Morehead St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Sam Houston",
+      "t2": "Abilene Chrstn",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Abilene Chrstn"
+    },
+    {
+      "t1": "UT Rio Grande",
+      "t2": "Seattle U",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UC Irvine",
+      "t2": "Fullerton",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Fullerton"
+    },
+    {
+      "t1": "Oklahoma St",
+      "t2": "West Virginia",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Milwaukee",
+      "t2": "UIC",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UNC Wilmington",
+      "t2": "Northeastern",
+      "w1": 1,
+      "w2": 2,
+      "done": true,
+      "loser": "UNC Wilmington"
+    },
+    {
+      "t1": "Liberty",
+      "t2": "North Florida",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Louisiana Tech",
+      "t2": "Western KY",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "S Illinois",
+      "t2": "Valparaiso",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Campbell",
+      "t2": "Gardner-Webb",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UCLA",
+      "t2": "Arizona St",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona St"
+    },
+    {
+      "t1": "McNeese",
+      "t2": "SE Louisiana",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Utah Tech",
+      "t2": "Arizona",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Oral Roberts",
+      "t2": "S Dakota St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "North Carolina",
+      "t2": "NC State",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "San Diego",
+      "t2": "Gonzaga",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga"
+    },
+    {
+      "t1": "California",
+      "t2": "Oregon",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Stanford",
+      "t2": "Oregon St",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Texas",
+      "t2": "West Virginia",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grand Canyon",
+      "t2": "Sacramento St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Xavier",
+      "t2": "Seton Hall",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "East Carolina",
+      "t2": "UCF",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Old Dominion",
+      "t2": "FAU",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Kansas St",
+      "t2": "TCU",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Presbyterian",
+      "t2": "Campbell",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dallas Baptist",
+      "t2": "Indiana St",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Indiana St"
+    },
+    {
+      "t1": "C Connecticut",
+      "t2": "Sacred Heart",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UConn",
+      "t2": "Creighton",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Tulane",
+      "t2": "South Florida",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Duke",
+      "t2": "Virginia",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Tennessee",
+      "t2": "Florida",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Northeastern",
+      "t2": "Charleston",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Murray St",
+      "t2": "Austin Peay",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Wright St",
+      "t2": "Milwaukee",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Jacksonville",
+      "t2": "Liberty",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "South Alabama",
+      "t2": "UT Arlington",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Stony Brook",
+      "t2": "Maine",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Louisiana Tech",
+      "t2": "Southern Miss",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Miss"
+    },
+    {
+      "t1": "Oklahoma St",
+      "t2": "Texas",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Samford",
+      "t2": "W Carolina",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "W Carolina"
+    },
+    {
+      "t1": "Xavier",
+      "t2": "Creighton",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Arkansas",
+      "t2": "Ole Miss",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "VCU",
+      "t2": "Dayton",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "NC State",
+      "t2": "Georgia Tech",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UT Rio Grande",
+      "t2": "Sacramento St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "GA Southern",
+      "t2": "Louisiana",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "W Carolina",
+      "t2": "Wofford",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "McNeese",
+      "t2": "Sam Houston",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Grand Canyon",
+      "t2": "UT Rio Grande",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Arkansas",
+      "t2": "Tennessee",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "South Florida",
+      "t2": "UCF",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Duke",
+      "t2": "NC State",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Xavier",
+      "t2": "UConn",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Old Dominion",
+      "t2": "Louisiana Tech",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "South Alabama",
+      "t2": "GA Southern",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "TCU",
+      "t2": "Oklahoma St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Liberty",
+      "t2": "Duke",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke"
+    },
+    {
+      "t1": "South Florida",
+      "t2": "Florida",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Texas Tech",
+      "t2": "Army",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "South Carolina",
+      "t2": "Virginia",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "East Carolina",
+      "t2": "Norfolk St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Notre Dame",
+      "t2": "C Michigan",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "C Michigan"
+    },
+    {
+      "t1": "Georgia Tech",
+      "t2": "Indiana St",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Indiana St"
+    },
+    {
+      "t1": "Texas",
+      "t2": "Southern",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dallas Baptist",
+      "t2": "Oregon St",
+      "w1": 2,
+      "w2": 1,
+      "done": true,
+      "loser": "Oregon St"
+    },
+    {
+      "t1": "NC State",
+      "t2": "Alabama",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Florida St",
+      "t2": "Southern Miss",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mississippi St",
+      "t2": "Samford",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Arkansas",
+      "t2": "NJIT",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Stanford",
+      "t2": "N Dakota St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Santa Barbara",
+      "t2": "Oklahoma St",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma St"
+    },
+    {
+      "t1": "Oregon",
+      "t2": "C Connecticut",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Tennessee",
+      "t2": "Wright St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Charlotte",
+      "t2": "Maryland",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Miami",
+      "t2": "South Alabama",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Vanderbilt",
+      "t2": "Presbyterian",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "North Carolina",
+      "t2": "UCLA",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UConn",
+      "t2": "Michigan",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Old Dominion",
+      "t2": "Jacksonville",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "TCU",
+      "t2": "McNeese",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Louisiana Tech",
+      "t2": "Rider",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Arizona St",
+      "t2": "Fairfield",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "VCU",
+      "t2": "Campbell",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Ole Miss",
+      "t2": "SE Missouri",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nebraska",
+      "t2": "Northeastern",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UC Irvine",
+      "t2": "Nevada",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Gonzaga",
+      "t2": "LSU",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Arizona",
+      "t2": "Grand Canyon",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Duke",
+      "t2": "Wright St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "South Alabama",
+      "t2": "Florida",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Virginia",
+      "t2": "Jacksonville",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "C Michigan",
+      "t2": "Michigan",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Southern Miss",
+      "t2": "SE Missouri",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Oregon St",
+      "t2": "McNeese",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Maryland",
+      "t2": "Norfolk St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Fairfield",
+      "t2": "Southern",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Indiana St",
+      "t2": "Presbyterian",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UCLA",
+      "t2": "Army",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Campbell",
+      "t2": "Samford",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "NJIT",
+      "t2": "Northeastern",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Alabama",
+      "t2": "Rider",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "LSU",
+      "t2": "C Connecticut",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Oklahoma St",
+      "t2": "Grand Canyon",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "N Dakota St",
+      "t2": "Nevada",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Notre Dame",
+      "t2": "UConn",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Tennessee",
+      "t2": "Liberty",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Liberty"
+    },
+    {
+      "t1": "East Carolina",
+      "t2": "Charlotte",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "South Florida",
+      "t2": "Miami",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Vanderbilt",
+      "t2": "Georgia Tech",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia Tech"
+    },
+    {
+      "t1": "Ole Miss",
+      "t2": "Florida St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Old Dominion",
+      "t2": "South Carolina",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dallas Baptist",
+      "t2": "TCU",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "NC State",
+      "t2": "Louisiana Tech",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisiana Tech"
+    },
+    {
+      "t1": "Texas Tech",
+      "t2": "North Carolina",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Stanford",
+      "t2": "UC Irvine",
+      "w1": 2,
+      "w2": 1,
+      "done": true,
+      "loser": "UC Irvine"
+    },
+    {
+      "t1": "Arkansas",
+      "t2": "Nebraska",
+      "w1": 2,
+      "w2": 1,
+      "done": true,
+      "loser": "Nebraska"
+    },
+    {
+      "t1": "Texas",
+      "t2": "Arizona St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mississippi St",
+      "t2": "VCU",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Oregon",
+      "t2": "Gonzaga",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Arizona",
+      "t2": "Santa Barbara",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Santa Barbara"
+    },
+    {
+      "t1": "C Michigan",
+      "t2": "UConn",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Oregon St",
+      "t2": "TCU",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Louisiana Tech",
+      "t2": "Alabama",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Nebraska",
+      "t2": "NJIT",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "UC Irvine",
+      "t2": "N Dakota St",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "South Alabama",
+      "t2": "South Florida",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Southern Miss",
+      "t2": "Ole Miss",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Virginia",
+      "t2": "Old Dominion",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Old Dominion"
+    },
+    {
+      "t1": "Texas Tech",
+      "t2": "UCLA",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "East Carolina",
+      "t2": "Maryland",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Texas",
+      "t2": "Fairfield",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "LSU",
+      "t2": "Oregon",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon"
+    },
+    {
+      "t1": "Mississippi St",
+      "t2": "Campbell",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Vanderbilt",
+      "t2": "East Carolina",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "East Carolina"
+    },
+    {
+      "t1": "Stanford",
+      "t2": "Texas Tech",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech"
+    },
+    {
+      "t1": "Arkansas",
+      "t2": "NC State",
+      "w1": 1,
+      "w2": 2,
+      "done": true,
+      "loser": "Arkansas"
+    },
+    {
+      "t1": "Arizona",
+      "t2": "Ole Miss",
+      "w1": 2,
+      "w2": 1,
+      "done": true,
+      "loser": "Ole Miss"
+    },
+    {
+      "t1": "Dallas Baptist",
+      "t2": "Virginia",
+      "w1": 1,
+      "w2": 2,
+      "done": true,
+      "loser": "Dallas Baptist"
+    },
+    {
+      "t1": "Mississippi St",
+      "t2": "Notre Dame",
+      "w1": 2,
+      "w2": 1,
+      "done": true,
+      "loser": "Notre Dame"
+    },
+    {
+      "t1": "Tennessee",
+      "t2": "LSU",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "LSU"
+    },
+    {
+      "t1": "Texas",
+      "t2": "South Florida",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "South Florida"
+    },
+    {
+      "t1": "NC State",
+      "t2": "Stanford",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Vanderbilt",
+      "t2": "Arizona",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Virginia",
+      "t2": "Tennessee",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mississippi St",
+      "t2": "Texas",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Stanford",
+      "t2": "Arizona",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "NC State",
+      "t2": "Vanderbilt",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Texas",
+      "t2": "Tennessee",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Mississippi St",
+      "t2": "Virginia",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Vanderbilt",
+      "t2": "Stanford",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Texas",
+      "t2": "Virginia",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    }
+  ],
+  "eliminated": [
+    "Bryant",
+    "Murray St",
+    "S Illinois",
+    "Oral Roberts",
+    "Abilene Chrstn",
+    "Fullerton",
+    "UNC Wilmington",
+    "Arizona St",
+    "Gonzaga",
+    "Indiana St",
+    "Southern Miss",
+    "W Carolina",
+    "Duke",
+    "C Michigan",
+    "Oregon St",
+    "Oklahoma St",
+    "Liberty",
+    "Georgia Tech",
+    "Louisiana Tech",
+    "UC Irvine",
+    "Nebraska",
+    "Santa Barbara",
+    "Old Dominion",
+    "Oregon",
+    "East Carolina",
+    "Texas Tech",
+    "Arkansas",
+    "Ole Miss",
+    "Dallas Baptist",
+    "Notre Dame",
+    "LSU",
+    "South Florida"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

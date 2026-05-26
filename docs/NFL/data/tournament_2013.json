@@ -1,0 +1,140 @@
+{
+  "year": 2013,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Seahawks",
+      "loser": "Saints",
+      "winner_score": 23,
+      "loser_score": 15,
+      "date": "2014-01-11"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Colts",
+      "winner_score": 43,
+      "loser_score": 22,
+      "date": "2014-01-12"
+    },
+    {
+      "winner": "49ers",
+      "loser": "Panthers",
+      "winner_score": 23,
+      "loser_score": 10,
+      "date": "2014-01-12"
+    },
+    {
+      "winner": "Broncos",
+      "loser": "Chargers",
+      "winner_score": 24,
+      "loser_score": 17,
+      "date": "2014-01-12"
+    },
+    {
+      "winner": "Broncos",
+      "loser": "Patriots",
+      "winner_score": 26,
+      "loser_score": 16,
+      "date": "2014-01-19"
+    },
+    {
+      "winner": "Seahawks",
+      "loser": "49ers",
+      "winner_score": 23,
+      "loser_score": 17,
+      "date": "2014-01-19"
+    },
+    {
+      "winner": "Sanders",
+      "loser": "Rice",
+      "winner_score": 22,
+      "loser_score": 21,
+      "date": "2014-01-27"
+    },
+    {
+      "winner": "Seahawks",
+      "loser": "Broncos",
+      "winner_score": 43,
+      "loser_score": 8,
+      "date": "2014-02-02"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Seahawks",
+      "t2": "Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saints"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colts"
+    },
+    {
+      "t1": "49ers",
+      "t2": "Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Panthers"
+    },
+    {
+      "t1": "Broncos",
+      "t2": "Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chargers"
+    },
+    {
+      "t1": "Broncos",
+      "t2": "Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Patriots"
+    },
+    {
+      "t1": "Seahawks",
+      "t2": "49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "49ers"
+    },
+    {
+      "t1": "Sanders",
+      "t2": "Rice",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rice"
+    },
+    {
+      "t1": "Seahawks",
+      "t2": "Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Broncos"
+    }
+  ],
+  "eliminated": [
+    "Saints",
+    "Colts",
+    "Panthers",
+    "Chargers",
+    "Patriots",
+    "49ers",
+    "Rice",
+    "Broncos"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

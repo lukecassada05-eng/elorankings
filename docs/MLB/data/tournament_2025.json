@@ -1,0 +1,408 @@
+{
+  "year": 2025,
+  "sport": "MLB",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Guardians",
+      "loser": "Tigers",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2025-10-01"
+    },
+    {
+      "winner": "Padres",
+      "loser": "Cubs",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2025-10-01"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2025-10-01"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Reds",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2025-10-02"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Guardians",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2025-10-02"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Padres",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2025-10-02"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Red Sox",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2025-10-03"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cubs",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2025-10-04"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Yankees",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2025-10-04"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Phillies",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2025-10-04"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Mariners",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2025-10-05"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Yankees",
+      "winner_score": 13,
+      "loser_score": 7,
+      "date": "2025-10-05"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Tigers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2025-10-06"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Phillies",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2025-10-06"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cubs",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2025-10-07"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Tigers",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2025-10-07"
+    },
+    {
+      "winner": "Yankees",
+      "loser": "Blue Jays",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2025-10-08"
+    },
+    {
+      "winner": "Tigers",
+      "loser": "Mariners",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2025-10-08"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Brewers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2025-10-08"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Yankees",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2025-10-08"
+    },
+    {
+      "winner": "Phillies",
+      "loser": "Dodgers",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2025-10-09"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Phillies",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2025-10-09"
+    },
+    {
+      "winner": "Cubs",
+      "loser": "Brewers",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2025-10-10"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Tigers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2025-10-11"
+    },
+    {
+      "winner": "Brewers",
+      "loser": "Cubs",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2025-10-12"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Blue Jays",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2025-10-13"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Blue Jays",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2025-10-13"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Brewers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2025-10-14"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Brewers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2025-10-15"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Mariners",
+      "winner_score": 13,
+      "loser_score": 4,
+      "date": "2025-10-16"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Brewers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2025-10-16"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Mariners",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2025-10-17"
+    },
+    {
+      "winner": "Mariners",
+      "loser": "Blue Jays",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2025-10-17"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Brewers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2025-10-18"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Mariners",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2025-10-20"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Mariners",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2025-10-21"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Dodgers",
+      "winner_score": 11,
+      "loser_score": 4,
+      "date": "2025-10-25"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Blue Jays",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2025-10-26"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Blue Jays",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2025-10-28"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Dodgers",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2025-10-29"
+    },
+    {
+      "winner": "Blue Jays",
+      "loser": "Dodgers",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2025-10-30"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Blue Jays",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2025-11-01"
+    },
+    {
+      "winner": "Dodgers",
+      "loser": "Blue Jays",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2025-11-02"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Guardians",
+      "t2": "Tigers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Padres",
+      "t2": "Cubs",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Yankees",
+      "t2": "Red Sox",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Reds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": ""
+    },
+    {
+      "t1": "Brewers",
+      "t2": "Cubs",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Cubs"
+    },
+    {
+      "t1": "Blue Jays",
+      "t2": "Yankees",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Yankees"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Phillies",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Phillies"
+    },
+    {
+      "t1": "Tigers",
+      "t2": "Mariners",
+      "w1": 2,
+      "w2": 3,
+      "done": true,
+      "loser": "Tigers"
+    },
+    {
+      "t1": "Mariners",
+      "t2": "Blue Jays",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Mariners"
+    },
+    {
+      "t1": "Dodgers",
+      "t2": "Brewers",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Brewers"
+    },
+    {
+      "t1": "Blue Jays",
+      "t2": "Dodgers",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Blue Jays"
+    }
+  ],
+  "eliminated": [
+    "Cubs",
+    "Yankees",
+    "Phillies",
+    "Tigers",
+    "Mariners",
+    "Brewers",
+    "Blue Jays"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

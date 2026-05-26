@@ -1,0 +1,721 @@
+{
+  "year": 2019,
+  "sport": "NBA",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Nets",
+      "loser": "76ers",
+      "winner_score": 111,
+      "loser_score": 102,
+      "date": "2019-04-13"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Raptors",
+      "winner_score": 104,
+      "loser_score": 101,
+      "date": "2019-04-13"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Clippers",
+      "winner_score": 121,
+      "loser_score": 104,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nuggets",
+      "winner_score": 101,
+      "loser_score": 96,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 84,
+      "loser_score": 74,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Thunder",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pistons",
+      "winner_score": 121,
+      "loser_score": 86,
+      "date": "2019-04-14"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Jazz",
+      "winner_score": 122,
+      "loser_score": 90,
+      "date": "2019-04-15"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 145,
+      "loser_score": 123,
+      "date": "2019-04-16"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Warriors",
+      "winner_score": 135,
+      "loser_score": 131,
+      "date": "2019-04-16"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Magic",
+      "winner_score": 111,
+      "loser_score": 82,
+      "date": "2019-04-17"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Spurs",
+      "winner_score": 114,
+      "loser_score": 105,
+      "date": "2019-04-17"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Thunder",
+      "winner_score": 114,
+      "loser_score": 94,
+      "date": "2019-04-17"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 99,
+      "loser_score": 91,
+      "date": "2019-04-17"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pistons",
+      "winner_score": 120,
+      "loser_score": 99,
+      "date": "2019-04-18"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Jazz",
+      "winner_score": 118,
+      "loser_score": 98,
+      "date": "2019-04-18"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 131,
+      "loser_score": 115,
+      "date": "2019-04-19"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nuggets",
+      "winner_score": 118,
+      "loser_score": 108,
+      "date": "2019-04-19"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Clippers",
+      "winner_score": 132,
+      "loser_score": 105,
+      "date": "2019-04-19"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Magic",
+      "winner_score": 98,
+      "loser_score": 93,
+      "date": "2019-04-19"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 104,
+      "loser_score": 96,
+      "date": "2019-04-20"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Trail Blazers",
+      "winner_score": 120,
+      "loser_score": 108,
+      "date": "2019-04-20"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 112,
+      "loser_score": 108,
+      "date": "2019-04-20"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Spurs",
+      "winner_score": 117,
+      "loser_score": 103,
+      "date": "2019-04-20"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pistons",
+      "winner_score": 119,
+      "loser_score": 103,
+      "date": "2019-04-21"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Jazz",
+      "winner_score": 104,
+      "loser_score": 101,
+      "date": "2019-04-21"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 110,
+      "loser_score": 106,
+      "date": "2019-04-21"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Clippers",
+      "winner_score": 113,
+      "loser_score": 105,
+      "date": "2019-04-21"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Magic",
+      "winner_score": 107,
+      "loser_score": 85,
+      "date": "2019-04-21"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Thunder",
+      "winner_score": 111,
+      "loser_score": 98,
+      "date": "2019-04-22"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pistons",
+      "winner_score": 127,
+      "loser_score": 104,
+      "date": "2019-04-23"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Rockets",
+      "winner_score": 107,
+      "loser_score": 91,
+      "date": "2019-04-23"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Magic",
+      "winner_score": 115,
+      "loser_score": 96,
+      "date": "2019-04-23"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 122,
+      "loser_score": 100,
+      "date": "2019-04-24"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Spurs",
+      "winner_score": 108,
+      "loser_score": 90,
+      "date": "2019-04-24"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Thunder",
+      "winner_score": 118,
+      "loser_score": 115,
+      "date": "2019-04-24"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Jazz",
+      "winner_score": 100,
+      "loser_score": 93,
+      "date": "2019-04-25"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Warriors",
+      "winner_score": 129,
+      "loser_score": 121,
+      "date": "2019-04-25"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nuggets",
+      "winner_score": 120,
+      "loser_score": 103,
+      "date": "2019-04-26"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Clippers",
+      "winner_score": 129,
+      "loser_score": 110,
+      "date": "2019-04-27"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "76ers",
+      "winner_score": 108,
+      "loser_score": 95,
+      "date": "2019-04-27"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Spurs",
+      "winner_score": 90,
+      "loser_score": 86,
+      "date": "2019-04-28"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Bucks",
+      "winner_score": 112,
+      "loser_score": 90,
+      "date": "2019-04-28"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Rockets",
+      "winner_score": 104,
+      "loser_score": 100,
+      "date": "2019-04-28"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Raptors",
+      "winner_score": 94,
+      "loser_score": 89,
+      "date": "2019-04-30"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Trail Blazers",
+      "winner_score": 121,
+      "loser_score": 113,
+      "date": "2019-04-30"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Celtics",
+      "winner_score": 123,
+      "loser_score": 102,
+      "date": "2019-05-01"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Rockets",
+      "winner_score": 115,
+      "loser_score": 109,
+      "date": "2019-05-01"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Nuggets",
+      "winner_score": 97,
+      "loser_score": 90,
+      "date": "2019-05-02"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Raptors",
+      "winner_score": 116,
+      "loser_score": 95,
+      "date": "2019-05-03"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Celtics",
+      "winner_score": 123,
+      "loser_score": 116,
+      "date": "2019-05-04"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Nuggets",
+      "winner_score": 140,
+      "loser_score": 137,
+      "date": "2019-05-04"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Warriors",
+      "winner_score": 126,
+      "loser_score": 121,
+      "date": "2019-05-05"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "76ers",
+      "winner_score": 101,
+      "loser_score": 96,
+      "date": "2019-05-05"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Trail Blazers",
+      "winner_score": 116,
+      "loser_score": 112,
+      "date": "2019-05-05"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Celtics",
+      "winner_score": 113,
+      "loser_score": 101,
+      "date": "2019-05-06"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Warriors",
+      "winner_score": 112,
+      "loser_score": 108,
+      "date": "2019-05-07"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "76ers",
+      "winner_score": 125,
+      "loser_score": 89,
+      "date": "2019-05-08"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Trail Blazers",
+      "winner_score": 124,
+      "loser_score": 98,
+      "date": "2019-05-08"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Celtics",
+      "winner_score": 116,
+      "loser_score": 91,
+      "date": "2019-05-09"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Rockets",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2019-05-09"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Raptors",
+      "winner_score": 112,
+      "loser_score": 101,
+      "date": "2019-05-10"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Nuggets",
+      "winner_score": 119,
+      "loser_score": 108,
+      "date": "2019-05-10"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Rockets",
+      "winner_score": 118,
+      "loser_score": 113,
+      "date": "2019-05-11"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Nuggets",
+      "winner_score": 100,
+      "loser_score": 96,
+      "date": "2019-05-12"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "76ers",
+      "winner_score": 92,
+      "loser_score": 90,
+      "date": "2019-05-12"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 116,
+      "loser_score": 94,
+      "date": "2019-05-15"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Raptors",
+      "winner_score": 108,
+      "loser_score": 100,
+      "date": "2019-05-16"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 114,
+      "loser_score": 111,
+      "date": "2019-05-17"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Raptors",
+      "winner_score": 125,
+      "loser_score": 103,
+      "date": "2019-05-18"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 110,
+      "loser_score": 99,
+      "date": "2019-05-19"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Bucks",
+      "winner_score": 118,
+      "loser_score": 112,
+      "date": "2019-05-19"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 119,
+      "loser_score": 117,
+      "date": "2019-05-21"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Bucks",
+      "winner_score": 120,
+      "loser_score": 102,
+      "date": "2019-05-22"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Bucks",
+      "winner_score": 105,
+      "loser_score": 99,
+      "date": "2019-05-24"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Bucks",
+      "winner_score": 100,
+      "loser_score": 94,
+      "date": "2019-05-26"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Warriors",
+      "winner_score": 118,
+      "loser_score": 109,
+      "date": "2019-05-31"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Raptors",
+      "winner_score": 109,
+      "loser_score": 104,
+      "date": "2019-06-03"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Warriors",
+      "winner_score": 123,
+      "loser_score": 109,
+      "date": "2019-06-06"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Warriors",
+      "winner_score": 105,
+      "loser_score": 92,
+      "date": "2019-06-08"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Raptors",
+      "winner_score": 106,
+      "loser_score": 105,
+      "date": "2019-06-11"
+    },
+    {
+      "winner": "Raptors",
+      "loser": "Warriors",
+      "winner_score": 114,
+      "loser_score": 110,
+      "date": "2019-06-14"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Nets",
+      "t2": "76ers",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Nets"
+    },
+    {
+      "t1": "Magic",
+      "t2": "Raptors",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Magic"
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Clippers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Clippers"
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Nuggets",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Spurs"
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Pacers",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Pacers"
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Thunder",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Thunder"
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Pistons",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Pistons"
+    },
+    {
+      "t1": "Rockets",
+      "t2": "Jazz",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Jazz"
+    },
+    {
+      "t1": "Raptors",
+      "t2": "76ers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "76ers"
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Bucks",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Celtics"
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Rockets",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Rockets"
+    },
+    {
+      "t1": "Nuggets",
+      "t2": "Trail Blazers",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Nuggets"
+    },
+    {
+      "t1": "Warriors",
+      "t2": "Trail Blazers",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Trail Blazers"
+    },
+    {
+      "t1": "Bucks",
+      "t2": "Raptors",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Bucks"
+    },
+    {
+      "t1": "Raptors",
+      "t2": "Warriors",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Warriors"
+    }
+  ],
+  "eliminated": [
+    "Nets",
+    "Magic",
+    "Clippers",
+    "Spurs",
+    "Pacers",
+    "Thunder",
+    "Pistons",
+    "Jazz",
+    "76ers",
+    "Celtics",
+    "Rockets",
+    "Nuggets",
+    "Trail Blazers",
+    "Bucks",
+    "Warriors"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}

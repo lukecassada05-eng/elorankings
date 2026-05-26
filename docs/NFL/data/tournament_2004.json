@@ -1,0 +1,140 @@
+{
+  "year": 2004,
+  "sport": "NFL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Steelers",
+      "loser": "Jets",
+      "winner_score": 20,
+      "loser_score": 17,
+      "date": "2005-01-15"
+    },
+    {
+      "winner": "Falcons",
+      "loser": "Rams",
+      "winner_score": 47,
+      "loser_score": 17,
+      "date": "2005-01-16"
+    },
+    {
+      "winner": "Eagles",
+      "loser": "Vikings",
+      "winner_score": 27,
+      "loser_score": 14,
+      "date": "2005-01-16"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Colts",
+      "winner_score": 20,
+      "loser_score": 3,
+      "date": "2005-01-16"
+    },
+    {
+      "winner": "Eagles",
+      "loser": "Falcons",
+      "winner_score": 27,
+      "loser_score": 10,
+      "date": "2005-01-23"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Steelers",
+      "winner_score": 41,
+      "loser_score": 27,
+      "date": "2005-01-23"
+    },
+    {
+      "winner": "Patriots",
+      "loser": "Eagles",
+      "winner_score": 24,
+      "loser_score": 21,
+      "date": "2005-02-06"
+    },
+    {
+      "winner": "AFC",
+      "loser": "NFC",
+      "winner_score": 38,
+      "loser_score": 27,
+      "date": "2005-02-14"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Steelers",
+      "t2": "Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Jets"
+    },
+    {
+      "t1": "Falcons",
+      "t2": "Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rams"
+    },
+    {
+      "t1": "Eagles",
+      "t2": "Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vikings"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colts"
+    },
+    {
+      "t1": "Eagles",
+      "t2": "Falcons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Falcons"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Steelers"
+    },
+    {
+      "t1": "Patriots",
+      "t2": "Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eagles"
+    },
+    {
+      "t1": "AFC",
+      "t2": "NFC",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NFC"
+    }
+  ],
+  "eliminated": [
+    "Jets",
+    "Rams",
+    "Vikings",
+    "Colts",
+    "Falcons",
+    "Steelers",
+    "Eagles",
+    "NFC"
+  ],
+  "updated": "2026-05-26 23:50 UTC"
+}

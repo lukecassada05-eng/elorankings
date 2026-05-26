@@ -1,0 +1,784 @@
+{
+  "year": 2016,
+  "sport": "NHL",
+  "completed": true,
+  "games": [
+    {
+      "winner": "Lightning",
+      "loser": "Red Wings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-13"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2016-04-14"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Blackhawks",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2016-04-14"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Flyers",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2016-04-14"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Panthers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2016-04-15"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Wild",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2016-04-15"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Kings",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-04-15"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Red Wings",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2016-04-15"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Islanders",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2016-04-15"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-16"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-16"
+    },
+    {
+      "winner": "Rangers",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2016-04-16"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Flyers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2016-04-16"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Wild",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-17"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Kings",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-17"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Blackhawks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-17"
+    },
+    {
+      "winner": "Red Wings",
+      "loser": "Lightning",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2016-04-17"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Panthers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-04-18"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-18"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Flyers",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2016-04-18"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Stars",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2016-04-19"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Sharks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-19"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Rangers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2016-04-19"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Red Wings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-19"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Blackhawks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-04-20"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Predators",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2016-04-20"
+    },
+    {
+      "winner": "Flyers",
+      "loser": "Capitals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-20"
+    },
+    {
+      "winner": "Panthers",
+      "loser": "Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-21"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Wild",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-21"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Kings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-21"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Rangers",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2016-04-21"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Red Wings",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2016-04-21"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Predators",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2016-04-22"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Blues",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-04-22"
+    },
+    {
+      "winner": "Flyers",
+      "loser": "Capitals",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2016-04-22"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Panthers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-23"
+    },
+    {
+      "winner": "Wild",
+      "loser": "Stars",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2016-04-23"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Kings",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2016-04-23"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Rangers",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2016-04-23"
+    },
+    {
+      "winner": "Ducks",
+      "loser": "Predators",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2016-04-23"
+    },
+    {
+      "winner": "Blackhawks",
+      "loser": "Blues",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2016-04-24"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Flyers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2016-04-24"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Wild",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2016-04-24"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Panthers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-24"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Ducks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2016-04-26"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Blackhawks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-26"
+    },
+    {
+      "winner": "Islanders",
+      "loser": "Lightning",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2016-04-27"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Ducks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-28"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-04-29"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-04-30"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Predators",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2016-04-30"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Islanders",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2016-04-30"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Capitals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-05-01"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Stars",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-05-01"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Predators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-05-02"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Capitals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-05-03"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Islanders",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2016-05-03"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Sharks",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2016-05-04"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Stars",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2016-05-04"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Capitals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-05-05"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-05-06"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Sharks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-05-06"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-05-06"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Stars",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2016-05-07"
+    },
+    {
+      "winner": "Capitals",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2016-05-07"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Predators",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2016-05-08"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Islanders",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2016-05-08"
+    },
+    {
+      "winner": "Stars",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-05-10"
+    },
+    {
+      "winner": "Predators",
+      "loser": "Sharks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-05-10"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Capitals",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-05-11"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Stars",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2016-05-12"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Predators",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2016-05-13"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2016-05-14"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Sharks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-05-16"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Lightning",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-05-17"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Blues",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2016-05-18"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Lightning",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2016-05-19"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Blues",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2016-05-20"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-05-21"
+    },
+    {
+      "winner": "Blues",
+      "loser": "Sharks",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2016-05-21"
+    },
+    {
+      "winner": "Lightning",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-05-23"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Blues",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2016-05-24"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Lightning",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2016-05-25"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Blues",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2016-05-26"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Lightning",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-05-27"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Sharks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-05-31"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Sharks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2016-06-02"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Penguins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-06-05"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Sharks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2016-06-07"
+    },
+    {
+      "winner": "Sharks",
+      "loser": "Penguins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2016-06-10"
+    },
+    {
+      "winner": "Penguins",
+      "loser": "Sharks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2016-06-13"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Lightning",
+      "t2": "Red Wings",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Red Wings"
+    },
+    {
+      "t1": "Penguins",
+      "t2": "Rangers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Rangers"
+    },
+    {
+      "t1": "Blues",
+      "t2": "Blackhawks",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Blackhawks"
+    },
+    {
+      "t1": "Capitals",
+      "t2": "Flyers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Flyers"
+    },
+    {
+      "t1": "Islanders",
+      "t2": "Panthers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Panthers"
+    },
+    {
+      "t1": "Stars",
+      "t2": "Wild",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Wild"
+    },
+    {
+      "t1": "Sharks",
+      "t2": "Kings",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Kings"
+    },
+    {
+      "t1": "Predators",
+      "t2": "Ducks",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Ducks"
+    },
+    {
+      "t1": "Islanders",
+      "t2": "Lightning",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Islanders"
+    },
+    {
+      "t1": "Capitals",
+      "t2": "Penguins",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Capitals"
+    },
+    {
+      "t1": "Stars",
+      "t2": "Blues",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Stars"
+    },
+    {
+      "t1": "Sharks",
+      "t2": "Predators",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Predators"
+    },
+    {
+      "t1": "Lightning",
+      "t2": "Penguins",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Lightning"
+    },
+    {
+      "t1": "Blues",
+      "t2": "Sharks",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Blues"
+    },
+    {
+      "t1": "Penguins",
+      "t2": "Sharks",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Sharks"
+    }
+  ],
+  "eliminated": [
+    "Red Wings",
+    "Rangers",
+    "Blackhawks",
+    "Flyers",
+    "Panthers",
+    "Wild",
+    "Kings",
+    "Ducks",
+    "Islanders",
+    "Capitals",
+    "Stars",
+    "Predators",
+    "Lightning",
+    "Blues",
+    "Sharks"
+  ],
+  "updated": "2026-05-26 23:49 UTC"
+}
