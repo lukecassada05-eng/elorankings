@@ -1110,7 +1110,7 @@ window.initSportPage = function(CFG) {
       {id:5,  name:"Austin",         nseed:6,  teams:["Texas","UC Santa Barbara","Tarleton St","Holy Cross"]},
       {id:6,  name:"Tuscaloosa",     nseed:7,  teams:["Alabama","Oklahoma State","USC Upstate","Alabama State"]},
       {id:7,  name:"Gainesville",    nseed:8,  teams:["Florida","Miami","Troy","Rider"]},
-      {id:8,  name:"Hattiesburg",    nseed:9,  teams:["Southern Miss","Virginia","Jacksonville St","Little Rock"]},
+      {id:8,  name:"Hattiesburg",    nseed:9,  teams:["Southern Miss","Virginia","Jax State","Little Rock"]},
       {id:9,  name:"Tallahassee",    nseed:10, teams:["Florida State","Coastal Carolina","NIU","St. John's"]},
       {id:10, name:"Eugene",         nseed:11, teams:["Oregon","Oregon State","Washington State","Yale"]},
       {id:11, name:"College Station",nseed:12, teams:["Texas A&M","Southern California","Texas State","Lamar"]},
@@ -2432,7 +2432,7 @@ async function findAvailableSeason() {
     "New Mexico St":"New Mexico State","NMSU":"New Mexico State",
     "Kennesaw St":"Kennesaw State","Kenn. St.":"Kennesaw State",
     "Jax State":"Jacksonville State","Jax St":"Jacksonville State",
-    "Jacksonville St":"Jacksonville State",
+    "Jax State":"Jacksonville State",
     "Sam Hous.":"Sam Houston","SHSU":"Sam Houston",
     "Liberty":"Liberty","Mo. State":"Missouri State","Missouri St":"Missouri State",
     // Independent
