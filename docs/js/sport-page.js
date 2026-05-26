@@ -1129,17 +1129,61 @@ window.initSportPage = function(CFG) {
       el.innerHTML = '<div class="empty-state">Load a season first to see Elo-based odds.</div>';
       return;
     }
+    // Use bracket for current loaded season, fall back to latest available
+    var bracketYear = currentSeason || new Date().getFullYear();
+    var bracket = window['CBASE_BRACKET_' + bracketYear] || CBASE_BRACKET_2026;
+    if (!bracket) {
+      el.innerHTML = '<div class="empty-state">Tournament bracket not yet available for ' + bracketYear + '.</div>';
+      return;
+    }
     el.innerHTML = '<div class="loading"><div class="spinner"></div>Running simulations…</div>';
-    setTimeout(function() { _runCBaseTourney(el); }, 30);
+    setTimeout(function() { _runCBaseTourney(el, bracket); }, 30);
   }
 
-  function _runCBaseTourney(el) {
-    _runSimulation(el, CBASE_BRACKET_2026);
+  function _runCBaseTourney(el, bracket) {
+    bracket = bracket || CBASE_BRACKET_2026;
+    // Try to load live tournament JSON written by R script
+    // Falls back to hardcoded bracket if not found
+    var yr = bracket.year || new Date().getFullYear();
+    var basePath = CFG.dataPath.replace('CBASE_Elo_', '');
+    var jsonUrl = basePath + 'tournament_' + yr + '.json?t=' + Date.now();
+
+    fetch(jsonUrl)
+      .then(function(res) {
+        if (!res.ok) throw new Error('no json');
+        return res.json();
+      })
+      .then(function(tourneyData) {
+        // Build eliminated set from completed games
+        // In double-elim regionals: 2 losses = eliminated
+        // In super regionals (best of 3): 2 losses = eliminated
+        // In CWS double-elim: 2 losses = eliminated (except finals)
+        var losses = {};
+        var winners = {};
+        (tourneyData.games || []).forEach(function(g) {
+          losses[g.loser]   = (losses[g.loser]   || 0) + 1;
+          winners[g.winner] = (winners[g.winner]  || 0) + 1;
+        });
+        // Eliminated = 2 losses in regionals, 2 losses in CWS, 1 loss in super regional
+        // Simplification: 2+ losses = eliminated in our double-elim model
+        var eliminated = {};
+        Object.keys(losses).forEach(function(t) {
+          if (losses[t] >= 2) eliminated[t] = true;
+        });
+        // Super regional losers: exactly 2 losses from best-of-3
+        // They appear with 2 losses in our game log
+        _runSimulation(el, bracket, eliminated, tourneyData.games || [], tourneyData.updated);
+      })
+      .catch(function() {
+        // No JSON yet (before tournament starts, or JSON not written)
+        _runSimulation(el, bracket, {}, [], null);
+      });
   }
 
-  function _runSimulation(el, bracket) {
+  function _runSimulation(el, bracket, eliminated, completedGames, updatedAt) {
+    eliminated = eliminated || {};
+    completedGames = completedGames || [];
     // Build Elo lookup from current CSV data
-    // Try to match bracket team names to data team names
     var eloMap = {};
     var DEFAULT_ELO = 1450;
     if (data && data.length) {
@@ -1230,7 +1274,10 @@ window.initSportPage = function(CFG) {
     for (var sim=0; sim<N; sim++) {
       // Simulate all 16 regionals
       var regWinners = bracket.regionals.map(function(reg) {
-        var w = simRegional(reg.teams);
+        // Skip eliminated teams from simulation pool
+        var alive = reg.teams.filter(function(t){ return !eliminated[t]; });
+        var pool = alive.length >= 2 ? alive : reg.teams;
+        var w = pool.length === 1 ? pool[0] : simRegional(pool.length === 4 ? pool : reg.teams);
         counts[w][0]++;
         return w;
       });
@@ -1275,12 +1322,20 @@ window.initSportPage = function(CFG) {
       +'<th style="padding:0.4rem 0.5rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent)">Champion</th>'
       +'</tr></thead><tbody>';
 
-    sorted.forEach(function(t, i) {
+    // Sort: active teams by champion probability, eliminated teams at bottom
+    var activeSorted   = sorted.filter(function(t){ return !eliminated[t]; });
+    var eliminatedList = sorted.filter(function(t){ return  eliminated[t]; });
+    var displayOrder   = activeSorted.concat(eliminatedList);
+
+    displayOrder.forEach(function(t, i) {
       var e = teamElos[t];
-      var c = clr(e);
+      var isOut = eliminated[t];
+      var c = isOut ? 'var(--text-dim)' : clr(e);
+      var rowStyle = isOut ? 'opacity:0.4;' : '';
       var champPct = counts[t][3]/N;
-      oddsHtml += '<tr style="border-bottom:1px solid rgba(255,255,255,0.04)">'
-        +'<td style="padding:0.35rem 0.5rem;font-weight:'+(i<8?'600':'400')+';color:'+c+'">'+t+'</td>'
+      var outTag = isOut ? ' <span style="font-size:0.6rem;color:var(--red-hi)">OUT</span>' : '';
+      oddsHtml += '<tr style="border-bottom:1px solid rgba(255,255,255,0.04);'+rowStyle+'">'
+        +'<td style="padding:0.35rem 0.5rem;font-weight:'+(i<8&&!isOut?'600':'400')+';color:'+c+'">'+t+outTag+'</td>'
         +'<td style="padding:0.35rem 0.5rem;color:var(--text-dim);font-family:var(--font-mono);font-size:0.72rem">'+e.toFixed(0)+'</td>'
         +'<td style="padding:0.35rem 0.5rem;text-align:right;color:var(--text-dim)">'+pct(counts[t][0])+'</td>'
         +'<td style="padding:0.35rem 0.5rem;text-align:right;color:var(--text-dim)">'+pct(counts[t][1])+'</td>'
@@ -1306,7 +1361,9 @@ window.initSportPage = function(CFG) {
         var winPct = counts[t][0]/N;
         var e = teamElos[t];
         regHtml += '<div style="display:flex;align-items:center;padding:0.15rem 0;gap:0.4rem">'
-          +'<span style="color:'+clr(e)+';font-size:0.72rem;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+t+'</span>'
+          +(eliminated[t]
+          ? '<span style="color:var(--text-dim);font-size:0.72rem;flex:1;text-decoration:line-through;opacity:0.4">'+t+' ❌</span>'
+          : '<span style="color:'+clr(e)+';font-size:0.72rem;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+t+'</span>')
           +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);min-width:34px;text-align:right">'+(winPct*100).toFixed(0)+'%</span>'
           +'</div>';
       });
@@ -1314,11 +1371,15 @@ window.initSportPage = function(CFG) {
     });
     regHtml += '</div>';
 
-    var topChamp = sorted[0];
+    var topChamp = activeSorted[0] || sorted[0];
     var topElo   = teamElos[topChamp];
 
+    var liveStatus = completedGames.length > 0
+      ? '<span style="color:var(--green-hi);font-size:0.7rem;margin-left:0.75rem">● LIVE · '+completedGames.length+' games played</span>'
+      : '<span style="color:var(--text-dim);font-size:0.7rem;margin-left:0.75rem">Pre-tournament simulation</span>';
+    var updatedStr = updatedAt ? ' · Updated '+updatedAt : '';
     el.innerHTML = ''
-      +'<div class="section-header"><span>⚾ 2026 NCAA Baseball Tournament · Omaha Odds</span>'
+      +'<div class="section-header"><span>⚾ '+bracket.year+' NCAA Baseball Tournament · Omaha Odds'+liveStatus+'</span>'
       +'<button id="cbase-resim" style="margin-left:auto;padding:0.2rem 0.7rem;border:1px solid var(--border);background:var(--bg3);border-radius:var(--radius);cursor:pointer;font-size:0.72rem;color:var(--text)">🎲 Re-simulate ('+N.toLocaleString()+'×)</button></div>'
       +'<div class="section-note" style="margin-bottom:1rem">Based on '+N.toLocaleString()+' Monte Carlo simulations using Elo ratings · '
       +'Regionals: double-elimination · Super Regionals: best-of-3 · CWS: Omaha (Jun 12–22)'
