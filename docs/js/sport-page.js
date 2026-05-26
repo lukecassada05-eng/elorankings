@@ -1107,20 +1107,18 @@ window.initSportPage = function(CFG) {
       {id:2,  name:"Athens",         nseed:3,  teams:["Georgia","Boston College","Liberty","LIU"]},
       {id:3,  name:"Auburn",         nseed:4,  teams:["Auburn","UCF","NC State","Milwaukee"]},
       {id:4,  name:"Chapel Hill",    nseed:5,  teams:["North Carolina","Tennessee","East Carolina","VCU"]},
-      {id:5,  name:"Austin",         nseed:6,  teams:["Texas","UC Santa Barbara","Dallas Baptist","Holy Cross"]},
-      {id:6,  name:"Tuscaloosa",     nseed:7,  teams:["Alabama","Vanderbilt","Coastal Carolina","N. Kentucky"]},
-      {id:7,  name:"Gainesville",    nseed:8,  teams:["Florida","Ole Miss","LSU","Lipscomb"]},
+      {id:5,  name:"Austin",         nseed:6,  teams:["Texas","UC Santa Barbara","Tarleton St","Holy Cross"]},
+      {id:6,  name:"Tuscaloosa",     nseed:7,  teams:["Alabama","Oklahoma State","USC Upstate","Alabama State"]},
+      {id:7,  name:"Gainesville",    nseed:8,  teams:["Florida","Miami","Troy","Rider"]},
       {id:8,  name:"Hattiesburg",    nseed:9,  teams:["Southern Miss","Wake Forest","Wichita St","Bucknell"]},
-      {id:9,  name:"Tallahassee",    nseed:10, teams:["Florida State","Virginia","Kennesaw St","NJIT"]},
-      {id:10, name:"Eugene",         nseed:11, teams:["Oregon","Sam Houston","Penn State","Siena"]},
+      {id:9,  name:"Tallahassee",    nseed:10, teams:["Florida State","Coastal Carolina","NIU","St. John's"]},
+      {id:10, name:"Eugene",         nseed:11, teams:["Oregon","Oregon State","Washington State","Yale"]},
       {id:11, name:"College Station",nseed:12, teams:["Texas A&M","TCU","Clemson","Quinnipiac"]},
-      {id:12, name:"Lincoln",        nseed:13, teams:["Nebraska","Ole Miss","Arizona State","The Citadel"]},
-      {id:13, name:"Starkville",     nseed:14, teams:["Mississippi State","Arkansas","Memphis","Maine"]},
-      {id:14, name:"Lawrence",       nseed:15, teams:["Kansas","Connecticut","Stetson","N Dakota St"]},
-      {id:15, name:"Morgantown",     nseed:16, teams:["West Virginia","Wake Forest","Oklahoma State","SE Missouri St"]}
+      {id:12, name:"Lincoln",        nseed:13, teams:["Nebraska","Ole Miss","Arizona State","S. Dakota St"]},
+      {id:13, name:"Starkville",     nseed:14, teams:["Mississippi State","Cincinnati","Louisiana","Lipscomb"]},
+      {id:14, name:"Lawrence",       nseed:15, teams:["Kansas","Arkansas","Missouri St","Northeastern"]},
+      {id:15, name:"Morgantown",     nseed:16, teams:["West Virginia","Wake Forest","Kentucky","Binghamton"]}
     ],
-    // Super regional pairings: winner of regional A vs winner of regional B
-    // national seed 1v16, 2v15, 3v14, 4v13, 5v12, 6v11, 7v10, 8v9
     superPairs: [[0,15],[1,14],[2,13],[3,12],[4,11],[5,10],[6,9],[7,8]]
   };
 
