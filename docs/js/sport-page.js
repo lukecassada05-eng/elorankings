@@ -1127,25 +1127,16 @@ window.initSportPage = function(CFG) {
   function renderCBaseTourney() {
     var el = document.getElementById('panel-tourney');
     if (!el || CFG.sport !== 'CBASE') return;
-
+    if (!data || !data.length) {
+      el.innerHTML = '<div class="empty-state">Load a season first to see Elo-based odds.</div>';
+      return;
+    }
     el.innerHTML = '<div class="loading"><div class="spinner"></div>Running simulations…</div>';
-
-    // Give UI a moment to render the loading state
     setTimeout(function() { _runCBaseTourney(el); }, 30);
   }
 
   function _runCBaseTourney(el) {
-    // Try ESPN tournament API first, fall back to hardcoded 2026 bracket
-    var apiUrl = 'https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard'
-      + '?groups=11&seasontype=3&limit=200';
-
-    fetch(apiUrl).then(function(res){ return res.json(); }).then(function(espnData) {
-      // If we get live tournament games, extract teams per regional
-      // Otherwise use hardcoded bracket
-      _runSimulation(el, CBASE_BRACKET_2026);
-    }).catch(function() {
-      _runSimulation(el, CBASE_BRACKET_2026);
-    });
+    _runSimulation(el, CBASE_BRACKET_2026);
   }
 
   function _runSimulation(el, bracket) {
