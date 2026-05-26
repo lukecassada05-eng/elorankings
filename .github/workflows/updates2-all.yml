@@ -341,6 +341,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.2.2
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.3'
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
       - name: Install R packages
@@ -369,4 +373,3 @@ jobs:
             echo "Push attempt $i failed, retrying..."
             sleep $((i * 3))
           done
-
