@@ -835,4 +835,86 @@ for (yr in SEASONS) {
   message("  -> ", nrow(out), " teams | conf coverage (5+ gp): ", covered, "/", total5,
           " | champs: ", champ_n)
 }
+
+# ================================================================
+# NCAA Tournament bracket fetch (runs May-June each year)
+# Fetches completed regional/super regional/CWS games from ESPN
+# Writes docs/CollegeBaseball/data/tournament_YEAR.json
+# JS reads this to show live bracket status + simulate remaining games
+# ================================================================
+fetch_tournament_results <- function(yr) {
+  message("Fetching NCAA tournament results for ", yr, "...")
+  
+  # Tournament runs May-June — only run during that window
+  today <- Sys.Date()
+  tourney_start <- as.Date(paste0(yr, "-05-25"))
+  tourney_end   <- as.Date(paste0(yr, "-06-30"))
+  if (today < tourney_start || today > tourney_end) {
+    message("  Outside tournament window — skipping")
+    return(NULL)
+  }
+  
+  # Fetch all seasontype=3 (postseason) games for the year
+  ds <- gsub("-", "", as.character(tourney_start))
+  de <- gsub("-", "", as.character(min(today, tourney_end)))
+  
+  url <- paste0(
+    "https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard",
+    "?groups=11&seasontype=3&limit=500&dates=", ds, "-", de
+  )
+  
+  data <- tryCatch(
+    jsonlite::fromJSON(url, simplifyVector = FALSE),
+    error = function(e) { message("  API error: ", e$message); NULL }
+  )
+  
+  if (is.null(data) || length(data$events) == 0) {
+    message("  No tournament games found yet")
+    return(list(games = list(), updated = format(Sys.time(), "%Y-%m-%d %H:%M UTC")))
+  }
+  
+  # Parse completed games
+  games <- list()
+  for (ev in data$events) {
+    tryCatch({
+      comp  <- ev$competitions[[1]]
+      if (!isTRUE(comp$status$type$completed)) next
+      comps <- comp$competitors
+      if (length(comps) != 2) next
+      
+      scores <- sapply(comps, function(c) suppressWarnings(as.numeric(c$score)))
+      names  <- sapply(comps, function(c) c$team$shortDisplayName)
+      
+      if (any(is.na(scores)) || scores[1] == scores[2]) next
+      
+      winner_idx <- which.max(scores)
+      loser_idx  <- 3 - winner_idx
+      
+      # Determine round from notes/name
+      round_name <- tryCatch(ev$name, error=function(e) "Regional")
+      
+      games <- c(games, list(list(
+        winner = names[winner_idx],
+        loser  = names[loser_idx],
+        winner_score = scores[winner_idx],
+        loser_score  = scores[loser_idx],
+        round  = round_name,
+        date   = tryCatch(comp$date, error=function(e) "")
+      )))
+    }, error = function(e) NULL)
+  }
+  
+  message("  Found ", length(games), " completed tournament games")
+  list(games = games, updated = format(Sys.time(), "%Y-%m-%d %H:%M UTC"))
+}
+
+# Run tournament fetch for current year
+CURRENT_YEAR_INT <- as.integer(format(Sys.Date(), "%Y"))
+tourney_data <- fetch_tournament_results(CURRENT_YEAR_INT)
+if (!is.null(tourney_data)) {
+  out_file <- file.path(OUT_DIR, paste0("tournament_", CURRENT_YEAR_INT, ".json"))
+  jsonlite::write_json(tourney_data, out_file, auto_unbox = TRUE, pretty = TRUE)
+  message("Tournament JSON written: ", out_file)
+}
 message("College Baseball done.")
+
