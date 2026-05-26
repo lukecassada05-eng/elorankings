@@ -18,6 +18,7 @@ window.initSportPage = function(CFG) {
       if (tab.dataset.tab === 'byconf')       renderByConf();
       if (tab.dataset.tab === 'predictor')    renderPredictor();
       if (tab.dataset.tab === 'bracketology') renderBracketology();
+      if (tab.dataset.tab === 'tourney')       renderCBaseTourney();
       if (tab.dataset.tab === 'resume')       renderResume();
       if (tab.dataset.tab === 'history')      renderHistory();
       if (tab.dataset.tab === 'tracker')      renderSeasonTracker();
@@ -701,6 +702,7 @@ window.initSportPage = function(CFG) {
       if (pn === 'byconf')       renderByConf();
       if (pn === 'predictor')    renderPredictor();
       if (pn === 'bracketology') renderBracketology();
+      if (pn === 'tourney')       renderCBaseTourney();
       if (pn === 'resume')       renderResume();
       if (pn === 'history')      renderHistory();
       if (pn === 'tracker')      renderSeasonTracker();
@@ -1095,6 +1097,249 @@ window.initSportPage = function(CFG) {
   }
 
   // ── Bracketology ───────────────────────────────────────────
+
+  // ── 2026 NCAA Baseball Tournament ─────────────────────────────────────────
+  var CBASE_BRACKET_2026 = {
+    year: 2026,
+    regionals: [
+      {id:0,  name:"Los Angeles",    nseed:1,  teams:["UCLA","Virginia Tech","Cal Poly","Saint Mary's"]},
+      {id:1,  name:"Atlanta",        nseed:2,  teams:["Georgia Tech","Oklahoma","The Citadel","UIC"]},
+      {id:2,  name:"Athens",         nseed:3,  teams:["Georgia","Boston College","Liberty","LIU"]},
+      {id:3,  name:"Auburn",         nseed:4,  teams:["Auburn","UCF","NC State","Milwaukee"]},
+      {id:4,  name:"Chapel Hill",    nseed:5,  teams:["North Carolina","Tennessee","East Carolina","VCU"]},
+      {id:5,  name:"Austin",         nseed:6,  teams:["Texas","UC Santa Barbara","Dallas Baptist","Holy Cross"]},
+      {id:6,  name:"Tuscaloosa",     nseed:7,  teams:["Alabama","Vanderbilt","Coastal Carolina","N. Kentucky"]},
+      {id:7,  name:"Gainesville",    nseed:8,  teams:["Florida","Ole Miss","LSU","Lipscomb"]},
+      {id:8,  name:"Hattiesburg",    nseed:9,  teams:["Southern Miss","Wake Forest","Wichita St","Bucknell"]},
+      {id:9,  name:"Tallahassee",    nseed:10, teams:["Florida State","Virginia","Kennesaw St","NJIT"]},
+      {id:10, name:"Eugene",         nseed:11, teams:["Oregon","Sam Houston","Penn State","Siena"]},
+      {id:11, name:"College Station",nseed:12, teams:["Texas A&M","TCU","Clemson","Quinnipiac"]},
+      {id:12, name:"Lincoln",        nseed:13, teams:["Nebraska","Ole Miss","Arizona State","The Citadel"]},
+      {id:13, name:"Starkville",     nseed:14, teams:["Mississippi State","Arkansas","Memphis","Maine"]},
+      {id:14, name:"Lawrence",       nseed:15, teams:["Kansas","Connecticut","Stetson","N Dakota St"]},
+      {id:15, name:"Morgantown",     nseed:16, teams:["West Virginia","Wake Forest","Oklahoma State","SE Missouri St"]}
+    ],
+    // Super regional pairings: winner of regional A vs winner of regional B
+    // national seed 1v16, 2v15, 3v14, 4v13, 5v12, 6v11, 7v10, 8v9
+    superPairs: [[0,15],[1,14],[2,13],[3,12],[4,11],[5,10],[6,9],[7,8]]
+  };
+
+  function renderCBaseTourney() {
+    var el = document.getElementById('panel-tourney');
+    if (!el || CFG.sport !== 'CBASE') return;
+
+    el.innerHTML = '<div class="loading"><div class="spinner"></div>Running simulations…</div>';
+
+    // Give UI a moment to render the loading state
+    setTimeout(function() { _runCBaseTourney(el); }, 30);
+  }
+
+  function _runCBaseTourney(el) {
+    // Build Elo lookup from current CSV data
+    // Try to match bracket team names to data team names
+    var eloMap = {};
+    var DEFAULT_ELO = 1450;
+    if (data && data.length) {
+      data.forEach(function(r) { eloMap[r.team] = r.elo; });
+    }
+
+    function getElo(name) {
+      if (eloMap[name]) return eloMap[name];
+      // Fuzzy match: find team in data whose name contains the bracket name or vice versa
+      var nl = name.toLowerCase().replace(/[^a-z0-9]/g,'');
+      var best = null, bestScore = 0;
+      Object.keys(eloMap).forEach(function(k) {
+        var kl = k.toLowerCase().replace(/[^a-z0-9]/g,'');
+        if (kl === nl) { best = k; bestScore = 999; return; }
+        if (kl.includes(nl) || nl.includes(kl)) {
+          var score = Math.min(kl.length, nl.length);
+          if (score > bestScore) { best = k; bestScore = score; }
+        }
+      });
+      return best ? eloMap[best] : DEFAULT_ELO;
+    }
+
+    // Assign Elo to every team
+    var teamElos = {};
+    CBASE_BRACKET_2026.regionals.forEach(function(reg) {
+      reg.teams.forEach(function(t) { teamElos[t] = getElo(t); });
+    });
+
+    // Win probability from Elo
+    function wp(eA, eB) { return 1/(1+Math.pow(10,(eB-eA)/400)); }
+
+    // Simulate one game
+    function simG(a, b) { return Math.random() < wp(teamElos[a], teamElos[b]) ? a : b; }
+
+    // Double-elimination regional (4 teams)
+    // Standard bracket: W: 1v4, 2v3  L: losers play  Championship
+    function simRegional(teams) {
+      var t = teams.slice(); // [s1, s2, s3, s4]
+      // Winners bracket round 1
+      var w1 = simG(t[0],t[3]), l1 = (w1===t[0]?t[3]:t[0]);
+      var w2 = simG(t[1],t[2]), l2 = (w2===t[1]?t[2]:t[1]);
+      // Losers bracket round 1
+      var lb1 = simG(l1,l2); // loser goes home
+      // Winners bracket final
+      var wbF = simG(w1,w2); var wbL = (wbF===w1?w2:w1);
+      // Losers bracket semifinal: wbL vs lb1
+      var lb2 = simG(wbL, lb1);
+      // Championship game 1: wbF (0 L) vs lb2 (1 L)
+      var cg1 = simG(wbF, lb2);
+      if (cg1 !== wbF) {
+        // Championship game 2 (only if lb2 wins game 1)
+        cg1 = simG(wbF, lb2);
+      }
+      return cg1;
+    }
+
+    // Best of 3 super regional
+    function simSR(a, b) {
+      var wA=0, wB=0;
+      while(wA<2&&wB<2){ var g=simG(a,b); if(g===a)wA++;else wB++; }
+      return wA>=2?a:b;
+    }
+
+    // CWS: 8 teams, two 4-team double-elim brackets, championship best-of-3
+    // CWS bracket 1: seeds 1,4,5,8 (national seeds)   bracket 2: seeds 2,3,6,7
+    function simCWS(eight) {
+      // eight[i] = winner of super regional i (i=0..7)
+      // Bracket 1: 0,3,4,7  Bracket 2: 1,2,5,6
+      var b1 = [eight[0],eight[3],eight[4],eight[7]];
+      var b2 = [eight[1],eight[2],eight[5],eight[6]];
+      var c1 = simRegional(b1); // use same DE4 logic
+      var c2 = simRegional(b2);
+      // Championship: best of 3
+      return simSR(c1, c2);
+    }
+
+    // ── Monte Carlo: N simulations ─────────────────────────────────────────
+    var N = 5000;
+    var counts = {}; // team → [regionalWins, srWins, cwsWins, champWins]
+    var allTeams = [];
+    CBASE_BRACKET_2026.regionals.forEach(function(reg) {
+      reg.teams.forEach(function(t) {
+        counts[t] = [0,0,0,0];
+        allTeams.push(t);
+      });
+    });
+
+    for (var sim=0; sim<N; sim++) {
+      // Simulate all 16 regionals
+      var regWinners = CBASE_BRACKET_2026.regionals.map(function(reg) {
+        var w = simRegional(reg.teams);
+        counts[w][0]++;
+        return w;
+      });
+      // Super regionals
+      var srWinners = CBASE_BRACKET_2026.superPairs.map(function(pair) {
+        var a = regWinners[pair[0]], b = regWinners[pair[1]];
+        var w = simSR(a, b);
+        counts[w][1]++;
+        return w;
+      });
+      // CWS
+      var cwsWin = simCWS(srWinners);
+      counts[cwsWin][2]++;
+      // Champion (CWS winner who wins the finals)
+      // Note: simCWS already does the final, cwsWin IS the champion
+      counts[cwsWin][3]++;
+    }
+
+    // ── Build output ───────────────────────────────────────────────────────
+    var avg = 0, cnt=0;
+    allTeams.forEach(function(t){ avg+=teamElos[t]; cnt++; });
+    avg = avg/cnt;
+    function clr(e){return e>=avg?'var(--green-hi)':e<avg-150?'var(--red-hi)':'var(--accent)';}
+    function pct(n){ return (n/N*100).toFixed(1)+'%'; }
+    function bar(n, maxN, color) {
+      var w = Math.round(n/maxN*100);
+      return '<div style="background:var(--bg4);border-radius:2px;height:4px;flex:1;margin-left:6px;overflow:hidden">'
+        +'<div style="width:'+w+'%;height:100%;background:'+color+';border-radius:2px"></div></div>';
+    }
+
+    // Sort all teams by CWS appearance prob for the odds table
+    var sorted = allTeams.slice().sort(function(a,b){return counts[b][3]-counts[a][3];});
+    var maxChamp = counts[sorted[0]][3];
+
+    var oddsHtml = '<table style="width:100%;border-collapse:collapse;font-size:0.78rem">'
+      +'<thead><tr style="border-bottom:1px solid var(--border)">'
+      +'<th style="text-align:left;padding:0.4rem 0.5rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim)">Team</th>'
+      +'<th style="text-align:left;padding:0.4rem 0.5rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim)">Elo</th>'
+      +'<th style="text-align:right;padding:0.4rem 0.5rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim)">Regional</th>'
+      +'<th style="text-align:right;padding:0.4rem 0.5rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim)">Super R</th>'
+      +'<th style="text-align:right;padding:0.4rem 0.5rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim)">CWS</th>'
+      +'<th style="padding:0.4rem 0.5rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent)">Champion</th>'
+      +'</tr></thead><tbody>';
+
+    sorted.forEach(function(t, i) {
+      var e = teamElos[t];
+      var c = clr(e);
+      var champPct = counts[t][3]/N;
+      oddsHtml += '<tr style="border-bottom:1px solid rgba(255,255,255,0.04)">'
+        +'<td style="padding:0.35rem 0.5rem;font-weight:'+(i<8?'600':'400')+';color:'+c+'">'+t+'</td>'
+        +'<td style="padding:0.35rem 0.5rem;color:var(--text-dim);font-family:var(--font-mono);font-size:0.72rem">'+e.toFixed(0)+'</td>'
+        +'<td style="padding:0.35rem 0.5rem;text-align:right;color:var(--text-dim)">'+pct(counts[t][0])+'</td>'
+        +'<td style="padding:0.35rem 0.5rem;text-align:right;color:var(--text-dim)">'+pct(counts[t][1])+'</td>'
+        +'<td style="padding:0.35rem 0.5rem;text-align:right;color:var(--text-dim)">'+pct(counts[t][2])+'</td>'
+        +'<td style="padding:0.35rem 0.5rem">'
+        +'<div style="display:flex;align-items:center">'
+        +'<span style="font-weight:600;color:'+c+';min-width:42px">'+pct(counts[t][3])+'</span>'
+        +bar(counts[t][3], maxChamp, c)
+        +'</div></td>'
+        +'</tr>';
+    });
+    oddsHtml += '</tbody></table>';
+
+    // Regional summary
+    var regHtml = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.6rem;margin-bottom:1.5rem">';
+    CBASE_BRACKET_2026.regionals.forEach(function(reg) {
+      regHtml += '<div class="card" style="padding:0.65rem">'
+        +'<div style="font-size:0.58rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim);margin-bottom:0.4rem">'
+        +'#'+reg.nseed+' '+reg.name+' Regional</div>';
+      // Sort teams by regional win %
+      var rTeams = reg.teams.slice().sort(function(a,b){return counts[b][0]-counts[a][0];});
+      rTeams.forEach(function(t) {
+        var winPct = counts[t][0]/N;
+        var e = teamElos[t];
+        regHtml += '<div style="display:flex;align-items:center;padding:0.15rem 0;gap:0.4rem">'
+          +'<span style="color:'+clr(e)+';font-size:0.72rem;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+t+'</span>'
+          +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);min-width:34px;text-align:right">'+(winPct*100).toFixed(0)+'%</span>'
+          +'</div>';
+      });
+      regHtml += '</div>';
+    });
+    regHtml += '</div>';
+
+    var topChamp = sorted[0];
+    var topElo   = teamElos[topChamp];
+
+    el.innerHTML = ''
+      +'<div class="section-header"><span>⚾ 2026 NCAA Baseball Tournament · Omaha Odds</span>'
+      +'<button id="cbase-resim" style="margin-left:auto;padding:0.2rem 0.7rem;border:1px solid var(--border);background:var(--bg3);border-radius:var(--radius);cursor:pointer;font-size:0.72rem;color:var(--text)">🎲 Re-simulate ('+N.toLocaleString()+'×)</button></div>'
+      +'<div class="section-note" style="margin-bottom:1rem">Based on '+N.toLocaleString()+' Monte Carlo simulations using Elo ratings · '
+      +'Regionals: double-elimination · Super Regionals: best-of-3 · CWS: Omaha (Jun 12–22)'
+      +'</div>'
+
+      +'<div class="card" style="padding:1rem;display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;border:1px solid var(--accent)">'
+      +'<div style="flex:1">'
+      +'<div style="font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim)">Most likely champion</div>'
+      +'<div style="font-size:1.3rem;font-weight:700;color:'+clr(topElo)+'">'+topChamp+'</div>'
+      +'<div style="font-size:0.72rem;color:var(--text-dim);margin-top:0.1rem">'+pct(counts[topChamp][3])+' championship probability · Elo '+topElo.toFixed(0)+'</div>'
+      +'</div>'
+      +'<div style="font-size:2rem">🏆</div>'
+      +'</div>'
+
+      +'<div style="font-weight:600;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim);margin-bottom:0.75rem">Championship Odds — All 64 Teams</div>'
+      +'<div class="card" style="padding:0.75rem;margin-bottom:1.5rem;overflow-x:auto">'+oddsHtml+'</div>'
+
+      +'<div style="font-weight:600;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim);margin-bottom:0.5rem">Regional Win Probabilities</div>'
+      +regHtml;
+
+    document.getElementById('cbase-resim').onclick = function() { renderCBaseTourney(); };
+  }
+
+
   function renderBracketology() {
     const el = document.getElementById('panel-bracketology');
     if (!el || !data.length) return;
