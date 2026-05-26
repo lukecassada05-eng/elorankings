@@ -1,0 +1,372 @@
+name: Update All Elo Rankings
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+    - cron: '0 19 * * *'
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: write
+
+# ─────────────────────────────────────────────────────────────
+# KEY FIXES IN THIS VERSION:
+#  1. CSVs now write to docs/SPORT/data/ (inside GitHub Pages root)
+#     so the site can actually fetch them. Previous versions wrote
+#     to SPORT/data/ which is outside the Pages-served docs/ folder.
+#  2. Each job does `git add docs/SPORT/data/` (sport-specific data only) so
+#     all new CSV files are captured regardless of subdirectory.
+#  3. NHL now uses ESPN API (fastRhockey hits dead old NHL API).
+#  4. NHL/CFB/CBASE only need httr+jsonlite (pure CRAN, no r-universe).
+#  5. System deps (libcurl etc.) installed before R packages in every job.
+#
+# PACKAGE REPOS:
+#   nflreadr  → nflverse.r-universe.dev
+#   hoopR, baseballr → sportsdataverse.r-universe.dev
+#   everything else → standard CRAN
+#
+# PARALLEL: all 8 sport jobs run simultaneously on their own branches.
+# MERGE job waits for all, merges into main, deletes branches.
+# ─────────────────────────────────────────────────────────────
+
+jobs:
+
+  # ── NFL ──────────────────────────────────────────────────────
+  nfl:
+    name: "NFL"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libstdc++6 build-essential r-base-dev
+      - uses: r-lib/actions/setup-r@v2.11.3
+        with: { r-version: 'latest' }
+      - uses: actions/cache@v4.2.3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-nfl-${{ runner.os }}-latest-v4
+          restore-keys: r-nfl-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('nflverse/nflreadr','dplyr','readr'))
+            stopifnot(requireNamespace('nflreadr', quietly=TRUE))
+            message('packages OK')
+          "
+      - name: Run update
+        run: Rscript R/update_nfl.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/NFL/data/'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "data(nfl): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── NBA ──────────────────────────────────────────────────────
+  nba:
+    name: "NBA"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libstdc++6 build-essential r-base-dev
+      - uses: r-lib/actions/setup-r@v2.11.3
+        with: { r-version: 'latest' }
+      - uses: actions/cache@v4.2.3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-nba-${{ runner.os }}-latest-v4
+          restore-keys: r-nba-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('dplyr','readr','httr','jsonlite'))
+            stopifnot(requireNamespace('httr', quietly=TRUE))
+            message('packages OK')
+          "
+      - name: Run update
+        run: Rscript R/update_nba.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/NBA/data/'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "data(nba): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── MLB ──────────────────────────────────────────────────────
+  mlb:
+    name: "MLB"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libstdc++6 build-essential r-base-dev
+      - uses: r-lib/actions/setup-r@v2.11.3
+        with: { r-version: 'latest' }
+      - uses: actions/cache@v4.2.3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-mlb-${{ runner.os }}-latest-v4
+          restore-keys: r-mlb-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('sportsdataverse/baseballr','dplyr','readr'))
+            stopifnot(requireNamespace('baseballr', quietly=TRUE))
+            message('packages OK')
+          "
+      - name: Run update
+        run: Rscript R/update_mlb.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/MLB/data/'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "data(mlb): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── CBB ──────────────────────────────────────────────────────
+  cbb:
+    name: "College Basketball"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libstdc++6 build-essential r-base-dev
+      - uses: r-lib/actions/setup-r@v2.11.3
+        with: { r-version: 'latest' }
+      - uses: actions/cache@v4.2.3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-cbb-${{ runner.os }}-latest-v4
+          restore-keys: r-cbb-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('sportsdataverse/hoopR','dplyr','readr','lubridate'))
+            stopifnot(requireNamespace('hoopR', quietly=TRUE))
+            message('packages OK')
+          "
+      - name: Run update
+        run: Rscript R/update_cbb.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/CBB/data/'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "data(cbb): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── CFB — ESPN API, no key needed ────────────────────────────
+  cfb:
+    name: "College Football"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libstdc++6 build-essential r-base-dev
+      - uses: r-lib/actions/setup-r@v2.11.3
+        with: { r-version: 'latest' }
+      - uses: actions/cache@v4.2.3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-cfb-${{ runner.os }}-latest-v4
+          restore-keys: r-cfb-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('dplyr','readr','jsonlite'))
+            message('packages OK')
+          "
+      - name: Run update
+        run: Rscript R/update_cfb.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/CFB/data/'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "data(cfb): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── NHL — ESPN API, no key needed ────────────────────────────
+  nhl:
+    name: "NHL"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libstdc++6 build-essential r-base-dev
+      - uses: r-lib/actions/setup-r@v2.11.3
+        with: { r-version: 'latest' }
+      - uses: actions/cache@v4.2.3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-nhl-${{ runner.os }}-latest-v4
+          restore-keys: r-nhl-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('dplyr','readr','httr','jsonlite'))
+            stopifnot(requireNamespace('httr', quietly=TRUE))
+            message('packages OK')
+          "
+      - name: Run update
+        run: Rscript R/update_nhl.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/NHL/data/'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "data(nhl): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── Soccer ───────────────────────────────────────────────────
+  soccer:
+    name: "Soccer"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libstdc++6 build-essential r-base-dev
+      - uses: r-lib/actions/setup-r@v2.11.3
+        with: { r-version: 'latest' }
+      - uses: actions/cache@v4.2.3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-soccer-${{ runner.os }}-latest-v4
+          restore-keys: r-soccer-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('dplyr','readr'))
+            message('packages OK')
+          "
+      - name: Run update
+        run: Rscript R/update_soccer.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/Soccer/data/'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "data(soccer): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── College Baseball — ESPN API, no key ──────────────────────
+  college-baseball:
+    name: "College Baseball"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libstdc++6 build-essential r-base-dev
+      - uses: r-lib/actions/setup-r@v2.11.3
+        with: { r-version: 'latest' }
+      - uses: actions/cache@v4.2.3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-cbase-${{ runner.os }}-latest-v4
+          restore-keys: r-cbase-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('dplyr','readr','jsonlite'))
+            message('packages OK')
+          "
+      - name: Run update
+        run: Rscript R/update_college_baseball.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/CollegeBaseball/data/'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "data(cbase): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── Backfill playoff data (runs weekly + on demand) ───────────
+  backfill:
+    name: "Backfill Playoff Data"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages('pak', repos='https://cloud.r-project.org', quiet=TRUE)
+            pak::pak(c('jsonlite'))
+            message('packages OK')
+          "
+      - name: Run backfill
+        run: Rscript R/backfill_playoff_data.R
+      - name: Commit tournament JSONs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'docs/NBA/data/tournament_*.json' \
+                  'docs/NHL/data/tournament_*.json' \
+                  'docs/MLB/data/tournament_*.json' \
+                  'docs/NFL/data/tournament_*.json' \
+                  'docs/CBB/data/tournament_*.json' \
+                  'docs/CollegeBaseball/data/tournament_*.json'
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "playoff data: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
