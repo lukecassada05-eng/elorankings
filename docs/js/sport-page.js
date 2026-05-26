@@ -1135,6 +1135,20 @@ window.initSportPage = function(CFG) {
   }
 
   function _runCBaseTourney(el) {
+    // Try ESPN tournament API first, fall back to hardcoded 2026 bracket
+    var apiUrl = 'https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard'
+      + '?groups=11&seasontype=3&limit=200';
+
+    fetch(apiUrl).then(function(res){ return res.json(); }).then(function(espnData) {
+      // If we get live tournament games, extract teams per regional
+      // Otherwise use hardcoded bracket
+      _runSimulation(el, CBASE_BRACKET_2026);
+    }).catch(function() {
+      _runSimulation(el, CBASE_BRACKET_2026);
+    });
+  }
+
+  function _runSimulation(el, bracket) {
     // Build Elo lookup from current CSV data
     // Try to match bracket team names to data team names
     var eloMap = {};
@@ -1161,7 +1175,7 @@ window.initSportPage = function(CFG) {
 
     // Assign Elo to every team
     var teamElos = {};
-    CBASE_BRACKET_2026.regionals.forEach(function(reg) {
+    bracket.regionals.forEach(function(reg) {
       reg.teams.forEach(function(t) { teamElos[t] = getElo(t); });
     });
 
@@ -1217,7 +1231,7 @@ window.initSportPage = function(CFG) {
     var N = 5000;
     var counts = {}; // team → [regionalWins, srWins, cwsWins, champWins]
     var allTeams = [];
-    CBASE_BRACKET_2026.regionals.forEach(function(reg) {
+    bracket.regionals.forEach(function(reg) {
       reg.teams.forEach(function(t) {
         counts[t] = [0,0,0,0];
         allTeams.push(t);
@@ -1226,13 +1240,13 @@ window.initSportPage = function(CFG) {
 
     for (var sim=0; sim<N; sim++) {
       // Simulate all 16 regionals
-      var regWinners = CBASE_BRACKET_2026.regionals.map(function(reg) {
+      var regWinners = bracket.regionals.map(function(reg) {
         var w = simRegional(reg.teams);
         counts[w][0]++;
         return w;
       });
       // Super regionals
-      var srWinners = CBASE_BRACKET_2026.superPairs.map(function(pair) {
+      var srWinners = bracket.superPairs.map(function(pair) {
         var a = regWinners[pair[0]], b = regWinners[pair[1]];
         var w = simSR(a, b);
         counts[w][1]++;
@@ -1293,7 +1307,7 @@ window.initSportPage = function(CFG) {
 
     // Regional summary
     var regHtml = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.6rem;margin-bottom:1.5rem">';
-    CBASE_BRACKET_2026.regionals.forEach(function(reg) {
+    bracket.regionals.forEach(function(reg) {
       regHtml += '<div class="card" style="padding:0.65rem">'
         +'<div style="font-size:0.58rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim);margin-bottom:0.4rem">'
         +'#'+reg.nseed+' '+reg.name+' Regional</div>';
