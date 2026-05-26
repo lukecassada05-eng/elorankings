@@ -124,25 +124,25 @@
   <div id="panel-bracketology" hidden><div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;margin-bottom:1rem;font-size:0.83rem;color:var(--text-muted);line-height:1.7">Auto bids go to the top-rated team per conference. At-large bids fill the 64-team CWS field. <span id="bracketInfo" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim)"></span></div><div id="bracketView"></div></div>
 
   <div id="panel-history" hidden>
-    <!-- populated by sport-page.js?v=31 renderHistory() -->
+    <!-- populated by sport-page.js renderHistory() -->
   </div>
 
   <div id="panel-tracker" hidden>
-    <!-- populated by sport-page.js?v=31 renderSeasonTracker() -->
+    <!-- populated by sport-page.js renderSeasonTracker() -->
   </div>
 
   <div id="panel-greatest" hidden>
-    <!-- populated by sport-page.js?v=31 renderGreatestTeams() -->
+    <!-- populated by sport-page.js renderGreatestTeams() -->
   </div>
 
   <div id="panel-confhistory" hidden>
-    <!-- populated by sport-page.js?v=31 renderConfHistory() -->
+    <!-- populated by sport-page.js renderConfHistory() -->
   </div>
 </div><!-- .page -->
 
-<script src="../js/utils.js?v=31"></script>
-<script src="../js/season-tracker.js?v=31"></script>
-<script src="../js/sport-page.js?v=31"></script>
+<script src="../js/utils.js"></script>
+<script src="../js/season-tracker.js"></script>
+<script src="../js/sport-page.js"></script>
 <script>
 initSportPage({
   sport:     'CBASE',
@@ -151,7 +151,7 @@ initSportPage({
   hca:       50,
   confLabel: 'Conference',
   kFactor:   30,
-  tabs:      ["rankings", "byconf", "bracketology", "predictor"],
+  tabs:      ["rankings", "byconf", "bracketology", "predictor", "tourney"],
 });
 </script>
   <script>
