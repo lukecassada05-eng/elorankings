@@ -736,7 +736,9 @@ fetch_cbase_season <- function(yr) {
     ds    <- gsub("-","", d)
     de    <- gsub("-","", as.character(d_end))
 
-    # Try groups=11 first (D1 only), then without groups for tournament games
+    # Fetch BOTH: groups=11 (D1 vs D1) AND no-groups (all opponents)
+    # Combining both captures more games for lesser programs vs D2/D3 opponents
+    chunk_rows <- list()
     for (url_str in c(
       paste0("https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard",
              "?limit=1000&groups=11&dates=", ds, "-", de),
@@ -750,19 +752,19 @@ fetch_cbase_season <- function(yr) {
       if (!is.null(data) && length(data$events) > 0) {
         rows <- Filter(Negate(is.null), lapply(data$events, parse_event))
         if (length(rows) > 0) {
-          all_games <- c(all_games, list(data.frame(
+          chunk_rows <- c(chunk_rows, list(data.frame(
             winner     = sapply(rows, `[[`, "winner"),
             loser      = sapply(rows, `[[`, "loser"),
             winner_pts = as.numeric(sapply(rows, `[[`, "winner_pts")),
             loser_pts  = as.numeric(sapply(rows, `[[`, "loser_pts")),
             stringsAsFactors = FALSE
           )))
-          break  # got data, no need to try without groups
         }
       }
       Sys.sleep(0.1)
     }
-    Sys.sleep(0.2)
+    if (length(chunk_rows) > 0) all_games <- c(all_games, chunk_rows)
+    Sys.sleep(0.15)
   }
 
   if (!length(all_games)) return(NULL)
@@ -785,7 +787,7 @@ for (yr in SEASONS) {
     message("  Skipping — ", if(is.null(g)) 0 else nrow(g), " games"); next
   }
 
-  elo <- run_elo(g, k = 30, iters = 10, min_games = 5)
+  elo <- run_elo(g, k = 30, iters = 10, min_games = 3)
   elo <- attach_best_wins(elo, g)
   sos <- compute_sos(g, elo)
   conf_vec <- setNames(
