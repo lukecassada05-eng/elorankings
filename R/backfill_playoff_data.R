@@ -128,6 +128,10 @@ fetch_playoff_games <- function(sport_path, start_date, end_date, season_yr=NULL
     if (!is.null(data) && length(data$events) > 0) {
       for (ev in data$events) {
         tryCatch({
+          # Skip All-Star, Pro Bowl, skills events
+          ev_name <- tolower(tryCatch(ev$name, error=function(e) ""))
+          skip_words <- c("all-star","all star","pro bowl","skills","celebrity","rising stars")
+          if (any(sapply(skip_words, function(w) grepl(w, ev_name, fixed=TRUE)))) next
           comp  <- ev$competitions[[1]]
           if (!isTRUE(comp$status$type$completed)) next
           comps <- comp$competitors
@@ -208,7 +212,44 @@ fetch_cbb_bracket <- function(season_yr) {
   games
 }
 
+build_series_by_round <- function(games, win_to_advance) {
+  # Group games by round, then build series within each round
+  # This prevents play-in games from being merged with playoff series
+  round_games <- list()
+  for (g in games) {
+    rnd <- tryCatch(g$round, error=function(e) "")
+    if (is.null(rnd) || length(rnd)==0 || nchar(rnd)==0) rnd <- "_unknown"
+    if (is.null(round_games[[rnd]])) round_games[[rnd]] <- list()
+    round_games[[rnd]] <- c(round_games[[rnd]], list(g))
+  }
+  # If only one round (or unknown), just use build_series directly
+  known_rounds <- names(round_games)[names(round_games) != "_unknown"]
+  if (length(known_rounds) <= 1) return(build_series(games, win_to_advance))
+  # Build series per round, then combine
+  all_series <- list(); all_elim <- c()
+  for (rnd in names(round_games)) {
+    b <- build_series(round_games[[rnd]], win_to_advance)
+    all_series <- c(all_series, b$series)
+    all_elim   <- c(all_elim, unlist(b$eliminated))
+  }
+  # Sort all series by date
+  if (length(all_series)>1) {
+    dates <- sapply(all_series, function(s) if(nchar(s$date)>0) s$date else "9999")
+    all_series <- all_series[order(dates)]
+  }
+  list(series=all_series, eliminated=as.list(unique(all_elim)))
+}
+
+
 build_series <- function(games, win_to_advance) {
+  # Deduplicate games by winner+loser+date to prevent double-counting
+  seen_games <- list()
+  games <- Filter(function(g) {
+    key <- paste(g$winner, g$loser, tryCatch(g$date, error=function(e)""), sep="|")
+    if (!is.null(seen_games[[key]])) return(FALSE)
+    seen_games[[key]] <<- TRUE
+    TRUE
+  }, games)
   pair_wins <- list()
   for (g in games) {
     key <- paste(sort(c(g$winner, g$loser)), collapse="|")
@@ -272,7 +313,9 @@ write_tournament_json <- function(sport_name, season_yr, games_yr,
     season_yr = season_yr
   )
   
-  built <- build_series(games, win_to_advance)
+  # For NBA: separate play-in (seasontype=5) from playoff (seasontype=3) games
+  # to prevent a team appearing twice in the same "series"
+  built <- build_series_by_round(games, win_to_advance)
   
   # Determine if season is complete
   completed <- (fetch_end >= end || (today > end))
