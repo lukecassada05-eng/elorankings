@@ -32,6 +32,13 @@
       "date": "2002-10-02"
     },
     {
+      "winner": "Athletics           ",
+      "loser": "Twins               ",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2002-10-02"
+    },
+    {
       "winner": "Angels              ",
       "loser": "Yankees             ",
       "winner_score": 8,
@@ -254,7 +261,7 @@
       "t1": "Twins               ",
       "t2": "Athletics           ",
       "w1": 3,
-      "w2": 1,
+      "w2": 2,
       "done": true,
       "loser": "Athletics           "
     },
@@ -316,5 +323,5 @@
     "Cardinals           ",
     "Giants              "
   ],
-  "updated": "2026-05-27 00:00 UTC"
+  "updated": "2026-05-27 03:24 UTC"
 }
