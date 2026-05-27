@@ -1593,7 +1593,7 @@ window.initSportPage = function(CFG) {
             +'<span style="font-family:var(--font-mono);font-size:0.72rem;color:'+(isW?'var(--accent)':'var(--text-dim)')+'">'+tw+'</span>'
             +'</div>';
         });
-        if(!sdone) seriesHtml+='<div style="font-size:0.55rem;color:var(--text-dim);margin-top:0.2rem">Best of '+(WIN_TO_ADV*2-1)+'</div>';
+        if(!sdone) seriesHtml+='<div style="font-size:0.55rem;color:var(--text-dim);margin-top:0.2rem">'+(WIN_TO_ADV===1?'Single elimination':'Best of '+(WIN_TO_ADV*2-1))+'</div>';
         seriesHtml+='</div>';
       });
       seriesHtml+='</div>';
