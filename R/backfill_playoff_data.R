@@ -43,10 +43,17 @@ fetch_playoff_games <- function(sport_path, start_date, end_date, season_yr=NULL
           names  <- sapply(comps, function(c) c$team$shortDisplayName)
           if (any(is.na(scores)) || scores[1] == scores[2]) next
           wi <- which.max(scores); li <- 3 - wi
+          # Capture round name from ESPN event notes or season type details
+          round_name <- tryCatch({
+            notes <- ev$competitions[[1]]$notes
+            if (!is.null(notes) && length(notes)>0) notes[[1]]$headline
+            else tryCatch(ev$season$slug, error=function(e) "")
+          }, error=function(e) "")
+          game_date <- tryCatch(substr(comp$date,1,10), error=function(e)"")
           all_games <- c(all_games, list(list(
             winner=names[wi], loser=names[li],
             winner_score=scores[wi], loser_score=scores[li],
-            date=tryCatch(substr(comp$date,1,10), error=function(e)"")
+            date=game_date, round=round_name
           )))
         }, error=function(e) NULL)
       }
@@ -107,9 +114,17 @@ build_series <- function(games, win_to_advance) {
   for (g in games) {
     key <- paste(sort(c(g$winner, g$loser)), collapse="|")
     if (is.null(pair_wins[[key]])) 
-      pair_wins[[key]] <- list(t1=g$winner, t2=g$loser, w1=0L, w2=0L)
+      pair_wins[[key]] <- list(t1=g$winner, t2=g$loser, w1=0L, w2=0L,
+                               round="", dates=c())
     if (pair_wins[[key]]$t1 == g$winner) pair_wins[[key]]$w1 <- pair_wins[[key]]$w1 + 1L
     else                                  pair_wins[[key]]$w2 <- pair_wins[[key]]$w2 + 1L
+    # Track round name and first game date
+    rnd <- tryCatch(g$round, error=function(e) "")
+    if (!is.null(rnd) && nchar(rnd)>0 && nchar(pair_wins[[key]]$round)==0)
+      pair_wins[[key]]$round <- rnd
+    dt <- tryCatch(g$date, error=function(e) "")
+    if (!is.null(dt) && nchar(dt)>0)
+      pair_wins[[key]]$dates <- c(pair_wins[[key]]$dates, dt)
   }
   series <- list(); eliminated <- c()
   for (key in names(pair_wins)) {
@@ -117,9 +132,16 @@ build_series <- function(games, win_to_advance) {
     done <- (s$w1 >= win_to_advance || s$w2 >= win_to_advance)
     loser<- if (done) (if (s$w1 < s$w2) s$t1 else s$t2) else ""
     if (done && nchar(loser) > 0) eliminated <- c(eliminated, loser)
+    first_date <- if (length(s$dates)>0) min(s$dates) else ""
     series <- c(series, list(list(
-      t1=s$t1, t2=s$t2, w1=s$w1, w2=s$w2, done=done, loser=loser
+      t1=s$t1, t2=s$t2, w1=s$w1, w2=s$w2, done=done, loser=loser,
+      round=s$round, date=first_date
     )))
+  }
+  # Sort series by date so rounds are in order
+  if (length(series) > 1) {
+    dates <- sapply(series, function(s) if(nchar(s$date)>0) s$date else "9999")
+    series <- series[order(dates)]
   }
   list(series=series, eliminated=as.list(unique(eliminated)))
 }
