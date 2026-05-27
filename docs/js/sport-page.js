@@ -1427,7 +1427,7 @@ window.initSportPage = function(CFG) {
 
     var yr = currentSeason || new Date().getFullYear();
     // NFL: playoffs happen Jan/Feb of the NEXT calendar year after the season
-    var jsonYr = (CFG.sport === 'NFL') ? yr + 1 : yr;
+    var jsonYr = yr; // JSON is always named by season year
     var basePath = CFG.dataPath.replace(CFG.sport + '_Elo_', '');
     var jsonUrl  = basePath + 'tournament_' + jsonYr + '.json?t=' + Date.now();
 
@@ -1672,11 +1672,11 @@ window.initSportPage = function(CFG) {
             var isW=sdone&&t.n===sw, isL=sdone&&t.n!==sw;
             var fill=isW?'var(--accent)':(isL?'#555':'var(--text)'), fw=isW?'600':'400';
             var sc='';
-            if(isSingle&&gs.length>0){sc=gs[0].winner===t.n?(gs[0].winner_score||gs[0].ws||0):(gs[0].loser_score||gs[0].ls||0);}
-            else{
-              // Cap series wins at WIN_TO_ADV to guard against double-count data issues
-              var rawW = t.w||0;
-              sc = Math.min(rawW, WIN_TO_ADV);
+            if(isSingle&&gs.length>0){
+              sc=gs[0].winner===t.n?(gs[0].winner_score||gs[0].ws||0):(gs[0].loser_score||gs[0].ls||0);
+            } else {
+              // Cap at WIN_TO_ADV to prevent double-count display bugs
+              sc=Math.min(t.w||0, WIN_TO_ADV);
             }
             if(isW)parts.push('<rect x="'+colX+'" y="'+rowY+'" width="'+COL_W+'" height="'+CELL_H+'" fill="rgba(255,255,255,0.04)"/>');
             parts.push('<foreignObject x="'+(colX+6)+'" y="'+rowY+'" width="'+(COL_W-32)+'" height="'+CELL_H+'"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:11px;line-height:'+CELL_H+'px;color:'+fill+';font-weight:'+fw+';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'+(isL?'text-decoration:line-through;opacity:0.5;':'')+'font-family:inherit;">'+escXml(t.n)+(isW?' ✓':'')+'</div></foreignObject>');
@@ -1693,9 +1693,12 @@ window.initSportPage = function(CFG) {
           } else if(ri===0){
             parts.push('<line x1="0" y1="'+midY+'" x2="'+colX+'" y2="'+midY+'" stroke="#444" stroke-width="1.5"/>');
           }
-          // Clickable overlay for series game log
-          if(!isSingle&&gs.length>0){
-            parts.push('<rect class="svgbtn" data-key="'+escXml([s.t1,s.t2].sort().join('||'))+'" x="'+colX+'" y="'+topY+'" width="'+COL_W+'" height="'+boxH+'" rx="3" fill="transparent" cursor="pointer" opacity="0" title="Click to see game log"/>');
+          // Clickable overlay for any series with game data
+          if(gs.length>0){
+            var ck=escXml([s.t1,s.t2].sort().join('||'));
+            parts.push('<rect class="svgbtn" data-key="'+ck+'" x="'+colX+'" y="'+topY
+              +'" width="'+COL_W+'" height="'+boxH+'" rx="3" fill="transparent" cursor="pointer" opacity="0"/>');
+            parts.push('<circle cx="'+(colX+COL_W-8)+'" cy="'+(topY+5)+'" r="2.5" fill="#888"/>');
           }
         });
         prevCenters=curC;
