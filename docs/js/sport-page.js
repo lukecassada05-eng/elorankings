@@ -1125,19 +1125,19 @@ window.initSportPage = function(CFG) {
   function renderCBaseTourney() {
     var el = document.getElementById('panel-tourney');
     if (!el || CFG.sport !== 'CBASE') return;
-    if (!data || !data.length) {
-      el.innerHTML = '<div class="empty-state">Load a season first to see Elo-based odds.</div>';
-      return;
-    }
-    // Use bracket for current loaded season, fall back to latest available
+    if (!data || !data.length) { el.innerHTML = '<div class="empty-state">Load a season first.</div>'; return; }
     var bracketYear = currentSeason || new Date().getFullYear();
-    var bracket = window['CBASE_BRACKET_' + bracketYear] || CBASE_BRACKET_2026;
-    if (!bracket) {
-      el.innerHTML = '<div class="empty-state">Tournament bracket not yet available for ' + bracketYear + '.</div>';
+    if (bracketYear !== 2026) {
+      var bp = CFG.dataPath.replace('CBASE_Elo_','');
+      el.innerHTML = '<div class="loading"><div class="spinner"></div>Loading…</div>';
+      fetch(bp+'tournament_'+bracketYear+'.json?t='+Date.now())
+        .then(function(r){return r.ok?r.json():Promise.reject();})
+        .then(function(d){_renderTourneyData(el,d);})
+        .catch(function(){el.innerHTML='<div class="empty-state">No tournament data for '+bracketYear+'.</div>';});
       return;
     }
     el.innerHTML = '<div class="loading"><div class="spinner"></div>Running simulations…</div>';
-    setTimeout(function() { _runCBaseTourney(el, bracket); }, 30);
+    setTimeout(function(){_runCBaseTourney(el,CBASE_BRACKET_2026);},30);
   }
 
   function _runCBaseTourney(el, bracket) {
@@ -1493,7 +1493,8 @@ window.initSportPage = function(CFG) {
     var orderMap = ROUND_ORDER[CFG.sport] || {};
 
     // ── Colors ─────────────────────────────────────────────────
-    var knownElos = Object.keys(eloMap).map(function(k){return eloMap[k];});
+    function escXml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+        var knownElos = Object.keys(eloMap).map(function(k){return eloMap[k];});
     var avg = knownElos.length ? knownElos.reduce(function(s,v){return s+v;},0)/knownElos.length : 1500;
     function clr(name) {
       if (eliminated[name]) return 'var(--text-dim)';
@@ -1641,88 +1642,66 @@ window.initSportPage = function(CFG) {
       html += '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoff bracket not yet set — showing projected odds based on current Elo.</div>';
     }
 
-    // ── Bracket: rounds as vertical columns, scrollable ────────
+    // ── SVG Bracket Tree ───────────────────────────────────────────────
     if (rounds.length) {
-      var colW = Math.max(160, Math.min(220, Math.floor(el.offsetWidth / rounds.length) - 8));
-      html += '<div style="overflow-x:auto;margin-bottom:1.5rem;padding-bottom:0.5rem">'
-        +'<div style="display:flex;gap:6px;min-width:'+(rounds.length * (colW+6))+'px;align-items:flex-start">';
+      var COL_W=185, CELL_H=26, PAD_V=7, CONN=28;
+      var r0n=rounds[0]?rounds[0].series.length:1;
+      var UNIT=CELL_H*2+PAD_V*2+8;
+      var SVG_H=Math.max(200,r0n*UNIT+32);
+      var SVG_W=rounds.length*(COL_W+CONN)+CONN+4;
+      var parts=[]; var prevCenters=[];
 
-      rounds.forEach(function(rnd, ri) {
-        html += '<div style="flex:0 0 '+colW+'px;min-width:'+colW+'px">'
-          +'<div style="text-align:center;padding:0.3rem 0.25rem;font-size:0.58rem;font-weight:700;'
-          +'text-transform:uppercase;letter-spacing:0.07em;color:var(--text-dim);'
-          +'border-bottom:2px solid var(--border);margin-bottom:6px">'+rnd.label+'</div>';
-
-        rnd.series.forEach(function(s) {
-          var sdone = s.done || s.w1>=WIN_TO_ADV || s.w2>=WIN_TO_ADV;
-          var sw = sdone ? (s.w1>s.w2?s.t1:s.t2) : '';
-          var isSingle = WIN_TO_ADV === 1;
-          var games = pairGames(s.t1, s.t2);
-
-          html += '<div style="background:var(--bg3);border-radius:6px;border:1px solid '
-            +(sdone?'var(--border)':hasGames?'rgba(226,201,126,0.25)':'var(--border)')
-            +';overflow:hidden;margin-bottom:6px">';
-
-          if (isSingle && games.length > 0) {
-            // Single-elim with score
-            games.forEach(function(g, gi) {
-              if (gi>0) html += '<div style="height:1px;background:var(--border)"></div>';
-              [[g.winner,g.winner_score||g.ws,true],[g.loser,g.loser_score||g.ls,false]].forEach(function(row) {
-                var t=row[0], sc=row[1], isW=row[2];
-                html += '<div style="display:flex;align-items:center;padding:0.3rem 0.5rem;'
-                  +(isW?'background:rgba(255,255,255,0.03)':'opacity:0.45')+'">'
-                  +'<span style="color:'+clr(t)+';font-size:0.72rem;font-weight:'+(isW?'700':'400')+';flex:1;'
-                  +'white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="'+t+'">'+t+(isW?' ✓':'')+'</span>'
-                  +'<span style="font-family:var(--font-mono);font-size:0.75rem;font-weight:'+(isW?'700':'500')+';'
-                  +'color:'+(isW?'var(--accent)':'var(--text-dim)')+';min-width:2ch;text-align:right">'+sc+'</span>'
-                  +'</div>';
-              });
-            });
-          } else if (isSingle) {
-            // Single-elim, no score yet
-            [s.t1,s.t2].forEach(function(t) {
-              var isW = sdone && t===sw;
-              html += '<div style="display:flex;align-items:center;padding:0.28rem 0.5rem;'
-                +(sdone&&!isW?'opacity:0.4;text-decoration:line-through;':'')+'">'
-                +'<span style="color:'+clr(t)+';font-size:0.72rem;font-weight:'+(isW?'700':'400')+';flex:1;'
-                +'white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="'+t+'">'+t+(isW?' ✓':'')+'</span>'
-                +(sdone?''+'<span style="font-size:0.6rem;color:var(--text-dim)">TBD</span>':'')
-                +'</div>';
-            });
-          } else {
-            // Best-of-N series
-            [s.t1,s.t2].forEach(function(t,ti) {
-              var tw=ti===0?s.w1:s.w2, isW=sdone&&t===sw, isL=sdone&&t!==sw;
-              var eStr = (N>0&&champCount[t]!==undefined&&!isCompleted)
-                ? ' <span style="font-size:0.52rem;color:var(--text-dim)">'+(champCount[t]/N*100).toFixed(0)+'%</span>' : '';
-              html += '<div style="display:flex;align-items:center;padding:0.28rem 0.5rem;'
-                +(isW?'background:rgba(255,255,255,0.03)':'')+(isL?'opacity:0.4;text-decoration:line-through;':'')+'">'
-                +'<span style="color:'+clr(t)+';font-size:0.72rem;font-weight:'+(isW?'700':'400')+';flex:1;'
-                +'white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="'+t+'">'+t+(isW?' ✓':'')+eStr+'</span>'
-                +'<span style="font-family:var(--font-mono);font-size:0.75rem;font-weight:'+(isW?'700':'400')+';'
-                +'color:'+(isW?'var(--accent)':'var(--text-dim)')+';min-width:1ch;text-align:right">'+tw+'</span>'
-                +'</div>';
-            });
-            // Individual game scores
-            if (games.length > 0) {
-              html += '<div style="border-top:1px solid var(--border);padding:0.2rem 0.5rem">';
-              games.forEach(function(g,gi) {
-                html += '<div style="font-size:0.57rem;color:var(--text-dim);line-height:1.6">'
-                  +'G'+(gi+1)+': <span style="color:var(--text)">'+g.winner+'</span> '
-                  +'<span style="font-family:var(--font-mono)">'+(g.winner_score||g.ws||'')+'–'+(g.loser_score||g.ls||'')+'</span>'
-                  +(g.date?' <span style="opacity:0.45">'+g.date.slice(5)+'</span>':'')
-                  +'</div>';
-              });
-              html += '</div>';
-            } else if (!sdone) {
-              html += '<div style="font-size:0.52rem;color:var(--text-dim);padding:0.12rem 0.5rem;border-top:1px solid var(--border)">Best of '+(WIN_TO_ADV*2-1)+'</div>';
+      rounds.forEach(function(rnd,ri){
+        var colX=ri*(COL_W+CONN)+CONN;
+        var n=rnd.series.length, step=SVG_H/n, curC=[];
+        parts.push('<text x="'+(colX+COL_W/2)+'" y="13" text-anchor="middle" font-size="9" font-weight="600" fill="#888" font-family="inherit" letter-spacing="0.06em">'+escXml(rnd.label)+'</text>');
+        rnd.series.forEach(function(s,si){
+          var topY=20+si*step+(step-(CELL_H*2+PAD_V*2))/2;
+          var boxH=CELL_H*2+PAD_V*2, midY=topY+boxH/2;
+          curC.push(midY);
+          var sdone=s.done||s.w1>=WIN_TO_ADV||s.w2>=WIN_TO_ADV;
+          var sw=sdone?(s.w1>s.w2?s.t1:s.t2):'';
+          var gs=pairGames(s.t1,s.t2), isSingle=WIN_TO_ADV===1;
+          // Box + divider
+          parts.push('<rect x="'+colX+'" y="'+topY+'" width="'+COL_W+'" height="'+boxH+'" rx="3" fill="var(--bg3)" stroke="'+(sdone?'#333':'rgba(226,201,126,0.3)')+'" stroke-width="1"/>');
+          parts.push('<line x1="'+colX+'" y1="'+(topY+PAD_V+CELL_H)+'" x2="'+(colX+COL_W)+'" y2="'+(topY+PAD_V+CELL_H)+'" stroke="#333" stroke-width="0.75"/>');
+          // Teams
+          [{n:s.t1,w:s.w1},{n:s.t2,w:s.w2}].forEach(function(t,ti){
+            var rowY=topY+PAD_V+ti*CELL_H, midTY=rowY+CELL_H*0.67;
+            var isW=sdone&&t.n===sw, isL=sdone&&t.n!==sw;
+            var fill=isW?'var(--accent)':(isL?'#555':'var(--text)'), fw=isW?'600':'400';
+            var sc='';
+            if(isSingle&&gs.length>0){sc=gs[0].winner===t.n?(gs[0].winner_score||gs[0].ws||0):(gs[0].loser_score||gs[0].ls||0);}
+            else{sc=t.w||0;}
+            if(isW)parts.push('<rect x="'+colX+'" y="'+rowY+'" width="'+COL_W+'" height="'+CELL_H+'" fill="rgba(255,255,255,0.04)"/>');
+            parts.push('<foreignObject x="'+(colX+6)+'" y="'+rowY+'" width="'+(COL_W-32)+'" height="'+CELL_H+'"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:11px;line-height:'+CELL_H+'px;color:'+fill+';font-weight:'+fw+';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'+(isL?'text-decoration:line-through;opacity:0.5;':'')+'font-family:inherit;">'+escXml(t.n)+(isW?' ✓':'')+'</div></foreignObject>');
+            parts.push('<text x="'+(colX+COL_W-5)+'" y="'+midTY+'" text-anchor="end" font-size="12" font-family="var(--font-mono,monospace)" font-weight="'+fw+'" fill="'+(isW?'var(--accent)':'#666')+'">'+sc+'</text>');
+          });
+          // Connector lines
+          if(ri>0&&prevCenters.length>=2){
+            var pA=prevCenters[si*2],pB=prevCenters[si*2+1];
+            if(pA!==undefined&&pB!==undefined){
+              var jx=colX-CONN/2;
+              parts.push('<polyline points="'+(colX-CONN)+','+pA+' '+jx+','+pA+' '+jx+','+pB+' '+(colX-CONN)+','+pB+'" fill="none" stroke="#444" stroke-width="1.5"/>');
+              parts.push('<line x1="'+jx+'" y1="'+midY+'" x2="'+colX+'" y2="'+midY+'" stroke="#444" stroke-width="1.5"/>');
             }
+          } else if(ri===0){
+            parts.push('<line x1="0" y1="'+midY+'" x2="'+colX+'" y2="'+midY+'" stroke="#444" stroke-width="1.5"/>');
           }
-          html += '</div>';
+          // Clickable overlay for series game log
+          if(!isSingle&&gs.length>0){
+            parts.push('<rect class="svgbtn" data-key="'+escXml([s.t1,s.t2].sort().join('||'))+'" x="'+colX+'" y="'+topY+'" width="'+COL_W+'" height="'+boxH+'" rx="3" fill="transparent" cursor="pointer" opacity="0" title="Click to see game log"/>');
+          }
         });
-        html += '</div>';
+        prevCenters=curC;
       });
-      html += '</div></div>';
+
+      var glData={};
+      seriesList.forEach(function(s){var k=[s.t1,s.t2].sort().join('||');var g=pairGames(s.t1,s.t2);if(g.length)glData[k]={t1:s.t1,t2:s.t2,w1:s.w1,w2:s.w2,games:g};});
+
+      html+='<div style="overflow-x:auto;margin-bottom:1rem"><svg id="brk-svg" xmlns="http://www.w3.org/2000/svg" width="'+SVG_W+'" height="'+SVG_H+'" style="display:block;font-family:inherit">'+parts.join('')+'</svg></div>';
+      html+='<div id="game-log-panel" style="display:none;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:0.75rem;margin-bottom:1rem"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem"><span id="glp-title" style="font-weight:600;font-size:0.8rem"></span><button onclick="document.getElementById(\'game-log-panel\').style.display=\'none\'" style="background:none;border:none;cursor:pointer;color:var(--text-dim);font-size:1.1rem;line-height:1">✕</button></div><div id="glp-body"></div></div>';
+      html+='<scr'+'ipt>(function(){var D='+JSON.stringify(glData)+';function show(k){var d=D[k];if(!d)return;document.getElementById("glp-title").textContent=d.t1+" vs "+d.t2+" · "+d.w1+"-"+d.w2;document.getElementById("glp-body").innerHTML=d.games.map(function(g,i){return\'<div style="display:flex;gap:0.5rem;padding:0.2rem 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.78rem"><span style="color:#888;min-width:2rem">G\'+(i+1)+\'</span><span style="flex:1;font-weight:600;color:var(--accent)">\'+g.winner+\'</span><span style="font-family:monospace">\'+(g.winner_score||g.ws||0)+\'–\'+(g.loser_score||g.ls||0)+\'</span>\'+(g.date?\'<span style="color:#888;font-size:0.68rem">\'+g.date.slice(5)+\'</span>\':\'\')+\'</div>\';}).join("");document.getElementById("game-log-panel").style.display="block";}setTimeout(function(){document.querySelectorAll(".svgbtn").forEach(function(el){el.addEventListener("click",function(){show(this.getAttribute("data-key"));});});},100);})()</scr'+'ipt>\n';
     }
 
     // ── Champion card ──────────────────────────────────────────
