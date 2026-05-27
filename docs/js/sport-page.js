@@ -1145,7 +1145,7 @@ window.initSportPage = function(CFG) {
     // Try to load live tournament JSON written by R script
     // Falls back to hardcoded bracket if not found
     var yr = bracket.year || new Date().getFullYear();
-    var basePath = CFG.dataPath.replace('CBASE_Elo_', '');
+    var basePath = CFG.dataPath.replace(CFG.sport + '_Elo_', '');
     var jsonUrl = basePath + 'tournament_' + yr + '.json?t=' + Date.now();
 
     fetch(jsonUrl)
