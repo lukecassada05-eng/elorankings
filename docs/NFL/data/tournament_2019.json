@@ -52,6 +52,14 @@
       "round": "NFC CHAMPIONSHIP"
     },
     {
+      "winner": "AFC All-Stars",
+      "loser": "NFC All-Stars",
+      "winner_score": 38,
+      "loser_score": 33,
+      "date": "2020-01-26",
+      "round": "PRO BOWL"
+    },
+    {
       "winner": "Kansas City Chiefs",
       "loser": "San Francisco 49ers",
       "winner_score": 31,
@@ -122,6 +130,16 @@
       "date": "2020-01-19"
     },
     {
+      "t1": "AFC All-Stars",
+      "t2": "NFC All-Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NFC All-Stars",
+      "round": "PRO BOWL",
+      "date": "2020-01-26"
+    },
+    {
       "t1": "Kansas City Chiefs",
       "t2": "San Francisco 49ers",
       "w1": 1,
@@ -139,7 +157,8 @@
     "Houston Texans",
     "Tennessee Titans",
     "Green Bay Packers",
+    "NFC All-Stars",
     "San Francisco 49ers"
   ],
-  "updated": "2026-05-27 07:54 UTC"
+  "updated": "2026-05-27 08:17 UTC"
 }
