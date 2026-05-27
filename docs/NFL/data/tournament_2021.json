@@ -8,98 +8,112 @@
       "loser": "Raiders",
       "winner_score": 26,
       "loser_score": 19,
-      "date": "2022-01-15"
+      "date": "2022-01-15",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Bills",
       "loser": "Patriots",
       "winner_score": 47,
       "loser_score": 17,
-      "date": "2022-01-16"
+      "date": "2022-01-16",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Buccaneers",
       "loser": "Eagles",
       "winner_score": 31,
       "loser_score": 15,
-      "date": "2022-01-16"
+      "date": "2022-01-16",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "49ers",
       "loser": "Cowboys",
       "winner_score": 23,
       "loser_score": 17,
-      "date": "2022-01-16"
+      "date": "2022-01-16",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Chiefs",
       "loser": "Steelers",
       "winner_score": 42,
       "loser_score": 21,
-      "date": "2022-01-17"
+      "date": "2022-01-17",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Rams",
       "loser": "Cardinals",
       "winner_score": 34,
       "loser_score": 11,
-      "date": "2022-01-18"
+      "date": "2022-01-18",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Bengals",
       "loser": "Titans",
       "winner_score": 19,
       "loser_score": 16,
-      "date": "2022-01-22"
+      "date": "2022-01-22",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "49ers",
       "loser": "Packers",
       "winner_score": 13,
       "loser_score": 10,
-      "date": "2022-01-23"
+      "date": "2022-01-23",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Rams",
       "loser": "Buccaneers",
       "winner_score": 30,
       "loser_score": 27,
-      "date": "2022-01-23"
+      "date": "2022-01-23",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Chiefs",
       "loser": "Bills",
       "winner_score": 42,
       "loser_score": 36,
-      "date": "2022-01-23"
+      "date": "2022-01-23",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "Bengals",
       "loser": "Chiefs",
       "winner_score": 27,
       "loser_score": 24,
-      "date": "2022-01-30"
+      "date": "2022-01-30",
+      "round": "AFC Championship"
     },
     {
       "winner": "Rams",
       "loser": "49ers",
       "winner_score": 20,
       "loser_score": 17,
-      "date": "2022-01-30"
+      "date": "2022-01-30",
+      "round": "NFC Championship"
     },
     {
       "winner": "AFC",
       "loser": "NFC",
       "winner_score": 41,
       "loser_score": 35,
-      "date": "2022-02-06"
+      "date": "2022-02-06",
+      "round": "Pro Bowl"
     },
     {
       "winner": "Rams",
       "loser": "Bengals",
       "winner_score": 23,
       "loser_score": 20,
-      "date": "2022-02-13"
+      "date": "2022-02-13",
+      "round": "Super Bowl LVI"
     }
   ],
   "series": [
@@ -109,7 +123,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Raiders"
+      "loser": "Raiders",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2022-01-15"
     },
     {
       "t1": "Bills",
@@ -117,7 +133,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Patriots"
+      "loser": "Patriots",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2022-01-16"
     },
     {
       "t1": "Buccaneers",
@@ -125,7 +143,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles"
+      "loser": "Eagles",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2022-01-16"
     },
     {
       "t1": "49ers",
@@ -133,7 +153,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cowboys"
+      "loser": "Cowboys",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2022-01-16"
     },
     {
       "t1": "Chiefs",
@@ -141,7 +163,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers"
+      "loser": "Steelers",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2022-01-17"
     },
     {
       "t1": "Rams",
@@ -149,7 +173,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cardinals"
+      "loser": "Cardinals",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2022-01-18"
     },
     {
       "t1": "Bengals",
@@ -157,7 +183,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Titans"
+      "loser": "Titans",
+      "round": "AFC Divisional Playoffs",
+      "date": "2022-01-22"
     },
     {
       "t1": "49ers",
@@ -165,7 +193,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers"
+      "loser": "Packers",
+      "round": "NFC Divisional Playoffs",
+      "date": "2022-01-23"
     },
     {
       "t1": "Rams",
@@ -173,7 +203,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Buccaneers"
+      "loser": "Buccaneers",
+      "round": "NFC Divisional Playoffs",
+      "date": "2022-01-23"
     },
     {
       "t1": "Chiefs",
@@ -181,7 +213,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bills"
+      "loser": "Bills",
+      "round": "AFC Divisional Playoffs",
+      "date": "2022-01-23"
     },
     {
       "t1": "Bengals",
@@ -189,7 +223,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chiefs"
+      "loser": "Chiefs",
+      "round": "AFC Championship",
+      "date": "2022-01-30"
     },
     {
       "t1": "Rams",
@@ -197,7 +233,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "49ers"
+      "loser": "49ers",
+      "round": "NFC Championship",
+      "date": "2022-01-30"
     },
     {
       "t1": "AFC",
@@ -205,7 +243,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "NFC"
+      "loser": "NFC",
+      "round": "Pro Bowl",
+      "date": "2022-02-06"
     },
     {
       "t1": "Rams",
@@ -213,7 +253,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bengals"
+      "loser": "Bengals",
+      "round": "Super Bowl LVI",
+      "date": "2022-02-13"
     }
   ],
   "eliminated": [
@@ -232,5 +274,5 @@
     "NFC",
     "Bengals"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

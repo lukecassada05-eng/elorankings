@@ -8,56 +8,64 @@
       "loser": "Ravens",
       "winner_score": 15,
       "loser_score": 6,
-      "date": "2007-01-13"
+      "date": "2007-01-13",
+      "round": "DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Saints",
       "loser": "Eagles",
       "winner_score": 27,
       "loser_score": 24,
-      "date": "2007-01-14"
+      "date": "2007-01-14",
+      "round": "DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Bears",
       "loser": "Seahawks",
       "winner_score": 27,
       "loser_score": 24,
-      "date": "2007-01-14"
+      "date": "2007-01-14",
+      "round": "DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Patriots",
       "loser": "Chargers",
       "winner_score": 24,
       "loser_score": 21,
-      "date": "2007-01-14"
+      "date": "2007-01-14",
+      "round": "DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Bears",
       "loser": "Saints",
       "winner_score": 39,
       "loser_score": 14,
-      "date": "2007-01-21"
+      "date": "2007-01-21",
+      "round": "NFC CHAMPIONSHIP"
     },
     {
       "winner": "Colts",
       "loser": "Patriots",
       "winner_score": 38,
       "loser_score": 34,
-      "date": "2007-01-21"
+      "date": "2007-01-21",
+      "round": "AFC CHAMPIONSHIP"
     },
     {
       "winner": "Colts",
       "loser": "Bears",
       "winner_score": 29,
       "loser_score": 17,
-      "date": "2007-02-04"
+      "date": "2007-02-04",
+      "round": "Super Bowl XLI"
     },
     {
       "winner": "AFC",
       "loser": "NFC",
       "winner_score": 31,
       "loser_score": 28,
-      "date": "2007-02-10"
+      "date": "2007-02-10",
+      "round": "AT HAWAII"
     }
   ],
   "series": [
@@ -67,7 +75,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens"
+      "loser": "Ravens",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2007-01-13"
     },
     {
       "t1": "Saints",
@@ -75,7 +85,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles"
+      "loser": "Eagles",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2007-01-14"
     },
     {
       "t1": "Bears",
@@ -83,7 +95,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Seahawks"
+      "loser": "Seahawks",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2007-01-14"
     },
     {
       "t1": "Patriots",
@@ -91,7 +105,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chargers"
+      "loser": "Chargers",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2007-01-14"
     },
     {
       "t1": "Bears",
@@ -99,7 +115,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Saints"
+      "loser": "Saints",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2007-01-21"
     },
     {
       "t1": "Colts",
@@ -107,7 +125,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Patriots"
+      "loser": "Patriots",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2007-01-21"
     },
     {
       "t1": "Colts",
@@ -115,7 +135,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bears"
+      "loser": "Bears",
+      "round": "Super Bowl XLI",
+      "date": "2007-02-04"
     },
     {
       "t1": "AFC",
@@ -123,7 +145,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "NFC"
+      "loser": "NFC",
+      "round": "AT HAWAII",
+      "date": "2007-02-10"
     }
   ],
   "eliminated": [
@@ -136,5 +160,5 @@
     "Bears",
     "NFC"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

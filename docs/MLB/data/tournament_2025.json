@@ -8,301 +8,344 @@
       "loser": "Tigers",
       "winner_score": 6,
       "loser_score": 1,
-      "date": "2025-10-01"
+      "date": "2025-10-01",
+      "round": "ALWC - Game 2"
     },
     {
       "winner": "Padres",
       "loser": "Cubs",
       "winner_score": 3,
       "loser_score": 0,
-      "date": "2025-10-01"
+      "date": "2025-10-01",
+      "round": "NLWC - Game 2"
     },
     {
       "winner": "Yankees",
       "loser": "Red Sox",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2025-10-01"
+      "date": "2025-10-01",
+      "round": "ALWC - Game 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Reds",
       "winner_score": 8,
       "loser_score": 4,
-      "date": "2025-10-02"
+      "date": "2025-10-02",
+      "round": "NLWC - Game 2"
     },
     {
       "winner": "Tigers",
       "loser": "Guardians",
       "winner_score": 6,
       "loser_score": 3,
-      "date": "2025-10-02"
+      "date": "2025-10-02",
+      "round": "ALWC - Game 3"
     },
     {
       "winner": "Cubs",
       "loser": "Padres",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2025-10-02"
+      "date": "2025-10-02",
+      "round": "NLWC - Game 3"
     },
     {
       "winner": "Yankees",
       "loser": "Red Sox",
       "winner_score": 4,
       "loser_score": 0,
-      "date": "2025-10-03"
+      "date": "2025-10-03",
+      "round": "ALWC - Game 3"
     },
     {
       "winner": "Brewers",
       "loser": "Cubs",
       "winner_score": 9,
       "loser_score": 3,
-      "date": "2025-10-04"
+      "date": "2025-10-04",
+      "round": "NLDS - Game 1"
     },
     {
       "winner": "Blue Jays",
       "loser": "Yankees",
       "winner_score": 10,
       "loser_score": 1,
-      "date": "2025-10-04"
+      "date": "2025-10-04",
+      "round": "ALDS - Game 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Phillies",
       "winner_score": 5,
       "loser_score": 3,
-      "date": "2025-10-04"
+      "date": "2025-10-04",
+      "round": "NLDS - Game 1"
     },
     {
       "winner": "Tigers",
       "loser": "Mariners",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2025-10-05"
+      "date": "2025-10-05",
+      "round": "ALDS - Game 1"
     },
     {
       "winner": "Blue Jays",
       "loser": "Yankees",
       "winner_score": 13,
       "loser_score": 7,
-      "date": "2025-10-05"
+      "date": "2025-10-05",
+      "round": "ALDS - Game 2"
     },
     {
       "winner": "Mariners",
       "loser": "Tigers",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2025-10-06"
+      "date": "2025-10-06",
+      "round": "ALDS - Game 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Phillies",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2025-10-06"
+      "date": "2025-10-06",
+      "round": "NLDS - Game 2"
     },
     {
       "winner": "Brewers",
       "loser": "Cubs",
       "winner_score": 7,
       "loser_score": 3,
-      "date": "2025-10-07"
+      "date": "2025-10-07",
+      "round": "NLDS - Game 2"
     },
     {
       "winner": "Mariners",
       "loser": "Tigers",
       "winner_score": 8,
       "loser_score": 4,
-      "date": "2025-10-07"
+      "date": "2025-10-07",
+      "round": "ALDS - Game 3"
     },
     {
       "winner": "Yankees",
       "loser": "Blue Jays",
       "winner_score": 9,
       "loser_score": 6,
-      "date": "2025-10-08"
+      "date": "2025-10-08",
+      "round": "ALDS - Game 3"
     },
     {
       "winner": "Tigers",
       "loser": "Mariners",
       "winner_score": 9,
       "loser_score": 3,
-      "date": "2025-10-08"
+      "date": "2025-10-08",
+      "round": "ALDS - Game 4"
     },
     {
       "winner": "Cubs",
       "loser": "Brewers",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2025-10-08"
+      "date": "2025-10-08",
+      "round": "NLDS - Game 3"
     },
     {
       "winner": "Blue Jays",
       "loser": "Yankees",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2025-10-08"
+      "date": "2025-10-08",
+      "round": "ALDS - Game 4"
     },
     {
       "winner": "Phillies",
       "loser": "Dodgers",
       "winner_score": 8,
       "loser_score": 2,
-      "date": "2025-10-09"
+      "date": "2025-10-09",
+      "round": "NLDS - Game 3"
     },
     {
       "winner": "Dodgers",
       "loser": "Phillies",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2025-10-09"
+      "date": "2025-10-09",
+      "round": "NLDS - Game 4"
     },
     {
       "winner": "Cubs",
       "loser": "Brewers",
       "winner_score": 6,
       "loser_score": 0,
-      "date": "2025-10-10"
+      "date": "2025-10-10",
+      "round": "NLDS - Game 4"
     },
     {
       "winner": "Mariners",
       "loser": "Tigers",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2025-10-11"
+      "date": "2025-10-11",
+      "round": "ALDS - Game 5"
     },
     {
       "winner": "Brewers",
       "loser": "Cubs",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2025-10-12"
+      "date": "2025-10-12",
+      "round": "NLDS - Game 5"
     },
     {
       "winner": "Mariners",
       "loser": "Blue Jays",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2025-10-13"
+      "date": "2025-10-13",
+      "round": "ALCS - Game 1"
     },
     {
       "winner": "Mariners",
       "loser": "Blue Jays",
       "winner_score": 10,
       "loser_score": 3,
-      "date": "2025-10-13"
+      "date": "2025-10-13",
+      "round": "ALCS - Game 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Brewers",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2025-10-14"
+      "date": "2025-10-14",
+      "round": "NLCS - Game 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Brewers",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2025-10-15"
+      "date": "2025-10-15",
+      "round": "NLCS - Game 2"
     },
     {
       "winner": "Blue Jays",
       "loser": "Mariners",
       "winner_score": 13,
       "loser_score": 4,
-      "date": "2025-10-16"
+      "date": "2025-10-16",
+      "round": "ALCS - Game 3"
     },
     {
       "winner": "Dodgers",
       "loser": "Brewers",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2025-10-16"
+      "date": "2025-10-16",
+      "round": "NLCS - Game 3"
     },
     {
       "winner": "Blue Jays",
       "loser": "Mariners",
       "winner_score": 8,
       "loser_score": 2,
-      "date": "2025-10-17"
+      "date": "2025-10-17",
+      "round": "ALCS - Game 4"
     },
     {
       "winner": "Mariners",
       "loser": "Blue Jays",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2025-10-17"
+      "date": "2025-10-17",
+      "round": "ALCS - Game 5"
     },
     {
       "winner": "Dodgers",
       "loser": "Brewers",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2025-10-18"
+      "date": "2025-10-18",
+      "round": "NLCS - Game 4"
     },
     {
       "winner": "Blue Jays",
       "loser": "Mariners",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2025-10-20"
+      "date": "2025-10-20",
+      "round": "ALCS - Game 6"
     },
     {
       "winner": "Blue Jays",
       "loser": "Mariners",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2025-10-21"
+      "date": "2025-10-21",
+      "round": "ALCS - Game 7"
     },
     {
       "winner": "Blue Jays",
       "loser": "Dodgers",
       "winner_score": 11,
       "loser_score": 4,
-      "date": "2025-10-25"
+      "date": "2025-10-25",
+      "round": "World Series - Game 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Blue Jays",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2025-10-26"
+      "date": "2025-10-26",
+      "round": "World Series - Game 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Blue Jays",
       "winner_score": 6,
       "loser_score": 5,
-      "date": "2025-10-28"
+      "date": "2025-10-28",
+      "round": "World Series - Game 3"
     },
     {
       "winner": "Blue Jays",
       "loser": "Dodgers",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2025-10-29"
+      "date": "2025-10-29",
+      "round": "World Series - Game 4"
     },
     {
       "winner": "Blue Jays",
       "loser": "Dodgers",
       "winner_score": 6,
       "loser_score": 1,
-      "date": "2025-10-30"
+      "date": "2025-10-30",
+      "round": "World Series - Game 5"
     },
     {
       "winner": "Dodgers",
       "loser": "Blue Jays",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2025-11-01"
+      "date": "2025-11-01",
+      "round": "World Series - Game 6"
     },
     {
       "winner": "Dodgers",
       "loser": "Blue Jays",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2025-11-02"
+      "date": "2025-11-02",
+      "round": "World Series - Game 7"
     }
   ],
   "series": [
@@ -312,7 +355,9 @@
       "w1": 1,
       "w2": 1,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "ALWC - Game 2",
+      "date": "2025-10-01"
     },
     {
       "t1": "Padres",
@@ -320,7 +365,9 @@
       "w1": 1,
       "w2": 1,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NLWC - Game 2",
+      "date": "2025-10-01"
     },
     {
       "t1": "Yankees",
@@ -328,7 +375,9 @@
       "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "ALWC - Game 2",
+      "date": "2025-10-01"
     },
     {
       "t1": "Dodgers",
@@ -336,7 +385,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NLWC - Game 2",
+      "date": "2025-10-02"
     },
     {
       "t1": "Brewers",
@@ -344,7 +395,9 @@
       "w1": 3,
       "w2": 2,
       "done": true,
-      "loser": "Cubs"
+      "loser": "Cubs",
+      "round": "NLDS - Game 1",
+      "date": "2025-10-04"
     },
     {
       "t1": "Blue Jays",
@@ -352,7 +405,9 @@
       "w1": 3,
       "w2": 1,
       "done": true,
-      "loser": "Yankees"
+      "loser": "Yankees",
+      "round": "ALDS - Game 1",
+      "date": "2025-10-04"
     },
     {
       "t1": "Dodgers",
@@ -360,7 +415,9 @@
       "w1": 3,
       "w2": 1,
       "done": true,
-      "loser": "Phillies"
+      "loser": "Phillies",
+      "round": "NLDS - Game 1",
+      "date": "2025-10-04"
     },
     {
       "t1": "Tigers",
@@ -368,7 +425,9 @@
       "w1": 2,
       "w2": 3,
       "done": true,
-      "loser": "Tigers"
+      "loser": "Tigers",
+      "round": "ALDS - Game 1",
+      "date": "2025-10-05"
     },
     {
       "t1": "Mariners",
@@ -376,7 +435,9 @@
       "w1": 3,
       "w2": 4,
       "done": true,
-      "loser": "Mariners"
+      "loser": "Mariners",
+      "round": "ALCS - Game 1",
+      "date": "2025-10-13"
     },
     {
       "t1": "Dodgers",
@@ -384,7 +445,9 @@
       "w1": 4,
       "w2": 0,
       "done": true,
-      "loser": "Brewers"
+      "loser": "Brewers",
+      "round": "NLCS - Game 1",
+      "date": "2025-10-14"
     },
     {
       "t1": "Blue Jays",
@@ -392,7 +455,9 @@
       "w1": 3,
       "w2": 4,
       "done": true,
-      "loser": "Blue Jays"
+      "loser": "Blue Jays",
+      "round": "World Series - Game 1",
+      "date": "2025-10-25"
     }
   ],
   "eliminated": [
@@ -404,5 +469,5 @@
     "Brewers",
     "Blue Jays"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

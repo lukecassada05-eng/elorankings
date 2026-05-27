@@ -8,98 +8,112 @@
       "loser": "Seahawks",
       "winner_score": 41,
       "loser_score": 23,
-      "date": "2023-01-14"
+      "date": "2023-01-14",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Jaguars",
       "loser": "Chargers",
       "winner_score": 31,
       "loser_score": 30,
-      "date": "2023-01-15"
+      "date": "2023-01-15",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Bills",
       "loser": "Dolphins",
       "winner_score": 34,
       "loser_score": 31,
-      "date": "2023-01-15"
+      "date": "2023-01-15",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Giants",
       "loser": "Vikings",
       "winner_score": 31,
       "loser_score": 24,
-      "date": "2023-01-15"
+      "date": "2023-01-15",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Bengals",
       "loser": "Ravens",
       "winner_score": 24,
       "loser_score": 17,
-      "date": "2023-01-16"
+      "date": "2023-01-16",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Cowboys",
       "loser": "Buccaneers",
       "winner_score": 31,
       "loser_score": 14,
-      "date": "2023-01-17"
+      "date": "2023-01-17",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Chiefs",
       "loser": "Jaguars",
       "winner_score": 27,
       "loser_score": 20,
-      "date": "2023-01-21"
+      "date": "2023-01-21",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "Eagles",
       "loser": "Giants",
       "winner_score": 38,
       "loser_score": 7,
-      "date": "2023-01-22"
+      "date": "2023-01-22",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Bengals",
       "loser": "Bills",
       "winner_score": 27,
       "loser_score": 10,
-      "date": "2023-01-22"
+      "date": "2023-01-22",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "49ers",
       "loser": "Cowboys",
       "winner_score": 19,
       "loser_score": 12,
-      "date": "2023-01-22"
+      "date": "2023-01-22",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Eagles",
       "loser": "49ers",
       "winner_score": 31,
       "loser_score": 7,
-      "date": "2023-01-29"
+      "date": "2023-01-29",
+      "round": "NFC Championship"
     },
     {
       "winner": "Chiefs",
       "loser": "Bengals",
       "winner_score": 23,
       "loser_score": 20,
-      "date": "2023-01-29"
+      "date": "2023-01-29",
+      "round": "AFC Championship"
     },
     {
       "winner": "NFC",
       "loser": "AFC",
       "winner_score": 35,
       "loser_score": 33,
-      "date": "2023-02-05"
+      "date": "2023-02-05",
+      "round": "Pro Bowl"
     },
     {
       "winner": "Chiefs",
       "loser": "Eagles",
       "winner_score": 38,
       "loser_score": 35,
-      "date": "2023-02-12"
+      "date": "2023-02-12",
+      "round": "Super Bowl LVII"
     }
   ],
   "series": [
@@ -109,7 +123,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Seahawks"
+      "loser": "Seahawks",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2023-01-14"
     },
     {
       "t1": "Jaguars",
@@ -117,7 +133,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chargers"
+      "loser": "Chargers",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2023-01-15"
     },
     {
       "t1": "Bills",
@@ -125,7 +143,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Dolphins"
+      "loser": "Dolphins",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2023-01-15"
     },
     {
       "t1": "Giants",
@@ -133,7 +153,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Vikings"
+      "loser": "Vikings",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2023-01-15"
     },
     {
       "t1": "Bengals",
@@ -141,7 +163,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens"
+      "loser": "Ravens",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2023-01-16"
     },
     {
       "t1": "Cowboys",
@@ -149,7 +173,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Buccaneers"
+      "loser": "Buccaneers",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2023-01-17"
     },
     {
       "t1": "Chiefs",
@@ -157,7 +183,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Jaguars"
+      "loser": "Jaguars",
+      "round": "AFC Divisional Playoffs",
+      "date": "2023-01-21"
     },
     {
       "t1": "Eagles",
@@ -165,7 +193,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Giants"
+      "loser": "Giants",
+      "round": "NFC Divisional Playoffs",
+      "date": "2023-01-22"
     },
     {
       "t1": "Bengals",
@@ -173,7 +203,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bills"
+      "loser": "Bills",
+      "round": "AFC Divisional Playoffs",
+      "date": "2023-01-22"
     },
     {
       "t1": "49ers",
@@ -181,7 +213,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cowboys"
+      "loser": "Cowboys",
+      "round": "NFC Divisional Playoffs",
+      "date": "2023-01-22"
     },
     {
       "t1": "Eagles",
@@ -189,7 +223,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "49ers"
+      "loser": "49ers",
+      "round": "NFC Championship",
+      "date": "2023-01-29"
     },
     {
       "t1": "Chiefs",
@@ -197,7 +233,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bengals"
+      "loser": "Bengals",
+      "round": "AFC Championship",
+      "date": "2023-01-29"
     },
     {
       "t1": "NFC",
@@ -205,7 +243,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "AFC"
+      "loser": "AFC",
+      "round": "Pro Bowl",
+      "date": "2023-02-05"
     },
     {
       "t1": "Chiefs",
@@ -213,7 +253,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles"
+      "loser": "Eagles",
+      "round": "Super Bowl LVII",
+      "date": "2023-02-12"
     }
   ],
   "eliminated": [
@@ -232,5 +274,5 @@
     "AFC",
     "Eagles"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

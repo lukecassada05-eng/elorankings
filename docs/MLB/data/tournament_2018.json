@@ -8,245 +8,280 @@
       "loser": "Cubs",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2018-10-01"
+      "date": "2018-10-01",
+      "round": "NL CENTRAL TIEBREAKER"
     },
     {
       "winner": "Dodgers",
       "loser": "Rockies",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2018-10-01"
+      "date": "2018-10-01",
+      "round": "NL WEST TIEBREAKER"
     },
     {
       "winner": "Rockies",
       "loser": "Cubs",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2018-10-03"
+      "date": "2018-10-03",
+      "round": "NATIONAL LEAGUE WILD CARD GAME"
     },
     {
       "winner": "Yankees",
       "loser": "Athletics",
       "winner_score": 7,
       "loser_score": 2,
-      "date": "2018-10-04"
+      "date": "2018-10-04",
+      "round": "AMERICAN LEAGUE WILD CARD GAME"
     },
     {
       "winner": "Brewers",
       "loser": "Rockies",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2018-10-04"
+      "date": "2018-10-04",
+      "round": "NLDS - GAME 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Braves",
       "winner_score": 6,
       "loser_score": 0,
-      "date": "2018-10-05"
+      "date": "2018-10-05",
+      "round": "NLDS - GAME 1"
     },
     {
       "winner": "Astros",
       "loser": "Indians",
       "winner_score": 7,
       "loser_score": 2,
-      "date": "2018-10-05"
+      "date": "2018-10-05",
+      "round": "ALDS - GAME 1"
     },
     {
       "winner": "Brewers",
       "loser": "Rockies",
       "winner_score": 4,
       "loser_score": 0,
-      "date": "2018-10-05"
+      "date": "2018-10-05",
+      "round": "NLDS - GAME 2"
     },
     {
       "winner": "Red Sox",
       "loser": "Yankees",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2018-10-05"
+      "date": "2018-10-05",
+      "round": "ALDS - GAME 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Braves",
       "winner_score": 3,
       "loser_score": 0,
-      "date": "2018-10-06"
+      "date": "2018-10-06",
+      "round": "NLDS - GAME 2"
     },
     {
       "winner": "Astros",
       "loser": "Indians",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2018-10-06"
+      "date": "2018-10-06",
+      "round": "ALDS - GAME 2"
     },
     {
       "winner": "Yankees",
       "loser": "Red Sox",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2018-10-07"
+      "date": "2018-10-07",
+      "round": "ALDS - GAME 2"
     },
     {
       "winner": "Brewers",
       "loser": "Rockies",
       "winner_score": 6,
       "loser_score": 0,
-      "date": "2018-10-07"
+      "date": "2018-10-07",
+      "round": "NLDS - GAME 3"
     },
     {
       "winner": "Braves",
       "loser": "Dodgers",
       "winner_score": 6,
       "loser_score": 5,
-      "date": "2018-10-08"
+      "date": "2018-10-08",
+      "round": "NLDS - GAME 3"
     },
     {
       "winner": "Astros",
       "loser": "Indians",
       "winner_score": 11,
       "loser_score": 3,
-      "date": "2018-10-08"
+      "date": "2018-10-08",
+      "round": "ALDS - GAME 3"
     },
     {
       "winner": "Dodgers",
       "loser": "Braves",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2018-10-08"
+      "date": "2018-10-08",
+      "round": "NLDS - GAME 4"
     },
     {
       "winner": "Red Sox",
       "loser": "Yankees",
       "winner_score": 16,
       "loser_score": 1,
-      "date": "2018-10-08"
+      "date": "2018-10-08",
+      "round": "ALDS - GAME 3"
     },
     {
       "winner": "Red Sox",
       "loser": "Yankees",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2018-10-10"
+      "date": "2018-10-10",
+      "round": "ALDS - GAME 4"
     },
     {
       "winner": "Brewers",
       "loser": "Dodgers",
       "winner_score": 6,
       "loser_score": 5,
-      "date": "2018-10-13"
+      "date": "2018-10-13",
+      "round": "NLCS - GAME 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Brewers",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2018-10-13"
+      "date": "2018-10-13",
+      "round": "NLCS - GAME 2"
     },
     {
       "winner": "Astros",
       "loser": "Red Sox",
       "winner_score": 7,
       "loser_score": 2,
-      "date": "2018-10-14"
+      "date": "2018-10-14",
+      "round": "ALCS - GAME 1"
     },
     {
       "winner": "Red Sox",
       "loser": "Astros",
       "winner_score": 7,
       "loser_score": 5,
-      "date": "2018-10-14"
+      "date": "2018-10-14",
+      "round": "ALCS - GAME 2"
     },
     {
       "winner": "Brewers",
       "loser": "Dodgers",
       "winner_score": 4,
       "loser_score": 0,
-      "date": "2018-10-15"
+      "date": "2018-10-15",
+      "round": "NLCS - GAME 3"
     },
     {
       "winner": "Red Sox",
       "loser": "Astros",
       "winner_score": 8,
       "loser_score": 2,
-      "date": "2018-10-16"
+      "date": "2018-10-16",
+      "round": "ALCS - GAME 3"
     },
     {
       "winner": "Dodgers",
       "loser": "Brewers",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2018-10-17"
+      "date": "2018-10-17",
+      "round": "NLCS - GAME 4"
     },
     {
       "winner": "Dodgers",
       "loser": "Brewers",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2018-10-17"
+      "date": "2018-10-17",
+      "round": "NLCS - GAME 5"
     },
     {
       "winner": "Red Sox",
       "loser": "Astros",
       "winner_score": 8,
       "loser_score": 6,
-      "date": "2018-10-18"
+      "date": "2018-10-18",
+      "round": "ALCS - GAME 4"
     },
     {
       "winner": "Red Sox",
       "loser": "Astros",
       "winner_score": 4,
       "loser_score": 1,
-      "date": "2018-10-19"
+      "date": "2018-10-19",
+      "round": "ALCS - GAME 5"
     },
     {
       "winner": "Brewers",
       "loser": "Dodgers",
       "winner_score": 7,
       "loser_score": 2,
-      "date": "2018-10-20"
+      "date": "2018-10-20",
+      "round": "NLCS - GAME 6"
     },
     {
       "winner": "Dodgers",
       "loser": "Brewers",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2018-10-21"
+      "date": "2018-10-21",
+      "round": "NLCS - GAME 7"
     },
     {
       "winner": "Red Sox",
       "loser": "Dodgers",
       "winner_score": 8,
       "loser_score": 4,
-      "date": "2018-10-24"
+      "date": "2018-10-24",
+      "round": "WORLD SERIES - GAME 1"
     },
     {
       "winner": "Red Sox",
       "loser": "Dodgers",
       "winner_score": 4,
       "loser_score": 2,
-      "date": "2018-10-25"
+      "date": "2018-10-25",
+      "round": "WORLD SERIES - GAME 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Red Sox",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2018-10-27"
+      "date": "2018-10-27",
+      "round": "WORLD SERIES - GAME 3"
     },
     {
       "winner": "Red Sox",
       "loser": "Dodgers",
       "winner_score": 9,
       "loser_score": 6,
-      "date": "2018-10-28"
+      "date": "2018-10-28",
+      "round": "WORLD SERIES - GAME 4"
     },
     {
       "winner": "Red Sox",
       "loser": "Dodgers",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2018-10-29"
+      "date": "2018-10-29",
+      "round": "WORLD SERIES - GAME 5"
     }
   ],
   "series": [
@@ -256,7 +291,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NL CENTRAL TIEBREAKER",
+      "date": "2018-10-01"
     },
     {
       "t1": "Dodgers",
@@ -264,7 +301,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NL WEST TIEBREAKER",
+      "date": "2018-10-01"
     },
     {
       "t1": "Rockies",
@@ -272,7 +311,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NATIONAL LEAGUE WILD CARD GAME",
+      "date": "2018-10-03"
     },
     {
       "t1": "Yankees",
@@ -280,7 +321,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "AMERICAN LEAGUE WILD CARD GAME",
+      "date": "2018-10-04"
     },
     {
       "t1": "Brewers",
@@ -288,7 +331,9 @@
       "w1": 3,
       "w2": 0,
       "done": true,
-      "loser": "Rockies"
+      "loser": "Rockies",
+      "round": "NLDS - GAME 1",
+      "date": "2018-10-04"
     },
     {
       "t1": "Dodgers",
@@ -296,7 +341,9 @@
       "w1": 3,
       "w2": 1,
       "done": true,
-      "loser": "Braves"
+      "loser": "Braves",
+      "round": "NLDS - GAME 1",
+      "date": "2018-10-05"
     },
     {
       "t1": "Astros",
@@ -304,7 +351,9 @@
       "w1": 3,
       "w2": 0,
       "done": true,
-      "loser": "Indians"
+      "loser": "Indians",
+      "round": "ALDS - GAME 1",
+      "date": "2018-10-05"
     },
     {
       "t1": "Red Sox",
@@ -312,7 +361,9 @@
       "w1": 3,
       "w2": 1,
       "done": true,
-      "loser": "Yankees"
+      "loser": "Yankees",
+      "round": "ALDS - GAME 1",
+      "date": "2018-10-05"
     },
     {
       "t1": "Brewers",
@@ -320,7 +371,9 @@
       "w1": 3,
       "w2": 4,
       "done": true,
-      "loser": "Brewers"
+      "loser": "Brewers",
+      "round": "NLCS - GAME 1",
+      "date": "2018-10-13"
     },
     {
       "t1": "Astros",
@@ -328,7 +381,9 @@
       "w1": 1,
       "w2": 4,
       "done": true,
-      "loser": "Astros"
+      "loser": "Astros",
+      "round": "ALCS - GAME 1",
+      "date": "2018-10-14"
     },
     {
       "t1": "Red Sox",
@@ -336,7 +391,9 @@
       "w1": 4,
       "w2": 1,
       "done": true,
-      "loser": "Dodgers"
+      "loser": "Dodgers",
+      "round": "WORLD SERIES - GAME 1",
+      "date": "2018-10-24"
     }
   ],
   "eliminated": [
@@ -348,5 +405,5 @@
     "Astros",
     "Dodgers"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:09 UTC"
 }

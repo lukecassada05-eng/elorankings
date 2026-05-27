@@ -8,56 +8,64 @@
       "loser": "Saints",
       "winner_score": 36,
       "loser_score": 32,
-      "date": "2012-01-14"
+      "date": "2012-01-14",
+      "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
       "winner": "Patriots",
       "loser": "Broncos",
       "winner_score": 45,
       "loser_score": 10,
-      "date": "2012-01-15"
+      "date": "2012-01-15",
+      "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
       "winner": "Ravens",
       "loser": "Texans",
       "winner_score": 20,
       "loser_score": 13,
-      "date": "2012-01-15"
+      "date": "2012-01-15",
+      "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
       "winner": "Giants",
       "loser": "Packers",
       "winner_score": 37,
       "loser_score": 20,
-      "date": "2012-01-15"
+      "date": "2012-01-15",
+      "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
       "winner": "Patriots",
       "loser": "Ravens",
       "winner_score": 23,
       "loser_score": 20,
-      "date": "2012-01-22"
+      "date": "2012-01-22",
+      "round": "AFC CHAMPIONSHIP"
     },
     {
       "winner": "Giants",
       "loser": "49ers",
       "winner_score": 20,
       "loser_score": 17,
-      "date": "2012-01-22"
+      "date": "2012-01-22",
+      "round": "NFC CHAMPIONSHIP"
     },
     {
       "winner": "AFC",
       "loser": "NFC",
       "winner_score": 59,
       "loser_score": 41,
-      "date": "2012-01-30"
+      "date": "2012-01-30",
+      "round": "PRO BOWL"
     },
     {
       "winner": "Giants",
       "loser": "Patriots",
       "winner_score": 21,
       "loser_score": 17,
-      "date": "2012-02-05"
+      "date": "2012-02-05",
+      "round": "Super Bowl XLVI"
     }
   ],
   "series": [
@@ -67,7 +75,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Saints"
+      "loser": "Saints",
+      "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2012-01-14"
     },
     {
       "t1": "Patriots",
@@ -75,7 +85,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Broncos"
+      "loser": "Broncos",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2012-01-15"
     },
     {
       "t1": "Ravens",
@@ -83,7 +95,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Texans"
+      "loser": "Texans",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2012-01-15"
     },
     {
       "t1": "Giants",
@@ -91,7 +105,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers"
+      "loser": "Packers",
+      "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2012-01-15"
     },
     {
       "t1": "Patriots",
@@ -99,7 +115,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens"
+      "loser": "Ravens",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2012-01-22"
     },
     {
       "t1": "Giants",
@@ -107,7 +125,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "49ers"
+      "loser": "49ers",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2012-01-22"
     },
     {
       "t1": "AFC",
@@ -115,7 +135,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "NFC"
+      "loser": "NFC",
+      "round": "PRO BOWL",
+      "date": "2012-01-30"
     },
     {
       "t1": "Giants",
@@ -123,7 +145,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Patriots"
+      "loser": "Patriots",
+      "round": "Super Bowl XLVI",
+      "date": "2012-02-05"
     }
   ],
   "eliminated": [
@@ -136,5 +160,5 @@
     "NFC",
     "Patriots"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

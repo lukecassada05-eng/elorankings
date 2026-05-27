@@ -4,1205 +4,2564 @@
   "completed": true,
   "games": [
     {
+      "winner": "Magic",
+      "loser": "Celtics",
+      "winner_score": 89,
+      "loser_score": 86,
+      "date": "2003-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Wizards",
+      "winner_score": 101,
+      "loser_score": 100,
+      "date": "2003-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Knicks",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2003-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Warriors",
+      "winner_score": 117,
+      "loser_score": 108,
+      "date": "2003-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 101,
+      "loser_score": 79,
+      "date": "2003-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "SuperSonics",
+      "winner_score": 101,
+      "loser_score": 86,
+      "date": "2003-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Raptors",
+      "winner_score": 94,
+      "loser_score": 86,
+      "date": "2003-04-12",
+      "round": "regular-season"
+    },
+    {
       "winner": "Trail Blazers",
       "loser": "Lakers",
       "winner_score": 101,
       "loser_score": 99,
-      "date": "2003-04-13"
+      "date": "2003-04-13",
+      "round": "regular-season"
     },
     {
       "winner": "Bucks",
       "loser": "Pacers",
       "winner_score": 107,
       "loser_score": 98,
-      "date": "2003-04-13"
+      "date": "2003-04-13",
+      "round": "regular-season"
     },
     {
       "winner": "Timberwolves",
       "loser": "Bulls",
       "winner_score": 119,
       "loser_score": 95,
-      "date": "2003-04-13"
+      "date": "2003-04-13",
+      "round": "regular-season"
     },
     {
       "winner": "Pistons",
       "loser": "Grizzlies",
       "winner_score": 110,
       "loser_score": 107,
-      "date": "2003-04-13"
+      "date": "2003-04-13",
+      "round": "regular-season"
     },
     {
       "winner": "Celtics",
       "loser": "Heat",
       "winner_score": 94,
       "loser_score": 86,
-      "date": "2003-04-13"
+      "date": "2003-04-13",
+      "round": "regular-season"
     },
     {
       "winner": "Hornets",
       "loser": "76ers",
       "winner_score": 94,
       "loser_score": 89,
-      "date": "2003-04-13"
+      "date": "2003-04-13",
+      "round": "regular-season"
     },
     {
       "winner": "Suns",
       "loser": "Spurs",
       "winner_score": 92,
       "loser_score": 85,
-      "date": "2003-04-13"
+      "date": "2003-04-13",
+      "round": "regular-season"
     },
     {
       "winner": "Spurs",
       "loser": "Jazz",
       "winner_score": 91,
       "loser_score": 83,
-      "date": "2003-04-14"
+      "date": "2003-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Knicks",
       "loser": "Wizards",
       "winner_score": 93,
       "loser_score": 79,
-      "date": "2003-04-14"
+      "date": "2003-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Hawks",
       "loser": "Magic",
       "winner_score": 100,
       "loser_score": 84,
-      "date": "2003-04-14"
+      "date": "2003-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Mavericks",
       "loser": "SuperSonics",
       "winner_score": 109,
       "loser_score": 106,
-      "date": "2003-04-14"
+      "date": "2003-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Pistons",
       "loser": "Cavaliers",
       "winner_score": 89,
       "loser_score": 88,
-      "date": "2003-04-14"
+      "date": "2003-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Clippers",
       "loser": "Warriors",
       "winner_score": 122,
       "loser_score": 113,
-      "date": "2003-04-14"
+      "date": "2003-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Hornets",
       "loser": "Nets",
       "winner_score": 87,
       "loser_score": 74,
-      "date": "2003-04-14"
+      "date": "2003-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Trail Blazers",
       "loser": "Suns",
       "winner_score": 120,
       "loser_score": 102,
-      "date": "2003-04-15"
+      "date": "2003-04-15",
+      "round": "regular-season"
     },
     {
       "winner": "Heat",
       "loser": "Raptors",
       "winner_score": 103,
       "loser_score": 99,
-      "date": "2003-04-15"
+      "date": "2003-04-15",
+      "round": "regular-season"
     },
     {
       "winner": "Bulls",
       "loser": "76ers",
       "winner_score": 115,
       "loser_score": 106,
-      "date": "2003-04-15"
+      "date": "2003-04-15",
+      "round": "regular-season"
     },
     {
       "winner": "Rockets",
       "loser": "Grizzlies",
       "winner_score": 97,
       "loser_score": 86,
-      "date": "2003-04-15"
+      "date": "2003-04-15",
+      "round": "regular-season"
     },
     {
       "winner": "Lakers",
       "loser": "Nuggets",
       "winner_score": 126,
       "loser_score": 104,
-      "date": "2003-04-15"
+      "date": "2003-04-15",
+      "round": "regular-season"
     },
     {
       "winner": "Pacers",
       "loser": "Knicks",
       "winner_score": 109,
       "loser_score": 93,
-      "date": "2003-04-15"
+      "date": "2003-04-15",
+      "round": "regular-season"
     },
     {
       "winner": "Celtics",
       "loser": "Pistons",
       "winner_score": 99,
       "loser_score": 92,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Cavaliers",
       "loser": "Raptors",
       "winner_score": 96,
       "loser_score": 86,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Rockets",
       "loser": "Nuggets",
       "winner_score": 89,
       "loser_score": 84,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Pacers",
       "loser": "Nets",
       "winner_score": 90,
       "loser_score": 83,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Bucks",
       "loser": "Magic",
       "winner_score": 93,
       "loser_score": 87,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "76ers",
       "loser": "Wizards",
       "winner_score": 107,
       "loser_score": 87,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Kings",
       "loser": "Jazz",
       "winner_score": 95,
       "loser_score": 84,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "SuperSonics",
       "loser": "Suns",
       "winner_score": 84,
       "loser_score": 70,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Timberwolves",
       "loser": "Grizzlies",
       "winner_score": 95,
       "loser_score": 87,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Hornets",
       "loser": "Hawks",
       "winner_score": 92,
       "loser_score": 77,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Lakers",
       "loser": "Warriors",
       "winner_score": 117,
       "loser_score": 111,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Clippers",
       "loser": "Trail Blazers",
       "winner_score": 107,
       "loser_score": 93,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Spurs",
       "winner_score": 93,
       "loser_score": 72,
-      "date": "2003-04-16"
+      "date": "2003-04-16",
+      "round": "regular-season"
     },
     {
       "winner": "Nets",
       "loser": "Bucks",
       "winner_score": 109,
       "loser_score": 96,
-      "date": "2003-04-19"
+      "date": "2003-04-19",
+      "round": "post-season"
     },
     {
       "winner": "Celtics",
       "loser": "Pacers",
       "winner_score": 103,
       "loser_score": 100,
-      "date": "2003-04-19"
+      "date": "2003-04-19",
+      "round": "post-season"
     },
     {
       "winner": "Suns",
       "loser": "Spurs",
       "winner_score": 96,
       "loser_score": 95,
-      "date": "2003-04-19"
+      "date": "2003-04-19",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Trail Blazers",
       "winner_score": 96,
       "loser_score": 86,
-      "date": "2003-04-19"
+      "date": "2003-04-19",
+      "round": "post-season"
     },
     {
       "winner": "Kings",
       "loser": "Jazz",
       "winner_score": 96,
       "loser_score": 90,
-      "date": "2003-04-19"
+      "date": "2003-04-19",
+      "round": "post-season"
     },
     {
       "winner": "Magic",
       "loser": "Pistons",
       "winner_score": 99,
       "loser_score": 94,
-      "date": "2003-04-20"
+      "date": "2003-04-20",
+      "round": "post-season"
     },
     {
       "winner": "Lakers",
       "loser": "Timberwolves",
       "winner_score": 117,
       "loser_score": 98,
-      "date": "2003-04-20"
+      "date": "2003-04-20",
+      "round": "post-season"
     },
     {
       "winner": "76ers",
       "loser": "Hornets",
       "winner_score": 98,
       "loser_score": 90,
-      "date": "2003-04-21"
+      "date": "2003-04-21",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Suns",
       "winner_score": 84,
       "loser_score": 76,
-      "date": "2003-04-21"
+      "date": "2003-04-21",
+      "round": "post-season"
     },
     {
       "winner": "Pacers",
       "loser": "Celtics",
       "winner_score": 89,
       "loser_score": 77,
-      "date": "2003-04-21"
+      "date": "2003-04-21",
+      "round": "post-season"
     },
     {
       "winner": "Kings",
       "loser": "Jazz",
       "winner_score": 108,
       "loser_score": 95,
-      "date": "2003-04-21"
+      "date": "2003-04-21",
+      "round": "post-season"
     },
     {
       "winner": "Bucks",
       "loser": "Nets",
       "winner_score": 88,
       "loser_score": 85,
-      "date": "2003-04-22"
+      "date": "2003-04-22",
+      "round": "post-season"
     },
     {
       "winner": "Timberwolves",
       "loser": "Lakers",
       "winner_score": 119,
       "loser_score": 91,
-      "date": "2003-04-23"
+      "date": "2003-04-23",
+      "round": "post-season"
     },
     {
       "winner": "76ers",
       "loser": "Hornets",
       "winner_score": 90,
       "loser_score": 85,
-      "date": "2003-04-23"
+      "date": "2003-04-23",
+      "round": "post-season"
     },
     {
       "winner": "Pistons",
       "loser": "Magic",
       "winner_score": 89,
       "loser_score": 77,
-      "date": "2003-04-24"
+      "date": "2003-04-24",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Trail Blazers",
       "winner_score": 103,
       "loser_score": 99,
-      "date": "2003-04-24"
+      "date": "2003-04-24",
+      "round": "post-season"
     },
     {
       "winner": "Celtics",
       "loser": "Pacers",
       "winner_score": 101,
       "loser_score": 83,
-      "date": "2003-04-24"
+      "date": "2003-04-24",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Bucks",
       "winner_score": 103,
       "loser_score": 101,
-      "date": "2003-04-24"
+      "date": "2003-04-24",
+      "round": "post-season"
     },
     {
       "winner": "Timberwolves",
       "loser": "Lakers",
       "winner_score": 114,
       "loser_score": 110,
-      "date": "2003-04-25"
+      "date": "2003-04-25",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Suns",
       "winner_score": 99,
       "loser_score": 86,
-      "date": "2003-04-25"
+      "date": "2003-04-25",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Trail Blazers",
       "winner_score": 115,
       "loser_score": 103,
-      "date": "2003-04-25"
+      "date": "2003-04-25",
+      "round": "post-season"
     },
     {
       "winner": "Magic",
       "loser": "Pistons",
       "winner_score": 89,
       "loser_score": 80,
-      "date": "2003-04-26"
+      "date": "2003-04-26",
+      "round": "post-season"
     },
     {
       "winner": "Bucks",
       "loser": "Nets",
       "winner_score": 119,
       "loser_score": 114,
-      "date": "2003-04-26"
+      "date": "2003-04-26",
+      "round": "post-season"
     },
     {
       "winner": "Hornets",
       "loser": "76ers",
       "winner_score": 99,
       "loser_score": 85,
-      "date": "2003-04-26"
+      "date": "2003-04-26",
+      "round": "post-season"
     },
     {
       "winner": "Jazz",
       "loser": "Kings",
       "winner_score": 107,
       "loser_score": 104,
-      "date": "2003-04-27"
+      "date": "2003-04-27",
+      "round": "post-season"
     },
     {
       "winner": "Celtics",
       "loser": "Pacers",
       "winner_score": 102,
       "loser_score": 92,
-      "date": "2003-04-27"
+      "date": "2003-04-27",
+      "round": "post-season"
     },
     {
       "winner": "Lakers",
       "loser": "Timberwolves",
       "winner_score": 102,
       "loser_score": 97,
-      "date": "2003-04-27"
+      "date": "2003-04-27",
+      "round": "post-season"
     },
     {
       "winner": "Trail Blazers",
       "loser": "Mavericks",
       "winner_score": 98,
       "loser_score": 79,
-      "date": "2003-04-27"
+      "date": "2003-04-27",
+      "round": "post-season"
     },
     {
       "winner": "Magic",
       "loser": "Pistons",
       "winner_score": 100,
       "loser_score": 92,
-      "date": "2003-04-27"
+      "date": "2003-04-27",
+      "round": "post-season"
     },
     {
       "winner": "Suns",
       "loser": "Spurs",
       "winner_score": 86,
       "loser_score": 84,
-      "date": "2003-04-27"
+      "date": "2003-04-27",
+      "round": "post-season"
     },
     {
       "winner": "76ers",
       "loser": "Hornets",
       "winner_score": 96,
       "loser_score": 87,
-      "date": "2003-04-28"
+      "date": "2003-04-28",
+      "round": "post-season"
     },
     {
       "winner": "Kings",
       "loser": "Jazz",
       "winner_score": 99,
       "loser_score": 82,
-      "date": "2003-04-29"
+      "date": "2003-04-29",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Suns",
       "winner_score": 94,
       "loser_score": 82,
-      "date": "2003-04-29"
+      "date": "2003-04-29",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Bucks",
       "winner_score": 89,
       "loser_score": 82,
-      "date": "2003-04-29"
+      "date": "2003-04-29",
+      "round": "post-season"
     },
     {
       "winner": "Pacers",
       "loser": "Celtics",
       "winner_score": 93,
       "loser_score": 88,
-      "date": "2003-04-30"
+      "date": "2003-04-30",
+      "round": "post-season"
     },
     {
       "winner": "Lakers",
       "loser": "Timberwolves",
       "winner_score": 120,
       "loser_score": 90,
-      "date": "2003-04-30"
+      "date": "2003-04-30",
+      "round": "post-season"
     },
     {
       "winner": "Hornets",
       "loser": "76ers",
       "winner_score": 93,
       "loser_score": 91,
-      "date": "2003-04-30"
+      "date": "2003-04-30",
+      "round": "post-season"
     },
     {
       "winner": "Trail Blazers",
       "loser": "Mavericks",
       "winner_score": 103,
       "loser_score": 99,
-      "date": "2003-04-30"
+      "date": "2003-04-30",
+      "round": "post-season"
     },
     {
       "winner": "Pistons",
       "loser": "Magic",
       "winner_score": 98,
       "loser_score": 67,
-      "date": "2003-05-01"
+      "date": "2003-05-01",
+      "round": "post-season"
     },
     {
       "winner": "Kings",
       "loser": "Jazz",
       "winner_score": 111,
       "loser_score": 91,
-      "date": "2003-05-01"
+      "date": "2003-05-01",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Suns",
       "winner_score": 87,
       "loser_score": 85,
-      "date": "2003-05-01"
+      "date": "2003-05-01",
+      "round": "post-season"
     },
     {
       "winner": "Celtics",
       "loser": "Pacers",
       "winner_score": 110,
       "loser_score": 90,
-      "date": "2003-05-01"
+      "date": "2003-05-01",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Bucks",
       "winner_score": 113,
       "loser_score": 101,
-      "date": "2003-05-01"
+      "date": "2003-05-01",
+      "round": "post-season"
     },
     {
       "winner": "Lakers",
       "loser": "Timberwolves",
       "winner_score": 101,
       "loser_score": 85,
-      "date": "2003-05-01"
+      "date": "2003-05-01",
+      "round": "post-season"
     },
     {
       "winner": "Pistons",
       "loser": "Magic",
       "winner_score": 103,
       "loser_score": 88,
-      "date": "2003-05-02"
+      "date": "2003-05-02",
+      "round": "post-season"
     },
     {
       "winner": "Trail Blazers",
       "loser": "Mavericks",
       "winner_score": 125,
       "loser_score": 103,
-      "date": "2003-05-02"
+      "date": "2003-05-02",
+      "round": "post-season"
     },
     {
       "winner": "76ers",
       "loser": "Hornets",
       "winner_score": 107,
       "loser_score": 103,
-      "date": "2003-05-03"
+      "date": "2003-05-03",
+      "round": "post-season"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Celtics",
+      "winner_score": 89,
+      "loser_score": 86,
+      "date": "2003-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Wizards",
+      "winner_score": 101,
+      "loser_score": 100,
+      "date": "2003-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Knicks",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2003-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Warriors",
+      "winner_score": 117,
+      "loser_score": 108,
+      "date": "2003-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Nuggets",
+      "winner_score": 101,
+      "loser_score": 79,
+      "date": "2003-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "SuperSonics",
+      "winner_score": 101,
+      "loser_score": 86,
+      "date": "2003-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Raptors",
+      "winner_score": 94,
+      "loser_score": 86,
+      "date": "2003-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Lakers",
+      "winner_score": 101,
+      "loser_score": 99,
+      "date": "2003-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pacers",
+      "winner_score": 107,
+      "loser_score": 98,
+      "date": "2003-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Bulls",
+      "winner_score": 119,
+      "loser_score": 95,
+      "date": "2003-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Grizzlies",
+      "winner_score": 110,
+      "loser_score": 107,
+      "date": "2003-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 94,
+      "loser_score": 86,
+      "date": "2003-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "76ers",
+      "winner_score": 94,
+      "loser_score": 89,
+      "date": "2003-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 92,
+      "loser_score": 85,
+      "date": "2003-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Jazz",
+      "winner_score": 91,
+      "loser_score": 83,
+      "date": "2003-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Wizards",
+      "winner_score": 93,
+      "loser_score": 79,
+      "date": "2003-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 100,
+      "loser_score": 84,
+      "date": "2003-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "SuperSonics",
+      "winner_score": 109,
+      "loser_score": 106,
+      "date": "2003-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Cavaliers",
+      "winner_score": 89,
+      "loser_score": 88,
+      "date": "2003-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Warriors",
+      "winner_score": 122,
+      "loser_score": 113,
+      "date": "2003-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Nets",
+      "winner_score": 87,
+      "loser_score": 74,
+      "date": "2003-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Suns",
+      "winner_score": 120,
+      "loser_score": 102,
+      "date": "2003-04-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Raptors",
+      "winner_score": 103,
+      "loser_score": 99,
+      "date": "2003-04-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "76ers",
+      "winner_score": 115,
+      "loser_score": 106,
+      "date": "2003-04-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Grizzlies",
+      "winner_score": 97,
+      "loser_score": 86,
+      "date": "2003-04-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Nuggets",
+      "winner_score": 126,
+      "loser_score": 104,
+      "date": "2003-04-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 109,
+      "loser_score": 93,
+      "date": "2003-04-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pistons",
+      "winner_score": 99,
+      "loser_score": 92,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Raptors",
+      "winner_score": 96,
+      "loser_score": 86,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Nuggets",
+      "winner_score": 89,
+      "loser_score": 84,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Nets",
+      "winner_score": 90,
+      "loser_score": 83,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Magic",
+      "winner_score": 93,
+      "loser_score": 87,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Wizards",
+      "winner_score": 107,
+      "loser_score": 87,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Jazz",
+      "winner_score": 95,
+      "loser_score": 84,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "SuperSonics",
+      "loser": "Suns",
+      "winner_score": 84,
+      "loser_score": 70,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Grizzlies",
+      "winner_score": 95,
+      "loser_score": 87,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Hawks",
+      "winner_score": 92,
+      "loser_score": 77,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Warriors",
+      "winner_score": 117,
+      "loser_score": 111,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Trail Blazers",
+      "winner_score": 107,
+      "loser_score": 93,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 93,
+      "loser_score": 72,
+      "date": "2003-04-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Bucks",
+      "winner_score": 109,
+      "loser_score": 96,
+      "date": "2003-04-19",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 103,
+      "loser_score": 100,
+      "date": "2003-04-19",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 96,
+      "loser_score": 95,
+      "date": "2003-04-19",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 96,
+      "loser_score": 86,
+      "date": "2003-04-19",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Jazz",
+      "winner_score": 96,
+      "loser_score": 90,
+      "date": "2003-04-19",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Pistons",
+      "winner_score": 99,
+      "loser_score": 94,
+      "date": "2003-04-20",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Timberwolves",
+      "winner_score": 117,
+      "loser_score": 98,
+      "date": "2003-04-20",
+      "round": "Play-In"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Hornets",
+      "winner_score": 98,
+      "loser_score": 90,
+      "date": "2003-04-21",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Suns",
+      "winner_score": 84,
+      "loser_score": 76,
+      "date": "2003-04-21",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Celtics",
+      "winner_score": 89,
+      "loser_score": 77,
+      "date": "2003-04-21",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Jazz",
+      "winner_score": 108,
+      "loser_score": 95,
+      "date": "2003-04-21",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Nets",
+      "winner_score": 88,
+      "loser_score": 85,
+      "date": "2003-04-22",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Lakers",
+      "winner_score": 119,
+      "loser_score": 91,
+      "date": "2003-04-23",
+      "round": "Play-In"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Hornets",
+      "winner_score": 90,
+      "loser_score": 85,
+      "date": "2003-04-23",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Magic",
+      "winner_score": 89,
+      "loser_score": 77,
+      "date": "2003-04-24",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 103,
+      "loser_score": 99,
+      "date": "2003-04-24",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 101,
+      "loser_score": 83,
+      "date": "2003-04-24",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Bucks",
+      "winner_score": 103,
+      "loser_score": 101,
+      "date": "2003-04-24",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Lakers",
+      "winner_score": 114,
+      "loser_score": 110,
+      "date": "2003-04-25",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Suns",
+      "winner_score": 99,
+      "loser_score": 86,
+      "date": "2003-04-25",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 115,
+      "loser_score": 103,
+      "date": "2003-04-25",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Pistons",
+      "winner_score": 89,
+      "loser_score": 80,
+      "date": "2003-04-26",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Nets",
+      "winner_score": 119,
+      "loser_score": 114,
+      "date": "2003-04-26",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "76ers",
+      "winner_score": 99,
+      "loser_score": 85,
+      "date": "2003-04-26",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Kings",
+      "winner_score": 107,
+      "loser_score": 104,
+      "date": "2003-04-27",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 102,
+      "loser_score": 92,
+      "date": "2003-04-27",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Timberwolves",
+      "winner_score": 102,
+      "loser_score": 97,
+      "date": "2003-04-27",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Mavericks",
+      "winner_score": 98,
+      "loser_score": 79,
+      "date": "2003-04-27",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Pistons",
+      "winner_score": 100,
+      "loser_score": 92,
+      "date": "2003-04-27",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 86,
+      "loser_score": 84,
+      "date": "2003-04-27",
+      "round": "Play-In"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Hornets",
+      "winner_score": 96,
+      "loser_score": 87,
+      "date": "2003-04-28",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Jazz",
+      "winner_score": 99,
+      "loser_score": 82,
+      "date": "2003-04-29",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Suns",
+      "winner_score": 94,
+      "loser_score": 82,
+      "date": "2003-04-29",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Bucks",
+      "winner_score": 89,
+      "loser_score": 82,
+      "date": "2003-04-29",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Celtics",
+      "winner_score": 93,
+      "loser_score": 88,
+      "date": "2003-04-30",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Timberwolves",
+      "winner_score": 120,
+      "loser_score": 90,
+      "date": "2003-04-30",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "76ers",
+      "winner_score": 93,
+      "loser_score": 91,
+      "date": "2003-04-30",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Mavericks",
+      "winner_score": 103,
+      "loser_score": 99,
+      "date": "2003-04-30",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Magic",
+      "winner_score": 98,
+      "loser_score": 67,
+      "date": "2003-05-01",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Jazz",
+      "winner_score": 111,
+      "loser_score": 91,
+      "date": "2003-05-01",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Suns",
+      "winner_score": 87,
+      "loser_score": 85,
+      "date": "2003-05-01",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 110,
+      "loser_score": 90,
+      "date": "2003-05-01",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Bucks",
+      "winner_score": 113,
+      "loser_score": 101,
+      "date": "2003-05-01",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Timberwolves",
+      "winner_score": 101,
+      "loser_score": 85,
+      "date": "2003-05-01",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Magic",
+      "winner_score": 103,
+      "loser_score": 88,
+      "date": "2003-05-02",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Mavericks",
+      "winner_score": 125,
+      "loser_score": 103,
+      "date": "2003-05-02",
+      "round": "Play-In"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Hornets",
+      "winner_score": 107,
+      "loser_score": 103,
+      "date": "2003-05-03",
+      "round": "Play-In"
     },
     {
       "winner": "Pistons",
       "loser": "Magic",
       "winner_score": 108,
       "loser_score": 93,
-      "date": "2003-05-04"
+      "date": "2003-05-04",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Trail Blazers",
       "winner_score": 107,
       "loser_score": 95,
-      "date": "2003-05-04"
+      "date": "2003-05-04",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Celtics",
       "winner_score": 97,
       "loser_score": 93,
-      "date": "2003-05-05"
+      "date": "2003-05-05",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Lakers",
       "winner_score": 87,
       "loser_score": 82,
-      "date": "2003-05-06"
+      "date": "2003-05-06",
+      "round": "post-season"
     },
     {
       "winner": "Kings",
       "loser": "Mavericks",
       "winner_score": 124,
       "loser_score": 113,
-      "date": "2003-05-07"
+      "date": "2003-05-07",
+      "round": "post-season"
     },
     {
       "winner": "Pistons",
       "loser": "76ers",
       "winner_score": 98,
       "loser_score": 87,
-      "date": "2003-05-07"
+      "date": "2003-05-07",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Celtics",
       "winner_score": 104,
       "loser_score": 95,
-      "date": "2003-05-07"
+      "date": "2003-05-07",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Lakers",
       "winner_score": 114,
       "loser_score": 95,
-      "date": "2003-05-08"
+      "date": "2003-05-08",
+      "round": "post-season"
     },
     {
       "winner": "Pistons",
       "loser": "76ers",
       "winner_score": 104,
       "loser_score": 97,
-      "date": "2003-05-08"
+      "date": "2003-05-08",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Kings",
       "winner_score": 132,
       "loser_score": 110,
-      "date": "2003-05-09"
+      "date": "2003-05-09",
+      "round": "post-season"
     },
     {
       "winner": "Lakers",
       "loser": "Spurs",
       "winner_score": 110,
       "loser_score": 95,
-      "date": "2003-05-09"
+      "date": "2003-05-09",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Celtics",
       "winner_score": 94,
       "loser_score": 76,
-      "date": "2003-05-10"
+      "date": "2003-05-10",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Kings",
       "winner_score": 141,
       "loser_score": 137,
-      "date": "2003-05-10"
+      "date": "2003-05-10",
+      "round": "post-season"
     },
     {
       "winner": "76ers",
       "loser": "Pistons",
       "winner_score": 93,
       "loser_score": 83,
-      "date": "2003-05-10"
+      "date": "2003-05-10",
+      "round": "post-season"
     },
     {
       "winner": "Lakers",
       "loser": "Spurs",
       "winner_score": 99,
       "loser_score": 95,
-      "date": "2003-05-11"
+      "date": "2003-05-11",
+      "round": "post-season"
     },
     {
       "winner": "Kings",
       "loser": "Mavericks",
       "winner_score": 99,
       "loser_score": 83,
-      "date": "2003-05-11"
+      "date": "2003-05-11",
+      "round": "post-season"
     },
     {
       "winner": "76ers",
       "loser": "Pistons",
       "winner_score": 95,
       "loser_score": 82,
-      "date": "2003-05-12"
+      "date": "2003-05-12",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Celtics",
       "winner_score": 110,
       "loser_score": 101,
-      "date": "2003-05-13"
+      "date": "2003-05-13",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Kings",
       "winner_score": 112,
       "loser_score": 93,
-      "date": "2003-05-13"
+      "date": "2003-05-13",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Lakers",
       "winner_score": 96,
       "loser_score": 94,
-      "date": "2003-05-14"
+      "date": "2003-05-14",
+      "round": "post-season"
     },
     {
       "winner": "Pistons",
       "loser": "76ers",
       "winner_score": 78,
       "loser_score": 77,
-      "date": "2003-05-15"
+      "date": "2003-05-15",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Lakers",
       "winner_score": 110,
       "loser_score": 82,
-      "date": "2003-05-15"
+      "date": "2003-05-15",
+      "round": "post-season"
     },
     {
       "winner": "Kings",
       "loser": "Mavericks",
       "winner_score": 115,
       "loser_score": 109,
-      "date": "2003-05-15"
+      "date": "2003-05-15",
+      "round": "post-season"
     },
     {
       "winner": "Pistons",
       "loser": "76ers",
       "winner_score": 93,
       "loser_score": 89,
-      "date": "2003-05-16"
+      "date": "2003-05-16",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Kings",
       "winner_score": 112,
       "loser_score": 99,
-      "date": "2003-05-17"
+      "date": "2003-05-17",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Pistons",
       "winner_score": 76,
       "loser_score": 74,
-      "date": "2003-05-18"
+      "date": "2003-05-18",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Spurs",
       "winner_score": 113,
       "loser_score": 110,
-      "date": "2003-05-20"
+      "date": "2003-05-20",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Pistons",
       "winner_score": 88,
       "loser_score": 86,
-      "date": "2003-05-21"
+      "date": "2003-05-21",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Mavericks",
       "winner_score": 119,
       "loser_score": 106,
-      "date": "2003-05-21"
+      "date": "2003-05-21",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Pistons",
       "winner_score": 97,
       "loser_score": 85,
-      "date": "2003-05-23"
+      "date": "2003-05-23",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Mavericks",
       "winner_score": 96,
       "loser_score": 83,
-      "date": "2003-05-24"
+      "date": "2003-05-24",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Pistons",
       "winner_score": 102,
       "loser_score": 82,
-      "date": "2003-05-25"
+      "date": "2003-05-25",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Mavericks",
       "winner_score": 102,
       "loser_score": 95,
-      "date": "2003-05-25"
+      "date": "2003-05-25",
+      "round": "post-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Spurs",
       "winner_score": 103,
       "loser_score": 91,
-      "date": "2003-05-28"
+      "date": "2003-05-28",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Mavericks",
       "winner_score": 90,
       "loser_score": 78,
-      "date": "2003-05-30"
+      "date": "2003-05-30",
+      "round": "post-season"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Magic",
+      "winner_score": 108,
+      "loser_score": 93,
+      "date": "2003-05-04",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 107,
+      "loser_score": 95,
+      "date": "2003-05-04",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 97,
+      "loser_score": 93,
+      "date": "2003-05-05",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Lakers",
+      "winner_score": 87,
+      "loser_score": 82,
+      "date": "2003-05-06",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Mavericks",
+      "winner_score": 124,
+      "loser_score": 113,
+      "date": "2003-05-07",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "76ers",
+      "winner_score": 98,
+      "loser_score": 87,
+      "date": "2003-05-07",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 104,
+      "loser_score": 95,
+      "date": "2003-05-07",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Lakers",
+      "winner_score": 114,
+      "loser_score": 95,
+      "date": "2003-05-08",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "76ers",
+      "winner_score": 104,
+      "loser_score": 97,
+      "date": "2003-05-08",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Kings",
+      "winner_score": 132,
+      "loser_score": 110,
+      "date": "2003-05-09",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 110,
+      "loser_score": 95,
+      "date": "2003-05-09",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 94,
+      "loser_score": 76,
+      "date": "2003-05-10",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Kings",
+      "winner_score": 141,
+      "loser_score": 137,
+      "date": "2003-05-10",
+      "round": "Play-In"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Pistons",
+      "winner_score": 93,
+      "loser_score": 83,
+      "date": "2003-05-10",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 99,
+      "loser_score": 95,
+      "date": "2003-05-11",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Mavericks",
+      "winner_score": 99,
+      "loser_score": 83,
+      "date": "2003-05-11",
+      "round": "Play-In"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Pistons",
+      "winner_score": 95,
+      "loser_score": 82,
+      "date": "2003-05-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Celtics",
+      "winner_score": 110,
+      "loser_score": 101,
+      "date": "2003-05-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Kings",
+      "winner_score": 112,
+      "loser_score": 93,
+      "date": "2003-05-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Lakers",
+      "winner_score": 96,
+      "loser_score": 94,
+      "date": "2003-05-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "76ers",
+      "winner_score": 78,
+      "loser_score": 77,
+      "date": "2003-05-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Lakers",
+      "winner_score": 110,
+      "loser_score": 82,
+      "date": "2003-05-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Mavericks",
+      "winner_score": 115,
+      "loser_score": 109,
+      "date": "2003-05-15",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "76ers",
+      "winner_score": 93,
+      "loser_score": 89,
+      "date": "2003-05-16",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Kings",
+      "winner_score": 112,
+      "loser_score": 99,
+      "date": "2003-05-17",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pistons",
+      "winner_score": 76,
+      "loser_score": 74,
+      "date": "2003-05-18",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 113,
+      "loser_score": 110,
+      "date": "2003-05-20",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pistons",
+      "winner_score": 88,
+      "loser_score": 86,
+      "date": "2003-05-21",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 119,
+      "loser_score": 106,
+      "date": "2003-05-21",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pistons",
+      "winner_score": 97,
+      "loser_score": 85,
+      "date": "2003-05-23",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 96,
+      "loser_score": 83,
+      "date": "2003-05-24",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Pistons",
+      "winner_score": 102,
+      "loser_score": 82,
+      "date": "2003-05-25",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 102,
+      "loser_score": 95,
+      "date": "2003-05-25",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Spurs",
+      "winner_score": 103,
+      "loser_score": 91,
+      "date": "2003-05-28",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Mavericks",
+      "winner_score": 90,
+      "loser_score": 78,
+      "date": "2003-05-30",
+      "round": "Play-In"
     },
     {
       "winner": "Spurs",
       "loser": "Nets",
       "winner_score": 101,
       "loser_score": 89,
-      "date": "2003-06-04"
+      "date": "2003-06-04",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Spurs",
       "winner_score": 87,
       "loser_score": 85,
-      "date": "2003-06-06"
+      "date": "2003-06-06",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Nets",
       "winner_score": 84,
       "loser_score": 79,
-      "date": "2003-06-09"
+      "date": "2003-06-09",
+      "round": "post-season"
     },
     {
       "winner": "Nets",
       "loser": "Spurs",
       "winner_score": 77,
       "loser_score": 76,
-      "date": "2003-06-12"
+      "date": "2003-06-12",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Nets",
       "winner_score": 93,
       "loser_score": 83,
-      "date": "2003-06-14"
+      "date": "2003-06-14",
+      "round": "post-season"
     },
     {
       "winner": "Spurs",
       "loser": "Nets",
       "winner_score": 88,
       "loser_score": 77,
-      "date": "2003-06-15"
+      "date": "2003-06-15",
+      "round": "post-season"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nets",
+      "winner_score": 101,
+      "loser_score": 89,
+      "date": "2003-06-04",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Spurs",
+      "winner_score": 87,
+      "loser_score": 85,
+      "date": "2003-06-06",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nets",
+      "winner_score": 84,
+      "loser_score": 79,
+      "date": "2003-06-09",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nets",
+      "loser": "Spurs",
+      "winner_score": 77,
+      "loser_score": 76,
+      "date": "2003-06-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nets",
+      "winner_score": 93,
+      "loser_score": 83,
+      "date": "2003-06-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nets",
+      "winner_score": 88,
+      "loser_score": 77,
+      "date": "2003-06-15",
+      "round": "Play-In"
     }
   ],
   "series": [
     {
-      "t1": "Trail Blazers",
-      "t2": "Lakers",
-      "w1": 1,
+      "t1": "Magic",
+      "t2": "Celtics",
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-12"
+    },
+    {
+      "t1": "Hawks",
+      "t2": "Wizards",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-12"
+    },
+    {
+      "t1": "Cavaliers",
+      "t2": "Knicks",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-12"
+    },
+    {
+      "t1": "Mavericks",
+      "t2": "Warriors",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-12"
+    },
+    {
+      "t1": "Clippers",
+      "t2": "Nuggets",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-12"
+    },
+    {
+      "t1": "Rockets",
+      "t2": "SuperSonics",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-12"
+    },
+    {
+      "t1": "Nets",
+      "t2": "Raptors",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-12"
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Lakers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-13"
     },
     {
       "t1": "Bucks",
       "t2": "Pacers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-13"
     },
     {
       "t1": "Timberwolves",
       "t2": "Bulls",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-13"
     },
     {
       "t1": "Pistons",
       "t2": "Grizzlies",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-13"
     },
     {
       "t1": "Celtics",
       "t2": "Heat",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-13"
     },
     {
       "t1": "Hornets",
       "t2": "76ers",
-      "w1": 3,
-      "w2": 4,
+      "w1": 6,
+      "w2": 8,
       "done": true,
-      "loser": "Hornets"
+      "loser": "Hornets",
+      "round": "regular-season",
+      "date": "2003-04-13"
     },
     {
       "t1": "Suns",
       "t2": "Spurs",
-      "w1": 3,
-      "w2": 4,
+      "w1": 6,
+      "w2": 8,
       "done": true,
-      "loser": "Suns"
+      "loser": "Suns",
+      "round": "regular-season",
+      "date": "2003-04-13"
     },
     {
       "t1": "Spurs",
       "t2": "Jazz",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-14"
     },
     {
       "t1": "Knicks",
       "t2": "Wizards",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-14"
     },
     {
       "t1": "Hawks",
       "t2": "Magic",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-14"
     },
     {
       "t1": "Mavericks",
       "t2": "SuperSonics",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-14"
     },
     {
       "t1": "Pistons",
       "t2": "Cavaliers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-14"
     },
     {
       "t1": "Clippers",
       "t2": "Warriors",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-14"
     },
     {
       "t1": "Hornets",
       "t2": "Nets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-14"
     },
     {
       "t1": "Trail Blazers",
       "t2": "Suns",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-15"
     },
     {
       "t1": "Heat",
       "t2": "Raptors",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-15"
     },
     {
       "t1": "Bulls",
       "t2": "76ers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-15"
     },
     {
       "t1": "Rockets",
       "t2": "Grizzlies",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-15"
     },
     {
       "t1": "Lakers",
       "t2": "Nuggets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-15"
     },
     {
       "t1": "Pacers",
       "t2": "Knicks",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-15"
     },
     {
       "t1": "Celtics",
       "t2": "Pistons",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Cavaliers",
       "t2": "Raptors",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Rockets",
       "t2": "Nuggets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Pacers",
       "t2": "Nets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Bucks",
       "t2": "Magic",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "76ers",
       "t2": "Wizards",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Kings",
       "t2": "Jazz",
-      "w1": 5,
-      "w2": 1,
+      "w1": 10,
+      "w2": 2,
       "done": true,
-      "loser": "Jazz"
+      "loser": "Jazz",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "SuperSonics",
       "t2": "Suns",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Timberwolves",
       "t2": "Grizzlies",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Hornets",
       "t2": "Hawks",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Lakers",
       "t2": "Warriors",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Clippers",
       "t2": "Trail Blazers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Mavericks",
       "t2": "Spurs",
-      "w1": 3,
-      "w2": 4,
+      "w1": 6,
+      "w2": 8,
       "done": true,
-      "loser": "Mavericks"
+      "loser": "Mavericks",
+      "round": "regular-season",
+      "date": "2003-04-16"
     },
     {
       "t1": "Nets",
       "t2": "Bucks",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "Bucks"
+      "loser": "Bucks",
+      "round": "post-season",
+      "date": "2003-04-19"
     },
     {
       "t1": "Celtics",
       "t2": "Pacers",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "Pacers"
+      "loser": "Pacers",
+      "round": "post-season",
+      "date": "2003-04-19"
     },
     {
       "t1": "Mavericks",
       "t2": "Trail Blazers",
-      "w1": 4,
-      "w2": 3,
+      "w1": 8,
+      "w2": 6,
       "done": true,
-      "loser": "Trail Blazers"
+      "loser": "Trail Blazers",
+      "round": "post-season",
+      "date": "2003-04-19"
     },
     {
       "t1": "Magic",
       "t2": "Pistons",
-      "w1": 3,
-      "w2": 4,
+      "w1": 6,
+      "w2": 8,
       "done": true,
-      "loser": "Magic"
+      "loser": "Magic",
+      "round": "post-season",
+      "date": "2003-04-20"
     },
     {
       "t1": "Lakers",
       "t2": "Timberwolves",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "Timberwolves"
+      "loser": "Timberwolves",
+      "round": "post-season",
+      "date": "2003-04-20"
     },
     {
       "t1": "Nets",
       "t2": "Celtics",
-      "w1": 4,
+      "w1": 8,
       "w2": 0,
       "done": true,
-      "loser": "Celtics"
+      "loser": "Celtics",
+      "round": "post-season",
+      "date": "2003-05-05"
     },
     {
       "t1": "Spurs",
       "t2": "Lakers",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "Lakers"
+      "loser": "Lakers",
+      "round": "post-season",
+      "date": "2003-05-06"
     },
     {
       "t1": "Kings",
       "t2": "Mavericks",
-      "w1": 3,
-      "w2": 4,
+      "w1": 6,
+      "w2": 8,
       "done": true,
-      "loser": "Kings"
+      "loser": "Kings",
+      "round": "post-season",
+      "date": "2003-05-07"
     },
     {
       "t1": "Pistons",
       "t2": "76ers",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "76ers"
+      "loser": "76ers",
+      "round": "post-season",
+      "date": "2003-05-07"
     },
     {
       "t1": "Nets",
       "t2": "Pistons",
-      "w1": 4,
+      "w1": 8,
       "w2": 0,
       "done": true,
-      "loser": "Pistons"
+      "loser": "Pistons",
+      "round": "post-season",
+      "date": "2003-05-18"
     },
     {
       "t1": "Spurs",
       "t2": "Nets",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "Nets"
+      "loser": "Nets",
+      "round": "post-season",
+      "date": "2003-06-04"
     }
   ],
   "eliminated": [
@@ -1222,5 +2581,5 @@
     "Pistons",
     "Nets"
   ],
-  "updated": "2026-05-27 04:25 UTC"
+  "updated": "2026-05-27 05:08 UTC"
 }

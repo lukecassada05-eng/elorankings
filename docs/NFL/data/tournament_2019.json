@@ -8,56 +8,64 @@
       "loser": "Vikings",
       "winner_score": 27,
       "loser_score": 10,
-      "date": "2020-01-11"
+      "date": "2020-01-11",
+      "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Titans",
       "loser": "Ravens",
       "winner_score": 28,
       "loser_score": 12,
-      "date": "2020-01-12"
+      "date": "2020-01-12",
+      "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Chiefs",
       "loser": "Texans",
       "winner_score": 51,
       "loser_score": 31,
-      "date": "2020-01-12"
+      "date": "2020-01-12",
+      "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Packers",
       "loser": "Seahawks",
       "winner_score": 28,
       "loser_score": 23,
-      "date": "2020-01-12"
+      "date": "2020-01-12",
+      "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Chiefs",
       "loser": "Titans",
       "winner_score": 35,
       "loser_score": 24,
-      "date": "2020-01-19"
+      "date": "2020-01-19",
+      "round": "AFC CHAMPIONSHIP"
     },
     {
       "winner": "49ers",
       "loser": "Packers",
       "winner_score": 37,
       "loser_score": 20,
-      "date": "2020-01-19"
+      "date": "2020-01-19",
+      "round": "NFC CHAMPIONSHIP"
     },
     {
       "winner": "AFC",
       "loser": "NFC",
       "winner_score": 38,
       "loser_score": 33,
-      "date": "2020-01-26"
+      "date": "2020-01-26",
+      "round": "PRO BOWL"
     },
     {
       "winner": "Chiefs",
       "loser": "49ers",
       "winner_score": 31,
       "loser_score": 20,
-      "date": "2020-02-02"
+      "date": "2020-02-02",
+      "round": "Super Bowl LIV"
     }
   ],
   "series": [
@@ -67,7 +75,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Vikings"
+      "loser": "Vikings",
+      "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2020-01-11"
     },
     {
       "t1": "Titans",
@@ -75,7 +85,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens"
+      "loser": "Ravens",
+      "round": "AFC DIVISIONAL PLAYOFFS",
+      "date": "2020-01-12"
     },
     {
       "t1": "Chiefs",
@@ -83,7 +95,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Texans"
+      "loser": "Texans",
+      "round": "AFC DIVISIONAL PLAYOFFS",
+      "date": "2020-01-12"
     },
     {
       "t1": "Packers",
@@ -91,7 +105,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Seahawks"
+      "loser": "Seahawks",
+      "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2020-01-12"
     },
     {
       "t1": "Chiefs",
@@ -99,7 +115,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Titans"
+      "loser": "Titans",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2020-01-19"
     },
     {
       "t1": "49ers",
@@ -107,7 +125,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers"
+      "loser": "Packers",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2020-01-19"
     },
     {
       "t1": "AFC",
@@ -115,7 +135,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "NFC"
+      "loser": "NFC",
+      "round": "PRO BOWL",
+      "date": "2020-01-26"
     },
     {
       "t1": "Chiefs",
@@ -123,7 +145,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "49ers"
+      "loser": "49ers",
+      "round": "Super Bowl LIV",
+      "date": "2020-02-02"
     }
   ],
   "eliminated": [
@@ -136,5 +160,5 @@
     "NFC",
     "49ers"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

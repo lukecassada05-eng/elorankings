@@ -4,995 +4,2370 @@
   "completed": true,
   "games": [
     {
+      "winner": "76ers",
+      "loser": "Magic",
+      "winner_score": 125,
+      "loser_score": 113,
+      "date": "2024-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Wizards",
+      "winner_score": 129,
+      "loser_score": 127,
+      "date": "2024-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Hornets",
+      "winner_score": 131,
+      "loser_score": 98,
+      "date": "2024-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Pacers",
+      "winner_score": 129,
+      "loser_score": 120,
+      "date": "2024-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Nets",
+      "winner_score": 111,
+      "loser_score": 107,
+      "date": "2024-04-12",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Raptors",
+      "winner_score": 125,
+      "loser_score": 103,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Grizzlies",
+      "winner_score": 123,
+      "loser_score": 120,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Hawks",
+      "winner_score": 109,
+      "loser_score": 106,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Bucks",
+      "winner_score": 125,
+      "loser_score": 107,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nuggets",
+      "winner_score": 121,
+      "loser_score": 120,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Mavericks",
+      "winner_score": 107,
+      "loser_score": 89,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Pelicans",
+      "loser": "Warriors",
+      "winner_score": 114,
+      "loser_score": 109,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Trail Blazers",
+      "winner_score": 116,
+      "loser_score": 107,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Clippers",
+      "winner_score": 110,
+      "loser_score": 109,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Kings",
+      "winner_score": 108,
+      "loser_score": 107,
+      "date": "2024-04-13",
+      "round": "regular-season"
+    },
+    {
       "winner": "Celtics",
       "loser": "Wizards",
       "winner_score": 132,
       "loser_score": 122,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Hornets",
       "loser": "Cavaliers",
       "winner_score": 120,
       "loser_score": 110,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Pacers",
       "loser": "Hawks",
       "winner_score": 157,
       "loser_score": 115,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Heat",
       "loser": "Raptors",
       "winner_score": 118,
       "loser_score": 103,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Knicks",
       "loser": "Bulls",
       "winner_score": 120,
       "loser_score": 119,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Magic",
       "loser": "Bucks",
       "winner_score": 113,
       "loser_score": 88,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "76ers",
       "loser": "Nets",
       "winner_score": 107,
       "loser_score": 86,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Nuggets",
       "loser": "Grizzlies",
       "winner_score": 126,
       "loser_score": 111,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Suns",
       "loser": "Timberwolves",
       "winner_score": 125,
       "loser_score": 106,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Lakers",
       "loser": "Pelicans",
       "winner_score": 124,
       "loser_score": 108,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Thunder",
       "loser": "Mavericks",
       "winner_score": 135,
       "loser_score": 86,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Spurs",
       "loser": "Pistons",
       "winner_score": 123,
       "loser_score": 95,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Warriors",
       "loser": "Jazz",
       "winner_score": 123,
       "loser_score": 116,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Rockets",
       "loser": "Clippers",
       "winner_score": 116,
       "loser_score": 105,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Kings",
       "loser": "Trail Blazers",
       "winner_score": 121,
       "loser_score": 82,
-      "date": "2024-04-14"
+      "date": "2024-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Lakers",
       "loser": "Pelicans",
       "winner_score": 110,
       "loser_score": 106,
-      "date": "2024-04-16"
+      "date": "2024-04-16",
+      "round": "NBA Play-In - West - 7th Place vs 8th Place"
     },
     {
       "winner": "Kings",
       "loser": "Warriors",
       "winner_score": 118,
       "loser_score": 94,
-      "date": "2024-04-17"
+      "date": "2024-04-17",
+      "round": "NBA Play-In - West - 9th Place vs 10th Place"
     },
     {
       "winner": "76ers",
       "loser": "Heat",
       "winner_score": 105,
       "loser_score": 104,
-      "date": "2024-04-17"
+      "date": "2024-04-17",
+      "round": "NBA Play-In - East - 7th Place vs 8th Place"
     },
     {
       "winner": "Bulls",
       "loser": "Hawks",
       "winner_score": 131,
       "loser_score": 116,
-      "date": "2024-04-18"
+      "date": "2024-04-18",
+      "round": "NBA Play-In - East - 9th Place vs 10th Place"
     },
     {
       "winner": "Heat",
       "loser": "Bulls",
       "winner_score": 112,
       "loser_score": 91,
-      "date": "2024-04-19"
+      "date": "2024-04-19",
+      "round": "NBA Play-In - East - 8th Seed Game"
     },
     {
       "winner": "Pelicans",
       "loser": "Kings",
       "winner_score": 105,
       "loser_score": 98,
-      "date": "2024-04-20"
+      "date": "2024-04-20",
+      "round": "NBA Play-In - West - 8th Seed Game"
     },
     {
       "winner": "Cavaliers",
       "loser": "Magic",
       "winner_score": 97,
       "loser_score": 83,
-      "date": "2024-04-20"
+      "date": "2024-04-20",
+      "round": "East 1st Round - Game 1"
     },
     {
       "winner": "Timberwolves",
       "loser": "Suns",
       "winner_score": 120,
       "loser_score": 95,
-      "date": "2024-04-20"
+      "date": "2024-04-20",
+      "round": "West 1st Round - Game 1"
     },
     {
       "winner": "Knicks",
       "loser": "76ers",
       "winner_score": 111,
       "loser_score": 104,
-      "date": "2024-04-20"
+      "date": "2024-04-20",
+      "round": "East 1st Round - Game 1"
     },
     {
       "winner": "Nuggets",
       "loser": "Lakers",
       "winner_score": 114,
       "loser_score": 103,
-      "date": "2024-04-21"
+      "date": "2024-04-21",
+      "round": "West 1st Round - Game 1"
     },
     {
       "winner": "Celtics",
       "loser": "Heat",
       "winner_score": 114,
       "loser_score": 94,
-      "date": "2024-04-21"
+      "date": "2024-04-21",
+      "round": "East 1st Round - Game 1"
     },
     {
       "winner": "Clippers",
       "loser": "Mavericks",
       "winner_score": 109,
       "loser_score": 97,
-      "date": "2024-04-21"
+      "date": "2024-04-21",
+      "round": "West 1st Round - Game 1"
     },
     {
       "winner": "Bucks",
       "loser": "Pacers",
       "winner_score": 109,
       "loser_score": 94,
-      "date": "2024-04-21"
+      "date": "2024-04-21",
+      "round": "East 1st Round - Game 1"
     },
     {
       "winner": "Thunder",
       "loser": "Pelicans",
       "winner_score": 94,
       "loser_score": 92,
-      "date": "2024-04-22"
+      "date": "2024-04-22",
+      "round": "West 1st Round - Game 1"
     },
     {
       "winner": "Cavaliers",
       "loser": "Magic",
       "winner_score": 96,
       "loser_score": 86,
-      "date": "2024-04-22"
+      "date": "2024-04-22",
+      "round": "East 1st Round - Game 2"
     },
     {
       "winner": "Knicks",
       "loser": "76ers",
       "winner_score": 104,
       "loser_score": 101,
-      "date": "2024-04-22"
+      "date": "2024-04-22",
+      "round": "East 1st Round - Game 2"
     },
     {
       "winner": "Nuggets",
       "loser": "Lakers",
       "winner_score": 101,
       "loser_score": 99,
-      "date": "2024-04-23"
+      "date": "2024-04-23",
+      "round": "West 1st Round - Game 2"
     },
     {
       "winner": "Timberwolves",
       "loser": "Suns",
       "winner_score": 105,
       "loser_score": 93,
-      "date": "2024-04-23"
+      "date": "2024-04-23",
+      "round": "West 1st Round - Game 2"
     },
     {
       "winner": "Pacers",
       "loser": "Bucks",
       "winner_score": 125,
       "loser_score": 108,
-      "date": "2024-04-24"
+      "date": "2024-04-24",
+      "round": "East 1st Round - Game 2"
     },
     {
       "winner": "Mavericks",
       "loser": "Clippers",
       "winner_score": 96,
       "loser_score": 93,
-      "date": "2024-04-24"
+      "date": "2024-04-24",
+      "round": "West 1st Round - Game 2"
     },
     {
       "winner": "Heat",
       "loser": "Celtics",
       "winner_score": 111,
       "loser_score": 101,
-      "date": "2024-04-24"
+      "date": "2024-04-24",
+      "round": "East 1st Round - Game 2"
     },
     {
       "winner": "Thunder",
       "loser": "Pelicans",
       "winner_score": 124,
       "loser_score": 92,
-      "date": "2024-04-25"
+      "date": "2024-04-25",
+      "round": "West 1st Round - Game 2"
     },
     {
       "winner": "Magic",
       "loser": "Cavaliers",
       "winner_score": 121,
       "loser_score": 83,
-      "date": "2024-04-25"
+      "date": "2024-04-25",
+      "round": "East 1st Round - Game 3"
     },
     {
       "winner": "76ers",
       "loser": "Knicks",
       "winner_score": 125,
       "loser_score": 114,
-      "date": "2024-04-25"
+      "date": "2024-04-25",
+      "round": "East 1st Round - Game 3"
     },
     {
       "winner": "Nuggets",
       "loser": "Lakers",
       "winner_score": 112,
       "loser_score": 105,
-      "date": "2024-04-26"
+      "date": "2024-04-26",
+      "round": "West 1st Round - Game 3"
     },
     {
       "winner": "Pacers",
       "loser": "Bucks",
       "winner_score": 121,
       "loser_score": 118,
-      "date": "2024-04-26"
+      "date": "2024-04-26",
+      "round": "East 1st Round - Game 3"
     },
     {
       "winner": "Mavericks",
       "loser": "Clippers",
       "winner_score": 101,
       "loser_score": 90,
-      "date": "2024-04-27"
+      "date": "2024-04-27",
+      "round": "West 1st Round - Game 3"
     },
     {
       "winner": "Timberwolves",
       "loser": "Suns",
       "winner_score": 126,
       "loser_score": 109,
-      "date": "2024-04-27"
+      "date": "2024-04-27",
+      "round": "West 1st Round - Game 3"
     },
     {
       "winner": "Magic",
       "loser": "Cavaliers",
       "winner_score": 112,
       "loser_score": 89,
-      "date": "2024-04-27"
+      "date": "2024-04-27",
+      "round": "East 1st Round - Game 4"
     },
     {
       "winner": "Thunder",
       "loser": "Pelicans",
       "winner_score": 106,
       "loser_score": 85,
-      "date": "2024-04-27"
+      "date": "2024-04-27",
+      "round": "West 1st Round - Game 3"
     },
     {
       "winner": "Celtics",
       "loser": "Heat",
       "winner_score": 104,
       "loser_score": 84,
-      "date": "2024-04-27"
+      "date": "2024-04-27",
+      "round": "East 1st Round - Game 3"
     },
     {
       "winner": "Lakers",
       "loser": "Nuggets",
       "winner_score": 119,
       "loser_score": 108,
-      "date": "2024-04-28"
+      "date": "2024-04-28",
+      "round": "West 1st Round - Game 4"
     },
     {
       "winner": "Knicks",
       "loser": "76ers",
       "winner_score": 97,
       "loser_score": 92,
-      "date": "2024-04-28"
+      "date": "2024-04-28",
+      "round": "East 1st Round - Game 4"
     },
     {
       "winner": "Clippers",
       "loser": "Mavericks",
       "winner_score": 116,
       "loser_score": 111,
-      "date": "2024-04-28"
+      "date": "2024-04-28",
+      "round": "West 1st Round - Game 4"
     },
     {
       "winner": "Pacers",
       "loser": "Bucks",
       "winner_score": 126,
       "loser_score": 113,
-      "date": "2024-04-28"
+      "date": "2024-04-28",
+      "round": "East 1st Round - Game 4"
     },
     {
       "winner": "Timberwolves",
       "loser": "Suns",
       "winner_score": 122,
       "loser_score": 116,
-      "date": "2024-04-29"
+      "date": "2024-04-29",
+      "round": "West 1st Round - Game 4"
     },
     {
       "winner": "Celtics",
       "loser": "Heat",
       "winner_score": 102,
       "loser_score": 88,
-      "date": "2024-04-29"
+      "date": "2024-04-29",
+      "round": "East 1st Round - Game 4"
     },
     {
       "winner": "Thunder",
       "loser": "Pelicans",
       "winner_score": 97,
       "loser_score": 89,
-      "date": "2024-04-30"
+      "date": "2024-04-30",
+      "round": "West 1st Round - Game 4"
     },
     {
       "winner": "Nuggets",
       "loser": "Lakers",
       "winner_score": 108,
       "loser_score": 106,
-      "date": "2024-04-30"
+      "date": "2024-04-30",
+      "round": "West 1st Round - Game 5"
     },
     {
       "winner": "76ers",
       "loser": "Knicks",
       "winner_score": 112,
       "loser_score": 106,
-      "date": "2024-04-30"
+      "date": "2024-04-30",
+      "round": "East 1st Round - Game 5"
     },
     {
       "winner": "Cavaliers",
       "loser": "Magic",
       "winner_score": 104,
       "loser_score": 103,
-      "date": "2024-05-01"
+      "date": "2024-05-01",
+      "round": "East 1st Round - Game 5"
     },
     {
       "winner": "Bucks",
       "loser": "Pacers",
       "winner_score": 115,
       "loser_score": 92,
-      "date": "2024-05-01"
+      "date": "2024-05-01",
+      "round": "East 1st Round - Game 5"
     },
     {
       "winner": "Celtics",
       "loser": "Heat",
       "winner_score": 118,
       "loser_score": 84,
-      "date": "2024-05-01"
+      "date": "2024-05-01",
+      "round": "East 1st Round - Game 5"
     },
     {
       "winner": "Mavericks",
       "loser": "Clippers",
       "winner_score": 123,
       "loser_score": 93,
-      "date": "2024-05-02"
+      "date": "2024-05-02",
+      "round": "West 1st Round - Game 5"
     },
     {
       "winner": "Pacers",
       "loser": "Bucks",
       "winner_score": 120,
       "loser_score": 98,
-      "date": "2024-05-02"
+      "date": "2024-05-02",
+      "round": "East 1st Round - Game 6"
     },
     {
       "winner": "Knicks",
       "loser": "76ers",
       "winner_score": 118,
       "loser_score": 115,
-      "date": "2024-05-03"
+      "date": "2024-05-03",
+      "round": "East 1st Round - Game 6"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Magic",
+      "winner_score": 125,
+      "loser_score": 113,
+      "date": "2024-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Wizards",
+      "winner_score": 129,
+      "loser_score": 127,
+      "date": "2024-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Hornets",
+      "winner_score": 131,
+      "loser_score": 98,
+      "date": "2024-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Pacers",
+      "winner_score": 129,
+      "loser_score": 120,
+      "date": "2024-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Nets",
+      "winner_score": 111,
+      "loser_score": 107,
+      "date": "2024-04-12",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Raptors",
+      "winner_score": 125,
+      "loser_score": 103,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Grizzlies",
+      "winner_score": 123,
+      "loser_score": 120,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Hawks",
+      "winner_score": 109,
+      "loser_score": 106,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Bucks",
+      "winner_score": 125,
+      "loser_score": 107,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Nuggets",
+      "winner_score": 121,
+      "loser_score": 120,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "Mavericks",
+      "winner_score": 107,
+      "loser_score": 89,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pelicans",
+      "loser": "Warriors",
+      "winner_score": 114,
+      "loser_score": 109,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Trail Blazers",
+      "winner_score": 116,
+      "loser_score": 107,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Clippers",
+      "winner_score": 110,
+      "loser_score": 109,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Kings",
+      "winner_score": 108,
+      "loser_score": 107,
+      "date": "2024-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Wizards",
+      "winner_score": 132,
+      "loser_score": 122,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Cavaliers",
+      "winner_score": 120,
+      "loser_score": 110,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Hawks",
+      "winner_score": 157,
+      "loser_score": 115,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Raptors",
+      "winner_score": 118,
+      "loser_score": 103,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Bulls",
+      "winner_score": 120,
+      "loser_score": 119,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Bucks",
+      "winner_score": 113,
+      "loser_score": 88,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Nets",
+      "winner_score": 107,
+      "loser_score": 86,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Grizzlies",
+      "winner_score": 126,
+      "loser_score": 111,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Timberwolves",
+      "winner_score": 125,
+      "loser_score": 106,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Pelicans",
+      "winner_score": 124,
+      "loser_score": 108,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Mavericks",
+      "winner_score": 135,
+      "loser_score": 86,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Pistons",
+      "winner_score": 123,
+      "loser_score": 95,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Jazz",
+      "winner_score": 123,
+      "loser_score": 116,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Clippers",
+      "winner_score": 116,
+      "loser_score": 105,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Trail Blazers",
+      "winner_score": 121,
+      "loser_score": 82,
+      "date": "2024-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Pelicans",
+      "winner_score": 110,
+      "loser_score": 106,
+      "date": "2024-04-16",
+      "round": "NBA Play-In - West - 7th Place vs 8th Place"
+    },
+    {
+      "winner": "Kings",
+      "loser": "Warriors",
+      "winner_score": 118,
+      "loser_score": 94,
+      "date": "2024-04-17",
+      "round": "NBA Play-In - West - 9th Place vs 10th Place"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Heat",
+      "winner_score": 105,
+      "loser_score": 104,
+      "date": "2024-04-17",
+      "round": "NBA Play-In - East - 7th Place vs 8th Place"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 131,
+      "loser_score": 116,
+      "date": "2024-04-18",
+      "round": "NBA Play-In - East - 9th Place vs 10th Place"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 112,
+      "loser_score": 91,
+      "date": "2024-04-19",
+      "round": "NBA Play-In - East - 8th Seed Game"
+    },
+    {
+      "winner": "Pelicans",
+      "loser": "Kings",
+      "winner_score": 105,
+      "loser_score": 98,
+      "date": "2024-04-20",
+      "round": "NBA Play-In - West - 8th Seed Game"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Magic",
+      "winner_score": 97,
+      "loser_score": 83,
+      "date": "2024-04-20",
+      "round": "East 1st Round - Game 1"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Suns",
+      "winner_score": 120,
+      "loser_score": 95,
+      "date": "2024-04-20",
+      "round": "West 1st Round - Game 1"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "76ers",
+      "winner_score": 111,
+      "loser_score": 104,
+      "date": "2024-04-20",
+      "round": "East 1st Round - Game 1"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Lakers",
+      "winner_score": 114,
+      "loser_score": 103,
+      "date": "2024-04-21",
+      "round": "West 1st Round - Game 1"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 114,
+      "loser_score": 94,
+      "date": "2024-04-21",
+      "round": "East 1st Round - Game 1"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Mavericks",
+      "winner_score": 109,
+      "loser_score": 97,
+      "date": "2024-04-21",
+      "round": "West 1st Round - Game 1"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pacers",
+      "winner_score": 109,
+      "loser_score": 94,
+      "date": "2024-04-21",
+      "round": "East 1st Round - Game 1"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pelicans",
+      "winner_score": 94,
+      "loser_score": 92,
+      "date": "2024-04-22",
+      "round": "West 1st Round - Game 1"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Magic",
+      "winner_score": 96,
+      "loser_score": 86,
+      "date": "2024-04-22",
+      "round": "East 1st Round - Game 2"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "76ers",
+      "winner_score": 104,
+      "loser_score": 101,
+      "date": "2024-04-22",
+      "round": "East 1st Round - Game 2"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Lakers",
+      "winner_score": 101,
+      "loser_score": 99,
+      "date": "2024-04-23",
+      "round": "West 1st Round - Game 2"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Suns",
+      "winner_score": 105,
+      "loser_score": 93,
+      "date": "2024-04-23",
+      "round": "West 1st Round - Game 2"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bucks",
+      "winner_score": 125,
+      "loser_score": 108,
+      "date": "2024-04-24",
+      "round": "East 1st Round - Game 2"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Clippers",
+      "winner_score": 96,
+      "loser_score": 93,
+      "date": "2024-04-24",
+      "round": "West 1st Round - Game 2"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 111,
+      "loser_score": 101,
+      "date": "2024-04-24",
+      "round": "East 1st Round - Game 2"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pelicans",
+      "winner_score": 124,
+      "loser_score": 92,
+      "date": "2024-04-25",
+      "round": "West 1st Round - Game 2"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Cavaliers",
+      "winner_score": 121,
+      "loser_score": 83,
+      "date": "2024-04-25",
+      "round": "East 1st Round - Game 3"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Knicks",
+      "winner_score": 125,
+      "loser_score": 114,
+      "date": "2024-04-25",
+      "round": "East 1st Round - Game 3"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Lakers",
+      "winner_score": 112,
+      "loser_score": 105,
+      "date": "2024-04-26",
+      "round": "West 1st Round - Game 3"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bucks",
+      "winner_score": 121,
+      "loser_score": 118,
+      "date": "2024-04-26",
+      "round": "East 1st Round - Game 3"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Clippers",
+      "winner_score": 101,
+      "loser_score": 90,
+      "date": "2024-04-27",
+      "round": "West 1st Round - Game 3"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Suns",
+      "winner_score": 126,
+      "loser_score": 109,
+      "date": "2024-04-27",
+      "round": "West 1st Round - Game 3"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Cavaliers",
+      "winner_score": 112,
+      "loser_score": 89,
+      "date": "2024-04-27",
+      "round": "East 1st Round - Game 4"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pelicans",
+      "winner_score": 106,
+      "loser_score": 85,
+      "date": "2024-04-27",
+      "round": "West 1st Round - Game 3"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 104,
+      "loser_score": 84,
+      "date": "2024-04-27",
+      "round": "East 1st Round - Game 3"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Nuggets",
+      "winner_score": 119,
+      "loser_score": 108,
+      "date": "2024-04-28",
+      "round": "West 1st Round - Game 4"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "76ers",
+      "winner_score": 97,
+      "loser_score": 92,
+      "date": "2024-04-28",
+      "round": "East 1st Round - Game 4"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Mavericks",
+      "winner_score": 116,
+      "loser_score": 111,
+      "date": "2024-04-28",
+      "round": "West 1st Round - Game 4"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bucks",
+      "winner_score": 126,
+      "loser_score": 113,
+      "date": "2024-04-28",
+      "round": "East 1st Round - Game 4"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Suns",
+      "winner_score": 122,
+      "loser_score": 116,
+      "date": "2024-04-29",
+      "round": "West 1st Round - Game 4"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 102,
+      "loser_score": 88,
+      "date": "2024-04-29",
+      "round": "East 1st Round - Game 4"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Pelicans",
+      "winner_score": 97,
+      "loser_score": 89,
+      "date": "2024-04-30",
+      "round": "West 1st Round - Game 4"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Lakers",
+      "winner_score": 108,
+      "loser_score": 106,
+      "date": "2024-04-30",
+      "round": "West 1st Round - Game 5"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Knicks",
+      "winner_score": 112,
+      "loser_score": 106,
+      "date": "2024-04-30",
+      "round": "East 1st Round - Game 5"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Magic",
+      "winner_score": 104,
+      "loser_score": 103,
+      "date": "2024-05-01",
+      "round": "East 1st Round - Game 5"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Pacers",
+      "winner_score": 115,
+      "loser_score": 92,
+      "date": "2024-05-01",
+      "round": "East 1st Round - Game 5"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 118,
+      "loser_score": 84,
+      "date": "2024-05-01",
+      "round": "East 1st Round - Game 5"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Clippers",
+      "winner_score": 123,
+      "loser_score": 93,
+      "date": "2024-05-02",
+      "round": "West 1st Round - Game 5"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bucks",
+      "winner_score": 120,
+      "loser_score": 98,
+      "date": "2024-05-02",
+      "round": "East 1st Round - Game 6"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "76ers",
+      "winner_score": 118,
+      "loser_score": 115,
+      "date": "2024-05-03",
+      "round": "East 1st Round - Game 6"
     },
     {
       "winner": "Magic",
       "loser": "Cavaliers",
       "winner_score": 103,
       "loser_score": 96,
-      "date": "2024-05-03"
+      "date": "2024-05-03",
+      "round": "East 1st Round - Game 6"
     },
     {
       "winner": "Mavericks",
       "loser": "Clippers",
       "winner_score": 114,
       "loser_score": 101,
-      "date": "2024-05-04"
+      "date": "2024-05-04",
+      "round": "West 1st Round - Game 6"
     },
     {
       "winner": "Timberwolves",
       "loser": "Nuggets",
       "winner_score": 106,
       "loser_score": 99,
-      "date": "2024-05-04"
+      "date": "2024-05-04",
+      "round": "West Semifinals - Game 1"
     },
     {
       "winner": "Cavaliers",
       "loser": "Magic",
       "winner_score": 106,
       "loser_score": 94,
-      "date": "2024-05-05"
+      "date": "2024-05-05",
+      "round": "East 1st Round - Game 7"
     },
     {
       "winner": "Knicks",
       "loser": "Pacers",
       "winner_score": 121,
       "loser_score": 117,
-      "date": "2024-05-06"
+      "date": "2024-05-06",
+      "round": "East Semifinals - Game 1"
     },
     {
       "winner": "Timberwolves",
       "loser": "Nuggets",
       "winner_score": 106,
       "loser_score": 80,
-      "date": "2024-05-07"
+      "date": "2024-05-07",
+      "round": "West Semifinals - Game 2"
     },
     {
       "winner": "Celtics",
       "loser": "Cavaliers",
       "winner_score": 120,
       "loser_score": 95,
-      "date": "2024-05-07"
+      "date": "2024-05-07",
+      "round": "East Semifinals - Game 1"
     },
     {
       "winner": "Thunder",
       "loser": "Mavericks",
       "winner_score": 117,
       "loser_score": 95,
-      "date": "2024-05-08"
+      "date": "2024-05-08",
+      "round": "West Semifinals - Game 1"
     },
     {
       "winner": "Knicks",
       "loser": "Pacers",
       "winner_score": 130,
       "loser_score": 121,
-      "date": "2024-05-09"
+      "date": "2024-05-09",
+      "round": "East Semifinals - Game 2"
     },
     {
       "winner": "Cavaliers",
       "loser": "Celtics",
       "winner_score": 118,
       "loser_score": 94,
-      "date": "2024-05-09"
+      "date": "2024-05-09",
+      "round": "East Semifinals - Game 2"
     },
     {
       "winner": "Mavericks",
       "loser": "Thunder",
       "winner_score": 119,
       "loser_score": 110,
-      "date": "2024-05-10"
+      "date": "2024-05-10",
+      "round": "West Semifinals - Game 2"
     },
     {
       "winner": "Pacers",
       "loser": "Knicks",
       "winner_score": 111,
       "loser_score": 106,
-      "date": "2024-05-10"
+      "date": "2024-05-10",
+      "round": "East Semifinals - Game 3"
     },
     {
       "winner": "Nuggets",
       "loser": "Timberwolves",
       "winner_score": 117,
       "loser_score": 90,
-      "date": "2024-05-11"
+      "date": "2024-05-11",
+      "round": "West Semifinals - Game 3"
     },
     {
       "winner": "Mavericks",
       "loser": "Thunder",
       "winner_score": 105,
       "loser_score": 101,
-      "date": "2024-05-11"
+      "date": "2024-05-11",
+      "round": "West Semifinals - Game 3"
     },
     {
       "winner": "Celtics",
       "loser": "Cavaliers",
       "winner_score": 106,
       "loser_score": 93,
-      "date": "2024-05-12"
+      "date": "2024-05-12",
+      "round": "East Semifinals - Game 3"
     },
     {
       "winner": "Pacers",
       "loser": "Knicks",
       "winner_score": 121,
       "loser_score": 89,
-      "date": "2024-05-12"
+      "date": "2024-05-12",
+      "round": "East Semifinals - Game 4"
     },
     {
       "winner": "Nuggets",
       "loser": "Timberwolves",
       "winner_score": 115,
       "loser_score": 107,
-      "date": "2024-05-13"
+      "date": "2024-05-13",
+      "round": "West Semifinals - Game 4"
     },
     {
       "winner": "Celtics",
       "loser": "Cavaliers",
       "winner_score": 109,
       "loser_score": 102,
-      "date": "2024-05-13"
+      "date": "2024-05-13",
+      "round": "East Semifinals - Game 4"
     },
     {
       "winner": "Thunder",
       "loser": "Mavericks",
       "winner_score": 100,
       "loser_score": 96,
-      "date": "2024-05-14"
+      "date": "2024-05-14",
+      "round": "West Semifinals - Game 4"
     },
     {
       "winner": "Knicks",
       "loser": "Pacers",
       "winner_score": 121,
       "loser_score": 91,
-      "date": "2024-05-15"
+      "date": "2024-05-15",
+      "round": "East Semifinals - Game 5"
     },
     {
       "winner": "Nuggets",
       "loser": "Timberwolves",
       "winner_score": 112,
       "loser_score": 97,
-      "date": "2024-05-15"
+      "date": "2024-05-15",
+      "round": "West Semifinals - Game 5"
     },
     {
       "winner": "Celtics",
       "loser": "Cavaliers",
       "winner_score": 113,
       "loser_score": 98,
-      "date": "2024-05-15"
+      "date": "2024-05-15",
+      "round": "East Semifinals - Game 5"
     },
     {
       "winner": "Mavericks",
       "loser": "Thunder",
       "winner_score": 104,
       "loser_score": 92,
-      "date": "2024-05-16"
+      "date": "2024-05-16",
+      "round": "West Semifinals - Game 5"
     },
     {
       "winner": "Timberwolves",
       "loser": "Nuggets",
       "winner_score": 115,
       "loser_score": 70,
-      "date": "2024-05-17"
+      "date": "2024-05-17",
+      "round": "West Semifinals - Game 6"
     },
     {
       "winner": "Pacers",
       "loser": "Knicks",
       "winner_score": 116,
       "loser_score": 103,
-      "date": "2024-05-18"
+      "date": "2024-05-18",
+      "round": "East Semifinals - Game 6"
     },
     {
       "winner": "Mavericks",
       "loser": "Thunder",
       "winner_score": 117,
       "loser_score": 116,
-      "date": "2024-05-19"
+      "date": "2024-05-19",
+      "round": "West Semifinals - Game 6"
     },
     {
       "winner": "Pacers",
       "loser": "Knicks",
       "winner_score": 130,
       "loser_score": 109,
-      "date": "2024-05-19"
+      "date": "2024-05-19",
+      "round": "East Semifinals - Game 7"
     },
     {
       "winner": "Timberwolves",
       "loser": "Nuggets",
       "winner_score": 98,
       "loser_score": 90,
-      "date": "2024-05-20"
+      "date": "2024-05-20",
+      "round": "West Semifinals - Game 7"
     },
     {
       "winner": "Celtics",
       "loser": "Pacers",
       "winner_score": 133,
       "loser_score": 128,
-      "date": "2024-05-22"
+      "date": "2024-05-22",
+      "round": "East Finals - Game 1"
     },
     {
       "winner": "Mavericks",
       "loser": "Timberwolves",
       "winner_score": 108,
       "loser_score": 105,
-      "date": "2024-05-23"
+      "date": "2024-05-23",
+      "round": "West Finals - Game 1"
     },
     {
       "winner": "Celtics",
       "loser": "Pacers",
       "winner_score": 126,
       "loser_score": 110,
-      "date": "2024-05-24"
+      "date": "2024-05-24",
+      "round": "East Finals - Game 2"
     },
     {
       "winner": "Mavericks",
       "loser": "Timberwolves",
       "winner_score": 109,
       "loser_score": 108,
-      "date": "2024-05-25"
+      "date": "2024-05-25",
+      "round": "West Finals - Game 2"
     },
     {
       "winner": "Celtics",
       "loser": "Pacers",
       "winner_score": 114,
       "loser_score": 111,
-      "date": "2024-05-26"
+      "date": "2024-05-26",
+      "round": "East Finals - Game 3"
     },
     {
       "winner": "Mavericks",
       "loser": "Timberwolves",
       "winner_score": 116,
       "loser_score": 107,
-      "date": "2024-05-27"
+      "date": "2024-05-27",
+      "round": "West Finals - Game 3"
     },
     {
       "winner": "Celtics",
       "loser": "Pacers",
       "winner_score": 105,
       "loser_score": 102,
-      "date": "2024-05-28"
+      "date": "2024-05-28",
+      "round": "East Finals - Game 4"
     },
     {
       "winner": "Timberwolves",
       "loser": "Mavericks",
       "winner_score": 105,
       "loser_score": 100,
-      "date": "2024-05-29"
+      "date": "2024-05-29",
+      "round": "West Finals - Game 4"
     },
     {
       "winner": "Mavericks",
       "loser": "Timberwolves",
       "winner_score": 124,
       "loser_score": 103,
-      "date": "2024-05-31"
+      "date": "2024-05-31",
+      "round": "West Finals - Game 5"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Cavaliers",
+      "winner_score": 103,
+      "loser_score": 96,
+      "date": "2024-05-03",
+      "round": "East 1st Round - Game 6"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Clippers",
+      "winner_score": 114,
+      "loser_score": 101,
+      "date": "2024-05-04",
+      "round": "West 1st Round - Game 6"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Nuggets",
+      "winner_score": 106,
+      "loser_score": 99,
+      "date": "2024-05-04",
+      "round": "West Semifinals - Game 1"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Magic",
+      "winner_score": 106,
+      "loser_score": 94,
+      "date": "2024-05-05",
+      "round": "East 1st Round - Game 7"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pacers",
+      "winner_score": 121,
+      "loser_score": 117,
+      "date": "2024-05-06",
+      "round": "East Semifinals - Game 1"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Nuggets",
+      "winner_score": 106,
+      "loser_score": 80,
+      "date": "2024-05-07",
+      "round": "West Semifinals - Game 2"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Cavaliers",
+      "winner_score": 120,
+      "loser_score": 95,
+      "date": "2024-05-07",
+      "round": "East Semifinals - Game 1"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Mavericks",
+      "winner_score": 117,
+      "loser_score": 95,
+      "date": "2024-05-08",
+      "round": "West Semifinals - Game 1"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pacers",
+      "winner_score": 130,
+      "loser_score": 121,
+      "date": "2024-05-09",
+      "round": "East Semifinals - Game 2"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Celtics",
+      "winner_score": 118,
+      "loser_score": 94,
+      "date": "2024-05-09",
+      "round": "East Semifinals - Game 2"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 119,
+      "loser_score": 110,
+      "date": "2024-05-10",
+      "round": "West Semifinals - Game 2"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 111,
+      "loser_score": 106,
+      "date": "2024-05-10",
+      "round": "East Semifinals - Game 3"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Timberwolves",
+      "winner_score": 117,
+      "loser_score": 90,
+      "date": "2024-05-11",
+      "round": "West Semifinals - Game 3"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 105,
+      "loser_score": 101,
+      "date": "2024-05-11",
+      "round": "West Semifinals - Game 3"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Cavaliers",
+      "winner_score": 106,
+      "loser_score": 93,
+      "date": "2024-05-12",
+      "round": "East Semifinals - Game 3"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 121,
+      "loser_score": 89,
+      "date": "2024-05-12",
+      "round": "East Semifinals - Game 4"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Timberwolves",
+      "winner_score": 115,
+      "loser_score": 107,
+      "date": "2024-05-13",
+      "round": "West Semifinals - Game 4"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Cavaliers",
+      "winner_score": 109,
+      "loser_score": 102,
+      "date": "2024-05-13",
+      "round": "East Semifinals - Game 4"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Mavericks",
+      "winner_score": 100,
+      "loser_score": 96,
+      "date": "2024-05-14",
+      "round": "West Semifinals - Game 4"
+    },
+    {
+      "winner": "Knicks",
+      "loser": "Pacers",
+      "winner_score": 121,
+      "loser_score": 91,
+      "date": "2024-05-15",
+      "round": "East Semifinals - Game 5"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Timberwolves",
+      "winner_score": 112,
+      "loser_score": 97,
+      "date": "2024-05-15",
+      "round": "West Semifinals - Game 5"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Cavaliers",
+      "winner_score": 113,
+      "loser_score": 98,
+      "date": "2024-05-15",
+      "round": "East Semifinals - Game 5"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 104,
+      "loser_score": 92,
+      "date": "2024-05-16",
+      "round": "West Semifinals - Game 5"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Nuggets",
+      "winner_score": 115,
+      "loser_score": 70,
+      "date": "2024-05-17",
+      "round": "West Semifinals - Game 6"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 116,
+      "loser_score": 103,
+      "date": "2024-05-18",
+      "round": "East Semifinals - Game 6"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 117,
+      "loser_score": 116,
+      "date": "2024-05-19",
+      "round": "West Semifinals - Game 6"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Knicks",
+      "winner_score": 130,
+      "loser_score": 109,
+      "date": "2024-05-19",
+      "round": "East Semifinals - Game 7"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Nuggets",
+      "winner_score": 98,
+      "loser_score": 90,
+      "date": "2024-05-20",
+      "round": "West Semifinals - Game 7"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 133,
+      "loser_score": 128,
+      "date": "2024-05-22",
+      "round": "East Finals - Game 1"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Timberwolves",
+      "winner_score": 108,
+      "loser_score": 105,
+      "date": "2024-05-23",
+      "round": "West Finals - Game 1"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 126,
+      "loser_score": 110,
+      "date": "2024-05-24",
+      "round": "East Finals - Game 2"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Timberwolves",
+      "winner_score": 109,
+      "loser_score": 108,
+      "date": "2024-05-25",
+      "round": "West Finals - Game 2"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 114,
+      "loser_score": 111,
+      "date": "2024-05-26",
+      "round": "East Finals - Game 3"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Timberwolves",
+      "winner_score": 116,
+      "loser_score": 107,
+      "date": "2024-05-27",
+      "round": "West Finals - Game 3"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Pacers",
+      "winner_score": 105,
+      "loser_score": 102,
+      "date": "2024-05-28",
+      "round": "East Finals - Game 4"
+    },
+    {
+      "winner": "Timberwolves",
+      "loser": "Mavericks",
+      "winner_score": 105,
+      "loser_score": 100,
+      "date": "2024-05-29",
+      "round": "West Finals - Game 4"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Timberwolves",
+      "winner_score": 124,
+      "loser_score": 103,
+      "date": "2024-05-31",
+      "round": "West Finals - Game 5"
     },
     {
       "winner": "Celtics",
       "loser": "Mavericks",
       "winner_score": 107,
       "loser_score": 89,
-      "date": "2024-06-07"
+      "date": "2024-06-07",
+      "round": "NBA Finals - Game 1"
     },
     {
       "winner": "Celtics",
       "loser": "Mavericks",
       "winner_score": 105,
       "loser_score": 98,
-      "date": "2024-06-10"
+      "date": "2024-06-10",
+      "round": "NBA Finals - Game 2"
     },
     {
       "winner": "Celtics",
       "loser": "Mavericks",
       "winner_score": 106,
       "loser_score": 99,
-      "date": "2024-06-13"
+      "date": "2024-06-13",
+      "round": "NBA Finals - Game 3"
     },
     {
       "winner": "Mavericks",
       "loser": "Celtics",
       "winner_score": 122,
       "loser_score": 84,
-      "date": "2024-06-15"
+      "date": "2024-06-15",
+      "round": "NBA Finals - Game 4"
     },
     {
       "winner": "Celtics",
       "loser": "Mavericks",
       "winner_score": 106,
       "loser_score": 88,
-      "date": "2024-06-18"
+      "date": "2024-06-18",
+      "round": "NBA Finals - Game 5"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Mavericks",
+      "winner_score": 107,
+      "loser_score": 89,
+      "date": "2024-06-07",
+      "round": "NBA Finals - Game 1"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Mavericks",
+      "winner_score": 105,
+      "loser_score": 98,
+      "date": "2024-06-10",
+      "round": "NBA Finals - Game 2"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Mavericks",
+      "winner_score": 106,
+      "loser_score": 99,
+      "date": "2024-06-13",
+      "round": "NBA Finals - Game 3"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Celtics",
+      "winner_score": 122,
+      "loser_score": 84,
+      "date": "2024-06-15",
+      "round": "NBA Finals - Game 4"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Mavericks",
+      "winner_score": 106,
+      "loser_score": 88,
+      "date": "2024-06-18",
+      "round": "NBA Finals - Game 5"
     }
   ],
   "series": [
     {
-      "t1": "Celtics",
+      "t1": "76ers",
+      "t2": "Magic",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-12"
+    },
+    {
+      "t1": "Bulls",
       "t2": "Wizards",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-12"
     },
     {
-      "t1": "Hornets",
-      "t2": "Cavaliers",
-      "w1": 1,
+      "t1": "Celtics",
+      "t2": "Hornets",
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-12"
     },
     {
-      "t1": "Pacers",
-      "t2": "Hawks",
-      "w1": 1,
+      "t1": "Cavaliers",
+      "t2": "Pacers",
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-12"
+    },
+    {
+      "t1": "Knicks",
+      "t2": "Nets",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-12"
     },
     {
       "t1": "Heat",
       "t2": "Raptors",
-      "w1": 1,
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Raptors",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Grizzlies",
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Timberwolves",
+      "t2": "Hawks",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Thunder",
+      "t2": "Bucks",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Spurs",
+      "t2": "Nuggets",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Pistons",
+      "t2": "Mavericks",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Pelicans",
+      "t2": "Warriors",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Rockets",
+      "t2": "Trail Blazers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Jazz",
+      "t2": "Clippers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Suns",
+      "t2": "Kings",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-13"
+    },
+    {
+      "t1": "Celtics",
+      "t2": "Wizards",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
+    },
+    {
+      "t1": "Hornets",
+      "t2": "Cavaliers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
+    },
+    {
+      "t1": "Pacers",
+      "t2": "Hawks",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Knicks",
       "t2": "Bulls",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Magic",
       "t2": "Bucks",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "76ers",
       "t2": "Nets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Nuggets",
       "t2": "Grizzlies",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Suns",
       "t2": "Timberwolves",
-      "w1": 1,
-      "w2": 4,
+      "w1": 2,
+      "w2": 8,
       "done": true,
-      "loser": "Suns"
+      "loser": "Suns",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Lakers",
       "t2": "Pelicans",
-      "w1": 2,
+      "w1": 4,
       "w2": 0,
-      "done": false,
-      "loser": ""
+      "done": true,
+      "loser": "Pelicans",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Thunder",
       "t2": "Mavericks",
-      "w1": 3,
-      "w2": 4,
+      "w1": 6,
+      "w2": 8,
       "done": true,
-      "loser": "Thunder"
+      "loser": "Thunder",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Spurs",
       "t2": "Pistons",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Warriors",
       "t2": "Jazz",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Rockets",
       "t2": "Clippers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Kings",
       "t2": "Trail Blazers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2024-04-14"
     },
     {
       "t1": "Kings",
       "t2": "Warriors",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NBA Play-In - West - 9th Place vs 10th Place",
+      "date": "2024-04-17"
     },
     {
       "t1": "76ers",
       "t2": "Heat",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NBA Play-In - East - 7th Place vs 8th Place",
+      "date": "2024-04-17"
     },
     {
       "t1": "Bulls",
       "t2": "Hawks",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NBA Play-In - East - 9th Place vs 10th Place",
+      "date": "2024-04-18"
     },
     {
       "t1": "Heat",
       "t2": "Bulls",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NBA Play-In - East - 8th Seed Game",
+      "date": "2024-04-19"
     },
     {
       "t1": "Pelicans",
       "t2": "Kings",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NBA Play-In - West - 8th Seed Game",
+      "date": "2024-04-20"
     },
     {
       "t1": "Cavaliers",
       "t2": "Magic",
-      "w1": 4,
-      "w2": 3,
+      "w1": 8,
+      "w2": 6,
       "done": true,
-      "loser": "Magic"
+      "loser": "Magic",
+      "round": "East 1st Round - Game 1",
+      "date": "2024-04-20"
     },
     {
       "t1": "Knicks",
       "t2": "76ers",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "76ers"
+      "loser": "76ers",
+      "round": "East 1st Round - Game 1",
+      "date": "2024-04-20"
     },
     {
       "t1": "Nuggets",
       "t2": "Lakers",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Lakers"
+      "loser": "Lakers",
+      "round": "West 1st Round - Game 1",
+      "date": "2024-04-21"
     },
     {
       "t1": "Celtics",
       "t2": "Heat",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Heat"
+      "loser": "Heat",
+      "round": "East 1st Round - Game 1",
+      "date": "2024-04-21"
     },
     {
       "t1": "Clippers",
       "t2": "Mavericks",
-      "w1": 2,
-      "w2": 4,
+      "w1": 4,
+      "w2": 8,
       "done": true,
-      "loser": "Clippers"
+      "loser": "Clippers",
+      "round": "West 1st Round - Game 1",
+      "date": "2024-04-21"
     },
     {
       "t1": "Bucks",
       "t2": "Pacers",
-      "w1": 2,
-      "w2": 4,
+      "w1": 4,
+      "w2": 8,
       "done": true,
-      "loser": "Bucks"
+      "loser": "Bucks",
+      "round": "East 1st Round - Game 1",
+      "date": "2024-04-21"
     },
     {
       "t1": "Thunder",
       "t2": "Pelicans",
-      "w1": 4,
+      "w1": 8,
       "w2": 0,
       "done": true,
-      "loser": "Pelicans"
+      "loser": "Pelicans",
+      "round": "West 1st Round - Game 1",
+      "date": "2024-04-22"
     },
     {
       "t1": "Timberwolves",
       "t2": "Nuggets",
-      "w1": 4,
-      "w2": 3,
+      "w1": 8,
+      "w2": 6,
       "done": true,
-      "loser": "Nuggets"
+      "loser": "Nuggets",
+      "round": "West Semifinals - Game 1",
+      "date": "2024-05-04"
     },
     {
       "t1": "Knicks",
       "t2": "Pacers",
-      "w1": 3,
-      "w2": 4,
+      "w1": 6,
+      "w2": 8,
       "done": true,
-      "loser": "Knicks"
+      "loser": "Knicks",
+      "round": "East Semifinals - Game 1",
+      "date": "2024-05-06"
     },
     {
       "t1": "Celtics",
       "t2": "Cavaliers",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Cavaliers"
+      "loser": "Cavaliers",
+      "round": "East Semifinals - Game 1",
+      "date": "2024-05-07"
     },
     {
       "t1": "Celtics",
       "t2": "Pacers",
-      "w1": 4,
+      "w1": 8,
       "w2": 0,
       "done": true,
-      "loser": "Pacers"
+      "loser": "Pacers",
+      "round": "East Finals - Game 1",
+      "date": "2024-05-22"
     },
     {
       "t1": "Mavericks",
       "t2": "Timberwolves",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Timberwolves"
+      "loser": "Timberwolves",
+      "round": "West Finals - Game 1",
+      "date": "2024-05-23"
     },
     {
       "t1": "Celtics",
       "t2": "Mavericks",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Mavericks"
+      "loser": "Mavericks",
+      "round": "NBA Finals - Game 1",
+      "date": "2024-06-07"
     }
   ],
   "eliminated": [
+    "Raptors",
     "Suns",
+    "Pelicans",
     "Thunder",
     "Magic",
     "76ers",
@@ -1000,7 +2375,6 @@
     "Heat",
     "Clippers",
     "Bucks",
-    "Pelicans",
     "Nuggets",
     "Knicks",
     "Cavaliers",
@@ -1008,5 +2382,5 @@
     "Timberwolves",
     "Mavericks"
   ],
-  "updated": "2026-05-27 04:26 UTC"
+  "updated": "2026-05-27 05:09 UTC"
 }

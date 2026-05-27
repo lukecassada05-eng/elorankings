@@ -8,392 +8,448 @@
       "loser": "Orioles",
       "winner_score": 6,
       "loser_score": 1,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Dodgers",
       "loser": "Giants",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Pirates",
       "loser": "Marlins",
       "winner_score": 3,
       "loser_score": 0,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Angels",
       "loser": "Athletics",
       "winner_score": 7,
       "loser_score": 3,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Rays",
       "loser": "Blue Jays",
       "winner_score": 12,
       "loser_score": 8,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Brewers",
       "loser": "Cubs",
       "winner_score": 4,
       "loser_score": 0,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Tigers",
       "loser": "Guardians",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Astros",
       "loser": "Diamondbacks",
       "winner_score": 8,
       "loser_score": 1,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Royals",
       "loser": "Yankees",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Phillies",
       "loser": "Mets",
       "winner_score": 9,
       "loser_score": 1,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Padres",
       "loser": "White Sox",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Mariners",
       "loser": "Rangers",
       "winner_score": 1,
       "loser_score": 0,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Nationals",
       "loser": "Braves",
       "winner_score": 10,
       "loser_score": 9,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Rockies",
       "loser": "Twins",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Cardinals",
       "loser": "Reds",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2023-10-01"
+      "date": "2023-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Rangers",
       "loser": "Rays",
       "winner_score": 4,
       "loser_score": 0,
-      "date": "2023-10-03"
+      "date": "2023-10-03",
+      "round": "AL Wild Card - Game 1"
     },
     {
       "winner": "Twins",
       "loser": "Blue Jays",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2023-10-03"
+      "date": "2023-10-03",
+      "round": "AL Wild Card - Game 1"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Brewers",
       "winner_score": 6,
       "loser_score": 3,
-      "date": "2023-10-03"
+      "date": "2023-10-03",
+      "round": "NL Wild Card - Game 1"
     },
     {
       "winner": "Phillies",
       "loser": "Marlins",
       "winner_score": 4,
       "loser_score": 1,
-      "date": "2023-10-04"
+      "date": "2023-10-04",
+      "round": "NL Wild Card - Game 1"
     },
     {
       "winner": "Rangers",
       "loser": "Rays",
       "winner_score": 7,
       "loser_score": 1,
-      "date": "2023-10-04"
+      "date": "2023-10-04",
+      "round": "ALWC - Game 2"
     },
     {
       "winner": "Twins",
       "loser": "Blue Jays",
       "winner_score": 2,
       "loser_score": 0,
-      "date": "2023-10-04"
+      "date": "2023-10-04",
+      "round": "ALWC - Game 2"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Brewers",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2023-10-04"
+      "date": "2023-10-04",
+      "round": "NLWC - Game 2"
     },
     {
       "winner": "Phillies",
       "loser": "Marlins",
       "winner_score": 7,
       "loser_score": 1,
-      "date": "2023-10-05"
+      "date": "2023-10-05",
+      "round": "NLWC - Game 2"
     },
     {
       "winner": "Rangers",
       "loser": "Orioles",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2023-10-07"
+      "date": "2023-10-07",
+      "round": "ALDS - Game 1"
     },
     {
       "winner": "Astros",
       "loser": "Twins",
       "winner_score": 6,
       "loser_score": 4,
-      "date": "2023-10-07"
+      "date": "2023-10-07",
+      "round": "ALDS - Game 1"
     },
     {
       "winner": "Phillies",
       "loser": "Braves",
       "winner_score": 3,
       "loser_score": 0,
-      "date": "2023-10-07"
+      "date": "2023-10-07",
+      "round": "NLDS - Game 1"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Dodgers",
       "winner_score": 11,
       "loser_score": 2,
-      "date": "2023-10-08"
+      "date": "2023-10-08",
+      "round": "NLDS - Game 1"
     },
     {
       "winner": "Rangers",
       "loser": "Orioles",
       "winner_score": 11,
       "loser_score": 8,
-      "date": "2023-10-08"
+      "date": "2023-10-08",
+      "round": "ALDS - Game 2"
     },
     {
       "winner": "Twins",
       "loser": "Astros",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2023-10-09"
+      "date": "2023-10-09",
+      "round": "ALDS - Game 2"
     },
     {
       "winner": "Braves",
       "loser": "Phillies",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2023-10-09"
+      "date": "2023-10-09",
+      "round": "NLDS - Game 2"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Dodgers",
       "winner_score": 4,
       "loser_score": 2,
-      "date": "2023-10-10"
+      "date": "2023-10-10",
+      "round": "NLDS - Game 2"
     },
     {
       "winner": "Astros",
       "loser": "Twins",
       "winner_score": 9,
       "loser_score": 1,
-      "date": "2023-10-10"
+      "date": "2023-10-10",
+      "round": "ALDS - Game 3"
     },
     {
       "winner": "Rangers",
       "loser": "Orioles",
       "winner_score": 7,
       "loser_score": 1,
-      "date": "2023-10-11"
+      "date": "2023-10-11",
+      "round": "ALDS - Game 3"
     },
     {
       "winner": "Phillies",
       "loser": "Braves",
       "winner_score": 10,
       "loser_score": 2,
-      "date": "2023-10-11"
+      "date": "2023-10-11",
+      "round": "NLDS - Game 3"
     },
     {
       "winner": "Astros",
       "loser": "Twins",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2023-10-11"
+      "date": "2023-10-11",
+      "round": "ALDS - Game 4"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Dodgers",
       "winner_score": 4,
       "loser_score": 2,
-      "date": "2023-10-12"
+      "date": "2023-10-12",
+      "round": "NLDS - Game 3"
     },
     {
       "winner": "Phillies",
       "loser": "Braves",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2023-10-13"
+      "date": "2023-10-13",
+      "round": "NLDS - Game 4"
     },
     {
       "winner": "Rangers",
       "loser": "Astros",
       "winner_score": 2,
       "loser_score": 0,
-      "date": "2023-10-16"
+      "date": "2023-10-16",
+      "round": "ALCS - Game 1"
     },
     {
       "winner": "Rangers",
       "loser": "Astros",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2023-10-16"
+      "date": "2023-10-16",
+      "round": "ALCS - Game 2"
     },
     {
       "winner": "Phillies",
       "loser": "Diamondbacks",
       "winner_score": 5,
       "loser_score": 3,
-      "date": "2023-10-17"
+      "date": "2023-10-17",
+      "round": "NLCS - Game 1"
     },
     {
       "winner": "Phillies",
       "loser": "Diamondbacks",
       "winner_score": 10,
       "loser_score": 0,
-      "date": "2023-10-18"
+      "date": "2023-10-18",
+      "round": "NLCS - Game 2"
     },
     {
       "winner": "Astros",
       "loser": "Rangers",
       "winner_score": 8,
       "loser_score": 5,
-      "date": "2023-10-19"
+      "date": "2023-10-19",
+      "round": "ALCS - Game 3"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Phillies",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2023-10-19"
+      "date": "2023-10-19",
+      "round": "NLCS - Game 3"
     },
     {
       "winner": "Astros",
       "loser": "Rangers",
       "winner_score": 10,
       "loser_score": 3,
-      "date": "2023-10-20"
+      "date": "2023-10-20",
+      "round": "ALCS - Game 4"
     },
     {
       "winner": "Astros",
       "loser": "Rangers",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2023-10-20"
+      "date": "2023-10-20",
+      "round": "ALCS - Game 5"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Phillies",
       "winner_score": 6,
       "loser_score": 5,
-      "date": "2023-10-21"
+      "date": "2023-10-21",
+      "round": "NLCS - Game 4"
     },
     {
       "winner": "Phillies",
       "loser": "Diamondbacks",
       "winner_score": 6,
       "loser_score": 1,
-      "date": "2023-10-22"
+      "date": "2023-10-22",
+      "round": "NLCS - Game 5"
     },
     {
       "winner": "Rangers",
       "loser": "Astros",
       "winner_score": 9,
       "loser_score": 2,
-      "date": "2023-10-23"
+      "date": "2023-10-23",
+      "round": "ALCS - Game 6"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Phillies",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2023-10-23"
+      "date": "2023-10-23",
+      "round": "NLCS - Game 6"
     },
     {
       "winner": "Rangers",
       "loser": "Astros",
       "winner_score": 11,
       "loser_score": 4,
-      "date": "2023-10-24"
+      "date": "2023-10-24",
+      "round": "ALCS - Game 7"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Phillies",
       "winner_score": 4,
       "loser_score": 2,
-      "date": "2023-10-25"
+      "date": "2023-10-25",
+      "round": "NLCS - Game 7"
     },
     {
       "winner": "Rangers",
       "loser": "Diamondbacks",
       "winner_score": 6,
       "loser_score": 5,
-      "date": "2023-10-28"
+      "date": "2023-10-28",
+      "round": "World Series - Game 1"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Rangers",
       "winner_score": 9,
       "loser_score": 1,
-      "date": "2023-10-29"
+      "date": "2023-10-29",
+      "round": "World Series - Game 2"
     },
     {
       "winner": "Rangers",
       "loser": "Diamondbacks",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2023-10-31"
+      "date": "2023-10-31",
+      "round": "World Series - Game 3"
     },
     {
       "winner": "Rangers",
       "loser": "Diamondbacks",
       "winner_score": 11,
       "loser_score": 7,
-      "date": "2023-11-01"
+      "date": "2023-11-01",
+      "round": "World Series - Game 4"
     },
     {
       "winner": "Rangers",
       "loser": "Diamondbacks",
       "winner_score": 5,
       "loser_score": 0,
-      "date": "2023-11-02"
+      "date": "2023-11-02",
+      "round": "World Series - Game 5"
     }
   ],
   "series": [
@@ -403,7 +459,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Dodgers",
@@ -411,7 +469,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Pirates",
@@ -419,7 +479,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Angels",
@@ -427,7 +489,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Rays",
@@ -435,7 +499,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Brewers",
@@ -443,7 +509,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Tigers",
@@ -451,7 +519,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Astros",
@@ -459,7 +529,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Royals",
@@ -467,7 +539,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Phillies",
@@ -475,7 +549,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Padres",
@@ -483,7 +559,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Mariners",
@@ -491,7 +569,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Nationals",
@@ -499,7 +579,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Rockies",
@@ -507,7 +589,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Cardinals",
@@ -515,7 +599,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2023-10-01"
     },
     {
       "t1": "Rangers",
@@ -523,7 +609,9 @@
       "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "AL Wild Card - Game 1",
+      "date": "2023-10-03"
     },
     {
       "t1": "Twins",
@@ -531,7 +619,9 @@
       "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "AL Wild Card - Game 1",
+      "date": "2023-10-03"
     },
     {
       "t1": "Diamondbacks",
@@ -539,7 +629,9 @@
       "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NL Wild Card - Game 1",
+      "date": "2023-10-03"
     },
     {
       "t1": "Phillies",
@@ -547,7 +639,9 @@
       "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NL Wild Card - Game 1",
+      "date": "2023-10-04"
     },
     {
       "t1": "Rangers",
@@ -555,7 +649,9 @@
       "w1": 3,
       "w2": 0,
       "done": true,
-      "loser": "Orioles"
+      "loser": "Orioles",
+      "round": "ALDS - Game 1",
+      "date": "2023-10-07"
     },
     {
       "t1": "Astros",
@@ -563,7 +659,9 @@
       "w1": 3,
       "w2": 1,
       "done": true,
-      "loser": "Twins"
+      "loser": "Twins",
+      "round": "ALDS - Game 1",
+      "date": "2023-10-07"
     },
     {
       "t1": "Phillies",
@@ -571,7 +669,9 @@
       "w1": 3,
       "w2": 1,
       "done": true,
-      "loser": "Braves"
+      "loser": "Braves",
+      "round": "NLDS - Game 1",
+      "date": "2023-10-07"
     },
     {
       "t1": "Diamondbacks",
@@ -579,7 +679,9 @@
       "w1": 3,
       "w2": 0,
       "done": true,
-      "loser": "Dodgers"
+      "loser": "Dodgers",
+      "round": "NLDS - Game 1",
+      "date": "2023-10-08"
     },
     {
       "t1": "Rangers",
@@ -587,7 +689,9 @@
       "w1": 4,
       "w2": 3,
       "done": true,
-      "loser": "Astros"
+      "loser": "Astros",
+      "round": "ALCS - Game 1",
+      "date": "2023-10-16"
     },
     {
       "t1": "Phillies",
@@ -595,7 +699,9 @@
       "w1": 3,
       "w2": 4,
       "done": true,
-      "loser": "Phillies"
+      "loser": "Phillies",
+      "round": "NLCS - Game 1",
+      "date": "2023-10-17"
     },
     {
       "t1": "Rangers",
@@ -603,7 +709,9 @@
       "w1": 4,
       "w2": 1,
       "done": true,
-      "loser": "Diamondbacks"
+      "loser": "Diamondbacks",
+      "round": "World Series - Game 1",
+      "date": "2023-10-28"
     }
   ],
   "eliminated": [
@@ -615,5 +723,5 @@
     "Phillies",
     "Diamondbacks"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

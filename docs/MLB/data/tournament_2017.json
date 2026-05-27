@@ -8,371 +8,424 @@
       "loser": "Red Sox",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Blue Jays",
       "loser": "Yankees",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Athletics",
       "loser": "Rangers",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Pirates",
       "loser": "Nationals",
       "winner_score": 11,
       "loser_score": 8,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Phillies",
       "loser": "Mets",
       "winner_score": 11,
       "loser_score": 0,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Giants",
       "loser": "Padres",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Angels",
       "loser": "Mariners",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Indians",
       "loser": "White Sox",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Twins",
       "loser": "Tigers",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Dodgers",
       "loser": "Rockies",
       "winner_score": 6,
       "loser_score": 3,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Braves",
       "loser": "Marlins",
       "winner_score": 8,
       "loser_score": 5,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Rays",
       "loser": "Orioles",
       "winner_score": 6,
       "loser_score": 0,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Royals",
       "winner_score": 14,
       "loser_score": 2,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Brewers",
       "loser": "Cardinals",
       "winner_score": 6,
       "loser_score": 1,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Reds",
       "loser": "Cubs",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2017-10-01"
+      "date": "2017-10-01",
+      "round": "regular-season"
     },
     {
       "winner": "Yankees",
       "loser": "Twins",
       "winner_score": 8,
       "loser_score": 4,
-      "date": "2017-10-04"
+      "date": "2017-10-04",
+      "round": "AL WILD CARD GAME -- NYY ADVANCES TO ALDS"
     },
     {
       "winner": "Diamondbacks",
       "loser": "Rockies",
       "winner_score": 11,
       "loser_score": 8,
-      "date": "2017-10-05"
+      "date": "2017-10-05",
+      "round": "NL WILD CARD GAME -- ARI ADVANCES TO NLDS"
     },
     {
       "winner": "Astros",
       "loser": "Red Sox",
       "winner_score": 8,
       "loser_score": 2,
-      "date": "2017-10-05"
+      "date": "2017-10-05",
+      "round": "ALDS - GAME 1"
     },
     {
       "winner": "Indians",
       "loser": "Yankees",
       "winner_score": 4,
       "loser_score": 0,
-      "date": "2017-10-05"
+      "date": "2017-10-05",
+      "round": "ALDS - GAME 1"
     },
     {
       "winner": "Astros",
       "loser": "Red Sox",
       "winner_score": 8,
       "loser_score": 2,
-      "date": "2017-10-06"
+      "date": "2017-10-06",
+      "round": "ALDS - GAME 2"
     },
     {
       "winner": "Indians",
       "loser": "Yankees",
       "winner_score": 9,
       "loser_score": 8,
-      "date": "2017-10-06"
+      "date": "2017-10-06",
+      "round": "ALDS - GAME 2"
     },
     {
       "winner": "Cubs",
       "loser": "Nationals",
       "winner_score": 3,
       "loser_score": 0,
-      "date": "2017-10-06"
+      "date": "2017-10-06",
+      "round": "NLDS - GAME 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Diamondbacks",
       "winner_score": 9,
       "loser_score": 5,
-      "date": "2017-10-07"
+      "date": "2017-10-07",
+      "round": "NLDS - GAME 1"
     },
     {
       "winner": "Nationals",
       "loser": "Cubs",
       "winner_score": 6,
       "loser_score": 3,
-      "date": "2017-10-07"
+      "date": "2017-10-07",
+      "round": "NLDS - GAME 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Diamondbacks",
       "winner_score": 8,
       "loser_score": 5,
-      "date": "2017-10-08"
+      "date": "2017-10-08",
+      "round": "NLDS - GAME 2"
     },
     {
       "winner": "Red Sox",
       "loser": "Astros",
       "winner_score": 10,
       "loser_score": 3,
-      "date": "2017-10-08"
+      "date": "2017-10-08",
+      "round": "ALDS - GAME 3"
     },
     {
       "winner": "Yankees",
       "loser": "Indians",
       "winner_score": 1,
       "loser_score": 0,
-      "date": "2017-10-08"
+      "date": "2017-10-08",
+      "round": "ALDS - GAME 3"
     },
     {
       "winner": "Astros",
       "loser": "Red Sox",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2017-10-09"
+      "date": "2017-10-09",
+      "round": "ALDS - GAME 4"
     },
     {
       "winner": "Cubs",
       "loser": "Nationals",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2017-10-09"
+      "date": "2017-10-09",
+      "round": "NLDS - GAME 3"
     },
     {
       "winner": "Yankees",
       "loser": "Indians",
       "winner_score": 7,
       "loser_score": 3,
-      "date": "2017-10-09"
+      "date": "2017-10-09",
+      "round": "ALDS - GAME 4"
     },
     {
       "winner": "Dodgers",
       "loser": "Diamondbacks",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2017-10-10"
+      "date": "2017-10-10",
+      "round": "NLDS - GAME 3"
     },
     {
       "winner": "Nationals",
       "loser": "Cubs",
       "winner_score": 5,
       "loser_score": 0,
-      "date": "2017-10-11"
+      "date": "2017-10-11",
+      "round": "NLDS - GAME 4"
     },
     {
       "winner": "Yankees",
       "loser": "Indians",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2017-10-12"
+      "date": "2017-10-12",
+      "round": "ALDS - GAME 5"
     },
     {
       "winner": "Cubs",
       "loser": "Nationals",
       "winner_score": 9,
       "loser_score": 8,
-      "date": "2017-10-13"
+      "date": "2017-10-13",
+      "round": "NLDS - GAME 5"
     },
     {
       "winner": "Astros",
       "loser": "Yankees",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2017-10-14"
+      "date": "2017-10-14",
+      "round": "ALCS - GAME 1"
     },
     {
       "winner": "Astros",
       "loser": "Yankees",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2017-10-14"
+      "date": "2017-10-14",
+      "round": "ALCS - GAME 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Cubs",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2017-10-15"
+      "date": "2017-10-15",
+      "round": "NLCS - GAME 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Cubs",
       "winner_score": 4,
       "loser_score": 1,
-      "date": "2017-10-15"
+      "date": "2017-10-15",
+      "round": "NLCS - GAME 2"
     },
     {
       "winner": "Yankees",
       "loser": "Astros",
       "winner_score": 8,
       "loser_score": 1,
-      "date": "2017-10-17"
+      "date": "2017-10-17",
+      "round": "ALCS - GAME 3"
     },
     {
       "winner": "Yankees",
       "loser": "Astros",
       "winner_score": 6,
       "loser_score": 4,
-      "date": "2017-10-17"
+      "date": "2017-10-17",
+      "round": "ALCS - GAME 4"
     },
     {
       "winner": "Dodgers",
       "loser": "Cubs",
       "winner_score": 6,
       "loser_score": 1,
-      "date": "2017-10-18"
+      "date": "2017-10-18",
+      "round": "NLCS - GAME 3"
     },
     {
       "winner": "Yankees",
       "loser": "Astros",
       "winner_score": 5,
       "loser_score": 0,
-      "date": "2017-10-18"
+      "date": "2017-10-18",
+      "round": "ALCS - GAME 5"
     },
     {
       "winner": "Cubs",
       "loser": "Dodgers",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2017-10-19"
+      "date": "2017-10-19",
+      "round": "NLCS - GAME 4"
     },
     {
       "winner": "Dodgers",
       "loser": "Cubs",
       "winner_score": 11,
       "loser_score": 1,
-      "date": "2017-10-20"
+      "date": "2017-10-20",
+      "round": "NLCS - GAME 5"
     },
     {
       "winner": "Astros",
       "loser": "Yankees",
       "winner_score": 7,
       "loser_score": 1,
-      "date": "2017-10-21"
+      "date": "2017-10-21",
+      "round": "ALCS - GAME 6"
     },
     {
       "winner": "Astros",
       "loser": "Yankees",
       "winner_score": 4,
       "loser_score": 0,
-      "date": "2017-10-22"
+      "date": "2017-10-22",
+      "round": "ALCS - GAME 7"
     },
     {
       "winner": "Dodgers",
       "loser": "Astros",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2017-10-25"
+      "date": "2017-10-25",
+      "round": "WORLD SERIES - GAME 1"
     },
     {
       "winner": "Astros",
       "loser": "Dodgers",
       "winner_score": 7,
       "loser_score": 6,
-      "date": "2017-10-26"
+      "date": "2017-10-26",
+      "round": "WORLD SERIES - GAME 2"
     },
     {
       "winner": "Astros",
       "loser": "Dodgers",
       "winner_score": 5,
       "loser_score": 3,
-      "date": "2017-10-28"
+      "date": "2017-10-28",
+      "round": "WORLD SERIES - GAME 3"
     },
     {
       "winner": "Dodgers",
       "loser": "Astros",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2017-10-29"
+      "date": "2017-10-29",
+      "round": "WORLD SERIES - GAME 4"
     },
     {
       "winner": "Astros",
       "loser": "Dodgers",
       "winner_score": 13,
       "loser_score": 12,
-      "date": "2017-10-30"
+      "date": "2017-10-30",
+      "round": "WORLD SERIES - GAME 5"
     },
     {
       "winner": "Dodgers",
       "loser": "Astros",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2017-11-01"
+      "date": "2017-11-01",
+      "round": "WORLD SERIES - GAME 6"
     },
     {
       "winner": "Astros",
       "loser": "Dodgers",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2017-11-02"
+      "date": "2017-11-02",
+      "round": "WORLD SERIES - GAME 7"
     }
   ],
   "series": [
@@ -382,7 +435,9 @@
       "w1": 4,
       "w2": 1,
       "done": true,
-      "loser": "Red Sox"
+      "loser": "Red Sox",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Blue Jays",
@@ -390,7 +445,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Athletics",
@@ -398,7 +455,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Pirates",
@@ -406,7 +465,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Phillies",
@@ -414,7 +475,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Giants",
@@ -422,7 +485,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Angels",
@@ -430,7 +495,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Indians",
@@ -438,7 +505,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Twins",
@@ -446,7 +515,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Dodgers",
@@ -454,7 +525,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Braves",
@@ -462,7 +535,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Rays",
@@ -470,7 +545,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Diamondbacks",
@@ -478,7 +555,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Brewers",
@@ -486,7 +565,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Reds",
@@ -494,7 +575,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2017-10-01"
     },
     {
       "t1": "Yankees",
@@ -502,7 +585,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "AL WILD CARD GAME -- NYY ADVANCES TO ALDS",
+      "date": "2017-10-04"
     },
     {
       "t1": "Diamondbacks",
@@ -510,7 +595,9 @@
       "w1": 1,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NL WILD CARD GAME -- ARI ADVANCES TO NLDS",
+      "date": "2017-10-05"
     },
     {
       "t1": "Indians",
@@ -518,7 +605,9 @@
       "w1": 2,
       "w2": 3,
       "done": true,
-      "loser": "Indians"
+      "loser": "Indians",
+      "round": "ALDS - GAME 1",
+      "date": "2017-10-05"
     },
     {
       "t1": "Cubs",
@@ -526,7 +615,9 @@
       "w1": 3,
       "w2": 2,
       "done": true,
-      "loser": "Nationals"
+      "loser": "Nationals",
+      "round": "NLDS - GAME 1",
+      "date": "2017-10-06"
     },
     {
       "t1": "Dodgers",
@@ -534,7 +625,9 @@
       "w1": 3,
       "w2": 0,
       "done": true,
-      "loser": "Diamondbacks"
+      "loser": "Diamondbacks",
+      "round": "NLDS - GAME 1",
+      "date": "2017-10-07"
     },
     {
       "t1": "Astros",
@@ -542,7 +635,9 @@
       "w1": 4,
       "w2": 3,
       "done": true,
-      "loser": "Yankees"
+      "loser": "Yankees",
+      "round": "ALCS - GAME 1",
+      "date": "2017-10-14"
     },
     {
       "t1": "Dodgers",
@@ -550,7 +645,9 @@
       "w1": 4,
       "w2": 1,
       "done": true,
-      "loser": "Cubs"
+      "loser": "Cubs",
+      "round": "NLCS - GAME 1",
+      "date": "2017-10-15"
     },
     {
       "t1": "Dodgers",
@@ -558,7 +655,9 @@
       "w1": 3,
       "w2": 4,
       "done": true,
-      "loser": "Dodgers"
+      "loser": "Dodgers",
+      "round": "WORLD SERIES - GAME 1",
+      "date": "2017-10-25"
     }
   ],
   "eliminated": [
@@ -570,5 +669,5 @@
     "Cubs",
     "Dodgers"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:09 UTC"
 }

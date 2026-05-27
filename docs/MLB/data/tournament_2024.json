@@ -8,301 +8,344 @@
       "loser": "Astros",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2024-10-01"
+      "date": "2024-10-01",
+      "round": "ALWC - Game 1"
     },
     {
       "winner": "Royals",
       "loser": "Orioles",
       "winner_score": 1,
       "loser_score": 0,
-      "date": "2024-10-01"
+      "date": "2024-10-01",
+      "round": "ALWC - Game 1"
     },
     {
       "winner": "Mets",
       "loser": "Brewers",
       "winner_score": 8,
       "loser_score": 4,
-      "date": "2024-10-01"
+      "date": "2024-10-01",
+      "round": "NLWC - Game 1"
     },
     {
       "winner": "Padres",
       "loser": "Braves",
       "winner_score": 4,
       "loser_score": 0,
-      "date": "2024-10-02"
+      "date": "2024-10-02",
+      "round": "NLWC - Game 1"
     },
     {
       "winner": "Tigers",
       "loser": "Astros",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2024-10-02"
+      "date": "2024-10-02",
+      "round": "ALWC - Game 2"
     },
     {
       "winner": "Royals",
       "loser": "Orioles",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2024-10-02"
+      "date": "2024-10-02",
+      "round": "ALWC - Game 2"
     },
     {
       "winner": "Brewers",
       "loser": "Mets",
       "winner_score": 5,
       "loser_score": 3,
-      "date": "2024-10-02"
+      "date": "2024-10-02",
+      "round": "NLWC - Game 2"
     },
     {
       "winner": "Padres",
       "loser": "Braves",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2024-10-03"
+      "date": "2024-10-03",
+      "round": "NLWC - Game 2"
     },
     {
       "winner": "Mets",
       "loser": "Brewers",
       "winner_score": 4,
       "loser_score": 2,
-      "date": "2024-10-03"
+      "date": "2024-10-03",
+      "round": "NLWC - Game 3"
     },
     {
       "winner": "Guardians",
       "loser": "Tigers",
       "winner_score": 7,
       "loser_score": 0,
-      "date": "2024-10-05"
+      "date": "2024-10-05",
+      "round": "ALDS - Game 1"
     },
     {
       "winner": "Mets",
       "loser": "Phillies",
       "winner_score": 6,
       "loser_score": 2,
-      "date": "2024-10-05"
+      "date": "2024-10-05",
+      "round": "NLDS - Game 1"
     },
     {
       "winner": "Yankees",
       "loser": "Royals",
       "winner_score": 6,
       "loser_score": 5,
-      "date": "2024-10-05"
+      "date": "2024-10-05",
+      "round": "ALDS - Game 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Padres",
       "winner_score": 7,
       "loser_score": 5,
-      "date": "2024-10-06"
+      "date": "2024-10-06",
+      "round": "NLDS - Game 1"
     },
     {
       "winner": "Phillies",
       "loser": "Mets",
       "winner_score": 7,
       "loser_score": 6,
-      "date": "2024-10-06"
+      "date": "2024-10-06",
+      "round": "NLDS - Game 2"
     },
     {
       "winner": "Padres",
       "loser": "Dodgers",
       "winner_score": 10,
       "loser_score": 2,
-      "date": "2024-10-07"
+      "date": "2024-10-07",
+      "round": "NLDS - Game 2"
     },
     {
       "winner": "Tigers",
       "loser": "Guardians",
       "winner_score": 3,
       "loser_score": 0,
-      "date": "2024-10-07"
+      "date": "2024-10-07",
+      "round": "ALDS - Game 2"
     },
     {
       "winner": "Royals",
       "loser": "Yankees",
       "winner_score": 4,
       "loser_score": 2,
-      "date": "2024-10-07"
+      "date": "2024-10-07",
+      "round": "ALDS - Game 2"
     },
     {
       "winner": "Mets",
       "loser": "Phillies",
       "winner_score": 7,
       "loser_score": 2,
-      "date": "2024-10-08"
+      "date": "2024-10-08",
+      "round": "NLDS - Game 3"
     },
     {
       "winner": "Padres",
       "loser": "Dodgers",
       "winner_score": 6,
       "loser_score": 5,
-      "date": "2024-10-09"
+      "date": "2024-10-09",
+      "round": "NLDS - Game 3"
     },
     {
       "winner": "Tigers",
       "loser": "Guardians",
       "winner_score": 3,
       "loser_score": 0,
-      "date": "2024-10-09"
+      "date": "2024-10-09",
+      "round": "ALDS - Game 3"
     },
     {
       "winner": "Mets",
       "loser": "Phillies",
       "winner_score": 4,
       "loser_score": 1,
-      "date": "2024-10-09"
+      "date": "2024-10-09",
+      "round": "NLDS - Game 4"
     },
     {
       "winner": "Yankees",
       "loser": "Royals",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2024-10-09"
+      "date": "2024-10-09",
+      "round": "ALDS - Game 3"
     },
     {
       "winner": "Dodgers",
       "loser": "Padres",
       "winner_score": 8,
       "loser_score": 0,
-      "date": "2024-10-10"
+      "date": "2024-10-10",
+      "round": "NLDS - Game 4"
     },
     {
       "winner": "Guardians",
       "loser": "Tigers",
       "winner_score": 5,
       "loser_score": 4,
-      "date": "2024-10-10"
+      "date": "2024-10-10",
+      "round": "ALDS - Game 4"
     },
     {
       "winner": "Yankees",
       "loser": "Royals",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2024-10-11"
+      "date": "2024-10-11",
+      "round": "ALDS - Game 4"
     },
     {
       "winner": "Dodgers",
       "loser": "Padres",
       "winner_score": 2,
       "loser_score": 0,
-      "date": "2024-10-12"
+      "date": "2024-10-12",
+      "round": "NLDS - Game 5"
     },
     {
       "winner": "Guardians",
       "loser": "Tigers",
       "winner_score": 7,
       "loser_score": 3,
-      "date": "2024-10-12"
+      "date": "2024-10-12",
+      "round": "ALDS - Game 5"
     },
     {
       "winner": "Dodgers",
       "loser": "Mets",
       "winner_score": 9,
       "loser_score": 0,
-      "date": "2024-10-14"
+      "date": "2024-10-14",
+      "round": "NLCS - Game 1"
     },
     {
       "winner": "Mets",
       "loser": "Dodgers",
       "winner_score": 7,
       "loser_score": 3,
-      "date": "2024-10-14"
+      "date": "2024-10-14",
+      "round": "NLCS - Game 2"
     },
     {
       "winner": "Yankees",
       "loser": "Guardians",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2024-10-14"
+      "date": "2024-10-14",
+      "round": "ALCS - Game 1"
     },
     {
       "winner": "Yankees",
       "loser": "Guardians",
       "winner_score": 6,
       "loser_score": 3,
-      "date": "2024-10-15"
+      "date": "2024-10-15",
+      "round": "ALCS - Game 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Mets",
       "winner_score": 8,
       "loser_score": 0,
-      "date": "2024-10-17"
+      "date": "2024-10-17",
+      "round": "NLCS - Game 3"
     },
     {
       "winner": "Guardians",
       "loser": "Yankees",
       "winner_score": 7,
       "loser_score": 5,
-      "date": "2024-10-17"
+      "date": "2024-10-17",
+      "round": "ALCS - Game 3"
     },
     {
       "winner": "Dodgers",
       "loser": "Mets",
       "winner_score": 10,
       "loser_score": 2,
-      "date": "2024-10-18"
+      "date": "2024-10-18",
+      "round": "NLCS - Game 4"
     },
     {
       "winner": "Mets",
       "loser": "Dodgers",
       "winner_score": 12,
       "loser_score": 6,
-      "date": "2024-10-18"
+      "date": "2024-10-18",
+      "round": "NLCS - Game 5"
     },
     {
       "winner": "Yankees",
       "loser": "Guardians",
       "winner_score": 8,
       "loser_score": 6,
-      "date": "2024-10-19"
+      "date": "2024-10-19",
+      "round": "ALCS - Game 4"
     },
     {
       "winner": "Yankees",
       "loser": "Guardians",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2024-10-20"
+      "date": "2024-10-20",
+      "round": "ALCS - Game 5"
     },
     {
       "winner": "Dodgers",
       "loser": "Mets",
       "winner_score": 10,
       "loser_score": 5,
-      "date": "2024-10-21"
+      "date": "2024-10-21",
+      "round": "NLCS - Game 6"
     },
     {
       "winner": "Dodgers",
       "loser": "Yankees",
       "winner_score": 6,
       "loser_score": 3,
-      "date": "2024-10-26"
+      "date": "2024-10-26",
+      "round": "World Series - Game 1"
     },
     {
       "winner": "Dodgers",
       "loser": "Yankees",
       "winner_score": 4,
       "loser_score": 2,
-      "date": "2024-10-27"
+      "date": "2024-10-27",
+      "round": "World Series - Game 2"
     },
     {
       "winner": "Dodgers",
       "loser": "Yankees",
       "winner_score": 4,
       "loser_score": 2,
-      "date": "2024-10-29"
+      "date": "2024-10-29",
+      "round": "World Series - Game 3"
     },
     {
       "winner": "Yankees",
       "loser": "Dodgers",
       "winner_score": 11,
       "loser_score": 4,
-      "date": "2024-10-30"
+      "date": "2024-10-30",
+      "round": "World Series - Game 4"
     },
     {
       "winner": "Dodgers",
       "loser": "Yankees",
       "winner_score": 7,
       "loser_score": 6,
-      "date": "2024-10-31"
+      "date": "2024-10-31",
+      "round": "World Series - Game 5"
     }
   ],
   "series": [
@@ -312,7 +355,9 @@
       "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "ALWC - Game 1",
+      "date": "2024-10-01"
     },
     {
       "t1": "Royals",
@@ -320,7 +365,9 @@
       "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "ALWC - Game 1",
+      "date": "2024-10-01"
     },
     {
       "t1": "Mets",
@@ -328,7 +375,9 @@
       "w1": 2,
       "w2": 1,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NLWC - Game 1",
+      "date": "2024-10-01"
     },
     {
       "t1": "Padres",
@@ -336,7 +385,9 @@
       "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "NLWC - Game 1",
+      "date": "2024-10-02"
     },
     {
       "t1": "Guardians",
@@ -344,7 +395,9 @@
       "w1": 3,
       "w2": 2,
       "done": true,
-      "loser": "Tigers"
+      "loser": "Tigers",
+      "round": "ALDS - Game 1",
+      "date": "2024-10-05"
     },
     {
       "t1": "Mets",
@@ -352,7 +405,9 @@
       "w1": 3,
       "w2": 1,
       "done": true,
-      "loser": "Phillies"
+      "loser": "Phillies",
+      "round": "NLDS - Game 1",
+      "date": "2024-10-05"
     },
     {
       "t1": "Yankees",
@@ -360,7 +415,9 @@
       "w1": 3,
       "w2": 1,
       "done": true,
-      "loser": "Royals"
+      "loser": "Royals",
+      "round": "ALDS - Game 1",
+      "date": "2024-10-05"
     },
     {
       "t1": "Dodgers",
@@ -368,7 +425,9 @@
       "w1": 3,
       "w2": 2,
       "done": true,
-      "loser": "Padres"
+      "loser": "Padres",
+      "round": "NLDS - Game 1",
+      "date": "2024-10-06"
     },
     {
       "t1": "Dodgers",
@@ -376,7 +435,9 @@
       "w1": 4,
       "w2": 2,
       "done": true,
-      "loser": "Mets"
+      "loser": "Mets",
+      "round": "NLCS - Game 1",
+      "date": "2024-10-14"
     },
     {
       "t1": "Yankees",
@@ -384,7 +445,9 @@
       "w1": 4,
       "w2": 1,
       "done": true,
-      "loser": "Guardians"
+      "loser": "Guardians",
+      "round": "ALCS - Game 1",
+      "date": "2024-10-14"
     },
     {
       "t1": "Dodgers",
@@ -392,7 +455,9 @@
       "w1": 4,
       "w2": 1,
       "done": true,
-      "loser": "Yankees"
+      "loser": "Yankees",
+      "round": "World Series - Game 1",
+      "date": "2024-10-26"
     }
   ],
   "eliminated": [
@@ -404,5 +469,5 @@
     "Guardians",
     "Yankees"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

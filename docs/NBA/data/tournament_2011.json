@@ -4,910 +4,1910 @@
   "completed": true,
   "games": [
     {
+      "winner": "Bulls",
+      "loser": "Knicks",
+      "winner_score": 103,
+      "loser_score": 90,
+      "date": "2011-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Grizzlies",
+      "winner_score": 102,
+      "loser_score": 89,
+      "date": "2011-04-13",
+      "round": "regular-season"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 102,
+      "loser_score": 93,
+      "date": "2011-04-13",
+      "round": "regular-season"
+    },
+    {
       "winner": "Celtics",
       "loser": "Knicks",
       "winner_score": 112,
       "loser_score": 102,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Bulls",
       "loser": "Nets",
       "winner_score": 97,
       "loser_score": 92,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Cavaliers",
       "loser": "Wizards",
       "winner_score": 100,
       "loser_score": 93,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Mavericks",
       "loser": "Hornets",
       "winner_score": 121,
       "loser_score": 89,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Rockets",
       "loser": "Timberwolves",
       "winner_score": 121,
       "loser_score": 102,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Magic",
       "loser": "Pacers",
       "winner_score": 92,
       "loser_score": 74,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Pistons",
       "loser": "76ers",
       "winner_score": 104,
       "loser_score": 100,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Bucks",
       "loser": "Thunder",
       "winner_score": 110,
       "loser_score": 106,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Jazz",
       "loser": "Nuggets",
       "winner_score": 107,
       "loser_score": 103,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Heat",
       "loser": "Raptors",
       "winner_score": 97,
       "loser_score": 79,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Bobcats",
       "loser": "Hawks",
       "winner_score": 96,
       "loser_score": 85,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Warriors",
       "loser": "Trail Blazers",
       "winner_score": 110,
       "loser_score": 86,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Clippers",
       "loser": "Grizzlies",
       "winner_score": 110,
       "loser_score": 103,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Suns",
       "loser": "Spurs",
       "winner_score": 106,
       "loser_score": 103,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Lakers",
       "loser": "Kings",
       "winner_score": 116,
       "loser_score": 108,
-      "date": "2011-04-14"
+      "date": "2011-04-14",
+      "round": "regular-season"
     },
     {
       "winner": "Bulls",
       "loser": "Pacers",
       "winner_score": 104,
       "loser_score": 99,
-      "date": "2011-04-16"
+      "date": "2011-04-16",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
       "winner": "Heat",
       "loser": "76ers",
       "winner_score": 97,
       "loser_score": 89,
-      "date": "2011-04-16"
+      "date": "2011-04-16",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
       "winner": "Hawks",
       "loser": "Magic",
       "winner_score": 103,
       "loser_score": 93,
-      "date": "2011-04-16"
+      "date": "2011-04-16",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
       "winner": "Mavericks",
       "loser": "Trail Blazers",
       "winner_score": 89,
       "loser_score": 81,
-      "date": "2011-04-17"
+      "date": "2011-04-17",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
       "winner": "Grizzlies",
       "loser": "Spurs",
       "winner_score": 101,
       "loser_score": 98,
-      "date": "2011-04-17"
+      "date": "2011-04-17",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
       "winner": "Hornets",
       "loser": "Lakers",
       "winner_score": 109,
       "loser_score": 100,
-      "date": "2011-04-17"
+      "date": "2011-04-17",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
       "winner": "Celtics",
       "loser": "Knicks",
       "winner_score": 87,
       "loser_score": 85,
-      "date": "2011-04-17"
+      "date": "2011-04-17",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
       "winner": "Thunder",
       "loser": "Nuggets",
       "winner_score": 107,
       "loser_score": 103,
-      "date": "2011-04-18"
+      "date": "2011-04-18",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
       "winner": "Heat",
       "loser": "76ers",
       "winner_score": 94,
       "loser_score": 73,
-      "date": "2011-04-18"
+      "date": "2011-04-18",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
     },
     {
       "winner": "Bulls",
       "loser": "Pacers",
       "winner_score": 96,
       "loser_score": 90,
-      "date": "2011-04-19"
+      "date": "2011-04-19",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
     },
     {
       "winner": "Celtics",
       "loser": "Knicks",
       "winner_score": 96,
       "loser_score": 93,
-      "date": "2011-04-19"
+      "date": "2011-04-19",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
     },
     {
       "winner": "Magic",
       "loser": "Hawks",
       "winner_score": 88,
       "loser_score": 82,
-      "date": "2011-04-19"
+      "date": "2011-04-19",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
     },
     {
       "winner": "Mavericks",
       "loser": "Trail Blazers",
       "winner_score": 101,
       "loser_score": 89,
-      "date": "2011-04-20"
+      "date": "2011-04-20",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 2"
     },
     {
       "winner": "Thunder",
       "loser": "Nuggets",
       "winner_score": 106,
       "loser_score": 89,
-      "date": "2011-04-21"
+      "date": "2011-04-21",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 2"
     },
     {
       "winner": "Spurs",
       "loser": "Grizzlies",
       "winner_score": 93,
       "loser_score": 87,
-      "date": "2011-04-21"
+      "date": "2011-04-21",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 2"
     },
     {
       "winner": "Lakers",
       "loser": "Hornets",
       "winner_score": 87,
       "loser_score": 78,
-      "date": "2011-04-21"
+      "date": "2011-04-21",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 2"
     },
     {
       "winner": "Bulls",
       "loser": "Pacers",
       "winner_score": 88,
       "loser_score": 84,
-      "date": "2011-04-21"
+      "date": "2011-04-21",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
       "winner": "Heat",
       "loser": "76ers",
       "winner_score": 100,
       "loser_score": 94,
-      "date": "2011-04-22"
+      "date": "2011-04-22",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
       "winner": "Trail Blazers",
       "loser": "Mavericks",
       "winner_score": 97,
       "loser_score": 92,
-      "date": "2011-04-22"
+      "date": "2011-04-22",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
       "winner": "Celtics",
       "loser": "Knicks",
       "winner_score": 113,
       "loser_score": 96,
-      "date": "2011-04-22"
+      "date": "2011-04-22",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
       "winner": "Hawks",
       "loser": "Magic",
       "winner_score": 88,
       "loser_score": 84,
-      "date": "2011-04-23"
+      "date": "2011-04-23",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
       "winner": "Lakers",
       "loser": "Hornets",
       "winner_score": 100,
       "loser_score": 86,
-      "date": "2011-04-23"
+      "date": "2011-04-23",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
       "winner": "Pacers",
       "loser": "Bulls",
       "winner_score": 89,
       "loser_score": 84,
-      "date": "2011-04-23"
+      "date": "2011-04-23",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Trail Blazers",
       "loser": "Mavericks",
       "winner_score": 84,
       "loser_score": 82,
-      "date": "2011-04-23"
+      "date": "2011-04-23",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Grizzlies",
       "loser": "Spurs",
       "winner_score": 91,
       "loser_score": 88,
-      "date": "2011-04-23"
+      "date": "2011-04-23",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
       "winner": "Thunder",
       "loser": "Nuggets",
       "winner_score": 97,
       "loser_score": 94,
-      "date": "2011-04-24"
+      "date": "2011-04-24",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
       "winner": "76ers",
       "loser": "Heat",
       "winner_score": 86,
       "loser_score": 82,
-      "date": "2011-04-24"
+      "date": "2011-04-24",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Celtics",
       "loser": "Knicks",
       "winner_score": 101,
       "loser_score": 89,
-      "date": "2011-04-24"
+      "date": "2011-04-24",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Hawks",
       "loser": "Magic",
       "winner_score": 88,
       "loser_score": 85,
-      "date": "2011-04-24"
+      "date": "2011-04-24",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Hornets",
       "loser": "Lakers",
       "winner_score": 93,
       "loser_score": 88,
-      "date": "2011-04-25"
+      "date": "2011-04-25",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Grizzlies",
       "loser": "Spurs",
       "winner_score": 104,
       "loser_score": 86,
-      "date": "2011-04-26"
+      "date": "2011-04-26",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Mavericks",
       "loser": "Trail Blazers",
       "winner_score": 93,
       "loser_score": 82,
-      "date": "2011-04-26"
+      "date": "2011-04-26",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
     },
     {
       "winner": "Nuggets",
       "loser": "Thunder",
       "winner_score": 104,
       "loser_score": 101,
-      "date": "2011-04-26"
+      "date": "2011-04-26",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Magic",
       "loser": "Hawks",
       "winner_score": 101,
       "loser_score": 76,
-      "date": "2011-04-26"
+      "date": "2011-04-26",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5"
     },
     {
       "winner": "Bulls",
       "loser": "Pacers",
       "winner_score": 116,
       "loser_score": 89,
-      "date": "2011-04-27"
+      "date": "2011-04-27",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5"
     },
     {
       "winner": "Lakers",
       "loser": "Hornets",
       "winner_score": 106,
       "loser_score": 90,
-      "date": "2011-04-27"
+      "date": "2011-04-27",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
     },
     {
       "winner": "Heat",
       "loser": "76ers",
       "winner_score": 97,
       "loser_score": 91,
-      "date": "2011-04-27"
+      "date": "2011-04-27",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5"
     },
     {
       "winner": "Spurs",
       "loser": "Grizzlies",
       "winner_score": 110,
       "loser_score": 103,
-      "date": "2011-04-28"
+      "date": "2011-04-28",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
     },
     {
       "winner": "Thunder",
       "loser": "Nuggets",
       "winner_score": 100,
       "loser_score": 97,
-      "date": "2011-04-28"
+      "date": "2011-04-28",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
     },
     {
       "winner": "Hawks",
       "loser": "Magic",
       "winner_score": 84,
       "loser_score": 81,
-      "date": "2011-04-28"
+      "date": "2011-04-28",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 6"
     },
     {
       "winner": "Lakers",
       "loser": "Hornets",
       "winner_score": 98,
       "loser_score": 80,
-      "date": "2011-04-29"
+      "date": "2011-04-29",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 6"
     },
     {
       "winner": "Mavericks",
       "loser": "Trail Blazers",
       "winner_score": 103,
       "loser_score": 96,
-      "date": "2011-04-29"
+      "date": "2011-04-29",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 6"
     },
     {
       "winner": "Grizzlies",
       "loser": "Spurs",
       "winner_score": 99,
       "loser_score": 91,
-      "date": "2011-04-30"
+      "date": "2011-04-30",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 6"
     },
     {
       "winner": "Grizzlies",
       "loser": "Thunder",
       "winner_score": 114,
       "loser_score": 101,
-      "date": "2011-05-01"
+      "date": "2011-05-01",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
     },
     {
       "winner": "Heat",
       "loser": "Celtics",
       "winner_score": 99,
       "loser_score": 90,
-      "date": "2011-05-01"
+      "date": "2011-05-01",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
     },
     {
       "winner": "Hawks",
       "loser": "Bulls",
       "winner_score": 103,
       "loser_score": 95,
-      "date": "2011-05-03"
+      "date": "2011-05-03",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
     },
     {
       "winner": "Mavericks",
       "loser": "Lakers",
       "winner_score": 96,
       "loser_score": 94,
-      "date": "2011-05-03"
+      "date": "2011-05-03",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Knicks",
+      "winner_score": 103,
+      "loser_score": 90,
+      "date": "2011-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Grizzlies",
+      "winner_score": 102,
+      "loser_score": 89,
+      "date": "2011-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Spurs",
+      "winner_score": 102,
+      "loser_score": 93,
+      "date": "2011-04-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 112,
+      "loser_score": 102,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Nets",
+      "winner_score": 97,
+      "loser_score": 92,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Cavaliers",
+      "loser": "Wizards",
+      "winner_score": 100,
+      "loser_score": 93,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Hornets",
+      "winner_score": 121,
+      "loser_score": 89,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Rockets",
+      "loser": "Timberwolves",
+      "winner_score": 121,
+      "loser_score": 102,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Pacers",
+      "winner_score": 92,
+      "loser_score": 74,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Pistons",
+      "loser": "76ers",
+      "winner_score": 104,
+      "loser_score": 100,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bucks",
+      "loser": "Thunder",
+      "winner_score": 110,
+      "loser_score": 106,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Jazz",
+      "loser": "Nuggets",
+      "winner_score": 107,
+      "loser_score": 103,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Raptors",
+      "winner_score": 97,
+      "loser_score": 79,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bobcats",
+      "loser": "Hawks",
+      "winner_score": 96,
+      "loser_score": 85,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Warriors",
+      "loser": "Trail Blazers",
+      "winner_score": 110,
+      "loser_score": 86,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Clippers",
+      "loser": "Grizzlies",
+      "winner_score": 110,
+      "loser_score": 103,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Suns",
+      "loser": "Spurs",
+      "winner_score": 106,
+      "loser_score": 103,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Kings",
+      "winner_score": 116,
+      "loser_score": 108,
+      "date": "2011-04-14",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Pacers",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2011-04-16",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 97,
+      "loser_score": 89,
+      "date": "2011-04-16",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 103,
+      "loser_score": 93,
+      "date": "2011-04-16",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 89,
+      "loser_score": 81,
+      "date": "2011-04-17",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Spurs",
+      "winner_score": 101,
+      "loser_score": 98,
+      "date": "2011-04-17",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Lakers",
+      "winner_score": 109,
+      "loser_score": 100,
+      "date": "2011-04-17",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 87,
+      "loser_score": 85,
+      "date": "2011-04-17",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 107,
+      "loser_score": 103,
+      "date": "2011-04-18",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 94,
+      "loser_score": 73,
+      "date": "2011-04-18",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Pacers",
+      "winner_score": 96,
+      "loser_score": 90,
+      "date": "2011-04-19",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 96,
+      "loser_score": 93,
+      "date": "2011-04-19",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 88,
+      "loser_score": 82,
+      "date": "2011-04-19",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 101,
+      "loser_score": 89,
+      "date": "2011-04-20",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 2"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 106,
+      "loser_score": 89,
+      "date": "2011-04-21",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 2"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Grizzlies",
+      "winner_score": 93,
+      "loser_score": 87,
+      "date": "2011-04-21",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 2"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 87,
+      "loser_score": 78,
+      "date": "2011-04-21",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 2"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Pacers",
+      "winner_score": 88,
+      "loser_score": 84,
+      "date": "2011-04-21",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 100,
+      "loser_score": 94,
+      "date": "2011-04-22",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Mavericks",
+      "winner_score": 97,
+      "loser_score": 92,
+      "date": "2011-04-22",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 113,
+      "loser_score": 96,
+      "date": "2011-04-22",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 88,
+      "loser_score": 84,
+      "date": "2011-04-23",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 100,
+      "loser_score": 86,
+      "date": "2011-04-23",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Pacers",
+      "loser": "Bulls",
+      "winner_score": 89,
+      "loser_score": 84,
+      "date": "2011-04-23",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
+    },
+    {
+      "winner": "Trail Blazers",
+      "loser": "Mavericks",
+      "winner_score": 84,
+      "loser_score": 82,
+      "date": "2011-04-23",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Spurs",
+      "winner_score": 91,
+      "loser_score": 88,
+      "date": "2011-04-23",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 97,
+      "loser_score": 94,
+      "date": "2011-04-24",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "76ers",
+      "loser": "Heat",
+      "winner_score": 86,
+      "loser_score": 82,
+      "date": "2011-04-24",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Knicks",
+      "winner_score": 101,
+      "loser_score": 89,
+      "date": "2011-04-24",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 88,
+      "loser_score": 85,
+      "date": "2011-04-24",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
+    },
+    {
+      "winner": "Hornets",
+      "loser": "Lakers",
+      "winner_score": 93,
+      "loser_score": 88,
+      "date": "2011-04-25",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Spurs",
+      "winner_score": 104,
+      "loser_score": 86,
+      "date": "2011-04-26",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 93,
+      "loser_score": 82,
+      "date": "2011-04-26",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
+    },
+    {
+      "winner": "Nuggets",
+      "loser": "Thunder",
+      "winner_score": 104,
+      "loser_score": 101,
+      "date": "2011-04-26",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
+    },
+    {
+      "winner": "Magic",
+      "loser": "Hawks",
+      "winner_score": 101,
+      "loser_score": 76,
+      "date": "2011-04-26",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Pacers",
+      "winner_score": 116,
+      "loser_score": 89,
+      "date": "2011-04-27",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 106,
+      "loser_score": 90,
+      "date": "2011-04-27",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
+    },
+    {
+      "winner": "Heat",
+      "loser": "76ers",
+      "winner_score": 97,
+      "loser_score": 91,
+      "date": "2011-04-27",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5"
+    },
+    {
+      "winner": "Spurs",
+      "loser": "Grizzlies",
+      "winner_score": 110,
+      "loser_score": 103,
+      "date": "2011-04-28",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Nuggets",
+      "winner_score": 100,
+      "loser_score": 97,
+      "date": "2011-04-28",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Magic",
+      "winner_score": 84,
+      "loser_score": 81,
+      "date": "2011-04-28",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 6"
+    },
+    {
+      "winner": "Lakers",
+      "loser": "Hornets",
+      "winner_score": 98,
+      "loser_score": 80,
+      "date": "2011-04-29",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 6"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Trail Blazers",
+      "winner_score": 103,
+      "loser_score": 96,
+      "date": "2011-04-29",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 6"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Spurs",
+      "winner_score": 99,
+      "loser_score": 91,
+      "date": "2011-04-30",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 6"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 114,
+      "loser_score": 101,
+      "date": "2011-05-01",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 99,
+      "loser_score": 90,
+      "date": "2011-05-01",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bulls",
+      "winner_score": 103,
+      "loser_score": 95,
+      "date": "2011-05-03",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Lakers",
+      "winner_score": 96,
+      "loser_score": 94,
+      "date": "2011-05-03",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
     },
     {
       "winner": "Heat",
       "loser": "Celtics",
       "winner_score": 102,
       "loser_score": 91,
-      "date": "2011-05-03"
+      "date": "2011-05-03",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
     },
     {
       "winner": "Thunder",
       "loser": "Grizzlies",
       "winner_score": 111,
       "loser_score": 102,
-      "date": "2011-05-04"
+      "date": "2011-05-04",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
     },
     {
       "winner": "Bulls",
       "loser": "Hawks",
       "winner_score": 86,
       "loser_score": 73,
-      "date": "2011-05-05"
+      "date": "2011-05-05",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
     },
     {
       "winner": "Mavericks",
       "loser": "Lakers",
       "winner_score": 93,
       "loser_score": 81,
-      "date": "2011-05-05"
+      "date": "2011-05-05",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
     },
     {
       "winner": "Bulls",
       "loser": "Hawks",
       "winner_score": 99,
       "loser_score": 82,
-      "date": "2011-05-06"
+      "date": "2011-05-06",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
     },
     {
       "winner": "Mavericks",
       "loser": "Lakers",
       "winner_score": 98,
       "loser_score": 92,
-      "date": "2011-05-07"
+      "date": "2011-05-07",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
     },
     {
       "winner": "Grizzlies",
       "loser": "Thunder",
       "winner_score": 101,
       "loser_score": 93,
-      "date": "2011-05-07"
+      "date": "2011-05-07",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
     },
     {
       "winner": "Celtics",
       "loser": "Heat",
       "winner_score": 97,
       "loser_score": 81,
-      "date": "2011-05-08"
+      "date": "2011-05-08",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
     },
     {
       "winner": "Mavericks",
       "loser": "Lakers",
       "winner_score": 122,
       "loser_score": 86,
-      "date": "2011-05-08"
+      "date": "2011-05-08",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
     },
     {
       "winner": "Hawks",
       "loser": "Bulls",
       "winner_score": 100,
       "loser_score": 88,
-      "date": "2011-05-09"
+      "date": "2011-05-09",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
     },
     {
       "winner": "Heat",
       "loser": "Celtics",
       "winner_score": 98,
       "loser_score": 90,
-      "date": "2011-05-09"
+      "date": "2011-05-09",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
     },
     {
       "winner": "Thunder",
       "loser": "Grizzlies",
       "winner_score": 133,
       "loser_score": 123,
-      "date": "2011-05-10"
+      "date": "2011-05-10",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
     },
     {
       "winner": "Bulls",
       "loser": "Hawks",
       "winner_score": 95,
       "loser_score": 83,
-      "date": "2011-05-11"
+      "date": "2011-05-11",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
     },
     {
       "winner": "Heat",
       "loser": "Celtics",
       "winner_score": 97,
       "loser_score": 87,
-      "date": "2011-05-11"
+      "date": "2011-05-11",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
     },
     {
       "winner": "Thunder",
       "loser": "Grizzlies",
       "winner_score": 99,
       "loser_score": 72,
-      "date": "2011-05-12"
+      "date": "2011-05-12",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
     },
     {
       "winner": "Bulls",
       "loser": "Hawks",
       "winner_score": 93,
       "loser_score": 73,
-      "date": "2011-05-13"
+      "date": "2011-05-13",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 6"
     },
     {
       "winner": "Grizzlies",
       "loser": "Thunder",
       "winner_score": 95,
       "loser_score": 83,
-      "date": "2011-05-14"
+      "date": "2011-05-14",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6"
     },
     {
       "winner": "Thunder",
       "loser": "Grizzlies",
       "winner_score": 105,
       "loser_score": 90,
-      "date": "2011-05-15"
+      "date": "2011-05-15",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 7"
     },
     {
       "winner": "Bulls",
       "loser": "Heat",
       "winner_score": 103,
       "loser_score": 82,
-      "date": "2011-05-16"
+      "date": "2011-05-16",
+      "round": "EASTERN CONFERENCE FINALS - GAME 1"
     },
     {
       "winner": "Mavericks",
       "loser": "Thunder",
       "winner_score": 121,
       "loser_score": 112,
-      "date": "2011-05-18"
+      "date": "2011-05-18",
+      "round": "WESTERN CONFERENCE FINALS - GAME 1"
     },
     {
       "winner": "Heat",
       "loser": "Bulls",
       "winner_score": 85,
       "loser_score": 75,
-      "date": "2011-05-19"
+      "date": "2011-05-19",
+      "round": "EASTERN CONFERENCE FINALS - GAME 2"
     },
     {
       "winner": "Thunder",
       "loser": "Mavericks",
       "winner_score": 106,
       "loser_score": 100,
-      "date": "2011-05-20"
+      "date": "2011-05-20",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2"
     },
     {
       "winner": "Mavericks",
       "loser": "Thunder",
       "winner_score": 93,
       "loser_score": 87,
-      "date": "2011-05-22"
+      "date": "2011-05-22",
+      "round": "WESTERN CONFERENCE FINALS - GAME 3"
     },
     {
       "winner": "Heat",
       "loser": "Bulls",
       "winner_score": 96,
       "loser_score": 85,
-      "date": "2011-05-23"
+      "date": "2011-05-23",
+      "round": "EASTERN CONFERENCE FINALS - GAME 3"
     },
     {
       "winner": "Mavericks",
       "loser": "Thunder",
       "winner_score": 112,
       "loser_score": 105,
-      "date": "2011-05-24"
+      "date": "2011-05-24",
+      "round": "WESTERN CONFERENCE FINALS - GAME 4"
     },
     {
       "winner": "Heat",
       "loser": "Bulls",
       "winner_score": 101,
       "loser_score": 93,
-      "date": "2011-05-25"
+      "date": "2011-05-25",
+      "round": "EASTERN CONFERENCE FINALS - GAME 4"
     },
     {
       "winner": "Mavericks",
       "loser": "Thunder",
       "winner_score": 100,
       "loser_score": 96,
-      "date": "2011-05-26"
+      "date": "2011-05-26",
+      "round": "WESTERN CONFERENCE FINALS - GAME 5"
     },
     {
       "winner": "Heat",
       "loser": "Bulls",
       "winner_score": 83,
       "loser_score": 80,
-      "date": "2011-05-27"
+      "date": "2011-05-27",
+      "round": "EASTERN CONFERENCE FINALS - GAME 5"
     },
     {
       "winner": "Heat",
       "loser": "Mavericks",
       "winner_score": 92,
       "loser_score": 84,
-      "date": "2011-06-01"
+      "date": "2011-06-01",
+      "round": "NBA FINALS - GAME 1"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 102,
+      "loser_score": 91,
+      "date": "2011-05-03",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 111,
+      "loser_score": 102,
+      "date": "2011-05-04",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 86,
+      "loser_score": 73,
+      "date": "2011-05-05",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Lakers",
+      "winner_score": 93,
+      "loser_score": 81,
+      "date": "2011-05-05",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 99,
+      "loser_score": 82,
+      "date": "2011-05-06",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Lakers",
+      "winner_score": 98,
+      "loser_score": 92,
+      "date": "2011-05-07",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 101,
+      "loser_score": 93,
+      "date": "2011-05-07",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
+    },
+    {
+      "winner": "Celtics",
+      "loser": "Heat",
+      "winner_score": 97,
+      "loser_score": 81,
+      "date": "2011-05-08",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Lakers",
+      "winner_score": 122,
+      "loser_score": 86,
+      "date": "2011-05-08",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
+    },
+    {
+      "winner": "Hawks",
+      "loser": "Bulls",
+      "winner_score": 100,
+      "loser_score": 88,
+      "date": "2011-05-09",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 98,
+      "loser_score": 90,
+      "date": "2011-05-09",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 133,
+      "loser_score": 123,
+      "date": "2011-05-10",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 95,
+      "loser_score": 83,
+      "date": "2011-05-11",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Celtics",
+      "winner_score": 97,
+      "loser_score": 87,
+      "date": "2011-05-11",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 99,
+      "loser_score": 72,
+      "date": "2011-05-12",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Hawks",
+      "winner_score": 93,
+      "loser_score": 73,
+      "date": "2011-05-13",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 6"
+    },
+    {
+      "winner": "Grizzlies",
+      "loser": "Thunder",
+      "winner_score": 95,
+      "loser_score": 83,
+      "date": "2011-05-14",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Grizzlies",
+      "winner_score": 105,
+      "loser_score": 90,
+      "date": "2011-05-15",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 7"
+    },
+    {
+      "winner": "Bulls",
+      "loser": "Heat",
+      "winner_score": 103,
+      "loser_score": 82,
+      "date": "2011-05-16",
+      "round": "EASTERN CONFERENCE FINALS - GAME 1"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 121,
+      "loser_score": 112,
+      "date": "2011-05-18",
+      "round": "WESTERN CONFERENCE FINALS - GAME 1"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 85,
+      "loser_score": 75,
+      "date": "2011-05-19",
+      "round": "EASTERN CONFERENCE FINALS - GAME 2"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Mavericks",
+      "winner_score": 106,
+      "loser_score": 100,
+      "date": "2011-05-20",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 93,
+      "loser_score": 87,
+      "date": "2011-05-22",
+      "round": "WESTERN CONFERENCE FINALS - GAME 3"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 96,
+      "loser_score": 85,
+      "date": "2011-05-23",
+      "round": "EASTERN CONFERENCE FINALS - GAME 3"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 112,
+      "loser_score": 105,
+      "date": "2011-05-24",
+      "round": "WESTERN CONFERENCE FINALS - GAME 4"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 101,
+      "loser_score": 93,
+      "date": "2011-05-25",
+      "round": "EASTERN CONFERENCE FINALS - GAME 4"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Thunder",
+      "winner_score": 100,
+      "loser_score": 96,
+      "date": "2011-05-26",
+      "round": "WESTERN CONFERENCE FINALS - GAME 5"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Bulls",
+      "winner_score": 83,
+      "loser_score": 80,
+      "date": "2011-05-27",
+      "round": "EASTERN CONFERENCE FINALS - GAME 5"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Mavericks",
+      "winner_score": 92,
+      "loser_score": 84,
+      "date": "2011-06-01",
+      "round": "NBA FINALS - GAME 1"
     },
     {
       "winner": "Mavericks",
       "loser": "Heat",
       "winner_score": 95,
       "loser_score": 93,
-      "date": "2011-06-03"
+      "date": "2011-06-03",
+      "round": "NBA FINALS - GAME 2"
     },
     {
       "winner": "Heat",
       "loser": "Mavericks",
       "winner_score": 88,
       "loser_score": 86,
-      "date": "2011-06-06"
+      "date": "2011-06-06",
+      "round": "NBA FINALS - GAME 3"
     },
     {
       "winner": "Mavericks",
       "loser": "Heat",
       "winner_score": 86,
       "loser_score": 83,
-      "date": "2011-06-08"
+      "date": "2011-06-08",
+      "round": "NBA FINALS - GAME 4"
     },
     {
       "winner": "Mavericks",
       "loser": "Heat",
       "winner_score": 112,
       "loser_score": 103,
-      "date": "2011-06-10"
+      "date": "2011-06-10",
+      "round": "NBA FINALS - GAME 5"
     },
     {
       "winner": "Mavericks",
       "loser": "Heat",
       "winner_score": 105,
       "loser_score": 95,
-      "date": "2011-06-13"
+      "date": "2011-06-13",
+      "round": "NBA FINALS - GAME 6"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 95,
+      "loser_score": 93,
+      "date": "2011-06-03",
+      "round": "NBA FINALS - GAME 2"
+    },
+    {
+      "winner": "Heat",
+      "loser": "Mavericks",
+      "winner_score": 88,
+      "loser_score": 86,
+      "date": "2011-06-06",
+      "round": "NBA FINALS - GAME 3"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 86,
+      "loser_score": 83,
+      "date": "2011-06-08",
+      "round": "NBA FINALS - GAME 4"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 112,
+      "loser_score": 103,
+      "date": "2011-06-10",
+      "round": "NBA FINALS - GAME 5"
+    },
+    {
+      "winner": "Mavericks",
+      "loser": "Heat",
+      "winner_score": 105,
+      "loser_score": 95,
+      "date": "2011-06-13",
+      "round": "NBA FINALS - GAME 6"
     }
   ],
   "series": [
     {
+      "t1": "Bulls",
+      "t2": "Knicks",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-13"
+    },
+    {
+      "t1": "Trail Blazers",
+      "t2": "Grizzlies",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-13"
+    },
+    {
+      "t1": "Lakers",
+      "t2": "Spurs",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-13"
+    },
+    {
       "t1": "Celtics",
       "t2": "Knicks",
-      "w1": 5,
+      "w1": 10,
       "w2": 0,
       "done": true,
-      "loser": "Knicks"
+      "loser": "Knicks",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Bulls",
       "t2": "Nets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Cavaliers",
       "t2": "Wizards",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Mavericks",
       "t2": "Hornets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Rockets",
       "t2": "Timberwolves",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Magic",
       "t2": "Pacers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Pistons",
       "t2": "76ers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Bucks",
       "t2": "Thunder",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Jazz",
       "t2": "Nuggets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Heat",
       "t2": "Raptors",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Bobcats",
       "t2": "Hawks",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Warriors",
       "t2": "Trail Blazers",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Clippers",
       "t2": "Grizzlies",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Suns",
       "t2": "Spurs",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Lakers",
       "t2": "Kings",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
-      "loser": ""
+      "loser": "",
+      "round": "regular-season",
+      "date": "2011-04-14"
     },
     {
       "t1": "Bulls",
       "t2": "Pacers",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Pacers"
+      "loser": "Pacers",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1",
+      "date": "2011-04-16"
     },
     {
       "t1": "Heat",
       "t2": "76ers",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "76ers"
+      "loser": "76ers",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1",
+      "date": "2011-04-16"
     },
     {
       "t1": "Hawks",
       "t2": "Magic",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "Magic"
+      "loser": "Magic",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 1",
+      "date": "2011-04-16"
     },
     {
       "t1": "Mavericks",
       "t2": "Trail Blazers",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "Trail Blazers"
+      "loser": "Trail Blazers",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1",
+      "date": "2011-04-17"
     },
     {
       "t1": "Grizzlies",
       "t2": "Spurs",
-      "w1": 4,
-      "w2": 2,
+      "w1": 8,
+      "w2": 4,
       "done": true,
-      "loser": "Spurs"
+      "loser": "Spurs",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1",
+      "date": "2011-04-17"
     },
     {
       "t1": "Hornets",
       "t2": "Lakers",
-      "w1": 2,
-      "w2": 4,
+      "w1": 4,
+      "w2": 8,
       "done": true,
-      "loser": "Hornets"
+      "loser": "Hornets",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1",
+      "date": "2011-04-17"
     },
     {
       "t1": "Thunder",
       "t2": "Nuggets",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Nuggets"
+      "loser": "Nuggets",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1",
+      "date": "2011-04-18"
     },
     {
       "t1": "Grizzlies",
       "t2": "Thunder",
-      "w1": 3,
-      "w2": 4,
+      "w1": 6,
+      "w2": 8,
       "done": true,
-      "loser": "Grizzlies"
+      "loser": "Grizzlies",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
+      "date": "2011-05-01"
     },
     {
       "t1": "Heat",
       "t2": "Celtics",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Celtics"
+      "loser": "Celtics",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
+      "date": "2011-05-01"
     },
     {
       "t1": "Hawks",
       "t2": "Bulls",
-      "w1": 2,
-      "w2": 4,
+      "w1": 4,
+      "w2": 8,
       "done": true,
-      "loser": "Hawks"
+      "loser": "Hawks",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
+      "date": "2011-05-03"
     },
     {
       "t1": "Mavericks",
       "t2": "Lakers",
-      "w1": 4,
+      "w1": 8,
       "w2": 0,
       "done": true,
-      "loser": "Lakers"
+      "loser": "Lakers",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
+      "date": "2011-05-03"
     },
     {
       "t1": "Bulls",
       "t2": "Heat",
-      "w1": 1,
-      "w2": 4,
+      "w1": 2,
+      "w2": 8,
       "done": true,
-      "loser": "Bulls"
+      "loser": "Bulls",
+      "round": "EASTERN CONFERENCE FINALS - GAME 1",
+      "date": "2011-05-16"
     },
     {
       "t1": "Mavericks",
       "t2": "Thunder",
-      "w1": 4,
-      "w2": 1,
+      "w1": 8,
+      "w2": 2,
       "done": true,
-      "loser": "Thunder"
+      "loser": "Thunder",
+      "round": "WESTERN CONFERENCE FINALS - GAME 1",
+      "date": "2011-05-18"
     },
     {
       "t1": "Heat",
       "t2": "Mavericks",
-      "w1": 2,
-      "w2": 4,
+      "w1": 4,
+      "w2": 8,
       "done": true,
-      "loser": "Heat"
+      "loser": "Heat",
+      "round": "NBA FINALS - GAME 1",
+      "date": "2011-06-01"
     }
   ],
   "eliminated": [
@@ -927,5 +1927,5 @@
     "Thunder",
     "Heat"
   ],
-  "updated": "2026-05-27 04:25 UTC"
+  "updated": "2026-05-27 05:08 UTC"
 }

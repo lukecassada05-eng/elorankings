@@ -8,70 +8,80 @@
       "loser": "Vikings",
       "winner_score": 10,
       "loser_score": 9,
-      "date": "2016-01-10"
+      "date": "2016-01-10",
+      "round": "NFC WILD CARD PLAYOFF"
     },
     {
       "winner": "Packers",
       "loser": "Redskins",
       "winner_score": 35,
       "loser_score": 18,
-      "date": "2016-01-10"
+      "date": "2016-01-10",
+      "round": "NFC WILD CARD PLAYOFF"
     },
     {
       "winner": "Patriots",
       "loser": "Chiefs",
       "winner_score": 27,
       "loser_score": 20,
-      "date": "2016-01-16"
+      "date": "2016-01-16",
+      "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
       "winner": "Cardinals",
       "loser": "Packers",
       "winner_score": 26,
       "loser_score": 20,
-      "date": "2016-01-17"
+      "date": "2016-01-17",
+      "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
       "winner": "Panthers",
       "loser": "Seahawks",
       "winner_score": 31,
       "loser_score": 24,
-      "date": "2016-01-17"
+      "date": "2016-01-17",
+      "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
       "winner": "Broncos",
       "loser": "Steelers",
       "winner_score": 23,
       "loser_score": 16,
-      "date": "2016-01-17"
+      "date": "2016-01-17",
+      "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
       "winner": "Broncos",
       "loser": "Patriots",
       "winner_score": 20,
       "loser_score": 18,
-      "date": "2016-01-24"
+      "date": "2016-01-24",
+      "round": "AFC CHAMPIONSHIP"
     },
     {
       "winner": "Panthers",
       "loser": "Cardinals",
       "winner_score": 49,
       "loser_score": 15,
-      "date": "2016-01-24"
+      "date": "2016-01-24",
+      "round": "NFC CHAMPIONSHIP"
     },
     {
       "winner": "Irvin",
       "loser": "Rice",
       "winner_score": 49,
       "loser_score": 27,
-      "date": "2016-02-01"
+      "date": "2016-02-01",
+      "round": "PRO BOWL"
     },
     {
       "winner": "Broncos",
       "loser": "Panthers",
       "winner_score": 24,
       "loser_score": 10,
-      "date": "2016-02-07"
+      "date": "2016-02-07",
+      "round": "Super Bowl 50"
     }
   ],
   "series": [
@@ -81,7 +91,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Vikings"
+      "loser": "Vikings",
+      "round": "NFC WILD CARD PLAYOFF",
+      "date": "2016-01-10"
     },
     {
       "t1": "Packers",
@@ -89,7 +101,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Redskins"
+      "loser": "Redskins",
+      "round": "NFC WILD CARD PLAYOFF",
+      "date": "2016-01-10"
     },
     {
       "t1": "Patriots",
@@ -97,7 +111,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chiefs"
+      "loser": "Chiefs",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2016-01-16"
     },
     {
       "t1": "Cardinals",
@@ -105,7 +121,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers"
+      "loser": "Packers",
+      "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2016-01-17"
     },
     {
       "t1": "Panthers",
@@ -113,7 +131,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Seahawks"
+      "loser": "Seahawks",
+      "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2016-01-17"
     },
     {
       "t1": "Broncos",
@@ -121,7 +141,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers"
+      "loser": "Steelers",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2016-01-17"
     },
     {
       "t1": "Broncos",
@@ -129,7 +151,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Patriots"
+      "loser": "Patriots",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2016-01-24"
     },
     {
       "t1": "Panthers",
@@ -137,7 +161,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cardinals"
+      "loser": "Cardinals",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2016-01-24"
     },
     {
       "t1": "Irvin",
@@ -145,7 +171,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Rice"
+      "loser": "Rice",
+      "round": "PRO BOWL",
+      "date": "2016-02-01"
     },
     {
       "t1": "Broncos",
@@ -153,7 +181,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Panthers"
+      "loser": "Panthers",
+      "round": "Super Bowl 50",
+      "date": "2016-02-07"
     }
   ],
   "eliminated": [
@@ -168,5 +198,5 @@
     "Rice",
     "Panthers"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

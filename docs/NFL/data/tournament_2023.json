@@ -8,98 +8,112 @@
       "loser": "Browns",
       "winner_score": 45,
       "loser_score": 14,
-      "date": "2024-01-13"
+      "date": "2024-01-13",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Chiefs",
       "loser": "Dolphins",
       "winner_score": 26,
       "loser_score": 7,
-      "date": "2024-01-14"
+      "date": "2024-01-14",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Packers",
       "loser": "Cowboys",
       "winner_score": 48,
       "loser_score": 32,
-      "date": "2024-01-14"
+      "date": "2024-01-14",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Lions",
       "loser": "Rams",
       "winner_score": 24,
       "loser_score": 23,
-      "date": "2024-01-15"
+      "date": "2024-01-15",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Bills",
       "loser": "Steelers",
       "winner_score": 31,
       "loser_score": 17,
-      "date": "2024-01-15"
+      "date": "2024-01-15",
+      "round": "AFC Wild Card Playoffs - originally scheduled on Jan. 14"
     },
     {
       "winner": "Buccaneers",
       "loser": "Eagles",
       "winner_score": 32,
       "loser_score": 9,
-      "date": "2024-01-16"
+      "date": "2024-01-16",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Ravens",
       "loser": "Texans",
       "winner_score": 34,
       "loser_score": 10,
-      "date": "2024-01-20"
+      "date": "2024-01-20",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "49ers",
       "loser": "Packers",
       "winner_score": 24,
       "loser_score": 21,
-      "date": "2024-01-21"
+      "date": "2024-01-21",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Lions",
       "loser": "Buccaneers",
       "winner_score": 31,
       "loser_score": 23,
-      "date": "2024-01-21"
+      "date": "2024-01-21",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Chiefs",
       "loser": "Bills",
       "winner_score": 27,
       "loser_score": 24,
-      "date": "2024-01-21"
+      "date": "2024-01-21",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "Chiefs",
       "loser": "Ravens",
       "winner_score": 17,
       "loser_score": 10,
-      "date": "2024-01-28"
+      "date": "2024-01-28",
+      "round": "AFC Championship"
     },
     {
       "winner": "49ers",
       "loser": "Lions",
       "winner_score": 34,
       "loser_score": 31,
-      "date": "2024-01-28"
+      "date": "2024-01-28",
+      "round": "NFC Championship"
     },
     {
       "winner": "NFC",
       "loser": "AFC",
       "winner_score": 64,
       "loser_score": 59,
-      "date": "2024-02-04"
+      "date": "2024-02-04",
+      "round": "Pro Bowl Games"
     },
     {
       "winner": "Chiefs",
       "loser": "49ers",
       "winner_score": 25,
       "loser_score": 22,
-      "date": "2024-02-11"
+      "date": "2024-02-11",
+      "round": "Super Bowl LVIII"
     }
   ],
   "series": [
@@ -109,7 +123,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Browns"
+      "loser": "Browns",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2024-01-13"
     },
     {
       "t1": "Chiefs",
@@ -117,7 +133,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Dolphins"
+      "loser": "Dolphins",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2024-01-14"
     },
     {
       "t1": "Packers",
@@ -125,7 +143,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cowboys"
+      "loser": "Cowboys",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2024-01-14"
     },
     {
       "t1": "Lions",
@@ -133,7 +153,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Rams"
+      "loser": "Rams",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2024-01-15"
     },
     {
       "t1": "Bills",
@@ -141,7 +163,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers"
+      "loser": "Steelers",
+      "round": "AFC Wild Card Playoffs - originally scheduled on Jan. 14",
+      "date": "2024-01-15"
     },
     {
       "t1": "Buccaneers",
@@ -149,7 +173,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles"
+      "loser": "Eagles",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2024-01-16"
     },
     {
       "t1": "Ravens",
@@ -157,7 +183,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Texans"
+      "loser": "Texans",
+      "round": "AFC Divisional Playoffs",
+      "date": "2024-01-20"
     },
     {
       "t1": "49ers",
@@ -165,7 +193,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers"
+      "loser": "Packers",
+      "round": "NFC Divisional Playoffs",
+      "date": "2024-01-21"
     },
     {
       "t1": "Lions",
@@ -173,7 +203,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Buccaneers"
+      "loser": "Buccaneers",
+      "round": "NFC Divisional Playoffs",
+      "date": "2024-01-21"
     },
     {
       "t1": "Chiefs",
@@ -181,7 +213,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bills"
+      "loser": "Bills",
+      "round": "AFC Divisional Playoffs",
+      "date": "2024-01-21"
     },
     {
       "t1": "Chiefs",
@@ -189,7 +223,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens"
+      "loser": "Ravens",
+      "round": "AFC Championship",
+      "date": "2024-01-28"
     },
     {
       "t1": "49ers",
@@ -197,7 +233,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Lions"
+      "loser": "Lions",
+      "round": "NFC Championship",
+      "date": "2024-01-28"
     },
     {
       "t1": "NFC",
@@ -205,7 +243,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "AFC"
+      "loser": "AFC",
+      "round": "Pro Bowl Games",
+      "date": "2024-02-04"
     },
     {
       "t1": "Chiefs",
@@ -213,7 +253,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "49ers"
+      "loser": "49ers",
+      "round": "Super Bowl LVIII",
+      "date": "2024-02-11"
     }
   ],
   "eliminated": [
@@ -232,5 +274,5 @@
     "AFC",
     "49ers"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

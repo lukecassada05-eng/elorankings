@@ -8,70 +8,80 @@
       "loser": "Titans",
       "winner_score": 20,
       "loser_score": 13,
-      "date": "2021-01-10"
+      "date": "2021-01-10",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Saints",
       "loser": "Bears",
       "winner_score": 21,
       "loser_score": 9,
-      "date": "2021-01-10"
+      "date": "2021-01-10",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Browns",
       "loser": "Steelers",
       "winner_score": 48,
       "loser_score": 37,
-      "date": "2021-01-11"
+      "date": "2021-01-11",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Packers",
       "loser": "Rams",
       "winner_score": 32,
       "loser_score": 18,
-      "date": "2021-01-16"
+      "date": "2021-01-16",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Bills",
       "loser": "Ravens",
       "winner_score": 17,
       "loser_score": 3,
-      "date": "2021-01-17"
+      "date": "2021-01-17",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "Chiefs",
       "loser": "Browns",
       "winner_score": 22,
       "loser_score": 17,
-      "date": "2021-01-17"
+      "date": "2021-01-17",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "Buccaneers",
       "loser": "Saints",
       "winner_score": 30,
       "loser_score": 20,
-      "date": "2021-01-17"
+      "date": "2021-01-17",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Buccaneers",
       "loser": "Packers",
       "winner_score": 31,
       "loser_score": 26,
-      "date": "2021-01-24"
+      "date": "2021-01-24",
+      "round": "NFC Championship"
     },
     {
       "winner": "Chiefs",
       "loser": "Bills",
       "winner_score": 38,
       "loser_score": 24,
-      "date": "2021-01-24"
+      "date": "2021-01-24",
+      "round": "AFC Championship"
     },
     {
       "winner": "Buccaneers",
       "loser": "Chiefs",
       "winner_score": 31,
       "loser_score": 9,
-      "date": "2021-02-07"
+      "date": "2021-02-07",
+      "round": "Super Bowl LV"
     }
   ],
   "series": [
@@ -81,7 +91,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Titans"
+      "loser": "Titans",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2021-01-10"
     },
     {
       "t1": "Saints",
@@ -89,7 +101,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bears"
+      "loser": "Bears",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2021-01-10"
     },
     {
       "t1": "Browns",
@@ -97,7 +111,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers"
+      "loser": "Steelers",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2021-01-11"
     },
     {
       "t1": "Packers",
@@ -105,7 +121,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Rams"
+      "loser": "Rams",
+      "round": "NFC Divisional Playoffs",
+      "date": "2021-01-16"
     },
     {
       "t1": "Bills",
@@ -113,7 +131,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens"
+      "loser": "Ravens",
+      "round": "AFC Divisional Playoffs",
+      "date": "2021-01-17"
     },
     {
       "t1": "Chiefs",
@@ -121,7 +141,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Browns"
+      "loser": "Browns",
+      "round": "AFC Divisional Playoffs",
+      "date": "2021-01-17"
     },
     {
       "t1": "Buccaneers",
@@ -129,7 +151,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Saints"
+      "loser": "Saints",
+      "round": "NFC Divisional Playoffs",
+      "date": "2021-01-17"
     },
     {
       "t1": "Buccaneers",
@@ -137,7 +161,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers"
+      "loser": "Packers",
+      "round": "NFC Championship",
+      "date": "2021-01-24"
     },
     {
       "t1": "Chiefs",
@@ -145,7 +171,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bills"
+      "loser": "Bills",
+      "round": "AFC Championship",
+      "date": "2021-01-24"
     },
     {
       "t1": "Buccaneers",
@@ -153,7 +181,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chiefs"
+      "loser": "Chiefs",
+      "round": "Super Bowl LV",
+      "date": "2021-02-07"
     }
   ],
   "eliminated": [
@@ -168,5 +198,5 @@
     "Bills",
     "Chiefs"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

@@ -8,56 +8,64 @@
       "loser": "Steelers",
       "winner_score": 34,
       "loser_score": 31,
-      "date": "2003-01-11"
+      "date": "2003-01-11",
+      "round": "post-season"
     },
     {
       "winner": "Eagles",
       "loser": "Falcons",
       "winner_score": 20,
       "loser_score": 6,
-      "date": "2003-01-12"
+      "date": "2003-01-12",
+      "round": "post-season"
     },
     {
       "winner": "Buccaneers",
       "loser": "49ers",
       "winner_score": 31,
       "loser_score": 6,
-      "date": "2003-01-12"
+      "date": "2003-01-12",
+      "round": "post-season"
     },
     {
       "winner": "Raiders",
       "loser": "Jets",
       "winner_score": 30,
       "loser_score": 10,
-      "date": "2003-01-12"
+      "date": "2003-01-12",
+      "round": "post-season"
     },
     {
       "winner": "Buccaneers",
       "loser": "Eagles",
       "winner_score": 27,
       "loser_score": 10,
-      "date": "2003-01-19"
+      "date": "2003-01-19",
+      "round": "post-season"
     },
     {
       "winner": "Raiders",
       "loser": "Titans",
       "winner_score": 41,
       "loser_score": 24,
-      "date": "2003-01-19"
+      "date": "2003-01-19",
+      "round": "post-season"
     },
     {
       "winner": "Buccaneers",
       "loser": "Raiders",
       "winner_score": 48,
       "loser_score": 21,
-      "date": "2003-01-26"
+      "date": "2003-01-26",
+      "round": "Super Bowl XXXVII"
     },
     {
       "winner": "AFC",
       "loser": "NFC",
       "winner_score": 45,
       "loser_score": 20,
-      "date": "2003-02-02"
+      "date": "2003-02-02",
+      "round": "post-season"
     }
   ],
   "series": [
@@ -67,7 +75,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers"
+      "loser": "Steelers",
+      "round": "post-season",
+      "date": "2003-01-11"
     },
     {
       "t1": "Eagles",
@@ -75,7 +85,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Falcons"
+      "loser": "Falcons",
+      "round": "post-season",
+      "date": "2003-01-12"
     },
     {
       "t1": "Buccaneers",
@@ -83,7 +95,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "49ers"
+      "loser": "49ers",
+      "round": "post-season",
+      "date": "2003-01-12"
     },
     {
       "t1": "Raiders",
@@ -91,7 +105,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Jets"
+      "loser": "Jets",
+      "round": "post-season",
+      "date": "2003-01-12"
     },
     {
       "t1": "Buccaneers",
@@ -99,7 +115,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles"
+      "loser": "Eagles",
+      "round": "post-season",
+      "date": "2003-01-19"
     },
     {
       "t1": "Raiders",
@@ -107,7 +125,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Titans"
+      "loser": "Titans",
+      "round": "post-season",
+      "date": "2003-01-19"
     },
     {
       "t1": "Buccaneers",
@@ -115,7 +135,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Raiders"
+      "loser": "Raiders",
+      "round": "Super Bowl XXXVII",
+      "date": "2003-01-26"
     },
     {
       "t1": "AFC",
@@ -123,7 +145,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "NFC"
+      "loser": "NFC",
+      "round": "post-season",
+      "date": "2003-02-02"
     }
   ],
   "eliminated": [
@@ -136,5 +160,5 @@
     "Raiders",
     "NFC"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

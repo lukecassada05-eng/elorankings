@@ -8,98 +8,112 @@
       "loser": "Panthers",
       "winner_score": 34,
       "loser_score": 31,
-      "date": "2026-01-10"
+      "date": "2026-01-10",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Bears",
       "loser": "Packers",
       "winner_score": 31,
       "loser_score": 27,
-      "date": "2026-01-11"
+      "date": "2026-01-11",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Bills",
       "loser": "Jaguars",
       "winner_score": 27,
       "loser_score": 24,
-      "date": "2026-01-11"
+      "date": "2026-01-11",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "49ers",
       "loser": "Eagles",
       "winner_score": 23,
       "loser_score": 19,
-      "date": "2026-01-11"
+      "date": "2026-01-11",
+      "round": "NFC Wild Card Playoffs"
     },
     {
       "winner": "Patriots",
       "loser": "Chargers",
       "winner_score": 16,
       "loser_score": 3,
-      "date": "2026-01-12"
+      "date": "2026-01-12",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Texans",
       "loser": "Steelers",
       "winner_score": 30,
       "loser_score": 6,
-      "date": "2026-01-13"
+      "date": "2026-01-13",
+      "round": "AFC Wild Card Playoffs"
     },
     {
       "winner": "Broncos",
       "loser": "Bills",
       "winner_score": 33,
       "loser_score": 30,
-      "date": "2026-01-17"
+      "date": "2026-01-17",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "Seahawks",
       "loser": "49ers",
       "winner_score": 41,
       "loser_score": 6,
-      "date": "2026-01-18"
+      "date": "2026-01-18",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Patriots",
       "loser": "Texans",
       "winner_score": 28,
       "loser_score": 16,
-      "date": "2026-01-18"
+      "date": "2026-01-18",
+      "round": "AFC Divisional Playoffs"
     },
     {
       "winner": "Rams",
       "loser": "Bears",
       "winner_score": 20,
       "loser_score": 17,
-      "date": "2026-01-18"
+      "date": "2026-01-18",
+      "round": "NFC Divisional Playoffs"
     },
     {
       "winner": "Patriots",
       "loser": "Broncos",
       "winner_score": 10,
       "loser_score": 7,
-      "date": "2026-01-25"
+      "date": "2026-01-25",
+      "round": "AFC Championship"
     },
     {
       "winner": "Seahawks",
       "loser": "Rams",
       "winner_score": 31,
       "loser_score": 27,
-      "date": "2026-01-25"
+      "date": "2026-01-25",
+      "round": "NFC Championship"
     },
     {
       "winner": "NFC",
       "loser": "AFC",
       "winner_score": 66,
       "loser_score": 52,
-      "date": "2026-02-04"
+      "date": "2026-02-04",
+      "round": "Pro Bowl Games"
     },
     {
       "winner": "Seahawks",
       "loser": "Patriots",
       "winner_score": 29,
       "loser_score": 13,
-      "date": "2026-02-08"
+      "date": "2026-02-08",
+      "round": "Super Bowl LX"
     }
   ],
   "series": [
@@ -109,7 +123,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Panthers"
+      "loser": "Panthers",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2026-01-10"
     },
     {
       "t1": "Bears",
@@ -117,7 +133,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers"
+      "loser": "Packers",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2026-01-11"
     },
     {
       "t1": "Bills",
@@ -125,7 +143,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Jaguars"
+      "loser": "Jaguars",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2026-01-11"
     },
     {
       "t1": "49ers",
@@ -133,7 +153,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles"
+      "loser": "Eagles",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2026-01-11"
     },
     {
       "t1": "Patriots",
@@ -141,7 +163,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chargers"
+      "loser": "Chargers",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2026-01-12"
     },
     {
       "t1": "Texans",
@@ -149,7 +173,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers"
+      "loser": "Steelers",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2026-01-13"
     },
     {
       "t1": "Broncos",
@@ -157,7 +183,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bills"
+      "loser": "Bills",
+      "round": "AFC Divisional Playoffs",
+      "date": "2026-01-17"
     },
     {
       "t1": "Seahawks",
@@ -165,7 +193,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "49ers"
+      "loser": "49ers",
+      "round": "NFC Divisional Playoffs",
+      "date": "2026-01-18"
     },
     {
       "t1": "Patriots",
@@ -173,7 +203,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Texans"
+      "loser": "Texans",
+      "round": "AFC Divisional Playoffs",
+      "date": "2026-01-18"
     },
     {
       "t1": "Rams",
@@ -181,7 +213,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bears"
+      "loser": "Bears",
+      "round": "NFC Divisional Playoffs",
+      "date": "2026-01-18"
     },
     {
       "t1": "Patriots",
@@ -189,7 +223,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Broncos"
+      "loser": "Broncos",
+      "round": "AFC Championship",
+      "date": "2026-01-25"
     },
     {
       "t1": "Seahawks",
@@ -197,7 +233,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Rams"
+      "loser": "Rams",
+      "round": "NFC Championship",
+      "date": "2026-01-25"
     },
     {
       "t1": "NFC",
@@ -205,7 +243,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "AFC"
+      "loser": "AFC",
+      "round": "Pro Bowl Games",
+      "date": "2026-02-04"
     },
     {
       "t1": "Seahawks",
@@ -213,7 +253,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Patriots"
+      "loser": "Patriots",
+      "round": "Super Bowl LX",
+      "date": "2026-02-08"
     }
   ],
   "eliminated": [
@@ -232,5 +274,5 @@
     "AFC",
     "Patriots"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }

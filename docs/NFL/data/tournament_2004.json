@@ -8,56 +8,64 @@
       "loser": "Jets",
       "winner_score": 20,
       "loser_score": 17,
-      "date": "2005-01-15"
+      "date": "2005-01-15",
+      "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Falcons",
       "loser": "Rams",
       "winner_score": 47,
       "loser_score": 17,
-      "date": "2005-01-16"
+      "date": "2005-01-16",
+      "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Eagles",
       "loser": "Vikings",
       "winner_score": 27,
       "loser_score": 14,
-      "date": "2005-01-16"
+      "date": "2005-01-16",
+      "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Patriots",
       "loser": "Colts",
       "winner_score": 20,
       "loser_score": 3,
-      "date": "2005-01-16"
+      "date": "2005-01-16",
+      "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
       "winner": "Eagles",
       "loser": "Falcons",
       "winner_score": 27,
       "loser_score": 10,
-      "date": "2005-01-23"
+      "date": "2005-01-23",
+      "round": "NFC CHAMPIONSHIP"
     },
     {
       "winner": "Patriots",
       "loser": "Steelers",
       "winner_score": 41,
       "loser_score": 27,
-      "date": "2005-01-23"
+      "date": "2005-01-23",
+      "round": "AFC CHAMPIONSHIP"
     },
     {
       "winner": "Patriots",
       "loser": "Eagles",
       "winner_score": 24,
       "loser_score": 21,
-      "date": "2005-02-06"
+      "date": "2005-02-06",
+      "round": "Super Bowl XXXIX"
     },
     {
       "winner": "AFC",
       "loser": "NFC",
       "winner_score": 38,
       "loser_score": 27,
-      "date": "2005-02-14"
+      "date": "2005-02-14",
+      "round": "PRO BOWL AT HONOLULU HI"
     }
   ],
   "series": [
@@ -67,7 +75,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Jets"
+      "loser": "Jets",
+      "round": "AFC DIVISIONAL PLAYOFFS",
+      "date": "2005-01-15"
     },
     {
       "t1": "Falcons",
@@ -75,7 +85,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Rams"
+      "loser": "Rams",
+      "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2005-01-16"
     },
     {
       "t1": "Eagles",
@@ -83,7 +95,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Vikings"
+      "loser": "Vikings",
+      "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2005-01-16"
     },
     {
       "t1": "Patriots",
@@ -91,7 +105,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Colts"
+      "loser": "Colts",
+      "round": "AFC DIVISIONAL PLAYOFFS",
+      "date": "2005-01-16"
     },
     {
       "t1": "Eagles",
@@ -99,7 +115,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Falcons"
+      "loser": "Falcons",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2005-01-23"
     },
     {
       "t1": "Patriots",
@@ -107,7 +125,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers"
+      "loser": "Steelers",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2005-01-23"
     },
     {
       "t1": "Patriots",
@@ -115,7 +135,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles"
+      "loser": "Eagles",
+      "round": "Super Bowl XXXIX",
+      "date": "2005-02-06"
     },
     {
       "t1": "AFC",
@@ -123,7 +145,9 @@
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "NFC"
+      "loser": "NFC",
+      "round": "PRO BOWL AT HONOLULU HI",
+      "date": "2005-02-14"
     }
   ],
   "eliminated": [
@@ -136,5 +160,5 @@
     "Eagles",
     "NFC"
   ],
-  "updated": "2026-05-27 04:27 UTC"
+  "updated": "2026-05-27 05:10 UTC"
 }
