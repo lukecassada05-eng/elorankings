@@ -4,64 +4,64 @@
   "completed": true,
   "games": [
     {
-      "winner": "Seahawks",
-      "loser": "Redskins",
+      "winner": "Seattle Seahawks",
+      "loser": "Washington Redskins",
       "winner_score": 20,
       "loser_score": 10,
       "date": "2006-01-14",
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Broncos",
-      "loser": "Patriots",
+      "winner": "Denver Broncos",
+      "loser": "New England Patriots",
       "winner_score": 27,
       "loser_score": 13,
       "date": "2006-01-15",
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Steelers",
-      "loser": "Colts",
+      "winner": "Pittsburgh Steelers",
+      "loser": "Indianapolis Colts",
       "winner_score": 21,
       "loser_score": 18,
       "date": "2006-01-15",
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Panthers",
-      "loser": "Bears",
+      "winner": "Carolina Panthers",
+      "loser": "Chicago Bears",
       "winner_score": 29,
       "loser_score": 21,
       "date": "2006-01-15",
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Steelers",
-      "loser": "Broncos",
+      "winner": "Pittsburgh Steelers",
+      "loser": "Denver Broncos",
       "winner_score": 34,
       "loser_score": 17,
       "date": "2006-01-22",
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "Seahawks",
-      "loser": "Panthers",
+      "winner": "Seattle Seahawks",
+      "loser": "Carolina Panthers",
       "winner_score": 34,
       "loser_score": 14,
       "date": "2006-01-22",
       "round": "NFC CHAMPIONSHIP"
     },
     {
-      "winner": "Steelers",
-      "loser": "Seahawks",
+      "winner": "Pittsburgh Steelers",
+      "loser": "Seattle Seahawks",
       "winner_score": 21,
       "loser_score": 10,
       "date": "2006-02-05",
       "round": "Super Bowl XL"
     },
     {
-      "winner": "NFC",
-      "loser": "AFC",
+      "winner": "Nfc",
+      "loser": "Afc",
       "winner_score": 23,
       "loser_score": 17,
       "date": "2006-02-12",
@@ -70,95 +70,95 @@
   ],
   "series": [
     {
-      "t1": "Seahawks",
-      "t2": "Redskins",
+      "t1": "Seattle Seahawks",
+      "t2": "Washington Redskins",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Redskins",
+      "loser": "Washington Redskins",
       "round": "DIVISIONAL PLAYOFFS",
       "date": "2006-01-14"
     },
     {
-      "t1": "Broncos",
-      "t2": "Patriots",
+      "t1": "Denver Broncos",
+      "t2": "New England Patriots",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Patriots",
+      "loser": "New England Patriots",
       "round": "DIVISIONAL PLAYOFFS",
       "date": "2006-01-15"
     },
     {
-      "t1": "Steelers",
-      "t2": "Colts",
+      "t1": "Pittsburgh Steelers",
+      "t2": "Indianapolis Colts",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Colts",
+      "loser": "Indianapolis Colts",
       "round": "DIVISIONAL PLAYOFFS",
       "date": "2006-01-15"
     },
     {
-      "t1": "Panthers",
-      "t2": "Bears",
+      "t1": "Carolina Panthers",
+      "t2": "Chicago Bears",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bears",
+      "loser": "Chicago Bears",
       "round": "DIVISIONAL PLAYOFFS",
       "date": "2006-01-15"
     },
     {
-      "t1": "Steelers",
-      "t2": "Broncos",
+      "t1": "Pittsburgh Steelers",
+      "t2": "Denver Broncos",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Broncos",
+      "loser": "Denver Broncos",
       "round": "AFC CHAMPIONSHIP",
       "date": "2006-01-22"
     },
     {
-      "t1": "Seahawks",
-      "t2": "Panthers",
+      "t1": "Seattle Seahawks",
+      "t2": "Carolina Panthers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Panthers",
+      "loser": "Carolina Panthers",
       "round": "NFC CHAMPIONSHIP",
       "date": "2006-01-22"
     },
     {
-      "t1": "Steelers",
-      "t2": "Seahawks",
+      "t1": "Pittsburgh Steelers",
+      "t2": "Seattle Seahawks",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Seahawks",
+      "loser": "Seattle Seahawks",
       "round": "Super Bowl XL",
       "date": "2006-02-05"
     },
     {
-      "t1": "NFC",
-      "t2": "AFC",
+      "t1": "Nfc",
+      "t2": "Afc",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "AFC",
+      "loser": "Afc",
       "round": "PRO BOWL",
       "date": "2006-02-12"
     }
   ],
   "eliminated": [
-    "Redskins",
-    "Patriots",
-    "Colts",
-    "Bears",
-    "Broncos",
-    "Panthers",
-    "Seahawks",
-    "AFC"
+    "Washington Redskins",
+    "New England Patriots",
+    "Indianapolis Colts",
+    "Chicago Bears",
+    "Denver Broncos",
+    "Carolina Panthers",
+    "Seattle Seahawks",
+    "Afc"
   ],
-  "updated": "2026-05-27 05:10 UTC"
+  "updated": "2026-05-27 05:43 UTC"
 }

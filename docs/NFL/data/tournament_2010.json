@@ -4,64 +4,64 @@
   "completed": true,
   "games": [
     {
-      "winner": "Steelers",
-      "loser": "Ravens",
+      "winner": "Pittsburgh Steelers",
+      "loser": "Baltimore Ravens",
       "winner_score": 31,
       "loser_score": 24,
       "date": "2011-01-15",
       "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Packers",
-      "loser": "Falcons",
+      "winner": "Green Bay Packers",
+      "loser": "Atlanta Falcons",
       "winner_score": 48,
       "loser_score": 21,
       "date": "2011-01-16",
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Bears",
-      "loser": "Seahawks",
+      "winner": "Chicago Bears",
+      "loser": "Seattle Seahawks",
       "winner_score": 35,
       "loser_score": 24,
       "date": "2011-01-16",
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Jets",
-      "loser": "Patriots",
+      "winner": "New York Jets",
+      "loser": "New England Patriots",
       "winner_score": 28,
       "loser_score": 21,
       "date": "2011-01-16",
       "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Packers",
-      "loser": "Bears",
+      "winner": "Green Bay Packers",
+      "loser": "Chicago Bears",
       "winner_score": 21,
       "loser_score": 14,
       "date": "2011-01-23",
       "round": "NFC CHAMPIONSHIP"
     },
     {
-      "winner": "Steelers",
-      "loser": "Jets",
+      "winner": "Pittsburgh Steelers",
+      "loser": "New York Jets",
       "winner_score": 24,
       "loser_score": 19,
       "date": "2011-01-23",
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "NFC",
-      "loser": "AFC",
+      "winner": "Nfc",
+      "loser": "Afc",
       "winner_score": 55,
       "loser_score": 41,
       "date": "2011-01-31",
       "round": "PRO BOWL"
     },
     {
-      "winner": "Packers",
-      "loser": "Steelers",
+      "winner": "Green Bay Packers",
+      "loser": "Pittsburgh Steelers",
       "winner_score": 31,
       "loser_score": 25,
       "date": "2011-02-06",
@@ -70,95 +70,95 @@
   ],
   "series": [
     {
-      "t1": "Steelers",
-      "t2": "Ravens",
+      "t1": "Pittsburgh Steelers",
+      "t2": "Baltimore Ravens",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens",
+      "loser": "Baltimore Ravens",
       "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2011-01-15"
     },
     {
-      "t1": "Packers",
-      "t2": "Falcons",
+      "t1": "Green Bay Packers",
+      "t2": "Atlanta Falcons",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Falcons",
+      "loser": "Atlanta Falcons",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2011-01-16"
     },
     {
-      "t1": "Bears",
-      "t2": "Seahawks",
+      "t1": "Chicago Bears",
+      "t2": "Seattle Seahawks",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Seahawks",
+      "loser": "Seattle Seahawks",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2011-01-16"
     },
     {
-      "t1": "Jets",
-      "t2": "Patriots",
+      "t1": "New York Jets",
+      "t2": "New England Patriots",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Patriots",
+      "loser": "New England Patriots",
       "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2011-01-16"
     },
     {
-      "t1": "Packers",
-      "t2": "Bears",
+      "t1": "Green Bay Packers",
+      "t2": "Chicago Bears",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Bears",
+      "loser": "Chicago Bears",
       "round": "NFC CHAMPIONSHIP",
       "date": "2011-01-23"
     },
     {
-      "t1": "Steelers",
-      "t2": "Jets",
+      "t1": "Pittsburgh Steelers",
+      "t2": "New York Jets",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Jets",
+      "loser": "New York Jets",
       "round": "AFC CHAMPIONSHIP",
       "date": "2011-01-23"
     },
     {
-      "t1": "NFC",
-      "t2": "AFC",
+      "t1": "Nfc",
+      "t2": "Afc",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "AFC",
+      "loser": "Afc",
       "round": "PRO BOWL",
       "date": "2011-01-31"
     },
     {
-      "t1": "Packers",
-      "t2": "Steelers",
+      "t1": "Green Bay Packers",
+      "t2": "Pittsburgh Steelers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers",
+      "loser": "Pittsburgh Steelers",
       "round": "Super Bowl XLV",
       "date": "2011-02-06"
     }
   ],
   "eliminated": [
-    "Ravens",
-    "Falcons",
-    "Seahawks",
-    "Patriots",
-    "Bears",
-    "Jets",
-    "AFC",
-    "Steelers"
+    "Baltimore Ravens",
+    "Atlanta Falcons",
+    "Seattle Seahawks",
+    "New England Patriots",
+    "Chicago Bears",
+    "New York Jets",
+    "Afc",
+    "Pittsburgh Steelers"
   ],
-  "updated": "2026-05-27 05:10 UTC"
+  "updated": "2026-05-27 05:43 UTC"
 }

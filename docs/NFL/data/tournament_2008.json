@@ -4,64 +4,64 @@
   "completed": true,
   "games": [
     {
-      "winner": "Ravens",
-      "loser": "Titans",
+      "winner": "Baltimore Ravens",
+      "loser": "Tennessee Titans",
       "winner_score": 13,
       "loser_score": 10,
       "date": "2009-01-10",
       "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Cardinals",
-      "loser": "Panthers",
+      "winner": "Arizona Cardinals",
+      "loser": "Carolina Panthers",
       "winner_score": 33,
       "loser_score": 13,
       "date": "2009-01-11",
       "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Eagles",
-      "loser": "Giants",
+      "winner": "Philadelphia Eagles",
+      "loser": "New York Giants",
       "winner_score": 23,
       "loser_score": 11,
       "date": "2009-01-11",
       "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Steelers",
-      "loser": "Chargers",
+      "winner": "Pittsburgh Steelers",
+      "loser": "San Diego Chargers",
       "winner_score": 35,
       "loser_score": 24,
       "date": "2009-01-11",
       "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Cardinals",
-      "loser": "Eagles",
+      "winner": "Arizona Cardinals",
+      "loser": "Philadelphia Eagles",
       "winner_score": 32,
       "loser_score": 25,
       "date": "2009-01-18",
       "round": "NFC CHAMPIONSHIP"
     },
     {
-      "winner": "Steelers",
-      "loser": "Ravens",
+      "winner": "Pittsburgh Steelers",
+      "loser": "Baltimore Ravens",
       "winner_score": 23,
       "loser_score": 14,
       "date": "2009-01-18",
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "Steelers",
-      "loser": "Cardinals",
+      "winner": "Pittsburgh Steelers",
+      "loser": "Arizona Cardinals",
       "winner_score": 27,
       "loser_score": 23,
       "date": "2009-02-01",
       "round": "Super Bowl XLIII"
     },
     {
-      "winner": "NFC",
-      "loser": "AFC",
+      "winner": "Nfc",
+      "loser": "Afc",
       "winner_score": 30,
       "loser_score": 21,
       "date": "2009-02-08",
@@ -70,95 +70,95 @@
   ],
   "series": [
     {
-      "t1": "Ravens",
-      "t2": "Titans",
+      "t1": "Baltimore Ravens",
+      "t2": "Tennessee Titans",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Titans",
+      "loser": "Tennessee Titans",
       "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2009-01-10"
     },
     {
-      "t1": "Cardinals",
-      "t2": "Panthers",
+      "t1": "Arizona Cardinals",
+      "t2": "Carolina Panthers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Panthers",
+      "loser": "Carolina Panthers",
       "round": "NFC DIVISIONAL PLAYOFFS",
       "date": "2009-01-11"
     },
     {
-      "t1": "Eagles",
-      "t2": "Giants",
+      "t1": "Philadelphia Eagles",
+      "t2": "New York Giants",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Giants",
+      "loser": "New York Giants",
       "round": "NFC DIVISIONAL PLAYOFFS",
       "date": "2009-01-11"
     },
     {
-      "t1": "Steelers",
-      "t2": "Chargers",
+      "t1": "Pittsburgh Steelers",
+      "t2": "San Diego Chargers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chargers",
+      "loser": "San Diego Chargers",
       "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2009-01-11"
     },
     {
-      "t1": "Cardinals",
-      "t2": "Eagles",
+      "t1": "Arizona Cardinals",
+      "t2": "Philadelphia Eagles",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles",
+      "loser": "Philadelphia Eagles",
       "round": "NFC CHAMPIONSHIP",
       "date": "2009-01-18"
     },
     {
-      "t1": "Steelers",
-      "t2": "Ravens",
+      "t1": "Pittsburgh Steelers",
+      "t2": "Baltimore Ravens",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens",
+      "loser": "Baltimore Ravens",
       "round": "AFC CHAMPIONSHIP",
       "date": "2009-01-18"
     },
     {
-      "t1": "Steelers",
-      "t2": "Cardinals",
+      "t1": "Pittsburgh Steelers",
+      "t2": "Arizona Cardinals",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cardinals",
+      "loser": "Arizona Cardinals",
       "round": "Super Bowl XLIII",
       "date": "2009-02-01"
     },
     {
-      "t1": "NFC",
-      "t2": "AFC",
+      "t1": "Nfc",
+      "t2": "Afc",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "AFC",
+      "loser": "Afc",
       "round": "PRO BOWL",
       "date": "2009-02-08"
     }
   ],
   "eliminated": [
-    "Titans",
-    "Panthers",
-    "Giants",
-    "Chargers",
-    "Eagles",
-    "Ravens",
-    "Cardinals",
-    "AFC"
+    "Tennessee Titans",
+    "Carolina Panthers",
+    "New York Giants",
+    "San Diego Chargers",
+    "Philadelphia Eagles",
+    "Baltimore Ravens",
+    "Arizona Cardinals",
+    "Afc"
   ],
-  "updated": "2026-05-27 05:10 UTC"
+  "updated": "2026-05-27 05:43 UTC"
 }

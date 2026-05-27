@@ -4,64 +4,64 @@
   "completed": true,
   "games": [
     {
-      "winner": "Seahawks",
-      "loser": "Saints",
+      "winner": "Seattle Seahawks",
+      "loser": "New Orleans Saints",
       "winner_score": 23,
       "loser_score": 15,
       "date": "2014-01-11",
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Patriots",
-      "loser": "Colts",
+      "winner": "New England Patriots",
+      "loser": "Indianapolis Colts",
       "winner_score": 43,
       "loser_score": 22,
       "date": "2014-01-12",
       "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "49ers",
-      "loser": "Panthers",
+      "winner": "San Francisco 49ers",
+      "loser": "Carolina Panthers",
       "winner_score": 23,
       "loser_score": 10,
       "date": "2014-01-12",
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Broncos",
-      "loser": "Chargers",
+      "winner": "Denver Broncos",
+      "loser": "San Diego Chargers",
       "winner_score": 24,
       "loser_score": 17,
       "date": "2014-01-12",
       "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Broncos",
-      "loser": "Patriots",
+      "winner": "Denver Broncos",
+      "loser": "New England Patriots",
       "winner_score": 26,
       "loser_score": 16,
       "date": "2014-01-19",
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "Seahawks",
-      "loser": "49ers",
+      "winner": "Seattle Seahawks",
+      "loser": "San Francisco 49ers",
       "winner_score": 23,
       "loser_score": 17,
       "date": "2014-01-19",
       "round": "NFC CHAMPIONSHIP"
     },
     {
-      "winner": "Sanders",
-      "loser": "Rice",
+      "winner": "Team Sanders",
+      "loser": "Team Rice",
       "winner_score": 22,
       "loser_score": 21,
       "date": "2014-01-27",
       "round": "PRO BOWL"
     },
     {
-      "winner": "Seahawks",
-      "loser": "Broncos",
+      "winner": "Seattle Seahawks",
+      "loser": "Denver Broncos",
       "winner_score": 43,
       "loser_score": 8,
       "date": "2014-02-02",
@@ -70,95 +70,95 @@
   ],
   "series": [
     {
-      "t1": "Seahawks",
-      "t2": "Saints",
+      "t1": "Seattle Seahawks",
+      "t2": "New Orleans Saints",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Saints",
+      "loser": "New Orleans Saints",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2014-01-11"
     },
     {
-      "t1": "Patriots",
-      "t2": "Colts",
+      "t1": "New England Patriots",
+      "t2": "Indianapolis Colts",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Colts",
+      "loser": "Indianapolis Colts",
       "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2014-01-12"
     },
     {
-      "t1": "49ers",
-      "t2": "Panthers",
+      "t1": "San Francisco 49ers",
+      "t2": "Carolina Panthers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Panthers",
+      "loser": "Carolina Panthers",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2014-01-12"
     },
     {
-      "t1": "Broncos",
-      "t2": "Chargers",
+      "t1": "Denver Broncos",
+      "t2": "San Diego Chargers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chargers",
+      "loser": "San Diego Chargers",
       "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2014-01-12"
     },
     {
-      "t1": "Broncos",
-      "t2": "Patriots",
+      "t1": "Denver Broncos",
+      "t2": "New England Patriots",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Patriots",
+      "loser": "New England Patriots",
       "round": "AFC CHAMPIONSHIP",
       "date": "2014-01-19"
     },
     {
-      "t1": "Seahawks",
-      "t2": "49ers",
+      "t1": "Seattle Seahawks",
+      "t2": "San Francisco 49ers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "49ers",
+      "loser": "San Francisco 49ers",
       "round": "NFC CHAMPIONSHIP",
       "date": "2014-01-19"
     },
     {
-      "t1": "Sanders",
-      "t2": "Rice",
+      "t1": "Team Sanders",
+      "t2": "Team Rice",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Rice",
+      "loser": "Team Rice",
       "round": "PRO BOWL",
       "date": "2014-01-27"
     },
     {
-      "t1": "Seahawks",
-      "t2": "Broncos",
+      "t1": "Seattle Seahawks",
+      "t2": "Denver Broncos",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Broncos",
+      "loser": "Denver Broncos",
       "round": "Super Bowl XLVIII",
       "date": "2014-02-02"
     }
   ],
   "eliminated": [
-    "Saints",
-    "Colts",
-    "Panthers",
-    "Chargers",
-    "Patriots",
-    "49ers",
-    "Rice",
-    "Broncos"
+    "New Orleans Saints",
+    "Indianapolis Colts",
+    "Carolina Panthers",
+    "San Diego Chargers",
+    "New England Patriots",
+    "San Francisco 49ers",
+    "Team Rice",
+    "Denver Broncos"
   ],
-  "updated": "2026-05-27 05:10 UTC"
+  "updated": "2026-05-27 05:43 UTC"
 }

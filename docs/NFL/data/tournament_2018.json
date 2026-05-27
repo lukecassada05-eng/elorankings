@@ -4,64 +4,64 @@
   "completed": true,
   "games": [
     {
-      "winner": "Chiefs",
-      "loser": "Colts",
+      "winner": "Kansas City Chiefs",
+      "loser": "Indianapolis Colts",
       "winner_score": 31,
       "loser_score": 13,
       "date": "2019-01-12",
       "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Rams",
-      "loser": "Cowboys",
+      "winner": "Los Angeles Rams",
+      "loser": "Dallas Cowboys",
       "winner_score": 30,
       "loser_score": 22,
       "date": "2019-01-13",
       "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Patriots",
-      "loser": "Chargers",
+      "winner": "New England Patriots",
+      "loser": "Los Angeles Chargers",
       "winner_score": 41,
       "loser_score": 28,
       "date": "2019-01-13",
       "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Saints",
-      "loser": "Eagles",
+      "winner": "New Orleans Saints",
+      "loser": "Philadelphia Eagles",
       "winner_score": 20,
       "loser_score": 14,
       "date": "2019-01-13",
       "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Rams",
-      "loser": "Saints",
+      "winner": "Los Angeles Rams",
+      "loser": "New Orleans Saints",
       "winner_score": 26,
       "loser_score": 23,
       "date": "2019-01-20",
       "round": "NFC CHAMPIONSHIP"
     },
     {
-      "winner": "Patriots",
-      "loser": "Chiefs",
+      "winner": "New England Patriots",
+      "loser": "Kansas City Chiefs",
       "winner_score": 37,
       "loser_score": 31,
       "date": "2019-01-20",
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "AFC",
-      "loser": "NFC",
+      "winner": "AFC All-Stars",
+      "loser": "NFC All-Stars",
       "winner_score": 26,
       "loser_score": 7,
       "date": "2019-01-27",
       "round": "PRO BOWL PRES. BY VERIZON"
     },
     {
-      "winner": "Patriots",
-      "loser": "Rams",
+      "winner": "New England Patriots",
+      "loser": "Los Angeles Rams",
       "winner_score": 13,
       "loser_score": 3,
       "date": "2019-02-03",
@@ -70,95 +70,95 @@
   ],
   "series": [
     {
-      "t1": "Chiefs",
-      "t2": "Colts",
+      "t1": "Kansas City Chiefs",
+      "t2": "Indianapolis Colts",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Colts",
+      "loser": "Indianapolis Colts",
       "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2019-01-12"
     },
     {
-      "t1": "Rams",
-      "t2": "Cowboys",
+      "t1": "Los Angeles Rams",
+      "t2": "Dallas Cowboys",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cowboys",
+      "loser": "Dallas Cowboys",
       "round": "NFC DIVISIONAL PLAYOFFS",
       "date": "2019-01-13"
     },
     {
-      "t1": "Patriots",
-      "t2": "Chargers",
+      "t1": "New England Patriots",
+      "t2": "Los Angeles Chargers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chargers",
+      "loser": "Los Angeles Chargers",
       "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2019-01-13"
     },
     {
-      "t1": "Saints",
-      "t2": "Eagles",
+      "t1": "New Orleans Saints",
+      "t2": "Philadelphia Eagles",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Eagles",
+      "loser": "Philadelphia Eagles",
       "round": "NFC DIVISIONAL PLAYOFFS",
       "date": "2019-01-13"
     },
     {
-      "t1": "Rams",
-      "t2": "Saints",
+      "t1": "Los Angeles Rams",
+      "t2": "New Orleans Saints",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Saints",
+      "loser": "New Orleans Saints",
       "round": "NFC CHAMPIONSHIP",
       "date": "2019-01-20"
     },
     {
-      "t1": "Patriots",
-      "t2": "Chiefs",
+      "t1": "New England Patriots",
+      "t2": "Kansas City Chiefs",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chiefs",
+      "loser": "Kansas City Chiefs",
       "round": "AFC CHAMPIONSHIP",
       "date": "2019-01-20"
     },
     {
-      "t1": "AFC",
-      "t2": "NFC",
+      "t1": "AFC All-Stars",
+      "t2": "NFC All-Stars",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "NFC",
+      "loser": "NFC All-Stars",
       "round": "PRO BOWL PRES. BY VERIZON",
       "date": "2019-01-27"
     },
     {
-      "t1": "Patriots",
-      "t2": "Rams",
+      "t1": "New England Patriots",
+      "t2": "Los Angeles Rams",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Rams",
+      "loser": "Los Angeles Rams",
       "round": "Super Bowl LIII",
       "date": "2019-02-03"
     }
   ],
   "eliminated": [
-    "Colts",
-    "Cowboys",
-    "Chargers",
-    "Eagles",
-    "Saints",
-    "Chiefs",
-    "NFC",
-    "Rams"
+    "Indianapolis Colts",
+    "Dallas Cowboys",
+    "Los Angeles Chargers",
+    "Philadelphia Eagles",
+    "New Orleans Saints",
+    "Kansas City Chiefs",
+    "NFC All-Stars",
+    "Los Angeles Rams"
   ],
-  "updated": "2026-05-27 05:10 UTC"
+  "updated": "2026-05-27 05:43 UTC"
 }

@@ -4,64 +4,64 @@
   "completed": true,
   "games": [
     {
-      "winner": "Falcons",
-      "loser": "Seahawks",
+      "winner": "Atlanta Falcons",
+      "loser": "Seattle Seahawks",
       "winner_score": 36,
       "loser_score": 20,
       "date": "2017-01-14",
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Patriots",
-      "loser": "Texans",
+      "winner": "New England Patriots",
+      "loser": "Houston Texans",
       "winner_score": 34,
       "loser_score": 16,
       "date": "2017-01-15",
       "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Packers",
-      "loser": "Cowboys",
+      "winner": "Green Bay Packers",
+      "loser": "Dallas Cowboys",
       "winner_score": 34,
       "loser_score": 31,
       "date": "2017-01-15",
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Steelers",
-      "loser": "Chiefs",
+      "winner": "Pittsburgh Steelers",
+      "loser": "Kansas City Chiefs",
       "winner_score": 18,
       "loser_score": 16,
       "date": "2017-01-16",
       "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Falcons",
-      "loser": "Packers",
+      "winner": "Atlanta Falcons",
+      "loser": "Green Bay Packers",
       "winner_score": 44,
       "loser_score": 21,
       "date": "2017-01-22",
       "round": "NFC CHAMPIONSHIP"
     },
     {
-      "winner": "Patriots",
-      "loser": "Steelers",
+      "winner": "New England Patriots",
+      "loser": "Pittsburgh Steelers",
       "winner_score": 36,
       "loser_score": 17,
       "date": "2017-01-22",
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "AFC",
-      "loser": "NFC",
+      "winner": "Afc",
+      "loser": "Nfc",
       "winner_score": 20,
       "loser_score": 13,
       "date": "2017-01-30",
       "round": "PRO BOWL"
     },
     {
-      "winner": "Patriots",
-      "loser": "Falcons",
+      "winner": "New England Patriots",
+      "loser": "Atlanta Falcons",
       "winner_score": 34,
       "loser_score": 28,
       "date": "2017-02-05",
@@ -70,95 +70,95 @@
   ],
   "series": [
     {
-      "t1": "Falcons",
-      "t2": "Seahawks",
+      "t1": "Atlanta Falcons",
+      "t2": "Seattle Seahawks",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Seahawks",
+      "loser": "Seattle Seahawks",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2017-01-14"
     },
     {
-      "t1": "Patriots",
-      "t2": "Texans",
+      "t1": "New England Patriots",
+      "t2": "Houston Texans",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Texans",
+      "loser": "Houston Texans",
       "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2017-01-15"
     },
     {
-      "t1": "Packers",
-      "t2": "Cowboys",
+      "t1": "Green Bay Packers",
+      "t2": "Dallas Cowboys",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cowboys",
+      "loser": "Dallas Cowboys",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2017-01-15"
     },
     {
-      "t1": "Steelers",
-      "t2": "Chiefs",
+      "t1": "Pittsburgh Steelers",
+      "t2": "Kansas City Chiefs",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Chiefs",
+      "loser": "Kansas City Chiefs",
       "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2017-01-16"
     },
     {
-      "t1": "Falcons",
-      "t2": "Packers",
+      "t1": "Atlanta Falcons",
+      "t2": "Green Bay Packers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers",
+      "loser": "Green Bay Packers",
       "round": "NFC CHAMPIONSHIP",
       "date": "2017-01-22"
     },
     {
-      "t1": "Patriots",
-      "t2": "Steelers",
+      "t1": "New England Patriots",
+      "t2": "Pittsburgh Steelers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Steelers",
+      "loser": "Pittsburgh Steelers",
       "round": "AFC CHAMPIONSHIP",
       "date": "2017-01-22"
     },
     {
-      "t1": "AFC",
-      "t2": "NFC",
+      "t1": "Afc",
+      "t2": "Nfc",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "NFC",
+      "loser": "Nfc",
       "round": "PRO BOWL",
       "date": "2017-01-30"
     },
     {
-      "t1": "Patriots",
-      "t2": "Falcons",
+      "t1": "New England Patriots",
+      "t2": "Atlanta Falcons",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Falcons",
+      "loser": "Atlanta Falcons",
       "round": "Super Bowl LI",
       "date": "2017-02-05"
     }
   ],
   "eliminated": [
-    "Seahawks",
-    "Texans",
-    "Cowboys",
-    "Chiefs",
-    "Packers",
-    "Steelers",
-    "NFC",
-    "Falcons"
+    "Seattle Seahawks",
+    "Houston Texans",
+    "Dallas Cowboys",
+    "Kansas City Chiefs",
+    "Green Bay Packers",
+    "Pittsburgh Steelers",
+    "Nfc",
+    "Atlanta Falcons"
   ],
-  "updated": "2026-05-27 05:10 UTC"
+  "updated": "2026-05-27 05:43 UTC"
 }

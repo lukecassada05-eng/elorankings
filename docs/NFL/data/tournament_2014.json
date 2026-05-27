@@ -4,64 +4,64 @@
   "completed": true,
   "games": [
     {
-      "winner": "Patriots",
-      "loser": "Ravens",
+      "winner": "New England Patriots",
+      "loser": "Baltimore Ravens",
       "winner_score": 35,
       "loser_score": 31,
       "date": "2015-01-10",
       "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Seahawks",
-      "loser": "Panthers",
+      "winner": "Seattle Seahawks",
+      "loser": "Carolina Panthers",
       "winner_score": 31,
       "loser_score": 17,
       "date": "2015-01-11",
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Packers",
-      "loser": "Cowboys",
+      "winner": "Green Bay Packers",
+      "loser": "Dallas Cowboys",
       "winner_score": 26,
       "loser_score": 21,
       "date": "2015-01-11",
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Colts",
-      "loser": "Broncos",
+      "winner": "Indianapolis Colts",
+      "loser": "Denver Broncos",
       "winner_score": 24,
       "loser_score": 13,
       "date": "2015-01-11",
       "round": "AFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "Seahawks",
-      "loser": "Packers",
+      "winner": "Seattle Seahawks",
+      "loser": "Green Bay Packers",
       "winner_score": 28,
       "loser_score": 22,
       "date": "2015-01-18",
       "round": "NFC CHAMPIONSHIP"
     },
     {
-      "winner": "Patriots",
-      "loser": "Colts",
+      "winner": "New England Patriots",
+      "loser": "Indianapolis Colts",
       "winner_score": 45,
       "loser_score": 7,
       "date": "2015-01-18",
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "Irvin",
-      "loser": "Carter",
+      "winner": "Team Irvin",
+      "loser": "Team Carter",
       "winner_score": 32,
       "loser_score": 28,
       "date": "2015-01-26",
       "round": "PRO BOWL"
     },
     {
-      "winner": "Patriots",
-      "loser": "Seahawks",
+      "winner": "New England Patriots",
+      "loser": "Seattle Seahawks",
       "winner_score": 28,
       "loser_score": 24,
       "date": "2015-02-01",
@@ -70,95 +70,95 @@
   ],
   "series": [
     {
-      "t1": "Patriots",
-      "t2": "Ravens",
+      "t1": "New England Patriots",
+      "t2": "Baltimore Ravens",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Ravens",
+      "loser": "Baltimore Ravens",
       "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2015-01-10"
     },
     {
-      "t1": "Seahawks",
-      "t2": "Panthers",
+      "t1": "Seattle Seahawks",
+      "t2": "Carolina Panthers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Panthers",
+      "loser": "Carolina Panthers",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2015-01-11"
     },
     {
-      "t1": "Packers",
-      "t2": "Cowboys",
+      "t1": "Green Bay Packers",
+      "t2": "Dallas Cowboys",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Cowboys",
+      "loser": "Dallas Cowboys",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2015-01-11"
     },
     {
-      "t1": "Colts",
-      "t2": "Broncos",
+      "t1": "Indianapolis Colts",
+      "t2": "Denver Broncos",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Broncos",
+      "loser": "Denver Broncos",
       "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2015-01-11"
     },
     {
-      "t1": "Seahawks",
-      "t2": "Packers",
+      "t1": "Seattle Seahawks",
+      "t2": "Green Bay Packers",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Packers",
+      "loser": "Green Bay Packers",
       "round": "NFC CHAMPIONSHIP",
       "date": "2015-01-18"
     },
     {
-      "t1": "Patriots",
-      "t2": "Colts",
+      "t1": "New England Patriots",
+      "t2": "Indianapolis Colts",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Colts",
+      "loser": "Indianapolis Colts",
       "round": "AFC CHAMPIONSHIP",
       "date": "2015-01-18"
     },
     {
-      "t1": "Irvin",
-      "t2": "Carter",
+      "t1": "Team Irvin",
+      "t2": "Team Carter",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Carter",
+      "loser": "Team Carter",
       "round": "PRO BOWL",
       "date": "2015-01-26"
     },
     {
-      "t1": "Patriots",
-      "t2": "Seahawks",
+      "t1": "New England Patriots",
+      "t2": "Seattle Seahawks",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Seahawks",
+      "loser": "Seattle Seahawks",
       "round": "Super Bowl XLIX",
       "date": "2015-02-01"
     }
   ],
   "eliminated": [
-    "Ravens",
-    "Panthers",
-    "Cowboys",
-    "Broncos",
-    "Packers",
-    "Colts",
-    "Carter",
-    "Seahawks"
+    "Baltimore Ravens",
+    "Carolina Panthers",
+    "Dallas Cowboys",
+    "Denver Broncos",
+    "Green Bay Packers",
+    "Indianapolis Colts",
+    "Team Carter",
+    "Seattle Seahawks"
   ],
-  "updated": "2026-05-27 05:10 UTC"
+  "updated": "2026-05-27 05:43 UTC"
 }
