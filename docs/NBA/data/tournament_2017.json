@@ -910,26 +910,6 @@
       "date": "2017-04-15"
     },
     {
-      "t1": "Washington Wizards",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1",
-      "date": "2017-04-16"
-    },
-    {
-      "t1": "Chicago Bulls",
-      "t2": "Boston Celtics",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1",
-      "date": "2017-04-16"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "Memphis Grizzlies",
       "w1": 1,
@@ -950,6 +930,16 @@
       "date": "2017-04-16"
     },
     {
+      "t1": "Washington Wizards",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1",
+      "date": "2017-04-16"
+    },
+    {
       "t1": "Golden State Warriors",
       "t2": "Portland Trail Blazers",
       "w1": 1,
@@ -957,6 +947,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1",
+      "date": "2017-04-16"
+    },
+    {
+      "t1": "Chicago Bulls",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1",
       "date": "2017-04-16"
     },
     {
@@ -980,16 +980,6 @@
       "date": "2017-04-17"
     },
     {
-      "t1": "Toronto Raptors",
-      "t2": "Milwaukee Bucks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2",
-      "date": "2017-04-18"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "Memphis Grizzlies",
       "w1": 1,
@@ -1000,13 +990,23 @@
       "date": "2017-04-18"
     },
     {
-      "t1": "Washington Wizards",
-      "t2": "Atlanta Hawks",
+      "t1": "Toronto Raptors",
+      "t2": "Milwaukee Bucks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2",
+      "date": "2017-04-18"
+    },
+    {
+      "t1": "Chicago Bulls",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2",
       "date": "2017-04-19"
     },
     {
@@ -1020,13 +1020,13 @@
       "date": "2017-04-19"
     },
     {
-      "t1": "Chicago Bulls",
-      "t2": "Boston Celtics",
+      "t1": "Washington Wizards",
+      "t2": "Atlanta Hawks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2",
       "date": "2017-04-19"
     },
     {
@@ -1090,16 +1090,6 @@
       "date": "2017-04-21"
     },
     {
-      "t1": "Atlanta Hawks",
-      "t2": "Washington Wizards",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3",
-      "date": "2017-04-22"
-    },
-    {
       "t1": "Oklahoma City Thunder",
       "t2": "Houston Rockets",
       "w1": 1,
@@ -1130,6 +1120,26 @@
       "date": "2017-04-22"
     },
     {
+      "t1": "Atlanta Hawks",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3",
+      "date": "2017-04-22"
+    },
+    {
+      "t1": "Memphis Grizzlies",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 4",
+      "date": "2017-04-23"
+    },
+    {
       "t1": "Golden State Warriors",
       "t2": "Portland Trail Blazers",
       "w1": 1,
@@ -1147,16 +1157,6 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE 1ST ROUND - GAME 4",
-      "date": "2017-04-23"
-    },
-    {
-      "t1": "Memphis Grizzlies",
-      "t2": "San Antonio Spurs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 4",
       "date": "2017-04-23"
     },
     {
@@ -1220,16 +1220,6 @@
       "date": "2017-04-25"
     },
     {
-      "t1": "Washington Wizards",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 5",
-      "date": "2017-04-26"
-    },
-    {
       "t1": "Houston Rockets",
       "t2": "Oklahoma City Thunder",
       "w1": 1,
@@ -1260,6 +1250,16 @@
       "date": "2017-04-26"
     },
     {
+      "t1": "Washington Wizards",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 5",
+      "date": "2017-04-26"
+    },
+    {
       "t1": "Boston Celtics",
       "t2": "Chicago Bulls",
       "w1": 1,
@@ -1280,16 +1280,6 @@
       "date": "2017-04-27"
     },
     {
-      "t1": "Washington Wizards",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 6",
-      "date": "2017-04-28"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "Memphis Grizzlies",
       "w1": 1,
@@ -1300,14 +1290,14 @@
       "date": "2017-04-28"
     },
     {
-      "t1": "LA Clippers",
-      "t2": "Utah Jazz",
+      "t1": "Washington Wizards",
+      "t2": "Atlanta Hawks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 6",
-      "date": "2017-04-29"
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 6",
+      "date": "2017-04-28"
     },
     {
       "t1": "Boston Celtics",
@@ -1317,6 +1307,16 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE 1st ROUND - GAME 6",
+      "date": "2017-04-29"
+    },
+    {
+      "t1": "LA Clippers",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 6",
       "date": "2017-04-29"
     },
     {
@@ -1360,16 +1360,6 @@
       "date": "2017-05-02"
     },
     {
-      "t1": "Golden State Warriors",
-      "t2": "Utah Jazz",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
-      "date": "2017-05-03"
-    },
-    {
       "t1": "Boston Celtics",
       "t2": "Washington Wizards",
       "w1": 1,
@@ -1377,6 +1367,16 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
+      "date": "2017-05-03"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
       "date": "2017-05-03"
     },
     {
@@ -1400,16 +1400,6 @@
       "date": "2017-05-04"
     },
     {
-      "t1": "Golden State Warriors",
-      "t2": "Utah Jazz",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2017-05-05"
-    },
-    {
       "t1": "Washington Wizards",
       "t2": "Boston Celtics",
       "w1": 1,
@@ -1417,6 +1407,16 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
+      "date": "2017-05-05"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
       "date": "2017-05-05"
     },
     {
@@ -1681,5 +1681,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:14 UTC"
+  "updated": "2026-05-27 22:24 UTC"
 }

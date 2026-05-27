@@ -712,16 +712,6 @@
       "date": "2019-04-12"
     },
     {
-      "t1": "Washington Capitals",
-      "t2": "Carolina Hurricanes",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 2",
-      "date": "2019-04-13"
-    },
-    {
       "t1": "St. Louis Blues",
       "t2": "Winnipeg Jets",
       "w1": 1,
@@ -739,6 +729,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 2",
+      "date": "2019-04-13"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 2",
       "date": "2019-04-13"
     },
     {
@@ -800,6 +800,16 @@
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 3",
       "date": "2019-04-14"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 3",
+      "date": "2019-04-15"
     },
     {
       "t1": "Toronto Maple Leafs",
@@ -822,16 +832,6 @@
       "date": "2019-04-15"
     },
     {
-      "t1": "Vegas Golden Knights",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 1ST ROUND - GAME 3",
-      "date": "2019-04-15"
-    },
-    {
       "t1": "Nashville Predators",
       "t2": "Dallas Stars",
       "w1": 1,
@@ -872,16 +872,6 @@
       "date": "2019-04-16"
     },
     {
-      "t1": "Boston Bruins",
-      "t2": "Toronto Maple Leafs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 4",
-      "date": "2019-04-17"
-    },
-    {
       "t1": "Winnipeg Jets",
       "t2": "St. Louis Blues",
       "w1": 1,
@@ -902,14 +892,14 @@
       "date": "2019-04-17"
     },
     {
-      "t1": "Carolina Hurricanes",
-      "t2": "Washington Capitals",
+      "t1": "Boston Bruins",
+      "t2": "Toronto Maple Leafs",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "EAST 1ST ROUND - GAME 4",
-      "date": "2019-04-18"
+      "date": "2019-04-17"
     },
     {
       "t1": "Dallas Stars",
@@ -929,6 +919,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 4",
+      "date": "2019-04-18"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 4",
       "date": "2019-04-18"
     },
     {
@@ -999,16 +999,6 @@
       "done": false,
       "loser": "",
       "round": "EAST 1ST ROUND - GAME 5",
-      "date": "2019-04-21"
-    },
-    {
-      "t1": "San Jose Sharks",
-      "t2": "Vegas Golden Knights",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 1ST ROUND - GAME 6",
       "date": "2019-04-21"
     },
     {
@@ -1019,6 +1009,16 @@
       "done": false,
       "loser": "",
       "round": "EAST 1ST ROUND - GAME 6",
+      "date": "2019-04-21"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Vegas Golden Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 6",
       "date": "2019-04-21"
     },
     {
@@ -1052,16 +1052,6 @@
       "date": "2019-04-23"
     },
     {
-      "t1": "Carolina Hurricanes",
-      "t2": "Washington Capitals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 7",
-      "date": "2019-04-24"
-    },
-    {
       "t1": "San Jose Sharks",
       "t2": "Vegas Golden Knights",
       "w1": 1,
@@ -1069,6 +1059,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 7",
+      "date": "2019-04-24"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 7",
       "date": "2019-04-24"
     },
     {
@@ -1082,16 +1082,6 @@
       "date": "2019-04-25"
     },
     {
-      "t1": "Carolina Hurricanes",
-      "t2": "New York Islanders",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 2ND ROUND - GAME 1",
-      "date": "2019-04-26"
-    },
-    {
       "t1": "St. Louis Blues",
       "t2": "Dallas Stars",
       "w1": 1,
@@ -1099,6 +1089,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 2ND ROUND - GAME 1",
+      "date": "2019-04-26"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2ND ROUND - GAME 1",
       "date": "2019-04-26"
     },
     {
@@ -1122,16 +1122,6 @@
       "date": "2019-04-27"
     },
     {
-      "t1": "Colorado Avalanche",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 2ND ROUND - GAME 2",
-      "date": "2019-04-28"
-    },
-    {
       "t1": "Columbus Blue Jackets",
       "t2": "Boston Bruins",
       "w1": 1,
@@ -1149,6 +1139,16 @@
       "done": false,
       "loser": "",
       "round": "EAST 2ND ROUND - GAME 2",
+      "date": "2019-04-28"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 2",
       "date": "2019-04-28"
     },
     {
@@ -1483,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }

@@ -1008,26 +1008,6 @@
       "date": "2015-04-15"
     },
     {
-      "t1": "New York Rangers",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 1",
-      "date": "2015-04-16"
-    },
-    {
-      "t1": "Detroit Red Wings",
-      "t2": "Tampa Bay Lightning",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 1",
-      "date": "2015-04-16"
-    },
-    {
       "t1": "Chicago Blackhawks",
       "t2": "Nashville Predators",
       "w1": 1,
@@ -1045,6 +1025,26 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 1",
+      "date": "2015-04-16"
+    },
+    {
+      "t1": "New York Rangers",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 1",
+      "date": "2015-04-16"
+    },
+    {
+      "t1": "Detroit Red Wings",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 1",
       "date": "2015-04-16"
     },
     {
@@ -1088,16 +1088,6 @@
       "date": "2015-04-17"
     },
     {
-      "t1": "Tampa Bay Lightning",
-      "t2": "Detroit Red Wings",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
-      "date": "2015-04-18"
-    },
-    {
       "t1": "Nashville Predators",
       "t2": "Chicago Blackhawks",
       "w1": 1,
@@ -1125,6 +1115,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2015-04-18"
+    },
+    {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Detroit Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
       "date": "2015-04-18"
     },
     {
@@ -1158,16 +1158,6 @@
       "date": "2015-04-19"
     },
     {
-      "t1": "Montreal Canadiens",
-      "t2": "Ottawa Senators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
-      "date": "2015-04-19"
-    },
-    {
       "t1": "Chicago Blackhawks",
       "t2": "Nashville Predators",
       "w1": 1,
@@ -1178,14 +1168,14 @@
       "date": "2015-04-19"
     },
     {
-      "t1": "New York Rangers",
-      "t2": "Pittsburgh Penguins",
+      "t1": "Montreal Canadiens",
+      "t2": "Ottawa Senators",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
-      "date": "2015-04-20"
+      "date": "2015-04-19"
     },
     {
       "t1": "Calgary Flames",
@@ -1198,14 +1188,14 @@
       "date": "2015-04-20"
     },
     {
-      "t1": "Detroit Red Wings",
-      "t2": "Tampa Bay Lightning",
+      "t1": "New York Rangers",
+      "t2": "Pittsburgh Penguins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
-      "date": "2015-04-21"
+      "date": "2015-04-20"
     },
     {
       "t1": "Minnesota Wild",
@@ -1228,6 +1218,16 @@
       "date": "2015-04-21"
     },
     {
+      "t1": "Detroit Red Wings",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2015-04-21"
+    },
+    {
       "t1": "Washington Capitals",
       "t2": "New York Islanders",
       "w1": 1,
@@ -1236,26 +1236,6 @@
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
       "date": "2015-04-21"
-    },
-    {
-      "t1": "Ottawa Senators",
-      "t2": "Montreal Canadiens",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
-      "date": "2015-04-22"
-    },
-    {
-      "t1": "New York Rangers",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
-      "date": "2015-04-22"
     },
     {
       "t1": "Chicago Blackhawks",
@@ -1278,14 +1258,24 @@
       "date": "2015-04-22"
     },
     {
-      "t1": "Tampa Bay Lightning",
-      "t2": "Detroit Red Wings",
+      "t1": "Ottawa Senators",
+      "t2": "Montreal Canadiens",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
-      "date": "2015-04-23"
+      "date": "2015-04-22"
+    },
+    {
+      "t1": "New York Rangers",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2015-04-22"
     },
     {
       "t1": "St. Louis Blues",
@@ -1308,6 +1298,16 @@
       "date": "2015-04-23"
     },
     {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Detroit Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2015-04-23"
+    },
+    {
       "t1": "Washington Capitals",
       "t2": "New York Islanders",
       "w1": 1,
@@ -1316,26 +1316,6 @@
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
       "date": "2015-04-23"
-    },
-    {
-      "t1": "Ottawa Senators",
-      "t2": "Montreal Canadiens",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
-      "date": "2015-04-24"
-    },
-    {
-      "t1": "New York Rangers",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
-      "date": "2015-04-24"
     },
     {
       "t1": "Nashville Predators",
@@ -1358,14 +1338,24 @@
       "date": "2015-04-24"
     },
     {
-      "t1": "Detroit Red Wings",
-      "t2": "Tampa Bay Lightning",
+      "t1": "Ottawa Senators",
+      "t2": "Montreal Canadiens",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
-      "date": "2015-04-25"
+      "date": "2015-04-24"
+    },
+    {
+      "t1": "New York Rangers",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2015-04-24"
     },
     {
       "t1": "Minnesota Wild",
@@ -1388,14 +1378,14 @@
       "date": "2015-04-25"
     },
     {
-      "t1": "Montreal Canadiens",
-      "t2": "Ottawa Senators",
+      "t1": "Detroit Red Wings",
+      "t2": "Tampa Bay Lightning",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6",
-      "date": "2015-04-26"
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2015-04-25"
     },
     {
       "t1": "Chicago Blackhawks",
@@ -1425,6 +1415,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 6",
+      "date": "2015-04-26"
+    },
+    {
+      "t1": "Montreal Canadiens",
+      "t2": "Ottawa Senators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6",
       "date": "2015-04-26"
     },
     {
@@ -1468,16 +1468,6 @@
       "date": "2015-04-30"
     },
     {
-      "t1": "Tampa Bay Lightning",
-      "t2": "Montreal Canadiens",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 1",
-      "date": "2015-05-01"
-    },
-    {
       "t1": "Anaheim Ducks",
       "t2": "Calgary Flames",
       "w1": 1,
@@ -1485,6 +1475,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SECOND ROUND - GAME 1",
+      "date": "2015-05-01"
+    },
+    {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Montreal Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 1",
       "date": "2015-05-01"
     },
     {
@@ -1548,16 +1548,6 @@
       "date": "2015-05-04"
     },
     {
-      "t1": "Tampa Bay Lightning",
-      "t2": "Montreal Canadiens",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 3",
-      "date": "2015-05-06"
-    },
-    {
       "t1": "Chicago Blackhawks",
       "t2": "Minnesota Wild",
       "w1": 1,
@@ -1575,6 +1565,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SECOND ROUND - GAME 3",
+      "date": "2015-05-06"
+    },
+    {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Montreal Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 3",
       "date": "2015-05-06"
     },
     {
@@ -1879,5 +1879,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:14 UTC"
+  "updated": "2026-05-27 22:24 UTC"
 }

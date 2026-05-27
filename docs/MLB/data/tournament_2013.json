@@ -352,16 +352,6 @@
       "date": "2013-10-04"
     },
     {
-      "t1": "Atlanta Braves",
-      "t2": "Los Angeles Dodgers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 2",
-      "date": "2013-10-04"
-    },
-    {
       "t1": "Boston Red Sox",
       "t2": "Tampa Bay Rays",
       "w1": 1,
@@ -369,6 +359,16 @@
       "done": false,
       "loser": "",
       "round": "ALDS - GAME 1",
+      "date": "2013-10-04"
+    },
+    {
+      "t1": "Atlanta Braves",
+      "t2": "Los Angeles Dodgers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 2",
       "date": "2013-10-04"
     },
     {
@@ -432,16 +432,6 @@
       "date": "2013-10-07"
     },
     {
-      "t1": "Tampa Bay Rays",
-      "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 3",
-      "date": "2013-10-07"
-    },
-    {
       "t1": "St. Louis Cardinals",
       "t2": "Pittsburgh Pirates",
       "w1": 1,
@@ -449,6 +439,16 @@
       "done": false,
       "loser": "",
       "round": "NLDS - GAME 4",
+      "date": "2013-10-07"
+    },
+    {
+      "t1": "Tampa Bay Rays",
+      "t2": "Boston Red Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 3",
       "date": "2013-10-07"
     },
     {
@@ -673,5 +673,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }

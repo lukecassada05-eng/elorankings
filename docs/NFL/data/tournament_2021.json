@@ -98,22 +98,6 @@
       "loser_score": 17,
       "date": "2022-01-30",
       "round": "NFC Championship"
-    },
-    {
-      "winner": "AFC",
-      "loser": "NFC",
-      "winner_score": 41,
-      "loser_score": 35,
-      "date": "2022-02-06",
-      "round": "Pro Bowl"
-    },
-    {
-      "winner": "Los Angeles Rams",
-      "loser": "Cincinnati Bengals",
-      "winner_score": 23,
-      "loser_score": 20,
-      "date": "2022-02-13",
-      "round": "Super Bowl LVI"
     }
   ],
   "series": [
@@ -188,16 +172,6 @@
       "date": "2022-01-22"
     },
     {
-      "t1": "Kansas City Chiefs",
-      "t2": "Buffalo Bills",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Buffalo Bills",
-      "round": "AFC Divisional Playoffs",
-      "date": "2022-01-23"
-    },
-    {
       "t1": "San Francisco 49ers",
       "t2": "Green Bay Packers",
       "w1": 1,
@@ -215,6 +189,16 @@
       "done": true,
       "loser": "Tampa Bay Buccaneers",
       "round": "NFC Divisional Playoffs",
+      "date": "2022-01-23"
+    },
+    {
+      "t1": "Kansas City Chiefs",
+      "t2": "Buffalo Bills",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Buffalo Bills",
+      "round": "AFC Divisional Playoffs",
       "date": "2022-01-23"
     },
     {
@@ -236,43 +220,21 @@
       "loser": "San Francisco 49ers",
       "round": "NFC Championship",
       "date": "2022-01-30"
-    },
-    {
-      "t1": "AFC",
-      "t2": "NFC",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "NFC",
-      "round": "Pro Bowl",
-      "date": "2022-02-06"
-    },
-    {
-      "t1": "Los Angeles Rams",
-      "t2": "Cincinnati Bengals",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Cincinnati Bengals",
-      "round": "Super Bowl LVI",
-      "date": "2022-02-13"
     }
   ],
   "eliminated": [
     "Las Vegas Raiders",
     "New England Patriots",
-    "Pittsburgh Steelers",
     "Philadelphia Eagles",
     "Dallas Cowboys",
+    "Pittsburgh Steelers",
     "Arizona Cardinals",
     "Tennessee Titans",
-    "Buffalo Bills",
     "Green Bay Packers",
     "Tampa Bay Buccaneers",
+    "Buffalo Bills",
     "Kansas City Chiefs",
-    "San Francisco 49ers",
-    "NFC",
-    "Cincinnati Bengals"
+    "San Francisco 49ers"
   ],
-  "updated": "2026-05-27 21:16 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

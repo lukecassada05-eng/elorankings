@@ -52,14 +52,6 @@
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "Afc",
-      "loser": "Nfc",
-      "winner_score": 20,
-      "loser_score": 13,
-      "date": "2017-01-30",
-      "round": "PRO BOWL"
-    },
-    {
       "winner": "New England Patriots",
       "loser": "Atlanta Falcons",
       "winner_score": 34,
@@ -80,16 +72,6 @@
       "date": "2017-01-14"
     },
     {
-      "t1": "Green Bay Packers",
-      "t2": "Dallas Cowboys",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Dallas Cowboys",
-      "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2017-01-15"
-    },
-    {
       "t1": "New England Patriots",
       "t2": "Houston Texans",
       "w1": 1,
@@ -97,6 +79,16 @@
       "done": true,
       "loser": "Houston Texans",
       "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2017-01-15"
+    },
+    {
+      "t1": "Green Bay Packers",
+      "t2": "Dallas Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dallas Cowboys",
+      "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2017-01-15"
     },
     {
@@ -130,16 +122,6 @@
       "date": "2017-01-22"
     },
     {
-      "t1": "Afc",
-      "t2": "Nfc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Nfc",
-      "round": "PRO BOWL",
-      "date": "2017-01-30"
-    },
-    {
       "t1": "New England Patriots",
       "t2": "Atlanta Falcons",
       "w1": 1,
@@ -152,13 +134,12 @@
   ],
   "eliminated": [
     "Seattle Seahawks",
-    "Dallas Cowboys",
     "Houston Texans",
+    "Dallas Cowboys",
     "Kansas City Chiefs",
     "Green Bay Packers",
     "Pittsburgh Steelers",
-    "Nfc",
     "Atlanta Falcons"
   ],
-  "updated": "2026-05-27 21:16 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

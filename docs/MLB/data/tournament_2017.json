@@ -686,16 +686,6 @@
       "date": "2017-10-09"
     },
     {
-      "t1": "New York Yankees",
-      "t2": "Cleveland Indians",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 4",
-      "date": "2017-10-09"
-    },
-    {
       "t1": "Chicago Cubs",
       "t2": "Washington Nationals",
       "w1": 1,
@@ -703,6 +693,16 @@
       "done": false,
       "loser": "",
       "round": "NLDS - GAME 3",
+      "date": "2017-10-09"
+    },
+    {
+      "t1": "New York Yankees",
+      "t2": "Cleveland Indians",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 4",
       "date": "2017-10-09"
     },
     {
@@ -907,5 +907,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }

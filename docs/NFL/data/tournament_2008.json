@@ -4,22 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "Baltimore Ravens",
-      "loser": "Tennessee Titans",
-      "winner_score": 13,
-      "loser_score": 10,
-      "date": "2009-01-10",
-      "round": "AFC DIVISIONAL PLAYOFFS"
-    },
-    {
-      "winner": "Arizona Cardinals",
-      "loser": "Carolina Panthers",
-      "winner_score": 33,
-      "loser_score": 13,
-      "date": "2009-01-11",
-      "round": "NFC DIVISIONAL PLAYOFFS"
-    },
-    {
       "winner": "Philadelphia Eagles",
       "loser": "New York Giants",
       "winner_score": 23,
@@ -58,26 +42,18 @@
       "loser_score": 23,
       "date": "2009-02-01",
       "round": "Super Bowl XLIII"
-    },
-    {
-      "winner": "Nfc",
-      "loser": "Afc",
-      "winner_score": 30,
-      "loser_score": 21,
-      "date": "2009-02-08",
-      "round": "PRO BOWL"
     }
   ],
   "series": [
     {
-      "t1": "Baltimore Ravens",
-      "t2": "Tennessee Titans",
+      "t1": "Philadelphia Eagles",
+      "t2": "New York Giants",
       "w1": 1,
       "w2": 0,
       "done": true,
-      "loser": "Tennessee Titans",
-      "round": "AFC DIVISIONAL PLAYOFFS",
-      "date": "2009-01-10"
+      "loser": "New York Giants",
+      "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2009-01-11"
     },
     {
       "t1": "Pittsburgh Steelers",
@@ -87,26 +63,6 @@
       "done": true,
       "loser": "San Diego Chargers",
       "round": "AFC DIVISIONAL PLAYOFFS",
-      "date": "2009-01-11"
-    },
-    {
-      "t1": "Arizona Cardinals",
-      "t2": "Carolina Panthers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Carolina Panthers",
-      "round": "NFC DIVISIONAL PLAYOFFS",
-      "date": "2009-01-11"
-    },
-    {
-      "t1": "Philadelphia Eagles",
-      "t2": "New York Giants",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New York Giants",
-      "round": "NFC DIVISIONAL PLAYOFFS",
       "date": "2009-01-11"
     },
     {
@@ -138,27 +94,14 @@
       "loser": "Arizona Cardinals",
       "round": "Super Bowl XLIII",
       "date": "2009-02-01"
-    },
-    {
-      "t1": "Nfc",
-      "t2": "Afc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Afc",
-      "round": "PRO BOWL",
-      "date": "2009-02-08"
     }
   ],
   "eliminated": [
-    "Tennessee Titans",
-    "San Diego Chargers",
-    "Carolina Panthers",
     "New York Giants",
+    "San Diego Chargers",
     "Philadelphia Eagles",
     "Baltimore Ravens",
-    "Arizona Cardinals",
-    "Afc"
+    "Arizona Cardinals"
   ],
-  "updated": "2026-05-27 21:16 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

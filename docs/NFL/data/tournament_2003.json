@@ -4,22 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "Carolina Panthers",
-      "loser": "St. Louis Rams",
-      "winner_score": 29,
-      "loser_score": 23,
-      "date": "2004-01-10",
-      "round": "DIVISIONAL PLAYOFFS"
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Tennessee Titans",
-      "winner_score": 17,
-      "loser_score": 14,
-      "date": "2004-01-11",
-      "round": "DIVISIONAL PLAYOFFS"
-    },
-    {
       "winner": "Indianapolis Colts",
       "loser": "Kansas City Chiefs",
       "winner_score": 38,
@@ -58,37 +42,9 @@
       "loser_score": 29,
       "date": "2004-02-01",
       "round": "Super Bowl XXXVIII"
-    },
-    {
-      "winner": "Nfc",
-      "loser": "Afc",
-      "winner_score": 55,
-      "loser_score": 52,
-      "date": "2004-02-09",
-      "round": "PRO BOWL AT HONOLULU HI"
     }
   ],
   "series": [
-    {
-      "t1": "Carolina Panthers",
-      "t2": "St. Louis Rams",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "St. Louis Rams",
-      "round": "DIVISIONAL PLAYOFFS",
-      "date": "2004-01-10"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Tennessee Titans",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Tennessee Titans",
-      "round": "DIVISIONAL PLAYOFFS",
-      "date": "2004-01-11"
-    },
     {
       "t1": "Indianapolis Colts",
       "t2": "Kansas City Chiefs",
@@ -138,27 +94,14 @@
       "loser": "Carolina Panthers",
       "round": "Super Bowl XXXVIII",
       "date": "2004-02-01"
-    },
-    {
-      "t1": "Nfc",
-      "t2": "Afc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Afc",
-      "round": "PRO BOWL AT HONOLULU HI",
-      "date": "2004-02-09"
     }
   ],
   "eliminated": [
-    "St. Louis Rams",
-    "Tennessee Titans",
     "Kansas City Chiefs",
     "Green Bay Packers",
     "Indianapolis Colts",
     "Philadelphia Eagles",
-    "Carolina Panthers",
-    "Afc"
+    "Carolina Panthers"
   ],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

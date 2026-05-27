@@ -1280,6 +1280,16 @@
       "date": "2006-04-12"
     },
     {
+      "t1": "NO/Oklahoma City\r\n Hornets",
+      "t2": "Seattle SuperSonics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AT OKLAHOMA CITY OK",
+      "date": "2006-04-12"
+    },
+    {
       "t1": "Indiana Pacers",
       "t2": "Boston Celtics",
       "w1": 1,
@@ -1370,16 +1380,6 @@
       "date": "2006-04-12"
     },
     {
-      "t1": "NO/Oklahoma City\r\n Hornets",
-      "t2": "Seattle SuperSonics",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "AT OKLAHOMA CITY OK",
-      "date": "2006-04-12"
-    },
-    {
       "t1": "Detroit Pistons",
       "t2": "Cleveland Cavaliers",
       "w1": 1,
@@ -1427,6 +1427,16 @@
       "done": false,
       "loser": "",
       "round": "",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "NO/Oklahoma City\r\n Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AT OKLAHOMA CITY OK",
       "date": "2006-04-14"
     },
     {
@@ -1507,16 +1517,6 @@
       "done": false,
       "loser": "",
       "round": "",
-      "date": "2006-04-14"
-    },
-    {
-      "t1": "Utah Jazz",
-      "t2": "NO/Oklahoma City\r\n Hornets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "AT OKLAHOMA CITY OK",
       "date": "2006-04-14"
     },
     {
@@ -2077,5 +2077,5 @@
     "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-05-27 21:13 UTC"
+  "updated": "2026-05-27 22:23 UTC"
 }

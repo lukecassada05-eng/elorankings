@@ -1122,6 +1122,16 @@
       "date": "2007-04-13"
     },
     {
+      "t1": "Denver Nuggets",
+      "t2": "NO/Oklahoma City Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AT OKLAHOMA CITY OK",
+      "date": "2007-04-13"
+    },
+    {
       "t1": "San Antonio Spurs",
       "t2": "Minnesota Timberwolves",
       "w1": 1,
@@ -1219,16 +1229,6 @@
       "done": false,
       "loser": "",
       "round": "",
-      "date": "2007-04-13"
-    },
-    {
-      "t1": "Denver Nuggets",
-      "t2": "NO/Oklahoma City Hornets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "AT OKLAHOMA CITY OK",
       "date": "2007-04-13"
     },
     {
@@ -1829,5 +1829,5 @@
     "Detroit Pistons",
     "Cleveland Cavaliers"
   ],
-  "updated": "2026-05-27 21:13 UTC"
+  "updated": "2026-05-27 22:23 UTC"
 }

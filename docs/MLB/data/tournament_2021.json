@@ -577,7 +577,7 @@
       "winner_score": 6,
       "loser_score": 2,
       "date": "2021-10-27",
-      "round": "World Series - Game 1"
+      "round": "World Series"
     },
     {
       "winner": "Houston Astros",
@@ -585,7 +585,7 @@
       "winner_score": 7,
       "loser_score": 2,
       "date": "2021-10-28",
-      "round": "World Series - Game 2"
+      "round": "World Series"
     },
     {
       "winner": "Atlanta Braves",
@@ -593,7 +593,7 @@
       "winner_score": 2,
       "loser_score": 0,
       "date": "2021-10-30",
-      "round": "World Series - Game 3"
+      "round": "World Series"
     },
     {
       "winner": "Atlanta Braves",
@@ -601,7 +601,7 @@
       "winner_score": 3,
       "loser_score": 2,
       "date": "2021-10-31",
-      "round": "World Series - Game 4"
+      "round": "World Series"
     },
     {
       "winner": "Houston Astros",
@@ -609,7 +609,7 @@
       "winner_score": 9,
       "loser_score": 5,
       "date": "2021-11-01",
-      "round": "World Series - Game 5"
+      "round": "World Series"
     },
     {
       "winner": "Atlanta Braves",
@@ -617,7 +617,7 @@
       "winner_score": 7,
       "loser_score": 0,
       "date": "2021-11-03",
-      "round": "World Series - Game 6"
+      "round": "World Series"
     }
   ],
   "series": [
@@ -822,16 +822,6 @@
       "date": "2021-10-08"
     },
     {
-      "t1": "Boston Red Sox",
-      "t2": "Tampa Bay Rays",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 2",
-      "date": "2021-10-08"
-    },
-    {
       "t1": "Milwaukee Brewers",
       "t2": "Atlanta Braves",
       "w1": 1,
@@ -839,6 +829,16 @@
       "done": false,
       "loser": "",
       "round": "NLDS - GAME 1",
+      "date": "2021-10-08"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "Tampa Bay Rays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 2",
       "date": "2021-10-08"
     },
     {
@@ -1064,67 +1064,18 @@
     {
       "t1": "Atlanta Braves",
       "t2": "Houston Astros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "World Series - Game 1",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Houston Astros",
+      "round": "World Series",
       "date": "2021-10-27"
-    },
-    {
-      "t1": "Houston Astros",
-      "t2": "Atlanta Braves",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "World Series - Game 2",
-      "date": "2021-10-28"
-    },
-    {
-      "t1": "Atlanta Braves",
-      "t2": "Houston Astros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "World Series - Game 3",
-      "date": "2021-10-30"
-    },
-    {
-      "t1": "Atlanta Braves",
-      "t2": "Houston Astros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "World Series - Game 4",
-      "date": "2021-10-31"
-    },
-    {
-      "t1": "Houston Astros",
-      "t2": "Atlanta Braves",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "World Series - Game 5",
-      "date": "2021-11-01"
-    },
-    {
-      "t1": "Atlanta Braves",
-      "t2": "Houston Astros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "World Series - Game 6",
-      "date": "2021-11-03"
     }
   ],
   "eliminated": [
     "Washington Nationals",
-    "Baltimore Orioles"
+    "Baltimore Orioles",
+    "Houston Astros"
   ],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }

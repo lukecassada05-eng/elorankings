@@ -2734,16 +2734,6 @@
       "date": "2012-04-28"
     },
     {
-      "t1": "Atlanta Hawks",
-      "t2": "Boston Celtics",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1",
-      "date": "2012-04-29"
-    },
-    {
       "t1": "Oklahoma City Thunder",
       "t2": "Dallas Mavericks",
       "w1": 1,
@@ -2771,6 +2761,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1",
+      "date": "2012-04-29"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1",
       "date": "2012-04-29"
     },
     {
@@ -2804,16 +2804,6 @@
       "date": "2012-04-30"
     },
     {
-      "t1": "Boston Celtics",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2",
-      "date": "2012-05-01"
-    },
-    {
       "t1": "Oklahoma City Thunder",
       "t2": "Dallas Mavericks",
       "w1": 1,
@@ -2821,6 +2811,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 2",
+      "date": "2012-05-01"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2",
       "date": "2012-05-01"
     },
     {
@@ -2884,16 +2884,6 @@
       "date": "2012-05-03"
     },
     {
-      "t1": "Boston Celtics",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3",
-      "date": "2012-05-04"
-    },
-    {
       "t1": "Oklahoma City Thunder",
       "t2": "Dallas Mavericks",
       "w1": 1,
@@ -2901,6 +2891,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3",
+      "date": "2012-05-04"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3",
       "date": "2012-05-04"
     },
     {
@@ -2924,16 +2924,6 @@
       "date": "2012-05-05"
     },
     {
-      "t1": "LA Clippers",
-      "t2": "Memphis Grizzlies",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3",
-      "date": "2012-05-05"
-    },
-    {
       "t1": "Indiana Pacers",
       "t2": "Orlando Magic",
       "w1": 1,
@@ -2941,6 +2931,16 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE 1ST ROUND - GAME 4",
+      "date": "2012-05-05"
+    },
+    {
+      "t1": "LA Clippers",
+      "t2": "Memphis Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3",
       "date": "2012-05-05"
     },
     {
@@ -3054,16 +3054,6 @@
       "date": "2012-05-09"
     },
     {
-      "t1": "Miami Heat",
-      "t2": "New York Knicks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5",
-      "date": "2012-05-09"
-    },
-    {
       "t1": "Denver Nuggets",
       "t2": "Los Angeles Lakers",
       "w1": 1,
@@ -3071,6 +3061,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1st ROUND - GAME 5",
+      "date": "2012-05-09"
+    },
+    {
+      "t1": "Miami Heat",
+      "t2": "New York Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5",
       "date": "2012-05-09"
     },
     {
@@ -3134,16 +3134,6 @@
       "date": "2012-05-13"
     },
     {
-      "t1": "Miami Heat",
-      "t2": "Indiana Pacers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
-      "date": "2012-05-13"
-    },
-    {
       "t1": "Los Angeles Lakers",
       "t2": "Denver Nuggets",
       "w1": 1,
@@ -3164,6 +3154,16 @@
       "date": "2012-05-13"
     },
     {
+      "t1": "Miami Heat",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
+      "date": "2012-05-13"
+    },
+    {
       "t1": "Philadelphia 76ers",
       "t2": "Boston Celtics",
       "w1": 1,
@@ -3174,16 +3174,6 @@
       "date": "2012-05-14"
     },
     {
-      "t1": "Indiana Pacers",
-      "t2": "Miami Heat",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2012-05-15"
-    },
-    {
       "t1": "Oklahoma City Thunder",
       "t2": "Los Angeles Lakers",
       "w1": 1,
@@ -3191,6 +3181,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
+      "date": "2012-05-15"
+    },
+    {
+      "t1": "Indiana Pacers",
+      "t2": "Miami Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
       "date": "2012-05-15"
     },
     {
@@ -3214,16 +3214,6 @@
       "date": "2012-05-16"
     },
     {
-      "t1": "Indiana Pacers",
-      "t2": "Miami Heat",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
-      "date": "2012-05-17"
-    },
-    {
       "t1": "Oklahoma City Thunder",
       "t2": "Los Angeles Lakers",
       "w1": 1,
@@ -3231,6 +3221,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
+      "date": "2012-05-17"
+    },
+    {
+      "t1": "Indiana Pacers",
+      "t2": "Miami Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
       "date": "2012-05-17"
     },
     {
@@ -3274,16 +3274,6 @@
       "date": "2012-05-19"
     },
     {
-      "t1": "Miami Heat",
-      "t2": "Indiana Pacers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
-      "date": "2012-05-20"
-    },
-    {
       "t1": "Oklahoma City Thunder",
       "t2": "Los Angeles Lakers",
       "w1": 1,
@@ -3291,6 +3281,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4",
+      "date": "2012-05-20"
+    },
+    {
+      "t1": "Miami Heat",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
       "date": "2012-05-20"
     },
     {
@@ -3545,5 +3545,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:14 UTC"
+  "updated": "2026-05-27 22:23 UTC"
 }

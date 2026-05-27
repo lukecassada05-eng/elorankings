@@ -52,14 +52,6 @@
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "Nfc",
-      "loser": "Afc",
-      "winner_score": 62,
-      "loser_score": 35,
-      "date": "2013-01-28",
-      "round": "PRO BOWL"
-    },
-    {
       "winner": "Baltimore Ravens",
       "loser": "San Francisco 49ers",
       "winner_score": 34,
@@ -80,16 +72,6 @@
       "date": "2013-01-12"
     },
     {
-      "t1": "New England Patriots",
-      "t2": "Houston Texans",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Houston Texans",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2013-01-13"
-    },
-    {
       "t1": "San Francisco 49ers",
       "t2": "Green Bay Packers",
       "w1": 1,
@@ -107,6 +89,16 @@
       "done": true,
       "loser": "Seattle Seahawks",
       "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2013-01-13"
+    },
+    {
+      "t1": "New England Patriots",
+      "t2": "Houston Texans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Texans",
+      "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2013-01-13"
     },
     {
@@ -130,16 +122,6 @@
       "date": "2013-01-20"
     },
     {
-      "t1": "Nfc",
-      "t2": "Afc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Afc",
-      "round": "PRO BOWL",
-      "date": "2013-01-28"
-    },
-    {
       "t1": "Baltimore Ravens",
       "t2": "San Francisco 49ers",
       "w1": 1,
@@ -152,13 +134,12 @@
   ],
   "eliminated": [
     "Denver Broncos",
-    "Houston Texans",
     "Green Bay Packers",
     "Seattle Seahawks",
+    "Houston Texans",
     "Atlanta Falcons",
     "New England Patriots",
-    "Afc",
     "San Francisco 49ers"
   ],
-  "updated": "2026-05-27 21:16 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

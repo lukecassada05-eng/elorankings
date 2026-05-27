@@ -4,22 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "Baltimore Ravens",
-      "loser": "New England Patriots",
-      "winner_score": 33,
-      "loser_score": 14,
-      "date": "2010-01-10",
-      "round": "AFC WILD CARD PLAYOFFS"
-    },
-    {
-      "winner": "Arizona Cardinals",
-      "loser": "Green Bay Packers",
-      "winner_score": 51,
-      "loser_score": 45,
-      "date": "2010-01-10",
-      "round": "NFC WILD CARD PLAYOFFS"
-    },
-    {
       "winner": "New Orleans Saints",
       "loser": "Arizona Cardinals",
       "winner_score": 45,
@@ -68,14 +52,6 @@
       "round": "NFC CHAMPIONSHIP"
     },
     {
-      "winner": "Afc",
-      "loser": "Nfc",
-      "winner_score": 41,
-      "loser_score": 34,
-      "date": "2010-02-01",
-      "round": "PRO BOWL"
-    },
-    {
       "winner": "New Orleans Saints",
       "loser": "Indianapolis Colts",
       "winner_score": 31,
@@ -85,26 +61,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "Baltimore Ravens",
-      "t2": "New England Patriots",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New England Patriots",
-      "round": "AFC WILD CARD PLAYOFFS",
-      "date": "2010-01-10"
-    },
-    {
-      "t1": "Arizona Cardinals",
-      "t2": "Green Bay Packers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Green Bay Packers",
-      "round": "NFC WILD CARD PLAYOFFS",
-      "date": "2010-01-10"
-    },
     {
       "t1": "New Orleans Saints",
       "t2": "Arizona Cardinals",
@@ -116,16 +72,6 @@
       "date": "2010-01-16"
     },
     {
-      "t1": "Minnesota Vikings",
-      "t2": "Dallas Cowboys",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Dallas Cowboys",
-      "round": "NFC DIVISIONAL PLAYOFFS",
-      "date": "2010-01-17"
-    },
-    {
       "t1": "Indianapolis Colts",
       "t2": "Baltimore Ravens",
       "w1": 1,
@@ -133,6 +79,16 @@
       "done": true,
       "loser": "Baltimore Ravens",
       "round": "AFC DIVISIONAL PLAYOFFS",
+      "date": "2010-01-17"
+    },
+    {
+      "t1": "Minnesota Vikings",
+      "t2": "Dallas Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dallas Cowboys",
+      "round": "NFC DIVISIONAL PLAYOFFS",
       "date": "2010-01-17"
     },
     {
@@ -166,16 +122,6 @@
       "date": "2010-01-24"
     },
     {
-      "t1": "Afc",
-      "t2": "Nfc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Nfc",
-      "round": "PRO BOWL",
-      "date": "2010-02-01"
-    },
-    {
       "t1": "New Orleans Saints",
       "t2": "Indianapolis Colts",
       "w1": 1,
@@ -187,16 +133,13 @@
     }
   ],
   "eliminated": [
-    "New England Patriots",
-    "Green Bay Packers",
     "Arizona Cardinals",
-    "Dallas Cowboys",
     "Baltimore Ravens",
+    "Dallas Cowboys",
     "San Diego Chargers",
     "New York Jets",
     "Minnesota Vikings",
-    "Nfc",
     "Indianapolis Colts"
   ],
-  "updated": "2026-05-27 21:16 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

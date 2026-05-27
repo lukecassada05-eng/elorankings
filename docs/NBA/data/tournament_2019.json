@@ -682,26 +682,6 @@
       "date": "2019-04-13"
     },
     {
-      "t1": "Boston Celtics",
-      "t2": "Indiana Pacers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 1",
-      "date": "2019-04-14"
-    },
-    {
-      "t1": "Milwaukee Bucks",
-      "t2": "Detroit Pistons",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 1",
-      "date": "2019-04-14"
-    },
-    {
       "t1": "Golden State Warriors",
       "t2": "LA Clippers",
       "w1": 1,
@@ -722,6 +702,16 @@
       "date": "2019-04-14"
     },
     {
+      "t1": "Boston Celtics",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 1",
+      "date": "2019-04-14"
+    },
+    {
       "t1": "Portland Trail Blazers",
       "t2": "Oklahoma City Thunder",
       "w1": 1,
@@ -729,6 +719,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 1",
+      "date": "2019-04-14"
+    },
+    {
+      "t1": "Milwaukee Bucks",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 1",
       "date": "2019-04-14"
     },
     {
@@ -772,16 +772,6 @@
       "date": "2019-04-17"
     },
     {
-      "t1": "Boston Celtics",
-      "t2": "Indiana Pacers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 2",
-      "date": "2019-04-17"
-    },
-    {
       "t1": "Denver Nuggets",
       "t2": "San Antonio Spurs",
       "w1": 1,
@@ -799,6 +789,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 2",
+      "date": "2019-04-17"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 2",
       "date": "2019-04-17"
     },
     {
@@ -832,16 +832,6 @@
       "date": "2019-04-19"
     },
     {
-      "t1": "Toronto Raptors",
-      "t2": "Orlando Magic",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 3",
-      "date": "2019-04-19"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "Denver Nuggets",
       "w1": 1,
@@ -859,6 +849,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 3",
+      "date": "2019-04-19"
+    },
+    {
+      "t1": "Toronto Raptors",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 3",
       "date": "2019-04-19"
     },
     {
@@ -932,16 +932,6 @@
       "date": "2019-04-21"
     },
     {
-      "t1": "Toronto Raptors",
-      "t2": "Orlando Magic",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 4",
-      "date": "2019-04-21"
-    },
-    {
       "t1": "Golden State Warriors",
       "t2": "LA Clippers",
       "w1": 1,
@@ -949,6 +939,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 4",
+      "date": "2019-04-21"
+    },
+    {
+      "t1": "Toronto Raptors",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 4",
       "date": "2019-04-21"
     },
     {
@@ -1072,16 +1072,6 @@
       "date": "2019-04-27"
     },
     {
-      "t1": "Boston Celtics",
-      "t2": "Milwaukee Bucks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST SEMIFINALS - GAME 1",
-      "date": "2019-04-28"
-    },
-    {
       "t1": "Denver Nuggets",
       "t2": "San Antonio Spurs",
       "w1": 1,
@@ -1089,6 +1079,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 7",
+      "date": "2019-04-28"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Milwaukee Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST SEMIFINALS - GAME 1",
       "date": "2019-04-28"
     },
     {
@@ -1102,16 +1102,6 @@
       "date": "2019-04-28"
     },
     {
-      "t1": "Denver Nuggets",
-      "t2": "Portland Trail Blazers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST SEMIFINALS - GAME 1",
-      "date": "2019-04-30"
-    },
-    {
       "t1": "Philadelphia 76ers",
       "t2": "Toronto Raptors",
       "w1": 1,
@@ -1119,6 +1109,16 @@
       "done": false,
       "loser": "",
       "round": "EAST SEMIFINALS - GAME 2",
+      "date": "2019-04-30"
+    },
+    {
+      "t1": "Denver Nuggets",
+      "t2": "Portland Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST SEMIFINALS - GAME 1",
       "date": "2019-04-30"
     },
     {
@@ -1483,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:14 UTC"
+  "updated": "2026-05-27 22:24 UTC"
 }

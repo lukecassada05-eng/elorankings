@@ -732,16 +732,6 @@
       "date": "2017-04-12"
     },
     {
-      "t1": "Washington Capitals",
-      "t2": "Toronto Maple Leafs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 1",
-      "date": "2017-04-13"
-    },
-    {
       "t1": "St. Louis Blues",
       "t2": "Minnesota Wild",
       "w1": 1,
@@ -759,6 +749,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 1",
+      "date": "2017-04-13"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 1",
       "date": "2017-04-13"
     },
     {
@@ -802,26 +802,6 @@
       "date": "2017-04-14"
     },
     {
-      "t1": "Ottawa Senators",
-      "t2": "Boston Bruins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
-      "date": "2017-04-15"
-    },
-    {
-      "t1": "Toronto Maple Leafs",
-      "t2": "Washington Capitals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
-      "date": "2017-04-15"
-    },
-    {
       "t1": "St. Louis Blues",
       "t2": "Minnesota Wild",
       "w1": 1,
@@ -839,6 +819,26 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2017-04-15"
+    },
+    {
+      "t1": "Ottawa Senators",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2017-04-15"
+    },
+    {
+      "t1": "Toronto Maple Leafs",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
       "date": "2017-04-15"
     },
     {
@@ -962,6 +962,16 @@
       "date": "2017-04-18"
     },
     {
+      "t1": "San Jose Sharks",
+      "t2": "Edmonton Oilers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2017-04-19"
+    },
+    {
       "t1": "Washington Capitals",
       "t2": "Toronto Maple Leafs",
       "w1": 1,
@@ -979,16 +989,6 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
-      "date": "2017-04-19"
-    },
-    {
-      "t1": "San Jose Sharks",
-      "t2": "Edmonton Oilers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 4",
       "date": "2017-04-19"
     },
     {
@@ -1042,6 +1042,16 @@
       "date": "2017-04-21"
     },
     {
+      "t1": "Edmonton Oilers",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2017-04-21"
+    },
+    {
       "t1": "Washington Capitals",
       "t2": "Toronto Maple Leafs",
       "w1": 1,
@@ -1059,16 +1069,6 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
-      "date": "2017-04-21"
-    },
-    {
-      "t1": "Edmonton Oilers",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5",
       "date": "2017-04-21"
     },
     {
@@ -1092,6 +1092,16 @@
       "date": "2017-04-23"
     },
     {
+      "t1": "Edmonton Oilers",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 6",
+      "date": "2017-04-23"
+    },
+    {
       "t1": "Ottawa Senators",
       "t2": "Boston Bruins",
       "w1": 1,
@@ -1109,16 +1119,6 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6",
-      "date": "2017-04-23"
-    },
-    {
-      "t1": "Edmonton Oilers",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 6",
       "date": "2017-04-23"
     },
     {
@@ -1573,5 +1573,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:14 UTC"
+  "updated": "2026-05-27 22:24 UTC"
 }

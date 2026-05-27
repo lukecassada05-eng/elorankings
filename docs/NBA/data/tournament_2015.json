@@ -1358,6 +1358,16 @@
       "date": "2015-04-18"
     },
     {
+      "t1": "Houston Rockets",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1",
+      "date": "2015-04-19"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "Boston Celtics",
       "w1": 1,
@@ -1375,16 +1385,6 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1",
-      "date": "2015-04-19"
-    },
-    {
-      "t1": "Houston Rockets",
-      "t2": "Dallas Mavericks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1",
       "date": "2015-04-19"
     },
     {
@@ -1448,16 +1448,6 @@
       "date": "2015-04-22"
     },
     {
-      "t1": "Atlanta Hawks",
-      "t2": "Brooklyn Nets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2",
-      "date": "2015-04-22"
-    },
-    {
       "t1": "Houston Rockets",
       "t2": "Dallas Mavericks",
       "w1": 1,
@@ -1465,6 +1455,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 2",
+      "date": "2015-04-22"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Brooklyn Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2",
       "date": "2015-04-22"
     },
     {
@@ -1538,16 +1538,6 @@
       "date": "2015-04-25"
     },
     {
-      "t1": "Brooklyn Nets",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3",
-      "date": "2015-04-25"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "LA Clippers",
       "w1": 1,
@@ -1555,6 +1545,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3",
+      "date": "2015-04-25"
+    },
+    {
+      "t1": "Brooklyn Nets",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3",
       "date": "2015-04-25"
     },
     {
@@ -1568,16 +1568,6 @@
       "date": "2015-04-25"
     },
     {
-      "t1": "Memphis Grizzlies",
-      "t2": "Portland Trail Blazers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3",
-      "date": "2015-04-26"
-    },
-    {
       "t1": "Golden State Warriors",
       "t2": "New Orleans Pelicans",
       "w1": 1,
@@ -1588,18 +1578,18 @@
       "date": "2015-04-26"
     },
     {
-      "t1": "Cleveland Cavaliers",
-      "t2": "Boston Celtics",
+      "t1": "Memphis Grizzlies",
+      "t2": "Portland Trail Blazers",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 4",
+      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3",
       "date": "2015-04-26"
     },
     {
-      "t1": "Washington Wizards",
-      "t2": "Toronto Raptors",
+      "t1": "Cleveland Cavaliers",
+      "t2": "Boston Celtics",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1618,14 +1608,14 @@
       "date": "2015-04-26"
     },
     {
-      "t1": "Brooklyn Nets",
-      "t2": "Atlanta Hawks",
+      "t1": "Washington Wizards",
+      "t2": "Toronto Raptors",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE 1ST ROUND - GAME 4",
-      "date": "2015-04-27"
+      "date": "2015-04-26"
     },
     {
       "t1": "Dallas Mavericks",
@@ -1638,14 +1628,14 @@
       "date": "2015-04-27"
     },
     {
-      "t1": "Portland Trail Blazers",
-      "t2": "Memphis Grizzlies",
+      "t1": "Brooklyn Nets",
+      "t2": "Atlanta Hawks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 4",
-      "date": "2015-04-28"
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 4",
+      "date": "2015-04-27"
     },
     {
       "t1": "Milwaukee Bucks",
@@ -1655,6 +1645,16 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE 1st ROUND - GAME 5",
+      "date": "2015-04-28"
+    },
+    {
+      "t1": "Portland Trail Blazers",
+      "t2": "Memphis Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 4",
       "date": "2015-04-28"
     },
     {
@@ -1788,16 +1788,6 @@
       "date": "2015-05-06"
     },
     {
-      "t1": "Cleveland Cavaliers",
-      "t2": "Chicago Bulls",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2015-05-06"
-    },
-    {
       "t1": "Memphis Grizzlies",
       "t2": "Golden State Warriors",
       "w1": 1,
@@ -1805,6 +1795,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
+      "date": "2015-05-06"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Chicago Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
       "date": "2015-05-06"
     },
     {
@@ -1828,16 +1828,6 @@
       "date": "2015-05-09"
     },
     {
-      "t1": "Washington Wizards",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
-      "date": "2015-05-09"
-    },
-    {
       "t1": "LA Clippers",
       "t2": "Houston Rockets",
       "w1": 1,
@@ -1845,6 +1835,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3",
+      "date": "2015-05-09"
+    },
+    {
+      "t1": "Washington Wizards",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
       "date": "2015-05-09"
     },
     {
@@ -1868,16 +1868,6 @@
       "date": "2015-05-10"
     },
     {
-      "t1": "Atlanta Hawks",
-      "t2": "Washington Wizards",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
-      "date": "2015-05-11"
-    },
-    {
       "t1": "LA Clippers",
       "t2": "Houston Rockets",
       "w1": 1,
@@ -1885,6 +1875,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4",
+      "date": "2015-05-11"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
       "date": "2015-05-11"
     },
     {
@@ -1948,16 +1948,6 @@
       "date": "2015-05-15"
     },
     {
-      "t1": "Atlanta Hawks",
-      "t2": "Washington Wizards",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 6",
-      "date": "2015-05-15"
-    },
-    {
       "t1": "Houston Rockets",
       "t2": "LA Clippers",
       "w1": 1,
@@ -1965,6 +1955,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6",
+      "date": "2015-05-15"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 6",
       "date": "2015-05-15"
     },
     {
@@ -2139,5 +2139,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:14 UTC"
+  "updated": "2026-05-27 22:24 UTC"
 }

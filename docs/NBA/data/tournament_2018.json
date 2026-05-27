@@ -682,16 +682,6 @@
       "date": "2018-04-14"
     },
     {
-      "t1": "Oklahoma City Thunder",
-      "t2": "Utah Jazz",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 1ST ROUND - GAME 1",
-      "date": "2018-04-15"
-    },
-    {
       "t1": "Philadelphia 76ers",
       "t2": "Miami Heat",
       "w1": 1,
@@ -699,6 +689,16 @@
       "done": false,
       "loser": "",
       "round": "EAST 1ST ROUND - GAME 1",
+      "date": "2018-04-15"
+    },
+    {
+      "t1": "New Orleans Pelicans",
+      "t2": "Portland Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1st ROUND - GAME 1",
       "date": "2018-04-15"
     },
     {
@@ -722,13 +722,13 @@
       "date": "2018-04-15"
     },
     {
-      "t1": "New Orleans Pelicans",
-      "t2": "Portland Trail Blazers",
+      "t1": "Oklahoma City Thunder",
+      "t2": "Utah Jazz",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WEST 1st ROUND - GAME 1",
+      "round": "WEST 1ST ROUND - GAME 1",
       "date": "2018-04-15"
     },
     {
@@ -752,16 +752,6 @@
       "date": "2018-04-17"
     },
     {
-      "t1": "Toronto Raptors",
-      "t2": "Washington Wizards",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 2",
-      "date": "2018-04-17"
-    },
-    {
       "t1": "Golden State Warriors",
       "t2": "San Antonio Spurs",
       "w1": 1,
@@ -772,18 +762,18 @@
       "date": "2018-04-17"
     },
     {
-      "t1": "Boston Celtics",
-      "t2": "Milwaukee Bucks",
+      "t1": "Toronto Raptors",
+      "t2": "Washington Wizards",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "EAST 1ST ROUND - GAME 2",
-      "date": "2018-04-18"
+      "date": "2018-04-17"
     },
     {
-      "t1": "Cleveland Cavaliers",
-      "t2": "Indiana Pacers",
+      "t1": "Boston Celtics",
+      "t2": "Milwaukee Bucks",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -799,6 +789,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1st ROUND - GAME 2",
+      "date": "2018-04-18"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 2",
       "date": "2018-04-18"
     },
     {
@@ -832,16 +832,6 @@
       "date": "2018-04-19"
     },
     {
-      "t1": "Indiana Pacers",
-      "t2": "Cleveland Cavaliers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 3",
-      "date": "2018-04-20"
-    },
-    {
       "t1": "New Orleans Pelicans",
       "t2": "Portland Trail Blazers",
       "w1": 1,
@@ -862,6 +852,16 @@
       "date": "2018-04-20"
     },
     {
+      "t1": "Indiana Pacers",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 3",
+      "date": "2018-04-20"
+    },
+    {
       "t1": "Washington Wizards",
       "t2": "Toronto Raptors",
       "w1": 1,
@@ -879,16 +879,6 @@
       "done": false,
       "loser": "",
       "round": "EAST 1ST ROUND - GAME 3",
-      "date": "2018-04-21"
-    },
-    {
-      "t1": "Minnesota Timberwolves",
-      "t2": "Houston Rockets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 1ST ROUND - GAME 3",
       "date": "2018-04-21"
     },
     {
@@ -912,6 +902,16 @@
       "date": "2018-04-21"
     },
     {
+      "t1": "Minnesota Timberwolves",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 3",
+      "date": "2018-04-21"
+    },
+    {
       "t1": "Utah Jazz",
       "t2": "Oklahoma City Thunder",
       "w1": 1,
@@ -932,16 +932,6 @@
       "date": "2018-04-22"
     },
     {
-      "t1": "Washington Wizards",
-      "t2": "Toronto Raptors",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 4",
-      "date": "2018-04-22"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "Golden State Warriors",
       "w1": 1,
@@ -949,6 +939,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 4",
+      "date": "2018-04-22"
+    },
+    {
+      "t1": "Washington Wizards",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 4",
       "date": "2018-04-22"
     },
     {
@@ -1002,6 +1002,16 @@
       "date": "2018-04-25"
     },
     {
+      "t1": "Golden State Warriors",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 5",
+      "date": "2018-04-25"
+    },
+    {
       "t1": "Toronto Raptors",
       "t2": "Washington Wizards",
       "w1": 1,
@@ -1019,16 +1029,6 @@
       "done": false,
       "loser": "",
       "round": "EAST 1ST ROUND - GAME 5",
-      "date": "2018-04-25"
-    },
-    {
-      "t1": "Golden State Warriors",
-      "t2": "San Antonio Spurs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 1ST ROUND - GAME 5",
       "date": "2018-04-25"
     },
     {
@@ -1102,16 +1102,6 @@
       "date": "2018-04-29"
     },
     {
-      "t1": "Cleveland Cavaliers",
-      "t2": "Indiana Pacers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 7",
-      "date": "2018-04-29"
-    },
-    {
       "t1": "Golden State Warriors",
       "t2": "New Orleans Pelicans",
       "w1": 1,
@@ -1119,6 +1109,16 @@
       "done": false,
       "loser": "",
       "round": "WEST SEMIFINALS - GAME 1",
+      "date": "2018-04-29"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 7",
       "date": "2018-04-29"
     },
     {
@@ -1483,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:14 UTC"
+  "updated": "2026-05-27 22:24 UTC"
 }

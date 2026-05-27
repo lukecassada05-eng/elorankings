@@ -1026,16 +1026,6 @@
       "date": "2001-10-02"
     },
     {
-      "t1": "Philadelphia         Phillies",
-      "t2": "Atlanta              Braves",
-      "w1": 1,
-      "w2": 2,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2001-10-02"
-    },
-    {
       "t1": "Seattle              Mariners",
       "t2": "Anaheim              Angels",
       "w1": 1,
@@ -1043,6 +1033,16 @@
       "done": false,
       "loser": "",
       "round": "2526",
+      "date": "2001-10-02"
+    },
+    {
+      "t1": "Philadelphia         Phillies",
+      "t2": "Atlanta              Braves",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "",
       "date": "2001-10-02"
     },
     {
@@ -1206,6 +1206,16 @@
       "date": "2001-10-05"
     },
     {
+      "t1": "Toronto              Blue Jays",
+      "t2": "Cleveland            Indians",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "2566",
+      "date": "2001-10-06"
+    },
+    {
       "t1": "Arizona              Diamondbacks",
       "t2": "Milwaukee            Brewers",
       "w1": 1,
@@ -1273,16 +1283,6 @@
       "done": false,
       "loser": "",
       "round": "",
-      "date": "2001-10-06"
-    },
-    {
-      "t1": "Toronto              Blue Jays",
-      "t2": "Cleveland            Indians",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "2566",
       "date": "2001-10-06"
     },
     {
@@ -1369,5 +1369,5 @@
     "Atlanta              Braves",
     "Seattle              Mariners"
   ],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }

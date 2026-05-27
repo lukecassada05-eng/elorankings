@@ -52,14 +52,6 @@
       "round": "AFC CHAMPIONSHIP"
     },
     {
-      "winner": "AFC All-Stars",
-      "loser": "NFC All-Stars",
-      "winner_score": 26,
-      "loser_score": 7,
-      "date": "2019-01-27",
-      "round": "PRO BOWL PRES. BY VERIZON"
-    },
-    {
       "winner": "New England Patriots",
       "loser": "Los Angeles Rams",
       "winner_score": 13,
@@ -80,16 +72,6 @@
       "date": "2019-01-12"
     },
     {
-      "t1": "New England Patriots",
-      "t2": "Los Angeles Chargers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Los Angeles Chargers",
-      "round": "AFC DIVISIONAL PLAYOFFS",
-      "date": "2019-01-13"
-    },
-    {
       "t1": "Los Angeles Rams",
       "t2": "Dallas Cowboys",
       "w1": 1,
@@ -97,6 +79,16 @@
       "done": true,
       "loser": "Dallas Cowboys",
       "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2019-01-13"
+    },
+    {
+      "t1": "New England Patriots",
+      "t2": "Los Angeles Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Los Angeles Chargers",
+      "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2019-01-13"
     },
     {
@@ -130,16 +122,6 @@
       "date": "2019-01-20"
     },
     {
-      "t1": "AFC All-Stars",
-      "t2": "NFC All-Stars",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "NFC All-Stars",
-      "round": "PRO BOWL PRES. BY VERIZON",
-      "date": "2019-01-27"
-    },
-    {
       "t1": "New England Patriots",
       "t2": "Los Angeles Rams",
       "w1": 1,
@@ -152,13 +134,12 @@
   ],
   "eliminated": [
     "Indianapolis Colts",
-    "Los Angeles Chargers",
     "Dallas Cowboys",
+    "Los Angeles Chargers",
     "Philadelphia Eagles",
     "New Orleans Saints",
     "Kansas City Chiefs",
-    "NFC All-Stars",
     "Los Angeles Rams"
   ],
-  "updated": "2026-05-27 21:16 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

@@ -58,14 +58,6 @@
       "loser_score": 10,
       "date": "2006-02-05",
       "round": "Super Bowl XL"
-    },
-    {
-      "winner": "Nfc",
-      "loser": "Afc",
-      "winner_score": 23,
-      "loser_score": 17,
-      "date": "2006-02-12",
-      "round": "PRO BOWL"
     }
   ],
   "series": [
@@ -138,16 +130,6 @@
       "loser": "Seattle Seahawks",
       "round": "Super Bowl XL",
       "date": "2006-02-05"
-    },
-    {
-      "t1": "Nfc",
-      "t2": "Afc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Afc",
-      "round": "PRO BOWL",
-      "date": "2006-02-12"
     }
   ],
   "eliminated": [
@@ -157,8 +139,7 @@
     "Chicago Bears",
     "Denver Broncos",
     "Carolina Panthers",
-    "Seattle Seahawks",
-    "Afc"
+    "Seattle Seahawks"
   ],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

@@ -58,14 +58,6 @@
       "loser_score": 14,
       "date": "2008-02-03",
       "round": "Super Bowl XLII"
-    },
-    {
-      "winner": "Nfc",
-      "loser": "Afc",
-      "winner_score": 42,
-      "loser_score": 30,
-      "date": "2008-02-10",
-      "round": "Pro Bowl"
     }
   ],
   "series": [
@@ -78,16 +70,6 @@
       "loser": "Seattle Seahawks",
       "round": "NFC Divisional Playoffs",
       "date": "2008-01-12"
-    },
-    {
-      "t1": "New York Giants",
-      "t2": "Dallas Cowboys",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Dallas Cowboys",
-      "round": "NFC Divisional Playoffs",
-      "date": "2008-01-13"
     },
     {
       "t1": "New England Patriots",
@@ -107,6 +89,16 @@
       "done": true,
       "loser": "Indianapolis Colts",
       "round": "AFC Divisional Playoffs",
+      "date": "2008-01-13"
+    },
+    {
+      "t1": "New York Giants",
+      "t2": "Dallas Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dallas Cowboys",
+      "round": "NFC Divisional Playoffs",
       "date": "2008-01-13"
     },
     {
@@ -138,27 +130,16 @@
       "loser": "New England Patriots",
       "round": "Super Bowl XLII",
       "date": "2008-02-03"
-    },
-    {
-      "t1": "Nfc",
-      "t2": "Afc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Afc",
-      "round": "Pro Bowl",
-      "date": "2008-02-10"
     }
   ],
   "eliminated": [
     "Seattle Seahawks",
-    "Dallas Cowboys",
     "Jacksonville Jaguars",
     "Indianapolis Colts",
+    "Dallas Cowboys",
     "San Diego Chargers",
     "Green Bay Packers",
-    "New England Patriots",
-    "Afc"
+    "New England Patriots"
   ],
-  "updated": "2026-05-27 21:16 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

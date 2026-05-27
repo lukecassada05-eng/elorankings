@@ -728,16 +728,6 @@
       "date": "2016-10-09"
     },
     {
-      "t1": "Cleveland Indians",
-      "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 3",
-      "date": "2016-10-10"
-    },
-    {
       "t1": "Washington Nationals",
       "t2": "Los Angeles Dodgers",
       "w1": 1,
@@ -745,6 +735,16 @@
       "done": false,
       "loser": "",
       "round": "NLDS - GAME 3",
+      "date": "2016-10-10"
+    },
+    {
+      "t1": "Cleveland Indians",
+      "t2": "Boston Red Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 3",
       "date": "2016-10-10"
     },
     {
@@ -959,5 +959,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }

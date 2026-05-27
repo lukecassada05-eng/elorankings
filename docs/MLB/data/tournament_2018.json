@@ -348,16 +348,6 @@
       "date": "2018-10-05"
     },
     {
-      "t1": "Boston Red Sox",
-      "t2": "New York Yankees",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 1",
-      "date": "2018-10-05"
-    },
-    {
       "t1": "Milwaukee Brewers",
       "t2": "Colorado Rockies",
       "w1": 1,
@@ -365,6 +355,16 @@
       "done": false,
       "loser": "",
       "round": "NLDS - GAME 2",
+      "date": "2018-10-05"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 1",
       "date": "2018-10-05"
     },
     {
@@ -428,16 +428,6 @@
       "date": "2018-10-08"
     },
     {
-      "t1": "Boston Red Sox",
-      "t2": "New York Yankees",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 3",
-      "date": "2018-10-08"
-    },
-    {
       "t1": "Los Angeles Dodgers",
       "t2": "Atlanta Braves",
       "w1": 1,
@@ -445,6 +435,16 @@
       "done": false,
       "loser": "",
       "round": "NLDS - GAME 4",
+      "date": "2018-10-08"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 3",
       "date": "2018-10-08"
     },
     {
@@ -619,5 +619,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }

@@ -3002,16 +3002,6 @@
       "date": "2013-05-05"
     },
     {
-      "t1": "Minnesota Wild",
-      "t2": "Chicago Blackhawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-05"
-    },
-    {
       "t1": "Pittsburgh Penguins",
       "t2": "New York Islanders",
       "w1": 1,
@@ -3019,6 +3009,16 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3",
+      "date": "2013-05-05"
+    },
+    {
+      "t1": "Minnesota Wild",
+      "t2": "Chicago Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3",
       "date": "2013-05-05"
     },
     {
@@ -3312,16 +3312,6 @@
       "date": "2013-05-15"
     },
     {
-      "t1": "Boston Bruins",
-      "t2": "New York Rangers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
-      "date": "2013-05-16"
-    },
-    {
       "t1": "Chicago Blackhawks",
       "t2": "Detroit Red Wings",
       "w1": 1,
@@ -3329,6 +3319,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
+      "date": "2013-05-16"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "New York Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
       "date": "2013-05-16"
     },
     {
@@ -3362,16 +3362,6 @@
       "date": "2013-05-18"
     },
     {
-      "t1": "Boston Bruins",
-      "t2": "New York Rangers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2013-05-19"
-    },
-    {
       "t1": "San Jose Sharks",
       "t2": "Los Angeles Kings",
       "w1": 1,
@@ -3379,6 +3369,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3",
+      "date": "2013-05-19"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "New York Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
       "date": "2013-05-19"
     },
     {
@@ -3683,5 +3683,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 21:14 UTC"
+  "updated": "2026-05-27 22:24 UTC"
 }

@@ -58,14 +58,6 @@
       "loser_score": 21,
       "date": "2005-02-06",
       "round": "Super Bowl XXXIX"
-    },
-    {
-      "winner": "Afc",
-      "loser": "Nfc",
-      "winner_score": 38,
-      "loser_score": 27,
-      "date": "2005-02-14",
-      "round": "PRO BOWL AT HONOLULU HI"
     }
   ],
   "series": [
@@ -78,16 +70,6 @@
       "loser": "New York Jets",
       "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2005-01-15"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Indianapolis Colts",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Indianapolis Colts",
-      "round": "AFC DIVISIONAL PLAYOFFS",
-      "date": "2005-01-16"
     },
     {
       "t1": "Atlanta Falcons",
@@ -107,6 +89,16 @@
       "done": true,
       "loser": "Minnesota Vikings",
       "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2005-01-16"
+    },
+    {
+      "t1": "New England Patriots",
+      "t2": "Indianapolis Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Indianapolis Colts",
+      "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2005-01-16"
     },
     {
@@ -138,27 +130,16 @@
       "loser": "Philadelphia Eagles",
       "round": "Super Bowl XXXIX",
       "date": "2005-02-06"
-    },
-    {
-      "t1": "Afc",
-      "t2": "Nfc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Nfc",
-      "round": "PRO BOWL AT HONOLULU HI",
-      "date": "2005-02-14"
     }
   ],
   "eliminated": [
     "New York Jets",
-    "Indianapolis Colts",
     "St. Louis Rams",
     "Minnesota Vikings",
+    "Indianapolis Colts",
     "Atlanta Falcons",
     "Pittsburgh Steelers",
-    "Philadelphia Eagles",
-    "Nfc"
+    "Philadelphia Eagles"
   ],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:26 UTC"
 }

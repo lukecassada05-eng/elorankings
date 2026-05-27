@@ -818,28 +818,8 @@
       "date": "2012-10-06"
     },
     {
-      "t1": "New York Yankees",
-      "t2": "Baltimore Orioles",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 1",
-      "date": "2012-10-07"
-    },
-    {
       "t1": "Cincinnati Reds",
       "t2": "San Francisco Giants",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 1",
-      "date": "2012-10-07"
-    },
-    {
-      "t1": "Washington Nationals",
-      "t2": "St. Louis Cardinals",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -858,6 +838,26 @@
       "date": "2012-10-07"
     },
     {
+      "t1": "Washington Nationals",
+      "t2": "St. Louis Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 1",
+      "date": "2012-10-07"
+    },
+    {
+      "t1": "New York Yankees",
+      "t2": "Baltimore Orioles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 1",
+      "date": "2012-10-07"
+    },
+    {
       "t1": "Cincinnati Reds",
       "t2": "San Francisco Giants",
       "w1": 1,
@@ -898,16 +898,6 @@
       "date": "2012-10-09"
     },
     {
-      "t1": "St. Louis Cardinals",
-      "t2": "Washington Nationals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 3",
-      "date": "2012-10-10"
-    },
-    {
       "t1": "Oakland Athletics",
       "t2": "Detroit Tigers",
       "w1": 1,
@@ -918,13 +908,13 @@
       "date": "2012-10-10"
     },
     {
-      "t1": "New York Yankees",
-      "t2": "Baltimore Orioles",
+      "t1": "St. Louis Cardinals",
+      "t2": "Washington Nationals",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "ALDS - GAME 3",
+      "round": "NLDS - GAME 3",
       "date": "2012-10-10"
     },
     {
@@ -938,28 +928,18 @@
       "date": "2012-10-10"
     },
     {
-      "t1": "Washington Nationals",
-      "t2": "St. Louis Cardinals",
+      "t1": "New York Yankees",
+      "t2": "Baltimore Orioles",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NLDS - GAME 4",
-      "date": "2012-10-11"
+      "round": "ALDS - GAME 3",
+      "date": "2012-10-10"
     },
     {
       "t1": "Oakland Athletics",
       "t2": "Detroit Tigers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 4",
-      "date": "2012-10-11"
-    },
-    {
-      "t1": "Baltimore Orioles",
-      "t2": "New York Yankees",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -975,6 +955,26 @@
       "done": false,
       "loser": "",
       "round": "NLDS - GAME 5",
+      "date": "2012-10-11"
+    },
+    {
+      "t1": "Washington Nationals",
+      "t2": "St. Louis Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 4",
+      "date": "2012-10-11"
+    },
+    {
+      "t1": "Baltimore Orioles",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 4",
       "date": "2012-10-11"
     },
     {
@@ -1152,5 +1152,5 @@
     "Boston Red Sox",
     "Minnesota Twins"
   ],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }

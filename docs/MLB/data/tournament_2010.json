@@ -608,16 +608,6 @@
       "date": "2010-10-01"
     },
     {
-      "t1": "New York Yankees",
-      "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "AMERICAN LEAGUE - GAME 1",
-      "date": "2010-10-02"
-    },
-    {
       "t1": "Los Angeles Angels",
       "t2": "Texas Rangers",
       "w1": 2,
@@ -635,6 +625,16 @@
       "done": false,
       "loser": "",
       "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Baltimore Orioles",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AMERICAN LEAGUE - GAME 2",
       "date": "2010-10-02"
     },
     {
@@ -708,24 +708,14 @@
       "date": "2010-10-02"
     },
     {
-      "t1": "Baltimore Orioles",
-      "t2": "Detroit Tigers",
+      "t1": "New York Yankees",
+      "t2": "Boston Red Sox",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "AMERICAN LEAGUE - GAME 2",
+      "round": "AMERICAN LEAGUE - GAME 1",
       "date": "2010-10-02"
-    },
-    {
-      "t1": "Detroit Tigers",
-      "t2": "Baltimore Orioles",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2010-10-03"
     },
     {
       "t1": "Boston Red Sox",
@@ -735,6 +725,16 @@
       "done": false,
       "loser": "",
       "round": "AMERICAN LEAGUE - GAME 2",
+      "date": "2010-10-03"
+    },
+    {
+      "t1": "Detroit Tigers",
+      "t2": "Baltimore Orioles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
       "date": "2010-10-03"
     },
     {
@@ -816,5 +816,5 @@
     "Philadelphia Phillies",
     "Texas Rangers"
   ],
-  "updated": "2026-05-27 21:15 UTC"
+  "updated": "2026-05-27 22:25 UTC"
 }
