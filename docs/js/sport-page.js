@@ -1460,12 +1460,19 @@ window.initSportPage = function(CFG) {
 
     // ── Round labels per sport ─────────────────────────────────
     var ROUND_LABELS = {
-      NBA:   ['First Round','Conference Semifinals','Conference Finals','NBA Finals'],
+      NBA:   ['Play-In','First Round','Conference Semifinals','Conference Finals','NBA Finals'],
       NHL:   ['First Round','Second Round','Conference Finals','Stanley Cup Final'],
       MLB:   ['Wild Card','Division Series','Championship Series','World Series'],
       NFL:   ['Wild Card','Divisional Round','Conference Championship','Super Bowl'],
       CBB:   ['First Four','Round of 64','Round of 32','Sweet 16','Elite Eight','Final Four','Championship'],
       CBASE: ['Regionals','Super Regionals','College World Series'],
+    };
+    // Round order map for sorting (lower = earlier round)
+    var ROUND_ORDER = {
+      NBA:   {'Play-In':0,'First Round':1,'Conference Semifinals':2,'Conference Finals':3,'NBA Finals':4},
+      NHL:   {'First Round':0,'Second Round':1,'Conference Finals':2,'Stanley Cup Final':3},
+      MLB:   {'Wild Card':0,'Division Series':1,'Championship Series':2,'World Series':3},
+      NFL:   {'Wild Card':0,'Divisional Round':1,'Conference Championship':2,'Super Bowl':3},
     };
     var roundLabels = ROUND_LABELS[CFG.sport] || [];
 
@@ -1473,37 +1480,47 @@ window.initSportPage = function(CFG) {
     // Group by round name if available, else by order
     function assignRounds(series) {
       if (!series.length) return [];
-      // Try to group by round field
+      // Group series by round name
       var byRound = {};
       series.forEach(function(s) {
-        var rnd = (s.round||'').trim();
+        var rnd = (s.round||'').trim() || 'Unknown';
         if (!byRound[rnd]) byRound[rnd] = [];
         byRound[rnd].push(s);
       });
       var roundKeys = Object.keys(byRound);
-      // If all have round names, use them
-      if (roundKeys.length > 1 || (roundKeys.length===1 && roundKeys[0]!=='')) {
-        return roundKeys.map(function(k,i) {
-          return { label: roundLabels[i] || k || ('Round '+(i+1)), series: byRound[k] };
+      var hasRoundNames = roundKeys.some(function(k){ return k && k !== 'Unknown'; });
+
+      if (hasRoundNames) {
+        // Sort by known round order, unknown rounds go last
+        var orderMap = (ROUND_ORDER[CFG.sport] || {});
+        roundKeys.sort(function(a,b){
+          var oa = orderMap[a] !== undefined ? orderMap[a] : 99;
+          var ob = orderMap[b] !== undefined ? orderMap[b] : 99;
+          return oa - ob;
+        });
+        return roundKeys.map(function(k) {
+          // Use canonical label if we know it, else use the round name as-is
+          var label = (orderMap[k] !== undefined && roundLabels[orderMap[k]])
+            ? roundLabels[orderMap[k]] : k;
+          return { label: label, series: byRound[k] };
         });
       }
-      // Fallback: infer rounds by series count
-      // NBA/NHL: 8→4→2→1, NFL: 6→4→2→1, MLB: 6(WC3+DS2)→4→2→1
-      var total = series.length;
-      var rounds = [];
+
+      // Fallback: infer rounds by series count using sport-specific sizes
       var rem = series.slice();
-      var ri = 0;
       var roundSizes = CFG.sport==='NFL'  ? [6,4,2,1]
                      : CFG.sport==='MLB'  ? [6,4,2,1]
                      : CFG.sport==='CBB'  ? [34,32,16,8,4,2,1]
                      : CFG.sport==='CBASE'? [16,8,1]
-                     : [8,4,2,1]; // NBA/NHL default
+                     : CFG.sport==='NBA'  ? [6,8,4,2,1]  // 6 play-in + 8 R1 + ...
+                     : [8,4,2,1];
+      var rounds = [];
       roundSizes.forEach(function(sz, i) {
         if (!rem.length) return;
         var chunk = rem.splice(0, Math.min(sz, rem.length));
         if (chunk.length) rounds.push({ label: roundLabels[i]||('Round '+(i+1)), series: chunk });
       });
-      if (rem.length) rounds.push({ label: 'Additional', series: rem });
+      if (rem.length) rounds.push({ label: 'Other', series: rem });
       return rounds;
     }
 
@@ -1573,14 +1590,17 @@ window.initSportPage = function(CFG) {
 
     // ── Render bracket ─────────────────────────────────────────
     var icon = {NBA:'🏀',NHL:'🏒',MLB:'⚾',NFL:'🏈',CBB:'🏀',CBASE:'⚾'}[CFG.sport]||'🏆';
+    var sportTitle = {
+      NBA:'NBA Playoffs', NHL:'Stanley Cup Playoffs', MLB:'MLB Playoffs',
+      NFL:'NFL Playoffs', CBB:'NCAA Tournament', CBASE:'NCAA Baseball Tournament'
+    }[CFG.sport] || (CFG.sport+' Playoffs');
     var liveTag = isCompleted
       ? '<span style="color:var(--green-hi);font-size:0.68rem;margin-left:0.5rem">✓ Final</span>'
       : hasGames
         ? '<span style="color:var(--green-hi);font-size:0.68rem;margin-left:0.5rem">● Live</span>'
         : '<span style="color:var(--text-dim);font-size:0.68rem;margin-left:0.5rem">Projected</span>';
 
-    var html = '<div class="section-header"><span>'+icon+' '+d.year+' '+CFG.sport
-      +' Playoffs'+liveTag+'</span>'
+    var html = '<div class="section-header"><span>'+icon+' '+d.year+' '+sportTitle+liveTag+'</span>'
       +'<button id="gen-resim" style="margin-left:auto;padding:0.2rem 0.6rem;border:1px solid var(--border);background:var(--bg3);border-radius:var(--radius);cursor:pointer;font-size:0.7rem;color:var(--text)">🎲 Re-simulate</button>'
       +'</div>';
 
