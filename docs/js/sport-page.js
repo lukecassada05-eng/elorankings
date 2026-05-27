@@ -1474,6 +1474,31 @@ window.initSportPage = function(CFG) {
     var hasGames    = (d.games||[]).length > 0;
     var seriesList  = d.series || [];
 
+    // ── No data: early return with clean projected view ────────────
+    if (d._notLoaded) {
+      var _icon={NBA:'🏀',NHL:'🏒',MLB:'⚾',NFL:'🏈',CBB:'🏀',CBASE:'⚾'}[CFG.sport]||'🏆';
+      var _title={NBA:'NBA Playoffs',NHL:'Stanley Cup Playoffs',MLB:'MLB Playoffs',
+        NFL:'NFL Playoffs',CBB:'NCAA Tournament',CBASE:'NCAA Baseball Tournament'}[CFG.sport]||'Playoffs';
+      var _isPast = d.year < new Date().getFullYear();
+      // Re-call with no _notLoaded flag so it goes through normal flow (just with empty series)
+      // But prepend a message to the panel first
+      var _msgHtml = '<div class="section-header"><span>'+_icon+' '+d.year+' '+_title
+        +' <span style="color:var(--text-dim);font-size:0.68rem">'
+        +(_isPast ? '— data loading' : '— projected')
+        +'</span></span></div>'
+        +(_isPast
+          ? '<div style="padding:0.5rem 0.75rem;background:var(--bg3);border-radius:4px;border:1px solid var(--border);font-size:0.75rem;color:var(--text-dim);margin-bottom:1rem">'
+            +'⚠️ Run the <strong>Backfill Playoff Data</strong> GitHub Actions workflow to load '+d.year+' results.</div>'
+          : '<div style="padding:0.4rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">'
+            +'📅 Playoffs not yet started — projected championship odds.</div>');
+      // Call without _notLoaded so normal odds render happens
+      d._notLoaded = false;
+      _renderTourneyData(el, d);
+      // Prepend message
+      el.innerHTML = _msgHtml + el.innerHTML;
+      return;
+    }
+
     // ── Round labels ───────────────────────────────────────────
     var ROUND_LABELS = {
       NBA:   ['Play-In','First Round','Conference Semifinals','Conference Finals','NBA Finals'],
@@ -1639,14 +1664,7 @@ window.initSportPage = function(CFG) {
       +'</div>';
     if (d.updated) html += '<div style="font-size:0.6rem;color:var(--text-dim);margin-bottom:0.75rem">Updated '+d.updated+'</div>';
     if (!hasGames && !isCompleted) {
-      var now = new Date();
-      var isPast = d.year < now.getFullYear() || (d.year === now.getFullYear() && now.getMonth() > 8);
-      var notLoadedMsg = d._notLoaded
-        ? (isPast
-            ? '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--text-dim);margin-bottom:0.75rem">⚠️ Historical playoff data not yet loaded. Run the backfill workflow to populate data for '+d.year+'.</div>'
-            : '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoff bracket not yet announced — showing projected odds based on current Elo.</div>')
-        : '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoff bracket not yet announced — showing projected odds based on current Elo.</div>';
-      html += notLoadedMsg;
+      html += '<div style="padding:0.4rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.5rem">📅 Playoffs not yet started — showing projected odds.</div>';
     }
 
     // ── SVG Bracket Tree ─────────────────────────────────────────────────
@@ -1811,23 +1829,10 @@ window.initSportPage = function(CFG) {
     if(btn) btn.onclick=function(){_renderTourneyData(el,d);};
   }
 
-  function _renderProjectedOdds(el, yr) {
-    var n = CFG.sport==='NFL'?14:CFG.sport==='MLB'?12:CFG.sport==='CBB'?64:16;
-    _renderTourneyData(el, {
-      year:yr, sport:CFG.sport, completed:false,
-      games:[], series:[], eliminated:[], updated:null
-    });
-  }
 
 
-  function _renderProjectedOdds(el, yr) {
-    var n = CFG.sport==='NFL'?14:CFG.sport==='MLB'?12:CFG.sport==='CBB'?64:16;
-    var teams = data.slice().sort(function(a,b){return b.elo-a.elo;}).slice(0,n);
-    _renderTourneyData(el, {
-      year: yr, sport: CFG.sport, completed: false,
-      games: [], series: [], eliminated: [], updated: null
-    });
-  }
+
+
 
 
   function _renderProjectedOdds(el, yr) {
