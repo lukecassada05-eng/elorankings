@@ -796,14 +796,6 @@
       "round": "Corvallis Regional - Elimination Game"
     },
     {
-      "winner": "East Carolina Pirates",
-      "loser": "Campbell Fighting Camels",
-      "winner_score": 12,
-      "loser_score": 3,
-      "date": "2019-06-03",
-      "round": "Greenville Regional - Elimination Game"
-    },
-    {
       "winner": "UCLA Bruins",
       "loser": "Loyola Marymount Lions",
       "winner_score": 6,
@@ -930,14 +922,6 @@
       "loser_score": 5,
       "date": "2019-06-09",
       "round": "Fayetteville Super Regional - GAME 2"
-    },
-    {
-      "winner": "Vanderbilt Commodores",
-      "loser": "Duke Blue Devils",
-      "winner_score": 13,
-      "loser_score": 2,
-      "date": "2019-06-09",
-      "round": "Nashville Super Regional - GAME 3"
     },
     {
       "winner": "Texas Tech Red Raiders",
@@ -1972,16 +1956,6 @@
       "date": "2019-06-03"
     },
     {
-      "t1": "East Carolina Pirates",
-      "t2": "Campbell Fighting Camels",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Greenville Regional - Elimination Game",
-      "date": "2019-06-03"
-    },
-    {
       "t1": "Stanford Cardinal",
       "t2": "Fresno State Bulldogs",
       "w1": 1,
@@ -2139,16 +2113,6 @@
       "done": false,
       "loser": "",
       "round": "Fayetteville Super Regional - GAME 2",
-      "date": "2019-06-09"
-    },
-    {
-      "t1": "Vanderbilt Commodores",
-      "t2": "Duke Blue Devils",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Nashville Super Regional - GAME 3",
       "date": "2019-06-09"
     },
     {
@@ -2344,5 +2308,5 @@
     "Texas Tech Red Raiders",
     "Louisville Cardinals"
   ],
-  "updated": "2026-05-27 07:05 UTC"
+  "updated": "2026-05-27 07:55 UTC"
 }

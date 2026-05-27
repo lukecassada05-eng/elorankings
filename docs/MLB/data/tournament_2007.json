@@ -9,7 +9,7 @@
       "winner_score": 9,
       "loser_score": 8,
       "date": "2007-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Colorado Rockies",
@@ -217,7 +217,7 @@
       "winner_score": 2,
       "loser_score": 1,
       "date": "2007-10-26",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Boston Red Sox",
@@ -244,7 +244,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2007-10-01"
     },
     {
@@ -324,7 +324,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "post-season",
+      "round": "",
       "date": "2007-10-26"
     }
   ],
@@ -337,5 +337,5 @@
     "Cleveland Indians",
     "Colorado Rockies"
   ],
-  "updated": "2026-05-27 07:04 UTC"
+  "updated": "2026-05-27 07:53 UTC"
 }

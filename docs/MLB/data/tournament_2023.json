@@ -9,7 +9,7 @@
       "winner_score": 6,
       "loser_score": 1,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Los Angeles Dodgers",
@@ -17,7 +17,7 @@
       "winner_score": 5,
       "loser_score": 2,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Pittsburgh Pirates",
@@ -25,7 +25,7 @@
       "winner_score": 3,
       "loser_score": 0,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Los Angeles Angels",
@@ -33,7 +33,7 @@
       "winner_score": 7,
       "loser_score": 3,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Tampa Bay Rays",
@@ -41,7 +41,7 @@
       "winner_score": 12,
       "loser_score": 8,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Milwaukee Brewers",
@@ -49,7 +49,7 @@
       "winner_score": 4,
       "loser_score": 0,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Detroit Tigers",
@@ -57,7 +57,7 @@
       "winner_score": 5,
       "loser_score": 2,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Houston Astros",
@@ -65,7 +65,7 @@
       "winner_score": 8,
       "loser_score": 1,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Kansas City Royals",
@@ -73,7 +73,7 @@
       "winner_score": 5,
       "loser_score": 2,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Philadelphia Phillies",
@@ -81,7 +81,7 @@
       "winner_score": 9,
       "loser_score": 1,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "San Diego Padres",
@@ -89,7 +89,7 @@
       "winner_score": 2,
       "loser_score": 1,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Seattle Mariners",
@@ -97,7 +97,7 @@
       "winner_score": 1,
       "loser_score": 0,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Washington Nationals",
@@ -105,7 +105,7 @@
       "winner_score": 10,
       "loser_score": 9,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Colorado Rockies",
@@ -113,7 +113,7 @@
       "winner_score": 3,
       "loser_score": 2,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "St. Louis Cardinals",
@@ -121,7 +121,7 @@
       "winner_score": 4,
       "loser_score": 3,
       "date": "2023-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Texas Rangers",
@@ -308,14 +308,6 @@
       "round": "ALCS - Game 1"
     },
     {
-      "winner": "Texas Rangers",
-      "loser": "Houston Astros",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2023-10-16",
-      "round": "ALCS - Game 2"
-    },
-    {
       "winner": "Philadelphia Phillies",
       "loser": "Arizona Diamondbacks",
       "winner_score": 5,
@@ -354,14 +346,6 @@
       "loser_score": 3,
       "date": "2023-10-20",
       "round": "ALCS - Game 4"
-    },
-    {
-      "winner": "Houston Astros",
-      "loser": "Texas Rangers",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2023-10-20",
-      "round": "ALCS - Game 5"
     },
     {
       "winner": "Arizona Diamondbacks",
@@ -460,7 +444,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -470,7 +454,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -480,7 +464,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -490,7 +474,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -500,7 +484,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -510,7 +494,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -520,7 +504,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -530,7 +514,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -540,7 +524,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -550,7 +534,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -560,7 +544,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -570,7 +554,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -580,7 +564,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -590,7 +574,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -600,7 +584,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2023-10-01"
     },
     {
@@ -834,16 +818,6 @@
       "date": "2023-10-16"
     },
     {
-      "t1": "Texas Rangers",
-      "t2": "Houston Astros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - Game 2",
-      "date": "2023-10-16"
-    },
-    {
       "t1": "Philadelphia Phillies",
       "t2": "Arizona Diamondbacks",
       "w1": 1,
@@ -891,16 +865,6 @@
       "done": false,
       "loser": "",
       "round": "ALCS - Game 4",
-      "date": "2023-10-20"
-    },
-    {
-      "t1": "Houston Astros",
-      "t2": "Texas Rangers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - Game 5",
       "date": "2023-10-20"
     },
     {
@@ -1015,5 +979,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:04 UTC"
+  "updated": "2026-05-27 07:54 UTC"
 }

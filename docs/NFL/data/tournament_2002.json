@@ -9,7 +9,7 @@
       "winner_score": 34,
       "loser_score": 31,
       "date": "2003-01-11",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Philadelphia Eagles",
@@ -17,7 +17,7 @@
       "winner_score": 20,
       "loser_score": 6,
       "date": "2003-01-12",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Tampa Bay Buccaneers",
@@ -25,7 +25,7 @@
       "winner_score": 31,
       "loser_score": 6,
       "date": "2003-01-12",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Oakland Raiders",
@@ -33,7 +33,7 @@
       "winner_score": 30,
       "loser_score": 10,
       "date": "2003-01-12",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Tampa Bay Buccaneers",
@@ -41,7 +41,7 @@
       "winner_score": 27,
       "loser_score": 10,
       "date": "2003-01-19",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Oakland Raiders",
@@ -49,7 +49,7 @@
       "winner_score": 41,
       "loser_score": 24,
       "date": "2003-01-19",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Tampa Bay Buccaneers",
@@ -65,7 +65,7 @@
       "winner_score": 45,
       "loser_score": 20,
       "date": "2003-02-02",
-      "round": "post-season"
+      "round": ""
     }
   ],
   "series": [
@@ -76,7 +76,7 @@
       "w2": 0,
       "done": true,
       "loser": "Pittsburgh Steelers",
-      "round": "post-season",
+      "round": "",
       "date": "2003-01-11"
     },
     {
@@ -86,7 +86,7 @@
       "w2": 0,
       "done": true,
       "loser": "Atlanta Falcons",
-      "round": "post-season",
+      "round": "",
       "date": "2003-01-12"
     },
     {
@@ -96,7 +96,7 @@
       "w2": 0,
       "done": true,
       "loser": "San Francisco 49ers",
-      "round": "post-season",
+      "round": "",
       "date": "2003-01-12"
     },
     {
@@ -106,7 +106,7 @@
       "w2": 0,
       "done": true,
       "loser": "New York Jets",
-      "round": "post-season",
+      "round": "",
       "date": "2003-01-12"
     },
     {
@@ -116,7 +116,7 @@
       "w2": 0,
       "done": true,
       "loser": "Philadelphia Eagles",
-      "round": "post-season",
+      "round": "",
       "date": "2003-01-19"
     },
     {
@@ -126,7 +126,7 @@
       "w2": 0,
       "done": true,
       "loser": "Tennessee Titans",
-      "round": "post-season",
+      "round": "",
       "date": "2003-01-19"
     },
     {
@@ -146,7 +146,7 @@
       "w2": 0,
       "done": true,
       "loser": "Nfc",
-      "round": "post-season",
+      "round": "",
       "date": "2003-02-02"
     }
   ],
@@ -160,5 +160,5 @@
     "Nfc",
     "Oakland Raiders"
   ],
-  "updated": "2026-05-27 07:04 UTC"
+  "updated": "2026-05-27 07:54 UTC"
 }

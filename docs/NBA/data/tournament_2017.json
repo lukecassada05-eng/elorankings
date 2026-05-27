@@ -9,7 +9,7 @@
       "winner_score": 113,
       "loser_score": 109,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Toronto Raptors",
@@ -17,7 +17,7 @@
       "winner_score": 98,
       "loser_score": 83,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Boston Celtics",
@@ -25,7 +25,7 @@
       "winner_score": 112,
       "loser_score": 94,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "New York Knicks",
@@ -33,7 +33,7 @@
       "winner_score": 114,
       "loser_score": 113,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Miami Heat",
@@ -41,7 +41,7 @@
       "winner_score": 110,
       "loser_score": 102,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Chicago Bulls",
@@ -49,7 +49,7 @@
       "winner_score": 112,
       "loser_score": 73,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Dallas Mavericks",
@@ -57,7 +57,7 @@
       "winner_score": 100,
       "loser_score": 93,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Houston Rockets",
@@ -65,7 +65,7 @@
       "winner_score": 123,
       "loser_score": 118,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Denver Nuggets",
@@ -73,7 +73,7 @@
       "winner_score": 111,
       "loser_score": 105,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Indiana Pacers",
@@ -81,7 +81,7 @@
       "winner_score": 104,
       "loser_score": 86,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Utah Jazz",
@@ -89,7 +89,7 @@
       "winner_score": 101,
       "loser_score": 97,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "LA Clippers",
@@ -97,7 +97,7 @@
       "winner_score": 115,
       "loser_score": 95,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Golden State Warriors",
@@ -105,7 +105,7 @@
       "winner_score": 109,
       "loser_score": 94,
       "date": "2017-04-13",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "New Orleans Pelicans",
@@ -113,511 +113,7 @@
       "winner_score": 103,
       "loser_score": 100,
       "date": "2017-04-13",
-      "round": "regular-season"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Indiana Pacers",
-      "winner_score": 109,
-      "loser_score": 108,
-      "date": "2017-04-15",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
-      "winner": "Milwaukee Bucks",
-      "loser": "Toronto Raptors",
-      "winner_score": 97,
-      "loser_score": 83,
-      "date": "2017-04-15",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Memphis Grizzlies",
-      "winner_score": 111,
-      "loser_score": 82,
-      "date": "2017-04-16",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
-      "winner": "Utah Jazz",
-      "loser": "LA Clippers",
-      "winner_score": 97,
-      "loser_score": 95,
-      "date": "2017-04-16",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
-      "winner": "Washington Wizards",
-      "loser": "Atlanta Hawks",
-      "winner_score": 114,
-      "loser_score": 107,
-      "date": "2017-04-16",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Portland Trail Blazers",
-      "winner_score": 121,
-      "loser_score": 109,
-      "date": "2017-04-16",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
-      "winner": "Chicago Bulls",
-      "loser": "Boston Celtics",
-      "winner_score": 106,
-      "loser_score": 102,
-      "date": "2017-04-16",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
-      "winner": "Houston Rockets",
-      "loser": "Oklahoma City Thunder",
-      "winner_score": 118,
-      "loser_score": 87,
-      "date": "2017-04-17",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Indiana Pacers",
-      "winner_score": 117,
-      "loser_score": 111,
-      "date": "2017-04-17",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Memphis Grizzlies",
-      "winner_score": 96,
-      "loser_score": 82,
-      "date": "2017-04-18",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 2"
-    },
-    {
-      "winner": "Toronto Raptors",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 106,
-      "loser_score": 100,
-      "date": "2017-04-18",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2"
-    },
-    {
-      "winner": "Chicago Bulls",
-      "loser": "Boston Celtics",
-      "winner_score": 111,
-      "loser_score": 97,
-      "date": "2017-04-19",
-      "round": "EASTERN CONFERENCE 1st ROUND - GAME 2"
-    },
-    {
-      "winner": "LA Clippers",
-      "loser": "Utah Jazz",
-      "winner_score": 99,
-      "loser_score": 91,
-      "date": "2017-04-19",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 2"
-    },
-    {
-      "winner": "Washington Wizards",
-      "loser": "Atlanta Hawks",
-      "winner_score": 109,
-      "loser_score": 101,
-      "date": "2017-04-19",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 2"
-    },
-    {
-      "winner": "Houston Rockets",
-      "loser": "Oklahoma City Thunder",
-      "winner_score": 115,
-      "loser_score": 111,
-      "date": "2017-04-20",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 2"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Portland Trail Blazers",
-      "winner_score": 110,
-      "loser_score": 81,
-      "date": "2017-04-20",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 2"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Indiana Pacers",
-      "winner_score": 119,
-      "loser_score": 114,
-      "date": "2017-04-20",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3"
-    },
-    {
-      "winner": "Milwaukee Bucks",
-      "loser": "Toronto Raptors",
-      "winner_score": 104,
-      "loser_score": 77,
-      "date": "2017-04-21",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3"
-    },
-    {
-      "winner": "Memphis Grizzlies",
-      "loser": "San Antonio Spurs",
-      "winner_score": 105,
-      "loser_score": 94,
-      "date": "2017-04-21",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Chicago Bulls",
-      "winner_score": 104,
-      "loser_score": 87,
-      "date": "2017-04-21",
-      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
-    },
-    {
-      "winner": "Oklahoma City Thunder",
-      "loser": "Houston Rockets",
-      "winner_score": 115,
-      "loser_score": 113,
-      "date": "2017-04-22",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3"
-    },
-    {
-      "winner": "LA Clippers",
-      "loser": "Utah Jazz",
-      "winner_score": 111,
-      "loser_score": 106,
-      "date": "2017-04-22",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3"
-    },
-    {
-      "winner": "Toronto Raptors",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 87,
-      "loser_score": 76,
-      "date": "2017-04-22",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 4"
-    },
-    {
-      "winner": "Atlanta Hawks",
-      "loser": "Washington Wizards",
-      "winner_score": 116,
-      "loser_score": 98,
-      "date": "2017-04-22",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3"
-    },
-    {
-      "winner": "Memphis Grizzlies",
-      "loser": "San Antonio Spurs",
-      "winner_score": 110,
-      "loser_score": 108,
-      "date": "2017-04-23",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 4"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Portland Trail Blazers",
-      "winner_score": 119,
-      "loser_score": 113,
-      "date": "2017-04-23",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 3"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Indiana Pacers",
-      "winner_score": 106,
-      "loser_score": 102,
-      "date": "2017-04-23",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 4"
-    },
-    {
-      "winner": "Houston Rockets",
-      "loser": "Oklahoma City Thunder",
-      "winner_score": 113,
-      "loser_score": 109,
-      "date": "2017-04-23",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 4"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Chicago Bulls",
-      "winner_score": 104,
-      "loser_score": 95,
-      "date": "2017-04-23",
-      "round": "EASTERN CONFERENCE 1st ROUND - GAME 4"
-    },
-    {
-      "winner": "Utah Jazz",
-      "loser": "LA Clippers",
-      "winner_score": 105,
-      "loser_score": 98,
-      "date": "2017-04-24",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 4"
-    },
-    {
-      "winner": "Toronto Raptors",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 118,
-      "loser_score": 93,
-      "date": "2017-04-24",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 5"
-    },
-    {
-      "winner": "Atlanta Hawks",
-      "loser": "Washington Wizards",
-      "winner_score": 111,
-      "loser_score": 101,
-      "date": "2017-04-25",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 4"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Portland Trail Blazers",
-      "winner_score": 128,
-      "loser_score": 103,
-      "date": "2017-04-25",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 4"
-    },
-    {
-      "winner": "Houston Rockets",
-      "loser": "Oklahoma City Thunder",
-      "winner_score": 105,
-      "loser_score": 99,
-      "date": "2017-04-26",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 5"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Memphis Grizzlies",
-      "winner_score": 116,
-      "loser_score": 103,
-      "date": "2017-04-26",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 5"
-    },
-    {
-      "winner": "Utah Jazz",
-      "loser": "LA Clippers",
-      "winner_score": 96,
-      "loser_score": 92,
-      "date": "2017-04-26",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 5"
-    },
-    {
-      "winner": "Washington Wizards",
-      "loser": "Atlanta Hawks",
-      "winner_score": 103,
-      "loser_score": 99,
-      "date": "2017-04-26",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 5"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Chicago Bulls",
-      "winner_score": 108,
-      "loser_score": 97,
-      "date": "2017-04-27",
-      "round": "EASTERN CONFERENCE 1st ROUND - GAME 5"
-    },
-    {
-      "winner": "Toronto Raptors",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 92,
-      "loser_score": 89,
-      "date": "2017-04-27",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 6"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Memphis Grizzlies",
-      "winner_score": 103,
-      "loser_score": 96,
-      "date": "2017-04-28",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 6"
-    },
-    {
-      "winner": "Washington Wizards",
-      "loser": "Atlanta Hawks",
-      "winner_score": 115,
-      "loser_score": 99,
-      "date": "2017-04-28",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 6"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Chicago Bulls",
-      "winner_score": 105,
-      "loser_score": 83,
-      "date": "2017-04-29",
-      "round": "EASTERN CONFERENCE 1st ROUND - GAME 6"
-    },
-    {
-      "winner": "LA Clippers",
-      "loser": "Utah Jazz",
-      "winner_score": 98,
-      "loser_score": 93,
-      "date": "2017-04-29",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 6"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Washington Wizards",
-      "winner_score": 123,
-      "loser_score": 111,
-      "date": "2017-04-30",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
-    },
-    {
-      "winner": "Utah Jazz",
-      "loser": "LA Clippers",
-      "winner_score": 104,
-      "loser_score": 91,
-      "date": "2017-04-30",
-      "round": "WESTERN CONFERENCE 1ST ROUND - GAME 7"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Toronto Raptors",
-      "winner_score": 116,
-      "loser_score": 105,
-      "date": "2017-05-01",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
-    },
-    {
-      "winner": "Houston Rockets",
-      "loser": "San Antonio Spurs",
-      "winner_score": 126,
-      "loser_score": 99,
-      "date": "2017-05-02",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Washington Wizards",
-      "winner_score": 129,
-      "loser_score": 119,
-      "date": "2017-05-03",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Utah Jazz",
-      "winner_score": 106,
-      "loser_score": 94,
-      "date": "2017-05-03",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
-    },
-    {
-      "winner": "Orlando Magic",
-      "loser": "Detroit Pistons",
-      "winner_score": 113,
-      "loser_score": 109,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Toronto Raptors",
-      "loser": "Cleveland Cavaliers",
-      "winner_score": 98,
-      "loser_score": 83,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 112,
-      "loser_score": 94,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "New York Knicks",
-      "loser": "Philadelphia 76ers",
-      "winner_score": 114,
-      "loser_score": 113,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Miami Heat",
-      "loser": "Washington Wizards",
-      "winner_score": 110,
-      "loser_score": 102,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Chicago Bulls",
-      "loser": "Brooklyn Nets",
-      "winner_score": 112,
-      "loser_score": 73,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Dallas Mavericks",
-      "loser": "Memphis Grizzlies",
-      "winner_score": 100,
-      "loser_score": 93,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Houston Rockets",
-      "loser": "Minnesota Timberwolves",
-      "winner_score": 123,
-      "loser_score": 118,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Denver Nuggets",
-      "loser": "Oklahoma City Thunder",
-      "winner_score": 111,
-      "loser_score": 105,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Indiana Pacers",
-      "loser": "Atlanta Hawks",
-      "winner_score": 104,
-      "loser_score": 86,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Utah Jazz",
-      "loser": "San Antonio Spurs",
-      "winner_score": 101,
-      "loser_score": 97,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "LA Clippers",
-      "loser": "Sacramento Kings",
-      "winner_score": 115,
-      "loser_score": 95,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Los Angeles Lakers",
-      "winner_score": 109,
-      "loser_score": 94,
-      "date": "2017-04-13",
-      "round": "Play-In"
-    },
-    {
-      "winner": "New Orleans Pelicans",
-      "loser": "Portland Trail Blazers",
-      "winner_score": 103,
-      "loser_score": 100,
-      "date": "2017-04-13",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Cleveland Cavaliers",
@@ -1218,246 +714,6 @@
       "loser_score": 91,
       "date": "2017-06-02",
       "round": "NBA FINALS - GAME 1"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Toronto Raptors",
-      "winner_score": 125,
-      "loser_score": 103,
-      "date": "2017-05-03",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Houston Rockets",
-      "winner_score": 121,
-      "loser_score": 96,
-      "date": "2017-05-04",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
-    },
-    {
-      "winner": "Washington Wizards",
-      "loser": "Boston Celtics",
-      "winner_score": 116,
-      "loser_score": 89,
-      "date": "2017-05-05",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Utah Jazz",
-      "winner_score": 115,
-      "loser_score": 104,
-      "date": "2017-05-05",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Toronto Raptors",
-      "winner_score": 115,
-      "loser_score": 94,
-      "date": "2017-05-05",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Houston Rockets",
-      "winner_score": 103,
-      "loser_score": 92,
-      "date": "2017-05-06",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Utah Jazz",
-      "winner_score": 102,
-      "loser_score": 91,
-      "date": "2017-05-07",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Toronto Raptors",
-      "winner_score": 109,
-      "loser_score": 102,
-      "date": "2017-05-07",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
-    },
-    {
-      "winner": "Washington Wizards",
-      "loser": "Boston Celtics",
-      "winner_score": 121,
-      "loser_score": 102,
-      "date": "2017-05-07",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
-    },
-    {
-      "winner": "Houston Rockets",
-      "loser": "San Antonio Spurs",
-      "winner_score": 125,
-      "loser_score": 104,
-      "date": "2017-05-08",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Utah Jazz",
-      "winner_score": 121,
-      "loser_score": 95,
-      "date": "2017-05-09",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Houston Rockets",
-      "winner_score": 110,
-      "loser_score": 107,
-      "date": "2017-05-10",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Washington Wizards",
-      "winner_score": 123,
-      "loser_score": 101,
-      "date": "2017-05-11",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Houston Rockets",
-      "winner_score": 114,
-      "loser_score": 75,
-      "date": "2017-05-12",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6"
-    },
-    {
-      "winner": "Washington Wizards",
-      "loser": "Boston Celtics",
-      "winner_score": 92,
-      "loser_score": 91,
-      "date": "2017-05-13",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 6"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "San Antonio Spurs",
-      "winner_score": 113,
-      "loser_score": 111,
-      "date": "2017-05-14",
-      "round": "WESTERN CONFERENCE FINALS - GAME 1"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Washington Wizards",
-      "winner_score": 115,
-      "loser_score": 105,
-      "date": "2017-05-16",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 7"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "San Antonio Spurs",
-      "winner_score": 136,
-      "loser_score": 100,
-      "date": "2017-05-17",
-      "round": "WESTERN CONFERENCE FINALS - GAME 2"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Boston Celtics",
-      "winner_score": 117,
-      "loser_score": 104,
-      "date": "2017-05-18",
-      "round": "EASTERN CONFERENCE FINALS - GAME 1"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Boston Celtics",
-      "winner_score": 130,
-      "loser_score": 86,
-      "date": "2017-05-20",
-      "round": "EASTERN CONFERENCE FINALS - GAME 2"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "San Antonio Spurs",
-      "winner_score": 120,
-      "loser_score": 108,
-      "date": "2017-05-21",
-      "round": "WESTERN CONFERENCE FINALS - GAME 3"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Cleveland Cavaliers",
-      "winner_score": 111,
-      "loser_score": 108,
-      "date": "2017-05-22",
-      "round": "EASTERN CONFERENCE FINALS - GAME 3"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "San Antonio Spurs",
-      "winner_score": 129,
-      "loser_score": 115,
-      "date": "2017-05-23",
-      "round": "WESTERN CONFERENCE FINALS - GAME 4"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Boston Celtics",
-      "winner_score": 112,
-      "loser_score": 99,
-      "date": "2017-05-24",
-      "round": "EASTERN CONFERENCE FINALS - GAME 4"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Boston Celtics",
-      "winner_score": 135,
-      "loser_score": 102,
-      "date": "2017-05-26",
-      "round": "EASTERN CONFERENCE FINALS - GAME 5"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Cleveland Cavaliers",
-      "winner_score": 113,
-      "loser_score": 91,
-      "date": "2017-06-02",
-      "round": "NBA FINALS - GAME 1"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Cleveland Cavaliers",
-      "winner_score": 132,
-      "loser_score": 113,
-      "date": "2017-06-05",
-      "round": "NBA FINALS - GAME 2"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Cleveland Cavaliers",
-      "winner_score": 118,
-      "loser_score": 113,
-      "date": "2017-06-08",
-      "round": "NBA FINALS - GAME 3"
-    },
-    {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Golden State Warriors",
-      "winner_score": 137,
-      "loser_score": 116,
-      "date": "2017-06-10",
-      "round": "NBA FINALS - GAME 4"
-    },
-    {
-      "winner": "Golden State Warriors",
-      "loser": "Cleveland Cavaliers",
-      "winner_score": 129,
-      "loser_score": 120,
-      "date": "2017-06-13",
-      "round": "NBA FINALS - GAME 5"
     },
     {
       "winner": "Golden State Warriors",
@@ -1500,7 +756,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1510,7 +766,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1520,7 +776,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1530,7 +786,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1540,7 +796,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1550,7 +806,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1560,7 +816,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1570,7 +826,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1580,7 +836,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1590,7 +846,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1600,7 +856,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1610,7 +866,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1620,7 +876,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -1630,147 +886,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Orlando Magic",
-      "t2": "Detroit Pistons",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Toronto Raptors",
-      "t2": "Cleveland Cavaliers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Boston Celtics",
-      "t2": "Milwaukee Bucks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "New York Knicks",
-      "t2": "Philadelphia 76ers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Miami Heat",
-      "t2": "Washington Wizards",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Chicago Bulls",
-      "t2": "Brooklyn Nets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Dallas Mavericks",
-      "t2": "Memphis Grizzlies",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Houston Rockets",
-      "t2": "Minnesota Timberwolves",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Denver Nuggets",
-      "t2": "Oklahoma City Thunder",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Indiana Pacers",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Utah Jazz",
-      "t2": "San Antonio Spurs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "LA Clippers",
-      "t2": "Sacramento Kings",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "Golden State Warriors",
-      "t2": "Los Angeles Lakers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2017-04-13"
-    },
-    {
-      "t1": "New Orleans Pelicans",
-      "t2": "Portland Trail Blazers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2017-04-13"
     },
     {
@@ -2565,5 +1681,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:03 UTC"
+  "updated": "2026-05-27 07:53 UTC"
 }

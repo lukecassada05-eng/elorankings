@@ -788,14 +788,6 @@
       "round": "NCAA Baseball Championship - Norman Regional - UConn advances to Super Regional"
     },
     {
-      "winner": "Florida Gators",
-      "loser": "Oklahoma State Cowboys",
-      "winner_score": 4,
-      "loser_score": 2,
-      "date": "2024-06-03",
-      "round": "NCAA Baseball Championship - Stillwater Regional - Florida advances to Super Regional"
-    },
-    {
       "winner": "Evansville Purple Aces",
       "loser": "East Carolina Pirates",
       "winner_score": 6,
@@ -2000,16 +1992,6 @@
       "date": "2024-06-03"
     },
     {
-      "t1": "Florida Gators",
-      "t2": "Oklahoma State Cowboys",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Stillwater Regional - Florida advances to Super Regional",
-      "date": "2024-06-03"
-    },
-    {
       "t1": "Evansville Purple Aces",
       "t2": "East Carolina Pirates",
       "w1": 1,
@@ -2361,5 +2343,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:05 UTC"
+  "updated": "2026-05-27 07:56 UTC"
 }

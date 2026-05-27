@@ -121,7 +121,7 @@
       "winner_score": 14,
       "loser_score": 6,
       "date": "2022-05-28",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Kentucky Wildcats",
@@ -348,14 +348,6 @@
       "round": "Mountain West Tournament"
     },
     {
-      "winner": "Campbell Fighting Camels",
-      "loser": "Charleston Southern Buccaneers",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2022-05-28",
-      "round": "Big South Championship"
-    },
-    {
       "winner": "Omaha Mavericks",
       "loser": "North Dakota State Bison",
       "winner_score": 5,
@@ -561,7 +553,7 @@
       "winner_score": 8,
       "loser_score": 5,
       "date": "2022-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Southern Illinois Salukis",
@@ -610,14 +602,6 @@
       "loser_score": 2,
       "date": "2022-05-29",
       "round": "Summit League Championship"
-    },
-    {
-      "winner": "UNC Greensboro Spartans",
-      "loser": "Wofford Terriers",
-      "winner_score": 12,
-      "loser_score": 2,
-      "date": "2022-05-29",
-      "round": "Southern Conf Championship"
     },
     {
       "winner": "Long Island University Sharks",
@@ -1548,14 +1532,6 @@
       "round": "NCAA Baseball Championship – Knoxville Super Regional"
     },
     {
-      "winner": "Texas A&M Aggies",
-      "loser": "Louisville Cardinals",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2022-06-11",
-      "round": "NCAA Baseball Championship – College Station Super Regional"
-    },
-    {
       "winner": "Ole Miss Rebels",
       "loser": "Southern Miss Golden Eagles",
       "winner_score": 10,
@@ -1942,7 +1918,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2022-05-28"
     },
     {
@@ -2186,16 +2162,6 @@
       "date": "2022-05-28"
     },
     {
-      "t1": "Campbell Fighting Camels",
-      "t2": "Charleston Southern Buccaneers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Big South Championship",
-      "date": "2022-05-28"
-    },
-    {
       "t1": "Omaha Mavericks",
       "t2": "North Dakota State Bison",
       "w1": 1,
@@ -2262,7 +2228,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2022-05-29"
     },
     {
@@ -3675,5 +3641,5 @@
     "Oregon State Beavers",
     "UConn Huskies"
   ],
-  "updated": "2026-05-27 07:05 UTC"
+  "updated": "2026-05-27 07:56 UTC"
 }

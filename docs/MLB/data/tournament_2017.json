@@ -9,7 +9,7 @@
       "winner_score": 4,
       "loser_score": 3,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Toronto Blue Jays",
@@ -17,7 +17,7 @@
       "winner_score": 2,
       "loser_score": 1,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Oakland Athletics",
@@ -25,7 +25,7 @@
       "winner_score": 5,
       "loser_score": 2,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Pittsburgh Pirates",
@@ -33,7 +33,7 @@
       "winner_score": 11,
       "loser_score": 8,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Philadelphia Phillies",
@@ -41,7 +41,7 @@
       "winner_score": 11,
       "loser_score": 0,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "San Francisco Giants",
@@ -49,7 +49,7 @@
       "winner_score": 5,
       "loser_score": 4,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Los Angeles Angels",
@@ -57,7 +57,7 @@
       "winner_score": 6,
       "loser_score": 2,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Cleveland Indians",
@@ -65,7 +65,7 @@
       "winner_score": 3,
       "loser_score": 1,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Minnesota Twins",
@@ -73,7 +73,7 @@
       "winner_score": 5,
       "loser_score": 1,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Los Angeles Dodgers",
@@ -81,7 +81,7 @@
       "winner_score": 6,
       "loser_score": 3,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Atlanta Braves",
@@ -89,7 +89,7 @@
       "winner_score": 8,
       "loser_score": 5,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Tampa Bay Rays",
@@ -97,7 +97,7 @@
       "winner_score": 6,
       "loser_score": 0,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Arizona Diamondbacks",
@@ -105,7 +105,7 @@
       "winner_score": 14,
       "loser_score": 2,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Milwaukee Brewers",
@@ -113,7 +113,7 @@
       "winner_score": 6,
       "loser_score": 1,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Cincinnati Reds",
@@ -121,7 +121,7 @@
       "winner_score": 3,
       "loser_score": 1,
       "date": "2017-10-01",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "New York Yankees",
@@ -284,14 +284,6 @@
       "round": "ALCS - GAME 1"
     },
     {
-      "winner": "Houston Astros",
-      "loser": "New York Yankees",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2017-10-14",
-      "round": "ALCS - GAME 2"
-    },
-    {
       "winner": "Los Angeles Dodgers",
       "loser": "Chicago Cubs",
       "winner_score": 5,
@@ -300,28 +292,12 @@
       "round": "NLCS - GAME 1"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Chicago Cubs",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2017-10-15",
-      "round": "NLCS - GAME 2"
-    },
-    {
       "winner": "New York Yankees",
       "loser": "Houston Astros",
       "winner_score": 8,
       "loser_score": 1,
       "date": "2017-10-17",
       "round": "ALCS - GAME 3"
-    },
-    {
-      "winner": "New York Yankees",
-      "loser": "Houston Astros",
-      "winner_score": 6,
-      "loser_score": 4,
-      "date": "2017-10-17",
-      "round": "ALCS - GAME 4"
     },
     {
       "winner": "Los Angeles Dodgers",
@@ -436,7 +412,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -446,7 +422,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -456,7 +432,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -466,7 +442,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -476,7 +452,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -486,7 +462,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -496,7 +472,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -506,7 +482,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -516,7 +492,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -526,7 +502,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -536,7 +512,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -546,7 +522,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -556,7 +532,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -566,7 +542,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -576,7 +552,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2017-10-01"
     },
     {
@@ -780,16 +756,6 @@
       "date": "2017-10-14"
     },
     {
-      "t1": "Houston Astros",
-      "t2": "New York Yankees",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - GAME 2",
-      "date": "2017-10-14"
-    },
-    {
       "t1": "Los Angeles Dodgers",
       "t2": "Chicago Cubs",
       "w1": 1,
@@ -800,16 +766,6 @@
       "date": "2017-10-15"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Chicago Cubs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLCS - GAME 2",
-      "date": "2017-10-15"
-    },
-    {
       "t1": "New York Yankees",
       "t2": "Houston Astros",
       "w1": 1,
@@ -817,16 +773,6 @@
       "done": false,
       "loser": "",
       "round": "ALCS - GAME 3",
-      "date": "2017-10-17"
-    },
-    {
-      "t1": "New York Yankees",
-      "t2": "Houston Astros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - GAME 4",
       "date": "2017-10-17"
     },
     {
@@ -961,5 +907,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:04 UTC"
+  "updated": "2026-05-27 07:54 UTC"
 }

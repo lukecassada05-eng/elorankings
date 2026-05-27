@@ -212,14 +212,6 @@
       "round": "ALCS - Game 1"
     },
     {
-      "winner": "Seattle Mariners",
-      "loser": "Toronto Blue Jays",
-      "winner_score": 10,
-      "loser_score": 3,
-      "date": "2025-10-13",
-      "round": "ALCS - Game 2"
-    },
-    {
       "winner": "Los Angeles Dodgers",
       "loser": "Milwaukee Brewers",
       "winner_score": 2,
@@ -610,16 +602,6 @@
       "date": "2025-10-13"
     },
     {
-      "t1": "Seattle Mariners",
-      "t2": "Toronto Blue Jays",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - Game 2",
-      "date": "2025-10-13"
-    },
-    {
       "t1": "Los Angeles Dodgers",
       "t2": "Milwaukee Brewers",
       "w1": 1,
@@ -781,5 +763,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:04 UTC"
+  "updated": "2026-05-27 07:54 UTC"
 }

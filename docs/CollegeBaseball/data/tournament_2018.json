@@ -660,44 +660,12 @@
       "round": "Conway Regional"
     },
     {
-      "winner": "North Carolina Tar Heels",
-      "loser": "Houston Cougars",
-      "winner_score": 19,
-      "loser_score": 11,
-      "date": "2018-06-03",
-      "round": "Chapel Hill Regional"
-    },
-    {
       "winner": "Auburn Tigers",
       "loser": "NC State Wolfpack",
       "winner_score": 15,
       "loser_score": 7,
       "date": "2018-06-03",
       "round": "Raleigh Regional"
-    },
-    {
-      "winner": "Minnesota Golden Gophers",
-      "loser": "UCLA Bruins",
-      "winner_score": 13,
-      "loser_score": 8,
-      "date": "2018-06-03",
-      "round": "Minneapolis Regional"
-    },
-    {
-      "winner": "Texas Tech Red Raiders",
-      "loser": "Louisville Cardinals",
-      "winner_score": 11,
-      "loser_score": 6,
-      "date": "2018-06-03",
-      "round": "Lubbock Regional"
-    },
-    {
-      "winner": "Stetson Hatters",
-      "loser": "Oklahoma State Cowboys",
-      "winner_score": 11,
-      "loser_score": 1,
-      "date": "2018-06-03",
-      "round": "DeLand Regional"
     },
     {
       "winner": "Arkansas Razorbacks",
@@ -772,28 +740,12 @@
       "round": "Greenville Regional"
     },
     {
-      "winner": "Duke Blue Devils",
-      "loser": "Georgia Bulldogs",
-      "winner_score": 8,
-      "loser_score": 4,
-      "date": "2018-06-04",
-      "round": "Athens Regional - Elimination Game"
-    },
-    {
       "winner": "Florida Atlantic Owls",
       "loser": "Florida Gators",
       "winner_score": 7,
       "loser_score": 4,
       "date": "2018-06-04",
       "round": "Gainesville Regional"
-    },
-    {
-      "winner": "Tennessee Tech Golden Eagles",
-      "loser": "Ole Miss Rebels",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2018-06-04",
-      "round": "Oxford Regional - Elimination Game"
     },
     {
       "winner": "Florida Gators",
@@ -1946,28 +1898,8 @@
       "date": "2018-06-04"
     },
     {
-      "t1": "Duke Blue Devils",
-      "t2": "Georgia Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Athens Regional - Elimination Game",
-      "date": "2018-06-04"
-    },
-    {
       "t1": "Tennessee Tech Golden Eagles",
       "t2": "Missouri State Bears",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Oxford Regional - Elimination Game",
-      "date": "2018-06-04"
-    },
-    {
-      "t1": "Tennessee Tech Golden Eagles",
-      "t2": "Ole Miss Rebels",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2342,5 +2274,5 @@
     "LSU Tigers",
     "Stanford Cardinal"
   ],
-  "updated": "2026-05-27 07:05 UTC"
+  "updated": "2026-05-27 07:55 UTC"
 }

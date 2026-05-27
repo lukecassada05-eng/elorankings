@@ -321,7 +321,7 @@
       "winner_score": 10,
       "loser_score": 4,
       "date": "2021-05-28",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Oklahoma State Cowboys",
@@ -385,7 +385,7 @@
       "winner_score": 8,
       "loser_score": 5,
       "date": "2021-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "McNeese Cowboys",
@@ -401,7 +401,7 @@
       "winner_score": 11,
       "loser_score": 9,
       "date": "2021-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Oral Roberts Golden Eagles",
@@ -425,7 +425,7 @@
       "winner_score": 9,
       "loser_score": 0,
       "date": "2021-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "California Golden Bears",
@@ -433,7 +433,7 @@
       "winner_score": 10,
       "loser_score": 3,
       "date": "2021-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Stanford Cardinal",
@@ -441,7 +441,7 @@
       "winner_score": 5,
       "loser_score": 0,
       "date": "2021-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Texas Longhorns",
@@ -636,28 +636,12 @@
       "round": "Summit League Championship"
     },
     {
-      "winner": "UCLA Bruins",
-      "loser": "Arizona State Sun Devils",
-      "winner_score": 3,
-      "loser_score": 0,
-      "date": "2021-05-29",
-      "round": "regular-season"
-    },
-    {
-      "winner": "San Diego Toreros",
-      "loser": "Gonzaga Bulldogs",
-      "winner_score": 10,
-      "loser_score": 2,
-      "date": "2021-05-29",
-      "round": "regular-season"
-    },
-    {
       "winner": "Oregon Ducks",
       "loser": "California Golden Bears",
       "winner_score": 6,
       "loser_score": 5,
       "date": "2021-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "UC Irvine Anteaters",
@@ -665,7 +649,7 @@
       "winner_score": 7,
       "loser_score": 0,
       "date": "2021-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Oregon State Beavers",
@@ -673,7 +657,7 @@
       "winner_score": 9,
       "loser_score": 1,
       "date": "2021-05-29",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Indiana State Sycamores",
@@ -772,14 +756,6 @@
       "round": "Ohio Valley Championship"
     },
     {
-      "winner": "UC Irvine Anteaters",
-      "loser": "Cal State Fullerton Titans",
-      "winner_score": 9,
-      "loser_score": 5,
-      "date": "2021-05-29",
-      "round": "regular-season"
-    },
-    {
       "winner": "North Dakota State Bison",
       "loser": "Oral Roberts Golden Eagles",
       "winner_score": 11,
@@ -833,7 +809,7 @@
       "winner_score": 5,
       "loser_score": 4,
       "date": "2021-05-30",
-      "round": "regular-season"
+      "round": ""
     },
     {
       "winner": "Arkansas Razorbacks",
@@ -922,14 +898,6 @@
       "loser_score": 2,
       "date": "2021-05-30",
       "round": "CSU Fullerton vs UC Irvine"
-    },
-    {
-      "winner": "Central Connecticut Blue Devils",
-      "loser": "Bryant Bulldogs",
-      "winner_score": 5,
-      "loser_score": 2,
-      "date": "2021-05-30",
-      "round": "NEC Championship"
     },
     {
       "winner": "UConn Huskies",
@@ -1610,14 +1578,6 @@
       "loser_score": 4,
       "date": "2021-06-06",
       "round": "Fort Worth Regional"
-    },
-    {
-      "winner": "NC State Wolfpack",
-      "loser": "Louisiana Tech Bulldogs",
-      "winner_score": 14,
-      "loser_score": 7,
-      "date": "2021-06-06",
-      "round": "Ruston Regional"
     },
     {
       "winner": "Southern Miss Golden Eagles",
@@ -2496,7 +2456,7 @@
       "w2": 0,
       "done": true,
       "loser": "Cal State Fullerton Titans",
-      "round": "regular-season",
+      "round": "",
       "date": "2021-05-28"
     },
     {
@@ -2736,7 +2696,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2021-05-29"
     },
     {
@@ -2746,7 +2706,7 @@
       "w2": 1,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2021-05-29"
     },
     {
@@ -2756,7 +2716,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2021-05-29"
     },
     {
@@ -2766,7 +2726,7 @@
       "w2": 1,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2021-05-29"
     },
     {
@@ -2776,7 +2736,7 @@
       "w2": 1,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "",
       "date": "2021-05-29"
     },
     {
@@ -4291,5 +4251,5 @@
     "Georgia Tech Yellow Jackets",
     "UC Santa Barbara Gauchos"
   ],
-  "updated": "2026-05-27 07:05 UTC"
+  "updated": "2026-05-27 07:55 UTC"
 }

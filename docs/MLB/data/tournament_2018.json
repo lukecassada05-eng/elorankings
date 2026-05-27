@@ -204,14 +204,6 @@
       "round": "NLCS - GAME 4"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Milwaukee Brewers",
-      "winner_score": 5,
-      "loser_score": 2,
-      "date": "2018-10-17",
-      "round": "NLCS - GAME 5"
-    },
-    {
       "winner": "Boston Red Sox",
       "loser": "Houston Astros",
       "winner_score": 8,
@@ -536,16 +528,6 @@
       "date": "2018-10-17"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Milwaukee Brewers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLCS - GAME 5",
-      "date": "2018-10-17"
-    },
-    {
       "t1": "Boston Red Sox",
       "t2": "Houston Astros",
       "w1": 1,
@@ -637,5 +619,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:04 UTC"
+  "updated": "2026-05-27 07:54 UTC"
 }

@@ -628,14 +628,6 @@
       "round": "NCAA Baseball Championship - Clemson Regional - Elimination Game"
     },
     {
-      "winner": "Coastal Carolina Chanticleers",
-      "loser": "East Carolina Pirates",
-      "winner_score": 1,
-      "loser_score": 0,
-      "date": "2025-06-01",
-      "round": "NCAA Baseball Championship - Conway Regional - Coastal Carolina advances to Super Regional"
-    },
-    {
       "winner": "Wake Forest Demon Deacons",
       "loser": "Tennessee Volunteers",
       "winner_score": 7,
@@ -788,14 +780,6 @@
       "round": "NCAA Baseball Championship - Baton Rouge Regional - LSU advances to Super Regionals"
     },
     {
-      "winner": "Oregon State Beavers",
-      "loser": "USC Trojans",
-      "winner_score": 9,
-      "loser_score": 0,
-      "date": "2025-06-02",
-      "round": "NCAA Baseball Championship - Corvallis Regional - Oregon State advances to Super Regionals"
-    },
-    {
       "winner": "Murray State Racers",
       "loser": "Ole Miss Rebels",
       "winner_score": 12,
@@ -858,14 +842,6 @@
       "loser_score": 3,
       "date": "2025-06-07",
       "round": "NCAA Baseball Championship - Fayetteville Super Regional - Game 1"
-    },
-    {
-      "winner": "Coastal Carolina Chanticleers",
-      "loser": "Auburn Tigers",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2025-06-07",
-      "round": "NCAA Baseball Championship - Auburn Super Regional - Game 2"
     },
     {
       "winner": "Arizona Wildcats",
@@ -1924,16 +1900,6 @@
       "date": "2025-06-01"
     },
     {
-      "t1": "Coastal Carolina Chanticleers",
-      "t2": "East Carolina Pirates",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Conway Regional - Coastal Carolina advances to Super Regional",
-      "date": "2025-06-01"
-    },
-    {
       "t1": "West Virginia Mountaineers",
       "t2": "Kentucky Wildcats",
       "w1": 1,
@@ -2034,16 +2000,6 @@
       "date": "2025-06-02"
     },
     {
-      "t1": "Oregon State Beavers",
-      "t2": "USC Trojans",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Corvallis Regional - Oregon State advances to Super Regionals",
-      "date": "2025-06-02"
-    },
-    {
       "t1": "Murray State Racers",
       "t2": "Ole Miss Rebels",
       "w1": 1,
@@ -2131,16 +2087,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Fayetteville Super Regional - Game 1",
-      "date": "2025-06-07"
-    },
-    {
-      "t1": "Coastal Carolina Chanticleers",
-      "t2": "Auburn Tigers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Auburn Super Regional - Game 2",
       "date": "2025-06-07"
     },
     {
@@ -2425,5 +2371,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:05 UTC"
+  "updated": "2026-05-27 07:56 UTC"
 }

@@ -108,14 +108,6 @@
       "round": "NLDS - GAME 3"
     },
     {
-      "winner": "St. Louis Cardinals",
-      "loser": "Los Angeles Dodgers",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2014-10-07",
-      "round": "NLDS - GAME 4"
-    },
-    {
       "winner": "San Francisco Giants",
       "loser": "Washington Nationals",
       "winner_score": 3,
@@ -130,14 +122,6 @@
       "loser_score": 6,
       "date": "2014-10-11",
       "round": "ALCS - GAME 1"
-    },
-    {
-      "winner": "Kansas City Royals",
-      "loser": "Baltimore Orioles",
-      "winner_score": 6,
-      "loser_score": 4,
-      "date": "2014-10-11",
-      "round": "ALCS - GAME 2"
     },
     {
       "winner": "San Francisco Giants",
@@ -170,14 +154,6 @@
       "loser_score": 1,
       "date": "2014-10-15",
       "round": "ALCS - GAME 3"
-    },
-    {
-      "winner": "Kansas City Royals",
-      "loser": "Baltimore Orioles",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2014-10-15",
-      "round": "ALCS - GAME 4"
     },
     {
       "winner": "San Francisco Giants",
@@ -384,16 +360,6 @@
       "date": "2014-10-07"
     },
     {
-      "t1": "St. Louis Cardinals",
-      "t2": "Los Angeles Dodgers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 4",
-      "date": "2014-10-07"
-    },
-    {
       "t1": "San Francisco Giants",
       "t2": "Washington Nationals",
       "w1": 1,
@@ -411,16 +377,6 @@
       "done": false,
       "loser": "",
       "round": "ALCS - GAME 1",
-      "date": "2014-10-11"
-    },
-    {
-      "t1": "Kansas City Royals",
-      "t2": "Baltimore Orioles",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - GAME 2",
       "date": "2014-10-11"
     },
     {
@@ -461,16 +417,6 @@
       "done": false,
       "loser": "",
       "round": "ALCS - GAME 3",
-      "date": "2014-10-15"
-    },
-    {
-      "t1": "Kansas City Royals",
-      "t2": "Baltimore Orioles",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - GAME 4",
       "date": "2014-10-15"
     },
     {
@@ -565,5 +511,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:04 UTC"
+  "updated": "2026-05-27 07:54 UTC"
 }

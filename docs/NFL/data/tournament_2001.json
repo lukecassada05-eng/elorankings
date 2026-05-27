@@ -9,7 +9,7 @@
       "winner_score": 31,
       "loser_score": 9,
       "date": "2002-01-12",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Oakland Raiders",
@@ -17,7 +17,7 @@
       "winner_score": 38,
       "loser_score": 24,
       "date": "2002-01-13",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Green Bay Packers",
@@ -25,7 +25,7 @@
       "winner_score": 25,
       "loser_score": 15,
       "date": "2002-01-13",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Baltimore Ravens",
@@ -33,7 +33,7 @@
       "winner_score": 20,
       "loser_score": 3,
       "date": "2002-01-13",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Philadelphia Eagles",
@@ -41,7 +41,7 @@
       "winner_score": 33,
       "loser_score": 19,
       "date": "2002-01-19",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "New England Patriots",
@@ -49,7 +49,7 @@
       "winner_score": 16,
       "loser_score": 13,
       "date": "2002-01-20",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "Pittsburgh Steelers",
@@ -57,7 +57,7 @@
       "winner_score": 27,
       "loser_score": 10,
       "date": "2002-01-20",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "St. Louis Rams",
@@ -65,7 +65,7 @@
       "winner_score": 45,
       "loser_score": 17,
       "date": "2002-01-20",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "New England Patriots",
@@ -73,7 +73,7 @@
       "winner_score": 24,
       "loser_score": 17,
       "date": "2002-01-27",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "St. Louis Rams",
@@ -81,7 +81,7 @@
       "winner_score": 29,
       "loser_score": 24,
       "date": "2002-01-27",
-      "round": "post-season"
+      "round": ""
     },
     {
       "winner": "New England Patriots",
@@ -97,7 +97,7 @@
       "winner_score": 38,
       "loser_score": 30,
       "date": "2002-02-09",
-      "round": "post-season"
+      "round": ""
     }
   ],
   "series": [
@@ -108,7 +108,7 @@
       "w2": 0,
       "done": true,
       "loser": "Tampa Bay Buccaneers",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-12"
     },
     {
@@ -118,7 +118,7 @@
       "w2": 0,
       "done": true,
       "loser": "New York Jets",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-13"
     },
     {
@@ -128,7 +128,7 @@
       "w2": 0,
       "done": true,
       "loser": "San Francisco 49ers",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-13"
     },
     {
@@ -138,7 +138,7 @@
       "w2": 0,
       "done": true,
       "loser": "Miami Dolphins",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-13"
     },
     {
@@ -148,7 +148,7 @@
       "w2": 0,
       "done": true,
       "loser": "Chicago Bears",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-19"
     },
     {
@@ -158,7 +158,7 @@
       "w2": 0,
       "done": true,
       "loser": "Oakland Raiders",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-20"
     },
     {
@@ -168,7 +168,7 @@
       "w2": 0,
       "done": true,
       "loser": "Baltimore Ravens",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-20"
     },
     {
@@ -178,7 +178,7 @@
       "w2": 0,
       "done": true,
       "loser": "Green Bay Packers",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-20"
     },
     {
@@ -188,7 +188,7 @@
       "w2": 0,
       "done": true,
       "loser": "Pittsburgh Steelers",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-27"
     },
     {
@@ -198,7 +198,7 @@
       "w2": 0,
       "done": true,
       "loser": "Philadelphia Eagles",
-      "round": "post-season",
+      "round": "",
       "date": "2002-01-27"
     },
     {
@@ -218,7 +218,7 @@
       "w2": 0,
       "done": true,
       "loser": "Nfc",
-      "round": "post-season",
+      "round": "",
       "date": "2002-02-09"
     }
   ],
@@ -236,5 +236,5 @@
     "Nfc",
     "St. Louis Rams"
   ],
-  "updated": "2026-05-27 07:04 UTC"
+  "updated": "2026-05-27 07:54 UTC"
 }

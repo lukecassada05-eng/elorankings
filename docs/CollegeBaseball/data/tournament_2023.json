@@ -700,14 +700,6 @@
       "round": "NCAA Baseball Championship - Coral Gables Regional - Elimination Game"
     },
     {
-      "winner": "Texas Longhorns",
-      "loser": "Miami Hurricanes",
-      "winner_score": 10,
-      "loser_score": 6,
-      "date": "2023-06-04",
-      "round": "NCAA Baseball Championship - Coral Gables Regional - Texas advances to Super Regionals"
-    },
-    {
       "winner": "Coastal Carolina Chanticleers",
       "loser": "Rider Broncs",
       "winner_score": 13,
@@ -908,14 +900,6 @@
       "round": "NCAA Baseball Championship - Lexington Regional - Kentucky advances to Super Regionals"
     },
     {
-      "winner": "Southern Miss Golden Eagles",
-      "loser": "Pennsylvania Quakers",
-      "winner_score": 11,
-      "loser_score": 7,
-      "date": "2023-06-05",
-      "round": "NCAA Baseball Championship - Auburn Regional - Southern Miss advances to Super Regionals"
-    },
-    {
       "winner": "Florida Gators",
       "loser": "South Carolina Gamecocks",
       "winner_score": 5,
@@ -954,14 +938,6 @@
       "loser_score": 4,
       "date": "2023-06-10",
       "round": "NCAA Baseball Championship - Winston-Salem Super Regional - Game 1"
-    },
-    {
-      "winner": "Florida Gators",
-      "loser": "South Carolina Gamecocks",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2023-06-10",
-      "round": "NCAA Baseball Championship - Gainesville Super Regional - Game 2"
     },
     {
       "winner": "LSU Tigers",
@@ -1020,14 +996,6 @@
       "round": "NCAA Baseball Championship - Winston-Salem Super Regional - Game 2"
     },
     {
-      "winner": "LSU Tigers",
-      "loser": "Kentucky Wildcats",
-      "winner_score": 8,
-      "loser_score": 3,
-      "date": "2023-06-11",
-      "round": "NCAA Baseball Championship - Baton Rouge Super Regional - Game 2"
-    },
-    {
       "winner": "Virginia Cavaliers",
       "loser": "Duke Blue Devils",
       "winner_score": 12,
@@ -1050,14 +1018,6 @@
       "loser_score": 4,
       "date": "2023-06-11",
       "round": "NCAA Baseball Championship - Hattiesburg Super Regional - Game 2"
-    },
-    {
-      "winner": "Oral Roberts Golden Eagles",
-      "loser": "Oregon Ducks",
-      "winner_score": 11,
-      "loser_score": 6,
-      "date": "2023-06-11",
-      "round": "NCAA Baseball Championship - Eugene Super Regional - Game 3"
     },
     {
       "winner": "Stanford Cardinal",
@@ -2138,16 +2098,6 @@
       "date": "2023-06-04"
     },
     {
-      "t1": "Texas Longhorns",
-      "t2": "Miami Hurricanes",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Coral Gables Regional - Texas advances to Super Regionals",
-      "date": "2023-06-04"
-    },
-    {
       "t1": "Indiana State Sycamores",
       "t2": "Iowa Hawkeyes",
       "w1": 1,
@@ -2288,16 +2238,6 @@
       "date": "2023-06-05"
     },
     {
-      "t1": "Southern Miss Golden Eagles",
-      "t2": "Pennsylvania Quakers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Auburn Regional - Southern Miss advances to Super Regionals",
-      "date": "2023-06-05"
-    },
-    {
       "t1": "Stanford Cardinal",
       "t2": "Texas A&M Aggies",
       "w1": 1,
@@ -2355,16 +2295,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Winston-Salem Super Regional - Game 1",
-      "date": "2023-06-10"
-    },
-    {
-      "t1": "Florida Gators",
-      "t2": "South Carolina Gamecocks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Gainesville Super Regional - Game 2",
       "date": "2023-06-10"
     },
     {
@@ -2438,16 +2368,6 @@
       "date": "2023-06-11"
     },
     {
-      "t1": "LSU Tigers",
-      "t2": "Kentucky Wildcats",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Baton Rouge Super Regional - Game 2",
-      "date": "2023-06-11"
-    },
-    {
       "t1": "Virginia Cavaliers",
       "t2": "Duke Blue Devils",
       "w1": 1,
@@ -2465,16 +2385,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Hattiesburg Super Regional - Game 2",
-      "date": "2023-06-11"
-    },
-    {
-      "t1": "Oral Roberts Golden Eagles",
-      "t2": "Oregon Ducks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Eugene Super Regional - Game 3",
       "date": "2023-06-11"
     },
     {
@@ -2649,5 +2559,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-05-27 07:05 UTC"
+  "updated": "2026-05-27 07:56 UTC"
 }
