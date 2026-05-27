@@ -1128,16 +1128,16 @@ window.initSportPage = function(CFG) {
     if (!data || !data.length) { el.innerHTML = '<div class="empty-state">Load a season first.</div>'; return; }
     var bracketYear = currentSeason || new Date().getFullYear();
     if (bracketYear !== 2026) {
-      var bp = CFG.dataPath.replace('CBASE_Elo_','');
+      var bp = CFG.dataPath.replace('CBASE_Elo_', '');
       el.innerHTML = '<div class="loading"><div class="spinner"></div>Loading…</div>';
-      fetch(bp+'tournament_'+bracketYear+'.json?t='+Date.now())
-        .then(function(r){return r.ok?r.json():Promise.reject();})
-        .then(function(d){_renderTourneyData(el,d);})
-        .catch(function(){el.innerHTML='<div class="empty-state">No tournament data for '+bracketYear+'.</div>';});
+      fetch(bp + 'tournament_' + bracketYear + '.json?t=' + Date.now())
+        .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+        .then(function(d){ _renderTourneyData(el, d); })
+        .catch(function(){ el.innerHTML = '<div class="empty-state">No tournament data for ' + bracketYear + '.</div>'; });
       return;
     }
     el.innerHTML = '<div class="loading"><div class="spinner"></div>Running simulations…</div>';
-    setTimeout(function(){_runCBaseTourney(el,CBASE_BRACKET_2026);},30);
+    setTimeout(function(){ _runCBaseTourney(el, CBASE_BRACKET_2026); }, 30);
   }
 
   function _runCBaseTourney(el, bracket) {
@@ -1427,7 +1427,7 @@ window.initSportPage = function(CFG) {
 
     var yr = currentSeason || new Date().getFullYear();
     // NFL: playoffs happen Jan/Feb of the NEXT calendar year after the season
-    var jsonYr = yr; // JSON is always named by season year
+    var jsonYr = yr; // JSON always named by season year
     var basePath = CFG.dataPath.replace(CFG.sport + '_Elo_', '');
     var jsonUrl  = basePath + 'tournament_' + jsonYr + '.json?t=' + Date.now();
 
@@ -1488,13 +1488,12 @@ window.initSportPage = function(CFG) {
       NHL: {'First Round':0,'Second Round':1,'Conference Finals':2,'Stanley Cup Final':3},
       MLB: {'Wild Card':0,'Division Series':1,'Championship Series':2,'World Series':3},
       NFL: {'Wild Card':0,'Divisional Round':1,'Conference Championship':2,'Super Bowl':3},
-      CBB: {'First Four':0,'Round of 64':1,'Round of 32':2,'Sweet 16':3,'Elite Eight':4,'Final Four':5,'Championship':6,'First Round':1,'Second Round':2,'Regional Semifinal':3,'Regional Final':4,'National Semifinal':5,'National Championship':6,'Regional':3,'Semifinal':5,'Final':6},
+      CBB: {'First Four':0,'Round of 64':1,'Round of 32':2,'Sweet 16':3,'Elite Eight':4,'Final Four':5,'Championship':6},
     };
     var orderMap = ROUND_ORDER[CFG.sport] || {};
 
     // ── Colors ─────────────────────────────────────────────────
-    function escXml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-        var knownElos = Object.keys(eloMap).map(function(k){return eloMap[k];});
+    var knownElos = Object.keys(eloMap).map(function(k){return eloMap[k];});
     var avg = knownElos.length ? knownElos.reduce(function(s,v){return s+v;},0)/knownElos.length : 1500;
     function clr(name) {
       if (eliminated[name]) return 'var(--text-dim)';
@@ -1599,9 +1598,8 @@ window.initSportPage = function(CFG) {
       }
       // Fallback: split by round sizes
       var sizes = CFG.sport==='NFL'?[6,4,2,1]:CFG.sport==='MLB'?[6,4,2,1]
-               :  CFG.sport==='CBB'?[4,32,16,8,4,2,1]:CFG.sport==='CBASE'?[16,8,1]
+               :  CFG.sport==='CBB'?[34,32,16,8,4,2,1]:CFG.sport==='CBASE'?[16,8,1]
                :  CFG.sport==='NBA'?[6,8,4,2,1]:[8,4,2,1];
-      // For CBB, use actual round labels (First Four has 4 games, not 34)
       var rem = series.slice(), rounds = [];
       sizes.forEach(function(sz,i) {
         if (!rem.length) return;
@@ -1643,46 +1641,37 @@ window.initSportPage = function(CFG) {
       html += '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoff bracket not yet set — showing projected odds based on current Elo.</div>';
     }
 
-    // ── SVG Bracket Tree ───────────────────────────────────────────────
+    // ── SVG Bracket Tree ─────────────────────────────────────────────────
     if (rounds.length) {
-      var COL_W=185, CELL_H=26, PAD_V=7, CONN=28;
+      var COL_W=180, CELL_H=26, PAD_V=7, CONN=30;
       var r0n=rounds[0]?rounds[0].series.length:1;
-      var UNIT=CELL_H*2+PAD_V*2+8;
-      var SVG_H=Math.max(200,r0n*UNIT+32);
+      var SVG_H=Math.max(200,r0n*(CELL_H*2+PAD_V*2+10)+32);
       var SVG_W=rounds.length*(COL_W+CONN)+CONN+4;
-      var parts=[]; var prevCenters=[];
+      var parts=[],prevCenters=[];
+      var glData={};
 
       rounds.forEach(function(rnd,ri){
-        var colX=ri*(COL_W+CONN)+CONN;
-        var n=rnd.series.length, step=SVG_H/n, curC=[];
-        parts.push('<text x="'+(colX+COL_W/2)+'" y="13" text-anchor="middle" font-size="9" font-weight="600" fill="#888" font-family="inherit" letter-spacing="0.06em">'+escXml(rnd.label)+'</text>');
+        var colX=ri*(COL_W+CONN)+CONN,n=rnd.series.length,step=SVG_H/n,curC=[];
+        parts.push('<text x="'+(colX+COL_W/2)+'" y="13" text-anchor="middle" font-size="9" font-weight="600" fill="#888" font-family="inherit" letter-spacing="0.07em">'+escXml(rnd.label)+'</text>');
         rnd.series.forEach(function(s,si){
-          var topY=20+si*step+(step-(CELL_H*2+PAD_V*2))/2;
-          var boxH=CELL_H*2+PAD_V*2, midY=topY+boxH/2;
+          var boxH=CELL_H*2+PAD_V*2,topY=20+si*step+(step-boxH)/2,midY=topY+boxH/2;
           curC.push(midY);
           var sdone=s.done||s.w1>=WIN_TO_ADV||s.w2>=WIN_TO_ADV;
           var sw=sdone?(s.w1>s.w2?s.t1:s.t2):'';
-          var gs=pairGames(s.t1,s.t2), isSingle=WIN_TO_ADV===1;
-          // Box + divider
+          var gs=pairGames(s.t1,s.t2),isSingle=WIN_TO_ADV===1;
           parts.push('<rect x="'+colX+'" y="'+topY+'" width="'+COL_W+'" height="'+boxH+'" rx="3" fill="var(--bg3)" stroke="'+(sdone?'#333':'rgba(226,201,126,0.3)')+'" stroke-width="1"/>');
           parts.push('<line x1="'+colX+'" y1="'+(topY+PAD_V+CELL_H)+'" x2="'+(colX+COL_W)+'" y2="'+(topY+PAD_V+CELL_H)+'" stroke="#333" stroke-width="0.75"/>');
-          // Teams
           [{n:s.t1,w:s.w1},{n:s.t2,w:s.w2}].forEach(function(t,ti){
-            var rowY=topY+PAD_V+ti*CELL_H, midTY=rowY+CELL_H*0.67;
-            var isW=sdone&&t.n===sw, isL=sdone&&t.n!==sw;
-            var fill=isW?'var(--accent)':(isL?'#555':'var(--text)'), fw=isW?'600':'400';
-            var sc='';
-            if(isSingle&&gs.length>0){
-              sc=gs[0].winner===t.n?(gs[0].winner_score||gs[0].ws||0):(gs[0].loser_score||gs[0].ls||0);
-            } else {
-              // Cap at WIN_TO_ADV to prevent double-count display bugs
-              sc=Math.min(t.w||0, WIN_TO_ADV);
-            }
+            var rowY=topY+PAD_V+ti*CELL_H,midTY=rowY+CELL_H*0.67;
+            var isW=sdone&&t.n===sw,isL=sdone&&t.n!==sw;
+            var fill=isW?'var(--accent)':(isL?'#555':'var(--text)'),fw=isW?'600':'400';
+            var sc;
+            if(isSingle&&gs.length>0){var g0=gs[0];sc=g0.winner===t.n?(g0.winner_score||g0.ws||0):(g0.loser_score||g0.ls||0);}
+            else{sc=Math.min(t.w||0,WIN_TO_ADV);}
             if(isW)parts.push('<rect x="'+colX+'" y="'+rowY+'" width="'+COL_W+'" height="'+CELL_H+'" fill="rgba(255,255,255,0.04)"/>');
             parts.push('<foreignObject x="'+(colX+6)+'" y="'+rowY+'" width="'+(COL_W-32)+'" height="'+CELL_H+'"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:11px;line-height:'+CELL_H+'px;color:'+fill+';font-weight:'+fw+';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'+(isL?'text-decoration:line-through;opacity:0.5;':'')+'font-family:inherit;">'+escXml(t.n)+(isW?' ✓':'')+'</div></foreignObject>');
             parts.push('<text x="'+(colX+COL_W-5)+'" y="'+midTY+'" text-anchor="end" font-size="12" font-family="var(--font-mono,monospace)" font-weight="'+fw+'" fill="'+(isW?'var(--accent)':'#666')+'">'+sc+'</text>');
           });
-          // Connector lines
           if(ri>0&&prevCenters.length>=2){
             var pA=prevCenters[si*2],pB=prevCenters[si*2+1];
             if(pA!==undefined&&pB!==undefined){
@@ -1693,26 +1682,50 @@ window.initSportPage = function(CFG) {
           } else if(ri===0){
             parts.push('<line x1="0" y1="'+midY+'" x2="'+colX+'" y2="'+midY+'" stroke="#444" stroke-width="1.5"/>');
           }
-          // Clickable overlay for any series with game data
           if(gs.length>0){
             var ck=escXml([s.t1,s.t2].sort().join('||'));
-            parts.push('<rect class="svgbtn" data-key="'+ck+'" x="'+colX+'" y="'+topY
-              +'" width="'+COL_W+'" height="'+boxH+'" rx="3" fill="transparent" cursor="pointer" opacity="0"/>');
-            parts.push('<circle cx="'+(colX+COL_W-8)+'" cy="'+(topY+5)+'" r="2.5" fill="#888"/>');
+            parts.push('<rect class="svgbtn" data-key="'+ck+'" x="'+colX+'" y="'+topY+'" width="'+COL_W+'" height="'+boxH+'" rx="3" fill="transparent" cursor="pointer" opacity="0"/>');
+            parts.push('<circle cx="'+(colX+COL_W-8)+'" cy="'+(topY+5)+'" r="2.5" fill="#666" pointer-events="none"/>');
+            glData[ck]={t1:s.t1,t2:s.t2,w1:s.w1,w2:s.w2,games:gs};
           }
         });
         prevCenters=curC;
       });
 
-      var glData={};
-      seriesList.forEach(function(s){var k=[s.t1,s.t2].sort().join('||');var g=pairGames(s.t1,s.t2);if(g.length)glData[k]={t1:s.t1,t2:s.t2,w1:s.w1,w2:s.w2,games:g};});
-
-      html+='<div style="overflow-x:auto;margin-bottom:1rem"><svg id="brk-svg" xmlns="http://www.w3.org/2000/svg" width="'+SVG_W+'" height="'+SVG_H+'" style="display:block;font-family:inherit">'+parts.join('')+'</svg></div>';
-      html+='<div id="game-log-panel" style="display:none;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:0.75rem;margin-bottom:1rem"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem"><span id="glp-title" style="font-weight:600;font-size:0.8rem"></span><button onclick="document.getElementById(\'game-log-panel\').style.display=\'none\'" style="background:none;border:none;cursor:pointer;color:var(--text-dim);font-size:1.1rem;line-height:1">✕</button></div><div id="glp-body"></div></div>';
-      html+='<scr'+'ipt>(function(){var D='+JSON.stringify(glData)+';function show(k){var d=D[k];if(!d)return;document.getElementById("glp-title").textContent=d.t1+" vs "+d.t2+" · "+d.w1+"-"+d.w2;document.getElementById("glp-body").innerHTML=d.games.map(function(g,i){return\'<div style="display:flex;gap:0.5rem;padding:0.2rem 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.78rem"><span style="color:#888;min-width:2rem">G\'+(i+1)+\'</span><span style="flex:1;font-weight:600;color:var(--accent)">\'+g.winner+\'</span><span style="font-family:monospace">\'+(g.winner_score||g.ws||0)+\'–\'+(g.loser_score||g.ls||0)+\'</span>\'+(g.date?\'<span style="color:#888;font-size:0.68rem">\'+g.date.slice(5)+\'</span>\':\'\')+\'</div>\';}).join("");document.getElementById("game-log-panel").style.display="block";}setTimeout(function(){document.querySelectorAll(".svgbtn").forEach(function(el){el.addEventListener("click",function(){show(this.getAttribute("data-key"));});});},100);})()</scr'+'ipt>\n';
+      window._tourney_gl=glData;
+      html+='<div style="overflow-x:auto;margin-bottom:1rem">'
+        +'<svg id="brk-svg" xmlns="http://www.w3.org/2000/svg" width="'+SVG_W+'" height="'+SVG_H+'" style="display:block;font-family:inherit">'
+        +parts.join('')+'</svg></div>'
+        +'<div id="game-log-panel" style="display:none;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:0.75rem;margin-bottom:1rem">'
+        +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">'
+        +'<span id="glp-title" style="font-weight:600;font-size:0.8rem;color:var(--text)"></span>'
+        +'<button id="glp-close" style="background:none;border:none;cursor:pointer;color:var(--text-dim);font-size:1.1rem">x</button>'
+        +'</div><div id="glp-body"></div></div>';
+      setTimeout(function(){
+        var glp=document.getElementById('game-log-panel');
+        var cls=document.getElementById('glp-close');
+        if(cls)cls.onclick=function(){glp.style.display='none';};
+        document.querySelectorAll('.svgbtn').forEach(function(btn){
+          btn.addEventListener('click',function(){
+            var d=(window._tourney_gl||{})[this.getAttribute('data-key')];
+            if(!d||!glp)return;
+            document.getElementById('glp-title').textContent=d.t1+' vs '+d.t2+' · '+d.w1+'-'+d.w2;
+            document.getElementById('glp-body').innerHTML=d.games.map(function(g,i){
+              var ws=g.winner_score||g.ws||0,ls=g.loser_score||g.ls||0;
+              var dt=g.date?'<span style="color:#888;font-size:.68rem;margin-left:.25rem">'+g.date.slice(5)+'</span>':'';
+              return '<div style="display:flex;gap:.5rem;padding:.2rem 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.78rem">'
+                +'<span style="color:#888;min-width:2rem">G'+(i+1)+'</span>'
+                +'<span style="flex:1;font-weight:600;color:var(--accent)">'+g.winner+'</span>'
+                +'<span style="font-family:monospace">'+ws+'-'+ls+'</span>'
+                +dt+'</div>';
+            }).join('');
+            glp.style.display='block';
+          });
+        });
+      },80);
     }
 
-    // ── Champion card ──────────────────────────────────────────
+        // ── Champion card ──────────────────────────────────────────
     var champ = isCompleted ? findChampion()
       : (function(){
           var s=allTeams.filter(function(t){return !eliminated[t];});
