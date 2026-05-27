@@ -67,6 +67,7 @@
     <button class="tab" data-tab="rankings">Rankings</button>
     <button class="tab" data-tab="byconf">By Conference</button>
     <button class="tab" data-tab="predictor">Game Predictor</button>
+    <button class="tab" data-tab="tourney">🏀 Playoffs</button>
     <button class="tab" data-tab="history">Elo History</button>
     <button class="tab" data-tab="tracker">Season Tracker</button>
     <button class="tab" data-tab="greatest">Greatest Teams</button>
@@ -123,25 +124,26 @@
   
 
   <div id="panel-history" hidden>
-    <!-- populated by sport-page.js?v=30 renderHistory() -->
+    <!-- populated by sport-page.js renderHistory() -->
   </div>
 
   <div id="panel-tracker" hidden>
-    <!-- populated by sport-page.js?v=30 renderSeasonTracker() -->
+    <!-- populated by sport-page.js renderSeasonTracker() -->
   </div>
 
   <div id="panel-greatest" hidden>
-    <!-- populated by sport-page.js?v=30 renderGreatestTeams() -->
+    <!-- populated by sport-page.js renderGreatestTeams() -->
   </div>
 
   <div id="panel-confhistory" hidden>
-    <!-- populated by sport-page.js?v=30 renderConfHistory() -->
+    <!-- populated by sport-page.js renderConfHistory() -->
   </div>
+  <div id="panel-tourney" hidden></div>
 </div><!-- .page -->
 
-<script src="../js/utils.js?v=30"></script>
-<script src="../js/season-tracker.js?v=30"></script>
-<script src="../js/sport-page.js?v=30"></script>
+<script src="../js/utils.js"></script>
+<script src="../js/season-tracker.js"></script>
+<script src="../js/sport-page.js"></script>
 <script>
 initSportPage({
   sport:     'NBA',
@@ -150,7 +152,7 @@ initSportPage({
   hca:       60,
   confLabel: 'Division',
   kFactor:   25,
-  tabs:      ["rankings", "byconf", "predictor"],
+  tabs:      ["rankings", "byconf", "predictor", "tourney"],
 });
 </script>
   <script>
