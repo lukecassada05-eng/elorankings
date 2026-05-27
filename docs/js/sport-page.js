@@ -1435,11 +1435,12 @@ window.initSportPage = function(CFG) {
       .then(function(r){ return r.ok ? r.json() : Promise.reject('no file'); })
       .then(function(d){ _renderTourneyData(el, d); })
       .catch(function(){
-        // No JSON yet - show a message
+        // JSON not found - show projected odds with clear note
         _renderTourneyData(el, {
           year: jsonYr, sport: CFG.sport,
           games: [], series: [], eliminated: [],
-          updated: null
+          completed: false, updated: null,
+          _notLoaded: true
         });
       });
   }
@@ -1638,7 +1639,14 @@ window.initSportPage = function(CFG) {
       +'</div>';
     if (d.updated) html += '<div style="font-size:0.6rem;color:var(--text-dim);margin-bottom:0.75rem">Updated '+d.updated+'</div>';
     if (!hasGames && !isCompleted) {
-      html += '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoff bracket not yet set — showing projected odds based on current Elo.</div>';
+      var now = new Date();
+      var isPast = d.year < now.getFullYear() || (d.year === now.getFullYear() && now.getMonth() > 8);
+      var notLoadedMsg = d._notLoaded
+        ? (isPast
+            ? '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--text-dim);margin-bottom:0.75rem">⚠️ Historical playoff data not yet loaded. Run the backfill workflow to populate data for '+d.year+'.</div>'
+            : '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoff bracket not yet announced — showing projected odds based on current Elo.</div>')
+        : '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoff bracket not yet announced — showing projected odds based on current Elo.</div>';
+      html += notLoadedMsg;
     }
 
     // ── SVG Bracket Tree ─────────────────────────────────────────────────
