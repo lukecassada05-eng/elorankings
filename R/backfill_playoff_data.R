@@ -17,16 +17,18 @@ fetch_playoff_games <- function(sport_path, start_date, end_date, season_yr=NULL
   }
   
   # All other sports: use scoreboard with seasontype=3
-  # Chunk into monthly requests to avoid ESPN's response size limit
+  # For NBA/CBB also fetch seasontype=5 (play-in tournament)
+  season_types <- if (sport_path %in% c("basketball/nba")) c("3","5") else c("3")
   all_games <- list()
   cur <- start_date
   while (cur <= end_date) {
     chunk_end <- min(end_date, as.Date(format(cur, "%Y-%m-01")) + 31)
     ds <- gsub("-", "", as.character(cur))
     de <- gsub("-", "", as.character(chunk_end))
+    for (stype in season_types) {
     url <- paste0(
       "https://site.api.espn.com/apis/site/v2/sports/", sport_path,
-      "/scoreboard?seasontype=3&limit=500&dates=", ds, "-", de
+      "/scoreboard?seasontype=", stype, "&limit=500&dates=", ds, "-", de
     )
     data <- tryCatch(
       jsonlite::fromJSON(url, simplifyVector = FALSE),
@@ -46,8 +48,13 @@ fetch_playoff_games <- function(sport_path, start_date, end_date, season_yr=NULL
           # Capture round name from ESPN event notes or season type details
           round_name <- tryCatch({
             notes <- ev$competitions[[1]]$notes
-            if (!is.null(notes) && length(notes)>0) notes[[1]]$headline
-            else tryCatch(ev$season$slug, error=function(e) "")
+            if (!is.null(notes) && length(notes)>0 && !is.null(notes[[1]]$headline)) {
+              notes[[1]]$headline
+            } else if (stype == "5") {
+              "Play-In"
+            } else {
+              tryCatch(ev$season$slug, error=function(e) "")
+            }
           }, error=function(e) "")
           game_date <- tryCatch(substr(comp$date,1,10), error=function(e)"")
           all_games <- c(all_games, list(list(
@@ -58,6 +65,7 @@ fetch_playoff_games <- function(sport_path, start_date, end_date, season_yr=NULL
         }, error=function(e) NULL)
       }
     }
+    } # end for stype
     cur <- chunk_end + 1
     Sys.sleep(0.2)
   }
@@ -203,7 +211,7 @@ write_tournament_json <- function(sport_name, season_yr, games_yr,
 
 configs <- list(
   list(sport="NBA",   dir="docs/NBA/data",   win=4, 
-       start_mo=4, start_day=13, end_mo=6, end_day=30,
+       start_mo=4, start_day=12, end_mo=6, end_day=30,
        seasons=2002:2026, games_yr_offset=0),
   list(sport="NHL",   dir="docs/NHL/data",   win=4,
        start_mo=4, start_day=11, end_mo=7, end_day=15,
