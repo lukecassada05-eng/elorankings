@@ -10,6 +10,97 @@ suppressPackageStartupMessages({
   library(jsonlite)
 })
 
+fetch_cbb_bracket <- function(season_yr) {
+  # Try ESPN tournament bracket API first
+  url <- paste0("https://site.api.espn.com/apis/site/v2/sports/basketball/",
+                "mens-college-basketball/tournament/bracket?season=", season_yr)
+  data <- tryCatch(jsonlite::fromJSON(url, simplifyVector=FALSE), error=function(e) NULL)
+  
+  games <- list()
+  
+  if (!is.null(data)) {
+    # Navigate ESPN bracket structure - try multiple paths
+    rounds <- tryCatch(data$bracket$rounds, error=function(e) NULL)
+    if (is.null(rounds)) rounds <- tryCatch(data$rounds, error=function(e) NULL)
+    if (is.null(rounds)) rounds <- tryCatch(data$bracket[[1]]$rounds, error=function(e) NULL)
+    
+    if (!is.null(rounds)) {
+      for (rnd in rounds) {
+        matchups <- tryCatch(rnd$matchups, error=function(e) rnd$games)
+        if (is.null(matchups)) next
+        for (mu in matchups) {
+          tryCatch({
+            comps <- mu$competitors
+            if (is.null(comps) || length(comps) != 2) next
+            done  <- isTRUE(tryCatch(mu$status$type$completed, error=function(e) FALSE))
+            if (!done) next
+            scores <- suppressWarnings(as.numeric(sapply(comps, function(c)
+              tryCatch(c$score, error=function(e) NA))))
+            names  <- sapply(comps, function(c)
+              tryCatch(c$team$displayName, error=function(e)
+              tryCatch(c$team$shortDisplayName, error=function(e) "")))
+            if (any(is.na(scores))||any(nchar(names)==0)||scores[1]==scores[2]) next
+            wi <- which.max(scores); li <- 3-wi
+            rnd_name <- tryCatch(rnd$name, error=function(e) rnd$type$name)
+            if (is.null(rnd_name)||length(rnd_name)==0) rnd_name <- ""
+            games <- c(games, list(list(
+              winner=names[wi], loser=names[li],
+              winner_score=scores[wi], loser_score=scores[li],
+              date=tryCatch(substr(mu$date,1,10),error=function(e)""),
+              round=rnd_name
+            )))
+          }, error=function(e) NULL)
+        }
+      }
+      message("  CBB bracket API: ", length(games), " games from rounds structure")
+      return(games)
+    }
+  }
+  
+  # Fallback: use scoreboard seasontype=3 with daily chunks
+  message("  CBB: bracket API failed, falling back to scoreboard")
+  start <- as.Date(paste0(season_yr, "-03-14"))
+  end   <- as.Date(paste0(season_yr, "-04-10"))
+  today <- Sys.Date()
+  if (end > today) end <- today
+  
+  cur <- start
+  while (cur <= end) {
+    chunk_end <- min(end, cur + 3)  # 4-day chunks for CBB
+    ds <- gsub("-","",as.character(cur))
+    de <- gsub("-","",as.character(chunk_end))
+    url2 <- paste0("https://site.api.espn.com/apis/site/v2/sports/basketball/",
+                   "mens-college-basketball/scoreboard?seasontype=3&limit=200&dates=",ds,"-",de)
+    d2 <- tryCatch(jsonlite::fromJSON(url2,simplifyVector=FALSE), error=function(e) NULL)
+    if (!is.null(d2) && length(d2$events)>0) {
+      for (ev in d2$events) {
+        tryCatch({
+          comp  <- ev$competitions[[1]]
+          if (!isTRUE(comp$status$type$completed)) next
+          comps <- comp$competitors
+          if (length(comps)!=2) next
+          scores <- suppressWarnings(as.numeric(sapply(comps,function(c)c$score)))
+          names  <- sapply(comps,function(c)c$team$displayName)
+          if (any(is.na(scores))||scores[1]==scores[2]) next
+          wi <- which.max(scores); li <- 3-wi
+          notes <- tryCatch(comp$notes[[1]]$headline, error=function(e)"")
+          games <- c(games, list(list(
+            winner=names[wi], loser=names[li],
+            winner_score=scores[wi], loser_score=scores[li],
+            date=tryCatch(substr(comp$date,1,10),error=function(e)""),
+            round=if(!is.null(notes)&&length(notes)>0) notes else ""
+          )))
+        }, error=function(e) NULL)
+      }
+    }
+    cur <- chunk_end + 1
+    Sys.sleep(0.15)
+  }
+  message("  CBB scoreboard fallback: ", length(games), " games")
+  games
+}
+
+
 fetch_playoff_games <- function(sport_path, start_date, end_date, season_yr=NULL) {
   # CBB: use the tournament bracket API which returns full results cleanly
   if (grepl("mens-college-basketball", sport_path) && !is.null(season_yr)) {
