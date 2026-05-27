@@ -42,7 +42,7 @@ fetch_playoff_games <- function(sport_path, start_date, end_date, season_yr=NULL
           comps <- comp$competitors
           if (length(comps) != 2) next
           scores <- suppressWarnings(as.numeric(sapply(comps, function(c) c$score)))
-          names  <- sapply(comps, function(c) c$team$shortDisplayName)
+          names  <- sapply(comps, function(c) c$team$displayName)
           if (any(is.na(scores)) || scores[1] == scores[2]) next
           wi <- which.max(scores); li <- 3 - wi
           # Capture round name from ESPN event notes or season type details
@@ -100,7 +100,7 @@ fetch_cbb_bracket <- function(season_yr) {
         scores <- suppressWarnings(as.numeric(sapply(comps, function(c) 
           tryCatch(c$score, error=function(e) NA))))
         names  <- sapply(comps, function(c) 
-          tryCatch(c$team$shortDisplayName, error=function(e) ""))
+          tryCatch(c$team$displayName, error=function(e) ""))
         completed <- isTRUE(tryCatch(mu$status$type$completed, error=function(e) FALSE))
         if (!completed || any(is.na(scores)) || nchar(names[1])==0 || nchar(names[2])==0) next
         if (scores[1] == scores[2]) next
