@@ -1445,20 +1445,35 @@ window.initSportPage = function(CFG) {
   }
 
   function _renderTourneyData(el, d) {
+    // ── Elo lookup with fuzzy matching ─────────────────────────
     var eloMap = {};
-    if (data && data.length) data.forEach(function(r){ eloMap[r.team]=r.elo; });
-    function getElo(t){ return eloMap[t]||1500; }
+    if (data && data.length) data.forEach(function(r){ eloMap[r.team] = r.elo; });
+    function getElo(name) {
+      if (eloMap[name]) return eloMap[name];
+      // Fuzzy: find key whose words include name or vice versa
+      var nl = name.toLowerCase().replace(/[^a-z0-9]/g,'');
+      var best = null, bestLen = 0;
+      Object.keys(eloMap).forEach(function(k) {
+        var kl = k.toLowerCase().replace(/[^a-z0-9]/g,'');
+        if (kl === nl) { best = k; bestLen = 9999; return; }
+        if (kl.includes(nl) || nl.includes(kl)) {
+          var sc = Math.min(kl.length, nl.length);
+          if (sc > bestLen) { best = k; bestLen = sc; }
+        }
+      });
+      return best ? eloMap[best] : null; // null = genuinely unknown
+    }
 
     var eliminated = {};
-    (d.eliminated||[]).forEach(function(t){ eliminated[t]=true; });
+    (d.eliminated||[]).forEach(function(t){ eliminated[t] = true; });
 
     var WIN_TO_ADV = (CFG.sport==='NFL'||CFG.sport==='CBB'||CFG.sport==='CBASE') ? 1
                    : (CFG.sport==='MLB') ? 3 : 4;
     var isCompleted = d.completed === true;
     var hasGames    = (d.games||[]).length > 0;
-    var seriesList  = d.series||[];
+    var seriesList  = d.series || [];
 
-    // ── Round labels per sport ─────────────────────────────────
+    // ── Round labels ───────────────────────────────────────────
     var ROUND_LABELS = {
       NBA:   ['Play-In','First Round','Conference Semifinals','Conference Finals','NBA Finals'],
       NHL:   ['First Round','Second Round','Conference Finals','Stanley Cup Final'],
@@ -1467,55 +1482,126 @@ window.initSportPage = function(CFG) {
       CBB:   ['First Four','Round of 64','Round of 32','Sweet 16','Elite Eight','Final Four','Championship'],
       CBASE: ['Regionals','Super Regionals','College World Series'],
     };
-    // Round order map for sorting (lower = earlier round)
-    var ROUND_ORDER = {
-      NBA:   {'Play-In':0,'First Round':1,'Conference Semifinals':2,'Conference Finals':3,'NBA Finals':4},
-      NHL:   {'First Round':0,'Second Round':1,'Conference Finals':2,'Stanley Cup Final':3},
-      MLB:   {'Wild Card':0,'Division Series':1,'Championship Series':2,'World Series':3},
-      NFL:   {'Wild Card':0,'Divisional Round':1,'Conference Championship':2,'Super Bowl':3},
-    };
     var roundLabels = ROUND_LABELS[CFG.sport] || [];
+    var ROUND_ORDER = {
+      NBA: {'Play-In':0,'First Round':1,'Conference Semifinals':2,'Conference Finals':3,'NBA Finals':4},
+      NHL: {'First Round':0,'Second Round':1,'Conference Finals':2,'Stanley Cup Final':3},
+      MLB: {'Wild Card':0,'Division Series':1,'Championship Series':2,'World Series':3},
+      NFL: {'Wild Card':0,'Divisional Round':1,'Conference Championship':2,'Super Bowl':3},
+      CBB: {'First Four':0,'Round of 64':1,'Round of 32':2,'Sweet 16':3,'Elite Eight':4,'Final Four':5,'Championship':6},
+    };
+    var orderMap = ROUND_ORDER[CFG.sport] || {};
+
+    // ── Colors ─────────────────────────────────────────────────
+    var knownElos = Object.keys(eloMap).map(function(k){return eloMap[k];});
+    var avg = knownElos.length ? knownElos.reduce(function(s,v){return s+v;},0)/knownElos.length : 1500;
+    function clr(name) {
+      if (eliminated[name]) return 'var(--text-dim)';
+      var e = getElo(name);
+      if (!e) return 'var(--text)';
+      return e >= avg ? 'var(--green-hi)' : e < avg-150 ? 'var(--red-hi)' : 'var(--accent)';
+    }
+
+    // ── Find champion from completed series ────────────────────
+    function findChampion() {
+      if (!seriesList.length) return null;
+      // Champion = team that won the most recent completed final series
+      var doneSeries = seriesList.filter(function(s){
+        return s.done || s.w1 >= WIN_TO_ADV || s.w2 >= WIN_TO_ADV;
+      });
+      if (!doneSeries.length) return null;
+      // Find the last series (by date or highest round)
+      var lastSeries = doneSeries[doneSeries.length - 1];
+      // Try to find the final round series
+      doneSeries.forEach(function(s) {
+        var rnd = (s.round||'').trim();
+        var o = orderMap[rnd] !== undefined ? orderMap[rnd] : -1;
+        var lo = orderMap[(lastSeries.round||'').trim()] !== undefined ? orderMap[(lastSeries.round||'').trim()] : -1;
+        if (o > lo) lastSeries = s;
+      });
+      return lastSeries.w1 >= WIN_TO_ADV ? lastSeries.t1 : lastSeries.t2;
+    }
+
+    // ── Monte Carlo odds ───────────────────────────────────────
+    function wp(a,b){
+      var ea = getElo(a)||avg, eb = getElo(b)||avg;
+      return 1/(1+Math.pow(10,(eb-ea)/400));
+    }
+    function simSeries(t1,t2,w1,w2,wta) {
+      var s1=w1,s2=w2;
+      while(s1<wta&&s2<wta){ if(Math.random()<wp(t1,t2))s1++;else s2++; }
+      return s1>=wta?t1:t2;
+    }
+
+    var allTeams = [], seenT = {};
+    seriesList.forEach(function(s){
+      [s.t1,s.t2].forEach(function(t){if(!seenT[t]){seenT[t]=1;allTeams.push(t);}});
+    });
+    if (!allTeams.length) {
+      var n = CFG.sport==='NFL'?14:CFG.sport==='MLB'?12:CFG.sport==='CBB'?64:16;
+      data.slice().sort(function(a,b){return b.elo-a.elo;}).slice(0,n)
+        .forEach(function(r){ allTeams.push(r.team); });
+    }
+
+    var champCount = {};
+    allTeams.forEach(function(t){ champCount[t] = 0; });
+
+    var N = isCompleted ? 0 : 1500;
+    if (N > 0 && allTeams.length > 1) {
+      for (var sim=0; sim<N; sim++) {
+        var alive = allTeams.filter(function(t){ return !eliminated[t]; });
+        if (seriesList.length) {
+          var rw = [];
+          seriesList.forEach(function(s) {
+            var wta = WIN_TO_ADV;
+            if (eliminated[s.t1]){ rw.push(s.t2); return; }
+            if (eliminated[s.t2]){ rw.push(s.t1); return; }
+            if (s.done || s.w1>=WIN_TO_ADV || s.w2>=WIN_TO_ADV) {
+              rw.push(s.w1>s.w2?s.t1:s.t2);
+            } else {
+              rw.push(simSeries(s.t1,s.t2,s.w1||0,s.w2||0,wta));
+            }
+          });
+          alive = rw;
+        }
+        while (alive.length > 1) {
+          var nx = [];
+          for (var i=0; i<alive.length; i+=2) {
+            if (i+1>=alive.length){ nx.push(alive[i]); continue; }
+            nx.push(simSeries(alive[i],alive[i+1],0,0,WIN_TO_ADV));
+          }
+          alive = nx;
+        }
+        if (alive.length===1 && champCount[alive[0]]!==undefined) champCount[alive[0]]++;
+      }
+    }
 
     // ── Assign series to rounds ────────────────────────────────
-    // Group by round name if available, else by order
     function assignRounds(series) {
       if (!series.length) return [];
-      // Group series by round name
       var byRound = {};
       series.forEach(function(s) {
         var rnd = (s.round||'').trim() || 'Unknown';
         if (!byRound[rnd]) byRound[rnd] = [];
         byRound[rnd].push(s);
       });
-      var roundKeys = Object.keys(byRound);
-      var hasRoundNames = roundKeys.some(function(k){ return k && k !== 'Unknown'; });
-
-      if (hasRoundNames) {
-        // Sort by known round order, unknown rounds go last
-        var orderMap = (ROUND_ORDER[CFG.sport] || {});
-        roundKeys.sort(function(a,b){
-          var oa = orderMap[a] !== undefined ? orderMap[a] : 99;
-          var ob = orderMap[b] !== undefined ? orderMap[b] : 99;
-          return oa - ob;
+      var keys = Object.keys(byRound);
+      var hasNames = keys.some(function(k){ return k && k !== 'Unknown'; });
+      if (hasNames) {
+        keys.sort(function(a,b){
+          return (orderMap[a]!==undefined?orderMap[a]:99) - (orderMap[b]!==undefined?orderMap[b]:99);
         });
-        return roundKeys.map(function(k) {
-          // Use canonical label if we know it, else use the round name as-is
-          var label = (orderMap[k] !== undefined && roundLabels[orderMap[k]])
-            ? roundLabels[orderMap[k]] : k;
-          return { label: label, series: byRound[k] };
+        return keys.map(function(k) {
+          var i = orderMap[k];
+          return { label: (i!==undefined && roundLabels[i]) ? roundLabels[i] : k, series: byRound[k] };
         });
       }
-
-      // Fallback: infer rounds by series count using sport-specific sizes
-      var rem = series.slice();
-      var roundSizes = CFG.sport==='NFL'  ? [6,4,2,1]
-                     : CFG.sport==='MLB'  ? [6,4,2,1]
-                     : CFG.sport==='CBB'  ? [34,32,16,8,4,2,1]
-                     : CFG.sport==='CBASE'? [16,8,1]
-                     : CFG.sport==='NBA'  ? [6,8,4,2,1]  // 6 play-in + 8 R1 + ...
-                     : [8,4,2,1];
-      var rounds = [];
-      roundSizes.forEach(function(sz, i) {
+      // Fallback: split by round sizes
+      var sizes = CFG.sport==='NFL'?[6,4,2,1]:CFG.sport==='MLB'?[6,4,2,1]
+               :  CFG.sport==='CBB'?[34,32,16,8,4,2,1]:CFG.sport==='CBASE'?[16,8,1]
+               :  CFG.sport==='NBA'?[6,8,4,2,1]:[8,4,2,1];
+      var rem = series.slice(), rounds = [];
+      sizes.forEach(function(sz,i) {
         if (!rem.length) return;
         var chunk = rem.splice(0, Math.min(sz, rem.length));
         if (chunk.length) rounds.push({ label: roundLabels[i]||('Round '+(i+1)), series: chunk });
@@ -1526,191 +1612,205 @@ window.initSportPage = function(CFG) {
 
     var rounds = assignRounds(seriesList);
 
-    // ── Monte Carlo odds ───────────────────────────────────────
-    function wp(a,b){ return 1/(1+Math.pow(10,(getElo(b)-getElo(a))/400)); }
-    function simSeries(t1,t2,w1,w2,wta) {
-      var s1=w1,s2=w2;
-      while(s1<wta&&s2<wta){ if(Math.random()<wp(t1,t2))s1++;else s2++; }
-      return s1>=wta?t1:t2;
-    }
-
-    var N = isCompleted ? 0 : 1000;
-    var champCount = {};
-    var allTeams = [];
-    var seen = {};
-    seriesList.forEach(function(s){
-      [s.t1,s.t2].forEach(function(t){
-        if(!seen[t]){seen[t]=1;allTeams.push(t);champCount[t]=0;}
-      });
+    // ── Game score lookup ──────────────────────────────────────
+    var gameLookup = {};
+    (d.games||[]).forEach(function(g) {
+      var key = [g.winner,g.loser].sort().join('|');
+      if (!gameLookup[key]) gameLookup[key] = [];
+      gameLookup[key].push(g);
     });
-    if (!allTeams.length) {
-      // Pre-playoff: use top Elo teams
-      var n = CFG.sport==='NFL'?14:CFG.sport==='MLB'?12:CFG.sport==='CBB'?64:16;
-      data.slice().sort(function(a,b){return b.elo-a.elo;}).slice(0,n).forEach(function(r){
-        allTeams.push(r.team); champCount[r.team]=0;
-      });
-    }
+    function pairGames(t1,t2){ return gameLookup[[t1,t2].sort().join('|')]||[]; }
 
-    if (N > 0 && allTeams.length) {
-      for (var sim=0;sim<N;sim++){
-        var alive = allTeams.filter(function(t){return !eliminated[t];});
-        if (seriesList.length) {
-          var rw=[];
-          seriesList.forEach(function(s){
-            var wtaS = (CFG.sport==='MLB'&&(s.round||'').toLowerCase().includes('wild'))?2:WIN_TO_ADV;
-            if(eliminated[s.t1]){rw.push(s.t2);return;}
-            if(eliminated[s.t2]){rw.push(s.t1);return;}
-            if(s.done||s.w1>=WIN_TO_ADV||s.w2>=WIN_TO_ADV){
-              rw.push(s.w1>s.w2?s.t1:s.t2);
-            } else {
-              rw.push(simSeries(s.t1,s.t2,s.w1||0,s.w2||0,WIN_TO_ADV));
-            }
-          });
-          alive=rw;
-        }
-        while(alive.length>1){
-          var nx=[];
-          for(var i=0;i<alive.length;i+=2){
-            if(i+1>=alive.length){nx.push(alive[i]);continue;}
-            nx.push(simSeries(alive[i],alive[i+1],0,0,WIN_TO_ADV));
-          }
-          alive=nx;
-        }
-        if(alive.length===1&&champCount[alive[0]]!==undefined) champCount[alive[0]]++;
-      }
-    }
-
-    var avg = allTeams.reduce(function(s,t){return s+getElo(t);},0)/(allTeams.length||1);
-    function clr(t){
-      if(eliminated[t]) return 'var(--text-dim)';
-      var e=getElo(t);
-      return e>=avg?'var(--green-hi)':e<avg-150?'var(--red-hi)':'var(--accent)';
-    }
-    function pct(n){ return N>0?(n/N*100).toFixed(0)+'%':'';}
-
-    // ── Render bracket ─────────────────────────────────────────
+    // ── Render ─────────────────────────────────────────────────
     var icon = {NBA:'🏀',NHL:'🏒',MLB:'⚾',NFL:'🏈',CBB:'🏀',CBASE:'⚾'}[CFG.sport]||'🏆';
     var sportTitle = {
       NBA:'NBA Playoffs', NHL:'Stanley Cup Playoffs', MLB:'MLB Playoffs',
       NFL:'NFL Playoffs', CBB:'NCAA Tournament', CBASE:'NCAA Baseball Tournament'
-    }[CFG.sport] || (CFG.sport+' Playoffs');
+    }[CFG.sport]||(CFG.sport+' Playoffs');
     var liveTag = isCompleted
-      ? '<span style="color:var(--green-hi);font-size:0.68rem;margin-left:0.5rem">✓ Final</span>'
+      ? ' <span style="color:var(--green-hi);font-size:0.68rem">✓ Final</span>'
       : hasGames
-        ? '<span style="color:var(--green-hi);font-size:0.68rem;margin-left:0.5rem">● Live</span>'
-        : '<span style="color:var(--text-dim);font-size:0.68rem;margin-left:0.5rem">Projected</span>';
+        ? ' <span style="color:var(--green-hi);font-size:0.68rem">● Live</span>'
+        : ' <span style="color:var(--text-dim);font-size:0.68rem">Projected</span>';
 
     var html = '<div class="section-header"><span>'+icon+' '+d.year+' '+sportTitle+liveTag+'</span>'
-      +'<button id="gen-resim" style="margin-left:auto;padding:0.2rem 0.6rem;border:1px solid var(--border);background:var(--bg3);border-radius:var(--radius);cursor:pointer;font-size:0.7rem;color:var(--text)">🎲 Re-simulate</button>'
+      +(N>0?'<button id="gen-resim" style="margin-left:auto;padding:0.2rem 0.6rem;border:1px solid var(--border);background:var(--bg3);border-radius:var(--radius);cursor:pointer;font-size:0.7rem;color:var(--text)">🎲 Re-simulate</button>':'')
       +'</div>';
-
-    if (d.updated) {
-      html += '<div style="font-size:0.62rem;color:var(--text-dim);margin-bottom:1rem">Updated: '+d.updated+'</div>';
-    }
-
+    if (d.updated) html += '<div style="font-size:0.6rem;color:var(--text-dim);margin-bottom:0.75rem">Updated '+d.updated+'</div>';
     if (!hasGames && !isCompleted) {
-      // Pre-playoff: show projected odds only
-      html += '<div style="padding:0.6rem 0;font-size:0.78rem;color:var(--accent);margin-bottom:1rem">'
-        +'📅 Playoffs not yet started — showing projected championship odds based on current Elo rankings.</div>';
+      html += '<div style="padding:0.5rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoff bracket not yet set — showing projected odds based on current Elo.</div>';
     }
 
-    // ── Bracket rounds ─────────────────────────────────────────
+    // ── Bracket: rounds as vertical columns, scrollable ────────
     if (rounds.length) {
-      html += '<div style="overflow-x:auto;margin-bottom:1.5rem"><div style="display:flex;gap:0;min-width:'+Math.max(600,rounds.length*200)+'px">';
+      var colW = Math.max(160, Math.min(220, Math.floor(el.offsetWidth / rounds.length) - 8));
+      html += '<div style="overflow-x:auto;margin-bottom:1.5rem;padding-bottom:0.5rem">'
+        +'<div style="display:flex;gap:6px;min-width:'+(rounds.length * (colW+6))+'px;align-items:flex-start">';
 
       rounds.forEach(function(rnd, ri) {
-        var isLast = ri===rounds.length-1;
-        html += '<div style="flex:1;display:flex;flex-direction:column;border-right:'+(isLast?'none':'1px solid var(--border)')+';">';
-        // Round header
-        html += '<div style="text-align:center;padding:0.4rem 0.25rem;font-size:0.58rem;font-weight:600;'
-          +'text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim);'
-          +'border-bottom:1px solid var(--border);background:var(--bg2)">'
-          +rnd.label+'</div>';
-        // Series cards
-        html += '<div style="display:flex;flex-direction:column;justify-content:space-around;flex:1;padding:0.4rem 0.25rem;gap:0.4rem">';
+        html += '<div style="flex:0 0 '+colW+'px;min-width:'+colW+'px">'
+          +'<div style="text-align:center;padding:0.3rem 0.25rem;font-size:0.58rem;font-weight:700;'
+          +'text-transform:uppercase;letter-spacing:0.07em;color:var(--text-dim);'
+          +'border-bottom:2px solid var(--border);margin-bottom:6px">'+rnd.label+'</div>';
+
         rnd.series.forEach(function(s) {
           var sdone = s.done || s.w1>=WIN_TO_ADV || s.w2>=WIN_TO_ADV;
           var sw = sdone ? (s.w1>s.w2?s.t1:s.t2) : '';
-          var wta = WIN_TO_ADV;
+          var isSingle = WIN_TO_ADV === 1;
+          var games = pairGames(s.t1, s.t2);
 
-          html += '<div style="background:var(--bg3);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden">';
-          [s.t1,s.t2].forEach(function(t,ti) {
-            var tw = ti===0?s.w1:s.w2;
-            var isW = sdone && t===sw;
-            var isL = sdone && t!==sw;
-            var tClr = isL?'var(--text-dim)':clr(t);
-            var bgClr = isW?'rgba(255,255,255,0.04)':'transparent';
-            var odds = N>0&&champCount[t]!==undefined?' <span style="font-size:0.55rem;color:var(--text-dim)">'+pct(champCount[t])+'</span>':'';
-            html += '<div style="display:flex;align-items:center;padding:0.28rem 0.5rem;background:'+bgClr+';'
-              +(isL?'opacity:0.4;text-decoration:line-through;':'')+'">'
-              +'<span style="color:'+tClr+';font-size:0.72rem;font-weight:'+(isW?'700':'400')+';flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'
-              +t+(isW?' ✓':'')+odds+'</span>'
-              +'<span style="font-family:var(--font-mono);font-size:0.72rem;font-weight:'+(isW?'700':'400')+';color:'+(isW?'var(--accent)':'var(--text-dim)')+';margin-left:0.4rem;min-width:1rem;text-align:center">'+tw+'</span>'
-              +'</div>';
-          });
-          if (!sdone) {
-            var label = WIN_TO_ADV===1?'Single elim':'First to '+WIN_TO_ADV;
-            html += '<div style="font-size:0.52rem;color:var(--text-dim);padding:0.15rem 0.5rem;border-top:1px solid var(--border)">'+label+'</div>';
+          html += '<div style="background:var(--bg3);border-radius:6px;border:1px solid '
+            +(sdone?'var(--border)':hasGames?'rgba(226,201,126,0.25)':'var(--border)')
+            +';overflow:hidden;margin-bottom:6px">';
+
+          if (isSingle && games.length > 0) {
+            // Single-elim with score
+            games.forEach(function(g, gi) {
+              if (gi>0) html += '<div style="height:1px;background:var(--border)"></div>';
+              [[g.winner,g.winner_score||g.ws,true],[g.loser,g.loser_score||g.ls,false]].forEach(function(row) {
+                var t=row[0], sc=row[1], isW=row[2];
+                html += '<div style="display:flex;align-items:center;padding:0.3rem 0.5rem;'
+                  +(isW?'background:rgba(255,255,255,0.03)':'opacity:0.45')+'">'
+                  +'<span style="color:'+clr(t)+';font-size:0.72rem;font-weight:'+(isW?'700':'400')+';flex:1;'
+                  +'white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="'+t+'">'+t+(isW?' ✓':'')+'</span>'
+                  +'<span style="font-family:var(--font-mono);font-size:0.75rem;font-weight:'+(isW?'700':'500')+';'
+                  +'color:'+(isW?'var(--accent)':'var(--text-dim)')+';min-width:2ch;text-align:right">'+sc+'</span>'
+                  +'</div>';
+              });
+            });
+          } else if (isSingle) {
+            // Single-elim, no score yet
+            [s.t1,s.t2].forEach(function(t) {
+              var isW = sdone && t===sw;
+              html += '<div style="display:flex;align-items:center;padding:0.28rem 0.5rem;'
+                +(sdone&&!isW?'opacity:0.4;text-decoration:line-through;':'')+'">'
+                +'<span style="color:'+clr(t)+';font-size:0.72rem;font-weight:'+(isW?'700':'400')+';flex:1;'
+                +'white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="'+t+'">'+t+(isW?' ✓':'')+'</span>'
+                +(sdone?''+'<span style="font-size:0.6rem;color:var(--text-dim)">TBD</span>':'')
+                +'</div>';
+            });
+          } else {
+            // Best-of-N series
+            [s.t1,s.t2].forEach(function(t,ti) {
+              var tw=ti===0?s.w1:s.w2, isW=sdone&&t===sw, isL=sdone&&t!==sw;
+              var eStr = (N>0&&champCount[t]!==undefined&&!isCompleted)
+                ? ' <span style="font-size:0.52rem;color:var(--text-dim)">'+(champCount[t]/N*100).toFixed(0)+'%</span>' : '';
+              html += '<div style="display:flex;align-items:center;padding:0.28rem 0.5rem;'
+                +(isW?'background:rgba(255,255,255,0.03)':'')+(isL?'opacity:0.4;text-decoration:line-through;':'')+'">'
+                +'<span style="color:'+clr(t)+';font-size:0.72rem;font-weight:'+(isW?'700':'400')+';flex:1;'
+                +'white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="'+t+'">'+t+(isW?' ✓':'')+eStr+'</span>'
+                +'<span style="font-family:var(--font-mono);font-size:0.75rem;font-weight:'+(isW?'700':'400')+';'
+                +'color:'+(isW?'var(--accent)':'var(--text-dim)')+';min-width:1ch;text-align:right">'+tw+'</span>'
+                +'</div>';
+            });
+            // Individual game scores
+            if (games.length > 0) {
+              html += '<div style="border-top:1px solid var(--border);padding:0.2rem 0.5rem">';
+              games.forEach(function(g,gi) {
+                html += '<div style="font-size:0.57rem;color:var(--text-dim);line-height:1.6">'
+                  +'G'+(gi+1)+': <span style="color:var(--text)">'+g.winner+'</span> '
+                  +'<span style="font-family:var(--font-mono)">'+(g.winner_score||g.ws||'')+'–'+(g.loser_score||g.ls||'')+'</span>'
+                  +(g.date?' <span style="opacity:0.45">'+g.date.slice(5)+'</span>':'')
+                  +'</div>';
+              });
+              html += '</div>';
+            } else if (!sdone) {
+              html += '<div style="font-size:0.52rem;color:var(--text-dim);padding:0.12rem 0.5rem;border-top:1px solid var(--border)">Best of '+(WIN_TO_ADV*2-1)+'</div>';
+            }
           }
           html += '</div>';
         });
-        html += '</div></div>';
+        html += '</div>';
       });
       html += '</div></div>';
     }
 
-    // ── Championship odds table ────────────────────────────────
-    if (N > 0 && allTeams.length) {
-      var sorted = allTeams.slice().sort(function(a,b){return (champCount[b]||0)-(champCount[a]||0);});
-      var active = sorted.filter(function(t){return !eliminated[t];});
-      var elim   = sorted.filter(function(t){return  eliminated[t];});
-      var topTeam = active[0]||sorted[0];
+    // ── Champion card ──────────────────────────────────────────
+    var champ = isCompleted ? findChampion()
+      : (function(){
+          var s=allTeams.filter(function(t){return !eliminated[t];});
+          return s.sort(function(a,b){return (champCount[b]||0)-(champCount[a]||0);})[0]||null;
+        })();
 
-      if (topTeam) {
-        html += '<div class="card" style="padding:0.75rem;display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;border:1px solid var(--accent)">'
-          +'<div style="flex:1">'
-          +'<div style="font-size:0.55rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim)">Most likely champion</div>'
-          +'<div style="font-size:1.15rem;font-weight:700;color:'+clr(topTeam)+'">'+topTeam+'</div>'
-          +'<div style="font-size:0.68rem;color:var(--text-dim)">'+pct(champCount[topTeam]||0)+' odds · Elo '+getElo(topTeam).toFixed(0)+'</div>'
-          +'</div><div style="font-size:1.6rem">🏆</div></div>';
-      }
+    if (champ) {
+      var champE = getElo(champ);
+      var champClr = champE ? clr(champ) : 'var(--accent)';
+      var champPct = N>0 ? ' · '+(champCount[champ]/N*100).toFixed(0)+'% odds' : '';
+      html += '<div class="card" style="padding:0.85rem;display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;border:1px solid var(--accent)">'
+        +'<div style="flex:1"><div style="font-size:0.55rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim)">'
+        +(isCompleted?'🏆 Champion':'Most likely champion')+'</div>'
+        +'<div style="font-size:1.15rem;font-weight:700;color:'+champClr+'">'+champ+'</div>'
+        +(champE?'<div style="font-size:0.68rem;color:var(--text-dim)">Elo '+champE.toFixed(0)+champPct+'</div>':'')
+        +'</div><div style="font-size:1.8rem">🏆</div></div>';
+    }
+
+    // ── Odds table ─────────────────────────────────────────────
+    if (N > 0 && allTeams.length) {
+      var active = allTeams.filter(function(t){return !eliminated[t];})
+        .sort(function(a,b){return (champCount[b]||0)-(champCount[a]||0);});
+      var elim = allTeams.filter(function(t){return eliminated[t];})
+        .sort(function(a,b){return (champCount[b]||0)-(champCount[a]||0);});
 
       html += '<div style="font-weight:600;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim);margin-bottom:0.4rem">Championship Odds</div>';
       html += '<div class="card" style="padding:0.5rem;overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:0.75rem">'
         +'<thead><tr style="border-bottom:1px solid var(--border)">'
         +'<th style="text-align:left;padding:0.3rem 0.4rem;font-size:0.55rem;text-transform:uppercase;color:var(--text-dim)">Team</th>'
         +'<th style="text-align:right;padding:0.3rem 0.4rem;font-size:0.55rem;text-transform:uppercase;color:var(--text-dim)">Elo</th>'
-        +'<th style="padding:0.3rem 0.4rem;font-size:0.55rem;text-transform:uppercase;color:var(--accent)">Odds</th>'
+        +'<th style="padding:0.3rem 0.4rem;font-size:0.55rem;text-transform:uppercase;color:var(--accent)">Win %</th>'
         +'</tr></thead><tbody>';
+
       active.concat(elim).forEach(function(t) {
-        var isOut=eliminated[t]; var c=clr(t);
+        var isOut=eliminated[t], c=clr(t), e=getElo(t);
         var bw=Math.round((champCount[t]||0)/N*100);
         html += '<tr style="border-bottom:1px solid rgba(255,255,255,0.04);'+(isOut?'opacity:0.35;':'')+'">'
           +'<td style="padding:0.25rem 0.4rem;color:'+c+';font-weight:600">'+t+(isOut?' <span style="font-size:0.55rem;color:var(--red-hi)">OUT</span>':'')+'</td>'
-          +'<td style="padding:0.25rem 0.4rem;font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim);text-align:right">'+getElo(t).toFixed(0)+'</td>'
+          +'<td style="padding:0.25rem 0.4rem;font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim);text-align:right">'+(e?e.toFixed(0):'—')+'</td>'
           +'<td style="padding:0.25rem 0.4rem"><div style="display:flex;align-items:center">'
-            +'<span style="color:'+c+';font-weight:600;min-width:38px">'+pct(champCount[t]||0)+'</span>'
+            +'<span style="color:'+c+';font-weight:600;min-width:38px">'+(bw||0)+'%</span>'
             +'<div style="background:var(--bg4);border-radius:2px;height:3px;flex:1;margin-left:4px;overflow:hidden">'
-              +'<div style="width:'+bw+'%;height:100%;background:'+c+'"></div>'
-            +'</div></td></tr>';
+              +'<div style="width:'+bw+'%;height:100%;background:'+c+'"></div></div>'
+          +'</div></td></tr>';
       });
       html += '</tbody></table></div>';
-    } else if (isCompleted) {
-      // Find champion
-      var champ = allTeams.filter(function(t){return !eliminated[t];})[0];
-      if (champ) {
-        html += '<div class="card" style="padding:1rem;text-align:center;border:1px solid var(--accent)">'
-          +'<div style="font-size:0.58rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim)">🏆 Champion</div>'
-          +'<div style="font-size:1.3rem;font-weight:700;color:'+clr(champ)+';margin-top:0.25rem">'+champ+'</div>'
-          +'<div style="font-size:0.68rem;color:var(--text-dim);margin-top:0.1rem">Elo '+getElo(champ).toFixed(0)+'</div>'
-          +'</div>';
-      }
+    } else if (isCompleted && champ) {
+      // Completed: just show final standings
+      var doneSeries = seriesList.filter(function(s){return s.done||s.w1>=WIN_TO_ADV||s.w2>=WIN_TO_ADV;});
+      var winners = {}, losers = {};
+      doneSeries.forEach(function(s){
+        var w=s.w1>s.w2?s.t1:s.t2, l=s.w1<s.w2?s.t1:s.t2;
+        winners[w]=(winners[w]||0)+1; losers[l]=(losers[l]||0)+1;
+      });
+      var byWins = allTeams.slice().sort(function(a,b){return (winners[b]||0)-(winners[a]||0);});
+      html += '<div class="card" style="padding:0.6rem"><table style="width:100%;border-collapse:collapse;font-size:0.75rem">'
+        +'<thead><tr style="border-bottom:1px solid var(--border)">'
+        +'<th style="text-align:left;padding:0.25rem 0.4rem;font-size:0.55rem;text-transform:uppercase;color:var(--text-dim)">Team</th>'
+        +'<th style="text-align:center;padding:0.25rem 0.4rem;font-size:0.55rem;text-transform:uppercase;color:var(--text-dim)">Series W</th>'
+        +'<th style="text-align:center;padding:0.25rem 0.4rem;font-size:0.55rem;text-transform:uppercase;color:var(--text-dim)">Series L</th>'
+        +'</tr></thead><tbody>';
+      byWins.forEach(function(t) {
+        var isC=t===champ, c=clr(t);
+        html += '<tr style="border-bottom:1px solid rgba(255,255,255,0.04);'+(eliminated[t]?'opacity:0.4;':'')+'">'
+          +'<td style="padding:0.25rem 0.4rem;color:'+c+';font-weight:'+(isC?'700':'400')+'">'+t+(isC?' 🏆':'')+'</td>'
+          +'<td style="padding:0.25rem 0.4rem;text-align:center;font-family:var(--font-mono);color:var(--green-hi)">'+(winners[t]||0)+'</td>'
+          +'<td style="padding:0.25rem 0.4rem;text-align:center;font-family:var(--font-mono);color:var(--text-dim)">'+(losers[t]||0)+'</td>'
+          +'</tr>';
+      });
+      html += '</tbody></table></div>';
     }
 
     el.innerHTML = html;
-    var btn = document.getElementById('gen-resim');
-    if (btn) btn.onclick = function(){ _renderTourneyData(el, d); };
+    var btn=document.getElementById('gen-resim');
+    if(btn) btn.onclick=function(){_renderTourneyData(el,d);};
   }
+
+  function _renderProjectedOdds(el, yr) {
+    var n = CFG.sport==='NFL'?14:CFG.sport==='MLB'?12:CFG.sport==='CBB'?64:16;
+    _renderTourneyData(el, {
+      year:yr, sport:CFG.sport, completed:false,
+      games:[], series:[], eliminated:[], updated:null
+    });
+  }
+
 
   function _renderProjectedOdds(el, yr) {
     var n = CFG.sport==='NFL'?14:CFG.sport==='MLB'?12:CFG.sport==='CBB'?64:16;
