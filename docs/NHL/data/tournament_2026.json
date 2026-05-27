@@ -877,6 +877,13 @@
       "winner_score": 3,
       "loser_score": 2,
       "date": "2026-05-26"
+    },
+    {
+      "winner": "Golden Knights",
+      "loser": "Avalanche",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-05-27"
     }
   ],
   "series": [
@@ -987,7 +994,7 @@
     {
       "t1": "Golden Knights",
       "t2": "Avalanche",
-      "w1": 4,
+      "w1": 5,
       "w2": 0,
       "done": true,
       "loser": "Avalanche"
@@ -1400,5 +1407,5 @@
     "Ducks",
     "Sabres"
   ],
-  "updated": "2026-05-27 03:24 UTC"
+  "updated": "2026-05-27 04:26 UTC"
 }
