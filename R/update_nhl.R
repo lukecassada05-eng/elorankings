@@ -165,4 +165,3 @@ for (yr in SEASONS) {
   write_csv(out, file.path(OUT_DIR, paste0("NHL_Elo_", yr, ".csv")))
   message("  -> ", nrow(out), " teams | NA conf: ", sum(is.na(out$conference)))
 }
-message("NHL done.")

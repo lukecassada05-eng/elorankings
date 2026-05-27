@@ -87,4 +87,3 @@ for (s in sort(unique(all_games$season))) {
   write_csv(out, file.path(OUT_DIR, paste0("NFL_Elo_", s, ".csv")))
   message("  -> ", nrow(out), " teams")
 }
-message("NFL done.")

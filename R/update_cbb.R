@@ -141,4 +141,3 @@ for (s in SEASONS) {
           sum(!is.na(out$conference)), "/", nrow(out),
           if (!is.null(conf_champ_map)) paste0(", champs: ", sum(out$conf_champ, na.rm=TRUE)) else "")
 }
-message("CBB done.")

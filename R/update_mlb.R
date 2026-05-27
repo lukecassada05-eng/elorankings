@@ -107,4 +107,3 @@ for (yr in SEASONS) {
   write_csv(out, file.path(OUT_DIR, paste0("MLB_Elo_", yr, ".csv")))
   message("  -> ", nrow(out), " teams")
 }
-message("MLB done.")

@@ -207,4 +207,3 @@ for (s in SEASONS) {
   write_csv(out, file.path(OUT_DIR, paste0("NBA_Elo_", s, ".csv")))
   message("  -> ", nrow(out), " teams | NA conf: ", sum(is.na(out$conference)))
 }
-message("NBA done.")
