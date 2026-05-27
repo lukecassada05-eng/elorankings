@@ -618,7 +618,7 @@
     {
       "t1": "Los Angeles Angels",
       "t2": "Texas Rangers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -679,7 +679,7 @@
       "t1": "Los Angeles Angels",
       "t2": "Chicago White Sox",
       "w1": 1,
-      "w2": 4,
+      "w2": 3,
       "done": true,
       "loser": "Los Angeles Angels",
       "round": "ALCS",
@@ -715,5 +715,5 @@
     "St. Louis Cardinals",
     "Houston Astros"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:04 UTC"
 }

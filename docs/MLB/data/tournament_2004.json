@@ -700,20 +700,20 @@
     {
       "t1": "Boston Red Sox",
       "t2": "Baltimore Orioles",
-      "w1": 3,
+      "w1": 1,
       "w2": 1,
-      "done": true,
-      "loser": "Baltimore Orioles",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2004-10-01"
     },
     {
       "t1": "Houston Astros",
       "t2": "Colorado Rockies",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Colorado Rockies",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2004-10-02"
     },
@@ -750,7 +750,7 @@
     {
       "t1": "Anaheim Angels",
       "t2": "Oakland Athletics",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -761,7 +761,7 @@
       "t1": "Seattle Mariners",
       "t2": "Texas Rangers",
       "w1": 1,
-      "w2": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "regular-season",
@@ -771,7 +771,7 @@
       "t1": "San Diego Padres",
       "t2": "Arizona Diamondbacks",
       "w1": 1,
-      "w2": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "regular-season",
@@ -788,12 +788,22 @@
       "date": "2004-10-02"
     },
     {
+      "t1": "Boston Red Sox",
+      "t2": "Baltimore Orioles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "DAY/NIGHT DH",
+      "date": "2004-10-02"
+    },
+    {
       "t1": "Minnesota Twins",
       "t2": "New York Yankees",
       "w1": 1,
-      "w2": 3,
-      "done": true,
-      "loser": "Minnesota Twins",
+      "w2": 2,
+      "done": false,
+      "loser": "",
       "round": "DIVISIONAL PLAYOFFS",
       "date": "2004-10-06"
     },
@@ -840,12 +850,22 @@
     {
       "t1": "St. Louis Cardinals",
       "t2": "Houston Astros",
-      "w1": 4,
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "post-season",
+      "date": "2004-10-14"
+    },
+    {
+      "t1": "St. Louis Cardinals",
+      "t2": "Houston Astros",
+      "w1": 3,
       "w2": 3,
       "done": true,
       "loser": "Houston Astros",
-      "round": "post-season",
-      "date": "2004-10-14"
+      "round": "NLCS",
+      "date": "2004-10-15"
     },
     {
       "t1": "Boston Red Sox",
@@ -859,9 +879,6 @@
     }
   ],
   "eliminated": [
-    "Baltimore Orioles",
-    "Colorado Rockies",
-    "Minnesota Twins",
     "Los Angeles Dodgers",
     "Anaheim Angels",
     "Atlanta Braves",
@@ -869,5 +886,5 @@
     "Houston Astros",
     "St. Louis Cardinals"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:04 UTC"
 }

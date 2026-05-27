@@ -80,6 +80,16 @@
       "date": "2012-01-14"
     },
     {
+      "t1": "New York Giants",
+      "t2": "Green Bay Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Green Bay Packers",
+      "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2012-01-15"
+    },
+    {
       "t1": "New England Patriots",
       "t2": "Denver Broncos",
       "w1": 1,
@@ -97,16 +107,6 @@
       "done": true,
       "loser": "Houston Texans",
       "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2012-01-15"
-    },
-    {
-      "t1": "New York Giants",
-      "t2": "Green Bay Packers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Green Bay Packers",
-      "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2012-01-15"
     },
     {
@@ -152,13 +152,13 @@
   ],
   "eliminated": [
     "New Orleans Saints",
+    "Green Bay Packers",
     "Denver Broncos",
     "Houston Texans",
-    "Green Bay Packers",
     "Baltimore Ravens",
     "San Francisco 49ers",
     "Nfc",
     "New England Patriots"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

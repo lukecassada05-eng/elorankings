@@ -188,6 +188,16 @@
       "date": "2025-01-18"
     },
     {
+      "t1": "Buffalo Bills",
+      "t2": "Baltimore Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baltimore Ravens",
+      "round": "AFC Divisional Playoffs",
+      "date": "2025-01-19"
+    },
+    {
       "t1": "Washington Commanders",
       "t2": "Detroit Lions",
       "w1": 1,
@@ -205,16 +215,6 @@
       "done": true,
       "loser": "Los Angeles Rams",
       "round": "NFC Divisional Playoffs",
-      "date": "2025-01-19"
-    },
-    {
-      "t1": "Buffalo Bills",
-      "t2": "Baltimore Ravens",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Baltimore Ravens",
-      "round": "AFC Divisional Playoffs",
       "date": "2025-01-19"
     },
     {
@@ -266,13 +266,13 @@
     "Tampa Bay Buccaneers",
     "Minnesota Vikings",
     "Houston Texans",
+    "Baltimore Ravens",
     "Detroit Lions",
     "Los Angeles Rams",
-    "Baltimore Ravens",
     "Washington Commanders",
     "Buffalo Bills",
     "AFC",
     "Kansas City Chiefs"
   ],
-  "updated": "2026-05-27 06:38 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

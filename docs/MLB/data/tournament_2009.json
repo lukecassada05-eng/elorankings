@@ -706,7 +706,7 @@
     {
       "t1": "Minnesota Twins",
       "t2": "Detroit Tigers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -866,30 +866,30 @@
     {
       "t1": "Minnesota Twins",
       "t2": "Kansas City Royals",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Kansas City Royals",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2009-10-03"
     },
     {
       "t1": "Milwaukee Brewers",
       "t2": "St. Louis Cardinals",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "St. Louis Cardinals",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2009-10-03"
     },
     {
       "t1": "Los Angeles Angels",
       "t2": "Oakland Athletics",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Oakland Athletics",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2009-10-03"
     },
@@ -907,7 +907,7 @@
       "t1": "Texas Rangers",
       "t2": "Seattle Mariners",
       "w1": 1,
-      "w2": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "regular-season",
@@ -917,19 +917,29 @@
       "t1": "Colorado Rockies",
       "t2": "Los Angeles Dodgers",
       "w1": 1,
-      "w2": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "regular-season",
       "date": "2009-10-03"
     },
     {
+      "t1": "Minnesota Twins",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AL CENTRAL 1-GAME TIEBREAKER",
+      "date": "2009-10-06"
+    },
+    {
       "t1": "Philadelphia Phillies",
       "t2": "Colorado Rockies",
-      "w1": 3,
+      "w1": 2,
       "w2": 1,
-      "done": true,
-      "loser": "Colorado Rockies",
+      "done": false,
+      "loser": "",
       "round": "NLDS",
       "date": "2009-10-07"
     },
@@ -946,10 +956,10 @@
     {
       "t1": "Los Angeles Dodgers",
       "t2": "St. Louis Cardinals",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "St. Louis Cardinals",
+      "done": false,
+      "loser": "",
       "round": "NLDS",
       "date": "2009-10-08"
     },
@@ -999,15 +1009,11 @@
     "Cleveland Indians",
     "Toronto Blue Jays",
     "Houston Astros",
-    "Kansas City Royals",
-    "St. Louis Cardinals",
-    "Oakland Athletics",
-    "Colorado Rockies",
     "Minnesota Twins",
     "Boston Red Sox",
     "Los Angeles Dodgers",
     "Los Angeles Angels",
     "Philadelphia Phillies"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:04 UTC"
 }

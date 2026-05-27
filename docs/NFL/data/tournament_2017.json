@@ -80,6 +80,16 @@
       "date": "2018-01-13"
     },
     {
+      "t1": "Minnesota Vikings",
+      "t2": "New Orleans Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Orleans Saints",
+      "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2018-01-14"
+    },
+    {
       "t1": "New England Patriots",
       "t2": "Tennessee Titans",
       "w1": 1,
@@ -97,16 +107,6 @@
       "done": true,
       "loser": "Pittsburgh Steelers",
       "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2018-01-14"
-    },
-    {
-      "t1": "Minnesota Vikings",
-      "t2": "New Orleans Saints",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New Orleans Saints",
-      "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2018-01-14"
     },
     {
@@ -152,13 +152,13 @@
   ],
   "eliminated": [
     "Atlanta Falcons",
+    "New Orleans Saints",
     "Tennessee Titans",
     "Pittsburgh Steelers",
-    "New Orleans Saints",
     "Jacksonville Jaguars",
     "Minnesota Vikings",
     "Nfc",
     "New England Patriots"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

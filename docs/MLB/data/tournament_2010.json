@@ -632,10 +632,10 @@
     {
       "t1": "Baltimore Orioles",
       "t2": "Detroit Tigers",
-      "w1": 3,
-      "w2": 1,
-      "done": true,
-      "loser": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "AMERICAN LEAGUE - GAME 1",
       "date": "2010-10-01"
     },
@@ -680,6 +680,16 @@
       "date": "2010-10-01"
     },
     {
+      "t1": "New York Yankees",
+      "t2": "Boston Red Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AMERICAN LEAGUE - GAME 1",
+      "date": "2010-10-02"
+    },
+    {
       "t1": "Los Angeles Angels",
       "t2": "Texas Rangers",
       "w1": 2,
@@ -692,7 +702,7 @@
     {
       "t1": "Chicago Cubs",
       "t2": "Houston Astros",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -732,20 +742,20 @@
     {
       "t1": "St. Louis Cardinals",
       "t2": "Colorado Rockies",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Colorado Rockies",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2010-10-02"
     },
     {
       "t1": "Oakland Athletics",
       "t2": "Seattle Mariners",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Seattle Mariners",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2010-10-02"
     },
@@ -753,7 +763,7 @@
       "t1": "Arizona Diamondbacks",
       "t2": "Los Angeles Dodgers",
       "w1": 1,
-      "w2": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "regular-season",
@@ -762,7 +772,7 @@
     {
       "t1": "San Diego Padres",
       "t2": "San Francisco Giants",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -770,14 +780,44 @@
       "date": "2010-10-02"
     },
     {
-      "t1": "New York Yankees",
-      "t2": "Boston Red Sox",
+      "t1": "Baltimore Orioles",
+      "t2": "Detroit Tigers",
       "w1": 1,
-      "w2": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
-      "round": "AMERICAN LEAGUE - GAME 1",
+      "round": "regular-season",
       "date": "2010-10-02"
+    },
+    {
+      "t1": "Baltimore Orioles",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AMERICAN LEAGUE - GAME 2",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2010-10-03"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AMERICAN LEAGUE - GAME 2",
+      "date": "2010-10-03"
     },
     {
       "t1": "Texas Rangers",
@@ -802,10 +842,10 @@
     {
       "t1": "New York Yankees",
       "t2": "Minnesota Twins",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Minnesota Twins",
+      "done": false,
+      "loser": "",
       "round": "ALDS",
       "date": "2010-10-07"
     },
@@ -842,7 +882,7 @@
     {
       "t1": "San Francisco Giants",
       "t2": "Texas Rangers",
-      "w1": 4,
+      "w1": 3,
       "w2": 1,
       "done": true,
       "loser": "Texas Rangers",
@@ -851,16 +891,12 @@
     }
   ],
   "eliminated": [
-    "Detroit Tigers",
-    "Colorado Rockies",
-    "Seattle Mariners",
     "Tampa Bay Rays",
     "Cincinnati Reds",
-    "Minnesota Twins",
     "Atlanta Braves",
     "New York Yankees",
     "Philadelphia Phillies",
     "Texas Rangers"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:04 UTC"
 }

@@ -116,16 +116,6 @@
       "date": "2010-01-16"
     },
     {
-      "t1": "Indianapolis Colts",
-      "t2": "Baltimore Ravens",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Baltimore Ravens",
-      "round": "AFC DIVISIONAL PLAYOFFS",
-      "date": "2010-01-17"
-    },
-    {
       "t1": "Minnesota Vikings",
       "t2": "Dallas Cowboys",
       "w1": 1,
@@ -133,6 +123,16 @@
       "done": true,
       "loser": "Dallas Cowboys",
       "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2010-01-17"
+    },
+    {
+      "t1": "Indianapolis Colts",
+      "t2": "Baltimore Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baltimore Ravens",
+      "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2010-01-17"
     },
     {
@@ -190,13 +190,13 @@
     "New England Patriots",
     "Green Bay Packers",
     "Arizona Cardinals",
-    "Baltimore Ravens",
     "Dallas Cowboys",
+    "Baltimore Ravens",
     "San Diego Chargers",
     "New York Jets",
     "Minnesota Vikings",
     "Nfc",
     "Indianapolis Colts"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

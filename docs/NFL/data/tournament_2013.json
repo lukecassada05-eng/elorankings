@@ -80,16 +80,6 @@
       "date": "2014-01-11"
     },
     {
-      "t1": "New England Patriots",
-      "t2": "Indianapolis Colts",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Indianapolis Colts",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2014-01-12"
-    },
-    {
       "t1": "San Francisco 49ers",
       "t2": "Carolina Panthers",
       "w1": 1,
@@ -97,6 +87,16 @@
       "done": true,
       "loser": "Carolina Panthers",
       "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2014-01-12"
+    },
+    {
+      "t1": "New England Patriots",
+      "t2": "Indianapolis Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Indianapolis Colts",
+      "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2014-01-12"
     },
     {
@@ -152,13 +152,13 @@
   ],
   "eliminated": [
     "New Orleans Saints",
-    "Indianapolis Colts",
     "Carolina Panthers",
+    "Indianapolis Colts",
     "San Diego Chargers",
     "New England Patriots",
     "San Francisco 49ers",
     "Team Rice",
     "Denver Broncos"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

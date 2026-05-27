@@ -265,7 +265,7 @@
       "t1": "Philadelphia Phillies",
       "t2": "Milwaukee Brewers",
       "w1": 3,
-      "w2": 1,
+      "w2": 0,
       "done": true,
       "loser": "Milwaukee Brewers",
       "round": "DIVISIONAL PLAYOFFS",
@@ -274,38 +274,78 @@
     {
       "t1": "Los Angeles Dodgers",
       "t2": "Chicago Cubs",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Chicago Cubs",
+      "done": false,
+      "loser": "",
       "round": "DIVISIONAL PLAYOFFS",
       "date": "2008-10-01"
     },
     {
       "t1": "Boston Red Sox",
       "t2": "Los Angeles Angels",
-      "w1": 3,
-      "w2": 1,
-      "done": true,
-      "loser": "Los Angeles Angels",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "DIVISIONAL PLAYOFFS",
       "date": "2008-10-02"
     },
     {
       "t1": "Tampa Bay Rays",
       "t2": "Chicago White Sox",
-      "w1": 3,
-      "w2": 1,
-      "done": true,
-      "loser": "Chicago White Sox",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "DIVISIONAL PLAYOFFS",
       "date": "2008-10-02"
     },
     {
+      "t1": "Milwaukee Brewers",
+      "t2": "Philadelphia Phillies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "post-season",
+      "date": "2008-10-04"
+    },
+    {
+      "t1": "Los Angeles Dodgers",
+      "t2": "Chicago Cubs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "post-season",
+      "date": "2008-10-05"
+    },
+    {
+      "t1": "Chicago White Sox",
+      "t2": "Tampa Bay Rays",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "post-season",
+      "date": "2008-10-05"
+    },
+    {
+      "t1": "Los Angeles Angels",
+      "t2": "Boston Red Sox",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "post-season",
+      "date": "2008-10-05"
+    },
+    {
       "t1": "Philadelphia Phillies",
       "t2": "Los Angeles Dodgers",
-      "w1": 4,
-      "w2": 1,
+      "w1": 3,
+      "w2": 0,
       "done": true,
       "loser": "Los Angeles Dodgers",
       "round": "NLCS",
@@ -314,12 +354,32 @@
     {
       "t1": "Boston Red Sox",
       "t2": "Tampa Bay Rays",
-      "w1": 3,
+      "w1": 1,
       "w2": 4,
       "done": true,
       "loser": "Boston Red Sox",
       "round": "ALCS",
       "date": "2008-10-11"
+    },
+    {
+      "t1": "Los Angeles Dodgers",
+      "t2": "Philadelphia Phillies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "post-season",
+      "date": "2008-10-13"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "Tampa Bay Rays",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "post-season",
+      "date": "2008-10-17"
     },
     {
       "t1": "Philadelphia Phillies",
@@ -334,12 +394,9 @@
   ],
   "eliminated": [
     "Milwaukee Brewers",
-    "Chicago Cubs",
-    "Los Angeles Angels",
-    "Chicago White Sox",
     "Los Angeles Dodgers",
     "Boston Red Sox",
     "Tampa Bay Rays"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:04 UTC"
 }

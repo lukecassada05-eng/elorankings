@@ -188,6 +188,16 @@
       "date": "2022-01-22"
     },
     {
+      "t1": "Kansas City Chiefs",
+      "t2": "Buffalo Bills",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Buffalo Bills",
+      "round": "AFC Divisional Playoffs",
+      "date": "2022-01-23"
+    },
+    {
       "t1": "San Francisco 49ers",
       "t2": "Green Bay Packers",
       "w1": 1,
@@ -205,16 +215,6 @@
       "done": true,
       "loser": "Tampa Bay Buccaneers",
       "round": "NFC Divisional Playoffs",
-      "date": "2022-01-23"
-    },
-    {
-      "t1": "Kansas City Chiefs",
-      "t2": "Buffalo Bills",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Buffalo Bills",
-      "round": "AFC Divisional Playoffs",
       "date": "2022-01-23"
     },
     {
@@ -261,18 +261,18 @@
   "eliminated": [
     "Las Vegas Raiders",
     "New England Patriots",
+    "Pittsburgh Steelers",
     "Philadelphia Eagles",
     "Dallas Cowboys",
-    "Pittsburgh Steelers",
     "Arizona Cardinals",
     "Tennessee Titans",
+    "Buffalo Bills",
     "Green Bay Packers",
     "Tampa Bay Buccaneers",
-    "Buffalo Bills",
     "Kansas City Chiefs",
     "San Francisco 49ers",
     "NFC",
     "Cincinnati Bengals"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

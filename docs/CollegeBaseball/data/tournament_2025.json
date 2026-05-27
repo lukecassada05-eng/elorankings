@@ -1097,7 +1097,17 @@
       "t1": "Vanderbilt Commodores",
       "t2": "Wright State Raiders",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Nashville Regional",
+      "date": "2025-05-30"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "East Tennessee State Buccaneers",
+      "w1": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Nashville Regional",
@@ -1114,6 +1124,16 @@
       "date": "2025-05-30"
     },
     {
+      "t1": "UTSA Roadrunners",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Austin Regional",
+      "date": "2025-05-30"
+    },
+    {
       "t1": "Arkansas Razorbacks",
       "t2": "North Dakota State Bison",
       "w1": 1,
@@ -1121,6 +1141,16 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Fayetteville Regional",
+      "date": "2025-05-30"
+    },
+    {
+      "t1": "Stetson Hatters",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional",
       "date": "2025-05-30"
     },
     {
@@ -1144,6 +1174,16 @@
       "date": "2025-05-30"
     },
     {
+      "t1": "USC Trojans",
+      "t2": "TCU Horned Frogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Corvallis Regional",
+      "date": "2025-05-30"
+    },
+    {
       "t1": "Florida State Seminoles",
       "t2": "Bethune-Cookman Wildcats",
       "w1": 1,
@@ -1151,6 +1191,16 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Tallahassee Regional",
+      "date": "2025-05-30"
+    },
+    {
+      "t1": "Georgia Tech Yellow Jackets",
+      "t2": "Western Kentucky Hilltoppers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Oxford Regional",
       "date": "2025-05-30"
     },
     {
@@ -1164,8 +1214,48 @@
       "date": "2025-05-30"
     },
     {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Regional",
+      "date": "2025-05-30"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Cal Poly Mustangs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional",
+      "date": "2025-05-30"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Conway Regional",
+      "date": "2025-05-30"
+    },
+    {
       "t1": "Tennessee Volunteers",
       "t2": "Miami (OH) RedHawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Regional",
+      "date": "2025-05-30"
+    },
+    {
+      "t1": "Cincinnati Bearcats",
+      "t2": "Wake Forest Demon Deacons",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1184,56 +1274,6 @@
       "date": "2025-05-30"
     },
     {
-      "t1": "East Carolina Pirates",
-      "t2": "Florida Gators",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Florida Gators",
-      "round": "NCAA Baseball Championship - Conway Regional",
-      "date": "2025-05-30"
-    },
-    {
-      "t1": "Cincinnati Bearcats",
-      "t2": "Wake Forest Demon Deacons",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Knoxville Regional",
-      "date": "2025-05-30"
-    },
-    {
-      "t1": "Louisville Cardinals",
-      "t2": "East Tennessee State Buccaneers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Nashville Regional",
-      "date": "2025-05-30"
-    },
-    {
-      "t1": "West Virginia Mountaineers",
-      "t2": "Kentucky Wildcats",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Kentucky Wildcats",
-      "round": "NCAA Baseball Championship - Clemson Regional",
-      "date": "2025-05-30"
-    },
-    {
-      "t1": "USC Trojans",
-      "t2": "TCU Horned Frogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Corvallis Regional",
-      "date": "2025-05-30"
-    },
-    {
       "t1": "Miami Hurricanes",
       "t2": "Alabama Crimson Tide",
       "w1": 1,
@@ -1244,44 +1284,14 @@
       "date": "2025-05-30"
     },
     {
-      "t1": "Georgia Tech Yellow Jackets",
-      "t2": "Western Kentucky Hilltoppers",
+      "t1": "Creighton Bluejays",
+      "t2": "Kansas Jayhawks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Oxford Regional",
-      "date": "2025-05-30"
-    },
-    {
-      "t1": "Arizona Wildcats",
-      "t2": "Cal Poly Mustangs",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Cal Poly Mustangs",
-      "round": "NCAA Baseball Championship - Eugene Regional",
-      "date": "2025-05-30"
-    },
-    {
-      "t1": "Stetson Hatters",
-      "t2": "NC State Wolfpack",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Auburn Regional",
-      "date": "2025-05-30"
-    },
-    {
-      "t1": "UTSA Roadrunners",
-      "t2": "Kansas State Wildcats",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Austin Regional",
-      "date": "2025-05-30"
+      "round": "NCAA Baseball Championship - Fayetteville Regional",
+      "date": "2025-05-31"
     },
     {
       "t1": "Auburn Tigers",
@@ -1294,33 +1304,123 @@
       "date": "2025-05-31"
     },
     {
+      "t1": "Oklahoma Sooners",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional",
+      "date": "2025-05-31"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional",
+      "date": "2025-05-31"
+    },
+    {
       "t1": "LSU Tigers",
       "t2": "Little Rock Trojans",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
-      "done": true,
-      "loser": "Little Rock Trojans",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Baton Rouge Regional",
+      "date": "2025-05-31"
+    },
+    {
+      "t1": "Dallas Baptist Patriots",
+      "t2": "Rhode Island Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Baton Rouge Regional",
+      "date": "2025-05-31"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional",
+      "date": "2025-05-31"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Georgia Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional",
       "date": "2025-05-31"
     },
     {
       "t1": "Saint Mary's Gaels",
       "t2": "Oregon State Beavers",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Corvallis Regional",
       "date": "2025-05-31"
     },
     {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional",
+      "date": "2025-05-31"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional",
+      "date": "2025-05-31"
+    },
+    {
       "t1": "Murray State Racers",
       "t2": "Ole Miss Rebels",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
-      "done": true,
-      "loser": "Ole Miss Rebels",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Oxford Regional",
+      "date": "2025-05-31"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Oxford Regional",
+      "date": "2025-05-31"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Regional",
       "date": "2025-05-31"
     },
     {
@@ -1344,93 +1444,33 @@
       "date": "2025-05-31"
     },
     {
-      "t1": "Columbia Lions",
-      "t2": "Southern Miss Golden Eagles",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Hattiesburg Regional",
-      "date": "2025-05-31"
-    },
-    {
-      "t1": "Duke Blue Devils",
-      "t2": "Oklahoma State Cowboys",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Oklahoma State Cowboys",
-      "round": "NCAA Baseball Championship - Athens Regional",
-      "date": "2025-05-31"
-    },
-    {
-      "t1": "Creighton Bluejays",
-      "t2": "Kansas Jayhawks",
+      "t1": "Tennessee Volunteers",
+      "t2": "Cincinnati Bearcats",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Fayetteville Regional",
-      "date": "2025-05-31"
-    },
-    {
-      "t1": "Oklahoma Sooners",
-      "t2": "Nebraska Cornhuskers",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Nebraska Cornhuskers",
-      "round": "NCAA Baseball Championship - Chapel Hill Regional",
+      "round": "NCAA Baseball Championship - Knoxville Regional",
       "date": "2025-05-31"
     },
     {
       "t1": "Arizona State Sun Devils",
       "t2": "UC Irvine Anteaters",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Los Angeles Regional",
       "date": "2025-05-31"
     },
     {
-      "t1": "Mississippi State Bulldogs",
-      "t2": "Northeastern Huskies",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Northeastern Huskies",
-      "round": "NCAA Baseball Championship - Tallahassee Regional",
-      "date": "2025-05-31"
-    },
-    {
-      "t1": "Dallas Baptist Patriots",
-      "t2": "Rhode Island Rams",
+      "t1": "Columbia Lions",
+      "t2": "Southern Miss Golden Eagles",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Baton Rouge Regional",
-      "date": "2025-05-31"
-    },
-    {
-      "t1": "North Carolina Tar Heels",
-      "t2": "Oklahoma Sooners",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Oklahoma Sooners",
-      "round": "NCAA Baseball Championship - Chapel Hill Regional",
-      "date": "2025-05-31"
-    },
-    {
-      "t1": "Duke Blue Devils",
-      "t2": "Georgia Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Athens Regional",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional",
       "date": "2025-05-31"
     },
     {
@@ -1444,16 +1484,6 @@
       "date": "2025-05-31"
     },
     {
-      "t1": "Florida State Seminoles",
-      "t2": "Mississippi State Bulldogs",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Mississippi State Bulldogs",
-      "round": "NCAA Baseball Championship - Tallahassee Regional",
-      "date": "2025-05-31"
-    },
-    {
       "t1": "Ole Miss Rebels",
       "t2": "Western Kentucky Hilltoppers",
       "w1": 1,
@@ -1464,16 +1494,6 @@
       "date": "2025-05-31"
     },
     {
-      "t1": "West Virginia Mountaineers",
-      "t2": "Clemson Tigers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Clemson Regional",
-      "date": "2025-05-31"
-    },
-    {
       "t1": "Cal Poly Mustangs",
       "t2": "Oregon Ducks",
       "w1": 1,
@@ -1481,16 +1501,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Eugene Regional - Elimination Game",
-      "date": "2025-05-31"
-    },
-    {
-      "t1": "Tennessee Volunteers",
-      "t2": "Cincinnati Bearcats",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Knoxville Regional",
       "date": "2025-05-31"
     },
     {
@@ -1624,16 +1634,6 @@
       "date": "2025-05-31"
     },
     {
-      "t1": "Murray State Racers",
-      "t2": "Georgia Tech Yellow Jackets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Oxford Regional",
-      "date": "2025-05-31"
-    },
-    {
       "t1": "Louisville Cardinals",
       "t2": "Vanderbilt Commodores",
       "w1": 1,
@@ -1646,20 +1646,20 @@
     {
       "t1": "UTSA Roadrunners",
       "t2": "Texas Longhorns",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Texas Longhorns",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Austin Regional",
       "date": "2025-06-01"
     },
     {
       "t1": "Arkansas Razorbacks",
       "t2": "Creighton Bluejays",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Creighton Bluejays",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Fayetteville Regional",
       "date": "2025-06-01"
     },
@@ -1684,13 +1684,43 @@
       "date": "2025-06-01"
     },
     {
+      "t1": "USC Trojans",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Corvallis Regional",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Utah Valley Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional",
+      "date": "2025-06-01"
+    },
+    {
       "t1": "Coastal Carolina Chanticleers",
       "t2": "East Carolina Pirates",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "East Carolina Pirates",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Conway Regional",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Wake Forest Demon Deacons",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Regional",
       "date": "2025-06-01"
     },
     {
@@ -1714,43 +1744,23 @@
       "date": "2025-06-01"
     },
     {
-      "t1": "Arizona Wildcats",
-      "t2": "Utah Valley Wolverines",
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Miami Hurricanes",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Eugene Regional",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional",
       "date": "2025-06-01"
     },
     {
-      "t1": "USC Trojans",
+      "t1": "Oregon State Beavers",
       "t2": "Saint Mary's Gaels",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Corvallis Regional",
-      "date": "2025-06-01"
-    },
-    {
-      "t1": "Texas Longhorns",
-      "t2": "Kansas State Wildcats",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Austin Regional - Elimination Game",
-      "date": "2025-06-01"
-    },
-    {
-      "t1": "Oklahoma State Cowboys",
-      "t2": "Georgia Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Athens Regional - Elimination Game",
+      "round": "NCAA Baseball Championship - Corvallis Regional - Elimination Game",
       "date": "2025-06-01"
     },
     {
@@ -1761,6 +1771,36 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Oxford Regional - Elimination Game",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Cal Poly Mustangs",
+      "t2": "Utah Valley Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional - Elimination Game",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Columbia Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional - Elimination Game",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Georgia Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional - Elimination Game",
       "date": "2025-06-01"
     },
     {
@@ -1775,22 +1815,62 @@
     },
     {
       "t1": "Wake Forest Demon Deacons",
-      "t2": "Tennessee Volunteers",
+      "t2": "Cincinnati Bearcats",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Knoxville Regional",
+      "round": "NCAA Baseball Championship - Knoxville Regional - Elimination Game",
       "date": "2025-06-01"
     },
     {
-      "t1": "Southern Miss Golden Eagles",
-      "t2": "Miami Hurricanes",
+      "t1": "Oklahoma Sooners",
+      "t2": "Nebraska Cornhuskers",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Hattiesburg Regional",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - Elimination Game",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - Elimination Game",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Conway Regional - Elimination Game",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Stetson Hatters",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional - Elimination Game",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "UC Irvine Anteaters",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Los Angeles Regional - Elimination Game",
       "date": "2025-06-01"
     },
     {
@@ -1814,14 +1894,94 @@
       "date": "2025-06-01"
     },
     {
-      "t1": "Cal Poly Mustangs",
-      "t2": "Utah Valley Wolverines",
+      "t1": "Texas Longhorns",
+      "t2": "Kansas State Wildcats",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Eugene Regional - Elimination Game",
+      "round": "NCAA Baseball Championship - Austin Regional - Elimination Game",
       "date": "2025-06-01"
+    },
+    {
+      "t1": "Wright State Raiders",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Nashville Regional - Elimination Game",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - Florida State advances to Super Regional",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Conway Regional - Coastal Carolina advances to Super Regional",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Regional - West Virginia advances to Super Regional",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional - Duke advances to Super Regional",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "USC Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Corvallis Regional",
+      "date": "2025-06-02"
+    },
+    {
+      "t1": "UTSA Roadrunners",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Austin Regional - UTSA advances to Super Regional",
+      "date": "2025-06-02"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Regional - Arkansas advances to Super Regional",
+      "date": "2025-06-02"
     },
     {
       "t1": "Auburn Tigers",
@@ -1831,16 +1991,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Auburn Regional - Auburn advances to Super Regional",
-      "date": "2025-06-02"
-    },
-    {
-      "t1": "Oregon State Beavers",
-      "t2": "USC Trojans",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "USC Trojans",
-      "round": "NCAA Baseball Championship - Corvallis Regional",
       "date": "2025-06-02"
     },
     {
@@ -1864,90 +2014,280 @@
       "date": "2025-06-02"
     },
     {
+      "t1": "Arizona Wildcats",
+      "t2": "Cal Poly Mustangs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional - Arizona advances to Super Regional",
+      "date": "2025-06-02"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - North Carolina advances to Super Regionals",
+      "date": "2025-06-02"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "USC Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Corvallis Regional - Oregon State advances to Super Regionals",
+      "date": "2025-06-02"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Ole Miss Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Oxford Regional - Murray State advances to Super Regionals",
+      "date": "2025-06-02"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Wake Forest Demon Deacons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Regional - Tennessee advances to Super Regionals",
+      "date": "2025-06-02"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Little Rock Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Baton Rouge Regional - LSU advances to Super Regionals",
+      "date": "2025-06-03"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional - Miami advances to Super Regionals",
+      "date": "2025-06-03"
+    },
+    {
       "t1": "North Carolina Tar Heels",
       "t2": "Arizona Wildcats",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "North Carolina Tar Heels",
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Chapel Hill Super Regional - Game 1",
       "date": "2025-06-06"
     },
     {
       "t1": "Oregon State Beavers",
       "t2": "Florida State Seminoles",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Corvallis Super Regional - Game 1",
       "date": "2025-06-06"
     },
     {
       "t1": "Louisville Cardinals",
       "t2": "Miami Hurricanes",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Louisville Super Regional - Game 1",
       "date": "2025-06-06"
     },
     {
       "t1": "Coastal Carolina Chanticleers",
       "t2": "Auburn Tigers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Auburn Tigers",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Auburn Super Regional - Game 1",
       "date": "2025-06-07"
     },
     {
       "t1": "Arkansas Razorbacks",
       "t2": "Tennessee Volunteers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Tennessee Volunteers",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Fayetteville Super Regional - Game 1",
+      "date": "2025-06-07"
+    },
+    {
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Super Regional - Game 2",
+      "date": "2025-06-07"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Super Regional - Game 2",
       "date": "2025-06-07"
     },
     {
       "t1": "LSU Tigers",
       "t2": "West Virginia Mountaineers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "West Virginia Mountaineers",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Baton Rouge Super Regional - Game 1",
       "date": "2025-06-07"
     },
     {
       "t1": "UCLA Bruins",
       "t2": "UTSA Roadrunners",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "UTSA Roadrunners",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Los Angeles Super Regional - Game 1",
+      "date": "2025-06-07"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Louisville Super Regional - Game 2",
       "date": "2025-06-07"
     },
     {
       "t1": "Duke Blue Devils",
       "t2": "Murray State Racers",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Duke Blue Devils",
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Durham Super Regional - Game 1",
       "date": "2025-06-07"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Corvallis Super Regional - Game 2",
+      "date": "2025-06-08"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Super Regional - Game 2",
+      "date": "2025-06-08"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Super Regional - Game 3",
+      "date": "2025-06-08"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "UTSA Roadrunners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Los Angeles Super Regional - Game 2",
+      "date": "2025-06-08"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Durham Super Regional - Game 2",
+      "date": "2025-06-08"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Louisville Super Regional - Game 3",
+      "date": "2025-06-08"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Baton Rouge Super Regional - Game 2",
+      "date": "2025-06-09"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Corvallis Super Regional - Game 3",
+      "date": "2025-06-09"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Durham Super Regional - Game 3",
+      "date": "2025-06-09"
     },
     {
       "t1": "Oregon State Beavers",
       "t2": "Louisville Cardinals",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "Men's College World Series - Double Elimination Round",
@@ -1966,10 +2306,10 @@
     {
       "t1": "LSU Tigers",
       "t2": "Arkansas Razorbacks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Arkansas Razorbacks",
+      "done": false,
+      "loser": "",
       "round": "Men's College World Series - Double Elimination Round",
       "date": "2025-06-14"
     },
@@ -2004,16 +2344,6 @@
       "date": "2025-06-15"
     },
     {
-      "t1": "Arkansas Razorbacks",
-      "t2": "Murray State Racers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Men's College World Series - Elimination Game",
-      "date": "2025-06-16"
-    },
-    {
       "t1": "LSU Tigers",
       "t2": "UCLA Bruins",
       "w1": 1,
@@ -2025,6 +2355,16 @@
     },
     {
       "t1": "Arkansas Razorbacks",
+      "t2": "Murray State Racers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Elimination Game",
+      "date": "2025-06-16"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
       "t2": "UCLA Bruins",
       "w1": 1,
       "w2": 0,
@@ -2032,6 +2372,26 @@
       "loser": "",
       "round": "Men's College World Series - Elimination Game",
       "date": "2025-06-17"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Elimination Game",
+      "date": "2025-06-17"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - LSU advances to Championship Series",
+      "date": "2025-06-18"
     },
     {
       "t1": "Coastal Carolina Chanticleers",
@@ -2046,39 +2406,24 @@
     {
       "t1": "LSU Tigers",
       "t2": "Coastal Carolina Chanticleers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Coastal Carolina Chanticleers",
+      "done": false,
+      "loser": "",
       "round": "Men's College World Series Championship Final - Game 1",
       "date": "2025-06-21"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series Championship Final - Game 2",
+      "date": "2025-06-22"
     }
   ],
-  "eliminated": [
-    "Little Rock Trojans",
-    "Ole Miss Rebels",
-    "Florida Gators",
-    "Kentucky Wildcats",
-    "Cal Poly Mustangs",
-    "Oklahoma State Cowboys",
-    "Nebraska Cornhuskers",
-    "Northeastern Huskies",
-    "Texas Longhorns",
-    "Creighton Bluejays",
-    "Oklahoma Sooners",
-    "Mississippi State Bulldogs",
-    "East Carolina Pirates",
-    "USC Trojans",
-    "Auburn Tigers",
-    "North Carolina Tar Heels",
-    "Florida State Seminoles",
-    "Miami Hurricanes",
-    "Tennessee Volunteers",
-    "West Virginia Mountaineers",
-    "UTSA Roadrunners",
-    "Duke Blue Devils",
-    "Arkansas Razorbacks",
-    "Coastal Carolina Chanticleers"
-  ],
-  "updated": "2026-05-27 06:38 UTC"
+  "eliminated": [],
+  "updated": "2026-05-27 07:05 UTC"
 }

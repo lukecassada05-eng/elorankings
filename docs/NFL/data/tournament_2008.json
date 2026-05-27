@@ -80,6 +80,16 @@
       "date": "2009-01-10"
     },
     {
+      "t1": "Pittsburgh Steelers",
+      "t2": "San Diego Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego Chargers",
+      "round": "AFC DIVISIONAL PLAYOFFS",
+      "date": "2009-01-11"
+    },
+    {
       "t1": "Arizona Cardinals",
       "t2": "Carolina Panthers",
       "w1": 1,
@@ -97,16 +107,6 @@
       "done": true,
       "loser": "New York Giants",
       "round": "NFC DIVISIONAL PLAYOFFS",
-      "date": "2009-01-11"
-    },
-    {
-      "t1": "Pittsburgh Steelers",
-      "t2": "San Diego Chargers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "San Diego Chargers",
-      "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2009-01-11"
     },
     {
@@ -152,13 +152,13 @@
   ],
   "eliminated": [
     "Tennessee Titans",
+    "San Diego Chargers",
     "Carolina Panthers",
     "New York Giants",
-    "San Diego Chargers",
     "Philadelphia Eagles",
     "Baltimore Ravens",
     "Arizona Cardinals",
     "Afc"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

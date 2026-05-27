@@ -80,6 +80,16 @@
       "date": "2015-01-10"
     },
     {
+      "t1": "Indianapolis Colts",
+      "t2": "Denver Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Denver Broncos",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2015-01-11"
+    },
+    {
       "t1": "Seattle Seahawks",
       "t2": "Carolina Panthers",
       "w1": 1,
@@ -97,16 +107,6 @@
       "done": true,
       "loser": "Dallas Cowboys",
       "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2015-01-11"
-    },
-    {
-      "t1": "Indianapolis Colts",
-      "t2": "Denver Broncos",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Denver Broncos",
-      "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2015-01-11"
     },
     {
@@ -152,13 +152,13 @@
   ],
   "eliminated": [
     "Baltimore Ravens",
+    "Denver Broncos",
     "Carolina Panthers",
     "Dallas Cowboys",
-    "Denver Broncos",
     "Green Bay Packers",
     "Indianapolis Colts",
     "Team Carter",
     "Seattle Seahawks"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

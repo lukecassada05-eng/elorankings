@@ -1330,10 +1330,20 @@
     {
       "t1": "Wake Forest Demon Deacons",
       "t2": "George Mason Patriots",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "George Mason Patriots",
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Winston-Salem Regional",
+      "date": "2023-06-02"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Winston-Salem Regional",
       "date": "2023-06-02"
     },
@@ -1348,18 +1358,38 @@
       "date": "2023-06-02"
     },
     {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional",
+      "date": "2023-06-02"
+    },
+    {
       "t1": "Arkansas Razorbacks",
       "t2": "Santa Clara Broncos",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Santa Clara Broncos",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Fayetteville Regional",
       "date": "2023-06-02"
     },
     {
       "t1": "Clemson Tigers",
       "t2": "Lipscomb Bisons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Regional",
+      "date": "2023-06-02"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Charlotte 49ers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1378,8 +1408,28 @@
       "date": "2023-06-02"
     },
     {
+      "t1": "Oregon Ducks",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Nashville Regional",
+      "date": "2023-06-02"
+    },
+    {
       "t1": "Virginia Cavaliers",
       "t2": "Army Black Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Regional",
+      "date": "2023-06-02"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Oklahoma Sooners",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1408,10 +1458,30 @@
       "date": "2023-06-02"
     },
     {
+      "t1": "Texas Longhorns",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Coral Gables Regional",
+      "date": "2023-06-02"
+    },
+    {
       "t1": "Rider Broncs",
       "t2": "Coastal Carolina Chanticleers",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Conway Regional",
+      "date": "2023-06-02"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Conway Regional",
@@ -1420,6 +1490,16 @@
     {
       "t1": "Oral Roberts Golden Eagles",
       "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stillwater Regional",
+      "date": "2023-06-02"
+    },
+    {
+      "t1": "Washington Huskies",
+      "t2": "Dallas Baptist Patriots",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1438,8 +1518,28 @@
       "date": "2023-06-02"
     },
     {
+      "t1": "Indiana Hoosiers",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lexington Regional",
+      "date": "2023-06-02"
+    },
+    {
       "t1": "Pennsylvania Quakers",
       "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional",
+      "date": "2023-06-02"
+    },
+    {
+      "t1": "Samford Bulldogs",
+      "t2": "Southern Miss Golden Eagles",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1458,6 +1558,16 @@
       "date": "2023-06-02"
     },
     {
+      "t1": "Iowa Hawkeyes",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Terre Haute Regional",
+      "date": "2023-06-02"
+    },
+    {
       "t1": "South Carolina Gamecocks",
       "t2": "Central Connecticut Blue Devils",
       "w1": 1,
@@ -1468,184 +1578,24 @@
       "date": "2023-06-02"
     },
     {
-      "t1": "Texas Tech Red Raiders",
-      "t2": "UConn Huskies",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Gainesville Regional",
-      "date": "2023-06-02"
-    },
-    {
       "t1": "NC State Wolfpack",
       "t2": "Campbell Fighting Camels",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Columbia Regional",
       "date": "2023-06-02"
     },
     {
-      "t1": "Washington Huskies",
-      "t2": "Dallas Baptist Patriots",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Stillwater Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Oregon Ducks",
-      "t2": "Xavier Musketeers",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Xavier Musketeers",
-      "round": "NCAA Baseball Championship - Nashville Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Duke Blue Devils",
-      "t2": "UNC Wilmington Seahawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Conway Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Maryland Terrapins",
-      "t2": "Northeastern Huskies",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Winston-Salem Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Samford Bulldogs",
-      "t2": "Southern Miss Golden Eagles",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Auburn Regional",
-      "date": "2023-06-02"
-    },
-    {
       "t1": "Troy Trojans",
       "t2": "Boston College Eagles",
       "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Tuscaloosa Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Texas Longhorns",
-      "t2": "Louisiana Ragin' Cajuns",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Coral Gables Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Tennessee Volunteers",
-      "t2": "Charlotte 49ers",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Charlotte 49ers",
-      "round": "NCAA Baseball Championship - Clemson Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Iowa Hawkeyes",
-      "t2": "North Carolina Tar Heels",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "North Carolina Tar Heels",
-      "round": "NCAA Baseball Championship - Terre Haute Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "East Carolina Pirates",
-      "t2": "Oklahoma Sooners",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Oklahoma Sooners",
-      "round": "NCAA Baseball Championship - Charlottesville Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Indiana Hoosiers",
-      "t2": "West Virginia Mountaineers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Lexington Regional",
-      "date": "2023-06-02"
-    },
-    {
-      "t1": "Vanderbilt Commodores",
-      "t2": "Eastern Illinois Panthers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Nashville Regional",
-      "date": "2023-06-03"
-    },
-    {
-      "t1": "Alabama Crimson Tide",
-      "t2": "Nicholls Colonels",
-      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Tuscaloosa Regional",
-      "date": "2023-06-03"
-    },
-    {
-      "t1": "Oregon State Beavers",
-      "t2": "Sam Houston Bearkats",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Sam Houston Bearkats",
-      "round": "NCAA Baseball Championship - Baton Rouge Regional",
-      "date": "2023-06-03"
-    },
-    {
-      "t1": "TCU Horned Frogs",
-      "t2": "Arizona Wildcats",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Fayetteville Regional",
-      "date": "2023-06-03"
-    },
-    {
-      "t1": "Texas A&M Aggies",
-      "t2": "Cal State Fullerton Titans",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Stanford Regional",
-      "date": "2023-06-03"
+      "date": "2023-06-02"
     },
     {
       "t1": "Wake Forest Demon Deacons",
@@ -1661,10 +1611,20 @@
       "t1": "Texas Tech Red Raiders",
       "t2": "Florida Gators",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Texas Tech Red Raiders",
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Gainesville Regional",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Regional",
       "date": "2023-06-03"
     },
     {
@@ -1678,13 +1638,93 @@
       "date": "2023-06-03"
     },
     {
+      "t1": "Oregon State Beavers",
+      "t2": "Sam Houston Bearkats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Baton Rouge Regional",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "Eastern Illinois Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Nashville Regional",
+      "date": "2023-06-03"
+    },
+    {
       "t1": "Virginia Cavaliers",
       "t2": "East Carolina Pirates",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "East Carolina Pirates",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Charlottesville Regional",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Cal State Fullerton Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stanford Regional",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Rider Broncs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Conway Regional",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lexington Regional",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "Indiana State Sycamores",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Terre Haute Regional",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "South Carolina Gamecocks",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Columbia Regional",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Nicholls Colonels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional",
       "date": "2023-06-03"
     },
     {
@@ -1708,16 +1748,6 @@
       "date": "2023-06-03"
     },
     {
-      "t1": "Indiana Hoosiers",
-      "t2": "Kentucky Wildcats",
-      "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Indiana Hoosiers",
-      "round": "NCAA Baseball Championship - Lexington Regional",
-      "date": "2023-06-03"
-    },
-    {
       "t1": "Southern Miss Golden Eagles",
       "t2": "Auburn Tigers",
       "w1": 1,
@@ -1725,26 +1755,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Auburn Regional - Elimination Game",
-      "date": "2023-06-03"
-    },
-    {
-      "t1": "Indiana State Sycamores",
-      "t2": "Iowa Hawkeyes",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Iowa Hawkeyes",
-      "round": "NCAA Baseball Championship - Terre Haute Regional",
-      "date": "2023-06-03"
-    },
-    {
-      "t1": "South Carolina Gamecocks",
-      "t2": "NC State Wolfpack",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Columbia Regional",
       "date": "2023-06-03"
     },
     {
@@ -1868,14 +1878,24 @@
       "date": "2023-06-03"
     },
     {
-      "t1": "Duke Blue Devils",
-      "t2": "Rider Broncs",
+      "t1": "TCU Horned Frogs",
+      "t2": "Arkansas Razorbacks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Conway Regional",
-      "date": "2023-06-03"
+      "round": "NCAA Baseball Championship - Fayetteville Regional",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Baton Rouge Regional",
+      "date": "2023-06-04"
     },
     {
       "t1": "Oregon Ducks",
@@ -1891,40 +1911,30 @@
       "t1": "Texas A&M Aggies",
       "t2": "Stanford Cardinal",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Texas A&M Aggies",
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Stanford Regional",
       "date": "2023-06-04"
     },
     {
       "t1": "Texas Longhorns",
       "t2": "Miami Hurricanes",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Miami Hurricanes",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Coral Gables Regional",
       "date": "2023-06-04"
     },
     {
-      "t1": "Alabama Crimson Tide",
-      "t2": "Troy Trojans",
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "Duke Blue Devils",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Tuscaloosa Regional",
-      "date": "2023-06-04"
-    },
-    {
-      "t1": "Pennsylvania Quakers",
-      "t2": "Samford Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Auburn Regional",
+      "round": "NCAA Baseball Championship - Conway Regional",
       "date": "2023-06-04"
     },
     {
@@ -1938,33 +1948,73 @@
       "date": "2023-06-04"
     },
     {
-      "t1": "Santa Clara Broncos",
-      "t2": "Arizona Wildcats",
+      "t1": "Pennsylvania Quakers",
+      "t2": "Samford Bulldogs",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Fayetteville Regional - Elimination Game",
+      "round": "NCAA Baseball Championship - Auburn Regional",
       "date": "2023-06-04"
     },
     {
-      "t1": "Florida Gators",
-      "t2": "UConn Huskies",
+      "t1": "Alabama Crimson Tide",
+      "t2": "Troy Trojans",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Gainesville Regional - Elimination Game",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional",
       "date": "2023-06-04"
     },
     {
-      "t1": "TCU Horned Frogs",
-      "t2": "Arkansas Razorbacks",
-      "w1": 2,
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "Rider Broncs",
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Arkansas Razorbacks",
-      "round": "NCAA Baseball Championship - Fayetteville Regional",
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Conway Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Dallas Baptist Patriots",
+      "t2": "Washington Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stillwater Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Samford Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Terre Haute Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Regional - Elimination Game",
       "date": "2023-06-04"
     },
     {
@@ -1978,53 +2028,23 @@
       "date": "2023-06-04"
     },
     {
-      "t1": "LSU Tigers",
-      "t2": "Oregon State Beavers",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Oregon State Beavers",
-      "round": "NCAA Baseball Championship - Baton Rouge Regional",
-      "date": "2023-06-04"
-    },
-    {
-      "t1": "Xavier Musketeers",
-      "t2": "Vanderbilt Commodores",
+      "t1": "Florida Gators",
+      "t2": "UConn Huskies",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Nashville Regional - Elimination Game",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Elimination Game",
       "date": "2023-06-04"
     },
     {
-      "t1": "Stanford Cardinal",
-      "t2": "Cal State Fullerton Titans",
+      "t1": "Campbell Fighting Camels",
+      "t2": "NC State Wolfpack",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Stanford Regional - Elimination Game",
-      "date": "2023-06-04"
-    },
-    {
-      "t1": "Miami Hurricanes",
-      "t2": "Louisiana Ragin' Cajuns",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Coral Gables Regional - Elimination Game",
-      "date": "2023-06-04"
-    },
-    {
-      "t1": "Coastal Carolina Chanticleers",
-      "t2": "Duke Blue Devils",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Conway Regional",
+      "round": "NCAA Baseball Championship - Columbia Regional - Elimination Game",
       "date": "2023-06-04"
     },
     {
@@ -2038,6 +2058,106 @@
       "date": "2023-06-04"
     },
     {
+      "t1": "George Mason Patriots",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Winston-Salem Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Coral Gables Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Cal State Fullerton Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stanford Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Nashville Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Boston College Eagles",
+      "t2": "Troy Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Santa Clara Broncos",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Regional - Elimination Game",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Wake Forest Demon Deacons",
+      "t2": "George Mason Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Winston-Salem Regional - Wake Forest advances to Super Regionals",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Regional - Virginia advances to Super Regionals",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Coral Gables Regional - Texas advances to Super Regionals",
+      "date": "2023-06-04"
+    },
+    {
+      "t1": "Indiana State Sycamores",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Terre Haute Regional - Indiana State advances to Super Regionals",
+      "date": "2023-06-04"
+    },
+    {
       "t1": "South Carolina Gamecocks",
       "t2": "Campbell Fighting Camels",
       "w1": 1,
@@ -2048,14 +2168,44 @@
       "date": "2023-06-04"
     },
     {
-      "t1": "George Mason Patriots",
-      "t2": "Maryland Terrapins",
+      "t1": "Tennessee Volunteers",
+      "t2": "Charlotte 49ers",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Winston-Salem Regional - Elimination Game",
+      "round": "NCAA Baseball Championship - Clemson Regional - Tennessee advances to Super Regionals",
       "date": "2023-06-04"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Pennsylvania Quakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional",
+      "date": "2023-06-05"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Sam Houston Bearkats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Baton Rouge Regional - Elimination Game",
+      "date": "2023-06-05"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Santa Clara Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Regional - Elimination Game",
+      "date": "2023-06-05"
     },
     {
       "t1": "Alabama Crimson Tide",
@@ -2078,42 +2228,112 @@
       "date": "2023-06-05"
     },
     {
+      "t1": "Oregon Ducks",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Nashville Regional - Oregon advances to Super Regionals",
+      "date": "2023-06-05"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Florida advances to Super Regionals",
+      "date": "2023-06-05"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Regional - TCU advances to Super Regionals",
+      "date": "2023-06-05"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Baton Rouge Regional - LSU advances to Super Regionals",
+      "date": "2023-06-05"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Conway Regional - Duke advances to Super Regionals",
+      "date": "2023-06-05"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lexington Regional - Kentucky advances to Super Regionals",
+      "date": "2023-06-05"
+    },
+    {
       "t1": "Southern Miss Golden Eagles",
       "t2": "Pennsylvania Quakers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Pennsylvania Quakers",
-      "round": "NCAA Baseball Championship - Auburn Regional",
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional - Southern Miss advances to Super Regionals",
       "date": "2023-06-05"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stanford Regional - Stanford advances to Super Regionals",
+      "date": "2023-06-06"
     },
     {
       "t1": "Duke Blue Devils",
       "t2": "Virginia Cavaliers",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Duke Blue Devils",
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Charlottesville Super Regional - Game 1",
       "date": "2023-06-09"
     },
     {
       "t1": "TCU Horned Frogs",
       "t2": "Indiana State Sycamores",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Indiana State Sycamores",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Fort Worth Super Regional - Game 1",
       "date": "2023-06-09"
     },
     {
       "t1": "Florida Gators",
       "t2": "South Carolina Gamecocks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "South Carolina Gamecocks",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Gainesville Super Regional - Game 1",
       "date": "2023-06-10"
     },
@@ -2121,29 +2341,49 @@
       "t1": "Oregon Ducks",
       "t2": "Oral Roberts Golden Eagles",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Oregon Ducks",
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Eugene Super Regional - Game 1",
       "date": "2023-06-10"
     },
     {
       "t1": "Wake Forest Demon Deacons",
       "t2": "Alabama Crimson Tide",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Alabama Crimson Tide",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Winston-Salem Super Regional - Game 1",
+      "date": "2023-06-10"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "South Carolina Gamecocks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Super Regional - Game 2",
+      "date": "2023-06-10"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Super Regional - Game 2",
       "date": "2023-06-10"
     },
     {
       "t1": "Texas Longhorns",
       "t2": "Stanford Cardinal",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Texas Longhorns",
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Stanford Super Regional - Game 1",
       "date": "2023-06-10"
     },
@@ -2151,21 +2391,121 @@
       "t1": "Southern Miss Golden Eagles",
       "t2": "Tennessee Volunteers",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Southern Miss Golden Eagles",
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Hattiesburg Super Regional - Game 1",
       "date": "2023-06-10"
     },
     {
       "t1": "LSU Tigers",
       "t2": "Kentucky Wildcats",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Kentucky Wildcats",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Baton Rouge Super Regional - Game 1",
       "date": "2023-06-11"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Indiana State Sycamores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fort Worth Super Regional - Game 2",
+      "date": "2023-06-11"
+    },
+    {
+      "t1": "Oral Roberts Golden Eagles",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Super Regional - Game 2",
+      "date": "2023-06-11"
+    },
+    {
+      "t1": "Wake Forest Demon Deacons",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Winston-Salem Super Regional - Game 2",
+      "date": "2023-06-11"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Baton Rouge Super Regional - Game 2",
+      "date": "2023-06-11"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Super Regional - Game 3",
+      "date": "2023-06-11"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Super Regional - Game 2",
+      "date": "2023-06-11"
+    },
+    {
+      "t1": "Oral Roberts Golden Eagles",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Super Regional - Game 3",
+      "date": "2023-06-11"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stanford Super Regional - Game 2",
+      "date": "2023-06-12"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stanford Super Regional - Game 3",
+      "date": "2023-06-13"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Super Regional - Game 3",
+      "date": "2023-06-13"
     },
     {
       "t1": "Florida Gators",
@@ -2181,7 +2521,7 @@
       "t1": "Oral Roberts Golden Eagles",
       "t2": "TCU Horned Frogs",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "Men's College World Series - Double Elimination Round",
@@ -2200,10 +2540,10 @@
     {
       "t1": "LSU Tigers",
       "t2": "Tennessee Volunteers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Tennessee Volunteers",
+      "done": false,
+      "loser": "",
       "round": "Men's College World Series - Double Elimination Round",
       "date": "2023-06-17"
     },
@@ -2231,9 +2571,9 @@
       "t1": "Wake Forest Demon Deacons",
       "t2": "LSU Tigers",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Wake Forest Demon Deacons",
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "Men's College World Series - Double Elimination Round",
       "date": "2023-06-19"
     },
@@ -2248,6 +2588,26 @@
       "date": "2023-06-19"
     },
     {
+      "t1": "LSU Tigers",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Elimination Game",
+      "date": "2023-06-20"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Oral Roberts Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Elimination Game",
+      "date": "2023-06-20"
+    },
+    {
       "t1": "Florida Gators",
       "t2": "TCU Horned Frogs",
       "w1": 1,
@@ -2259,42 +2619,35 @@
     },
     {
       "t1": "LSU Tigers",
+      "t2": "Wake Forest Demon Deacons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - LSU advances to Championship Series",
+      "date": "2023-06-22"
+    },
+    {
+      "t1": "LSU Tigers",
       "t2": "Florida Gators",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "Men's College World Series Championship Series - Game 1",
       "date": "2023-06-24"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series Championship Series - Game 2",
+      "date": "2023-06-25"
     }
   ],
-  "eliminated": [
-    "George Mason Patriots",
-    "Santa Clara Broncos",
-    "Xavier Musketeers",
-    "Charlotte 49ers",
-    "North Carolina Tar Heels",
-    "Oklahoma Sooners",
-    "Sam Houston Bearkats",
-    "Texas Tech Red Raiders",
-    "East Carolina Pirates",
-    "Texas A&M Aggies",
-    "Miami Hurricanes",
-    "Indiana Hoosiers",
-    "Iowa Hawkeyes",
-    "Arkansas Razorbacks",
-    "Oregon State Beavers",
-    "Pennsylvania Quakers",
-    "South Carolina Gamecocks",
-    "Duke Blue Devils",
-    "Indiana State Sycamores",
-    "Oregon Ducks",
-    "Alabama Crimson Tide",
-    "Kentucky Wildcats",
-    "Texas Longhorns",
-    "Southern Miss Golden Eagles",
-    "Tennessee Volunteers",
-    "Wake Forest Demon Deacons"
-  ],
-  "updated": "2026-05-27 06:38 UTC"
+  "eliminated": [],
+  "updated": "2026-05-27 07:05 UTC"
 }

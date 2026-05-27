@@ -307,9 +307,9 @@
       "t1": "New York             Yankees",
       "t2": "Anaheim              Angels",
       "w1": 1,
-      "w2": 4,
-      "done": true,
-      "loser": "New York             Yankees",
+      "w2": 2,
+      "done": false,
+      "loser": "",
       "round": "post-season",
       "date": "2002-10-02"
     },
@@ -334,10 +334,20 @@
       "date": "2002-10-02"
     },
     {
+      "t1": "Anaheim              Angels",
+      "t2": "New York             Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "PLAYOFFS",
+      "date": "2002-10-03"
+    },
+    {
       "t1": "Minnesota            Twins",
       "t2": "Anaheim              Angels",
       "w1": 1,
-      "w2": 5,
+      "w2": 3,
       "done": true,
       "loser": "Minnesota            Twins",
       "round": "post-season",
@@ -354,6 +364,16 @@
       "date": "2002-10-10"
     },
     {
+      "t1": "Anaheim              Angels",
+      "t2": "Minnesota            Twins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "PLAYOFFS",
+      "date": "2002-10-13"
+    },
+    {
       "t1": "San Francisco        Giants",
       "t2": "Anaheim              Angels",
       "w1": 3,
@@ -366,12 +386,11 @@
   ],
   "eliminated": [
     "Oakland              Athletics",
-    "New York             Yankees",
     "Arizona              Diamondbacks",
     "Atlanta              Braves",
     "Minnesota            Twins",
     "St. Louis            Cardinals",
     "San Francisco        Giants"
   ],
-  "updated": "2026-05-27 06:36 UTC"
+  "updated": "2026-05-27 07:04 UTC"
 }

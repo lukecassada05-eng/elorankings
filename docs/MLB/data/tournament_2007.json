@@ -310,12 +310,22 @@
     {
       "t1": "Boston Red Sox",
       "t2": "Colorado Rockies",
-      "w1": 4,
+      "w1": 3,
       "w2": 0,
       "done": true,
       "loser": "Colorado Rockies",
       "round": "WORLD SERIES",
       "date": "2007-10-25"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "Colorado Rockies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "post-season",
+      "date": "2007-10-26"
     }
   ],
   "eliminated": [
@@ -327,5 +337,5 @@
     "Cleveland Indians",
     "Colorado Rockies"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:04 UTC"
 }

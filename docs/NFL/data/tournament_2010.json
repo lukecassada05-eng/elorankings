@@ -80,6 +80,16 @@
       "date": "2011-01-15"
     },
     {
+      "t1": "New York Jets",
+      "t2": "New England Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New England Patriots",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2011-01-16"
+    },
+    {
       "t1": "Green Bay Packers",
       "t2": "Atlanta Falcons",
       "w1": 1,
@@ -97,16 +107,6 @@
       "done": true,
       "loser": "Seattle Seahawks",
       "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2011-01-16"
-    },
-    {
-      "t1": "New York Jets",
-      "t2": "New England Patriots",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New England Patriots",
-      "round": "AFC DIVISIONAL PLAYOFF",
       "date": "2011-01-16"
     },
     {
@@ -152,13 +152,13 @@
   ],
   "eliminated": [
     "Baltimore Ravens",
+    "New England Patriots",
     "Atlanta Falcons",
     "Seattle Seahawks",
-    "New England Patriots",
     "Chicago Bears",
     "New York Jets",
     "Afc",
     "Pittsburgh Steelers"
   ],
-  "updated": "2026-05-27 06:37 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

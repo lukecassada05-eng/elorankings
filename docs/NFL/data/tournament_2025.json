@@ -138,16 +138,6 @@
       "date": "2026-01-11"
     },
     {
-      "t1": "Buffalo Bills",
-      "t2": "Jacksonville Jaguars",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Jacksonville Jaguars",
-      "round": "AFC Wild Card Playoffs",
-      "date": "2026-01-11"
-    },
-    {
       "t1": "San Francisco 49ers",
       "t2": "Philadelphia Eagles",
       "w1": 1,
@@ -155,6 +145,16 @@
       "done": true,
       "loser": "Philadelphia Eagles",
       "round": "NFC Wild Card Playoffs",
+      "date": "2026-01-11"
+    },
+    {
+      "t1": "Buffalo Bills",
+      "t2": "Jacksonville Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Jacksonville Jaguars",
+      "round": "AFC Wild Card Playoffs",
       "date": "2026-01-11"
     },
     {
@@ -188,16 +188,6 @@
       "date": "2026-01-17"
     },
     {
-      "t1": "Seattle Seahawks",
-      "t2": "San Francisco 49ers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "San Francisco 49ers",
-      "round": "NFC Divisional Playoffs",
-      "date": "2026-01-18"
-    },
-    {
       "t1": "New England Patriots",
       "t2": "Houston Texans",
       "w1": 1,
@@ -205,6 +195,16 @@
       "done": true,
       "loser": "Houston Texans",
       "round": "AFC Divisional Playoffs",
+      "date": "2026-01-18"
+    },
+    {
+      "t1": "Seattle Seahawks",
+      "t2": "San Francisco 49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Francisco 49ers",
+      "round": "NFC Divisional Playoffs",
       "date": "2026-01-18"
     },
     {
@@ -261,18 +261,18 @@
   "eliminated": [
     "Carolina Panthers",
     "Green Bay Packers",
-    "Jacksonville Jaguars",
     "Philadelphia Eagles",
+    "Jacksonville Jaguars",
     "Los Angeles Chargers",
     "Pittsburgh Steelers",
     "Buffalo Bills",
-    "San Francisco 49ers",
     "Houston Texans",
+    "San Francisco 49ers",
     "Chicago Bears",
     "Denver Broncos",
     "Los Angeles Rams",
     "AFC",
     "New England Patriots"
   ],
-  "updated": "2026-05-27 06:38 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

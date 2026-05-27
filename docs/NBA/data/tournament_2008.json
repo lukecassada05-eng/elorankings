@@ -2072,17 +2072,17 @@
     {
       "t1": "Boston Celtics",
       "t2": "Atlanta Hawks",
-      "w1": 10,
-      "w2": 6,
-      "done": true,
-      "loser": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2008-04-12"
     },
     {
       "t1": "Charlotte Bobcats",
       "t2": "Indiana Pacers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2092,7 +2092,7 @@
     {
       "t1": "Portland Trail Blazers",
       "t2": "Dallas Mavericks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2102,7 +2102,7 @@
     {
       "t1": "Sacramento Kings",
       "t2": "New Orleans Hornets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2112,7 +2112,7 @@
     {
       "t1": "Utah Jazz",
       "t2": "Denver Nuggets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2122,7 +2122,7 @@
     {
       "t1": "Washington Wizards",
       "t2": "Philadelphia 76ers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2132,7 +2132,7 @@
     {
       "t1": "Minnesota Timberwolves",
       "t2": "Memphis Grizzlies",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2142,7 +2142,7 @@
     {
       "t1": "Golden State Warriors",
       "t2": "LA Clippers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2152,7 +2152,7 @@
     {
       "t1": "New Jersey Nets",
       "t2": "Milwaukee Bucks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2160,19 +2160,109 @@
       "date": "2008-04-12"
     },
     {
+      "t1": "Boston Celtics",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
+      "t1": "Charlotte Bobcats",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
+      "t1": "Portland Trail Blazers",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
+      "t1": "Sacramento Kings",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
+      "t1": "Washington Wizards",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
+      "t1": "Minnesota Timberwolves",
+      "t2": "Memphis Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "LA Clippers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
+      "t1": "New Jersey Nets",
+      "t2": "Milwaukee Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-12"
+    },
+    {
       "t1": "Los Angeles Lakers",
       "t2": "San Antonio Spurs",
-      "w1": 10,
-      "w2": 2,
-      "done": true,
-      "loser": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2008-04-13"
     },
     {
       "t1": "Detroit Pistons",
       "t2": "Toronto Raptors",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2182,7 +2272,7 @@
     {
       "t1": "Orlando Magic",
       "t2": "Chicago Bulls",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2192,7 +2282,7 @@
     {
       "t1": "Cleveland Cavaliers",
       "t2": "Miami Heat",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2202,7 +2292,7 @@
     {
       "t1": "Seattle SuperSonics",
       "t2": "Dallas Mavericks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2212,7 +2302,7 @@
     {
       "t1": "Denver Nuggets",
       "t2": "Houston Rockets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2220,9 +2310,69 @@
       "date": "2008-04-13"
     },
     {
+      "t1": "Los Angeles Lakers",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-13"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-13"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "Chicago Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-13"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Miami Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-13"
+    },
+    {
+      "t1": "Seattle SuperSonics",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-13"
+    },
+    {
+      "t1": "Denver Nuggets",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-13"
+    },
+    {
       "t1": "Chicago Bulls",
       "t2": "Milwaukee Bucks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2232,7 +2382,7 @@
     {
       "t1": "Cleveland Cavaliers",
       "t2": "Philadelphia 76ers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2242,7 +2392,7 @@
     {
       "t1": "Phoenix Suns",
       "t2": "Golden State Warriors",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2252,7 +2402,7 @@
     {
       "t1": "San Antonio Spurs",
       "t2": "Sacramento Kings",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2262,17 +2412,17 @@
     {
       "t1": "Utah Jazz",
       "t2": "Houston Rockets",
-      "w1": 10,
-      "w2": 4,
-      "done": true,
-      "loser": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2008-04-14"
     },
     {
       "t1": "Washington Wizards",
       "t2": "Indiana Pacers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2282,7 +2432,7 @@
     {
       "t1": "Toronto Raptors",
       "t2": "Miami Heat",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2292,7 +2442,7 @@
     {
       "t1": "Boston Celtics",
       "t2": "New York Knicks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2300,9 +2450,89 @@
       "date": "2008-04-14"
     },
     {
+      "t1": "Chicago Bulls",
+      "t2": "Milwaukee Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-14"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-14"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "Golden State Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-14"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "Sacramento Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-14"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-14"
+    },
+    {
+      "t1": "Washington Wizards",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-14"
+    },
+    {
+      "t1": "Toronto Raptors",
+      "t2": "Miami Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-14"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "New York Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-14"
+    },
+    {
       "t1": "Orlando Magic",
       "t2": "Atlanta Hawks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2312,7 +2542,7 @@
     {
       "t1": "New Orleans Hornets",
       "t2": "LA Clippers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2322,7 +2552,7 @@
     {
       "t1": "Portland Trail Blazers",
       "t2": "Memphis Grizzlies",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2332,7 +2562,7 @@
     {
       "t1": "Detroit Pistons",
       "t2": "Minnesota Timberwolves",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2342,7 +2572,7 @@
     {
       "t1": "Los Angeles Lakers",
       "t2": "Sacramento Kings",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2352,7 +2582,7 @@
     {
       "t1": "New Jersey Nets",
       "t2": "Charlotte Bobcats",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2360,19 +2590,79 @@
       "date": "2008-04-15"
     },
     {
+      "t1": "Orlando Magic",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-15"
+    },
+    {
+      "t1": "New Orleans Hornets",
+      "t2": "LA Clippers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-15"
+    },
+    {
+      "t1": "Portland Trail Blazers",
+      "t2": "Memphis Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-15"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Minnesota Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-15"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Sacramento Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-15"
+    },
+    {
+      "t1": "New Jersey Nets",
+      "t2": "Charlotte Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-15"
+    },
+    {
       "t1": "Dallas Mavericks",
       "t2": "New Orleans Hornets",
-      "w1": 4,
-      "w2": 8,
-      "done": true,
-      "loser": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2008-04-16"
     },
     {
       "t1": "Detroit Pistons",
       "t2": "Cleveland Cavaliers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2382,7 +2672,7 @@
     {
       "t1": "Denver Nuggets",
       "t2": "Memphis Grizzlies",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2392,7 +2682,7 @@
     {
       "t1": "Indiana Pacers",
       "t2": "New York Knicks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2402,7 +2692,7 @@
     {
       "t1": "Minnesota Timberwolves",
       "t2": "Milwaukee Bucks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2412,7 +2702,7 @@
     {
       "t1": "Orlando Magic",
       "t2": "Washington Wizards",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2422,7 +2712,7 @@
     {
       "t1": "Phoenix Suns",
       "t2": "Portland Trail Blazers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2432,7 +2722,7 @@
     {
       "t1": "Charlotte Bobcats",
       "t2": "Philadelphia 76ers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2442,7 +2732,7 @@
     {
       "t1": "Boston Celtics",
       "t2": "New Jersey Nets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2452,7 +2742,7 @@
     {
       "t1": "Chicago Bulls",
       "t2": "Toronto Raptors",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2462,7 +2752,7 @@
     {
       "t1": "Seattle SuperSonics",
       "t2": "Golden State Warriors",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2472,7 +2762,7 @@
     {
       "t1": "Houston Rockets",
       "t2": "LA Clippers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2482,7 +2772,7 @@
     {
       "t1": "Miami Heat",
       "t2": "Atlanta Hawks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2490,9 +2780,139 @@
       "date": "2008-04-16"
     },
     {
+      "t1": "Dallas Mavericks",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Denver Nuggets",
+      "t2": "Memphis Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Indiana Pacers",
+      "t2": "New York Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Minnesota Timberwolves",
+      "t2": "Milwaukee Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "Portland Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Charlotte Bobcats",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "New Jersey Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Chicago Bulls",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Seattle SuperSonics",
+      "t2": "Golden State Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Houston Rockets",
+      "t2": "LA Clippers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
+      "t1": "Miami Heat",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-16"
+    },
+    {
       "t1": "San Antonio Spurs",
       "t2": "Utah Jazz",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2500,132 +2920,876 @@
       "date": "2008-04-17"
     },
     {
+      "t1": "San Antonio Spurs",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2008-04-17"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "Washington Wizards",
-      "w1": 8,
-      "w2": 4,
-      "done": true,
-      "loser": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2008-04-19"
     },
     {
       "t1": "San Antonio Spurs",
       "t2": "Phoenix Suns",
-      "w1": 8,
-      "w2": 2,
-      "done": true,
-      "loser": "Phoenix Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2008-04-19"
     },
     {
+      "t1": "New Orleans Hornets",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "PLAYOFFS",
+      "date": "2008-04-19"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "PLAYOFFS",
+      "date": "2008-04-20"
+    },
+    {
       "t1": "Los Angeles Lakers",
       "t2": "Denver Nuggets",
-      "w1": 8,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Denver Nuggets",
+      "done": false,
+      "loser": "",
       "round": "WESTERN CONFERENCE FIRST ROUND",
       "date": "2008-04-20"
     },
     {
       "t1": "Orlando Magic",
       "t2": "Toronto Raptors",
-      "w1": 8,
-      "w2": 2,
-      "done": true,
-      "loser": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND",
       "date": "2008-04-20"
     },
     {
       "t1": "Philadelphia 76ers",
       "t2": "Detroit Pistons",
-      "w1": 4,
-      "w2": 8,
-      "done": true,
-      "loser": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND",
       "date": "2008-04-20"
     },
     {
+      "t1": "Boston Celtics",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND",
+      "date": "2008-04-21"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND",
+      "date": "2008-04-21"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND",
+      "date": "2008-04-22"
+    },
+    {
+      "t1": "New Orleans Hornets",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2008-04-22"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2008-04-22"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "Phoenix Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2008-04-23"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2008-04-23"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2008-04-23"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2008-04-24"
+    },
+    {
+      "t1": "Toronto Raptors",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2008-04-24"
+    },
+    {
+      "t1": "Washington Wizards",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2008-04-25"
+    },
+    {
+      "t1": "Philadelphia 76ers",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2008-04-25"
+    },
+    {
+      "t1": "Houston Rockets",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2008-04-25"
+    },
+    {
+      "t1": "Dallas Mavericks",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2008-04-25"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "Phoenix Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2008-04-25"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2008-04-26"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2008-04-26"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2008-04-27"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2008-04-27"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2008-04-27"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2008-04-27"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2008-04-27"
+    },
+    {
+      "t1": "New Orleans Hornets",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2008-04-28"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2008-04-28"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2008-04-29"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 4",
+      "date": "2008-04-29"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2008-04-29"
+    },
+    {
+      "t1": "New Orleans Hornets",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2008-04-29"
+    },
+    {
+      "t1": "Washington Wizards",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2008-04-30"
+    },
+    {
+      "t1": "Houston Rockets",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2008-04-30"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "Phoenix Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2008-04-30"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2008-05-01"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6",
+      "date": "2008-05-02"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6",
+      "date": "2008-05-02"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6",
+      "date": "2008-05-03"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 6",
+      "date": "2008-05-03"
+    },
+    {
       "t1": "Detroit Pistons",
       "t2": "Orlando Magic",
-      "w1": 8,
-      "w2": 2,
-      "done": true,
-      "loser": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
       "date": "2008-05-03"
     },
     {
       "t1": "New Orleans Hornets",
       "t2": "San Antonio Spurs",
-      "w1": 6,
-      "w2": 8,
-      "done": true,
-      "loser": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
       "date": "2008-05-04"
     },
     {
       "t1": "Los Angeles Lakers",
       "t2": "Utah Jazz",
-      "w1": 8,
-      "w2": 4,
-      "done": true,
-      "loser": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
       "date": "2008-05-04"
     },
     {
       "t1": "Boston Celtics",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 7",
+      "date": "2008-05-04"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
+      "date": "2008-05-05"
+    },
+    {
+      "t1": "New Orleans Hornets",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
+      "date": "2008-05-06"
+    },
+    {
+      "t1": "Boston Celtics",
       "t2": "Cleveland Cavaliers",
-      "w1": 8,
-      "w2": 6,
-      "done": true,
-      "loser": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
       "date": "2008-05-07"
     },
     {
+      "t1": "Los Angeles Lakers",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
+      "date": "2008-05-07"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
+      "date": "2008-05-08"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
+      "date": "2008-05-08"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3",
+      "date": "2008-05-09"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3",
+      "date": "2008-05-09"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
+      "date": "2008-05-10"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
+      "date": "2008-05-11"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4",
+      "date": "2008-05-11"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4",
+      "date": "2008-05-11"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
+      "date": "2008-05-13"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5",
+      "date": "2008-05-13"
+    },
+    {
+      "t1": "New Orleans Hornets",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5",
+      "date": "2008-05-14"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5",
+      "date": "2008-05-14"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5",
+      "date": "2008-05-15"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6",
+      "date": "2008-05-16"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6",
+      "date": "2008-05-17"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 6",
+      "date": "2008-05-17"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 7",
+      "date": "2008-05-18"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 7",
+      "date": "2008-05-19"
+    },
+    {
       "t1": "Boston Celtics",
       "t2": "Detroit Pistons",
-      "w1": 8,
-      "w2": 4,
-      "done": true,
-      "loser": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "EASTERN CONFERENCE FINALS - GAME 1",
       "date": "2008-05-21"
     },
     {
+      "t1": "Los Angeles Lakers",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 1",
+      "date": "2008-05-21"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FINALS - GAME 2",
+      "date": "2008-05-23"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2",
+      "date": "2008-05-23"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FINALS - GAME 3",
+      "date": "2008-05-25"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 3",
+      "date": "2008-05-25"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FINALS - GAME 4",
+      "date": "2008-05-27"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 4",
+      "date": "2008-05-28"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FINALS - GAME 5",
+      "date": "2008-05-29"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 5",
+      "date": "2008-05-29"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FINALS - GAME 6",
+      "date": "2008-05-31"
+    },
+    {
       "t1": "Boston Celtics",
       "t2": "Los Angeles Lakers",
-      "w1": 8,
-      "w2": 4,
-      "done": true,
-      "loser": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NBA FINALS - GAME 1",
       "date": "2008-06-06"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 2",
+      "date": "2008-06-09"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 3",
+      "date": "2008-06-10"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 4",
+      "date": "2008-06-12"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 5",
+      "date": "2008-06-15"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 6",
+      "date": "2008-06-18"
     }
   ],
-  "eliminated": [
-    "Atlanta Hawks",
-    "San Antonio Spurs",
-    "Houston Rockets",
-    "Dallas Mavericks",
-    "Washington Wizards",
-    "Phoenix Suns",
-    "Denver Nuggets",
-    "Toronto Raptors",
-    "Philadelphia 76ers",
-    "Orlando Magic",
-    "New Orleans Hornets",
-    "Utah Jazz",
-    "Cleveland Cavaliers",
-    "Detroit Pistons",
-    "Los Angeles Lakers"
-  ],
-  "updated": "2026-05-27 06:35 UTC"
+  "eliminated": [],
+  "updated": "2026-05-27 07:03 UTC"
 }

@@ -188,6 +188,16 @@
       "date": "2024-01-20"
     },
     {
+      "t1": "Kansas City Chiefs",
+      "t2": "Buffalo Bills",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Buffalo Bills",
+      "round": "AFC Divisional Playoffs",
+      "date": "2024-01-21"
+    },
+    {
       "t1": "San Francisco 49ers",
       "t2": "Green Bay Packers",
       "w1": 1,
@@ -205,16 +215,6 @@
       "done": true,
       "loser": "Tampa Bay Buccaneers",
       "round": "NFC Divisional Playoffs",
-      "date": "2024-01-21"
-    },
-    {
-      "t1": "Kansas City Chiefs",
-      "t2": "Buffalo Bills",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Buffalo Bills",
-      "round": "AFC Divisional Playoffs",
       "date": "2024-01-21"
     },
     {
@@ -263,16 +263,16 @@
     "Miami Dolphins",
     "Dallas Cowboys",
     "Los Angeles Rams",
-    "Pittsburgh Steelers",
     "Philadelphia Eagles",
+    "Pittsburgh Steelers",
     "Houston Texans",
+    "Buffalo Bills",
     "Green Bay Packers",
     "Tampa Bay Buccaneers",
-    "Buffalo Bills",
     "Baltimore Ravens",
     "Detroit Lions",
     "AFC",
     "San Francisco 49ers"
   ],
-  "updated": "2026-05-27 06:38 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

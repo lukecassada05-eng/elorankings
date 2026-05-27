@@ -2536,7 +2536,7 @@
     {
       "t1": "Chicago Bulls",
       "t2": "Atlanta Hawks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2544,19 +2544,9 @@
       "date": "2006-04-12"
     },
     {
-      "t1": "NO/Oklahoma City\r\n Hornets",
-      "t2": "Seattle SuperSonics",
-      "w1": 2,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "AT OKLAHOMA CITY OK",
-      "date": "2006-04-12"
-    },
-    {
       "t1": "Indiana Pacers",
       "t2": "Boston Celtics",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2566,8 +2556,8 @@
     {
       "t1": "Milwaukee Bucks",
       "t2": "Washington Wizards",
-      "w1": 2,
-      "w2": 2,
+      "w1": 1,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "regular-season",
@@ -2576,7 +2566,7 @@
     {
       "t1": "Orlando Magic",
       "t2": "Toronto Raptors",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2586,7 +2576,7 @@
     {
       "t1": "Utah Jazz",
       "t2": "Denver Nuggets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2596,7 +2586,7 @@
     {
       "t1": "Golden State Warriors",
       "t2": "Dallas Mavericks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2606,7 +2596,7 @@
     {
       "t1": "Minnesota Timberwolves",
       "t2": "Houston Rockets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2616,7 +2606,7 @@
     {
       "t1": "LA Clippers",
       "t2": "Portland Trail Blazers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2626,17 +2616,17 @@
     {
       "t1": "Philadelphia 76ers",
       "t2": "New Jersey Nets",
-      "w1": 4,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "New Jersey Nets",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2006-04-12"
     },
     {
       "t1": "Memphis Grizzlies",
       "t2": "Charlotte Bobcats",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2644,29 +2634,119 @@
       "date": "2006-04-12"
     },
     {
-      "t1": "Detroit Pistons",
-      "t2": "Cleveland Cavaliers",
-      "w1": 10,
-      "w2": 6,
-      "done": true,
-      "loser": "Cleveland Cavaliers",
-      "round": "regular-season",
-      "date": "2006-04-13"
+      "t1": "NO/Oklahoma City\r\n Hornets",
+      "t2": "Seattle SuperSonics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AT OKLAHOMA CITY OK",
+      "date": "2006-04-12"
     },
     {
-      "t1": "Phoenix Suns",
-      "t2": "Dallas Mavericks",
-      "w1": 6,
-      "w2": 8,
-      "done": true,
-      "loser": "Phoenix Suns",
-      "round": "regular-season",
-      "date": "2006-04-13"
+      "t1": "Chicago Bulls",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "Indiana Pacers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "Milwaukee Bucks",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
     },
     {
       "t1": "Orlando Magic",
-      "t2": "San Antonio Spurs",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "Minnesota Timberwolves",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "LA Clippers",
+      "t2": "Portland Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "Philadelphia 76ers",
+      "t2": "New Jersey Nets",
       "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "Memphis Grizzlies",
+      "t2": "Charlotte Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-12"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2674,9 +2754,59 @@
       "date": "2006-04-13"
     },
     {
+      "t1": "Phoenix Suns",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2006-04-13"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2006-04-13"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-13"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-13"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-13"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "New York Knicks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2686,7 +2816,7 @@
     {
       "t1": "Charlotte Bobcats",
       "t2": "Atlanta Hawks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2694,19 +2824,9 @@
       "date": "2006-04-14"
     },
     {
-      "t1": "Utah Jazz",
-      "t2": "NO/Oklahoma City\r\n Hornets",
-      "w1": 2,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "AT OKLAHOMA CITY OK",
-      "date": "2006-04-14"
-    },
-    {
       "t1": "Chicago Bulls",
       "t2": "Washington Wizards",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2716,7 +2836,7 @@
     {
       "t1": "Toronto Raptors",
       "t2": "Detroit Pistons",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2726,17 +2846,17 @@
     {
       "t1": "New Jersey Nets",
       "t2": "Boston Celtics",
-      "w1": 4,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Boston Celtics",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2006-04-14"
     },
     {
       "t1": "Golden State Warriors",
       "t2": "Phoenix Suns",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2746,7 +2866,7 @@
     {
       "t1": "Los Angeles Lakers",
       "t2": "Portland Trail Blazers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2756,7 +2876,7 @@
     {
       "t1": "Miami Heat",
       "t2": "Philadelphia 76ers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2766,7 +2886,7 @@
     {
       "t1": "Milwaukee Bucks",
       "t2": "New York Knicks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2776,17 +2896,127 @@
     {
       "t1": "LA Clippers",
       "t2": "Seattle SuperSonics",
-      "w1": 2,
-      "w2": 2,
+      "w1": 1,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "regular-season",
       "date": "2006-04-14"
     },
     {
+      "t1": "Utah Jazz",
+      "t2": "NO/Oklahoma City\r\n Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AT OKLAHOMA CITY OK",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "New York Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Charlotte Bobcats",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Chicago Bulls",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Toronto Raptors",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "New Jersey Nets",
+      "t2": "Boston Celtics",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "Phoenix Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Portland Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Miami Heat",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "Milwaukee Bucks",
+      "t2": "New York Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
+      "t1": "LA Clippers",
+      "t2": "Seattle SuperSonics",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
       "t1": "Indiana Pacers",
       "t2": "Minnesota Timberwolves",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2796,7 +3026,7 @@
     {
       "t1": "Sacramento Kings",
       "t2": "Denver Nuggets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2806,7 +3036,7 @@
     {
       "t1": "Orlando Magic",
       "t2": "Philadelphia 76ers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2816,17 +3046,17 @@
     {
       "t1": "Golden State Warriors",
       "t2": "Portland Trail Blazers",
-      "w1": 4,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Portland Trail Blazers",
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2006-04-15"
     },
     {
       "t1": "Memphis Grizzlies",
       "t2": "Houston Rockets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2836,7 +3066,7 @@
     {
       "t1": "Atlanta Hawks",
       "t2": "Milwaukee Bucks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2846,7 +3076,7 @@
     {
       "t1": "Charlotte Bobcats",
       "t2": "Indiana Pacers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2854,29 +3084,99 @@
       "date": "2006-04-15"
     },
     {
+      "t1": "Indiana Pacers",
+      "t2": "Minnesota Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-15"
+    },
+    {
+      "t1": "Sacramento Kings",
+      "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-15"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-15"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "Portland Trail Blazers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-15"
+    },
+    {
+      "t1": "Memphis Grizzlies",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-15"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Milwaukee Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-15"
+    },
+    {
+      "t1": "Charlotte Bobcats",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-15"
+    },
+    {
       "t1": "Los Angeles Lakers",
       "t2": "Phoenix Suns",
-      "w1": 8,
-      "w2": 8,
-      "done": true,
-      "loser": "Phoenix Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2006-04-16"
     },
     {
       "t1": "Chicago Bulls",
       "t2": "Miami Heat",
-      "w1": 6,
-      "w2": 8,
-      "done": true,
-      "loser": "Chicago Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2006-04-16"
     },
     {
       "t1": "San Antonio Spurs",
       "t2": "Minnesota Timberwolves",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2886,7 +3186,7 @@
     {
       "t1": "Detroit Pistons",
       "t2": "New York Knicks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2896,7 +3196,7 @@
     {
       "t1": "Sacramento Kings",
       "t2": "NO/Oklahoma City\r\n Hornets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2906,17 +3206,7 @@
     {
       "t1": "Washington Wizards",
       "t2": "Cleveland Cavaliers",
-      "w1": 6,
-      "w2": 8,
-      "done": true,
-      "loser": "Washington Wizards",
-      "round": "regular-season",
-      "date": "2006-04-16"
-    },
-    {
-      "t1": "Dallas Mavericks",
-      "t2": "Utah Jazz",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2924,9 +3214,89 @@
       "date": "2006-04-16"
     },
     {
+      "t1": "Dallas Mavericks",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
+      "date": "2006-04-16"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Phoenix Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-16"
+    },
+    {
+      "t1": "Chicago Bulls",
+      "t2": "Miami Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-16"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "Minnesota Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-16"
+    },
+    {
+      "t1": "Detroit Pistons",
+      "t2": "New York Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-16"
+    },
+    {
+      "t1": "Sacramento Kings",
+      "t2": "NO/Oklahoma City\r\n Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-16"
+    },
+    {
+      "t1": "Washington Wizards",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-16"
+    },
+    {
+      "t1": "Dallas Mavericks",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-16"
+    },
+    {
       "t1": "Houston Rockets",
       "t2": "Denver Nuggets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2936,17 +3306,17 @@
     {
       "t1": "Milwaukee Bucks",
       "t2": "Detroit Pistons",
-      "w1": 4,
-      "w2": 8,
-      "done": true,
-      "loser": "Milwaukee Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "regular-season",
       "date": "2006-04-17"
     },
     {
       "t1": "Chicago Bulls",
       "t2": "Orlando Magic",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2956,7 +3326,7 @@
     {
       "t1": "Phoenix Suns",
       "t2": "NO/Oklahoma City\r\n Hornets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2966,7 +3336,7 @@
     {
       "t1": "Indiana Pacers",
       "t2": "Toronto Raptors",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2976,7 +3346,7 @@
     {
       "t1": "Cleveland Cavaliers",
       "t2": "Boston Celtics",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2986,7 +3356,7 @@
     {
       "t1": "Charlotte Bobcats",
       "t2": "New York Knicks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2996,7 +3366,7 @@
     {
       "t1": "San Antonio Spurs",
       "t2": "Utah Jazz",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3004,9 +3374,89 @@
       "date": "2006-04-17"
     },
     {
+      "t1": "Houston Rockets",
+      "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-17"
+    },
+    {
+      "t1": "Milwaukee Bucks",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-17"
+    },
+    {
+      "t1": "Chicago Bulls",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-17"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "NO/Oklahoma City\r\n Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-17"
+    },
+    {
+      "t1": "Indiana Pacers",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-17"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-17"
+    },
+    {
+      "t1": "Charlotte Bobcats",
+      "t2": "New York Knicks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-17"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-17"
+    },
+    {
       "t1": "Atlanta Hawks",
       "t2": "Miami Heat",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3016,7 +3466,7 @@
     {
       "t1": "Sacramento Kings",
       "t2": "Seattle SuperSonics",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3026,7 +3476,7 @@
     {
       "t1": "Memphis Grizzlies",
       "t2": "LA Clippers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3034,9 +3484,39 @@
       "date": "2006-04-18"
     },
     {
+      "t1": "Atlanta Hawks",
+      "t2": "Miami Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-18"
+    },
+    {
+      "t1": "Sacramento Kings",
+      "t2": "Seattle SuperSonics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-18"
+    },
+    {
+      "t1": "Memphis Grizzlies",
+      "t2": "LA Clippers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-18"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "Atlanta Hawks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3046,7 +3526,7 @@
     {
       "t1": "LA Clippers",
       "t2": "Dallas Mavericks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3056,7 +3536,7 @@
     {
       "t1": "San Antonio Spurs",
       "t2": "Houston Rockets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3066,7 +3546,7 @@
     {
       "t1": "Indiana Pacers",
       "t2": "Orlando Magic",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3076,7 +3556,7 @@
     {
       "t1": "Memphis Grizzlies",
       "t2": "Minnesota Timberwolves",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3086,7 +3566,7 @@
     {
       "t1": "Phoenix Suns",
       "t2": "Portland Trail Blazers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3096,7 +3576,7 @@
     {
       "t1": "Utah Jazz",
       "t2": "Golden State Warriors",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3106,7 +3586,7 @@
     {
       "t1": "Boston Celtics",
       "t2": "Miami Heat",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3116,7 +3596,7 @@
     {
       "t1": "Chicago Bulls",
       "t2": "Toronto Raptors",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3126,7 +3606,7 @@
     {
       "t1": "Washington Wizards",
       "t2": "Detroit Pistons",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3136,7 +3616,7 @@
     {
       "t1": "Los Angeles Lakers",
       "t2": "NO/Oklahoma City\r\n Hornets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3146,7 +3626,7 @@
     {
       "t1": "New York Knicks",
       "t2": "New Jersey Nets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3156,7 +3636,7 @@
     {
       "t1": "Seattle SuperSonics",
       "t2": "Denver Nuggets",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3166,7 +3646,7 @@
     {
       "t1": "Charlotte Bobcats",
       "t2": "Philadelphia 76ers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -3174,10 +3654,160 @@
       "date": "2006-04-19"
     },
     {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "LA Clippers",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "San Antonio Spurs",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Indiana Pacers",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Memphis Grizzlies",
+      "t2": "Minnesota Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "Portland Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Utah Jazz",
+      "t2": "Golden State Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Miami Heat",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Chicago Bulls",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Washington Wizards",
+      "t2": "Detroit Pistons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "NO/Oklahoma City\r\n Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "New York Knicks",
+      "t2": "New Jersey Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Seattle SuperSonics",
+      "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Charlotte Bobcats",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-19"
+    },
+    {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Washington Wizards",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Washington Wizards",
+      "round": "PLAYOFFS",
+      "date": "2006-04-22"
+    },
+    {
       "t1": "San Antonio Spurs",
       "t2": "Sacramento Kings",
-      "w1": 8,
-      "w2": 4,
+      "w1": 4,
+      "w2": 2,
       "done": true,
       "loser": "Sacramento Kings",
       "round": "PLAYOFFS",
@@ -3186,27 +3816,57 @@
     {
       "t1": "LA Clippers",
       "t2": "Denver Nuggets",
-      "w1": 8,
-      "w2": 2,
+      "w1": 4,
+      "w2": 1,
       "done": true,
       "loser": "Denver Nuggets",
       "round": "PLAYOFFS",
       "date": "2006-04-22"
     },
     {
+      "t1": "Miami Heat",
+      "t2": "Chicago Bulls",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Chicago Bulls",
+      "round": "PLAYOFFS",
+      "date": "2006-04-23"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "Los Angeles Lakers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Los Angeles Lakers",
+      "round": "PLAYOFFS",
+      "date": "2006-04-23"
+    },
+    {
       "t1": "Indiana Pacers",
       "t2": "New Jersey Nets",
-      "w1": 4,
-      "w2": 8,
+      "w1": 2,
+      "w2": 4,
       "done": true,
       "loser": "Indiana Pacers",
       "round": "PLAYOFFS",
       "date": "2006-04-23"
     },
     {
+      "t1": "Detroit Pistons",
+      "t2": "Milwaukee Bucks",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Milwaukee Bucks",
+      "round": "PLAYOFFS",
+      "date": "2006-04-23"
+    },
+    {
       "t1": "Dallas Mavericks",
       "t2": "Memphis Grizzlies",
-      "w1": 8,
+      "w1": 4,
       "w2": 0,
       "done": true,
       "loser": "Memphis Grizzlies",
@@ -3216,18 +3876,28 @@
     {
       "t1": "San Antonio Spurs",
       "t2": "Dallas Mavericks",
-      "w1": 6,
-      "w2": 8,
+      "w1": 3,
+      "w2": 4,
       "done": true,
       "loser": "San Antonio Spurs",
       "round": "PLAYOFFS",
       "date": "2006-05-07"
     },
     {
+      "t1": "Detroit Pistons",
+      "t2": "Cleveland Cavaliers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Cleveland Cavaliers",
+      "round": "PLAYOFFS",
+      "date": "2006-05-07"
+    },
+    {
       "t1": "Phoenix Suns",
       "t2": "LA Clippers",
-      "w1": 8,
-      "w2": 6,
+      "w1": 4,
+      "w2": 3,
       "done": true,
       "loser": "LA Clippers",
       "round": "PLAYOFFS",
@@ -3236,8 +3906,8 @@
     {
       "t1": "New Jersey Nets",
       "t2": "Miami Heat",
-      "w1": 2,
-      "w2": 8,
+      "w1": 1,
+      "w2": 4,
       "done": true,
       "loser": "New Jersey Nets",
       "round": "PLAYOFFS",
@@ -3246,18 +3916,28 @@
     {
       "t1": "Miami Heat",
       "t2": "Detroit Pistons",
-      "w1": 8,
-      "w2": 4,
+      "w1": 4,
+      "w2": 2,
       "done": true,
       "loser": "Detroit Pistons",
       "round": "PLAYOFFS",
       "date": "2006-05-24"
     },
     {
+      "t1": "Phoenix Suns",
+      "t2": "Dallas Mavericks",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Phoenix Suns",
+      "round": "PLAYOFFS",
+      "date": "2006-05-24"
+    },
+    {
       "t1": "Dallas Mavericks",
       "t2": "Miami Heat",
-      "w1": 4,
-      "w2": 8,
+      "w1": 2,
+      "w2": 4,
       "done": true,
       "loser": "Dallas Mavericks",
       "round": "FINALS",
@@ -3265,22 +3945,21 @@
     }
   ],
   "eliminated": [
-    "New Jersey Nets",
-    "Cleveland Cavaliers",
-    "Phoenix Suns",
-    "Boston Celtics",
-    "Portland Trail Blazers",
-    "Chicago Bulls",
     "Washington Wizards",
-    "Milwaukee Bucks",
     "Sacramento Kings",
     "Denver Nuggets",
+    "Chicago Bulls",
+    "Los Angeles Lakers",
     "Indiana Pacers",
+    "Milwaukee Bucks",
     "Memphis Grizzlies",
     "San Antonio Spurs",
+    "Cleveland Cavaliers",
     "LA Clippers",
+    "New Jersey Nets",
     "Detroit Pistons",
+    "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-05-27 06:35 UTC"
+  "updated": "2026-05-27 07:03 UTC"
 }

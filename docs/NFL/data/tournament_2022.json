@@ -128,6 +128,16 @@
       "date": "2023-01-14"
     },
     {
+      "t1": "New York Giants",
+      "t2": "Minnesota Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Minnesota Vikings",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2023-01-15"
+    },
+    {
       "t1": "Jacksonville Jaguars",
       "t2": "Los Angeles Chargers",
       "w1": 1,
@@ -145,16 +155,6 @@
       "done": true,
       "loser": "Miami Dolphins",
       "round": "AFC Wild Card Playoffs",
-      "date": "2023-01-15"
-    },
-    {
-      "t1": "New York Giants",
-      "t2": "Minnesota Vikings",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Minnesota Vikings",
-      "round": "NFC Wild Card Playoffs",
       "date": "2023-01-15"
     },
     {
@@ -188,16 +188,6 @@
       "date": "2023-01-21"
     },
     {
-      "t1": "Philadelphia Eagles",
-      "t2": "New York Giants",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New York Giants",
-      "round": "NFC Divisional Playoffs",
-      "date": "2023-01-22"
-    },
-    {
       "t1": "Cincinnati Bengals",
       "t2": "Buffalo Bills",
       "w1": 1,
@@ -205,6 +195,16 @@
       "done": true,
       "loser": "Buffalo Bills",
       "round": "AFC Divisional Playoffs",
+      "date": "2023-01-22"
+    },
+    {
+      "t1": "Philadelphia Eagles",
+      "t2": "New York Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New York Giants",
+      "round": "NFC Divisional Playoffs",
       "date": "2023-01-22"
     },
     {
@@ -260,19 +260,19 @@
   ],
   "eliminated": [
     "Seattle Seahawks",
+    "Minnesota Vikings",
+    "Tampa Bay Buccaneers",
     "Los Angeles Chargers",
     "Miami Dolphins",
-    "Minnesota Vikings",
     "Baltimore Ravens",
-    "Tampa Bay Buccaneers",
     "Jacksonville Jaguars",
-    "New York Giants",
     "Buffalo Bills",
+    "New York Giants",
     "Dallas Cowboys",
     "San Francisco 49ers",
     "Cincinnati Bengals",
     "AFC",
     "Philadelphia Eagles"
   ],
-  "updated": "2026-05-27 06:38 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

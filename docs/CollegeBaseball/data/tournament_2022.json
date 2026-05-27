@@ -1768,12 +1768,22 @@
     {
       "t1": "Long Island University Sharks",
       "t2": "Bryant Bulldogs",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Bryant Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NEC Tournament",
       "date": "2022-05-27"
+    },
+    {
+      "t1": "Bryant Bulldogs",
+      "t2": "Central Connecticut Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NEC Tournament",
+      "date": "2022-05-28"
     },
     {
       "t1": "Rider Broncs",
@@ -1783,6 +1793,16 @@
       "done": false,
       "loser": "",
       "round": "MAAC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - Semifinal",
       "date": "2022-05-28"
     },
     {
@@ -1806,20 +1826,20 @@
       "date": "2022-05-28"
     },
     {
-      "t1": "Florida Gators",
-      "t2": "Texas A&M Aggies",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "SEC Tournament - Semifinal",
-      "date": "2022-05-28"
-    },
-    {
       "t1": "Oklahoma State Cowboys",
       "t2": "Texas Longhorns",
       "w1": 1,
       "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "Big 12 Tournament",
@@ -1833,6 +1853,36 @@
       "done": false,
       "loser": "",
       "round": "Big Ten Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Penn State Nittany Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big Ten Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Big Ten Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Georgia Southern Eagles",
+      "t2": "Troy Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Tournament",
       "date": "2022-05-28"
     },
     {
@@ -1856,8 +1906,28 @@
       "date": "2022-05-28"
     },
     {
+      "t1": "Old Dominion Monarchs",
+      "t2": "Louisiana Tech Bulldogs",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Conference USA Tournament",
+      "date": "2022-05-28"
+    },
+    {
       "t1": "North Carolina Tar Heels",
       "t2": "Notre Dame Fighting Irish",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Pittsburgh Panthers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1886,13 +1956,13 @@
       "date": "2022-05-28"
     },
     {
-      "t1": "Oklahoma Sooners",
-      "t2": "Kansas State Wildcats",
+      "t1": "Florida Gators",
+      "t2": "Alabama Crimson Tide",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Big 12 Tournament",
+      "round": "SEC Tournament - 4th Round",
       "date": "2022-05-28"
     },
     {
@@ -1900,6 +1970,16 @@
       "t2": "Tulane Green Wave",
       "w1": 1,
       "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "UCF Knights",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "American Athletic Tournament",
@@ -1926,23 +2006,13 @@
       "date": "2022-05-28"
     },
     {
-      "t1": "Old Dominion Monarchs",
-      "t2": "Louisiana Tech Bulldogs",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "Conference USA Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Iowa Hawkeyes",
-      "t2": "Penn State Nittany Lions",
+      "t1": "Alabama State Hornets",
+      "t2": "Bethune-Cookman Wildcats",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Big Ten Tournament",
+      "round": "SWAC Tournament",
       "date": "2022-05-28"
     },
     {
@@ -1956,13 +2026,23 @@
       "date": "2022-05-28"
     },
     {
-      "t1": "Florida Gators",
-      "t2": "Alabama Crimson Tide",
+      "t1": "UConn Huskies",
+      "t2": "Creighton Bluejays",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "SEC Tournament - 4th Round",
+      "round": "Big East Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big East Tournament",
       "date": "2022-05-28"
     },
     {
@@ -1976,22 +2056,42 @@
       "date": "2022-05-28"
     },
     {
+      "t1": "Central Michigan Chippewas",
+      "t2": "Ball State Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "MAC Tournament",
+      "date": "2022-05-28"
+    },
+    {
       "t1": "Hofstra Pride",
       "t2": "Northeastern Huskies",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Northeastern Huskies",
+      "done": false,
+      "loser": "",
+      "round": "CAA Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Northeastern Huskies",
+      "t2": "Charleston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "CAA Tournament",
       "date": "2022-05-28"
     },
     {
       "t1": "Campbell Fighting Camels",
       "t2": "Charleston Southern Buccaneers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Charleston Southern Buccaneers",
+      "done": false,
+      "loser": "",
       "round": "Big South Tournament",
       "date": "2022-05-28"
     },
@@ -2018,6 +2118,16 @@
     {
       "t1": "Southern Illinois Salukis",
       "t2": "Dallas Baptist Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Missouri State Bears",
+      "t2": "Evansville Purple Aces",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2056,56 +2166,6 @@
       "date": "2022-05-28"
     },
     {
-      "t1": "UCF Knights",
-      "t2": "Houston Cougars",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "American Athletic Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Alabama State Hornets",
-      "t2": "Bethune-Cookman Wildcats",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "SWAC Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Central Michigan Chippewas",
-      "t2": "Ball State Cardinals",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Ball State Cardinals",
-      "round": "MAC Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "UConn Huskies",
-      "t2": "Creighton Bluejays",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Big East Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Northeastern Huskies",
-      "t2": "Charleston Cougars",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "CAA Tournament",
-      "date": "2022-05-28"
-    },
-    {
       "t1": "UNC Greensboro Spartans",
       "t2": "Mercer Bears",
       "w1": 1,
@@ -2113,36 +2173,6 @@
       "done": false,
       "loser": "",
       "round": "Southern Conf Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Missouri State Bears",
-      "t2": "Evansville Purple Aces",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Missouri Valley Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Georgia Southern Eagles",
-      "t2": "Troy Trojans",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Sun Belt Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Bryant Bulldogs",
-      "t2": "Central Connecticut Blue Devils",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NEC Tournament",
       "date": "2022-05-28"
     },
     {
@@ -2156,6 +2186,16 @@
       "date": "2022-05-28"
     },
     {
+      "t1": "Campbell Fighting Camels",
+      "t2": "Charleston Southern Buccaneers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big South Championship",
+      "date": "2022-05-28"
+    },
+    {
       "t1": "Omaha Mavericks",
       "t2": "North Dakota State Bison",
       "w1": 1,
@@ -2163,36 +2203,6 @@
       "done": false,
       "loser": "",
       "round": "Summit League Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "NC State Wolfpack",
-      "t2": "Pittsburgh Panthers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ACC Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Iowa Hawkeyes",
-      "t2": "Michigan Wolverines",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "Big Ten Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Xavier Musketeers",
-      "t2": "Creighton Bluejays",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Big East Tournament",
       "date": "2022-05-28"
     },
     {
@@ -2226,6 +2236,16 @@
       "date": "2022-05-29"
     },
     {
+      "t1": "Rutgers Scarlet Knights",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big Ten Tournament",
+      "date": "2022-05-29"
+    },
+    {
       "t1": "Louisiana Ragin' Cajuns",
       "t2": "Texas State Bobcats",
       "w1": 1,
@@ -2233,6 +2253,16 @@
       "done": false,
       "loser": "",
       "round": "Sun Belt Tournament",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Columbia Lions",
+      "t2": "Army Black Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "regular-season",
       "date": "2022-05-29"
     },
     {
@@ -2276,16 +2306,6 @@
       "date": "2022-05-29"
     },
     {
-      "t1": "Rutgers Scarlet Knights",
-      "t2": "Indiana Hoosiers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Big Ten Tournament",
-      "date": "2022-05-29"
-    },
-    {
       "t1": "Tennessee Volunteers",
       "t2": "Florida Gators",
       "w1": 1,
@@ -2326,6 +2346,16 @@
       "date": "2022-05-29"
     },
     {
+      "t1": "Hofstra Pride",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CAA Championship",
+      "date": "2022-05-29"
+    },
+    {
       "t1": "North Carolina Tar Heels",
       "t2": "NC State Wolfpack",
       "w1": 1,
@@ -2338,10 +2368,10 @@
     {
       "t1": "UNC Greensboro Spartans",
       "t2": "Wofford Terriers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Wofford Terriers",
+      "done": false,
+      "loser": "",
       "round": "Southern Conf Championship",
       "date": "2022-05-29"
     },
@@ -2356,13 +2386,23 @@
       "date": "2022-05-29"
     },
     {
-      "t1": "Columbia Lions",
-      "t2": "Army Black Knights",
+      "t1": "Bryant Bulldogs",
+      "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NEC Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Central Michigan Chippewas",
+      "t2": "Ball State Cardinals",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "regular-season",
+      "round": "MAC Championship",
       "date": "2022-05-29"
     },
     {
@@ -2446,6 +2486,16 @@
       "date": "2022-06-03"
     },
     {
+      "t1": "Campbell Fighting Camels",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Knoxville Regional",
+      "date": "2022-06-03"
+    },
+    {
       "t1": "Stanford Cardinal",
       "t2": "Binghamton Bearcats",
       "w1": 1,
@@ -2456,8 +2506,28 @@
       "date": "2022-06-03"
     },
     {
+      "t1": "San Diego Toreros",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Corvallis Regional",
+      "date": "2022-06-03"
+    },
+    {
       "t1": "Virginia Tech Hokies",
       "t2": "Wright State Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Blacksburg Regional",
+      "date": "2022-06-03"
+    },
+    {
+      "t1": "Columbia Lions",
+      "t2": "Gonzaga Bulldogs",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2478,10 +2548,20 @@
     {
       "t1": "Oklahoma State Cowboys",
       "t2": "Missouri State Bears",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Missouri State Bears",
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Stillwater Regional",
+      "date": "2022-06-03"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Grand Canyon Lopes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Stillwater Regional",
       "date": "2022-06-03"
     },
@@ -2496,18 +2576,48 @@
       "date": "2022-06-03"
     },
     {
+      "t1": "Virginia Cavaliers",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Greenville Regional",
+      "date": "2022-06-03"
+    },
+    {
       "t1": "Texas Longhorns",
       "t2": "Air Force Falcons",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Air Force Falcons",
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Austin Regional",
+      "date": "2022-06-03"
+    },
+    {
+      "t1": "Louisiana Tech Bulldogs",
+      "t2": "Dallas Baptist Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Austin Regional",
       "date": "2022-06-03"
     },
     {
       "t1": "North Carolina Tar Heels",
       "t2": "Hofstra Pride",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Chapel Hill Regional",
+      "date": "2022-06-03"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Georgia Bulldogs",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2526,6 +2636,16 @@
       "date": "2022-06-03"
     },
     {
+      "t1": "LSU Tigers",
+      "t2": "Kennesaw State Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Hattiesburg Regional",
+      "date": "2022-06-03"
+    },
+    {
       "t1": "Louisville Cardinals",
       "t2": "Southeast Missouri State Redhawks",
       "w1": 1,
@@ -2536,18 +2656,48 @@
       "date": "2022-06-03"
     },
     {
+      "t1": "Michigan Wolverines",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Louisville Regional",
+      "date": "2022-06-03"
+    },
+    {
       "t1": "Florida Gators",
       "t2": "Central Michigan Chippewas",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Central Michigan Chippewas",
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Gainesville Regional",
+      "date": "2022-06-03"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Gainesville Regional",
       "date": "2022-06-03"
     },
     {
       "t1": "Auburn Tigers",
       "t2": "SE Louisiana Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Auburn Regional",
+      "date": "2022-06-03"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "UCLA Bruins",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2566,36 +2716,6 @@
       "date": "2022-06-03"
     },
     {
-      "t1": "Florida State Seminoles",
-      "t2": "UCLA Bruins",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Auburn Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Campbell Fighting Camels",
-      "t2": "Georgia Tech Yellow Jackets",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Knoxville Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Arkansas Razorbacks",
-      "t2": "Grand Canyon Lopes",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Stillwater Regional",
-      "date": "2022-06-03"
-    },
-    {
       "t1": "UConn Huskies",
       "t2": "Wake Forest Demon Deacons",
       "w1": 1,
@@ -2606,113 +2726,23 @@
       "date": "2022-06-03"
     },
     {
-      "t1": "Columbia Lions",
-      "t2": "Gonzaga Bulldogs",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Gonzaga Bulldogs",
-      "round": "NCAA Baseball Championship – Blacksburg Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Oklahoma Sooners",
-      "t2": "Liberty Flames",
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Texas Tech Red Raiders",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship – Gainesville Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Notre Dame Fighting Irish",
-      "t2": "Texas Tech Red Raiders",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Texas Tech Red Raiders",
       "round": "NCAA Baseball Championship – Statesboro Regional",
       "date": "2022-06-03"
     },
     {
-      "t1": "San Diego Toreros",
-      "t2": "Vanderbilt Commodores",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Corvallis Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Virginia Cavaliers",
-      "t2": "Coastal Carolina Chanticleers",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Greenville Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Michigan Wolverines",
-      "t2": "Oregon Ducks",
+      "t1": "Tennessee Volunteers",
+      "t2": "Campbell Fighting Camels",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship – Louisville Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "LSU Tigers",
-      "t2": "Kennesaw State Owls",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Hattiesburg Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "VCU Rams",
-      "t2": "Georgia Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Chapel Hill Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Louisiana Tech Bulldogs",
-      "t2": "Dallas Baptist Patriots",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Austin Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Oregon State Beavers",
-      "t2": "New Mexico State Aggies",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Corvallis Regional",
-      "date": "2022-06-04"
-    },
-    {
-      "t1": "Louisiana Ragin' Cajuns",
-      "t2": "TCU Horned Frogs",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – College Station Regional",
+      "round": "NCAA Baseball Championship – Knoxville Regional",
       "date": "2022-06-04"
     },
     {
@@ -2726,23 +2756,33 @@
       "date": "2022-06-04"
     },
     {
-      "t1": "Tennessee Volunteers",
-      "t2": "Campbell Fighting Camels",
+      "t1": "Oregon State Beavers",
+      "t2": "New Mexico State Aggies",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship – Knoxville Regional",
+      "round": "NCAA Baseball Championship – Corvallis Regional",
       "date": "2022-06-04"
     },
     {
       "t1": "Virginia Tech Hokies",
       "t2": "Columbia Lions",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Columbia Lions",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Blacksburg Regional",
+      "date": "2022-06-04"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "TCU Horned Frogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – College Station Regional",
       "date": "2022-06-04"
     },
     {
@@ -2756,22 +2796,12 @@
       "date": "2022-06-04"
     },
     {
-      "t1": "Miami Hurricanes",
-      "t2": "Canisius Golden Griffins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Coral Gables Regional",
-      "date": "2022-06-04"
-    },
-    {
       "t1": "Arkansas Razorbacks",
       "t2": "Oklahoma State Cowboys",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
-      "done": true,
-      "loser": "Oklahoma State Cowboys",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Stillwater Regional",
       "date": "2022-06-04"
     },
@@ -2799,9 +2829,9 @@
       "t1": "VCU Rams",
       "t2": "North Carolina Tar Heels",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "VCU Rams",
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Chapel Hill Regional",
       "date": "2022-06-04"
     },
@@ -2809,9 +2839,9 @@
       "t1": "LSU Tigers",
       "t2": "Southern Miss Golden Eagles",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "LSU Tigers",
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Hattiesburg Regional",
       "date": "2022-06-04"
     },
@@ -2819,19 +2849,19 @@
       "t1": "Michigan Wolverines",
       "t2": "Louisville Cardinals",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Michigan Wolverines",
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Louisville Regional",
       "date": "2022-06-04"
     },
     {
       "t1": "Oklahoma Sooners",
       "t2": "Florida Gators",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
-      "done": true,
-      "loser": "Florida Gators",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Gainesville Regional",
       "date": "2022-06-04"
     },
@@ -2848,10 +2878,10 @@
     {
       "t1": "UConn Huskies",
       "t2": "Maryland Terrapins",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
-      "done": true,
-      "loser": "Maryland Terrapins",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – College Park Regional",
       "date": "2022-06-04"
     },
@@ -2863,6 +2893,16 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship – Statesboro Regional",
+      "date": "2022-06-04"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Canisius Golden Griffins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Coral Gables Regional",
       "date": "2022-06-04"
     },
     {
@@ -3019,9 +3059,9 @@
       "t1": "Texas State Bobcats",
       "t2": "Stanford Cardinal",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Texas State Bobcats",
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Stanford Regional",
       "date": "2022-06-05"
     },
@@ -3033,6 +3073,16 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship – Corvallis Regional",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Greenville Regional",
       "date": "2022-06-05"
     },
     {
@@ -3048,31 +3098,11 @@
     {
       "t1": "Ole Miss Rebels",
       "t2": "Arizona Wildcats",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Arizona Wildcats",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – Coral Gables Regional",
-      "date": "2022-06-05"
-    },
-    {
-      "t1": "Tennessee Volunteers",
-      "t2": "Georgia Tech Yellow Jackets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Knoxville Regional - Tennessee advances to Super Regional",
-      "date": "2022-06-05"
-    },
-    {
-      "t1": "Stanford Cardinal",
-      "t2": "UC Santa Barbara Gauchos",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Stanford Regional - Elimination Game",
       "date": "2022-06-05"
     },
     {
@@ -3086,43 +3116,13 @@
       "date": "2022-06-05"
     },
     {
-      "t1": "Arizona Wildcats",
-      "t2": "Miami Hurricanes",
+      "t1": "Georgia Tech Yellow Jackets",
+      "t2": "Campbell Fighting Camels",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship – Coral Gables Regional - Elimination Game",
-      "date": "2022-06-05"
-    },
-    {
-      "t1": "Coastal Carolina Chanticleers",
-      "t2": "East Carolina Pirates",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Greenville Regional",
-      "date": "2022-06-05"
-    },
-    {
-      "t1": "North Carolina Tar Heels",
-      "t2": "Georgia Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Chapel Hill Regional - Elimination Game",
-      "date": "2022-06-05"
-    },
-    {
-      "t1": "Southern Miss Golden Eagles",
-      "t2": "Kennesaw State Owls",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Hattiesburg Regional - Elimination Game",
+      "round": "NCAA Baseball Championship – Knoxville Regional - Elimination Game",
       "date": "2022-06-05"
     },
     {
@@ -3136,13 +3136,13 @@
       "date": "2022-06-05"
     },
     {
-      "t1": "Auburn Tigers",
-      "t2": "UCLA Bruins",
+      "t1": "North Carolina Tar Heels",
+      "t2": "Georgia Bulldogs",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship – Auburn Regional - Auburn advances to Super Regional",
+      "round": "NCAA Baseball Championship – Chapel Hill Regional - Elimination Game",
       "date": "2022-06-05"
     },
     {
@@ -3156,23 +3156,43 @@
       "date": "2022-06-05"
     },
     {
-      "t1": "Texas Tech Red Raiders",
-      "t2": "Georgia Southern Eagles",
+      "t1": "UCLA Bruins",
+      "t2": "Florida State Seminoles",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship – Statesboro Regional - Elimination Game",
+      "round": "NCAA Baseball Championship – Auburn Regional - Elimination Game",
       "date": "2022-06-05"
     },
     {
-      "t1": "Arizona Wildcats",
-      "t2": "Canisius Golden Griffins",
+      "t1": "TCU Horned Frogs",
+      "t2": "Louisiana Ragin' Cajuns",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship – Coral Gables Regional - Elimination Game",
+      "round": "NCAA Baseball Championship – College Station Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Columbia Lions",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Blacksburg Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Kennesaw State Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Hattiesburg Regional - Elimination Game",
       "date": "2022-06-05"
     },
     {
@@ -3186,10 +3206,130 @@
       "date": "2022-06-05"
     },
     {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Missouri State Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Stillwater Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Central Michigan Chippewas",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Gainesville Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Greenville Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Georgia Southern Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Statesboro Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Stanford Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "San Diego Toreros",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Corvallis Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Knoxville Regional - Tennessee advances to Super Regional",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Virginia Tech Hokies",
+      "t2": "Columbia Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Blacksburg Regional - Virginia Tech advances to Super Regional",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Coral Gables Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Canisius Golden Griffins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Coral Gables Regional - Elimination Game",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Auburn Regional - Auburn advances to Super Regional",
+      "date": "2022-06-05"
+    },
+    {
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Statesboro Regional - Notre Dame advances to Super Regional",
+      "date": "2022-06-05"
+    },
+    {
       "t1": "Vanderbilt Commodores",
       "t2": "Oregon State Beavers",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship – Corvallis Regional",
@@ -3204,6 +3344,116 @@
       "loser": "",
       "round": "NCAA Baseball Championship – College Station Regional - Texas A&M advances to Super Regional",
       "date": "2022-06-06"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Air Force Falcons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Austin Regional - Texas advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Corvallis Regional - Oregon State advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Stillwater Regional - Arkansas advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Greenville Regional - East Carolina advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Chapel Hill Regional - North Carolina advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Hattiesburg Regional - Southern Miss advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Louisville Regional - Louisville advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Gainesville Regional - Oklahoma advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – College Park Regional - UConn advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Coral Gables Regional - Ole Miss advances to Super Regional",
+      "date": "2022-06-06"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Texas State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Stanford Regional - Stanford advances to Super Regional",
+      "date": "2022-06-07"
     },
     {
       "t1": "East Carolina Pirates",
@@ -3238,10 +3488,10 @@
     {
       "t1": "Texas A&M Aggies",
       "t2": "Louisville Cardinals",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Louisville Cardinals",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship – College Station Super Regional",
       "date": "2022-06-11"
     },
@@ -3288,10 +3538,10 @@
     {
       "t1": "Oklahoma Sooners",
       "t2": "Texas A&M Aggies",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Texas A&M Aggies",
+      "done": false,
+      "loser": "",
       "round": "Men's College World Series - Double Elimination Round",
       "date": "2022-06-17"
     },
@@ -3326,16 +3576,6 @@
       "date": "2022-06-18"
     },
     {
-      "t1": "Texas A&M Aggies",
-      "t2": "Texas Longhorns",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Men's College World Series - Elimination Game",
-      "date": "2022-06-19"
-    },
-    {
       "t1": "Oklahoma Sooners",
       "t2": "Notre Dame Fighting Irish",
       "w1": 1,
@@ -3346,6 +3586,26 @@
       "date": "2022-06-19"
     },
     {
+      "t1": "Texas A&M Aggies",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Elimination Game",
+      "date": "2022-06-19"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Double Elimination Round",
+      "date": "2022-06-20"
+    },
+    {
       "t1": "Auburn Tigers",
       "t2": "Stanford Cardinal",
       "w1": 1,
@@ -3353,16 +3613,6 @@
       "done": false,
       "loser": "",
       "round": "Men's College World Series - Elimination Game",
-      "date": "2022-06-20"
-    },
-    {
-      "t1": "Ole Miss Rebels",
-      "t2": "Arkansas Razorbacks",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Arkansas Razorbacks",
-      "round": "Men's College World Series - Double Elimination Round",
       "date": "2022-06-20"
     },
     {
@@ -3386,6 +3636,26 @@
       "date": "2022-06-21"
     },
     {
+      "t1": "Oklahoma Sooners",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Oklahoma advances to Championship Series",
+      "date": "2022-06-22"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Ole Miss advances to Championship Series",
+      "date": "2022-06-23"
+    },
+    {
       "t1": "Ole Miss Rebels",
       "t2": "Oklahoma Sooners",
       "w1": 1,
@@ -3397,35 +3667,13 @@
     }
   ],
   "eliminated": [
-    "Bryant Bulldogs",
-    "Northeastern Huskies",
-    "Charleston Southern Buccaneers",
-    "Ball State Cardinals",
-    "Wofford Terriers",
-    "Missouri State Bears",
-    "Air Force Falcons",
-    "Central Michigan Chippewas",
-    "Gonzaga Bulldogs",
-    "Texas Tech Red Raiders",
-    "Texas State Bobcats",
-    "Columbia Lions",
-    "Oklahoma State Cowboys",
-    "VCU Rams",
-    "LSU Tigers",
-    "Michigan Wolverines",
-    "Florida Gators",
-    "Maryland Terrapins",
-    "Arizona Wildcats",
     "East Carolina Pirates",
     "Virginia Tech Hokies",
     "Tennessee Volunteers",
-    "Louisville Cardinals",
     "North Carolina Tar Heels",
     "Southern Miss Golden Eagles",
     "Oregon State Beavers",
-    "UConn Huskies",
-    "Texas A&M Aggies",
-    "Arkansas Razorbacks"
+    "UConn Huskies"
   ],
-  "updated": "2026-05-27 06:38 UTC"
+  "updated": "2026-05-27 07:05 UTC"
 }

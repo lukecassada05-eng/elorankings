@@ -1080,8 +1080,28 @@
       "date": "2024-05-31"
     },
     {
+      "t1": "Indiana Hoosiers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Regional",
+      "date": "2024-05-31"
+    },
+    {
       "t1": "Kentucky Wildcats",
       "t2": "Western Michigan Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lexington Regional",
+      "date": "2024-05-31"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Indiana State Sycamores",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1100,8 +1120,28 @@
       "date": "2024-05-31"
     },
     {
+      "t1": "Texas Longhorns",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Bryan-College Station Regional",
+      "date": "2024-05-31"
+    },
+    {
       "t1": "North Carolina Tar Heels",
       "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional",
+      "date": "2024-05-31"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Wofford Terriers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1113,7 +1153,7 @@
       "t1": "Arkansas Razorbacks",
       "t2": "Southeast Missouri State Redhawks",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Fayetteville Regional",
@@ -1122,6 +1162,16 @@
     {
       "t1": "Clemson Tigers",
       "t2": "High Point Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Regional",
+      "date": "2024-05-31"
+    },
+    {
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "Vanderbilt Commodores",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1140,8 +1190,28 @@
       "date": "2024-05-31"
     },
     {
+      "t1": "UNC Wilmington Seahawks",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional",
+      "date": "2024-05-31"
+    },
+    {
       "t1": "Florida State Seminoles",
       "t2": "Stetson Hatters",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional",
+      "date": "2024-05-31"
+    },
+    {
+      "t1": "UCF Knights",
+      "t2": "Alabama Crimson Tide",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1160,8 +1230,28 @@
       "date": "2024-05-31"
     },
     {
+      "t1": "UConn Huskies",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Norman Regional",
+      "date": "2024-05-31"
+    },
+    {
       "t1": "NC State Wolfpack",
       "t2": "Bryant Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Raleigh Regional",
+      "date": "2024-05-31"
+    },
+    {
+      "t1": "South Carolina Gamecocks",
+      "t2": "James Madison Dukes",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1180,6 +1270,16 @@
       "date": "2024-05-31"
     },
     {
+      "t1": "Florida Gators",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stillwater Regional",
+      "date": "2024-05-31"
+    },
+    {
       "t1": "Virginia Cavaliers",
       "t2": "Pennsylvania Quakers",
       "w1": 1,
@@ -1190,73 +1290,13 @@
       "date": "2024-05-31"
     },
     {
-      "t1": "Evansville Purple Aces",
-      "t2": "East Carolina Pirates",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "East Carolina Pirates",
-      "round": "NCAA Baseball Championship - Greenville Regional",
-      "date": "2024-05-31"
-    },
-    {
-      "t1": "LSU Tigers",
-      "t2": "Wofford Terriers",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Wofford Terriers",
-      "round": "NCAA Baseball Championship - Chapel Hill Regional",
-      "date": "2024-05-31"
-    },
-    {
-      "t1": "Coastal Carolina Chanticleers",
-      "t2": "Vanderbilt Commodores",
+      "t1": "Mississippi State Bulldogs",
+      "t2": "St. John's Red Storm",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Clemson Regional",
-      "date": "2024-05-31"
-    },
-    {
-      "t1": "Indiana Hoosiers",
-      "t2": "Southern Miss Golden Eagles",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Knoxville Regional",
-      "date": "2024-05-31"
-    },
-    {
-      "t1": "UConn Huskies",
-      "t2": "Duke Blue Devils",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Norman Regional",
-      "date": "2024-05-31"
-    },
-    {
-      "t1": "South Carolina Gamecocks",
-      "t2": "James Madison Dukes",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Raleigh Regional",
-      "date": "2024-05-31"
-    },
-    {
-      "t1": "Oregon Ducks",
-      "t2": "San Diego Toreros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Santa Barbara Regional",
+      "round": "NCAA Baseball Championship - Charlottesville Regional",
       "date": "2024-05-31"
     },
     {
@@ -1270,13 +1310,13 @@
       "date": "2024-05-31"
     },
     {
-      "t1": "Florida Gators",
-      "t2": "Nebraska Cornhuskers",
-      "w1": 2,
+      "t1": "Oregon Ducks",
+      "t2": "San Diego Toreros",
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Nebraska Cornhuskers",
-      "round": "NCAA Baseball Championship - Stillwater Regional",
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Santa Barbara Regional",
       "date": "2024-05-31"
     },
     {
@@ -1290,6 +1330,16 @@
       "date": "2024-05-31"
     },
     {
+      "t1": "Evansville Purple Aces",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Greenville Regional",
+      "date": "2024-05-31"
+    },
+    {
       "t1": "VCU Rams",
       "t2": "Wake Forest Demon Deacons",
       "w1": 1,
@@ -1300,54 +1350,104 @@
       "date": "2024-05-31"
     },
     {
-      "t1": "Texas Longhorns",
-      "t2": "Louisiana Ragin' Cajuns",
+      "t1": "Tennessee Volunteers",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Regional",
+      "date": "2024-06-01"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lexington Regional",
+      "date": "2024-06-01"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "LSU Tigers",
       "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Bryan-College Station Regional",
-      "date": "2024-05-31"
+      "round": "NCAA Baseball Championship - Chapel Hill Regional",
+      "date": "2024-06-01"
     },
     {
-      "t1": "UCF Knights",
-      "t2": "Alabama Crimson Tide",
+      "t1": "Kansas State Wildcats",
+      "t2": "Louisiana Tech Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Regional",
+      "date": "2024-06-01"
+    },
+    {
+      "t1": "Clemson Tigers",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Regional",
+      "date": "2024-06-01"
+    },
+    {
+      "t1": "Georgia Bulldogs",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional",
+      "date": "2024-06-01"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "UCF Knights",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Tallahassee Regional",
-      "date": "2024-05-31"
+      "date": "2024-06-01"
     },
     {
-      "t1": "UNC Wilmington Seahawks",
-      "t2": "Georgia Tech Yellow Jackets",
+      "t1": "NC State Wolfpack",
+      "t2": "South Carolina Gamecocks",
       "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Athens Regional",
-      "date": "2024-05-31"
-    },
-    {
-      "t1": "Mississippi State Bulldogs",
-      "t2": "St. John's Red Storm",
-      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "St. John's Red Storm",
-      "round": "NCAA Baseball Championship - Charlottesville Regional",
-      "date": "2024-05-31"
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Raleigh Regional",
+      "date": "2024-06-01"
     },
     {
-      "t1": "Illinois Fighting Illini",
-      "t2": "Indiana State Sycamores",
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Florida Gators",
       "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Lexington Regional",
-      "date": "2024-05-31"
+      "round": "NCAA Baseball Championship - Stillwater Regional",
+      "date": "2024-06-01"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Regional",
+      "date": "2024-06-01"
     },
     {
       "t1": "Grand Canyon Lopes",
@@ -1380,103 +1480,13 @@
       "date": "2024-06-01"
     },
     {
-      "t1": "Kansas State Wildcats",
-      "t2": "Louisiana Tech Bulldogs",
+      "t1": "Evansville Purple Aces",
+      "t2": "VCU Rams",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Fayetteville Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "Tennessee Volunteers",
-      "t2": "Indiana Hoosiers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Knoxville Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "Kentucky Wildcats",
-      "t2": "Illinois Fighting Illini",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Lexington Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "North Carolina Tar Heels",
-      "t2": "LSU Tigers",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "LSU Tigers",
-      "round": "NCAA Baseball Championship - Chapel Hill Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "Clemson Tigers",
-      "t2": "Coastal Carolina Chanticleers",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Coastal Carolina Chanticleers",
-      "round": "NCAA Baseball Championship - Clemson Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "Georgia Bulldogs",
-      "t2": "UNC Wilmington Seahawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Athens Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "Florida State Seminoles",
-      "t2": "UCF Knights",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "UCF Knights",
-      "round": "NCAA Baseball Championship - Tallahassee Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "NC State Wolfpack",
-      "t2": "South Carolina Gamecocks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Raleigh Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "Oklahoma State Cowboys",
-      "t2": "Florida Gators",
-      "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Oklahoma State Cowboys",
-      "round": "NCAA Baseball Championship - Stillwater Regional",
-      "date": "2024-06-01"
-    },
-    {
-      "t1": "Virginia Cavaliers",
-      "t2": "Mississippi State Bulldogs",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Mississippi State Bulldogs",
-      "round": "NCAA Baseball Championship - Charlottesville Regional",
+      "round": "NCAA Baseball Championship - Greenville Regional",
       "date": "2024-06-01"
     },
     {
@@ -1640,16 +1650,6 @@
       "date": "2024-06-01"
     },
     {
-      "t1": "Evansville Purple Aces",
-      "t2": "VCU Rams",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Greenville Regional",
-      "date": "2024-06-01"
-    },
-    {
       "t1": "Texas A&M Aggies",
       "t2": "Texas Longhorns",
       "w1": 1,
@@ -1672,101 +1672,51 @@
     {
       "t1": "UConn Huskies",
       "t2": "Oklahoma Sooners",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
-      "done": true,
-      "loser": "Oklahoma Sooners",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Norman Regional",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Grand Canyon Lopes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tucson Regional",
       "date": "2024-06-02"
     },
     {
       "t1": "Oregon Ducks",
       "t2": "UC Santa Barbara Gauchos",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "UC Santa Barbara Gauchos",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Santa Barbara Regional",
       "date": "2024-06-02"
     },
     {
       "t1": "Oregon State Beavers",
       "t2": "UC Irvine Anteaters",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "UC Irvine Anteaters",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Corvallis Regional",
       "date": "2024-06-02"
     },
     {
-      "t1": "West Virginia Mountaineers",
-      "t2": "Grand Canyon Lopes",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Grand Canyon Lopes",
-      "round": "NCAA Baseball Championship - Tucson Regional",
-      "date": "2024-06-02"
-    },
-    {
-      "t1": "Tennessee Volunteers",
-      "t2": "Southern Miss Golden Eagles",
+      "t1": "Grand Canyon Lopes",
+      "t2": "Dallas Baptist Patriots",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Knoxville Regional - Tennessee advances to Super Regional",
-      "date": "2024-06-02"
-    },
-    {
-      "t1": "Kentucky Wildcats",
-      "t2": "Indiana State Sycamores",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Lexington Regional - Kentucky advances to Super Regional",
-      "date": "2024-06-02"
-    },
-    {
-      "t1": "Georgia Bulldogs",
-      "t2": "Georgia Tech Yellow Jackets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Athens Regional - Georgia advances to Super Regional",
-      "date": "2024-06-02"
-    },
-    {
-      "t1": "Oklahoma Sooners",
-      "t2": "Duke Blue Devils",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Norman Regional - Elimination Game",
-      "date": "2024-06-02"
-    },
-    {
-      "t1": "NC State Wolfpack",
-      "t2": "James Madison Dukes",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Raleigh Regional - NC State advances to Super Regional",
-      "date": "2024-06-02"
-    },
-    {
-      "t1": "UC Santa Barbara Gauchos",
-      "t2": "San Diego Toreros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Santa Barbara Regional - Elimination Game",
+      "round": "NCAA Baseball Championship - Tucson Regional - Elimination Game",
       "date": "2024-06-02"
     },
     {
@@ -1777,6 +1727,16 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Greenville Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Georgia Tech Yellow Jackets",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional - Elimination Game",
       "date": "2024-06-02"
     },
     {
@@ -1800,6 +1760,96 @@
       "date": "2024-06-02"
     },
     {
+      "t1": "LSU Tigers",
+      "t2": "Wofford Terriers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "St. John's Red Storm",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Indiana State Sycamores",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lexington Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "James Madison Dukes",
+      "t2": "South Carolina Gamecocks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Raleigh Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stillwater Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Norman Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Bryan-College Station Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Southeast Missouri State Redhawks",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
       "t1": "UC Irvine Anteaters",
       "t2": "Tulane Green Wave",
       "w1": 1,
@@ -1810,13 +1860,83 @@
       "date": "2024-06-02"
     },
     {
-      "t1": "Grand Canyon Lopes",
-      "t2": "Dallas Baptist Patriots",
+      "t1": "UC Santa Barbara Gauchos",
+      "t2": "San Diego Toreros",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "NCAA Baseball Championship - Tucson Regional - Elimination Game",
+      "round": "NCAA Baseball Championship - Santa Barbara Regional - Elimination Game",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Regional - Tennessee advances to Super Regional",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Indiana State Sycamores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lexington Regional - Kentucky advances to Super Regional",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Clemson Tigers",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Regional - Clemson advances to Super Regional",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Georgia Bulldogs",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional - Georgia advances to Super Regional",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "UCF Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - Florida State advances to Super Regional",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "James Madison Dukes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Raleigh Regional - NC State advances to Super Regional",
+      "date": "2024-06-02"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Regional - Virginia advances to Super Regional",
       "date": "2024-06-02"
     },
     {
@@ -1840,92 +1960,262 @@
       "date": "2024-06-03"
     },
     {
+      "t1": "Oregon Ducks",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Santa Barbara Regional - Oregon advances to Super Regional",
+      "date": "2024-06-03"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "UC Irvine Anteaters",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Corvallis Regional - Oregon State advances to Super Regional",
+      "date": "2024-06-03"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Grand Canyon Lopes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tucson Regional - West Virginia advances to Super Regional",
+      "date": "2024-06-03"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - North Carolina advances to Super Regional",
+      "date": "2024-06-03"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stillwater Regional - Florida advances to Super Regional",
+      "date": "2024-06-03"
+    },
+    {
+      "t1": "Evansville Purple Aces",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Greenville Regional - Evansville advances to Super Regional",
+      "date": "2024-06-03"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Norman Regional - UConn advances to Super Regional",
+      "date": "2024-06-04"
+    },
+    {
       "t1": "Tennessee Volunteers",
       "t2": "Evansville Purple Aces",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Evansville Purple Aces",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Knoxville Super Regional - Game 1",
       "date": "2024-06-07"
     },
     {
       "t1": "North Carolina Tar Heels",
       "t2": "West Virginia Mountaineers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "West Virginia Mountaineers",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Chapel Hill Super Regional - Game 1",
       "date": "2024-06-07"
     },
     {
       "t1": "Florida State Seminoles",
       "t2": "UConn Huskies",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "UConn Huskies",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Tallahassee Super Regional - Game 1",
       "date": "2024-06-07"
     },
     {
       "t1": "Virginia Cavaliers",
       "t2": "Kansas State Wildcats",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Kansas State Wildcats",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Charlottesville Super Regional - Game 1",
       "date": "2024-06-07"
     },
     {
+      "t1": "Evansville Purple Aces",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Super Regional - Game 2",
+      "date": "2024-06-08"
+    },
+    {
       "t1": "Kentucky Wildcats",
       "t2": "Oregon State Beavers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Oregon State Beavers",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Lexington Super Regional - Game 1",
       "date": "2024-06-08"
     },
     {
       "t1": "Texas A&M Aggies",
       "t2": "Oregon Ducks",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Oregon Ducks",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Bryan-College Station Super Regional - Game 1",
       "date": "2024-06-08"
     },
     {
       "t1": "Florida Gators",
       "t2": "Clemson Tigers",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Clemson Tigers",
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Clemson Super Regional - Game 1",
       "date": "2024-06-08"
     },
     {
       "t1": "NC State Wolfpack",
       "t2": "Georgia Bulldogs",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Georgia Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NCAA Baseball Championship - Athens Super Regional - Game 1",
       "date": "2024-06-08"
     },
     {
+      "t1": "Florida State Seminoles",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Super Regional - Game 2",
+      "date": "2024-06-08"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Charlottesville Super Regional - Game 2",
+      "date": "2024-06-08"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Super Regional - Game 2",
+      "date": "2024-06-09"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Evansville Purple Aces",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Super Regional - Game 3",
+      "date": "2024-06-09"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Bryan-College Station Super Regional - Game 2",
+      "date": "2024-06-09"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Super Regional - Game 2",
+      "date": "2024-06-09"
+    },
+    {
+      "t1": "Georgia Bulldogs",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Super Regional - Game 2",
+      "date": "2024-06-09"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lexington Super Regional - Game 2",
+      "date": "2024-06-10"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Georgia Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Super Regional - Game 3",
+      "date": "2024-06-10"
+    },
+    {
       "t1": "Tennessee Volunteers",
       "t2": "Florida State Seminoles",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Florida State Seminoles",
+      "done": false,
+      "loser": "",
       "round": "Men's College World Series - Double Elimination Round",
       "date": "2024-06-14"
     },
@@ -1952,10 +2242,10 @@
     {
       "t1": "Texas A&M Aggies",
       "t2": "Florida Gators",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Florida Gators",
+      "done": false,
+      "loser": "",
       "round": "Men's College World Series - Double Elimination Round",
       "date": "2024-06-16"
     },
@@ -2020,41 +2310,56 @@
       "date": "2024-06-19"
     },
     {
+      "t1": "Tennessee Volunteers",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Tennessee advances to Championship Series",
+      "date": "2024-06-19"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Texas A&M advances to Championship Series",
+      "date": "2024-06-19"
+    },
+    {
       "t1": "Texas A&M Aggies",
       "t2": "Tennessee Volunteers",
       "w1": 1,
-      "w2": 2,
-      "done": true,
-      "loser": "Texas A&M Aggies",
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "Men's College World Series Championship Finals Game 1",
       "date": "2024-06-22"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series Championship Finals Game 2",
+      "date": "2024-06-23"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series Championship Finals Game 3",
+      "date": "2024-06-24"
     }
   ],
-  "eliminated": [
-    "East Carolina Pirates",
-    "Wofford Terriers",
-    "Nebraska Cornhuskers",
-    "St. John's Red Storm",
-    "LSU Tigers",
-    "Coastal Carolina Chanticleers",
-    "UCF Knights",
-    "Oklahoma Sooners",
-    "Oklahoma State Cowboys",
-    "Mississippi State Bulldogs",
-    "UC Santa Barbara Gauchos",
-    "UC Irvine Anteaters",
-    "Grand Canyon Lopes",
-    "Evansville Purple Aces",
-    "West Virginia Mountaineers",
-    "UConn Huskies",
-    "Kansas State Wildcats",
-    "Oregon State Beavers",
-    "Oregon Ducks",
-    "Clemson Tigers",
-    "Georgia Bulldogs",
-    "Florida State Seminoles",
-    "Florida Gators",
-    "Texas A&M Aggies"
-  ],
-  "updated": "2026-05-27 06:38 UTC"
+  "eliminated": [],
+  "updated": "2026-05-27 07:05 UTC"
 }
