@@ -8,10 +8,14 @@ suppressPackageStartupMessages({ library(jsonlite) })
 
 # ── Skip non-playoff events ─────────────────────────────────────────────────
 is_skip_event <- function(ev_name) {
-  skip <- c("all-star","all star","pro bowl","skills","celebrity",
-            "rising stars","draft combine","summer league","classic",
-            "exhibition","preseason")
-  any(sapply(skip, function(w) grepl(w, tolower(ev_name), fixed=TRUE)))
+  # Skip non-playoff events that appear in seasontype=3 feeds
+  skip_exact <- c("nfl pro bowl","nba all-star","nhl all-star","mlb all-star",
+                  "pro bowl","all-star game","skills competition","celebrity game",
+                  "rising stars","draft combine","summer league")
+  skip_any   <- c("exhibition","preseason","scrimmage")
+  name_lower <- tolower(ev_name)
+  any(sapply(skip_exact, function(w) grepl(w, name_lower, fixed=TRUE))) ||
+  any(sapply(skip_any,   function(w) grepl(w, name_lower, fixed=TRUE)))
 }
 
 # ── Fetch individual game scores from ESPN scoreboard ─────────────────────

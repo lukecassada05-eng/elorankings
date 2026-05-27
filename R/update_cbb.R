@@ -141,3 +141,146 @@ for (s in SEASONS) {
           sum(!is.na(out$conference)), "/", nrow(out),
           if (!is.null(conf_champ_map)) paste0(", champs: ", sum(out$conf_champ, na.rm=TRUE)) else "")
 }
+
+
+# ================================================================
+# Write NCAA Tournament JSON (uses hoopR schedule data)
+# ================================================================
+write_cbb_tournament_json <- function(yr) {
+  tryCatch({
+    sched <- hoopR::load_mbb_schedule(seasons = yr)
+    if (is.null(sched) || nrow(sched) == 0) {
+      message("  No schedule data for ", yr); return(invisible(NULL))
+    }
+    
+    # Tournament games: season_type = 3 (postseason) AND date in Mar-Apr
+    # hoopR season_type can be character or integer
+    tourn <- sched[
+      !is.na(sched$season_type) & as.character(sched$season_type) == "3" &
+      !is.na(sched$game_date) &
+      format(as.Date(sched$game_date), "%m") %in% c("03","04") &
+      !is.na(sched$home_score) & !is.na(sched$away_score),
+    ]
+    
+    if (nrow(tourn) == 0) {
+      message("  No tournament games found for ", yr); return(invisible(NULL))
+    }
+    
+
+    
+    # Build game list
+    games <- list()
+    seen  <- list()
+    for (i in seq_len(nrow(tourn))) {
+      row <- tourn[i,]
+      hs <- suppressWarnings(as.numeric(row$home_score))
+      as_ <- suppressWarnings(as.numeric(row$away_score))
+      if (is.na(hs) || is.na(as_) || hs == as_) next
+      
+      hn <- tryCatch(as.character(row$home_team_name), error=function(e)
+              tryCatch(as.character(row$home_short_display_name),error=function(e)""))
+      an <- tryCatch(as.character(row$away_team_name), error=function(e)
+              tryCatch(as.character(row$away_short_display_name),error=function(e)""))
+      if (nchar(hn)==0 || nchar(an)==0) next
+      
+      dt <- tryCatch(as.character(as.Date(row$game_date)), error=function(e)"")
+      
+      # Deduplicate
+      dk <- paste(hn, an, dt, sep="|")
+      if (!is.null(seen[[dk]])) next; seen[[dk]] <- TRUE
+      
+      if (hs > as_) { winner <- hn; loser <- an; ws <- hs; ls <- as_ }
+      else          { winner <- an; loser <- hn; ws <- as_; ls <- hs  }
+      
+      # Round name from notes_headline
+      rnd <- tryCatch(as.character(row$notes_headline), error=function(e)"")
+      if (is.null(rnd) || is.na(rnd)) rnd <- ""
+      
+      # Skip conference tournament games (they run late Feb / early Mar)
+      # Conference tournament names contain conf name + "tournament" or "championship"
+      # NCAA tournament games either have NCAA round names or blank notes
+      if (nchar(rnd) > 0) {
+        # If it has a round name, must be an NCAA tournament round
+        ncaa_rounds <- c("First Four","First Round","Second Round",
+                         "Sweet 16","Elite Eight","Final Four","Championship",
+                         "Round of 64","Round of 32","Regional","National")
+        conf_keywords <- c("Conference","Conference Tournament","A-10","ACC","SEC",
+                          "Big Ten","Big 12","Pac-","American","Mountain West",
+                          "Sun Belt","MAC","C-USA","MWC","AAC")
+        is_ncaa <- any(sapply(ncaa_rounds, function(x) grepl(x, rnd, ignore.case=TRUE)))
+        is_conf <- any(sapply(conf_keywords, function(x) grepl(x, rnd, fixed=TRUE)))
+        if (!is_ncaa || is_conf) next
+      }
+      
+      games <- c(games, list(list(
+        winner=winner, loser=loser,
+        winner_score=ws, loser_score=ls,
+        date=dt, round=rnd
+      )))
+    }
+    
+    message("  CBB ", yr, ": ", length(games), " tournament games")
+    if (length(games) == 0) return(invisible(NULL))
+    
+    # Build series (single-elimination: win=1)
+    # Group by round
+    round_groups <- list()
+    for (g in games) {
+      rn <- if(nchar(g$round)>0) g$round else "_"
+      if (is.null(round_groups[[rn]])) round_groups[[rn]] <- list()
+      round_groups[[rn]] <- c(round_groups[[rn]], list(g))
+    }
+    
+    # Ordered round names for CBB
+    round_order <- c("First Four","First Round","Round of 64","Second Round",
+                     "Round of 32","Sweet 16","Elite Eight","Final Four","Championship")
+    
+    all_series <- list(); all_elim <- c()
+    for (rn in names(round_groups)) {
+      rg <- round_groups[[rn]]
+      for (g in rg) {
+        all_series <- c(all_series, list(list(
+          t1=g$winner, t2=g$loser, w1=1L, w2=0L, done=TRUE,
+          loser=g$loser, round=g$round, date=g$date
+        )))
+        all_elim <- c(all_elim, g$loser)
+      }
+    }
+    
+    # Sort series by round order then date
+    if (length(all_series) > 1) {
+      get_round_order <- function(rnd) {
+        idx <- which(sapply(round_order, function(r) grepl(r, rnd, ignore.case=TRUE)))
+        if (length(idx)) min(idx) else 99L
+      }
+      rord <- sapply(all_series, function(s) get_round_order(s$round))
+      dord <- sapply(all_series, function(s) s$date)
+      all_series <- all_series[order(rord, dord)]
+    }
+    
+    today <- Sys.Date()
+    completed <- today > as.Date(paste0(yr, "-04-10"))
+    
+    result <- list(
+      year=yr, sport="CBB", completed=completed,
+      games=games,
+      series=all_series,
+      eliminated=as.list(unique(all_elim)),
+      updated=format(Sys.time(), "%Y-%m-%d %H:%M UTC")
+    )
+    
+    out_dir  <- "docs/CBB/data"
+    dir.create(out_dir, showWarnings=FALSE, recursive=TRUE)
+    out_file <- file.path(out_dir, paste0("tournament_", yr, ".json"))
+    jsonlite::write_json(result, out_file, auto_unbox=TRUE, pretty=TRUE)
+    message("  Written: ", out_file)
+  }, error=function(e) message("  CBB tournament error for ", yr, ": ", e$message))
+}
+
+# Run for all CBB seasons
+for (s in SEASONS) {
+  message("CBB tournament ", s, "...")
+  write_cbb_tournament_json(s)
+  Sys.sleep(0.3)
+}
+message("CBB tournament JSON done.")
