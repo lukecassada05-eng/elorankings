@@ -123,6 +123,13 @@
       "date": "2001-10-03"
     },
     {
+      "winner": "Mariners            ",
+      "loser": "Angels              ",
+      "winner_score": 14,
+      "loser_score": 5,
+      "date": "2001-10-03"
+    },
+    {
       "winner": "Athletics           ",
       "loser": "Rangers             ",
       "winner_score": 9,
@@ -137,10 +144,24 @@
       "date": "2001-10-03"
     },
     {
+      "winner": "Cubs                ",
+      "loser": "Reds                ",
+      "winner_score": 13,
+      "loser_score": 7,
+      "date": "2001-10-03"
+    },
+    {
       "winner": "Athletics           ",
       "loser": "Rangers             ",
       "winner_score": 5,
       "loser_score": 4,
+      "date": "2001-10-03"
+    },
+    {
+      "winner": "Blue Jays           ",
+      "loser": "Orioles             ",
+      "winner_score": 7,
+      "loser_score": 6,
       "date": "2001-10-03"
     },
     {
@@ -256,6 +277,13 @@
       "date": "2001-10-04"
     },
     {
+      "winner": "Cubs                ",
+      "loser": "Reds                ",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2001-10-04"
+    },
+    {
       "winner": "Diamondbacks        ",
       "loser": "Rockies             ",
       "winner_score": 5,
@@ -267,6 +295,20 @@
       "loser": "Dodgers             ",
       "winner_score": 6,
       "loser_score": 3,
+      "date": "2001-10-04"
+    },
+    {
+      "winner": "Red Sox             ",
+      "loser": "Orioles             ",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2001-10-04"
+    },
+    {
+      "winner": "Giants              ",
+      "loser": "Astros              ",
+      "winner_score": 10,
+      "loser_score": 2,
       "date": "2001-10-04"
     },
     {
@@ -294,6 +336,13 @@
       "winner": "Athletics           ",
       "loser": "Angels              ",
       "winner_score": 5,
+      "loser_score": 1,
+      "date": "2001-10-05"
+    },
+    {
+      "winner": "Mariners            ",
+      "loser": "Rangers             ",
+      "winner_score": 16,
       "loser_score": 1,
       "date": "2001-10-05"
     },
@@ -403,6 +452,13 @@
       "date": "2001-10-06"
     },
     {
+      "winner": "Dodgers             ",
+      "loser": "Giants              ",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2001-10-06"
+    },
+    {
       "winner": "Royals              ",
       "loser": "Tigers              ",
       "winner_score": 8,
@@ -424,9 +480,30 @@
       "date": "2001-10-06"
     },
     {
+      "winner": "Padres              ",
+      "loser": "Rockies             ",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2001-10-06"
+    },
+    {
+      "winner": "Athletics           ",
+      "loser": "Angels              ",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2001-10-06"
+    },
+    {
       "winner": "Cubs                ",
       "loser": "Pirates             ",
       "winner_score": 13,
+      "loser_score": 2,
+      "date": "2001-10-06"
+    },
+    {
+      "winner": "Dodgers             ",
+      "loser": "Giants              ",
+      "winner_score": 6,
       "loser_score": 2,
       "date": "2001-10-06"
     },
@@ -627,6 +704,13 @@
       "date": "2001-10-10"
     },
     {
+      "winner": "Cardinals           ",
+      "loser": "Diamondbacks        ",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2001-10-10"
+    },
+    {
       "winner": "Athletics           ",
       "loser": "Yankees             ",
       "winner_score": 5,
@@ -666,6 +750,13 @@
       "loser": "Diamondbacks        ",
       "winner_score": 4,
       "loser_score": 1,
+      "date": "2001-10-13"
+    },
+    {
+      "winner": "Indians             ",
+      "loser": "Mariners            ",
+      "winner_score": 17,
+      "loser_score": 2,
       "date": "2001-10-13"
     },
     {
@@ -783,6 +874,13 @@
     {
       "winner": "Diamondbacks        ",
       "loser": "Yankees             ",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2001-10-27"
+    },
+    {
+      "winner": "Diamondbacks        ",
+      "loser": "Yankees             ",
       "winner_score": 4,
       "loser_score": 0,
       "date": "2001-10-29"
@@ -828,13 +926,20 @@
       "winner_score": 15,
       "loser_score": 2,
       "date": "2001-11-04"
+    },
+    {
+      "winner": "Diamondbacks        ",
+      "loser": "Yankees             ",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2001-11-05"
     }
   ],
   "series": [
     {
       "t1": "Blue Jays           ",
       "t2": "Orioles             ",
-      "w1": 1,
+      "w1": 2,
       "w2": 1,
       "done": false,
       "loser": ""
@@ -882,10 +987,10 @@
     {
       "t1": "Mariners            ",
       "t2": "Angels              ",
-      "w1": 2,
+      "w1": 3,
       "w2": 0,
-      "done": false,
-      "loser": ""
+      "done": true,
+      "loser": "Angels              "
     },
     {
       "t1": "Phillies            ",
@@ -915,17 +1020,17 @@
       "t1": "Reds                ",
       "t2": "Cubs                ",
       "w1": 1,
-      "w2": 0,
+      "w2": 2,
       "done": false,
       "loser": ""
     },
     {
       "t1": "Giants              ",
       "t2": "Astros              ",
-      "w1": 2,
+      "w1": 3,
       "w2": 0,
-      "done": false,
-      "loser": ""
+      "done": true,
+      "loser": "Astros              "
     },
     {
       "t1": "Diamondbacks        ",
@@ -952,6 +1057,14 @@
       "loser": ""
     },
     {
+      "t1": "Red Sox             ",
+      "t2": "Orioles             ",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Orioles             "
+    },
+    {
       "t1": "Devil Rays          ",
       "t2": "Yankees             ",
       "w1": 4,
@@ -962,18 +1075,18 @@
     {
       "t1": "Athletics           ",
       "t2": "Angels              ",
-      "w1": 3,
+      "w1": 4,
       "w2": 0,
       "done": true,
       "loser": "Angels              "
     },
     {
-      "t1": "Red Sox             ",
-      "t2": "Orioles             ",
+      "t1": "Mariners            ",
+      "t2": "Rangers             ",
       "w1": 3,
-      "w2": 0,
+      "w2": 1,
       "done": true,
-      "loser": "Orioles             "
+      "loser": "Rangers             "
     },
     {
       "t1": "Pirates             ",
@@ -1032,18 +1145,18 @@
       "loser": ""
     },
     {
-      "t1": "Mariners            ",
-      "t2": "Rangers             ",
+      "t1": "Rockies             ",
+      "t2": "Padres              ",
       "w1": 2,
       "w2": 1,
       "done": false,
       "loser": ""
     },
     {
-      "t1": "Rockies             ",
-      "t2": "Padres              ",
+      "t1": "Dodgers             ",
+      "t2": "Giants              ",
       "w1": 2,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": ""
     },
@@ -1064,14 +1177,6 @@
       "loser": "Reds                "
     },
     {
-      "t1": "Giants              ",
-      "t2": "Dodgers             ",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": ""
-    },
-    {
       "t1": "Braves              ",
       "t2": "Astros              ",
       "w1": 3,
@@ -1082,7 +1187,7 @@
     {
       "t1": "Indians             ",
       "t2": "Mariners            ",
-      "w1": 1,
+      "w1": 2,
       "w2": 3,
       "done": true,
       "loser": "Indians             "
@@ -1091,7 +1196,7 @@
       "t1": "Diamondbacks        ",
       "t2": "Cardinals           ",
       "w1": 3,
-      "w2": 1,
+      "w2": 2,
       "done": true,
       "loser": "Cardinals           "
     },
@@ -1122,7 +1227,7 @@
     {
       "t1": "Diamondbacks        ",
       "t2": "Yankees             ",
-      "w1": 2,
+      "w1": 4,
       "w2": 5,
       "done": true,
       "loser": "Diamondbacks        "
@@ -1130,18 +1235,19 @@
   ],
   "eliminated": [
     "White Sox           ",
-    "Rockies             ",
-    "Yankees             ",
     "Angels              ",
+    "Astros              ",
+    "Rockies             ",
     "Orioles             ",
+    "Yankees             ",
+    "Rangers             ",
     "Indians             ",
     "Reds                ",
-    "Astros              ",
     "Cardinals           ",
     "Athletics           ",
     "Braves              ",
     "Mariners            ",
     "Diamondbacks        "
   ],
-  "updated": "2026-05-26 23:59 UTC"
+  "updated": "2026-05-27 03:24 UTC"
 }

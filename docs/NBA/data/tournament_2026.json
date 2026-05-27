@@ -583,6 +583,13 @@
       "winner_score": 130,
       "loser_score": 93,
       "date": "2026-05-26"
+    },
+    {
+      "winner": "Thunder",
+      "loser": "Spurs",
+      "winner_score": 127,
+      "loser_score": 114,
+      "date": "2026-05-27"
     }
   ],
   "series": [
@@ -734,7 +741,7 @@
       "t1": "Spurs",
       "t2": "Thunder",
       "w1": 2,
-      "w2": 2,
+      "w2": 3,
       "done": false,
       "loser": ""
     },
@@ -762,5 +769,5 @@
     "Lakers",
     "Cavaliers"
   ],
-  "updated": "2026-05-26 23:59 UTC"
+  "updated": "2026-05-27 03:24 UTC"
 }
