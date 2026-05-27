@@ -1488,7 +1488,7 @@ window.initSportPage = function(CFG) {
       NHL: {'First Round':0,'Second Round':1,'Conference Finals':2,'Stanley Cup Final':3},
       MLB: {'Wild Card':0,'Division Series':1,'Championship Series':2,'World Series':3},
       NFL: {'Wild Card':0,'Divisional Round':1,'Conference Championship':2,'Super Bowl':3},
-      CBB: {'First Four':0,'Round of 64':1,'Round of 32':2,'Sweet 16':3,'Elite Eight':4,'Final Four':5,'Championship':6},
+      CBB: {'First Four':0,'Round of 64':1,'Round of 32':2,'Sweet 16':3,'Elite Eight':4,'Final Four':5,'Championship':6,'First Round':1,'Second Round':2,'Regional Semifinal':3,'Regional Final':4,'National Semifinal':5,'National Championship':6,'Regional':3,'Semifinal':5,'Final':6},
     };
     var orderMap = ROUND_ORDER[CFG.sport] || {};
 
@@ -1599,8 +1599,9 @@ window.initSportPage = function(CFG) {
       }
       // Fallback: split by round sizes
       var sizes = CFG.sport==='NFL'?[6,4,2,1]:CFG.sport==='MLB'?[6,4,2,1]
-               :  CFG.sport==='CBB'?[34,32,16,8,4,2,1]:CFG.sport==='CBASE'?[16,8,1]
+               :  CFG.sport==='CBB'?[4,32,16,8,4,2,1]:CFG.sport==='CBASE'?[16,8,1]
                :  CFG.sport==='NBA'?[6,8,4,2,1]:[8,4,2,1];
+      // For CBB, use actual round labels (First Four has 4 games, not 34)
       var rem = series.slice(), rounds = [];
       sizes.forEach(function(sz,i) {
         if (!rem.length) return;
@@ -1672,7 +1673,11 @@ window.initSportPage = function(CFG) {
             var fill=isW?'var(--accent)':(isL?'#555':'var(--text)'), fw=isW?'600':'400';
             var sc='';
             if(isSingle&&gs.length>0){sc=gs[0].winner===t.n?(gs[0].winner_score||gs[0].ws||0):(gs[0].loser_score||gs[0].ls||0);}
-            else{sc=t.w||0;}
+            else{
+              // Cap series wins at WIN_TO_ADV to guard against double-count data issues
+              var rawW = t.w||0;
+              sc = Math.min(rawW, WIN_TO_ADV);
+            }
             if(isW)parts.push('<rect x="'+colX+'" y="'+rowY+'" width="'+COL_W+'" height="'+CELL_H+'" fill="rgba(255,255,255,0.04)"/>');
             parts.push('<foreignObject x="'+(colX+6)+'" y="'+rowY+'" width="'+(COL_W-32)+'" height="'+CELL_H+'"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:11px;line-height:'+CELL_H+'px;color:'+fill+';font-weight:'+fw+';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'+(isL?'text-decoration:line-through;opacity:0.5;':'')+'font-family:inherit;">'+escXml(t.n)+(isW?' ✓':'')+'</div></foreignObject>');
             parts.push('<text x="'+(colX+COL_W-5)+'" y="'+midTY+'" text-anchor="end" font-size="12" font-family="var(--font-mono,monospace)" font-weight="'+fw+'" fill="'+(isW?'var(--accent)':'#666')+'">'+sc+'</text>');
