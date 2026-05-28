@@ -1465,8 +1465,17 @@ window.initSportPage = function(CFG) {
       return best ? eloMap[best] : null; // null = genuinely unknown
     }
 
+    // Build eliminated from filtered series only (not raw JSON eliminated list)
+    // This prevents regular-season games from marking teams as "eliminated"
     var eliminated = {};
-    (d.eliminated||[]).forEach(function(t){ eliminated[t] = true; });
+    // For CBASE/NBA, derive from filtered series rather than JSON eliminated list
+    if (CFG.sport === 'CBASE' || CFG.sport === 'NBA' || CFG.sport === 'NHL') {
+      // Will be populated after series filtering (below)
+      // Temporarily use JSON list, will be overridden
+      (d.eliminated||[]).forEach(function(t){ eliminated[t] = true; });
+    } else {
+      (d.eliminated||[]).forEach(function(t){ eliminated[t] = true; });
+    }
 
     var WIN_TO_ADV = (CFG.sport==='NFL'||CFG.sport==='CBB'||CFG.sport==='CBASE') ? 1
                    : (CFG.sport==='MLB') ? 3 : 4;
@@ -1510,10 +1519,29 @@ window.initSportPage = function(CFG) {
     };
     var roundLabels = ROUND_LABELS[CFG.sport] || [];
     var ROUND_ORDER = {
-      NBA: {'Play-In':0,'First Round':1,'Conference Semifinals':2,'Conference Finals':3,'NBA Finals':4},
+      NBA: {
+        'Play-In':0,
+        // ESPN format
+        'East 1st Round':1,'West 1st Round':1,'First Round':1,
+        'East Semifinals':2,'West Semifinals':2,'Conference Semifinals':2,
+        'East Finals':3,'West Finals':3,'Conference Finals':3,
+        'NBA Finals':4,'Finals':4
+      },
       NHL: {'First Round':0,'Second Round':1,'Conference Finals':2,'Stanley Cup Final':3},
       MLB: {'Wild Card':0,'Division Series':1,'Championship Series':2,'World Series':3},
-      NFL: {'Wild Card':0,'Divisional Round':1,'Conference Championship':2,'Super Bowl':3},
+      NFL: {
+        'Wild Card':0,'AFC Wild Card Playoffs':0,'NFC Wild Card Playoffs':0,'Wild Card Playoffs':0,
+        'Divisional Round':1,'AFC Divisional Playoffs':1,'NFC Divisional Playoffs':1,'Divisional Playoffs':1,
+        'Conference Championship':2,'AFC Championship':2,'NFC Championship':2,'Conference':2,
+        'Super Bowl':3,'Super Bowl LIX':3,'Super Bowl LX':3,'Super Bowl LXI':3
+      },
+      CBASE: {
+        'NCAA Baseball Championship':0,
+        'Regional':0, 'Regionals':0,
+        'Super Regional':1, 'Super Regionals':1,
+        'Men\'s College World Series':2, 'College World Series':2,
+        'Men\'s College World Series Championship':3, 'CWS Championship':3
+      },
       CBB: {'First Four':0,'Round of 64':1,'Round of 32':2,'Sweet 16':3,'Elite Eight':4,'Final Four':5,'Championship':6},
     };
     var orderMap = ROUND_ORDER[CFG.sport] || {};
@@ -1614,6 +1642,51 @@ window.initSportPage = function(CFG) {
       var keys = Object.keys(byRound);
       var hasNames = keys.some(function(k){ return k && k !== 'Unknown'; });
       if (hasNames) {
+        // For CBASE: normalise round names to group regional games together
+        if (CFG.sport === 'CBASE') {
+          var cbaseGrouped = {'Regionals':[], 'Super Regionals':[], 'College World Series':[]};
+          Object.keys(byRound).forEach(function(k) {
+            var kl = k.toLowerCase();
+            if (kl.indexOf('super regional') !== -1) {
+              cbaseGrouped['Super Regionals'] = cbaseGrouped['Super Regionals'].concat(byRound[k]);
+            } else if (kl.indexOf('world series') !== -1) {
+              cbaseGrouped['College World Series'] = cbaseGrouped['College World Series'].concat(byRound[k]);
+            } else if (kl.indexOf('ncaa') !== -1 || kl.indexOf('regional') !== -1) {
+              cbaseGrouped['Regionals'] = cbaseGrouped['Regionals'].concat(byRound[k]);
+            }
+          });
+          return ['Regionals','Super Regionals','College World Series']
+            .filter(function(g){ return cbaseGrouped[g].length > 0; })
+            .map(function(g){ return {label: g, series: cbaseGrouped[g]}; });
+        }
+        // For NBA: merge East/West rounds into single round columns
+        if (CFG.sport === 'NBA') {
+          var nbaGrouped = {};
+          var nbaOrder = {};
+          keys.forEach(function(k) {
+            var o = orderMap[k] !== undefined ? orderMap[k] : 99;
+            // Canonical label per order level
+            var label = roundLabels[o] || k;
+            if (!nbaGrouped[o]) { nbaGrouped[o] = []; nbaOrder[o] = label; }
+            nbaGrouped[o] = nbaGrouped[o].concat(byRound[k]);
+          });
+          return Object.keys(nbaGrouped).sort(function(a,b){return a-b;}).map(function(o){
+            return {label: nbaOrder[o], series: nbaGrouped[o]};
+          });
+        }
+        // For NFL: same grouping by order level
+        if (CFG.sport === 'NFL') {
+          var nflGrouped = {}, nflOrder = {};
+          keys.forEach(function(k) {
+            var o = orderMap[k] !== undefined ? orderMap[k] : 99;
+            var label = roundLabels[o] || k;
+            if (!nflGrouped[o]) { nflGrouped[o] = []; nflOrder[o] = label; }
+            nflGrouped[o] = nflGrouped[o].concat(byRound[k]);
+          });
+          return Object.keys(nflGrouped).sort(function(a,b){return a-b;}).map(function(o){
+            return {label: nflOrder[o], series: nflGrouped[o]};
+          });
+        }
         keys.sort(function(a,b){
           return (orderMap[a]!==undefined?orderMap[a]:99) - (orderMap[b]!==undefined?orderMap[b]:99);
         });
@@ -1636,7 +1709,32 @@ window.initSportPage = function(CFG) {
       return rounds;
     }
 
+    // ── Filter series to only playoff/tournament rounds ─────────
+    var filteredSeries = seriesList.filter(function(s) {
+      var rnd = (s.round || '').trim();
+      // NBA/NHL: skip empty-round series (regular season bleed-in)
+      if ((CFG.sport === 'NBA' || CFG.sport === 'NHL') && !rnd) return false;
+      // CBASE: only keep NCAA tournament rounds
+      if (CFG.sport === 'CBASE') {
+        return rnd.toLowerCase().indexOf('ncaa') !== -1 ||
+               rnd.toLowerCase().indexOf('college world') !== -1 ||
+               rnd.toLowerCase().indexOf('super regional') !== -1;
+      }
+      return true;
+    });
+    seriesList = filteredSeries;
+
     var rounds = assignRounds(seriesList);
+
+    // Rebuild eliminated list from filtered series (removes regular-season noise)
+    if (CFG.sport === 'CBASE' || CFG.sport === 'NBA' || CFG.sport === 'NHL') {
+      eliminated = {};
+      seriesList.forEach(function(s) {
+        if ((s.done || s.w1 >= WIN_TO_ADV || s.w2 >= WIN_TO_ADV) && s.loser) {
+          eliminated[s.loser] = true;
+        }
+      });
+    }
 
     // ── Game score lookup ──────────────────────────────────────
     var gameLookup = {};
