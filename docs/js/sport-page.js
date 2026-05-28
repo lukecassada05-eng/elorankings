@@ -1468,59 +1468,110 @@ window.initSportPage = function(CFG) {
     function elo(name) { return getElo(name) || 1500; }
 
     // ── Round classification ────────────────────────────────────
+    // Strip "- GAME N", "- Game N", "- G1" etc. from round names
+    function normaliseRound(rnd) {
+      if (!rnd) return '';
+      return rnd
+        .replace(/\s*[-–]\s*GAME\s+\d+.*$/i, '')   // "ALDS - GAME 1" → "ALDS"
+        .replace(/\s*[-–]\s*G\d+\s*$/i, '')         // "ALDS - G1" → "ALDS"
+        .replace(/\s*\(GAME\s+\d+\)\s*$/i, '')       // "ALDS (Game 1)" → "ALDS"
+        .replace(/\s*[-–]\s*MAKEUP.*$/i, '')          // "NLWC - GAME 2 - MAKEUP FROM 10/1" → "NLWC"
+        .replace(/\s*[-–]\s*GAME\s+\d+.*$/i, '')     // second pass after makeup strip
+        .trim();
+    }
+
     function getRoundOrder(rnd, sport) {
+      rnd = normaliseRound(rnd);
       if (!rnd) return -1;
-      var r = rnd.toLowerCase();
-      if (sport === 'NBA' || sport === 'NHL') {
+      var r = rnd.toLowerCase().trim();
+
+      if (sport === 'NBA') {
+        // Play-In
         if (r.indexOf('play-in') !== -1 || r.indexOf('playin') !== -1) return 0;
-        if (r.indexOf('1st round') !== -1 || r.indexOf('first round') !== -1) return 1;
-        if (r.indexOf('2nd round') !== -1 || r.indexOf('second round') !== -1) return 2;
-        if (r.indexOf('semifinal') !== -1 || r.indexOf('semi-final') !== -1) return sport==='NHL'?2:2;
-        if (r.indexOf('conference final') !== -1 || r.indexOf('conf final') !== -1) return 3;
-        if (r.indexOf(' final') !== -1 && r.indexOf('stanley') === -1 && r.indexOf('nba') === -1 && r.indexOf('east')===-1 && r.indexOf('west')===-1) return 3;
+        // First Round – old: "eastern/western conference first round"; new: "east/west 1st round"
+        if (r.indexOf('first round') !== -1 || r.indexOf('1st round') !== -1) return 1;
+        // Second Round / Conference Semifinals
+        if (r.indexOf('second round') !== -1 || r.indexOf('2nd round') !== -1) return 2;
+        if (r.indexOf('semifinal') !== -1) return 2;
+        // Conference Finals
+        if (r.indexOf('conference final') !== -1) return 3;
         if (r.indexOf('east final') !== -1 || r.indexOf('west final') !== -1) return 3;
-        if (r.indexOf('stanley cup') !== -1 || r.indexOf('nba finals') !== -1 || r.indexOf('nba final') !== -1) return 4;
+        if (r.indexOf('east finals') !== -1 || r.indexOf('west finals') !== -1) return 3;
+        // NBA Finals
+        if (r.indexOf('nba final') !== -1) return 4;
+        if (r === 'finals' || r === 'the finals') return 4;
+        // Catch-all: any lone "final" not already matched
+        if (r.match(/finals?/) && r.indexOf('conference') === -1) return 4;
         return 1;
       }
+
+      if (sport === 'NHL') {
+        if (r.indexOf('play-in') !== -1 || r.indexOf('qualifying') !== -1) return 0;
+        // First Round – "quarterfinal", "1st round", "first round"
+        if (r.indexOf('quarterfinal') !== -1 || r.indexOf('1st round') !== -1 || r.indexOf('first round') !== -1) return 1;
+        // Second Round – "semifinal" (conf), "2nd round"
+        if (r.indexOf('2nd round') !== -1 || r.indexOf('second round') !== -1) return 2;
+        if (r.indexOf('semifinal') !== -1 && r.indexOf('stanley') === -1) return 2;
+        // Conference Finals
+        if (r.indexOf('conference final') !== -1) return 3;
+        if ((r.indexOf('east') !== -1 || r.indexOf('west') !== -1) && r.match(/finals?/)) return 3;
+        // Stanley Cup Final
+        if (r.indexOf('stanley cup') !== -1) return 4;
+        if (r === 'finals' || r === 'championship') return 4;
+        return 1;
+      }
+
       if (sport === 'MLB') {
-        if (r === 'alwc' || r === 'nlwc' || r.indexOf('wild card') !== -1) return 0;
+        // Wild Card (since 2012) – "alwc", "nlwc", "wild card"
+        if (r === 'alwc' || r === 'nlwc' || r.indexOf('wild card') !== -1 || r.indexOf('wildcard') !== -1) return 0;
+        // Division Series – "alds", "nlds", "division series", "divisional"
         if (r === 'alds' || r === 'nlds' || r.indexOf('division') !== -1) return 1;
-        if (r === 'alcs' || r === 'nlcs' || r.indexOf('championship series') !== -1) return 2;
+        // Championship Series – "alcs", "nlcs", "championship series"
+        if (r === 'alcs' || r === 'nlcs' || r.indexOf('league championship') !== -1 || r.indexOf('championship series') !== -1) return 2;
+        // World Series
         if (r.indexOf('world series') !== -1) return 3;
         return 1;
       }
+
       if (sport === 'NFL') {
-        if (r.indexOf('wild card') !== -1) return 0;
-        if (r.indexOf('division') !== -1) return 1;
-        if (r.indexOf('championship') !== -1 && r.indexOf('super') === -1) return 2;
+        if (r.indexOf('wild card') !== -1 || r.indexOf('wildcard') !== -1) return 0;
+        if (r.indexOf('divisional') !== -1 || r.indexOf('divisional playoff') !== -1) return 1;
+        // Conference Championships – must NOT be Super Bowl
         if (r.indexOf('super bowl') !== -1) return 3;
+        if (r.indexOf('championship') !== -1) return 2;
+        if (r.indexOf('conference') !== -1 && r.match(/finals?/)) return 2;
+        // Super Bowl
+        if (r.indexOf('super bowl') !== -1 || r.indexOf('super-bowl') !== -1) return 3;
         return 1;
       }
+
       if (sport === 'CBB') {
-        if (r.indexOf('first four') !== -1) return 0;
-        if (r.indexOf('round of 64') !== -1 || r.indexOf('first round') !== -1) return 1;
-        if (r.indexOf('round of 32') !== -1 || r.indexOf('second round') !== -1) return 2;
+        if (r.indexOf('first four') !== -1 || r.indexOf('first 4') !== -1) return 0;
+        if (r.indexOf('round of 64') !== -1 || r.indexOf('first round') !== -1 || r.indexOf('1st round') !== -1) return 1;
+        if (r.indexOf('round of 32') !== -1 || r.indexOf('second round') !== -1 || r.indexOf('2nd round') !== -1) return 2;
         if (r.indexOf('sweet') !== -1) return 3;
         if (r.indexOf('elite') !== -1) return 4;
         if (r.indexOf('final four') !== -1) return 5;
-        if (r.indexOf('championship') !== -1) return 6;
+        if (r.indexOf('championship') !== -1 || r.indexOf('national final') !== -1) return 6;
         return 1;
       }
+
       if (sport === 'CBASE') {
         if (r.indexOf('super regional') !== -1) return 1;
         if (r.indexOf('world series') !== -1 || r.indexOf('cws') !== -1) return 2;
         if (r.indexOf('ncaa') !== -1 || r.indexOf('regional') !== -1) return 0;
-        return -1; // skip conference tournament games
+        return -1;
       }
+
       return 0;
     }
 
     function getRoundLabel(order, sport) {
       var labels = {
         NBA:   {0:'Play-In',1:'First Round',2:'Conf. Semifinals',3:'Conf. Finals',4:'NBA Finals'},
-        NHL:   {0:'First Round',1:'Second Round',2:'Second Round',3:'Conf. Finals',4:'Stanley Cup Final'},
+        NHL:   {0:'Play-In/Qualifying',1:'First Round',2:'Second Round',3:'Conf. Finals',4:'Stanley Cup Final'},
         MLB:   {0:'Wild Card',1:'Division Series',2:'Championship Series',3:'World Series'},
-        NFL:   {0:'Wild Card',1:'Divisional',2:'Conf. Championship',3:'Super Bowl'},
+        NFL:   {0:'Wild Card',1:'Divisional Round',2:'Conf. Championship',3:'Super Bowl'},
         CBB:   {0:'First Four',1:'Round of 64',2:'Round of 32',3:'Sweet 16',4:'Elite Eight',5:'Final Four',6:'Championship'},
         CBASE: {0:'Regionals',1:'Super Regionals',2:'College World Series'},
       };
@@ -1528,19 +1579,62 @@ window.initSportPage = function(CFG) {
       return map[order] || ('Round '+(order+1));
     }
 
-    // ── Filter & group series ──────────────────────────────────
-    var seriesList = (d.series || []).filter(function(s) {
-      var rnd = (s.round || '').trim();
+    // ── Filter, normalise & merge series ──────────────────────────
+    var rawSeries = (d.series || []).filter(function(s) {
+      var rnd = normaliseRound(s.round || '');
       if (CFG.sport === 'NBA' || CFG.sport === 'NHL') return !!rnd;
       if (CFG.sport === 'CBASE') return getRoundOrder(rnd, 'CBASE') >= 0;
       return true;
     });
 
-    // Group series by round order → merge East+West into same column
-    var roundGroups = {};
-    seriesList.forEach(function(s) {
+    // Merge per-game series entries into one series per team-pair per round order
+    // e.g. "ALDS - GAME 1" + "ALDS - GAME 2" between same teams → one series
+    var mergedMap = {};  // key: "order||sortedTeams"
+    rawSeries.forEach(function(s) {
       var o = getRoundOrder(s.round, CFG.sport);
       if (o < 0) return;
+      var teamKey = [s.t1, s.t2].sort().join('||');
+      var key = o + '||' + teamKey;
+      if (!mergedMap[key]) {
+        mergedMap[key] = { t1:s.t1, t2:s.t2, w1:0, w2:0, done:false, loser:'', round:normaliseRound(s.round||''), date:s.date, order:o };
+      }
+      var m = mergedMap[key];
+      // Count wins by team name, not position (t1/t2 may be swapped between entries)
+      if (s.w1 > s.w2) {
+        // s.t1 won this entry
+        if (s.t1 === m.t1) m.w1++; else m.w2++;
+      } else if (s.w2 > s.w1) {
+        // s.t2 won this entry
+        if (s.t2 === m.t1) m.w1++; else m.w2++;
+      } else if (s.w1 + s.w2 > 1) {
+        // Pre-merged by R (e.g. World Series already 4-2)
+        // Figure out which wins belong to which team
+        var t1wins = (s.t1 === m.t1) ? s.w1 : s.w2;
+        var t2wins = (s.t2 === m.t2) ? s.w2 : s.w1;
+        m.w1 += t1wins; m.w2 += t2wins;
+      }
+      if (!m.date || s.date < m.date) m.date = s.date;
+      if (s.loser) m.loser = s.loser;
+      if (s.done) m.done = true;
+    });
+
+    // Convert merged map to list, sorted by date
+    var seriesList = Object.keys(mergedMap).map(function(k){ return mergedMap[k]; })
+      .sort(function(a,b){ return (a.date||'').localeCompare(b.date||''); });
+
+    // Determine done/loser from win counts
+    seriesList.forEach(function(s) {
+      var wta = getSeriesWTA(s.order);
+      if (!s.done && (s.w1 >= wta || s.w2 >= wta)) {
+        s.done = true;
+        s.loser = s.w1 >= wta ? s.t2 : s.t1;
+      }
+    });
+
+    // Group by round order for bracket columns
+    var roundGroups = {};
+    seriesList.forEach(function(s) {
+      var o = s.order;
       if (!roundGroups[o]) roundGroups[o] = [];
       roundGroups[o].push(s);
     });
@@ -1551,17 +1645,24 @@ window.initSportPage = function(CFG) {
     // ── Rebuild eliminated from filtered series ─────────────────
     var eliminated = {};
     seriesList.forEach(function(s) {
-      if ((s.done || s.w1 >= WIN_TO_ADV || s.w2 >= WIN_TO_ADV) && s.loser) {
+      var wta = getSeriesWTA(s.order !== undefined ? s.order : 1);
+      if ((s.done || s.w1 >= wta || s.w2 >= wta) && s.loser) {
         eliminated[s.loser] = true;
       }
     });
-    // Also use JSON eliminated for sports where it's reliable
-    if (CFG.sport === 'NFL' || CFG.sport === 'MLB') {
-      (d.eliminated||[]).forEach(function(t){ eliminated[t] = true; });
-    }
+    // Supplement with JSON eliminated list (reliable for completed seasons)
+    (d.eliminated||[]).forEach(function(t){ eliminated[t] = true; });
 
     var WIN_TO_ADV = (CFG.sport==='NFL'||CFG.sport==='CBB'||CFG.sport==='CBASE') ? 1
                    : (CFG.sport==='MLB') ? 3 : 4;
+    function getSeriesWTA(roundOrder) {
+      if (CFG.sport === 'MLB') {
+        if (roundOrder === 0) return 2; // Wild Card: best-of-3
+        if (roundOrder === 1) return 3; // Division Series: best-of-5
+        return 4;                        // CS + WS: best-of-7
+      }
+      return WIN_TO_ADV;
+    }
     var isCompleted = d.completed === true;
     var hasGames    = (d.games||[]).length > 0;
 
@@ -1682,8 +1783,8 @@ window.initSportPage = function(CFG) {
     // ── SVG bracket ─────────────────────────────────────────────
     if(rounds.length){
       var COL_W=180,CELL_H=26,PAD_V=7,CONN=28;
-      var r0n=rounds[0].series.length;
-      var SVG_H=Math.max(200,r0n*(CELL_H*2+PAD_V*2+10)+32);
+      var maxSeries=rounds.reduce(function(m,r){return Math.max(m,r.series.length);},1);
+      var SVG_H=Math.max(200,maxSeries*(CELL_H*2+PAD_V*2+10)+32);
       var SVG_W=rounds.length*(COL_W+CONN)+CONN+4;
       var parts=[],prevCenters=[],glData={};
 
@@ -1694,8 +1795,9 @@ window.initSportPage = function(CFG) {
         rnd.series.forEach(function(s,si){
           var boxH=CELL_H*2+PAD_V*2,topY=20+si*step+(step-boxH)/2,midY=topY+boxH/2;
           curC.push(midY);
-          var isSingle=WIN_TO_ADV===1;
-          var sdone=s.done||s.w1>=WIN_TO_ADV||s.w2>=WIN_TO_ADV;
+          var seriesWTA=getSeriesWTA(rnd.order);
+          var isSingle=seriesWTA===1;
+          var sdone=s.done||s.w1>=seriesWTA||s.w2>=seriesWTA;
           var sw=sdone?(s.w1>s.w2?s.t1:s.t2):'';
           var gs=pairGames(s.t1,s.t2);
 
@@ -1713,20 +1815,27 @@ window.initSportPage = function(CFG) {
             if(isSingle&&gs.length>0){
               var g0=gs[0];
               sc=g0.winner===t.n?(g0.winner_score||0):(g0.loser_score||0);
-            } else { sc=Math.min(t.w||0,WIN_TO_ADV); }
+            } else { sc=Math.min(t.w||0,seriesWTA); }
 
             if(isW)parts.push('<rect x="'+colX+'" y="'+rowY+'" width="'+COL_W+'" height="'+CELL_H+'" fill="rgba(255,255,255,0.04)"/>');
             parts.push('<foreignObject x="'+(colX+6)+'" y="'+rowY+'" width="'+(COL_W-30)+'" height="'+CELL_H+'"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:11px;line-height:'+CELL_H+'px;color:'+fill+';font-weight:'+fw+';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'+(isL?'text-decoration:line-through;opacity:0.5;':'')+'font-family:inherit;">'+escXml(t.n)+(isW?' \u2713':'')+(N>0&&!isCompleted&&champCount[t.n]!==undefined?' <span style="font-size:9px;color:#888">'+pct(champCount[t.n])+'</span>':'')+'</div></foreignObject>');
             parts.push('<text x="'+(colX+COL_W-5)+'" y="'+midTY+'" text-anchor="end" font-size="12" font-family="var(--font-mono,monospace)" font-weight="'+fw+'" fill="'+(isW?'var(--accent)':'#666')+'">'+sc+'</text>');
           });
 
-          // Connectors
-          if(ri>0&&prevCenters.length>=2){
-            var pA=prevCenters[si*2],pB=prevCenters[si*2+1];
-            if(pA!==undefined&&pB!==undefined){
-              var jx=colX-CONN/2;
-              parts.push('<polyline points="'+(colX-CONN)+','+pA+' '+jx+','+pA+' '+jx+','+pB+' '+(colX-CONN)+','+pB+'" fill="none" stroke="#444" stroke-width="1.5"/>');
-              parts.push('<line x1="'+jx+'" y1="'+midY+'" x2="'+colX+'" y2="'+midY+'" stroke="#444" stroke-width="1.5"/>');
+          // Connectors: only draw if rounds are paired (each has 2x series of next)
+          if(ri>0){
+            var prevN=prevCenters.length, curN=rounds[ri].series.length;
+            if(prevN===curN*2){
+              // Clean bracket: pair [0,1]→0, [2,3]→1 etc
+              var pA=prevCenters[si*2],pB=prevCenters[si*2+1];
+              if(pA!==undefined&&pB!==undefined){
+                var jx=colX-CONN/2;
+                parts.push('<polyline points="'+(colX-CONN)+','+pA+' '+jx+','+pA+' '+jx+','+pB+' '+(colX-CONN)+','+pB+'" fill="none" stroke="#444" stroke-width="1.5"/>');
+                parts.push('<line x1="'+jx+'" y1="'+midY+'" x2="'+colX+'" y2="'+midY+'" stroke="#444" stroke-width="1.5"/>');
+              }
+            } else {
+              // Non-paired (e.g. MLB WC→DS): just draw a horizontal line to box
+              parts.push('<line x1="'+(colX-CONN)+'" y1="'+midY+'" x2="'+colX+'" y2="'+midY+'" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>');
             }
           } else if(ri===0){
             parts.push('<line x1="0" y1="'+midY+'" x2="'+colX+'" y2="'+midY+'" stroke="#444" stroke-width="1.5"/>');
