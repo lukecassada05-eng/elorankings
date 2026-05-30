@@ -606,7 +606,7 @@
     {
       "winner": "Anaheim Ducks",
       "loser": "Edmonton Oilers",
-      "winner_score": 6,
+      "winner_score": 7,
       "loser_score": 4,
       "date": "2026-04-25",
       "round": "West 1st Round"
@@ -1017,6 +1017,14 @@
       "winner_score": 4,
       "loser_score": 0,
       "date": "2026-05-28",
+      "round": "East Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Montreal Canadiens",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2026-05-30",
       "round": "East Final"
     }
   ],
@@ -1665,9 +1673,9 @@
       "t1": "Montreal Canadiens",
       "t2": "Carolina Hurricanes",
       "w1": 1,
-      "w2": 3,
-      "done": false,
-      "loser": "",
+      "w2": 4,
+      "done": true,
+      "loser": "Montreal Canadiens",
       "round": "East Final",
       "date": "2026-05-22"
     }
@@ -1685,7 +1693,8 @@
     "Minnesota Wild",
     "Anaheim Ducks",
     "Buffalo Sabres",
-    "Colorado Avalanche"
+    "Colorado Avalanche",
+    "Montreal Canadiens"
   ],
-  "updated": "2026-05-29 21:32 UTC"
+  "updated": "2026-05-30 04:14 UTC"
 }
