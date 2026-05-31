@@ -802,6 +802,14 @@
       "loser_score": 91,
       "date": "2026-05-29",
       "round": "West Finals"
+    },
+    {
+      "winner": "San Antonio Spurs",
+      "loser": "Oklahoma City Thunder",
+      "winner_score": 111,
+      "loser_score": 103,
+      "date": "2026-05-31",
+      "round": "West Finals"
     }
   ],
   "series": [
@@ -1138,10 +1146,10 @@
     {
       "t1": "San Antonio Spurs",
       "t2": "Oklahoma City Thunder",
-      "w1": 3,
+      "w1": 4,
       "w2": 3,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Oklahoma City Thunder",
       "round": "West Finals",
       "date": "2026-05-19"
     },
@@ -1169,7 +1177,8 @@
     "Minnesota Timberwolves",
     "Detroit Pistons",
     "Los Angeles Lakers",
+    "Oklahoma City Thunder",
     "Cleveland Cavaliers"
   ],
-  "updated": "2026-05-30 20:24 UTC"
+  "updated": "2026-05-31 10:08 UTC"
 }
