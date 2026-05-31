@@ -4,6 +4,30 @@
   "completed": true,
   "games": [
     {
+      "winner": "Baltimore Ravens",
+      "loser": "Tennessee Titans",
+      "winner_score": 20,
+      "loser_score": 13,
+      "date": "2021-01-10",
+      "round": "AFC Wild Card Playoffs"
+    },
+    {
+      "winner": "New Orleans Saints",
+      "loser": "Chicago Bears",
+      "winner_score": 21,
+      "loser_score": 9,
+      "date": "2021-01-10",
+      "round": "NFC Wild Card Playoffs"
+    },
+    {
+      "winner": "Cleveland Browns",
+      "loser": "Pittsburgh Steelers",
+      "winner_score": 48,
+      "loser_score": 37,
+      "date": "2021-01-11",
+      "round": "AFC Wild Card Playoffs"
+    },
+    {
       "winner": "Green Bay Packers",
       "loser": "Los Angeles Rams",
       "winner_score": 32,
@@ -61,6 +85,36 @@
     }
   ],
   "series": [
+    {
+      "t1": "Baltimore Ravens",
+      "t2": "Tennessee Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Titans",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2021-01-10"
+    },
+    {
+      "t1": "New Orleans Saints",
+      "t2": "Chicago Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chicago Bears",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2021-01-10"
+    },
+    {
+      "t1": "Cleveland Browns",
+      "t2": "Pittsburgh Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Steelers",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2021-01-11"
+    },
     {
       "t1": "Green Bay Packers",
       "t2": "Los Angeles Rams",
@@ -133,6 +187,9 @@
     }
   ],
   "eliminated": [
+    "Tennessee Titans",
+    "Chicago Bears",
+    "Pittsburgh Steelers",
     "Los Angeles Rams",
     "Baltimore Ravens",
     "Cleveland Browns",
@@ -141,5 +198,5 @@
     "Buffalo Bills",
     "Kansas City Chiefs"
   ],
-  "updated": "2026-05-31 20:29 UTC"
+  "updated": "2026-05-31 21:51 UTC"
 }

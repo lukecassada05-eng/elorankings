@@ -98,6 +98,14 @@
       "loser_score": 20,
       "date": "2023-01-29",
       "round": "AFC Championship"
+    },
+    {
+      "winner": "Kansas City Chiefs",
+      "loser": "Philadelphia Eagles",
+      "winner_score": 38,
+      "loser_score": 35,
+      "date": "2023-02-12",
+      "round": "Super Bowl LVII"
     }
   ],
   "series": [
@@ -220,6 +228,16 @@
       "loser": "Cincinnati Bengals",
       "round": "AFC Championship",
       "date": "2023-01-29"
+    },
+    {
+      "t1": "Kansas City Chiefs",
+      "t2": "Philadelphia Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Philadelphia Eagles",
+      "round": "Super Bowl LVII",
+      "date": "2023-02-12"
     }
   ],
   "eliminated": [
@@ -234,7 +252,8 @@
     "Buffalo Bills",
     "Dallas Cowboys",
     "San Francisco 49ers",
-    "Cincinnati Bengals"
+    "Cincinnati Bengals",
+    "Philadelphia Eagles"
   ],
-  "updated": "2026-05-31 20:29 UTC"
+  "updated": "2026-05-31 21:51 UTC"
 }
