@@ -1446,19 +1446,6 @@ window.initSportPage = function(CFG) {
       });
   }
 
-    var el = document.getElementById('panel-preview');
-    if (!el) return;
-    if (!data || !data.length) {
-      el.innerHTML = '<div class="empty-state">Load a season first.</div>';
-      return;
-    }
-    var yr = currentSeason || new Date().getFullYear();
-    var sorted = data.slice().sort(function(a,b){ return b.elo-a.elo; });
-    var top3 = sorted.slice(0,3).map(function(r,i){ return '#'+(i+1)+' '+r.team+' ('+Math.round(r.elo)+')'; });
-    var text = '🏆 ' + yr + ' ' + CFG.sport + ' Power Rankings\n' + top3.join(' · ') + '\nFull rankings + title odds: elorankings.com';
-
-
-
   function _renderTourneyData(el, d) {
     // ── Elo lookup ─────────────────────────────────────────────
     var eloMap = {};
@@ -1508,32 +1495,15 @@ window.initSportPage = function(CFG) {
           var mo = parseInt(date.slice(5,7)), dy = parseInt(date.slice(8,10));
           if (mo === 2 && dy <= 15) return 3;        // Feb = Super Bowl
           if (mo === 1 && dy >= 24) return 2;        // Jan 24+ = Conference
-          if (mo === 1 && dy >= 18) return 1;        // Jan 18-23 = Divisional
-          if (mo === 1 && dy >= 10) return 0;        // Jan 10-17 = Wild Card
+          if (mo === 1 && dy >= 16) return 1;        // Jan 16-23 = Divisional
+          if (mo === 1 && dy >= 10) return 0;        // Jan 10-15 = Wild Card
         }
         return -1; // Skip unidentifiable NFL games
       }
 
       // ── NBA ────────────────────────────────────────────────────
       if (sport === 'NBA') {
-        if (!r) {
-          // No round name — infer from date (early ESPN years had no round labels)
-          if (!date) return -1;
-          var _yr=parseInt(date.slice(0,4)), _mo=parseInt(date.slice(5,7)), _dy=parseInt(date.slice(8,10));
-          // NBA 2020 bubble: playoffs ran Jul-Oct in Orlando
-          if (_yr === 2020 && _mo >= 7) {
-            if (_mo === 10) return 4;  // Oct = NBA Finals
-            if (_mo === 9)  return 3;  // Sep = Conf Finals
-            if (_mo === 8)  return 2;  // Aug = Conf Semis
-            return 1;                   // Jul = First Round
-          }
-          // Normal calendar
-          if (_mo === 6 && _dy >= 1)  return 4;  // NBA Finals (June 1+)
-          if (_mo === 5 && _dy >= 18) return 3;  // Conf Finals (May 18+)
-          if (_mo === 5 && _dy >= 3)  return 2;  // Conf Semis (May 3+)
-          if (_mo >= 4)               return 1;  // First Round (Apr+)
-          return -1;
-        }
+        if (!r) return -1;
         if (r.indexOf('play-in') !== -1 || r.indexOf('playin') !== -1) return 0;
         if (r.indexOf('first round') !== -1 || r.indexOf('1st round') !== -1) return 1;
         if (r.indexOf('second round') !== -1 || r.indexOf('2nd round') !== -1) return 2;
@@ -1549,33 +1519,7 @@ window.initSportPage = function(CFG) {
 
       // ── NHL ────────────────────────────────────────────────────
       if (sport === 'NHL') {
-        if (!r) {
-          // Infer from date for early ESPN years
-          if (!date) return -1;
-          var _nyr=parseInt(date.slice(0,4)), _nmo=parseInt(date.slice(5,7)), _ndy=parseInt(date.slice(8,10));
-          // NHL 2020 bubble: played Aug-Sep in Toronto/Edmonton
-          if (_nyr === 2020 && _nmo >= 8) {
-            if (_nmo === 9 && _ndy >= 22) return 4;  // Stanley Cup Final
-            if (_nmo === 9 || (_nmo === 8 && _ndy >= 26)) return 3;  // Conf Finals
-            if (_nmo === 8 && _ndy >= 12) return 2;  // Conf Semis
-            return 1;  // First Round / Qualifying
-          }
-          // NHL 2021 shortened season: playoffs started May 13 (later than normal)
-          if (_nyr === 2021) {
-            if (_nmo === 7) return 4;
-            if (_nmo === 6 && _ndy >= 15) return 4;
-            if (_nmo === 6) return 3;
-            if (_nmo === 5 && _ndy >= 28) return 2;
-            if (_nmo >= 5) return 1;
-            return -1;
-          }
-          // Normal calendar
-          if (_nmo === 6 && _ndy >= 10) return 4;  // SCF (Jun 10+)
-          if (_nmo === 6 || (_nmo === 5 && _ndy >= 18)) return 3;  // Conf Finals
-          if (_nmo === 5 && _ndy >= 3)  return 2;  // Conf Semis
-          if (_nmo >= 4)                return 1;  // First Round
-          return -1;
-        }
+        if (!r) return -1;
         if (r.indexOf('play-in') !== -1 || r.indexOf('qualifying') !== -1) return 0;
         if (r.indexOf('quarterfinal') !== -1 || r.indexOf('1st round') !== -1 || r.indexOf('first round') !== -1) return 1;
         if (r.indexOf('2nd round') !== -1 || r.indexOf('second round') !== -1) return 2;
@@ -1597,17 +1541,10 @@ window.initSportPage = function(CFG) {
         if (/^\d+$/.test(r)) return -1;
         // Infer from date when round is empty
         if (!r && date) {
-          var yr2=parseInt(date.slice(0,4)), mo2 = parseInt(date.slice(5,7)), dy2 = parseInt(date.slice(8,10));
-          // MLB 2020: shortened season, all dates shifted ~3 weeks earlier
-          if (yr2 === 2020) {
-            if (mo2 === 10 && dy2 >= 21) return 3;  // WS
-            if (mo2 === 10 && dy2 >= 12) return 2;  // ALCS/NLCS
-            if (mo2 >= 10 || (mo2 === 9 && dy2 >= 29)) return 1;  // DS
-          } else {
-            if (mo2 === 11 || (mo2 === 10 && dy2 >= 25)) return 3;  // WS
-            if (mo2 === 10 && dy2 >= 13) return 2;                   // CS
-            if (mo2 === 10 && dy2 >= 1) return 1;                    // DS
-          }
+          var mo2 = parseInt(date.slice(5,7)), dy2 = parseInt(date.slice(8,10));
+          if (mo2 === 11 || (mo2 === 10 && dy2 >= 25)) return 3;  // WS
+          if (mo2 === 10 && dy2 >= 13) return 2;                   // CS
+          if (mo2 === 10 && dy2 >= 1) return 1;                    // DS
         }
         if (!r) return -1; // skip empty MLB rounds without dates
         return 1;
@@ -1654,13 +1591,7 @@ window.initSportPage = function(CFG) {
     // ── Filter, normalise & merge series ──────────────────────────
     var rawSeries = (d.series || []).filter(function(s) {
       var rnd = normaliseRound(s.round || '');
-      // NHL: filter empty rounds (late-season regular season games)
-      if (CFG.sport === 'NHL' && !rnd) return false;
-      // NBA: empty-round entries are either reg season noise OR early-year playoff data
-      // Keep only if: has a named round, OR is clearly a playoff series (3+ total wins)
-      if (CFG.sport === 'NBA' && !rnd) {
-        return s.done || ((s.w1||0) + (s.w2||0)) >= 3;
-      }
+      if (CFG.sport === 'NBA' || CFG.sport === 'NHL') return !!rnd;
       if (CFG.sport === 'CBASE') return getRoundOrder(rnd, 'CBASE') >= 0;
       return true;
     });
@@ -1678,17 +1609,11 @@ window.initSportPage = function(CFG) {
       // (DS doesn't start until ~Oct 5-8 historically)
       if (CFG.sport === 'MLB' && !(normaliseRound(s.round||''))) {
         if (!s.date) return;
-        var _sdate = s.date, _syr = parseInt(_sdate.slice(0,4));
-        var _smo = parseInt(_sdate.slice(5,7)), _sdy = parseInt(_sdate.slice(8,10));
-        // MLB 2020: COVID shortened season, playoffs started Sep 29
-        if (_syr === 2020) {
-          if (_smo < 9) return;
-          if (_smo === 9 && _sdy < 29) return;  // before Sep 29 = regular season
-        } else {
-          // Normal years: playoffs never start before Oct 8
-          if (_smo < 10) return;
-          if (_smo === 10 && _sdy < 8) return;
-        }
+        var _sdate = s.date, _smo = parseInt(_sdate.slice(5,7)), _sdy = parseInt(_sdate.slice(8,10));
+        // Skip anything before October (regular season)
+        if (_smo < 10) return;
+        // Skip Oct 1-7 entirely - playoffs never start before Oct 8
+        if (_smo === 10 && _sdy < 8) return;
       }
       var teamKey = [s.t1, s.t2].sort().join('||');
       var key = o + '||' + teamKey;
@@ -1732,12 +1657,9 @@ window.initSportPage = function(CFG) {
     var seriesList = Object.keys(mergedMap).map(function(k){ return mergedMap[k]; })
       .sort(function(a,b){ return (a.date||'').localeCompare(b.date||''); });
 
-    // Determine done/loser from win counts; cap wins at series WTA
+    // Determine done/loser from win counts
     seriesList.forEach(function(s) {
       var wta = getSeriesWTA(s.order);
-      // Cap wins at WTA (R sometimes over-accumulates when team pair plays in multiple rounds)
-      if (s.w1 > wta) s.w1 = wta;
-      if (s.w2 > wta) s.w2 = wta;
       if (!s.done && (s.w1 >= wta || s.w2 >= wta)) {
         s.done = true;
         s.loser = s.w1 >= wta ? s.t2 : s.t1;
