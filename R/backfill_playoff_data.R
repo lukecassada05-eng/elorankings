@@ -214,7 +214,7 @@ fetch_cbb_games <- function(season_yr) {
 }
 
 # ── Build series from games ─────────────────────────────────────────────────
-build_series <- function(games, win_to_advance) {
+build_series <- function(games, win_to_advance, sport="") {
   if (length(games) == 0) return(list(series = list(), eliminated = list()))
 
   # Group by (round, team_pair) — each unique pairing per round = one series
@@ -237,7 +237,15 @@ build_series <- function(games, win_to_advance) {
   all_series <- list(); all_elim <- c()
   for (key in names(groups)) {
     s     <- groups[[key]]
-    done  <- (s$w1 >= win_to_advance || s$w2 >= win_to_advance)
+    # For MLB: Wild Card is best-of-3 (first to 2), DS best-of-5 (first to 3), CS/WS best-of-7
+    rnd_wta <- win_to_advance
+    if (sport == "MLB") {
+      rn_low <- tolower(s$round)
+      if (grepl("wild.?card|alwc|nlwc", rn_low)) rnd_wta <- 2L
+      else if (grepl("alds|nlds|division", rn_low)) rnd_wta <- 3L
+      else rnd_wta <- 4L
+    }
+    done  <- (s$w1 >= rnd_wta || s$w2 >= rnd_wta)
     loser <- if (done) (if (s$w1 < s$w2) s$t1 else s$t2) else ""
     if (done && nchar(loser) > 0) all_elim <- c(all_elim, loser)
     fd  <- if (length(s$dates) > 0) min(s$dates) else ""
@@ -298,19 +306,58 @@ write_tournament_json <- function(sport, season_yr, games_yr, out_dir,
 }
 
 # ── Configs ─────────────────────────────────────────────────────────────────
+# Per-year date overrides for COVID/unusual seasons
+get_dates <- function(sport, yr, games_yr) {
+  # Default date ranges
+  defaults <- list(
+    NBA   = list(smo=4,  sdy=12, emo=6,  edy=30),
+    NHL   = list(smo=4,  sdy=11, emo=7,  edy=15),
+    MLB   = list(smo=10, sdy=1,  emo=11, edy=10),
+    NFL   = list(smo=1,  sdy=11, emo=2,  edy=13),
+    CBB   = list(smo=3,  sdy=14, emo=4,  edy=10),
+    CBASE = list(smo=5,  sdy=28, emo=6,  edy=25)
+  )
+  d <- defaults[[sport]]
+
+  # COVID/unusual overrides
+  if (sport == "NBA" && yr == 2020) {
+    # Bubble season: Jul 30 - Oct 11
+    d$smo <- 7; d$sdy <- 30; d$emo <- 10; d$edy <- 15
+  }
+  if (sport == "NBA" && yr == 2021) {
+    # Delayed season, playoffs May 22 - Jul 22
+    d$smo <- 5; d$sdy <- 18; d$emo <- 7; d$edy <- 25
+  }
+  if (sport == "NHL" && games_yr == 2020) {
+    # Bubble: Aug 1 - Sep 28
+    d$smo <- 8; d$sdy <- 1; d$emo <- 9; d$edy <- 30
+  }
+  if (sport == "NHL" && games_yr == 2021) {
+    # Delayed season: May 13 - Jul 7
+    d$smo <- 5; d$sdy <- 13; d$emo <- 7; d$edy <- 10
+  }
+  if (sport == "MLB" && yr == 2020) {
+    # 60-game season: playoffs Sep 29 - Oct 28
+    d$smo <- 9; d$sdy <- 29; d$emo <- 10; d$edy <- 30
+  }
+  if (sport == "MLB" && yr == 2021) {
+    # Wild Card added a third game: Oct 5-6 start
+    d$smo <- 10; d$sdy <- 1; d$emo <- 11; d$edy <- 5
+  }
+  if (sport == "NFL" && games_yr == 2021) {
+    # Extra wild card game added (14 teams): Jan 14-17
+    d$smo <- 1; d$sdy <- 10; d$emo <- 2; d$edy <- 15
+  }
+  d
+}
+
 configs <- list(
-  list(sport="NBA",   dir="docs/NBA/data",   win=4,
-       smo=4,  sdy=12, emo=6,  edy=30, seasons=2002:2026, off=0),
-  list(sport="NHL",   dir="docs/NHL/data",   win=4,
-       smo=4,  sdy=11, emo=7,  edy=15, seasons=2013:2026, off=0),
-  list(sport="MLB",   dir="docs/MLB/data",   win=3,
-       smo=10, sdy=1,  emo=11, edy=10, seasons=2001:2026, off=0),
-  list(sport="NFL",   dir="docs/NFL/data",   win=1,
-       smo=1,  sdy=11, emo=2,  edy=10, seasons=2001:2025, off=1),
-  list(sport="CBB",   dir="docs/CBB/data",   win=1,
-       smo=3,  sdy=14, emo=4,  edy=10, seasons=2003:2026, off=0),
-  list(sport="CBASE", dir="docs/CollegeBaseball/data", win=2,
-       smo=5,  sdy=28, emo=6,  edy=25, seasons=2018:2026, off=0)
+  list(sport="NBA",   dir="docs/NBA/data",   win=4, seasons=2002:2026, off=0),
+  list(sport="NHL",   dir="docs/NHL/data",   win=4, seasons=2013:2026, off=0),
+  list(sport="MLB",   dir="docs/MLB/data",   win=3, seasons=2001:2026, off=0),
+  list(sport="NFL",   dir="docs/NFL/data",   win=1, seasons=2001:2025, off=1),
+  list(sport="CBB",   dir="docs/CBB/data",   win=1, seasons=2003:2026, off=0),
+  list(sport="CBASE", dir="docs/CollegeBaseball/data", win=2, seasons=2018:2026, off=0)
 )
 
 for (cfg in configs) {
@@ -318,12 +365,13 @@ for (cfg in configs) {
   dir.create(cfg$dir, showWarnings = FALSE, recursive = TRUE)
   for (yr in cfg$seasons) {
     games_yr <- yr + cfg$off
+    dates <- get_dates(cfg$sport, yr, games_yr)
     message("  ", cfg$sport, " ", yr, " (games_yr=", games_yr, ")")
     write_tournament_json(
       sport = cfg$sport, season_yr = yr, games_yr = games_yr,
       out_dir = cfg$dir, win_to_advance = cfg$win,
-      start_mo = cfg$smo, start_day = cfg$sdy,
-      end_mo   = cfg$emo, end_day   = cfg$edy
+      start_mo = dates$smo, start_day = dates$sdy,
+      end_mo   = dates$emo, end_day   = dates$edy
     )
     Sys.sleep(0.25)
   }
