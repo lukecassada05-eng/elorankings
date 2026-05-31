@@ -18,6 +18,7 @@ window.initSportPage = function(CFG) {
       if (tab.dataset.tab === 'byconf')       renderByConf();
       if (tab.dataset.tab === 'predictor')    renderPredictor();
       if (tab.dataset.tab === 'bracketology') renderBracketology();
+      if (tab.dataset.tab === 'preview')       { renderPreview(); }
       if (tab.dataset.tab === 'tourney')       { if(CFG.sport==='CBASE') renderCBaseTourney(); else renderTourney(); }
       if (tab.dataset.tab === 'resume')       renderResume();
       if (tab.dataset.tab === 'history')      renderHistory();
@@ -1446,6 +1447,185 @@ window.initSportPage = function(CFG) {
       });
   }
 
+  function renderPreview() {
+    var el = document.getElementById('panel-preview');
+    if (!el) return;
+    if (!data || !data.length) {
+      el.innerHTML = '<div class="empty-state">Load a season first.</div>';
+      return;
+    }
+
+    var yr = currentSeason || new Date().getFullYear();
+    var now = new Date();
+    var sportName = {NBA:'NBA',NHL:'NHL',MLB:'MLB',NFL:'NFL',CBB:'NCAA Basketball',CBASE:'NCAA Baseball'}[CFG.sport] || CFG.sport;
+    var icon = {NBA:'🏀',NHL:'🏒',MLB:'⚾',NFL:'🏈',CBB:'🏀',CBASE:'⚾'}[CFG.sport] || '🏆';
+
+    // Sort teams by Elo descending
+    var sorted = data.slice().sort(function(a,b){ return b.elo - a.elo; });
+    var avg = sorted.reduce(function(s,r){ return s+r.elo; },0) / (sorted.length||1);
+    var top5 = sorted.slice(0,5);
+    var bot5 = sorted.slice(-5).reverse();
+
+    // Contender tier thresholds
+    function tier(elo) {
+      if (elo >= avg + 100) return {label:'Elite', cls:'tier-elite'};
+      if (elo >= avg + 30)  return {label:'Contender', cls:'tier-contend'};
+      if (elo >= avg - 30)  return {label:'Bubble', cls:'tier-bubble'};
+      if (elo >= avg - 100) return {label:'Rebuilding', cls:'tier-rebuild'};
+      return {label:'Lottery', cls:'tier-lottery'};
+    }
+
+    // Win probability function
+    function wp(a, b) { return 1 / (1 + Math.pow(10, (b - a) / 400)); }
+
+    // Build title odds (simulate 2000 iterations)
+    var champCount = {};
+    sorted.forEach(function(r){ champCount[r.team] = 0; });
+    var N = 2000;
+    var n = CFG.sport === 'NFL' ? 14 : CFG.sport === 'MLB' ? 12 : CFG.sport === 'CBB' ? 16 : 16;
+    var pool = sorted.slice(0, n);
+    for (var sim = 0; sim < N; sim++) {
+      var alive = pool.slice();
+      while (alive.length > 1) {
+        var nx = [];
+        for (var i = 0; i < alive.length; i += 2) {
+          if (i + 1 >= alive.length) { nx.push(alive[i]); continue; }
+          nx.push(Math.random() < wp(alive[i].elo, alive[i+1].elo) ? alive[i] : alive[i+1]);
+        }
+        alive = nx;
+      }
+      if (alive[0] && champCount[alive[0].team] !== undefined) champCount[alive[0].team]++;
+    }
+
+    // Season context: detect if in-season vs offseason
+    var mo = now.getMonth() + 1;
+    var inSeason = {
+      NBA:  mo >= 10 || mo <= 6,
+      NHL:  mo >= 10 || mo <= 6,
+      MLB:  mo >= 3  && mo <= 10,
+      NFL:  mo >= 9  || mo <= 2,
+      CBB:  mo >= 11 || mo <= 4,
+      CBASE: mo >= 2 && mo <= 6
+    }[CFG.sport] || true;
+
+    // Key storylines based on Elo gaps
+    var leader = sorted[0], secondPlace = sorted[1];
+    var eloDiff = leader.elo - secondPlace.elo;
+    var storylines = [];
+    if (eloDiff > 80) storylines.push(leader.team + ' are the clear frontrunner with a dominant Elo advantage of ' + Math.round(eloDiff) + ' points over ' + secondPlace.team + '.');
+    else if (eloDiff < 20) storylines.push('An extremely tight race at the top — ' + leader.team + ' and ' + secondPlace.team + ' are separated by just ' + Math.round(eloDiff) + ' Elo points.');
+    else storylines.push(leader.team + ' lead the ' + yr + ' field by ' + Math.round(eloDiff) + ' Elo points over ' + secondPlace.team + '.');
+
+    var worstTeam = sorted[sorted.length - 1];
+    if (worstTeam.elo < avg - 150) storylines.push(worstTeam.team + ' enter as heavy underdogs with an Elo of ' + Math.round(worstTeam.elo) + ', over 150 points below average.');
+
+    // Build HTML
+    var h = '';
+    h += '<div class="section-header"><span>' + icon + ' ' + yr + ' ' + sportName + ' Season Preview</span>';
+    h += '<span style="font-size:0.65rem;color:var(--text-dim)">' + (inSeason ? '🟢 In season' : '⚪ Offseason') + '</span></div>';
+
+    // Updated timestamp
+    if (data[0] && data[0].updated) {
+      h += '<div style="font-size:0.6rem;color:var(--text-dim);margin-bottom:1rem">Elo ratings as of ' + data[0].updated + '</div>';
+    }
+
+    // Key storylines
+    h += '<div style="margin-bottom:1.5rem">';
+    h += '<div style="font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim);margin-bottom:0.5rem">Key storylines</div>';
+    storylines.forEach(function(s) {
+      h += '<div style="font-size:0.8rem;padding:0.5rem 0.75rem;border-left:2px solid var(--accent);margin-bottom:0.5rem;line-height:1.5">' + s + '</div>';
+    });
+    h += '</div>';
+
+    // Top 5 + Bottom 5 side by side
+    h += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem">';
+    function teamRows(list, title) {
+      var s2 = '<div><div style="font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim);margin-bottom:0.5rem">' + title + '</div>';
+      s2 += '<div class="card" style="padding:0">';
+      list.forEach(function(r, i) {
+        var t = tier(r.elo);
+        var odds = Math.round((champCount[r.team]||0)/N*100);
+        s2 += '<div style="display:flex;align-items:center;gap:0.5rem;padding:0.45rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.04)">';
+        s2 += '<span style="font-size:0.7rem;color:var(--text-dim);min-width:1.2rem">' + (i+1) + '</span>';
+        s2 += '<span style="flex:1;font-size:0.78rem;font-weight:600;color:var(--accent)">' + r.team + '</span>';
+        s2 += '<span style="font-size:0.65rem;color:var(--text-dim);font-family:var(--font-mono)">' + Math.round(r.elo) + '</span>';
+        s2 += '<span class="tier-badge ' + t.cls + '">' + t.label + '</span>';
+        if (odds > 0) s2 += '<span style="font-size:0.65rem;color:var(--text-dim);min-width:2.5rem;text-align:right">' + odds + '% title</span>';
+        s2 += '</div>';
+      });
+      s2 += '</div></div>';
+      return s2;
+    }
+    h += teamRows(top5, '🔥 Top contenders');
+    h += teamRows(bot5, '🎯 Lottery watch');
+    h += '</div>';
+
+    // Full power rankings table
+    h += '<div style="font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim);margin-bottom:0.5rem">Full power rankings — ' + yr + '</div>';
+    h += '<div class="card" style="padding:0;overflow-x:auto">';
+    h += '<table style="width:100%;border-collapse:collapse;font-size:0.75rem">';
+    h += '<thead><tr style="border-bottom:1px solid rgba(255,255,255,0.1)">';
+    h += '<th style="text-align:left;padding:0.4rem 0.75rem;color:var(--text-dim);font-size:0.6rem;font-weight:600">#</th>';
+    h += '<th style="text-align:left;padding:0.4rem 0.75rem;color:var(--text-dim);font-size:0.6rem;font-weight:600">Team</th>';
+    h += '<th style="text-align:right;padding:0.4rem 0.75rem;color:var(--text-dim);font-size:0.6rem;font-weight:600">Elo</th>';
+    h += '<th style="text-align:right;padding:0.4rem 0.75rem;color:var(--text-dim);font-size:0.6rem;font-weight:600">vs Avg</th>';
+    h += '<th style="padding:0.4rem 0.75rem;color:var(--text-dim);font-size:0.6rem;font-weight:600">Tier</th>';
+    h += '<th style="text-align:right;padding:0.4rem 0.75rem;color:var(--accent);font-size:0.6rem;font-weight:600">Title %</th>';
+    h += '</tr></thead><tbody>';
+
+    sorted.forEach(function(r, i) {
+      var t = tier(r.elo);
+      var diff = r.elo - avg;
+      var diffStr = (diff >= 0 ? '+' : '') + Math.round(diff);
+      var diffColor = diff >= 30 ? 'var(--green-hi)' : diff <= -30 ? 'var(--red-hi)' : 'var(--text-dim)';
+      var odds = Math.round((champCount[r.team]||0)/N*100);
+      var barW = Math.min(100, Math.max(0, odds * 4));
+      h += '<tr style="border-bottom:1px solid rgba(255,255,255,0.04)">';
+      h += '<td style="padding:0.3rem 0.75rem;color:var(--text-dim)">' + (i+1) + '</td>';
+      h += '<td style="padding:0.3rem 0.75rem;font-weight:600;color:var(--accent)">' + r.team + '</td>';
+      h += '<td style="padding:0.3rem 0.75rem;text-align:right;font-family:var(--font-mono)">' + Math.round(r.elo) + '</td>';
+      h += '<td style="padding:0.3rem 0.75rem;text-align:right;font-family:var(--font-mono);color:' + diffColor + '">' + diffStr + '</td>';
+      h += '<td style="padding:0.3rem 0.75rem"><span class="tier-badge ' + t.cls + '">' + t.label + '</span></td>';
+      h += '<td style="padding:0.3rem 0.75rem"><div style="display:flex;align-items:center;gap:0.4rem;justify-content:flex-end">';
+      h += '<span style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim);min-width:2.5rem;text-align:right">' + odds + '%</span>';
+      h += '<div style="width:50px;height:4px;background:var(--bg3);border-radius:2px;overflow:hidden"><div style="width:' + barW + '%;height:100%;background:var(--accent);border-radius:2px"></div></div>';
+      h += '</div></td></tr>';
+    });
+    h += '</tbody></table></div>';
+
+    // Share button
+    h += '<div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap">';
+    h += '<button onclick="_sharePreview()" style="padding:0.4rem 1rem;border:1px solid var(--border);background:var(--bg3);border-radius:var(--radius);cursor:pointer;font-size:0.75rem;color:var(--text)">📤 Share rankings</button>';
+    h += '</div>';
+
+    el.innerHTML = h;
+
+    // Inject tier badge styles if not present
+    if (!document.getElementById('tier-styles')) {
+      var style = document.createElement('style');
+      style.id = 'tier-styles';
+      style.textContent = '.tier-badge{font-size:0.6rem;padding:0.15rem 0.4rem;border-radius:3px;font-weight:600;white-space:nowrap}'
+        + '.tier-elite{background:rgba(226,201,126,0.15);color:var(--accent)}'
+        + '.tier-contend{background:rgba(100,200,100,0.12);color:var(--green-hi)}'
+        + '.tier-bubble{background:rgba(180,180,180,0.1);color:var(--text-dim)}'
+        + '.tier-rebuild{background:rgba(200,100,100,0.1);color:var(--red-hi)}'
+        + '.tier-lottery{background:rgba(200,100,100,0.15);color:var(--red-hi)}';
+      document.head.appendChild(style);
+    }
+  }
+
+  function _sharePreview() {
+    var yr = currentSeason || new Date().getFullYear();
+    var sorted = data.slice().sort(function(a,b){ return b.elo-a.elo; });
+    var top3 = sorted.slice(0,3).map(function(r,i){ return '#'+(i+1)+' '+r.team+' ('+Math.round(r.elo)+')'; });
+    var text = '🏆 ' + yr + ' ' + CFG.sport + ' Power Rankings\n' + top3.join(' · ') + '\nFull rankings + title odds: elorankings.com';
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(function(){ alert('Copied to clipboard! Ready to paste to Twitter/X.'); });
+    }
+  }
+
+
+
   function _renderTourneyData(el, d) {
     // ── Elo lookup ─────────────────────────────────────────────
     var eloMap = {};
@@ -1495,15 +1675,32 @@ window.initSportPage = function(CFG) {
           var mo = parseInt(date.slice(5,7)), dy = parseInt(date.slice(8,10));
           if (mo === 2 && dy <= 15) return 3;        // Feb = Super Bowl
           if (mo === 1 && dy >= 24) return 2;        // Jan 24+ = Conference
-          if (mo === 1 && dy >= 16) return 1;        // Jan 16-23 = Divisional
-          if (mo === 1 && dy >= 10) return 0;        // Jan 10-15 = Wild Card
+          if (mo === 1 && dy >= 18) return 1;        // Jan 18-23 = Divisional
+          if (mo === 1 && dy >= 10) return 0;        // Jan 10-17 = Wild Card
         }
         return -1; // Skip unidentifiable NFL games
       }
 
       // ── NBA ────────────────────────────────────────────────────
       if (sport === 'NBA') {
-        if (!r) return -1;
+        if (!r) {
+          // No round name — infer from date (early ESPN years had no round labels)
+          if (!date) return -1;
+          var _yr=parseInt(date.slice(0,4)), _mo=parseInt(date.slice(5,7)), _dy=parseInt(date.slice(8,10));
+          // NBA 2020 bubble: playoffs ran Jul-Oct in Orlando
+          if (_yr === 2020 && _mo >= 7) {
+            if (_mo === 10) return 4;  // Oct = NBA Finals
+            if (_mo === 9)  return 3;  // Sep = Conf Finals
+            if (_mo === 8)  return 2;  // Aug = Conf Semis
+            return 1;                   // Jul = First Round
+          }
+          // Normal calendar
+          if (_mo === 6 && _dy >= 1)  return 4;  // NBA Finals (June 1+)
+          if (_mo === 5 && _dy >= 18) return 3;  // Conf Finals (May 18+)
+          if (_mo === 5 && _dy >= 3)  return 2;  // Conf Semis (May 3+)
+          if (_mo >= 4)               return 1;  // First Round (Apr+)
+          return -1;
+        }
         if (r.indexOf('play-in') !== -1 || r.indexOf('playin') !== -1) return 0;
         if (r.indexOf('first round') !== -1 || r.indexOf('1st round') !== -1) return 1;
         if (r.indexOf('second round') !== -1 || r.indexOf('2nd round') !== -1) return 2;
@@ -1519,7 +1716,33 @@ window.initSportPage = function(CFG) {
 
       // ── NHL ────────────────────────────────────────────────────
       if (sport === 'NHL') {
-        if (!r) return -1;
+        if (!r) {
+          // Infer from date for early ESPN years
+          if (!date) return -1;
+          var _nyr=parseInt(date.slice(0,4)), _nmo=parseInt(date.slice(5,7)), _ndy=parseInt(date.slice(8,10));
+          // NHL 2020 bubble: played Aug-Sep in Toronto/Edmonton
+          if (_nyr === 2020 && _nmo >= 8) {
+            if (_nmo === 9 && _ndy >= 22) return 4;  // Stanley Cup Final
+            if (_nmo === 9 || (_nmo === 8 && _ndy >= 26)) return 3;  // Conf Finals
+            if (_nmo === 8 && _ndy >= 12) return 2;  // Conf Semis
+            return 1;  // First Round / Qualifying
+          }
+          // NHL 2021 shortened season: playoffs started May 13 (later than normal)
+          if (_nyr === 2021) {
+            if (_nmo === 7) return 4;
+            if (_nmo === 6 && _ndy >= 15) return 4;
+            if (_nmo === 6) return 3;
+            if (_nmo === 5 && _ndy >= 28) return 2;
+            if (_nmo >= 5) return 1;
+            return -1;
+          }
+          // Normal calendar
+          if (_nmo === 6 && _ndy >= 10) return 4;  // SCF (Jun 10+)
+          if (_nmo === 6 || (_nmo === 5 && _ndy >= 18)) return 3;  // Conf Finals
+          if (_nmo === 5 && _ndy >= 3)  return 2;  // Conf Semis
+          if (_nmo >= 4)                return 1;  // First Round
+          return -1;
+        }
         if (r.indexOf('play-in') !== -1 || r.indexOf('qualifying') !== -1) return 0;
         if (r.indexOf('quarterfinal') !== -1 || r.indexOf('1st round') !== -1 || r.indexOf('first round') !== -1) return 1;
         if (r.indexOf('2nd round') !== -1 || r.indexOf('second round') !== -1) return 2;
@@ -1541,10 +1764,17 @@ window.initSportPage = function(CFG) {
         if (/^\d+$/.test(r)) return -1;
         // Infer from date when round is empty
         if (!r && date) {
-          var mo2 = parseInt(date.slice(5,7)), dy2 = parseInt(date.slice(8,10));
-          if (mo2 === 11 || (mo2 === 10 && dy2 >= 25)) return 3;  // WS
-          if (mo2 === 10 && dy2 >= 13) return 2;                   // CS
-          if (mo2 === 10 && dy2 >= 1) return 1;                    // DS
+          var yr2=parseInt(date.slice(0,4)), mo2 = parseInt(date.slice(5,7)), dy2 = parseInt(date.slice(8,10));
+          // MLB 2020: shortened season, all dates shifted ~3 weeks earlier
+          if (yr2 === 2020) {
+            if (mo2 === 10 && dy2 >= 21) return 3;  // WS
+            if (mo2 === 10 && dy2 >= 12) return 2;  // ALCS/NLCS
+            if (mo2 >= 10 || (mo2 === 9 && dy2 >= 29)) return 1;  // DS
+          } else {
+            if (mo2 === 11 || (mo2 === 10 && dy2 >= 25)) return 3;  // WS
+            if (mo2 === 10 && dy2 >= 13) return 2;                   // CS
+            if (mo2 === 10 && dy2 >= 1) return 1;                    // DS
+          }
         }
         if (!r) return -1; // skip empty MLB rounds without dates
         return 1;
@@ -1591,7 +1821,13 @@ window.initSportPage = function(CFG) {
     // ── Filter, normalise & merge series ──────────────────────────
     var rawSeries = (d.series || []).filter(function(s) {
       var rnd = normaliseRound(s.round || '');
-      if (CFG.sport === 'NBA' || CFG.sport === 'NHL') return !!rnd;
+      // NHL: filter empty rounds (late-season regular season games)
+      if (CFG.sport === 'NHL' && !rnd) return false;
+      // NBA: empty-round entries are either reg season noise OR early-year playoff data
+      // Keep only if: has a named round, OR is clearly a playoff series (3+ total wins)
+      if (CFG.sport === 'NBA' && !rnd) {
+        return s.done || ((s.w1||0) + (s.w2||0)) >= 3;
+      }
       if (CFG.sport === 'CBASE') return getRoundOrder(rnd, 'CBASE') >= 0;
       return true;
     });
@@ -1609,11 +1845,17 @@ window.initSportPage = function(CFG) {
       // (DS doesn't start until ~Oct 5-8 historically)
       if (CFG.sport === 'MLB' && !(normaliseRound(s.round||''))) {
         if (!s.date) return;
-        var _sdate = s.date, _smo = parseInt(_sdate.slice(5,7)), _sdy = parseInt(_sdate.slice(8,10));
-        // Skip anything before October (regular season)
-        if (_smo < 10) return;
-        // Skip Oct 1-7 entirely - playoffs never start before Oct 8
-        if (_smo === 10 && _sdy < 8) return;
+        var _sdate = s.date, _syr = parseInt(_sdate.slice(0,4));
+        var _smo = parseInt(_sdate.slice(5,7)), _sdy = parseInt(_sdate.slice(8,10));
+        // MLB 2020: COVID shortened season, playoffs started Sep 29
+        if (_syr === 2020) {
+          if (_smo < 9) return;
+          if (_smo === 9 && _sdy < 29) return;  // before Sep 29 = regular season
+        } else {
+          // Normal years: playoffs never start before Oct 8
+          if (_smo < 10) return;
+          if (_smo === 10 && _sdy < 8) return;
+        }
       }
       var teamKey = [s.t1, s.t2].sort().join('||');
       var key = o + '||' + teamKey;
@@ -1657,9 +1899,12 @@ window.initSportPage = function(CFG) {
     var seriesList = Object.keys(mergedMap).map(function(k){ return mergedMap[k]; })
       .sort(function(a,b){ return (a.date||'').localeCompare(b.date||''); });
 
-    // Determine done/loser from win counts
+    // Determine done/loser from win counts; cap wins at series WTA
     seriesList.forEach(function(s) {
       var wta = getSeriesWTA(s.order);
+      // Cap wins at WTA (R sometimes over-accumulates when team pair plays in multiple rounds)
+      if (s.w1 > wta) s.w1 = wta;
+      if (s.w2 > wta) s.w2 = wta;
       if (!s.done && (s.w1 >= wta || s.w2 >= wta)) {
         s.done = true;
         s.loser = s.w1 >= wta ? s.t2 : s.t1;
