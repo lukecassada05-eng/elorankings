@@ -1,4 +1,1799 @@
 {
-  "games": [],
-  "updated": "2026-06-02 05:42 UTC"
+  "year": 2026,
+  "sport": "CBASE",
+  "completed": false,
+  "games": [
+    {
+      "winner": "Saint Mary's Gaels",
+      "loser": "UCLA Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Los Angeles Regional"
+    },
+    {
+      "winner": "Georgia Tech Yellow Jackets",
+      "loser": "UIC Flames",
+      "winner_score": 22,
+      "loser_score": 5,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Atlanta Regional"
+    },
+    {
+      "winner": "Georgia Bulldogs",
+      "loser": "Long Island University Sharks",
+      "winner_score": 18,
+      "loser_score": 2,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Athens Regional"
+    },
+    {
+      "winner": "Milwaukee Panthers",
+      "loser": "Auburn Tigers",
+      "winner_score": 13,
+      "loser_score": 8,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Auburn Regional"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "VCU Rams",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Holy Cross Crusaders",
+      "winner_score": 19,
+      "loser_score": 1,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Austin Regional"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Alabama State Hornets",
+      "winner_score": 21,
+      "loser_score": 3,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Rider Broncs",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Gainesville Regional"
+    },
+    {
+      "winner": "Little Rock Trojans",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional"
+    },
+    {
+      "winner": "St. John's Red Storm",
+      "loser": "Florida State Seminoles",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Tallahassee Regional"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Yale Bulldogs",
+      "winner_score": 14,
+      "loser_score": 2,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Eugene Regional"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Lamar Cardinals",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - College Station Regional"
+    },
+    {
+      "winner": "Nebraska Cornhuskers",
+      "loser": "South Dakota State Jackrabbits",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Lincoln Regional"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Lipscomb Bisons",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Starkville Regional"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Northeastern Huskies",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Lawrence Regional"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Binghamton Bearcats",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Morgantown Regional"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Wake Forest Demon Deacons",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Morgantown Regional"
+    },
+    {
+      "winner": "Liberty Flames",
+      "loser": "Boston College Eagles",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Athens Regional"
+    },
+    {
+      "winner": "South Carolina Upstate Spartans",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional"
+    },
+    {
+      "winner": "Washington State Cougars",
+      "loser": "Oregon State Beavers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Eugene Regional"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Missouri State Bears",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Lawrence Regional"
+    },
+    {
+      "winner": "Tarleton State Texans",
+      "loser": "UC Santa Barbara Gauchos",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Austin Regional"
+    },
+    {
+      "winner": "Jacksonville State Gamecocks",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 15,
+      "loser_score": 7,
+      "date": "2026-05-29",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional"
+    },
+    {
+      "winner": "UCF Knights",
+      "loser": "NC State Wolfpack",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Auburn Regional"
+    },
+    {
+      "winner": "Cincinnati Bearcats",
+      "loser": "Louisiana Ragin' Cajuns",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Starkville Regional"
+    },
+    {
+      "winner": "Cal Poly Mustangs",
+      "loser": "Virginia Tech Hokies",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Los Angeles Regional"
+    },
+    {
+      "winner": "Texas State Bobcats",
+      "loser": "USC Trojans",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - College Station Regional"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Lincoln Regional"
+    },
+    {
+      "winner": "Northern Illinois Huskies",
+      "loser": "Coastal Carolina Chanticleers",
+      "winner_score": 12,
+      "loser_score": 10,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Tallahassee Regional"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Troy Trojans",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Gainesville Regional"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Virginia Tech Hokies",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Los Angeles Regional - Elimination Game"
+    },
+    {
+      "winner": "Georgia Tech Yellow Jackets",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Atlanta Regional"
+    },
+    {
+      "winner": "Georgia Bulldogs",
+      "loser": "Liberty Flames",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Athens Regional"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "NC State Wolfpack",
+      "winner_score": 17,
+      "loser_score": 13,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Auburn Regional - Elimination Game"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "East Carolina Pirates",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Tarleton State Texans",
+      "winner_score": 16,
+      "loser_score": 2,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Austin Regional"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "South Carolina Upstate Spartans",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Miami Hurricanes",
+      "winner_score": 22,
+      "loser_score": 10,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Gainesville Regional"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 15,
+      "loser_score": 11,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional - Elimination Game"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Coastal Carolina Chanticleers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - Elimination Game"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Washington State Cougars",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Eugene Regional"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Texas State Bobcats",
+      "winner_score": 17,
+      "loser_score": 2,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - College Station Regional"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Nebraska Cornhuskers",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Lincoln Regional"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Starkville Regional"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Lawrence Regional"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 11,
+      "loser_score": 9,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Morgantown Regional"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "The Citadel Bulldogs",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Atlanta Regional Rescheduled from 5/29"
+    },
+    {
+      "winner": "Wake Forest Demon Deacons",
+      "loser": "Binghamton Bearcats",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Morgantown Regional - Elimination Game"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - Elimination Game"
+    },
+    {
+      "winner": "Boston College Eagles",
+      "loser": "Long Island University Sharks",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Athens Regional - Elimination Game"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Alabama State Hornets",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional - Elimination Game"
+    },
+    {
+      "winner": "UC Santa Barbara Gauchos",
+      "loser": "Holy Cross Crusaders",
+      "winner_score": 15,
+      "loser_score": 1,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Austin Regional - Elimination Game"
+    },
+    {
+      "winner": "The Citadel Bulldogs",
+      "loser": "UIC Flames",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Atlanta Regional - Elimination Game"
+    },
+    {
+      "winner": "Northeastern Huskies",
+      "loser": "Missouri State Bears",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Lawrence Regional - Elimination Game"
+    },
+    {
+      "winner": "Troy Trojans",
+      "loser": "Rider Broncs",
+      "winner_score": 15,
+      "loser_score": 7,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Elimination Game"
+    },
+    {
+      "winner": "Arizona State Sun Devils",
+      "loser": "South Dakota State Jackrabbits",
+      "winner_score": 17,
+      "loser_score": 0,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Lincoln Regional - Elimination Game"
+    },
+    {
+      "winner": "Oregon State Beavers",
+      "loser": "Yale Bulldogs",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Eugene Regional - Elimination Game"
+    },
+    {
+      "winner": "USC Trojans",
+      "loser": "Lamar Cardinals",
+      "winner_score": 19,
+      "loser_score": 6,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - College Station Regional - Elimination Game"
+    },
+    {
+      "winner": "Louisiana Ragin' Cajuns",
+      "loser": "Lipscomb Bisons",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2026-05-30",
+      "round": "NCAA Baseball Championship - Starkville Regional - Elimination Game"
+    },
+    {
+      "winner": "Milwaukee Panthers",
+      "loser": "UCF Knights",
+      "winner_score": 13,
+      "loser_score": 6,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Auburn Regional"
+    },
+    {
+      "winner": "Little Rock Trojans",
+      "loser": "Jacksonville State Gamecocks",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional"
+    },
+    {
+      "winner": "Cal Poly Mustangs",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 14,
+      "loser_score": 1,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Los Angeles Regional"
+    },
+    {
+      "winner": "Saint Mary's Gaels",
+      "loser": "UCLA Bruins",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Los Angeles Regional - Elimination Game"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Georgia Tech Yellow Jackets",
+      "winner_score": 15,
+      "loser_score": 8,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Atlanta Regional"
+    },
+    {
+      "winner": "Georgia Bulldogs",
+      "loser": "Liberty Flames",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Athens Regional - Georgia advances to Super Regional"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "UCF Knights",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Auburn Regional - Elimination Game"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Milwaukee Panthers",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Auburn Regional"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "East Carolina Pirates",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - North Carolina advances to Super Regional"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "UC Santa Barbara Gauchos",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Austin Regional - Texas advances to Super Regional"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 9,
+      "loser_score": 7,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional - Alabama advances to Super Regional"
+    },
+    {
+      "winner": "Troy Trojans",
+      "loser": "Florida Gators",
+      "winner_score": 16,
+      "loser_score": 11,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Gainesville Regional"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Northern Illinois Huskies",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - Elimination Game"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Oregon State Beavers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Eugene Regional - Oregon advances to Super Regional"
+    },
+    {
+      "winner": "USC Trojans",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 14,
+      "loser_score": 3,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - College Station Regional"
+    },
+    {
+      "winner": "Arizona State Sun Devils",
+      "loser": "Nebraska Cornhuskers",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Lincoln Regional - Elimination Game"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Louisiana Ragin' Cajuns",
+      "winner_score": 19,
+      "loser_score": 5,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Starkville Regional - Mississippi State advances to Super Regional"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 13,
+      "loser_score": 10,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Lawrence Regional - Kansas advances to Super Regional"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Wake Forest Demon Deacons",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Morgantown Regional - Elimination Game"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 11,
+      "loser_score": 9,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Morgantown Regional"
+    },
+    {
+      "winner": "Troy Trojans",
+      "loser": "Miami Hurricanes",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Elimination Game"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "VCU Rams",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - Elimination Game"
+    },
+    {
+      "winner": "Liberty Flames",
+      "loser": "Boston College Eagles",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Athens Regional - Elimination Game"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "The Citadel Bulldogs",
+      "winner_score": 15,
+      "loser_score": 5,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Atlanta Regional - Elimination Game"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Northeastern Huskies",
+      "winner_score": 10,
+      "loser_score": 9,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Lawrence Regional - Elimination Game"
+    },
+    {
+      "winner": "UC Santa Barbara Gauchos",
+      "loser": "Tarleton State Texans",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Austin Regional - Elimination Game"
+    },
+    {
+      "winner": "St. John's Red Storm",
+      "loser": "Northern Illinois Huskies",
+      "winner_score": 21,
+      "loser_score": 8,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Tallahassee Regional"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "South Carolina Upstate Spartans",
+      "winner_score": 12,
+      "loser_score": 1,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional - Elimination Game"
+    },
+    {
+      "winner": "Louisiana Ragin' Cajuns",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Starkville Regional - Elimination Game"
+    },
+    {
+      "winner": "Jacksonville State Gamecocks",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional - Elimination Game"
+    },
+    {
+      "winner": "Oregon State Beavers",
+      "loser": "Washington State Cougars",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - Eugene Regional - Elimination Game"
+    },
+    {
+      "winner": "USC Trojans",
+      "loser": "Texas State Bobcats",
+      "winner_score": 15,
+      "loser_score": 4,
+      "date": "2026-05-31",
+      "round": "NCAA Baseball Championship - College Station Regional - Elimination Game"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Lincoln Regional - Ole Miss advances to Super Regional"
+    },
+    {
+      "winner": "Little Rock Trojans",
+      "loser": "Jacksonville State Gamecocks",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional - Little Rock advances to Super Regional"
+    },
+    {
+      "winner": "Cal Poly Mustangs",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Los Angeles Regional - Cal Poly advances to Super Regional"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Georgia Tech Yellow Jackets",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Atlanta Regional - Oklahoma advances to Super Regional"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Milwaukee Panthers",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2026-06-02",
+      "round": "NCAA Baseball Championship - Auburn Regional - Auburn advances to Super Regional"
+    },
+    {
+      "winner": "Troy Trojans",
+      "loser": "Florida Gators",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Troy advances to Super Regional"
+    },
+    {
+      "winner": "St. John's Red Storm",
+      "loser": "Florida State Seminoles",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - St. John's advances to Super Regional"
+    },
+    {
+      "winner": "USC Trojans",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2026-06-02",
+      "round": "NCAA Baseball Championship - College Station Regional - USC advances to Super Regional"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2026-06-01",
+      "round": "NCAA Baseball Championship - Morgantown Regional - West Virginia advances to Super Regional"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Saint Mary's Gaels",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Los Angeles Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Georgia Tech Yellow Jackets",
+      "t2": "UIC Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Atlanta Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Georgia Bulldogs",
+      "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Milwaukee Panthers",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Holy Cross Crusaders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Austin Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Alabama State Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Rider Broncs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Little Rock Trojans",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "St. John's Red Storm",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Lamar Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - College Station Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Nebraska Cornhuskers",
+      "t2": "South Dakota State Jackrabbits",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lincoln Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Lipscomb Bisons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Starkville Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lawrence Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Binghamton Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Morgantown Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Wake Forest Demon Deacons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Morgantown Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Liberty Flames",
+      "t2": "Boston College Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "South Carolina Upstate Spartans",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Washington State Cougars",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Missouri State Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lawrence Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Tarleton State Texans",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Austin Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Jacksonville State Gamecocks",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional",
+      "date": "2026-05-29"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Yale Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "UCF Knights",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Cincinnati Bearcats",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Starkville Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Cal Poly Mustangs",
+      "t2": "Virginia Tech Hokies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Los Angeles Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Texas State Bobcats",
+      "t2": "USC Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - College Station Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lincoln Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Northern Illinois Huskies",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Troy Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Virginia Tech Hokies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Los Angeles Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Georgia Tech Yellow Jackets",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Atlanta Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Georgia Bulldogs",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Tarleton State Texans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Austin Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lawrence Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Morgantown Regional",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "The Citadel Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Atlanta Regional Rescheduled from 5/29",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Wake Forest Demon Deacons",
+      "t2": "Binghamton Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Morgantown Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Boston College Eagles",
+      "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Alabama State Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "UC Santa Barbara Gauchos",
+      "t2": "Holy Cross Crusaders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Austin Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "The Citadel Bulldogs",
+      "t2": "UIC Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Atlanta Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Northeastern Huskies",
+      "t2": "Missouri State Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lawrence Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Troy Trojans",
+      "t2": "Rider Broncs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Arizona State Sun Devils",
+      "t2": "South Dakota State Jackrabbits",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lincoln Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Yale Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "USC Trojans",
+      "t2": "Lamar Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - College Station Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "Lipscomb Bisons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Starkville Regional - Elimination Game",
+      "date": "2026-05-30"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "South Carolina Upstate Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Washington State Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Texas State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - College Station Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lincoln Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Starkville Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Milwaukee Panthers",
+      "t2": "UCF Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Little Rock Trojans",
+      "t2": "Jacksonville State Gamecocks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Cal Poly Mustangs",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Los Angeles Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Saint Mary's Gaels",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Los Angeles Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Georgia Bulldogs",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional - Georgia advances to Super Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "UCF Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - North Carolina advances to Super Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Austin Regional - Texas advances to Super Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Troy Trojans",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Northern Illinois Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Arizona State Sun Devils",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lincoln Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lawrence Regional - Kansas advances to Super Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Wake Forest Demon Deacons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Morgantown Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Troy Trojans",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Liberty Flames",
+      "t2": "Boston College Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Athens Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "The Citadel Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Atlanta Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lawrence Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "UC Santa Barbara Gauchos",
+      "t2": "Tarleton State Texans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Austin Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "St. John's Red Storm",
+      "t2": "Northern Illinois Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "South Carolina Upstate Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Starkville Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Jacksonville State Gamecocks",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Washington State Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "USC Trojans",
+      "t2": "Texas State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - College Station Regional - Elimination Game",
+      "date": "2026-05-31"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tuscaloosa Regional - Alabama advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional - Oregon advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "USC Trojans",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - College Station Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Starkville Regional - Mississippi State advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Lincoln Regional - Ole Miss advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "Little Rock Trojans",
+      "t2": "Jacksonville State Gamecocks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Hattiesburg Regional - Little Rock advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "Cal Poly Mustangs",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Los Angeles Regional - Cal Poly advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Atlanta Regional - Oklahoma advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "Troy Trojans",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Troy advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "St. John's Red Storm",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Tallahassee Regional - St. John's advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Morgantown Regional - West Virginia advances to Super Regional",
+      "date": "2026-06-01"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Milwaukee Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional - Auburn advances to Super Regional",
+      "date": "2026-06-02"
+    },
+    {
+      "t1": "USC Trojans",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - College Station Regional - USC advances to Super Regional",
+      "date": "2026-06-02"
+    }
+  ],
+  "eliminated": [],
+  "updated": "2026-06-02 05:59 UTC"
 }
