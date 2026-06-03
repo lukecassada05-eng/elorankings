@@ -1026,6 +1026,14 @@
       "loser_score": 1,
       "date": "2026-05-30",
       "round": "East Final"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-06-03",
+      "round": "Stanley Cup Final"
     }
   ],
   "series": [
@@ -1678,6 +1686,16 @@
       "loser": "Montreal Canadiens",
       "round": "East Final",
       "date": "2026-05-22"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Stanley Cup Final",
+      "date": "2026-06-03"
     }
   ],
   "eliminated": [
@@ -1696,5 +1714,5 @@
     "Colorado Avalanche",
     "Montreal Canadiens"
   ],
-  "updated": "2026-06-02 22:08 UTC"
+  "updated": "2026-06-03 12:19 UTC"
 }
