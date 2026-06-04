@@ -260,6 +260,14 @@
       "round": ""
     },
     {
+      "winner": "San Francisco Giants",
+      "loser": "San Diego Padres",
+      "winner_score": 11,
+      "loser_score": 4,
+      "date": "2021-10-03",
+      "round": ""
+    },
+    {
       "winner": "New York Yankees",
       "loser": "Tampa Bay Rays",
       "winner_score": 1,
@@ -280,6 +288,14 @@
       "loser": "Seattle Mariners",
       "winner_score": 7,
       "loser_score": 3,
+      "date": "2021-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "Chicago White Sox",
+      "winner_score": 5,
+      "loser_score": 2,
       "date": "2021-10-03",
       "round": ""
     },
@@ -396,6 +412,14 @@
       "round": "NLDS - GAME 2"
     },
     {
+      "winner": "Los Angeles Dodgers",
+      "loser": "San Francisco Giants",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2021-10-10",
+      "round": "NLDS - GAME 2"
+    },
+    {
       "winner": "Boston Red Sox",
       "loser": "Tampa Bay Rays",
       "winner_score": 6,
@@ -490,6 +514,14 @@
       "loser_score": 2,
       "date": "2021-10-17",
       "round": "NLCS - GAME 1"
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "Houston Astros",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2021-10-19",
+      "round": "ALCS - GAME 3"
     },
     {
       "winner": "Los Angeles Dodgers",
@@ -663,7 +695,7 @@
       "t1": "Chicago White Sox",
       "t2": "Detroit Tigers",
       "w1": 1,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
@@ -712,7 +744,7 @@
     {
       "t1": "San Francisco Giants",
       "t2": "San Diego Padres",
-      "w1": 1,
+      "w1": 2,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -828,6 +860,16 @@
       "loser": "",
       "round": "NLDS - GAME 2",
       "date": "2021-10-09"
+    },
+    {
+      "t1": "Los Angeles Dodgers",
+      "t2": "San Francisco Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 2",
+      "date": "2021-10-10"
     },
     {
       "t1": "Boston Red Sox",
@@ -950,6 +992,16 @@
       "date": "2021-10-17"
     },
     {
+      "t1": "Boston Red Sox",
+      "t2": "Houston Astros",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALCS - GAME 3",
+      "date": "2021-10-19"
+    },
+    {
       "t1": "Los Angeles Dodgers",
       "t2": "Atlanta Braves",
       "w1": 1,
@@ -1025,5 +1077,5 @@
     "Baltimore Orioles",
     "Houston Astros"
   ],
-  "updated": "2026-06-04 06:31 UTC"
+  "updated": "2026-06-04 06:56 UTC"
 }

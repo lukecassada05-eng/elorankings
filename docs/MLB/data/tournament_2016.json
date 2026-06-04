@@ -12,6 +12,14 @@
       "round": ""
     },
     {
+      "winner": "St. Louis Cardinals",
+      "loser": "Pittsburgh Pirates",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-10-01",
+      "round": ""
+    },
+    {
       "winner": "New York Yankees",
       "loser": "Baltimore Orioles",
       "winner_score": 7,
@@ -148,6 +156,14 @@
       "round": ""
     },
     {
+      "winner": "Philadelphia Phillies",
+      "loser": "New York Mets",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2016-10-02",
+      "round": ""
+    },
+    {
       "winner": "San Francisco Giants",
       "loser": "Los Angeles Dodgers",
       "winner_score": 7,
@@ -274,6 +290,14 @@
       "loser_score": 6,
       "date": "2016-10-09",
       "round": "ALDS - GAME 3"
+    },
+    {
+      "winner": "Washington Nationals",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2016-10-10",
+      "round": "NLDS - GAME 3"
     },
     {
       "winner": "Cleveland Indians",
@@ -438,6 +462,14 @@
     {
       "winner": "Chicago Cubs",
       "loser": "Cleveland Indians",
+      "winner_score": 9,
+      "loser_score": 3,
+      "date": "2016-11-02",
+      "round": "World Series - GAME 6"
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Cleveland Indians",
       "winner_score": 8,
       "loser_score": 7,
       "date": "2016-11-03",
@@ -449,6 +481,16 @@
       "t1": "New York Mets",
       "t2": "Philadelphia Phillies",
       "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2016-10-01"
+    },
+    {
+      "t1": "St. Louis Cardinals",
+      "t2": "Pittsburgh Pirates",
+      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -586,16 +628,6 @@
       "date": "2016-10-02"
     },
     {
-      "t1": "St. Louis Cardinals",
-      "t2": "Pittsburgh Pirates",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2016-10-02"
-    },
-    {
       "t1": "Toronto Blue Jays",
       "t2": "Baltimore Orioles",
       "w1": 1,
@@ -694,6 +726,16 @@
       "loser": "",
       "round": "ALDS - GAME 3",
       "date": "2016-10-09"
+    },
+    {
+      "t1": "Washington Nationals",
+      "t2": "Los Angeles Dodgers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 3",
+      "date": "2016-10-10"
     },
     {
       "t1": "Cleveland Indians",
@@ -902,10 +944,20 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "World Series - GAME 6",
+      "date": "2016-11-02"
+    },
+    {
+      "t1": "Chicago Cubs",
+      "t2": "Cleveland Indians",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "World Series - GAME 7",
       "date": "2016-11-03"
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-04 06:31 UTC"
+  "updated": "2026-06-04 06:56 UTC"
 }

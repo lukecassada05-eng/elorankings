@@ -44,6 +44,14 @@
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
+      "winner": "Cleveland Indians",
+      "loser": "New York Yankees",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2007-10-04",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
       "winner": "Arizona Diamondbacks",
       "loser": "Chicago Cubs",
       "winner_score": 8,
@@ -156,6 +164,14 @@
       "round": "ALCS"
     },
     {
+      "winner": "Colorado Rockies",
+      "loser": "Arizona Diamondbacks",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2007-10-16",
+      "round": "NLCS"
+    },
+    {
       "winner": "Cleveland Indians",
       "loser": "Boston Red Sox",
       "winner_score": 7,
@@ -264,17 +280,17 @@
     {
       "t1": "Cleveland Indians",
       "t2": "New York Yankees",
-      "w1": 2,
+      "w1": 3,
       "w2": 1,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "New York Yankees",
       "round": "DIVISIONAL PLAYOFFS",
-      "date": "2007-10-05"
+      "date": "2007-10-04"
     },
     {
       "t1": "Colorado Rockies",
       "t2": "Arizona Diamondbacks",
-      "w1": 3,
+      "w1": 4,
       "w2": 0,
       "done": true,
       "loser": "Arizona Diamondbacks",
@@ -316,9 +332,10 @@
     "Philadelphia Phillies",
     "Los Angeles Angels",
     "Chicago Cubs",
+    "New York Yankees",
     "Arizona Diamondbacks",
     "Cleveland Indians",
     "Colorado Rockies"
   ],
-  "updated": "2026-06-04 06:31 UTC"
+  "updated": "2026-06-04 06:56 UTC"
 }

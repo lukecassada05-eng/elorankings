@@ -84,6 +84,14 @@
       "round": "ALDS - GAME 2"
     },
     {
+      "winner": "Atlanta Braves",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-10-06",
+      "round": "NLDS - GAME 3"
+    },
+    {
       "winner": "Los Angeles Dodgers",
       "loser": "Washington Nationals",
       "winner_score": 10,
@@ -108,12 +116,28 @@
       "round": "NLDS - GAME 4"
     },
     {
+      "winner": "Washington Nationals",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2019-10-07",
+      "round": "NLDS - GAME 4"
+    },
+    {
       "winner": "New York Yankees",
       "loser": "Minnesota Twins",
       "winner_score": 5,
       "loser_score": 1,
       "date": "2019-10-08",
       "round": "ALDS - GAME 3"
+    },
+    {
+      "winner": "Tampa Bay Rays",
+      "loser": "Houston Astros",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-10-08",
+      "round": "ALDS - GAME 4"
     },
     {
       "winner": "St. Louis Cardinals",
@@ -164,6 +188,14 @@
       "round": "ALCS - GAME 2"
     },
     {
+      "winner": "Washington Nationals",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2019-10-14",
+      "round": "NLCS - GAME 3"
+    },
+    {
       "winner": "Houston Astros",
       "loser": "New York Yankees",
       "winner_score": 4,
@@ -206,6 +238,14 @@
     {
       "winner": "Washington Nationals",
       "loser": "Houston Astros",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-10-23",
+      "round": "WORLD SERIES - GAME 1"
+    },
+    {
+      "winner": "Washington Nationals",
+      "loser": "Houston Astros",
       "winner_score": 12,
       "loser_score": 3,
       "date": "2019-10-24",
@@ -214,10 +254,26 @@
     {
       "winner": "Houston Astros",
       "loser": "Washington Nationals",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-10-26",
+      "round": "WORLD SERIES - GAME 3"
+    },
+    {
+      "winner": "Houston Astros",
+      "loser": "Washington Nationals",
       "winner_score": 8,
       "loser_score": 1,
       "date": "2019-10-27",
       "round": "WORLD SERIES - GAME 4"
+    },
+    {
+      "winner": "Houston Astros",
+      "loser": "Washington Nationals",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2019-10-28",
+      "round": "WORLD SERIES - GAME 5"
     },
     {
       "winner": "Washington Nationals",
@@ -338,6 +394,16 @@
       "date": "2019-10-06"
     },
     {
+      "t1": "Atlanta Braves",
+      "t2": "St. Louis Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 3",
+      "date": "2019-10-06"
+    },
+    {
       "t1": "Los Angeles Dodgers",
       "t2": "Washington Nationals",
       "w1": 1,
@@ -368,6 +434,16 @@
       "date": "2019-10-07"
     },
     {
+      "t1": "Washington Nationals",
+      "t2": "Los Angeles Dodgers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 4",
+      "date": "2019-10-07"
+    },
+    {
       "t1": "New York Yankees",
       "t2": "Minnesota Twins",
       "w1": 1,
@@ -375,6 +451,16 @@
       "done": false,
       "loser": "",
       "round": "ALDS - GAME 3",
+      "date": "2019-10-08"
+    },
+    {
+      "t1": "Tampa Bay Rays",
+      "t2": "Houston Astros",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 4",
       "date": "2019-10-08"
     },
     {
@@ -438,6 +524,16 @@
       "date": "2019-10-14"
     },
     {
+      "t1": "Washington Nationals",
+      "t2": "St. Louis Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLCS - GAME 3",
+      "date": "2019-10-14"
+    },
+    {
       "t1": "Houston Astros",
       "t2": "New York Yankees",
       "w1": 1,
@@ -494,6 +590,16 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "WORLD SERIES - GAME 1",
+      "date": "2019-10-23"
+    },
+    {
+      "t1": "Washington Nationals",
+      "t2": "Houston Astros",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "WORLD SERIES - GAME 2",
       "date": "2019-10-24"
     },
@@ -504,8 +610,28 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "WORLD SERIES - GAME 3",
+      "date": "2019-10-26"
+    },
+    {
+      "t1": "Houston Astros",
+      "t2": "Washington Nationals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "WORLD SERIES - GAME 4",
       "date": "2019-10-27"
+    },
+    {
+      "t1": "Houston Astros",
+      "t2": "Washington Nationals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WORLD SERIES - GAME 5",
+      "date": "2019-10-28"
     },
     {
       "t1": "Washington Nationals",
@@ -529,5 +655,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-04 06:31 UTC"
+  "updated": "2026-06-04 06:56 UTC"
 }

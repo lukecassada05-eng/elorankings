@@ -36,6 +36,14 @@
       "round": ""
     },
     {
+      "winner": "Philadelphia Phillies",
+      "loser": "Atlanta Braves",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2010-10-01",
+      "round": ""
+    },
+    {
       "winner": "Los Angeles Angels",
       "loser": "Texas Rangers",
       "winner_score": 5,
@@ -180,6 +188,14 @@
       "round": ""
     },
     {
+      "winner": "Texas Rangers",
+      "loser": "Los Angeles Angels",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
       "winner": "Boston Red Sox",
       "loser": "New York Yankees",
       "winner_score": 7,
@@ -264,6 +280,14 @@
       "loser": "Kansas City Royals",
       "winner_score": 3,
       "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Toronto Blue Jays",
+      "loser": "Minnesota Twins",
+      "winner_score": 2,
+      "loser_score": 1,
       "date": "2010-10-03",
       "round": ""
     },
@@ -574,10 +598,20 @@
       "date": "2010-10-01"
     },
     {
+      "t1": "Philadelphia Phillies",
+      "t2": "Atlanta Braves",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-01"
+    },
+    {
       "t1": "Los Angeles Angels",
       "t2": "Texas Rangers",
       "w1": 2,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
@@ -626,7 +660,7 @@
     {
       "t1": "Toronto Blue Jays",
       "t2": "Minnesota Twins",
-      "w1": 1,
+      "w1": 2,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -681,16 +715,6 @@
       "done": false,
       "loser": "",
       "round": "AMERICAN LEAGUE - GAME 1",
-      "date": "2010-10-02"
-    },
-    {
-      "t1": "Philadelphia Phillies",
-      "t2": "Atlanta Braves",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "",
       "date": "2010-10-02"
     },
     {
@@ -792,5 +816,5 @@
     "Philadelphia Phillies",
     "Texas Rangers"
   ],
-  "updated": "2026-06-04 06:31 UTC"
+  "updated": "2026-06-04 06:56 UTC"
 }
