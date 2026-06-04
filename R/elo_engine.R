@@ -92,9 +92,10 @@ run_elo <- function(games, k = 30, iters = 10, min_games = 4) {
       new_elo[li] <- new_elo[li] - delta
     }
 
-    # Noise penalty for teams with very few games (cold-start dampening)
+    # Noise penalty: teams below min_games threshold get their Elo divided by 1.2
+    # Applied after each iteration so under-sampled teams stay near baseline
     gp <- wins + loss
-    new_elo[gp < min_games] <- 1500.0 + (new_elo[gp < min_games] - 1500.0) * 0.5
+    new_elo[gp < min_games] <- new_elo[gp < min_games] / 1.2
 
     prev_elo <- new_elo   # carry forward to next iteration
   }
