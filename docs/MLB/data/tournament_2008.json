@@ -44,14 +44,6 @@
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Chicago Cubs",
-      "winner_score": 10,
-      "loser_score": 3,
-      "date": "2008-10-03",
-      "round": "DIVISIONAL PLAYOFFS"
-    },
-    {
       "winner": "Tampa Bay Rays",
       "loser": "Chicago White Sox",
       "winner_score": 6,
@@ -148,14 +140,6 @@
       "round": "ALCS"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Philadelphia Phillies",
-      "winner_score": 7,
-      "loser_score": 2,
-      "date": "2008-10-13",
-      "round": ""
-    },
-    {
       "winner": "Tampa Bay Rays",
       "loser": "Boston Red Sox",
       "winner_score": 9,
@@ -196,14 +180,6 @@
       "round": ""
     },
     {
-      "winner": "Boston Red Sox",
-      "loser": "Tampa Bay Rays",
-      "winner_score": 4,
-      "loser_score": 2,
-      "date": "2008-10-19",
-      "round": ""
-    },
-    {
       "winner": "Tampa Bay Rays",
       "loser": "Boston Red Sox",
       "winner_score": 3,
@@ -225,14 +201,6 @@
       "winner_score": 4,
       "loser_score": 2,
       "date": "2008-10-24",
-      "round": "WORLD SERIES"
-    },
-    {
-      "winner": "Philadelphia Phillies",
-      "loser": "Tampa Bay Rays",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2008-10-26",
       "round": "WORLD SERIES"
     },
     {
@@ -266,7 +234,7 @@
     {
       "t1": "Los Angeles Dodgers",
       "t2": "Chicago Cubs",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -354,19 +322,9 @@
       "date": "2008-10-11"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Philadelphia Phillies",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2008-10-13"
-    },
-    {
       "t1": "Boston Red Sox",
       "t2": "Tampa Bay Rays",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -376,7 +334,7 @@
     {
       "t1": "Philadelphia Phillies",
       "t2": "Tampa Bay Rays",
-      "w1": 4,
+      "w1": 3,
       "w2": 1,
       "done": true,
       "loser": "Tampa Bay Rays",
@@ -390,5 +348,5 @@
     "Boston Red Sox",
     "Tampa Bay Rays"
   ],
-  "updated": "2026-06-04 05:47 UTC"
+  "updated": "2026-06-04 06:31 UTC"
 }

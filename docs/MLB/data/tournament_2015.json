@@ -4,14 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "Baltimore Orioles",
-      "loser": "Toronto Blue Jays",
-      "winner_score": 6,
-      "loser_score": 4,
-      "date": "2015-10-01",
-      "round": ""
-    },
-    {
       "winner": "Philadelphia Phillies",
       "loser": "New York Mets",
       "winner_score": 3,
@@ -48,14 +40,6 @@
       "loser": "Boston Red Sox",
       "winner_score": 4,
       "loser_score": 1,
-      "date": "2015-10-01",
-      "round": ""
-    },
-    {
-      "winner": "Minnesota Twins",
-      "loser": "Cleveland Indians",
-      "winner_score": 4,
-      "loser_score": 2,
       "date": "2015-10-01",
       "round": ""
     },
@@ -104,14 +88,6 @@
       "loser": "Cincinnati Reds",
       "winner_score": 6,
       "loser_score": 4,
-      "date": "2015-10-02",
-      "round": ""
-    },
-    {
-      "winner": "Cleveland Indians",
-      "loser": "Boston Red Sox",
-      "winner_score": 8,
-      "loser_score": 2,
       "date": "2015-10-02",
       "round": ""
     },
@@ -196,14 +172,6 @@
       "round": ""
     },
     {
-      "winner": "Baltimore Orioles",
-      "loser": "New York Yankees",
-      "winner_score": 9,
-      "loser_score": 2,
-      "date": "2015-10-03",
-      "round": "DOUBLEHEADER GAME 1"
-    },
-    {
       "winner": "Washington Nationals",
       "loser": "New York Mets",
       "winner_score": 3,
@@ -220,28 +188,20 @@
       "round": ""
     },
     {
-      "winner": "Miami Marlins",
-      "loser": "Philadelphia Phillies",
-      "winner_score": 7,
-      "loser_score": 6,
-      "date": "2015-10-03",
-      "round": "DOUBLEHEADER GAME 1"
-    },
-    {
-      "winner": "Tampa Bay Rays",
-      "loser": "Toronto Blue Jays",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2015-10-03",
-      "round": ""
-    },
-    {
       "winner": "Cincinnati Reds",
       "loser": "Pittsburgh Pirates",
       "winner_score": 3,
       "loser_score": 1,
       "date": "2015-10-03",
       "round": ""
+    },
+    {
+      "winner": "Baltimore Orioles",
+      "loser": "New York Yankees",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2015-10-03",
+      "round": "DOUBLEHEADER GAME 2"
     },
     {
       "winner": "Cleveland Indians",
@@ -272,14 +232,6 @@
       "loser": "Seattle Mariners",
       "winner_score": 7,
       "loser_score": 5,
-      "date": "2015-10-04",
-      "round": ""
-    },
-    {
-      "winner": "Los Angeles Dodgers",
-      "loser": "San Diego Padres",
-      "winner_score": 2,
-      "loser_score": 1,
       "date": "2015-10-04",
       "round": ""
     },
@@ -332,14 +284,6 @@
       "round": ""
     },
     {
-      "winner": "Detroit Tigers",
-      "loser": "Chicago White Sox",
-      "winner_score": 6,
-      "loser_score": 0,
-      "date": "2015-10-04",
-      "round": ""
-    },
-    {
       "winner": "Cleveland Indians",
       "loser": "Boston Red Sox",
       "winner_score": 3,
@@ -356,14 +300,6 @@
       "round": ""
     },
     {
-      "winner": "Kansas City Royals",
-      "loser": "Minnesota Twins",
-      "winner_score": 6,
-      "loser_score": 1,
-      "date": "2015-10-04",
-      "round": ""
-    },
-    {
       "winner": "Seattle Mariners",
       "loser": "Oakland Athletics",
       "winner_score": 3,
@@ -372,18 +308,18 @@
       "round": ""
     },
     {
-      "winner": "New York Mets",
-      "loser": "Washington Nationals",
-      "winner_score": 1,
-      "loser_score": 0,
+      "winner": "Los Angeles Dodgers",
+      "loser": "San Diego Padres",
+      "winner_score": 6,
+      "loser_score": 3,
       "date": "2015-10-04",
       "round": ""
     },
     {
-      "winner": "Arizona Diamondbacks",
-      "loser": "Houston Astros",
-      "winner_score": 5,
-      "loser_score": 3,
+      "winner": "New York Mets",
+      "loser": "Washington Nationals",
+      "winner_score": 1,
+      "loser_score": 0,
       "date": "2015-10-04",
       "round": ""
     },
@@ -548,14 +484,6 @@
       "round": "ALDS - GAME 5"
     },
     {
-      "winner": "New York Mets",
-      "loser": "Los Angeles Dodgers",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2015-10-16",
-      "round": "NLDS - GAME 5"
-    },
-    {
       "winner": "Kansas City Royals",
       "loser": "Toronto Blue Jays",
       "winner_score": 5,
@@ -588,14 +516,6 @@
       "round": "ALCS - GAME 3"
     },
     {
-      "winner": "Kansas City Royals",
-      "loser": "Toronto Blue Jays",
-      "winner_score": 14,
-      "loser_score": 2,
-      "date": "2015-10-20",
-      "round": "ALCS - GAME 4"
-    },
-    {
       "winner": "New York Mets",
       "loser": "Chicago Cubs",
       "winner_score": 5,
@@ -621,27 +541,11 @@
     },
     {
       "winner": "Kansas City Royals",
-      "loser": "Toronto Blue Jays",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2015-10-24",
-      "round": "ALCS - GAME 6"
-    },
-    {
-      "winner": "Kansas City Royals",
       "loser": "New York Mets",
       "winner_score": 5,
       "loser_score": 4,
       "date": "2015-10-28",
       "round": "World Series - GAME 1"
-    },
-    {
-      "winner": "Kansas City Royals",
-      "loser": "New York Mets",
-      "winner_score": 7,
-      "loser_score": 1,
-      "date": "2015-10-29",
-      "round": "World Series - GAME 2"
     },
     {
       "winner": "New York Mets",
@@ -669,16 +573,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "Baltimore Orioles",
-      "t2": "Toronto Blue Jays",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2015-10-01"
-    },
     {
       "t1": "Philadelphia Phillies",
       "t2": "New York Mets",
@@ -722,16 +616,6 @@
     {
       "t1": "New York Yankees",
       "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2015-10-01"
-    },
-    {
-      "t1": "Minnesota Twins",
-      "t2": "Cleveland Indians",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -800,20 +684,10 @@
       "date": "2015-10-02"
     },
     {
-      "t1": "Cleveland Indians",
-      "t2": "Boston Red Sox",
-      "w1": 3,
-      "w2": 0,
-      "done": true,
-      "loser": "Boston Red Sox",
-      "round": "",
-      "date": "2015-10-02"
-    },
-    {
       "t1": "Toronto Blue Jays",
       "t2": "Tampa Bay Rays",
       "w1": 1,
-      "w2": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
@@ -833,7 +707,7 @@
       "t1": "Chicago White Sox",
       "t2": "Detroit Tigers",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "",
@@ -852,7 +726,7 @@
     {
       "t1": "Kansas City Royals",
       "t2": "Minnesota Twins",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -863,7 +737,7 @@
       "t1": "Houston Astros",
       "t2": "Arizona Diamondbacks",
       "w1": 2,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "",
@@ -900,16 +774,6 @@
       "date": "2015-10-03"
     },
     {
-      "t1": "Baltimore Orioles",
-      "t2": "New York Yankees",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "DOUBLEHEADER GAME 1",
-      "date": "2015-10-03"
-    },
-    {
       "t1": "Washington Nationals",
       "t2": "New York Mets",
       "w1": 1,
@@ -920,13 +784,23 @@
       "date": "2015-10-03"
     },
     {
-      "t1": "Miami Marlins",
-      "t2": "Philadelphia Phillies",
+      "t1": "Baltimore Orioles",
+      "t2": "New York Yankees",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "DOUBLEHEADER GAME 1",
+      "round": "DOUBLEHEADER GAME 2",
+      "date": "2015-10-03"
+    },
+    {
+      "t1": "Cleveland Indians",
+      "t2": "Boston Red Sox",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
       "date": "2015-10-03"
     },
     {
@@ -1170,16 +1044,6 @@
       "date": "2015-10-15"
     },
     {
-      "t1": "New York Mets",
-      "t2": "Los Angeles Dodgers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 5",
-      "date": "2015-10-16"
-    },
-    {
       "t1": "Kansas City Royals",
       "t2": "Toronto Blue Jays",
       "w1": 1,
@@ -1220,16 +1084,6 @@
       "date": "2015-10-20"
     },
     {
-      "t1": "Kansas City Royals",
-      "t2": "Toronto Blue Jays",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - GAME 4",
-      "date": "2015-10-20"
-    },
-    {
       "t1": "New York Mets",
       "t2": "Chicago Cubs",
       "w1": 1,
@@ -1261,16 +1115,6 @@
     },
     {
       "t1": "Kansas City Royals",
-      "t2": "Toronto Blue Jays",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - GAME 6",
-      "date": "2015-10-24"
-    },
-    {
-      "t1": "Kansas City Royals",
       "t2": "New York Mets",
       "w1": 1,
       "w2": 0,
@@ -1278,16 +1122,6 @@
       "loser": "",
       "round": "World Series - GAME 1",
       "date": "2015-10-28"
-    },
-    {
-      "t1": "Kansas City Royals",
-      "t2": "New York Mets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "World Series - GAME 2",
-      "date": "2015-10-29"
     },
     {
       "t1": "New York Mets",
@@ -1320,8 +1154,6 @@
       "date": "2015-11-02"
     }
   ],
-  "eliminated": [
-    "Boston Red Sox"
-  ],
-  "updated": "2026-06-04 05:47 UTC"
+  "eliminated": [],
+  "updated": "2026-06-04 06:31 UTC"
 }

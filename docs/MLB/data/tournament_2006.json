@@ -36,14 +36,6 @@
       "round": ""
     },
     {
-      "winner": "New York Mets",
-      "loser": "Washington Nationals",
-      "winner_score": 6,
-      "loser_score": 2,
-      "date": "2006-10-01",
-      "round": ""
-    },
-    {
       "winner": "Florida Marlins",
       "loser": "Philadelphia Phillies",
       "winner_score": 3,
@@ -64,22 +56,6 @@
       "loser": "Baltimore Orioles",
       "winner_score": 9,
       "loser_score": 0,
-      "date": "2006-10-01",
-      "round": ""
-    },
-    {
-      "winner": "Minnesota Twins",
-      "loser": "Chicago White Sox",
-      "winner_score": 5,
-      "loser_score": 1,
-      "date": "2006-10-01",
-      "round": ""
-    },
-    {
-      "winner": "Milwaukee Brewers",
-      "loser": "St. Louis Cardinals",
-      "winner_score": 5,
-      "loser_score": 3,
       "date": "2006-10-01",
       "round": ""
     },
@@ -260,14 +236,6 @@
       "round": "ALCS"
     },
     {
-      "winner": "St. Louis Cardinals",
-      "loser": "New York Mets",
-      "winner_score": 9,
-      "loser_score": 6,
-      "date": "2006-10-14",
-      "round": "NLCS"
-    },
-    {
       "winner": "Detroit Tigers",
       "loser": "Oakland Athletics",
       "winner_score": 6,
@@ -398,16 +366,6 @@
       "date": "2006-10-01"
     },
     {
-      "t1": "New York Mets",
-      "t2": "Washington Nationals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2006-10-01"
-    },
-    {
       "t1": "Florida Marlins",
       "t2": "Philadelphia Phillies",
       "w1": 1,
@@ -430,26 +388,6 @@
     {
       "t1": "Boston Red Sox",
       "t2": "Baltimore Orioles",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2006-10-01"
-    },
-    {
-      "t1": "Minnesota Twins",
-      "t2": "Chicago White Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2006-10-01"
-    },
-    {
-      "t1": "Milwaukee Brewers",
-      "t2": "St. Louis Cardinals",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -561,9 +499,9 @@
       "t1": "New York Mets",
       "t2": "St. Louis Cardinals",
       "w1": 3,
-      "w2": 4,
+      "w2": 3,
       "done": true,
-      "loser": "New York Mets",
+      "loser": "St. Louis Cardinals",
       "round": "NLCS",
       "date": "2006-10-13"
     },
@@ -583,8 +521,8 @@
     "San Diego Padres",
     "Los Angeles Dodgers",
     "Oakland Athletics",
-    "New York Mets",
+    "St. Louis Cardinals",
     "Detroit Tigers"
   ],
-  "updated": "2026-06-04 05:47 UTC"
+  "updated": "2026-06-04 06:31 UTC"
 }

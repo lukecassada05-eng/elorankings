@@ -116,14 +116,6 @@
       "round": ""
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "San Francisco Giants",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2012-10-02",
-      "round": ""
-    },
-    {
       "winner": "Cleveland Indians",
       "loser": "Chicago White Sox",
       "winner_score": 4,
@@ -152,22 +144,6 @@
       "loser": "Atlanta Braves",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2012-10-02",
-      "round": ""
-    },
-    {
-      "winner": "Toronto Blue Jays",
-      "loser": "Minnesota Twins",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2012-10-02",
-      "round": ""
-    },
-    {
-      "winner": "Miami Marlins",
-      "loser": "New York Mets",
-      "winner_score": 4,
-      "loser_score": 3,
       "date": "2012-10-02",
       "round": ""
     },
@@ -680,17 +656,17 @@
     {
       "t1": "Toronto Blue Jays",
       "t2": "Minnesota Twins",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Minnesota Twins",
+      "done": false,
+      "loser": "",
       "round": "",
       "date": "2012-10-01"
     },
     {
       "t1": "Miami Marlins",
       "t2": "New York Mets",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -778,14 +754,14 @@
       "date": "2012-10-02"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "San Francisco Giants",
-      "w1": 2,
+      "t1": "San Francisco Giants",
+      "t2": "Los Angeles Dodgers",
+      "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
-      "date": "2012-10-02"
+      "date": "2012-10-03"
     },
     {
       "t1": "St. Louis Cardinals",
@@ -1149,8 +1125,7 @@
     }
   ],
   "eliminated": [
-    "Boston Red Sox",
-    "Minnesota Twins"
+    "Boston Red Sox"
   ],
-  "updated": "2026-06-04 05:47 UTC"
+  "updated": "2026-06-04 06:31 UTC"
 }

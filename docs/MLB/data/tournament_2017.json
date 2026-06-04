@@ -4,26 +4,10 @@
   "completed": true,
   "games": [
     {
-      "winner": "Houston Astros",
-      "loser": "Boston Red Sox",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2017-10-01",
-      "round": ""
-    },
-    {
       "winner": "Toronto Blue Jays",
       "loser": "New York Yankees",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2017-10-01",
-      "round": ""
-    },
-    {
-      "winner": "Oakland Athletics",
-      "loser": "Texas Rangers",
-      "winner_score": 5,
-      "loser_score": 2,
       "date": "2017-10-01",
       "round": ""
     },
@@ -72,14 +56,6 @@
       "loser": "Detroit Tigers",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2017-10-01",
-      "round": ""
-    },
-    {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Colorado Rockies",
-      "winner_score": 6,
-      "loser_score": 3,
       "date": "2017-10-01",
       "round": ""
     },
@@ -140,28 +116,12 @@
       "round": "NL WILD CARD GAME -- ARI ADVANCES TO NLDS"
     },
     {
-      "winner": "Houston Astros",
-      "loser": "Boston Red Sox",
-      "winner_score": 8,
-      "loser_score": 2,
-      "date": "2017-10-05",
-      "round": "ALDS - GAME 1"
-    },
-    {
       "winner": "Cleveland Indians",
       "loser": "New York Yankees",
       "winner_score": 4,
       "loser_score": 0,
       "date": "2017-10-05",
       "round": "ALDS - GAME 1"
-    },
-    {
-      "winner": "Houston Astros",
-      "loser": "Boston Red Sox",
-      "winner_score": 8,
-      "loser_score": 2,
-      "date": "2017-10-06",
-      "round": "ALDS - GAME 2"
     },
     {
       "winner": "Cleveland Indians",
@@ -212,14 +172,6 @@
       "round": "ALDS - GAME 3"
     },
     {
-      "winner": "New York Yankees",
-      "loser": "Cleveland Indians",
-      "winner_score": 1,
-      "loser_score": 0,
-      "date": "2017-10-08",
-      "round": "ALDS - GAME 3"
-    },
-    {
       "winner": "Houston Astros",
       "loser": "Boston Red Sox",
       "winner_score": 5,
@@ -258,14 +210,6 @@
       "loser_score": 0,
       "date": "2017-10-11",
       "round": "NLDS - GAME 4"
-    },
-    {
-      "winner": "New York Yankees",
-      "loser": "Cleveland Indians",
-      "winner_score": 5,
-      "loser_score": 2,
-      "date": "2017-10-12",
-      "round": "ALDS - GAME 5"
     },
     {
       "winner": "Chicago Cubs",
@@ -364,14 +308,6 @@
       "round": "WORLD SERIES - GAME 2"
     },
     {
-      "winner": "Houston Astros",
-      "loser": "Los Angeles Dodgers",
-      "winner_score": 5,
-      "loser_score": 3,
-      "date": "2017-10-28",
-      "round": "WORLD SERIES - GAME 3"
-    },
-    {
       "winner": "Los Angeles Dodgers",
       "loser": "Houston Astros",
       "winner_score": 6,
@@ -406,28 +342,8 @@
   ],
   "series": [
     {
-      "t1": "Houston Astros",
-      "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2017-10-01"
-    },
-    {
       "t1": "Toronto Blue Jays",
       "t2": "New York Yankees",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2017-10-01"
-    },
-    {
-      "t1": "Oakland Athletics",
-      "t2": "Texas Rangers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -488,16 +404,6 @@
     {
       "t1": "Minnesota Twins",
       "t2": "Detroit Tigers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2017-10-01"
-    },
-    {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Colorado Rockies",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -576,16 +482,6 @@
       "date": "2017-10-05"
     },
     {
-      "t1": "Houston Astros",
-      "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 1",
-      "date": "2017-10-05"
-    },
-    {
       "t1": "Cleveland Indians",
       "t2": "New York Yankees",
       "w1": 1,
@@ -594,16 +490,6 @@
       "loser": "",
       "round": "ALDS - GAME 1",
       "date": "2017-10-05"
-    },
-    {
-      "t1": "Houston Astros",
-      "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 2",
-      "date": "2017-10-06"
     },
     {
       "t1": "Cleveland Indians",
@@ -666,16 +552,6 @@
       "date": "2017-10-08"
     },
     {
-      "t1": "New York Yankees",
-      "t2": "Cleveland Indians",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 3",
-      "date": "2017-10-08"
-    },
-    {
       "t1": "Houston Astros",
       "t2": "Boston Red Sox",
       "w1": 1,
@@ -724,16 +600,6 @@
       "loser": "",
       "round": "NLDS - GAME 4",
       "date": "2017-10-11"
-    },
-    {
-      "t1": "New York Yankees",
-      "t2": "Cleveland Indians",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 5",
-      "date": "2017-10-12"
     },
     {
       "t1": "Chicago Cubs",
@@ -856,16 +722,6 @@
       "date": "2017-10-26"
     },
     {
-      "t1": "Houston Astros",
-      "t2": "Los Angeles Dodgers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WORLD SERIES - GAME 3",
-      "date": "2017-10-28"
-    },
-    {
       "t1": "Los Angeles Dodgers",
       "t2": "Houston Astros",
       "w1": 1,
@@ -907,5 +763,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-04 05:47 UTC"
+  "updated": "2026-06-04 06:31 UTC"
 }

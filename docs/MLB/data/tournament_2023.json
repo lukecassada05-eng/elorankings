@@ -426,14 +426,6 @@
       "loser_score": 7,
       "date": "2023-11-01",
       "round": "World Series"
-    },
-    {
-      "winner": "Texas Rangers",
-      "loser": "Arizona Diamondbacks",
-      "winner_score": 5,
-      "loser_score": 0,
-      "date": "2023-11-02",
-      "round": "World Series"
     }
   ],
   "series": [
@@ -730,7 +722,7 @@
     {
       "t1": "Texas Rangers",
       "t2": "Arizona Diamondbacks",
-      "w1": 4,
+      "w1": 3,
       "w2": 1,
       "done": true,
       "loser": "Arizona Diamondbacks",
@@ -747,5 +739,5 @@
     "Philadelphia Phillies",
     "Arizona Diamondbacks"
   ],
-  "updated": "2026-06-04 05:47 UTC"
+  "updated": "2026-06-04 06:31 UTC"
 }
