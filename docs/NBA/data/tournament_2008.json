@@ -996,6 +996,14 @@
       "round": "NBA FINALS - GAME 1"
     },
     {
+      "winner": "Boston Celtics",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 108,
+      "loser_score": 102,
+      "date": "2008-06-09",
+      "round": "NBA FINALS - GAME 2"
+    },
+    {
       "winner": "Los Angeles Lakers",
       "loser": "Boston Celtics",
       "winner_score": 87,
@@ -2270,6 +2278,16 @@
       "date": "2008-06-06"
     },
     {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 2",
+      "date": "2008-06-09"
+    },
+    {
       "t1": "Los Angeles Lakers",
       "t2": "Boston Celtics",
       "w1": 1,
@@ -2311,5 +2329,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-05 21:21 UTC"
+  "updated": "2026-06-06 09:48 UTC"
 }
