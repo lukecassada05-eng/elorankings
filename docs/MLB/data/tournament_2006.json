@@ -140,6 +140,14 @@
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
+      "winner": "New York Yankees",
+      "loser": "Detroit Tigers",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2006-10-04",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
       "winner": "Oakland Athletics",
       "loser": "Minnesota Twins",
       "winner_score": 5,
@@ -258,6 +266,14 @@
       "loser_score": 6,
       "date": "2006-10-14",
       "round": "NLCS"
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "Oakland Athletics",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2006-10-14",
+      "round": "ALCS"
     },
     {
       "winner": "St. Louis Cardinals",
@@ -512,6 +528,16 @@
       "date": "2006-10-03"
     },
     {
+      "t1": "New York Yankees",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-10-04"
+    },
+    {
       "t1": "New York Mets",
       "t2": "Los Angeles Dodgers",
       "w1": 3,
@@ -523,18 +549,8 @@
     },
     {
       "t1": "Detroit Tigers",
-      "t2": "New York Yankees",
-      "w1": 2,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "DIVISIONAL PLAYOFFS",
-      "date": "2006-10-05"
-    },
-    {
-      "t1": "Detroit Tigers",
       "t2": "Oakland Athletics",
-      "w1": 3,
+      "w1": 4,
       "w2": 0,
       "done": true,
       "loser": "Oakland Athletics",
@@ -570,5 +586,5 @@
     "New York Mets",
     "Detroit Tigers"
   ],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:50 UTC"
 }

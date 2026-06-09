@@ -252,6 +252,14 @@
       "round": ""
     },
     {
+      "winner": "Charlotte Bobcats",
+      "loser": "Indiana Pacers",
+      "winner_score": 92,
+      "loser_score": 91,
+      "date": "2006-04-15",
+      "round": ""
+    },
+    {
       "winner": "Los Angeles Lakers",
       "loser": "Phoenix Suns",
       "winner_score": 109,
@@ -313,6 +321,14 @@
       "winner_score": 111,
       "loser_score": 95,
       "date": "2006-04-16",
+      "round": ""
+    },
+    {
+      "winner": "New Jersey Nets",
+      "loser": "Boston Celtics",
+      "winner_score": 95,
+      "loser_score": 93,
+      "date": "2006-04-17",
       "round": ""
     },
     {
@@ -528,6 +544,14 @@
       "loser": "Denver Nuggets",
       "winner_score": 109,
       "loser_score": 98,
+      "date": "2006-04-19",
+      "round": ""
+    },
+    {
+      "winner": "Charlotte Bobcats",
+      "loser": "Philadelphia 76ers",
+      "winner_score": 96,
+      "loser_score": 86,
       "date": "2006-04-19",
       "round": ""
     },
@@ -1438,7 +1462,7 @@
     {
       "t1": "New Jersey Nets",
       "t2": "Boston Celtics",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -1548,6 +1572,16 @@
     {
       "t1": "Atlanta Hawks",
       "t2": "Milwaukee Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-04-15"
+    },
+    {
+      "t1": "Charlotte Bobcats",
+      "t2": "Indiana Pacers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1866,6 +1900,16 @@
       "date": "2006-04-19"
     },
     {
+      "t1": "Charlotte Bobcats",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-04-19"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "Washington Wizards",
       "w1": 4,
@@ -2033,5 +2077,5 @@
     "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-06-09 08:12 UTC"
+  "updated": "2026-06-09 10:48 UTC"
 }

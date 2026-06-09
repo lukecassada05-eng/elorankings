@@ -204,6 +204,14 @@
       "round": ""
     },
     {
+      "winner": "Indiana Pacers",
+      "loser": "Milwaukee Bucks",
+      "winner_score": 115,
+      "loser_score": 108,
+      "date": "2009-04-16",
+      "round": ""
+    },
+    {
       "winner": "Miami Heat",
       "loser": "Detroit Pistons",
       "winner_score": 102,
@@ -223,6 +231,14 @@
       "winner": "New York Knicks",
       "loser": "New Jersey Nets",
       "winner_score": 102,
+      "loser_score": 73,
+      "date": "2009-04-16",
+      "round": ""
+    },
+    {
+      "winner": "Orlando Magic",
+      "loser": "Charlotte Bobcats",
+      "winner_score": 98,
       "loser_score": 73,
       "date": "2009-04-16",
       "round": ""
@@ -764,6 +780,14 @@
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
     },
     {
+      "winner": "Los Angeles Lakers",
+      "loser": "Houston Rockets",
+      "winner_score": 118,
+      "loser_score": 78,
+      "date": "2009-05-13",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
+    },
+    {
       "winner": "Denver Nuggets",
       "loser": "Dallas Mavericks",
       "winner_score": 124,
@@ -1192,6 +1216,16 @@
       "date": "2009-04-16"
     },
     {
+      "t1": "Indiana Pacers",
+      "t2": "Milwaukee Bucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2009-04-16"
+    },
+    {
       "t1": "Miami Heat",
       "t2": "Detroit Pistons",
       "w1": 1,
@@ -1214,6 +1248,16 @@
     {
       "t1": "New York Knicks",
       "t2": "New Jersey Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2009-04-16"
+    },
+    {
+      "t1": "Orlando Magic",
+      "t2": "Charlotte Bobcats",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1892,6 +1936,16 @@
       "date": "2009-05-13"
     },
     {
+      "t1": "Los Angeles Lakers",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5",
+      "date": "2009-05-13"
+    },
+    {
       "t1": "Denver Nuggets",
       "t2": "Dallas Mavericks",
       "w1": 1,
@@ -2113,5 +2167,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-09 08:12 UTC"
+  "updated": "2026-06-09 10:48 UTC"
 }

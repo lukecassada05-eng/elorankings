@@ -20,6 +20,14 @@
       "round": ""
     },
     {
+      "winner": "Colorado Rockies",
+      "loser": "Milwaukee Brewers",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2009-10-01",
+      "round": ""
+    },
+    {
       "winner": "San Francisco Giants",
       "loser": "Arizona Diamondbacks",
       "winner_score": 7,
@@ -516,6 +524,14 @@
       "round": "ALCS"
     },
     {
+      "winner": "New York Yankees",
+      "loser": "Los Angeles Angels",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2009-10-17",
+      "round": "ALCS"
+    },
+    {
       "winner": "Philadelphia Phillies",
       "loser": "Los Angeles Dodgers",
       "winner_score": 11,
@@ -634,6 +650,16 @@
     {
       "t1": "Minnesota Twins",
       "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2009-10-01"
+    },
+    {
+      "t1": "Colorado Rockies",
+      "t2": "Milwaukee Brewers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -904,7 +930,7 @@
     {
       "t1": "New York Yankees",
       "t2": "Los Angeles Angels",
-      "w1": 3,
+      "w1": 4,
       "w2": 2,
       "done": true,
       "loser": "Los Angeles Angels",
@@ -933,5 +959,5 @@
     "Los Angeles Angels",
     "Philadelphia Phillies"
   ],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:50 UTC"
 }

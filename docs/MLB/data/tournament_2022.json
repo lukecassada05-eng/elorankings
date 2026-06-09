@@ -4,6 +4,14 @@
   "completed": true,
   "games": [
     {
+      "winner": "New York Yankees",
+      "loser": "Baltimore Orioles",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2022-10-01",
+      "round": ""
+    },
+    {
       "winner": "Washington Nationals",
       "loser": "Philadelphia Phillies",
       "winner_score": 13,
@@ -828,6 +836,14 @@
       "round": "NLCS"
     },
     {
+      "winner": "Philadelphia Phillies",
+      "loser": "San Diego Padres",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2022-10-23",
+      "round": "NLCS"
+    },
+    {
       "winner": "Houston Astros",
       "loser": "New York Yankees",
       "winner_score": 6,
@@ -885,6 +901,16 @@
     }
   ],
   "series": [
+    {
+      "t1": "New York Yankees",
+      "t2": "Baltimore Orioles",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2022-10-01"
+    },
     {
       "t1": "Washington Nationals",
       "t2": "Philadelphia Phillies",
@@ -1032,16 +1058,6 @@
       "w2": 3,
       "done": true,
       "loser": "Los Angeles Dodgers",
-      "round": "",
-      "date": "2022-10-02"
-    },
-    {
-      "t1": "Baltimore Orioles",
-      "t2": "New York Yankees",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
       "round": "",
       "date": "2022-10-02"
     },
@@ -1318,7 +1334,7 @@
     {
       "t1": "Philadelphia Phillies",
       "t2": "San Diego Padres",
-      "w1": 3,
+      "w1": 4,
       "w2": 1,
       "done": true,
       "loser": "San Diego Padres",
@@ -1368,5 +1384,5 @@
     "New York Yankees",
     "Philadelphia Phillies"
   ],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:51 UTC"
 }

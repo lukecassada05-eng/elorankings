@@ -196,6 +196,14 @@
       "round": ""
     },
     {
+      "winner": "Cleveland Indians",
+      "loser": "Kansas City Royals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-10-02",
+      "round": ""
+    },
+    {
       "winner": "St. Louis Cardinals",
       "loser": "Pittsburgh Pirates",
       "winner_score": 10,
@@ -218,6 +226,14 @@
       "loser_score": 0,
       "date": "2016-10-06",
       "round": "NATIONAL LEAGUE WILD CARD GAME"
+    },
+    {
+      "winner": "Toronto Blue Jays",
+      "loser": "Texas Rangers",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2016-10-06",
+      "round": "ALDS - GAME 1"
     },
     {
       "winner": "Cleveland Indians",
@@ -254,6 +270,14 @@
     {
       "winner": "Chicago Cubs",
       "loser": "San Francisco Giants",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2016-10-09",
+      "round": "NLDS - GAME 2"
+    },
+    {
+      "winner": "Washington Nationals",
+      "loser": "Los Angeles Dodgers",
       "winner_score": 5,
       "loser_score": 2,
       "date": "2016-10-09",
@@ -516,7 +540,7 @@
     {
       "t1": "Cleveland Indians",
       "t2": "Kansas City Royals",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -624,6 +648,16 @@
       "date": "2016-10-06"
     },
     {
+      "t1": "Toronto Blue Jays",
+      "t2": "Texas Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 1",
+      "date": "2016-10-06"
+    },
+    {
       "t1": "Cleveland Indians",
       "t2": "Boston Red Sox",
       "w1": 1,
@@ -666,6 +700,16 @@
     {
       "t1": "Chicago Cubs",
       "t2": "San Francisco Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 2",
+      "date": "2016-10-09"
+    },
+    {
+      "t1": "Washington Nationals",
+      "t2": "Los Angeles Dodgers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -915,5 +959,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:50 UTC"
 }

@@ -20,6 +20,14 @@
       "round": "AL WILD CARD GAME"
     },
     {
+      "winner": "St. Louis Cardinals",
+      "loser": "Pittsburgh Pirates",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2013-10-03",
+      "round": "NLDS - GAME 1"
+    },
+    {
       "winner": "Los Angeles Dodgers",
       "loser": "Atlanta Braves",
       "winner_score": 6,
@@ -106,6 +114,14 @@
       "loser_score": 1,
       "date": "2013-10-07",
       "round": "NLDS - GAME 4"
+    },
+    {
+      "winner": "Tampa Bay Rays",
+      "loser": "Boston Red Sox",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2013-10-07",
+      "round": "ALDS - GAME 3"
     },
     {
       "winner": "Los Angeles Dodgers",
@@ -306,6 +322,16 @@
       "date": "2013-10-03"
     },
     {
+      "t1": "St. Louis Cardinals",
+      "t2": "Pittsburgh Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 1",
+      "date": "2013-10-03"
+    },
+    {
       "t1": "Los Angeles Dodgers",
       "t2": "Atlanta Braves",
       "w1": 1,
@@ -413,6 +439,16 @@
       "done": false,
       "loser": "",
       "round": "NLDS - GAME 4",
+      "date": "2013-10-07"
+    },
+    {
+      "t1": "Tampa Bay Rays",
+      "t2": "Boston Red Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 3",
       "date": "2013-10-07"
     },
     {
@@ -637,5 +673,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:50 UTC"
 }

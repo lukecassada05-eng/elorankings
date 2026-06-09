@@ -244,6 +244,14 @@
       "round": ""
     },
     {
+      "winner": "Milwaukee Bucks",
+      "loser": "Toronto Raptors",
+      "winner_score": 105,
+      "loser_score": 89,
+      "date": "2002-04-16",
+      "round": ""
+    },
+    {
       "winner": "Sacramento Kings",
       "loser": "Golden State Warriors",
       "winner_score": 120,
@@ -272,6 +280,14 @@
       "loser": "Utah Jazz",
       "winner_score": 96,
       "loser_score": 87,
+      "date": "2002-04-16",
+      "round": ""
+    },
+    {
+      "winner": "LA Clippers",
+      "loser": "Memphis Grizzlies",
+      "winner_score": 92,
+      "loser_score": 84,
       "date": "2002-04-16",
       "round": ""
     },
@@ -328,6 +344,14 @@
       "loser": "Denver Nuggets",
       "winner_score": 104,
       "loser_score": 90,
+      "date": "2002-04-17",
+      "round": ""
+    },
+    {
+      "winner": "Phoenix Suns",
+      "loser": "Dallas Mavericks",
+      "winner_score": 87,
+      "loser_score": 76,
       "date": "2002-04-17",
       "round": ""
     },
@@ -1274,6 +1298,16 @@
       "date": "2002-04-16"
     },
     {
+      "t1": "Milwaukee Bucks",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-16"
+    },
+    {
       "t1": "Sacramento Kings",
       "t2": "Golden State Warriors",
       "w1": 1,
@@ -1306,6 +1340,16 @@
     {
       "t1": "Dallas Mavericks",
       "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-16"
+    },
+    {
+      "t1": "LA Clippers",
+      "t2": "Memphis Grizzlies",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1376,6 +1420,16 @@
     {
       "t1": "Minnesota Timberwolves",
       "t2": "Denver Nuggets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-17"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "Dallas Mavericks",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1583,5 +1637,5 @@
     "Boston Celtics",
     "New Jersey Nets"
   ],
-  "updated": "2026-06-09 08:12 UTC"
+  "updated": "2026-06-09 10:48 UTC"
 }

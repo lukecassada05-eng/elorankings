@@ -132,6 +132,14 @@
       "round": "AL WILD CARD GAME -- NYY ADVANCES TO ALDS"
     },
     {
+      "winner": "Arizona Diamondbacks",
+      "loser": "Colorado Rockies",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2017-10-05",
+      "round": "NL WILD CARD GAME -- ARI ADVANCES TO NLDS"
+    },
+    {
       "winner": "Houston Astros",
       "loser": "Boston Red Sox",
       "winner_score": 8,
@@ -558,6 +566,16 @@
       "date": "2017-10-04"
     },
     {
+      "t1": "Arizona Diamondbacks",
+      "t2": "Colorado Rockies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NL WILD CARD GAME -- ARI ADVANCES TO NLDS",
+      "date": "2017-10-05"
+    },
+    {
       "t1": "Houston Astros",
       "t2": "Boston Red Sox",
       "w1": 1,
@@ -889,5 +907,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:50 UTC"
 }

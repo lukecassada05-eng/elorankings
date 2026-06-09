@@ -500,6 +500,14 @@
       "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3"
     },
     {
+      "winner": "Chicago Bulls",
+      "loser": "Washington Wizards",
+      "winner_score": 100,
+      "loser_score": 97,
+      "date": "2014-04-26",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
       "winner": "Houston Rockets",
       "loser": "Portland Trail Blazers",
       "winner_score": 121,
@@ -1656,6 +1664,16 @@
       "date": "2014-04-25"
     },
     {
+      "t1": "Chicago Bulls",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1st ROUND - GAME 3",
+      "date": "2014-04-26"
+    },
+    {
       "t1": "Houston Rockets",
       "t2": "Portland Trail Blazers",
       "w1": 1,
@@ -2337,5 +2355,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-09 08:12 UTC"
+  "updated": "2026-06-09 10:48 UTC"
 }

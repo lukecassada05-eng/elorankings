@@ -180,6 +180,14 @@
       "round": ""
     },
     {
+      "winner": "Florida Marlins",
+      "loser": "Pittsburgh Pirates",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
       "winner": "Texas Rangers",
       "loser": "Los Angeles Angels",
       "winner_score": 6,
@@ -583,7 +591,7 @@
       "t1": "Pittsburgh Pirates",
       "t2": "Florida Marlins",
       "w1": 1,
-      "w2": 1,
+      "w2": 2,
       "done": false,
       "loser": "",
       "round": "",
@@ -808,5 +816,5 @@
     "Philadelphia Phillies",
     "Texas Rangers"
   ],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:50 UTC"
 }

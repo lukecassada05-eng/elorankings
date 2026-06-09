@@ -68,6 +68,14 @@
       "round": ""
     },
     {
+      "winner": "Milwaukee Bucks",
+      "loser": "Indiana Pacers",
+      "winner_score": 107,
+      "loser_score": 98,
+      "date": "2003-04-13",
+      "round": ""
+    },
+    {
       "winner": "Minnesota Timberwolves",
       "loser": "Chicago Bulls",
       "winner_score": 119,
@@ -484,6 +492,14 @@
       "round": ""
     },
     {
+      "winner": "Orlando Magic",
+      "loser": "Detroit Pistons",
+      "winner_score": 89,
+      "loser_score": 80,
+      "date": "2003-04-26",
+      "round": ""
+    },
+    {
       "winner": "Milwaukee Bucks",
       "loser": "New Jersey Nets",
       "winner_score": 119,
@@ -708,6 +724,14 @@
       "round": ""
     },
     {
+      "winner": "San Antonio Spurs",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 87,
+      "loser_score": 82,
+      "date": "2003-05-06",
+      "round": ""
+    },
+    {
       "winner": "Sacramento Kings",
       "loser": "Dallas Mavericks",
       "winner_score": 124,
@@ -785,6 +809,14 @@
       "winner_score": 93,
       "loser_score": 83,
       "date": "2003-05-10",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Lakers",
+      "loser": "San Antonio Spurs",
+      "winner_score": 99,
+      "loser_score": 95,
+      "date": "2003-05-11",
       "round": ""
     },
     {
@@ -1070,6 +1102,16 @@
     {
       "t1": "Portland Trail Blazers",
       "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2003-04-13"
+    },
+    {
+      "t1": "Milwaukee Bucks",
+      "t2": "Indiana Pacers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1420,7 +1462,7 @@
     {
       "t1": "Orlando Magic",
       "t2": "Detroit Pistons",
-      "w1": 2,
+      "w1": 3,
       "w2": 4,
       "done": true,
       "loser": "Orlando Magic",
@@ -1448,6 +1490,16 @@
       "date": "2003-05-05"
     },
     {
+      "t1": "San Antonio Spurs",
+      "t2": "Los Angeles Lakers",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Los Angeles Lakers",
+      "round": "",
+      "date": "2003-05-06"
+    },
+    {
       "t1": "Sacramento Kings",
       "t2": "Dallas Mavericks",
       "w1": 3,
@@ -1466,16 +1518,6 @@
       "loser": "Philadelphia 76ers",
       "round": "",
       "date": "2003-05-07"
-    },
-    {
-      "t1": "San Antonio Spurs",
-      "t2": "Los Angeles Lakers",
-      "w1": 3,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2003-05-08"
     },
     {
       "t1": "New Jersey Nets",
@@ -1509,10 +1551,11 @@
     "Orlando Magic",
     "Minnesota Timberwolves",
     "Boston Celtics",
+    "Los Angeles Lakers",
     "Sacramento Kings",
     "Philadelphia 76ers",
     "Detroit Pistons",
     "New Jersey Nets"
   ],
-  "updated": "2026-06-09 08:12 UTC"
+  "updated": "2026-06-09 10:48 UTC"
 }

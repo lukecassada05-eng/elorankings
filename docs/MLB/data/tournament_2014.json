@@ -12,6 +12,14 @@
       "round": "NL WILD CARD GAME"
     },
     {
+      "winner": "Baltimore Orioles",
+      "loser": "Detroit Tigers",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2014-10-02",
+      "round": "ALDS - GAME 1"
+    },
+    {
       "winner": "Kansas City Royals",
       "loser": "Los Angeles Angels",
       "winner_score": 3,
@@ -229,6 +237,16 @@
       "done": false,
       "loser": "",
       "round": "NL WILD CARD GAME",
+      "date": "2014-10-02"
+    },
+    {
+      "t1": "Baltimore Orioles",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 1",
       "date": "2014-10-02"
     },
     {
@@ -493,5 +511,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:50 UTC"
 }

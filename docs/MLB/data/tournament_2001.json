@@ -484,6 +484,14 @@
       "round": ""
     },
     {
+      "winner": "St. Louis            Cardinals",
+      "loser": "Houston              Astros",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2001-10-06",
+      "round": ""
+    },
+    {
       "winner": "Philadelphia         Phillies",
       "loser": "Cincinnati           Reds",
       "winner_score": 2,
@@ -1231,7 +1239,7 @@
       "t1": "Houston              Astros",
       "t2": "St. Louis            Cardinals",
       "w1": 2,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
@@ -1361,5 +1369,5 @@
     "Atlanta              Braves",
     "Seattle              Mariners"
   ],
-  "updated": "2026-06-09 08:14 UTC"
+  "updated": "2026-06-09 10:50 UTC"
 }
