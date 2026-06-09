@@ -5,6 +5,54 @@
   "games": [
     {
       "winner": "Baltimore Ravens",
+      "loser": "Denver Broncos",
+      "winner_score": 38,
+      "loser_score": 35,
+      "date": "2013-01-12",
+      "round": "AFC DIVISIONAL PLAYOFF"
+    },
+    {
+      "winner": "San Francisco 49ers",
+      "loser": "Green Bay Packers",
+      "winner_score": 45,
+      "loser_score": 31,
+      "date": "2013-01-13",
+      "round": "NFC DIVISIONAL PLAYOFF"
+    },
+    {
+      "winner": "Atlanta Falcons",
+      "loser": "Seattle Seahawks",
+      "winner_score": 30,
+      "loser_score": 28,
+      "date": "2013-01-13",
+      "round": "NFC DIVISIONAL PLAYOFF"
+    },
+    {
+      "winner": "New England Patriots",
+      "loser": "Houston Texans",
+      "winner_score": 41,
+      "loser_score": 28,
+      "date": "2013-01-13",
+      "round": "AFC DIVISIONAL PLAYOFF"
+    },
+    {
+      "winner": "San Francisco 49ers",
+      "loser": "Atlanta Falcons",
+      "winner_score": 28,
+      "loser_score": 24,
+      "date": "2013-01-20",
+      "round": "NFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Baltimore Ravens",
+      "loser": "New England Patriots",
+      "winner_score": 28,
+      "loser_score": 13,
+      "date": "2013-01-20",
+      "round": "AFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Baltimore Ravens",
       "loser": "San Francisco 49ers",
       "winner_score": 34,
       "loser_score": 31,
@@ -13,6 +61,66 @@
     }
   ],
   "series": [
+    {
+      "t1": "Baltimore Ravens",
+      "t2": "Denver Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Denver Broncos",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2013-01-12"
+    },
+    {
+      "t1": "San Francisco 49ers",
+      "t2": "Green Bay Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Green Bay Packers",
+      "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2013-01-13"
+    },
+    {
+      "t1": "Atlanta Falcons",
+      "t2": "Seattle Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seattle Seahawks",
+      "round": "NFC DIVISIONAL PLAYOFF",
+      "date": "2013-01-13"
+    },
+    {
+      "t1": "New England Patriots",
+      "t2": "Houston Texans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Texans",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2013-01-13"
+    },
+    {
+      "t1": "San Francisco 49ers",
+      "t2": "Atlanta Falcons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Atlanta Falcons",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2013-01-20"
+    },
+    {
+      "t1": "Baltimore Ravens",
+      "t2": "New England Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New England Patriots",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2013-01-20"
+    },
     {
       "t1": "Baltimore Ravens",
       "t2": "San Francisco 49ers",
@@ -25,7 +133,13 @@
     }
   ],
   "eliminated": [
+    "Denver Broncos",
+    "Green Bay Packers",
+    "Seattle Seahawks",
+    "Houston Texans",
+    "Atlanta Falcons",
+    "New England Patriots",
     "San Francisco 49ers"
   ],
-  "updated": "2026-06-09 10:51 UTC"
+  "updated": "2026-06-09 21:20 UTC"
 }
