@@ -262,14 +262,6 @@
     {
       "winner": "Houston Astros",
       "loser": "Washington Nationals",
-      "winner_score": 8,
-      "loser_score": 1,
-      "date": "2019-10-27",
-      "round": "WORLD SERIES - GAME 4"
-    },
-    {
-      "winner": "Houston Astros",
-      "loser": "Washington Nationals",
       "winner_score": 7,
       "loser_score": 1,
       "date": "2019-10-28",
@@ -620,16 +612,6 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WORLD SERIES - GAME 4",
-      "date": "2019-10-27"
-    },
-    {
-      "t1": "Houston Astros",
-      "t2": "Washington Nationals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
       "round": "WORLD SERIES - GAME 5",
       "date": "2019-10-28"
     },
@@ -655,5 +637,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-08 21:34 UTC"
+  "updated": "2026-06-09 08:14 UTC"
 }

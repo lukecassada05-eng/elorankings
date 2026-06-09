@@ -164,14 +164,6 @@
       "round": "WEST QUALIFYING - GAME 3"
     },
     {
-      "winner": "Carolina Hurricanes",
-      "loser": "New York Rangers",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2020-08-05",
-      "round": "EAST QUALIFYING - GAME 3"
-    },
-    {
       "winner": "Vancouver Canucks",
       "loser": "Minnesota Wild",
       "winner_score": 4,
@@ -1246,16 +1238,6 @@
       "date": "2020-08-04"
     },
     {
-      "t1": "Carolina Hurricanes",
-      "t2": "New York Rangers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST QUALIFYING - GAME 3",
-      "date": "2020-08-05"
-    },
-    {
       "t1": "Vancouver Canucks",
       "t2": "Minnesota Wild",
       "w1": 1,
@@ -2091,5 +2073,5 @@
     "New York Islanders",
     "Dallas Stars"
   ],
-  "updated": "2026-06-08 21:33 UTC"
+  "updated": "2026-06-09 08:13 UTC"
 }

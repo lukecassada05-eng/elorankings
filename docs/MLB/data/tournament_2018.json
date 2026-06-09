@@ -228,14 +228,6 @@
       "round": "NLCS - GAME 6"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Milwaukee Brewers",
-      "winner_score": 5,
-      "loser_score": 1,
-      "date": "2018-10-21",
-      "round": "NLCS - GAME 7"
-    },
-    {
       "winner": "Boston Red Sox",
       "loser": "Los Angeles Dodgers",
       "winner_score": 8,
@@ -558,16 +550,6 @@
       "date": "2018-10-20"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Milwaukee Brewers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLCS - GAME 7",
-      "date": "2018-10-21"
-    },
-    {
       "t1": "Boston Red Sox",
       "t2": "Los Angeles Dodgers",
       "w1": 1,
@@ -619,5 +601,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-08 21:34 UTC"
+  "updated": "2026-06-09 08:14 UTC"
 }

@@ -268,14 +268,6 @@
       "round": ""
     },
     {
-      "winner": "New York Mets",
-      "loser": "Miami Marlins",
-      "winner_score": 4,
-      "loser_score": 2,
-      "date": "2012-10-03",
-      "round": ""
-    },
-    {
       "winner": "New York Yankees",
       "loser": "Boston Red Sox",
       "winner_score": 14,
@@ -691,7 +683,7 @@
       "t1": "Miami Marlins",
       "t2": "New York Mets",
       "w1": 2,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "",
@@ -1152,5 +1144,5 @@
     "Boston Red Sox",
     "Minnesota Twins"
   ],
-  "updated": "2026-06-08 21:34 UTC"
+  "updated": "2026-06-09 08:14 UTC"
 }

@@ -164,14 +164,6 @@
       "round": ""
     },
     {
-      "winner": "Charlotte Bobcats",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 113,
-      "loser_score": 92,
-      "date": "2007-04-14",
-      "round": ""
-    },
-    {
       "winner": "Golden State Warriors",
       "loser": "Minnesota Timberwolves",
       "winner_score": 121,
@@ -600,14 +592,6 @@
       "loser": "Houston Rockets",
       "winner_score": 81,
       "loser_score": 67,
-      "date": "2007-04-26",
-      "round": "PLAYOFFS"
-    },
-    {
-      "winner": "Los Angeles Lakers",
-      "loser": "Phoenix Suns",
-      "winner_score": 95,
-      "loser_score": 89,
       "date": "2007-04-26",
       "round": "PLAYOFFS"
     },
@@ -1302,16 +1286,6 @@
       "date": "2007-04-14"
     },
     {
-      "t1": "Charlotte Bobcats",
-      "t2": "Milwaukee Bucks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2007-04-14"
-    },
-    {
       "t1": "Golden State Warriors",
       "t2": "Minnesota Timberwolves",
       "w1": 1,
@@ -1705,7 +1679,7 @@
       "t1": "Phoenix Suns",
       "t2": "Los Angeles Lakers",
       "w1": 4,
-      "w2": 1,
+      "w2": 0,
       "done": true,
       "loser": "Los Angeles Lakers",
       "round": "PLAYOFFS",
@@ -1829,5 +1803,5 @@
     "Detroit Pistons",
     "Cleveland Cavaliers"
   ],
-  "updated": "2026-06-08 21:32 UTC"
+  "updated": "2026-06-09 08:12 UTC"
 }

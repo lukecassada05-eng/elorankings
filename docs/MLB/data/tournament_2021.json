@@ -468,14 +468,6 @@
       "round": "ALDS - GAME 4"
     },
     {
-      "winner": "Atlanta Braves",
-      "loser": "Milwaukee Brewers",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2021-10-12",
-      "round": "NLDS - GAME 4"
-    },
-    {
       "winner": "Los Angeles Dodgers",
       "loser": "San Francisco Giants",
       "winner_score": 7,
@@ -585,14 +577,6 @@
       "winner_score": 7,
       "loser_score": 2,
       "date": "2021-10-28",
-      "round": "World Series"
-    },
-    {
-      "winner": "Atlanta Braves",
-      "loser": "Houston Astros",
-      "winner_score": 2,
-      "loser_score": 0,
-      "date": "2021-10-30",
       "round": "World Series"
     },
     {
@@ -932,16 +916,6 @@
       "date": "2021-10-12"
     },
     {
-      "t1": "Atlanta Braves",
-      "t2": "Milwaukee Brewers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 4",
-      "date": "2021-10-12"
-    },
-    {
       "t1": "Los Angeles Dodgers",
       "t2": "San Francisco Giants",
       "w1": 1,
@@ -1064,7 +1038,7 @@
     {
       "t1": "Atlanta Braves",
       "t2": "Houston Astros",
-      "w1": 4,
+      "w1": 3,
       "w2": 2,
       "done": true,
       "loser": "Houston Astros",
@@ -1077,5 +1051,5 @@
     "Baltimore Orioles",
     "Houston Astros"
   ],
-  "updated": "2026-06-08 21:34 UTC"
+  "updated": "2026-06-09 08:14 UTC"
 }

@@ -420,14 +420,6 @@
       "round": "EASTERN CONFERENCE FIRST ROUND"
     },
     {
-      "winner": "Utah Jazz",
-      "loser": "Houston Rockets",
-      "winner_score": 90,
-      "loser_score": 84,
-      "date": "2008-04-22",
-      "round": "WESTERN CONFERENCE FIRST ROUND"
-    },
-    {
       "winner": "New Orleans Hornets",
       "loser": "Dallas Mavericks",
       "winner_score": 127,
@@ -1558,16 +1550,6 @@
       "date": "2008-04-21"
     },
     {
-      "t1": "Utah Jazz",
-      "t2": "Houston Rockets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FIRST ROUND",
-      "date": "2008-04-22"
-    },
-    {
       "t1": "New Orleans Hornets",
       "t2": "Dallas Mavericks",
       "w1": 1,
@@ -2329,5 +2311,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-08 21:32 UTC"
+  "updated": "2026-06-09 08:12 UTC"
 }
