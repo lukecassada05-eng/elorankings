@@ -834,6 +834,14 @@
       "loser_score": 111,
       "date": "2026-06-09",
       "round": "NBA Finals"
+    },
+    {
+      "winner": "New York Knicks",
+      "loser": "San Antonio Spurs",
+      "winner_score": 107,
+      "loser_score": 106,
+      "date": "2026-06-11",
+      "round": "NBA Finals"
     }
   ],
   "series": [
@@ -1190,7 +1198,7 @@
     {
       "t1": "New York Knicks",
       "t2": "San Antonio Spurs",
-      "w1": 2,
+      "w1": 3,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -1214,5 +1222,5 @@
     "Oklahoma City Thunder",
     "Cleveland Cavaliers"
   ],
-  "updated": "2026-06-10 21:48 UTC"
+  "updated": "2026-06-11 04:34 UTC"
 }
