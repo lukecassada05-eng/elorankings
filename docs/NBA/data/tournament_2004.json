@@ -556,14 +556,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Miami Heat",
-      "loser": "New Orleans Hornets",
-      "winner_score": 85,
-      "loser_score": 77,
-      "date": "2004-05-04",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Sacramento Kings",
       "loser": "Minnesota Timberwolves",
       "winner_score": 104,
@@ -1246,10 +1238,10 @@
     {
       "t1": "Miami Heat",
       "t2": "New Orleans Hornets",
-      "w1": 4,
+      "w1": 3,
       "w2": 3,
-      "done": true,
-      "loser": "New Orleans Hornets",
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2004-04-18"
     },
@@ -1341,7 +1333,6 @@
     "Houston Rockets",
     "Dallas Mavericks",
     "Milwaukee Bucks",
-    "New Orleans Hornets",
     "Denver Nuggets",
     "San Antonio Spurs",
     "New Jersey Nets",
@@ -1351,5 +1342,5 @@
     "Indiana Pacers",
     "Los Angeles Lakers"
   ],
-  "updated": "2026-06-13 10:20 UTC"
+  "updated": "2026-06-13 20:42 UTC"
 }

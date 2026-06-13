@@ -5,54 +5,6 @@
   "games": [
     {
       "winner": "Philadelphia Eagles",
-      "loser": "Atlanta Falcons",
-      "winner_score": 15,
-      "loser_score": 10,
-      "date": "2018-01-13",
-      "round": "NFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Tennessee Titans",
-      "winner_score": 35,
-      "loser_score": 14,
-      "date": "2018-01-14",
-      "round": "AFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Jacksonville Jaguars",
-      "loser": "Pittsburgh Steelers",
-      "winner_score": 45,
-      "loser_score": 42,
-      "date": "2018-01-14",
-      "round": "AFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Minnesota Vikings",
-      "loser": "New Orleans Saints",
-      "winner_score": 29,
-      "loser_score": 24,
-      "date": "2018-01-14",
-      "round": "NFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Jacksonville Jaguars",
-      "winner_score": 24,
-      "loser_score": 20,
-      "date": "2018-01-21",
-      "round": "AFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "Philadelphia Eagles",
-      "loser": "Minnesota Vikings",
-      "winner_score": 38,
-      "loser_score": 7,
-      "date": "2018-01-21",
-      "round": "NFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "Philadelphia Eagles",
       "loser": "New England Patriots",
       "winner_score": 41,
       "loser_score": 33,
@@ -61,66 +13,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "Philadelphia Eagles",
-      "t2": "Atlanta Falcons",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Atlanta Falcons",
-      "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2018-01-13"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Tennessee Titans",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Tennessee Titans",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2018-01-14"
-    },
-    {
-      "t1": "Jacksonville Jaguars",
-      "t2": "Pittsburgh Steelers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Pittsburgh Steelers",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2018-01-14"
-    },
-    {
-      "t1": "Minnesota Vikings",
-      "t2": "New Orleans Saints",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New Orleans Saints",
-      "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2018-01-14"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Jacksonville Jaguars",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Jacksonville Jaguars",
-      "round": "AFC CHAMPIONSHIP",
-      "date": "2018-01-21"
-    },
-    {
-      "t1": "Philadelphia Eagles",
-      "t2": "Minnesota Vikings",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Minnesota Vikings",
-      "round": "NFC CHAMPIONSHIP",
-      "date": "2018-01-21"
-    },
     {
       "t1": "Philadelphia Eagles",
       "t2": "New England Patriots",
@@ -133,13 +25,7 @@
     }
   ],
   "eliminated": [
-    "Atlanta Falcons",
-    "Tennessee Titans",
-    "Pittsburgh Steelers",
-    "New Orleans Saints",
-    "Jacksonville Jaguars",
-    "Minnesota Vikings",
     "New England Patriots"
   ],
-  "updated": "2026-06-13 10:23 UTC"
+  "updated": "2026-06-13 20:48 UTC"
 }
