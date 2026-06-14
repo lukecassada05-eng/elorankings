@@ -500,6 +500,14 @@
       "round": "West Semifinals"
     },
     {
+      "winner": "Philadelphia 76ers",
+      "loser": "Miami Heat",
+      "winner_score": 116,
+      "loser_score": 108,
+      "date": "2022-05-09",
+      "round": "East Semifinals"
+    },
+    {
       "winner": "Boston Celtics",
       "loser": "Milwaukee Bucks",
       "winner_score": 116,
@@ -905,7 +913,7 @@
       "t1": "Miami Heat",
       "t2": "Philadelphia 76ers",
       "w1": 4,
-      "w2": 1,
+      "w2": 2,
       "done": true,
       "loser": "Philadelphia 76ers",
       "round": "East Semifinals",
@@ -969,5 +977,5 @@
     "Dallas Mavericks",
     "Boston Celtics"
   ],
-  "updated": "2026-06-13 20:45 UTC"
+  "updated": "2026-06-14 04:07 UTC"
 }

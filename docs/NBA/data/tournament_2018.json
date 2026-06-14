@@ -284,6 +284,14 @@
       "round": "WEST 1ST ROUND - GAME 5"
     },
     {
+      "winner": "Toronto Raptors",
+      "loser": "Washington Wizards",
+      "winner_score": 108,
+      "loser_score": 98,
+      "date": "2018-04-25",
+      "round": "EAST 1ST ROUND - GAME 5"
+    },
+    {
       "winner": "Cleveland Cavaliers",
       "loser": "Indiana Pacers",
       "winner_score": 98,
@@ -1004,6 +1012,16 @@
       "date": "2018-04-25"
     },
     {
+      "t1": "Toronto Raptors",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 5",
+      "date": "2018-04-25"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "Indiana Pacers",
       "w1": 1,
@@ -1465,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-13 20:45 UTC"
+  "updated": "2026-06-14 04:06 UTC"
 }

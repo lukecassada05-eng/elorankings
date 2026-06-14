@@ -180,6 +180,14 @@
       "round": "West 1st Round"
     },
     {
+      "winner": "Milwaukee Bucks",
+      "loser": "Miami Heat",
+      "winner_score": 113,
+      "loser_score": 84,
+      "date": "2021-05-27",
+      "round": "East 1st Round"
+    },
+    {
       "winner": "Los Angeles Lakers",
       "loser": "Phoenix Suns",
       "winner_score": 109,
@@ -788,10 +796,10 @@
     {
       "t1": "Milwaukee Bucks",
       "t2": "Miami Heat",
-      "w1": 3,
+      "w1": 4,
       "w2": 0,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Miami Heat",
       "round": "East 1st Round",
       "date": "2021-05-22"
     },
@@ -937,6 +945,7 @@
     }
   ],
   "eliminated": [
+    "Miami Heat",
     "Dallas Mavericks",
     "Boston Celtics",
     "Portland Trail Blazers",
@@ -952,5 +961,5 @@
     "Atlanta Hawks",
     "Phoenix Suns"
   ],
-  "updated": "2026-06-13 20:45 UTC"
+  "updated": "2026-06-14 04:07 UTC"
 }

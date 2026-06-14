@@ -620,6 +620,14 @@
       "round": "West Finals"
     },
     {
+      "winner": "Miami Heat",
+      "loser": "Boston Celtics",
+      "winner_score": 128,
+      "loser_score": 102,
+      "date": "2023-05-22",
+      "round": "East Finals"
+    },
+    {
       "winner": "Denver Nuggets",
       "loser": "Los Angeles Lakers",
       "winner_score": 113,
@@ -874,10 +882,10 @@
     {
       "t1": "Miami Heat",
       "t2": "Boston Celtics",
-      "w1": 3,
+      "w1": 4,
       "w2": 3,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Boston Celtics",
       "round": "East Finals",
       "date": "2023-05-18"
     },
@@ -906,7 +914,8 @@
     "Philadelphia 76ers",
     "Golden State Warriors",
     "Los Angeles Lakers",
+    "Boston Celtics",
     "Miami Heat"
   ],
-  "updated": "2026-06-13 20:45 UTC"
+  "updated": "2026-06-14 04:07 UTC"
 }

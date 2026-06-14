@@ -100,6 +100,14 @@
       "round": "WEST 1ST ROUND - GAME 2"
     },
     {
+      "winner": "Portland Trail Blazers",
+      "loser": "Oklahoma City Thunder",
+      "winner_score": 114,
+      "loser_score": 94,
+      "date": "2019-04-17",
+      "round": "WEST 1ST ROUND - GAME 2"
+    },
+    {
       "winner": "Boston Celtics",
       "loser": "Indiana Pacers",
       "winner_score": 99,
@@ -202,6 +210,14 @@
       "loser_score": 101,
       "date": "2019-04-21",
       "round": "WEST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Indiana Pacers",
+      "winner_score": 110,
+      "loser_score": 106,
+      "date": "2019-04-21",
+      "round": "EAST 1ST ROUND - GAME 4"
     },
     {
       "winner": "Golden State Warriors",
@@ -410,6 +426,14 @@
       "loser_score": 121,
       "date": "2019-05-05",
       "round": "WEST SEMIFINALS - GAME 3"
+    },
+    {
+      "winner": "Toronto Raptors",
+      "loser": "Philadelphia 76ers",
+      "winner_score": 101,
+      "loser_score": 96,
+      "date": "2019-05-05",
+      "round": "EAST SEMIFINALS - GAME 4"
     },
     {
       "winner": "Denver Nuggets",
@@ -758,6 +782,16 @@
       "date": "2019-04-17"
     },
     {
+      "t1": "Portland Trail Blazers",
+      "t2": "Oklahoma City Thunder",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 2",
+      "date": "2019-04-17"
+    },
+    {
       "t1": "Boston Celtics",
       "t2": "Indiana Pacers",
       "w1": 1,
@@ -885,6 +919,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 3",
+      "date": "2019-04-21"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 4",
       "date": "2019-04-21"
     },
     {
@@ -1145,6 +1189,16 @@
       "done": false,
       "loser": "",
       "round": "WEST SEMIFINALS - GAME 3",
+      "date": "2019-05-05"
+    },
+    {
+      "t1": "Toronto Raptors",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST SEMIFINALS - GAME 4",
       "date": "2019-05-05"
     },
     {
@@ -1429,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-13 20:45 UTC"
+  "updated": "2026-06-14 04:07 UTC"
 }
