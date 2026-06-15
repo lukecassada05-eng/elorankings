@@ -666,38 +666,6 @@
       "loser_score": 1,
       "date": "2017-06-01",
       "round": "STANLEY CUP FINAL - GAME 2"
-    },
-    {
-      "winner": "Nashville Predators",
-      "loser": "Pittsburgh Penguins",
-      "winner_score": 5,
-      "loser_score": 1,
-      "date": "2017-06-04",
-      "round": "STANLEY CUP FINAL - GAME 3"
-    },
-    {
-      "winner": "Nashville Predators",
-      "loser": "Pittsburgh Penguins",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2017-06-06",
-      "round": "STANLEY CUP FINAL - GAME 4"
-    },
-    {
-      "winner": "Pittsburgh Penguins",
-      "loser": "Nashville Predators",
-      "winner_score": 6,
-      "loser_score": 0,
-      "date": "2017-06-09",
-      "round": "STANLEY CUP FINAL - GAME 5"
-    },
-    {
-      "winner": "Pittsburgh Penguins",
-      "loser": "Nashville Predators",
-      "winner_score": 2,
-      "loser_score": 0,
-      "date": "2017-06-12",
-      "round": "STANLEY CUP FINAL - GAME 6"
     }
   ],
   "series": [
@@ -1530,48 +1498,8 @@
       "loser": "",
       "round": "STANLEY CUP FINAL - GAME 2",
       "date": "2017-06-01"
-    },
-    {
-      "t1": "Nashville Predators",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "STANLEY CUP FINAL - GAME 3",
-      "date": "2017-06-04"
-    },
-    {
-      "t1": "Nashville Predators",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "STANLEY CUP FINAL - GAME 4",
-      "date": "2017-06-06"
-    },
-    {
-      "t1": "Pittsburgh Penguins",
-      "t2": "Nashville Predators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "STANLEY CUP FINAL - GAME 5",
-      "date": "2017-06-09"
-    },
-    {
-      "t1": "Pittsburgh Penguins",
-      "t2": "Nashville Predators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "STANLEY CUP FINAL - GAME 6",
-      "date": "2017-06-12"
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-14 20:36 UTC"
+  "updated": "2026-06-15 13:46 UTC"
 }

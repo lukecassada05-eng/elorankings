@@ -444,14 +444,6 @@
       "round": "WESTERN CONFERENCE SECOND ROUND - GAME 2"
     },
     {
-      "winner": "Pittsburgh Penguins",
-      "loser": "Washington Capitals",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2016-05-03",
-      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 3"
-    },
-    {
       "winner": "Tampa Bay Lightning",
       "loser": "New York Islanders",
       "winner_score": 5,
@@ -514,14 +506,6 @@
       "loser_score": 1,
       "date": "2016-05-07",
       "round": "WESTERN CONFERENCE SECOND ROUND - GAME 5"
-    },
-    {
-      "winner": "Washington Capitals",
-      "loser": "Pittsburgh Penguins",
-      "winner_score": 3,
-      "loser_score": 1,
-      "date": "2016-05-07",
-      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 5"
     },
     {
       "winner": "San Jose Sharks",
@@ -666,14 +650,6 @@
       "loser_score": 2,
       "date": "2016-05-25",
       "round": "EASTERN CONFERENCE FINALS - GAME 6"
-    },
-    {
-      "winner": "San Jose Sharks",
-      "loser": "St. Louis Blues",
-      "winner_score": 5,
-      "loser_score": 2,
-      "date": "2016-05-26",
-      "round": "WESTERN CONFERENCE FINALS - GAME 6"
     },
     {
       "winner": "Pittsburgh Penguins",
@@ -1284,16 +1260,6 @@
       "date": "2016-05-02"
     },
     {
-      "t1": "Pittsburgh Penguins",
-      "t2": "Washington Capitals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 3",
-      "date": "2016-05-03"
-    },
-    {
       "t1": "Tampa Bay Lightning",
       "t2": "New York Islanders",
       "w1": 1,
@@ -1371,16 +1337,6 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE SECOND ROUND - GAME 5",
-      "date": "2016-05-07"
-    },
-    {
-      "t1": "Washington Capitals",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 5",
       "date": "2016-05-07"
     },
     {
@@ -1564,16 +1520,6 @@
       "date": "2016-05-25"
     },
     {
-      "t1": "San Jose Sharks",
-      "t2": "St. Louis Blues",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FINALS - GAME 6",
-      "date": "2016-05-26"
-    },
-    {
       "t1": "Pittsburgh Penguins",
       "t2": "Tampa Bay Lightning",
       "w1": 1,
@@ -1645,5 +1591,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-14 20:36 UTC"
+  "updated": "2026-06-15 13:46 UTC"
 }
