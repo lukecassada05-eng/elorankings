@@ -12,14 +12,6 @@
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
-      "winner": "New England Patriots",
-      "loser": "Tennessee Titans",
-      "winner_score": 35,
-      "loser_score": 14,
-      "date": "2018-01-14",
-      "round": "AFC DIVISIONAL PLAYOFF"
-    },
-    {
       "winner": "Jacksonville Jaguars",
       "loser": "Pittsburgh Steelers",
       "winner_score": 45,
@@ -70,16 +62,6 @@
       "loser": "Atlanta Falcons",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2018-01-13"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Tennessee Titans",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Tennessee Titans",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2018-01-14"
     },
     {
       "t1": "Jacksonville Jaguars",
@@ -134,12 +116,11 @@
   ],
   "eliminated": [
     "Atlanta Falcons",
-    "Tennessee Titans",
     "Pittsburgh Steelers",
     "New Orleans Saints",
     "Jacksonville Jaguars",
     "Minnesota Vikings",
     "New England Patriots"
   ],
-  "updated": "2026-06-15 13:50 UTC"
+  "updated": "2026-06-15 22:08 UTC"
 }

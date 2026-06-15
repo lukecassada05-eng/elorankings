@@ -4,690 +4,2238 @@
   "completed": true,
   "games": [
     {
-      "winner": "Montreal Canadiens",
-      "loser": "Ottawa Senators",
+      "winner": "New York Islanders",
+      "loser": "Boston Bruins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Ottawa Senators",
+      "loser": "Philadelphia Flyers",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2013-05-03",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 2"
-    },
-    {
-      "winner": "New York Islanders",
-      "loser": "Pittsburgh Penguins",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-03",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 2"
-    },
-    {
-      "winner": "Chicago Blackhawks",
-      "loser": "Minnesota Wild",
-      "winner_score": 5,
-      "loser_score": 2,
-      "date": "2013-05-04",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2"
-    },
-    {
-      "winner": "San Jose Sharks",
-      "loser": "Vancouver Canucks",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-04",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2"
+      "date": "2013-04-11",
+      "round": ""
     },
     {
       "winner": "Washington Capitals",
-      "loser": "New York Rangers",
-      "winner_score": 1,
-      "loser_score": 0,
-      "date": "2013-05-04",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 2"
+      "loser": "Carolina Hurricanes",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-11",
+      "round": ""
     },
     {
-      "winner": "Toronto Maple Leafs",
-      "loser": "Boston Bruins",
-      "winner_score": 4,
-      "loser_score": 2,
-      "date": "2013-05-04",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 2"
-    },
-    {
-      "winner": "Anaheim Ducks",
-      "loser": "Detroit Red Wings",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2013-05-04",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3"
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "St. Louis Blues",
-      "winner_score": 1,
-      "loser_score": 0,
-      "date": "2013-05-05",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3"
+      "winner": "Montreal Canadiens",
+      "loser": "Buffalo Sabres",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2013-04-11",
+      "round": ""
     },
     {
       "winner": "Pittsburgh Penguins",
-      "loser": "New York Islanders",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2013-04-11",
+      "round": ""
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Detroit Red Wings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Winnipeg Jets",
+      "loser": "Florida Panthers",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2013-04-12",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Minnesota Wild",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2013-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Kings",
+      "loser": "Colorado Avalanche",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Ottawa Senators",
+      "loser": "New Jersey Devils",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2013-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "St. Louis Blues",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Nashville Predators",
       "winner_score": 5,
-      "loser_score": 4,
-      "date": "2013-05-05",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3"
+      "loser_score": 2,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Detroit Red Wings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Calgary Flames",
+      "loser": "Phoenix Coyotes",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Philadelphia Flyers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Vancouver Canucks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Toronto Maple Leafs",
+      "loser": "Montreal Canadiens",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "New York Rangers",
+      "loser": "New York Islanders",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Boston Bruins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Florida Panthers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Minnesota Wild",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "San Jose Sharks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Calgary Flames",
+      "loser": "Edmonton Oilers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Kings",
+      "loser": "Anaheim Ducks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "St. Louis Blues",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2013-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Detroit Red Wings",
+      "loser": "Nashville Predators",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2013-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Toronto Maple Leafs",
+      "loser": "New Jersey Devils",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2013-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Montreal Canadiens",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2013-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Dallas Stars",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2013-04-16",
+      "round": ""
+    },
+    {
+      "winner": "Vancouver Canucks",
+      "loser": "Nashville Predators",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2013-04-16",
+      "round": ""
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Colorado Avalanche",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-16",
+      "round": ""
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Phoenix Coyotes",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2013-04-16",
+      "round": ""
+    },
+    {
+      "winner": "New York Islanders",
+      "loser": "Florida Panthers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2013-04-16",
+      "round": ""
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2013-04-16",
+      "round": ""
+    },
+    {
+      "winner": "Winnipeg Jets",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-17",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Vancouver Canucks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-17",
+      "round": ""
     },
     {
       "winner": "Minnesota Wild",
-      "loser": "Chicago Blackhawks",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-05",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3"
-    },
-    {
-      "winner": "Ottawa Senators",
-      "loser": "Montreal Canadiens",
-      "winner_score": 6,
-      "loser_score": 1,
-      "date": "2013-05-05",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3"
+      "loser": "Edmonton Oilers",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2013-04-17",
+      "round": ""
     },
     {
       "winner": "San Jose Sharks",
-      "loser": "Vancouver Canucks",
-      "winner_score": 5,
+      "loser": "Los Angeles Kings",
+      "winner_score": 3,
       "loser_score": 2,
-      "date": "2013-05-06",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3"
+      "date": "2013-04-17",
+      "round": ""
     },
     {
-      "winner": "Boston Bruins",
-      "loser": "Toronto Maple Leafs",
-      "winner_score": 5,
+      "winner": "Pittsburgh Penguins",
+      "loser": "Montreal Canadiens",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2013-04-17",
+      "round": ""
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
       "loser_score": 2,
-      "date": "2013-05-06",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3"
+      "date": "2013-04-17",
+      "round": ""
     },
     {
-      "winner": "New York Rangers",
-      "loser": "Washington Capitals",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-06",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3"
+      "winner": "Calgary Flames",
+      "loser": "Detroit Red Wings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-18",
+      "round": ""
     },
     {
-      "winner": "Detroit Red Wings",
+      "winner": "Columbus Blue Jackets",
       "loser": "Anaheim Ducks",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2013-05-07",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 4"
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "St. Louis Blues",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-07",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 4"
-    },
-    {
-      "winner": "Ottawa Senators",
-      "loser": "Montreal Canadiens",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-07",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4"
+      "date": "2013-04-18",
+      "round": ""
     },
     {
       "winner": "New York Islanders",
-      "loser": "Pittsburgh Penguins",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2013-04-18",
+      "round": ""
+    },
+    {
+      "winner": "New York Rangers",
+      "loser": "Florida Panthers",
       "winner_score": 6,
+      "loser_score": 1,
+      "date": "2013-04-18",
+      "round": ""
+    },
+    {
+      "winner": "Montreal Canadiens",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-18",
+      "round": ""
+    },
+    {
+      "winner": "Ottawa Senators",
+      "loser": "Washington Capitals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-18",
+      "round": ""
+    },
+    {
+      "winner": "New Jersey Devils",
+      "loser": "Philadelphia Flyers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2013-04-18",
+      "round": ""
+    },
+    {
+      "winner": "Winnipeg Jets",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-19",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Phoenix Coyotes",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-19",
+      "round": ""
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Vancouver Canucks",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2013-04-19",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Kings",
+      "loser": "Columbus Blue Jackets",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-19",
+      "round": ""
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Minnesota Wild",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2013-04-19",
+      "round": ""
+    },
+    {
+      "winner": "New York Rangers",
+      "loser": "Buffalo Sabres",
+      "winner_score": 8,
       "loser_score": 4,
-      "date": "2013-05-07",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4"
+      "date": "2013-04-19",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Dallas Stars",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Nashville Predators",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Colorado Avalanche",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "Calgary Flames",
+      "loser": "Anaheim Ducks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "New Jersey Devils",
+      "loser": "Florida Panthers",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "New York Islanders",
+      "loser": "Winnipeg Jets",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Montreal Canadiens",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "Toronto Maple Leafs",
+      "loser": "Ottawa Senators",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-20",
+      "round": ""
+    },
+    {
+      "winner": "Phoenix Coyotes",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-21",
+      "round": ""
+    },
+    {
+      "winner": "Vancouver Canucks",
+      "loser": "Detroit Red Wings",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-21",
+      "round": ""
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Florida Panthers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2013-04-21",
+      "round": ""
+    },
+    {
+      "winner": "New York Rangers",
+      "loser": "New Jersey Devils",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-21",
+      "round": ""
+    },
+    {
+      "winner": "Calgary Flames",
+      "loser": "Minnesota Wild",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-21",
+      "round": ""
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "St. Louis Blues",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2013-04-22",
+      "round": ""
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "San Jose Sharks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-22",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Edmonton Oilers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-22",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Kings",
+      "loser": "Dallas Stars",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-22",
+      "round": ""
+    },
+    {
+      "winner": "Winnipeg Jets",
+      "loser": "Buffalo Sabres",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-22",
+      "round": ""
+    },
+    {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Ottawa Senators",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-22",
+      "round": ""
+    },
+    {
+      "winner": "Detroit Red Wings",
+      "loser": "Phoenix Coyotes",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2013-04-22",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Edmonton Oilers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2013-04-23",
+      "round": ""
+    },
+    {
+      "winner": "Vancouver Canucks",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-23",
+      "round": ""
+    },
+    {
+      "winner": "New Jersey Devils",
+      "loser": "Montreal Canadiens",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-23",
+      "round": ""
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Winnipeg Jets",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2013-04-23",
+      "round": ""
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "New York Islanders",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-23",
+      "round": ""
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-04-23",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Boston Bruins",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2013-04-23",
+      "round": ""
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "New York Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-23",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Colorado Avalanche",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-24",
+      "round": ""
+    },
+    {
+      "winner": "Nashville Predators",
+      "loser": "Calgary Flames",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-24",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota Wild",
+      "loser": "Los Angeles Kings",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-24",
+      "round": ""
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Dallas Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-24",
+      "round": ""
+    },
+    {
+      "winner": "Tampa Bay Lightning",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2013-04-24",
+      "round": ""
+    },
+    {
+      "winner": "Detroit Red Wings",
+      "loser": "Los Angeles Kings",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-24",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Edmonton Oilers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "Phoenix Coyotes",
+      "loser": "San Jose Sharks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "New York Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "Ottawa Senators",
+      "loser": "Washington Capitals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "New York Rangers",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "New Jersey Devils",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "Toronto Maple Leafs",
+      "loser": "Florida Panthers",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "Detroit Red Wings",
+      "loser": "Nashville Predators",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2013-04-25",
+      "round": ""
+    },
+    {
+      "winner": "Montreal Canadiens",
+      "loser": "Winnipeg Jets",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-04-26",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Calgary Flames",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-26",
+      "round": ""
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Dallas Stars",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-26",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Vancouver Canucks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-26",
+      "round": ""
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "New York Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-26",
+      "round": ""
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Minnesota Wild",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Calgary Flames",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Phoenix Coyotes",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "New York Rangers",
+      "loser": "New Jersey Devils",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Montreal Canadiens",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Ottawa Senators",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Nashville Predators",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Detroit Red Wings",
+      "loser": "Dallas Stars",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota Wild",
+      "loser": "Colorado Avalanche",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-27",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-04-28",
+      "round": ""
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Vancouver Canucks",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2013-04-28",
+      "round": ""
+    },
+    {
+      "winner": "Phoenix Coyotes",
+      "loser": "Anaheim Ducks",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2013-04-28",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Kings",
+      "loser": "San Jose Sharks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-04-28",
+      "round": ""
+    },
+    {
+      "winner": "Ottawa Senators",
+      "loser": "Boston Bruins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-04-28",
+      "round": ""
     },
     {
       "winner": "Chicago Blackhawks",
       "loser": "Minnesota Wild",
-      "winner_score": 3,
-      "loser_score": 0,
-      "date": "2013-05-08",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 4"
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-05-01",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 1"
     },
     {
-      "winner": "San Jose Sharks",
-      "loser": "Vancouver Canucks",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-08",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 4"
-    },
-    {
-      "winner": "Boston Bruins",
-      "loser": "Toronto Maple Leafs",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-08",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4"
-    },
-    {
-      "winner": "New York Rangers",
-      "loser": "Washington Capitals",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-08",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4"
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "St. Louis Blues",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-09",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 5"
+      "winner": "St. Louis Blues",
+      "loser": "Los Angeles Kings",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-05-01",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 1"
     },
     {
       "winner": "Anaheim Ducks",
       "loser": "Detroit Red Wings",
       "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-09",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 5"
-    },
-    {
-      "winner": "Ottawa Senators",
-      "loser": "Montreal Canadiens",
-      "winner_score": 6,
       "loser_score": 1,
-      "date": "2013-05-09",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 5"
-    },
-    {
-      "winner": "Pittsburgh Penguins",
-      "loser": "New York Islanders",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2013-05-09",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 5"
-    },
-    {
-      "winner": "Chicago Blackhawks",
-      "loser": "Minnesota Wild",
-      "winner_score": 5,
-      "loser_score": 1,
-      "date": "2013-05-10",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 5"
-    },
-    {
-      "winner": "Toronto Maple Leafs",
-      "loser": "Boston Bruins",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-10",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 5"
-    },
-    {
-      "winner": "Washington Capitals",
-      "loser": "New York Rangers",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-10",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 5"
-    },
-    {
-      "winner": "Detroit Red Wings",
-      "loser": "Anaheim Ducks",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-11",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 6"
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "St. Louis Blues",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-11",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 6"
-    },
-    {
-      "winner": "Pittsburgh Penguins",
-      "loser": "New York Islanders",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-11",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 6"
-    },
-    {
-      "winner": "New York Rangers",
-      "loser": "Washington Capitals",
-      "winner_score": 1,
-      "loser_score": 0,
-      "date": "2013-05-12",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 6"
-    },
-    {
-      "winner": "Toronto Maple Leafs",
-      "loser": "Boston Bruins",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-12",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 6"
-    },
-    {
-      "winner": "Detroit Red Wings",
-      "loser": "Anaheim Ducks",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-13",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 7"
+      "date": "2013-05-01",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 1"
     },
     {
       "winner": "Boston Bruins",
       "loser": "Toronto Maple Leafs",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2013-05-13",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 7"
-    },
-    {
-      "winner": "New York Rangers",
-      "loser": "Washington Capitals",
-      "winner_score": 5,
-      "loser_score": 0,
-      "date": "2013-05-14",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 7"
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2013-05-01",
+      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 1"
     },
     {
       "winner": "Pittsburgh Penguins",
-      "loser": "Ottawa Senators",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2013-05-14",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "San Jose Sharks",
-      "winner_score": 2,
+      "loser": "New York Islanders",
+      "winner_score": 5,
       "loser_score": 0,
-      "date": "2013-05-15",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
-    },
-    {
-      "winner": "Chicago Blackhawks",
-      "loser": "Detroit Red Wings",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2013-05-16",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
-    },
-    {
-      "winner": "Boston Bruins",
-      "loser": "New York Rangers",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-16",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "San Jose Sharks",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-17",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
-    },
-    {
-      "winner": "Pittsburgh Penguins",
-      "loser": "Ottawa Senators",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-17",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
-    },
-    {
-      "winner": "Detroit Red Wings",
-      "loser": "Chicago Blackhawks",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2013-05-18",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
+      "date": "2013-05-01",
+      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 1"
     },
     {
       "winner": "San Jose Sharks",
-      "loser": "Los Angeles Kings",
-      "winner_score": 2,
+      "loser": "Vancouver Canucks",
+      "winner_score": 3,
       "loser_score": 1,
-      "date": "2013-05-19",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
-    },
-    {
-      "winner": "Boston Bruins",
-      "loser": "New York Rangers",
-      "winner_score": 5,
-      "loser_score": 2,
-      "date": "2013-05-19",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
+      "date": "2013-05-02",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 1"
     },
     {
       "winner": "Ottawa Senators",
-      "loser": "Pittsburgh Penguins",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-19",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
+      "loser": "Montreal Canadiens",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-05-02",
+      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 1"
     },
     {
-      "winner": "Detroit Red Wings",
-      "loser": "Chicago Blackhawks",
+      "winner": "Washington Capitals",
+      "loser": "New York Rangers",
       "winner_score": 3,
       "loser_score": 1,
-      "date": "2013-05-20",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
+      "date": "2013-05-02",
+      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 1"
     },
     {
-      "winner": "Boston Bruins",
-      "loser": "New York Rangers",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-21",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
-    },
-    {
-      "winner": "San Jose Sharks",
+      "winner": "St. Louis Blues",
       "loser": "Los Angeles Kings",
       "winner_score": 2,
       "loser_score": 1,
-      "date": "2013-05-22",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
+      "date": "2013-05-03",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2"
     },
     {
-      "winner": "Pittsburgh Penguins",
-      "loser": "Ottawa Senators",
-      "winner_score": 7,
+      "winner": "Detroit Red Wings",
+      "loser": "Anaheim Ducks",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2013-05-03",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2"
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Los Angeles Kings",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2013-06-03",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2013-06-04",
+      "round": "EASTERN CONFERENCE FINALS - GAME 2"
+    },
+    {
+      "winner": "Los Angeles Kings",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-06-05",
+      "round": "WESTERN CONFERENCE FINALS - GAME 3"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-06-06",
+      "round": "EASTERN CONFERENCE FINALS - GAME 3"
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Los Angeles Kings",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2013-06-07",
+      "round": "WESTERN CONFERENCE FINALS - GAME 4"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2013-06-08",
+      "round": "EASTERN CONFERENCE FINALS - GAME 4"
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Los Angeles Kings",
+      "winner_score": 4,
       "loser_score": 3,
-      "date": "2013-05-22",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
+      "date": "2013-06-09",
+      "round": "WESTERN CONFERENCE FINALS - GAME 5"
     },
     {
-      "winner": "New York Rangers",
+      "winner": "Chicago Blackhawks",
       "loser": "Boston Bruins",
       "winner_score": 4,
       "loser_score": 3,
-      "date": "2013-05-23",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
+      "date": "2013-06-13",
+      "round": "STANLEY CUP FINAL - GAME 1"
     },
     {
-      "winner": "Detroit Red Wings",
+      "winner": "Boston Bruins",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2013-06-16",
+      "round": "STANLEY CUP FINAL - GAME 2"
+    },
+    {
+      "winner": "Boston Bruins",
       "loser": "Chicago Blackhawks",
       "winner_score": 2,
       "loser_score": 0,
-      "date": "2013-05-24",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
+      "date": "2013-06-18",
+      "round": "STANLEY CUP FINAL - GAME 3"
     },
     {
-      "winner": "Los Angeles Kings",
-      "loser": "San Jose Sharks",
-      "winner_score": 3,
-      "loser_score": 0,
-      "date": "2013-05-24",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
-    },
-    {
-      "winner": "Pittsburgh Penguins",
-      "loser": "Ottawa Senators",
+      "winner": "Chicago Blackhawks",
+      "loser": "Boston Bruins",
       "winner_score": 6,
+      "loser_score": 5,
+      "date": "2013-06-20",
+      "round": "STANLEY CUP FINAL - GAME 4"
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-06-23",
+      "round": "STANLEY CUP FINAL - GAME 5"
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
       "loser_score": 2,
-      "date": "2013-05-24",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
-    },
-    {
-      "winner": "Boston Bruins",
-      "loser": "New York Rangers",
-      "winner_score": 3,
-      "loser_score": 1,
-      "date": "2013-05-25",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
-    },
-    {
-      "winner": "Chicago Blackhawks",
-      "loser": "Detroit Red Wings",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2013-05-26",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
-    },
-    {
-      "winner": "San Jose Sharks",
-      "loser": "Los Angeles Kings",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-27",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6"
-    },
-    {
-      "winner": "Chicago Blackhawks",
-      "loser": "Detroit Red Wings",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2013-05-28",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6"
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "San Jose Sharks",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-29",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 7"
-    },
-    {
-      "winner": "Chicago Blackhawks",
-      "loser": "Detroit Red Wings",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-05-30",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 7"
-    },
-    {
-      "winner": "Chicago Blackhawks",
-      "loser": "Los Angeles Kings",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2013-06-01",
-      "round": "WESTERN CONFERENCE FINALS - GAME 1"
-    },
-    {
-      "winner": "Boston Bruins",
-      "loser": "Pittsburgh Penguins",
-      "winner_score": 3,
-      "loser_score": 0,
-      "date": "2013-06-02",
-      "round": "EASTERN CONFERENCE FINALS - GAME 1"
+      "date": "2013-06-25",
+      "round": "STANLEY CUP FINAL - GAME 6"
     }
   ],
   "series": [
     {
-      "t1": "Montreal Canadiens",
-      "t2": "Ottawa Senators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 2",
-      "date": "2013-05-03"
-    },
-    {
       "t1": "New York Islanders",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 2",
-      "date": "2013-05-03"
-    },
-    {
-      "t1": "Chicago Blackhawks",
-      "t2": "Minnesota Wild",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2",
-      "date": "2013-05-04"
-    },
-    {
-      "t1": "San Jose Sharks",
-      "t2": "Vancouver Canucks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2",
-      "date": "2013-05-04"
-    },
-    {
-      "t1": "Washington Capitals",
-      "t2": "New York Rangers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 2",
-      "date": "2013-05-04"
-    },
-    {
-      "t1": "Toronto Maple Leafs",
       "t2": "Boston Bruins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 2",
-      "date": "2013-05-04"
+      "round": "",
+      "date": "2013-04-11"
     },
     {
-      "t1": "Anaheim Ducks",
+      "t1": "Ottawa Senators",
+      "t2": "Philadelphia Flyers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-11"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-11"
+    },
+    {
+      "t1": "Montreal Canadiens",
+      "t2": "Buffalo Sabres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-11"
+    },
+    {
+      "t1": "Pittsburgh Penguins",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-11"
+    },
+    {
+      "t1": "San Jose Sharks",
       "t2": "Detroit Red Wings",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-04"
+      "round": "",
+      "date": "2013-04-11"
+    },
+    {
+      "t1": "Winnipeg Jets",
+      "t2": "Florida Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-12"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Minnesota Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-12"
     },
     {
       "t1": "Los Angeles Kings",
+      "t2": "Colorado Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-12"
+    },
+    {
+      "t1": "Ottawa Senators",
+      "t2": "New Jersey Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-12"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
       "t2": "St. Louis Blues",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-05"
+      "round": "",
+      "date": "2013-04-12"
     },
     {
-      "t1": "Pittsburgh Penguins",
+      "t1": "Dallas Stars",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Chicago Blackhawks",
+      "t2": "Detroit Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Calgary Flames",
+      "t2": "Phoenix Coyotes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Buffalo Sabres",
+      "t2": "Philadelphia Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Toronto Maple Leafs",
+      "t2": "Montreal Canadiens",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "New York Rangers",
       "t2": "New York Islanders",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-05"
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Pittsburgh Penguins",
+      "t2": "Florida Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-13"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Minnesota Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-14"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-14"
+    },
+    {
+      "t1": "Calgary Flames",
+      "t2": "Edmonton Oilers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-14"
+    },
+    {
+      "t1": "Los Angeles Kings",
+      "t2": "Anaheim Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-14"
+    },
+    {
+      "t1": "Chicago Blackhawks",
+      "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-14"
+    },
+    {
+      "t1": "Buffalo Sabres",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-14"
+    },
+    {
+      "t1": "Detroit Red Wings",
+      "t2": "Nashville Predators",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-14"
+    },
+    {
+      "t1": "Toronto Maple Leafs",
+      "t2": "New Jersey Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-15"
+    },
+    {
+      "t1": "Philadelphia Flyers",
+      "t2": "Montreal Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-15"
+    },
+    {
+      "t1": "Chicago Blackhawks",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-16"
+    },
+    {
+      "t1": "Vancouver Canucks",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-16"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Colorado Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-16"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Phoenix Coyotes",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-16"
+    },
+    {
+      "t1": "New York Islanders",
+      "t2": "Florida Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-16"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-16"
+    },
+    {
+      "t1": "Winnipeg Jets",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-17"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-17"
     },
     {
       "t1": "Minnesota Wild",
-      "t2": "Chicago Blackhawks",
+      "t2": "Edmonton Oilers",
       "w1": 1,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-05"
+      "round": "",
+      "date": "2013-04-17"
     },
     {
-      "t1": "Ottawa Senators",
+      "t1": "San Jose Sharks",
+      "t2": "Los Angeles Kings",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-17"
+    },
+    {
+      "t1": "Pittsburgh Penguins",
       "t2": "Montreal Canadiens",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-05"
+      "round": "",
+      "date": "2013-04-17"
     },
     {
-      "t1": "San Jose Sharks",
-      "t2": "Vancouver Canucks",
+      "t1": "Buffalo Sabres",
+      "t2": "Boston Bruins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-06"
+      "round": "",
+      "date": "2013-04-17"
     },
     {
-      "t1": "Boston Bruins",
-      "t2": "Toronto Maple Leafs",
+      "t1": "Calgary Flames",
+      "t2": "Detroit Red Wings",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-06"
+      "round": "",
+      "date": "2013-04-18"
     },
     {
-      "t1": "New York Rangers",
-      "t2": "Washington Capitals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3",
-      "date": "2013-05-06"
-    },
-    {
-      "t1": "Detroit Red Wings",
+      "t1": "Columbus Blue Jackets",
       "t2": "Anaheim Ducks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 4",
-      "date": "2013-05-07"
+      "round": "",
+      "date": "2013-04-18"
     },
     {
-      "t1": "Los Angeles Kings",
-      "t2": "St. Louis Blues",
+      "t1": "New York Islanders",
+      "t2": "Toronto Maple Leafs",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 4",
-      "date": "2013-05-07"
+      "round": "",
+      "date": "2013-04-18"
+    },
+    {
+      "t1": "New York Rangers",
+      "t2": "Florida Panthers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-18"
+    },
+    {
+      "t1": "Montreal Canadiens",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-18"
     },
     {
       "t1": "Ottawa Senators",
+      "t2": "Washington Capitals",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-18"
+    },
+    {
+      "t1": "New Jersey Devils",
+      "t2": "Philadelphia Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-18"
+    },
+    {
+      "t1": "Winnipeg Jets",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-19"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Phoenix Coyotes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-19"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-19"
+    },
+    {
+      "t1": "Los Angeles Kings",
+      "t2": "Columbus Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-19"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Minnesota Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-19"
+    },
+    {
+      "t1": "New York Rangers",
+      "t2": "Buffalo Sabres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-19"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-20"
+    },
+    {
+      "t1": "Chicago Blackhawks",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-20"
+    },
+    {
+      "t1": "Edmonton Oilers",
+      "t2": "Colorado Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-20"
+    },
+    {
+      "t1": "Calgary Flames",
+      "t2": "Anaheim Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-20"
+    },
+    {
+      "t1": "Pittsburgh Penguins",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-20"
+    },
+    {
+      "t1": "New Jersey Devils",
+      "t2": "Florida Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-20"
+    },
+    {
+      "t1": "New York Islanders",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-20"
+    },
+    {
+      "t1": "Washington Capitals",
       "t2": "Montreal Canadiens",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4",
-      "date": "2013-05-07"
+      "round": "",
+      "date": "2013-04-20"
     },
     {
-      "t1": "New York Islanders",
+      "t1": "Toronto Maple Leafs",
+      "t2": "Ottawa Senators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-20"
+    },
+    {
+      "t1": "Phoenix Coyotes",
+      "t2": "Chicago Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-21"
+    },
+    {
+      "t1": "Vancouver Canucks",
+      "t2": "Detroit Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-21"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Florida Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-21"
+    },
+    {
+      "t1": "New York Rangers",
+      "t2": "New Jersey Devils",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-21"
+    },
+    {
+      "t1": "Calgary Flames",
+      "t2": "Minnesota Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-21"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-22"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-22"
+    },
+    {
+      "t1": "Anaheim Ducks",
+      "t2": "Edmonton Oilers",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-22"
+    },
+    {
+      "t1": "Los Angeles Kings",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-22"
+    },
+    {
+      "t1": "Winnipeg Jets",
+      "t2": "Buffalo Sabres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-22"
+    },
+    {
+      "t1": "Pittsburgh Penguins",
+      "t2": "Ottawa Senators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-22"
+    },
+    {
+      "t1": "Detroit Red Wings",
+      "t2": "Phoenix Coyotes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-22"
+    },
+    {
+      "t1": "Vancouver Canucks",
+      "t2": "Chicago Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-23"
+    },
+    {
+      "t1": "New Jersey Devils",
+      "t2": "Montreal Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-23"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-23"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-23"
+    },
+    {
+      "t1": "Buffalo Sabres",
       "t2": "Pittsburgh Penguins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4",
-      "date": "2013-05-07"
+      "round": "",
+      "date": "2013-04-23"
+    },
+    {
+      "t1": "Philadelphia Flyers",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-23"
+    },
+    {
+      "t1": "Nashville Predators",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-24"
+    },
+    {
+      "t1": "Minnesota Wild",
+      "t2": "Los Angeles Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-24"
+    },
+    {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-24"
+    },
+    {
+      "t1": "Detroit Red Wings",
+      "t2": "Los Angeles Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-24"
+    },
+    {
+      "t1": "Chicago Blackhawks",
+      "t2": "Edmonton Oilers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-25"
+    },
+    {
+      "t1": "Philadelphia Flyers",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-25"
+    },
+    {
+      "t1": "New York Rangers",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-25"
+    },
+    {
+      "t1": "New Jersey Devils",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-25"
+    },
+    {
+      "t1": "Toronto Maple Leafs",
+      "t2": "Florida Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-25"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-25"
+    },
+    {
+      "t1": "Montreal Canadiens",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-26"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-26"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-26"
+    },
+    {
+      "t1": "Anaheim Ducks",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-26"
+    },
+    {
+      "t1": "Buffalo Sabres",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-26"
+    },
+    {
+      "t1": "Chicago Blackhawks",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-27"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Phoenix Coyotes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-27"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-27"
+    },
+    {
+      "t1": "Florida Panthers",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-27"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-27"
+    },
+    {
+      "t1": "Detroit Red Wings",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-27"
+    },
+    {
+      "t1": "Pittsburgh Penguins",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-27"
+    },
+    {
+      "t1": "Minnesota Wild",
+      "t2": "Colorado Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-27"
+    },
+    {
+      "t1": "Edmonton Oilers",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-28"
+    },
+    {
+      "t1": "Phoenix Coyotes",
+      "t2": "Anaheim Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-28"
+    },
+    {
+      "t1": "Ottawa Senators",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2013-04-28"
     },
     {
       "t1": "Chicago Blackhawks",
@@ -696,48 +2244,18 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 4",
-      "date": "2013-05-08"
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 1",
+      "date": "2013-05-01"
     },
     {
-      "t1": "San Jose Sharks",
-      "t2": "Vancouver Canucks",
+      "t1": "St. Louis Blues",
+      "t2": "Los Angeles Kings",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 4",
-      "date": "2013-05-08"
-    },
-    {
-      "t1": "Boston Bruins",
-      "t2": "Toronto Maple Leafs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4",
-      "date": "2013-05-08"
-    },
-    {
-      "t1": "New York Rangers",
-      "t2": "Washington Capitals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4",
-      "date": "2013-05-08"
-    },
-    {
-      "t1": "Los Angeles Kings",
-      "t2": "St. Louis Blues",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 5",
-      "date": "2013-05-09"
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 1",
+      "date": "2013-05-01"
     },
     {
       "t1": "Anaheim Ducks",
@@ -746,118 +2264,8 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 5",
-      "date": "2013-05-09"
-    },
-    {
-      "t1": "Ottawa Senators",
-      "t2": "Montreal Canadiens",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 5",
-      "date": "2013-05-09"
-    },
-    {
-      "t1": "Pittsburgh Penguins",
-      "t2": "New York Islanders",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 5",
-      "date": "2013-05-09"
-    },
-    {
-      "t1": "Chicago Blackhawks",
-      "t2": "Minnesota Wild",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 5",
-      "date": "2013-05-10"
-    },
-    {
-      "t1": "Toronto Maple Leafs",
-      "t2": "Boston Bruins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 5",
-      "date": "2013-05-10"
-    },
-    {
-      "t1": "Washington Capitals",
-      "t2": "New York Rangers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 5",
-      "date": "2013-05-10"
-    },
-    {
-      "t1": "Detroit Red Wings",
-      "t2": "Anaheim Ducks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 6",
-      "date": "2013-05-11"
-    },
-    {
-      "t1": "Los Angeles Kings",
-      "t2": "St. Louis Blues",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 6",
-      "date": "2013-05-11"
-    },
-    {
-      "t1": "Pittsburgh Penguins",
-      "t2": "New York Islanders",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 6",
-      "date": "2013-05-11"
-    },
-    {
-      "t1": "New York Rangers",
-      "t2": "Washington Capitals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 6",
-      "date": "2013-05-12"
-    },
-    {
-      "t1": "Toronto Maple Leafs",
-      "t2": "Boston Bruins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 6",
-      "date": "2013-05-12"
-    },
-    {
-      "t1": "Detroit Red Wings",
-      "t2": "Anaheim Ducks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 7",
-      "date": "2013-05-13"
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 1",
+      "date": "2013-05-01"
     },
     {
       "t1": "Boston Bruins",
@@ -866,280 +2274,200 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 7",
-      "date": "2013-05-13"
-    },
-    {
-      "t1": "New York Rangers",
-      "t2": "Washington Capitals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 7",
-      "date": "2013-05-14"
+      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 1",
+      "date": "2013-05-01"
     },
     {
       "t1": "Pittsburgh Penguins",
-      "t2": "Ottawa Senators",
+      "t2": "New York Islanders",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
-      "date": "2013-05-14"
+      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 1",
+      "date": "2013-05-01"
     },
     {
-      "t1": "Los Angeles Kings",
-      "t2": "San Jose Sharks",
+      "t1": "San Jose Sharks",
+      "t2": "Vancouver Canucks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
-      "date": "2013-05-15"
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 1",
+      "date": "2013-05-02"
     },
     {
-      "t1": "Chicago Blackhawks",
-      "t2": "Detroit Red Wings",
+      "t1": "Ottawa Senators",
+      "t2": "Montreal Canadiens",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
-      "date": "2013-05-16"
+      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 1",
+      "date": "2013-05-02"
     },
     {
-      "t1": "Boston Bruins",
+      "t1": "Washington Capitals",
       "t2": "New York Rangers",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
-      "date": "2013-05-16"
+      "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 1",
+      "date": "2013-05-02"
     },
     {
-      "t1": "Los Angeles Kings",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2013-05-17"
-    },
-    {
-      "t1": "Pittsburgh Penguins",
-      "t2": "Ottawa Senators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2013-05-17"
-    },
-    {
-      "t1": "Detroit Red Wings",
-      "t2": "Chicago Blackhawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2013-05-18"
-    },
-    {
-      "t1": "San Jose Sharks",
+      "t1": "St. Louis Blues",
       "t2": "Los Angeles Kings",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3",
-      "date": "2013-05-19"
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2",
+      "date": "2013-05-03"
     },
     {
-      "t1": "Boston Bruins",
-      "t2": "New York Rangers",
+      "t1": "Detroit Red Wings",
+      "t2": "Anaheim Ducks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2013-05-19"
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2",
+      "date": "2013-05-03"
     },
     {
-      "t1": "Ottawa Senators",
+      "t1": "Chicago Blackhawks",
+      "t2": "Los Angeles Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2",
+      "date": "2013-06-03"
+    },
+    {
+      "t1": "Boston Bruins",
       "t2": "Pittsburgh Penguins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
-      "date": "2013-05-19"
+      "round": "EASTERN CONFERENCE FINALS - GAME 2",
+      "date": "2013-06-04"
     },
     {
-      "t1": "Detroit Red Wings",
+      "t1": "Los Angeles Kings",
       "t2": "Chicago Blackhawks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3",
-      "date": "2013-05-20"
+      "round": "WESTERN CONFERENCE FINALS - GAME 3",
+      "date": "2013-06-05"
     },
     {
       "t1": "Boston Bruins",
-      "t2": "New York Rangers",
+      "t2": "Pittsburgh Penguins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3",
-      "date": "2013-05-21"
+      "round": "EASTERN CONFERENCE FINALS - GAME 3",
+      "date": "2013-06-06"
     },
     {
-      "t1": "San Jose Sharks",
+      "t1": "Chicago Blackhawks",
       "t2": "Los Angeles Kings",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4",
-      "date": "2013-05-22"
+      "round": "WESTERN CONFERENCE FINALS - GAME 4",
+      "date": "2013-06-07"
     },
     {
-      "t1": "Pittsburgh Penguins",
-      "t2": "Ottawa Senators",
+      "t1": "Boston Bruins",
+      "t2": "Pittsburgh Penguins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
-      "date": "2013-05-22"
+      "round": "EASTERN CONFERENCE FINALS - GAME 4",
+      "date": "2013-06-08"
     },
     {
-      "t1": "New York Rangers",
+      "t1": "Chicago Blackhawks",
+      "t2": "Los Angeles Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 5",
+      "date": "2013-06-09"
+    },
+    {
+      "t1": "Chicago Blackhawks",
       "t2": "Boston Bruins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
-      "date": "2013-05-23"
+      "round": "STANLEY CUP FINAL - GAME 1",
+      "date": "2013-06-13"
     },
     {
-      "t1": "Detroit Red Wings",
+      "t1": "Boston Bruins",
       "t2": "Chicago Blackhawks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4",
-      "date": "2013-05-24"
-    },
-    {
-      "t1": "Los Angeles Kings",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5",
-      "date": "2013-05-24"
-    },
-    {
-      "t1": "Pittsburgh Penguins",
-      "t2": "Ottawa Senators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5",
-      "date": "2013-05-24"
+      "round": "STANLEY CUP FINAL - GAME 2",
+      "date": "2013-06-16"
     },
     {
       "t1": "Boston Bruins",
-      "t2": "New York Rangers",
+      "t2": "Chicago Blackhawks",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5",
-      "date": "2013-05-25"
+      "round": "STANLEY CUP FINAL - GAME 3",
+      "date": "2013-06-18"
     },
     {
       "t1": "Chicago Blackhawks",
-      "t2": "Detroit Red Wings",
+      "t2": "Boston Bruins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5",
-      "date": "2013-05-26"
-    },
-    {
-      "t1": "San Jose Sharks",
-      "t2": "Los Angeles Kings",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6",
-      "date": "2013-05-27"
+      "round": "STANLEY CUP FINAL - GAME 4",
+      "date": "2013-06-20"
     },
     {
       "t1": "Chicago Blackhawks",
-      "t2": "Detroit Red Wings",
+      "t2": "Boston Bruins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 6",
-      "date": "2013-05-28"
-    },
-    {
-      "t1": "Los Angeles Kings",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 7",
-      "date": "2013-05-29"
+      "round": "STANLEY CUP FINAL - GAME 5",
+      "date": "2013-06-23"
     },
     {
       "t1": "Chicago Blackhawks",
-      "t2": "Detroit Red Wings",
+      "t2": "Boston Bruins",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 7",
-      "date": "2013-05-30"
-    },
-    {
-      "t1": "Chicago Blackhawks",
-      "t2": "Los Angeles Kings",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FINALS - GAME 1",
-      "date": "2013-06-01"
-    },
-    {
-      "t1": "Boston Bruins",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FINALS - GAME 1",
-      "date": "2013-06-02"
+      "round": "STANLEY CUP FINAL - GAME 6",
+      "date": "2013-06-25"
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 13:45 UTC"
+  "updated": "2026-06-15 22:04 UTC"
 }

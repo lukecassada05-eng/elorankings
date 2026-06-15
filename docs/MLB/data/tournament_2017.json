@@ -12,14 +12,6 @@
       "round": ""
     },
     {
-      "winner": "Toronto Blue Jays",
-      "loser": "New York Yankees",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2017-10-01",
-      "round": ""
-    },
-    {
       "winner": "Oakland Athletics",
       "loser": "Texas Rangers",
       "winner_score": 5,
@@ -236,14 +228,6 @@
       "round": "NLDS - GAME 3"
     },
     {
-      "winner": "New York Yankees",
-      "loser": "Cleveland Indians",
-      "winner_score": 7,
-      "loser_score": 3,
-      "date": "2017-10-09",
-      "round": "ALDS - GAME 4"
-    },
-    {
       "winner": "Los Angeles Dodgers",
       "loser": "Arizona Diamondbacks",
       "winner_score": 3,
@@ -324,14 +308,6 @@
       "round": "NLCS - GAME 4"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Chicago Cubs",
-      "winner_score": 11,
-      "loser_score": 1,
-      "date": "2017-10-20",
-      "round": "NLCS - GAME 5"
-    },
-    {
       "winner": "Houston Astros",
       "loser": "New York Yankees",
       "winner_score": 7,
@@ -408,16 +384,6 @@
     {
       "t1": "Houston Astros",
       "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2017-10-01"
-    },
-    {
-      "t1": "Toronto Blue Jays",
-      "t2": "New York Yankees",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -696,16 +662,6 @@
       "date": "2017-10-09"
     },
     {
-      "t1": "New York Yankees",
-      "t2": "Cleveland Indians",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALDS - GAME 4",
-      "date": "2017-10-09"
-    },
-    {
       "t1": "Los Angeles Dodgers",
       "t2": "Arizona Diamondbacks",
       "w1": 1,
@@ -806,16 +762,6 @@
       "date": "2017-10-19"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Chicago Cubs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLCS - GAME 5",
-      "date": "2017-10-20"
-    },
-    {
       "t1": "Houston Astros",
       "t2": "New York Yankees",
       "w1": 1,
@@ -907,5 +853,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 13:49 UTC"
+  "updated": "2026-06-15 22:07 UTC"
 }

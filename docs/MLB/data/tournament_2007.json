@@ -124,14 +124,6 @@
       "round": "NLCS"
     },
     {
-      "winner": "Boston Red Sox",
-      "loser": "Cleveland Indians",
-      "winner_score": 10,
-      "loser_score": 3,
-      "date": "2007-10-12",
-      "round": "ALCS"
-    },
-    {
       "winner": "Colorado Rockies",
       "loser": "Arizona Diamondbacks",
       "winner_score": 3,
@@ -202,14 +194,6 @@
       "loser_score": 2,
       "date": "2007-10-22",
       "round": "ALCS"
-    },
-    {
-      "winner": "Boston Red Sox",
-      "loser": "Colorado Rockies",
-      "winner_score": 13,
-      "loser_score": 1,
-      "date": "2007-10-25",
-      "round": "WORLD SERIES"
     },
     {
       "winner": "Boston Red Sox",
@@ -298,24 +282,14 @@
       "date": "2007-10-12"
     },
     {
-      "t1": "Boston Red Sox",
-      "t2": "Cleveland Indians",
-      "w1": 4,
+      "t1": "Cleveland Indians",
+      "t2": "Boston Red Sox",
+      "w1": 3,
       "w2": 3,
       "done": true,
-      "loser": "Cleveland Indians",
+      "loser": "Boston Red Sox",
       "round": "ALCS",
-      "date": "2007-10-12"
-    },
-    {
-      "t1": "Boston Red Sox",
-      "t2": "Colorado Rockies",
-      "w1": 3,
-      "w2": 0,
-      "done": true,
-      "loser": "Colorado Rockies",
-      "round": "WORLD SERIES",
-      "date": "2007-10-25"
+      "date": "2007-10-14"
     },
     {
       "t1": "Boston Red Sox",
@@ -326,6 +300,16 @@
       "loser": "",
       "round": "",
       "date": "2007-10-26"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "Colorado Rockies",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WORLD SERIES",
+      "date": "2007-10-28"
     }
   ],
   "eliminated": [
@@ -334,8 +318,7 @@
     "Chicago Cubs",
     "New York Yankees",
     "Arizona Diamondbacks",
-    "Cleveland Indians",
-    "Colorado Rockies"
+    "Boston Red Sox"
   ],
-  "updated": "2026-06-15 13:48 UTC"
+  "updated": "2026-06-15 22:06 UTC"
 }

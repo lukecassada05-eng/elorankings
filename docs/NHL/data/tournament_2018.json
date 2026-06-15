@@ -436,14 +436,6 @@
       "round": "WEST 2ND ROUND - GAME 3"
     },
     {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Boston Bruins",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2018-05-02",
-      "round": "EAST 2ND ROUND - GAME 3"
-    },
-    {
       "winner": "San Jose Sharks",
       "loser": "Vegas Golden Knights",
       "winner_score": 4,
@@ -586,14 +578,6 @@
       "loser_score": 2,
       "date": "2018-05-17",
       "round": "WEST FINALS - GAME 3"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Washington Capitals",
-      "winner_score": 4,
-      "loser_score": 2,
-      "date": "2018-05-18",
-      "round": "EAST FINALS - GAME 4"
     },
     {
       "winner": "Vegas Golden Knights",
@@ -1218,16 +1202,6 @@
       "date": "2018-05-02"
     },
     {
-      "t1": "Tampa Bay Lightning",
-      "t2": "Boston Bruins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 2ND ROUND - GAME 3",
-      "date": "2018-05-02"
-    },
-    {
       "t1": "San Jose Sharks",
       "t2": "Vegas Golden Knights",
       "w1": 1,
@@ -1408,16 +1382,6 @@
       "date": "2018-05-17"
     },
     {
-      "t1": "Tampa Bay Lightning",
-      "t2": "Washington Capitals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST FINALS - GAME 4",
-      "date": "2018-05-18"
-    },
-    {
       "t1": "Vegas Golden Knights",
       "t2": "Winnipeg Jets",
       "w1": 1,
@@ -1519,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 13:46 UTC"
+  "updated": "2026-06-15 22:05 UTC"
 }

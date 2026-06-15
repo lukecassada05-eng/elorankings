@@ -124,14 +124,6 @@
       "round": "NLWC - GAME 2"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Milwaukee Brewers",
-      "winner_score": 3,
-      "loser_score": 0,
-      "date": "2020-10-02",
-      "round": "NLWC - GAME 2"
-    },
-    {
       "winner": "Miami Marlins",
       "loser": "Chicago Cubs",
       "winner_score": 2,
@@ -330,6 +322,14 @@
       "loser_score": 3,
       "date": "2020-10-17",
       "round": "NLCS - GAME 5"
+    },
+    {
+      "winner": "Tampa Bay Rays",
+      "loser": "Houston Astros",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2020-10-18",
+      "round": "ALCS - GAME 7"
     },
     {
       "winner": "Los Angeles Dodgers",
@@ -538,16 +538,6 @@
       "loser": "",
       "round": "NLWC - GAME 2",
       "date": "2020-10-01"
-    },
-    {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Milwaukee Brewers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLWC - GAME 2",
-      "date": "2020-10-02"
     },
     {
       "t1": "Miami Marlins",
@@ -800,6 +790,16 @@
       "date": "2020-10-17"
     },
     {
+      "t1": "Tampa Bay Rays",
+      "t2": "Houston Astros",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALCS - GAME 7",
+      "date": "2020-10-18"
+    },
+    {
       "t1": "Los Angeles Dodgers",
       "t2": "Atlanta Braves",
       "w1": 1,
@@ -823,5 +823,5 @@
   "eliminated": [
     "Tampa Bay Rays"
   ],
-  "updated": "2026-06-15 13:49 UTC"
+  "updated": "2026-06-15 22:07 UTC"
 }
