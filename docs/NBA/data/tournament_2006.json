@@ -156,14 +156,6 @@
       "round": ""
     },
     {
-      "winner": "New Jersey Nets",
-      "loser": "Boston Celtics",
-      "winner_score": 79,
-      "loser_score": 74,
-      "date": "2006-04-14",
-      "round": ""
-    },
-    {
       "winner": "Golden State Warriors",
       "loser": "Phoenix Suns",
       "winner_score": 110,
@@ -1100,14 +1092,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Detroit Pistons",
-      "loser": "Cleveland Cavaliers",
-      "winner_score": 79,
-      "loser_score": 61,
-      "date": "2006-05-21",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Dallas Mavericks",
       "loser": "San Antonio Spurs",
       "winner_score": 119,
@@ -1460,16 +1444,6 @@
       "date": "2006-04-14"
     },
     {
-      "t1": "New Jersey Nets",
-      "t2": "Boston Celtics",
-      "w1": 2,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2006-04-14"
-    },
-    {
       "t1": "Golden State Warriors",
       "t2": "Phoenix Suns",
       "w1": 1,
@@ -1658,6 +1632,16 @@
       "loser": "",
       "round": "",
       "date": "2006-04-16"
+    },
+    {
+      "t1": "New Jersey Nets",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-04-17"
     },
     {
       "t1": "Houston Rockets",
@@ -2002,10 +1986,10 @@
     {
       "t1": "Detroit Pistons",
       "t2": "Cleveland Cavaliers",
-      "w1": 4,
+      "w1": 3,
       "w2": 3,
-      "done": true,
-      "loser": "Cleveland Cavaliers",
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2006-05-07"
     },
@@ -2070,12 +2054,11 @@
     "Milwaukee Bucks",
     "Memphis Grizzlies",
     "San Antonio Spurs",
-    "Cleveland Cavaliers",
     "LA Clippers",
     "New Jersey Nets",
     "Detroit Pistons",
     "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-06-15 22:03 UTC"
+  "updated": "2026-06-16 12:30 UTC"
 }

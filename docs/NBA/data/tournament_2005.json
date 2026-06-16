@@ -100,14 +100,6 @@
       "round": ""
     },
     {
-      "winner": "Houston Rockets",
-      "loser": "Memphis Grizzlies",
-      "winner_score": 100,
-      "loser_score": 92,
-      "date": "2005-04-13",
-      "round": ""
-    },
-    {
       "winner": "Dallas Mavericks",
       "loser": "Seattle SuperSonics",
       "winner_score": 95,
@@ -868,14 +860,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "San Antonio Spurs",
-      "loser": "Denver Nuggets",
-      "winner_score": 126,
-      "loser_score": 115,
-      "date": "2005-05-03",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Indiana Pacers",
       "loser": "Boston Celtics",
       "winner_score": 90,
@@ -1398,16 +1382,6 @@
     {
       "t1": "Detroit Pistons",
       "t2": "Orlando Magic",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2005-04-13"
-    },
-    {
-      "t1": "Houston Rockets",
-      "t2": "Memphis Grizzlies",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2069,9 +2043,9 @@
       "t1": "Denver Nuggets",
       "t2": "San Antonio Spurs",
       "w1": 1,
-      "w2": 4,
-      "done": true,
-      "loser": "Denver Nuggets",
+      "w2": 3,
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2005-04-24"
     },
@@ -2163,7 +2137,6 @@
     "Boston Celtics",
     "New Jersey Nets",
     "Chicago Bulls",
-    "Denver Nuggets",
     "Memphis Grizzlies",
     "Washington Wizards",
     "Seattle SuperSonics",
@@ -2173,5 +2146,5 @@
     "Miami Heat",
     "Detroit Pistons"
   ],
-  "updated": "2026-06-15 22:03 UTC"
+  "updated": "2026-06-16 12:30 UTC"
 }

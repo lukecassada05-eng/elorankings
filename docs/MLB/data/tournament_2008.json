@@ -20,6 +20,14 @@
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
+      "winner": "Boston Red Sox",
+      "loser": "Los Angeles Angels",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2008-10-02",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
       "winner": "Tampa Bay Rays",
       "loser": "Chicago White Sox",
       "winner_score": 6,
@@ -84,6 +92,14 @@
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
+      "winner": "Chicago White Sox",
+      "loser": "Tampa Bay Rays",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2008-10-05",
+      "round": ""
+    },
+    {
       "winner": "Los Angeles Angels",
       "loser": "Boston Red Sox",
       "winner_score": 5,
@@ -121,14 +137,6 @@
       "winner_score": 2,
       "loser_score": 0,
       "date": "2008-10-11",
-      "round": "ALCS"
-    },
-    {
-      "winner": "Tampa Bay Rays",
-      "loser": "Boston Red Sox",
-      "winner_score": 9,
-      "loser_score": 8,
-      "date": "2008-10-12",
       "round": "ALCS"
     },
     {
@@ -258,8 +266,8 @@
       "date": "2008-10-01"
     },
     {
-      "t1": "Tampa Bay Rays",
-      "t2": "Chicago White Sox",
+      "t1": "Boston Red Sox",
+      "t2": "Los Angeles Angels",
       "w1": 2,
       "w2": 0,
       "done": false,
@@ -268,14 +276,14 @@
       "date": "2008-10-02"
     },
     {
-      "t1": "Boston Red Sox",
-      "t2": "Los Angeles Angels",
-      "w1": 1,
+      "t1": "Tampa Bay Rays",
+      "t2": "Chicago White Sox",
+      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
       "round": "DIVISIONAL PLAYOFFS",
-      "date": "2008-10-04"
+      "date": "2008-10-02"
     },
     {
       "t1": "Milwaukee Brewers",
@@ -298,8 +306,8 @@
       "date": "2008-10-05"
     },
     {
-      "t1": "Los Angeles Angels",
-      "t2": "Boston Red Sox",
+      "t1": "Chicago White Sox",
+      "t2": "Tampa Bay Rays",
       "w1": 1,
       "w2": 1,
       "done": false,
@@ -308,14 +316,14 @@
       "date": "2008-10-05"
     },
     {
-      "t1": "Tampa Bay Rays",
-      "t2": "Chicago White Sox",
+      "t1": "Los Angeles Angels",
+      "t2": "Boston Red Sox",
       "w1": 1,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
-      "date": "2008-10-06"
+      "date": "2008-10-05"
     },
     {
       "t1": "Philadelphia Phillies",
@@ -331,7 +339,7 @@
       "t1": "Boston Red Sox",
       "t2": "Tampa Bay Rays",
       "w1": 1,
-      "w2": 4,
+      "w2": 3,
       "done": true,
       "loser": "Boston Red Sox",
       "round": "ALCS",
@@ -374,5 +382,5 @@
     "Boston Red Sox",
     "Tampa Bay Rays"
   ],
-  "updated": "2026-06-15 22:06 UTC"
+  "updated": "2026-06-16 12:32 UTC"
 }

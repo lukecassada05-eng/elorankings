@@ -20,6 +20,14 @@
       "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
+      "winner": "Minnesota Vikings",
+      "loser": "Dallas Cowboys",
+      "winner_score": 34,
+      "loser_score": 3,
+      "date": "2010-01-17",
+      "round": "NFC DIVISIONAL PLAYOFFS"
+    },
+    {
       "winner": "New York Jets",
       "loser": "San Diego Chargers",
       "winner_score": 17,
@@ -74,6 +82,16 @@
       "date": "2010-01-17"
     },
     {
+      "t1": "Minnesota Vikings",
+      "t2": "Dallas Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dallas Cowboys",
+      "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2010-01-17"
+    },
+    {
       "t1": "New York Jets",
       "t2": "San Diego Chargers",
       "w1": 1,
@@ -117,10 +135,11 @@
   "eliminated": [
     "Arizona Cardinals",
     "Baltimore Ravens",
+    "Dallas Cowboys",
     "San Diego Chargers",
     "New York Jets",
     "Minnesota Vikings",
     "Indianapolis Colts"
   ],
-  "updated": "2026-06-15 22:08 UTC"
+  "updated": "2026-06-16 12:32 UTC"
 }

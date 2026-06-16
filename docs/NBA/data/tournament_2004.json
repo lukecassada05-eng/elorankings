@@ -164,14 +164,6 @@
       "round": ""
     },
     {
-      "winner": "Phoenix Suns",
-      "loser": "Utah Jazz",
-      "winner_score": 89,
-      "loser_score": 84,
-      "date": "2004-04-14",
-      "round": ""
-    },
-    {
       "winner": "New Orleans Hornets",
       "loser": "Washington Wizards",
       "winner_score": 94,
@@ -260,14 +252,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Los Angeles Lakers",
-      "loser": "Houston Rockets",
-      "winner_score": 72,
-      "loser_score": 71,
-      "date": "2004-04-17",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Sacramento Kings",
       "loser": "Dallas Mavericks",
       "winner_score": 116,
@@ -313,14 +297,6 @@
       "winner_score": 98,
       "loser_score": 84,
       "date": "2004-04-19",
-      "round": "PLAYOFFS"
-    },
-    {
-      "winner": "Indiana Pacers",
-      "loser": "Boston Celtics",
-      "winner_score": 103,
-      "loser_score": 90,
-      "date": "2004-04-20",
       "round": "PLAYOFFS"
     },
     {
@@ -1094,16 +1070,6 @@
       "date": "2004-04-14"
     },
     {
-      "t1": "Phoenix Suns",
-      "t2": "Utah Jazz",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2004-04-14"
-    },
-    {
       "t1": "New Orleans Hornets",
       "t2": "Washington Wizards",
       "w1": 1,
@@ -1186,10 +1152,10 @@
     {
       "t1": "Indiana Pacers",
       "t2": "Boston Celtics",
-      "w1": 4,
+      "w1": 3,
       "w2": 0,
-      "done": true,
-      "loser": "Boston Celtics",
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2004-04-17"
     },
@@ -1210,16 +1176,6 @@
       "w2": 0,
       "done": true,
       "loser": "Memphis Grizzlies",
-      "round": "PLAYOFFS",
-      "date": "2004-04-17"
-    },
-    {
-      "t1": "Los Angeles Lakers",
-      "t2": "Houston Rockets",
-      "w1": 4,
-      "w2": 1,
-      "done": true,
-      "loser": "Houston Rockets",
       "round": "PLAYOFFS",
       "date": "2004-04-17"
     },
@@ -1260,6 +1216,16 @@
       "w2": 1,
       "done": true,
       "loser": "Denver Nuggets",
+      "round": "PLAYOFFS",
+      "date": "2004-04-19"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Houston Rockets",
+      "w1": 3,
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2004-04-19"
     },
@@ -1335,10 +1301,8 @@
     }
   ],
   "eliminated": [
-    "Boston Celtics",
     "New York Knicks",
     "Memphis Grizzlies",
-    "Houston Rockets",
     "Dallas Mavericks",
     "Milwaukee Bucks",
     "New Orleans Hornets",
@@ -1351,5 +1315,5 @@
     "Indiana Pacers",
     "Los Angeles Lakers"
   ],
-  "updated": "2026-06-15 22:03 UTC"
+  "updated": "2026-06-16 12:30 UTC"
 }

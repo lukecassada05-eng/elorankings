@@ -124,6 +124,14 @@
       "round": "NLWC - GAME 2"
     },
     {
+      "winner": "Los Angeles Dodgers",
+      "loser": "Milwaukee Brewers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2020-10-02",
+      "round": "NLWC - GAME 2"
+    },
+    {
       "winner": "Miami Marlins",
       "loser": "Chicago Cubs",
       "winner_score": 2,
@@ -540,6 +548,16 @@
       "date": "2020-10-01"
     },
     {
+      "t1": "Los Angeles Dodgers",
+      "t2": "Milwaukee Brewers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLWC - GAME 2",
+      "date": "2020-10-02"
+    },
+    {
       "t1": "Miami Marlins",
       "t2": "Chicago Cubs",
       "w1": 1,
@@ -823,5 +841,5 @@
   "eliminated": [
     "Tampa Bay Rays"
   ],
-  "updated": "2026-06-15 22:07 UTC"
+  "updated": "2026-06-16 12:32 UTC"
 }

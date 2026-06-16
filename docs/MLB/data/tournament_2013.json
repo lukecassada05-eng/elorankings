@@ -286,6 +286,14 @@
     {
       "winner": "Boston Red Sox",
       "loser": "St. Louis Cardinals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2013-10-29",
+      "round": "WORLD SERIES - GAME 5"
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "St. Louis Cardinals",
       "winner_score": 6,
       "loser_score": 1,
       "date": "2013-10-31",
@@ -650,10 +658,20 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "WORLD SERIES - GAME 5",
+      "date": "2013-10-29"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "St. Louis Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "WORLD SERIES - GAME 6",
       "date": "2013-10-31"
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 22:07 UTC"
+  "updated": "2026-06-16 12:32 UTC"
 }

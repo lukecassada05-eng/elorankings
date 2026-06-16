@@ -876,14 +876,6 @@
       "round": "EASTERN CONFERENCE FINALS - GAME 3"
     },
     {
-      "winner": "Denver Nuggets",
-      "loser": "Los Angeles Lakers",
-      "winner_score": 120,
-      "loser_score": 101,
-      "date": "2009-05-26",
-      "round": "WESTERN CONFERENCE FINALS - GAME 4"
-    },
-    {
       "winner": "Orlando Magic",
       "loser": "Cleveland Cavaliers",
       "winner_score": 116,
@@ -2056,16 +2048,6 @@
       "date": "2009-05-25"
     },
     {
-      "t1": "Denver Nuggets",
-      "t2": "Los Angeles Lakers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FINALS - GAME 4",
-      "date": "2009-05-26"
-    },
-    {
       "t1": "Orlando Magic",
       "t2": "Cleveland Cavaliers",
       "w1": 1,
@@ -2167,5 +2149,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 22:03 UTC"
+  "updated": "2026-06-16 12:30 UTC"
 }

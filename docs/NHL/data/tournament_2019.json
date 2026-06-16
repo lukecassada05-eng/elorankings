@@ -92,14 +92,6 @@
       "round": "WEST 1ST ROUND - GAME 2"
     },
     {
-      "winner": "New York Islanders",
-      "loser": "Pittsburgh Penguins",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2019-04-14",
-      "round": "EAST 1ST ROUND - GAME 3"
-    },
-    {
       "winner": "Columbus Blue Jackets",
       "loser": "Tampa Bay Lightning",
       "winner_score": 3,
@@ -620,6 +612,14 @@
       "round": "STANLEY CUP FINAL - GAME 2"
     },
     {
+      "winner": "Boston Bruins",
+      "loser": "St. Louis Blues",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "STANLEY CUP FINAL - GAME 3"
+    },
+    {
       "winner": "St. Louis Blues",
       "loser": "Boston Bruins",
       "winner_score": 4,
@@ -761,16 +761,6 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 2",
-      "date": "2019-04-14"
-    },
-    {
-      "t1": "New York Islanders",
-      "t2": "Pittsburgh Penguins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST 1ST ROUND - GAME 3",
       "date": "2019-04-14"
     },
     {
@@ -1424,6 +1414,16 @@
       "date": "2019-05-30"
     },
     {
+      "t1": "Boston Bruins",
+      "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "STANLEY CUP FINAL - GAME 3",
+      "date": "2019-06-02"
+    },
+    {
       "t1": "St. Louis Blues",
       "t2": "Boston Bruins",
       "w1": 1,
@@ -1465,5 +1465,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 22:05 UTC"
+  "updated": "2026-06-16 12:31 UTC"
 }

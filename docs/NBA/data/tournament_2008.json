@@ -140,14 +140,6 @@
       "round": ""
     },
     {
-      "winner": "Phoenix Suns",
-      "loser": "Golden State Warriors",
-      "winner_score": 122,
-      "loser_score": 116,
-      "date": "2008-04-14",
-      "round": ""
-    },
-    {
       "winner": "San Antonio Spurs",
       "loser": "Sacramento Kings",
       "winner_score": 101,
@@ -268,14 +260,6 @@
       "round": ""
     },
     {
-      "winner": "Minnesota Timberwolves",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 110,
-      "loser_score": 101,
-      "date": "2008-04-16",
-      "round": ""
-    },
-    {
       "winner": "Orlando Magic",
       "loser": "Washington Wizards",
       "winner_score": 103,
@@ -288,14 +272,6 @@
       "loser": "Portland Trail Blazers",
       "winner_score": 100,
       "loser_score": 91,
-      "date": "2008-04-16",
-      "round": ""
-    },
-    {
-      "winner": "Charlotte Bobcats",
-      "loser": "Philadelphia 76ers",
-      "winner_score": 115,
-      "loser_score": 109,
       "date": "2008-04-16",
       "round": ""
     },
@@ -924,14 +900,6 @@
       "round": "EASTERN CONFERENCE FINALS - GAME 2"
     },
     {
-      "winner": "Los Angeles Lakers",
-      "loser": "San Antonio Spurs",
-      "winner_score": 101,
-      "loser_score": 71,
-      "date": "2008-05-23",
-      "round": "WESTERN CONFERENCE FINALS - GAME 2"
-    },
-    {
       "winner": "Boston Celtics",
       "loser": "Detroit Pistons",
       "winner_score": 94,
@@ -1208,16 +1176,6 @@
       "date": "2008-04-14"
     },
     {
-      "t1": "Phoenix Suns",
-      "t2": "Golden State Warriors",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2008-04-14"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "Sacramento Kings",
       "w1": 1,
@@ -1368,16 +1326,6 @@
       "date": "2008-04-16"
     },
     {
-      "t1": "Minnesota Timberwolves",
-      "t2": "Milwaukee Bucks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2008-04-16"
-    },
-    {
       "t1": "Orlando Magic",
       "t2": "Washington Wizards",
       "w1": 1,
@@ -1390,16 +1338,6 @@
     {
       "t1": "Phoenix Suns",
       "t2": "Portland Trail Blazers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2008-04-16"
-    },
-    {
-      "t1": "Charlotte Bobcats",
-      "t2": "Philadelphia 76ers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2188,16 +2126,6 @@
       "date": "2008-05-23"
     },
     {
-      "t1": "Los Angeles Lakers",
-      "t2": "San Antonio Spurs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FINALS - GAME 2",
-      "date": "2008-05-23"
-    },
-    {
       "t1": "Boston Celtics",
       "t2": "Detroit Pistons",
       "w1": 1,
@@ -2329,5 +2257,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 22:03 UTC"
+  "updated": "2026-06-16 12:30 UTC"
 }

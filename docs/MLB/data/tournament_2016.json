@@ -84,6 +84,14 @@
       "round": ""
     },
     {
+      "winner": "Tampa Bay Rays",
+      "loser": "Texas Rangers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2016-10-02",
+      "round": ""
+    },
+    {
       "winner": "Milwaukee Brewers",
       "loser": "Colorado Rockies",
       "winner_score": 4,
@@ -140,14 +148,6 @@
       "round": ""
     },
     {
-      "winner": "Tampa Bay Rays",
-      "loser": "Texas Rangers",
-      "winner_score": 6,
-      "loser_score": 4,
-      "date": "2016-10-02",
-      "round": ""
-    },
-    {
       "winner": "Washington Nationals",
       "loser": "Miami Marlins",
       "winner_score": 10,
@@ -168,6 +168,14 @@
       "loser": "Los Angeles Dodgers",
       "winner_score": 7,
       "loser_score": 1,
+      "date": "2016-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota Twins",
+      "loser": "Chicago White Sox",
+      "winner_score": 6,
+      "loser_score": 3,
       "date": "2016-10-02",
       "round": ""
     },
@@ -436,6 +444,14 @@
       "round": "World Series - GAME 3"
     },
     {
+      "winner": "Cleveland Indians",
+      "loser": "Chicago Cubs",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2016-10-30",
+      "round": "World Series - GAME 4"
+    },
+    {
       "winner": "Chicago Cubs",
       "loser": "Cleveland Indians",
       "winner_score": 3,
@@ -450,6 +466,14 @@
       "loser_score": 3,
       "date": "2016-11-02",
       "round": "World Series - GAME 6"
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Cleveland Indians",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2016-11-03",
+      "round": "World Series - GAME 7"
     }
   ],
   "series": [
@@ -536,7 +560,7 @@
     {
       "t1": "Minnesota Twins",
       "t2": "Chicago White Sox",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -552,6 +576,16 @@
       "loser": "",
       "round": "",
       "date": "2016-10-01"
+    },
+    {
+      "t1": "Tampa Bay Rays",
+      "t2": "Texas Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2016-10-02"
     },
     {
       "t1": "Milwaukee Brewers",
@@ -586,16 +620,6 @@
     {
       "t1": "Oakland Athletics",
       "t2": "Seattle Mariners",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2016-10-02"
-    },
-    {
-      "t1": "Tampa Bay Rays",
-      "t2": "Texas Rangers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -894,6 +918,16 @@
       "date": "2016-10-29"
     },
     {
+      "t1": "Cleveland Indians",
+      "t2": "Chicago Cubs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "World Series - GAME 4",
+      "date": "2016-10-30"
+    },
+    {
       "t1": "Chicago Cubs",
       "t2": "Cleveland Indians",
       "w1": 1,
@@ -912,8 +946,18 @@
       "loser": "",
       "round": "World Series - GAME 6",
       "date": "2016-11-02"
+    },
+    {
+      "t1": "Chicago Cubs",
+      "t2": "Cleveland Indians",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "World Series - GAME 7",
+      "date": "2016-11-03"
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 22:07 UTC"
+  "updated": "2026-06-16 12:32 UTC"
 }

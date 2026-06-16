@@ -68,6 +68,14 @@
       "round": "NLDS - GAME 2"
     },
     {
+      "winner": "New York Yankees",
+      "loser": "Minnesota Twins",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2019-10-05",
+      "round": "ALDS - GAME 2"
+    },
+    {
       "winner": "Houston Astros",
       "loser": "Tampa Bay Rays",
       "winner_score": 3,
@@ -366,6 +374,16 @@
       "date": "2019-10-05"
     },
     {
+      "t1": "New York Yankees",
+      "t2": "Minnesota Twins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 2",
+      "date": "2019-10-05"
+    },
+    {
       "t1": "Houston Astros",
       "t2": "Tampa Bay Rays",
       "w1": 1,
@@ -637,5 +655,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-15 22:07 UTC"
+  "updated": "2026-06-16 12:32 UTC"
 }

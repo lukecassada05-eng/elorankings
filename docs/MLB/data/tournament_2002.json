@@ -2,8 +2,362 @@
   "year": 2002,
   "sport": "MLB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-06-15 22:06 UTC"
+  "games": [
+    {
+      "winner": "Minnesota            Twins",
+      "loser": "Oakland              Athletics",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2002-10-01",
+      "round": ""
+    },
+    {
+      "winner": "New York             Yankees",
+      "loser": "Anaheim              Angels",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2002-10-02",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis            Cardinals",
+      "loser": "Arizona              Diamondbacks",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2002-10-02",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "Atlanta              Braves",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2002-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Oakland              Athletics",
+      "loser": "Minnesota            Twins",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2002-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "New York             Yankees",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2002-10-03",
+      "round": "PLAYOFFS"
+    },
+    {
+      "winner": "St. Louis            Cardinals",
+      "loser": "Arizona              Diamondbacks",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2002-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Atlanta              Braves",
+      "loser": "San Francisco        Giants",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2002-10-04",
+      "round": ""
+    },
+    {
+      "winner": "Oakland              Athletics",
+      "loser": "Minnesota            Twins",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2002-10-04",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "New York             Yankees",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2002-10-05",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota            Twins",
+      "loser": "Oakland              Athletics",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2002-10-05",
+      "round": ""
+    },
+    {
+      "winner": "Atlanta              Braves",
+      "loser": "San Francisco        Giants",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2002-10-05",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis            Cardinals",
+      "loser": "Arizona              Diamondbacks",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2002-10-05",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota            Twins",
+      "loser": "Oakland              Athletics",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2002-10-06",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "Atlanta              Braves",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2002-10-06",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "Atlanta              Braves",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2002-10-08",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota            Twins",
+      "loser": "Anaheim              Angels",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2002-10-09",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "Minnesota            Twins",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2002-10-10",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "St. Louis            Cardinals",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2002-10-10",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "St. Louis            Cardinals",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2002-10-11",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "Minnesota            Twins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2002-10-12",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis            Cardinals",
+      "loser": "San Francisco        Giants",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2002-10-12",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "Minnesota            Twins",
+      "winner_score": 13,
+      "loser_score": 5,
+      "date": "2002-10-13",
+      "round": "PLAYOFFS"
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "St. Louis            Cardinals",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2002-10-13",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "St. Louis            Cardinals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2002-10-15",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "Anaheim              Angels",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2002-10-20",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "San Francisco        Giants",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2002-10-21",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "San Francisco        Giants",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2002-10-23",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "Anaheim              Angels",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2002-10-24",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco        Giants",
+      "loser": "Anaheim              Angels",
+      "winner_score": 16,
+      "loser_score": 4,
+      "date": "2002-10-25",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "San Francisco        Giants",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2002-10-27",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim              Angels",
+      "loser": "San Francisco        Giants",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2002-10-28",
+      "round": ""
+    }
+  ],
+  "series": [
+    {
+      "t1": "Minnesota            Twins",
+      "t2": "Oakland              Athletics",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Oakland              Athletics",
+      "round": "",
+      "date": "2002-10-01"
+    },
+    {
+      "t1": "New York             Yankees",
+      "t2": "Anaheim              Angels",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-10-02"
+    },
+    {
+      "t1": "St. Louis            Cardinals",
+      "t2": "Arizona              Diamondbacks",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona              Diamondbacks",
+      "round": "",
+      "date": "2002-10-02"
+    },
+    {
+      "t1": "San Francisco        Giants",
+      "t2": "Atlanta              Braves",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Atlanta              Braves",
+      "round": "",
+      "date": "2002-10-02"
+    },
+    {
+      "t1": "Anaheim              Angels",
+      "t2": "New York             Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "PLAYOFFS",
+      "date": "2002-10-03"
+    },
+    {
+      "t1": "Minnesota            Twins",
+      "t2": "Anaheim              Angels",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-10-09"
+    },
+    {
+      "t1": "San Francisco        Giants",
+      "t2": "St. Louis            Cardinals",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "St. Louis            Cardinals",
+      "round": "",
+      "date": "2002-10-10"
+    },
+    {
+      "t1": "Anaheim              Angels",
+      "t2": "Minnesota            Twins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "PLAYOFFS",
+      "date": "2002-10-13"
+    },
+    {
+      "t1": "San Francisco        Giants",
+      "t2": "Anaheim              Angels",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "San Francisco        Giants",
+      "round": "",
+      "date": "2002-10-20"
+    }
+  ],
+  "eliminated": [
+    "Oakland              Athletics",
+    "Arizona              Diamondbacks",
+    "Atlanta              Braves",
+    "St. Louis            Cardinals",
+    "San Francisco        Giants"
+  ],
+  "updated": "2026-06-16 12:31 UTC"
 }

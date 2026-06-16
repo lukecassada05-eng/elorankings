@@ -1106,6 +1106,70 @@
       "loser_score": 1,
       "date": "2024-06-02",
       "round": "East Final"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Dallas Stars",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2024-06-03",
+      "round": "West Final"
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Edmonton Oilers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2024-06-09",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Edmonton Oilers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2024-06-11",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Edmonton Oilers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2024-06-14",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Florida Panthers",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2024-06-16",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Florida Panthers",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2024-06-19",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Florida Panthers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2024-06-22",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Edmonton Oilers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2024-06-25",
+      "round": "Stanley Cup Final"
     }
   ],
   "series": [
@@ -1802,12 +1866,22 @@
     {
       "t1": "Edmonton Oilers",
       "t2": "Dallas Stars",
-      "w1": 3,
+      "w1": 4,
       "w2": 2,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Dallas Stars",
       "round": "West Final",
       "date": "2024-05-24"
+    },
+    {
+      "t1": "Florida Panthers",
+      "t2": "Edmonton Oilers",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Edmonton Oilers",
+      "round": "Stanley Cup Final",
+      "date": "2024-06-09"
     }
   ],
   "eliminated": [
@@ -1823,7 +1897,9 @@
     "Boston Bruins",
     "Colorado Avalanche",
     "Vancouver Canucks",
-    "New York Rangers"
+    "New York Rangers",
+    "Dallas Stars",
+    "Edmonton Oilers"
   ],
-  "updated": "2026-06-15 22:06 UTC"
+  "updated": "2026-06-16 12:31 UTC"
 }
