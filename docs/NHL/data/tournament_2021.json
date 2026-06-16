@@ -44,6 +44,14 @@
       "round": "Regular Season Game"
     },
     {
+      "winner": "Washington Capitals",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-15",
+      "round": "East 1st Round"
+    },
+    {
       "winner": "New York Islanders",
       "loser": "Pittsburgh Penguins",
       "winner_score": 4,
@@ -685,6 +693,14 @@
     },
     {
       "winner": "Tampa Bay Lightning",
+      "loser": "New York Islanders",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2021-06-26",
+      "round": "Stanley Cup Semifinals"
+    },
+    {
+      "winner": "Tampa Bay Lightning",
       "loser": "Montreal Canadiens",
       "winner_score": 5,
       "loser_score": 1,
@@ -776,6 +792,16 @@
       "date": "2021-05-15"
     },
     {
+      "t1": "Washington Capitals",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 4,
+      "done": true,
+      "loser": "Washington Capitals",
+      "round": "East 1st Round",
+      "date": "2021-05-15"
+    },
+    {
       "t1": "New York Islanders",
       "t2": "Pittsburgh Penguins",
       "w1": 4,
@@ -813,16 +839,6 @@
       "done": false,
       "loser": "",
       "round": "Regular Season Game",
-      "date": "2021-05-17"
-    },
-    {
-      "t1": "Boston Bruins",
-      "t2": "Washington Capitals",
-      "w1": 4,
-      "w2": 0,
-      "done": true,
-      "loser": "Washington Capitals",
-      "round": "East 1st Round",
       "date": "2021-05-17"
     },
     {
@@ -909,9 +925,9 @@
       "t1": "New York Islanders",
       "t2": "Tampa Bay Lightning",
       "w1": 3,
-      "w2": 3,
-      "done": false,
-      "loser": "",
+      "w2": 4,
+      "done": true,
+      "loser": "New York Islanders",
       "round": "Stanley Cup Semifinals",
       "date": "2021-06-13"
     },
@@ -937,10 +953,10 @@
     }
   ],
   "eliminated": [
+    "Washington Capitals",
     "Pittsburgh Penguins",
     "Minnesota Wild",
     "Florida Panthers",
-    "Washington Capitals",
     "Nashville Predators",
     "St. Louis Blues",
     "Edmonton Oilers",
@@ -949,8 +965,9 @@
     "Carolina Hurricanes",
     "Colorado Avalanche",
     "Winnipeg Jets",
+    "New York Islanders",
     "Vegas Golden Knights",
     "Montreal Canadiens"
   ],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

@@ -148,14 +148,6 @@
       "round": ""
     },
     {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Atlanta Hawks",
-      "winner_score": 110,
-      "loser_score": 76,
-      "date": "2007-04-14",
-      "round": ""
-    },
-    {
       "winner": "Houston Rockets",
       "loser": "NO/Oklahoma City Hornets",
       "winner_score": 123,
@@ -169,6 +161,14 @@
       "winner_score": 113,
       "loser_score": 92,
       "date": "2007-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Golden State Warriors",
+      "loser": "Minnesota Timberwolves",
+      "winner_score": 121,
+      "loser_score": 108,
+      "date": "2007-04-15",
       "round": ""
     },
     {
@@ -652,6 +652,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "San Antonio Spurs",
+      "loser": "Denver Nuggets",
+      "winner_score": 96,
+      "loser_score": 91,
+      "date": "2007-04-28",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "Utah Jazz",
       "loser": "Houston Rockets",
       "winner_score": 98,
@@ -712,6 +720,14 @@
       "loser": "Denver Nuggets",
       "winner_score": 96,
       "loser_score": 89,
+      "date": "2007-05-01",
+      "round": "PLAYOFFS"
+    },
+    {
+      "winner": "Toronto Raptors",
+      "loser": "New Jersey Nets",
+      "winner_score": 98,
+      "loser_score": 96,
       "date": "2007-05-01",
       "round": "PLAYOFFS"
     },
@@ -780,14 +796,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "San Antonio Spurs",
-      "loser": "Phoenix Suns",
-      "winner_score": 111,
-      "loser_score": 106,
-      "date": "2007-05-06",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Cleveland Cavaliers",
       "loser": "New Jersey Nets",
       "winner_score": 81,
@@ -849,6 +857,14 @@
       "winner_score": 125,
       "loser_score": 105,
       "date": "2007-05-11",
+      "round": "PLAYOFFS"
+    },
+    {
+      "winner": "New Jersey Nets",
+      "loser": "Cleveland Cavaliers",
+      "winner_score": 96,
+      "loser_score": 85,
+      "date": "2007-05-12",
       "round": "PLAYOFFS"
     },
     {
@@ -1250,16 +1266,6 @@
       "date": "2007-04-14"
     },
     {
-      "t1": "Cleveland Cavaliers",
-      "t2": "Atlanta Hawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2007-04-14"
-    },
-    {
       "t1": "Houston Rockets",
       "t2": "NO/Oklahoma City Hornets",
       "w1": 1,
@@ -1278,6 +1284,16 @@
       "loser": "",
       "round": "",
       "date": "2007-04-14"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "Minnesota Timberwolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2007-04-15"
     },
     {
       "t1": "Sacramento Kings",
@@ -1623,7 +1639,7 @@
       "t1": "New Jersey Nets",
       "t2": "Toronto Raptors",
       "w1": 4,
-      "w2": 1,
+      "w2": 2,
       "done": true,
       "loser": "Toronto Raptors",
       "round": "PLAYOFFS",
@@ -1683,9 +1699,9 @@
       "t1": "Denver Nuggets",
       "t2": "San Antonio Spurs",
       "w1": 1,
-      "w2": 3,
-      "done": false,
-      "loser": "",
+      "w2": 4,
+      "done": true,
+      "loser": "Denver Nuggets",
       "round": "PLAYOFFS",
       "date": "2007-04-22"
     },
@@ -1710,20 +1726,10 @@
       "date": "2007-05-05"
     },
     {
-      "t1": "San Antonio Spurs",
-      "t2": "Phoenix Suns",
-      "w1": 4,
-      "w2": 2,
-      "done": true,
-      "loser": "Phoenix Suns",
-      "round": "PLAYOFFS",
-      "date": "2007-05-06"
-    },
-    {
       "t1": "Cleveland Cavaliers",
       "t2": "New Jersey Nets",
       "w1": 4,
-      "w2": 1,
+      "w2": 2,
       "done": true,
       "loser": "New Jersey Nets",
       "round": "PLAYOFFS",
@@ -1736,6 +1742,16 @@
       "w2": 1,
       "done": true,
       "loser": "Golden State Warriors",
+      "round": "PLAYOFFS",
+      "date": "2007-05-08"
+    },
+    {
+      "t1": "Phoenix Suns",
+      "t2": "San Antonio Spurs",
+      "w1": 2,
+      "w2": 3,
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2007-05-08"
     },
@@ -1777,14 +1793,14 @@
     "Houston Rockets",
     "Los Angeles Lakers",
     "Washington Wizards",
+    "Denver Nuggets",
     "Dallas Mavericks",
     "Chicago Bulls",
-    "Phoenix Suns",
     "New Jersey Nets",
     "Golden State Warriors",
     "Utah Jazz",
     "Detroit Pistons",
     "Cleveland Cavaliers"
   ],
-  "updated": "2026-06-16 12:30 UTC"
+  "updated": "2026-06-16 21:58 UTC"
 }

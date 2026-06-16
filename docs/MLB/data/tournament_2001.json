@@ -100,6 +100,14 @@
       "round": ""
     },
     {
+      "winner": "Kansas City          Royals",
+      "loser": "Cleveland            Indians",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2001-10-03",
+      "round": ""
+    },
+    {
       "winner": "St. Louis            Cardinals",
       "loser": "Milwaukee            Brewers",
       "winner_score": 5,
@@ -164,14 +172,6 @@
       "round": ""
     },
     {
-      "winner": "Toronto              Blue Jays",
-      "loser": "Baltimore            Orioles",
-      "winner_score": 7,
-      "loser_score": 6,
-      "date": "2001-10-03",
-      "round": ""
-    },
-    {
       "winner": "Detroit              Tigers",
       "loser": "Minnesota            Twins",
       "winner_score": 9,
@@ -217,6 +217,14 @@
       "winner_score": 10,
       "loser_score": 3,
       "date": "2001-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Cleveland            Indians",
+      "loser": "Kansas City          Royals",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2001-10-04",
       "round": ""
     },
     {
@@ -321,7 +329,7 @@
       "winner_score": 4,
       "loser_score": 1,
       "date": "2001-10-04",
-      "round": "2557"
+      "round": ""
     },
     {
       "winner": "Atlanta              Braves",
@@ -352,6 +360,14 @@
       "loser": "Baltimore            Orioles",
       "winner_score": 5,
       "loser_score": 0,
+      "date": "2001-10-05",
+      "round": ""
+    },
+    {
+      "winner": "Pittsburgh           Pirates",
+      "loser": "Chicago              Cubs",
+      "winner_score": 3,
+      "loser_score": 2,
       "date": "2001-10-05",
       "round": ""
     },
@@ -567,14 +583,6 @@
       "winner": "Cleveland            Indians",
       "loser": "Toronto              Blue Jays",
       "winner_score": 3,
-      "loser_score": 2,
-      "date": "2001-10-07",
-      "round": ""
-    },
-    {
-      "winner": "Florida              Marlins",
-      "loser": "Atlanta              Braves",
-      "winner_score": 4,
       "loser_score": 2,
       "date": "2001-10-07",
       "round": ""
@@ -944,7 +952,7 @@
     {
       "t1": "Toronto              Blue Jays",
       "t2": "Baltimore            Orioles",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -1022,6 +1030,16 @@
       "date": "2001-10-02"
     },
     {
+      "t1": "Kansas City          Royals",
+      "t2": "Cleveland            Indians",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2001-10-03"
+    },
+    {
       "t1": "St. Louis            Cardinals",
       "t2": "Milwaukee            Brewers",
       "w1": 2,
@@ -1092,16 +1110,6 @@
       "date": "2001-10-03"
     },
     {
-      "t1": "Kansas City          Royals",
-      "t2": "Cleveland            Indians",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2001-10-04"
-    },
-    {
       "t1": "Boston               Red Sox",
       "t2": "Baltimore            Orioles",
       "w1": 3,
@@ -1114,11 +1122,11 @@
     {
       "t1": "Tampa Bay            Devil Rays",
       "t2": "New York             Yankees",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "2557",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "New York             Yankees",
+      "round": "",
       "date": "2001-10-04"
     },
     {
@@ -1138,6 +1146,16 @@
       "w2": 1,
       "done": true,
       "loser": "Texas                Rangers",
+      "round": "",
+      "date": "2001-10-05"
+    },
+    {
+      "t1": "Pittsburgh           Pirates",
+      "t2": "Chicago              Cubs",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "",
       "date": "2001-10-05"
     },
@@ -1162,20 +1180,10 @@
       "date": "2001-10-05"
     },
     {
-      "t1": "Tampa Bay            Devil Rays",
-      "t2": "New York             Yankees",
-      "w1": 2,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2001-10-05"
-    },
-    {
       "t1": "Atlanta              Braves",
       "t2": "Florida              Marlins",
       "w1": 2,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "",
@@ -1262,16 +1270,6 @@
       "date": "2001-10-06"
     },
     {
-      "t1": "Chicago              Cubs",
-      "t2": "Pittsburgh           Pirates",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2001-10-06"
-    },
-    {
       "t1": "Atlanta              Braves",
       "t2": "Houston              Astros",
       "w1": 3,
@@ -1345,6 +1343,7 @@
   "eliminated": [
     "Chicago              White Sox",
     "Baltimore            Orioles",
+    "New York             Yankees",
     "Anaheim              Angels",
     "Texas                Rangers",
     "Houston              Astros",
@@ -1352,8 +1351,7 @@
     "St. Louis            Cardinals",
     "Oakland              Athletics",
     "Atlanta              Braves",
-    "Seattle              Mariners",
-    "New York             Yankees"
+    "Seattle              Mariners"
   ],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

@@ -340,14 +340,6 @@
       "round": ""
     },
     {
-      "winner": "Boston Red Sox",
-      "loser": "Cleveland Indians",
-      "winner_score": 12,
-      "loser_score": 7,
-      "date": "2009-10-04",
-      "round": ""
-    },
-    {
       "winner": "Philadelphia Phillies",
       "loser": "Florida Marlins",
       "winner_score": 7,
@@ -720,7 +712,7 @@
     {
       "t1": "Boston Red Sox",
       "t2": "Cleveland Indians",
-      "w1": 4,
+      "w1": 3,
       "w2": 0,
       "done": true,
       "loser": "Cleveland Indians",
@@ -959,5 +951,5 @@
     "Los Angeles Angels",
     "Philadelphia Phillies"
   ],
-  "updated": "2026-06-16 12:32 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

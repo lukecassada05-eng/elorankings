@@ -92,6 +92,14 @@
       "round": "WEST 1ST ROUND - GAME 2"
     },
     {
+      "winner": "New York Islanders",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-04-14",
+      "round": "EAST 1ST ROUND - GAME 3"
+    },
+    {
       "winner": "Columbus Blue Jackets",
       "loser": "Tampa Bay Lightning",
       "winner_score": 3,
@@ -564,28 +572,12 @@
       "round": "WEST FINALS - GAME 3"
     },
     {
-      "winner": "Boston Bruins",
-      "loser": "Carolina Hurricanes",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2019-05-17",
-      "round": "EAST FINALS - GAME 4"
-    },
-    {
       "winner": "St. Louis Blues",
       "loser": "San Jose Sharks",
       "winner_score": 2,
       "loser_score": 1,
       "date": "2019-05-18",
       "round": "WEST FINALS - GAME 4"
-    },
-    {
-      "winner": "St. Louis Blues",
-      "loser": "San Jose Sharks",
-      "winner_score": 5,
-      "loser_score": 0,
-      "date": "2019-05-19",
-      "round": "WEST FINALS - GAME 5"
     },
     {
       "winner": "St. Louis Blues",
@@ -761,6 +753,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 1ST ROUND - GAME 2",
+      "date": "2019-04-14"
+    },
+    {
+      "t1": "New York Islanders",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 3",
       "date": "2019-04-14"
     },
     {
@@ -1354,16 +1356,6 @@
       "date": "2019-05-16"
     },
     {
-      "t1": "Boston Bruins",
-      "t2": "Carolina Hurricanes",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST FINALS - GAME 4",
-      "date": "2019-05-17"
-    },
-    {
       "t1": "St. Louis Blues",
       "t2": "San Jose Sharks",
       "w1": 1,
@@ -1372,16 +1364,6 @@
       "loser": "",
       "round": "WEST FINALS - GAME 4",
       "date": "2019-05-18"
-    },
-    {
-      "t1": "St. Louis Blues",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST FINALS - GAME 5",
-      "date": "2019-05-19"
     },
     {
       "t1": "St. Louis Blues",
@@ -1465,5 +1447,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

@@ -4,6 +4,14 @@
   "completed": true,
   "games": [
     {
+      "winner": "Ottawa Senators",
+      "loser": "Philadelphia Flyers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-04-11",
+      "round": ""
+    },
+    {
       "winner": "New York Rangers",
       "loser": "Washington Capitals",
       "winner_score": 4,
@@ -796,14 +804,6 @@
       "round": "STANLEY CUP FINAL - GAME 2"
     },
     {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Chicago Blackhawks",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2015-06-09",
-      "round": "STANLEY CUP FINAL - GAME 3"
-    },
-    {
       "winner": "Chicago Blackhawks",
       "loser": "Tampa Bay Lightning",
       "winner_score": 2,
@@ -829,6 +829,16 @@
     }
   ],
   "series": [
+    {
+      "t1": "Ottawa Senators",
+      "t2": "Philadelphia Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2015-04-11"
+    },
     {
       "t1": "New York Rangers",
       "t2": "Washington Capitals",
@@ -1820,16 +1830,6 @@
       "date": "2015-06-06"
     },
     {
-      "t1": "Tampa Bay Lightning",
-      "t2": "Chicago Blackhawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "STANLEY CUP FINAL - GAME 3",
-      "date": "2015-06-09"
-    },
-    {
       "t1": "Chicago Blackhawks",
       "t2": "Tampa Bay Lightning",
       "w1": 1,
@@ -1861,5 +1861,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

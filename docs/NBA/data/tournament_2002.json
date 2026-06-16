@@ -20,14 +20,6 @@
       "round": ""
     },
     {
-      "winner": "Philadelphia 76ers",
-      "loser": "Washington Wizards",
-      "winner_score": 100,
-      "loser_score": 91,
-      "date": "2002-04-12",
-      "round": ""
-    },
-    {
       "winner": "Toronto Raptors",
       "loser": "Atlanta Hawks",
       "winner_score": 112,
@@ -48,14 +40,6 @@
       "loser": "Cleveland Cavaliers",
       "winner_score": 112,
       "loser_score": 100,
-      "date": "2002-04-12",
-      "round": ""
-    },
-    {
-      "winner": "Portland Trail Blazers",
-      "loser": "Houston Rockets",
-      "winner_score": 80,
-      "loser_score": 79,
       "date": "2002-04-12",
       "round": ""
     },
@@ -88,6 +72,14 @@
       "loser": "Seattle SuperSonics",
       "winner_score": 116,
       "loser_score": 99,
+      "date": "2002-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Atlanta Hawks",
+      "loser": "Cleveland Cavaliers",
+      "winner_score": 128,
+      "loser_score": 123,
       "date": "2002-04-13",
       "round": ""
     },
@@ -129,6 +121,14 @@
       "winner_score": 101,
       "loser_score": 98,
       "date": "2002-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia 76ers",
+      "loser": "Orlando Magic",
+      "winner_score": 95,
+      "loser_score": 89,
+      "date": "2002-04-14",
       "round": ""
     },
     {
@@ -289,14 +289,6 @@
       "winner_score": 95,
       "loser_score": 71,
       "date": "2002-04-16",
-      "round": ""
-    },
-    {
-      "winner": "Detroit Pistons",
-      "loser": "New Jersey Nets",
-      "winner_score": 103,
-      "loser_score": 98,
-      "date": "2002-04-17",
       "round": ""
     },
     {
@@ -756,6 +748,14 @@
       "round": ""
     },
     {
+      "winner": "Sacramento Kings",
+      "loser": "Dallas Mavericks",
+      "winner_score": 125,
+      "loser_score": 119,
+      "date": "2002-05-10",
+      "round": ""
+    },
+    {
       "winner": "Boston Celtics",
       "loser": "Detroit Pistons",
       "winner_score": 66,
@@ -900,6 +900,14 @@
       "round": ""
     },
     {
+      "winner": "Sacramento Kings",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 92,
+      "loser_score": 91,
+      "date": "2002-05-28",
+      "round": ""
+    },
+    {
       "winner": "New Jersey Nets",
       "loser": "Boston Celtics",
       "winner_score": 103,
@@ -986,16 +994,6 @@
       "date": "2002-04-12"
     },
     {
-      "t1": "Philadelphia 76ers",
-      "t2": "Washington Wizards",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2002-04-12"
-    },
-    {
       "t1": "Toronto Raptors",
       "t2": "Atlanta Hawks",
       "w1": 1,
@@ -1019,16 +1017,6 @@
       "t1": "Charlotte Hornets",
       "t2": "Cleveland Cavaliers",
       "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2002-04-12"
-    },
-    {
-      "t1": "Portland Trail Blazers",
-      "t2": "Houston Rockets",
-      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -1068,6 +1056,16 @@
     {
       "t1": "Dallas Mavericks",
       "t2": "Seattle SuperSonics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-13"
+    },
+    {
+      "t1": "Atlanta Hawks",
+      "t2": "Cleveland Cavaliers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1126,6 +1124,16 @@
       "date": "2002-04-13"
     },
     {
+      "t1": "Philadelphia 76ers",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-14"
+    },
+    {
       "t1": "Indiana Pacers",
       "t2": "Washington Wizards",
       "w1": 1,
@@ -1169,9 +1177,9 @@
       "t1": "Dallas Mavericks",
       "t2": "Sacramento Kings",
       "w1": 2,
-      "w2": 3,
-      "done": false,
-      "loser": "",
+      "w2": 4,
+      "done": true,
+      "loser": "Dallas Mavericks",
       "round": "",
       "date": "2002-04-14"
     },
@@ -1326,16 +1334,6 @@
       "date": "2002-04-16"
     },
     {
-      "t1": "Detroit Pistons",
-      "t2": "New Jersey Nets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2002-04-17"
-    },
-    {
       "t1": "Boston Celtics",
       "t2": "Atlanta Hawks",
       "w1": 1,
@@ -1378,6 +1376,16 @@
     {
       "t1": "Phoenix Suns",
       "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-17"
+    },
+    {
+      "t1": "Portland Trail Blazers",
+      "t2": "Houston Rockets",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1439,7 +1447,7 @@
       "t1": "Los Angeles Lakers",
       "t2": "Sacramento Kings",
       "w1": 5,
-      "w2": 2,
+      "w2": 3,
       "done": true,
       "loser": "Sacramento Kings",
       "round": "",
@@ -1577,6 +1585,7 @@
     }
   ],
   "eliminated": [
+    "Dallas Mavericks",
     "Sacramento Kings",
     "Charlotte Hornets",
     "San Antonio Spurs",
@@ -1584,5 +1593,5 @@
     "Boston Celtics",
     "New Jersey Nets"
   ],
-  "updated": "2026-06-16 12:30 UTC"
+  "updated": "2026-06-16 21:57 UTC"
 }

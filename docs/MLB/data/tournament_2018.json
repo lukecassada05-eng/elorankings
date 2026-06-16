@@ -76,14 +76,6 @@
       "round": "ALDS - GAME 1"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Atlanta Braves",
-      "winner_score": 3,
-      "loser_score": 0,
-      "date": "2018-10-06",
-      "round": "NLDS - GAME 2"
-    },
-    {
       "winner": "Houston Astros",
       "loser": "Cleveland Indians",
       "winner_score": 3,
@@ -368,16 +360,6 @@
       "date": "2018-10-05"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Atlanta Braves",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 2",
-      "date": "2018-10-06"
-    },
-    {
       "t1": "Houston Astros",
       "t2": "Cleveland Indians",
       "w1": 1,
@@ -619,5 +601,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 12:32 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

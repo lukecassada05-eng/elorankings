@@ -28,14 +28,6 @@
       "round": ""
     },
     {
-      "winner": "Washington Nationals",
-      "loser": "Miami Marlins",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2016-10-01",
-      "round": ""
-    },
-    {
       "winner": "San Francisco Giants",
       "loser": "Los Angeles Dodgers",
       "winner_score": 3,
@@ -508,16 +500,6 @@
       "date": "2016-10-01"
     },
     {
-      "t1": "Washington Nationals",
-      "t2": "Miami Marlins",
-      "w1": 2,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2016-10-01"
-    },
-    {
       "t1": "San Francisco Giants",
       "t2": "Los Angeles Dodgers",
       "w1": 2,
@@ -620,6 +602,16 @@
     {
       "t1": "Oakland Athletics",
       "t2": "Seattle Mariners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2016-10-02"
+    },
+    {
+      "t1": "Washington Nationals",
+      "t2": "Miami Marlins",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -959,5 +951,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 12:32 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

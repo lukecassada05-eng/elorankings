@@ -140,11 +140,35 @@
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3"
     },
     {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Columbus Blue Jackets",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2017-04-16",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3"
+    },
+    {
       "winner": "Montreal Canadiens",
       "loser": "New York Rangers",
       "winner_score": 3,
       "loser_score": 1,
       "date": "2017-04-16",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "San Jose Sharks",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2017-04-17",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3"
+    },
+    {
+      "winner": "Ottawa Senators",
+      "loser": "Boston Bruins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-17",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3"
     },
     {
@@ -154,6 +178,14 @@
       "loser_score": 3,
       "date": "2017-04-17",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3"
+    },
+    {
+      "winner": "Nashville Predators",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-18",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3"
     },
     {
       "winner": "Anaheim Ducks",
@@ -268,14 +300,6 @@
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5"
     },
     {
-      "winner": "St. Louis Blues",
-      "loser": "Minnesota Wild",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2017-04-22",
-      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5"
-    },
-    {
       "winner": "New York Rangers",
       "loser": "Montreal Canadiens",
       "winner_score": 3,
@@ -296,14 +320,6 @@
       "loser": "Boston Bruins",
       "winner_score": 3,
       "loser_score": 2,
-      "date": "2017-04-23",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6"
-    },
-    {
-      "winner": "Washington Capitals",
-      "loser": "Toronto Maple Leafs",
-      "winner_score": 2,
-      "loser_score": 1,
       "date": "2017-04-23",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6"
     },
@@ -572,6 +588,14 @@
       "round": "WESTERN CONFERENCE FINALS - GAME 4"
     },
     {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Ottawa Senators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-05-20",
+      "round": "EASTERN CONFERENCE FINALS - GAME 4"
+    },
+    {
       "winner": "Nashville Predators",
       "loser": "Anaheim Ducks",
       "winner_score": 3,
@@ -832,6 +856,16 @@
       "date": "2017-04-16"
     },
     {
+      "t1": "Pittsburgh Penguins",
+      "t2": "Columbus Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2017-04-16"
+    },
+    {
       "t1": "Montreal Canadiens",
       "t2": "New York Rangers",
       "w1": 1,
@@ -842,6 +876,26 @@
       "date": "2017-04-16"
     },
     {
+      "t1": "Edmonton Oilers",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2017-04-17"
+    },
+    {
+      "t1": "Ottawa Senators",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2017-04-17"
+    },
+    {
       "t1": "Toronto Maple Leafs",
       "t2": "Washington Capitals",
       "w1": 1,
@@ -850,6 +904,16 @@
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
       "date": "2017-04-17"
+    },
+    {
+      "t1": "Nashville Predators",
+      "t2": "Chicago Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2017-04-18"
     },
     {
       "t1": "Anaheim Ducks",
@@ -992,16 +1056,6 @@
       "date": "2017-04-21"
     },
     {
-      "t1": "St. Louis Blues",
-      "t2": "Minnesota Wild",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5",
-      "date": "2017-04-22"
-    },
-    {
       "t1": "New York Rangers",
       "t2": "Montreal Canadiens",
       "w1": 1,
@@ -1024,16 +1078,6 @@
     {
       "t1": "Ottawa Senators",
       "t2": "Boston Bruins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6",
-      "date": "2017-04-23"
-    },
-    {
-      "t1": "Washington Capitals",
-      "t2": "Toronto Maple Leafs",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1372,6 +1416,16 @@
       "date": "2017-05-19"
     },
     {
+      "t1": "Pittsburgh Penguins",
+      "t2": "Ottawa Senators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FINALS - GAME 4",
+      "date": "2017-05-20"
+    },
+    {
       "t1": "Nashville Predators",
       "t2": "Anaheim Ducks",
       "w1": 1,
@@ -1483,5 +1537,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

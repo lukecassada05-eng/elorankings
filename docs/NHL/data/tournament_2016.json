@@ -84,6 +84,14 @@
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2"
     },
     {
+      "winner": "Nashville Predators",
+      "loser": "Anaheim Ducks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2016-04-16",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 1"
+    },
+    {
       "winner": "New York Rangers",
       "loser": "Pittsburgh Penguins",
       "winner_score": 4,
@@ -548,6 +556,14 @@
       "round": "WESTERN CONFERENCE SECOND ROUND - GAME 6"
     },
     {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Washington Capitals",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2016-05-11",
+      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 6"
+    },
+    {
       "winner": "St. Louis Blues",
       "loser": "Dallas Stars",
       "winner_score": 6,
@@ -815,6 +831,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2016-04-16"
+    },
+    {
+      "t1": "Nashville Predators",
+      "t2": "Anaheim Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 1",
       "date": "2016-04-16"
     },
     {
@@ -1398,6 +1424,16 @@
       "date": "2016-05-10"
     },
     {
+      "t1": "Pittsburgh Penguins",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 6",
+      "date": "2016-05-11"
+    },
+    {
       "t1": "St. Louis Blues",
       "t2": "Dallas Stars",
       "w1": 1,
@@ -1609,5 +1645,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

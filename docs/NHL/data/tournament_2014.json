@@ -116,6 +116,14 @@
       "round": ""
     },
     {
+      "winner": "Edmonton Oilers",
+      "loser": "Vancouver Canucks",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2014-04-13",
+      "round": ""
+    },
+    {
       "winner": "Anaheim Ducks",
       "loser": "Los Angeles Kings",
       "winner_score": 4,
@@ -128,6 +136,14 @@
       "loser": "St. Louis Blues",
       "winner_score": 3,
       "loser_score": 0,
+      "date": "2014-04-13",
+      "round": ""
+    },
+    {
+      "winner": "New Jersey Devils",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
       "date": "2014-04-13",
       "round": ""
     },
@@ -168,6 +184,14 @@
       "loser": "Minnesota Wild",
       "winner_score": 7,
       "loser_score": 3,
+      "date": "2014-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Colorado Avalanche",
+      "winner_score": 3,
+      "loser_score": 2,
       "date": "2014-04-14",
       "round": ""
     },
@@ -258,6 +282,14 @@
       "loser_score": 0,
       "date": "2014-04-18",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 1"
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Dallas Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-04-19",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2"
     },
     {
       "winner": "St. Louis Blues",
@@ -828,14 +860,6 @@
       "round": "WESTERN CONFERENCE FINALS - GAME 3"
     },
     {
-      "winner": "New York Rangers",
-      "loser": "Montreal Canadiens",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2014-05-26",
-      "round": "EASTERN CONFERENCE FINALS - GAME 4"
-    },
-    {
       "winner": "Los Angeles Kings",
       "loser": "Chicago Blackhawks",
       "winner_score": 5,
@@ -1066,6 +1090,16 @@
       "date": "2014-04-13"
     },
     {
+      "t1": "Edmonton Oilers",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2014-04-13"
+    },
+    {
       "t1": "Anaheim Ducks",
       "t2": "Los Angeles Kings",
       "w1": 1,
@@ -1078,6 +1112,16 @@
     {
       "t1": "Detroit Red Wings",
       "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2014-04-13"
+    },
+    {
+      "t1": "New Jersey Devils",
+      "t2": "Boston Bruins",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1128,6 +1172,16 @@
     {
       "t1": "Nashville Predators",
       "t2": "Minnesota Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2014-04-14"
+    },
+    {
+      "t1": "Anaheim Ducks",
+      "t2": "Colorado Avalanche",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1244,6 +1298,16 @@
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 1",
       "date": "2014-04-18"
+    },
+    {
+      "t1": "Anaheim Ducks",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2014-04-19"
     },
     {
       "t1": "St. Louis Blues",
@@ -1956,16 +2020,6 @@
       "date": "2014-05-25"
     },
     {
-      "t1": "New York Rangers",
-      "t2": "Montreal Canadiens",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE FINALS - GAME 4",
-      "date": "2014-05-26"
-    },
-    {
       "t1": "Los Angeles Kings",
       "t2": "Chicago Blackhawks",
       "w1": 1,
@@ -2077,5 +2131,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

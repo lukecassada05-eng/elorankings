@@ -50,6 +50,14 @@
       "loser_score": 7,
       "date": "2018-01-21",
       "round": "NFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Philadelphia Eagles",
+      "loser": "New England Patriots",
+      "winner_score": 41,
+      "loser_score": 33,
+      "date": "2018-02-04",
+      "round": "Super Bowl LII"
     }
   ],
   "series": [
@@ -112,6 +120,16 @@
       "loser": "Minnesota Vikings",
       "round": "NFC CHAMPIONSHIP",
       "date": "2018-01-21"
+    },
+    {
+      "t1": "Philadelphia Eagles",
+      "t2": "New England Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New England Patriots",
+      "round": "Super Bowl LII",
+      "date": "2018-02-04"
     }
   ],
   "eliminated": [
@@ -120,7 +138,8 @@
     "Pittsburgh Steelers",
     "New Orleans Saints",
     "Jacksonville Jaguars",
-    "Minnesota Vikings"
+    "Minnesota Vikings",
+    "New England Patriots"
   ],
-  "updated": "2026-06-16 12:33 UTC"
+  "updated": "2026-06-16 22:00 UTC"
 }

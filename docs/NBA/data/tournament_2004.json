@@ -164,6 +164,14 @@
       "round": ""
     },
     {
+      "winner": "Phoenix Suns",
+      "loser": "Utah Jazz",
+      "winner_score": 89,
+      "loser_score": 84,
+      "date": "2004-04-14",
+      "round": ""
+    },
+    {
       "winner": "New Orleans Hornets",
       "loser": "Washington Wizards",
       "winner_score": 94,
@@ -252,6 +260,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "Los Angeles Lakers",
+      "loser": "Houston Rockets",
+      "winner_score": 72,
+      "loser_score": 71,
+      "date": "2004-04-17",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "Sacramento Kings",
       "loser": "Dallas Mavericks",
       "winner_score": 116,
@@ -297,6 +313,14 @@
       "winner_score": 98,
       "loser_score": 84,
       "date": "2004-04-19",
+      "round": "PLAYOFFS"
+    },
+    {
+      "winner": "Indiana Pacers",
+      "loser": "Boston Celtics",
+      "winner_score": 103,
+      "loser_score": 90,
+      "date": "2004-04-20",
       "round": "PLAYOFFS"
     },
     {
@@ -556,14 +580,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Indiana Pacers",
-      "loser": "Miami Heat",
-      "winner_score": 94,
-      "loser_score": 81,
-      "date": "2004-05-07",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Detroit Pistons",
       "loser": "New Jersey Nets",
       "winner_score": 95,
@@ -648,14 +664,6 @@
       "loser": "Indiana Pacers",
       "winner_score": 100,
       "loser_score": 88,
-      "date": "2004-05-13",
-      "round": "PLAYOFFS"
-    },
-    {
-      "winner": "Los Angeles Lakers",
-      "loser": "San Antonio Spurs",
-      "winner_score": 74,
-      "loser_score": 73,
       "date": "2004-05-13",
       "round": "PLAYOFFS"
     },
@@ -1070,6 +1078,16 @@
       "date": "2004-04-14"
     },
     {
+      "t1": "Phoenix Suns",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2004-04-14"
+    },
+    {
       "t1": "New Orleans Hornets",
       "t2": "Washington Wizards",
       "w1": 1,
@@ -1152,10 +1170,10 @@
     {
       "t1": "Indiana Pacers",
       "t2": "Boston Celtics",
-      "w1": 3,
+      "w1": 4,
       "w2": 0,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Boston Celtics",
       "round": "PLAYOFFS",
       "date": "2004-04-17"
     },
@@ -1176,6 +1194,16 @@
       "w2": 0,
       "done": true,
       "loser": "Memphis Grizzlies",
+      "round": "PLAYOFFS",
+      "date": "2004-04-17"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Houston Rockets",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Houston Rockets",
       "round": "PLAYOFFS",
       "date": "2004-04-17"
     },
@@ -1220,22 +1248,12 @@
       "date": "2004-04-19"
     },
     {
-      "t1": "Los Angeles Lakers",
-      "t2": "Houston Rockets",
-      "w1": 3,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "PLAYOFFS",
-      "date": "2004-04-19"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "Los Angeles Lakers",
       "w1": 2,
-      "w2": 4,
-      "done": true,
-      "loser": "San Antonio Spurs",
+      "w2": 3,
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2004-05-02"
     },
@@ -1262,12 +1280,12 @@
     {
       "t1": "Indiana Pacers",
       "t2": "Miami Heat",
-      "w1": 4,
+      "w1": 3,
       "w2": 2,
-      "done": true,
-      "loser": "Miami Heat",
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
-      "date": "2004-05-07"
+      "date": "2004-05-08"
     },
     {
       "t1": "Los Angeles Lakers",
@@ -1301,19 +1319,19 @@
     }
   ],
   "eliminated": [
+    "Boston Celtics",
     "New York Knicks",
     "Memphis Grizzlies",
+    "Houston Rockets",
     "Dallas Mavericks",
     "Milwaukee Bucks",
     "New Orleans Hornets",
     "Denver Nuggets",
-    "San Antonio Spurs",
     "New Jersey Nets",
     "Sacramento Kings",
-    "Miami Heat",
     "Minnesota Timberwolves",
     "Indiana Pacers",
     "Los Angeles Lakers"
   ],
-  "updated": "2026-06-16 12:30 UTC"
+  "updated": "2026-06-16 21:57 UTC"
 }

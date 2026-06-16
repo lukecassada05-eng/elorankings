@@ -444,14 +444,6 @@
       "round": "EAST 2ND ROUND - GAME 3"
     },
     {
-      "winner": "San Jose Sharks",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2018-05-03",
-      "round": "WEST 2ND ROUND - GAME 4"
-    },
-    {
       "winner": "Pittsburgh Penguins",
       "loser": "Washington Capitals",
       "winner_score": 3,
@@ -492,14 +484,6 @@
       "round": "EAST 2ND ROUND - GAME 5"
     },
     {
-      "winner": "Winnipeg Jets",
-      "loser": "Nashville Predators",
-      "winner_score": 6,
-      "loser_score": 2,
-      "date": "2018-05-06",
-      "round": "WEST 2ND ROUND - GAME 5"
-    },
-    {
       "winner": "Tampa Bay Lightning",
       "loser": "Boston Bruins",
       "winner_score": 3,
@@ -538,6 +522,14 @@
       "loser_score": 1,
       "date": "2018-05-11",
       "round": "WEST 2ND ROUND - GAME 7"
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2018-05-12",
+      "round": "EAST FINALS - GAME 1"
     },
     {
       "winner": "Winnipeg Jets",
@@ -594,6 +586,14 @@
       "loser_score": 2,
       "date": "2018-05-19",
       "round": "WEST FINALS - GAME 4"
+    },
+    {
+      "winner": "Tampa Bay Lightning",
+      "loser": "Washington Capitals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2018-05-19",
+      "round": "EAST FINALS - GAME 5"
     },
     {
       "winner": "Vegas Golden Knights",
@@ -1212,16 +1212,6 @@
       "date": "2018-05-02"
     },
     {
-      "t1": "San Jose Sharks",
-      "t2": "Vegas Golden Knights",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 2ND ROUND - GAME 4",
-      "date": "2018-05-03"
-    },
-    {
       "t1": "Pittsburgh Penguins",
       "t2": "Washington Capitals",
       "w1": 1,
@@ -1272,16 +1262,6 @@
       "date": "2018-05-05"
     },
     {
-      "t1": "Winnipeg Jets",
-      "t2": "Nashville Predators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 2ND ROUND - GAME 5",
-      "date": "2018-05-06"
-    },
-    {
       "t1": "Tampa Bay Lightning",
       "t2": "Boston Bruins",
       "w1": 1,
@@ -1330,6 +1310,16 @@
       "loser": "",
       "round": "WEST 2ND ROUND - GAME 7",
       "date": "2018-05-11"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST FINALS - GAME 1",
+      "date": "2018-05-12"
     },
     {
       "t1": "Winnipeg Jets",
@@ -1399,6 +1389,16 @@
       "done": false,
       "loser": "",
       "round": "WEST FINALS - GAME 4",
+      "date": "2018-05-19"
+    },
+    {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST FINALS - GAME 5",
       "date": "2018-05-19"
     },
     {
@@ -1483,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

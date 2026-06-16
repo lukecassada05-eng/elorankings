@@ -260,14 +260,6 @@
       "round": "ASUN Championship"
     },
     {
-      "winner": "Wofford Terriers",
-      "loser": "Samford Bulldogs",
-      "winner_score": 10,
-      "loser_score": 3,
-      "date": "2022-05-28",
-      "round": "Southern Conf Tournament"
-    },
-    {
       "winner": "UCF Knights",
       "loser": "Houston Cougars",
       "winner_score": 9,
@@ -402,14 +394,6 @@
       "loser_score": 6,
       "date": "2022-05-28",
       "round": "American Athletic Tournament"
-    },
-    {
-      "winner": "SE Louisiana Lions",
-      "loser": "McNeese Cowboys",
-      "winner_score": 11,
-      "loser_score": 7,
-      "date": "2022-05-28",
-      "round": "Southland Championship"
     },
     {
       "winner": "Binghamton Bearcats",
@@ -754,14 +738,6 @@
       "loser_score": 8,
       "date": "2022-06-03",
       "round": "NCAA Baseball Championship – Knoxville Regional"
-    },
-    {
-      "winner": "Arkansas Razorbacks",
-      "loser": "Grand Canyon Lopes",
-      "winner_score": 7,
-      "loser_score": 1,
-      "date": "2022-06-03",
-      "round": "NCAA Baseball Championship – Stillwater Regional"
     },
     {
       "winner": "UConn Huskies",
@@ -2022,16 +1998,6 @@
       "date": "2022-05-28"
     },
     {
-      "t1": "Wofford Terriers",
-      "t2": "Samford Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Southern Conf Tournament",
-      "date": "2022-05-28"
-    },
-    {
       "t1": "UCF Knights",
       "t2": "Houston Cougars",
       "w1": 1,
@@ -2169,16 +2135,6 @@
       "done": false,
       "loser": "",
       "round": "Big East Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "SE Louisiana Lions",
-      "t2": "McNeese Cowboys",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Southland Championship",
       "date": "2022-05-28"
     },
     {
@@ -2589,16 +2545,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship – Knoxville Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Arkansas Razorbacks",
-      "t2": "Grand Canyon Lopes",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Stillwater Regional",
       "date": "2022-06-03"
     },
     {
@@ -3641,5 +3587,5 @@
     "Oregon State Beavers",
     "UConn Huskies"
   ],
-  "updated": "2026-06-16 12:34 UTC"
+  "updated": "2026-06-16 22:02 UTC"
 }

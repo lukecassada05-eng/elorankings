@@ -140,6 +140,14 @@
       "round": "ALCS"
     },
     {
+      "winner": "Tampa Bay Rays",
+      "loser": "Boston Red Sox",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2008-10-12",
+      "round": "ALCS"
+    },
+    {
       "winner": "Los Angeles Dodgers",
       "loser": "Philadelphia Phillies",
       "winner_score": 7,
@@ -339,7 +347,7 @@
       "t1": "Boston Red Sox",
       "t2": "Tampa Bay Rays",
       "w1": 1,
-      "w2": 3,
+      "w2": 4,
       "done": true,
       "loser": "Boston Red Sox",
       "round": "ALCS",
@@ -382,5 +390,5 @@
     "Boston Red Sox",
     "Tampa Bay Rays"
   ],
-  "updated": "2026-06-16 12:32 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }

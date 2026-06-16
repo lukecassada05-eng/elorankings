@@ -90,6 +90,14 @@
       "loser_score": 17,
       "date": "2002-02-03",
       "round": "Super Bowl XXXVI"
+    },
+    {
+      "winner": "Afc",
+      "loser": "Nfc",
+      "winner_score": 38,
+      "loser_score": 30,
+      "date": "2002-02-09",
+      "round": ""
     }
   ],
   "series": [
@@ -202,6 +210,16 @@
       "loser": "St. Louis Rams",
       "round": "Super Bowl XXXVI",
       "date": "2002-02-03"
+    },
+    {
+      "t1": "Afc",
+      "t2": "Nfc",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nfc",
+      "round": "",
+      "date": "2002-02-09"
     }
   ],
   "eliminated": [
@@ -215,7 +233,8 @@
     "Green Bay Packers",
     "Pittsburgh Steelers",
     "Philadelphia Eagles",
-    "St. Louis Rams"
+    "St. Louis Rams",
+    "Nfc"
   ],
-  "updated": "2026-06-16 12:32 UTC"
+  "updated": "2026-06-16 22:00 UTC"
 }

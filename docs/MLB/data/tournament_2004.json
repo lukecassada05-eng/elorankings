@@ -52,6 +52,14 @@
       "round": ""
     },
     {
+      "winner": "Boston Red Sox",
+      "loser": "Baltimore Orioles",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2004-10-01",
+      "round": ""
+    },
+    {
       "winner": "Houston Astros",
       "loser": "Colorado Rockies",
       "winner_score": 4,
@@ -120,6 +128,14 @@
       "loser": "Chicago Cubs",
       "winner_score": 8,
       "loser_score": 6,
+      "date": "2004-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Pittsburgh Pirates",
+      "loser": "Cincinnati Reds",
+      "winner_score": 3,
+      "loser_score": 1,
       "date": "2004-10-02",
       "round": ""
     },
@@ -232,14 +248,6 @@
       "loser": "Cincinnati Reds",
       "winner_score": 2,
       "loser_score": 0,
-      "date": "2004-10-03",
-      "round": ""
-    },
-    {
-      "winner": "Baltimore Orioles",
-      "loser": "Boston Red Sox",
-      "winner_score": 3,
-      "loser_score": 2,
       "date": "2004-10-03",
       "round": ""
     },
@@ -392,14 +400,6 @@
       "loser": "Atlanta Braves",
       "winner_score": 8,
       "loser_score": 5,
-      "date": "2004-10-09",
-      "round": "DIVISIONAL PLAYOFFS"
-    },
-    {
-      "winner": "Los Angeles Dodgers",
-      "loser": "St. Louis Cardinals",
-      "winner_score": 4,
-      "loser_score": 0,
       "date": "2004-10-09",
       "round": "DIVISIONAL PLAYOFFS"
     },
@@ -617,7 +617,7 @@
       "t1": "Cincinnati Reds",
       "t2": "Pittsburgh Pirates",
       "w1": 1,
-      "w2": 1,
+      "w2": 2,
       "done": false,
       "loser": "",
       "round": "",
@@ -628,6 +628,16 @@
       "t2": "New York Mets",
       "w1": 2,
       "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2004-10-01"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "Baltimore Orioles",
+      "w1": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "",
@@ -724,16 +734,6 @@
       "date": "2004-10-02"
     },
     {
-      "t1": "Baltimore Orioles",
-      "t2": "Boston Red Sox",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2004-10-03"
-    },
-    {
       "t1": "Minnesota Twins",
       "t2": "New York Yankees",
       "w1": 1,
@@ -747,7 +747,7 @@
       "t1": "St. Louis Cardinals",
       "t2": "Los Angeles Dodgers",
       "w1": 3,
-      "w2": 1,
+      "w2": 0,
       "done": true,
       "loser": "Los Angeles Dodgers",
       "round": "DIVISIONAL PLAYOFFS",
@@ -822,5 +822,5 @@
     "Houston Astros",
     "St. Louis Cardinals"
   ],
-  "updated": "2026-06-16 12:31 UTC"
+  "updated": "2026-06-16 21:59 UTC"
 }
