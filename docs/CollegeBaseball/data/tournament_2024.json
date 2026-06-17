@@ -780,6 +780,14 @@
       "round": "NCAA Baseball Championship - Chapel Hill Regional - North Carolina advances to Super Regional"
     },
     {
+      "winner": "UConn Huskies",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2024-06-04",
+      "round": "NCAA Baseball Championship - Norman Regional - UConn advances to Super Regional"
+    },
+    {
       "winner": "Evansville Purple Aces",
       "loser": "East Carolina Pirates",
       "winner_score": 6,
@@ -914,6 +922,14 @@
       "loser_score": 10,
       "date": "2024-06-09",
       "round": "NCAA Baseball Championship - Clemson Super Regional"
+    },
+    {
+      "winner": "Georgia Bulldogs",
+      "loser": "NC State Wolfpack",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2024-06-09",
+      "round": "NCAA Baseball Championship - Athens Super Regional"
     },
     {
       "winner": "NC State Wolfpack",
@@ -1986,6 +2002,16 @@
       "date": "2024-06-03"
     },
     {
+      "t1": "UConn Huskies",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Norman Regional - UConn advances to Super Regional",
+      "date": "2024-06-04"
+    },
+    {
       "t1": "Tennessee Volunteers",
       "t2": "Evansville Purple Aces",
       "w1": 2,
@@ -2059,7 +2085,7 @@
       "t1": "NC State Wolfpack",
       "t2": "Georgia Bulldogs",
       "w1": 2,
-      "w2": 0,
+      "w2": 1,
       "done": true,
       "loser": "Georgia Bulldogs",
       "round": "NCAA Baseball Championship - Athens Super Regional",
@@ -2207,5 +2233,5 @@
     "Georgia Bulldogs",
     "Texas A&M Aggies"
   ],
-  "updated": "2026-06-16 22:02 UTC"
+  "updated": "2026-06-17 12:19 UTC"
 }

@@ -500,6 +500,14 @@
       "round": "NCAA Baseball Championship - Clemson Regional - Elimination Game"
     },
     {
+      "winner": "UConn Huskies",
+      "loser": "Florida A&M Rattlers",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2023-06-03",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Elimination Game"
+    },
+    {
       "winner": "Campbell Fighting Camels",
       "loser": "Central Connecticut Blue Devils",
       "winner_score": 10,
@@ -522,6 +530,22 @@
       "loser_score": 3,
       "date": "2023-06-03",
       "round": "NCAA Baseball Championship - Winston-Salem Regional - Elimination Game"
+    },
+    {
+      "winner": "Louisiana Ragin' Cajuns",
+      "loser": "Maine Black Bears",
+      "winner_score": 19,
+      "loser_score": 10,
+      "date": "2023-06-03",
+      "round": "NCAA Baseball Championship - Coral Gables Regional - Elimination Game"
+    },
+    {
+      "winner": "Cal State Fullerton Titans",
+      "loser": "San José State Spartans",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2023-06-03",
+      "round": "NCAA Baseball Championship - Stanford Regional - Elimination Game"
     },
     {
       "winner": "Xavier Musketeers",
@@ -906,6 +930,14 @@
       "loser_score": 8,
       "date": "2023-06-10",
       "round": "NCAA Baseball Championship - Eugene Super Regional"
+    },
+    {
+      "winner": "Wake Forest Demon Deacons",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2023-06-10",
+      "round": "NCAA Baseball Championship - Winston-Salem Super Regional"
     },
     {
       "winner": "LSU Tigers",
@@ -1706,6 +1738,16 @@
       "date": "2023-06-03"
     },
     {
+      "t1": "UConn Huskies",
+      "t2": "Florida A&M Rattlers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Gainesville Regional - Elimination Game",
+      "date": "2023-06-03"
+    },
+    {
       "t1": "Campbell Fighting Camels",
       "t2": "Central Connecticut Blue Devils",
       "w1": 1,
@@ -1733,6 +1775,26 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Winston-Salem Regional - Elimination Game",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "Maine Black Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Coral Gables Regional - Elimination Game",
+      "date": "2023-06-03"
+    },
+    {
+      "t1": "Cal State Fullerton Titans",
+      "t2": "San José State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Stanford Regional - Elimination Game",
       "date": "2023-06-03"
     },
     {
@@ -2226,6 +2288,16 @@
       "date": "2023-06-10"
     },
     {
+      "t1": "Wake Forest Demon Deacons",
+      "t2": "Alabama Crimson Tide",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama Crimson Tide",
+      "round": "NCAA Baseball Championship - Winston-Salem Super Regional",
+      "date": "2023-06-10"
+    },
+    {
       "t1": "Texas Longhorns",
       "t2": "Stanford Cardinal",
       "w1": 1,
@@ -2253,16 +2325,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Baton Rouge Super Regional",
-      "date": "2023-06-11"
-    },
-    {
-      "t1": "Wake Forest Demon Deacons",
-      "t2": "Alabama Crimson Tide",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Winston-Salem Super Regional",
       "date": "2023-06-11"
     },
     {
@@ -2399,8 +2461,9 @@
   "eliminated": [
     "Duke Blue Devils",
     "Indiana State Sycamores",
+    "Alabama Crimson Tide",
     "Texas Longhorns",
     "Southern Miss Golden Eagles"
   ],
-  "updated": "2026-06-16 22:02 UTC"
+  "updated": "2026-06-17 12:19 UTC"
 }

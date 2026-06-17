@@ -580,6 +580,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "Indiana Pacers",
+      "loser": "Miami Heat",
+      "winner_score": 94,
+      "loser_score": 81,
+      "date": "2004-05-07",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "Detroit Pistons",
       "loser": "New Jersey Nets",
       "winner_score": 95,
@@ -664,6 +672,14 @@
       "loser": "Indiana Pacers",
       "winner_score": 100,
       "loser_score": 88,
+      "date": "2004-05-13",
+      "round": "PLAYOFFS"
+    },
+    {
+      "winner": "Los Angeles Lakers",
+      "loser": "San Antonio Spurs",
+      "winner_score": 74,
+      "loser_score": 73,
       "date": "2004-05-13",
       "round": "PLAYOFFS"
     },
@@ -1251,9 +1267,9 @@
       "t1": "San Antonio Spurs",
       "t2": "Los Angeles Lakers",
       "w1": 2,
-      "w2": 3,
-      "done": false,
-      "loser": "",
+      "w2": 4,
+      "done": true,
+      "loser": "San Antonio Spurs",
       "round": "PLAYOFFS",
       "date": "2004-05-02"
     },
@@ -1280,12 +1296,12 @@
     {
       "t1": "Indiana Pacers",
       "t2": "Miami Heat",
-      "w1": 3,
+      "w1": 4,
       "w2": 2,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Miami Heat",
       "round": "PLAYOFFS",
-      "date": "2004-05-08"
+      "date": "2004-05-07"
     },
     {
       "t1": "Los Angeles Lakers",
@@ -1327,11 +1343,13 @@
     "Milwaukee Bucks",
     "New Orleans Hornets",
     "Denver Nuggets",
+    "San Antonio Spurs",
     "New Jersey Nets",
     "Sacramento Kings",
+    "Miami Heat",
     "Minnesota Timberwolves",
     "Indiana Pacers",
     "Los Angeles Lakers"
   ],
-  "updated": "2026-06-16 21:57 UTC"
+  "updated": "2026-06-17 12:15 UTC"
 }

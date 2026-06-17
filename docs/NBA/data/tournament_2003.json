@@ -188,6 +188,14 @@
       "round": ""
     },
     {
+      "winner": "Chicago Bulls",
+      "loser": "Philadelphia 76ers",
+      "winner_score": 115,
+      "loser_score": 106,
+      "date": "2003-04-15",
+      "round": ""
+    },
+    {
       "winner": "Houston Rockets",
       "loser": "Memphis Grizzlies",
       "winner_score": 97,
@@ -1252,6 +1260,16 @@
       "date": "2003-04-15"
     },
     {
+      "t1": "Chicago Bulls",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2003-04-15"
+    },
+    {
       "t1": "Houston Rockets",
       "t2": "Memphis Grizzlies",
       "w1": 1,
@@ -1539,5 +1557,5 @@
     "Detroit Pistons",
     "New Jersey Nets"
   ],
-  "updated": "2026-06-16 21:57 UTC"
+  "updated": "2026-06-17 12:15 UTC"
 }

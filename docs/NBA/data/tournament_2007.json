@@ -148,6 +148,14 @@
       "round": ""
     },
     {
+      "winner": "Cleveland Cavaliers",
+      "loser": "Atlanta Hawks",
+      "winner_score": 110,
+      "loser_score": 76,
+      "date": "2007-04-14",
+      "round": ""
+    },
+    {
       "winner": "Houston Rockets",
       "loser": "NO/Oklahoma City Hornets",
       "winner_score": 123,
@@ -796,6 +804,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "San Antonio Spurs",
+      "loser": "Phoenix Suns",
+      "winner_score": 111,
+      "loser_score": 106,
+      "date": "2007-05-06",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "Cleveland Cavaliers",
       "loser": "New Jersey Nets",
       "winner_score": 81,
@@ -1266,6 +1282,16 @@
       "date": "2007-04-14"
     },
     {
+      "t1": "Cleveland Cavaliers",
+      "t2": "Atlanta Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2007-04-14"
+    },
+    {
       "t1": "Houston Rockets",
       "t2": "NO/Oklahoma City Hornets",
       "w1": 1,
@@ -1726,6 +1752,16 @@
       "date": "2007-05-05"
     },
     {
+      "t1": "San Antonio Spurs",
+      "t2": "Phoenix Suns",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Phoenix Suns",
+      "round": "PLAYOFFS",
+      "date": "2007-05-06"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "New Jersey Nets",
       "w1": 4,
@@ -1742,16 +1778,6 @@
       "w2": 1,
       "done": true,
       "loser": "Golden State Warriors",
-      "round": "PLAYOFFS",
-      "date": "2007-05-08"
-    },
-    {
-      "t1": "Phoenix Suns",
-      "t2": "San Antonio Spurs",
-      "w1": 2,
-      "w2": 3,
-      "done": false,
-      "loser": "",
       "round": "PLAYOFFS",
       "date": "2007-05-08"
     },
@@ -1796,11 +1822,12 @@
     "Denver Nuggets",
     "Dallas Mavericks",
     "Chicago Bulls",
+    "Phoenix Suns",
     "New Jersey Nets",
     "Golden State Warriors",
     "Utah Jazz",
     "Detroit Pistons",
     "Cleveland Cavaliers"
   ],
-  "updated": "2026-06-16 21:58 UTC"
+  "updated": "2026-06-17 12:15 UTC"
 }

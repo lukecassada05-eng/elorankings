@@ -220,6 +220,14 @@
       "round": "NCAA Baseball Championship - Athens Regional"
     },
     {
+      "winner": "Creighton Bluejays",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 11,
+      "loser_score": 4,
+      "date": "2025-05-31",
+      "round": "NCAA Baseball Championship - Fayetteville Regional"
+    },
+    {
       "winner": "Oklahoma Sooners",
       "loser": "Nebraska Cornhuskers",
       "winner_score": 7,
@@ -538,6 +546,14 @@
       "loser_score": 3,
       "date": "2025-06-02",
       "round": "NCAA Baseball Championship - Fayetteville Regional - Arkansas advances to Super Regional"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "NC State Wolfpack",
+      "winner_score": 11,
+      "loser_score": 1,
+      "date": "2025-06-02",
+      "round": "NCAA Baseball Championship - Auburn Regional - Auburn advances to Super Regional"
     },
     {
       "winner": "Oklahoma Sooners",
@@ -1324,6 +1340,16 @@
       "date": "2025-05-31"
     },
     {
+      "t1": "Creighton Bluejays",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Fayetteville Regional",
+      "date": "2025-05-31"
+    },
+    {
       "t1": "Oklahoma Sooners",
       "t2": "Nebraska Cornhuskers",
       "w1": 1,
@@ -1914,6 +1940,16 @@
       "date": "2025-06-02"
     },
     {
+      "t1": "Auburn Tigers",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Auburn Regional - Auburn advances to Super Regional",
+      "date": "2025-06-02"
+    },
+    {
       "t1": "Oregon State Beavers",
       "t2": "USC Trojans",
       "w1": 1,
@@ -2224,5 +2260,5 @@
     "Duke Blue Devils",
     "Coastal Carolina Chanticleers"
   ],
-  "updated": "2026-06-16 22:02 UTC"
+  "updated": "2026-06-17 12:19 UTC"
 }

@@ -252,6 +252,14 @@
       "round": ""
     },
     {
+      "winner": "Baltimore Orioles",
+      "loser": "Boston Red Sox",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2004-10-03",
+      "round": ""
+    },
+    {
       "winner": "Philadelphia Phillies",
       "loser": "Florida Marlins",
       "winner_score": 10,
@@ -400,6 +408,14 @@
       "loser": "Atlanta Braves",
       "winner_score": 8,
       "loser_score": 5,
+      "date": "2004-10-09",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Los Angeles Dodgers",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 4,
+      "loser_score": 0,
       "date": "2004-10-09",
       "round": "DIVISIONAL PLAYOFFS"
     },
@@ -637,7 +653,7 @@
       "t1": "Boston Red Sox",
       "t2": "Baltimore Orioles",
       "w1": 1,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
@@ -747,7 +763,7 @@
       "t1": "St. Louis Cardinals",
       "t2": "Los Angeles Dodgers",
       "w1": 3,
-      "w2": 0,
+      "w2": 1,
       "done": true,
       "loser": "Los Angeles Dodgers",
       "round": "DIVISIONAL PLAYOFFS",
@@ -822,5 +838,5 @@
     "Houston Astros",
     "St. Louis Cardinals"
   ],
-  "updated": "2026-06-16 21:59 UTC"
+  "updated": "2026-06-17 12:16 UTC"
 }

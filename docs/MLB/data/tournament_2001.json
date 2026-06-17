@@ -172,6 +172,14 @@
       "round": ""
     },
     {
+      "winner": "Toronto              Blue Jays",
+      "loser": "Baltimore            Orioles",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2001-10-03",
+      "round": ""
+    },
+    {
       "winner": "Detroit              Tigers",
       "loser": "Minnesota            Twins",
       "winner_score": 9,
@@ -588,6 +596,14 @@
       "round": ""
     },
     {
+      "winner": "Florida              Marlins",
+      "loser": "Atlanta              Braves",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2001-10-07",
+      "round": ""
+    },
+    {
       "winner": "Montreal             Expos",
       "loser": "New York             Mets",
       "winner_score": 5,
@@ -952,7 +968,7 @@
     {
       "t1": "Toronto              Blue Jays",
       "t2": "Baltimore            Orioles",
-      "w1": 1,
+      "w1": 2,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -1183,7 +1199,7 @@
       "t1": "Atlanta              Braves",
       "t2": "Florida              Marlins",
       "w1": 2,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
@@ -1353,5 +1369,5 @@
     "Atlanta              Braves",
     "Seattle              Mariners"
   ],
-  "updated": "2026-06-16 21:59 UTC"
+  "updated": "2026-06-17 12:16 UTC"
 }

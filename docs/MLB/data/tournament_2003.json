@@ -188,6 +188,14 @@
       "round": ""
     },
     {
+      "winner": "New York Yankees",
+      "loser": "Boston Red Sox",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2003-10-14",
+      "round": ""
+    },
+    {
       "winner": "Florida Marlins",
       "loser": "Chicago Cubs",
       "winner_score": 8,
@@ -323,9 +331,9 @@
       "t1": "Boston Red Sox",
       "t2": "New York Yankees",
       "w1": 3,
-      "w2": 3,
+      "w2": 4,
       "done": true,
-      "loser": "New York Yankees",
+      "loser": "Boston Red Sox",
       "round": "",
       "date": "2003-10-09"
     },
@@ -345,7 +353,8 @@
     "Oakland Athletics",
     "Minnesota Twins",
     "Chicago Cubs",
+    "Boston Red Sox",
     "New York Yankees"
   ],
-  "updated": "2026-06-16 21:59 UTC"
+  "updated": "2026-06-17 12:16 UTC"
 }

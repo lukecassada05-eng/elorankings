@@ -572,12 +572,28 @@
       "round": "WEST FINALS - GAME 3"
     },
     {
+      "winner": "Boston Bruins",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2019-05-17",
+      "round": "EAST FINALS - GAME 4"
+    },
+    {
       "winner": "St. Louis Blues",
       "loser": "San Jose Sharks",
       "winner_score": 2,
       "loser_score": 1,
       "date": "2019-05-18",
       "round": "WEST FINALS - GAME 4"
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "San Jose Sharks",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2019-05-19",
+      "round": "WEST FINALS - GAME 5"
     },
     {
       "winner": "St. Louis Blues",
@@ -1356,6 +1372,16 @@
       "date": "2019-05-16"
     },
     {
+      "t1": "Boston Bruins",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST FINALS - GAME 4",
+      "date": "2019-05-17"
+    },
+    {
       "t1": "St. Louis Blues",
       "t2": "San Jose Sharks",
       "w1": 1,
@@ -1364,6 +1390,16 @@
       "loser": "",
       "round": "WEST FINALS - GAME 4",
       "date": "2019-05-18"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST FINALS - GAME 5",
+      "date": "2019-05-19"
     },
     {
       "t1": "St. Louis Blues",
@@ -1447,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 21:59 UTC"
+  "updated": "2026-06-17 12:16 UTC"
 }

@@ -508,6 +508,14 @@
       "round": ""
     },
     {
+      "winner": "LA Clippers",
+      "loser": "New Orleans Hornets",
+      "winner_score": 86,
+      "loser_score": 75,
+      "date": "2005-04-20",
+      "round": ""
+    },
+    {
       "winner": "Indiana Pacers",
       "loser": "Chicago Bulls",
       "winner_score": 85,
@@ -772,6 +780,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "Phoenix Suns",
+      "loser": "Memphis Grizzlies",
+      "winner_score": 110,
+      "loser_score": 90,
+      "date": "2005-04-30",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "Washington Wizards",
       "loser": "Chicago Bulls",
       "winner_score": 117,
@@ -895,6 +911,14 @@
       "winner": "San Antonio Spurs",
       "loser": "Denver Nuggets",
       "winner_score": 99,
+      "loser_score": 89,
+      "date": "2005-05-05",
+      "round": "PLAYOFFS"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Indiana Pacers",
+      "winner_score": 92,
       "loser_score": 89,
       "date": "2005-05-05",
       "round": "PLAYOFFS"
@@ -1604,7 +1628,7 @@
     {
       "t1": "LA Clippers",
       "t2": "New Orleans Hornets",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -2014,7 +2038,7 @@
     {
       "t1": "Boston Celtics",
       "t2": "Indiana Pacers",
-      "w1": 2,
+      "w1": 3,
       "w2": 4,
       "done": true,
       "loser": "Boston Celtics",
@@ -2054,10 +2078,10 @@
     {
       "t1": "Phoenix Suns",
       "t2": "Memphis Grizzlies",
-      "w1": 3,
+      "w1": 4,
       "w2": 0,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Memphis Grizzlies",
       "round": "PLAYOFFS",
       "date": "2005-04-24"
     },
@@ -2140,6 +2164,7 @@
     "New Jersey Nets",
     "Chicago Bulls",
     "Denver Nuggets",
+    "Memphis Grizzlies",
     "Washington Wizards",
     "Seattle SuperSonics",
     "Dallas Mavericks",
@@ -2148,5 +2173,5 @@
     "Miami Heat",
     "Detroit Pistons"
   ],
-  "updated": "2026-06-16 21:57 UTC"
+  "updated": "2026-06-17 12:15 UTC"
 }

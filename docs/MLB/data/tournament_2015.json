@@ -444,6 +444,14 @@
       "round": "ALDS - GAME 2"
     },
     {
+      "winner": "St. Louis Cardinals",
+      "loser": "Chicago Cubs",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2015-10-09",
+      "round": "NLDS - GAME 1"
+    },
+    {
       "winner": "New York Mets",
       "loser": "Los Angeles Dodgers",
       "winner_score": 3,
@@ -513,6 +521,14 @@
       "winner_score": 6,
       "loser_score": 4,
       "date": "2015-10-13",
+      "round": "NLDS - GAME 4"
+    },
+    {
+      "winner": "Los Angeles Dodgers",
+      "loser": "New York Mets",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2015-10-14",
       "round": "NLDS - GAME 4"
     },
     {
@@ -1024,6 +1040,16 @@
       "date": "2015-10-09"
     },
     {
+      "t1": "St. Louis Cardinals",
+      "t2": "Chicago Cubs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 1",
+      "date": "2015-10-09"
+    },
+    {
       "t1": "New York Mets",
       "t2": "Los Angeles Dodgers",
       "w1": 1,
@@ -1112,6 +1138,16 @@
       "loser": "",
       "round": "NLDS - GAME 4",
       "date": "2015-10-13"
+    },
+    {
+      "t1": "Los Angeles Dodgers",
+      "t2": "New York Mets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 4",
+      "date": "2015-10-14"
     },
     {
       "t1": "Toronto Blue Jays",
@@ -1287,5 +1323,5 @@
   "eliminated": [
     "Boston Red Sox"
   ],
-  "updated": "2026-06-16 21:59 UTC"
+  "updated": "2026-06-17 12:16 UTC"
 }

@@ -300,6 +300,14 @@
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 5"
     },
     {
+      "winner": "St. Louis Blues",
+      "loser": "Minnesota Wild",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2017-04-22",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5"
+    },
+    {
       "winner": "New York Rangers",
       "loser": "Montreal Canadiens",
       "winner_score": 3,
@@ -320,6 +328,14 @@
       "loser": "Boston Bruins",
       "winner_score": 3,
       "loser_score": 2,
+      "date": "2017-04-23",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6"
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 2,
+      "loser_score": 1,
       "date": "2017-04-23",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6"
     },
@@ -1056,6 +1072,16 @@
       "date": "2017-04-21"
     },
     {
+      "t1": "St. Louis Blues",
+      "t2": "Minnesota Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 5",
+      "date": "2017-04-22"
+    },
+    {
       "t1": "New York Rangers",
       "t2": "Montreal Canadiens",
       "w1": 1,
@@ -1078,6 +1104,16 @@
     {
       "t1": "Ottawa Senators",
       "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 6",
+      "date": "2017-04-23"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Toronto Maple Leafs",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1537,5 +1573,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 21:59 UTC"
+  "updated": "2026-06-17 12:16 UTC"
 }

@@ -220,6 +220,14 @@
       "round": ""
     },
     {
+      "winner": "San Diego Padres",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2005-10-02",
+      "round": ""
+    },
+    {
       "winner": "San Francisco Giants",
       "loser": "Arizona Diamondbacks",
       "winner_score": 3,
@@ -605,7 +613,7 @@
       "t1": "Los Angeles Dodgers",
       "t2": "San Diego Padres",
       "w1": 1,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
@@ -691,5 +699,5 @@
     "St. Louis Cardinals",
     "Houston Astros"
   ],
-  "updated": "2026-06-16 21:59 UTC"
+  "updated": "2026-06-17 12:16 UTC"
 }

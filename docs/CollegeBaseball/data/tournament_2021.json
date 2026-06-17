@@ -1412,6 +1412,14 @@
       "round": "Starkville Regional"
     },
     {
+      "winner": "Oregon Ducks",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2021-06-06",
+      "round": "Eugene Regional"
+    },
+    {
       "winner": "Arizona Wildcats",
       "loser": "UC Santa Barbara Gauchos",
       "winner_score": 4,
@@ -1740,6 +1748,14 @@
       "round": "Lubbock Super Regional"
     },
     {
+      "winner": "Arkansas Razorbacks",
+      "loser": "NC State Wolfpack",
+      "winner_score": 21,
+      "loser_score": 2,
+      "date": "2021-06-11",
+      "round": "Fayetteville Super Regional"
+    },
+    {
       "winner": "Arizona Wildcats",
       "loser": "Ole Miss Rebels",
       "winner_score": 9,
@@ -1754,6 +1770,14 @@
       "loser_score": 1,
       "date": "2021-06-12",
       "round": "Nashville Super Regional"
+    },
+    {
+      "winner": "Dallas Baptist Patriots",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-06-12",
+      "round": "Columbia Super Regional"
     },
     {
       "winner": "Mississippi State Bulldogs",
@@ -3586,6 +3610,16 @@
       "date": "2021-06-06"
     },
     {
+      "t1": "Oregon Ducks",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Eugene Regional",
+      "date": "2021-06-06"
+    },
+    {
       "t1": "Arizona Wildcats",
       "t2": "UC Santa Barbara Gauchos",
       "w1": 2,
@@ -3926,6 +3960,16 @@
       "date": "2021-06-11"
     },
     {
+      "t1": "Arkansas Razorbacks",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 2,
+      "done": true,
+      "loser": "Arkansas Razorbacks",
+      "round": "Fayetteville Super Regional",
+      "date": "2021-06-11"
+    },
+    {
       "t1": "Arizona Wildcats",
       "t2": "Ole Miss Rebels",
       "w1": 2,
@@ -3936,6 +3980,16 @@
       "date": "2021-06-12"
     },
     {
+      "t1": "Dallas Baptist Patriots",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 2,
+      "done": true,
+      "loser": "Dallas Baptist Patriots",
+      "round": "Columbia Super Regional",
+      "date": "2021-06-12"
+    },
+    {
       "t1": "Mississippi State Bulldogs",
       "t2": "Notre Dame Fighting Irish",
       "w1": 2,
@@ -3943,16 +3997,6 @@
       "done": true,
       "loser": "Notre Dame Fighting Irish",
       "round": "Starkville Super Regional",
-      "date": "2021-06-12"
-    },
-    {
-      "t1": "NC State Wolfpack",
-      "t2": "Arkansas Razorbacks",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Arkansas Razorbacks",
-      "round": "Fayetteville Super Regional",
       "date": "2021-06-12"
     },
     {
@@ -3973,16 +4017,6 @@
       "done": true,
       "loser": "South Florida Bulls",
       "round": "Austin Super Regional",
-      "date": "2021-06-13"
-    },
-    {
-      "t1": "Virginia Cavaliers",
-      "t2": "Dallas Baptist Patriots",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Dallas Baptist Patriots",
-      "round": "Columbia Super Regional",
       "date": "2021-06-13"
     },
     {
@@ -4098,12 +4132,12 @@
     "UC Santa Barbara Gauchos",
     "East Carolina Pirates",
     "Texas Tech Red Raiders",
-    "Ole Miss Rebels",
-    "Notre Dame Fighting Irish",
     "Arkansas Razorbacks",
+    "Ole Miss Rebels",
+    "Dallas Baptist Patriots",
+    "Notre Dame Fighting Irish",
     "LSU Tigers",
-    "South Florida Bulls",
-    "Dallas Baptist Patriots"
+    "South Florida Bulls"
   ],
-  "updated": "2026-06-16 22:02 UTC"
+  "updated": "2026-06-17 12:19 UTC"
 }

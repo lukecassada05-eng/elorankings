@@ -860,6 +860,14 @@
       "round": "WESTERN CONFERENCE FINALS - GAME 3"
     },
     {
+      "winner": "New York Rangers",
+      "loser": "Montreal Canadiens",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2014-05-26",
+      "round": "EASTERN CONFERENCE FINALS - GAME 4"
+    },
+    {
       "winner": "Los Angeles Kings",
       "loser": "Chicago Blackhawks",
       "winner_score": 5,
@@ -2020,6 +2028,16 @@
       "date": "2014-05-25"
     },
     {
+      "t1": "New York Rangers",
+      "t2": "Montreal Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FINALS - GAME 4",
+      "date": "2014-05-26"
+    },
+    {
       "t1": "Los Angeles Kings",
       "t2": "Chicago Blackhawks",
       "w1": 1,
@@ -2131,5 +2149,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-16 21:59 UTC"
+  "updated": "2026-06-17 12:16 UTC"
 }

@@ -68,6 +68,14 @@
       "round": "Louisville Regional"
     },
     {
+      "winner": "North Carolina Tar Heels",
+      "loser": "UNC Wilmington Seahawks",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2019-05-31",
+      "round": "Chapel Hill Regional"
+    },
+    {
       "winner": "Arkansas Razorbacks",
       "loser": "Central Connecticut Blue Devils",
       "winner_score": 11,
@@ -684,6 +692,14 @@
       "round": "Morgantown Regional"
     },
     {
+      "winner": "East Carolina Pirates",
+      "loser": "Quinnipiac Bobcats",
+      "winner_score": 13,
+      "loser_score": 3,
+      "date": "2019-06-03",
+      "round": "Greenville Regional - Elimination Game"
+    },
+    {
       "winner": "Mississippi State Bulldogs",
       "loser": "Miami Hurricanes",
       "winner_score": 5,
@@ -836,6 +852,14 @@
       "round": "Louisville Super Regional - GAME 2"
     },
     {
+      "winner": "Auburn Tigers",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2019-06-08",
+      "round": "Chapel Hill Super Regional - GAME 1"
+    },
+    {
       "winner": "Arkansas Razorbacks",
       "loser": "Ole Miss Rebels",
       "winner_score": 11,
@@ -898,6 +922,22 @@
       "loser_score": 5,
       "date": "2019-06-09",
       "round": "Fayetteville Super Regional - GAME 2"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2019-06-09",
+      "round": "Lubbock Super Regional - GAME 3"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "LSU Tigers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-06-09",
+      "round": "Baton Rouge Super Regional - GAME 2"
     },
     {
       "winner": "Mississippi State Bulldogs",
@@ -1123,6 +1163,16 @@
       "done": false,
       "loser": "",
       "round": "Louisville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Regional",
       "date": "2019-05-31"
     },
     {
@@ -1846,6 +1896,16 @@
       "date": "2019-06-02"
     },
     {
+      "t1": "East Carolina Pirates",
+      "t2": "Quinnipiac Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Greenville Regional - Elimination Game",
+      "date": "2019-06-03"
+    },
+    {
       "t1": "Mississippi State Bulldogs",
       "t2": "Miami Hurricanes",
       "w1": 1,
@@ -1966,6 +2026,16 @@
       "date": "2019-06-08"
     },
     {
+      "t1": "Auburn Tigers",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Super Regional - GAME 1",
+      "date": "2019-06-08"
+    },
+    {
       "t1": "Arkansas Razorbacks",
       "t2": "Ole Miss Rebels",
       "w1": 1,
@@ -2043,6 +2113,26 @@
       "done": false,
       "loser": "",
       "round": "Fayetteville Super Regional - GAME 2",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Super Regional - GAME 3",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Baton Rouge Super Regional - GAME 2",
       "date": "2019-06-09"
     },
     {
@@ -2208,5 +2298,5 @@
     "Texas Tech Red Raiders",
     "Louisville Cardinals"
   ],
-  "updated": "2026-06-16 22:01 UTC"
+  "updated": "2026-06-17 12:19 UTC"
 }

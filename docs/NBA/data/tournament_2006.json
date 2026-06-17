@@ -956,6 +956,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "Dallas Mavericks",
+      "loser": "San Antonio Spurs",
+      "winner_score": 113,
+      "loser_score": 91,
+      "date": "2006-05-10",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "LA Clippers",
       "loser": "Phoenix Suns",
       "winner_score": 122,
@@ -1985,9 +1993,9 @@
       "t1": "San Antonio Spurs",
       "t2": "Dallas Mavericks",
       "w1": 3,
-      "w2": 3,
-      "done": false,
-      "loser": "",
+      "w2": 4,
+      "done": true,
+      "loser": "San Antonio Spurs",
       "round": "PLAYOFFS",
       "date": "2006-05-07"
     },
@@ -2061,6 +2069,7 @@
     "Indiana Pacers",
     "Milwaukee Bucks",
     "Memphis Grizzlies",
+    "San Antonio Spurs",
     "Cleveland Cavaliers",
     "LA Clippers",
     "New Jersey Nets",
@@ -2068,5 +2077,5 @@
     "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-06-16 21:58 UTC"
+  "updated": "2026-06-17 12:15 UTC"
 }

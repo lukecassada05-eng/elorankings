@@ -20,6 +20,14 @@
       "round": ""
     },
     {
+      "winner": "Philadelphia 76ers",
+      "loser": "Washington Wizards",
+      "winner_score": 100,
+      "loser_score": 91,
+      "date": "2002-04-12",
+      "round": ""
+    },
+    {
       "winner": "Toronto Raptors",
       "loser": "Atlanta Hawks",
       "winner_score": 112,
@@ -40,6 +48,14 @@
       "loser": "Cleveland Cavaliers",
       "winner_score": 112,
       "loser_score": 100,
+      "date": "2002-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Portland Trail Blazers",
+      "loser": "Houston Rockets",
+      "winner_score": 80,
+      "loser_score": 79,
       "date": "2002-04-12",
       "round": ""
     },
@@ -289,6 +305,14 @@
       "winner_score": 95,
       "loser_score": 71,
       "date": "2002-04-16",
+      "round": ""
+    },
+    {
+      "winner": "Detroit Pistons",
+      "loser": "New Jersey Nets",
+      "winner_score": 103,
+      "loser_score": 98,
+      "date": "2002-04-17",
       "round": ""
     },
     {
@@ -994,6 +1018,16 @@
       "date": "2002-04-12"
     },
     {
+      "t1": "Philadelphia 76ers",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-12"
+    },
+    {
       "t1": "Toronto Raptors",
       "t2": "Atlanta Hawks",
       "w1": 1,
@@ -1017,6 +1051,16 @@
       "t1": "Charlotte Hornets",
       "t2": "Cleveland Cavaliers",
       "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-12"
+    },
+    {
+      "t1": "Portland Trail Blazers",
+      "t2": "Houston Rockets",
+      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -1334,6 +1378,16 @@
       "date": "2002-04-16"
     },
     {
+      "t1": "Detroit Pistons",
+      "t2": "New Jersey Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2002-04-17"
+    },
+    {
       "t1": "Boston Celtics",
       "t2": "Atlanta Hawks",
       "w1": 1,
@@ -1376,16 +1430,6 @@
     {
       "t1": "Phoenix Suns",
       "t2": "Dallas Mavericks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2002-04-17"
-    },
-    {
-      "t1": "Portland Trail Blazers",
-      "t2": "Houston Rockets",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1593,5 +1637,5 @@
     "Boston Celtics",
     "New Jersey Nets"
   ],
-  "updated": "2026-06-16 21:57 UTC"
+  "updated": "2026-06-17 12:15 UTC"
 }
