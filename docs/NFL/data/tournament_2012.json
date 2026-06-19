@@ -50,6 +50,14 @@
       "loser_score": 13,
       "date": "2013-01-20",
       "round": "AFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Baltimore Ravens",
+      "loser": "San Francisco 49ers",
+      "winner_score": 34,
+      "loser_score": 31,
+      "date": "2013-02-03",
+      "round": "Super Bowl XLVII"
     }
   ],
   "series": [
@@ -112,6 +120,16 @@
       "loser": "New England Patriots",
       "round": "AFC CHAMPIONSHIP",
       "date": "2013-01-20"
+    },
+    {
+      "t1": "Baltimore Ravens",
+      "t2": "San Francisco 49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Francisco 49ers",
+      "round": "Super Bowl XLVII",
+      "date": "2013-02-03"
     }
   ],
   "eliminated": [
@@ -120,7 +138,8 @@
     "Seattle Seahawks",
     "Houston Texans",
     "Atlanta Falcons",
-    "New England Patriots"
+    "New England Patriots",
+    "San Francisco 49ers"
   ],
-  "updated": "2026-06-19 00:03 UTC"
+  "updated": "2026-06-19 11:48 UTC"
 }

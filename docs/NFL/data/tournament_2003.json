@@ -34,6 +34,14 @@
       "loser_score": 3,
       "date": "2004-01-18",
       "round": "NFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "New England Patriots",
+      "loser": "Carolina Panthers",
+      "winner_score": 32,
+      "loser_score": 29,
+      "date": "2004-02-01",
+      "round": "Super Bowl XXXVIII"
     }
   ],
   "series": [
@@ -76,13 +84,24 @@
       "loser": "Philadelphia Eagles",
       "round": "NFC CHAMPIONSHIP",
       "date": "2004-01-18"
+    },
+    {
+      "t1": "New England Patriots",
+      "t2": "Carolina Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Carolina Panthers",
+      "round": "Super Bowl XXXVIII",
+      "date": "2004-02-01"
     }
   ],
   "eliminated": [
     "Kansas City Chiefs",
     "Green Bay Packers",
     "Indianapolis Colts",
-    "Philadelphia Eagles"
+    "Philadelphia Eagles",
+    "Carolina Panthers"
   ],
-  "updated": "2026-06-19 00:03 UTC"
+  "updated": "2026-06-19 11:48 UTC"
 }

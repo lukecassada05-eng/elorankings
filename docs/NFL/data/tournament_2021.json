@@ -4,6 +4,102 @@
   "completed": true,
   "games": [
     {
+      "winner": "Cincinnati Bengals",
+      "loser": "Las Vegas Raiders",
+      "winner_score": 26,
+      "loser_score": 19,
+      "date": "2022-01-15",
+      "round": "AFC Wild Card Playoffs"
+    },
+    {
+      "winner": "Buffalo Bills",
+      "loser": "New England Patriots",
+      "winner_score": 47,
+      "loser_score": 17,
+      "date": "2022-01-16",
+      "round": "AFC Wild Card Playoffs"
+    },
+    {
+      "winner": "Tampa Bay Buccaneers",
+      "loser": "Philadelphia Eagles",
+      "winner_score": 31,
+      "loser_score": 15,
+      "date": "2022-01-16",
+      "round": "NFC Wild Card Playoffs"
+    },
+    {
+      "winner": "San Francisco 49ers",
+      "loser": "Dallas Cowboys",
+      "winner_score": 23,
+      "loser_score": 17,
+      "date": "2022-01-16",
+      "round": "NFC Wild Card Playoffs"
+    },
+    {
+      "winner": "Kansas City Chiefs",
+      "loser": "Pittsburgh Steelers",
+      "winner_score": 42,
+      "loser_score": 21,
+      "date": "2022-01-17",
+      "round": "AFC Wild Card Playoffs"
+    },
+    {
+      "winner": "Los Angeles Rams",
+      "loser": "Arizona Cardinals",
+      "winner_score": 34,
+      "loser_score": 11,
+      "date": "2022-01-18",
+      "round": "NFC Wild Card Playoffs"
+    },
+    {
+      "winner": "Cincinnati Bengals",
+      "loser": "Tennessee Titans",
+      "winner_score": 19,
+      "loser_score": 16,
+      "date": "2022-01-22",
+      "round": "AFC Divisional Playoffs"
+    },
+    {
+      "winner": "San Francisco 49ers",
+      "loser": "Green Bay Packers",
+      "winner_score": 13,
+      "loser_score": 10,
+      "date": "2022-01-23",
+      "round": "NFC Divisional Playoffs"
+    },
+    {
+      "winner": "Los Angeles Rams",
+      "loser": "Tampa Bay Buccaneers",
+      "winner_score": 30,
+      "loser_score": 27,
+      "date": "2022-01-23",
+      "round": "NFC Divisional Playoffs"
+    },
+    {
+      "winner": "Kansas City Chiefs",
+      "loser": "Buffalo Bills",
+      "winner_score": 42,
+      "loser_score": 36,
+      "date": "2022-01-23",
+      "round": "AFC Divisional Playoffs"
+    },
+    {
+      "winner": "Cincinnati Bengals",
+      "loser": "Kansas City Chiefs",
+      "winner_score": 27,
+      "loser_score": 24,
+      "date": "2022-01-30",
+      "round": "AFC Championship"
+    },
+    {
+      "winner": "Los Angeles Rams",
+      "loser": "San Francisco 49ers",
+      "winner_score": 20,
+      "loser_score": 17,
+      "date": "2022-01-30",
+      "round": "NFC Championship"
+    },
+    {
       "winner": "Los Angeles Rams",
       "loser": "Cincinnati Bengals",
       "winner_score": 23,
@@ -13,6 +109,126 @@
     }
   ],
   "series": [
+    {
+      "t1": "Cincinnati Bengals",
+      "t2": "Las Vegas Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Las Vegas Raiders",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2022-01-15"
+    },
+    {
+      "t1": "Buffalo Bills",
+      "t2": "New England Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New England Patriots",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2022-01-16"
+    },
+    {
+      "t1": "Tampa Bay Buccaneers",
+      "t2": "Philadelphia Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Philadelphia Eagles",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2022-01-16"
+    },
+    {
+      "t1": "San Francisco 49ers",
+      "t2": "Dallas Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dallas Cowboys",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2022-01-16"
+    },
+    {
+      "t1": "Kansas City Chiefs",
+      "t2": "Pittsburgh Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Steelers",
+      "round": "AFC Wild Card Playoffs",
+      "date": "2022-01-17"
+    },
+    {
+      "t1": "Los Angeles Rams",
+      "t2": "Arizona Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Cardinals",
+      "round": "NFC Wild Card Playoffs",
+      "date": "2022-01-18"
+    },
+    {
+      "t1": "Cincinnati Bengals",
+      "t2": "Tennessee Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Titans",
+      "round": "AFC Divisional Playoffs",
+      "date": "2022-01-22"
+    },
+    {
+      "t1": "San Francisco 49ers",
+      "t2": "Green Bay Packers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Green Bay Packers",
+      "round": "NFC Divisional Playoffs",
+      "date": "2022-01-23"
+    },
+    {
+      "t1": "Los Angeles Rams",
+      "t2": "Tampa Bay Buccaneers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tampa Bay Buccaneers",
+      "round": "NFC Divisional Playoffs",
+      "date": "2022-01-23"
+    },
+    {
+      "t1": "Kansas City Chiefs",
+      "t2": "Buffalo Bills",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Buffalo Bills",
+      "round": "AFC Divisional Playoffs",
+      "date": "2022-01-23"
+    },
+    {
+      "t1": "Cincinnati Bengals",
+      "t2": "Kansas City Chiefs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas City Chiefs",
+      "round": "AFC Championship",
+      "date": "2022-01-30"
+    },
+    {
+      "t1": "Los Angeles Rams",
+      "t2": "San Francisco 49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Francisco 49ers",
+      "round": "NFC Championship",
+      "date": "2022-01-30"
+    },
     {
       "t1": "Los Angeles Rams",
       "t2": "Cincinnati Bengals",
@@ -25,7 +241,19 @@
     }
   ],
   "eliminated": [
+    "Las Vegas Raiders",
+    "New England Patriots",
+    "Philadelphia Eagles",
+    "Dallas Cowboys",
+    "Pittsburgh Steelers",
+    "Arizona Cardinals",
+    "Tennessee Titans",
+    "Green Bay Packers",
+    "Tampa Bay Buccaneers",
+    "Buffalo Bills",
+    "Kansas City Chiefs",
+    "San Francisco 49ers",
     "Cincinnati Bengals"
   ],
-  "updated": "2026-06-19 00:04 UTC"
+  "updated": "2026-06-19 11:48 UTC"
 }

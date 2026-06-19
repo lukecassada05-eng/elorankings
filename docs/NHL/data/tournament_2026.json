@@ -606,7 +606,7 @@
     {
       "winner": "Anaheim Ducks",
       "loser": "Edmonton Oilers",
-      "winner_score": 7,
+      "winner_score": 6,
       "loser_score": 4,
       "date": "2026-04-25",
       "round": "West 1st Round"
@@ -1026,6 +1026,54 @@
       "loser_score": 1,
       "date": "2026-05-30",
       "round": "East Final"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-06-03",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-06-05",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-06-07",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2026-06-10",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-06-12",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2026-06-15",
+      "round": "Stanley Cup Final"
     }
   ],
   "series": [
@@ -1678,6 +1726,16 @@
       "loser": "Montreal Canadiens",
       "round": "East Final",
       "date": "2026-05-22"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "Carolina Hurricanes",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Vegas Golden Knights",
+      "round": "Stanley Cup Final",
+      "date": "2026-06-03"
     }
   ],
   "eliminated": [
@@ -1694,7 +1752,8 @@
     "Anaheim Ducks",
     "Buffalo Sabres",
     "Colorado Avalanche",
-    "Montreal Canadiens"
+    "Montreal Canadiens",
+    "Vegas Golden Knights"
   ],
-  "updated": "2026-06-19 00:00 UTC"
+  "updated": "2026-06-19 11:47 UTC"
 }

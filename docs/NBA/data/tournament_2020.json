@@ -1308,6 +1308,14 @@
       "round": "West Finals"
     },
     {
+      "winner": "Boston Celtics",
+      "loser": "Miami Heat",
+      "winner_score": 121,
+      "loser_score": 108,
+      "date": "2020-09-26",
+      "round": "East Finals"
+    },
+    {
       "winner": "Los Angeles Lakers",
       "loser": "Denver Nuggets",
       "winner_score": 117,
@@ -1338,14 +1346,6 @@
       "loser_score": 114,
       "date": "2020-10-03",
       "round": "NBA Finals"
-    },
-    {
-      "winner": "Boston Celtics",
-      "loser": "Miami Heat",
-      "winner_score": 121,
-      "loser_score": 108,
-      "date": "2020-09-26",
-      "round": "East Finals"
     },
     {
       "winner": "Miami Heat",
@@ -2718,5 +2718,5 @@
     "Denver Nuggets",
     "Miami Heat"
   ],
-  "updated": "2026-06-18 23:58 UTC"
+  "updated": "2026-06-19 11:47 UTC"
 }
