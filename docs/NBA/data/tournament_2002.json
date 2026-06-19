@@ -961,7 +961,7 @@
       "winner_score": 112,
       "loser_score": 106,
       "date": "2002-06-02",
-      "round": ""
+      "round": "Play-In"
     },
     {
       "winner": "Los Angeles Lakers",
@@ -969,7 +969,7 @@
       "winner_score": 99,
       "loser_score": 94,
       "date": "2002-06-05",
-      "round": ""
+      "round": "Play-In"
     },
     {
       "winner": "Los Angeles Lakers",
@@ -977,7 +977,7 @@
       "winner_score": 106,
       "loser_score": 83,
       "date": "2002-06-07",
-      "round": ""
+      "round": "Play-In"
     },
     {
       "winner": "Los Angeles Lakers",
@@ -985,7 +985,7 @@
       "winner_score": 106,
       "loser_score": 103,
       "date": "2002-06-10",
-      "round": ""
+      "round": "Play-In"
     },
     {
       "winner": "Los Angeles Lakers",
@@ -993,7 +993,7 @@
       "winner_score": 113,
       "loser_score": 107,
       "date": "2002-06-13",
-      "round": ""
+      "round": "Play-In"
     }
   ],
   "series": [
@@ -1490,7 +1490,7 @@
     {
       "t1": "Los Angeles Lakers",
       "t2": "Sacramento Kings",
-      "w1": 5,
+      "w1": 4,
       "w2": 3,
       "done": true,
       "loser": "Sacramento Kings",
@@ -1619,12 +1619,22 @@
     },
     {
       "t1": "Los Angeles Lakers",
+      "t2": "Sacramento Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2002-06-02"
+    },
+    {
+      "t1": "Los Angeles Lakers",
       "t2": "New Jersey Nets",
       "w1": 4,
       "w2": 0,
       "done": true,
       "loser": "New Jersey Nets",
-      "round": "",
+      "round": "Play-In",
       "date": "2002-06-05"
     }
   ],
@@ -1637,5 +1647,5 @@
     "Boston Celtics",
     "New Jersey Nets"
   ],
-  "updated": "2026-06-18 11:31 UTC"
+  "updated": "2026-06-18 23:56 UTC"
 }

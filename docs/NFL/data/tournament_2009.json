@@ -5,54 +5,6 @@
   "games": [
     {
       "winner": "New Orleans Saints",
-      "loser": "Arizona Cardinals",
-      "winner_score": 45,
-      "loser_score": 14,
-      "date": "2010-01-16",
-      "round": "NFC DIVISIONAL PLAYOFFS"
-    },
-    {
-      "winner": "Indianapolis Colts",
-      "loser": "Baltimore Ravens",
-      "winner_score": 20,
-      "loser_score": 3,
-      "date": "2010-01-17",
-      "round": "AFC DIVISIONAL PLAYOFFS"
-    },
-    {
-      "winner": "Minnesota Vikings",
-      "loser": "Dallas Cowboys",
-      "winner_score": 34,
-      "loser_score": 3,
-      "date": "2010-01-17",
-      "round": "NFC DIVISIONAL PLAYOFFS"
-    },
-    {
-      "winner": "New York Jets",
-      "loser": "San Diego Chargers",
-      "winner_score": 17,
-      "loser_score": 14,
-      "date": "2010-01-17",
-      "round": "AFC DIVISIONAL PLAYOFFS"
-    },
-    {
-      "winner": "Indianapolis Colts",
-      "loser": "New York Jets",
-      "winner_score": 30,
-      "loser_score": 17,
-      "date": "2010-01-24",
-      "round": "AFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "New Orleans Saints",
-      "loser": "Minnesota Vikings",
-      "winner_score": 31,
-      "loser_score": 28,
-      "date": "2010-01-24",
-      "round": "NFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "New Orleans Saints",
       "loser": "Indianapolis Colts",
       "winner_score": 31,
       "loser_score": 17,
@@ -61,66 +13,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "New Orleans Saints",
-      "t2": "Arizona Cardinals",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Arizona Cardinals",
-      "round": "NFC DIVISIONAL PLAYOFFS",
-      "date": "2010-01-16"
-    },
-    {
-      "t1": "Indianapolis Colts",
-      "t2": "Baltimore Ravens",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Baltimore Ravens",
-      "round": "AFC DIVISIONAL PLAYOFFS",
-      "date": "2010-01-17"
-    },
-    {
-      "t1": "Minnesota Vikings",
-      "t2": "Dallas Cowboys",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Dallas Cowboys",
-      "round": "NFC DIVISIONAL PLAYOFFS",
-      "date": "2010-01-17"
-    },
-    {
-      "t1": "New York Jets",
-      "t2": "San Diego Chargers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "San Diego Chargers",
-      "round": "AFC DIVISIONAL PLAYOFFS",
-      "date": "2010-01-17"
-    },
-    {
-      "t1": "Indianapolis Colts",
-      "t2": "New York Jets",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New York Jets",
-      "round": "AFC CHAMPIONSHIP",
-      "date": "2010-01-24"
-    },
-    {
-      "t1": "New Orleans Saints",
-      "t2": "Minnesota Vikings",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Minnesota Vikings",
-      "round": "NFC CHAMPIONSHIP",
-      "date": "2010-01-24"
-    },
     {
       "t1": "New Orleans Saints",
       "t2": "Indianapolis Colts",
@@ -133,13 +25,7 @@
     }
   ],
   "eliminated": [
-    "Arizona Cardinals",
-    "Baltimore Ravens",
-    "Dallas Cowboys",
-    "San Diego Chargers",
-    "New York Jets",
-    "Minnesota Vikings",
     "Indianapolis Colts"
   ],
-  "updated": "2026-06-18 11:33 UTC"
+  "updated": "2026-06-19 00:03 UTC"
 }

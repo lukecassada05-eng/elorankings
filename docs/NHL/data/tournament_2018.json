@@ -444,14 +444,6 @@
       "round": "EAST 2ND ROUND - GAME 3"
     },
     {
-      "winner": "San Jose Sharks",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2018-05-03",
-      "round": "WEST 2ND ROUND - GAME 4"
-    },
-    {
       "winner": "Pittsburgh Penguins",
       "loser": "Washington Capitals",
       "winner_score": 3,
@@ -1228,16 +1220,6 @@
       "date": "2018-05-02"
     },
     {
-      "t1": "San Jose Sharks",
-      "t2": "Vegas Golden Knights",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 2ND ROUND - GAME 4",
-      "date": "2018-05-03"
-    },
-    {
       "t1": "Pittsburgh Penguins",
       "t2": "Washington Capitals",
       "w1": 1,
@@ -1519,5 +1501,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-18 11:32 UTC"
+  "updated": "2026-06-19 00:00 UTC"
 }

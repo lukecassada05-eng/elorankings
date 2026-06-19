@@ -4,54 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "New England Patriots",
-      "loser": "Kansas City Chiefs",
-      "winner_score": 27,
-      "loser_score": 20,
-      "date": "2016-01-16",
-      "round": "AFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Arizona Cardinals",
-      "loser": "Green Bay Packers",
-      "winner_score": 26,
-      "loser_score": 20,
-      "date": "2016-01-17",
-      "round": "NFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Carolina Panthers",
-      "loser": "Seattle Seahawks",
-      "winner_score": 31,
-      "loser_score": 24,
-      "date": "2016-01-17",
-      "round": "NFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Denver Broncos",
-      "loser": "Pittsburgh Steelers",
-      "winner_score": 23,
-      "loser_score": 16,
-      "date": "2016-01-17",
-      "round": "AFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Denver Broncos",
-      "loser": "New England Patriots",
-      "winner_score": 20,
-      "loser_score": 18,
-      "date": "2016-01-24",
-      "round": "AFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "Carolina Panthers",
-      "loser": "Arizona Cardinals",
-      "winner_score": 49,
-      "loser_score": 15,
-      "date": "2016-01-24",
-      "round": "NFC CHAMPIONSHIP"
-    },
-    {
       "winner": "Denver Broncos",
       "loser": "Carolina Panthers",
       "winner_score": 24,
@@ -61,66 +13,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "New England Patriots",
-      "t2": "Kansas City Chiefs",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Kansas City Chiefs",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2016-01-16"
-    },
-    {
-      "t1": "Arizona Cardinals",
-      "t2": "Green Bay Packers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Green Bay Packers",
-      "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2016-01-17"
-    },
-    {
-      "t1": "Carolina Panthers",
-      "t2": "Seattle Seahawks",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Seattle Seahawks",
-      "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2016-01-17"
-    },
-    {
-      "t1": "Denver Broncos",
-      "t2": "Pittsburgh Steelers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Pittsburgh Steelers",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2016-01-17"
-    },
-    {
-      "t1": "Denver Broncos",
-      "t2": "New England Patriots",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New England Patriots",
-      "round": "AFC CHAMPIONSHIP",
-      "date": "2016-01-24"
-    },
-    {
-      "t1": "Carolina Panthers",
-      "t2": "Arizona Cardinals",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Arizona Cardinals",
-      "round": "NFC CHAMPIONSHIP",
-      "date": "2016-01-24"
-    },
     {
       "t1": "Denver Broncos",
       "t2": "Carolina Panthers",
@@ -133,13 +25,7 @@
     }
   ],
   "eliminated": [
-    "Kansas City Chiefs",
-    "Green Bay Packers",
-    "Seattle Seahawks",
-    "Pittsburgh Steelers",
-    "New England Patriots",
-    "Arizona Cardinals",
     "Carolina Panthers"
   ],
-  "updated": "2026-06-18 11:33 UTC"
+  "updated": "2026-06-19 00:03 UTC"
 }
