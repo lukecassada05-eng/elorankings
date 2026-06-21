@@ -940,14 +940,6 @@
       "round": "NBA FINALS - GAME 2"
     },
     {
-      "winner": "Orlando Magic",
-      "loser": "Los Angeles Lakers",
-      "winner_score": 108,
-      "loser_score": 104,
-      "date": "2009-06-10",
-      "round": "NBA FINALS - GAME 3"
-    },
-    {
       "winner": "Los Angeles Lakers",
       "loser": "Orlando Magic",
       "winner_score": 99,
@@ -2136,16 +2128,6 @@
       "date": "2009-06-08"
     },
     {
-      "t1": "Orlando Magic",
-      "t2": "Los Angeles Lakers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NBA FINALS - GAME 3",
-      "date": "2009-06-10"
-    },
-    {
       "t1": "Los Angeles Lakers",
       "t2": "Orlando Magic",
       "w1": 1,
@@ -2167,5 +2149,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-21 11:11 UTC"
+  "updated": "2026-06-21 20:59 UTC"
 }

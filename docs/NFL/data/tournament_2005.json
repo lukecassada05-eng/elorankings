@@ -4,6 +4,54 @@
   "completed": true,
   "games": [
     {
+      "winner": "Seattle Seahawks",
+      "loser": "Washington Redskins",
+      "winner_score": 20,
+      "loser_score": 10,
+      "date": "2006-01-14",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Denver Broncos",
+      "loser": "New England Patriots",
+      "winner_score": 27,
+      "loser_score": 13,
+      "date": "2006-01-15",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Pittsburgh Steelers",
+      "loser": "Indianapolis Colts",
+      "winner_score": 21,
+      "loser_score": 18,
+      "date": "2006-01-15",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Carolina Panthers",
+      "loser": "Chicago Bears",
+      "winner_score": 29,
+      "loser_score": 21,
+      "date": "2006-01-15",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Pittsburgh Steelers",
+      "loser": "Denver Broncos",
+      "winner_score": 34,
+      "loser_score": 17,
+      "date": "2006-01-22",
+      "round": "AFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Seattle Seahawks",
+      "loser": "Carolina Panthers",
+      "winner_score": 34,
+      "loser_score": 14,
+      "date": "2006-01-22",
+      "round": "NFC CHAMPIONSHIP"
+    },
+    {
       "winner": "Pittsburgh Steelers",
       "loser": "Seattle Seahawks",
       "winner_score": 21,
@@ -13,6 +61,66 @@
     }
   ],
   "series": [
+    {
+      "t1": "Seattle Seahawks",
+      "t2": "Washington Redskins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Washington Redskins",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-01-14"
+    },
+    {
+      "t1": "Denver Broncos",
+      "t2": "New England Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New England Patriots",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-01-15"
+    },
+    {
+      "t1": "Pittsburgh Steelers",
+      "t2": "Indianapolis Colts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Indianapolis Colts",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-01-15"
+    },
+    {
+      "t1": "Carolina Panthers",
+      "t2": "Chicago Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chicago Bears",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-01-15"
+    },
+    {
+      "t1": "Pittsburgh Steelers",
+      "t2": "Denver Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Denver Broncos",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2006-01-22"
+    },
+    {
+      "t1": "Seattle Seahawks",
+      "t2": "Carolina Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Carolina Panthers",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2006-01-22"
+    },
     {
       "t1": "Pittsburgh Steelers",
       "t2": "Seattle Seahawks",
@@ -25,7 +133,13 @@
     }
   ],
   "eliminated": [
+    "Washington Redskins",
+    "New England Patriots",
+    "Indianapolis Colts",
+    "Chicago Bears",
+    "Denver Broncos",
+    "Carolina Panthers",
     "Seattle Seahawks"
   ],
-  "updated": "2026-06-21 11:13 UTC"
+  "updated": "2026-06-21 21:04 UTC"
 }

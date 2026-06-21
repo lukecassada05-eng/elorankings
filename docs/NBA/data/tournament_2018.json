@@ -300,14 +300,6 @@
       "round": "EAST 1ST ROUND - GAME 5"
     },
     {
-      "winner": "Houston Rockets",
-      "loser": "Minnesota Timberwolves",
-      "winner_score": 122,
-      "loser_score": 104,
-      "date": "2018-04-26",
-      "round": "WEST 1ST ROUND - GAME 5"
-    },
-    {
       "winner": "Oklahoma City Thunder",
       "loser": "Utah Jazz",
       "winner_score": 107,
@@ -1032,16 +1024,6 @@
       "date": "2018-04-25"
     },
     {
-      "t1": "Houston Rockets",
-      "t2": "Minnesota Timberwolves",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 1ST ROUND - GAME 5",
-      "date": "2018-04-26"
-    },
-    {
       "t1": "Oklahoma City Thunder",
       "t2": "Utah Jazz",
       "w1": 1,
@@ -1483,5 +1465,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-21 11:11 UTC"
+  "updated": "2026-06-21 21:01 UTC"
 }
