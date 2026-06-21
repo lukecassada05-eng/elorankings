@@ -4,54 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "Pittsburgh Steelers",
-      "loser": "Baltimore Ravens",
-      "winner_score": 31,
-      "loser_score": 24,
-      "date": "2011-01-15",
-      "round": "AFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Green Bay Packers",
-      "loser": "Atlanta Falcons",
-      "winner_score": 48,
-      "loser_score": 21,
-      "date": "2011-01-16",
-      "round": "NFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Chicago Bears",
-      "loser": "Seattle Seahawks",
-      "winner_score": 35,
-      "loser_score": 24,
-      "date": "2011-01-16",
-      "round": "NFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "New York Jets",
-      "loser": "New England Patriots",
-      "winner_score": 28,
-      "loser_score": 21,
-      "date": "2011-01-16",
-      "round": "AFC DIVISIONAL PLAYOFF"
-    },
-    {
-      "winner": "Green Bay Packers",
-      "loser": "Chicago Bears",
-      "winner_score": 21,
-      "loser_score": 14,
-      "date": "2011-01-23",
-      "round": "NFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "Pittsburgh Steelers",
-      "loser": "New York Jets",
-      "winner_score": 24,
-      "loser_score": 19,
-      "date": "2011-01-23",
-      "round": "AFC CHAMPIONSHIP"
-    },
-    {
       "winner": "Green Bay Packers",
       "loser": "Pittsburgh Steelers",
       "winner_score": 31,
@@ -61,66 +13,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "Pittsburgh Steelers",
-      "t2": "Baltimore Ravens",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Baltimore Ravens",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2011-01-15"
-    },
-    {
-      "t1": "Green Bay Packers",
-      "t2": "Atlanta Falcons",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Atlanta Falcons",
-      "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2011-01-16"
-    },
-    {
-      "t1": "Chicago Bears",
-      "t2": "Seattle Seahawks",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Seattle Seahawks",
-      "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2011-01-16"
-    },
-    {
-      "t1": "New York Jets",
-      "t2": "New England Patriots",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New England Patriots",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2011-01-16"
-    },
-    {
-      "t1": "Green Bay Packers",
-      "t2": "Chicago Bears",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Chicago Bears",
-      "round": "NFC CHAMPIONSHIP",
-      "date": "2011-01-23"
-    },
-    {
-      "t1": "Pittsburgh Steelers",
-      "t2": "New York Jets",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New York Jets",
-      "round": "AFC CHAMPIONSHIP",
-      "date": "2011-01-23"
-    },
     {
       "t1": "Green Bay Packers",
       "t2": "Pittsburgh Steelers",
@@ -133,13 +25,7 @@
     }
   ],
   "eliminated": [
-    "Baltimore Ravens",
-    "Atlanta Falcons",
-    "Seattle Seahawks",
-    "New England Patriots",
-    "Chicago Bears",
-    "New York Jets",
     "Pittsburgh Steelers"
   ],
-  "updated": "2026-06-20 20:34 UTC"
+  "updated": "2026-06-21 11:14 UTC"
 }
