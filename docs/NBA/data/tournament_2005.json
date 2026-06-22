@@ -916,14 +916,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Boston Celtics",
-      "loser": "Indiana Pacers",
-      "winner_score": 92,
-      "loser_score": 89,
-      "date": "2005-05-05",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Houston Rockets",
       "loser": "Dallas Mavericks",
       "winner_score": 101,
@@ -2038,7 +2030,7 @@
     {
       "t1": "Boston Celtics",
       "t2": "Indiana Pacers",
-      "w1": 3,
+      "w1": 2,
       "w2": 4,
       "done": true,
       "loser": "Boston Celtics",
@@ -2173,5 +2165,5 @@
     "Miami Heat",
     "Detroit Pistons"
   ],
-  "updated": "2026-06-22 13:37 UTC"
+  "updated": "2026-06-22 22:01 UTC"
 }
