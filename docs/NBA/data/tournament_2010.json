@@ -260,6 +260,14 @@
       "round": "EASTERN CONFERENCE 1st ROUND - GAME 1"
     },
     {
+      "winner": "Denver Nuggets",
+      "loser": "Utah Jazz",
+      "winner_score": 126,
+      "loser_score": 113,
+      "date": "2010-04-18",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1"
+    },
+    {
       "winner": "Los Angeles Lakers",
       "loser": "Oklahoma City Thunder",
       "winner_score": 87,
@@ -512,6 +520,14 @@
       "loser": "San Antonio Spurs",
       "winner_score": 103,
       "loser_score": 81,
+      "date": "2010-04-28",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
+    },
+    {
+      "winner": "Los Angeles Lakers",
+      "loser": "Oklahoma City Thunder",
+      "winner_score": 111,
+      "loser_score": 87,
       "date": "2010-04-28",
       "round": "WESTERN CONFERENCE 1st ROUND - GAME 5"
     },
@@ -1198,6 +1214,16 @@
       "date": "2010-04-18"
     },
     {
+      "t1": "Denver Nuggets",
+      "t2": "Utah Jazz",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 1",
+      "date": "2010-04-18"
+    },
+    {
       "t1": "Los Angeles Lakers",
       "t2": "Oklahoma City Thunder",
       "w1": 1,
@@ -1510,6 +1536,16 @@
     {
       "t1": "Dallas Mavericks",
       "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 5",
+      "date": "2010-04-28"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Oklahoma City Thunder",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1969,5 +2005,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-21 20:59 UTC"
+  "updated": "2026-06-22 13:38 UTC"
 }
