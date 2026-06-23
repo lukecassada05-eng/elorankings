@@ -1036,6 +1036,14 @@
       "round": "EASTERN CONFERENCE FINALS - GAME 4"
     },
     {
+      "winner": "Miami Heat",
+      "loser": "Indiana Pacers",
+      "winner_score": 90,
+      "loser_score": 79,
+      "date": "2013-05-31",
+      "round": "EASTERN CONFERENCE FINALS - GAME 5"
+    },
+    {
       "winner": "Indiana Pacers",
       "loser": "Miami Heat",
       "winner_score": 91,
@@ -2380,6 +2388,16 @@
       "date": "2013-05-29"
     },
     {
+      "t1": "Miami Heat",
+      "t2": "Indiana Pacers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FINALS - GAME 5",
+      "date": "2013-05-31"
+    },
+    {
       "t1": "Indiana Pacers",
       "t2": "Miami Heat",
       "w1": 1,
@@ -2471,5 +2489,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-22 22:02 UTC"
+  "updated": "2026-06-23 11:08 UTC"
 }
