@@ -1076,6 +1076,14 @@
       "round": "Men's College World Series - Double Elimination Round"
     },
     {
+      "winner": "TCU Horned Frogs",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2023-06-18",
+      "round": "Men's College World Series - Elimination Game"
+    },
+    {
       "winner": "Wake Forest Demon Deacons",
       "loser": "LSU Tigers",
       "winner_score": 3,
@@ -2370,6 +2378,16 @@
       "date": "2023-06-18"
     },
     {
+      "t1": "TCU Horned Frogs",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Elimination Game",
+      "date": "2023-06-18"
+    },
+    {
       "t1": "Wake Forest Demon Deacons",
       "t2": "LSU Tigers",
       "w1": 1,
@@ -2447,5 +2465,5 @@
     "Texas Longhorns",
     "Southern Miss Golden Eagles"
   ],
-  "updated": "2026-06-24 10:48 UTC"
+  "updated": "2026-06-24 21:10 UTC"
 }

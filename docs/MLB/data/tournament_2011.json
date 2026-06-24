@@ -220,6 +220,14 @@
       "round": "NLCS - GAME 5"
     },
     {
+      "winner": "Texas Rangers",
+      "loser": "Detroit Tigers",
+      "winner_score": 15,
+      "loser_score": 5,
+      "date": "2011-10-16",
+      "round": "ALCS - GAME 6"
+    },
+    {
       "winner": "St. Louis Cardinals",
       "loser": "Milwaukee Brewers",
       "winner_score": 12,
@@ -556,6 +564,16 @@
       "date": "2011-10-15"
     },
     {
+      "t1": "Texas Rangers",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALCS - GAME 6",
+      "date": "2011-10-16"
+    },
+    {
       "t1": "St. Louis Cardinals",
       "t2": "Milwaukee Brewers",
       "w1": 1,
@@ -637,5 +655,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-24 10:45 UTC"
+  "updated": "2026-06-24 21:07 UTC"
 }

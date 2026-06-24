@@ -308,6 +308,14 @@
       "round": ""
     },
     {
+      "winner": "Chicago              Cubs",
+      "loser": "Cincinnati           Reds",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2001-10-04",
+      "round": ""
+    },
+    {
       "winner": "San Diego            Padres",
       "loser": "Los Angeles          Dodgers",
       "winner_score": 6,
@@ -1061,7 +1069,7 @@
       "t1": "Cincinnati           Reds",
       "t2": "Chicago              Cubs",
       "w1": 1,
-      "w2": 1,
+      "w2": 2,
       "done": false,
       "loser": "",
       "round": "",
@@ -1361,5 +1369,5 @@
     "Atlanta              Braves",
     "Seattle              Mariners"
   ],
-  "updated": "2026-06-24 10:45 UTC"
+  "updated": "2026-06-24 21:06 UTC"
 }

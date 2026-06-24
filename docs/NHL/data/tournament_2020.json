@@ -484,6 +484,22 @@
       "round": "EAST 1st ROUND - GAME 2"
     },
     {
+      "winner": "Calgary Flames",
+      "loser": "Dallas Stars",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2020-08-15",
+      "round": "WEST 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2020-08-15",
+      "round": "EAST 1st ROUND - GAME 3"
+    },
+    {
       "winner": "Arizona Coyotes",
       "loser": "Colorado Avalanche",
       "winner_score": 4,
@@ -604,6 +620,14 @@
       "round": "EAST 1st ROUND - GAME 4"
     },
     {
+      "winner": "Vegas Golden Knights",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2020-08-19",
+      "round": "WEST 1st ROUND - GAME 5"
+    },
+    {
       "winner": "Tampa Bay Lightning",
       "loser": "Columbus Blue Jackets",
       "winner_score": 5,
@@ -692,6 +716,14 @@
       "round": "EAST 2nd ROUND - GAME 1"
     },
     {
+      "winner": "Vegas Golden Knights",
+      "loser": "Vancouver Canucks",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2020-08-24",
+      "round": "WEST 2nd ROUND - GAME 1"
+    },
+    {
       "winner": "New York Islanders",
       "loser": "Philadelphia Flyers",
       "winner_score": 4,
@@ -706,6 +738,14 @@
       "loser_score": 2,
       "date": "2020-08-25",
       "round": "WEST 2nd ROUND - GAME 2"
+    },
+    {
+      "winner": "Tampa Bay Lightning",
+      "loser": "Boston Bruins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2020-08-25",
+      "round": "EAST 2nd ROUND - GAME 2"
     },
     {
       "winner": "Vancouver Canucks",
@@ -817,6 +857,14 @@
       "winner_score": 2,
       "loser_score": 1,
       "date": "2020-09-02",
+      "round": "WEST 2nd ROUND"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Dallas Stars",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2020-09-03",
       "round": "WEST 2nd ROUND"
     },
     {
@@ -1598,6 +1646,26 @@
       "date": "2020-08-15"
     },
     {
+      "t1": "Calgary Flames",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1st ROUND - GAME 3",
+      "date": "2020-08-15"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1st ROUND - GAME 3",
+      "date": "2020-08-15"
+    },
+    {
       "t1": "Arizona Coyotes",
       "t2": "Colorado Avalanche",
       "w1": 1,
@@ -1748,6 +1816,16 @@
       "date": "2020-08-19"
     },
     {
+      "t1": "Vegas Golden Knights",
+      "t2": "Chicago Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1st ROUND - GAME 5",
+      "date": "2020-08-19"
+    },
+    {
       "t1": "Tampa Bay Lightning",
       "t2": "Columbus Blue Jackets",
       "w1": 1,
@@ -1858,6 +1936,16 @@
       "date": "2020-08-24"
     },
     {
+      "t1": "Vegas Golden Knights",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2nd ROUND - GAME 1",
+      "date": "2020-08-24"
+    },
+    {
       "t1": "New York Islanders",
       "t2": "Philadelphia Flyers",
       "w1": 1,
@@ -1875,6 +1963,16 @@
       "done": false,
       "loser": "",
       "round": "WEST 2nd ROUND - GAME 2",
+      "date": "2020-08-25"
+    },
+    {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2nd ROUND - GAME 2",
       "date": "2020-08-25"
     },
     {
@@ -1951,7 +2049,7 @@
       "t1": "Dallas Stars",
       "t2": "Colorado Avalanche",
       "w1": 2,
-      "w2": 1,
+      "w2": 2,
       "done": false,
       "loser": "",
       "round": "WEST 2nd ROUND",
@@ -1993,5 +2091,5 @@
     "New York Islanders",
     "Dallas Stars"
   ],
-  "updated": "2026-06-24 10:44 UTC"
+  "updated": "2026-06-24 21:06 UTC"
 }

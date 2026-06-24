@@ -196,6 +196,14 @@
       "round": ""
     },
     {
+      "winner": "Baltimore Orioles",
+      "loser": "New York Yankees",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2015-10-03",
+      "round": "DOUBLEHEADER GAME 1"
+    },
+    {
       "winner": "Washington Nationals",
       "loser": "New York Mets",
       "winner_score": 3,
@@ -234,14 +242,6 @@
       "loser_score": 1,
       "date": "2015-10-03",
       "round": ""
-    },
-    {
-      "winner": "Baltimore Orioles",
-      "loser": "New York Yankees",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2015-10-03",
-      "round": "DOUBLEHEADER GAME 2"
     },
     {
       "winner": "Cleveland Indians",
@@ -900,6 +900,16 @@
       "date": "2015-10-03"
     },
     {
+      "t1": "Baltimore Orioles",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "DOUBLEHEADER GAME 1",
+      "date": "2015-10-03"
+    },
+    {
       "t1": "Washington Nationals",
       "t2": "New York Mets",
       "w1": 1,
@@ -917,16 +927,6 @@
       "done": false,
       "loser": "",
       "round": "DOUBLEHEADER GAME 1",
-      "date": "2015-10-03"
-    },
-    {
-      "t1": "Baltimore Orioles",
-      "t2": "New York Yankees",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "DOUBLEHEADER GAME 2",
       "date": "2015-10-03"
     },
     {
@@ -1323,5 +1323,5 @@
   "eliminated": [
     "Boston Red Sox"
   ],
-  "updated": "2026-06-24 10:45 UTC"
+  "updated": "2026-06-24 21:07 UTC"
 }

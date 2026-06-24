@@ -492,6 +492,14 @@
       "round": "Corvallis Regional"
     },
     {
+      "winner": "Fresno State Bulldogs",
+      "loser": "Stanford Cardinal",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "Stanford Regional"
+    },
+    {
       "winner": "Georgia Bulldogs",
       "loser": "Florida Atlantic Owls",
       "winner_score": 13,
@@ -1688,6 +1696,16 @@
       "date": "2019-06-02"
     },
     {
+      "t1": "Fresno State Bulldogs",
+      "t2": "Stanford Cardinal",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Stanford Regional",
+      "date": "2019-06-02"
+    },
+    {
       "t1": "Georgia Bulldogs",
       "t2": "Florida Atlantic Owls",
       "w1": 1,
@@ -1895,16 +1913,6 @@
       "done": false,
       "loser": "",
       "round": "Starkville Regional",
-      "date": "2019-06-03"
-    },
-    {
-      "t1": "Stanford Cardinal",
-      "t2": "Fresno State Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Stanford Regional",
       "date": "2019-06-03"
     },
     {
@@ -2290,5 +2298,5 @@
     "Texas Tech Red Raiders",
     "Louisville Cardinals"
   ],
-  "updated": "2026-06-24 10:47 UTC"
+  "updated": "2026-06-24 21:10 UTC"
 }

@@ -164,6 +164,14 @@
       "round": "DIVISIONAL PLAYOFFS"
     },
     {
+      "winner": "Detroit Tigers",
+      "loser": "New York Yankees",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2006-10-05",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
       "winner": "St. Louis Cardinals",
       "loser": "San Diego Padres",
       "winner_score": 2,
@@ -523,7 +531,7 @@
       "t1": "New York Yankees",
       "t2": "Detroit Tigers",
       "w1": 1,
-      "w2": 1,
+      "w2": 2,
       "done": false,
       "loser": "",
       "round": "DIVISIONAL PLAYOFFS",
@@ -578,5 +586,5 @@
     "New York Mets",
     "Detroit Tigers"
   ],
-  "updated": "2026-06-24 10:45 UTC"
+  "updated": "2026-06-24 21:07 UTC"
 }

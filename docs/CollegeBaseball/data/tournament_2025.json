@@ -92,6 +92,14 @@
       "round": "NCAA Baseball Championship - Clemson Regional"
     },
     {
+      "winner": "Utah Valley Wolverines",
+      "loser": "Oregon Ducks",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2025-05-31",
+      "round": "NCAA Baseball Championship - Eugene Regional"
+    },
+    {
       "winner": "Coastal Carolina Chanticleers",
       "loser": "Fairfield Stags",
       "winner_score": 10,
@@ -282,6 +290,14 @@
       "loser_score": 5,
       "date": "2025-06-01",
       "round": "NCAA Baseball Championship - Auburn Regional"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2025-05-31",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional"
     },
     {
       "winner": "LSU Tigers",
@@ -589,6 +605,14 @@
     },
     {
       "winner": "Ole Miss Rebels",
+      "loser": "Georgia Tech Yellow Jackets",
+      "winner_score": 11,
+      "loser_score": 9,
+      "date": "2025-06-01",
+      "round": "NCAA Baseball Championship - Oxford Regional - Elimination Game"
+    },
+    {
+      "winner": "Ole Miss Rebels",
       "loser": "Murray State Racers",
       "winner_score": 19,
       "loser_score": 8,
@@ -634,6 +658,14 @@
       "loser_score": 6,
       "date": "2025-06-01",
       "round": "NCAA Baseball Championship - Hattiesburg Regional"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Nebraska Cornhuskers",
+      "winner_score": 17,
+      "loser_score": 1,
+      "date": "2025-06-01",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - Elimination Game"
     },
     {
       "winner": "Wake Forest Demon Deacons",
@@ -1012,6 +1044,14 @@
       "round": "Men's College World Series - LSU advances to Championship Series"
     },
     {
+      "winner": "Coastal Carolina Chanticleers",
+      "loser": "Louisville Cardinals",
+      "winner_score": 11,
+      "loser_score": 3,
+      "date": "2025-06-18",
+      "round": "Men's College World Series - Coastal Carolina advances to Championship Series"
+    },
+    {
       "winner": "LSU Tigers",
       "loser": "Coastal Carolina Chanticleers",
       "winner_score": 1,
@@ -1260,6 +1300,16 @@
       "date": "2025-05-31"
     },
     {
+      "t1": "Utah Valley Wolverines",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Eugene Regional",
+      "date": "2025-05-31"
+    },
+    {
       "t1": "Coastal Carolina Chanticleers",
       "t2": "Fairfield Stags",
       "w1": 1,
@@ -1337,6 +1387,16 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Baton Rouge Regional",
+      "date": "2025-05-31"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional",
       "date": "2025-05-31"
     },
     {
@@ -1670,16 +1730,6 @@
       "date": "2025-06-01"
     },
     {
-      "t1": "Oklahoma Sooners",
-      "t2": "North Carolina Tar Heels",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Chapel Hill Regional",
-      "date": "2025-06-01"
-    },
-    {
       "t1": "Oklahoma State Cowboys",
       "t2": "Georgia Bulldogs",
       "w1": 1,
@@ -1707,6 +1757,16 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Tallahassee Regional - Florida State advances to Super Regional",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Oxford Regional - Elimination Game",
       "date": "2025-06-01"
     },
     {
@@ -1747,6 +1807,16 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Hattiesburg Regional",
+      "date": "2025-06-01"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Chapel Hill Regional - Elimination Game",
       "date": "2025-06-01"
     },
     {
@@ -2160,6 +2230,16 @@
       "date": "2025-06-18"
     },
     {
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Men's College World Series - Coastal Carolina advances to Championship Series",
+      "date": "2025-06-18"
+    },
+    {
       "t1": "LSU Tigers",
       "t2": "Coastal Carolina Chanticleers",
       "w1": 2,
@@ -2180,5 +2260,5 @@
     "Duke Blue Devils",
     "Coastal Carolina Chanticleers"
   ],
-  "updated": "2026-06-24 10:48 UTC"
+  "updated": "2026-06-24 21:10 UTC"
 }

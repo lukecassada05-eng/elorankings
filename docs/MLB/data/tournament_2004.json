@@ -60,6 +60,14 @@
       "round": ""
     },
     {
+      "winner": "Houston Astros",
+      "loser": "Colorado Rockies",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2004-10-02",
+      "round": ""
+    },
+    {
       "winner": "Chicago White Sox",
       "loser": "Kansas City Royals",
       "winner_score": 4,
@@ -168,14 +176,6 @@
       "loser": "Tampa Bay Devil Rays",
       "winner_score": 5,
       "loser_score": 1,
-      "date": "2004-10-02",
-      "round": ""
-    },
-    {
-      "winner": "Houston Astros",
-      "loser": "Colorado Rockies",
-      "winner_score": 9,
-      "loser_score": 3,
       "date": "2004-10-02",
       "round": ""
     },
@@ -312,6 +312,14 @@
       "loser": "Anaheim Angels",
       "winner_score": 3,
       "loser_score": 2,
+      "date": "2004-10-03",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 10,
+      "loser_score": 0,
       "date": "2004-10-03",
       "round": ""
     },
@@ -652,6 +660,16 @@
       "date": "2004-10-01"
     },
     {
+      "t1": "Houston Astros",
+      "t2": "Colorado Rockies",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2004-10-02"
+    },
+    {
       "t1": "Chicago White Sox",
       "t2": "Kansas City Royals",
       "w1": 2,
@@ -714,7 +732,7 @@
     {
       "t1": "San Francisco Giants",
       "t2": "Los Angeles Dodgers",
-      "w1": 1,
+      "w1": 2,
       "w2": 1,
       "done": false,
       "loser": "",
@@ -729,16 +747,6 @@
       "done": false,
       "loser": "",
       "round": "DAY/NIGHT DH",
-      "date": "2004-10-02"
-    },
-    {
-      "t1": "Houston Astros",
-      "t2": "Colorado Rockies",
-      "w1": 2,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
       "date": "2004-10-02"
     },
     {
@@ -830,5 +838,5 @@
     "Houston Astros",
     "St. Louis Cardinals"
   ],
-  "updated": "2026-06-24 10:45 UTC"
+  "updated": "2026-06-24 21:07 UTC"
 }

@@ -148,6 +148,14 @@
       "round": "American Athletic Tournament"
     },
     {
+      "winner": "NJIT Highlanders",
+      "loser": "Maine Black Bears",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-28",
+      "round": "America East Tournament"
+    },
+    {
       "winner": "Kansas State Wildcats",
       "loser": "Texas Tech Red Raiders",
       "winner_score": 7,
@@ -532,6 +540,14 @@
       "round": "ACC Tournament"
     },
     {
+      "winner": "Tennessee Volunteers",
+      "loser": "Florida Gators",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2021-05-29",
+      "round": "SEC Tournament - Semifinal"
+    },
+    {
       "winner": "Northeastern Huskies",
       "loser": "Charleston Cougars",
       "winner_score": 5,
@@ -746,6 +762,14 @@
       "loser_score": 6,
       "date": "2021-05-29",
       "round": "Summit League Championship"
+    },
+    {
+      "winner": "McNeese Cowboys",
+      "loser": "Sam Houston Bearkats",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": "Southland Championship"
     },
     {
       "winner": "Central Connecticut Blue Devils",
@@ -2146,6 +2170,16 @@
       "date": "2021-05-28"
     },
     {
+      "t1": "NJIT Highlanders",
+      "t2": "Maine Black Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "America East Tournament",
+      "date": "2021-05-28"
+    },
+    {
       "t1": "Kansas State Wildcats",
       "t2": "Texas Tech Red Raiders",
       "w1": 1,
@@ -2626,6 +2660,16 @@
       "date": "2021-05-29"
     },
     {
+      "t1": "Tennessee Volunteers",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - Semifinal",
+      "date": "2021-05-29"
+    },
+    {
       "t1": "Northeastern Huskies",
       "t2": "Charleston Cougars",
       "w1": 1,
@@ -2813,6 +2857,16 @@
       "done": false,
       "loser": "",
       "round": "Ohio Valley Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "McNeese Cowboys",
+      "t2": "Sam Houston Bearkats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southland Championship",
       "date": "2021-05-29"
     },
     {
@@ -4085,5 +4139,5 @@
     "LSU Tigers",
     "South Florida Bulls"
   ],
-  "updated": "2026-06-24 10:47 UTC"
+  "updated": "2026-06-24 21:10 UTC"
 }

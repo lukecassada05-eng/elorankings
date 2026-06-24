@@ -535,9 +535,9 @@
       "winner": "Houston Astros",
       "loser": "Boston Red Sox",
       "winner_score": 9,
-      "loser_score": 1,
+      "loser_score": 2,
       "date": "2021-10-20",
-      "round": "ALCS - GAME 5"
+      "round": "ALCS - GAME 4"
     },
     {
       "winner": "Atlanta Braves",
@@ -1018,7 +1018,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "ALCS - GAME 5",
+      "round": "ALCS - GAME 4",
       "date": "2021-10-20"
     },
     {
@@ -1077,5 +1077,5 @@
     "Baltimore Orioles",
     "Houston Astros"
   ],
-  "updated": "2026-06-24 10:45 UTC"
+  "updated": "2026-06-24 21:07 UTC"
 }

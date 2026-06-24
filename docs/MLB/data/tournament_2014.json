@@ -140,6 +140,14 @@
       "round": "NLCS - GAME 2"
     },
     {
+      "winner": "San Francisco Giants",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2014-10-14",
+      "round": "NLCS - GAME 3"
+    },
+    {
       "winner": "Kansas City Royals",
       "loser": "Baltimore Orioles",
       "winner_score": 2,
@@ -392,6 +400,16 @@
       "date": "2014-10-13"
     },
     {
+      "t1": "San Francisco Giants",
+      "t2": "St. Louis Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLCS - GAME 3",
+      "date": "2014-10-14"
+    },
+    {
       "t1": "Kansas City Royals",
       "t2": "Baltimore Orioles",
       "w1": 1,
@@ -493,5 +511,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-24 10:45 UTC"
+  "updated": "2026-06-24 21:07 UTC"
 }

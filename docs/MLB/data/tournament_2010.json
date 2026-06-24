@@ -526,6 +526,14 @@
     {
       "winner": "San Francisco Giants",
       "loser": "Texas Rangers",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2010-10-27",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Texas Rangers",
       "winner_score": 9,
       "loser_score": 0,
       "date": "2010-10-28",
@@ -542,8 +550,8 @@
     {
       "winner": "San Francisco Giants",
       "loser": "Texas Rangers",
-      "winner_score": 3,
-      "loser_score": 1,
+      "winner_score": 4,
+      "loser_score": 0,
       "date": "2010-11-01",
       "round": "WORLD SERIES"
     }
@@ -792,12 +800,12 @@
     {
       "t1": "San Francisco Giants",
       "t2": "Texas Rangers",
-      "w1": 2,
+      "w1": 3,
       "w2": 1,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Texas Rangers",
       "round": "WORLD SERIES",
-      "date": "2010-10-28"
+      "date": "2010-10-27"
     }
   ],
   "eliminated": [
@@ -805,7 +813,8 @@
     "Cincinnati Reds",
     "Atlanta Braves",
     "New York Yankees",
-    "Philadelphia Phillies"
+    "Philadelphia Phillies",
+    "Texas Rangers"
   ],
-  "updated": "2026-06-24 10:45 UTC"
+  "updated": "2026-06-24 21:07 UTC"
 }
