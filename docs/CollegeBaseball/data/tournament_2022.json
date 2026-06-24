@@ -196,28 +196,12 @@
       "round": "SEC Tournament - 4th Round"
     },
     {
-      "winner": "Central Michigan Chippewas",
-      "loser": "Toledo Rockets",
-      "winner_score": 10,
-      "loser_score": 7,
-      "date": "2022-05-28",
-      "round": "MAC Tournament"
-    },
-    {
       "winner": "Hofstra Pride",
       "loser": "Northeastern Huskies",
       "winner_score": 8,
       "loser_score": 7,
       "date": "2022-05-28",
       "round": "CAA Tournament"
-    },
-    {
-      "winner": "Campbell Fighting Camels",
-      "loser": "Charleston Southern Buccaneers",
-      "winner_score": 10,
-      "loser_score": 6,
-      "date": "2022-05-28",
-      "round": "Big South Tournament"
     },
     {
       "winner": "VCU Rams",
@@ -346,6 +330,14 @@
       "loser_score": 6,
       "date": "2022-05-28",
       "round": "Mountain West Tournament"
+    },
+    {
+      "winner": "Campbell Fighting Camels",
+      "loser": "Charleston Southern Buccaneers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-05-28",
+      "round": "Big South Championship"
     },
     {
       "winner": "Omaha Mavericks",
@@ -706,14 +698,6 @@
       "loser_score": 0,
       "date": "2022-06-03",
       "round": "NCAA Baseball Championship – Hattiesburg Regional"
-    },
-    {
-      "winner": "Louisville Cardinals",
-      "loser": "Southeast Missouri State Redhawks",
-      "winner_score": 7,
-      "loser_score": 2,
-      "date": "2022-06-03",
-      "round": "NCAA Baseball Championship – Louisville Regional"
     },
     {
       "winner": "Florida Gators",
@@ -1476,14 +1460,6 @@
       "round": "NCAA Baseball Championship – Greenville Super Regional"
     },
     {
-      "winner": "Oklahoma Sooners",
-      "loser": "Virginia Tech Hokies",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2022-06-10",
-      "round": "NCAA Baseball Championship – Blacksburg Super Regional"
-    },
-    {
       "winner": "Notre Dame Fighting Irish",
       "loser": "Tennessee Volunteers",
       "winner_score": 8,
@@ -1942,16 +1918,6 @@
       "date": "2022-05-28"
     },
     {
-      "t1": "Central Michigan Chippewas",
-      "t2": "Toledo Rockets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "MAC Tournament",
-      "date": "2022-05-28"
-    },
-    {
       "t1": "Hofstra Pride",
       "t2": "Northeastern Huskies",
       "w1": 1,
@@ -1959,16 +1925,6 @@
       "done": false,
       "loser": "",
       "round": "CAA Tournament",
-      "date": "2022-05-28"
-    },
-    {
-      "t1": "Campbell Fighting Camels",
-      "t2": "Charleston Southern Buccaneers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Big South Tournament",
       "date": "2022-05-28"
     },
     {
@@ -2129,6 +2085,16 @@
       "done": false,
       "loser": "",
       "round": "Mountain West Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Campbell Fighting Camels",
+      "t2": "Charleston Southern Buccaneers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big South Championship",
       "date": "2022-05-28"
     },
     {
@@ -2529,16 +2495,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship – Hattiesburg Regional",
-      "date": "2022-06-03"
-    },
-    {
-      "t1": "Louisville Cardinals",
-      "t2": "Southeast Missouri State Redhawks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship – Louisville Regional",
       "date": "2022-06-03"
     },
     {
@@ -3432,16 +3388,6 @@
       "date": "2022-06-10"
     },
     {
-      "t1": "Oklahoma Sooners",
-      "t2": "Virginia Tech Hokies",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Virginia Tech Hokies",
-      "round": "NCAA Baseball Championship – Blacksburg Super Regional",
-      "date": "2022-06-10"
-    },
-    {
       "t1": "Notre Dame Fighting Irish",
       "t2": "Tennessee Volunteers",
       "w1": 2,
@@ -3469,6 +3415,16 @@
       "done": true,
       "loser": "North Carolina Tar Heels",
       "round": "NCAA Baseball Championship – Chapel Hill Super Regional",
+      "date": "2022-06-11"
+    },
+    {
+      "t1": "Virginia Tech Hokies",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship – Blacksburg Super Regional",
       "date": "2022-06-11"
     },
     {
@@ -3634,12 +3590,11 @@
   ],
   "eliminated": [
     "East Carolina Pirates",
-    "Virginia Tech Hokies",
     "Tennessee Volunteers",
     "North Carolina Tar Heels",
     "Southern Miss Golden Eagles",
     "Oregon State Beavers",
     "UConn Huskies"
   ],
-  "updated": "2026-06-23 21:32 UTC"
+  "updated": "2026-06-24 10:47 UTC"
 }

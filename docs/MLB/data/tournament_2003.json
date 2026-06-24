@@ -266,14 +266,6 @@
       "loser_score": 4,
       "date": "2003-10-24",
       "round": ""
-    },
-    {
-      "winner": "Florida Marlins",
-      "loser": "New York Yankees",
-      "winner_score": 2,
-      "loser_score": 0,
-      "date": "2003-10-25",
-      "round": ""
     }
   ],
   "series": [
@@ -340,7 +332,7 @@
     {
       "t1": "Florida Marlins",
       "t2": "New York Yankees",
-      "w1": 4,
+      "w1": 3,
       "w2": 2,
       "done": true,
       "loser": "New York Yankees",
@@ -356,5 +348,5 @@
     "Boston Red Sox",
     "New York Yankees"
   ],
-  "updated": "2026-06-23 21:30 UTC"
+  "updated": "2026-06-24 10:45 UTC"
 }

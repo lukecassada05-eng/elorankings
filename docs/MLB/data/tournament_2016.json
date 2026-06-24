@@ -4,14 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "New York Mets",
-      "loser": "Philadelphia Phillies",
-      "winner_score": 5,
-      "loser_score": 3,
-      "date": "2016-10-01",
-      "round": ""
-    },
-    {
       "winner": "St. Louis Cardinals",
       "loser": "Pittsburgh Pirates",
       "winner_score": 4,
@@ -478,16 +470,6 @@
   ],
   "series": [
     {
-      "t1": "New York Mets",
-      "t2": "Philadelphia Phillies",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2016-10-01"
-    },
-    {
       "t1": "St. Louis Cardinals",
       "t2": "Pittsburgh Pirates",
       "w1": 2,
@@ -620,6 +602,16 @@
     {
       "t1": "Oakland Athletics",
       "t2": "Seattle Mariners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2016-10-02"
+    },
+    {
+      "t1": "Philadelphia Phillies",
+      "t2": "New York Mets",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -959,5 +951,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-23 21:30 UTC"
+  "updated": "2026-06-24 10:45 UTC"
 }

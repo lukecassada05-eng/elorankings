@@ -1100,14 +1100,6 @@
       "round": "WEST SEMIFINALS"
     },
     {
-      "winner": "Miami Heat",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 115,
-      "loser_score": 100,
-      "date": "2020-09-04",
-      "round": "EAST SEMIFINALS"
-    },
-    {
       "winner": "Houston Rockets",
       "loser": "Los Angeles Lakers",
       "winner_score": 112,
@@ -2624,10 +2616,10 @@
     {
       "t1": "Miami Heat",
       "t2": "Milwaukee Bucks",
-      "w1": 4,
+      "w1": 3,
       "w2": 1,
-      "done": true,
-      "loser": "Milwaukee Bucks",
+      "done": false,
+      "loser": "",
       "round": "EAST SEMIFINALS",
       "date": "2020-08-31"
     },
@@ -2713,10 +2705,9 @@
     }
   ],
   "eliminated": [
-    "Milwaukee Bucks",
     "Boston Celtics",
     "Denver Nuggets",
     "Miami Heat"
   ],
-  "updated": "2026-06-23 21:28 UTC"
+  "updated": "2026-06-24 10:44 UTC"
 }

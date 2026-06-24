@@ -220,14 +220,6 @@
       "round": "NCAA Baseball Championship - Bryan-College Station Regional"
     },
     {
-      "winner": "UCF Knights",
-      "loser": "Alabama Crimson Tide",
-      "winner_score": 8,
-      "loser_score": 7,
-      "date": "2024-05-31",
-      "round": "NCAA Baseball Championship - Tallahassee Regional"
-    },
-    {
       "winner": "UNC Wilmington Seahawks",
       "loser": "Georgia Tech Yellow Jackets",
       "winner_score": 9,
@@ -556,14 +548,6 @@
       "round": "NCAA Baseball Championship - Fayetteville Regional - Elimination Game"
     },
     {
-      "winner": "Clemson Tigers",
-      "loser": "Coastal Carolina Chanticleers",
-      "winner_score": 12,
-      "loser_score": 5,
-      "date": "2024-06-02",
-      "round": "NCAA Baseball Championship - Clemson Regional - Clemson advances to Super Regional"
-    },
-    {
       "winner": "Georgia Bulldogs",
       "loser": "Georgia Tech Yellow Jackets",
       "winner_score": 8,
@@ -796,14 +780,6 @@
       "round": "NCAA Baseball Championship - Greenville Regional - Evansville advances to Super Regional"
     },
     {
-      "winner": "Tennessee Volunteers",
-      "loser": "Evansville Purple Aces",
-      "winner_score": 11,
-      "loser_score": 6,
-      "date": "2024-06-07",
-      "round": "NCAA Baseball Championship - Knoxville Super Regional"
-    },
-    {
       "winner": "North Carolina Tar Heels",
       "loser": "West Virginia Mountaineers",
       "winner_score": 8,
@@ -858,14 +834,6 @@
       "loser_score": 1,
       "date": "2024-06-09",
       "round": "NCAA Baseball Championship - Chapel Hill Super Regional"
-    },
-    {
-      "winner": "Florida Gators",
-      "loser": "Clemson Tigers",
-      "winner_score": 10,
-      "loser_score": 7,
-      "date": "2024-06-08",
-      "round": "NCAA Baseball Championship - Clemson Super Regional"
     },
     {
       "winner": "NC State Wolfpack",
@@ -1302,16 +1270,6 @@
       "date": "2024-05-31"
     },
     {
-      "t1": "UCF Knights",
-      "t2": "Alabama Crimson Tide",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Tallahassee Regional",
-      "date": "2024-05-31"
-    },
-    {
       "t1": "UNC Wilmington Seahawks",
       "t2": "Georgia Tech Yellow Jackets",
       "w1": 1,
@@ -1732,16 +1690,6 @@
       "date": "2024-06-02"
     },
     {
-      "t1": "Clemson Tigers",
-      "t2": "Coastal Carolina Chanticleers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Clemson Regional - Clemson advances to Super Regional",
-      "date": "2024-06-02"
-    },
-    {
       "t1": "Georgia Bulldogs",
       "t2": "Georgia Tech Yellow Jackets",
       "w1": 1,
@@ -2012,16 +1960,6 @@
       "date": "2024-06-04"
     },
     {
-      "t1": "Tennessee Volunteers",
-      "t2": "Evansville Purple Aces",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Evansville Purple Aces",
-      "round": "NCAA Baseball Championship - Knoxville Super Regional",
-      "date": "2024-06-07"
-    },
-    {
       "t1": "North Carolina Tar Heels",
       "t2": "West Virginia Mountaineers",
       "w1": 2,
@@ -2052,6 +1990,16 @@
       "date": "2024-06-07"
     },
     {
+      "t1": "Evansville Purple Aces",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Knoxville Super Regional",
+      "date": "2024-06-08"
+    },
+    {
       "t1": "Kentucky Wildcats",
       "t2": "Oregon State Beavers",
       "w1": 2,
@@ -2072,16 +2020,6 @@
       "date": "2024-06-08"
     },
     {
-      "t1": "Florida Gators",
-      "t2": "Clemson Tigers",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Clemson Tigers",
-      "round": "NCAA Baseball Championship - Clemson Super Regional",
-      "date": "2024-06-08"
-    },
-    {
       "t1": "NC State Wolfpack",
       "t2": "Georgia Bulldogs",
       "w1": 2,
@@ -2090,6 +2028,16 @@
       "loser": "Georgia Bulldogs",
       "round": "NCAA Baseball Championship - Athens Super Regional",
       "date": "2024-06-08"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NCAA Baseball Championship - Clemson Super Regional",
+      "date": "2024-06-09"
     },
     {
       "t1": "Tennessee Volunteers",
@@ -2223,15 +2171,13 @@
     }
   ],
   "eliminated": [
-    "Evansville Purple Aces",
     "West Virginia Mountaineers",
     "UConn Huskies",
     "Kansas State Wildcats",
     "Oregon State Beavers",
     "Oregon Ducks",
-    "Clemson Tigers",
     "Georgia Bulldogs",
     "Texas A&M Aggies"
   ],
-  "updated": "2026-06-23 21:32 UTC"
+  "updated": "2026-06-24 10:48 UTC"
 }

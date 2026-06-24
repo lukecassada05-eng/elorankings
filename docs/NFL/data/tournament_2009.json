@@ -50,14 +50,6 @@
       "loser_score": 28,
       "date": "2010-01-24",
       "round": "NFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "New Orleans Saints",
-      "loser": "Indianapolis Colts",
-      "winner_score": 31,
-      "loser_score": 17,
-      "date": "2010-02-07",
-      "round": "Super Bowl XLIV"
     }
   ],
   "series": [
@@ -120,16 +112,6 @@
       "loser": "Minnesota Vikings",
       "round": "NFC CHAMPIONSHIP",
       "date": "2010-01-24"
-    },
-    {
-      "t1": "New Orleans Saints",
-      "t2": "Indianapolis Colts",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Indianapolis Colts",
-      "round": "Super Bowl XLIV",
-      "date": "2010-02-07"
     }
   ],
   "eliminated": [
@@ -138,8 +120,7 @@
     "Dallas Cowboys",
     "San Diego Chargers",
     "New York Jets",
-    "Minnesota Vikings",
-    "Indianapolis Colts"
+    "Minnesota Vikings"
   ],
-  "updated": "2026-06-23 21:31 UTC"
+  "updated": "2026-06-24 10:45 UTC"
 }
