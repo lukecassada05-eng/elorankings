@@ -4,14 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "New York Mets",
-      "loser": "Philadelphia Phillies",
-      "winner_score": 5,
-      "loser_score": 3,
-      "date": "2016-10-01",
-      "round": ""
-    },
-    {
       "winner": "St. Louis Cardinals",
       "loser": "Pittsburgh Pirates",
       "winner_score": 4,
@@ -332,14 +324,6 @@
       "round": "NLDS - GAME 4"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Washington Nationals",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2016-10-14",
-      "round": "NLDS - GAME 5"
-    },
-    {
       "winner": "Cleveland Indians",
       "loser": "Toronto Blue Jays",
       "winner_score": 2,
@@ -354,14 +338,6 @@
       "loser_score": 4,
       "date": "2016-10-16",
       "round": "NLCS - GAME 1"
-    },
-    {
-      "winner": "Los Angeles Dodgers",
-      "loser": "Chicago Cubs",
-      "winner_score": 1,
-      "loser_score": 0,
-      "date": "2016-10-17",
-      "round": "NLCS - GAME 2"
     },
     {
       "winner": "Cleveland Indians",
@@ -477,16 +453,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "New York Mets",
-      "t2": "Philadelphia Phillies",
-      "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2016-10-01"
-    },
     {
       "t1": "St. Louis Cardinals",
       "t2": "Pittsburgh Pirates",
@@ -620,6 +586,16 @@
     {
       "t1": "Oakland Athletics",
       "t2": "Seattle Mariners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2016-10-02"
+    },
+    {
+      "t1": "Philadelphia Phillies",
+      "t2": "New York Mets",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -778,16 +754,6 @@
       "date": "2016-10-12"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Washington Nationals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 5",
-      "date": "2016-10-14"
-    },
-    {
       "t1": "Cleveland Indians",
       "t2": "Toronto Blue Jays",
       "w1": 1,
@@ -806,16 +772,6 @@
       "loser": "",
       "round": "NLCS - GAME 1",
       "date": "2016-10-16"
-    },
-    {
-      "t1": "Los Angeles Dodgers",
-      "t2": "Chicago Cubs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLCS - GAME 2",
-      "date": "2016-10-17"
     },
     {
       "t1": "Cleveland Indians",
@@ -959,5 +915,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-25 21:17 UTC"
+  "updated": "2026-06-26 11:25 UTC"
 }

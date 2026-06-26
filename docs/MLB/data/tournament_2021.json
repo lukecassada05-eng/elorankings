@@ -4,14 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "Pittsburgh Pirates",
-      "loser": "Cincinnati Reds",
-      "winner_score": 9,
-      "loser_score": 2,
-      "date": "2021-10-01",
-      "round": ""
-    },
-    {
       "winner": "Boston Red Sox",
       "loser": "Washington Nationals",
       "winner_score": 4,
@@ -535,9 +527,9 @@
       "winner": "Houston Astros",
       "loser": "Boston Red Sox",
       "winner_score": 9,
-      "loser_score": 2,
+      "loser_score": 1,
       "date": "2021-10-20",
-      "round": "ALCS - GAME 4"
+      "round": "ALCS - GAME 5"
     },
     {
       "winner": "Atlanta Braves",
@@ -610,27 +602,9 @@
       "loser_score": 5,
       "date": "2021-11-01",
       "round": "World Series"
-    },
-    {
-      "winner": "Atlanta Braves",
-      "loser": "Houston Astros",
-      "winner_score": 7,
-      "loser_score": 0,
-      "date": "2021-11-03",
-      "round": "World Series"
     }
   ],
   "series": [
-    {
-      "t1": "Pittsburgh Pirates",
-      "t2": "Cincinnati Reds",
-      "w1": 2,
-      "w2": 1,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2021-10-01"
-    },
     {
       "t1": "Boston Red Sox",
       "t2": "Washington Nationals",
@@ -766,6 +740,16 @@
       "t2": "Milwaukee Brewers",
       "w1": 2,
       "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2021-10-02"
+    },
+    {
+      "t1": "Pittsburgh Pirates",
+      "t2": "Cincinnati Reds",
+      "w1": 1,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "",
@@ -1018,7 +1002,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "ALCS - GAME 4",
+      "round": "ALCS - GAME 5",
       "date": "2021-10-20"
     },
     {
@@ -1064,7 +1048,7 @@
     {
       "t1": "Atlanta Braves",
       "t2": "Houston Astros",
-      "w1": 4,
+      "w1": 3,
       "w2": 2,
       "done": true,
       "loser": "Houston Astros",
@@ -1077,5 +1061,5 @@
     "Baltimore Orioles",
     "Houston Astros"
   ],
-  "updated": "2026-06-25 21:17 UTC"
+  "updated": "2026-06-26 11:26 UTC"
 }

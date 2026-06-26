@@ -52,14 +52,6 @@
       "round": "EAST 1ST ROUND - GAME 1"
     },
     {
-      "winner": "Oklahoma City Thunder",
-      "loser": "Utah Jazz",
-      "winner_score": 116,
-      "loser_score": 108,
-      "date": "2018-04-15",
-      "round": "WEST 1ST ROUND - GAME 1"
-    },
-    {
       "winner": "Houston Rockets",
       "loser": "Minnesota Timberwolves",
       "winner_score": 104,
@@ -596,14 +588,6 @@
       "round": "WEST FINALS - GAME 5"
     },
     {
-      "winner": "Cleveland Cavaliers",
-      "loser": "Boston Celtics",
-      "winner_score": 109,
-      "loser_score": 99,
-      "date": "2018-05-26",
-      "round": "EAST FINALS - GAME 6"
-    },
-    {
       "winner": "Golden State Warriors",
       "loser": "Houston Rockets",
       "winner_score": 115,
@@ -719,16 +703,6 @@
       "done": false,
       "loser": "",
       "round": "EAST 1ST ROUND - GAME 1",
-      "date": "2018-04-15"
-    },
-    {
-      "t1": "Oklahoma City Thunder",
-      "t2": "Utah Jazz",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WEST 1ST ROUND - GAME 1",
       "date": "2018-04-15"
     },
     {
@@ -1402,16 +1376,6 @@
       "date": "2018-05-25"
     },
     {
-      "t1": "Cleveland Cavaliers",
-      "t2": "Boston Celtics",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST FINALS - GAME 6",
-      "date": "2018-05-26"
-    },
-    {
       "t1": "Golden State Warriors",
       "t2": "Houston Rockets",
       "w1": 1,
@@ -1483,5 +1447,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-25 21:16 UTC"
+  "updated": "2026-06-26 11:22 UTC"
 }
