@@ -950,14 +950,6 @@
     {
       "winner": "Los Angeles Lakers",
       "loser": "New Jersey Nets",
-      "winner_score": 99,
-      "loser_score": 94,
-      "date": "2002-06-05",
-      "round": ""
-    },
-    {
-      "winner": "Los Angeles Lakers",
-      "loser": "New Jersey Nets",
       "winner_score": 106,
       "loser_score": 83,
       "date": "2002-06-07",
@@ -1634,20 +1626,19 @@
     {
       "t1": "Los Angeles Lakers",
       "t2": "New Jersey Nets",
-      "w1": 4,
+      "w1": 3,
       "w2": 0,
-      "done": true,
-      "loser": "New Jersey Nets",
+      "done": false,
+      "loser": "",
       "round": "",
-      "date": "2002-06-05"
+      "date": "2002-06-07"
     }
   ],
   "eliminated": [
     "Dallas Mavericks",
     "Charlotte Hornets",
     "San Antonio Spurs",
-    "Boston Celtics",
-    "New Jersey Nets"
+    "Boston Celtics"
   ],
-  "updated": "2026-06-26 11:19 UTC"
+  "updated": "2026-06-26 20:49 UTC"
 }

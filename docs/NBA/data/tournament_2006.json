@@ -180,6 +180,14 @@
       "round": "Play-In"
     },
     {
+      "winner": "Miami Heat",
+      "loser": "Philadelphia 76ers",
+      "winner_score": 104,
+      "loser_score": 85,
+      "date": "2006-04-14",
+      "round": "Play-In"
+    },
+    {
       "winner": "Milwaukee Bucks",
       "loser": "New York Knicks",
       "winner_score": 97,
@@ -508,14 +516,6 @@
       "round": "Play-In"
     },
     {
-      "winner": "Washington Wizards",
-      "loser": "Detroit Pistons",
-      "winner_score": 96,
-      "loser_score": 80,
-      "date": "2006-04-19",
-      "round": "Play-In"
-    },
-    {
       "winner": "Los Angeles Lakers",
       "loser": "NO/Oklahoma City\r\n Hornets",
       "winner_score": 115,
@@ -560,14 +560,6 @@
       "loser": "Sacramento Kings",
       "winner_score": 122,
       "loser_score": 88,
-      "date": "2006-04-22",
-      "round": "PLAYOFFS"
-    },
-    {
-      "winner": "LA Clippers",
-      "loser": "Denver Nuggets",
-      "winner_score": 89,
-      "loser_score": 87,
       "date": "2006-04-22",
       "round": "PLAYOFFS"
     },
@@ -1466,6 +1458,16 @@
       "date": "2006-04-14"
     },
     {
+      "t1": "Miami Heat",
+      "t2": "Philadelphia 76ers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2006-04-14"
+    },
+    {
       "t1": "Milwaukee Bucks",
       "t2": "New York Knicks",
       "w1": 1,
@@ -1826,16 +1828,6 @@
       "date": "2006-04-19"
     },
     {
-      "t1": "Washington Wizards",
-      "t2": "Detroit Pistons",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2006-04-19"
-    },
-    {
       "t1": "Los Angeles Lakers",
       "t2": "NO/Oklahoma City\r\n Hornets",
       "w1": 1,
@@ -1896,16 +1888,6 @@
       "date": "2006-04-22"
     },
     {
-      "t1": "LA Clippers",
-      "t2": "Denver Nuggets",
-      "w1": 4,
-      "w2": 1,
-      "done": true,
-      "loser": "Denver Nuggets",
-      "round": "PLAYOFFS",
-      "date": "2006-04-22"
-    },
-    {
       "t1": "Miami Heat",
       "t2": "Chicago Bulls",
       "w1": 3,
@@ -1952,6 +1934,16 @@
       "w2": 0,
       "done": true,
       "loser": "Memphis Grizzlies",
+      "round": "PLAYOFFS",
+      "date": "2006-04-24"
+    },
+    {
+      "t1": "LA Clippers",
+      "t2": "Denver Nuggets",
+      "w1": 3,
+      "w2": 1,
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2006-04-24"
     },
@@ -2029,7 +2021,6 @@
   "eliminated": [
     "Washington Wizards",
     "Sacramento Kings",
-    "Denver Nuggets",
     "Los Angeles Lakers",
     "Indiana Pacers",
     "Milwaukee Bucks",
@@ -2041,5 +2032,5 @@
     "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-06-26 11:20 UTC"
+  "updated": "2026-06-26 20:50 UTC"
 }

@@ -604,14 +604,6 @@
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
     },
     {
-      "winner": "Boston Celtics",
-      "loser": "Washington Wizards",
-      "winner_score": 123,
-      "loser_score": 101,
-      "date": "2017-05-11",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
-    },
-    {
       "winner": "San Antonio Spurs",
       "loser": "Houston Rockets",
       "winner_score": 114,
@@ -1500,16 +1492,6 @@
       "date": "2017-05-10"
     },
     {
-      "t1": "Boston Celtics",
-      "t2": "Washington Wizards",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5",
-      "date": "2017-05-11"
-    },
-    {
       "t1": "San Antonio Spurs",
       "t2": "Houston Rockets",
       "w1": 1,
@@ -1681,5 +1663,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 11:22 UTC"
+  "updated": "2026-06-26 20:52 UTC"
 }

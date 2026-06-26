@@ -570,118 +570,6 @@
       "loser_score": 2,
       "date": "2022-06-02",
       "round": "East Final"
-    },
-    {
-      "winner": "Colorado Avalanche",
-      "loser": "Edmonton Oilers",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2022-06-03",
-      "round": "West Final"
-    },
-    {
-      "winner": "New York Rangers",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2022-06-04",
-      "round": "East Final"
-    },
-    {
-      "winner": "Colorado Avalanche",
-      "loser": "Edmonton Oilers",
-      "winner_score": 4,
-      "loser_score": 2,
-      "date": "2022-06-05",
-      "round": "West Final"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Rangers",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2022-06-05",
-      "round": "East Final"
-    },
-    {
-      "winner": "Colorado Avalanche",
-      "loser": "Edmonton Oilers",
-      "winner_score": 6,
-      "loser_score": 5,
-      "date": "2022-06-07",
-      "round": "West Final"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Rangers",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2022-06-08",
-      "round": "East Final"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Rangers",
-      "winner_score": 3,
-      "loser_score": 1,
-      "date": "2022-06-10",
-      "round": "East Final"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Rangers",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2022-06-12",
-      "round": "East Final"
-    },
-    {
-      "winner": "Colorado Avalanche",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 4,
-      "loser_score": 3,
-      "date": "2022-06-16",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Colorado Avalanche",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 7,
-      "loser_score": 0,
-      "date": "2022-06-19",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Colorado Avalanche",
-      "winner_score": 6,
-      "loser_score": 2,
-      "date": "2022-06-21",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Colorado Avalanche",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2022-06-23",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Colorado Avalanche",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2022-06-25",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Colorado Avalanche",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2022-06-27",
-      "round": "Stanley Cup Final"
     }
   ],
   "series": [
@@ -808,32 +696,22 @@
     {
       "t1": "Colorado Avalanche",
       "t2": "Edmonton Oilers",
-      "w1": 4,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Edmonton Oilers",
+      "done": false,
+      "loser": "",
       "round": "West Final",
       "date": "2022-06-01"
     },
     {
       "t1": "New York Rangers",
       "t2": "Tampa Bay Lightning",
-      "w1": 2,
-      "w2": 4,
-      "done": true,
-      "loser": "New York Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "East Final",
       "date": "2022-06-02"
-    },
-    {
-      "t1": "Colorado Avalanche",
-      "t2": "Tampa Bay Lightning",
-      "w1": 4,
-      "w2": 2,
-      "done": true,
-      "loser": "Tampa Bay Lightning",
-      "round": "Stanley Cup Final",
-      "date": "2022-06-16"
     }
   ],
   "eliminated": [
@@ -846,10 +724,7 @@
     "Florida Panthers",
     "St. Louis Blues",
     "Carolina Hurricanes",
-    "Calgary Flames",
-    "Edmonton Oilers",
-    "New York Rangers",
-    "Tampa Bay Lightning"
+    "Calgary Flames"
   ],
-  "updated": "2026-06-26 11:24 UTC"
+  "updated": "2026-06-26 20:55 UTC"
 }

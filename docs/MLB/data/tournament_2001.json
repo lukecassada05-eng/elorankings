@@ -2,36 +2,8 @@
   "year": 2001,
   "sport": "MLB",
   "completed": true,
-  "games": [
-    {
-      "winner": "Arizona              Diamondbacks",
-      "loser": "New York             Yankees",
-      "winner_score": 15,
-      "loser_score": 2,
-      "date": "2001-11-04",
-      "round": ""
-    },
-    {
-      "winner": "Arizona              Diamondbacks",
-      "loser": "New York             Yankees",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2001-11-05",
-      "round": ""
-    }
-  ],
-  "series": [
-    {
-      "t1": "Arizona              Diamondbacks",
-      "t2": "New York             Yankees",
-      "w1": 2,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2001-11-04"
-    }
-  ],
+  "games": [],
+  "series": [],
   "eliminated": [],
-  "updated": "2026-06-26 11:24 UTC"
+  "updated": "2026-06-26 20:55 UTC"
 }

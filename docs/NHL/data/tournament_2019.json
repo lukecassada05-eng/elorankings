@@ -591,14 +591,6 @@
       "winner": "St. Louis Blues",
       "loser": "San Jose Sharks",
       "winner_score": 5,
-      "loser_score": 0,
-      "date": "2019-05-19",
-      "round": "WEST FINALS - GAME 5"
-    },
-    {
-      "winner": "St. Louis Blues",
-      "loser": "San Jose Sharks",
-      "winner_score": 5,
       "loser_score": 1,
       "date": "2019-05-22",
       "round": "WEST FINALS - GAME 6"
@@ -1398,16 +1390,6 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "WEST FINALS - GAME 5",
-      "date": "2019-05-19"
-    },
-    {
-      "t1": "St. Louis Blues",
-      "t2": "San Jose Sharks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
       "round": "WEST FINALS - GAME 6",
       "date": "2019-05-22"
     },
@@ -1483,5 +1465,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 11:23 UTC"
+  "updated": "2026-06-26 20:55 UTC"
 }

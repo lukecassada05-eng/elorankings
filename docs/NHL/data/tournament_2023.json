@@ -36,14 +36,6 @@
       "round": "West 2nd Round"
     },
     {
-      "winner": "Carolina Hurricanes",
-      "loser": "New Jersey Devils",
-      "winner_score": 6,
-      "loser_score": 1,
-      "date": "2023-05-06",
-      "round": "East 2nd Round"
-    },
-    {
       "winner": "Edmonton Oilers",
       "loser": "Vegas Golden Knights",
       "winner_score": 5,
@@ -114,14 +106,6 @@
       "loser_score": 1,
       "date": "2023-05-11",
       "round": "West 2nd Round"
-    },
-    {
-      "winner": "Carolina Hurricanes",
-      "loser": "New Jersey Devils",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2023-05-11",
-      "round": "East 2nd Round"
     },
     {
       "winner": "Dallas Stars",
@@ -296,10 +280,10 @@
     {
       "t1": "Carolina Hurricanes",
       "t2": "New Jersey Devils",
-      "w1": 4,
+      "w1": 2,
       "w2": 1,
-      "done": true,
-      "loser": "New Jersey Devils",
+      "done": false,
+      "loser": "",
       "round": "East 2nd Round",
       "date": "2023-05-03"
     },
@@ -365,12 +349,11 @@
     }
   ],
   "eliminated": [
-    "New Jersey Devils",
     "Edmonton Oilers",
     "Seattle Kraken",
     "Carolina Hurricanes",
     "Dallas Stars",
     "Florida Panthers"
   ],
-  "updated": "2026-06-26 11:24 UTC"
+  "updated": "2026-06-26 20:55 UTC"
 }

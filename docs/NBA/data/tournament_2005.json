@@ -36,14 +36,6 @@
       "round": "Play-In"
     },
     {
-      "winner": "San Antonio Spurs",
-      "loser": "Portland Trail Blazers",
-      "winner_score": 95,
-      "loser_score": 89,
-      "date": "2005-04-12",
-      "round": "Play-In"
-    },
-    {
       "winner": "Denver Nuggets",
       "loser": "New Orleans Hornets",
       "winner_score": 116,
@@ -372,6 +364,14 @@
       "round": "Play-In"
     },
     {
+      "winner": "Minnesota Timberwolves",
+      "loser": "New Orleans Hornets",
+      "winner_score": 102,
+      "loser_score": 99,
+      "date": "2005-04-18",
+      "round": "Play-In"
+    },
+    {
       "winner": "Orlando Magic",
       "loser": "Indiana Pacers",
       "winner_score": 92,
@@ -404,14 +404,6 @@
       "round": "Play-In"
     },
     {
-      "winner": "Memphis Grizzlies",
-      "loser": "San Antonio Spurs",
-      "winner_score": 94,
-      "loser_score": 92,
-      "date": "2005-04-18",
-      "round": "Play-In"
-    },
-    {
       "winner": "Golden State Warriors",
       "loser": "Los Angeles Lakers",
       "winner_score": 126,
@@ -440,6 +432,14 @@
       "loser": "Portland Trail Blazers",
       "winner_score": 119,
       "loser_score": 115,
+      "date": "2005-04-19",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Toronto Raptors",
+      "loser": "Milwaukee Bucks",
+      "winner_score": 127,
+      "loser_score": 109,
       "date": "2005-04-19",
       "round": "Play-In"
     },
@@ -724,14 +724,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Miami Heat",
-      "loser": "New Jersey Nets",
-      "winner_score": 108,
-      "loser_score": 105,
-      "date": "2005-04-28",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Indiana Pacers",
       "loser": "Boston Celtics",
       "winner_score": 99,
@@ -780,14 +772,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Dallas Mavericks",
-      "loser": "Houston Rockets",
-      "winner_score": 97,
-      "loser_score": 93,
-      "date": "2005-04-30",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Boston Celtics",
       "loser": "Indiana Pacers",
       "winner_score": 110,
@@ -820,19 +804,19 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "Phoenix Suns",
+      "loser": "Memphis Grizzlies",
+      "winner_score": 123,
+      "loser_score": 115,
+      "date": "2005-05-01",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "Seattle SuperSonics",
       "loser": "Sacramento Kings",
       "winner_score": 115,
       "loser_score": 102,
       "date": "2005-05-01",
-      "round": "PLAYOFFS"
-    },
-    {
-      "winner": "Dallas Mavericks",
-      "loser": "Houston Rockets",
-      "winner_score": 103,
-      "loser_score": 100,
-      "date": "2005-05-02",
       "round": "PLAYOFFS"
     },
     {
@@ -980,14 +964,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Dallas Mavericks",
-      "loser": "Phoenix Suns",
-      "winner_score": 108,
-      "loser_score": 106,
-      "date": "2005-05-11",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Indiana Pacers",
       "loser": "Detroit Pistons",
       "winner_score": 92,
@@ -1049,14 +1025,6 @@
       "winner_score": 101,
       "loser_score": 89,
       "date": "2005-05-15",
-      "round": "PLAYOFFS"
-    },
-    {
-      "winner": "Dallas Mavericks",
-      "loser": "Phoenix Suns",
-      "winner_score": 119,
-      "loser_score": 109,
-      "date": "2005-05-16",
       "round": "PLAYOFFS"
     },
     {
@@ -1204,14 +1172,6 @@
       "round": "FINALS"
     },
     {
-      "winner": "San Antonio Spurs",
-      "loser": "Detroit Pistons",
-      "winner_score": 97,
-      "loser_score": 76,
-      "date": "2005-06-13",
-      "round": "FINALS"
-    },
-    {
       "winner": "Detroit Pistons",
       "loser": "San Antonio Spurs",
       "winner_score": 96,
@@ -1228,6 +1188,14 @@
       "round": "FINALS"
     },
     {
+      "winner": "San Antonio Spurs",
+      "loser": "Detroit Pistons",
+      "winner_score": 96,
+      "loser_score": 95,
+      "date": "2005-06-20",
+      "round": "FINALS"
+    },
+    {
       "winner": "Detroit Pistons",
       "loser": "San Antonio Spurs",
       "winner_score": 95,
@@ -1241,6 +1209,14 @@
       "winner_score": 81,
       "loser_score": 74,
       "date": "2005-06-24",
+      "round": "FINALS"
+    },
+    {
+      "winner": "San Antonio Spurs",
+      "loser": "Detroit Pistons",
+      "winner_score": 97,
+      "loser_score": 76,
+      "date": "2005-06-13",
       "round": "FINALS"
     }
   ],
@@ -1278,16 +1254,6 @@
     {
       "t1": "Toronto Raptors",
       "t2": "New York Knicks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2005-04-12"
-    },
-    {
-      "t1": "San Antonio Spurs",
-      "t2": "Portland Trail Blazers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1609,7 +1575,7 @@
       "t1": "San Antonio Spurs",
       "t2": "Memphis Grizzlies",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "Play-In",
@@ -1706,6 +1672,16 @@
       "date": "2005-04-17"
     },
     {
+      "t1": "Minnesota Timberwolves",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2005-04-18"
+    },
+    {
       "t1": "Orlando Magic",
       "t2": "Indiana Pacers",
       "w1": 1,
@@ -1778,6 +1754,16 @@
     {
       "t1": "Denver Nuggets",
       "t2": "Portland Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2005-04-19"
+    },
+    {
+      "t1": "Toronto Raptors",
+      "t2": "Milwaukee Bucks",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1959,9 +1945,9 @@
       "t1": "Houston Rockets",
       "t2": "Dallas Mavericks",
       "w1": 3,
-      "w2": 4,
-      "done": true,
-      "loser": "Houston Rockets",
+      "w2": 2,
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2005-04-23"
     },
@@ -1988,10 +1974,10 @@
     {
       "t1": "Miami Heat",
       "t2": "New Jersey Nets",
-      "w1": 4,
+      "w1": 3,
       "w2": 0,
-      "done": true,
-      "loser": "New Jersey Nets",
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2005-04-24"
     },
@@ -2018,10 +2004,10 @@
     {
       "t1": "Phoenix Suns",
       "t2": "Memphis Grizzlies",
-      "w1": 3,
+      "w1": 4,
       "w2": 0,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Memphis Grizzlies",
       "round": "PLAYOFFS",
       "date": "2005-04-24"
     },
@@ -2049,7 +2035,7 @@
       "t1": "Phoenix Suns",
       "t2": "Dallas Mavericks",
       "w1": 4,
-      "w2": 2,
+      "w2": 0,
       "done": true,
       "loser": "Dallas Mavericks",
       "round": "PLAYOFFS",
@@ -2088,28 +2074,28 @@
     {
       "t1": "San Antonio Spurs",
       "t2": "Detroit Pistons",
-      "w1": 3,
+      "w1": 4,
       "w2": 3,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Detroit Pistons",
       "round": "FINALS",
       "date": "2005-06-10"
     }
   ],
   "eliminated": [
     "Philadelphia 76ers",
-    "Houston Rockets",
     "Sacramento Kings",
     "Boston Celtics",
-    "New Jersey Nets",
     "Chicago Bulls",
     "Denver Nuggets",
+    "Memphis Grizzlies",
     "Washington Wizards",
     "Seattle SuperSonics",
     "Dallas Mavericks",
     "Indiana Pacers",
     "Phoenix Suns",
-    "Miami Heat"
+    "Miami Heat",
+    "Detroit Pistons"
   ],
-  "updated": "2026-06-26 11:20 UTC"
+  "updated": "2026-06-26 20:50 UTC"
 }

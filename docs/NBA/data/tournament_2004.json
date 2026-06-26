@@ -12,6 +12,14 @@
       "round": "Play-In"
     },
     {
+      "winner": "New York Knicks",
+      "loser": "New Orleans Hornets",
+      "winner_score": 101,
+      "loser_score": 97,
+      "date": "2004-04-12",
+      "round": "Play-In"
+    },
+    {
       "winner": "Cleveland Cavaliers",
       "loser": "Milwaukee Bucks",
       "winner_score": 93,
@@ -128,14 +136,6 @@
       "loser": "Chicago Bulls",
       "winner_score": 101,
       "loser_score": 96,
-      "date": "2004-04-14",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Toronto Raptors",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 89,
-      "loser_score": 87,
       "date": "2004-04-14",
       "round": "Play-In"
     },
@@ -500,14 +500,6 @@
       "round": "PLAYOFFS"
     },
     {
-      "winner": "Detroit Pistons",
-      "loser": "Milwaukee Bucks",
-      "winner_score": 91,
-      "loser_score": 77,
-      "date": "2004-04-30",
-      "round": "PLAYOFFS"
-    },
-    {
       "winner": "Miami Heat",
       "loser": "New Orleans Hornets",
       "winner_score": 87,
@@ -537,6 +529,14 @@
       "winner_score": 88,
       "loser_score": 78,
       "date": "2004-05-02",
+      "round": "PLAYOFFS"
+    },
+    {
+      "winner": "Detroit Pistons",
+      "loser": "New Jersey Nets",
+      "winner_score": 78,
+      "loser_score": 56,
+      "date": "2004-05-04",
       "round": "PLAYOFFS"
     },
     {
@@ -888,6 +888,16 @@
       "date": "2004-04-12"
     },
     {
+      "t1": "New York Knicks",
+      "t2": "New Orleans Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2004-04-12"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "Milwaukee Bucks",
       "w1": 1,
@@ -1030,16 +1040,6 @@
     {
       "t1": "Indiana Pacers",
       "t2": "Chicago Bulls",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2004-04-14"
-    },
-    {
-      "t1": "Toronto Raptors",
-      "t2": "Milwaukee Bucks",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1210,10 +1210,10 @@
     {
       "t1": "Detroit Pistons",
       "t2": "Milwaukee Bucks",
-      "w1": 4,
+      "w1": 3,
       "w2": 1,
-      "done": true,
-      "loser": "Milwaukee Bucks",
+      "done": false,
+      "loser": "",
       "round": "PLAYOFFS",
       "date": "2004-04-18"
     },
@@ -1248,6 +1248,16 @@
       "date": "2004-05-02"
     },
     {
+      "t1": "Detroit Pistons",
+      "t2": "New Jersey Nets",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "New Jersey Nets",
+      "round": "PLAYOFFS",
+      "date": "2004-05-04"
+    },
+    {
       "t1": "Sacramento Kings",
       "t2": "Minnesota Timberwolves",
       "w1": 3,
@@ -1266,16 +1276,6 @@
       "loser": "Miami Heat",
       "round": "PLAYOFFS",
       "date": "2004-05-07"
-    },
-    {
-      "t1": "Detroit Pistons",
-      "t2": "New Jersey Nets",
-      "w1": 3,
-      "w2": 3,
-      "done": false,
-      "loser": "",
-      "round": "PLAYOFFS",
-      "date": "2004-05-08"
     },
     {
       "t1": "Los Angeles Lakers",
@@ -1314,15 +1314,15 @@
     "Memphis Grizzlies",
     "Houston Rockets",
     "Dallas Mavericks",
-    "Milwaukee Bucks",
     "New Orleans Hornets",
     "Denver Nuggets",
     "San Antonio Spurs",
+    "New Jersey Nets",
     "Sacramento Kings",
     "Miami Heat",
     "Minnesota Timberwolves",
     "Indiana Pacers",
     "Los Angeles Lakers"
   ],
-  "updated": "2026-06-26 11:20 UTC"
+  "updated": "2026-06-26 20:50 UTC"
 }

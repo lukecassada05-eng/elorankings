@@ -324,6 +324,14 @@
       "round": "Play-In"
     },
     {
+      "winner": "LA Clippers",
+      "loser": "Dallas Mavericks",
+      "winner_score": 126,
+      "loser_score": 111,
+      "date": "2020-08-06",
+      "round": "Play-In"
+    },
+    {
       "winner": "Portland Trail Blazers",
       "loser": "Denver Nuggets",
       "winner_score": 125,
@@ -649,6 +657,14 @@
       "winner_score": 118,
       "loser_score": 112,
       "date": "2020-08-13",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Portland Trail Blazers",
+      "loser": "Brooklyn Nets",
+      "winner_score": 134,
+      "loser_score": 133,
+      "date": "2020-08-14",
       "round": "Play-In"
     },
     {
@@ -988,6 +1004,14 @@
       "round": "WEST 1st ROUND"
     },
     {
+      "winner": "Los Angeles Lakers",
+      "loser": "Portland Trail Blazers",
+      "winner_score": 131,
+      "loser_score": 122,
+      "date": "2020-08-30",
+      "round": "WEST 1st ROUND - GAME 5"
+    },
+    {
       "winner": "Boston Celtics",
       "loser": "Toronto Raptors",
       "winner_score": 112,
@@ -1186,6 +1210,14 @@
       "loser_score": 105,
       "date": "2020-09-11",
       "round": "West Semifinals"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Toronto Raptors",
+      "winner_score": 92,
+      "loser_score": 87,
+      "date": "2020-09-12",
+      "round": "East Semifinals"
     },
     {
       "winner": "Los Angeles Lakers",
@@ -1750,6 +1782,16 @@
       "date": "2020-08-06"
     },
     {
+      "t1": "LA Clippers",
+      "t2": "Dallas Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2020-08-06"
+    },
+    {
       "t1": "Portland Trail Blazers",
       "t2": "Denver Nuggets",
       "w1": 1,
@@ -2128,6 +2170,16 @@
       "loser": "",
       "round": "Play-In",
       "date": "2020-08-13"
+    },
+    {
+      "t1": "Portland Trail Blazers",
+      "t2": "Brooklyn Nets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2020-08-14"
     },
     {
       "t1": "Orlando Magic",
@@ -2540,6 +2592,16 @@
       "date": "2020-08-29"
     },
     {
+      "t1": "Los Angeles Lakers",
+      "t2": "Portland Trail Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1st ROUND - GAME 5",
+      "date": "2020-08-30"
+    },
+    {
       "t1": "Boston Celtics",
       "t2": "Toronto Raptors",
       "w1": 3,
@@ -2603,7 +2665,7 @@
       "t1": "Toronto Raptors",
       "t2": "Boston Celtics",
       "w1": 1,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "East Semifinals",
@@ -2666,5 +2728,5 @@
     "Denver Nuggets",
     "Miami Heat"
   ],
-  "updated": "2026-06-26 11:23 UTC"
+  "updated": "2026-06-26 20:53 UTC"
 }

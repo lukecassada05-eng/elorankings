@@ -28,14 +28,6 @@
       "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2"
     },
     {
-      "winner": "San Jose Sharks",
-      "loser": "Vancouver Canucks",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-04",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2"
-    },
-    {
       "winner": "Washington Capitals",
       "loser": "New York Rangers",
       "winner_score": 1,
@@ -90,6 +82,14 @@
       "loser_score": 1,
       "date": "2013-05-05",
       "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3"
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Vancouver Canucks",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2013-05-06",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3"
     },
     {
       "winner": "Boston Bruins",
@@ -170,14 +170,6 @@
       "loser_score": 3,
       "date": "2013-05-08",
       "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4"
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "St. Louis Blues",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2013-05-09",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 5"
     },
     {
       "winner": "Anaheim Ducks",
@@ -290,14 +282,6 @@
       "loser_score": 0,
       "date": "2013-05-14",
       "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 7"
-    },
-    {
-      "winner": "Pittsburgh Penguins",
-      "loser": "Ottawa Senators",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2013-05-14",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
     },
     {
       "winner": "Los Angeles Kings",
@@ -636,16 +620,6 @@
       "date": "2013-05-04"
     },
     {
-      "t1": "San Jose Sharks",
-      "t2": "Vancouver Canucks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 2",
-      "date": "2013-05-04"
-    },
-    {
       "t1": "Washington Capitals",
       "t2": "New York Rangers",
       "w1": 1,
@@ -714,6 +688,16 @@
       "loser": "",
       "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 3",
       "date": "2013-05-05"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 3",
+      "date": "2013-05-06"
     },
     {
       "t1": "Boston Bruins",
@@ -814,16 +798,6 @@
       "loser": "",
       "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 4",
       "date": "2013-05-08"
-    },
-    {
-      "t1": "Los Angeles Kings",
-      "t2": "St. Louis Blues",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE QUARTERFINALS - GAME 5",
-      "date": "2013-05-09"
     },
     {
       "t1": "Anaheim Ducks",
@@ -963,16 +937,6 @@
       "done": false,
       "loser": "",
       "round": "EASTERN CONFERENCE QUARTERFINALS - GAME 7",
-      "date": "2013-05-14"
-    },
-    {
-      "t1": "Pittsburgh Penguins",
-      "t2": "Ottawa Senators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1",
       "date": "2013-05-14"
     },
     {
@@ -1357,5 +1321,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 11:23 UTC"
+  "updated": "2026-06-26 20:54 UTC"
 }

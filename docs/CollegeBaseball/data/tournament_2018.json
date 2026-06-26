@@ -36,14 +36,6 @@
       "round": "Conway Regional"
     },
     {
-      "winner": "Oklahoma State Cowboys",
-      "loser": "South Florida Bulls",
-      "winner_score": 9,
-      "loser_score": 2,
-      "date": "2018-06-01",
-      "round": "DeLand Regional"
-    },
-    {
       "winner": "South Carolina Gamecocks",
       "loser": "Ohio State Buckeyes",
       "winner_score": 8,
@@ -138,14 +130,6 @@
       "loser_score": 3,
       "date": "2018-06-01",
       "round": "Clemson Regional"
-    },
-    {
-      "winner": "Jacksonville Dolphins",
-      "loser": "Florida Atlantic Owls",
-      "winner_score": 5,
-      "loser_score": 3,
-      "date": "2018-06-01",
-      "round": "Gainesville Regional"
     },
     {
       "winner": "Houston Cougars",
@@ -278,16 +262,6 @@
       "date": "2018-06-01"
     },
     {
-      "t1": "Oklahoma State Cowboys",
-      "t2": "South Florida Bulls",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "DeLand Regional",
-      "date": "2018-06-01"
-    },
-    {
       "t1": "South Carolina Gamecocks",
       "t2": "Ohio State Buckeyes",
       "w1": 1,
@@ -408,16 +382,6 @@
       "date": "2018-06-01"
     },
     {
-      "t1": "Jacksonville Dolphins",
-      "t2": "Florida Atlantic Owls",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Gainesville Regional",
-      "date": "2018-06-01"
-    },
-    {
       "t1": "Houston Cougars",
       "t2": "Purdue Boilermakers",
       "w1": 1,
@@ -529,5 +493,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 11:29 UTC"
+  "updated": "2026-06-26 21:00 UTC"
 }

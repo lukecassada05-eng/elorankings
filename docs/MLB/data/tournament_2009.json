@@ -4,6 +4,14 @@
   "completed": true,
   "games": [
     {
+      "winner": "Philadelphia Phillies",
+      "loser": "New York Yankees",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2009-11-03",
+      "round": "WORLD SERIES"
+    },
+    {
       "winner": "New York Yankees",
       "loser": "Philadelphia Phillies",
       "winner_score": 7,
@@ -14,16 +22,16 @@
   ],
   "series": [
     {
-      "t1": "New York Yankees",
-      "t2": "Philadelphia Phillies",
+      "t1": "Philadelphia Phillies",
+      "t2": "New York Yankees",
       "w1": 1,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "WORLD SERIES",
-      "date": "2009-11-05"
+      "date": "2009-11-03"
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 11:25 UTC"
+  "updated": "2026-06-26 20:56 UTC"
 }

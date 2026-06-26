@@ -644,14 +644,6 @@
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
     },
     {
-      "winner": "Phoenix Suns",
-      "loser": "San Antonio Spurs",
-      "winner_score": 110,
-      "loser_score": 102,
-      "date": "2010-05-06",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2"
-    },
-    {
       "winner": "Orlando Magic",
       "loser": "Atlanta Hawks",
       "winner_score": 112,
@@ -764,6 +756,14 @@
       "round": "EASTERN CONFERENCE FINALS - GAME 2"
     },
     {
+      "winner": "Los Angeles Lakers",
+      "loser": "Phoenix Suns",
+      "winner_score": 124,
+      "loser_score": 112,
+      "date": "2010-05-20",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2"
+    },
+    {
       "winner": "Boston Celtics",
       "loser": "Orlando Magic",
       "winner_score": 94,
@@ -834,6 +834,14 @@
       "loser_score": 89,
       "date": "2010-06-04",
       "round": "NBA FINALS - GAME 1"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 103,
+      "loser_score": 94,
+      "date": "2010-06-07",
+      "round": "NBA FINALS - GAME 2"
     },
     {
       "winner": "Los Angeles Lakers",
@@ -1678,16 +1686,6 @@
       "date": "2010-05-05"
     },
     {
-      "t1": "Phoenix Suns",
-      "t2": "San Antonio Spurs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 2",
-      "date": "2010-05-06"
-    },
-    {
       "t1": "Orlando Magic",
       "t2": "Atlanta Hawks",
       "w1": 1,
@@ -1828,6 +1826,16 @@
       "date": "2010-05-19"
     },
     {
+      "t1": "Los Angeles Lakers",
+      "t2": "Phoenix Suns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2",
+      "date": "2010-05-20"
+    },
+    {
       "t1": "Boston Celtics",
       "t2": "Orlando Magic",
       "w1": 1,
@@ -1918,6 +1926,16 @@
       "date": "2010-06-04"
     },
     {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 2",
+      "date": "2010-06-07"
+    },
+    {
       "t1": "Los Angeles Lakers",
       "t2": "Boston Celtics",
       "w1": 1,
@@ -1969,5 +1987,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 11:21 UTC"
+  "updated": "2026-06-26 20:51 UTC"
 }

@@ -196,18 +196,18 @@
       "round": "Play-In"
     },
     {
-      "winner": "Los Angeles Lakers",
-      "loser": "Dallas Mavericks",
-      "winner_score": 112,
-      "loser_score": 108,
+      "winner": "Miami Heat",
+      "loser": "New York Knicks",
+      "winner_score": 93,
+      "loser_score": 85,
       "date": "2012-04-15",
       "round": "Play-In"
     },
     {
-      "winner": "Toronto Raptors",
-      "loser": "Atlanta Hawks",
-      "winner_score": 102,
-      "loser_score": 86,
+      "winner": "Los Angeles Lakers",
+      "loser": "Dallas Mavericks",
+      "winner_score": 112,
+      "loser_score": 108,
       "date": "2012-04-15",
       "round": "Play-In"
     },
@@ -297,14 +297,6 @@
       "winner_score": 101,
       "loser_score": 98,
       "date": "2012-04-16",
-      "round": "Play-In"
-    },
-    {
-      "winner": "Washington Wizards",
-      "loser": "Chicago Bulls",
-      "winner_score": 87,
-      "loser_score": 84,
-      "date": "2012-04-17",
       "round": "Play-In"
     },
     {
@@ -496,6 +488,14 @@
       "loser": "Golden State Warriors",
       "winner_score": 99,
       "loser_score": 87,
+      "date": "2012-04-19",
+      "round": "Play-In"
+    },
+    {
+      "winner": "Indiana Pacers",
+      "loser": "Milwaukee Bucks",
+      "winner_score": 118,
+      "loser_score": 109,
       "date": "2012-04-19",
       "round": "Play-In"
     },
@@ -900,14 +900,6 @@
       "round": "Play-In"
     },
     {
-      "winner": "Denver Nuggets",
-      "loser": "Minnesota Timberwolves",
-      "winner_score": 131,
-      "loser_score": 102,
-      "date": "2012-04-27",
-      "round": "Play-In"
-    },
-    {
       "winner": "Utah Jazz",
       "loser": "Portland Trail Blazers",
       "winner_score": 96,
@@ -1012,14 +1004,6 @@
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 1"
     },
     {
-      "winner": "Atlanta Hawks",
-      "loser": "Boston Celtics",
-      "winner_score": 83,
-      "loser_score": 74,
-      "date": "2012-04-29",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1"
-    },
-    {
       "winner": "LA Clippers",
       "loser": "Memphis Grizzlies",
       "winner_score": 99,
@@ -1082,6 +1066,14 @@
       "loser_score": 83,
       "date": "2012-05-02",
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "Indiana Pacers",
+      "loser": "Orlando Magic",
+      "winner_score": 97,
+      "loser_score": 74,
+      "date": "2012-05-02",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3"
     },
     {
       "winner": "Memphis Grizzlies",
@@ -1836,7 +1828,7 @@
     {
       "t1": "Indiana Pacers",
       "t2": "Milwaukee Bucks",
-      "w1": 1,
+      "w1": 2,
       "w2": 0,
       "done": false,
       "loser": "",
@@ -1854,8 +1846,8 @@
       "date": "2012-04-15"
     },
     {
-      "t1": "Los Angeles Lakers",
-      "t2": "Dallas Mavericks",
+      "t1": "Miami Heat",
+      "t2": "New York Knicks",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -1864,10 +1856,10 @@
       "date": "2012-04-15"
     },
     {
-      "t1": "Toronto Raptors",
-      "t2": "Atlanta Hawks",
+      "t1": "Los Angeles Lakers",
+      "t2": "Dallas Mavericks",
       "w1": 1,
-      "w2": 1,
+      "w2": 0,
       "done": false,
       "loser": "",
       "round": "Play-In",
@@ -1954,6 +1946,16 @@
       "date": "2012-04-16"
     },
     {
+      "t1": "Atlanta Hawks",
+      "t2": "Toronto Raptors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Play-In",
+      "date": "2012-04-16"
+    },
+    {
       "t1": "New Orleans Hornets",
       "t2": "Charlotte Bobcats",
       "w1": 1,
@@ -1972,16 +1974,6 @@
       "loser": "",
       "round": "Play-In",
       "date": "2012-04-16"
-    },
-    {
-      "t1": "Washington Wizards",
-      "t2": "Chicago Bulls",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2012-04-17"
     },
     {
       "t1": "Utah Jazz",
@@ -2604,16 +2596,6 @@
       "date": "2012-04-27"
     },
     {
-      "t1": "Denver Nuggets",
-      "t2": "Minnesota Timberwolves",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Play-In",
-      "date": "2012-04-27"
-    },
-    {
       "t1": "Toronto Raptors",
       "t2": "New Jersey Nets",
       "w1": 1,
@@ -2714,16 +2696,6 @@
       "date": "2012-04-29"
     },
     {
-      "t1": "Atlanta Hawks",
-      "t2": "Boston Celtics",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 1",
-      "date": "2012-04-29"
-    },
-    {
       "t1": "LA Clippers",
       "t2": "Memphis Grizzlies",
       "w1": 1,
@@ -2801,6 +2773,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1ST ROUND - GAME 2",
+      "date": "2012-05-02"
+    },
+    {
+      "t1": "Indiana Pacers",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE 1ST ROUND - GAME 3",
       "date": "2012-05-02"
     },
     {
@@ -3465,5 +3447,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 11:22 UTC"
+  "updated": "2026-06-26 20:51 UTC"
 }

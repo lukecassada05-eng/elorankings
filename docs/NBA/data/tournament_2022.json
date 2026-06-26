@@ -412,14 +412,6 @@
       "round": "West Semifinals"
     },
     {
-      "winner": "Miami Heat",
-      "loser": "Philadelphia 76ers",
-      "winner_score": 106,
-      "loser_score": 92,
-      "date": "2022-05-02",
-      "round": "East Semifinals"
-    },
-    {
       "winner": "Phoenix Suns",
       "loser": "Dallas Mavericks",
       "winner_score": 121,
@@ -458,14 +450,6 @@
       "loser_score": 109,
       "date": "2022-05-05",
       "round": "West Semifinals"
-    },
-    {
-      "winner": "Philadelphia 76ers",
-      "loser": "Miami Heat",
-      "winner_score": 99,
-      "loser_score": 79,
-      "date": "2022-05-06",
-      "round": "East Semifinals"
     },
     {
       "winner": "Dallas Mavericks",
@@ -910,16 +894,6 @@
       "date": "2022-05-01"
     },
     {
-      "t1": "Miami Heat",
-      "t2": "Philadelphia 76ers",
-      "w1": 4,
-      "w2": 2,
-      "done": true,
-      "loser": "Philadelphia 76ers",
-      "round": "East Semifinals",
-      "date": "2022-05-02"
-    },
-    {
       "t1": "Phoenix Suns",
       "t2": "Dallas Mavericks",
       "w1": 3,
@@ -928,6 +902,16 @@
       "loser": "Phoenix Suns",
       "round": "West Semifinals",
       "date": "2022-05-03"
+    },
+    {
+      "t1": "Miami Heat",
+      "t2": "Philadelphia 76ers",
+      "w1": 3,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "East Semifinals",
+      "date": "2022-05-04"
     },
     {
       "t1": "Miami Heat",
@@ -971,11 +955,10 @@
     "New Orleans Pelicans",
     "Milwaukee Bucks",
     "Memphis Grizzlies",
-    "Philadelphia 76ers",
     "Phoenix Suns",
     "Miami Heat",
     "Dallas Mavericks",
     "Boston Celtics"
   ],
-  "updated": "2026-06-26 11:23 UTC"
+  "updated": "2026-06-26 20:53 UTC"
 }
