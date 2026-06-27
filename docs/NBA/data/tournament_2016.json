@@ -790,6 +790,14 @@
     {
       "winner": "Golden State Warriors",
       "loser": "Cleveland Cavaliers",
+      "winner_score": 104,
+      "loser_score": 89,
+      "date": "2016-06-03",
+      "round": "NBA FINALS - GAME 1"
+    },
+    {
+      "winner": "Golden State Warriors",
+      "loser": "Cleveland Cavaliers",
       "winner_score": 110,
       "loser_score": 77,
       "date": "2016-06-06",
@@ -1824,6 +1832,16 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "NBA FINALS - GAME 1",
+      "date": "2016-06-03"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "Cleveland Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NBA FINALS - GAME 2",
       "date": "2016-06-06"
     },
@@ -1879,5 +1897,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 20:52 UTC"
+  "updated": "2026-06-27 10:23 UTC"
 }

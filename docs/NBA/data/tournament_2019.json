@@ -156,6 +156,14 @@
       "round": "WEST 1ST ROUND - GAME 3"
     },
     {
+      "winner": "Toronto Raptors",
+      "loser": "Orlando Magic",
+      "winner_score": 98,
+      "loser_score": 93,
+      "date": "2019-04-19",
+      "round": "EAST 1ST ROUND - GAME 3"
+    },
+    {
       "winner": "Boston Celtics",
       "loser": "Indiana Pacers",
       "winner_score": 104,
@@ -340,6 +348,14 @@
       "round": "EAST SEMIFINALS - GAME 1"
     },
     {
+      "winner": "Golden State Warriors",
+      "loser": "Houston Rockets",
+      "winner_score": 104,
+      "loser_score": 100,
+      "date": "2019-04-28",
+      "round": "WEST SEMIFINALS - GAME 1"
+    },
+    {
       "winner": "Philadelphia 76ers",
       "loser": "Toronto Raptors",
       "winner_score": 94,
@@ -466,6 +482,14 @@
       "loser_score": 91,
       "date": "2019-05-09",
       "round": "EAST SEMIFINALS - GAME 5"
+    },
+    {
+      "winner": "Golden State Warriors",
+      "loser": "Houston Rockets",
+      "winner_score": 104,
+      "loser_score": 99,
+      "date": "2019-05-09",
+      "round": "WEST SEMIFINALS - GAME 5"
     },
     {
       "winner": "Philadelphia 76ers",
@@ -828,6 +852,16 @@
       "date": "2019-04-19"
     },
     {
+      "t1": "Toronto Raptors",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 3",
+      "date": "2019-04-19"
+    },
+    {
       "t1": "Boston Celtics",
       "t2": "Indiana Pacers",
       "w1": 1,
@@ -1058,6 +1092,16 @@
       "date": "2019-04-28"
     },
     {
+      "t1": "Golden State Warriors",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST SEMIFINALS - GAME 1",
+      "date": "2019-04-28"
+    },
+    {
       "t1": "Philadelphia 76ers",
       "t2": "Toronto Raptors",
       "w1": 1,
@@ -1215,6 +1259,16 @@
       "done": false,
       "loser": "",
       "round": "EAST SEMIFINALS - GAME 5",
+      "date": "2019-05-09"
+    },
+    {
+      "t1": "Golden State Warriors",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST SEMIFINALS - GAME 5",
       "date": "2019-05-09"
     },
     {
@@ -1429,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 20:52 UTC"
+  "updated": "2026-06-27 10:23 UTC"
 }

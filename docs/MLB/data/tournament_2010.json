@@ -2,8 +2,819 @@
   "year": 2010,
   "sport": "MLB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-06-26 20:56 UTC"
+  "games": [
+    {
+      "winner": "Baltimore Orioles",
+      "loser": "Detroit Tigers",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2010-10-01",
+      "round": "AMERICAN LEAGUE - GAME 1"
+    },
+    {
+      "winner": "Milwaukee Brewers",
+      "loser": "Cincinnati Reds",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2010-10-01",
+      "round": ""
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "Washington Nationals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2010-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Pittsburgh Pirates",
+      "loser": "Florida Marlins",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2010-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Phillies",
+      "loser": "Atlanta Braves",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2010-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Angels",
+      "loser": "Texas Rangers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Houston Astros",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Baltimore Orioles",
+      "loser": "Detroit Tigers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2010-10-02",
+      "round": "AMERICAN LEAGUE - GAME 2"
+    },
+    {
+      "winner": "Cleveland Indians",
+      "loser": "Chicago White Sox",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Kansas City Royals",
+      "loser": "Tampa Bay Rays",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Toronto Blue Jays",
+      "loser": "Minnesota Twins",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "Colorado Rockies",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Oakland Athletics",
+      "loser": "Seattle Mariners",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Arizona Diamondbacks",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "San Diego Padres",
+      "loser": "San Francisco Giants",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota Twins",
+      "loser": "Toronto Blue Jays",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Cincinnati Reds",
+      "loser": "Milwaukee Brewers",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "Washington Nationals",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Boston Red Sox",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2010-10-02",
+      "round": "AMERICAN LEAGUE - GAME 1"
+    },
+    {
+      "winner": "Philadelphia Phillies",
+      "loser": "Atlanta Braves",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Chicago White Sox",
+      "loser": "Cleveland Indians",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Tampa Bay Rays",
+      "loser": "Kansas City Royals",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "Pittsburgh Pirates",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2010-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "Los Angeles Angels",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "New York Yankees",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2010-10-03",
+      "round": "AMERICAN LEAGUE - GAME 2"
+    },
+    {
+      "winner": "Oakland Athletics",
+      "loser": "Seattle Mariners",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Dodgers",
+      "loser": "Arizona Diamondbacks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Cincinnati Reds",
+      "loser": "Milwaukee Brewers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Washington Nationals",
+      "loser": "New York Mets",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "Pittsburgh Pirates",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "Baltimore Orioles",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Atlanta Braves",
+      "loser": "Philadelphia Phillies",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Chicago White Sox",
+      "loser": "Cleveland Indians",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Houston Astros",
+      "loser": "Chicago Cubs",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Tampa Bay Rays",
+      "loser": "Kansas City Royals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Toronto Blue Jays",
+      "loser": "Minnesota Twins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "Colorado Rockies",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Angels",
+      "loser": "Texas Rangers",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "San Diego Padres",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2010-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "Tampa Bay Rays",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2010-10-06",
+      "round": "ALDS"
+    },
+    {
+      "winner": "Philadelphia Phillies",
+      "loser": "Cincinnati Reds",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2010-10-06",
+      "round": "NLDS"
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Minnesota Twins",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2010-10-07",
+      "round": "ALDS"
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "Tampa Bay Rays",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2010-10-07",
+      "round": "ALDS"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Atlanta Braves",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2010-10-08",
+      "round": "NLDS"
+    },
+    {
+      "winner": "Philadelphia Phillies",
+      "loser": "Cincinnati Reds",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2010-10-08",
+      "round": "NLDS"
+    },
+    {
+      "winner": "Atlanta Braves",
+      "loser": "San Francisco Giants",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2010-10-09",
+      "round": "NLDS"
+    },
+    {
+      "winner": "Tampa Bay Rays",
+      "loser": "Texas Rangers",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2010-10-09",
+      "round": "ALDS"
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Minnesota Twins",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2010-10-10",
+      "round": "ALDS"
+    },
+    {
+      "winner": "Tampa Bay Rays",
+      "loser": "Texas Rangers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2010-10-10",
+      "round": "ALDS"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Atlanta Braves",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2010-10-10",
+      "round": "NLDS"
+    },
+    {
+      "winner": "Philadelphia Phillies",
+      "loser": "Cincinnati Reds",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2010-10-11",
+      "round": "NLDS"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Atlanta Braves",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2010-10-11",
+      "round": "NLDS"
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "Tampa Bay Rays",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2010-10-13",
+      "round": "ALDS"
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Texas Rangers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2010-10-16",
+      "round": "ALCS"
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "New York Yankees",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2010-10-16",
+      "round": "ALCS"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Philadelphia Phillies",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2010-10-16",
+      "round": "NLCS"
+    },
+    {
+      "winner": "Philadelphia Phillies",
+      "loser": "San Francisco Giants",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2010-10-18",
+      "round": "NLCS"
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "New York Yankees",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2010-10-19",
+      "round": "ALCS"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Philadelphia Phillies",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2010-10-19",
+      "round": "NLCS"
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "New York Yankees",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2010-10-20",
+      "round": "ALCS"
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Texas Rangers",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2010-10-20",
+      "round": "ALCS"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Philadelphia Phillies",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2010-10-20",
+      "round": "NLCS"
+    },
+    {
+      "winner": "Philadelphia Phillies",
+      "loser": "San Francisco Giants",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2010-10-21",
+      "round": "NLCS"
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "New York Yankees",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2010-10-23",
+      "round": "ALCS"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Philadelphia Phillies",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2010-10-23",
+      "round": "NLCS"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Texas Rangers",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2010-10-27",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Texas Rangers",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2010-10-28",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "Texas Rangers",
+      "loser": "San Francisco Giants",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2010-10-30",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "Texas Rangers",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2010-11-01",
+      "round": "WORLD SERIES"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Baltimore Orioles",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AMERICAN LEAGUE - GAME 1",
+      "date": "2010-10-01"
+    },
+    {
+      "t1": "Milwaukee Brewers",
+      "t2": "Cincinnati Reds",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-01"
+    },
+    {
+      "t1": "New York Mets",
+      "t2": "Washington Nationals",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-01"
+    },
+    {
+      "t1": "Pittsburgh Pirates",
+      "t2": "Florida Marlins",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-01"
+    },
+    {
+      "t1": "Philadelphia Phillies",
+      "t2": "Atlanta Braves",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-01"
+    },
+    {
+      "t1": "Los Angeles Angels",
+      "t2": "Texas Rangers",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Chicago Cubs",
+      "t2": "Houston Astros",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Baltimore Orioles",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AMERICAN LEAGUE - GAME 2",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Cleveland Indians",
+      "t2": "Chicago White Sox",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Kansas City Royals",
+      "t2": "Tampa Bay Rays",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Toronto Blue Jays",
+      "t2": "Minnesota Twins",
+      "w1": 2,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "St. Louis Cardinals",
+      "t2": "Colorado Rockies",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Oakland Athletics",
+      "t2": "Seattle Mariners",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Arizona Diamondbacks",
+      "t2": "Los Angeles Dodgers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "San Diego Padres",
+      "t2": "San Francisco Giants",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "New York Yankees",
+      "t2": "Boston Red Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AMERICAN LEAGUE - GAME 1",
+      "date": "2010-10-02"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "AMERICAN LEAGUE - GAME 2",
+      "date": "2010-10-03"
+    },
+    {
+      "t1": "Detroit Tigers",
+      "t2": "Baltimore Orioles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2010-10-03"
+    },
+    {
+      "t1": "Texas Rangers",
+      "t2": "Tampa Bay Rays",
+      "w1": 3,
+      "w2": 2,
+      "done": true,
+      "loser": "Tampa Bay Rays",
+      "round": "ALDS",
+      "date": "2010-10-06"
+    },
+    {
+      "t1": "Philadelphia Phillies",
+      "t2": "Cincinnati Reds",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Cincinnati Reds",
+      "round": "NLDS",
+      "date": "2010-10-06"
+    },
+    {
+      "t1": "New York Yankees",
+      "t2": "Minnesota Twins",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS",
+      "date": "2010-10-07"
+    },
+    {
+      "t1": "San Francisco Giants",
+      "t2": "Atlanta Braves",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Atlanta Braves",
+      "round": "NLDS",
+      "date": "2010-10-08"
+    },
+    {
+      "t1": "New York Yankees",
+      "t2": "Texas Rangers",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "New York Yankees",
+      "round": "ALCS",
+      "date": "2010-10-16"
+    },
+    {
+      "t1": "San Francisco Giants",
+      "t2": "Philadelphia Phillies",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Philadelphia Phillies",
+      "round": "NLCS",
+      "date": "2010-10-16"
+    },
+    {
+      "t1": "San Francisco Giants",
+      "t2": "Texas Rangers",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "Texas Rangers",
+      "round": "WORLD SERIES",
+      "date": "2010-10-27"
+    }
+  ],
+  "eliminated": [
+    "Tampa Bay Rays",
+    "Cincinnati Reds",
+    "Atlanta Braves",
+    "New York Yankees",
+    "Philadelphia Phillies",
+    "Texas Rangers"
+  ],
+  "updated": "2026-06-27 10:24 UTC"
 }

@@ -908,6 +908,14 @@
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
     },
     {
+      "winner": "Memphis Grizzlies",
+      "loser": "Oklahoma City Thunder",
+      "winner_score": 103,
+      "loser_score": 97,
+      "date": "2013-05-14",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
+    },
+    {
       "winner": "Indiana Pacers",
       "loser": "New York Knicks",
       "winner_score": 93,
@@ -921,6 +929,22 @@
       "winner_score": 109,
       "loser_score": 91,
       "date": "2013-05-15",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
+    },
+    {
+      "winner": "Miami Heat",
+      "loser": "Chicago Bulls",
+      "winner_score": 94,
+      "loser_score": 91,
+      "date": "2013-05-15",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
+    },
+    {
+      "winner": "Memphis Grizzlies",
+      "loser": "Oklahoma City Thunder",
+      "winner_score": 88,
+      "loser_score": 84,
+      "date": "2013-05-16",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
     },
     {
@@ -2204,6 +2228,16 @@
       "date": "2013-05-13"
     },
     {
+      "t1": "Memphis Grizzlies",
+      "t2": "Oklahoma City Thunder",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4",
+      "date": "2013-05-14"
+    },
+    {
       "t1": "Indiana Pacers",
       "t2": "New York Knicks",
       "w1": 1,
@@ -2222,6 +2256,26 @@
       "loser": "",
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5",
       "date": "2013-05-15"
+    },
+    {
+      "t1": "Miami Heat",
+      "t2": "Chicago Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5",
+      "date": "2013-05-15"
+    },
+    {
+      "t1": "Memphis Grizzlies",
+      "t2": "Oklahoma City Thunder",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5",
+      "date": "2013-05-16"
     },
     {
       "t1": "New York Knicks",
@@ -2435,5 +2489,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 20:51 UTC"
+  "updated": "2026-06-27 10:23 UTC"
 }

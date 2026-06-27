@@ -12,6 +12,14 @@
       "round": "NL WILD CARD GAME"
     },
     {
+      "winner": "Baltimore Orioles",
+      "loser": "Detroit Tigers",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2014-10-02",
+      "round": "ALDS - GAME 1"
+    },
+    {
       "winner": "Kansas City Royals",
       "loser": "Los Angeles Angels",
       "winner_score": 3,
@@ -32,6 +40,14 @@
       "loser": "Washington Nationals",
       "winner_score": 3,
       "loser_score": 2,
+      "date": "2014-10-03",
+      "round": "NLDS - GAME 1"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 10,
+      "loser_score": 9,
       "date": "2014-10-03",
       "round": "NLDS - GAME 1"
     },
@@ -143,6 +159,14 @@
       "winner": "San Francisco Giants",
       "loser": "St. Louis Cardinals",
       "winner_score": 6,
+      "loser_score": 4,
+      "date": "2014-10-16",
+      "round": "NLCS - GAME 4"
+    },
+    {
+      "winner": "San Francisco Giants",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 6,
       "loser_score": 3,
       "date": "2014-10-17",
       "round": "NLCS - GAME 5"
@@ -216,6 +240,16 @@
       "date": "2014-10-02"
     },
     {
+      "t1": "Baltimore Orioles",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ALDS - GAME 1",
+      "date": "2014-10-02"
+    },
+    {
       "t1": "Kansas City Royals",
       "t2": "Los Angeles Angels",
       "w1": 1,
@@ -238,6 +272,16 @@
     {
       "t1": "San Francisco Giants",
       "t2": "Washington Nationals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 1",
+      "date": "2014-10-03"
+    },
+    {
+      "t1": "St. Louis Cardinals",
+      "t2": "Los Angeles Dodgers",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -382,6 +426,16 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "NLCS - GAME 4",
+      "date": "2014-10-16"
+    },
+    {
+      "t1": "San Francisco Giants",
+      "t2": "St. Louis Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NLCS - GAME 5",
       "date": "2014-10-17"
     },
@@ -457,5 +511,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 20:56 UTC"
+  "updated": "2026-06-27 10:24 UTC"
 }

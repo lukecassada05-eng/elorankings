@@ -68,6 +68,14 @@
       "round": ""
     },
     {
+      "winner": "Chicago Bulls",
+      "loser": "Detroit Pistons",
+      "winner_score": 91,
+      "loser_score": 88,
+      "date": "2009-04-13",
+      "round": ""
+    },
+    {
       "winner": "New Jersey Nets",
       "loser": "Charlotte Bobcats",
       "winner_score": 91,
@@ -1030,6 +1038,16 @@
     {
       "t1": "Toronto Raptors",
       "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2009-04-13"
+    },
+    {
+      "t1": "Chicago Bulls",
+      "t2": "Detroit Pistons",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2149,5 +2167,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-26 20:51 UTC"
+  "updated": "2026-06-27 10:22 UTC"
 }

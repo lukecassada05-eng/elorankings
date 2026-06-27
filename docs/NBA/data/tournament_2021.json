@@ -124,6 +124,14 @@
       "round": "East 1st Round"
     },
     {
+      "winner": "Denver Nuggets",
+      "loser": "Portland Trail Blazers",
+      "winner_score": 128,
+      "loser_score": 109,
+      "date": "2021-05-25",
+      "round": "West 1st Round"
+    },
+    {
       "winner": "Brooklyn Nets",
       "loser": "Boston Celtics",
       "winner_score": 130,
@@ -353,6 +361,14 @@
       "winner_score": 105,
       "loser_score": 100,
       "date": "2021-06-03",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Denver Nuggets",
+      "loser": "Portland Trail Blazers",
+      "winner_score": 126,
+      "loser_score": 115,
+      "date": "2021-06-04",
       "round": "West 1st Round"
     },
     {
@@ -811,9 +827,9 @@
       "t1": "Portland Trail Blazers",
       "t2": "Denver Nuggets",
       "w1": 2,
-      "w2": 2,
-      "done": false,
-      "loser": "",
+      "w2": 4,
+      "done": true,
+      "loser": "Portland Trail Blazers",
       "round": "West 1st Round",
       "date": "2021-05-23"
     },
@@ -932,6 +948,7 @@
     "Miami Heat",
     "Dallas Mavericks",
     "Boston Celtics",
+    "Portland Trail Blazers",
     "Washington Wizards",
     "Los Angeles Lakers",
     "New York Knicks",
@@ -944,5 +961,5 @@
     "Atlanta Hawks",
     "Phoenix Suns"
   ],
-  "updated": "2026-06-26 20:53 UTC"
+  "updated": "2026-06-27 10:23 UTC"
 }
