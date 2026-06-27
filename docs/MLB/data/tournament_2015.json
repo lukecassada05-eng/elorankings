@@ -92,14 +92,6 @@
       "round": ""
     },
     {
-      "winner": "Arizona Diamondbacks",
-      "loser": "Colorado Rockies",
-      "winner_score": 8,
-      "loser_score": 6,
-      "date": "2015-10-02",
-      "round": ""
-    },
-    {
       "winner": "Pittsburgh Pirates",
       "loser": "Cincinnati Reds",
       "winner_score": 6,
@@ -452,22 +444,6 @@
       "round": "NLDS - GAME 1"
     },
     {
-      "winner": "New York Mets",
-      "loser": "Los Angeles Dodgers",
-      "winner_score": 3,
-      "loser_score": 1,
-      "date": "2015-10-10",
-      "round": "NLDS - GAME 1"
-    },
-    {
-      "winner": "Chicago Cubs",
-      "loser": "St. Louis Cardinals",
-      "winner_score": 6,
-      "loser_score": 3,
-      "date": "2015-10-10",
-      "round": "NLDS - GAME 2"
-    },
-    {
       "winner": "Los Angeles Dodgers",
       "loser": "New York Mets",
       "winner_score": 5,
@@ -780,16 +756,6 @@
       "date": "2015-10-02"
     },
     {
-      "t1": "Arizona Diamondbacks",
-      "t2": "Colorado Rockies",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2015-10-02"
-    },
-    {
       "t1": "Pittsburgh Pirates",
       "t2": "Cincinnati Reds",
       "w1": 2,
@@ -1050,26 +1016,6 @@
       "date": "2015-10-09"
     },
     {
-      "t1": "New York Mets",
-      "t2": "Los Angeles Dodgers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 1",
-      "date": "2015-10-10"
-    },
-    {
-      "t1": "Chicago Cubs",
-      "t2": "St. Louis Cardinals",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 2",
-      "date": "2015-10-10"
-    },
-    {
       "t1": "Los Angeles Dodgers",
       "t2": "New York Mets",
       "w1": 1,
@@ -1323,5 +1269,5 @@
   "eliminated": [
     "Boston Red Sox"
   ],
-  "updated": "2026-06-27 10:25 UTC"
+  "updated": "2026-06-27 20:41 UTC"
 }

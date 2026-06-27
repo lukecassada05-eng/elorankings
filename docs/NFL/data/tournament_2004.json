@@ -12,14 +12,6 @@
       "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
-      "winner": "Atlanta Falcons",
-      "loser": "St. Louis Rams",
-      "winner_score": 47,
-      "loser_score": 17,
-      "date": "2005-01-16",
-      "round": "NFC DIVISIONAL PLAYOFFS"
-    },
-    {
       "winner": "Philadelphia Eagles",
       "loser": "Minnesota Vikings",
       "winner_score": 27,
@@ -70,16 +62,6 @@
       "loser": "New York Jets",
       "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2005-01-15"
-    },
-    {
-      "t1": "Atlanta Falcons",
-      "t2": "St. Louis Rams",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "St. Louis Rams",
-      "round": "NFC DIVISIONAL PLAYOFFS",
-      "date": "2005-01-16"
     },
     {
       "t1": "Philadelphia Eagles",
@@ -134,12 +116,11 @@
   ],
   "eliminated": [
     "New York Jets",
-    "St. Louis Rams",
     "Minnesota Vikings",
     "Indianapolis Colts",
     "Atlanta Falcons",
     "Pittsburgh Steelers",
     "Philadelphia Eagles"
   ],
-  "updated": "2026-06-27 10:25 UTC"
+  "updated": "2026-06-27 20:42 UTC"
 }

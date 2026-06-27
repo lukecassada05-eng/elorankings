@@ -156,14 +156,6 @@
       "round": "Chapel Hill Regional"
     },
     {
-      "winner": "Army Black Knights",
-      "loser": "NC State Wolfpack",
-      "winner_score": 5,
-      "loser_score": 1,
-      "date": "2018-06-01",
-      "round": "Raleigh Regional"
-    },
-    {
       "winner": "East Carolina Pirates",
       "loser": "UNC Wilmington Seahawks",
       "winner_score": 16,
@@ -410,14 +402,6 @@
       "loser_score": 2,
       "date": "2018-06-02",
       "round": "Oxford Regional"
-    },
-    {
-      "winner": "Oklahoma Sooners",
-      "loser": "Samford Bulldogs",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2018-06-02",
-      "round": "Tallahassee Regional"
     },
     {
       "winner": "Auburn Tigers",
@@ -772,14 +756,6 @@
       "round": "Fullerton Super Regional"
     },
     {
-      "winner": "Oregon State Beavers",
-      "loser": "Minnesota Golden Gophers",
-      "winner_score": 8,
-      "loser_score": 1,
-      "date": "2018-06-08",
-      "round": "Corvallis Super Regional"
-    },
-    {
       "winner": "Mississippi State Bulldogs",
       "loser": "Vanderbilt Commodores",
       "winner_score": 10,
@@ -802,14 +778,6 @@
       "loser_score": 2,
       "date": "2018-06-09",
       "round": "Gainesville Super Regional"
-    },
-    {
-      "winner": "Texas Tech Red Raiders",
-      "loser": "Duke Blue Devils",
-      "winner_score": 6,
-      "loser_score": 4,
-      "date": "2018-06-09",
-      "round": "Lubbock Super Regional"
     },
     {
       "winner": "Tennessee Tech Golden Eagles",
@@ -953,14 +921,6 @@
       "winner_score": 11,
       "loser_score": 5,
       "date": "2018-06-17",
-      "round": "COLLEGE WORLD SERIES - DOUBLE ELIMINATION ROUND"
-    },
-    {
-      "winner": "Texas Tech Red Raiders",
-      "loser": "Florida Gators",
-      "winner_score": 6,
-      "loser_score": 3,
-      "date": "2018-06-18",
       "round": "COLLEGE WORLD SERIES - DOUBLE ELIMINATION ROUND"
     },
     {
@@ -1225,16 +1185,6 @@
       "done": false,
       "loser": "",
       "round": "Chapel Hill Regional",
-      "date": "2018-06-01"
-    },
-    {
-      "t1": "Army Black Knights",
-      "t2": "NC State Wolfpack",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Raleigh Regional",
       "date": "2018-06-01"
     },
     {
@@ -1545,16 +1495,6 @@
       "done": false,
       "loser": "",
       "round": "Oxford Regional",
-      "date": "2018-06-02"
-    },
-    {
-      "t1": "Oklahoma Sooners",
-      "t2": "Samford Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Tallahassee Regional",
       "date": "2018-06-02"
     },
     {
@@ -1938,16 +1878,6 @@
       "date": "2018-06-08"
     },
     {
-      "t1": "Oregon State Beavers",
-      "t2": "Minnesota Golden Gophers",
-      "w1": 2,
-      "w2": 0,
-      "done": true,
-      "loser": "Minnesota Golden Gophers",
-      "round": "Corvallis Super Regional",
-      "date": "2018-06-08"
-    },
-    {
       "t1": "Mississippi State Bulldogs",
       "t2": "Vanderbilt Commodores",
       "w1": 2,
@@ -1965,16 +1895,6 @@
       "done": true,
       "loser": "Auburn Tigers",
       "round": "Gainesville Super Regional",
-      "date": "2018-06-09"
-    },
-    {
-      "t1": "Texas Tech Red Raiders",
-      "t2": "Duke Blue Devils",
-      "w1": 2,
-      "w2": 1,
-      "done": true,
-      "loser": "Duke Blue Devils",
-      "round": "Lubbock Super Regional",
       "date": "2018-06-09"
     },
     {
@@ -1996,6 +1916,26 @@
       "loser": "South Carolina Gamecocks",
       "round": "Fayetteville Super Regional",
       "date": "2018-06-09"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Minnesota Golden Gophers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Corvallis Super Regional",
+      "date": "2018-06-10"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Super Regional",
+      "date": "2018-06-10"
     },
     {
       "t1": "North Carolina Tar Heels",
@@ -2026,16 +1966,6 @@
       "loser": "",
       "round": "COLLEGE WORLD SERIES - DOUBLE ELIMINATION ROUND",
       "date": "2018-06-17"
-    },
-    {
-      "t1": "Texas Tech Red Raiders",
-      "t2": "Florida Gators",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "COLLEGE WORLD SERIES - DOUBLE ELIMINATION ROUND",
-      "date": "2018-06-18"
     },
     {
       "t1": "Oregon State Beavers",
@@ -2135,12 +2065,10 @@
     "Stanford Cardinal",
     "Stetson Hatters",
     "Cal State Fullerton Titans",
-    "Minnesota Golden Gophers",
     "Vanderbilt Commodores",
     "Auburn Tigers",
-    "Duke Blue Devils",
     "Tennessee Tech Golden Eagles",
     "South Carolina Gamecocks"
   ],
-  "updated": "2026-06-27 10:27 UTC"
+  "updated": "2026-06-27 20:45 UTC"
 }

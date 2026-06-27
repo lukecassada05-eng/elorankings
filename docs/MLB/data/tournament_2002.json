@@ -76,14 +76,6 @@
       "round": ""
     },
     {
-      "winner": "Anaheim              Angels",
-      "loser": "New York             Yankees",
-      "winner_score": 9,
-      "loser_score": 6,
-      "date": "2002-10-05",
-      "round": ""
-    },
-    {
       "winner": "Minnesota            Twins",
       "loser": "Oakland              Athletics",
       "winner_score": 11,
@@ -92,18 +84,18 @@
       "round": ""
     },
     {
-      "winner": "Atlanta              Braves",
-      "loser": "San Francisco        Giants",
-      "winner_score": 10,
-      "loser_score": 2,
+      "winner": "Anaheim              Angels",
+      "loser": "New York             Yankees",
+      "winner_score": 9,
+      "loser_score": 5,
       "date": "2002-10-05",
       "round": ""
     },
     {
-      "winner": "St. Louis            Cardinals",
-      "loser": "Arizona              Diamondbacks",
-      "winner_score": 6,
-      "loser_score": 3,
+      "winner": "Atlanta              Braves",
+      "loser": "San Francisco        Giants",
+      "winner_score": 10,
+      "loser_score": 2,
       "date": "2002-10-05",
       "round": ""
     },
@@ -284,10 +276,10 @@
     {
       "t1": "St. Louis            Cardinals",
       "t2": "Arizona              Diamondbacks",
-      "w1": 3,
+      "w1": 2,
       "w2": 0,
-      "done": true,
-      "loser": "Arizona              Diamondbacks",
+      "done": false,
+      "loser": "",
       "round": "",
       "date": "2002-10-02"
     },
@@ -354,10 +346,9 @@
   ],
   "eliminated": [
     "Oakland              Athletics",
-    "Arizona              Diamondbacks",
     "Atlanta              Braves",
     "St. Louis            Cardinals",
     "San Francisco        Giants"
   ],
-  "updated": "2026-06-27 10:24 UTC"
+  "updated": "2026-06-27 20:39 UTC"
 }
