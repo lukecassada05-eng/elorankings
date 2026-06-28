@@ -2,8 +2,589 @@
   "year": 2006,
   "sport": "MLB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-06-28 10:21 UTC"
+  "games": [
+    {
+      "winner": "Cleveland Indians",
+      "loser": "Tampa Bay Devil Rays",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Kansas City Royals",
+      "loser": "Detroit Tigers",
+      "winner_score": 10,
+      "loser_score": 8,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Toronto Blue Jays",
+      "loser": "New York Yankees",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Atlanta Braves",
+      "loser": "Houston Astros",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "Washington Nationals",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "Philadelphia Phillies",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Pittsburgh Pirates",
+      "loser": "Cincinnati Reds",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "Baltimore Orioles",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota Twins",
+      "loser": "Chicago White Sox",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Milwaukee Brewers",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Colorado Rockies",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Oakland Athletics",
+      "loser": "Los Angeles Angels",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Seattle Mariners",
+      "loser": "Texas Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Dodgers",
+      "loser": "San Francisco Giants",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "San Diego Padres",
+      "loser": "Arizona Diamondbacks",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2006-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Oakland Athletics",
+      "loser": "Minnesota Twins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2006-10-03",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "San Diego Padres",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2006-10-03",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Detroit Tigers",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2006-10-04",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Oakland Athletics",
+      "loser": "Minnesota Twins",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2006-10-04",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2006-10-04",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "New York Yankees",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2006-10-05",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "San Diego Padres",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2006-10-05",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2006-10-06",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Oakland Athletics",
+      "loser": "Minnesota Twins",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2006-10-06",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "New York Yankees",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2006-10-07",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "San Diego Padres",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2006-10-07",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2006-10-08",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "San Diego Padres",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2006-10-09",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "Oakland Athletics",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2006-10-11",
+      "round": "ALCS"
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "Oakland Athletics",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2006-10-12",
+      "round": "ALCS"
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2006-10-13",
+      "round": "NLCS"
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "Oakland Athletics",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2006-10-13",
+      "round": "ALCS"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "New York Mets",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2006-10-14",
+      "round": "NLCS"
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "Oakland Athletics",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2006-10-14",
+      "round": "ALCS"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "New York Mets",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2006-10-15",
+      "round": "NLCS"
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 12,
+      "loser_score": 5,
+      "date": "2006-10-16",
+      "round": "NLCS"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "New York Mets",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2006-10-18",
+      "round": "NLCS"
+    },
+    {
+      "winner": "New York Mets",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2006-10-19",
+      "round": "NLCS"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "New York Mets",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2006-10-20",
+      "round": "NLCS"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "Detroit Tigers",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2006-10-22",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "Detroit Tigers",
+      "loser": "St. Louis Cardinals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2006-10-23",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "Detroit Tigers",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2006-10-25",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "Detroit Tigers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2006-10-27",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "St. Louis Cardinals",
+      "loser": "Detroit Tigers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2006-10-28",
+      "round": "WORLD SERIES"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Cleveland Indians",
+      "t2": "Tampa Bay Devil Rays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Kansas City Royals",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Toronto Blue Jays",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Atlanta Braves",
+      "t2": "Houston Astros",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "New York Mets",
+      "t2": "Washington Nationals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Florida Marlins",
+      "t2": "Philadelphia Phillies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Pittsburgh Pirates",
+      "t2": "Cincinnati Reds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "Baltimore Orioles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Minnesota Twins",
+      "t2": "Chicago White Sox",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Milwaukee Brewers",
+      "t2": "St. Louis Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Chicago Cubs",
+      "t2": "Colorado Rockies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Oakland Athletics",
+      "t2": "Los Angeles Angels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Seattle Mariners",
+      "t2": "Texas Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Los Angeles Dodgers",
+      "t2": "San Francisco Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "San Diego Padres",
+      "t2": "Arizona Diamondbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-10-01"
+    },
+    {
+      "t1": "Oakland Athletics",
+      "t2": "Minnesota Twins",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Minnesota Twins",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-10-03"
+    },
+    {
+      "t1": "St. Louis Cardinals",
+      "t2": "San Diego Padres",
+      "w1": 3,
+      "w2": 1,
+      "done": true,
+      "loser": "San Diego Padres",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-10-03"
+    },
+    {
+      "t1": "New York Yankees",
+      "t2": "Detroit Tigers",
+      "w1": 1,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-10-04"
+    },
+    {
+      "t1": "New York Mets",
+      "t2": "Los Angeles Dodgers",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Los Angeles Dodgers",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2006-10-04"
+    },
+    {
+      "t1": "Detroit Tigers",
+      "t2": "Oakland Athletics",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Oakland Athletics",
+      "round": "ALCS",
+      "date": "2006-10-11"
+    },
+    {
+      "t1": "New York Mets",
+      "t2": "St. Louis Cardinals",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "New York Mets",
+      "round": "NLCS",
+      "date": "2006-10-13"
+    },
+    {
+      "t1": "St. Louis Cardinals",
+      "t2": "Detroit Tigers",
+      "w1": 4,
+      "w2": 1,
+      "done": true,
+      "loser": "Detroit Tigers",
+      "round": "WORLD SERIES",
+      "date": "2006-10-22"
+    }
+  ],
+  "eliminated": [
+    "Minnesota Twins",
+    "San Diego Padres",
+    "Los Angeles Dodgers",
+    "Oakland Athletics",
+    "New York Mets",
+    "Detroit Tigers"
+  ],
+  "updated": "2026-06-28 20:32 UTC"
 }

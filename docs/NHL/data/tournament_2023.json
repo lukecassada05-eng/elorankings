@@ -724,6 +724,14 @@
       "round": "East 2nd Round"
     },
     {
+      "winner": "Seattle Kraken",
+      "loser": "Dallas Stars",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2023-05-08",
+      "round": "West 2nd Round"
+    },
+    {
       "winner": "Vegas Golden Knights",
       "loser": "Edmonton Oilers",
       "winner_score": 5,
@@ -1314,7 +1322,7 @@
     {
       "t1": "Seattle Kraken",
       "t2": "Dallas Stars",
-      "w1": 2,
+      "w1": 3,
       "w2": 4,
       "done": true,
       "loser": "Seattle Kraken",
@@ -1389,5 +1397,5 @@
     "Dallas Stars",
     "Florida Panthers"
   ],
-  "updated": "2026-06-28 10:21 UTC"
+  "updated": "2026-06-28 20:32 UTC"
 }

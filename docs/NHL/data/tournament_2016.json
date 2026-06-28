@@ -132,6 +132,14 @@
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3"
     },
     {
+      "winner": "Detroit Red Wings",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2016-04-17",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3"
+    },
+    {
       "winner": "New York Islanders",
       "loser": "Florida Panthers",
       "winner_score": 4,
@@ -596,6 +604,14 @@
       "round": "EASTERN CONFERENCE FINALS - GAME 2"
     },
     {
+      "winner": "San Jose Sharks",
+      "loser": "St. Louis Blues",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2016-05-18",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2"
+    },
+    {
       "winner": "Pittsburgh Penguins",
       "loser": "Tampa Bay Lightning",
       "winner_score": 4,
@@ -875,6 +891,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2016-04-17"
+    },
+    {
+      "t1": "Detroit Red Wings",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
       "date": "2016-04-17"
     },
     {
@@ -1458,6 +1484,16 @@
       "date": "2016-05-17"
     },
     {
+      "t1": "San Jose Sharks",
+      "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 2",
+      "date": "2016-05-18"
+    },
+    {
       "t1": "Pittsburgh Penguins",
       "t2": "Tampa Bay Lightning",
       "w1": 1,
@@ -1609,5 +1645,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-28 10:20 UTC"
+  "updated": "2026-06-28 20:31 UTC"
 }

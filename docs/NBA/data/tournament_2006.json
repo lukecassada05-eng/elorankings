@@ -156,6 +156,14 @@
       "round": ""
     },
     {
+      "winner": "New Jersey Nets",
+      "loser": "Boston Celtics",
+      "winner_score": 79,
+      "loser_score": 74,
+      "date": "2006-04-14",
+      "round": ""
+    },
+    {
       "winner": "Golden State Warriors",
       "loser": "Phoenix Suns",
       "winner_score": 110,
@@ -1452,6 +1460,16 @@
       "date": "2006-04-14"
     },
     {
+      "t1": "New Jersey Nets",
+      "t2": "Boston Celtics",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2006-04-14"
+    },
+    {
       "t1": "Golden State Warriors",
       "t2": "Phoenix Suns",
       "w1": 1,
@@ -1640,16 +1658,6 @@
       "loser": "",
       "round": "",
       "date": "2006-04-16"
-    },
-    {
-      "t1": "New Jersey Nets",
-      "t2": "Boston Celtics",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2006-04-17"
     },
     {
       "t1": "Houston Rockets",
@@ -2069,5 +2077,5 @@
     "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-06-28 10:18 UTC"
+  "updated": "2026-06-28 20:30 UTC"
 }
