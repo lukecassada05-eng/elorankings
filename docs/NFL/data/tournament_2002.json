@@ -4,6 +4,62 @@
   "completed": true,
   "games": [
     {
+      "winner": "Tennessee Titans",
+      "loser": "Pittsburgh Steelers",
+      "winner_score": 34,
+      "loser_score": 31,
+      "date": "2003-01-11",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Eagles",
+      "loser": "Atlanta Falcons",
+      "winner_score": 20,
+      "loser_score": 6,
+      "date": "2003-01-12",
+      "round": ""
+    },
+    {
+      "winner": "Tampa Bay Buccaneers",
+      "loser": "San Francisco 49ers",
+      "winner_score": 31,
+      "loser_score": 6,
+      "date": "2003-01-12",
+      "round": ""
+    },
+    {
+      "winner": "Oakland Raiders",
+      "loser": "New York Jets",
+      "winner_score": 30,
+      "loser_score": 10,
+      "date": "2003-01-12",
+      "round": ""
+    },
+    {
+      "winner": "Tampa Bay Buccaneers",
+      "loser": "Philadelphia Eagles",
+      "winner_score": 27,
+      "loser_score": 10,
+      "date": "2003-01-19",
+      "round": ""
+    },
+    {
+      "winner": "Oakland Raiders",
+      "loser": "Tennessee Titans",
+      "winner_score": 41,
+      "loser_score": 24,
+      "date": "2003-01-19",
+      "round": ""
+    },
+    {
+      "winner": "Tampa Bay Buccaneers",
+      "loser": "Oakland Raiders",
+      "winner_score": 48,
+      "loser_score": 21,
+      "date": "2003-01-26",
+      "round": "Super Bowl XXXVII"
+    },
+    {
       "winner": "Afc",
       "loser": "Nfc",
       "winner_score": 45,
@@ -13,6 +69,76 @@
     }
   ],
   "series": [
+    {
+      "t1": "Tennessee Titans",
+      "t2": "Pittsburgh Steelers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Steelers",
+      "round": "",
+      "date": "2003-01-11"
+    },
+    {
+      "t1": "Philadelphia Eagles",
+      "t2": "Atlanta Falcons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Atlanta Falcons",
+      "round": "",
+      "date": "2003-01-12"
+    },
+    {
+      "t1": "Tampa Bay Buccaneers",
+      "t2": "San Francisco 49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Francisco 49ers",
+      "round": "",
+      "date": "2003-01-12"
+    },
+    {
+      "t1": "Oakland Raiders",
+      "t2": "New York Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New York Jets",
+      "round": "",
+      "date": "2003-01-12"
+    },
+    {
+      "t1": "Tampa Bay Buccaneers",
+      "t2": "Philadelphia Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Philadelphia Eagles",
+      "round": "",
+      "date": "2003-01-19"
+    },
+    {
+      "t1": "Oakland Raiders",
+      "t2": "Tennessee Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Titans",
+      "round": "",
+      "date": "2003-01-19"
+    },
+    {
+      "t1": "Tampa Bay Buccaneers",
+      "t2": "Oakland Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oakland Raiders",
+      "round": "Super Bowl XXXVII",
+      "date": "2003-01-26"
+    },
     {
       "t1": "Afc",
       "t2": "Nfc",
@@ -25,7 +151,14 @@
     }
   ],
   "eliminated": [
+    "Pittsburgh Steelers",
+    "Atlanta Falcons",
+    "San Francisco 49ers",
+    "New York Jets",
+    "Philadelphia Eagles",
+    "Tennessee Titans",
+    "Oakland Raiders",
     "Nfc"
   ],
-  "updated": "2026-06-27 20:42 UTC"
+  "updated": "2026-06-28 10:24 UTC"
 }

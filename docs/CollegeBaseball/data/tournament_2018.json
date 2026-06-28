@@ -156,6 +156,14 @@
       "round": "Chapel Hill Regional"
     },
     {
+      "winner": "Army Black Knights",
+      "loser": "NC State Wolfpack",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2018-06-01",
+      "round": "Raleigh Regional"
+    },
+    {
       "winner": "East Carolina Pirates",
       "loser": "UNC Wilmington Seahawks",
       "winner_score": 16,
@@ -1188,6 +1196,16 @@
       "date": "2018-06-01"
     },
     {
+      "t1": "Army Black Knights",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Raleigh Regional",
+      "date": "2018-06-01"
+    },
+    {
       "t1": "East Carolina Pirates",
       "t2": "UNC Wilmington Seahawks",
       "w1": 1,
@@ -2070,5 +2088,5 @@
     "Tennessee Tech Golden Eagles",
     "South Carolina Gamecocks"
   ],
-  "updated": "2026-06-27 20:45 UTC"
+  "updated": "2026-06-28 10:27 UTC"
 }

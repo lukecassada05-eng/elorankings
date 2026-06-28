@@ -180,6 +180,14 @@
       "round": "NCAA Baseball Championship - Los Angeles Super Regional"
     },
     {
+      "winner": "Murray State Racers",
+      "loser": "Duke Blue Devils",
+      "winner_score": 19,
+      "loser_score": 9,
+      "date": "2025-06-08",
+      "round": "NCAA Baseball Championship - Durham Super Regional"
+    },
+    {
       "winner": "Louisville Cardinals",
       "loser": "Miami Hurricanes",
       "winner_score": 3,
@@ -443,9 +451,9 @@
       "t1": "Duke Blue Devils",
       "t2": "Murray State Racers",
       "w1": 1,
-      "w2": 1,
-      "done": false,
-      "loser": "",
+      "w2": 2,
+      "done": true,
+      "loser": "Duke Blue Devils",
       "round": "NCAA Baseball Championship - Durham Super Regional",
       "date": "2025-06-07"
     },
@@ -587,7 +595,8 @@
     "Tennessee Volunteers",
     "West Virginia Mountaineers",
     "UTSA Roadrunners",
+    "Duke Blue Devils",
     "Coastal Carolina Chanticleers"
   ],
-  "updated": "2026-06-27 20:46 UTC"
+  "updated": "2026-06-28 10:27 UTC"
 }

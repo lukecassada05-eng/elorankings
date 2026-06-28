@@ -858,182 +858,6 @@
       "loser_score": 1,
       "date": "2020-09-02",
       "round": "WEST 2nd ROUND"
-    },
-    {
-      "winner": "Philadelphia Flyers",
-      "loser": "New York Islanders",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2020-09-03",
-      "round": "EAST 2nd ROUND"
-    },
-    {
-      "winner": "Vancouver Canucks",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2020-09-04",
-      "round": "WEST 2nd ROUND"
-    },
-    {
-      "winner": "Dallas Stars",
-      "loser": "Colorado Avalanche",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2020-09-04",
-      "round": "WEST 2nd ROUND"
-    },
-    {
-      "winner": "Vegas Golden Knights",
-      "loser": "Vancouver Canucks",
-      "winner_score": 3,
-      "loser_score": 0,
-      "date": "2020-09-05",
-      "round": "WEST 2nd ROUND"
-    },
-    {
-      "winner": "New York Islanders",
-      "loser": "Philadelphia Flyers",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2020-09-05",
-      "round": "EAST 2nd ROUND"
-    },
-    {
-      "winner": "Dallas Stars",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 1,
-      "loser_score": 0,
-      "date": "2020-09-07",
-      "round": "WEST FINALS"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Islanders",
-      "winner_score": 8,
-      "loser_score": 2,
-      "date": "2020-09-08",
-      "round": "EAST FINALS"
-    },
-    {
-      "winner": "Vegas Golden Knights",
-      "loser": "Dallas Stars",
-      "winner_score": 3,
-      "loser_score": 0,
-      "date": "2020-09-09",
-      "round": "WEST FINALS"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Islanders",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2020-09-10",
-      "round": "EAST FINALS"
-    },
-    {
-      "winner": "Dallas Stars",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2020-09-11",
-      "round": "WEST FINALS"
-    },
-    {
-      "winner": "New York Islanders",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 5,
-      "loser_score": 3,
-      "date": "2020-09-12",
-      "round": "EAST FINALS"
-    },
-    {
-      "winner": "Dallas Stars",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2020-09-13",
-      "round": "WEST FINALS"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Islanders",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2020-09-13",
-      "round": "EAST FINALS"
-    },
-    {
-      "winner": "Dallas Stars",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2020-09-15",
-      "round": "WEST FINALS"
-    },
-    {
-      "winner": "New York Islanders",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2020-09-16",
-      "round": "EAST FINALS"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Islanders",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2020-09-18",
-      "round": "EAST FINALS"
-    },
-    {
-      "winner": "Dallas Stars",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 4,
-      "loser_score": 1,
-      "date": "2020-09-19",
-      "round": "STANLEY CUP FINAL"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Dallas Stars",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2020-09-22",
-      "round": "STANLEY CUP FINAL"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Dallas Stars",
-      "winner_score": 5,
-      "loser_score": 2,
-      "date": "2020-09-24",
-      "round": "STANLEY CUP FINAL"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Dallas Stars",
-      "winner_score": 5,
-      "loser_score": 4,
-      "date": "2020-09-26",
-      "round": "STANLEY CUP FINAL"
-    },
-    {
-      "winner": "Dallas Stars",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2020-09-27",
-      "round": "STANLEY CUP FINAL"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "Dallas Stars",
-      "winner_score": 2,
-      "loser_score": 0,
-      "date": "2020-09-29",
-      "round": "STANLEY CUP FINAL"
     }
   ],
   "series": [
@@ -2020,8 +1844,8 @@
     {
       "t1": "New York Islanders",
       "t2": "Philadelphia Flyers",
-      "w1": 3,
-      "w2": 2,
+      "w1": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "EAST 2nd ROUND",
@@ -2030,8 +1854,8 @@
     {
       "t1": "Vegas Golden Knights",
       "t2": "Vancouver Canucks",
-      "w1": 3,
-      "w2": 2,
+      "w1": 2,
+      "w2": 1,
       "done": false,
       "loser": "",
       "round": "WEST 2nd ROUND",
@@ -2040,48 +1864,14 @@
     {
       "t1": "Dallas Stars",
       "t2": "Colorado Avalanche",
-      "w1": 2,
+      "w1": 1,
       "w2": 1,
       "done": false,
       "loser": "",
       "round": "WEST 2nd ROUND",
       "date": "2020-08-30"
-    },
-    {
-      "t1": "Dallas Stars",
-      "t2": "Vegas Golden Knights",
-      "w1": 4,
-      "w2": 1,
-      "done": true,
-      "loser": "Vegas Golden Knights",
-      "round": "WEST FINALS",
-      "date": "2020-09-07"
-    },
-    {
-      "t1": "Tampa Bay Lightning",
-      "t2": "New York Islanders",
-      "w1": 4,
-      "w2": 2,
-      "done": true,
-      "loser": "New York Islanders",
-      "round": "EAST FINALS",
-      "date": "2020-09-08"
-    },
-    {
-      "t1": "Dallas Stars",
-      "t2": "Tampa Bay Lightning",
-      "w1": 2,
-      "w2": 4,
-      "done": true,
-      "loser": "Dallas Stars",
-      "round": "STANLEY CUP FINAL",
-      "date": "2020-09-19"
     }
   ],
-  "eliminated": [
-    "Vegas Golden Knights",
-    "New York Islanders",
-    "Dallas Stars"
-  ],
-  "updated": "2026-06-27 20:39 UTC"
+  "eliminated": [],
+  "updated": "2026-06-28 10:20 UTC"
 }

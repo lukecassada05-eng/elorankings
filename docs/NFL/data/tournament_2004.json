@@ -12,6 +12,14 @@
       "round": "AFC DIVISIONAL PLAYOFFS"
     },
     {
+      "winner": "Atlanta Falcons",
+      "loser": "St. Louis Rams",
+      "winner_score": 47,
+      "loser_score": 17,
+      "date": "2005-01-16",
+      "round": "NFC DIVISIONAL PLAYOFFS"
+    },
+    {
       "winner": "Philadelphia Eagles",
       "loser": "Minnesota Vikings",
       "winner_score": 27,
@@ -42,14 +50,6 @@
       "loser_score": 27,
       "date": "2005-01-23",
       "round": "AFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Philadelphia Eagles",
-      "winner_score": 24,
-      "loser_score": 21,
-      "date": "2005-02-06",
-      "round": "Super Bowl XXXIX"
     }
   ],
   "series": [
@@ -62,6 +62,16 @@
       "loser": "New York Jets",
       "round": "AFC DIVISIONAL PLAYOFFS",
       "date": "2005-01-15"
+    },
+    {
+      "t1": "Atlanta Falcons",
+      "t2": "St. Louis Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. Louis Rams",
+      "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2005-01-16"
     },
     {
       "t1": "Philadelphia Eagles",
@@ -102,25 +112,15 @@
       "loser": "Pittsburgh Steelers",
       "round": "AFC CHAMPIONSHIP",
       "date": "2005-01-23"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Philadelphia Eagles",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Philadelphia Eagles",
-      "round": "Super Bowl XXXIX",
-      "date": "2005-02-06"
     }
   ],
   "eliminated": [
     "New York Jets",
+    "St. Louis Rams",
     "Minnesota Vikings",
     "Indianapolis Colts",
     "Atlanta Falcons",
-    "Pittsburgh Steelers",
-    "Philadelphia Eagles"
+    "Pittsburgh Steelers"
   ],
-  "updated": "2026-06-27 20:42 UTC"
+  "updated": "2026-06-28 10:24 UTC"
 }

@@ -12,6 +12,14 @@
       "round": "NFC DIVISIONAL PLAYOFF"
     },
     {
+      "winner": "New England Patriots",
+      "loser": "Denver Broncos",
+      "winner_score": 45,
+      "loser_score": 10,
+      "date": "2012-01-15",
+      "round": "AFC DIVISIONAL PLAYOFF"
+    },
+    {
       "winner": "Baltimore Ravens",
       "loser": "Houston Texans",
       "winner_score": 20,
@@ -62,6 +70,16 @@
       "loser": "New Orleans Saints",
       "round": "NFC DIVISIONAL PLAYOFF",
       "date": "2012-01-14"
+    },
+    {
+      "t1": "New England Patriots",
+      "t2": "Denver Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Denver Broncos",
+      "round": "AFC DIVISIONAL PLAYOFF",
+      "date": "2012-01-15"
     },
     {
       "t1": "Baltimore Ravens",
@@ -116,11 +134,12 @@
   ],
   "eliminated": [
     "New Orleans Saints",
+    "Denver Broncos",
     "Houston Texans",
     "Green Bay Packers",
     "Baltimore Ravens",
     "San Francisco 49ers",
     "New England Patriots"
   ],
-  "updated": "2026-06-27 20:42 UTC"
+  "updated": "2026-06-28 10:24 UTC"
 }

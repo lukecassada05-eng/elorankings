@@ -50,6 +50,14 @@
       "loser_score": 15,
       "date": "2016-01-24",
       "round": "NFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Denver Broncos",
+      "loser": "Carolina Panthers",
+      "winner_score": 24,
+      "loser_score": 10,
+      "date": "2016-02-07",
+      "round": "Super Bowl 50"
     }
   ],
   "series": [
@@ -112,6 +120,16 @@
       "loser": "Arizona Cardinals",
       "round": "NFC CHAMPIONSHIP",
       "date": "2016-01-24"
+    },
+    {
+      "t1": "Denver Broncos",
+      "t2": "Carolina Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Carolina Panthers",
+      "round": "Super Bowl 50",
+      "date": "2016-02-07"
     }
   ],
   "eliminated": [
@@ -120,7 +138,8 @@
     "Seattle Seahawks",
     "Pittsburgh Steelers",
     "New England Patriots",
-    "Arizona Cardinals"
+    "Arizona Cardinals",
+    "Carolina Panthers"
   ],
-  "updated": "2026-06-27 20:42 UTC"
+  "updated": "2026-06-28 10:24 UTC"
 }

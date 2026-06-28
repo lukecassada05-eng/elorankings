@@ -2,8 +2,36 @@
   "year": 2009,
   "sport": "MLB",
   "completed": true,
-  "games": [],
-  "series": [],
+  "games": [
+    {
+      "winner": "Philadelphia Phillies",
+      "loser": "New York Yankees",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2009-11-03",
+      "round": "WORLD SERIES"
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Philadelphia Phillies",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2009-11-05",
+      "round": "WORLD SERIES"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Philadelphia Phillies",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "WORLD SERIES",
+      "date": "2009-11-03"
+    }
+  ],
   "eliminated": [],
-  "updated": "2026-06-27 20:40 UTC"
+  "updated": "2026-06-28 10:22 UTC"
 }
