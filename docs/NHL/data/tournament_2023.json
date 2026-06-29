@@ -124,14 +124,6 @@
       "round": ""
     },
     {
-      "winner": "Carolina Hurricanes",
-      "loser": "Florida Panthers",
-      "winner_score": 6,
-      "loser_score": 4,
-      "date": "2023-04-13",
-      "round": ""
-    },
-    {
       "winner": "Boston Bruins",
       "loser": "Montreal Canadiens",
       "winner_score": 5,
@@ -200,14 +192,6 @@
       "loser": "San Jose Sharks",
       "winner_score": 5,
       "loser_score": 2,
-      "date": "2023-04-14",
-      "round": ""
-    },
-    {
-      "winner": "Los Angeles Kings",
-      "loser": "Anaheim Ducks",
-      "winner_score": 5,
-      "loser_score": 3,
       "date": "2023-04-14",
       "round": ""
     },
@@ -372,14 +356,6 @@
       "round": "West 1st Round"
     },
     {
-      "winner": "New York Islanders",
-      "loser": "Carolina Hurricanes",
-      "winner_score": 5,
-      "loser_score": 1,
-      "date": "2023-04-21",
-      "round": "East 1st Round"
-    },
-    {
       "winner": "Boston Bruins",
       "loser": "Florida Panthers",
       "winner_score": 4,
@@ -439,14 +415,6 @@
       "winner": "Carolina Hurricanes",
       "loser": "New York Islanders",
       "winner_score": 5,
-      "loser_score": 2,
-      "date": "2023-04-23",
-      "round": "East 1st Round"
-    },
-    {
-      "winner": "Boston Bruins",
-      "loser": "Florida Panthers",
-      "winner_score": 6,
       "loser_score": 2,
       "date": "2023-04-23",
       "round": "East 1st Round"
@@ -906,46 +874,6 @@
       "loser_score": 0,
       "date": "2023-05-30",
       "round": "West Final"
-    },
-    {
-      "winner": "Vegas Golden Knights",
-      "loser": "Florida Panthers",
-      "winner_score": 5,
-      "loser_score": 2,
-      "date": "2023-06-04",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Vegas Golden Knights",
-      "loser": "Florida Panthers",
-      "winner_score": 7,
-      "loser_score": 2,
-      "date": "2023-06-06",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Florida Panthers",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2023-06-09",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Vegas Golden Knights",
-      "loser": "Florida Panthers",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2023-06-11",
-      "round": "Stanley Cup Final"
-    },
-    {
-      "winner": "Vegas Golden Knights",
-      "loser": "Florida Panthers",
-      "winner_score": 9,
-      "loser_score": 3,
-      "date": "2023-06-14",
-      "round": "Stanley Cup Final"
     }
   ],
   "series": [
@@ -1100,16 +1028,6 @@
       "date": "2023-04-13"
     },
     {
-      "t1": "Carolina Hurricanes",
-      "t2": "Florida Panthers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2023-04-13"
-    },
-    {
       "t1": "Boston Bruins",
       "t2": "Montreal Canadiens",
       "w1": 1,
@@ -1190,16 +1108,6 @@
       "date": "2023-04-14"
     },
     {
-      "t1": "Los Angeles Kings",
-      "t2": "Anaheim Ducks",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2023-04-14"
-    },
-    {
       "t1": "Vancouver Canucks",
       "t2": "Arizona Coyotes",
       "w1": 1,
@@ -1233,7 +1141,7 @@
       "t1": "Carolina Hurricanes",
       "t2": "New York Islanders",
       "w1": 4,
-      "w2": 2,
+      "w2": 1,
       "done": true,
       "loser": "New York Islanders",
       "round": "East 1st Round",
@@ -1242,7 +1150,7 @@
     {
       "t1": "Boston Bruins",
       "t2": "Florida Panthers",
-      "w1": 3,
+      "w1": 2,
       "w2": 4,
       "done": true,
       "loser": "Boston Bruins",
@@ -1368,16 +1276,6 @@
       "loser": "Dallas Stars",
       "round": "West Final",
       "date": "2023-05-20"
-    },
-    {
-      "t1": "Vegas Golden Knights",
-      "t2": "Florida Panthers",
-      "w1": 4,
-      "w2": 1,
-      "done": true,
-      "loser": "Florida Panthers",
-      "round": "Stanley Cup Final",
-      "date": "2023-06-04"
     }
   ],
   "eliminated": [
@@ -1394,8 +1292,7 @@
     "New Jersey Devils",
     "Edmonton Oilers",
     "Carolina Hurricanes",
-    "Dallas Stars",
-    "Florida Panthers"
+    "Dallas Stars"
   ],
-  "updated": "2026-06-29 12:53 UTC"
+  "updated": "2026-06-29 21:16 UTC"
 }

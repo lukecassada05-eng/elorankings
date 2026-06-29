@@ -29,14 +29,6 @@
     },
     {
       "winner": "New England Patriots",
-      "loser": "Indianapolis Colts",
-      "winner_score": 45,
-      "loser_score": 7,
-      "date": "2015-01-18",
-      "round": "AFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "New England Patriots",
       "loser": "Seattle Seahawks",
       "winner_score": 28,
       "loser_score": 24,
@@ -77,16 +69,6 @@
     },
     {
       "t1": "New England Patriots",
-      "t2": "Indianapolis Colts",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Indianapolis Colts",
-      "round": "AFC CHAMPIONSHIP",
-      "date": "2015-01-18"
-    },
-    {
-      "t1": "New England Patriots",
       "t2": "Seattle Seahawks",
       "w1": 1,
       "w2": 0,
@@ -100,8 +82,7 @@
     "Dallas Cowboys",
     "Denver Broncos",
     "Green Bay Packers",
-    "Indianapolis Colts",
     "Seattle Seahawks"
   ],
-  "updated": "2026-06-29 12:54 UTC"
+  "updated": "2026-06-29 21:18 UTC"
 }

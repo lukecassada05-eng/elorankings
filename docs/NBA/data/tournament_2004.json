@@ -196,14 +196,6 @@
       "round": ""
     },
     {
-      "winner": "Seattle SuperSonics",
-      "loser": "LA Clippers",
-      "winner_score": 118,
-      "loser_score": 87,
-      "date": "2004-04-14",
-      "round": ""
-    },
-    {
       "winner": "Miami Heat",
       "loser": "New Jersey Nets",
       "winner_score": 96,
@@ -225,14 +217,6 @@
       "winner_score": 93,
       "loser_score": 67,
       "date": "2004-04-14",
-      "round": ""
-    },
-    {
-      "winner": "Dallas Mavericks",
-      "loser": "Houston Rockets",
-      "winner_score": 92,
-      "loser_score": 89,
-      "date": "2004-04-15",
       "round": ""
     },
     {
@@ -1134,16 +1118,6 @@
       "date": "2004-04-14"
     },
     {
-      "t1": "Seattle SuperSonics",
-      "t2": "LA Clippers",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2004-04-14"
-    },
-    {
       "t1": "Miami Heat",
       "t2": "New Jersey Nets",
       "w1": 1,
@@ -1172,16 +1146,6 @@
       "loser": "",
       "round": "",
       "date": "2004-04-14"
-    },
-    {
-      "t1": "Dallas Mavericks",
-      "t2": "Houston Rockets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2004-04-15"
     },
     {
       "t1": "Indiana Pacers",
@@ -1351,5 +1315,5 @@
     "Indiana Pacers",
     "Los Angeles Lakers"
   ],
-  "updated": "2026-06-29 12:51 UTC"
+  "updated": "2026-06-29 21:12 UTC"
 }

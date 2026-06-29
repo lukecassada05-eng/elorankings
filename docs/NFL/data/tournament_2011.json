@@ -4,14 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "San Francisco 49ers",
-      "loser": "New Orleans Saints",
-      "winner_score": 36,
-      "loser_score": 32,
-      "date": "2012-01-14",
-      "round": "NFC DIVISIONAL PLAYOFF"
-    },
-    {
       "winner": "New England Patriots",
       "loser": "Denver Broncos",
       "winner_score": 45,
@@ -61,16 +53,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "San Francisco 49ers",
-      "t2": "New Orleans Saints",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New Orleans Saints",
-      "round": "NFC DIVISIONAL PLAYOFF",
-      "date": "2012-01-14"
-    },
     {
       "t1": "New England Patriots",
       "t2": "Denver Broncos",
@@ -133,7 +115,6 @@
     }
   ],
   "eliminated": [
-    "New Orleans Saints",
     "Denver Broncos",
     "Houston Texans",
     "Green Bay Packers",
@@ -141,5 +122,5 @@
     "San Francisco 49ers",
     "New England Patriots"
   ],
-  "updated": "2026-06-29 12:54 UTC"
+  "updated": "2026-06-29 21:18 UTC"
 }

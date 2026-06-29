@@ -1010,46 +1010,6 @@
       "loser_score": 107,
       "date": "2014-06-01",
       "round": "WESTERN CONFERENCE FINALS - GAME 6"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Miami Heat",
-      "winner_score": 110,
-      "loser_score": 95,
-      "date": "2014-06-06",
-      "round": "NBA FINALS - GAME 1"
-    },
-    {
-      "winner": "Miami Heat",
-      "loser": "San Antonio Spurs",
-      "winner_score": 98,
-      "loser_score": 96,
-      "date": "2014-06-09",
-      "round": "NBA FINALS - GAME 2"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Miami Heat",
-      "winner_score": 111,
-      "loser_score": 92,
-      "date": "2014-06-11",
-      "round": "NBA FINALS - GAME 3"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Miami Heat",
-      "winner_score": 107,
-      "loser_score": 86,
-      "date": "2014-06-13",
-      "round": "NBA FINALS - GAME 4"
-    },
-    {
-      "winner": "San Antonio Spurs",
-      "loser": "Miami Heat",
-      "winner_score": 104,
-      "loser_score": 87,
-      "date": "2014-06-16",
-      "round": "NBA FINALS - GAME 5"
     }
   ],
   "series": [
@@ -2302,58 +2262,8 @@
       "loser": "",
       "round": "WESTERN CONFERENCE FINALS - GAME 6",
       "date": "2014-06-01"
-    },
-    {
-      "t1": "San Antonio Spurs",
-      "t2": "Miami Heat",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NBA FINALS - GAME 1",
-      "date": "2014-06-06"
-    },
-    {
-      "t1": "Miami Heat",
-      "t2": "San Antonio Spurs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NBA FINALS - GAME 2",
-      "date": "2014-06-09"
-    },
-    {
-      "t1": "San Antonio Spurs",
-      "t2": "Miami Heat",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NBA FINALS - GAME 3",
-      "date": "2014-06-11"
-    },
-    {
-      "t1": "San Antonio Spurs",
-      "t2": "Miami Heat",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NBA FINALS - GAME 4",
-      "date": "2014-06-13"
-    },
-    {
-      "t1": "San Antonio Spurs",
-      "t2": "Miami Heat",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NBA FINALS - GAME 5",
-      "date": "2014-06-16"
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-29 12:52 UTC"
+  "updated": "2026-06-29 21:13 UTC"
 }

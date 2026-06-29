@@ -4,14 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "New England Patriots",
-      "loser": "Kansas City Chiefs",
-      "winner_score": 27,
-      "loser_score": 20,
-      "date": "2016-01-16",
-      "round": "AFC DIVISIONAL PLAYOFF"
-    },
-    {
       "winner": "Arizona Cardinals",
       "loser": "Green Bay Packers",
       "winner_score": 26,
@@ -61,16 +53,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "New England Patriots",
-      "t2": "Kansas City Chiefs",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Kansas City Chiefs",
-      "round": "AFC DIVISIONAL PLAYOFF",
-      "date": "2016-01-16"
-    },
     {
       "t1": "Arizona Cardinals",
       "t2": "Green Bay Packers",
@@ -133,7 +115,6 @@
     }
   ],
   "eliminated": [
-    "Kansas City Chiefs",
     "Green Bay Packers",
     "Seattle Seahawks",
     "Pittsburgh Steelers",
@@ -141,5 +122,5 @@
     "Arizona Cardinals",
     "Carolina Panthers"
   ],
-  "updated": "2026-06-29 12:54 UTC"
+  "updated": "2026-06-29 21:18 UTC"
 }
