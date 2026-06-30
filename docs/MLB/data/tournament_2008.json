@@ -212,6 +212,14 @@
       "round": "ALCS"
     },
     {
+      "winner": "Philadelphia Phillies",
+      "loser": "Tampa Bay Rays",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2008-10-23",
+      "round": "WORLD SERIES"
+    },
+    {
       "winner": "Tampa Bay Rays",
       "loser": "Philadelphia Phillies",
       "winner_score": 4,
@@ -366,14 +374,14 @@
       "date": "2008-10-17"
     },
     {
-      "t1": "Tampa Bay Rays",
-      "t2": "Philadelphia Phillies",
-      "w1": 1,
-      "w2": 3,
+      "t1": "Philadelphia Phillies",
+      "t2": "Tampa Bay Rays",
+      "w1": 4,
+      "w2": 1,
       "done": true,
       "loser": "Tampa Bay Rays",
       "round": "WORLD SERIES",
-      "date": "2008-10-24"
+      "date": "2008-10-23"
     }
   ],
   "eliminated": [
@@ -382,5 +390,5 @@
     "Boston Red Sox",
     "Tampa Bay Rays"
   ],
-  "updated": "2026-06-29 21:16 UTC"
+  "updated": "2026-06-30 11:31 UTC"
 }

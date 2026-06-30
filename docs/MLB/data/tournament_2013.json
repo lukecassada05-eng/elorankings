@@ -28,6 +28,14 @@
       "round": "NLDS - GAME 1"
     },
     {
+      "winner": "Los Angeles Dodgers",
+      "loser": "Atlanta Braves",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2013-10-04",
+      "round": "NLDS - GAME 1"
+    },
+    {
       "winner": "Pittsburgh Pirates",
       "loser": "St. Louis Cardinals",
       "winner_score": 7,
@@ -322,6 +330,16 @@
       "loser": "",
       "round": "NLDS - GAME 1",
       "date": "2013-10-03"
+    },
+    {
+      "t1": "Los Angeles Dodgers",
+      "t2": "Atlanta Braves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLDS - GAME 1",
+      "date": "2013-10-04"
     },
     {
       "t1": "Pittsburgh Pirates",
@@ -655,5 +673,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-06-29 21:17 UTC"
+  "updated": "2026-06-30 11:31 UTC"
 }
