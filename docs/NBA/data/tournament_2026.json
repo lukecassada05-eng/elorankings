@@ -1,7 +1,7 @@
 {
   "year": 2026,
   "sport": "NBA",
-  "completed": false,
+  "completed": true,
   "games": [
     {
       "winner": "Boston Celtics",
@@ -1231,5 +1231,5 @@
     "Cleveland Cavaliers",
     "San Antonio Spurs"
   ],
-  "updated": "2026-06-30 21:32 UTC"
+  "updated": "2026-07-01 11:07 UTC"
 }
