@@ -20,14 +20,6 @@
       "round": ""
     },
     {
-      "winner": "St. Louis            Cardinals",
-      "loser": "Arizona              Diamondbacks",
-      "winner_score": 12,
-      "loser_score": 2,
-      "date": "2002-10-02",
-      "round": ""
-    },
-    {
       "winner": "San Francisco        Giants",
       "loser": "Atlanta              Braves",
       "winner_score": 8,
@@ -282,16 +274,6 @@
       "date": "2002-10-02"
     },
     {
-      "t1": "St. Louis            Cardinals",
-      "t2": "Arizona              Diamondbacks",
-      "w1": 3,
-      "w2": 0,
-      "done": true,
-      "loser": "Arizona              Diamondbacks",
-      "round": "",
-      "date": "2002-10-02"
-    },
-    {
       "t1": "San Francisco        Giants",
       "t2": "Atlanta              Braves",
       "w1": 3,
@@ -309,6 +291,16 @@
       "done": false,
       "loser": "",
       "round": "PLAYOFFS",
+      "date": "2002-10-03"
+    },
+    {
+      "t1": "St. Louis            Cardinals",
+      "t2": "Arizona              Diamondbacks",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
       "date": "2002-10-03"
     },
     {
@@ -354,10 +346,9 @@
   ],
   "eliminated": [
     "Oakland              Athletics",
-    "Arizona              Diamondbacks",
     "Atlanta              Braves",
     "St. Louis            Cardinals",
     "San Francisco        Giants"
   ],
-  "updated": "2026-07-04 20:32 UTC"
+  "updated": "2026-07-05 10:11 UTC"
 }

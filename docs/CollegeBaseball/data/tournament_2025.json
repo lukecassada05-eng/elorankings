@@ -140,14 +140,6 @@
       "round": "NCAA Baseball Championship - Conway Regional"
     },
     {
-      "winner": "Cincinnati Bearcats",
-      "loser": "Wake Forest Demon Deacons",
-      "winner_score": 11,
-      "loser_score": 6,
-      "date": "2025-05-30",
-      "round": "NCAA Baseball Championship - Knoxville Regional"
-    },
-    {
       "winner": "Louisville Cardinals",
       "loser": "East Tennessee State Buccaneers",
       "winner_score": 8,
@@ -1167,16 +1159,6 @@
       "done": false,
       "loser": "",
       "round": "NCAA Baseball Championship - Conway Regional",
-      "date": "2025-05-30"
-    },
-    {
-      "t1": "Cincinnati Bearcats",
-      "t2": "Wake Forest Demon Deacons",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NCAA Baseball Championship - Knoxville Regional",
       "date": "2025-05-30"
     },
     {
@@ -2260,5 +2242,5 @@
     "Duke Blue Devils",
     "Coastal Carolina Chanticleers"
   ],
-  "updated": "2026-07-04 20:35 UTC"
+  "updated": "2026-07-05 10:14 UTC"
 }
