@@ -612,14 +612,6 @@
       "round": "Big 12 Tournament"
     },
     {
-      "winner": "Sam Houston Bearkats",
-      "loser": "Abilene Christian Wildcats",
-      "winner_score": 15,
-      "loser_score": 13,
-      "date": "2021-05-29",
-      "round": "Southland Tournament"
-    },
-    {
       "winner": "Samford Bulldogs",
       "loser": "Western Carolina Catamounts",
       "winner_score": 19,
@@ -714,14 +706,6 @@
       "loser_score": 0,
       "date": "2021-05-29",
       "round": "WAC Tournament"
-    },
-    {
-      "winner": "Georgia Southern Eagles",
-      "loser": "Louisiana Ragin' Cajuns",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2021-05-29",
-      "round": "Sun Belt Tournament"
     },
     {
       "winner": "Western Carolina Catamounts",
@@ -1274,14 +1258,6 @@
       "loser_score": 1,
       "date": "2021-06-05",
       "round": "Ruston Regional - Elimination Game"
-    },
-    {
-      "winner": "LSU Tigers",
-      "loser": "Central Connecticut Blue Devils",
-      "winner_score": 6,
-      "loser_score": 5,
-      "date": "2021-06-05",
-      "round": "Eugene Regional - Elimination Game"
     },
     {
       "winner": "Oklahoma State Cowboys",
@@ -2362,10 +2338,10 @@
     {
       "t1": "Sam Houston Bearkats",
       "t2": "Abilene Christian Wildcats",
-      "w1": 2,
+      "w1": 1,
       "w2": 0,
-      "done": true,
-      "loser": "Abilene Christian Wildcats",
+      "done": false,
+      "loser": "",
       "round": "Southland Tournament",
       "date": "2021-05-28"
     },
@@ -2827,16 +2803,6 @@
       "done": false,
       "loser": "",
       "round": "WAC Tournament",
-      "date": "2021-05-29"
-    },
-    {
-      "t1": "Georgia Southern Eagles",
-      "t2": "Louisiana Ragin' Cajuns",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Sun Belt Tournament",
       "date": "2021-05-29"
     },
     {
@@ -3437,16 +3403,6 @@
       "done": false,
       "loser": "",
       "round": "Ruston Regional - Elimination Game",
-      "date": "2021-06-05"
-    },
-    {
-      "t1": "LSU Tigers",
-      "t2": "Central Connecticut Blue Devils",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Eugene Regional - Elimination Game",
       "date": "2021-06-05"
     },
     {
@@ -4122,7 +4078,6 @@
   ],
   "eliminated": [
     "Southern Illinois Salukis",
-    "Abilene Christian Wildcats",
     "Cal State Fullerton Titans",
     "Southern Miss Golden Eagles",
     "UNC Wilmington Seahawks",
@@ -4139,5 +4094,5 @@
     "LSU Tigers",
     "South Florida Bulls"
   ],
-  "updated": "2026-07-05 10:14 UTC"
+  "updated": "2026-07-05 20:52 UTC"
 }

@@ -4,86 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "Buffalo Bills",
-      "loser": "Jacksonville Jaguars",
-      "winner_score": 27,
-      "loser_score": 24,
-      "date": "2026-01-11",
-      "round": "AFC Wild Card Playoffs"
-    },
-    {
-      "winner": "San Francisco 49ers",
-      "loser": "Philadelphia Eagles",
-      "winner_score": 23,
-      "loser_score": 19,
-      "date": "2026-01-11",
-      "round": "NFC Wild Card Playoffs"
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Los Angeles Chargers",
-      "winner_score": 16,
-      "loser_score": 3,
-      "date": "2026-01-12",
-      "round": "AFC Wild Card Playoffs"
-    },
-    {
-      "winner": "Houston Texans",
-      "loser": "Pittsburgh Steelers",
-      "winner_score": 30,
-      "loser_score": 6,
-      "date": "2026-01-13",
-      "round": "AFC Wild Card Playoffs"
-    },
-    {
-      "winner": "Denver Broncos",
-      "loser": "Buffalo Bills",
-      "winner_score": 33,
-      "loser_score": 30,
-      "date": "2026-01-17",
-      "round": "AFC Divisional Playoffs"
-    },
-    {
-      "winner": "Seattle Seahawks",
-      "loser": "San Francisco 49ers",
-      "winner_score": 41,
-      "loser_score": 6,
-      "date": "2026-01-18",
-      "round": "NFC Divisional Playoffs"
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Houston Texans",
-      "winner_score": 28,
-      "loser_score": 16,
-      "date": "2026-01-18",
-      "round": "AFC Divisional Playoffs"
-    },
-    {
-      "winner": "Los Angeles Rams",
-      "loser": "Chicago Bears",
-      "winner_score": 20,
-      "loser_score": 17,
-      "date": "2026-01-18",
-      "round": "NFC Divisional Playoffs"
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Denver Broncos",
-      "winner_score": 10,
-      "loser_score": 7,
-      "date": "2026-01-25",
-      "round": "AFC Championship"
-    },
-    {
-      "winner": "Seattle Seahawks",
-      "loser": "Los Angeles Rams",
-      "winner_score": 31,
-      "loser_score": 27,
-      "date": "2026-01-25",
-      "round": "NFC Championship"
-    },
-    {
       "winner": "Seattle Seahawks",
       "loser": "New England Patriots",
       "winner_score": 29,
@@ -93,106 +13,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "Buffalo Bills",
-      "t2": "Jacksonville Jaguars",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Jacksonville Jaguars",
-      "round": "AFC Wild Card Playoffs",
-      "date": "2026-01-11"
-    },
-    {
-      "t1": "San Francisco 49ers",
-      "t2": "Philadelphia Eagles",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Philadelphia Eagles",
-      "round": "NFC Wild Card Playoffs",
-      "date": "2026-01-11"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Los Angeles Chargers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Los Angeles Chargers",
-      "round": "AFC Wild Card Playoffs",
-      "date": "2026-01-12"
-    },
-    {
-      "t1": "Houston Texans",
-      "t2": "Pittsburgh Steelers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Pittsburgh Steelers",
-      "round": "AFC Wild Card Playoffs",
-      "date": "2026-01-13"
-    },
-    {
-      "t1": "Denver Broncos",
-      "t2": "Buffalo Bills",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Buffalo Bills",
-      "round": "AFC Divisional Playoffs",
-      "date": "2026-01-17"
-    },
-    {
-      "t1": "Seattle Seahawks",
-      "t2": "San Francisco 49ers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "San Francisco 49ers",
-      "round": "NFC Divisional Playoffs",
-      "date": "2026-01-18"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Houston Texans",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Houston Texans",
-      "round": "AFC Divisional Playoffs",
-      "date": "2026-01-18"
-    },
-    {
-      "t1": "Los Angeles Rams",
-      "t2": "Chicago Bears",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Chicago Bears",
-      "round": "NFC Divisional Playoffs",
-      "date": "2026-01-18"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Denver Broncos",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Denver Broncos",
-      "round": "AFC Championship",
-      "date": "2026-01-25"
-    },
-    {
-      "t1": "Seattle Seahawks",
-      "t2": "Los Angeles Rams",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Los Angeles Rams",
-      "round": "NFC Championship",
-      "date": "2026-01-25"
-    },
     {
       "t1": "Seattle Seahawks",
       "t2": "New England Patriots",
@@ -205,17 +25,7 @@
     }
   ],
   "eliminated": [
-    "Jacksonville Jaguars",
-    "Philadelphia Eagles",
-    "Los Angeles Chargers",
-    "Pittsburgh Steelers",
-    "Buffalo Bills",
-    "San Francisco 49ers",
-    "Houston Texans",
-    "Chicago Bears",
-    "Denver Broncos",
-    "Los Angeles Rams",
     "New England Patriots"
   ],
-  "updated": "2026-07-05 10:12 UTC"
+  "updated": "2026-07-05 20:49 UTC"
 }
