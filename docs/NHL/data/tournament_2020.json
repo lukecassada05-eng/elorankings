@@ -116,14 +116,6 @@
       "round": "EAST FINALS"
     },
     {
-      "winner": "Dallas Stars",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2020-09-15",
-      "round": "WEST FINALS"
-    },
-    {
       "winner": "New York Islanders",
       "loser": "Tampa Bay Lightning",
       "winner_score": 2,
@@ -222,10 +214,10 @@
     {
       "t1": "Dallas Stars",
       "t2": "Vegas Golden Knights",
-      "w1": 4,
+      "w1": 3,
       "w2": 1,
-      "done": true,
-      "loser": "Vegas Golden Knights",
+      "done": false,
+      "loser": "",
       "round": "WEST FINALS",
       "date": "2020-09-07"
     },
@@ -251,9 +243,8 @@
     }
   ],
   "eliminated": [
-    "Vegas Golden Knights",
     "New York Islanders",
     "Dallas Stars"
   ],
-  "updated": "2026-07-05 20:47 UTC"
+  "updated": "2026-07-06 12:01 UTC"
 }

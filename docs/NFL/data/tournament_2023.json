@@ -98,6 +98,14 @@
       "loser_score": 31,
       "date": "2024-01-28",
       "round": "NFC Championship"
+    },
+    {
+      "winner": "Kansas City Chiefs",
+      "loser": "San Francisco 49ers",
+      "winner_score": 25,
+      "loser_score": 22,
+      "date": "2024-02-11",
+      "round": "Super Bowl LVIII"
     }
   ],
   "series": [
@@ -220,6 +228,16 @@
       "loser": "Detroit Lions",
       "round": "NFC Championship",
       "date": "2024-01-28"
+    },
+    {
+      "t1": "Kansas City Chiefs",
+      "t2": "San Francisco 49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Francisco 49ers",
+      "round": "Super Bowl LVIII",
+      "date": "2024-02-11"
     }
   ],
   "eliminated": [
@@ -234,7 +252,8 @@
     "Tampa Bay Buccaneers",
     "Buffalo Bills",
     "Baltimore Ravens",
-    "Detroit Lions"
+    "Detroit Lions",
+    "San Francisco 49ers"
   ],
-  "updated": "2026-07-05 20:49 UTC"
+  "updated": "2026-07-06 12:04 UTC"
 }

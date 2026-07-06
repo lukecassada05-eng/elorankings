@@ -985,7 +985,7 @@
       "winner_score": 101,
       "loser_score": 89,
       "date": "2003-06-04",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "New Jersey Nets",
@@ -993,7 +993,7 @@
       "winner_score": 87,
       "loser_score": 85,
       "date": "2003-06-06",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "San Antonio Spurs",
@@ -1001,7 +1001,7 @@
       "winner_score": 84,
       "loser_score": 79,
       "date": "2003-06-09",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "New Jersey Nets",
@@ -1009,7 +1009,7 @@
       "winner_score": 77,
       "loser_score": 76,
       "date": "2003-06-12",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "San Antonio Spurs",
@@ -1017,7 +1017,7 @@
       "winner_score": 93,
       "loser_score": 83,
       "date": "2003-06-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "San Antonio Spurs",
@@ -1025,7 +1025,7 @@
       "winner_score": 88,
       "loser_score": 77,
       "date": "2003-06-15",
-      "round": "Play-In"
+      "round": ""
     }
   ],
   "series": [
@@ -1536,7 +1536,7 @@
       "w2": 2,
       "done": true,
       "loser": "New Jersey Nets",
-      "round": "Play-In",
+      "round": "",
       "date": "2003-06-04"
     }
   ],
@@ -1557,5 +1557,5 @@
     "Detroit Pistons",
     "New Jersey Nets"
   ],
-  "updated": "2026-07-05 20:44 UTC"
+  "updated": "2026-07-06 11:58 UTC"
 }

@@ -740,6 +740,14 @@
       "round": "WESTERN CONFERENCE SECOND ROUND - GAME 4"
     },
     {
+      "winner": "New York Rangers",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2014-05-11",
+      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 6"
+    },
+    {
       "winner": "Chicago Blackhawks",
       "loser": "Minnesota Wild",
       "winner_score": 2,
@@ -1870,6 +1878,16 @@
       "date": "2014-05-11"
     },
     {
+      "t1": "New York Rangers",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SECOND ROUND - GAME 6",
+      "date": "2014-05-11"
+    },
+    {
       "t1": "Chicago Blackhawks",
       "t2": "Minnesota Wild",
       "w1": 1,
@@ -2131,5 +2149,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-05 20:47 UTC"
+  "updated": "2026-07-06 12:00 UTC"
 }

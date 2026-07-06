@@ -134,6 +134,14 @@
     {
       "winner": "Boston Red Sox",
       "loser": "New York Yankees",
+      "winner_score": 16,
+      "loser_score": 1,
+      "date": "2018-10-08",
+      "round": "ALDS - GAME 3"
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "New York Yankees",
       "winner_score": 4,
       "loser_score": 3,
       "date": "2018-10-10",
@@ -146,6 +154,14 @@
       "loser_score": 5,
       "date": "2018-10-13",
       "round": "NLCS - GAME 1"
+    },
+    {
+      "winner": "Los Angeles Dodgers",
+      "loser": "Milwaukee Brewers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2018-10-13",
+      "round": "NLCS - GAME 2"
     },
     {
       "winner": "Houston Astros",
@@ -250,6 +266,14 @@
       "loser_score": 6,
       "date": "2018-10-28",
       "round": "WORLD SERIES - GAME 4"
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "Los Angeles Dodgers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2018-10-29",
+      "round": "WORLD SERIES - GAME 5"
     }
   ],
   "series": [
@@ -420,6 +444,16 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "ALDS - GAME 3",
+      "date": "2018-10-08"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "New York Yankees",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "ALDS - GAME 4",
       "date": "2018-10-10"
     },
@@ -431,6 +465,16 @@
       "done": false,
       "loser": "",
       "round": "NLCS - GAME 1",
+      "date": "2018-10-13"
+    },
+    {
+      "t1": "Los Angeles Dodgers",
+      "t2": "Milwaukee Brewers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NLCS - GAME 2",
       "date": "2018-10-13"
     },
     {
@@ -562,8 +606,18 @@
       "loser": "",
       "round": "WORLD SERIES - GAME 4",
       "date": "2018-10-28"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "Los Angeles Dodgers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WORLD SERIES - GAME 5",
+      "date": "2018-10-29"
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-05 20:49 UTC"
+  "updated": "2026-07-06 12:03 UTC"
 }

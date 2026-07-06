@@ -986,6 +986,54 @@
       "loser_score": 81,
       "date": "2008-05-31",
       "round": "EASTERN CONFERENCE FINALS - GAME 6"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 98,
+      "loser_score": 88,
+      "date": "2008-06-06",
+      "round": "NBA FINALS - GAME 1"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 108,
+      "loser_score": 102,
+      "date": "2008-06-09",
+      "round": "NBA FINALS - GAME 2"
+    },
+    {
+      "winner": "Los Angeles Lakers",
+      "loser": "Boston Celtics",
+      "winner_score": 87,
+      "loser_score": 81,
+      "date": "2008-06-10",
+      "round": "NBA FINALS - GAME 3"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 97,
+      "loser_score": 91,
+      "date": "2008-06-12",
+      "round": "NBA FINALS - GAME 4"
+    },
+    {
+      "winner": "Los Angeles Lakers",
+      "loser": "Boston Celtics",
+      "winner_score": 103,
+      "loser_score": 98,
+      "date": "2008-06-15",
+      "round": "NBA FINALS - GAME 5"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 131,
+      "loser_score": 92,
+      "date": "2008-06-18",
+      "round": "NBA FINALS - GAME 6"
     }
   ],
   "series": [
@@ -2218,8 +2266,68 @@
       "loser": "",
       "round": "EASTERN CONFERENCE FINALS - GAME 6",
       "date": "2008-05-31"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 1",
+      "date": "2008-06-06"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 2",
+      "date": "2008-06-09"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 3",
+      "date": "2008-06-10"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 4",
+      "date": "2008-06-12"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Boston Celtics",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 5",
+      "date": "2008-06-15"
+    },
+    {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 6",
+      "date": "2008-06-18"
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-05 20:45 UTC"
+  "updated": "2026-07-06 11:58 UTC"
 }

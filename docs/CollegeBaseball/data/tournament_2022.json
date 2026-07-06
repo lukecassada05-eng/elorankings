@@ -2,8 +2,1334 @@
   "year": 2022,
   "sport": "CBASE",
   "completed": true,
-  "games": [],
-  "series": [],
+  "games": [
+    {
+      "winner": "Long Island University Sharks",
+      "loser": "Bryant Bulldogs",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2022-05-27",
+      "round": "NEC Tournament"
+    },
+    {
+      "winner": "Rider Broncs",
+      "loser": "Niagara Purple Eagles",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2022-05-28",
+      "round": "MAAC Tournament"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2022-05-29",
+      "round": "SEC Tournament - Semifinal"
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "Arizona Wildcats",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2022-05-28",
+      "round": "Pac-12 Tournament"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Oregon State Beavers",
+      "winner_score": 25,
+      "loser_score": 22,
+      "date": "2022-05-28",
+      "round": "Pac-12 Tournament"
+    },
+    {
+      "winner": "Oregon State Beavers",
+      "loser": "UCLA Bruins",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2022-05-29",
+      "round": "Pac-12 Tournament"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2022-05-28",
+      "round": "SEC Tournament - Semifinal"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Texas Longhorns",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2022-05-28",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2022-05-28",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "Maryland Terrapins",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2022-05-28",
+      "round": "Big Ten Tournament"
+    },
+    {
+      "winner": "Louisiana Ragin' Cajuns",
+      "loser": "Texas State Bobcats",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2022-05-29",
+      "round": "Sun Belt Tournament"
+    },
+    {
+      "winner": "San Diego Toreros",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 15,
+      "loser_score": 12,
+      "date": "2022-05-28",
+      "round": "WCC Championship"
+    },
+    {
+      "winner": "UTSA Roadrunners",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2022-05-28",
+      "round": "Conference USA Tournament"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Notre Dame Fighting Irish",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2022-05-28",
+      "round": "ACC Tournament"
+    },
+    {
+      "winner": "UC Santa Barbara Gauchos",
+      "loser": "Cal State Bakersfield Roadrunners",
+      "winner_score": 14,
+      "loser_score": 6,
+      "date": "2022-05-28",
+      "round": ""
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "LSU Tigers",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2022-05-28",
+      "round": "SEC Tournament - 4th Round"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2022-05-28",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "Tulane Green Wave",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2022-05-28",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "Abilene Christian Wildcats",
+      "loser": "Grand Canyon Lopes",
+      "winner_score": 15,
+      "loser_score": 8,
+      "date": "2022-05-28",
+      "round": "WAC Tournament"
+    },
+    {
+      "winner": "Florida A&M Rattlers",
+      "loser": "Southern Jaguars",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2022-05-28",
+      "round": "SWAC Tournament"
+    },
+    {
+      "winner": "Old Dominion Monarchs",
+      "loser": "Louisiana Tech Bulldogs",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2022-05-28",
+      "round": "Conference USA Tournament"
+    },
+    {
+      "winner": "Iowa Hawkeyes",
+      "loser": "Penn State Nittany Lions",
+      "winner_score": 11,
+      "loser_score": 3,
+      "date": "2022-05-28",
+      "round": "Big Ten Tournament"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Georgetown Hoyas",
+      "winner_score": 16,
+      "loser_score": 8,
+      "date": "2022-05-28",
+      "round": "Big East Tournament"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2022-05-28",
+      "round": "SEC Tournament - 4th Round"
+    },
+    {
+      "winner": "Central Michigan Chippewas",
+      "loser": "Toledo Rockets",
+      "winner_score": 10,
+      "loser_score": 7,
+      "date": "2022-05-28",
+      "round": "MAC Tournament"
+    },
+    {
+      "winner": "Hofstra Pride",
+      "loser": "Northeastern Huskies",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2022-05-28",
+      "round": "CAA Tournament"
+    },
+    {
+      "winner": "Campbell Fighting Camels",
+      "loser": "Charleston Southern Buccaneers",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2022-05-28",
+      "round": "Big South Tournament"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Richmond Spiders",
+      "winner_score": 10,
+      "loser_score": 7,
+      "date": "2022-05-28",
+      "round": "Atlantic 10 Tournament"
+    },
+    {
+      "winner": "Wright State Raiders",
+      "loser": "Oakland Golden Grizzlies",
+      "winner_score": 24,
+      "loser_score": 0,
+      "date": "2022-05-28",
+      "round": "Horizon League Championship"
+    },
+    {
+      "winner": "Southern Illinois Salukis",
+      "loser": "Dallas Baptist Patriots",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2022-05-28",
+      "round": "Missouri Valley Tournament"
+    },
+    {
+      "winner": "Southeast Missouri State Redhawks",
+      "loser": "Belmont Bruins",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2022-05-28",
+      "round": "Ohio Valley Championship"
+    },
+    {
+      "winner": "Kennesaw State Owls",
+      "loser": "Liberty Flames",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2022-05-28",
+      "round": "ASUN Championship"
+    },
+    {
+      "winner": "Wofford Terriers",
+      "loser": "Samford Bulldogs",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2022-05-28",
+      "round": "Southern Conf Tournament"
+    },
+    {
+      "winner": "UCF Knights",
+      "loser": "Houston Cougars",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2022-05-28",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "Alabama State Hornets",
+      "loser": "Bethune-Cookman Wildcats",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2022-05-28",
+      "round": "SWAC Tournament"
+    },
+    {
+      "winner": "Central Michigan Chippewas",
+      "loser": "Ball State Cardinals",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2022-05-28",
+      "round": "MAC Tournament"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Creighton Bluejays",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2022-05-28",
+      "round": "Big East Tournament"
+    },
+    {
+      "winner": "Northeastern Huskies",
+      "loser": "Charleston Cougars",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2022-05-28",
+      "round": "CAA Tournament"
+    },
+    {
+      "winner": "UNC Greensboro Spartans",
+      "loser": "Mercer Bears",
+      "winner_score": 16,
+      "loser_score": 5,
+      "date": "2022-05-28",
+      "round": "Southern Conf Tournament"
+    },
+    {
+      "winner": "Missouri State Bears",
+      "loser": "Evansville Purple Aces",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2022-05-28",
+      "round": "Missouri Valley Tournament"
+    },
+    {
+      "winner": "Georgia Southern Eagles",
+      "loser": "Troy Trojans",
+      "winner_score": 8,
+      "loser_score": 0,
+      "date": "2022-05-28",
+      "round": "Sun Belt Tournament"
+    },
+    {
+      "winner": "Bryant Bulldogs",
+      "loser": "Central Connecticut Blue Devils",
+      "winner_score": 10,
+      "loser_score": 8,
+      "date": "2022-05-28",
+      "round": "NEC Tournament"
+    },
+    {
+      "winner": "San José State Spartans",
+      "loser": "Nevada Wolf Pack",
+      "winner_score": 15,
+      "loser_score": 6,
+      "date": "2022-05-28",
+      "round": "Mountain West Tournament"
+    },
+    {
+      "winner": "Omaha Mavericks",
+      "loser": "North Dakota State Bison",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2022-05-28",
+      "round": "Summit League Tournament"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "Pittsburgh Panthers",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2022-05-28",
+      "round": "ACC Tournament"
+    },
+    {
+      "winner": "Southern Jaguars",
+      "loser": "Florida A&M Rattlers",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2022-05-28",
+      "round": "SWAC Tournament"
+    },
+    {
+      "winner": "Iowa Hawkeyes",
+      "loser": "Michigan Wolverines",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2022-05-28",
+      "round": "Big Ten Tournament"
+    },
+    {
+      "winner": "Louisiana Tech Bulldogs",
+      "loser": "Old Dominion Monarchs",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2022-05-28",
+      "round": "Conference USA Tournament"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Creighton Bluejays",
+      "winner_score": 27,
+      "loser_score": 8,
+      "date": "2022-05-28",
+      "round": "Big East Tournament"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "UCF Knights",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2022-05-28",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "SE Louisiana Lions",
+      "loser": "McNeese Cowboys",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2022-05-28",
+      "round": "Southland Championship"
+    },
+    {
+      "winner": "Binghamton Bearcats",
+      "loser": "UMass Lowell River Hawks",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2022-05-28",
+      "round": "America East Tournament"
+    },
+    {
+      "winner": "Southern Illinois Salukis",
+      "loser": "Evansville Purple Aces",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2022-05-29",
+      "round": "Missouri Valley Tournament"
+    },
+    {
+      "winner": "UNC Greensboro Spartans",
+      "loser": "Samford Bulldogs",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2022-05-29",
+      "round": "Southern Conf Tournament"
+    },
+    {
+      "winner": "Air Force Falcons",
+      "loser": "San José State Spartans",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2022-05-29",
+      "round": "Mountain West Championship"
+    },
+    {
+      "winner": "New Mexico State Aggies",
+      "loser": "Abilene Christian Wildcats",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2022-05-29",
+      "round": "WAC Championship"
+    },
+    {
+      "winner": "Rutgers Scarlet Knights",
+      "loser": "Indiana Hoosiers",
+      "winner_score": 14,
+      "loser_score": 2,
+      "date": "2022-05-29",
+      "round": "Big Ten Tournament"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Florida Gators",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2022-05-29",
+      "round": "SEC Tournament - Championship"
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "Oregon State Beavers",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2022-05-30",
+      "round": "Pac-12 Championship"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Texas Longhorns",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2022-05-29",
+      "round": "Big 12 Championship"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "Houston Cougars",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2022-05-29",
+      "round": "American Athletic Championship"
+    },
+    {
+      "winner": "Canisius Golden Griffins",
+      "loser": "Rider Broncs",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2022-05-29",
+      "round": "MAAC Championship"
+    },
+    {
+      "winner": "Hofstra Pride",
+      "loser": "Northeastern Huskies",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2022-05-29",
+      "round": "CAA Championship"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "NC State Wolfpack",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2022-05-29",
+      "round": "ACC Championship"
+    },
+    {
+      "winner": "UNC Greensboro Spartans",
+      "loser": "Wofford Terriers",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2022-05-29",
+      "round": "Southern Conf Championship"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Xavier Musketeers",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2022-05-29",
+      "round": "Big East Championship"
+    },
+    {
+      "winner": "Bryant Bulldogs",
+      "loser": "Long Island University Sharks",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2022-05-29",
+      "round": "NEC Championship"
+    },
+    {
+      "winner": "Central Michigan Chippewas",
+      "loser": "Ball State Cardinals",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2022-05-29",
+      "round": "MAC Championship"
+    },
+    {
+      "winner": "Columbia Lions",
+      "loser": "Army Black Knights",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2022-05-29",
+      "round": ""
+    },
+    {
+      "winner": "Southern Illinois Salukis",
+      "loser": "Missouri State Bears",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2022-05-29",
+      "round": "Missouri Valley Championship"
+    },
+    {
+      "winner": "Alabama State Hornets",
+      "loser": "Southern Jaguars",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2022-05-29",
+      "round": "SWAC Championship"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Iowa Hawkeyes",
+      "winner_score": 13,
+      "loser_score": 1,
+      "date": "2022-05-29",
+      "round": "Big Ten Tournament"
+    },
+    {
+      "winner": "Louisiana Ragin' Cajuns",
+      "loser": "Georgia Southern Eagles",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2022-05-29",
+      "round": "Sun Belt Championship"
+    },
+    {
+      "winner": "Louisiana Tech Bulldogs",
+      "loser": "UTSA Roadrunners",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2022-05-29",
+      "round": "Conference USA Championship"
+    },
+    {
+      "winner": "Oral Roberts Golden Eagles",
+      "loser": "Omaha Mavericks",
+      "winner_score": 21,
+      "loser_score": 2,
+      "date": "2022-05-29",
+      "round": "Summit League Championship"
+    },
+    {
+      "winner": "Long Island University Sharks",
+      "loser": "Bryant Bulldogs",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2022-05-29",
+      "round": "NEC Championship"
+    },
+    {
+      "winner": "Missouri State Bears",
+      "loser": "Southern Illinois Salukis",
+      "winner_score": 13,
+      "loser_score": 3,
+      "date": "2022-05-29",
+      "round": "Missouri Valley Championship"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Rutgers Scarlet Knights",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2022-05-29",
+      "round": "Big Ten Championship"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Long Island University Sharks",
+      "t2": "Bryant Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NEC Tournament",
+      "date": "2022-05-27"
+    },
+    {
+      "t1": "Rider Broncs",
+      "t2": "Niagara Purple Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "MAAC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Pac-12 Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Pac-12 Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - Semifinal",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big Ten Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "San Diego Toreros",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WCC Championship",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "UTSA Roadrunners",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Conference USA Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Notre Dame Fighting Irish",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "UC Santa Barbara Gauchos",
+      "t2": "Cal State Bakersfield Roadrunners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - 4th Round",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Tulane Green Wave",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Abilene Christian Wildcats",
+      "t2": "Grand Canyon Lopes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WAC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Florida A&M Rattlers",
+      "t2": "Southern Jaguars",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "SWAC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Old Dominion Monarchs",
+      "t2": "Louisiana Tech Bulldogs",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Conference USA Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Penn State Nittany Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big Ten Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Georgetown Hoyas",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big East Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - 4th Round",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Central Michigan Chippewas",
+      "t2": "Toledo Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "MAC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Hofstra Pride",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CAA Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Campbell Fighting Camels",
+      "t2": "Charleston Southern Buccaneers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big South Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Richmond Spiders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Atlantic 10 Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Wright State Raiders",
+      "t2": "Oakland Golden Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Horizon League Championship",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Southern Illinois Salukis",
+      "t2": "Dallas Baptist Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Southeast Missouri State Redhawks",
+      "t2": "Belmont Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Ohio Valley Championship",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Kennesaw State Owls",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ASUN Championship",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Wofford Terriers",
+      "t2": "Samford Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southern Conf Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "UCF Knights",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Alabama State Hornets",
+      "t2": "Bethune-Cookman Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SWAC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Central Michigan Chippewas",
+      "t2": "Ball State Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "MAC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big East Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Northeastern Huskies",
+      "t2": "Charleston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CAA Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "UNC Greensboro Spartans",
+      "t2": "Mercer Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southern Conf Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Missouri State Bears",
+      "t2": "Evansville Purple Aces",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Georgia Southern Eagles",
+      "t2": "Troy Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Bryant Bulldogs",
+      "t2": "Central Connecticut Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NEC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "San José State Spartans",
+      "t2": "Nevada Wolf Pack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Mountain West Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Omaha Mavericks",
+      "t2": "North Dakota State Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Summit League Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Pittsburgh Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Big Ten Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big East Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "SE Louisiana Lions",
+      "t2": "McNeese Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southland Championship",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Binghamton Bearcats",
+      "t2": "UMass Lowell River Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "America East Tournament",
+      "date": "2022-05-28"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - Semifinal",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "Texas State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Tournament",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Southern Illinois Salukis",
+      "t2": "Evansville Purple Aces",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Tournament",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "UNC Greensboro Spartans",
+      "t2": "Samford Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southern Conf Tournament",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Air Force Falcons",
+      "t2": "San José State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Mountain West Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "New Mexico State Aggies",
+      "t2": "Abilene Christian Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WAC Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Rutgers Scarlet Knights",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big Ten Tournament",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Canisius Golden Griffins",
+      "t2": "Rider Broncs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "MAAC Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Hofstra Pride",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CAA Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "UNC Greensboro Spartans",
+      "t2": "Wofford Terriers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southern Conf Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big East Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Bryant Bulldogs",
+      "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "NEC Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Central Michigan Chippewas",
+      "t2": "Ball State Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "MAC Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Columbia Lions",
+      "t2": "Army Black Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Southern Illinois Salukis",
+      "t2": "Missouri State Bears",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Alabama State Hornets",
+      "t2": "Southern Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SWAC Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "Georgia Southern Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Louisiana Tech Bulldogs",
+      "t2": "UTSA Roadrunners",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Conference USA Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Oral Roberts Golden Eagles",
+      "t2": "Omaha Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Summit League Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Rutgers Scarlet Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big Ten Championship",
+      "date": "2022-05-29"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Pac-12 Championship",
+      "date": "2022-05-30"
+    }
+  ],
   "eliminated": [],
-  "updated": "2026-07-05 20:52 UTC"
+  "updated": "2026-07-06 12:07 UTC"
 }

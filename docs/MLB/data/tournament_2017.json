@@ -188,14 +188,6 @@
       "round": "NLDS - GAME 1"
     },
     {
-      "winner": "Washington Nationals",
-      "loser": "Chicago Cubs",
-      "winner_score": 6,
-      "loser_score": 3,
-      "date": "2017-10-07",
-      "round": "NLDS - GAME 2"
-    },
-    {
       "winner": "Los Angeles Dodgers",
       "loser": "Arizona Diamondbacks",
       "winner_score": 8,
@@ -306,14 +298,6 @@
       "loser_score": 1,
       "date": "2017-10-18",
       "round": "NLCS - GAME 3"
-    },
-    {
-      "winner": "New York Yankees",
-      "loser": "Houston Astros",
-      "winner_score": 5,
-      "loser_score": 0,
-      "date": "2017-10-18",
-      "round": "ALCS - GAME 5"
     },
     {
       "winner": "Chicago Cubs",
@@ -636,16 +620,6 @@
       "date": "2017-10-07"
     },
     {
-      "t1": "Washington Nationals",
-      "t2": "Chicago Cubs",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 2",
-      "date": "2017-10-07"
-    },
-    {
       "t1": "Los Angeles Dodgers",
       "t2": "Arizona Diamondbacks",
       "w1": 1,
@@ -786,16 +760,6 @@
       "date": "2017-10-18"
     },
     {
-      "t1": "New York Yankees",
-      "t2": "Houston Astros",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "ALCS - GAME 5",
-      "date": "2017-10-18"
-    },
-    {
       "t1": "Chicago Cubs",
       "t2": "Los Angeles Dodgers",
       "w1": 1,
@@ -907,5 +871,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-05 20:48 UTC"
+  "updated": "2026-07-06 12:03 UTC"
 }
