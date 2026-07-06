@@ -60,14 +60,6 @@
       "round": ""
     },
     {
-      "winner": "Houston Astros",
-      "loser": "Colorado Rockies",
-      "winner_score": 4,
-      "loser_score": 2,
-      "date": "2004-10-02",
-      "round": ""
-    },
-    {
       "winner": "Chicago White Sox",
       "loser": "Kansas City Royals",
       "winner_score": 4,
@@ -176,6 +168,14 @@
       "loser": "Tampa Bay Devil Rays",
       "winner_score": 5,
       "loser_score": 1,
+      "date": "2004-10-02",
+      "round": ""
+    },
+    {
+      "winner": "Houston Astros",
+      "loser": "Colorado Rockies",
+      "winner_score": 9,
+      "loser_score": 3,
       "date": "2004-10-02",
       "round": ""
     },
@@ -408,14 +408,6 @@
       "loser": "Atlanta Braves",
       "winner_score": 8,
       "loser_score": 5,
-      "date": "2004-10-09",
-      "round": "DIVISIONAL PLAYOFFS"
-    },
-    {
-      "winner": "Los Angeles Dodgers",
-      "loser": "St. Louis Cardinals",
-      "winner_score": 4,
-      "loser_score": 0,
       "date": "2004-10-09",
       "round": "DIVISIONAL PLAYOFFS"
     },
@@ -660,16 +652,6 @@
       "date": "2004-10-01"
     },
     {
-      "t1": "Houston Astros",
-      "t2": "Colorado Rockies",
-      "w1": 2,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2004-10-02"
-    },
-    {
       "t1": "Chicago White Sox",
       "t2": "Kansas City Royals",
       "w1": 2,
@@ -750,6 +732,16 @@
       "date": "2004-10-02"
     },
     {
+      "t1": "Houston Astros",
+      "t2": "Colorado Rockies",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2004-10-02"
+    },
+    {
       "t1": "Minnesota Twins",
       "t2": "New York Yankees",
       "w1": 1,
@@ -763,7 +755,7 @@
       "t1": "St. Louis Cardinals",
       "t2": "Los Angeles Dodgers",
       "w1": 3,
-      "w2": 1,
+      "w2": 0,
       "done": true,
       "loser": "Los Angeles Dodgers",
       "round": "DIVISIONAL PLAYOFFS",
@@ -838,5 +830,5 @@
     "Houston Astros",
     "St. Louis Cardinals"
   ],
-  "updated": "2026-07-06 12:02 UTC"
+  "updated": "2026-07-06 21:28 UTC"
 }

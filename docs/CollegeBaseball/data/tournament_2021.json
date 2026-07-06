@@ -4,6 +4,918 @@
   "completed": true,
   "games": [
     {
+      "winner": "Fairfield Stags",
+      "loser": "Canisius Golden Griffins",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "MAAC Tournament"
+    },
+    {
+      "winner": "Sam Houston Bearkats",
+      "loser": "Texas A&M-Corpus Christi Islanders",
+      "winner_score": 14,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "Southland Tournament"
+    },
+    {
+      "winner": "TCU Horned Frogs",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Stony Brook Seawolves",
+      "loser": "UAlbany Great Danes",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "America East Tournament"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 11,
+      "loser_score": 0,
+      "date": "2021-05-28",
+      "round": "SEC Tournament - 4th Round"
+    },
+    {
+      "winner": "Charleston Cougars",
+      "loser": "William & Mary Tribe",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2021-05-28",
+      "round": "CAA Tournament"
+    },
+    {
+      "winner": "Campbell Fighting Camels",
+      "loser": "South Carolina Upstate Spartans",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-05-28",
+      "round": "Big South Tournament"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Rhode Island Rams",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2021-05-28",
+      "round": "Atlantic 10 Tournament"
+    },
+    {
+      "winner": "Liberty Flames",
+      "loser": "Kennesaw State Owls",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2021-05-28",
+      "round": "ASUN Tournament"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Notre Dame Fighting Irish",
+      "winner_score": 14,
+      "loser_score": 1,
+      "date": "2021-05-28",
+      "round": "ACC Tournament"
+    },
+    {
+      "winner": "UT Arlington Mavericks",
+      "loser": "Troy Trojans",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2021-05-28",
+      "round": "Sun Belt Tournament"
+    },
+    {
+      "winner": "South Dakota State Jackrabbits",
+      "loser": "Omaha Mavericks",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2021-05-28",
+      "round": "Summit League Tournament"
+    },
+    {
+      "winner": "Murray State Racers",
+      "loser": "Morehead State Eagles",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2021-05-28",
+      "round": "Ohio Valley Tournament"
+    },
+    {
+      "winner": "Dallas Baptist Patriots",
+      "loser": "Bradley Braves",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2021-05-28",
+      "round": "Missouri Valley Tournament"
+    },
+    {
+      "winner": "Sacred Heart Pioneers",
+      "loser": "Long Island University Sharks",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-28",
+      "round": "NEC Tournament"
+    },
+    {
+      "winner": "Rider Broncs",
+      "loser": "Fairfield Stags",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "MAAC Tournament"
+    },
+    {
+      "winner": "SE Louisiana Lions",
+      "loser": "New Orleans Privateers",
+      "winner_score": 15,
+      "loser_score": 13,
+      "date": "2021-05-28",
+      "round": "Southland Tournament"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "Memphis Tigers",
+      "winner_score": 12,
+      "loser_score": 0,
+      "date": "2021-05-28",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "NJIT Highlanders",
+      "loser": "Maine Black Bears",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-28",
+      "round": "America East Tournament"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Vanderbilt Commodores",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2021-05-28",
+      "round": "SEC Tournament - 4th Round"
+    },
+    {
+      "winner": "Seattle U Redhawks",
+      "loser": "New Mexico State Aggies",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2021-05-28",
+      "round": "WAC Tournament"
+    },
+    {
+      "winner": "Bryant Bulldogs",
+      "loser": "Central Connecticut Blue Devils",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2021-05-28",
+      "round": "NEC Tournament"
+    },
+    {
+      "winner": "Southeast Missouri State Redhawks",
+      "loser": "Murray State Racers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-05-28",
+      "round": "Ohio Valley Tournament"
+    },
+    {
+      "winner": "Wright State Raiders",
+      "loser": "UIC Flames",
+      "winner_score": 15,
+      "loser_score": 4,
+      "date": "2021-05-28",
+      "round": "Horizon League Tournament"
+    },
+    {
+      "winner": "Georgia Southern Eagles",
+      "loser": "UL Monroe Warhawks",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2021-05-28",
+      "round": "Sun Belt Tournament"
+    },
+    {
+      "winner": "Charleston Cougars",
+      "loser": "Elon Phoenix",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "CAA Tournament"
+    },
+    {
+      "winner": "Presbyterian Blue Hose",
+      "loser": "Gardner-Webb Runnin' Bulldogs",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2021-05-28",
+      "round": "Big South Tournament"
+    },
+    {
+      "winner": "Indiana State Sycamores",
+      "loser": "Southern Illinois Salukis",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2021-05-28",
+      "round": "Missouri Valley Tournament"
+    },
+    {
+      "winner": "Jacksonville Dolphins",
+      "loser": "North Florida Ospreys",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-05-28",
+      "round": "ASUN Tournament"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Miami Hurricanes",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2021-05-28",
+      "round": "ACC Tournament"
+    },
+    {
+      "winner": "Dayton Flyers",
+      "loser": "Rhode Island Rams",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2021-05-28",
+      "round": "Atlantic 10 Tournament"
+    },
+    {
+      "winner": "Wofford Terriers",
+      "loser": "Mercer Bears",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2021-05-28",
+      "round": "Southern Conf Tournament"
+    },
+    {
+      "winner": "North Dakota State Bison",
+      "loser": "Oral Roberts Golden Eagles",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2021-05-28",
+      "round": "Summit League Tournament"
+    },
+    {
+      "winner": "Florida Atlantic Owls",
+      "loser": "Middle Tennessee Blue Raiders",
+      "winner_score": 14,
+      "loser_score": 8,
+      "date": "2021-05-28",
+      "round": "Conference USA Tournament"
+    },
+    {
+      "winner": "Tulane Green Wave",
+      "loser": "Wichita State Shockers",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "Austin Peay Governors",
+      "loser": "Morehead State Eagles",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2021-05-28",
+      "round": "Ohio Valley Tournament"
+    },
+    {
+      "winner": "Sam Houston Bearkats",
+      "loser": "Abilene Christian Wildcats",
+      "winner_score": 14,
+      "loser_score": 12,
+      "date": "2021-05-28",
+      "round": "Southland Tournament"
+    },
+    {
+      "winner": "UT Rio Grande Valley Vaqueros",
+      "loser": "Seattle U Redhawks",
+      "winner_score": 19,
+      "loser_score": 9,
+      "date": "2021-05-28",
+      "round": "WAC Tournament"
+    },
+    {
+      "winner": "UC Irvine Anteaters",
+      "loser": "Cal State Fullerton Titans",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2021-05-28",
+      "round": ""
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Milwaukee Panthers",
+      "loser": "UIC Flames",
+      "winner_score": 14,
+      "loser_score": 11,
+      "date": "2021-05-28",
+      "round": "Horizon League Tournament"
+    },
+    {
+      "winner": "UNC Wilmington Seahawks",
+      "loser": "Northeastern Huskies",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2021-05-28",
+      "round": "CAA Tournament"
+    },
+    {
+      "winner": "Liberty Flames",
+      "loser": "North Florida Ospreys",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-05-28",
+      "round": "ASUN Tournament"
+    },
+    {
+      "winner": "Louisiana Tech Bulldogs",
+      "loser": "Western Kentucky Hilltoppers",
+      "winner_score": 14,
+      "loser_score": 4,
+      "date": "2021-05-28",
+      "round": "Conference USA Tournament"
+    },
+    {
+      "winner": "Southern Illinois Salukis",
+      "loser": "Valparaiso Beacons",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2021-05-28",
+      "round": "Missouri Valley Tournament"
+    },
+    {
+      "winner": "Campbell Fighting Camels",
+      "loser": "Gardner-Webb Runnin' Bulldogs",
+      "winner_score": 13,
+      "loser_score": 9,
+      "date": "2021-05-28",
+      "round": "Big South Tournament"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-05-29",
+      "round": ""
+    },
+    {
+      "winner": "McNeese Cowboys",
+      "loser": "SE Louisiana Lions",
+      "winner_score": 18,
+      "loser_score": 2,
+      "date": "2021-05-29",
+      "round": "Southland Tournament"
+    },
+    {
+      "winner": "Utah Tech Trailblazers",
+      "loser": "Arizona Wildcats",
+      "winner_score": 11,
+      "loser_score": 9,
+      "date": "2021-05-29",
+      "round": ""
+    },
+    {
+      "winner": "Oral Roberts Golden Eagles",
+      "loser": "South Dakota State Jackrabbits",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-05-29",
+      "round": "Summit League Tournament"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "NC State Wolfpack",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2021-05-29",
+      "round": "ACC Tournament"
+    },
+    {
+      "winner": "San Diego Toreros",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 9,
+      "loser_score": 0,
+      "date": "2021-05-29",
+      "round": ""
+    },
+    {
+      "winner": "California Golden Bears",
+      "loser": "Oregon Ducks",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2021-05-29",
+      "round": ""
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "Oregon State Beavers",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2021-05-29",
+      "round": ""
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-29",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Grand Canyon Lopes",
+      "loser": "Sacramento State Hornets",
+      "winner_score": 11,
+      "loser_score": 0,
+      "date": "2021-05-29",
+      "round": "WAC Tournament"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Seton Hall Pirates",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2021-05-29",
+      "round": "Big East Tournament"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "UCF Knights",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-05-29",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "Old Dominion Monarchs",
+      "loser": "Florida Atlantic Owls",
+      "winner_score": 13,
+      "loser_score": 5,
+      "date": "2021-05-29",
+      "round": "Conference USA Tournament"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "TCU Horned Frogs",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2021-05-29",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Presbyterian Blue Hose",
+      "loser": "Campbell Fighting Camels",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2021-05-29",
+      "round": "Big South Championship"
+    },
+    {
+      "winner": "Dallas Baptist Patriots",
+      "loser": "Indiana State Sycamores",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": "Missouri Valley Tournament"
+    },
+    {
+      "winner": "Central Connecticut Blue Devils",
+      "loser": "Sacred Heart Pioneers",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2021-05-29",
+      "round": "NEC Tournament"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Creighton Bluejays",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2021-05-29",
+      "round": "Big East Tournament"
+    },
+    {
+      "winner": "Tulane Green Wave",
+      "loser": "South Florida Bulls",
+      "winner_score": 16,
+      "loser_score": 6,
+      "date": "2021-05-29",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2021-05-29",
+      "round": "ACC Tournament"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Florida Gators",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2021-05-29",
+      "round": "SEC Tournament - Semifinal"
+    },
+    {
+      "winner": "Northeastern Huskies",
+      "loser": "Charleston Cougars",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": "CAA Tournament"
+    },
+    {
+      "winner": "Murray State Racers",
+      "loser": "Austin Peay Governors",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2021-05-29",
+      "round": "Ohio Valley Tournament"
+    },
+    {
+      "winner": "Wright State Raiders",
+      "loser": "Milwaukee Panthers",
+      "winner_score": 21,
+      "loser_score": 3,
+      "date": "2021-05-29",
+      "round": "Horizon League Championship"
+    },
+    {
+      "winner": "Jacksonville Dolphins",
+      "loser": "Liberty Flames",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2021-05-29",
+      "round": "ASUN Championship"
+    },
+    {
+      "winner": "South Alabama Jaguars",
+      "loser": "UT Arlington Mavericks",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-29",
+      "round": "Sun Belt Tournament"
+    },
+    {
+      "winner": "Stony Brook Seawolves",
+      "loser": "Maine Black Bears",
+      "winner_score": 15,
+      "loser_score": 9,
+      "date": "2021-05-29",
+      "round": "America East Tournament"
+    },
+    {
+      "winner": "Louisiana Tech Bulldogs",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2021-05-29",
+      "round": "Conference USA Tournament"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Texas Longhorns",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-29",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Sam Houston Bearkats",
+      "loser": "Abilene Christian Wildcats",
+      "winner_score": 15,
+      "loser_score": 13,
+      "date": "2021-05-29",
+      "round": "Southland Tournament"
+    },
+    {
+      "winner": "Samford Bulldogs",
+      "loser": "Western Carolina Catamounts",
+      "winner_score": 19,
+      "loser_score": 7,
+      "date": "2021-05-29",
+      "round": "Southern Conf Tournament"
+    },
+    {
+      "winner": "Oral Roberts Golden Eagles",
+      "loser": "North Dakota State Bison",
+      "winner_score": 15,
+      "loser_score": 5,
+      "date": "2021-05-29",
+      "round": "Summit League Championship"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "California Golden Bears",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-05-29",
+      "round": ""
+    },
+    {
+      "winner": "UC Irvine Anteaters",
+      "loser": "Cal State Fullerton Titans",
+      "winner_score": 7,
+      "loser_score": 0,
+      "date": "2021-05-29",
+      "round": ""
+    },
+    {
+      "winner": "Oregon State Beavers",
+      "loser": "Stanford Cardinal",
+      "winner_score": 9,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": ""
+    },
+    {
+      "winner": "Indiana State Sycamores",
+      "loser": "Southern Illinois Salukis",
+      "winner_score": 9,
+      "loser_score": 7,
+      "date": "2021-05-29",
+      "round": "Missouri Valley Tournament"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Creighton Bluejays",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": "Big East Tournament"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Ole Miss Rebels",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-29",
+      "round": "SEC Tournament - Semifinal"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Dayton Flyers",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2021-05-29",
+      "round": "Atlantic 10 Championship"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "Georgia Tech Yellow Jackets",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": "ACC Tournament"
+    },
+    {
+      "winner": "Northeastern Huskies",
+      "loser": "UNC Wilmington Seahawks",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2021-05-29",
+      "round": "CAA Championship"
+    },
+    {
+      "winner": "UT Rio Grande Valley Vaqueros",
+      "loser": "Sacramento State Hornets",
+      "winner_score": 10,
+      "loser_score": 0,
+      "date": "2021-05-29",
+      "round": "WAC Tournament"
+    },
+    {
+      "winner": "Georgia Southern Eagles",
+      "loser": "Louisiana Ragin' Cajuns",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2021-05-29",
+      "round": "Sun Belt Tournament"
+    },
+    {
+      "winner": "Western Carolina Catamounts",
+      "loser": "Wofford Terriers",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2021-05-29",
+      "round": "Southern Conf Tournament"
+    },
+    {
+      "winner": "UCF Knights",
+      "loser": "East Carolina Pirates",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "TCU Horned Frogs",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 17,
+      "loser_score": 7,
+      "date": "2021-05-29",
+      "round": "Big 12 Tournament"
+    },
+    {
+      "winner": "Murray State Racers",
+      "loser": "Southeast Missouri State Redhawks",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": "Ohio Valley Championship"
+    },
+    {
+      "winner": "North Dakota State Bison",
+      "loser": "Oral Roberts Golden Eagles",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2021-05-29",
+      "round": "Summit League Championship"
+    },
+    {
+      "winner": "McNeese Cowboys",
+      "loser": "Sam Houston Bearkats",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2021-05-29",
+      "round": "Southland Championship"
+    },
+    {
+      "winner": "Central Connecticut Blue Devils",
+      "loser": "Bryant Bulldogs",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2021-05-30",
+      "round": "NEC Championship"
+    },
+    {
+      "winner": "Louisiana Tech Bulldogs",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2021-05-30",
+      "round": "Conference USA Tournament"
+    },
+    {
+      "winner": "Grand Canyon Lopes",
+      "loser": "UT Rio Grande Valley Vaqueros",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-30",
+      "round": "WAC Championship"
+    },
+    {
+      "winner": "South Florida Bulls",
+      "loser": "Tulane Green Wave",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2021-05-30",
+      "round": "American Athletic Tournament"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Utah Tech Trailblazers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-30",
+      "round": ""
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2021-05-30",
+      "round": "SEC Championship"
+    },
+    {
+      "winner": "South Florida Bulls",
+      "loser": "UCF Knights",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2021-05-30",
+      "round": "American Athletic Championship"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "NC State Wolfpack",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2021-05-30",
+      "round": "ACC Championship"
+    },
+    {
+      "winner": "Samford Bulldogs",
+      "loser": "Western Carolina Catamounts",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2021-05-30",
+      "round": "Southern Conf Championship"
+    },
+    {
+      "winner": "Dallas Baptist Patriots",
+      "loser": "Indiana State Sycamores",
+      "winner_score": 12,
+      "loser_score": 8,
+      "date": "2021-05-30",
+      "round": "Missouri Valley Championship"
+    },
+    {
+      "winner": "Southeast Missouri State Redhawks",
+      "loser": "Murray State Racers",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2021-05-30",
+      "round": "Ohio Valley Championship"
+    },
+    {
+      "winner": "Northeastern Huskies",
+      "loser": "UNC Wilmington Seahawks",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2021-05-30",
+      "round": "CAA Championship"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "UConn Huskies",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2021-05-30",
+      "round": "Big East Championship"
+    },
+    {
+      "winner": "Old Dominion Monarchs",
+      "loser": "Louisiana Tech Bulldogs",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2021-05-30",
+      "round": "Conference USA Championship"
+    },
+    {
+      "winner": "South Alabama Jaguars",
+      "loser": "Georgia Southern Eagles",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2021-05-30",
+      "round": "Sun Belt Championship"
+    },
+    {
+      "winner": "UC Irvine Anteaters",
+      "loser": "Cal State Fullerton Titans",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2021-05-30",
+      "round": "CSU Fullerton vs UC Irvine"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Xavier Musketeers",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2021-05-30",
+      "round": "Big East Championship"
+    },
+    {
+      "winner": "TCU Horned Frogs",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 10,
+      "loser_score": 7,
+      "date": "2021-05-30",
+      "round": "Big 12 Championship"
+    },
+    {
       "winner": "Liberty Flames",
       "loser": "Duke Blue Devils",
       "winner_score": 11,
@@ -362,14 +1274,6 @@
       "loser_score": 1,
       "date": "2021-06-05",
       "round": "Ruston Regional - Elimination Game"
-    },
-    {
-      "winner": "LSU Tigers",
-      "loser": "Central Connecticut Blue Devils",
-      "winner_score": 6,
-      "loser_score": 5,
-      "date": "2021-06-05",
-      "round": "Eugene Regional - Elimination Game"
     },
     {
       "winner": "Oklahoma State Cowboys",
@@ -1078,6 +1982,1006 @@
   ],
   "series": [
     {
+      "t1": "Fairfield Stags",
+      "t2": "Canisius Golden Griffins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "MAAC Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Sam Houston Bearkats",
+      "t2": "Texas A&M-Corpus Christi Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southland Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Stony Brook Seawolves",
+      "t2": "UAlbany Great Danes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "America East Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - 4th Round",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Charleston Cougars",
+      "t2": "William & Mary Tribe",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CAA Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Campbell Fighting Camels",
+      "t2": "South Carolina Upstate Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big South Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Rhode Island Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Atlantic 10 Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Liberty Flames",
+      "t2": "Kennesaw State Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ASUN Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Notre Dame Fighting Irish",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "UT Arlington Mavericks",
+      "t2": "Troy Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "South Dakota State Jackrabbits",
+      "t2": "Omaha Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Summit League Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Morehead State Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Ohio Valley Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Dallas Baptist Patriots",
+      "t2": "Bradley Braves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Sacred Heart Pioneers",
+      "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NEC Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Rider Broncs",
+      "t2": "Fairfield Stags",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "MAAC Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "SE Louisiana Lions",
+      "t2": "New Orleans Privateers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southland Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Memphis Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "NJIT Highlanders",
+      "t2": "Maine Black Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "America East Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - 4th Round",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Seattle U Redhawks",
+      "t2": "New Mexico State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WAC Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Bryant Bulldogs",
+      "t2": "Central Connecticut Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NEC Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Southeast Missouri State Redhawks",
+      "t2": "Murray State Racers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Ohio Valley Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Wright State Raiders",
+      "t2": "UIC Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Horizon League Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Georgia Southern Eagles",
+      "t2": "UL Monroe Warhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Charleston Cougars",
+      "t2": "Elon Phoenix",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CAA Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Presbyterian Blue Hose",
+      "t2": "Gardner-Webb Runnin' Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big South Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Indiana State Sycamores",
+      "t2": "Southern Illinois Salukis",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Illinois Salukis",
+      "round": "Missouri Valley Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Jacksonville Dolphins",
+      "t2": "North Florida Ospreys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ASUN Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Dayton Flyers",
+      "t2": "Rhode Island Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Atlantic 10 Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Wofford Terriers",
+      "t2": "Mercer Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southern Conf Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "North Dakota State Bison",
+      "t2": "Oral Roberts Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Summit League Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Florida Atlantic Owls",
+      "t2": "Middle Tennessee Blue Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Conference USA Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Tulane Green Wave",
+      "t2": "Wichita State Shockers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Austin Peay Governors",
+      "t2": "Morehead State Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Ohio Valley Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Sam Houston Bearkats",
+      "t2": "Abilene Christian Wildcats",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Abilene Christian Wildcats",
+      "round": "Southland Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "UT Rio Grande Valley Vaqueros",
+      "t2": "Seattle U Redhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WAC Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "UC Irvine Anteaters",
+      "t2": "Cal State Fullerton Titans",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Cal State Fullerton Titans",
+      "round": "",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Milwaukee Panthers",
+      "t2": "UIC Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Horizon League Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "UNC Wilmington Seahawks",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CAA Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Liberty Flames",
+      "t2": "North Florida Ospreys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ASUN Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Louisiana Tech Bulldogs",
+      "t2": "Western Kentucky Hilltoppers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Conference USA Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Southern Illinois Salukis",
+      "t2": "Valparaiso Beacons",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "Campbell Fighting Camels",
+      "t2": "Gardner-Webb Runnin' Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big South Tournament",
+      "date": "2021-05-28"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "McNeese Cowboys",
+      "t2": "SE Louisiana Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southland Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Utah Tech Trailblazers",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Oral Roberts Golden Eagles",
+      "t2": "South Dakota State Jackrabbits",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Summit League Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "San Diego Toreros",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "California Golden Bears",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Grand Canyon Lopes",
+      "t2": "Sacramento State Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WAC Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Seton Hall Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big East Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "UCF Knights",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Old Dominion Monarchs",
+      "t2": "Florida Atlantic Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Conference USA Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "TCU Horned Frogs",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Presbyterian Blue Hose",
+      "t2": "Campbell Fighting Camels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big South Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Dallas Baptist Patriots",
+      "t2": "Indiana State Sycamores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Central Connecticut Blue Devils",
+      "t2": "Sacred Heart Pioneers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NEC Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big East Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Tulane Green Wave",
+      "t2": "South Florida Bulls",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - Semifinal",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Northeastern Huskies",
+      "t2": "Charleston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CAA Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Austin Peay Governors",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Ohio Valley Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Wright State Raiders",
+      "t2": "Milwaukee Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Horizon League Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Jacksonville Dolphins",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ASUN Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "South Alabama Jaguars",
+      "t2": "UT Arlington Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Stony Brook Seawolves",
+      "t2": "Maine Black Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "America East Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Louisiana Tech Bulldogs",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Miss Golden Eagles",
+      "round": "Conference USA Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Samford Bulldogs",
+      "t2": "Western Carolina Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southern Conf Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Oral Roberts Golden Eagles",
+      "t2": "North Dakota State Bison",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Summit League Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big East Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Ole Miss Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Tournament - Semifinal",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Atlantic 10 Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Northeastern Huskies",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "UNC Wilmington Seahawks",
+      "round": "CAA Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "UT Rio Grande Valley Vaqueros",
+      "t2": "Sacramento State Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WAC Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Georgia Southern Eagles",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Western Carolina Catamounts",
+      "t2": "Wofford Terriers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southern Conf Tournament",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Southeast Missouri State Redhawks",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Ohio Valley Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "McNeese Cowboys",
+      "t2": "Sam Houston Bearkats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southland Championship",
+      "date": "2021-05-29"
+    },
+    {
+      "t1": "Central Connecticut Blue Devils",
+      "t2": "Bryant Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NEC Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "Grand Canyon Lopes",
+      "t2": "UT Rio Grande Valley Vaqueros",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WAC Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "SEC Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "South Florida Bulls",
+      "t2": "UCF Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "American Athletic Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "ACC Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "Samford Bulldogs",
+      "t2": "Western Carolina Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Southern Conf Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "Dallas Baptist Patriots",
+      "t2": "Indiana State Sycamores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Missouri Valley Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Big East Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "Old Dominion Monarchs",
+      "t2": "Louisiana Tech Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Conference USA Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "South Alabama Jaguars",
+      "t2": "Georgia Southern Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Sun Belt Championship",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "UC Irvine Anteaters",
+      "t2": "Cal State Fullerton Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "CSU Fullerton vs UC Irvine",
+      "date": "2021-05-30"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Big 12 Championship",
+      "date": "2021-05-30"
+    },
+    {
       "t1": "Liberty Flames",
       "t2": "Duke Blue Devils",
       "w1": 1,
@@ -1525,16 +3429,6 @@
       "done": false,
       "loser": "",
       "round": "Ruston Regional - Elimination Game",
-      "date": "2021-06-05"
-    },
-    {
-      "t1": "LSU Tigers",
-      "t2": "Central Connecticut Blue Devils",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "Eugene Regional - Elimination Game",
       "date": "2021-06-05"
     },
     {
@@ -2209,6 +4103,11 @@
     }
   ],
   "eliminated": [
+    "Southern Illinois Salukis",
+    "Abilene Christian Wildcats",
+    "Cal State Fullerton Titans",
+    "Southern Miss Golden Eagles",
+    "UNC Wilmington Seahawks",
     "Central Michigan Chippewas",
     "Liberty Flames",
     "Georgia Tech Yellow Jackets",
@@ -2222,5 +4121,5 @@
     "LSU Tigers",
     "South Florida Bulls"
   ],
-  "updated": "2026-07-06 12:07 UTC"
+  "updated": "2026-07-06 21:32 UTC"
 }
