@@ -60,6 +60,14 @@
       "round": "WESTERN CONFERENCE FIRST ROUND - GAME 1"
     },
     {
+      "winner": "Anaheim Ducks",
+      "loser": "Calgary Flames",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-14",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 1"
+    },
+    {
       "winner": "Montreal Canadiens",
       "loser": "New York Rangers",
       "winner_score": 4,
@@ -170,6 +178,14 @@
       "loser_score": 3,
       "date": "2017-04-17",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3"
+    },
+    {
+      "winner": "Nashville Predators",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-04-18",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3"
     },
     {
       "winner": "Anaheim Ducks",
@@ -532,6 +548,14 @@
       "round": "WESTERN CONFERENCE SECOND ROUND - GAME 7"
     },
     {
+      "winner": "Nashville Predators",
+      "loser": "Anaheim Ducks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2017-05-13",
+      "round": "WESTERN CONFERENCE FINALS - GAME 1"
+    },
+    {
       "winner": "Ottawa Senators",
       "loser": "Pittsburgh Penguins",
       "winner_score": 2,
@@ -748,6 +772,16 @@
       "date": "2017-04-14"
     },
     {
+      "t1": "Anaheim Ducks",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 1",
+      "date": "2017-04-14"
+    },
+    {
       "t1": "Montreal Canadiens",
       "t2": "New York Rangers",
       "w1": 1,
@@ -886,6 +920,16 @@
       "loser": "",
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3",
       "date": "2017-04-17"
+    },
+    {
+      "t1": "Nashville Predators",
+      "t2": "Chicago Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 3",
+      "date": "2017-04-18"
     },
     {
       "t1": "Anaheim Ducks",
@@ -1338,6 +1382,16 @@
       "date": "2017-05-11"
     },
     {
+      "t1": "Nashville Predators",
+      "t2": "Anaheim Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FINALS - GAME 1",
+      "date": "2017-05-13"
+    },
+    {
       "t1": "Ottawa Senators",
       "t2": "Pittsburgh Penguins",
       "w1": 1,
@@ -1519,5 +1573,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-07 10:46 UTC"
+  "updated": "2026-07-07 21:09 UTC"
 }

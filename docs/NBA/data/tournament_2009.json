@@ -428,6 +428,14 @@
       "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
     },
     {
+      "winner": "Utah Jazz",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 88,
+      "loser_score": 86,
+      "date": "2009-04-24",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
       "winner": "Cleveland Cavaliers",
       "loser": "Detroit Pistons",
       "winner_score": 79,
@@ -458,6 +466,14 @@
       "loser_score": 93,
       "date": "2009-04-25",
       "round": "WESTERN CONFERENCE 1st ROUND - GAME 3"
+    },
+    {
+      "winner": "Dallas Mavericks",
+      "loser": "San Antonio Spurs",
+      "winner_score": 99,
+      "loser_score": 90,
+      "date": "2009-04-25",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4"
     },
     {
       "winner": "Miami Heat",
@@ -764,6 +780,14 @@
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 5"
     },
     {
+      "winner": "Los Angeles Lakers",
+      "loser": "Houston Rockets",
+      "winner_score": 118,
+      "loser_score": 78,
+      "date": "2009-05-13",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5"
+    },
+    {
       "winner": "Denver Nuggets",
       "loser": "Dallas Mavericks",
       "winner_score": 124,
@@ -922,6 +946,14 @@
       "loser_score": 104,
       "date": "2009-06-10",
       "round": "NBA FINALS - GAME 3"
+    },
+    {
+      "winner": "Los Angeles Lakers",
+      "loser": "Orlando Magic",
+      "winner_score": 99,
+      "loser_score": 91,
+      "date": "2009-06-12",
+      "round": "NBA FINALS - GAME 4"
     },
     {
       "winner": "Los Angeles Lakers",
@@ -1464,6 +1496,16 @@
       "date": "2009-04-24"
     },
     {
+      "t1": "Utah Jazz",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 3",
+      "date": "2009-04-24"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "Detroit Pistons",
       "w1": 1,
@@ -1501,6 +1543,16 @@
       "done": false,
       "loser": "",
       "round": "WESTERN CONFERENCE 1st ROUND - GAME 3",
+      "date": "2009-04-25"
+    },
+    {
+      "t1": "Dallas Mavericks",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE 1st ROUND - GAME 4",
       "date": "2009-04-25"
     },
     {
@@ -1884,6 +1936,16 @@
       "date": "2009-05-13"
     },
     {
+      "t1": "Los Angeles Lakers",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 5",
+      "date": "2009-05-13"
+    },
+    {
       "t1": "Denver Nuggets",
       "t2": "Dallas Mavericks",
       "w1": 1,
@@ -2090,10 +2152,20 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "NBA FINALS - GAME 4",
+      "date": "2009-06-12"
+    },
+    {
+      "t1": "Los Angeles Lakers",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NBA FINALS - GAME 5",
       "date": "2009-06-15"
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-07 10:44 UTC"
+  "updated": "2026-07-07 21:08 UTC"
 }

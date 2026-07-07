@@ -868,6 +868,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "Miami Heat",
+      "loser": "Chicago Bulls",
+      "winner_score": 113,
+      "loser_score": 96,
+      "date": "2006-05-04",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "New Jersey Nets",
       "loser": "Indiana Pacers",
       "winner_score": 96,
@@ -1934,10 +1942,10 @@
     {
       "t1": "Miami Heat",
       "t2": "Chicago Bulls",
-      "w1": 3,
+      "w1": 4,
       "w2": 2,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Chicago Bulls",
       "round": "PLAYOFFS",
       "date": "2006-04-23"
     },
@@ -2056,6 +2064,7 @@
     "Washington Wizards",
     "Sacramento Kings",
     "Denver Nuggets",
+    "Chicago Bulls",
     "Los Angeles Lakers",
     "Indiana Pacers",
     "Milwaukee Bucks",
@@ -2068,5 +2077,5 @@
     "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-07-07 10:43 UTC"
+  "updated": "2026-07-07 21:08 UTC"
 }

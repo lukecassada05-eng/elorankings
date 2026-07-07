@@ -340,6 +340,14 @@
       "round": "EASTERN CONFERENCE FIRST ROUND - GAME 3"
     },
     {
+      "winner": "San Jose Sharks",
+      "loser": "Los Angeles Kings",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2014-04-21",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2"
+    },
+    {
       "winner": "Pittsburgh Penguins",
       "loser": "Columbus Blue Jackets",
       "winner_score": 4,
@@ -1370,6 +1378,16 @@
       "date": "2014-04-20"
     },
     {
+      "t1": "San Jose Sharks",
+      "t2": "Los Angeles Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE FIRST ROUND - GAME 2",
+      "date": "2014-04-21"
+    },
+    {
       "t1": "Pittsburgh Penguins",
       "t2": "Columbus Blue Jackets",
       "w1": 1,
@@ -2131,5 +2149,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-07 10:45 UTC"
+  "updated": "2026-07-07 21:09 UTC"
 }
