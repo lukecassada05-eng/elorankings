@@ -636,14 +636,6 @@
       "round": "STANLEY CUP FINAL - GAME 4"
     },
     {
-      "winner": "St. Louis Blues",
-      "loser": "Boston Bruins",
-      "winner_score": 2,
-      "loser_score": 1,
-      "date": "2019-06-07",
-      "round": "STANLEY CUP FINAL - GAME 5"
-    },
-    {
       "winner": "Boston Bruins",
       "loser": "St. Louis Blues",
       "winner_score": 5,
@@ -1452,16 +1444,6 @@
       "date": "2019-06-04"
     },
     {
-      "t1": "St. Louis Blues",
-      "t2": "Boston Bruins",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "STANLEY CUP FINAL - GAME 5",
-      "date": "2019-06-07"
-    },
-    {
       "t1": "Boston Bruins",
       "t2": "St. Louis Blues",
       "w1": 1,
@@ -1483,5 +1465,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-06 21:28 UTC"
+  "updated": "2026-07-07 10:46 UTC"
 }

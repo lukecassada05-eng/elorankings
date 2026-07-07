@@ -12,6 +12,14 @@
       "round": "NFC DIVISIONAL PLAYOFFS"
     },
     {
+      "winner": "Pittsburgh Steelers",
+      "loser": "San Diego Chargers",
+      "winner_score": 35,
+      "loser_score": 24,
+      "date": "2009-01-11",
+      "round": "AFC DIVISIONAL PLAYOFFS"
+    },
+    {
       "winner": "Arizona Cardinals",
       "loser": "Philadelphia Eagles",
       "winner_score": 32,
@@ -48,6 +56,16 @@
       "date": "2009-01-11"
     },
     {
+      "t1": "Pittsburgh Steelers",
+      "t2": "San Diego Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego Chargers",
+      "round": "AFC DIVISIONAL PLAYOFFS",
+      "date": "2009-01-11"
+    },
+    {
       "t1": "Arizona Cardinals",
       "t2": "Philadelphia Eagles",
       "w1": 1,
@@ -80,9 +98,10 @@
   ],
   "eliminated": [
     "New York Giants",
+    "San Diego Chargers",
     "Philadelphia Eagles",
     "Baltimore Ravens",
     "Arizona Cardinals"
   ],
-  "updated": "2026-07-06 21:30 UTC"
+  "updated": "2026-07-07 10:48 UTC"
 }

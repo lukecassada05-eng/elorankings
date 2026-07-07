@@ -1074,6 +1074,54 @@
       "loser_score": 3,
       "date": "2025-05-30",
       "round": "West Final"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Florida Panthers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2025-06-05",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Edmonton Oilers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2025-06-07",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Edmonton Oilers",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2025-06-10",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Florida Panthers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2025-06-13",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Edmonton Oilers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2025-06-15",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Edmonton Oilers",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2025-06-18",
+      "round": "Stanley Cup Final"
     }
   ],
   "series": [
@@ -1736,6 +1784,16 @@
       "loser": "Dallas Stars",
       "round": "West Final",
       "date": "2025-05-22"
+    },
+    {
+      "t1": "Edmonton Oilers",
+      "t2": "Florida Panthers",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Edmonton Oilers",
+      "round": "Stanley Cup Final",
+      "date": "2025-06-05"
     }
   ],
   "eliminated": [
@@ -1752,7 +1810,8 @@
     "Vegas Golden Knights",
     "Winnipeg Jets",
     "Carolina Hurricanes",
-    "Dallas Stars"
+    "Dallas Stars",
+    "Edmonton Oilers"
   ],
-  "updated": "2026-07-06 21:28 UTC"
+  "updated": "2026-07-07 10:46 UTC"
 }

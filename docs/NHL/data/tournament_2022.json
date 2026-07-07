@@ -622,14 +622,6 @@
     {
       "winner": "Tampa Bay Lightning",
       "loser": "New York Rangers",
-      "winner_score": 3,
-      "loser_score": 1,
-      "date": "2022-06-10",
-      "round": "East Final"
-    },
-    {
-      "winner": "Tampa Bay Lightning",
-      "loser": "New York Rangers",
       "winner_score": 2,
       "loser_score": 1,
       "date": "2022-06-12",
@@ -819,9 +811,9 @@
       "t1": "New York Rangers",
       "t2": "Tampa Bay Lightning",
       "w1": 2,
-      "w2": 4,
-      "done": true,
-      "loser": "New York Rangers",
+      "w2": 3,
+      "done": false,
+      "loser": "",
       "round": "East Final",
       "date": "2022-06-02"
     },
@@ -848,8 +840,7 @@
     "Carolina Hurricanes",
     "Calgary Flames",
     "Edmonton Oilers",
-    "New York Rangers",
     "Tampa Bay Lightning"
   ],
-  "updated": "2026-07-06 21:28 UTC"
+  "updated": "2026-07-07 10:46 UTC"
 }

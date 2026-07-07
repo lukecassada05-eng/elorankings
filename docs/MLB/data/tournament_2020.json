@@ -212,14 +212,6 @@
       "round": "ALDS - GAME 3"
     },
     {
-      "winner": "Los Angeles Dodgers",
-      "loser": "San Diego Padres",
-      "winner_score": 6,
-      "loser_score": 5,
-      "date": "2020-10-08",
-      "round": "NLDS - GAME 2"
-    },
-    {
       "winner": "Atlanta Braves",
       "loser": "Miami Marlins",
       "winner_score": 7,
@@ -369,14 +361,6 @@
       "winner_score": 6,
       "loser_score": 2,
       "date": "2020-10-24",
-      "round": "World Series"
-    },
-    {
-      "winner": "Tampa Bay Rays",
-      "loser": "Los Angeles Dodgers",
-      "winner_score": 8,
-      "loser_score": 7,
-      "date": "2020-10-25",
       "round": "World Series"
     },
     {
@@ -658,16 +642,6 @@
       "date": "2020-10-07"
     },
     {
-      "t1": "Los Angeles Dodgers",
-      "t2": "San Diego Padres",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "NLDS - GAME 2",
-      "date": "2020-10-08"
-    },
-    {
       "t1": "Atlanta Braves",
       "t2": "Miami Marlins",
       "w1": 1,
@@ -831,7 +805,7 @@
       "t1": "Los Angeles Dodgers",
       "t2": "Tampa Bay Rays",
       "w1": 4,
-      "w2": 2,
+      "w2": 1,
       "done": true,
       "loser": "Tampa Bay Rays",
       "round": "World Series",
@@ -841,5 +815,5 @@
   "eliminated": [
     "Tampa Bay Rays"
   ],
-  "updated": "2026-07-06 21:29 UTC"
+  "updated": "2026-07-07 10:48 UTC"
 }

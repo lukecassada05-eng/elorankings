@@ -628,28 +628,12 @@
       "round": "EAST FINALS - GAME 6"
     },
     {
-      "winner": "Washington Capitals",
-      "loser": "Tampa Bay Lightning",
-      "winner_score": 4,
-      "loser_score": 0,
-      "date": "2018-05-24",
-      "round": "EAST FINALS - GAME 7"
-    },
-    {
       "winner": "Vegas Golden Knights",
       "loser": "Washington Capitals",
       "winner_score": 6,
       "loser_score": 4,
       "date": "2018-05-29",
       "round": "STANLEY CUP FINAL - GAME 1"
-    },
-    {
-      "winner": "Washington Capitals",
-      "loser": "Vegas Golden Knights",
-      "winner_score": 3,
-      "loser_score": 2,
-      "date": "2018-05-31",
-      "round": "STANLEY CUP FINAL - GAME 2"
     },
     {
       "winner": "Washington Capitals",
@@ -1458,16 +1442,6 @@
       "date": "2018-05-22"
     },
     {
-      "t1": "Washington Capitals",
-      "t2": "Tampa Bay Lightning",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "EAST FINALS - GAME 7",
-      "date": "2018-05-24"
-    },
-    {
       "t1": "Vegas Golden Knights",
       "t2": "Washington Capitals",
       "w1": 1,
@@ -1476,16 +1450,6 @@
       "loser": "",
       "round": "STANLEY CUP FINAL - GAME 1",
       "date": "2018-05-29"
-    },
-    {
-      "t1": "Washington Capitals",
-      "t2": "Vegas Golden Knights",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "STANLEY CUP FINAL - GAME 2",
-      "date": "2018-05-31"
     },
     {
       "t1": "Washington Capitals",
@@ -1519,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-06 21:27 UTC"
+  "updated": "2026-07-07 10:46 UTC"
 }
