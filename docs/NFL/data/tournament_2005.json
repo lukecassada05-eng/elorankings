@@ -50,14 +50,6 @@
       "loser_score": 14,
       "date": "2006-01-22",
       "round": "NFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "Pittsburgh Steelers",
-      "loser": "Seattle Seahawks",
-      "winner_score": 21,
-      "loser_score": 10,
-      "date": "2006-02-05",
-      "round": "Super Bowl XL"
     }
   ],
   "series": [
@@ -120,16 +112,6 @@
       "loser": "Carolina Panthers",
       "round": "NFC CHAMPIONSHIP",
       "date": "2006-01-22"
-    },
-    {
-      "t1": "Pittsburgh Steelers",
-      "t2": "Seattle Seahawks",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Seattle Seahawks",
-      "round": "Super Bowl XL",
-      "date": "2006-02-05"
     }
   ],
   "eliminated": [
@@ -138,8 +120,7 @@
     "Indianapolis Colts",
     "Chicago Bears",
     "Denver Broncos",
-    "Carolina Panthers",
-    "Seattle Seahawks"
+    "Carolina Panthers"
   ],
-  "updated": "2026-07-12 20:31 UTC"
+  "updated": "2026-07-13 11:13 UTC"
 }
