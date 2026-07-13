@@ -58,6 +58,14 @@
       "loser_score": 21,
       "date": "2003-01-26",
       "round": "Super Bowl XXXVII"
+    },
+    {
+      "winner": "Afc",
+      "loser": "Nfc",
+      "winner_score": 45,
+      "loser_score": 20,
+      "date": "2003-02-02",
+      "round": ""
     }
   ],
   "series": [
@@ -130,6 +138,16 @@
       "loser": "Oakland Raiders",
       "round": "Super Bowl XXXVII",
       "date": "2003-01-26"
+    },
+    {
+      "t1": "Afc",
+      "t2": "Nfc",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nfc",
+      "round": "",
+      "date": "2003-02-02"
     }
   ],
   "eliminated": [
@@ -139,7 +157,8 @@
     "New York Jets",
     "Philadelphia Eagles",
     "Tennessee Titans",
-    "Oakland Raiders"
+    "Oakland Raiders",
+    "Nfc"
   ],
-  "updated": "2026-07-13 11:13 UTC"
+  "updated": "2026-07-13 20:31 UTC"
 }
