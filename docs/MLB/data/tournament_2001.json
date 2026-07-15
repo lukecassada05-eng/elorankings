@@ -860,10 +860,26 @@
       "round": ""
     },
     {
+      "winner": "New York             Yankees",
+      "loser": "Seattle              Mariners",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2001-10-19",
+      "round": ""
+    },
+    {
       "winner": "Arizona              Diamondbacks",
       "loser": "Atlanta              Braves",
       "winner_score": 5,
       "loser_score": 1,
+      "date": "2001-10-20",
+      "round": ""
+    },
+    {
+      "winner": "Seattle              Mariners",
+      "loser": "New York             Yankees",
+      "winner_score": 14,
+      "loser_score": 3,
       "date": "2001-10-20",
       "round": ""
     },
@@ -1322,8 +1338,8 @@
     {
       "t1": "New York             Yankees",
       "t2": "Seattle              Mariners",
-      "w1": 3,
-      "w2": 0,
+      "w1": 4,
+      "w2": 1,
       "done": true,
       "loser": "Seattle              Mariners",
       "round": "",
@@ -1353,5 +1369,5 @@
     "Atlanta              Braves",
     "Seattle              Mariners"
   ],
-  "updated": "2026-07-14 20:30 UTC"
+  "updated": "2026-07-15 09:32 UTC"
 }
