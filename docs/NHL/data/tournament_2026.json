@@ -1,7 +1,7 @@
 {
   "year": 2026,
   "sport": "NHL",
-  "completed": false,
+  "completed": true,
   "games": [
     {
       "winner": "Tampa Bay Lightning",
@@ -1755,5 +1755,5 @@
     "Montreal Canadiens",
     "Vegas Golden Knights"
   ],
-  "updated": "2026-07-15 20:32 UTC"
+  "updated": "2026-07-16 09:43 UTC"
 }
