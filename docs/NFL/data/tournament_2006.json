@@ -58,14 +58,6 @@
       "loser_score": 17,
       "date": "2007-02-04",
       "round": "Super Bowl XLI"
-    },
-    {
-      "winner": "Afc",
-      "loser": "Nfc",
-      "winner_score": 31,
-      "loser_score": 28,
-      "date": "2007-02-10",
-      "round": "AT HAWAII"
     }
   ],
   "series": [
@@ -138,16 +130,6 @@
       "loser": "Chicago Bears",
       "round": "Super Bowl XLI",
       "date": "2007-02-04"
-    },
-    {
-      "t1": "Afc",
-      "t2": "Nfc",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Nfc",
-      "round": "AT HAWAII",
-      "date": "2007-02-10"
     }
   ],
   "eliminated": [
@@ -157,8 +139,7 @@
     "San Diego Chargers",
     "New Orleans Saints",
     "New England Patriots",
-    "Chicago Bears",
-    "Nfc"
+    "Chicago Bears"
   ],
-  "updated": "2026-07-22 09:44 UTC"
+  "updated": "2026-07-22 20:37 UTC"
 }
