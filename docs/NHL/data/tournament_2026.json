@@ -4,6 +4,782 @@
   "completed": true,
   "games": [
     {
+      "winner": "Tampa Bay Lightning",
+      "loser": "Boston Bruins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Ottawa Senators",
+      "loser": "New York Islanders",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Kings",
+      "loser": "Edmonton Oilers",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "New Jersey Devils",
+      "loser": "Detroit Red Wings",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Nashville Predators",
+      "loser": "Minnesota Wild",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "New York Rangers",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Utah Mammoth",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Montreal Canadiens",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Winnipeg Jets",
+      "winner_score": 7,
+      "loser_score": 1,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Seattle Kraken",
+      "loser": "Calgary Flames",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-04-11",
+      "round": ""
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Colorado Avalanche",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Vancouver Canucks",
+      "loser": "San Jose Sharks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2026-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Montreal Canadiens",
+      "loser": "New York Islanders",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Columbus Blue Jackets",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-12",
+      "round": ""
+    },
+    {
+      "winner": "New Jersey Devils",
+      "loser": "Ottawa Senators",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-12",
+      "round": ""
+    },
+    {
+      "winner": "Vancouver Canucks",
+      "loser": "Anaheim Ducks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Calgary Flames",
+      "loser": "Utah Mammoth",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Tampa Bay Lightning",
+      "loser": "Detroit Red Wings",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "New York Rangers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-13",
+      "round": ""
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2026-04-13",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Minnesota Wild",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Nashville Predators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Chicago Blackhawks",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Edmonton Oilers",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Los Angeles Kings",
+      "loser": "Seattle Kraken",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Winnipeg Jets",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "New Jersey Devils",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "New York Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Montreal Canadiens",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Columbus Blue Jackets",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-14",
+      "round": ""
+    },
+    {
+      "winner": "Minnesota Wild",
+      "loser": "Anaheim Ducks",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Utah Mammoth",
+      "loser": "Winnipeg Jets",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Calgary Flames",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Vancouver Canucks",
+      "loser": "Los Angeles Kings",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Buffalo Sabres",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "New York Rangers",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Florida Panthers",
+      "loser": "Detroit Red Wings",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Ottawa Senators",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2026-04-15",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Blackhawks",
+      "loser": "San Jose Sharks",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2026-04-16",
+      "round": ""
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Seattle Kraken",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-04-16",
+      "round": ""
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Utah Mammoth",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2026-04-16",
+      "round": ""
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Nashville Predators",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-04-17",
+      "round": ""
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Winnipeg Jets",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2026-04-17",
+      "round": ""
+    },
+    {
+      "winner": "Calgary Flames",
+      "loser": "Los Angeles Kings",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2026-04-17",
+      "round": ""
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Vancouver Canucks",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2026-04-17",
+      "round": ""
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Seattle Kraken",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2026-04-17",
+      "round": ""
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Ottawa Senators",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2026-04-18",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Minnesota Wild",
+      "loser": "Dallas Stars",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2026-04-18",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-19",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Los Angeles Kings",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-19",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Montreal Canadiens",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-19",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Boston Bruins",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-19",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Utah Mammoth",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-20",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2026-04-20",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Ottawa Senators",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-20",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Minnesota Wild",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-21",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Anaheim Ducks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-21",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Tampa Bay Lightning",
+      "loser": "Montreal Canadiens",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-21",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Buffalo Sabres",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-21",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Utah Mammoth",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-22",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Los Angeles Kings",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-22",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2026-04-22",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Minnesota Wild",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-23",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Edmonton Oilers",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2026-04-23",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2026-04-23",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Ottawa Senators",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-23",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Los Angeles Kings",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-24",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Montreal Canadiens",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-24",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Utah Mammoth",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-25",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Edmonton Oilers",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2026-04-25",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Ottawa Senators",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-25",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Minnesota Wild",
+      "loser": "Dallas Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-25",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Philadelphia Flyers",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-26",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Boston Bruins",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2026-04-26",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Los Angeles Kings",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2026-04-26",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Tampa Bay Lightning",
+      "loser": "Montreal Canadiens",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-26",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Edmonton Oilers",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-04-27",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Pittsburgh Penguins",
+      "loser": "Philadelphia Flyers",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-27",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Utah Mammoth",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-04-28",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Buffalo Sabres",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2026-04-28",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Minnesota Wild",
+      "loser": "Dallas Stars",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-04-29",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Edmonton Oilers",
+      "loser": "Anaheim Ducks",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-04-29",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Montreal Canadiens",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2026-04-29",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Philadelphia Flyers",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2026-04-29",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Utah Mammoth",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-04-30",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Minnesota Wild",
+      "loser": "Dallas Stars",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2026-04-30",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Anaheim Ducks",
+      "loser": "Edmonton Oilers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2026-05-01",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Tampa Bay Lightning",
+      "loser": "Montreal Canadiens",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2026-05-01",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Buffalo Sabres",
+      "loser": "Boston Bruins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2026-05-01",
+      "round": "East 1st Round"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Utah Mammoth",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2026-05-02",
+      "round": "West 1st Round"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Philadelphia Flyers",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2026-05-03",
+      "round": "East 2nd Round"
+    },
+    {
       "winner": "Montreal Canadiens",
       "loser": "Tampa Bay Lightning",
       "winner_score": 2,
@@ -250,17 +1026,655 @@
       "loser_score": 1,
       "date": "2026-05-30",
       "round": "East Final"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-06-03",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2026-06-05",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2026-06-07",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2026-06-10",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2026-06-12",
+      "round": "Stanley Cup Final"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2026-06-15",
+      "round": "Stanley Cup Final"
     }
   ],
   "series": [
     {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Ottawa Senators",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Pittsburgh Penguins",
+      "w1": 2,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Los Angeles Kings",
+      "t2": "Edmonton Oilers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "New Jersey Devils",
+      "t2": "Detroit Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Chicago Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Nashville Predators",
+      "t2": "Minnesota Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "New York Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Utah Mammoth",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Florida Panthers",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Montreal Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Philadelphia Flyers",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Seattle Kraken",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-11"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "Colorado Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-12"
+    },
+    {
+      "t1": "Vancouver Canucks",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-12"
+    },
+    {
       "t1": "Montreal Canadiens",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-12"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Columbus Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-12"
+    },
+    {
+      "t1": "New Jersey Devils",
+      "t2": "Ottawa Senators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-12"
+    },
+    {
+      "t1": "Vancouver Canucks",
+      "t2": "Anaheim Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-13"
+    },
+    {
+      "t1": "Calgary Flames",
+      "t2": "Utah Mammoth",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-13"
+    },
+    {
+      "t1": "Tampa Bay Lightning",
+      "t2": "Detroit Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-13"
+    },
+    {
+      "t1": "Florida Panthers",
+      "t2": "New York Rangers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-13"
+    },
+    {
+      "t1": "Philadelphia Flyers",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-13"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-13"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Minnesota Wild",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Buffalo Sabres",
+      "t2": "Chicago Blackhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Edmonton Oilers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Los Angeles Kings",
+      "t2": "Seattle Kraken",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "New Jersey Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Philadelphia Flyers",
+      "t2": "Montreal Canadiens",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Columbus Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-14"
+    },
+    {
+      "t1": "Minnesota Wild",
+      "t2": "Anaheim Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "Utah Mammoth",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "Vancouver Canucks",
+      "t2": "Los Angeles Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "Buffalo Sabres",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "New York Rangers",
       "t2": "Tampa Bay Lightning",
       "w1": 1,
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "Florida Panthers",
+      "t2": "Detroit Red Wings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "Ottawa Senators",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-15"
+    },
+    {
+      "t1": "Chicago Blackhawks",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-16"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "Seattle Kraken",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-16"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Utah Mammoth",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-16"
+    },
+    {
+      "t1": "Anaheim Ducks",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-17"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-17"
+    },
+    {
+      "t1": "Calgary Flames",
+      "t2": "Los Angeles Kings",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-17"
+    },
+    {
+      "t1": "Edmonton Oilers",
+      "t2": "Vancouver Canucks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-17"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Seattle Kraken",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2026-04-17"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Ottawa Senators",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Ottawa Senators",
       "round": "East 1st Round",
+      "date": "2026-04-18"
+    },
+    {
+      "t1": "Minnesota Wild",
+      "t2": "Dallas Stars",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Dallas Stars",
+      "round": "West 1st Round",
+      "date": "2026-04-18"
+    },
+    {
+      "t1": "Philadelphia Flyers",
+      "t2": "Pittsburgh Penguins",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Pittsburgh Penguins",
+      "round": "East 1st Round",
+      "date": "2026-04-19"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Los Angeles Kings",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Los Angeles Kings",
+      "round": "West 1st Round",
+      "date": "2026-04-19"
+    },
+    {
+      "t1": "Montreal Canadiens",
+      "t2": "Tampa Bay Lightning",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Tampa Bay Lightning",
+      "round": "East 1st Round",
+      "date": "2026-04-19"
+    },
+    {
+      "t1": "Buffalo Sabres",
+      "t2": "Boston Bruins",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Boston Bruins",
+      "round": "East 1st Round",
+      "date": "2026-04-19"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "Utah Mammoth",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "Utah Mammoth",
+      "round": "West 1st Round",
+      "date": "2026-04-20"
+    },
+    {
+      "t1": "Edmonton Oilers",
+      "t2": "Anaheim Ducks",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Edmonton Oilers",
+      "round": "West 1st Round",
+      "date": "2026-04-21"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Philadelphia Flyers",
+      "w1": 4,
+      "w2": 0,
+      "done": true,
+      "loser": "Philadelphia Flyers",
+      "round": "East 2nd Round",
       "date": "2026-05-03"
     },
     {
@@ -271,16 +1685,6 @@
       "done": true,
       "loser": "Minnesota Wild",
       "round": "West 2nd Round",
-      "date": "2026-05-04"
-    },
-    {
-      "t1": "Carolina Hurricanes",
-      "t2": "Philadelphia Flyers",
-      "w1": 3,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "East 2nd Round",
       "date": "2026-05-04"
     },
     {
@@ -322,14 +1726,34 @@
       "loser": "Montreal Canadiens",
       "round": "East Final",
       "date": "2026-05-22"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "Carolina Hurricanes",
+      "w1": 2,
+      "w2": 4,
+      "done": true,
+      "loser": "Vegas Golden Knights",
+      "round": "Stanley Cup Final",
+      "date": "2026-06-03"
     }
   ],
   "eliminated": [
+    "Ottawa Senators",
+    "Dallas Stars",
+    "Pittsburgh Penguins",
+    "Los Angeles Kings",
+    "Tampa Bay Lightning",
+    "Boston Bruins",
+    "Utah Mammoth",
+    "Edmonton Oilers",
+    "Philadelphia Flyers",
     "Minnesota Wild",
     "Anaheim Ducks",
     "Buffalo Sabres",
     "Colorado Avalanche",
-    "Montreal Canadiens"
+    "Montreal Canadiens",
+    "Vegas Golden Knights"
   ],
-  "updated": "2026-07-22 20:37 UTC"
+  "updated": "2026-07-23 09:54 UTC"
 }
