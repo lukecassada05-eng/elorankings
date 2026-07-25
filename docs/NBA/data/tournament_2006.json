@@ -1052,6 +1052,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "Miami Heat",
+      "loser": "New Jersey Nets",
+      "winner_score": 106,
+      "loser_score": 105,
+      "date": "2006-05-17",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "Cleveland Cavaliers",
       "loser": "Detroit Pistons",
       "winner_score": 86,
@@ -2015,9 +2023,9 @@
       "t1": "New Jersey Nets",
       "t2": "Miami Heat",
       "w1": 1,
-      "w2": 3,
-      "done": false,
-      "loser": "",
+      "w2": 4,
+      "done": true,
+      "loser": "New Jersey Nets",
       "round": "PLAYOFFS",
       "date": "2006-05-09"
     },
@@ -2064,9 +2072,10 @@
     "San Antonio Spurs",
     "Cleveland Cavaliers",
     "LA Clippers",
+    "New Jersey Nets",
     "Detroit Pistons",
     "Phoenix Suns",
     "Dallas Mavericks"
   ],
-  "updated": "2026-07-25 09:29 UTC"
+  "updated": "2026-07-25 20:33 UTC"
 }
