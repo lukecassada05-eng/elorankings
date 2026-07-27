@@ -829,14 +829,6 @@
     },
     {
       "winner": "Los Angeles Lakers",
-      "loser": "Phoenix Suns",
-      "winner_score": 111,
-      "loser_score": 103,
-      "date": "2010-05-30",
-      "round": "WESTERN CONFERENCE FINALS - GAME 6"
-    },
-    {
-      "winner": "Los Angeles Lakers",
       "loser": "Boston Celtics",
       "winner_score": 102,
       "loser_score": 89,
@@ -866,6 +858,14 @@
       "loser_score": 89,
       "date": "2010-06-11",
       "round": "NBA FINALS - GAME 4"
+    },
+    {
+      "winner": "Boston Celtics",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 92,
+      "loser_score": 86,
+      "date": "2010-06-14",
+      "round": "NBA FINALS - GAME 5"
     },
     {
       "winner": "Los Angeles Lakers",
@@ -1917,16 +1917,6 @@
     },
     {
       "t1": "Los Angeles Lakers",
-      "t2": "Phoenix Suns",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "WESTERN CONFERENCE FINALS - GAME 6",
-      "date": "2010-05-30"
-    },
-    {
-      "t1": "Los Angeles Lakers",
       "t2": "Boston Celtics",
       "w1": 1,
       "w2": 0,
@@ -1966,6 +1956,16 @@
       "date": "2010-06-11"
     },
     {
+      "t1": "Boston Celtics",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "NBA FINALS - GAME 5",
+      "date": "2010-06-14"
+    },
+    {
       "t1": "Los Angeles Lakers",
       "t2": "Boston Celtics",
       "w1": 1,
@@ -1987,5 +1987,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-27 11:14 UTC"
+  "updated": "2026-07-27 20:50 UTC"
 }

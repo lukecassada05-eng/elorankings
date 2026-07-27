@@ -4,6 +4,454 @@
   "completed": true,
   "games": [
     {
+      "winner": "Toronto Maple Leafs",
+      "loser": "Boston Bruins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-04-11",
+      "round": "EAST 1ST ROUND - GAME 1"
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-04-11",
+      "round": "EAST 1ST ROUND - GAME 1"
+    },
+    {
+      "winner": "Calgary Flames",
+      "loser": "Colorado Avalanche",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2019-04-12",
+      "round": "WEST 1ST ROUND - GAME 1"
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-04-12",
+      "round": "EAST 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "New York Islanders",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-04-12",
+      "round": "EAST 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Winnipeg Jets",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-13",
+      "round": "WEST 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "San Jose Sharks",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2019-04-13",
+      "round": "WEST 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-13",
+      "round": "EAST 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "Nashville Predators",
+      "loser": "Dallas Stars",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-13",
+      "round": "WEST 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-04-14",
+      "round": "EAST 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Calgary Flames",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-14",
+      "round": "WEST 1ST ROUND - GAME 2"
+    },
+    {
+      "winner": "New York Islanders",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-04-14",
+      "round": "EAST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-04-14",
+      "round": "EAST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Winnipeg Jets",
+      "loser": "St. Louis Blues",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2019-04-14",
+      "round": "WEST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "San Jose Sharks",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2019-04-15",
+      "round": "WEST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Toronto Maple Leafs",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-15",
+      "round": "EAST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Washington Capitals",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2019-04-15",
+      "round": "EAST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Nashville Predators",
+      "loser": "Dallas Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-16",
+      "round": "WEST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Calgary Flames",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2019-04-16",
+      "round": "WEST 1ST ROUND - GAME 3"
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Tampa Bay Lightning",
+      "winner_score": 7,
+      "loser_score": 3,
+      "date": "2019-04-16",
+      "round": "EAST 1ST ROUND - GAME 4"
+    },
+    {
+      "winner": "New York Islanders",
+      "loser": "Pittsburgh Penguins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-04-16",
+      "round": "EAST 1ST ROUND - GAME 4"
+    },
+    {
+      "winner": "Winnipeg Jets",
+      "loser": "St. Louis Blues",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-17",
+      "round": "WEST 1ST ROUND - GAME 4"
+    },
+    {
+      "winner": "Vegas Golden Knights",
+      "loser": "San Jose Sharks",
+      "winner_score": 5,
+      "loser_score": 0,
+      "date": "2019-04-17",
+      "round": "WEST 1ST ROUND - GAME 4"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2019-04-17",
+      "round": "EAST 1ST ROUND - GAME 4"
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Nashville Predators",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-04-18",
+      "round": "WEST 1ST ROUND - GAME 4"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Calgary Flames",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-18",
+      "round": "WEST 1ST ROUND - GAME 4"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Washington Capitals",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-18",
+      "round": "EAST 1ST ROUND - GAME 4"
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Winnipeg Jets",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-19",
+      "round": "WEST 1ST ROUND - GAME 5"
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-04-19",
+      "round": "WEST 1ST ROUND - GAME 5"
+    },
+    {
+      "winner": "Toronto Maple Leafs",
+      "loser": "Boston Bruins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-19",
+      "round": "EAST 1ST ROUND - GAME 5"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "Calgary Flames",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-04-20",
+      "round": "WEST 1ST ROUND - GAME 5"
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Nashville Predators",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2019-04-20",
+      "round": "WEST 1ST ROUND - GAME 5"
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Winnipeg Jets",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-20",
+      "round": "WEST 1ST ROUND - GAME 6"
+    },
+    {
+      "winner": "Washington Capitals",
+      "loser": "Carolina Hurricanes",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2019-04-21",
+      "round": "EAST 1ST ROUND - GAME 5"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-04-21",
+      "round": "EAST 1ST ROUND - GAME 6"
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-21",
+      "round": "WEST 1ST ROUND - GAME 6"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Washington Capitals",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-04-22",
+      "round": "EAST 1ST ROUND - GAME 6"
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "Nashville Predators",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-23",
+      "round": "WEST 1ST ROUND - GAME 6"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Toronto Maple Leafs",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2019-04-23",
+      "round": "EAST 1ST ROUND - GAME 7"
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Vegas Golden Knights",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-04-24",
+      "round": "WEST 1ST ROUND - GAME 7"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "Washington Capitals",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-24",
+      "round": "EAST 1ST ROUND - GAME 7"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Columbus Blue Jackets",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-25",
+      "round": "EAST 2ND ROUND - GAME 1"
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Dallas Stars",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-26",
+      "round": "WEST 2ND ROUND - GAME 1"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "New York Islanders",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2019-04-26",
+      "round": "EAST 2ND ROUND - GAME 1"
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Colorado Avalanche",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-04-27",
+      "round": "WEST 2ND ROUND - GAME 1"
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "St. Louis Blues",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-04-27",
+      "round": "WEST 2ND ROUND - GAME 2"
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Boston Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-04-28",
+      "round": "EAST 2ND ROUND - GAME 2"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "New York Islanders",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-28",
+      "round": "EAST 2ND ROUND - GAME 2"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "San Jose Sharks",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-28",
+      "round": "WEST 2ND ROUND - GAME 2"
+    },
+    {
+      "winner": "St. Louis Blues",
+      "loser": "Dallas Stars",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-04-30",
+      "round": "WEST 2ND ROUND - GAME 3"
+    },
+    {
+      "winner": "Columbus Blue Jackets",
+      "loser": "Boston Bruins",
+      "winner_score": 2,
+      "loser_score": 1,
+      "date": "2019-04-30",
+      "round": "EAST 2ND ROUND - GAME 3"
+    },
+    {
+      "winner": "San Jose Sharks",
+      "loser": "Colorado Avalanche",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-05-01",
+      "round": "WEST 2ND ROUND - GAME 3"
+    },
+    {
+      "winner": "Carolina Hurricanes",
+      "loser": "New York Islanders",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-05-01",
+      "round": "EAST 2ND ROUND - GAME 3"
+    },
+    {
+      "winner": "Dallas Stars",
+      "loser": "St. Louis Blues",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-05-02",
+      "round": "WEST 2ND ROUND - GAME 4"
+    },
+    {
+      "winner": "Boston Bruins",
+      "loser": "Columbus Blue Jackets",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-05-02",
+      "round": "EAST 2ND ROUND - GAME 4"
+    },
+    {
+      "winner": "Colorado Avalanche",
+      "loser": "San Jose Sharks",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2019-05-03",
+      "round": "WEST 2ND ROUND - GAME 4"
+    },
+    {
       "winner": "Carolina Hurricanes",
       "loser": "New York Islanders",
       "winner_score": 5,
@@ -213,6 +661,566 @@
     }
   ],
   "series": [
+    {
+      "t1": "Toronto Maple Leafs",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 1",
+      "date": "2019-04-11"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 1",
+      "date": "2019-04-11"
+    },
+    {
+      "t1": "Calgary Flames",
+      "t2": "Colorado Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 1",
+      "date": "2019-04-12"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 2",
+      "date": "2019-04-12"
+    },
+    {
+      "t1": "New York Islanders",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 2",
+      "date": "2019-04-12"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 2",
+      "date": "2019-04-13"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 2",
+      "date": "2019-04-13"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 2",
+      "date": "2019-04-13"
+    },
+    {
+      "t1": "Nashville Predators",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 2",
+      "date": "2019-04-13"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 2",
+      "date": "2019-04-14"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 2",
+      "date": "2019-04-14"
+    },
+    {
+      "t1": "New York Islanders",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 3",
+      "date": "2019-04-14"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 3",
+      "date": "2019-04-14"
+    },
+    {
+      "t1": "Winnipeg Jets",
+      "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 3",
+      "date": "2019-04-14"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 3",
+      "date": "2019-04-15"
+    },
+    {
+      "t1": "Toronto Maple Leafs",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 3",
+      "date": "2019-04-15"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 3",
+      "date": "2019-04-15"
+    },
+    {
+      "t1": "Nashville Predators",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 3",
+      "date": "2019-04-16"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 3",
+      "date": "2019-04-16"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Tampa Bay Lightning",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 4",
+      "date": "2019-04-16"
+    },
+    {
+      "t1": "New York Islanders",
+      "t2": "Pittsburgh Penguins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 4",
+      "date": "2019-04-16"
+    },
+    {
+      "t1": "Winnipeg Jets",
+      "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 4",
+      "date": "2019-04-17"
+    },
+    {
+      "t1": "Vegas Golden Knights",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 4",
+      "date": "2019-04-17"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 4",
+      "date": "2019-04-17"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 4",
+      "date": "2019-04-18"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 4",
+      "date": "2019-04-18"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 4",
+      "date": "2019-04-18"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 5",
+      "date": "2019-04-19"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Vegas Golden Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 5",
+      "date": "2019-04-19"
+    },
+    {
+      "t1": "Toronto Maple Leafs",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 5",
+      "date": "2019-04-19"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "Calgary Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 5",
+      "date": "2019-04-20"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 5",
+      "date": "2019-04-20"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Winnipeg Jets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 6",
+      "date": "2019-04-20"
+    },
+    {
+      "t1": "Washington Capitals",
+      "t2": "Carolina Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 5",
+      "date": "2019-04-21"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 6",
+      "date": "2019-04-21"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Vegas Golden Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 6",
+      "date": "2019-04-21"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 6",
+      "date": "2019-04-22"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "Nashville Predators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 6",
+      "date": "2019-04-23"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Toronto Maple Leafs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 7",
+      "date": "2019-04-23"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Vegas Golden Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 1ST ROUND - GAME 7",
+      "date": "2019-04-24"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "Washington Capitals",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 1ST ROUND - GAME 7",
+      "date": "2019-04-24"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Columbus Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2ND ROUND - GAME 1",
+      "date": "2019-04-25"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 1",
+      "date": "2019-04-26"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2ND ROUND - GAME 1",
+      "date": "2019-04-26"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Colorado Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 1",
+      "date": "2019-04-27"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 2",
+      "date": "2019-04-27"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2ND ROUND - GAME 2",
+      "date": "2019-04-28"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2ND ROUND - GAME 2",
+      "date": "2019-04-28"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 2",
+      "date": "2019-04-28"
+    },
+    {
+      "t1": "St. Louis Blues",
+      "t2": "Dallas Stars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 3",
+      "date": "2019-04-30"
+    },
+    {
+      "t1": "Columbus Blue Jackets",
+      "t2": "Boston Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2ND ROUND - GAME 3",
+      "date": "2019-04-30"
+    },
+    {
+      "t1": "San Jose Sharks",
+      "t2": "Colorado Avalanche",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 3",
+      "date": "2019-05-01"
+    },
+    {
+      "t1": "Carolina Hurricanes",
+      "t2": "New York Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2ND ROUND - GAME 3",
+      "date": "2019-05-01"
+    },
+    {
+      "t1": "Dallas Stars",
+      "t2": "St. Louis Blues",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 4",
+      "date": "2019-05-02"
+    },
+    {
+      "t1": "Boston Bruins",
+      "t2": "Columbus Blue Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EAST 2ND ROUND - GAME 4",
+      "date": "2019-05-02"
+    },
+    {
+      "t1": "Colorado Avalanche",
+      "t2": "San Jose Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WEST 2ND ROUND - GAME 4",
+      "date": "2019-05-03"
+    },
     {
       "t1": "Carolina Hurricanes",
       "t2": "New York Islanders",
@@ -475,5 +1483,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-27 11:15 UTC"
+  "updated": "2026-07-27 20:51 UTC"
 }
