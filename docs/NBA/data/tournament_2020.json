@@ -9,7 +9,7 @@
       "winner_score": 106,
       "loser_score": 104,
       "date": "2020-07-30",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Los Angeles Lakers",
@@ -17,7 +17,7 @@
       "winner_score": 103,
       "loser_score": 101,
       "date": "2020-07-31",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Orlando Magic",
@@ -25,7 +25,7 @@
       "winner_score": 128,
       "loser_score": 118,
       "date": "2020-07-31",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Portland Trail Blazers",
@@ -33,7 +33,7 @@
       "winner_score": 140,
       "loser_score": 135,
       "date": "2020-07-31",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Phoenix Suns",
@@ -41,7 +41,7 @@
       "winner_score": 125,
       "loser_score": 112,
       "date": "2020-07-31",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Milwaukee Bucks",
@@ -49,7 +49,7 @@
       "winner_score": 119,
       "loser_score": 112,
       "date": "2020-07-31",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "San Antonio Spurs",
@@ -57,7 +57,7 @@
       "winner_score": 129,
       "loser_score": 120,
       "date": "2020-08-01",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Houston Rockets",
@@ -65,7 +65,7 @@
       "winner_score": 153,
       "loser_score": 149,
       "date": "2020-08-01",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Miami Heat",
@@ -73,7 +73,7 @@
       "winner_score": 125,
       "loser_score": 105,
       "date": "2020-08-01",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Oklahoma City Thunder",
@@ -81,7 +81,7 @@
       "winner_score": 110,
       "loser_score": 94,
       "date": "2020-08-01",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "LA Clippers",
@@ -89,7 +89,7 @@
       "winner_score": 126,
       "loser_score": 103,
       "date": "2020-08-01",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Indiana Pacers",
@@ -97,7 +97,7 @@
       "winner_score": 127,
       "loser_score": 121,
       "date": "2020-08-01",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Toronto Raptors",
@@ -105,7 +105,7 @@
       "winner_score": 107,
       "loser_score": 92,
       "date": "2020-08-02",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Brooklyn Nets",
@@ -1388,7 +1388,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-07-30"
     },
     {
@@ -1398,17 +1398,17 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-07-31"
     },
     {
       "t1": "Orlando Magic",
       "t2": "Brooklyn Nets",
       "w1": 1,
-      "w2": 0,
+      "w2": 1,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-07-31"
     },
     {
@@ -1418,7 +1418,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-07-31"
     },
     {
@@ -1428,7 +1428,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-07-31"
     },
     {
@@ -1438,7 +1438,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-07-31"
     },
     {
@@ -1448,7 +1448,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-08-01"
     },
     {
@@ -1458,7 +1458,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-08-01"
     },
     {
@@ -1468,7 +1468,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-08-01"
     },
     {
@@ -1478,7 +1478,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-08-01"
     },
     {
@@ -1488,7 +1488,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-08-01"
     },
     {
@@ -1498,7 +1498,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-08-01"
     },
     {
@@ -1508,7 +1508,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2020-08-02"
     },
     {
@@ -2034,16 +2034,6 @@
     {
       "t1": "Los Angeles Lakers",
       "t2": "Denver Nuggets",
-      "w1": 1,
-      "w2": 0,
-      "done": false,
-      "loser": "",
-      "round": "",
-      "date": "2020-08-11"
-    },
-    {
-      "t1": "Brooklyn Nets",
-      "t2": "Orlando Magic",
       "w1": 1,
       "w2": 0,
       "done": false,
@@ -2728,5 +2718,5 @@
     "Denver Nuggets",
     "Miami Heat"
   ],
-  "updated": "2026-07-28 10:14 UTC"
+  "updated": "2026-07-28 20:36 UTC"
 }
