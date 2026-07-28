@@ -748,6 +748,14 @@
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 4"
     },
     {
+      "winner": "Boston Celtics",
+      "loser": "Orlando Magic",
+      "winner_score": 95,
+      "loser_score": 94,
+      "date": "2009-05-11",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4"
+    },
+    {
       "winner": "Cleveland Cavaliers",
       "loser": "Atlanta Hawks",
       "winner_score": 84,
@@ -1888,6 +1896,16 @@
       "date": "2009-05-10"
     },
     {
+      "t1": "Boston Celtics",
+      "t2": "Orlando Magic",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 4",
+      "date": "2009-05-11"
+    },
+    {
       "t1": "Cleveland Cavaliers",
       "t2": "Atlanta Hawks",
       "w1": 1,
@@ -2149,5 +2167,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-27 20:49 UTC"
+  "updated": "2026-07-28 10:13 UTC"
 }
