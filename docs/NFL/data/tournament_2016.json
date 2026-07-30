@@ -50,14 +50,6 @@
       "loser_score": 17,
       "date": "2017-01-22",
       "round": "AFC CHAMPIONSHIP"
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Atlanta Falcons",
-      "winner_score": 34,
-      "loser_score": 28,
-      "date": "2017-02-05",
-      "round": "Super Bowl LI"
     }
   ],
   "series": [
@@ -120,16 +112,6 @@
       "loser": "Pittsburgh Steelers",
       "round": "AFC CHAMPIONSHIP",
       "date": "2017-01-22"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Atlanta Falcons",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Atlanta Falcons",
-      "round": "Super Bowl LI",
-      "date": "2017-02-05"
     }
   ],
   "eliminated": [
@@ -138,8 +120,7 @@
     "Dallas Cowboys",
     "Kansas City Chiefs",
     "Green Bay Packers",
-    "Pittsburgh Steelers",
-    "Atlanta Falcons"
+    "Pittsburgh Steelers"
   ],
-  "updated": "2026-07-29 20:39 UTC"
+  "updated": "2026-07-30 10:07 UTC"
 }
