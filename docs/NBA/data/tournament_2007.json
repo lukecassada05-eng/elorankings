@@ -932,6 +932,14 @@
       "round": "PLAYOFFS"
     },
     {
+      "winner": "Utah Jazz",
+      "loser": "Golden State Warriors",
+      "winner_score": 100,
+      "loser_score": 87,
+      "date": "2007-05-16",
+      "round": "PLAYOFFS"
+    },
+    {
       "winner": "San Antonio Spurs",
       "loser": "Phoenix Suns",
       "winner_score": 88,
@@ -1766,10 +1774,10 @@
     {
       "t1": "Utah Jazz",
       "t2": "Golden State Warriors",
-      "w1": 3,
+      "w1": 4,
       "w2": 1,
-      "done": false,
-      "loser": "",
+      "done": true,
+      "loser": "Golden State Warriors",
       "round": "PLAYOFFS",
       "date": "2007-05-08"
     },
@@ -1816,9 +1824,10 @@
     "Chicago Bulls",
     "Phoenix Suns",
     "New Jersey Nets",
+    "Golden State Warriors",
     "Utah Jazz",
     "Detroit Pistons",
     "Cleveland Cavaliers"
   ],
-  "updated": "2026-07-30 10:04 UTC"
+  "updated": "2026-07-30 20:32 UTC"
 }

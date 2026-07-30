@@ -716,6 +716,14 @@
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 3"
     },
     {
+      "winner": "Los Angeles Lakers",
+      "loser": "Houston Rockets",
+      "winner_score": 108,
+      "loser_score": 94,
+      "date": "2009-05-09",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3"
+    },
+    {
       "winner": "Denver Nuggets",
       "loser": "Dallas Mavericks",
       "winner_score": 106,
@@ -1848,6 +1856,16 @@
       "date": "2009-05-08"
     },
     {
+      "t1": "Los Angeles Lakers",
+      "t2": "Houston Rockets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 3",
+      "date": "2009-05-09"
+    },
+    {
       "t1": "Denver Nuggets",
       "t2": "Dallas Mavericks",
       "w1": 1,
@@ -2149,5 +2167,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-07-30 10:04 UTC"
+  "updated": "2026-07-30 20:32 UTC"
 }
