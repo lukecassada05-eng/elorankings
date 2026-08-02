@@ -2,8 +2,2301 @@
   "year": 2019,
   "sport": "CBASE",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-01 20:40 UTC"
+  "games": [
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Coastal Carolina Chanticleers",
+      "winner_score": 16,
+      "loser_score": 7,
+      "date": "2019-05-31",
+      "round": "Atlanta Regional"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Florida Atlantic Owls",
+      "winner_score": 13,
+      "loser_score": 7,
+      "date": "2019-05-31",
+      "round": "Athens Regional"
+    },
+    {
+      "winner": "Campbell Fighting Camels",
+      "loser": "NC State Wolfpack",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-05-31",
+      "round": "Greenville Regional"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Southern Jaguars",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2019-05-31",
+      "round": "Starkville Regional"
+    },
+    {
+      "winner": "Indiana State Sycamores",
+      "loser": "McNeese Cowboys",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2019-05-31",
+      "round": "Nashville Regional"
+    },
+    {
+      "winner": "Nebraska Cornhuskers",
+      "loser": "UConn Huskies",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2019-05-31",
+      "round": "Oklahoma City Regional"
+    },
+    {
+      "winner": "Southern Miss Golden Eagles",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 15,
+      "loser_score": 3,
+      "date": "2019-05-31",
+      "round": "Baton Rouge Regional"
+    },
+    {
+      "winner": "Illinois State Redbirds",
+      "loser": "Indiana Hoosiers",
+      "winner_score": 8,
+      "loser_score": 7,
+      "date": "2019-05-31",
+      "round": "Louisville Regional"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "UNC Wilmington Seahawks",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2019-05-31",
+      "round": "Chapel Hill Regional"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Central Connecticut Blue Devils",
+      "winner_score": 11,
+      "loser_score": 5,
+      "date": "2019-05-31",
+      "round": "Fayetteville Regional"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2019-05-31",
+      "round": "Morgantown Regional"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Army Black Knights",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2019-05-31",
+      "round": "Lubbock Regional"
+    },
+    {
+      "winner": "Loyola Marymount Lions",
+      "loser": "Baylor Bears",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-05-31",
+      "round": "Los Angeles Regional"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Creighton Bluejays",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2019-05-31",
+      "round": "Corvallis Regional"
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "Sacramento State Hornets",
+      "winner_score": 11,
+      "loser_score": 0,
+      "date": "2019-05-31",
+      "round": "Stanford Regional"
+    },
+    {
+      "winner": "Clemson Tigers",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2019-05-31",
+      "round": "Oxford Regional"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "UIC Flames",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2019-05-31",
+      "round": "Louisville Regional"
+    },
+    {
+      "winner": "Georgia Bulldogs",
+      "loser": "Mercer Bears",
+      "winner_score": 13,
+      "loser_score": 3,
+      "date": "2019-05-31",
+      "round": "Athens Regional"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 8,
+      "loser_score": 2,
+      "date": "2019-05-31",
+      "round": "Nashville Regional"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Harvard Crimson",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2019-05-31",
+      "round": "Oklahoma City Regional"
+    },
+    {
+      "winner": "LSU Tigers",
+      "loser": "Stony Brook Seawolves",
+      "winner_score": 17,
+      "loser_score": 3,
+      "date": "2019-05-31",
+      "round": "Baton Rouge Regional"
+    },
+    {
+      "winner": "Georgia Tech Yellow Jackets",
+      "loser": "Florida A&M Rattlers",
+      "winner_score": 13,
+      "loser_score": 2,
+      "date": "2019-05-31",
+      "round": "Atlanta Regional"
+    },
+    {
+      "winner": "TCU Horned Frogs",
+      "loser": "California Golden Bears",
+      "winner_score": 13,
+      "loser_score": 2,
+      "date": "2019-05-31",
+      "round": "Fayetteville Regional"
+    },
+    {
+      "winner": "Dallas Baptist Patriots",
+      "loser": "Florida Gators",
+      "winner_score": 11,
+      "loser_score": 8,
+      "date": "2019-06-01",
+      "round": "Lubbock Regional"
+    },
+    {
+      "winner": "Central Michigan Chippewas",
+      "loser": "Miami Hurricanes",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2019-06-01",
+      "round": "Starkville Regional"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Fordham Rams",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Morgantown Regional"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Jacksonville State Gamecocks",
+      "winner_score": 16,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Oxford Regional"
+    },
+    {
+      "winner": "Liberty Flames",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2019-06-01",
+      "round": "Chapel Hill Regional"
+    },
+    {
+      "winner": "Cincinnati Bearcats",
+      "loser": "Oregon State Beavers",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2019-06-01",
+      "round": "Corvallis Regional"
+    },
+    {
+      "winner": "Fresno State Bulldogs",
+      "loser": "UC Santa Barbara Gauchos",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Stanford Regional"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Omaha Mavericks",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Los Angeles Regional"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "UIC Flames",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2019-06-01",
+      "round": "Louisville Regional - Elimination Game"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "UNC Wilmington Seahawks",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2019-06-01",
+      "round": "Chapel Hill Regional - Elimination Game"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "McNeese Cowboys",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2019-06-01",
+      "round": "Nashville Regional - Elimination Game"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Army Black Knights",
+      "winner_score": 13,
+      "loser_score": 5,
+      "date": "2019-06-01",
+      "round": "Lubbock Regional - Elimination Game"
+    },
+    {
+      "winner": "Coastal Carolina Chanticleers",
+      "loser": "Florida A&M Rattlers",
+      "winner_score": 9,
+      "loser_score": 4,
+      "date": "2019-06-01",
+      "round": "Atlanta Regional - Elimination Game"
+    },
+    {
+      "winner": "Florida Atlantic Owls",
+      "loser": "Mercer Bears",
+      "winner_score": 10,
+      "loser_score": 6,
+      "date": "2019-06-01",
+      "round": "Athens Regional - Elimination Game"
+    },
+    {
+      "winner": "Arizona State Sun Devils",
+      "loser": "Stony Brook Seawolves",
+      "winner_score": 13,
+      "loser_score": 5,
+      "date": "2019-06-01",
+      "round": "Baton Rouge Regional - Elimination Game"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Southern Jaguars",
+      "winner_score": 12,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Starkville Regional - Elimination Game"
+    },
+    {
+      "winner": "Central Connecticut Blue Devils",
+      "loser": "California Golden Bears",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2019-06-01",
+      "round": "Fayetteville Regional - Elimination Game"
+    },
+    {
+      "winner": "Jacksonville State Gamecocks",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 7,
+      "loser_score": 5,
+      "date": "2019-06-01",
+      "round": "Oxford Regional - Elimination Game"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Harvard Crimson",
+      "winner_score": 10,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Oklahoma City Regional - Elimination Game"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Fordham Rams",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Morgantown Regional - Elimination Game"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Liberty Flames",
+      "winner_score": 16,
+      "loser_score": 1,
+      "date": "2019-06-01",
+      "round": "Chapel Hill Regional"
+    },
+    {
+      "winner": "Sacramento State Hornets",
+      "loser": "UC Santa Barbara Gauchos",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2019-06-01",
+      "round": "Stanford Regional - Elimination Game"
+    },
+    {
+      "winner": "Illinois State Redbirds",
+      "loser": "Louisville Cardinals",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Louisville Regional"
+    },
+    {
+      "winner": "Quinnipiac Bobcats",
+      "loser": "East Carolina Pirates",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-06-01",
+      "round": "Greenville Regional"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Oregon State Beavers",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-06-01",
+      "round": "Corvallis Regional - Elimination Game"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Omaha Mavericks",
+      "winner_score": 24,
+      "loser_score": 6,
+      "date": "2019-06-01",
+      "round": "Los Angeles Regional - Elimination Game"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Dallas Baptist Patriots",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Lubbock Regional"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Clemson Tigers",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2019-06-01",
+      "round": "Oxford Regional"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Georgia Tech Yellow Jackets",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2019-06-01",
+      "round": "Atlanta Regional"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Georgia Bulldogs",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2019-06-01",
+      "round": "Athens Regional"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Central Michigan Chippewas",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2019-06-01",
+      "round": "Starkville Regional"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Indiana State Sycamores",
+      "winner_score": 8,
+      "loser_score": 5,
+      "date": "2019-06-01",
+      "round": "Nashville Regional"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "TCU Horned Frogs",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-06-01",
+      "round": "Fayetteville Regional"
+    },
+    {
+      "winner": "LSU Tigers",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 8,
+      "loser_score": 4,
+      "date": "2019-06-01",
+      "round": "Baton Rouge Regional"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2019-06-01",
+      "round": "Morgantown Regional"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Nebraska Cornhuskers",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2019-06-02",
+      "round": "Oklahoma City Regional"
+    },
+    {
+      "winner": "Loyola Marymount Lions",
+      "loser": "UCLA Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "Los Angeles Regional"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 10,
+      "loser_score": 4,
+      "date": "2019-06-02",
+      "round": "Corvallis Regional"
+    },
+    {
+      "winner": "Fresno State Bulldogs",
+      "loser": "Stanford Cardinal",
+      "winner_score": 7,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "Stanford Regional"
+    },
+    {
+      "winner": "Georgia Bulldogs",
+      "loser": "Florida Atlantic Owls",
+      "winner_score": 13,
+      "loser_score": 0,
+      "date": "2019-06-02",
+      "round": "Athens Regional - Elimination Game"
+    },
+    {
+      "winner": "Georgia Tech Yellow Jackets",
+      "loser": "Coastal Carolina Chanticleers",
+      "winner_score": 10,
+      "loser_score": 8,
+      "date": "2019-06-02",
+      "round": "Atlanta Regional - Elimination Game"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 11,
+      "loser_score": 10,
+      "date": "2019-06-02",
+      "round": "Morgantown Regional - Elimination Game"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Liberty Flames",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2019-06-02",
+      "round": "Chapel Hill Regional - Elimination Game"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "NC State Wolfpack",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "Greenville Regional - Elimination Game"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Indiana Hoosiers",
+      "winner_score": 9,
+      "loser_score": 7,
+      "date": "2019-06-02",
+      "round": "Louisville Regional - Elimination Game"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Nebraska Cornhuskers",
+      "winner_score": 16,
+      "loser_score": 1,
+      "date": "2019-06-02",
+      "round": "Oklahoma City Regional - Elimination Game"
+    },
+    {
+      "winner": "Dallas Baptist Patriots",
+      "loser": "Florida Gators",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2019-06-02",
+      "round": "Lubbock Regional - Elimination Game"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Baylor Bears",
+      "winner_score": 11,
+      "loser_score": 6,
+      "date": "2019-06-02",
+      "round": "Los Angeles Regional - Elimination Game"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Central Michigan Chippewas",
+      "winner_score": 18,
+      "loser_score": 3,
+      "date": "2019-06-02",
+      "round": "Starkville Regional - Elimination Game"
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "Sacramento State Hornets",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2019-06-02",
+      "round": "Stanford Regional - Elimination Game"
+    },
+    {
+      "winner": "TCU Horned Frogs",
+      "loser": "Central Connecticut Blue Devils",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2019-06-02",
+      "round": "Fayetteville Regional - Elimination Game"
+    },
+    {
+      "winner": "Southern Miss Golden Eagles",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 13,
+      "loser_score": 12,
+      "date": "2019-06-02",
+      "round": "Baton Rouge Regional - Elimination Game"
+    },
+    {
+      "winner": "Jacksonville State Gamecocks",
+      "loser": "Clemson Tigers",
+      "winner_score": 9,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "Oxford Regional - Elimination Game"
+    },
+    {
+      "winner": "Indiana State Sycamores",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 10,
+      "loser_score": 5,
+      "date": "2019-06-02",
+      "round": "Nashville Regional - Elimination Game"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2019-06-02",
+      "round": "Corvallis Regional - Elimination Game"
+    },
+    {
+      "winner": "Campbell Fighting Camels",
+      "loser": "Quinnipiac Bobcats",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2019-06-02",
+      "round": "Greenville Regional"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "Chapel Hill Regional"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Georgia Bulldogs",
+      "winner_score": 10,
+      "loser_score": 1,
+      "date": "2019-06-02",
+      "round": "Athens Regional"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Illinois State Redbirds",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "Louisville Regional"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Georgia Tech Yellow Jackets",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-06-02",
+      "round": "Atlanta Regional"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-06-02",
+      "round": "Oklahoma City Regional"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Dallas Baptist Patriots",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2019-06-02",
+      "round": "Lubbock Regional"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-06-02",
+      "round": "Morgantown Regional"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "Quinnipiac Bobcats",
+      "winner_score": 13,
+      "loser_score": 3,
+      "date": "2019-06-03",
+      "round": "Greenville Regional - Elimination Game"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Miami Hurricanes",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2019-06-03",
+      "round": "Starkville Regional"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Loyola Marymount Lions",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2019-06-03",
+      "round": "Los Angeles Regional"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Indiana State Sycamores",
+      "winner_score": 12,
+      "loser_score": 1,
+      "date": "2019-06-03",
+      "round": "Nashville Regional"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Michigan Wolverines",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2019-06-03",
+      "round": "Corvallis Regional"
+    },
+    {
+      "winner": "LSU Tigers",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2019-06-03",
+      "round": "Baton Rouge Regional"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Jacksonville State Gamecocks",
+      "winner_score": 19,
+      "loser_score": 4,
+      "date": "2019-06-03",
+      "round": "Oxford Regional"
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "Fresno State Bulldogs",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2019-06-03",
+      "round": "Stanford Regional"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "TCU Horned Frogs",
+      "winner_score": 6,
+      "loser_score": 0,
+      "date": "2019-06-03",
+      "round": "Fayetteville Regional"
+    },
+    {
+      "winner": "East Carolina Pirates",
+      "loser": "Campbell Fighting Camels",
+      "winner_score": 10,
+      "loser_score": 3,
+      "date": "2019-06-03",
+      "round": "Greenville Regional"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Illinois State Redbirds",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-06-03",
+      "round": "Louisville Regional - Elimination Game"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "UConn Huskies",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-06-03",
+      "round": "Oklahoma City Regional - Elimination Game"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Creighton Bluejays",
+      "winner_score": 17,
+      "loser_score": 6,
+      "date": "2019-06-03",
+      "round": "Corvallis Regional - Elimination Game"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Loyola Marymount Lions",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2019-06-04",
+      "round": "Los Angeles Regional - Elimination Game"
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "Fresno State Bulldogs",
+      "winner_score": 9,
+      "loser_score": 7,
+      "date": "2019-06-04",
+      "round": "Stanford Regional - Elimination Game"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "East Carolina Pirates",
+      "winner_score": 14,
+      "loser_score": 1,
+      "date": "2019-06-07",
+      "round": "Louisville Super Regional - GAME 1"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2019-06-07",
+      "round": "Lubbock Super Regional - GAME 1"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "UCLA Bruins",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-06-08",
+      "round": "Los Angeles Super Regional - GAME 1"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Vanderbilt Commodores",
+      "winner_score": 18,
+      "loser_score": 5,
+      "date": "2019-06-08",
+      "round": "Nashville Super Regional - GAME 1"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "East Carolina Pirates",
+      "winner_score": 12,
+      "loser_score": 0,
+      "date": "2019-06-08",
+      "round": "Louisville Super Regional - GAME 2"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 11,
+      "loser_score": 7,
+      "date": "2019-06-08",
+      "round": "Chapel Hill Super Regional - GAME 1"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Ole Miss Rebels",
+      "winner_score": 11,
+      "loser_score": 2,
+      "date": "2019-06-08",
+      "round": "Fayetteville Super Regional - GAME 1"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "LSU Tigers",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2019-06-08",
+      "round": "Baton Rouge Super Regional - GAME 1"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2019-06-08",
+      "round": "Lubbock Super Regional - GAME 2"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Stanford Cardinal",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2019-06-09",
+      "round": "Starkville Super Regional - GAME 1"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Duke Blue Devils",
+      "winner_score": 3,
+      "loser_score": 0,
+      "date": "2019-06-09",
+      "round": "Nashville Super Regional - GAME 2"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Michigan Wolverines",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-06-09",
+      "round": "Los Angeles Super Regional - GAME 2"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Auburn Tigers",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2019-06-09",
+      "round": "Chapel Hill Super Regional - GAME 2"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 13,
+      "loser_score": 5,
+      "date": "2019-06-09",
+      "round": "Fayetteville Super Regional - GAME 2"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 8,
+      "loser_score": 6,
+      "date": "2019-06-09",
+      "round": "Lubbock Super Regional - GAME 3"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "LSU Tigers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-06-09",
+      "round": "Baton Rouge Super Regional - GAME 2"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Stanford Cardinal",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2019-06-10",
+      "round": "Starkville Super Regional - GAME 2"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "UCLA Bruins",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2019-06-10",
+      "round": "Los Angeles Super Regional - GAME 3"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 14,
+      "loser_score": 7,
+      "date": "2019-06-10",
+      "round": "Chapel Hill Super Regional - GAME 3"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Ole Miss Rebels",
+      "winner_score": 14,
+      "loser_score": 1,
+      "date": "2019-06-10",
+      "round": "Fayetteville Super Regional - GAME 3"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2019-06-15",
+      "round": "College World Series"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 1,
+      "loser_score": 0,
+      "date": "2019-06-15",
+      "round": "College World Series"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Louisville Cardinals",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2019-06-16",
+      "round": "College World Series"
+    },
+    {
+      "winner": "Mississippi State Bulldogs",
+      "loser": "Auburn Tigers",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-06-16",
+      "round": "College World Series"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2019-06-17",
+      "round": "College World Series - Elimination Game"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Florida State Seminoles",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2019-06-17",
+      "round": "College World Series"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Auburn Tigers",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2019-06-18",
+      "round": "College World Series - Elimination Game"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Mississippi State Bulldogs",
+      "winner_score": 6,
+      "loser_score": 3,
+      "date": "2019-06-19",
+      "round": "College World Series"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Florida State Seminoles",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-06-19",
+      "round": "College World Series - Elimination Game"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Mississippi State Bulldogs",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2019-06-21",
+      "round": "College World Series - Elimination Game"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 15,
+      "loser_score": 3,
+      "date": "2019-06-21",
+      "round": "College World Series"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Louisville Cardinals",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2019-06-21",
+      "round": "College World Series"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Vanderbilt Commodores",
+      "winner_score": 7,
+      "loser_score": 4,
+      "date": "2019-06-24",
+      "round": "College World Series Championship Final"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Michigan Wolverines",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2019-06-25",
+      "round": "College World Series Championship Final"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Atlanta Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Florida Atlantic Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Athens Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Campbell Fighting Camels",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Greenville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Southern Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Starkville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Indiana State Sycamores",
+      "t2": "McNeese Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Nashville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Nebraska Cornhuskers",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oklahoma City Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Baton Rouge Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Illinois State Redbirds",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Louisville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Central Connecticut Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Fayetteville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Texas A&M Aggies",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "Morgantown Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Army Black Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Loyola Marymount Lions",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Corvallis Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Sacramento State Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Stanford Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Clemson Tigers",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oxford Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "UIC Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Louisville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Georgia Bulldogs",
+      "t2": "Mercer Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Athens Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Nashville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Harvard Crimson",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oklahoma City Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Stony Brook Seawolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Baton Rouge Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Georgia Tech Yellow Jackets",
+      "t2": "Florida A&M Rattlers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Atlanta Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "California Golden Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Fayetteville Regional",
+      "date": "2019-05-31"
+    },
+    {
+      "t1": "Dallas Baptist Patriots",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Central Michigan Chippewas",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Starkville Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Fordham Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Morgantown Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Jacksonville State Gamecocks",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Jacksonville State Gamecocks",
+      "round": "Oxford Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Liberty Flames",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Cincinnati Bearcats",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Corvallis Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Fresno State Bulldogs",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Stanford Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Omaha Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "UIC Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Louisville Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "McNeese Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Nashville Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Army Black Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Coastal Carolina Chanticleers",
+      "t2": "Florida A&M Rattlers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Atlanta Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Florida Atlantic Owls",
+      "t2": "Mercer Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Athens Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Arizona State Sun Devils",
+      "t2": "Stony Brook Seawolves",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Baton Rouge Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Southern Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Starkville Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Central Connecticut Blue Devils",
+      "t2": "California Golden Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Fayetteville Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Jacksonville State Gamecocks",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oxford Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Harvard Crimson",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oklahoma City Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Fordham Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Morgantown Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Sacramento State Hornets",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Stanford Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Illinois State Redbirds",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Louisville Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Quinnipiac Bobcats",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Greenville Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Corvallis Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Omaha Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Regional - Elimination Game",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Dallas Baptist Patriots",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Dallas Baptist Patriots",
+      "round": "Lubbock Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oxford Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia Tech Yellow Jackets",
+      "round": "Atlanta Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Georgia Bulldogs",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia Bulldogs",
+      "round": "Athens Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Central Michigan Chippewas",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Starkville Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "Indiana State Sycamores",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Indiana State Sycamores",
+      "round": "Nashville Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "TCU Horned Frogs",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "TCU Horned Frogs",
+      "round": "Fayetteville Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Miss Golden Eagles",
+      "round": "Baton Rouge Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Morgantown Regional",
+      "date": "2019-06-01"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oklahoma City Regional",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Loyola Marymount Lions",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Regional",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Corvallis Regional",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Fresno State Bulldogs",
+      "t2": "Stanford Cardinal",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "Stanford Regional",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Georgia Bulldogs",
+      "t2": "Florida Atlantic Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Athens Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Georgia Tech Yellow Jackets",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Atlanta Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Morgantown Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Greenville Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Louisville Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oklahoma City Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Dallas Baptist Patriots",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Central Michigan Chippewas",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Starkville Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Sacramento State Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Stanford Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Central Connecticut Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Fayetteville Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Baton Rouge Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Jacksonville State Gamecocks",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oxford Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Indiana State Sycamores",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Nashville Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Corvallis Regional - Elimination Game",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "Campbell Fighting Camels",
+      "t2": "Quinnipiac Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Greenville Regional",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Regional",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oklahoma City Regional",
+      "date": "2019-06-02"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Quinnipiac Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Greenville Regional - Elimination Game",
+      "date": "2019-06-03"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Starkville Regional",
+      "date": "2019-06-03"
+    },
+    {
+      "t1": "East Carolina Pirates",
+      "t2": "Campbell Fighting Camels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Greenville Regional",
+      "date": "2019-06-03"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Illinois State Redbirds",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Louisville Regional - Elimination Game",
+      "date": "2019-06-03"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Oklahoma City Regional - Elimination Game",
+      "date": "2019-06-03"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Corvallis Regional - Elimination Game",
+      "date": "2019-06-03"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Loyola Marymount Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Regional - Elimination Game",
+      "date": "2019-06-04"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Fresno State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Stanford Regional - Elimination Game",
+      "date": "2019-06-04"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Louisville Super Regional - GAME 1",
+      "date": "2019-06-07"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Super Regional - GAME 1",
+      "date": "2019-06-07"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Super Regional - GAME 1",
+      "date": "2019-06-08"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Nashville Super Regional - GAME 1",
+      "date": "2019-06-08"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Louisville Super Regional - GAME 2",
+      "date": "2019-06-08"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Super Regional - GAME 1",
+      "date": "2019-06-08"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Ole Miss Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Fayetteville Super Regional - GAME 1",
+      "date": "2019-06-08"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Baton Rouge Super Regional - GAME 1",
+      "date": "2019-06-08"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Super Regional - GAME 2",
+      "date": "2019-06-08"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Stanford Cardinal",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Starkville Super Regional - GAME 1",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Nashville Super Regional - GAME 2",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Super Regional - GAME 2",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Super Regional - GAME 2",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Fayetteville Super Regional - GAME 2",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Lubbock Super Regional - GAME 3",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Baton Rouge Super Regional - GAME 2",
+      "date": "2019-06-09"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Stanford Cardinal",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Starkville Super Regional - GAME 2",
+      "date": "2019-06-10"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Los Angeles Super Regional - GAME 3",
+      "date": "2019-06-10"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Chapel Hill Super Regional - GAME 3",
+      "date": "2019-06-10"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Ole Miss Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "Fayetteville Super Regional - GAME 3",
+      "date": "2019-06-10"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "College World Series",
+      "date": "2019-06-15"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "College World Series",
+      "date": "2019-06-15"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "Louisville Cardinals",
+      "w1": 2,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisville Cardinals",
+      "round": "College World Series",
+      "date": "2019-06-16"
+    },
+    {
+      "t1": "Mississippi State Bulldogs",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "College World Series",
+      "date": "2019-06-16"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "College World Series - Elimination Game",
+      "date": "2019-06-17"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "College World Series",
+      "date": "2019-06-17"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "College World Series - Elimination Game",
+      "date": "2019-06-18"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "College World Series",
+      "date": "2019-06-19"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "College World Series - Elimination Game",
+      "date": "2019-06-19"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "College World Series - Elimination Game",
+      "date": "2019-06-21"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 1,
+      "done": false,
+      "loser": "",
+      "round": "College World Series Championship Final",
+      "date": "2019-06-24"
+    }
+  ],
+  "eliminated": [
+    "Texas A&M Aggies",
+    "Jacksonville State Gamecocks",
+    "Dallas Baptist Patriots",
+    "Georgia Tech Yellow Jackets",
+    "Georgia Bulldogs",
+    "Indiana State Sycamores",
+    "TCU Horned Frogs",
+    "Southern Miss Golden Eagles",
+    "Texas Tech Red Raiders",
+    "Louisville Cardinals"
+  ],
+  "updated": "2026-08-02 09:43 UTC"
 }

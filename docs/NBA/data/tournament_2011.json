@@ -9,7 +9,7 @@
       "winner_score": 103,
       "loser_score": 90,
       "date": "2011-04-13",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Portland Trail Blazers",
@@ -17,7 +17,7 @@
       "winner_score": 102,
       "loser_score": 89,
       "date": "2011-04-13",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Los Angeles Lakers",
@@ -25,7 +25,7 @@
       "winner_score": 102,
       "loser_score": 93,
       "date": "2011-04-13",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Boston Celtics",
@@ -33,7 +33,7 @@
       "winner_score": 112,
       "loser_score": 102,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Chicago Bulls",
@@ -41,7 +41,7 @@
       "winner_score": 97,
       "loser_score": 92,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Cleveland Cavaliers",
@@ -49,7 +49,7 @@
       "winner_score": 100,
       "loser_score": 93,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Dallas Mavericks",
@@ -57,7 +57,7 @@
       "winner_score": 121,
       "loser_score": 89,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Houston Rockets",
@@ -65,7 +65,7 @@
       "winner_score": 121,
       "loser_score": 102,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Orlando Magic",
@@ -73,7 +73,7 @@
       "winner_score": 92,
       "loser_score": 74,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Detroit Pistons",
@@ -81,7 +81,7 @@
       "winner_score": 104,
       "loser_score": 100,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Milwaukee Bucks",
@@ -89,7 +89,7 @@
       "winner_score": 110,
       "loser_score": 106,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Utah Jazz",
@@ -97,7 +97,7 @@
       "winner_score": 107,
       "loser_score": 103,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Miami Heat",
@@ -105,7 +105,7 @@
       "winner_score": 97,
       "loser_score": 79,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Charlotte Bobcats",
@@ -113,7 +113,7 @@
       "winner_score": 96,
       "loser_score": 85,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Golden State Warriors",
@@ -121,7 +121,7 @@
       "winner_score": 110,
       "loser_score": 86,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "LA Clippers",
@@ -129,7 +129,7 @@
       "winner_score": 110,
       "loser_score": 103,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Phoenix Suns",
@@ -137,7 +137,7 @@
       "winner_score": 106,
       "loser_score": 103,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Los Angeles Lakers",
@@ -145,7 +145,7 @@
       "winner_score": 116,
       "loser_score": 108,
       "date": "2011-04-14",
-      "round": "Play-In"
+      "round": ""
     },
     {
       "winner": "Chicago Bulls",
@@ -516,6 +516,14 @@
       "round": "EASTERN CONFERENCE SEMIFINALS - GAME 1"
     },
     {
+      "winner": "Dallas Mavericks",
+      "loser": "Los Angeles Lakers",
+      "winner_score": 96,
+      "loser_score": 94,
+      "date": "2011-05-03",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
+    },
+    {
       "winner": "Miami Heat",
       "loser": "Boston Celtics",
       "winner_score": 102,
@@ -796,7 +804,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-13"
     },
     {
@@ -806,7 +814,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-13"
     },
     {
@@ -816,7 +824,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-13"
     },
     {
@@ -826,7 +834,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -836,7 +844,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -846,7 +854,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -856,7 +864,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -866,7 +874,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -876,7 +884,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -886,7 +894,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -896,7 +904,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -906,7 +914,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -916,7 +924,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -926,7 +934,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -936,7 +944,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -946,7 +954,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -956,7 +964,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -966,7 +974,7 @@
       "w2": 0,
       "done": false,
       "loser": "",
-      "round": "Play-In",
+      "round": "",
       "date": "2011-04-14"
     },
     {
@@ -1430,6 +1438,16 @@
       "date": "2011-05-03"
     },
     {
+      "t1": "Dallas Mavericks",
+      "t2": "Los Angeles Lakers",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1",
+      "date": "2011-05-03"
+    },
+    {
       "t1": "Miami Heat",
       "t2": "Boston Celtics",
       "w1": 1,
@@ -1771,5 +1789,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-08-01 20:35 UTC"
+  "updated": "2026-08-02 09:38 UTC"
 }

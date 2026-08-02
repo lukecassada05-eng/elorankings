@@ -1102,6 +1102,14 @@
     {
       "winner": "Miami Heat",
       "loser": "San Antonio Spurs",
+      "winner_score": 103,
+      "loser_score": 100,
+      "date": "2013-06-19",
+      "round": "NBA FINALS - GAME 6"
+    },
+    {
+      "winner": "Miami Heat",
+      "loser": "San Antonio Spurs",
       "winner_score": 95,
       "loser_score": 88,
       "date": "2013-06-21",
@@ -2466,10 +2474,20 @@
       "w2": 0,
       "done": false,
       "loser": "",
+      "round": "NBA FINALS - GAME 6",
+      "date": "2013-06-19"
+    },
+    {
+      "t1": "Miami Heat",
+      "t2": "San Antonio Spurs",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
       "round": "NBA FINALS - GAME 7",
       "date": "2013-06-21"
     }
   ],
   "eliminated": [],
-  "updated": "2026-08-01 20:36 UTC"
+  "updated": "2026-08-02 09:38 UTC"
 }
