@@ -2,8 +2,359 @@
   "year": 2003,
   "sport": "MLB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-04 20:46 UTC"
+  "games": [
+    {
+      "winner": "Florida Marlins",
+      "loser": "San Francisco Giants",
+      "winner_score": 9,
+      "loser_score": 5,
+      "date": "2003-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Atlanta Braves",
+      "loser": "Chicago Cubs",
+      "winner_score": 5,
+      "loser_score": 3,
+      "date": "2003-10-01",
+      "round": ""
+    },
+    {
+      "winner": "Oakland Athletics",
+      "loser": "Boston Red Sox",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2003-10-02",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Minnesota Twins",
+      "winner_score": 4,
+      "loser_score": 1,
+      "date": "2003-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "San Francisco Giants",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2003-10-03",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Atlanta Braves",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2003-10-04",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Minnesota Twins",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2003-10-04",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "San Francisco Giants",
+      "winner_score": 7,
+      "loser_score": 6,
+      "date": "2003-10-04",
+      "round": ""
+    },
+    {
+      "winner": "Atlanta Braves",
+      "loser": "Chicago Cubs",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2003-10-04",
+      "round": ""
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "Oakland Athletics",
+      "winner_score": 3,
+      "loser_score": 1,
+      "date": "2003-10-04",
+      "round": ""
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "Oakland Athletics",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2003-10-05",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Minnesota Twins",
+      "winner_score": 8,
+      "loser_score": 1,
+      "date": "2003-10-05",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Atlanta Braves",
+      "winner_score": 5,
+      "loser_score": 1,
+      "date": "2003-10-06",
+      "round": ""
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "Oakland Athletics",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2003-10-07",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "Chicago Cubs",
+      "winner_score": 9,
+      "loser_score": 8,
+      "date": "2003-10-08",
+      "round": ""
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "New York Yankees",
+      "winner_score": 5,
+      "loser_score": 2,
+      "date": "2003-10-09",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Florida Marlins",
+      "winner_score": 12,
+      "loser_score": 3,
+      "date": "2003-10-09",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Boston Red Sox",
+      "winner_score": 6,
+      "loser_score": 2,
+      "date": "2003-10-10",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Florida Marlins",
+      "winner_score": 5,
+      "loser_score": 4,
+      "date": "2003-10-11",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Boston Red Sox",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2003-10-12",
+      "round": ""
+    },
+    {
+      "winner": "Chicago Cubs",
+      "loser": "Florida Marlins",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2003-10-12",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "Chicago Cubs",
+      "winner_score": 4,
+      "loser_score": 0,
+      "date": "2003-10-13",
+      "round": ""
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "New York Yankees",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2003-10-14",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Boston Red Sox",
+      "winner_score": 4,
+      "loser_score": 2,
+      "date": "2003-10-14",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "Chicago Cubs",
+      "winner_score": 8,
+      "loser_score": 3,
+      "date": "2003-10-15",
+      "round": ""
+    },
+    {
+      "winner": "Boston Red Sox",
+      "loser": "New York Yankees",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2003-10-15",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "Chicago Cubs",
+      "winner_score": 9,
+      "loser_score": 6,
+      "date": "2003-10-16",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Boston Red Sox",
+      "winner_score": 6,
+      "loser_score": 5,
+      "date": "2003-10-17",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "New York Yankees",
+      "winner_score": 3,
+      "loser_score": 2,
+      "date": "2003-10-19",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Florida Marlins",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2003-10-20",
+      "round": ""
+    },
+    {
+      "winner": "New York Yankees",
+      "loser": "Florida Marlins",
+      "winner_score": 6,
+      "loser_score": 1,
+      "date": "2003-10-22",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "New York Yankees",
+      "winner_score": 4,
+      "loser_score": 3,
+      "date": "2003-10-23",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "New York Yankees",
+      "winner_score": 6,
+      "loser_score": 4,
+      "date": "2003-10-24",
+      "round": ""
+    },
+    {
+      "winner": "Florida Marlins",
+      "loser": "New York Yankees",
+      "winner_score": 2,
+      "loser_score": 0,
+      "date": "2003-10-25",
+      "round": ""
+    }
+  ],
+  "series": [
+    {
+      "t1": "Florida Marlins",
+      "t2": "San Francisco Giants",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "San Francisco Giants",
+      "round": "",
+      "date": "2003-10-01"
+    },
+    {
+      "t1": "Atlanta Braves",
+      "t2": "Chicago Cubs",
+      "w1": 2,
+      "w2": 2,
+      "done": false,
+      "loser": "",
+      "round": "",
+      "date": "2003-10-01"
+    },
+    {
+      "t1": "Oakland Athletics",
+      "t2": "Boston Red Sox",
+      "w1": 1,
+      "w2": 3,
+      "done": true,
+      "loser": "Oakland Athletics",
+      "round": "",
+      "date": "2003-10-02"
+    },
+    {
+      "t1": "New York Yankees",
+      "t2": "Minnesota Twins",
+      "w1": 3,
+      "w2": 0,
+      "done": true,
+      "loser": "Minnesota Twins",
+      "round": "",
+      "date": "2003-10-03"
+    },
+    {
+      "t1": "Florida Marlins",
+      "t2": "Chicago Cubs",
+      "w1": 4,
+      "w2": 3,
+      "done": true,
+      "loser": "Chicago Cubs",
+      "round": "",
+      "date": "2003-10-08"
+    },
+    {
+      "t1": "Boston Red Sox",
+      "t2": "New York Yankees",
+      "w1": 3,
+      "w2": 4,
+      "done": true,
+      "loser": "Boston Red Sox",
+      "round": "",
+      "date": "2003-10-09"
+    },
+    {
+      "t1": "Florida Marlins",
+      "t2": "New York Yankees",
+      "w1": 4,
+      "w2": 2,
+      "done": true,
+      "loser": "New York Yankees",
+      "round": "",
+      "date": "2003-10-19"
+    }
+  ],
+  "eliminated": [
+    "San Francisco Giants",
+    "Oakland Athletics",
+    "Minnesota Twins",
+    "Chicago Cubs",
+    "Boston Red Sox",
+    "New York Yankees"
+  ],
+  "updated": "2026-08-05 10:04 UTC"
 }
