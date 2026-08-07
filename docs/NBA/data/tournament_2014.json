@@ -772,6 +772,14 @@
       "round": "WESTERN CONFERENCE SEMIFINALS - GAME 1"
     },
     {
+      "winner": "Indiana Pacers",
+      "loser": "Washington Wizards",
+      "winner_score": 86,
+      "loser_score": 82,
+      "date": "2014-05-07",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2"
+    },
+    {
       "winner": "Oklahoma City Thunder",
       "loser": "LA Clippers",
       "winner_score": 112,
@@ -1996,6 +2004,16 @@
       "date": "2014-05-07"
     },
     {
+      "t1": "Indiana Pacers",
+      "t2": "Washington Wizards",
+      "w1": 1,
+      "w2": 0,
+      "done": false,
+      "loser": "",
+      "round": "EASTERN CONFERENCE SEMIFINALS - GAME 2",
+      "date": "2014-05-07"
+    },
+    {
       "t1": "Oklahoma City Thunder",
       "t2": "LA Clippers",
       "w1": 1,
@@ -2337,5 +2355,5 @@
     }
   ],
   "eliminated": [],
-  "updated": "2026-08-07 01:07 UTC"
+  "updated": "2026-08-07 08:32 UTC"
 }
