@@ -211,6 +211,17 @@ footer a:hover{color:var(--accent)}
 .trend-down { color: var(--red-hi);   font-size: 0.75rem; }
 .trend-new  { color: var(--text-dim); font-size: 0.65rem; font-family: var(--font-mono); }
 
+/* ── Biggest movers panel ── */
+.movers-panel{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1.25rem}
+.movers-col{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.85rem 1rem}
+.movers-title{font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.6rem;display:flex;align-items:baseline;gap:0.4rem}
+.movers-sub{font-size:0.6rem;letter-spacing:0.04em;text-transform:none;color:var(--text-dim)}
+.mover-row{display:flex;align-items:center;justify-content:space-between;padding:0.3rem 0;font-size:0.82rem;border-bottom:1px solid var(--border)}
+.mover-row:last-child{border-bottom:none}
+.mover-team{color:var(--text)}
+.mover-empty{color:var(--text-dim);font-size:0.75rem;font-family:var(--font-mono)}
+@media(max-width:768px){ .movers-panel{grid-template-columns:1fr} }
+
 /* ── Row expansion ── */
 .team-row { cursor: pointer; }
 .team-row:hover td.team-name { color: var(--accent); }
