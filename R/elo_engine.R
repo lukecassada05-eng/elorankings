@@ -245,24 +245,64 @@ fetch_conf_champs <- function(sport_path, season_yr,
 
   champs <- character(0)  # conf_name → winner_shortDisplayName
 
+  # BUG FIX (verified against live ESPN data): the old logic flagged a game
+  # as "the champion" if ANY note headline merely CONTAINED the word
+  # "Champion". That's unreliable two ways, confirmed by direct testing:
+  #   1. It's a false POSITIVE on every earlier round too — ESPN labels
+  #      quarterfinal/semifinal games "<Conf> Championship - Quarterfinal"
+  #      / "- Semifinal", which also contain "Champion". Whichever round
+  #      happened to be returned/processed first got locked in as "the
+  #      champion" (via the dedup-by-conf_name check), often the wrong team.
+  #   2. It's a false NEGATIVE for conferences that brand their event as a
+  #      "Tournament" instead of a "Championship" — e.g. real 2026 data:
+  #      "West Coast Conference Tournament - Final" contains no "Champion"
+  #      at all and was silently skipped.
+  # Fix: every conference's true title game is consistently suffixed
+  # "- Final" regardless of whether the conference calls the event a
+  # "Championship" or a "Tournament" — match on that instead, and reject
+  # anything ending in "- Semifinal"/"- Quarterfinal"/etc. as a safety net.
+  is_final_round <- function(headline) {
+    h <- trimws(headline %||% "")
+    if (!nchar(h)) return(FALSE)
+    if (grepl("(?i)-\\s*(semi|quarter|elite|first|second|1st|2nd|3rd)\\s*final", h, perl = TRUE)) return(FALSE)
+    grepl("(?i)-\\s*final\\s*$", h, perl = TRUE)
+  }
+  extract_conf_name <- function(headline) {
+    trimws(sub("(?i)\\s*-\\s*final\\s*$", "", trimws(headline %||% ""), perl = TRUE))
+  }
+
+  events_seen <- 0L
+  finals_seen <- 0L
+
   for (url_str in urls_to_try) {
     data <- tryCatch(
       jsonlite::fromJSON(url_str, simplifyVector = FALSE),
-      error = function(e) NULL
+      error = function(e) { message("    fetch_conf_champs URL error: ", conditionMessage(e)); NULL }
     )
-    if (is.null(data) || !length(data$events)) next
+    if (is.null(data) || !length(data$events)) {
+      message("    fetch_conf_champs: 0 events for ", url_str)
+      next
+    }
+    events_seen <- events_seen + length(data$events)
 
     for (ev in data$events) {
       tryCatch({
-        # Check notes for "Championship"
-        notes     <- ev$notes %||% list()
-        note_text <- paste(sapply(notes, function(n) n$headline %||% ""), collapse=" ")
-        if (!grepl("Champion", note_text, ignore.case=TRUE)) next
+        notes <- ev$notes %||% list()
 
         comp <- ev$competitions[[1]]
         if (!isTRUE(comp$status$type$completed)) next
         comps <- comp$competitors
         if (length(comps) < 2) next
+
+        # Identify the true conference-title game from the round suffix,
+        # not from a "Champion" keyword search (see fix note above).
+        final_headline <- NULL
+        for (n in notes) {
+          h <- n$headline %||% ""
+          if (is_final_round(h)) { final_headline <- h; break }
+        }
+        if (is.null(final_headline)) next
+        finals_seen <- finals_seen + 1L
 
         # Find winner by score
         scores <- sapply(comps, function(c) suppressWarnings(as.numeric(c$score %||% NA)))
@@ -272,29 +312,25 @@ fetch_conf_champs <- function(sport_path, season_yr,
                   comps[[winner_idx]]$team$displayName %||% ""
         if (!nchar(winner)) next
 
-        # Get conference name from notes or groups
-        conf_name <- ""
-        for (n in notes) {
-          h <- n$headline %||% ""
-          # e.g. "ACC Men's Basketball Tournament Championship"
-          conf_name <- gsub("(Men's|Women's|Basketball|Baseball|Tournament|Championship|Conference).*", "", h, ignore.case=TRUE)
-          conf_name <- trimws(conf_name)
-          if (nchar(conf_name) > 1) break
-        }
+        conf_name <- extract_conf_name(final_headline)
         if (!nchar(conf_name)) {
           grps <- ev$groups %||% list()
           if (length(grps)) conf_name <- grps[[1]]$shortName %||% grps[[1]]$name %||% ""
         }
+        if (!nchar(conf_name)) conf_name <- paste0("_unnamed_", length(champs) + 1L)
 
-        if (nchar(conf_name) > 0 && !conf_name %in% names(champs)) {
+        if (!conf_name %in% names(champs)) {
           champs[conf_name] <- winner
-          message("    Conf champ: ", conf_name, " → ", winner)
+          message("    Conf champ: ", conf_name, " -> ", winner, " (\"", final_headline, "\")")
         }
       }, error = function(e) NULL)
     }
 
     if (length(champs) > 0) break  # got results, stop trying
   }
+
+  message("    fetch_conf_champs summary: ", events_seen, " events seen, ",
+          finals_seen, " final-round games identified, ", length(champs), " champs found")
 
   champs
 }

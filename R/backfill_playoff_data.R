@@ -346,6 +346,15 @@ configs <- list(
   list(sport="CBASE", dir="docs/CollegeBaseball/data", win=2, seasons=2018:2026, off=0)
 )
 
+# BUG FIX: write_tournament_json() had no error isolation at the call site,
+# and configs is processed in order NBA -> NHL -> MLB -> NFL -> CBB -> CBASE
+# (~90 sport/year iterations before CBB is even reached). A single uncaught
+# error anywhere in that first ~90 iterations (a malformed date for an odd
+# historical season, a write_json failure, etc.) would halt the whole script
+# immediately — meaning CBB and CBASE, near the end of the queue, would
+# silently never run at all, regardless of how correct their own logic is.
+# Wrapping each iteration means one bad year/sport can never take down the
+# rest of the run.
 for (cfg in configs) {
   message("\n=== ", cfg$sport, " ===")
   dir.create(cfg$dir, showWarnings = FALSE, recursive = TRUE)
@@ -353,12 +362,16 @@ for (cfg in configs) {
     games_yr <- yr + cfg$off
     dates <- get_dates(cfg$sport, yr, games_yr)
     message("  ", cfg$sport, " ", yr, " (games_yr=", games_yr, ")")
-    write_tournament_json(
-      sport = cfg$sport, season_yr = yr, games_yr = games_yr,
-      out_dir = cfg$dir, win_to_advance = cfg$win,
-      start_mo = dates$smo, start_day = dates$sdy,
-      end_mo   = dates$emo, end_day   = dates$edy
-    )
+    tryCatch({
+      write_tournament_json(
+        sport = cfg$sport, season_yr = yr, games_yr = games_yr,
+        out_dir = cfg$dir, win_to_advance = cfg$win,
+        start_mo = dates$smo, start_day = dates$sdy,
+        end_mo   = dates$emo, end_day   = dates$edy
+      )
+    }, error = function(e) {
+      message("    ERROR (", cfg$sport, " ", yr, "): ", conditionMessage(e), " — continuing to next year")
+    })
     Sys.sleep(0.25)
   }
 }

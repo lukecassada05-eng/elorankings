@@ -858,8 +858,9 @@ for (yr in SEASONS) {
   # groups_param, mangling the request URL so conf_champ never populated.
   champs_raw <- tryCatch(
     fetch_conf_champs("baseball/college-baseball", yr, groups_param = "&groups=11"),
-    error = function(e) character(0)
+    error = function(e) { message("  fetch_conf_champs error: ", conditionMessage(e)); character(0) }
   )
+  Sys.sleep(0.3)  # light backoff — this loop can make dozens of ESPN calls per run
   conf_champ_map <- NULL
   if (length(champs_raw) > 0) {
     all_teams <- elo$team

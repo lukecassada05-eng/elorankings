@@ -114,8 +114,9 @@ for (s in SEASONS) {
   # already-generated CBB CSV. Passing it by name fixes the URL.
   champs_raw <- tryCatch(
     fetch_conf_champs("basketball/mens-college-basketball", s, groups_param = "&groups=50"),
-    error = function(e) character(0)
+    error = function(e) { message("  fetch_conf_champs error: ", conditionMessage(e)); character(0) }
   )
+  Sys.sleep(0.3)  # light backoff — this loop can make dozens of ESPN calls per run
   # Build champ_map: team_name → TRUE
   # champs_raw is conf_name → team_shortDisplayName
   # We need to match to our canonical team names via conf_map
