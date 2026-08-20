@@ -1,6 +1,12 @@
 'use strict';
 
 window.initSportPage = function(CFG) {
+  // Auto-add the current (and next, if it's about to start) season to
+  // whatever's hardcoded in the page, so a new season shows up in the
+  // picker the moment the backend has data for it — no manual HTML edit
+  // needed when a season rolls over.
+  if (window.EloSeason) CFG.seasons = window.EloSeason.withCurrent(CFG.seasons, CFG.sport);
+
   let data = [], allSeasonData = {}, currentSeason = (CFG.seasons && CFG.seasons[0]) || new Date().getFullYear();
 
   // ── Season picker ──────────────────────────────────────────
@@ -681,17 +687,6 @@ window.initSportPage = function(CFG) {
     }
     data = allSeasonData[yr];
 
-    // Also pre-load prev season for trend arrows (async, no wait)
-    const prevYr = yr - 1;
-    if (!allSeasonData[prevYr] && CFG.seasons && CFG.seasons.includes(prevYr)) {
-      fetchCSV(CFG.dataPath + prevYr + '.csv').then(raw => {
-        if (raw) {
-          allSeasonData[prevYr] = raw.map(coerceRow);
-          renderRankings(); // re-render with trends now available
-        }
-      });
-    }
-
     updateSummary(data);
     populateSelects();
     renderRankings();
@@ -753,23 +748,71 @@ window.initSportPage = function(CFG) {
     });
   }
 
-  // ── Get elo trend vs previous season ──────────────────────
+  // ── Elo movement vs. a rolling checkpoint ───────────────────
+  // R/elo_engine.R's attach_movers() checkpoints each team's rating and
+  // only rolls that checkpoint forward once a week (see elo_change /
+  // baseline_date in the CSV) — never on every twice-daily update. So a
+  // team's move stays visible here for the rest of that window instead
+  // of resetting the moment the next scheduled update runs, and a no-op
+  // update (no new games) leaves the number exactly where it was.
+  // Falls back to the 1500 season-start baseline for any CSV written
+  // before that column existed (self-heals on that CSV's next update).
+  function movement(r) {
+    if (!r || !r.games_played) return null;
+    return r.elo_change != null ? r.elo_change : (r.elo - 1500);
+  }
+
+  function movementLabel(r) {
+    return r.baseline_date ? ('since ' + fmt.date(r.baseline_date)) : 'since season start';
+  }
+
   function getTrend(team) {
-    const prev = allSeasonData[currentSeason - 1];
-    if (!prev) return null;
-    const prevRow = prev.find(r => r.team === team);
-    if (!prevRow) return null;
     const curr = data.find(r => r.team === team);
-    if (!curr) return null;
-    return curr.elo - prevRow.elo;
+    return curr ? movement(curr) : null;
   }
 
   function trendHtml(team) {
-    const t = getTrend(team);
-    if (t === null) return '<span class="trend-new">NEW</span>';
-    if (t > 5)  return `<span class="trend-up" title="${t.toFixed(1)} Elo vs last season">▲ ${t.toFixed(0)}</span>`;
-    if (t < -5) return `<span class="trend-down" title="${t.toFixed(1)} Elo vs last season">▼ ${Math.abs(t).toFixed(0)}</span>`;
+    const curr = data.find(r => r.team === team);
+    const t = curr ? movement(curr) : null;
+    if (t === null) return '<span class="trend-new">—</span>';
+    const label = movementLabel(curr);
+    if (t > 5)  return `<span class="trend-up" title="${t.toFixed(1)} Elo ${label}">▲ ${t.toFixed(0)}</span>`;
+    if (t < -5) return `<span class="trend-down" title="${t.toFixed(1)} Elo ${label}">▼ ${Math.abs(t).toFixed(0)}</span>`;
     return '<span class="trend-new">—</span>';
+  }
+
+  // ── Biggest movers (rolling checkpoint, ~weekly — never "since last season") ──
+  function getMovers(n) {
+    const eligible = data.filter(r => r.games_played > 0);
+    const sorted   = [...eligible].sort((a, b) => movement(b) - movement(a));
+    return {
+      risers:  sorted.slice(0, n),
+      fallers: sorted.slice(-n).reverse().filter(r => !sorted.slice(0, n).includes(r)),
+    };
+  }
+
+  function moversHtml() {
+    const { risers, fallers } = getMovers(5);
+    if (!risers.length) return '';
+    const row = r => {
+      const d = movement(r);
+      const cls = d >= 0 ? 'trend-up' : 'trend-down';
+      const arrow = d >= 0 ? '▲' : '▼';
+      return `<div class="mover-row" title="${d.toFixed(1)} Elo ${movementLabel(r)}">
+        <span class="mover-team">${teamDisplay(r.team)}</span>
+        <span class="${cls}">${arrow} ${Math.abs(d).toFixed(0)}</span>
+      </div>`;
+    };
+    return `<div class="movers-panel">
+      <div class="movers-col">
+        <div class="movers-title">📈 Biggest Risers <span class="movers-sub">this week</span></div>
+        ${risers.map(row).join('') || '<div class="mover-row mover-empty">No movement yet</div>'}
+      </div>
+      <div class="movers-col">
+        <div class="movers-title">📉 Biggest Fallers <span class="movers-sub">this week</span></div>
+        ${fallers.length ? fallers.map(row).join('') : '<div class="mover-row mover-empty">No movement yet</div>'}
+      </div>
+    </div>`;
   }
 
   // ── Filter ─────────────────────────────────────────────────
@@ -875,6 +918,8 @@ window.initSportPage = function(CFG) {
       <button class="btn" id="exportBtn">↓ CSV</button>
     </div>`;
 
+    const moversPanelHtml = moversHtml();
+
     const extraHeaders = (CFG.extraCols||[]).map(c=>`<th data-type="num">${c.label}</th>`).join('');
     const rows = filtered.map(r => {
       const bw   = r.best_win_elo > 0 ? r.best_win_elo.toFixed(1) : '—';
@@ -903,7 +948,7 @@ window.initSportPage = function(CFG) {
       </tr>`;
     }).join('');
 
-    el.innerHTML = ctrlHtml + `<div class="table-wrap"><table class="tbl" id="mainTable">
+    el.innerHTML = moversPanelHtml + ctrlHtml + `<div class="table-wrap"><table class="tbl" id="mainTable">
       <thead><tr>
         <th data-type="num">Rank</th><th>Team</th><th>${CFG.confLabel}</th>
         <th data-type="num">Elo</th>
@@ -935,7 +980,7 @@ window.initSportPage = function(CFG) {
     document.getElementById('confFilter')?.addEventListener('change', renderRankings);
     document.getElementById('minGames')?.addEventListener('change', renderRankings);
     document.getElementById('exportBtn')?.addEventListener('click', () => {
-      const cols = ['rank','team','conference','elo','wins','losses','games_played','win_pct','record','sos','best_win_team','best_win_elo','updated_at'];
+      const cols = ['rank','team','conference','elo','elo_change','baseline_date','wins','losses','games_played','win_pct','record','sos','best_win_team','best_win_elo','updated_at'];
       downloadCSV(getFiltered(), CFG.sport+'_Elo_'+currentSeason+'.csv', cols);
     });
   }
@@ -954,9 +999,10 @@ window.initSportPage = function(CFG) {
     const winPct = row.win_pct;
     const spread = ((row.elo - 1500) / 35).toFixed(1);
     const trendDelta = getTrend(team);
+    const trendLabel = movementLabel(row);
     const trendStr = trendDelta !== null
-      ? (trendDelta > 0 ? `▲ ${trendDelta.toFixed(1)} vs last season` : `▼ ${Math.abs(trendDelta).toFixed(1)} vs last season`)
-      : 'First season in data';
+      ? (trendDelta > 0 ? `▲ ${trendDelta.toFixed(1)} ${trendLabel}` : `▼ ${Math.abs(trendDelta).toFixed(1)} ${trendLabel}`)
+      : 'No games yet';
 
     const expandTr = document.createElement('tr');
     expandTr.className = 'expand-row';
@@ -968,7 +1014,7 @@ window.initSportPage = function(CFG) {
           <div style="font-size:0.75rem;color:var(--text-dim);margin-top:0.2rem">${(winPct*100).toFixed(1)}% win rate</div>
         </div>
         <div>
-          <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem;text-transform:uppercase;letter-spacing:0.1em">Elo vs last season</div>
+          <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.3rem;text-transform:uppercase;letter-spacing:0.1em">Elo movement</div>
           <div style="font-size:1rem;font-weight:500;color:${trendDelta>0?'var(--green-hi)':trendDelta<0?'var(--red-hi)':'var(--text-dim)'}">${trendStr}</div>
         </div>
         <div>

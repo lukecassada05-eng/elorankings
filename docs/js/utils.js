@@ -192,6 +192,12 @@ window.coerceRow = function(r) {
   const pr = !isNaN(pr_csv) && pr_csv > 0
     ? pr_csv
     : elo * Math.pow(Math.max(0.01, win_pct), 0.6) + Math.sqrt(resume_score);
+  // Rolling-checkpoint movement columns (added by R/elo_engine.R's attach_movers()).
+  // Older CSVs written before that shipped won't have these — parseFloat(undefined)
+  // is NaN, so elo_change/baseline_elo come through as null and callers fall back
+  // to the 1500 season-start baseline until the next scheduled run backfills them.
+  const elo_change_csv   = parseFloat(r.elo_change);
+  const baseline_elo_csv = parseFloat(r.baseline_elo);
   return {
     ...r,
     rank:         parseInt(r.rank)          || 0,
@@ -204,7 +210,66 @@ window.coerceRow = function(r) {
     best_win_elo: parseFloat(r.best_win_elo)|| 0,
     resume_score,
     pr,
+    elo_change:   isNaN(elo_change_csv)   ? null : elo_change_csv,
+    baseline_elo: isNaN(baseline_elo_csv) ? null : baseline_elo_csv,
+    baseline_date: r.baseline_date || null,
   };
 };
+
+// ── Season auto-detection ──────────────────────────────────────
+// Mirrors the season-labeling rules baked into each R/update_*.R script
+// (e.g. NFL is named by the year the season STARTS, NBA/NHL/CBB by the
+// year it ENDS). Used to extend hardcoded `seasons` arrays and to flip
+// homepage "Live/Off-season" badges automatically as seasons roll over,
+// instead of requiring a manual yearly edit to every sport's HTML page.
+window.EloSeason = (function () {
+  const RULES = {
+    NFL:    { boundaryMonth: 9,  labelsBy: 'start' }, // Sep–Feb, named by start year
+    CFB:    { boundaryMonth: 8,  labelsBy: 'start' }, // Aug–Jan, named by start year
+    NBA:    { boundaryMonth: 10, labelsBy: 'end'   }, // Oct–Jun, named by spring year
+    NHL:    { boundaryMonth: 10, labelsBy: 'end'   }, // Oct–Jun, named by spring year
+    CBB:    { boundaryMonth: 11, labelsBy: 'end'   }, // Nov–Apr, named by spring year
+    MLB:    { boundaryMonth: 3,  labelsBy: 'start' }, // Mar–Oct, named by calendar year
+    CBASE:  { boundaryMonth: 1,  labelsBy: 'start' }, // Feb–Jun, named by calendar year
+    Soccer: { boundaryMonth: 8,  labelsBy: 'end'   }, // Aug–May, named by end year
+  };
+  const WINDOWS = {
+    NFL: [9, 2], CFB: [8, 1], NBA: [10, 6], NHL: [10, 6],
+    CBB: [11, 4], MLB: [3, 10], CBASE: [2, 6], Soccer: [8, 5],
+  };
+
+  // The season label that should be "current" right now, per this sport's
+  // own naming convention (matches the CURRENT_SEASON logic in the R scripts).
+  function currentLabel(sport) {
+    const r = RULES[sport];
+    if (!r) return new Date().getFullYear();
+    const now = new Date(), y = now.getFullYear(), m = now.getMonth() + 1;
+    const started = m >= r.boundaryMonth;
+    return r.labelsBy === 'start' ? (started ? y : y - 1) : (started ? y + 1 : y);
+  }
+
+  // Extend a hardcoded seasons array with whatever season(s) should exist
+  // by now, without removing anything already there. A season slightly
+  // ahead of its data is safe — the page already shows an empty state
+  // ("Run the GitHub Actions workflow...") until the CSV lands.
+  function withCurrent(seasons, sport) {
+    const list = (seasons || []).slice();
+    const cur  = currentLabel(sport);
+    [cur + 1, cur].forEach(yr => { if (!list.includes(yr)) list.unshift(yr); });
+    return list.sort((a, b) => b - a);
+  }
+
+  // Rough "is this sport actively being played right now" check, for
+  // homepage Live/Off-season badges.
+  function isLive(sport) {
+    const w = WINDOWS[sport];
+    if (!w) return true;
+    const m = new Date().getMonth() + 1;
+    const [start, end] = w;
+    return start <= end ? (m >= start && m <= end) : (m >= start || m <= end);
+  }
+
+  return { currentLabel, withCurrent, isLive };
+})();
 
 document.addEventListener('DOMContentLoaded', window.setNavActive);
