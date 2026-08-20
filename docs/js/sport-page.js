@@ -782,9 +782,22 @@ window.initSportPage = function(CFG) {
   }
 
   // ── Biggest movers (rolling checkpoint, ~weekly — never "since last season") ──
+  // CBB/CFB/CBASE schedules include "buy game" opponents from lower divisions
+  // (D2, NAIA, FCS, etc.) who show up in the data with only a handful of
+  // tracked games against D1/FBS teams. With so few games, a single result
+  // swings their Elo wildly, so they dominate a raw biggest-movers list even
+  // though they're not real, fully-tracked members of the field. Guard against
+  // this without hardcoding a division list (which we have no reliable source
+  // for) by requiring a team to have played close to a full slate relative to
+  // its peers this season — real teams cluster near the max games played;
+  // buy-game-only opponents fall far short of it.
   function getMovers(n) {
     const eligible = data.filter(r => r.games_played > 0);
-    const sorted   = [...eligible].sort((a, b) => movement(b) - movement(a));
+    if (!eligible.length) return { risers: [], fallers: [] };
+    const maxGames = eligible.reduce((m, r) => Math.max(m, r.games_played), 0);
+    const minGamesForMovers = Math.max(3, Math.ceil(maxGames * 0.4));
+    const real = eligible.filter(r => r.games_played >= minGamesForMovers);
+    const sorted = [...real].sort((a, b) => movement(b) - movement(a));
     return {
       risers:  sorted.slice(0, n),
       fallers: sorted.slice(-n).reverse().filter(r => !sorted.slice(0, n).includes(r)),
