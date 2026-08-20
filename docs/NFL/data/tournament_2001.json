@@ -4,86 +4,6 @@
   "completed": true,
   "games": [
     {
-      "winner": "Philadelphia Eagles",
-      "loser": "Tampa Bay Buccaneers",
-      "winner_score": 31,
-      "loser_score": 9,
-      "date": "2002-01-12",
-      "round": ""
-    },
-    {
-      "winner": "Oakland Raiders",
-      "loser": "New York Jets",
-      "winner_score": 38,
-      "loser_score": 24,
-      "date": "2002-01-13",
-      "round": ""
-    },
-    {
-      "winner": "Green Bay Packers",
-      "loser": "San Francisco 49ers",
-      "winner_score": 25,
-      "loser_score": 15,
-      "date": "2002-01-13",
-      "round": ""
-    },
-    {
-      "winner": "Baltimore Ravens",
-      "loser": "Miami Dolphins",
-      "winner_score": 20,
-      "loser_score": 3,
-      "date": "2002-01-13",
-      "round": ""
-    },
-    {
-      "winner": "Philadelphia Eagles",
-      "loser": "Chicago Bears",
-      "winner_score": 33,
-      "loser_score": 19,
-      "date": "2002-01-19",
-      "round": ""
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Oakland Raiders",
-      "winner_score": 16,
-      "loser_score": 13,
-      "date": "2002-01-20",
-      "round": ""
-    },
-    {
-      "winner": "Pittsburgh Steelers",
-      "loser": "Baltimore Ravens",
-      "winner_score": 27,
-      "loser_score": 10,
-      "date": "2002-01-20",
-      "round": ""
-    },
-    {
-      "winner": "St. Louis Rams",
-      "loser": "Green Bay Packers",
-      "winner_score": 45,
-      "loser_score": 17,
-      "date": "2002-01-20",
-      "round": ""
-    },
-    {
-      "winner": "New England Patriots",
-      "loser": "Pittsburgh Steelers",
-      "winner_score": 24,
-      "loser_score": 17,
-      "date": "2002-01-27",
-      "round": ""
-    },
-    {
-      "winner": "St. Louis Rams",
-      "loser": "Philadelphia Eagles",
-      "winner_score": 29,
-      "loser_score": 24,
-      "date": "2002-01-27",
-      "round": ""
-    },
-    {
       "winner": "New England Patriots",
       "loser": "St. Louis Rams",
       "winner_score": 20,
@@ -101,106 +21,6 @@
     }
   ],
   "series": [
-    {
-      "t1": "Philadelphia Eagles",
-      "t2": "Tampa Bay Buccaneers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Tampa Bay Buccaneers",
-      "round": "",
-      "date": "2002-01-12"
-    },
-    {
-      "t1": "Oakland Raiders",
-      "t2": "New York Jets",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "New York Jets",
-      "round": "",
-      "date": "2002-01-13"
-    },
-    {
-      "t1": "Green Bay Packers",
-      "t2": "San Francisco 49ers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "San Francisco 49ers",
-      "round": "",
-      "date": "2002-01-13"
-    },
-    {
-      "t1": "Baltimore Ravens",
-      "t2": "Miami Dolphins",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Miami Dolphins",
-      "round": "",
-      "date": "2002-01-13"
-    },
-    {
-      "t1": "Philadelphia Eagles",
-      "t2": "Chicago Bears",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Chicago Bears",
-      "round": "",
-      "date": "2002-01-19"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Oakland Raiders",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Oakland Raiders",
-      "round": "",
-      "date": "2002-01-20"
-    },
-    {
-      "t1": "Pittsburgh Steelers",
-      "t2": "Baltimore Ravens",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Baltimore Ravens",
-      "round": "",
-      "date": "2002-01-20"
-    },
-    {
-      "t1": "St. Louis Rams",
-      "t2": "Green Bay Packers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Green Bay Packers",
-      "round": "",
-      "date": "2002-01-20"
-    },
-    {
-      "t1": "New England Patriots",
-      "t2": "Pittsburgh Steelers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Pittsburgh Steelers",
-      "round": "",
-      "date": "2002-01-27"
-    },
-    {
-      "t1": "St. Louis Rams",
-      "t2": "Philadelphia Eagles",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Philadelphia Eagles",
-      "round": "",
-      "date": "2002-01-27"
-    },
     {
       "t1": "New England Patriots",
       "t2": "St. Louis Rams",
@@ -223,18 +43,8 @@
     }
   ],
   "eliminated": [
-    "Tampa Bay Buccaneers",
-    "New York Jets",
-    "San Francisco 49ers",
-    "Miami Dolphins",
-    "Chicago Bears",
-    "Oakland Raiders",
-    "Baltimore Ravens",
-    "Green Bay Packers",
-    "Pittsburgh Steelers",
-    "Philadelphia Eagles",
     "St. Louis Rams",
     "Nfc"
   ],
-  "updated": "2026-08-20 03:12 UTC"
+  "updated": "2026-08-20 04:12 UTC"
 }
