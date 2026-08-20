@@ -127,6 +127,86 @@ build_output <- function(elo_df, season, conf_map = NULL, sos_map = NULL, conf_c
          "best_win_team","best_win_elo","sos","conf_champ","updated_at")]
 }
 
+# ── Biggest movers: rolling window vs a checkpointed baseline ─────────────────
+#' Attaches baseline_elo / baseline_date / elo_change to `out`, where
+#' baseline_elo is each team's rating as of the last checkpoint (not simply
+#' "last run"). The checkpoint only rolls forward once every `window_days`,
+#' so a team's move stays visible in "Biggest Movers" for the rest of that
+#' window instead of disappearing at the very next twice-daily update.
+#'
+#' Mechanics:
+#'   - Reads the CSV already on disk at `out_path` (the state from the
+#'     previous run) BEFORE it gets overwritten by this run's write_csv().
+#'   - If that team's existing checkpoint is younger than `window_days`,
+#'     carry it forward unchanged (elo_change grows/shrinks day to day).
+#'   - Once the checkpoint is `window_days` or older, reset it to that
+#'     team's rating from the previous run (i.e. right before today's
+#'     games), so today's results still count toward the new window
+#'     instead of being silently absorbed into the reset.
+#'   - No prior file / new team / corrupt checkpoint → baseline = 1500
+#'     (matches "every team starts the season at 1500" and keeps this
+#'     entirely within-season, same as the existing trend indicator).
+#'
+#' @param out       result of build_output() for this run
+#' @param out_path  the path this season's CSV is about to be written to
+#' @param window_days  how long a checkpoint stays fixed before rolling (7 = weekly)
+attach_movers <- function(out, out_path, window_days = 7, today = Sys.Date()) {
+  prev <- tryCatch({
+    if (file.exists(out_path)) readr::read_csv(out_path, show_col_types = FALSE) else NULL
+  }, error = function(e) NULL)
+
+  has_checkpoint_cols <- !is.null(prev) &&
+    all(c("baseline_elo", "baseline_date") %in% names(prev))
+
+  get_prev_row <- function(team) {
+    if (is.null(prev)) return(NULL)
+    idx <- which(prev$team == team)
+    if (!length(idx)) return(NULL)
+    prev[idx[1], ]
+  }
+
+  n <- nrow(out)
+  baseline_elo  <- numeric(n)
+  baseline_date <- character(n)
+
+  for (i in seq_len(n)) {
+    pr <- get_prev_row(out$team[i])
+
+    if (is.null(pr)) {
+      # No previous file, or a team new to this season's data — start the
+      # clock now from the neutral season-start rating.
+      baseline_elo[i]  <- 1500
+      baseline_date[i] <- as.character(today)
+      next
+    }
+
+    still_fresh <- FALSE
+    if (has_checkpoint_cols && !is.na(pr$baseline_date) && !is.na(pr$baseline_elo)) {
+      bd  <- suppressWarnings(as.Date(pr$baseline_date))
+      age <- if (!is.na(bd)) as.numeric(today - bd) else Inf
+      if (!is.na(age) && age < window_days) still_fresh <- TRUE
+    }
+
+    if (still_fresh) {
+      # Within the window — keep the same checkpoint so movement keeps
+      # accumulating against the same starting point.
+      baseline_elo[i]  <- as.numeric(pr$baseline_elo)
+      baseline_date[i] <- as.character(suppressWarnings(as.Date(pr$baseline_date)))
+    } else {
+      # Window elapsed (or this CSV predates checkpoint tracking) — reset
+      # using the PREVIOUS run's rating (before today's games), so today's
+      # results land in the new window rather than vanishing into the reset.
+      baseline_elo[i]  <- as.numeric(pr$elo)
+      baseline_date[i] <- as.character(today)
+    }
+  }
+
+  out$baseline_elo  <- round(baseline_elo, 1)
+  out$baseline_date <- baseline_date
+  out$elo_change    <- round(out$elo - out$baseline_elo, 1)
+  out
+}
+
 message("[elo_engine] loaded.")
 
 

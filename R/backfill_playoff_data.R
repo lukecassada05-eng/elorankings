@@ -94,33 +94,67 @@ fetch_scoreboard_games <- function(sport_path, start_date, end_date,
   all_games
 }
 
-# ── CBB: hoopR load_mbb_schedule (most reliable, same source as Elo) ───────
-fetch_cbb_games <- function(season_yr) {
-  # Try hoopR first (works in GitHub Actions since update_cbb.R uses it)
-  games <- tryCatch({
-    if (!requireNamespace("hoopR", quietly = TRUE)) stop("hoopR not available")
-    sched <- hoopR::load_mbb_schedule(seasons = season_yr)
-    if (is.null(sched) || nrow(sched) == 0) stop("empty schedule")
-
-    # NCAA tournament: season_type == 3, dates in Mar-Apr
-    tourn <- sched[
-      !is.na(sched$season_type) &
-      as.character(sched$season_type) == "3" &
-      !is.na(sched$game_date) &
-      format(as.Date(sched$game_date), "%m") %in% c("03", "04") &
-      !is.na(sched$home_score) & !is.na(sched$away_score),
-    ]
-    if (nrow(tourn) == 0) stop("no tournament rows")
-
-    ncaa_rounds <- c("First Four", "First Round", "Second Round", "Round of 64",
+# ── CBB: NCAA tournament games only ─────────────────────────────────────────
+# NOTE: the CBB date window (see get_dates(), ~Mar 14 - Apr 10) spans BOTH
+# conference tournaments and the NCAA tournament, since ESPN tags conference
+# tournament games with seasontype=3 (postseason) just like the NCAA
+# tournament. Every path below must filter by round name to keep NCAA-only
+# games, or the bracket ends up polluted with hundreds of conference-tourney
+# results grouped into bogus "series".
+CBB_NCAA_ROUNDS <- c("First Four", "First Round", "Second Round", "Round of 64",
                      "Round of 32", "Sweet 16", "Elite Eight", "Final Four",
                      "Championship", "National")
-    conf_terms  <- c("Conference", "A-10", "ACC", "SEC", "Big Ten", "Big 12",
+CBB_CONF_TERMS  <- c("Conference", "A-10", "ACC", "SEC", "Big Ten", "Big 12",
                      "Pac-", "American", "Mountain West", "Sun Belt", "MAC",
                      "CUSA", "MWC", "AAC", "Ivy", "Patriot", "Colonial",
                      "Horizon", "Summit", "Big South", "America East")
 
-    seen2 <- list(); games2 <- list()
+cbb_is_ncaa_round <- function(rnd) {
+  if (is.null(rnd) || !nchar(rnd)) return(NA)  # unknown round: caller decides
+  is_ncaa <- any(sapply(CBB_NCAA_ROUNDS, function(x) grepl(x, rnd, ignore.case = TRUE)))
+  is_conf <- any(sapply(CBB_CONF_TERMS,  function(x) grepl(x, rnd, fixed = TRUE)))
+  is_ncaa && !is_conf
+}
+
+fetch_cbb_games <- function(season_yr, start = NULL, end = NULL) {
+  if (is.null(start)) start <- as.Date(paste0(season_yr, "-03-14"))
+  if (is.null(end))   end   <- as.Date(paste0(season_yr, "-04-10"))
+  today <- Sys.Date()
+  if (start > today) return(list())
+  end <- min(end, today)
+
+  # Primary: reuse the proven ESPN-scoreboard fetcher (same pattern used
+  # successfully for NBA/NHL/MLB/NFL/CBASE), then keep only games whose
+  # round name reads as NCAA-tournament (not a conference tournament).
+  raw <- fetch_scoreboard_games("basketball/mens-college-basketball", start, end, c("3"))
+  filtered <- Filter(function(g) isTRUE(cbb_is_ncaa_round(g$round)), raw)
+
+  if (length(filtered) > 0) {
+    message("    CBB scoreboard: ", length(filtered), " NCAA tournament games for ", season_yr,
+            " (", length(raw) - length(filtered), " conference-tourney/other games excluded)")
+    return(filtered)
+  }
+
+  message("    CBB scoreboard yielded no identifiable NCAA games (raw=", length(raw),
+          "), trying hoopR...")
+
+  # Fallback: hoopR schedule data (works in GitHub Actions since update_cbb.R uses it)
+  games2 <- tryCatch({
+    if (!requireNamespace("hoopR", quietly = TRUE)) stop("hoopR not available")
+    sched <- hoopR::load_mbb_schedule(seasons = season_yr)
+    if (is.null(sched) || nrow(sched) == 0) stop("empty schedule")
+
+    tourn <- sched[
+      !is.na(sched$season_type) &
+      as.character(sched$season_type) == "3" &
+      !is.na(sched$game_date) &
+      as.Date(sched$game_date) >= start &
+      as.Date(sched$game_date) <= end &
+      !is.na(sched$home_score) & !is.na(sched$away_score),
+    ]
+    if (nrow(tourn) == 0) stop("no tournament rows")
+
+    seen2 <- list(); out2 <- list()
     for (i in seq_len(nrow(tourn))) {
       row <- tourn[i, ]
       hs  <- suppressWarnings(as.numeric(row$home_score))
@@ -138,79 +172,31 @@ fetch_cbb_games <- function(season_yr) {
       if (!is.null(seen2[[dk]])) next
       seen2[[dk]] <- TRUE
 
-      # Round name — must look like an NCAA tournament round
       rnd <- tryCatch(as.character(row$notes_headline), error = function(e) "")
       if (is.null(rnd) || is.na(rnd)) rnd <- ""
       rnd <- normalise_round(rnd)
-
-      if (nchar(rnd) > 0) {
-        is_ncaa <- any(sapply(ncaa_rounds, function(x) grepl(x, rnd, ignore.case = TRUE)))
-        is_conf <- any(sapply(conf_terms,  function(x) grepl(x, rnd, fixed = TRUE)))
-        if (!is_ncaa || is_conf) next
-      }
+      ncaa_check <- cbb_is_ncaa_round(rnd)
+      if (isFALSE(ncaa_check)) next  # explicitly identified as non-NCAA; drop
+      # NA (unknown round) is kept — better to keep an unlabeled tourney game
+      # than silently drop it.
 
       if (hs > as_) { winner <- hn; loser <- an; ws <- hs; ls <- as_ }
       else          { winner <- an; loser <- hn; ws <- as_; ls <- hs  }
 
-      games2 <- c(games2, list(list(
+      out2 <- c(out2, list(list(
         winner = winner, loser = loser,
         winner_score = ws, loser_score = ls,
         date = dt, round = rnd
       )))
     }
-    message("    CBB hoopR: ", length(games2), " NCAA tournament games for ", season_yr)
-    games2
+    message("    CBB hoopR: ", length(out2), " NCAA tournament games for ", season_yr)
+    out2
   }, error = function(e) {
-    message("    CBB hoopR failed (", e$message, "), trying scoreboard...")
+    message("    CBB hoopR failed (", e$message, ")")
     NULL
   })
 
-  if (!is.null(games) && length(games) > 0) return(games)
-
-  # Fallback: scoreboard in 3-day chunks
-  start <- as.Date(paste0(season_yr, "-03-15"))
-  end   <- as.Date(paste0(season_yr, "-04-08"))
-  today <- Sys.Date()
-  if (start > today) return(list())
-  end <- min(end, today)
-
-  seen3 <- list(); games3 <- list(); cur <- start
-  while (cur <= end) {
-    chunk_end <- min(end, cur + 2)
-    ds  <- gsub("-", "", as.character(cur))
-    de  <- gsub("-", "", as.character(chunk_end))
-    url <- paste0("https://site.api.espn.com/apis/site/v2/sports/basketball/",
-                  "mens-college-basketball/scoreboard?seasontype=3&limit=300&dates=",
-                  ds, "-", de)
-    d2  <- tryCatch(jsonlite::fromJSON(url, simplifyVector = FALSE), error = function(e) NULL)
-    if (!is.null(d2) && length(d2$events) > 0) {
-      for (ev in d2$events) {
-        tryCatch({
-          comp   <- ev$competitions[[1]]
-          if (!isTRUE(comp$status$type$completed)) next
-          comps  <- comp$competitors
-          if (length(comps) != 2) next
-          scores <- suppressWarnings(as.numeric(sapply(comps, function(c) c$score)))
-          nms    <- sapply(comps, function(c) c$team$displayName)
-          if (any(is.na(scores)) || scores[1] == scores[2] || any(nchar(nms) == 0)) next
-          wi <- which.max(scores); li <- 3 - wi
-          dt <- tryCatch(substr(comp$date, 1, 10), error = function(e) "")
-          dk <- paste(nms[wi], nms[li], dt, sep = "|")
-          if (!is.null(seen3[[dk]])) next; seen3[[dk]] <- TRUE
-          rnd_raw <- tryCatch(comp$notes[[1]]$headline, error = function(e) "")
-          rnd     <- normalise_round(if (!is.null(rnd_raw) && nchar(rnd_raw) > 0) rnd_raw else "")
-          games3  <- c(games3, list(list(
-            winner = nms[wi], loser = nms[li],
-            winner_score = scores[wi], loser_score = scores[li],
-            date = dt, round = rnd
-          )))
-        }, error = function(e) NULL)
-      }
-    }
-    cur <- chunk_end + 1; Sys.sleep(0.15)
-  }
-  message("    CBB scoreboard: ", length(games3), " games for ", season_yr)
-  games3
+  if (!is.null(games2)) games2 else list()
 }
 
 # ── Build series from games ─────────────────────────────────────────────────
@@ -276,7 +262,7 @@ write_tournament_json <- function(sport, season_yr, games_yr, out_dir,
   }
 
   games <- if (sport == "CBB") {
-    fetch_cbb_games(season_yr)
+    fetch_cbb_games(season_yr, start, min(end, today))
   } else {
     stypes <- if (sport == "NBA") c("3", "5") else c("3")
     fetch_scoreboard_games(

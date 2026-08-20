@@ -474,7 +474,7 @@ ALIASES <- c(
 #   - Cal, Stanford → ACC
 #   - Texas, Oklahoma → SEC (2025+)
 # ================================================================
-get_conf_cbase <- function(team, year) {
+get_conf_cbase_static <- function(team, year) {
   t <- trimws(team)
   if (t %in% names(ALIASES)) t <- ALIASES[[t]]
 
@@ -695,6 +695,59 @@ get_conf_cbase <- function(team, year) {
   return("Other D1")
 }
 
+# ================================================================
+# Conference assignment — auto-detected from ESPN's standings feed
+# ================================================================
+# Same approach as CFB's fetch_cfb_conf_map(): read ESPN's own
+# conference standings groups for the season, so realignment shows up
+# automatically with no code change. This is a COMPLETELY SEPARATE
+# lookup from CFB's — a school's baseball conference can differ from
+# its football conference (the note above this function documents
+# several such cases), so nothing here is shared with, or derived
+# from, any other sport's script.
+#
+# Only used for the current/upcoming season — historical seasons stay
+# on the static table above, so a parsing miss can't corrupt past data.
+fetch_cbase_conf_map <- function(season) {
+  url <- paste0(
+    "https://site.api.espn.com/apis/v2/sports/baseball/college-baseball/standings",
+    "?season=", season, "&level=1"
+  )
+  data <- tryCatch(jsonlite::fromJSON(url, simplifyVector = FALSE), error = function(e) NULL)
+  if (is.null(data)) return(character(0))
+
+  candidates <- list(data$children, data$standings$groups, data$groups)
+  groups <- Find(function(g) length(g) > 0, candidates)
+  if (is.null(groups)) return(character(0))
+
+  out <- character(0)
+  for (g in groups) {
+    conf_name <- tryCatch(
+      g$name %||% g$shortName %||% g$abbreviation, error = function(e) NULL
+    )
+    if (is.null(conf_name) || !nchar(conf_name)) next
+    entries <- tryCatch(g$standings$entries, error = function(e) NULL)
+    if (is.null(entries)) entries <- tryCatch(g$entries, error = function(e) NULL)
+    if (is.null(entries)) next
+    for (e in entries) {
+      team_name <- tryCatch(
+        e$team$shortDisplayName %||% e$team$displayName %||% e$team$name,
+        error = function(e2) NULL
+      )
+      if (!is.null(team_name) && nchar(team_name) > 0) out[[team_name]] <- conf_name
+    }
+  }
+  out
+}
+
+# ── Dispatcher: live lookup first, static table as fallback ────
+get_conf_cbase <- function(team, year, live_map = NULL) {
+  t <- trimws(team)
+  if (t %in% names(ALIASES)) t <- ALIASES[[t]]
+  if (!is.null(live_map) && t %in% names(live_map)) return(live_map[[t]])
+  get_conf_cbase_static(t, year)
+}
+
 # ── Parse ESPN event ──────────────────────────────────────────
 parse_event <- function(ev) {
   tryCatch({
@@ -790,13 +843,21 @@ for (yr in SEASONS) {
   elo <- run_elo(g, k = 30, iters = 10, min_games = 3)
   elo <- attach_best_wins(elo, g)
   sos <- compute_sos(g, elo)
+
+  live_conf_map <- if (yr >= CURRENT_YEAR) fetch_cbase_conf_map(yr) else character(0)
+  message("  Live conference map (", yr, "): ", length(live_conf_map), " teams",
+          if (yr >= CURRENT_YEAR && !length(live_conf_map)) " — falling back to static table" else "")
+
   conf_vec <- setNames(
-    sapply(elo$team, function(t) get_conf_cbase(t, yr)),
+    sapply(elo$team, function(t) get_conf_cbase(t, yr, live_conf_map)),
     elo$team
   )
   # ── Conference tournament champion detection ─────────────
+  # BUG FIX: same argument-position bug as update_cbb.R — "&groups=11"
+  # was landing in fetch_conf_champs()'s date_from parameter instead of
+  # groups_param, mangling the request URL so conf_champ never populated.
   champs_raw <- tryCatch(
-    fetch_conf_champs("baseball/college-baseball", yr, "&groups=11"),
+    fetch_conf_champs("baseball/college-baseball", yr, groups_param = "&groups=11"),
     error = function(e) character(0)
   )
   conf_champ_map <- NULL
@@ -826,7 +887,10 @@ for (yr in SEASONS) {
     else x
   }), stringsAsFactors=FALSE)
 
-  write_csv(out, file.path(OUT_DIR, paste0("CBASE_Elo_", yr, ".csv")))
+  out_path <- file.path(OUT_DIR, paste0("CBASE_Elo_", yr, ".csv"))
+  out <- attach_movers(out, out_path)
+
+  write_csv(out, out_path)
 
   covered <- sum(!is.na(out$conference) & out$conference != "Other D1" &
                  out$games_played >= 5)

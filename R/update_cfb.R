@@ -378,10 +378,16 @@ ALIASES <- c(
   "SIU"="Southern Illinois","S. Illinois"="Southern Illinois"
 )
 
-# ── Canonical conference map ────────────────────────────────────
+# ── Canonical conference map (STATIC FALLBACK ONLY) ─────────────
 # Uses canonical names only (after alias resolution).
 # Year-aware via function logic below.
-get_conf <- function(team, year) {
+#
+# NOTE: as of the auto-realignment update below, this hand-maintained
+# table is no longer the primary source for the current season — it's
+# kept as a safety net for (a) all historical seasons, which are settled
+# and don't need live lookups, and (b) any team the live ESPN lookup
+# doesn't cover. See fetch_cfb_conf_map() / get_conf() further down.
+get_conf_static <- function(team, year) {
   t <- trimws(team)
 
   # Step 1: Resolve alias to canonical name
@@ -879,6 +885,65 @@ get_conf <- function(team, year) {
   return("FCS")  # default: unknown teams playing FBS are likely FCS
 }
 
+# ================================================================
+# Conference assignment — auto-detected from ESPN's standings feed
+# ================================================================
+# ESPN regenerates its conference standings groupings every season, so
+# reading them live means a team that changes conferences shows up
+# correctly here automatically — no code edit needed when realignment
+# happens. This is intentionally CFB-ONLY: a school's conference can
+# (and does) differ by sport — e.g. a school can be a football
+# independent while its basketball/baseball programs belong to a
+# conference — so this map is built fresh from CFB's own endpoint here
+# and is never shared with, or reused by, any other sport's script.
+#
+# Only used for the CURRENT season (see call site below) — historical
+# seasons are already settled and stay on the static table above, so a
+# parsing miss here can never corrupt past data, only skip the live
+# shortcut for a team ESPN doesn't list, in which case it silently
+# falls back to the static table (see get_conf() below).
+fetch_cfb_conf_map <- function(season) {
+  url <- paste0(
+    "https://site.api.espn.com/apis/v2/sports/football/college-football/standings",
+    "?season=", season, "&level=1"
+  )
+  data <- tryCatch(jsonlite::fromJSON(url, simplifyVector = FALSE), error = function(e) NULL)
+  if (is.null(data)) return(character(0))
+
+  # ESPN has used a couple of different shapes for this endpoint over
+  # time — try each candidate path and use whichever one is populated.
+  candidates <- list(data$children, data$standings$groups, data$groups)
+  groups <- Find(function(g) length(g) > 0, candidates)
+  if (is.null(groups)) return(character(0))
+
+  out <- character(0)
+  for (g in groups) {
+    conf_name <- tryCatch(
+      g$name %||% g$shortName %||% g$abbreviation, error = function(e) NULL
+    )
+    if (is.null(conf_name) || !nchar(conf_name)) next
+    entries <- tryCatch(g$standings$entries, error = function(e) NULL)
+    if (is.null(entries)) entries <- tryCatch(g$entries, error = function(e) NULL)
+    if (is.null(entries)) next
+    for (e in entries) {
+      team_name <- tryCatch(
+        e$team$shortDisplayName %||% e$team$displayName %||% e$team$name,
+        error = function(e2) NULL
+      )
+      if (!is.null(team_name) && nchar(team_name) > 0) out[[team_name]] <- conf_name
+    }
+  }
+  out
+}
+
+# ── Dispatcher: live lookup first, static table as fallback ────
+get_conf <- function(team, year, live_map = NULL) {
+  t <- trimws(team)
+  if (t %in% names(ALIASES)) t <- ALIASES[[t]]
+  if (!is.null(live_map) && t %in% names(live_map)) return(live_map[[t]])
+  get_conf_static(t, year)
+}
+
 # ── Parse ESPN event ──────────────────────────────────────────
 parse_event <- function(ev) {
   tryCatch({
@@ -973,7 +1038,15 @@ for (yr in SEASONS) {
   elo <- run_elo(g, k=30, iters=10, min_games=4)
   elo <- attach_best_wins(elo, g)
   sos <- compute_sos(g, elo)
-  conf_vec <- setNames(sapply(elo$team, function(t) get_conf(t, yr)), elo$team)
+
+  # Only hit the live conference endpoint for the current/upcoming season —
+  # historical seasons are already settled and stay on the static table,
+  # so a bad parse here can never touch past data.
+  live_conf_map <- if (yr >= CURRENT_YEAR) fetch_cfb_conf_map(yr) else character(0)
+  message("  Live conference map (", yr, "): ", length(live_conf_map), " teams",
+          if (yr >= CURRENT_YEAR && !length(live_conf_map)) " — falling back to static table" else "")
+
+  conf_vec <- setNames(sapply(elo$team, function(t) get_conf(t, yr, live_conf_map)), elo$team)
   out <- build_output(elo, season=yr, conf_map=conf_vec, sos_map=sos)
 
   elo_lup <- setNames(elo$elo, elo$team)
@@ -994,7 +1067,10 @@ for (yr in SEASONS) {
     else x
   }), stringsAsFactors=FALSE)
 
-  write_csv(out, file.path(OUT_DIR, paste0("CFB_Elo_", yr, ".csv")))
+  out_path <- file.path(OUT_DIR, paste0("CFB_Elo_", yr, ".csv"))
+  out <- attach_movers(out, out_path)
+
+  write_csv(out, out_path)
   covered <- sum(!is.na(out$conference) & out$games_played >= 5)
   total5  <- sum(out$games_played >= 5)
   message("  -> ", nrow(out), " teams | conf (5+ gp): ", covered, "/", total5)

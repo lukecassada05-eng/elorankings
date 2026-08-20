@@ -162,6 +162,8 @@ for (yr in SEASONS) {
   elo <- attach_best_wins(elo, g)
   sos <- compute_sos(g, elo)
   out <- build_output(elo, season=yr, conf_map=DIVS, sos_map=sos)
-  write_csv(out, file.path(OUT_DIR, paste0("NHL_Elo_", yr, ".csv")))
+  out_path <- file.path(OUT_DIR, paste0("NHL_Elo_", yr, ".csv"))
+  out <- attach_movers(out, out_path)
+  write_csv(out, out_path)
   message("  -> ", nrow(out), " teams | NA conf: ", sum(is.na(out$conference)))
 }

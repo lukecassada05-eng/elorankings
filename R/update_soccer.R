@@ -116,7 +116,10 @@ for (ey in END_YEARS) {
     mutate(draws = replace(draws, is.na(draws), 0L)) %>%
     left_join(select(lg_lup, team, country), by="team")
 
-  write_csv(out, file.path(OUT_DIR, paste0("Soccer_Elo_", ey, ".csv")))
+  out_path <- file.path(OUT_DIR, paste0("Soccer_Elo_", ey, ".csv"))
+  out <- attach_movers(out, out_path)
+
+  write_csv(out, out_path)
   message("  -> ", nrow(out), " clubs")
 }
 message("Soccer done.")

@@ -105,8 +105,15 @@ for (s in SEASONS) {
 
   # ── Conference tournament champion detection ──────────────
   # After conf tournaments end (early March), use actual champs for auto bids
+  # BUG FIX: this used to pass "&groups=50" as the 3rd *positional* arg,
+  # which binds to fetch_conf_champs()'s date_from parameter (not
+  # groups_param, which is 5th) — that silently mangled the request URL
+  # (dates=&groups=50-...) so the ESPN fetch never returned usable data
+  # and conf_champ came out NA for literally every team in every season.
+  # Confirmed empirically: conf_champ was NA in 100% of rows in every
+  # already-generated CBB CSV. Passing it by name fixes the URL.
   champs_raw <- tryCatch(
-    fetch_conf_champs("basketball/mens-college-basketball", s, "&groups=50"),
+    fetch_conf_champs("basketball/mens-college-basketball", s, groups_param = "&groups=50"),
     error = function(e) character(0)
   )
   # Build champ_map: team_name → TRUE
@@ -136,7 +143,9 @@ for (s in SEASONS) {
 
   out <- build_output(elo, season=s, conf_map=res$conf_map, sos_map=sos,
                       conf_champ_map=conf_champ_map)
-  write_csv(out, file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv")))
+  out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
+  out <- attach_movers(out, out_path)
+  write_csv(out, out_path)
   message("  -> ", nrow(out), " teams, conf: ",
           sum(!is.na(out$conference)), "/", nrow(out),
           if (!is.null(conf_champ_map)) paste0(", champs: ", sum(out$conf_champ, na.rm=TRUE)) else "")
@@ -277,10 +286,16 @@ write_cbb_tournament_json <- function(yr) {
   }, error=function(e) message("  CBB tournament error for ", yr, ": ", e$message))
 }
 
-# Run for all CBB seasons
-for (s in SEASONS) {
-  message("CBB tournament ", s, "...")
-  write_cbb_tournament_json(s)
-  Sys.sleep(0.3)
-}
+# NOTE: CBB tournament_YYYY.json generation intentionally does NOT run here
+# anymore. This function and R/backfill_playoff_data.R's fetch_cbb_games()
+# were two independent implementations writing the exact same output file
+# from two different GitHub Actions jobs (this one runs first, in parallel;
+# backfill runs afterward, post-merge, and would overwrite it) — and this
+# copy's season_type=="3" filter against hoopR's schedule was silently
+# returning zero rows every single run, every season, confirmed empirically
+# (every tournament_YYYY.json this wrote was an identical 146-byte empty
+# stub). Rather than run two competing writers, the single source of truth
+# for this file is now backfill_playoff_data.R, which runs once (after all
+# sport branches are merged) and tries ESPN's scoreboard endpoint directly
+# before falling back to hoopR.
 message("CBB tournament JSON done.")

@@ -83,7 +83,9 @@ for (s in sort(unique(all_games$season))) {
   elo <- attach_best_wins(elo, g)
   sos <- compute_sos(g, elo)
   out <- build_output(elo, season = s, conf_map = DIVS, sos_map = sos)
+  out_path <- file.path(OUT_DIR, paste0("NFL_Elo_", s, ".csv"))
+  out <- attach_movers(out, out_path)
 
-  write_csv(out, file.path(OUT_DIR, paste0("NFL_Elo_", s, ".csv")))
+  write_csv(out, out_path)
   message("  -> ", nrow(out), " teams")
 }
