@@ -220,6 +220,8 @@ footer a:hover{color:var(--accent)}
 .mover-row:last-child{border-bottom:none}
 .mover-team{color:var(--text)}
 .mover-empty{color:var(--text-dim);font-size:0.75rem;font-family:var(--font-mono)}
+.movers-ctrl{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:0.4rem;margin-bottom:-0.15rem}
+.movers-select{font-size:0.68rem;padding:0.3rem 0.55rem}
 @media(max-width:768px){ .movers-panel{grid-template-columns:1fr} }
 
 /* ── Row expansion ── */
