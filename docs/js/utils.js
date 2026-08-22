@@ -248,14 +248,21 @@ window.EloSeason = (function () {
     return r.labelsBy === 'start' ? (started ? y : y - 1) : (started ? y + 1 : y);
   }
 
-  // Extend a hardcoded seasons array with whatever season(s) should exist
-  // by now, without removing anything already there. A season slightly
-  // ahead of its data is safe — the page already shows an empty state
-  // ("Run the GitHub Actions workflow...") until the CSV lands.
+  // Extend a hardcoded seasons array with whatever season should exist by
+  // now, without removing anything already there.
+  //
+  // BUG FIX: this used to unconditionally add BOTH `cur` and `cur + 1` to
+  // the list. currentLabel() is computed fresh from today's date on every
+  // page load, so it already flips to the next season's label the moment
+  // that season actually starts — there was never a need to pre-stage next
+  // year's season a full year early. The extra `cur + 1` just meant every
+  // sport showed a season tab a full year before it could possibly have
+  // any data (e.g. CFB's 2027 tab appearing in August 2026, before the
+  // 2026 season itself had even kicked off). Only `cur` belongs here.
   function withCurrent(seasons, sport) {
     const list = (seasons || []).slice();
     const cur  = currentLabel(sport);
-    [cur + 1, cur].forEach(yr => { if (!list.includes(yr)) list.unshift(yr); });
+    if (!list.includes(cur)) list.unshift(cur);
     return list.sort((a, b) => b - a);
   }
 
