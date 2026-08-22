@@ -9,6 +9,12 @@ window.initSportPage = function(CFG) {
 
   let data = [], allSeasonData = {}, currentSeason = (CFG.seasons && CFG.seasons[0]) || new Date().getFullYear();
 
+  // User-adjustable Biggest Movers filters (conference/division, min games
+  // played, and how many risers/fallers to show). '' for minGames means
+  // "use the automatic buy-game-opponent guard" (see getMovers below) —
+  // once the user picks an explicit value we respect it exactly, even 0.
+  let moversFilter = { conf: '', minGames: '', count: 5 };
+
   // ── Season picker ──────────────────────────────────────────
   // Picker is built dynamically after probeSeasons() discovers available CSVs
   // (see findAvailableSeason / probeSeasons below)
@@ -793,10 +799,15 @@ window.initSportPage = function(CFG) {
   // its peers this season — real teams cluster near the max games played;
   // buy-game-only opponents fall far short of it.
   function getMovers(n) {
-    const eligible = data.filter(r => r.games_played > 0);
+    let eligible = data.filter(r => r.games_played > 0);
+    if (moversFilter.conf) eligible = eligible.filter(r => r.conference === moversFilter.conf);
     if (!eligible.length) return { risers: [], fallers: [] };
     const maxGames = eligible.reduce((m, r) => Math.max(m, r.games_played), 0);
-    const minGamesForMovers = Math.max(3, Math.ceil(maxGames * 0.4));
+    // Default guard against buy-game/low-sample opponents; overridden the
+    // moment the user picks an explicit "min games" value from the filter
+    // (including "Any games", which intentionally disables the guard).
+    const auto = Math.max(3, Math.ceil(maxGames * 0.4));
+    const minGamesForMovers = moversFilter.minGames === '' ? auto : (parseInt(moversFilter.minGames) || 0);
     const real = eligible.filter(r => r.games_played >= minGamesForMovers);
     const sorted = [...real].sort((a, b) => movement(b) - movement(a));
     return {
@@ -806,8 +817,12 @@ window.initSportPage = function(CFG) {
   }
 
   function moversHtml() {
-    const { risers, fallers } = getMovers(5);
-    if (!risers.length) return '';
+    if (!data.length) return '';
+    const n = moversFilter.count || 5;
+    const { risers, fallers } = getMovers(n);
+    const confs = [...new Set(data.map(r => r.conference).filter(Boolean))].sort();
+    const filtered = !!(moversFilter.conf || moversFilter.minGames !== '');
+    const emptyMsg = filtered ? 'No teams match this filter' : 'No movement yet';
     const row = r => {
       const d = movement(r);
       const cls = d >= 0 ? 'trend-up' : 'trend-down';
@@ -817,14 +832,36 @@ window.initSportPage = function(CFG) {
         <span class="${cls}">${arrow} ${Math.abs(d).toFixed(0)}</span>
       </div>`;
     };
+    const opt = (val, label, cur) => `<option value="${val}"${String(cur)===String(val)?' selected':''}>${label}</option>`;
+    const ctrlHtml = `<div class="movers-ctrl">
+      <span class="ctrl-label">Filter</span>
+      <select id="moversConfFilter" class="movers-select" title="Filter movers by ${CFG.confLabel}">
+        ${opt('', 'All ' + CFG.confLabel + 's', moversFilter.conf)}
+        ${confs.map(c => opt(c, c, moversFilter.conf)).join('')}
+      </select>
+      <select id="moversMinGames" class="movers-select" title="Minimum games played to qualify">
+        ${opt('', 'Auto (hide low-sample)', moversFilter.minGames)}
+        ${opt('0', 'Any games', moversFilter.minGames)}
+        ${opt('4', '4+ games', moversFilter.minGames)}
+        ${opt('10', '10+ games', moversFilter.minGames)}
+        ${opt('20', '20+ games', moversFilter.minGames)}
+      </select>
+      <select id="moversCount" class="movers-select" title="How many risers/fallers to show">
+        ${opt('5', 'Top 5', n)}
+        ${opt('10', 'Top 10', n)}
+        ${opt('15', 'Top 15', n)}
+        ${opt('9999', 'Show all', n)}
+      </select>
+    </div>`;
     return `<div class="movers-panel">
+      ${ctrlHtml}
       <div class="movers-col">
         <div class="movers-title">📈 Biggest Risers <span class="movers-sub">this week</span></div>
-        ${risers.map(row).join('') || '<div class="mover-row mover-empty">No movement yet</div>'}
+        ${risers.length ? risers.map(row).join('') : `<div class="mover-row mover-empty">${emptyMsg}</div>`}
       </div>
       <div class="movers-col">
         <div class="movers-title">📉 Biggest Fallers <span class="movers-sub">this week</span></div>
-        ${fallers.length ? fallers.map(row).join('') : '<div class="mover-row mover-empty">No movement yet</div>'}
+        ${fallers.length ? fallers.map(row).join('') : `<div class="mover-row mover-empty">${emptyMsg}</div>`}
       </div>
     </div>`;
   }
@@ -993,6 +1030,15 @@ window.initSportPage = function(CFG) {
     // Re-wire controls
     document.getElementById('confFilter')?.addEventListener('change', renderRankings);
     document.getElementById('minGames')?.addEventListener('change', renderRankings);
+    document.getElementById('moversConfFilter')?.addEventListener('change', e => {
+      moversFilter.conf = e.target.value; renderRankings();
+    });
+    document.getElementById('moversMinGames')?.addEventListener('change', e => {
+      moversFilter.minGames = e.target.value; renderRankings();
+    });
+    document.getElementById('moversCount')?.addEventListener('change', e => {
+      moversFilter.count = parseInt(e.target.value) || 5; renderRankings();
+    });
     document.getElementById('exportBtn')?.addEventListener('click', () => {
       const cols = ['rank','team','conference','elo','elo_change','baseline_date','wins','losses','games_played','win_pct','record','sos','best_win_team','best_win_elo','updated_at'];
       downloadCSV(getFiltered(), CFG.sport+'_Elo_'+currentSeason+'.csv', cols);

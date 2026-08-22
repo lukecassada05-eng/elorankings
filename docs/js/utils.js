@@ -224,13 +224,21 @@ window.coerceRow = function(r) {
 // instead of requiring a manual yearly edit to every sport's HTML page.
 window.EloSeason = (function () {
   const RULES = {
-    NFL:    { boundaryMonth: 9,  labelsBy: 'start' }, // Sep–Feb, named by start year
+    // boundaryMonth here is when the season's TAB should appear (and, via
+    // labelsBy, what label it gets) — NOT when the homepage Live badge
+    // flips (see WINDOWS below for that). Set 1 month ahead of actual
+    // kickoff so the tab is "ready to go" before the first real game,
+    // same as CFB. The backend R scripts each guard against writing a
+    // season's CSV before it has a real slate of games, so an early tab
+    // just shows a graceful "no data yet" state until then — it never
+    // exposes fabricated data.
+    NFL:    { boundaryMonth: 8,  labelsBy: 'start' }, // preseason starts Aug, tab ready then; named by start year
     CFB:    { boundaryMonth: 8,  labelsBy: 'start' }, // Aug–Jan, named by start year
     NBA:    { boundaryMonth: 10, labelsBy: 'end'   }, // Oct–Jun, named by spring year
     NHL:    { boundaryMonth: 10, labelsBy: 'end'   }, // Oct–Jun, named by spring year
     CBB:    { boundaryMonth: 11, labelsBy: 'end'   }, // Nov–Apr, named by spring year
     MLB:    { boundaryMonth: 3,  labelsBy: 'start' }, // Mar–Oct, named by calendar year
-    CBASE:  { boundaryMonth: 1,  labelsBy: 'start' }, // Feb–Jun, named by calendar year
+    CBASE:  { boundaryMonth: 2,  labelsBy: 'start' }, // Feb–Jun, named by calendar year (was 1 — didn't match the comment or WINDOWS.CBASE; only ever mattered in January)
     Soccer: { boundaryMonth: 8,  labelsBy: 'end'   }, // Aug–May, named by end year
   };
   const WINDOWS = {
