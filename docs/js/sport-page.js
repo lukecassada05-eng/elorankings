@@ -166,7 +166,7 @@ window.initSportPage = function(CFG) {
         'AS Roma':'Roma',
         'AS Saint-Étienne':'St Etienne',
         'AVS Futebol':'AVS',
-        'AZ Alkmaar':'AZ',
+        'AZ Alkmaar':'AZ Alkmaar',
         'Aberdeen FC':'Aberdeen',
         'Ajax Amsterdam':'Ajax',
         'Alanyaspor':'Alanyaspor',
@@ -216,7 +216,7 @@ window.initSportPage = function(CFG) {
         'Deportivo Alaves':'Alaves',
         'Deportivo Alavés':'Alaves',
         'Dundee FC':'Dundee',
-        'Dundee United FC':'Dundee Utd',
+        'Dundee United FC':'Dundee United',
         'Eintracht Frankfurt':'Ein Frankfurt',
         'Empoli FC':'Empoli',
         'Espanyol':'Espanol',
@@ -271,7 +271,7 @@ window.initSportPage = function(CFG) {
         'Ipswich Town':'Ipswich',
         'Istanbul Basaksehir':'Basaksehir',
         'Juventus FC':'Juventus',
-        'K Sint-Truidense VV':'Sint-Truiden',
+        'K Sint-Truidense VV':'St Truiden',
         'KAA Gent':'Gent',
         'KRC Genk':'Genk',
         'KV Kortrijk':'Kortrijk',
@@ -294,19 +294,19 @@ window.initSportPage = function(CFG) {
         'Montpellier HSC':'Montpellier',
         'Moreirense FC':'Moreirense',
         'Motherwell FC':'Motherwell',
-        'NEC Nijmegen':'NEC',
+        'NEC Nijmegen':'Nijmegen',
         'Newcastle United':'Newcastle',
         'Norwich City':'Norwich',
         'Nottingham Forest':'Nott\'m Forest',
         'OGC Nice':'Nice',
-        'OH Leuven':'OH Leuven',
+        'OH Leuven':'Oud-Heverlee Leuven',
         'Oakland Athletics':'Athletics',
         'Olympique Lyonnais':'Lyon',
         'Olympique de Marseille':'Marseille',
-        'Oud-Heverlee Leuven':'OH Leuven',
+        'Oud-Heverlee Leuven':'Oud-Heverlee Leuven',
         'PEC Zwolle':'Zwolle',
         'PSG':'Paris SG',
-        'PSV Eindhoven':'PSV',
+        'PSV Eindhoven':'PSV Eindhoven',
         'Paris Saint-Germain':'Paris SG',
         'Paris Saint-Germain FC':'Paris SG',
         'Parma Calcio 1913':'Parma',
@@ -327,7 +327,8 @@ window.initSportPage = function(CFG) {
         'Real Betis Balompié':'Betis',
         'Real Madrid':'Real Madrid',
         'Real Madrid CF':'Real Madrid',
-        'Real Sociedad de Fútbol':'Real Sociedad',
+        'Real Sociedad de Fútbol':'Sociedad',
+        'Real Sociedad':'Sociedad',
         'Real Valladolid':'Valladolid',
         'Real Valladolid CF':'Valladolid',
         'Real Zaragoza':'Zaragoza',
@@ -335,10 +336,10 @@ window.initSportPage = function(CFG) {
         'Rizespor':'Rizespor',
         'Ross County FC':'Ross County',
         'Royal Antwerp FC':'Antwerp',
-        'Royale Union Saint-Gilloise':'Union SG',
+        'Royale Union Saint-Gilloise':'St. Gilloise',
         'SBV Excelsior':'Excelsior',
         'SBV Vitesse':'Vitesse',
-        'SC Braga':'Braga',
+        'SC Braga':'Sp Braga',
         'SC Freiburg':'Freiburg',
         'SC Heerenveen':'Heerenveen',
         'SL Benfica':'Benfica',
@@ -350,7 +351,7 @@ window.initSportPage = function(CFG) {
         'Samsunspor':'Samsunspor',
         'Sevilla FC':'Sevilla',
         'Sheffield United':'Sheffield United',
-        'Sint-Truiden VV':'Sint-Truiden',
+        'Sint-Truiden VV':'St Truiden',
         'Sivasspor':'Sivasspor',
         'Sparta Rotterdam':'Sparta Rotterdam',
         'Sporting CP':'Sp Lisbon',
@@ -381,7 +382,7 @@ window.initSportPage = function(CFG) {
         'US Lecce':'Lecce',
         'US Sassuolo':'Sassuolo',
         'Udinese Calcio':'Udinese',
-        'Union Saint-Gilloise':'Union SG',
+        'Union Saint-Gilloise':'St. Gilloise',
         'Valencia CF':'Valencia',
         'Venezia FC':'Venezia',
         'VfB Stuttgart':'Stuttgart',
@@ -4121,7 +4122,13 @@ async function findAvailableSeason() {
     async function checkForNewerSeasons() {
     const newest = CFG.seasons[0];
     const added  = [];
-    for (let yr = newest + 2; yr >= newest + 1; yr--) {
+    // Only probe ONE season ahead of whatever's already newest (which, after
+    // EloSeason.withCurrent(), is already this sport's correctly-computed
+    // current season). Probing two years ahead had no valid case where it
+    // should ever add anything — a season that far out can't have real data
+    // yet — and stacked with the withCurrent() bug fixed elsewhere, it was
+    // part of why a season tab could appear a year or more before it should.
+    for (let yr = newest + 1; yr >= newest + 1; yr--) {
       try {
         const r = await fetch(CFG.dataPath + yr + '.csv?t=' + Date.now(), {method:'HEAD'});
         if (r.ok) added.push(yr);
