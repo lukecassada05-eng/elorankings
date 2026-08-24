@@ -116,6 +116,74 @@ cbb_is_ncaa_round <- function(rnd) {
   is_ncaa && !is_conf
 }
 
+# ── Fetch scoreboard games, one calendar day at a time ──────────────────────
+# fetch_scoreboard_games() above chunks its ESPN calls into ~31-day windows
+# using dates=START-END range queries. That works for the other sports it's
+# used for, but confirmed via direct testing does NOT work for
+# basketball/mens-college-basketball — every ranged query against that
+# endpoint 404s, while a single 8-digit date (dates=YYYYMMDD) succeeds every
+# time. Since fetch_cbb_games() only ever called the range-based fetcher,
+# every chunk silently failed and this sport's tournament_YYYY.json has been
+# shipping with empty games/series (despite completed=TRUE) for a while.
+# This walks day-by-day instead — more requests, but each one actually
+# returns data. Mirrors fetch_scoreboard_games()'s own per-event parsing so
+# the two stay consistent in what they extract.
+fetch_scoreboard_games_daily <- function(sport_path, start_date, end_date,
+                                         season_types = c("3")) {
+  all_games <- list()
+  seen      <- list()
+  cur       <- start_date
+
+  while (cur <= end_date) {
+    ds <- gsub("-", "", as.character(cur))
+
+    for (stype in season_types) {
+      url <- paste0("https://site.api.espn.com/apis/site/v2/sports/",
+                    sport_path, "/scoreboard?seasontype=", stype,
+                    "&limit=500&dates=", ds)
+      data <- tryCatch(jsonlite::fromJSON(url, simplifyVector = FALSE),
+                       error = function(e) NULL)
+      if (is.null(data) || length(data$events) == 0) { cur <- cur + 1; next }
+
+      for (ev in data$events) {
+        tryCatch({
+          ev_name <- tryCatch(ev$name, error = function(e) "")
+          comp    <- ev$competitions[[1]]
+          notes_text <- tryCatch(comp$notes[[1]]$headline, error = function(e) "")
+
+          if (is_skip_event(ev_name, notes_text)) next
+          if (!isTRUE(comp$status$type$completed)) next
+
+          comps  <- comp$competitors
+          if (length(comps) != 2) next
+          scores <- suppressWarnings(as.numeric(sapply(comps, function(c) c$score)))
+          names  <- sapply(comps, function(c) c$team$displayName)
+          if (any(is.na(scores)) || scores[1] == scores[2] || any(nchar(names) == 0)) next
+
+          wi  <- which.max(scores); li <- 3 - wi
+          dt  <- tryCatch(substr(comp$date, 1, 10), error = function(e) "")
+          dup <- paste(names[wi], names[li], dt, sep = "|")
+          if (!is.null(seen[[dup]])) next
+          seen[[dup]] <- TRUE
+
+          rnd_raw <- if (!is.null(notes_text) && nchar(notes_text) > 0) notes_text else ""
+          rnd <- normalise_round(rnd_raw)
+
+          all_games <- c(all_games, list(list(
+            winner = names[wi], loser = names[li],
+            winner_score = scores[wi], loser_score = scores[li],
+            date = dt, round = rnd
+          )))
+        }, error = function(e) NULL)
+      }
+      Sys.sleep(0.1)
+    }
+    cur <- cur + 1
+  }
+  message("    fetched ", length(all_games), " games (daily sweep)")
+  all_games
+}
+
 fetch_cbb_games <- function(season_yr, start = NULL, end = NULL) {
   if (is.null(start)) start <- as.Date(paste0(season_yr, "-03-14"))
   if (is.null(end))   end   <- as.Date(paste0(season_yr, "-04-10"))
@@ -123,10 +191,11 @@ fetch_cbb_games <- function(season_yr, start = NULL, end = NULL) {
   if (start > today) return(list())
   end <- min(end, today)
 
-  # Primary: reuse the proven ESPN-scoreboard fetcher (same pattern used
-  # successfully for NBA/NHL/MLB/NFL/CBASE), then keep only games whose
-  # round name reads as NCAA-tournament (not a conference tournament).
-  raw <- fetch_scoreboard_games("basketball/mens-college-basketball", start, end, c("3"))
+  # Primary: day-by-day ESPN scoreboard sweep (see fetch_scoreboard_games_daily
+  # for why this sport can't use the shared range-chunked fetcher), then keep
+  # only games whose round name reads as NCAA-tournament (not a conference
+  # tournament).
+  raw <- fetch_scoreboard_games_daily("basketball/mens-college-basketball", start, end, c("3"))
   filtered <- Filter(function(g) isTRUE(cbb_is_ncaa_round(g$round)), raw)
 
   if (length(filtered) > 0) {
