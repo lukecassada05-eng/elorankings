@@ -123,7 +123,7 @@
       <div id="predResult"></div>
     </div>
   </div>
-  <div id="panel-bracketology" hidden><div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;margin-bottom:1rem;font-size:0.83rem;color:var(--text-muted);line-height:1.7">Auto bids go to the top-rated team per conference. At-large bids fill to 68 total, sorted by Elo. <span id="bracketInfo" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim)"></span></div><div id="bracketView"></div></div>
+  <div id="panel-bracketology" hidden><div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;margin-bottom:1rem;font-size:0.83rem;color:var(--text-muted);line-height:1.7">Auto bids go to each conference's tournament champion (projected by Elo until that conference's tournament final is decided). At-large bids fill to 68 total, sorted by Elo. <span id="bracketInfo" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim)"></span></div><div id="bracketView"></div></div>
 
   <div id="panel-history" hidden>
     <!-- populated by sport-page.js renderHistory() -->
@@ -147,9 +147,9 @@
   </div>
 </div><!-- .page -->
 
-<script src="../js/utils.js?v=31"></script>
-<script src="../js/season-tracker.js?v=31"></script>
-<script src="../js/sport-page.js?v=31"></script>
+<script src="../js/utils.js?v=32"></script>
+<script src="../js/season-tracker.js?v=32"></script>
+<script src="../js/sport-page.js?v=32"></script>
 <script>
 initSportPage({
   sport:     'CBB',
