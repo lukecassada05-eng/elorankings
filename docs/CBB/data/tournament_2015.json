@@ -4,28 +4,12 @@
   "completed": true,
   "games": [
     {
-      "winner": "UAlbany Great Danes",
-      "loser": "Stony Brook Seawolves",
-      "winner_score": 51,
-      "loser_score": 50,
-      "date": "2015-03-14",
-      "round": "AMERICA EAST MEN'S CHAMPIONSHIP - FINAL"
-    },
-    {
       "winner": "VCU Rams",
       "loser": "Davidson Wildcats",
       "winner_score": 93,
       "loser_score": 73,
       "date": "2015-03-14",
       "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL"
-    },
-    {
-      "winner": "Georgia State Panthers",
-      "loser": "Louisiana Ragin' Cajuns",
-      "winner_score": 83,
-      "loser_score": 79,
-      "date": "2015-03-14",
-      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL"
     },
     {
       "winner": "SMU Mustangs",
@@ -188,14 +172,6 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
     },
     {
-      "winner": "Xavier Musketeers",
-      "loser": "Ole Miss Rebels",
-      "winner_score": 76,
-      "loser_score": 57,
-      "date": "2015-03-19",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
-    },
-    {
       "winner": "Ohio State Buckeyes",
       "loser": "VCU Rams",
       "winner_score": 75,
@@ -212,14 +188,6 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
     },
     {
-      "winner": "Cincinnati Bearcats",
-      "loser": "Purdue Boilermakers",
-      "winner_score": 66,
-      "loser_score": 65,
-      "date": "2015-03-19",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
-    },
-    {
       "winner": "North Carolina Tar Heels",
       "loser": "Harvard Crimson",
       "winner_score": 67,
@@ -234,14 +202,6 @@
       "loser_score": 50,
       "date": "2015-03-20",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
-    },
-    {
-      "winner": "NC State Wolfpack",
-      "loser": "LSU Tigers",
-      "winner_score": 66,
-      "loser_score": 65,
-      "date": "2015-03-20",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
     },
     {
       "winner": "Arkansas Razorbacks",
@@ -340,28 +300,12 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
     },
     {
-      "winner": "Duke Blue Devils",
-      "loser": "Robert Morris Colonials",
-      "winner_score": 85,
-      "loser_score": 56,
-      "date": "2015-03-20",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
-    },
-    {
       "winner": "Iowa Hawkeyes",
       "loser": "Davidson Wildcats",
       "winner_score": 83,
       "loser_score": 52,
       "date": "2015-03-20",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
-    },
-    {
-      "winner": "Oklahoma Sooners",
-      "loser": "UAlbany Great Danes",
-      "winner_score": 69,
-      "loser_score": 60,
-      "date": "2015-03-21",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
     },
     {
       "winner": "Wisconsin Badgers",
@@ -450,14 +394,6 @@
       "loser_score": 78,
       "date": "2015-03-22",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND"
-    },
-    {
-      "winner": "Notre Dame Fighting Irish",
-      "loser": "Butler Bulldogs",
-      "winner_score": 67,
-      "loser_score": 64,
-      "date": "2015-03-22",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND"
     },
     {
       "winner": "Michigan State Spartans",
@@ -590,16 +526,6 @@
   ],
   "series": [
     {
-      "t1": "UAlbany Great Danes",
-      "t2": "Stony Brook Seawolves",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Stony Brook Seawolves",
-      "round": "AMERICA EAST MEN'S CHAMPIONSHIP - FINAL",
-      "date": "2015-03-14"
-    },
-    {
       "t1": "VCU Rams",
       "t2": "Davidson Wildcats",
       "w1": 1,
@@ -607,16 +533,6 @@
       "done": true,
       "loser": "Davidson Wildcats",
       "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL",
-      "date": "2015-03-14"
-    },
-    {
-      "t1": "Georgia State Panthers",
-      "t2": "Louisiana Ragin' Cajuns",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Louisiana Ragin' Cajuns",
-      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL",
       "date": "2015-03-14"
     },
     {
@@ -820,16 +736,6 @@
       "date": "2015-03-19"
     },
     {
-      "t1": "Xavier Musketeers",
-      "t2": "Ole Miss Rebels",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Ole Miss Rebels",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
-      "date": "2015-03-19"
-    },
-    {
       "t1": "Ohio State Buckeyes",
       "t2": "VCU Rams",
       "w1": 1,
@@ -850,16 +756,6 @@
       "date": "2015-03-19"
     },
     {
-      "t1": "Cincinnati Bearcats",
-      "t2": "Purdue Boilermakers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Purdue Boilermakers",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
-      "date": "2015-03-19"
-    },
-    {
       "t1": "North Carolina Tar Heels",
       "t2": "Harvard Crimson",
       "w1": 1,
@@ -877,16 +773,6 @@
       "done": true,
       "loser": "Stephen F. Austin Lumberjacks",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
-      "date": "2015-03-20"
-    },
-    {
-      "t1": "NC State Wolfpack",
-      "t2": "LSU Tigers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "LSU Tigers",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
       "date": "2015-03-20"
     },
     {
@@ -1010,16 +896,6 @@
       "date": "2015-03-20"
     },
     {
-      "t1": "Duke Blue Devils",
-      "t2": "Robert Morris Colonials",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Robert Morris Colonials",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
-      "date": "2015-03-20"
-    },
-    {
       "t1": "Iowa Hawkeyes",
       "t2": "Davidson Wildcats",
       "w1": 1,
@@ -1028,16 +904,6 @@
       "loser": "Davidson Wildcats",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
       "date": "2015-03-20"
-    },
-    {
-      "t1": "Oklahoma Sooners",
-      "t2": "UAlbany Great Danes",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "UAlbany Great Danes",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
-      "date": "2015-03-21"
     },
     {
       "t1": "Wisconsin Badgers",
@@ -1147,16 +1013,6 @@
       "done": true,
       "loser": "Arkansas Razorbacks",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND",
-      "date": "2015-03-22"
-    },
-    {
-      "t1": "Notre Dame Fighting Irish",
-      "t2": "Butler Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Butler Bulldogs",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND",
       "date": "2015-03-22"
     },
     {
@@ -1321,9 +1177,7 @@
     }
   ],
   "eliminated": [
-    "Stony Brook Seawolves",
     "Davidson Wildcats",
-    "Louisiana Ragin' Cajuns",
     "Temple Owls",
     "Middle Tennessee Blue Raiders",
     "Rhode Island Rams",
@@ -1344,13 +1198,10 @@
     "Texas Southern Tigers",
     "Texas Longhorns",
     "SMU Mustangs",
-    "Ole Miss Rebels",
     "VCU Rams",
     "Lafayette Leopards",
-    "Purdue Boilermakers",
     "Harvard Crimson",
     "Stephen F. Austin Lumberjacks",
-    "LSU Tigers",
     "Wofford Terriers",
     "Hampton Pirates",
     "Eastern Washington Eagles",
@@ -1363,8 +1214,6 @@
     "UC Irvine Anteaters",
     "Valparaiso Beacons",
     "Oklahoma State Cowboys",
-    "Robert Morris Colonials",
-    "UAlbany Great Danes",
     "Coastal Carolina Chanticleers",
     "St. John's Red Storm",
     "North Dakota State Bison",
@@ -1376,7 +1225,6 @@
     "Villanova Wildcats",
     "Georgetown Hoyas",
     "Arkansas Razorbacks",
-    "Butler Bulldogs",
     "Virginia Cavaliers",
     "Iowa Hawkeyes",
     "Oregon Ducks",
@@ -1391,5 +1239,5 @@
     "Louisville Cardinals",
     "Gonzaga Bulldogs"
   ],
-  "updated": "2026-08-24 08:30 UTC"
+  "updated": "2026-08-24 19:51 UTC"
 }
