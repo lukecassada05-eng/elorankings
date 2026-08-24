@@ -35,7 +35,7 @@ window.initSportPage = function(CFG) {
       if (tab.dataset.tab === 'history')      renderHistory();
       if (tab.dataset.tab === 'tracker')      renderSeasonTracker();
       if (tab.dataset.tab === 'greatest')    renderGreatestTeams();
-      if (tab.dataset.tab === 'pickem')      renderPickem();
+      if (tab.dataset.tab === 'pickem')      { if(CFG.sport==='CBB') renderPickemCBB(); else renderPickem(); }
       if (tab.dataset.tab === 'confhistory') renderConfHistory();
     });
   });
@@ -159,11 +159,13 @@ window.initSportPage = function(CFG) {
 
       var NAME_FIX = {
         '1. FC Heidenheim 1846':'Heidenheim',
-        '1. FC Koln':'Koeln',
+        '1. FC Koln':'FC Koln',
+        '1. FC Union Berlin':'Union Berlin',
         '1. FSV Mainz 05':'Mainz',
         'AC Milan':'Milan',
         'AC Monza':'Monza',
         'ACF Fiorentina':'Fiorentina',
+        'ADO Den Haag':'Den Haag',
         'AFC Ajax':'Ajax',
         'AFC Bournemouth':'Bournemouth',
         'AJ Auxerre':'Auxerre',
@@ -174,9 +176,12 @@ window.initSportPage = function(CFG) {
         'AVS Futebol':'AVS',
         'AZ Alkmaar':'AZ Alkmaar',
         'Aberdeen FC':'Aberdeen',
+        'Académico de Viseu':'Academico Viseu',
         'Ajax Amsterdam':'Ajax',
         'Alanyaspor':'Alanyaspor',
+        'Alavés':'Alaves',
         'Almere City FC':'Almere City',
+        'Amed SFK':'Amedspor',
         'Angers SCO':'Angers',
         'Antalyaspor':'Antalyaspor',
         'Arsenal FC':'Arsenal',
@@ -199,17 +204,20 @@ window.initSportPage = function(CFG) {
         'Bodrum FK':'Bodrum',
         'Bologna FC 1909':'Bologna',
         'Borussia Dortmund':'Dortmund',
+        'Braga':'Sp Braga',
         "Borussia M\u00f6nchengladbach":"M'gladbach",
         "Nott'm Forest":"Nott'm Forest",
         'Borussia Monchengladbach':'M\'gladbach',
         'Borussia Mönchengladbach':'M\'gladbach',
         'Brighton & Hove Albion':'Brighton',
         'Burnley':'Burnley',
+        'C.D. Nacional':'Nacional',
         'CA Osasuna':'Osasuna',
         'CD Leganes':'Leganes',
         'CD Santa Clara':'Santa Clara',
         'Cagliari Calcio':'Cagliari',
         'Casa Pia AC':'Casa Pia',
+        'Caykur Rizespor':'Rizespor',
         'Celta Vigo':'Celta',
         'Celtic FC':'Celtic',
         'Cercle Brugge KSV':'Cercle Brugge',
@@ -225,12 +233,14 @@ window.initSportPage = function(CFG) {
         'Dundee United FC':'Dundee United',
         'Eintracht Frankfurt':'Ein Frankfurt',
         'Empoli FC':'Empoli',
+        'Erzurum BB':'Erzurumspor',
         'Espanyol':'Espanol',
         'Estoril Praia':'Estoril',
         'Eyupspor':'Eyupspor',
         'FC Augsburg':'Augsburg',
         'FC Barcelona':'Barcelona',
         'FC Bayern München':'Bayern Munich',
+        'FC Cologne':'FC Koln',
         'FC Famalicao':'Famalicao',
         'FC Groningen':'Groningen',
         'FC Heidenheim':'Heidenheim',
@@ -250,7 +260,7 @@ window.initSportPage = function(CFG) {
         'FCV Dender EH':'Dender',
         'Fenerbahce SK':'Fenerbahce',
         'Feyenoord Rotterdam':'Feyenoord',
-        'Fortuna Sittard':'Fortuna Sittard',
+        'Fortuna Sittard':'For Sittard',
         'Frosinone Calcio':'Frosinone',
         'GFC Ajaccio':'Ajaccio',
         'Galatasaray SK':'Galatasaray',
@@ -261,6 +271,7 @@ window.initSportPage = function(CFG) {
         'Girona FC':'Girona',
         'Go Ahead Eagles':'Go Ahead Eagles',
         'Granada CF':'Granada',
+        'Hamburg SV':'Hamburg',
         'Hamburger SV':'Hamburg',
         'Hatayspor':'Hatayspor',
         'Havre AC':'Le Havre',
@@ -324,8 +335,10 @@ window.initSportPage = function(CFG) {
         'RC Strasbourg Alsace':'Strasbourg',
         'RCD Espanyol':'Espanol',
         'RCD Mallorca':'Mallorca',
+        'RAAL La Louvière':'RAAL La Louviere',
         'RKC Waalwijk':'RKC',
         'RSC Anderlecht':'Anderlecht',
+        'Racing Genk':'Genk',
         'Rangers FC':'Rangers',
         'Rayo Vallecano':'Vallecano',
         'Rayo Vallecano de Madrid':'Vallecano',
@@ -333,6 +346,7 @@ window.initSportPage = function(CFG) {
         'Real Betis Balompié':'Betis',
         'Real Madrid':'Real Madrid',
         'Real Madrid CF':'Real Madrid',
+        'Real Oviedo':'Oviedo',
         'Real Sociedad de Fútbol':'Sociedad',
         'Real Sociedad':'Sociedad',
         'Real Valladolid':'Valladolid',
@@ -342,10 +356,12 @@ window.initSportPage = function(CFG) {
         'Rizespor':'Rizespor',
         'Ross County FC':'Ross County',
         'Royal Antwerp FC':'Antwerp',
+        'Royal Charleroi SC':'Charleroi',
         'Royale Union Saint-Gilloise':'St. Gilloise',
         'SBV Excelsior':'Excelsior',
         'SBV Vitesse':'Vitesse',
         'SC Braga':'Sp Braga',
+        'SC Cambuur':'Cambuur',
         'SC Freiburg':'Freiburg',
         'SC Heerenveen':'Heerenveen',
         'SL Benfica':'Benfica',
@@ -358,6 +374,7 @@ window.initSportPage = function(CFG) {
         'Sevilla FC':'Sevilla',
         'Sheffield United':'Sheffield United',
         'Sint-Truiden VV':'St Truiden',
+        'Sint-Truidense':'St Truiden',
         'Sivasspor':'Sivasspor',
         'Sparta Rotterdam':'Sparta Rotterdam',
         'Sporting CP':'Sp Lisbon',
@@ -370,6 +387,7 @@ window.initSportPage = function(CFG) {
         'Stade Rennais':'Rennes',
         'Stade Rennais FC':'Rennes',
         'Stade de Reims':'Reims',
+        'Standard Liege':'Standard',
         'Standard Liège':'Standard',
         'Standard de Liege':'Standard',
         'Stoke City':'Stoke',
@@ -389,6 +407,7 @@ window.initSportPage = function(CFG) {
         'US Sassuolo':'Sassuolo',
         'Udinese Calcio':'Udinese',
         'Union Saint-Gilloise':'St. Gilloise',
+        'Union St.-Gilloise':'St. Gilloise',
         'Valencia CF':'Valencia',
         'Venezia FC':'Venezia',
         'VfB Stuttgart':'Stuttgart',
@@ -397,11 +416,14 @@ window.initSportPage = function(CFG) {
         'VfL Wolfsburg':'Wolfsburg',
         'Villarreal CF':'Villarreal',
         'Vitesse Arnhem':'Vitesse',
-        'Vitoria Guimaraes':'Vitoria',
-        'Vitoria SC':'Vitoria',
+        'Vitoria Guimaraes':'Guimaraes',
+        'Vitoria SC':'Guimaraes',
+        'Vitória de Guimaraes':'Guimaraes',
+        'Waasland-Beveren':'Beveren',
         'Watford':'Watford',
         'West Ham United':'West Ham',
         'Wolverhampton Wanderers':'Wolves',
+        'Zulte-Waregem':'Waregem',
       };
 
       var NOW    = new Date();
@@ -709,7 +731,7 @@ window.initSportPage = function(CFG) {
       if (pn === 'history')      renderHistory();
       if (pn === 'tracker')      renderSeasonTracker();
       if (pn === 'greatest')    renderGreatestTeams();
-      if (pn === 'pickem')      renderPickem();
+      if (pn === 'pickem')      { if(CFG.sport==='CBB') renderPickemCBB(); else renderPickem(); }
       if (pn === 'confhistory') renderConfHistory();
     }
   }
@@ -3097,12 +3119,27 @@ async function findAvailableSeason() {
   var _pk = {
     yr:null, schedule:[], scores:{}, confGames:[], confChamps:{},
     wins:{}, losses:{}, confWins:{}, confLoss:{}, eloBase:{}, eloSim:{},
-    playoffRating:{}
+    playoffRating:{},
+    // Live-derived conference data (see pkFetchConferences below) — populated
+    // fresh every time a season loads, so realignment never needs a code
+    // change. confs: {confName: [team,...]}. divs: {confName: {divName:[...]}}
+    // for conferences ESPN reports as having divisions; absent otherwise.
+    // confIds: {confName: espnGroupId} used to backfill any conference ESPN's
+    // FBS-umbrella scoreboard query omits (same trick as the old Pac-12 fix,
+    // just generalized to detect ANY missing conference automatically).
+    confs:{}, divs:{}, confIds:{}
   };
 
-  // ── 2025-26 EXACT conference rosters ─────────────────────
+  // ── FALLBACK conference rosters — 2025-26 snapshot ───────
   // Sources: Deseret News July 2025, ESPN standings, CFP rules
-  var PK_CONFS = {
+  // NOT used as the primary source anymore (see pkFetchConferences, which
+  // derives conference membership live from ESPN every time a season loads).
+  // This snapshot only kicks in if that live fetch fails outright — e.g. the
+  // network is blocked or ESPN changes their response shape — so Pick'em
+  // degrades gracefully instead of showing an empty page. It WILL go stale
+  // after a realignment; that's expected for a last-resort fallback, not a
+  // bug to keep fixing every year the way the old primary copy was.
+  var PK_CONFS_FALLBACK = {
     "SEC": [
       "Alabama","Arkansas","Auburn","Florida","Georgia","Kentucky","LSU",
       "Mississippi State","Missouri","Ole Miss","Oklahoma","South Carolina",
@@ -3155,10 +3192,11 @@ async function findAvailableSeason() {
     "Independent": ["Notre Dame","Connecticut"]
   };
 
-  // ── Divisions — Sun Belt still has East/West in 2026 ─────
-  // MAC eliminated divisions (only 12 teams, no divisions in 2026)
-  // Sun Belt: only FBS conf still using divisions
-  var PK_DIVS = {
+  // ── Divisions fallback — Sun Belt had East/West as of 2025-26 ───
+  // Live derivation (pkFetchConferences) detects divisions generically from
+  // ESPN's own nested group structure, so this doesn't need to be kept in
+  // sync by hand either — it's only consulted if the live fetch fails.
+  var PK_DIVS_FALLBACK = {
     "Sun Belt": {
       "East": ["Appalachian State","Coastal Carolina","Georgia Southern",
                "Georgia State","James Madison","Marshall","Old Dominion"],
@@ -3167,10 +3205,12 @@ async function findAvailableSeason() {
     }
   };
 
-  // ── CFP auto-bid conferences (eligible for automatic bids) ──
-  // Any conference with a championship game qualifies
-  // Independent schools (Notre Dame) can only receive at-large bids
-  var CFP_AUTO_CONF = ["SEC","Big Ten","Big 12","ACC","Pac-12",
+  // ── CFP auto-bid conferences fallback ────────────────────
+  // Live derivation treats any discovered conference with >= 8 teams as
+  // auto-bid-eligible (every real FBS conference; a small "Independents"
+  // grouping like Notre Dame/UConn naturally falls below that and is
+  // correctly at-large-only, with no name matching required).
+  var CFP_AUTO_CONF_FALLBACK = ["SEC","Big Ten","Big 12","ACC","Pac-12",
                        "Mountain West","AAC","Sun Belt","MAC","C-USA"];
 
   // ── ESPN shortDisplayName → canonical PK_CONFS name ──────
@@ -3290,12 +3330,20 @@ async function findAvailableSeason() {
     "Wash. St.":"Washington St","Wash St.":"Washington St"
   };
 
-  // Set of all FBS team names for fast lookup
+  // Live conference data if pkFetchConferences succeeded this load, else the
+  // frozen 2025-26 snapshot. Every consumer below goes through these two
+  // helpers instead of touching _pk.confs / PK_CONFS_FALLBACK directly.
+  function pkActiveConfs(){ return Object.keys(_pk.confs).length ? _pk.confs : PK_CONFS_FALLBACK; }
+  function pkActiveDivs(){ return Object.keys(_pk.confs).length ? _pk.divs : PK_DIVS_FALLBACK; }
+
+  // Set of all FBS team names for fast lookup. Rebuilt lazily — invalidated
+  // (_fbs_set = null) every time pkFetchConferences runs so it always
+  // reflects whichever conference data is currently active.
   var _fbs_set = null;
   function pkIsFBS(name) {
     if (!_fbs_set) {
       _fbs_set = new Set();
-      Object.values(PK_CONFS).forEach(function(arr){
+      Object.values(pkActiveConfs()).forEach(function(arr){
         arr.forEach(function(t){ _fbs_set.add(t); });
       });
       Object.keys(PK_ALIAS).forEach(function(k){ _fbs_set.add(k); });
@@ -3307,8 +3355,9 @@ async function findAvailableSeason() {
 
   function pkConfOf(team){
     var t = pkResolve(team);
-    for(var conf in PK_CONFS){
-      if(PK_CONFS[conf].indexOf(t) !== -1) return conf;
+    var confs = pkActiveConfs();
+    for(var conf in confs){
+      if(confs[conf].indexOf(t) !== -1) return conf;
     }
     return null;
   }
@@ -3442,16 +3491,19 @@ async function findAvailableSeason() {
   async function renderPickem(){
     var el=document.getElementById('panel-pickem');
     if(!el||CFG.sport!=='CFB') return;
-    if(!allSeasonData[currentSeason]){
-      try{var raw=await fetchCSV(CFG.dataPath+currentSeason+'.csv');if(raw)allSeasonData[currentSeason]=raw.map(coerceRow);}catch(e){}
-    }
-    _pk.eloBase={};
-    (allSeasonData[currentSeason]||[]).forEach(function(r){if(r.team&&r.elo)_pk.eloBase[r.team]=parseFloat(r.elo);});
-    _pk.eloSim=JSON.parse(JSON.stringify(_pk.eloBase));
-    _pk.yr=currentSeason+1;
-    _pk.schedule=[];_pk.scores={};_pk.confGames=[];_pk.confChamps={};
-    pkDrawShell();
-    pkFetchSched(_pk.yr);
+    // BUG FIX: this used to hardcode _pk.yr = currentSeason + 1, i.e. always
+    // one year past whatever CFB season is "current" — back when the season
+    // picker itself was stuck a year behind (see the withCurrent() fix in
+    // utils.js), that quietly cancelled out. Now that currentSeason correctly
+    // tracks the live/about-to-start season, the +1 pushed Pick'em a full year
+    // into the future by default — landing on a season ESPN hasn't scheduled
+    // yet (confirmed: ESPN publishes a CFB schedule only ~1 season ahead) and
+    // showing the "schedule not available" empty state on first load, every
+    // year. Delegate to pkLoadYear(currentSeason) so the default view is
+    // always the actual current season, using last season's final Elo as the
+    // preseason baseline — identical to what picking the top entry in the
+    // season dropdown does, so there's exactly one code path to keep correct.
+    await window.pkLoadYear(currentSeason);
   }
 
   function pkDrawShell(){
@@ -3504,6 +3556,70 @@ async function findAvailableSeason() {
     if(ph==='cfp')  pkDrawCFP();
   };
 
+  // ── Live conference derivation (CFB) ──────────────────────────
+  // Fetches every FBS conference's current roster — and divisions, if ESPN
+  // reports any — from ESPN in a single call, so realignment is picked up
+  // automatically the next time Pick'em loads a season instead of needing a
+  // hand-edited roster. Division detection is generic (ESPN nests a second
+  // "children" level under a conference that has them) rather than hardcoded
+  // to "Sun Belt has East/West" the way the old static table was.
+  // This is CFB's own, independent implementation — CBB derives its
+  // conferences the same way but through its own separate function
+  // (pkbFetchConferences), never shared code between sports.
+  async function pkFetchConferences(yr){
+    var confs={}, divs={}, confIds={};
+    try{
+      var url='https://site.api.espn.com/apis/v2/sports/football/college-football/standings?season='+yr+'&group=80';
+      var res=await fetch(url,{mode:'cors'});
+      if(!res.ok) throw new Error('standings fetch failed: '+res.status);
+      var data=await res.json();
+      var top=(data&&data.children)||[];
+      top.forEach(function(node){
+        var confFull=node&&node.name;
+        // Prefer ESPN's shortName ("SEC", "Big Ten", "Pac-12") as the
+        // canonical conference key — that's the same short-form convention
+        // the R backend already writes into each team's CSV "conference"
+        // column, so live-derived names line up with the rest of the site
+        // instead of showing ESPN's longer official names ("Southeastern
+        // Conference") only in Pick'em.
+        var confName=(node&&node.shortName)||confFull;
+        if(!confName) return;
+        if(node.children&&node.children.length){
+          var divMap={}, allTeams=[];
+          node.children.forEach(function(div){
+            var rawDivName=(div&&div.name)||'';
+            // ESPN names a division like "Sun Belt - East" — strip whichever
+            // of the conference's short/full name prefixes the string so
+            // what's left is just "East".
+            var divName=rawDivName.replace(confName,'').replace(confFull,'').replace(/^[\s\-–—]+/,'') || rawDivName || 'Division';
+            var dteams=((div.standings&&div.standings.entries)||[]).map(function(e){
+              return e&&e.team&&(e.team.shortDisplayName||e.team.displayName);
+            }).filter(Boolean);
+            if(dteams.length){ divMap[divName]=dteams; allTeams=allTeams.concat(dteams); }
+          });
+          if(allTeams.length){ confs[confName]=allTeams; divs[confName]=divMap; }
+        }else{
+          var teams=((node.standings&&node.standings.entries)||[]).map(function(e){
+            return e&&e.team&&(e.team.shortDisplayName||e.team.displayName);
+          }).filter(Boolean);
+          if(teams.length) confs[confName]=teams;
+        }
+        if(node&&node.id) confIds[confName]=String(node.id);
+      });
+    }catch(e){
+      if(typeof console!=='undefined') console.warn('pkFetchConferences: live fetch failed, using fallback roster —', e.message);
+    }
+    // Sanity check: a real FBS response has ~10-11 conferences. Suspiciously
+    // few (network hiccup, ESPN reshaping their response) means don't run
+    // Pick'em on a broken partial roster — fall back to the frozen snapshot,
+    // same as an outright fetch failure.
+    if(Object.keys(confs).length<5){
+      if(typeof console!=='undefined' && Object.keys(confs).length) console.warn('pkFetchConferences: only found '+Object.keys(confs).length+' conferences, falling back');
+      return {confs:{}, divs:{}, confIds:{}};
+    }
+    return {confs:confs, divs:divs, confIds:confIds};
+  }
+
   window.pkLoadYear=async function(yr){
     var baseYr=yr-1;
     if(!allSeasonData[baseYr]){try{var raw=await fetchCSV(CFG.dataPath+baseYr+'.csv');if(raw)allSeasonData[baseYr]=raw.map(coerceRow);}catch(e){}}
@@ -3511,97 +3627,17 @@ async function findAvailableSeason() {
     (allSeasonData[baseYr]||allSeasonData[currentSeason]||[]).forEach(function(r){if(r.team&&r.elo)_pk.eloBase[r.team]=parseFloat(r.elo);});
     _pk.eloSim=JSON.parse(JSON.stringify(_pk.eloBase));
     _pk.yr=yr;_pk.schedule=[];_pk.scores={};_pk.confGames=[];_pk.confChamps={};
-    pkDrawShell();pkFetchSched(yr);
+    pkDrawShell();
+    pkSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' conference alignment from ESPN…</div>');
+    var confData=await pkFetchConferences(yr);
+    _pk.confs=confData.confs; _pk.divs=confData.divs; _pk.confIds=confData.confIds;
+    _fbs_set=null; // invalidate cached FBS-team set so it rebuilds from the new roster
+    pkFetchSched(yr);
   };
 
-
-  function pkGetStaticPac12(yr) {
-    if (yr !== 2026) return [];
-    // 2026 Pac-12 schedule — verified sources + computed round-robin
-    // Each of 8 teams plays exactly 7 conf games (C(8,2)=28 unique matchups)
-    // Non-conf games from Wikipedia/pac-12.com/txst.com
-    var games = [
-      // ── Non-conference ──────────────────────────────────────
-      // Washington State
-      {wk:1, dt:"2026-09-05", h:"Washington",       a:"Washington St", n:false},
-      {wk:2, dt:"2026-09-12", h:"Kansas St",     a:"Washington St", n:false},
-      {wk:3, dt:"2026-09-19", h:"Washington St", a:"Duquesne",         n:false},
-      {wk:4, dt:"2026-09-26", h:"Washington St", a:"Arizona",          n:false},
-      // Oregon State
-      {wk:2, dt:"2026-09-12", h:"Oregon St",     a:"Texas Tech",         n:false},
-      {wk:1, dt:"2026-08-29", h:"Oregon St",     a:"Hawai'i",          n:false},
-      
-      {wk:3, dt:"2026-09-19", h:"Oregon St",     a:"S. Dakota",     n:false},
-      // Boise State
-      {wk:1, dt:"2026-09-05", h:"Oregon",           a:"Boise St",      n:false},
-      {wk:2, dt:"2026-09-12", h:"Boise St",      a:"Memphis",           n:false},
-      {wk:4, dt:"2026-09-26", h:"W. Michigan",  a:"Boise St",          n:false},
-      {wk:3, dt:"2026-09-19", h:"Colorado St",   a:"BYU",              n:false},
-      // Colorado State
-      {wk:1, dt:"2026-09-05", h:"Colorado St",   a:"Wyoming",          n:false},
-      {wk:2, dt:"2026-09-12", h:"Colorado St",   a:"Southern Utah",    n:false},
-      // Fresno State
-      {wk:1, dt:"2026-09-05", h:"Fresno St",     a:"Sacramento St",    n:false},
-      {wk:2, dt:"2026-09-12", h:"Fresno St",     a:"UCLA",             n:false},
-      // San Diego State
-      {wk:1, dt:"2026-09-05", h:"San Diego St",  a:"Portland St",      n:false},
-      {wk:2, dt:"2026-09-12", h:"San Diego St",  a:"UC Davis",         n:false},
-      // Utah State
-      {wk:2, dt:"2026-09-12", h:"Washington",       a:"Utah St",       n:false},
-      {wk:4, dt:"2026-09-26", h:"Utah St",       a:"Idaho St",         n:false},
-      // Texas State (from txst.com)
-
-
-      // Texas State non-conf
-      {wk:1, dt:"2026-09-05", h:"Texas",          a:"Texas St",          n:false},
-      {wk:2, dt:"2026-09-12", h:"Texas St",        a:"UIW",               n:false},
-      {wk:3, dt:"2026-09-19", h:"Texas St",        a:"North Texas",       n:false},
-      {wk:4, dt:"2026-09-26", h:"Texas St",        a:"UTSA",              n:false},
-      // Texas State conference games
-      {wk:5,  dt:"2026-10-03", h:"San Diego St",   a:"Texas St",          n:false},
-      {wk:6,  dt:"2026-10-10", h:"Texas St",        a:"Fresno St",         n:false},
-      {wk:8,  dt:"2026-10-24", h:"Texas St",        a:"Utah St",           n:false},
-      {wk:9,  dt:"2026-10-31", h:"Boise St",        a:"Texas St",          n:false},
-      {wk:10, dt:"2026-11-07", h:"Oregon St",       a:"Texas St",          n:false},
-      {wk:11, dt:"2026-11-14", h:"Texas St",        a:"Colorado St",       n:false},
-      {wk:12, dt:"2026-11-21", h:"Washington St",   a:"Texas St",          n:false},
-      
-      // ── Pac-12 Conference (28 unique games, 7 each) ─────────────────────────
-      {wk:5, dt:"2026-10-03", h:"Colorado St", a:"Utah St", n:false},
-      {wk:5, dt:"2026-10-03", h:"Oregon St", a:"Boise St", n:false},
-      {wk:5, dt:"2026-10-03", h:"Washington St", a:"Fresno St", n:false},
-      {wk:6, dt:"2026-10-10", h:"Boise St", a:"Fresno St", n:false},
-      {wk:6, dt:"2026-10-10", h:"Oregon St", a:"Colorado St", n:false},
-      {wk:6, dt:"2026-10-10", h:"Utah St", a:"Washington St", n:false},
-      {wk:7, dt:"2026-10-17", h:"Boise St", a:"San Diego St", n:false},
-      {wk:7, dt:"2026-10-17", h:"Fresno St", a:"Utah St", n:false},
-      {wk:7, dt:"2026-10-17", h:"Oregon St", a:"Washington St", n:false},
-      {wk:8, dt:"2026-10-24", h:"Colorado St", a:"San Diego St", n:false},
-      {wk:8, dt:"2026-10-24", h:"Oregon St", a:"Fresno St", n:false},
-      {wk:8, dt:"2026-10-24", h:"Washington St", a:"Boise St", n:false},
-      {wk:9, dt:"2026-10-31", h:"Colorado St", a:"Fresno St", n:false},
-      {wk:9, dt:"2026-10-31", h:"Oregon St", a:"Utah St", n:false},
-      {wk:9, dt:"2026-10-31", h:"San Diego St", a:"Washington St", n:false},
-      {wk:10, dt:"2026-11-07", h:"Boise St", a:"Colorado St", n:false},
-      {wk:10, dt:"2026-11-07", h:"Fresno St", a:"San Diego St", n:false},
-      {wk:11, dt:"2026-11-14", h:"Boise St", a:"Utah St", n:false},
-      {wk:11, dt:"2026-11-14", h:"Oregon St", a:"San Diego St", n:false},
-      {wk:11, dt:"2026-11-14", h:"Washington St", a:"Colorado St", n:false},
-      {wk:12, dt:"2026-11-21", h:"San Diego St", a:"Utah St", n:false},
-    ];
-    var out=[], seen2={};
-    games.forEach(function(g,i){
-      var key='p12_'+g.h.replace(/[^a-z]/gi,'')+'_'+g.a.replace(/[^a-z]/gi,'')+'_w'+g.wk;
-      if(seen2[key]) return; seen2[key]=1;
-      out.push({id:key,week:g.wk,date:g.dt,homeTeam:g.h,awayTeam:g.a,
-                neutral:g.n,completed:false,homeScore:null,awayScore:null});
-    });
-    return out;
-  }
-
-
-  // ESPN shortDisplayName normalization — maps ESPN's inconsistent names to our static schedule names
-  // Applied at fetch time so all games use consistent names for dedup
+  // ESPN shortDisplayName normalization — maps ESPN's inconsistent names to the
+  // canonical short names PK_CONFS/PK_ALIAS use. Applied at fetch time so all
+  // games (from either the groups=80 or groups=9 fetch) use consistent names.
   var _pk_norm = {
     "Utah State":"Utah St","Washington State":"Washington St",
     "Oregon State":"Oregon St","Boise State":"Boise St",
@@ -3617,77 +3653,106 @@ async function findAvailableSeason() {
 
   async function pkFetchSched(yr){
     pkSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' schedule from ESPN…</div>');
-    var games=[],seen={};
+    var games=[],seen={},fetched=0;
     var weeks=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,15];
-    var BATCH=4,fetched=0;
+
+    // Shared event-processing logic, reused for both the primary FBS-umbrella
+    // fetch and any per-conference supplemental fetch below.
+    function processEvents(data, wk){
+      if(!data||!data.events) return;
+      data.events.forEach(function(ev){
+        try{
+          var comp=ev.competitions&&ev.competitions[0];if(!comp) return;
+          var competitors=comp.competitors||[];
+          var home=null,away=null;
+          competitors.forEach(function(c){if(c.homeAway==='home')home=c;else away=c;});
+          if(!home||!away) return;
+          var key=ev.id||(home.team.id+'_'+away.team.id+'_w'+wk);
+          if(seen[key]) return;seen[key]=1;
+          var hn=home.team.shortDisplayName,an=away.team.shortDisplayName;
+          // Normalize ESPN's inconsistent shortDisplayName variants to the
+          // canonical names the live-derived conference rosters use
+          hn=_pk_norm[hn]||hn; an=_pk_norm[an]||an;
+          if(wk===15&&hn!=='Army'&&hn!=='Navy'&&an!=='Army'&&an!=='Navy') return;
+          var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
+          var dt=ev.date?ev.date.slice(0,10):null;
+          if(dt&&dt.startsWith('1970')) dt=null;
+          // Skip games from wrong season (ESPN sometimes returns prior season data)
+          // Only accept regular season dates (Aug-Dec of target year)
+          if(dt){
+            if(!dt.startsWith(String(yr))) return;
+            var mo=parseInt(dt.slice(5,7));
+            if(mo<8||mo>12) return; // skip Jan-Jul dates (bowl/playoff games)
+          }
+          // Skip completed games with no date — likely prior season data
+          if(completed&&!dt) return;
+          var hs=completed?(parseInt(home.score)||null):null;
+          var as_=completed?(parseInt(away.score)||null):null;
+          // Skip FCS-only games: require at least one FBS team
+          if(!pkIsFBS(hn)&&!pkIsFBS(an)) return;
+          // Pair-based dedup: prevents same matchup appearing multiple times
+          var pairKey=[pkNorm(hn),pkNorm(an)].sort().join('|');
+          if(seen['pair:'+pairKey]) return; seen['pair:'+pairKey]=1;
+          games.push({id:key,week:wk,date:dt,homeTeam:hn,awayTeam:an,
+            neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
+          fetched++;
+        }catch(e){}
+      });
+    }
+
+    async function fetchGroupWeek(gr, wk){
+      var url='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups='+gr+'&limit=300';
+      try{
+        var res=await fetch(url,{mode:'cors'});if(!res.ok) return;
+        var data=await res.json();
+        processEvents(data, wk);
+      }catch(e){}
+    }
+
+    var BATCH=4;
+    // Phase 1: groups=80 is ESPN's umbrella FBS group. It covers nearly every
+    // conference, but historically has NOT covered every recently-realigned
+    // one (e.g. the rebuilt Pac-12 only shows up under its own conference-
+    // level group id, not the umbrella). Rather than hardcode which
+    // conference needs that treatment, phase 2 below detects it generically.
     for(var b=0;b<weeks.length;b+=BATCH){
       var batch=weeks.slice(b,b+BATCH);
-      await Promise.all(batch.map(async function(wk){
-        var url='https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates='+yr+'&seasontype=2&week='+wk+'&groups=80&limit=300';
-        try{
-          var res=await fetch(url,{mode:'cors'});if(!res.ok) return;
-          var data=await res.json();if(!data.events) return;
-          data.events.forEach(function(ev){
-            try{
-              var comp=ev.competitions&&ev.competitions[0];if(!comp) return;
-              var competitors=comp.competitors||[];
-              var home=null,away=null;
-              competitors.forEach(function(c){if(c.homeAway==='home')home=c;else away=c;});
-              if(!home||!away) return;
-              var key=ev.id||(home.team.id+'_'+away.team.id+'_w'+wk);
-              if(seen[key]) return;seen[key]=1;
-              var hn=home.team.shortDisplayName,an=away.team.shortDisplayName;
-              // Normalize ESPN names to match our static schedule names
-              hn=_pk_norm[hn]||hn; an=_pk_norm[an]||an;
-              if(wk===15&&hn!=='Army'&&hn!=='Navy'&&an!=='Army'&&an!=='Navy') return;
-              var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
-              var dt=ev.date?ev.date.slice(0,10):null;
-              if(dt&&dt.startsWith('1970')) dt=null;
-              // Skip games from wrong season (ESPN sometimes returns prior season data)
-              // Only accept regular season dates (Aug-Dec of target year)
-              if(dt){
-                if(!dt.startsWith(String(yr))) return;
-                var mo=parseInt(dt.slice(5,7));
-                if(mo<8||mo>12) return; // skip Jan-Jul dates (bowl/playoff games)
-              }
-              // Skip completed games with no date — likely prior season data
-              if(completed&&!dt) return;
-              var hs=completed?(parseInt(home.score)||null):null;
-              var as_=completed?(parseInt(away.score)||null):null;
-              // Skip FCS-only games: require at least one FBS team
-              if(!pkIsFBS(hn)&&!pkIsFBS(an)) return;
-              // Pair-based dedup: prevents same matchup appearing multiple times
-              var pairKey=[pkNorm(hn),pkNorm(an)].sort().join('|');
-              if(seen['pair:'+pairKey]) return; seen['pair:'+pairKey]=1;
-              games.push({id:key,week:wk,date:dt,homeTeam:hn,awayTeam:an,
-                neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
-              fetched++;
-            }catch(e){}
-          });
-        }catch(e){}
-      }));
+      await Promise.all(batch.map(function(wk){ return fetchGroupWeek('80', wk); }));
       pkSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' schedule… '+fetched+' games found</div>');
     }
+
+    // Phase 2: any live-derived conference with zero teams appearing in what
+    // groups=80 returned gets fetched again via its own ESPN group id —
+    // generalizes the old Pac-12-specific fix to any conference ESPN's
+    // umbrella group happens to omit, this year or any future one.
+    var coveredTeams={};
+    games.forEach(function(g){ coveredTeams[pkNorm(g.homeTeam)]=1; coveredTeams[pkNorm(g.awayTeam)]=1; });
+    var missingConfGroupIds=[];
+    Object.keys(_pk.confs).forEach(function(confName){
+      var teams=_pk.confs[confName]||[];
+      var anyCovered=teams.some(function(t){ return coveredTeams[pkNorm(t)]; });
+      if(!anyCovered && teams.length && _pk.confIds[confName]) missingConfGroupIds.push(_pk.confIds[confName]);
+    });
+    if(missingConfGroupIds.length){
+      var supplementTasks=[];
+      weeks.forEach(function(wk){ missingConfGroupIds.forEach(function(gid){ supplementTasks.push({wk:wk,gid:gid}); }); });
+      for(var sb=0;sb<supplementTasks.length;sb+=BATCH){
+        var sbatch=supplementTasks.slice(sb,sb+BATCH);
+        await Promise.all(sbatch.map(function(t){ return fetchGroupWeek(t.gid, t.wk); }));
+        pkSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' schedule… '+fetched+' games found</div>');
+      }
+    }
+
     games.sort(function(a,b){
       if(a.week!==b.week) return a.week-b.week;
       if(!a.date&&!b.date) return 0;if(!a.date) return 1;if(!b.date) return -1;
       return a.date<b.date?-1:a.date>b.date?1:0;
     });
-    // Merge static Pac-12 schedule (ESPN scoreboard API doesn't have these yet)
-    // Use symmetric key so ESPN game and static game for same matchup+week are treated as same
-    // Build symmetric pair set from ESPN-fetched games
-    var symSeen={};
-    games.forEach(function(g){
-      var k=[pkNorm(g.homeTeam),pkNorm(g.awayTeam)].sort().join('|');
-      symSeen[k]=1;
-    });
-    var staticGames=pkGetStaticPac12(yr);
-    staticGames.forEach(function(g){
-      var k=[pkNorm(g.homeTeam),pkNorm(g.awayTeam)].sort().join('|');
-      if(!symSeen[k]){symSeen[k]=1;seen[g.id]=1;games.push(g);fetched++;}
-    });
-    // Final dedup pass: remove any remaining duplicates by resolved team pair
-    // Keeps first occurrence (ESPN real scores preferred over static placeholders)
+    // Final dedup pass: the per-week fetch already dedupes by ESPN event id and
+    // by team pair within a single (week, group) request, but a game could in
+    // theory be double-counted across the phase 1 (groups=80) and phase 2
+    // (per-conference supplement) fetches for the same week — collapse by
+    // resolved team pair, keeping first occurrence.
     var finalSeen={};
     var dedupedGames=[];
     games.forEach(function(g){
@@ -3844,13 +3909,19 @@ async function findAvailableSeason() {
   };
 
 
-  // Teams ineligible for conf championship games (FCS transition etc.)
-  var CONF_CHAMP_INELIGIBLE = {"North Dakota State": true};
+  // Teams ineligible for conf championship / CFP consideration due to the
+  // NCAA's mandatory 2-year FBS transition window (e.g. North Dakota State,
+  // moving up for the 2026 season, is ineligible through 2027). Gated by
+  // _pk.yr rather than a flat true/false so this expires automatically once
+  // the transition window passes, instead of silently banning a team forever.
+  function pkFcsTransitionIneligible(team){
+    return team === "North Dakota State" && _pk.yr < 2028;
+  }
 
   function pkConfLeaders(conf){
-    var teams=(PK_CONFS[conf]||[]).map(pkTeam)
-      .filter(function(t){ return !CONF_CHAMP_INELIGIBLE[t.team]; });
-    var divDef=PK_DIVS[conf];
+    var teams=(pkActiveConfs()[conf]||[]).map(pkTeam)
+      .filter(function(t){ return !pkFcsTransitionIneligible(t.team); });
+    var divDef=pkActiveDivs()[conf];
     if(divDef){
       return Object.keys(divDef).map(function(div){
         var divTeams = teams.filter(function(t){return divDef[div].indexOf(t.team)!==-1;});
@@ -3862,16 +3933,26 @@ async function findAvailableSeason() {
   function pkDrawConf(){
     var el=document.getElementById('pk-conf');if(!el) return;
     pkBuild();
+    var divConfNames=Object.keys(pkActiveDivs());
+    var divNote=divConfNames.length
+      ? 'Conferences with divisions this season (<b style="color:var(--text)">'+divConfNames.join(', ')+'</b>) use division leaders'
+      : 'No FBS conference has divisions this season';
     var html='<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);margin-bottom:1rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.75rem 1rem;line-height:1.6">'
-      +'Standings from your picks. <b style="color:var(--text)">Sun Belt &amp; MAC</b> use East/West division leaders. All other conferences use top-2 by conf W% (tiebreaker: overall W% → Elo). Enter the championship score to lock in the conf champion.'
+      +'Standings from your picks. '+divNote+'; all other conferences use top-2 by conf W% (tiebreaker: overall W% → Elo). Enter the championship score to lock in the conf champion.'
       +'</div>'
       +'<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1rem;margin-bottom:1.2rem">';
 
     window._pkCGMap={};
-    Object.keys(PK_CONFS).forEach(function(conf){
-      if(conf==='Independent') return;
-      var teams=(PK_CONFS[conf]||[]).map(pkTeam);
-      var divDef=PK_DIVS[conf];
+    var activeConfs=pkActiveConfs();
+    Object.keys(activeConfs).forEach(function(conf){
+      // Skip groupings too small to be a real auto-bid conference (independent
+      // schools bucket, etc.) — same >=8 team threshold used for CFP
+      // eligibility below, so there's one consistent, name-free rule instead
+      // of matching on a literal "Independent" label that may not match what
+      // ESPN actually calls that grouping.
+      if((activeConfs[conf]||[]).length < 8) return;
+      var teams=(activeConfs[conf]||[]).map(pkTeam);
+      var divDef=pkActiveDivs()[conf];
       var leaders=pkConfLeaders(conf);
       var homeT=(leaders[0]&&leaders[0].team)||'';
       var awayT=(leaders[1]&&leaders[1].team)||'';
@@ -3968,13 +4049,20 @@ async function findAvailableSeason() {
 
     // Step 1: determine each conf's champion
     var confChampions={};
-    // Teams ineligible for CFP due to FCS transition rules
-    var CFP_INELIGIBLE = {"North Dakota State": true}; // 2026-27: ineligible until 2028
 
-    CFP_AUTO_CONF.forEach(function(conf){
+    // Auto-bid conferences = every live-discovered conference with >= 8 teams
+    // (every real FBS conference; independents fall below and are correctly
+    // at-large-only) — falls back to the fixed 2025-26 list only if live
+    // conference discovery failed entirely this load.
+    var activeConfsForCFP=pkActiveConfs();
+    var cfpAutoConf=Object.keys(_pk.confs).length
+      ? Object.keys(activeConfsForCFP).filter(function(c){ return (activeConfsForCFP[c]||[]).length>=8; })
+      : CFP_AUTO_CONF_FALLBACK;
+
+    cfpAutoConf.forEach(function(conf){
       var picked=_pk.confChamps[conf];
       if(picked){
-        if(CFP_INELIGIBLE[picked]) return; // skip ineligible teams
+        if(pkFcsTransitionIneligible(picked)) return; // skip ineligible teams
         confChampions[conf]={team:picked,elo:_pk.eloSim[picked]||1500,conf:conf,
           w:_pk.wins[picked]||0,l:_pk.losses[picked]||0,
           cw:_pk.confWins[picked]||0,cl:_pk.confLoss[picked]||0};
@@ -3983,7 +4071,7 @@ async function findAvailableSeason() {
         // Skip ineligible teams for conf championship auto-bid
         var leader=null;
         for(var li=0;li<leaders.length;li++){
-          if(!CFP_INELIGIBLE[leaders[li].team]){leader=leaders[li];break;}
+          if(!pkFcsTransitionIneligible(leaders[li].team)){leader=leaders[li];break;}
         }
         if(leader)confChampions[conf]={team:leader.team,elo:leader.elo,conf:conf,
           w:leader.w,l:leader.l,cw:leader.cw,cl:leader.cl};
@@ -3992,7 +4080,7 @@ async function findAvailableSeason() {
 
     // Step 2: rank ALL FBS teams by PLAYOFF RATING (Elo + resume)
     var allTeamSet={};
-    Object.values(PK_CONFS).forEach(function(arr){arr.forEach(function(t){allTeamSet[t]=1;});});
+    Object.values(pkActiveConfs()).forEach(function(arr){arr.forEach(function(t){allTeamSet[t]=1;});});
     Object.keys(_pk.eloBase).forEach(function(t){allTeamSet[t]=1;});
     var allRanked=Object.keys(allTeamSet).map(function(t){
       var elo=_pk.eloSim[t]||_pk.eloBase[t]||0;
@@ -4162,6 +4250,777 @@ async function findAvailableSeason() {
       +'<button onclick="pkTab(\'reg\')" style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);font-size:0.67rem;cursor:pointer">← Regular Season</button>'
       +'</div>';
   }
+
+
+  // ──────────────────────────────────────────────────────────
+  // CBB SEASON PICK'EM
+  // ──────────────────────────────────────────────────────────
+  // Independent implementation from CFB's pk* functions above — per the
+  // standing rule that conference realignment/derivation is never shared
+  // across sports (a school's conference, and each sport's own naming
+  // convention, can differ). Everything here is prefixed pkb / _pkb.
+  //
+  // Conference membership comes straight from this season's own CSV
+  // ("conference" column — hoopR writes full names like "Big Ten
+  // Conference"), so it can never go stale the way a hand-typed roster
+  // would; ESPN is only consulted once per season, purely to map each CSV
+  // conference name to ESPN's numeric group id (fuzzy-matched, same
+  // technique renderBracketology already uses) so conference schedules can
+  // be fetched. Scope: CONFERENCE games only (not full non-conference
+  // slate) — keeps the live fetch to one call per conference instead of a
+  // full-season crawl, while still giving real conference standings to
+  // seed conference tournaments and a real (if resume-limited) Playoff
+  // Rating for NCAA at-large/seeding.
+
+  var _pkb = {
+    yr:null, confs:{}, confIds:{}, schedule:[], scores:{}, confGames:[],
+    wins:{}, losses:{}, confWins:{}, confLoss:{}, eloBase:{}, eloSim:{},
+    playoffRating:{}, confBrackets:{}, confChamps:{},
+    ncaaFirstFour:null, ncaaBracket:null
+  };
+
+  // Same exclusion list renderBracketology() already uses for the CSV
+  // "conference" field — non-conference labels, not real conferences.
+  var PKB_EXCLUDE = new Set(['NA','N/A','Unknown','Other D1','Independent','Ind','']);
+
+  function pkbTeamRow(t){
+    var elo=_pkb.eloSim[t]||_pkb.eloBase[t]||1500;
+    return {team:t, cw:_pkb.confWins[t]||0, cl:_pkb.confLoss[t]||0,
+            w:_pkb.wins[t]||0, l:_pkb.losses[t]||0,
+            elo:elo, pr:_pkb.playoffRating[t]||elo};
+  }
+
+  function pkbSort(teams){
+    return teams.slice().sort(function(a,b){
+      var acp=(a.cw+a.cl)?a.cw/(a.cw+a.cl):0, bcp=(b.cw+b.cl)?b.cw/(b.cw+b.cl):0;
+      if(Math.abs(bcp-acp)>0.001) return bcp-acp;
+      var awp=(a.w+a.l)?a.w/(a.w+a.l):0, bwp=(b.w+b.l)?b.w/(b.w+b.l):0;
+      if(Math.abs(bwp-awp)>0.001) return bwp-awp;
+      return (b.pr||b.elo||1500)-(a.pr||a.elo||1500);
+    });
+  }
+
+  function pkbConfOfTeam(team){
+    for(var conf in _pkb.confs){ if(_pkb.confs[conf].indexOf(team)!==-1) return conf; }
+    return null;
+  }
+
+  // ── Live conference derivation (CBB) ──────────────────────────
+  // Conference membership itself comes from the CSV (always in sync with
+  // whatever the R backend already computed). The single ESPN call here
+  // only resolves each CSV conference name to an ESPN group id, so its own
+  // conference schedule can be fetched — fuzzy-matched the same way
+  // renderBracketology() already matches CSV conference names to ESPN
+  // conference-tournament-champ data (confLow/confAlpha normalization).
+  async function pkbFetchConferences(yr){
+    if(!allSeasonData[yr]){
+      try{ var raw=await fetchCSV(CFG.dataPath+yr+'.csv'); if(raw) allSeasonData[yr]=raw.map(coerceRow); }catch(e){}
+    }
+    var rows=allSeasonData[yr]||[];
+    var confs={};
+    rows.forEach(function(r){
+      var c=r.conference||'';
+      if(!c||PKB_EXCLUDE.has(c)) return;
+      if(!confs[c]) confs[c]=[];
+      if(r.team) confs[c].push(r.team);
+    });
+
+    var confIds={};
+    try{
+      var url='https://site.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings?season='+yr+'&group=50';
+      var res=await fetch(url,{mode:'cors'});
+      if(res.ok){
+        var data=await res.json();
+        var top=(data&&data.children)||[];
+        var espnConfs=top.map(function(n){ return {id:n&&n.id, name:(n&&n.name)||'', shortName:(n&&n.shortName)||''}; })
+          .filter(function(n){ return n.id; });
+        var norm=function(s){ return (s||'').toLowerCase().replace(/\s+conference$/i,'').trim(); };
+        var alpha=function(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]/g,''); };
+        var candidates=espnConfs.map(function(ec){
+          return {ec:ec, low:[norm(ec.name),norm(ec.shortName)], alpha:[alpha(ec.name),alpha(ec.shortName)]};
+        });
+        Object.keys(confs).forEach(function(csvConf){
+          var confLow=norm(csvConf), confAlpha=alpha(csvConf);
+          var best=candidates.find(function(c){
+            return c.low.indexOf(confLow)!==-1 || c.alpha.indexOf(confAlpha)!==-1;
+          });
+          if(!best) best=candidates.find(function(c){
+            return c.low.some(function(l){ return l && (confLow.indexOf(l)!==-1 || l.indexOf(confLow)!==-1); }) ||
+                   c.alpha.some(function(a){ return a && (confAlpha.indexOf(a)!==-1 || a.indexOf(confAlpha)!==-1); });
+          });
+          if(best) confIds[csvConf]=String(best.ec.id);
+        });
+      }
+    }catch(e){
+      if(typeof console!=='undefined') console.warn('pkbFetchConferences: ESPN id lookup failed —', e.message);
+    }
+    return {confs:confs, confIds:confIds};
+  }
+
+  window.pkbLoadYear=async function(yr){
+    var baseYr=yr-1;
+    if(!allSeasonData[baseYr]){try{var raw=await fetchCSV(CFG.dataPath+baseYr+'.csv');if(raw)allSeasonData[baseYr]=raw.map(coerceRow);}catch(e){}}
+    _pkb.eloBase={};
+    (allSeasonData[baseYr]||allSeasonData[currentSeason]||[]).forEach(function(r){ if(r.team&&r.elo) _pkb.eloBase[r.team]=parseFloat(r.elo); });
+    _pkb.eloSim=JSON.parse(JSON.stringify(_pkb.eloBase));
+    _pkb.yr=yr; _pkb.schedule=[]; _pkb.scores={}; _pkb.confGames=[]; _pkb.confChamps={};
+    _pkb.confBrackets={}; _pkb.ncaaFirstFour=null; _pkb.ncaaBracket=null;
+    window._pkbActiveConfTourney=null;
+    pkbDrawShell();
+    pkbSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' conference alignment…</div>');
+    var confData=await pkbFetchConferences(yr);
+    _pkb.confs=confData.confs; _pkb.confIds=confData.confIds;
+    pkbFetchSched(yr);
+  };
+
+  async function pkbFetchSched(yr){
+    pkbSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' conference schedules from ESPN…</div>');
+    var games=[], seen={}, fetched=0;
+    var y0=yr-1;
+    // Regular-season-only date windows spanning a CBB season (Nov of y0
+    // through mid-March of yr) — seasontype=2 below additionally excludes
+    // conference-tournament/postseason games ESPN might otherwise include,
+    // so this never overlaps with the conference-tournament bracket step.
+    var windows=[
+      y0+'1101-'+y0+'1130', y0+'1201-'+y0+'1231',
+      yr+'0101-'+yr+'0131', yr+'0201-'+yr+'0229', yr+'0301-'+yr+'0315'
+    ];
+
+    var rosterSets={};
+    Object.keys(_pkb.confs).forEach(function(c){ rosterSets[c]=new Set(_pkb.confs[c]); });
+
+    function processEvents(data, conf){
+      if(!data||!data.events) return;
+      var roster=rosterSets[conf];
+      data.events.forEach(function(ev){
+        try{
+          var comp=ev.competitions&&ev.competitions[0]; if(!comp) return;
+          var competitors=comp.competitors||[];
+          var home=null,away=null;
+          competitors.forEach(function(c){ if(c.homeAway==='home') home=c; else away=c; });
+          if(!home||!away) return;
+          var hn=home.team.shortDisplayName||home.team.displayName;
+          var an=away.team.shortDisplayName||away.team.displayName;
+          // Conference-games-only scope: keep only games where BOTH teams
+          // are on THIS conference's own CSV roster (extra safety beyond
+          // ESPN's own groups= filter, which includes non-conference games
+          // involving the conference's teams too).
+          if(!roster||!roster.has(hn)||!roster.has(an)) return;
+          var dt=ev.date?ev.date.slice(0,10):null;
+          var key=ev.id||(hn+'_'+an+'_'+(dt||''));
+          if(seen[key]) return; seen[key]=1;
+          var pairKey='pair:'+conf+'|'+[hn,an].sort().join('|')+'|'+(dt||'');
+          if(seen[pairKey]) return; seen[pairKey]=1;
+          var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
+          var hs=completed?(parseInt(home.score)||null):null;
+          var as_=completed?(parseInt(away.score)||null):null;
+          games.push({id:key,conf:conf,date:dt,homeTeam:hn,awayTeam:an,
+            neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
+          fetched++;
+        }catch(e){}
+      });
+    }
+
+    async function fetchConfWindow(conf, gid, win){
+      var url='https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates='+win+'&groups='+gid+'&seasontype=2&limit=500';
+      try{
+        var res=await fetch(url,{mode:'cors'}); if(!res.ok) return;
+        var data=await res.json();
+        processEvents(data, conf);
+      }catch(e){}
+    }
+
+    var tasks=[];
+    Object.keys(_pkb.confIds).forEach(function(conf){
+      var gid=_pkb.confIds[conf];
+      windows.forEach(function(w){ tasks.push({conf:conf,gid:gid,win:w}); });
+    });
+    var BATCH=4;
+    for(var b=0;b<tasks.length;b+=BATCH){
+      var batch=tasks.slice(b,b+BATCH);
+      await Promise.all(batch.map(function(t){ return fetchConfWindow(t.conf,t.gid,t.win); }));
+      pkbSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' conference schedules… '+fetched+' games found</div>');
+    }
+
+    games.sort(function(a,b){
+      if(!a.date&&!b.date) return 0; if(!a.date) return 1; if(!b.date) return -1;
+      return a.date<b.date?-1:a.date>b.date?1:0;
+    });
+    _pkb.schedule=games;
+
+    if(!games.length){
+      pkbSetReg('<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.78rem;color:var(--text-muted);text-align:center;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg)">'
+        +'<div style="font-size:0.88rem;color:var(--text);margin-bottom:0.5rem">📅 '+yr+' schedule not available yet</div>'
+        +'ESPN hasn\'t published the '+yr+' CBB schedule yet, or no conference IDs matched.<br><br>'
+        +'<button onclick="pkbLoadYear('+(yr-1)+')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Load '+(yr-1)+' season instead →</button>'
+        +'</div>');
+      return;
+    }
+    games.forEach(function(g){
+      if(g.completed&&g.homeScore!=null&&g.awayScore!=null) _pkb.scores[g.id]={homeScore:g.homeScore,awayScore:g.awayScore};
+    });
+    pkbBuild(); pkbDrawReg();
+  }
+
+  // Flattens every decided conference-tournament matchup (across all
+  // conference brackets) into _pkb.confGames, which pkbBuild() consumes
+  // alongside the regular-season schedule — mirrors CFB's confGames step.
+  function pkbRebuildConfGamesFromBrackets(){
+    var out=[];
+    Object.keys(_pkb.confBrackets).forEach(function(conf){
+      var b=_pkb.confBrackets[conf];
+      (b&&b.rounds||[]).forEach(function(round){
+        round.forEach(function(m){
+          if(m.a&&m.b&&m.winner) out.push({conf:conf, teamA:m.a.team, teamB:m.b.team, winner:m.winner.team});
+        });
+      });
+    });
+    _pkb.confGames=out;
+  }
+
+  function pkbBuild(){
+    _pkb.wins={}; _pkb.losses={}; _pkb.confWins={}; _pkb.confLoss={};
+    _pkb.eloSim=JSON.parse(JSON.stringify(_pkb.eloBase));
+    var K=25;
+    var counted={};
+    for(var i=0;i<_pkb.schedule.length;i++){
+      var g=_pkb.schedule[i];
+      var s=_pkb.scores[g.id];
+      if(!s||s.homeScore===''||s.homeScore==null||s.awayScore===''||s.awayScore==null) continue;
+      var hs=parseInt(s.homeScore), as_=parseInt(s.awayScore);
+      if(isNaN(hs)||isNaN(as_)||hs===as_) continue;
+      var winner=hs>as_?g.homeTeam:g.awayTeam;
+      var loser=hs>as_?g.awayTeam:g.homeTeam;
+      var teams=[winner,loser].sort();
+      var dedupKey=teams[0]+'|'+teams[1]+'|'+g.conf;
+      if(counted[dedupKey]) continue; counted[dedupKey]=1;
+      _pkb.wins[winner]=(_pkb.wins[winner]||0)+1;
+      _pkb.losses[loser]=(_pkb.losses[loser]||0)+1;
+      _pkb.confWins[winner]=(_pkb.confWins[winner]||0)+1;
+      _pkb.confLoss[loser]=(_pkb.confLoss[loser]||0)+1;
+      var margin=Math.abs(hs-as_);
+      var rW=_pkb.eloSim[winner]||1500, rL=_pkb.eloSim[loser]||1500;
+      var eW=1/(1+Math.pow(10,(rL-rW)/400));
+      var delta=K*Math.log(margin+1)*(1-eW);
+      _pkb.eloSim[winner]=rW+delta;
+      _pkb.eloSim[loser]=rL-delta;
+    }
+    // Conference-tournament results (picked, not scored — small flat nudge)
+    (_pkb.confGames||[]).forEach(function(cg){
+      if(!cg.winner) return;
+      var loser=(cg.teamA===cg.winner)?cg.teamB:cg.teamA;
+      _pkb.wins[cg.winner]=(_pkb.wins[cg.winner]||0)+1;
+      _pkb.losses[loser]=(_pkb.losses[loser]||0)+1;
+      var rW=_pkb.eloSim[cg.winner]||1500, rL=_pkb.eloSim[loser]||1500;
+      var eW=1/(1+Math.pow(10,(rL-rW)/400));
+      var delta=15*(1-eW);
+      _pkb.eloSim[cg.winner]=rW+delta;
+      _pkb.eloSim[loser]=rL-delta;
+    });
+
+    // Playoff Rating: Elo × win%^0.6 + √(quality-win resume) — identical
+    // formula to CFB's, scoped to whatever games are known here (conference
+    // regular season + conference tournament picks only; see the note in
+    // pkbFetchSched about why non-conference games aren't fetched).
+    var beatenBy={}, counted2={};
+    for(var gi=0;gi<_pkb.schedule.length;gi++){
+      var g2=_pkb.schedule[gi];
+      var s2=_pkb.scores[g2.id];
+      if(!s2||s2.homeScore==null||s2.awayScore==null) continue;
+      var hs2=parseInt(s2.homeScore),as2=parseInt(s2.awayScore);
+      if(isNaN(hs2)||isNaN(as2)||hs2===as2) continue;
+      var winner2=hs2>as2?g2.homeTeam:g2.awayTeam;
+      var loser2=hs2>as2?g2.awayTeam:g2.homeTeam;
+      var tk=[winner2,loser2].sort().join('|')+'|'+g2.conf;
+      if(counted2[tk]) continue; counted2[tk]=1;
+      if(!beatenBy[winner2]) beatenBy[winner2]=[];
+      beatenBy[winner2].push(loser2);
+    }
+    (_pkb.confGames||[]).forEach(function(cg){
+      if(!cg.winner) return;
+      var loser=(cg.teamA===cg.winner)?cg.teamB:cg.teamA;
+      if(!beatenBy[cg.winner]) beatenBy[cg.winner]=[];
+      beatenBy[cg.winner].push(loser);
+    });
+
+    _pkb.playoffRating={};
+    Object.keys(_pkb.eloSim).forEach(function(team){
+      var teamElo=_pkb.eloSim[team]||1500;
+      var beaten=beatenBy[team]||[];
+      var resumeSum=0;
+      beaten.forEach(function(opp){
+        var oppElo=_pkb.eloSim[opp]||_pkb.eloBase[opp]||1500;
+        resumeSum+=Math.max(0, oppElo-1350);
+      });
+      var resumeScore=resumeSum>0?Math.sqrt(resumeSum):0;
+      var gp=(_pkb.wins[team]||0)+(_pkb.losses[team]||0);
+      var wp=gp>0?(_pkb.wins[team]||0)/gp:0.5;
+      var wpFactor=Math.pow(Math.max(0.01,wp),0.6);
+      _pkb.playoffRating[team]=teamElo*wpFactor+resumeScore;
+    });
+  }
+
+  // ── Generic single-elimination bracket engine (CBB-only; not shared
+  // with CFB's own CFP bracket code above) ──────────────────────
+  function pkbNextPow2(n){ var p=1; while(p<n) p*=2; return p; }
+
+  // Standard tournament seeding recursion — for n=8 produces
+  // [1,8,4,5,2,7,3,6], i.e. round-1 pairs (1v8, 4v5, 2v7, 3v6), so seed 1
+  // and seed 2 can only meet in the final. Verified by hand for n=8.
+  function pkbSeedOrder(n){
+    if(n<=1) return [1];
+    var prev=pkbSeedOrder(n/2);
+    var out=[];
+    prev.forEach(function(s){ out.push(s); out.push(n+1-s); });
+    return out;
+  }
+
+  function pkbNewBracket(seededTeams){
+    var n=seededTeams.length;
+    var order=pkbSeedOrder(n);
+    var round1=[];
+    for(var i=0;i<order.length;i+=2){
+      var a=seededTeams[order[i]-1]||null, b=seededTeams[order[i+1]-1]||null;
+      round1.push({a:a, b:b, winner:null});
+    }
+    return {rounds:[round1]};
+  }
+
+  // Auto-resolves any bye (single-team) matchup and builds each following
+  // round from a fully-decided prior round. Called after every pick;
+  // callers truncate rounds to the edited round first so re-picking an
+  // earlier matchup correctly discards everything built on top of it.
+  function pkbAdvanceByes(rounds){
+    var i=0;
+    while(true){
+      var round=rounds[i];
+      if(!round) break;
+      round.forEach(function(m){
+        if(!m.winner){
+          if(m.a&&!m.b) m.winner=m.a;
+          else if(m.b&&!m.a) m.winner=m.b;
+        }
+      });
+      if(round.length===1) break;
+      if(!round.every(function(m){return m.winner;})) break;
+      if(rounds[i+1]){ i++; continue; }
+      var nextRound=[];
+      for(var j=0;j<round.length;j+=2){
+        nextRound.push({a:round[j].winner, b:round[j+1]?round[j+1].winner:null, winner:null});
+      }
+      rounds.push(nextRound);
+      i++;
+    }
+    return rounds;
+  }
+
+  function pkbRenderBracket(bracket, advanceFnName){
+    var html='<div style="display:flex;gap:0.8rem;overflow-x:auto;padding-bottom:0.5rem">';
+    bracket.rounds.forEach(function(round){
+      var label=round.length===1?'Final':round.length===2?'Semifinals':round.length===4?'Elite 8':
+                round.length===8?'Sweet 16':round.length===16?'Round of 32':'Round of '+(round.length*2);
+      html+='<div style="min-width:200px">'
+        +'<div style="font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.4rem">'+label+'</div>';
+      round.forEach(function(m,mi){
+        var ri=bracket.rounds.indexOf(round);
+        html+='<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.35rem;margin-bottom:0.9rem">';
+        [m.a,m.b].forEach(function(t){
+          if(!t){ html+='<div style="padding:0.25rem 0.4rem;font-size:0.68rem;color:var(--text-dim)">—</div>'; return; }
+          var isWinner=m.winner&&m.winner.team===t.team;
+          var clickable=!!(m.a&&m.b);
+          var base='display:block;width:100%;text-align:left;padding:0.25rem 0.4rem;border-radius:var(--radius);border:none;background:'
+            +(isWinner?'rgba(226,201,126,0.14)':'transparent')+';color:'+(isWinner?'var(--accent)':'var(--text)')
+            +';font-size:0.68rem;font-weight:'+(isWinner?'600':'400')+(clickable?';cursor:pointer':';cursor:default');
+          var label2='<span style="color:var(--text-dim);font-family:var(--font-mono);font-size:0.55rem;margin-right:0.25rem">'+(t.seed||'')+'</span>'+t.team;
+          if(clickable){
+            html+='<button onclick="'+advanceFnName+'('+ri+','+mi+',\''+String(t.team).replace(/'/g,"\\'")+'\')" style="'+base+'">'+label2+'</button>';
+          }else{
+            html+='<div style="'+base+'">'+label2+'</div>';
+          }
+        });
+        html+='</div>';
+      });
+      html+='</div>';
+    });
+    html+='</div>';
+    return html;
+  }
+
+  // ── Entry point ────────────────────────────────────────────
+  async function renderPickemCBB(){
+    var el=document.getElementById('panel-pickem');
+    if(!el||CFG.sport!=='CBB') return;
+    await window.pkbLoadYear(currentSeason);
+  }
+
+  function pkbDrawShell(){
+    var el=document.getElementById('panel-pickem'); if(!el) return;
+    var seasonOpts='', eloOpts='';
+    (CFG.seasons||[]).slice(0,5).forEach(function(y){
+      seasonOpts+='<option value="'+y+'">'+y+'</option>';
+      eloOpts+='<option value="'+y+'">'+y+' Elo</option>';
+    });
+    el.innerHTML=
+      '<div style="max-width:920px">'
+      +'<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.9rem 1.1rem;margin-bottom:1rem">'
+      +'<div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">'
+      +'<div style="font-size:0.86rem;font-weight:600;color:var(--text)">🏀 '+_pkb.yr+' CBB Season Pick\'em</div>'
+      +'<div style="display:flex;align-items:center;gap:0.4rem;margin-left:auto">'
+      +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">Season:</span>'
+      +'<select onchange="pkbLoadYear(parseInt(this.value))" style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.2rem 0.4rem">'+seasonOpts+'</select>'
+      +'</div></div>'
+      +'<div style="font-size:0.68rem;color:var(--text-muted);font-family:var(--font-mono);margin-top:0.4rem;line-height:1.55">'
+      +'Conference games only, schedule order · enter scores → conf tournament brackets decide auto bids → Elo/resume fills the NCAA field'
+      +'</div>'
+      +'<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.6rem;padding-top:0.6rem;border-top:1px solid var(--border);flex-wrap:wrap">'
+      +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">⚡ Auto-predict using</span>'
+      +'<select id="pkb-elo-yr" style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.2rem 0.4rem">'+eloOpts+'</select>'
+      +'<button onclick="pkbAutoPredict()" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.28rem 0.85rem;font-family:var(--font-mono);font-size:0.7rem;font-weight:600;cursor:pointer">Fill all games →</button>'
+      +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">(home +60 Elo · scores simulated around the Elo gap)</span>'
+      +'</div></div>'
+      +'<div style="display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1rem;flex-wrap:wrap">'
+      +'<button onclick="pkbTab(\'reg\')" id="pkb-tab-reg" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid var(--accent);margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--accent)">📅 Conference Play</button>'
+      +'<button onclick="pkbTab(\'conf\')" id="pkb-tab-conf" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--text-muted)">🏆 Conf Tournaments</button>'
+      +'<button onclick="pkbTab(\'ncaa\')" id="pkb-tab-ncaa" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--text-muted)">🎯 NCAA Bracket</button>'
+      +'</div>'
+      +'<div id="pkb-reg"></div>'
+      +'<div id="pkb-conf" hidden></div>'
+      +'<div id="pkb-ncaa" hidden></div>'
+      +'</div>';
+  }
+
+  window.pkbTab=function(ph){
+    ['reg','conf','ncaa'].forEach(function(p){
+      var panel=document.getElementById('pkb-'+p);
+      var btn=document.getElementById('pkb-tab-'+p);
+      if(!panel||!btn) return;
+      if(p===ph){panel.removeAttribute('hidden');btn.style.borderBottomColor='var(--accent)';btn.style.color='var(--accent)';}
+      else{panel.setAttribute('hidden','');btn.style.borderBottomColor='transparent';btn.style.color='var(--text-muted)';}
+    });
+    pkbBuild();
+    if(ph==='conf') pkbDrawConfTourney();
+    if(ph==='ncaa') pkbDrawNCAA();
+  };
+
+  function pkbSetReg(html){ var el=document.getElementById('pkb-reg'); if(el) el.innerHTML=html; }
+
+  function pkbDrawReg(){
+    var el=document.getElementById('pkb-reg'); if(!el) return;
+    var picked=0;
+    Object.keys(_pkb.scores).forEach(function(id){ var s=_pkb.scores[id]; if(s.homeScore!==''&&s.homeScore!=null&&s.awayScore!==''&&s.awayScore!=null) picked++; });
+    var total=_pkb.schedule.length;
+    var completed=_pkb.schedule.filter(function(g){return g.completed;}).length;
+    var html='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem">'
+      +'<div id="pkb-count" style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim)">'+total+' conference games'+(completed?' · '+completed+' final':'')+' · '+picked+' predicted</div>'
+      +'<button onclick="pkbTab(\'conf\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.35rem 1rem;font-family:var(--font-mono);font-size:0.72rem;font-weight:600;cursor:pointer">Next: Conf Tournaments →</button>'
+      +'</div>';
+    var byConf={};
+    _pkb.schedule.forEach(function(g){ if(!byConf[g.conf]) byConf[g.conf]=[]; byConf[g.conf].push(g); });
+    Object.keys(byConf).sort().forEach(function(conf){
+      var games=byConf[conf];
+      html+='<details style="margin-bottom:0.5rem"><summary style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);cursor:pointer;padding:0.4rem 0;border-top:1px solid var(--border)">'+conf+' <span style="opacity:0.6">('+games.length+' games)</span></summary>';
+      games.forEach(function(g){
+        var s=_pkb.scores[g.id]||{};
+        var hs=s.homeScore!=null?s.homeScore:'';
+        var as_=s.awayScore!=null?s.awayScore:'';
+        var hsi=parseInt(hs),asi=parseInt(as_);
+        var homeWin=(!isNaN(hsi)&&!isNaN(asi)&&hsi!==asi&&hsi>asi);
+        var awayWin=(!isNaN(hsi)&&!isNaN(asi)&&hsi!==asi&&asi>hsi);
+        var dateStr=g.date?new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'TBD';
+        var hSide=g.neutral?'N':'H',aSide=g.neutral?'N':'A';
+        html+='<div data-gid="'+g.id+'" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.55rem;margin-bottom:0.18rem;border-radius:var(--radius);background:'+(g.completed?'var(--bg2)':'var(--bg3)')+';border:1px solid '+(g.completed?'var(--border)':'var(--border-md)')+'">'
+          +'<div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-dim);min-width:36px;text-align:center">'+dateStr+'</div>'
+          +'<div class="pkb-hn" style="flex:1;font-size:0.77rem;font-weight:'+(homeWin?'600':'400')+';color:'+(homeWin?'var(--accent)':'var(--text)')+'">'+g.homeTeam+' <span style="font-size:0.55rem;color:var(--text-dim)">'+hSide+'</span></div>'
+          +'<input type="number" min="0" max="150" value="'+hs+'" placeholder="–"'+(g.completed?' disabled':'')+' onchange="pkbScore(\''+g.id+'\',\'home\',this.value)" style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;background:'+(g.completed?'transparent':'var(--bg2)')+';border:'+(g.completed?'none':'1px solid var(--border-md)')+';color:var(--text);border-radius:var(--radius);padding:0.22rem;-moz-appearance:textfield;-webkit-appearance:none">'
+          +'<span style="color:var(--text-dim);font-size:0.78rem">–</span>'
+          +'<input type="number" min="0" max="150" value="'+as_+'" placeholder="–"'+(g.completed?' disabled':'')+' onchange="pkbScore(\''+g.id+'\',\'away\',this.value)" style="width:40px;text-align:center;font-family:var(--font-mono);font-size:0.82rem;background:'+(g.completed?'transparent':'var(--bg2)')+';border:'+(g.completed?'none':'1px solid var(--border-md)')+';color:var(--text);border-radius:var(--radius);padding:0.22rem;-moz-appearance:textfield;-webkit-appearance:none">'
+          +'<div class="pkb-an" style="flex:1;text-align:right;font-size:0.77rem;font-weight:'+(awayWin?'600':'400')+';color:'+(awayWin?'var(--accent)':'var(--text)')+'"><span style="font-size:0.55rem;color:var(--text-dim)">'+aSide+'</span> '+g.awayTeam+'</div>'
+          +(g.completed?'<span style="font-size:0.55rem;color:var(--text-dim);min-width:32px;text-align:right">FINAL</span>':'')
+          +'</div>';
+      });
+      html+='</details>';
+    });
+    html+='<div style="margin-top:1rem;display:flex;justify-content:flex-end"><button onclick="pkbTab(\'conf\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Next: Conf Tournaments →</button></div>';
+    el.innerHTML=html;
+  }
+
+  window.pkbScore=function(id,side,val){
+    if(!_pkb.scores[id]) _pkb.scores[id]={homeScore:'',awayScore:''};
+    var n=(val===''||val==null)?'':parseInt(val);
+    if(side==='home') _pkb.scores[id].homeScore=n; else _pkb.scores[id].awayScore=n;
+    var row=document.querySelector('[data-gid="'+id+'"]');
+    if(row){
+      var s=_pkb.scores[id]; var hs=parseInt(s.homeScore), as_=parseInt(s.awayScore);
+      var hn=row.querySelector('.pkb-hn'), an=row.querySelector('.pkb-an');
+      if(hn&&an&&!isNaN(hs)&&!isNaN(as_)&&hs!==as_){
+        hn.style.fontWeight=hs>as_?'600':'400'; hn.style.color=hs>as_?'var(--accent)':'var(--text)';
+        an.style.fontWeight=as_>hs?'600':'400'; an.style.color=as_>hs?'var(--accent)':'var(--text)';
+      }
+    }
+    var picked=Object.keys(_pkb.scores).filter(function(i2){var s2=_pkb.scores[i2];return s2.homeScore!==''&&s2.homeScore!=null&&s2.awayScore!==''&&s2.awayScore!=null;}).length;
+    var el=document.getElementById('pkb-count');
+    if(el) el.textContent=_pkb.schedule.length+' conference games · '+picked+' predicted';
+  };
+
+  window.pkbAutoPredict=async function(){
+    var selEl=document.getElementById('pkb-elo-yr');
+    var eloYr=parseInt(selEl&&selEl.value)||currentSeason;
+    var btn=document.querySelector('[onclick="pkbAutoPredict()"]');
+    if(btn){btn.textContent='Loading…';btn.disabled=true;}
+    if(!allSeasonData[eloYr]){try{var raw=await fetchCSV(CFG.dataPath+eloYr+'.csv');if(raw)allSeasonData[eloYr]=raw.map(coerceRow);}catch(e){}}
+    var eloMap={};
+    (allSeasonData[eloYr]||[]).forEach(function(r){ if(r.team&&r.elo) eloMap[r.team]=parseFloat(r.elo); });
+    function getElo(team){ return eloMap[team]||1500; }
+    _pkb.schedule.forEach(function(g){
+      if(g.completed) return;
+      if(!g.homeTeam||!g.awayTeam) return;
+      var eH=getElo(g.homeTeam)+(g.neutral?0:60), eA=getElo(g.awayTeam);
+      var diff=eH-eA;
+      var favHome=diff>=0;
+      var upsetChance=Math.abs(diff)<50?0.30:Math.abs(diff)<150?0.16:Math.abs(diff)<300?0.07:0.03;
+      var favWins=Math.random()>upsetChance;
+      var margin=favWins?Math.max(1,Math.round(Math.abs(diff)/12+(Math.random()*8-4))):Math.max(1,Math.round(Math.random()*6+1));
+      var loserScore=68+Math.round(Math.random()*14-7);
+      var winnerScore=loserScore+margin;
+      var hs,as_;
+      if(favHome===favWins){ hs=winnerScore; as_=loserScore; } else { hs=loserScore; as_=winnerScore; }
+      _pkb.scores[g.id]={homeScore:hs,awayScore:as_};
+    });
+    pkbBuild(); pkbDrawReg();
+    if(btn){btn.textContent='Fill all games →';btn.disabled=false;}
+  };
+
+  // ── Conference tournaments ────────────────────────────────
+  function pkbConfStandings(conf){
+    return pkbSort((_pkb.confs[conf]||[]).map(pkbTeamRow));
+  }
+
+  function pkbBuildConfBracket(conf){
+    var standings=pkbConfStandings(conf);
+    var n=standings.length;
+    if(n<2) return null;
+    standings.forEach(function(t,i){ t.seed=i+1; });
+    var size=pkbNextPow2(n);
+    var seeded=[];
+    for(var i=0;i<size;i++){ seeded.push(standings[i]||null); }
+    var bracket=pkbNewBracket(seeded);
+    pkbAdvanceByes(bracket.rounds);
+    bracket._seedKey=standings.map(function(t){return t.team;}).join('|');
+    return bracket;
+  }
+
+  function pkbDrawConfTourney(){
+    var el=document.getElementById('pkb-conf'); if(!el) return;
+    pkbBuild();
+    var confNames=Object.keys(_pkb.confs).filter(function(c){ return (_pkb.confs[c]||[]).length>=2; }).sort();
+    if(!window._pkbActiveConfTourney||confNames.indexOf(window._pkbActiveConfTourney)===-1){
+      window._pkbActiveConfTourney=confNames[0]||null;
+    }
+    var opts=confNames.map(function(c){
+      return '<option value="'+c.replace(/"/g,'&quot;')+'"'+(c===window._pkbActiveConfTourney?' selected':'')+'>'+c+(_pkb.confChamps[c]?' ✓':'')+'</option>';
+    }).join('');
+    var html='<div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.9rem;flex-wrap:wrap">'
+      +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">Conference:</span>'
+      +'<select onchange="pkbSelectConfTourney(this.value)" style="font-family:var(--font-mono);font-size:0.72rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.25rem 0.5rem">'+opts+'</select>'
+      +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:auto">'+Object.keys(_pkb.confChamps).length+' / '+confNames.length+' champions decided</span>'
+      +'</div>';
+
+    var conf=window._pkbActiveConfTourney;
+    if(!conf){
+      el.innerHTML=html+'<div style="padding:1rem;color:var(--text-dim);font-family:var(--font-mono);font-size:0.72rem">No conferences with schedule data loaded.</div>';
+      return;
+    }
+
+    var standings=pkbConfStandings(conf);
+    var seedKey=standings.map(function(t){return t.team;}).join('|');
+    var bracket=_pkb.confBrackets[conf];
+    if(!bracket||bracket._seedKey!==seedKey){
+      bracket=pkbBuildConfBracket(conf);
+      if(bracket) _pkb.confBrackets[conf]=bracket;
+    }
+
+    html+='<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.6rem">Seeded by conference record from your regular-season picks (tiebreak: overall win% → Playoff Rating). Click a team to advance them.</div>';
+
+    if(!bracket){
+      html+='<div style="padding:1rem;color:var(--text-dim);font-family:var(--font-mono);font-size:0.72rem">Not enough teams/games to build a bracket for '+conf+' yet.</div>';
+    }else{
+      html+=pkbRenderBracket(bracket, 'pkbConfAdvance');
+      var champ=_pkb.confChamps[conf];
+      if(champ) html+='<div style="margin-top:0.6rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--accent)">🏆 '+champ+' wins the '+conf+' tournament — auto bid locked in.</div>';
+    }
+
+    html+='<div style="margin-top:1.2rem;display:flex;gap:0.6rem">'
+      +'<button onclick="pkbTab(\'reg\')" style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);font-size:0.67rem;cursor:pointer">← Conference Play</button>'
+      +'<button onclick="pkbTab(\'ncaa\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.35rem 1rem;font-family:var(--font-mono);font-size:0.72rem;font-weight:600;cursor:pointer">Next: NCAA Bracket →</button>'
+      +'</div>';
+
+    el.innerHTML=html;
+  }
+
+  window.pkbSelectConfTourney=function(conf){
+    window._pkbActiveConfTourney=conf;
+    pkbDrawConfTourney();
+  };
+
+  window.pkbConfAdvance=function(ri,mi,team){
+    var conf=window._pkbActiveConfTourney;
+    var bracket=_pkb.confBrackets[conf];
+    if(!bracket) return;
+    bracket.rounds=bracket.rounds.slice(0,ri+1);
+    var m=bracket.rounds[ri][mi];
+    var t=(m.a&&m.a.team===team)?m.a:(m.b&&m.b.team===team?m.b:null);
+    if(!t) return;
+    m.winner=t;
+    pkbAdvanceByes(bracket.rounds);
+    var lastRound=bracket.rounds[bracket.rounds.length-1];
+    if(lastRound.length===1&&lastRound[0].winner) _pkb.confChamps[conf]=lastRound[0].winner.team;
+    else delete _pkb.confChamps[conf];
+    pkbRebuildConfGamesFromBrackets();
+    pkbBuild();
+    pkbDrawConfTourney();
+  };
+
+  // ── NCAA Tournament ────────────────────────────────────────
+  // Auto bid = that conference's tournament winner from the user's picks,
+  // or (until decided) the regular-season standings leader as a
+  // "projected" placeholder — same confirmed/projected concept
+  // renderBracketology() already uses for its own auto-bid display.
+  function pkbAutoBidTeam(conf){
+    if(_pkb.confChamps[conf]) return _pkb.confChamps[conf];
+    var standings=pkbConfStandings(conf);
+    return standings[0]?standings[0].team:null;
+  }
+
+  function pkbPairFF(teams){
+    var sorted=teams.slice().sort(function(a,b){ return a.pr-b.pr; }); // worst first
+    var games=[];
+    for(var i=0;i<sorted.length;i+=2){ games.push({a:sorted[i], b:sorted[i+1]}); }
+    return games;
+  }
+
+  // Builds the full at-large/auto-bid field. No real geographic regions are
+  // modeled (there's no reliable way to generate them) — disclosed to the
+  // user as a known limitation; seeding and bracket order are by Playoff
+  // Rating rank only.
+  function pkbBuildNCAAField(){
+    var season=_pkb.yr;
+    var is76=season>=2027; // same 76-team-format cutoff renderBracketology() uses
+    var total=is76?76:68;
+
+    var confList=Object.keys(_pkb.confs).filter(function(c){ return (_pkb.confs[c]||[]).length>=2; });
+    var autoBids=[], autoTeamSet={};
+    confList.forEach(function(conf){
+      var team=pkbAutoBidTeam(conf);
+      if(!team||autoTeamSet[team]) return;
+      autoTeamSet[team]=1;
+      var row=pkbTeamRow(team);
+      autoBids.push({team:team, conf:conf, confirmed:!!_pkb.confChamps[conf], pr:row.pr, elo:row.elo});
+    });
+    autoBids.sort(function(a,b){ return b.pr-a.pr; });
+
+    var allTeams=[];
+    Object.keys(_pkb.confs).forEach(function(conf){ (_pkb.confs[conf]||[]).forEach(function(t){ allTeams.push({team:t,conf:conf}); }); });
+    var atLarge=allTeams.filter(function(t){ return !autoTeamSet[t.team]; }).map(function(t){
+      var row=pkbTeamRow(t.team);
+      return {team:t.team, conf:t.conf, pr:row.pr, elo:row.elo};
+    }).sort(function(a,b){ return b.pr-a.pr; }).slice(0, Math.max(0,total-autoBids.length));
+
+    var field=autoBids.concat(atLarge).sort(function(a,b){ return b.pr-a.pr; });
+
+    var gamesNeeded=total-64; // First Four game count — 4 for 68-team, generalizes for a future 76-team format
+    var autoGames=Math.ceil(gamesNeeded/2), atLargeGames=gamesNeeded-autoGames;
+    var ffAutoTeams=autoBids.slice().sort(function(a,b){return b.pr-a.pr;}).slice(-(autoGames*2));
+    var ffAtLargeTeams=atLarge.slice(-(atLargeGames*2));
+
+    return {field:field, autoBids:autoBids, atLarge:atLarge, ffAutoTeams:ffAutoTeams, ffAtLargeTeams:ffAtLargeTeams, total:total, is76:is76};
+  }
+
+  function pkbDrawNCAA(){
+    var el=document.getElementById('pkb-ncaa'); if(!el) return;
+    pkbBuild();
+    var fieldData=pkbBuildNCAAField();
+
+    var ffGames=pkbPairFF(fieldData.ffAutoTeams).map(function(g){ return Object.assign({},g,{kind:'Auto-bid'}); })
+      .concat(pkbPairFF(fieldData.ffAtLargeTeams).map(function(g){ return Object.assign({},g,{kind:'At-large'}); }));
+    var key=fieldData.field.map(function(t){return t.team;}).join('|');
+
+    if(!_pkb.ncaaFirstFour||_pkb.ncaaFirstFour._key!==key){
+      _pkb.ncaaFirstFour={games:ffGames, results:{}, _key:key};
+    }
+    var ff=_pkb.ncaaFirstFour;
+    var allDecided=ff.games.length>0 && ff.games.every(function(g,i){ return ff.results[i]; });
+
+    var html='<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);margin-bottom:1rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.75rem 1rem;line-height:1.6">'
+      +'Auto bids = each conference\'s tournament winner from your picks (or the projected regular-season leader if not decided yet). At-large bids and seeding by Playoff Rating (Elo × win% + resume) — the same formula CFB\'s CFP Bracket uses. No geographic regions are simulated; bracket order follows Playoff Rating rank only.'
+      +'</div>';
+
+    html+='<div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.5rem">First Four ('+fieldData.autoBids.length+' auto bids · '+fieldData.atLarge.length+' at-large · '+fieldData.total+' total)</div>';
+    html+='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.6rem;margin-bottom:1.2rem">';
+    ff.games.forEach(function(g,i){
+      var picked=ff.results[i];
+      html+='<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.6rem">'
+        +'<div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);margin-bottom:0.35rem">'+g.kind+' · First Four</div>'
+        +[g.a,g.b].map(function(t){
+          var isPick=picked===t.team;
+          return '<button onclick="pkbFirstFourAdvance('+i+',\''+String(t.team).replace(/'/g,"\\'")+'\')" style="display:block;width:100%;text-align:left;margin-bottom:0.25rem;padding:0.3rem 0.5rem;border-radius:var(--radius);border:1px solid '+(isPick?'var(--accent)':'var(--border-md)')+';background:'+(isPick?'rgba(226,201,126,0.12)':'var(--bg3)')+';color:'+(isPick?'var(--accent)':'var(--text)')+';font-size:0.74rem;font-weight:'+(isPick?'600':'400')+';cursor:pointer">'+t.team+' <span style="font-size:0.55rem;color:var(--text-dim);float:right">'+(t.conf||'')+'</span></button>';
+        }).join('')
+        +'</div>';
+    });
+    html+='</div>';
+
+    if(!allDecided){
+      html+='<div style="text-align:center;padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim)">Pick all First Four winners to unlock the full bracket ↑</div>';
+      el.innerHTML=html;
+      return;
+    }
+
+    var autoTeamsFinal=fieldData.autoBids.filter(function(t){ return fieldData.ffAutoTeams.indexOf(t)===-1; });
+    var atLargeTeamsFinal=fieldData.atLarge.filter(function(t){ return fieldData.ffAtLargeTeams.indexOf(t)===-1; });
+    ff.games.forEach(function(g,i){
+      var winnerName=ff.results[i];
+      var winnerObj=(g.a.team===winnerName)?g.a:g.b;
+      if(g.kind==='Auto-bid') autoTeamsFinal.push(winnerObj); else atLargeTeamsFinal.push(winnerObj);
+    });
+
+    var final64=autoTeamsFinal.concat(atLargeTeamsFinal).sort(function(a,b){ return b.pr-a.pr; });
+    var seedArr64=[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,
+                   8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,12,12,12,12,
+                   13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16];
+    final64.forEach(function(t,i){ t.seed=seedArr64[i]||16; });
+
+    var bKey=final64.map(function(t){return t.team;}).join('|');
+    if(!_pkb.ncaaBracket||_pkb.ncaaBracket._key!==bKey){
+      // Rank order doubles as bracket seed order here (no regions modeled),
+      // so pass final64 straight into the generic engine — it already
+      // guarantees seed 1 and 2 can't meet before the final.
+      var bracket=pkbNewBracket(final64.slice(0,64));
+      pkbAdvanceByes(bracket.rounds);
+      bracket._key=bKey;
+      _pkb.ncaaBracket=bracket;
+    }
+
+    html+='<div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin:1rem 0 0.5rem">NCAA Tournament — Round of 64</div>';
+    html+=pkbRenderBracket(_pkb.ncaaBracket, 'pkbNcaaAdvance');
+
+    el.innerHTML=html;
+  }
+
+  window.pkbFirstFourAdvance=function(gi,team){
+    if(!_pkb.ncaaFirstFour) return;
+    _pkb.ncaaFirstFour.results[gi]=team;
+    pkbDrawNCAA();
+  };
+
+  window.pkbNcaaAdvance=function(ri,mi,team){
+    var bracket=_pkb.ncaaBracket; if(!bracket) return;
+    bracket.rounds=bracket.rounds.slice(0,ri+1);
+    var m=bracket.rounds[ri][mi];
+    var t=(m.a&&m.a.team===team)?m.a:(m.b&&m.b.team===team?m.b:null);
+    if(!t) return;
+    m.winner=t;
+    pkbAdvanceByes(bracket.rounds);
+    pkbDrawNCAA();
+  };
 
 
 
