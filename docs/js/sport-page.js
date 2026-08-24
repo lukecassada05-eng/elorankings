@@ -2186,45 +2186,87 @@ window.initSportPage = function(CFG) {
     // ── Fetch conference tournament champions from ESPN ────────────────────────
     // CBB: conf tournaments run late Feb–mid March (seasontype=3)
     // CBASE: conf tournaments run mid-May (seasontype=3)
-    function fetchConfChamps() {
-      // For CBB: use the NCAA tournament bracket - gives us actual auto bid winners
+    async function fetchConfChamps() {
+      // For CBB: sweep the conference-tournament window day by day
       // For CBASE: use conference tournament scoreboard
       if (isCBB) {
-        // Try NCAA bracket API first (most reliable - has actual auto bid recipients)
-        var bracketUrl = 'https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/tournament/bracket?season=' + season;
-        return fetch(bracketUrl, {mode:'cors'})
-          .then(function(r){ return r.ok ? r.json() : null; })
-          .catch(function(){ return null; })
-          .then(function(data) {
-            var champs = {};
-            if (!data) return champs;
-            // Traverse bracket teams - each conf's auto bid team is marked
-            // ESPN bracket: groups of teams with seed info
-            var teams = data.teams || (data.bracket && data.bracket.teams) || [];
-            // Flatten nested structure
-            function extractTeams(obj) {
-              if (!obj) return;
-              if (obj.seed && obj.team) {
-                var t = obj.team;
-                var c = (t.conferenceId || t.conference || {}).name || '';
-                var n = t.shortDisplayName || t.displayName || '';
-                if (c && n) {
-                  // Lower seed number within a conf = auto bid winner
-                  if (!champs[c.toLowerCase()] || obj.seed < champs[c.toLowerCase()].seed) {
-                    champs[c.toLowerCase()] = {name: n, seed: obj.seed};
-                  }
-                }
-              }
-              Object.values(obj).forEach(function(v) {
-                if (v && typeof v === 'object') extractTeams(v);
+        // The endpoint this used to call — .../tournament/bracket?season=YYYY
+        // — 404s (confirmed by direct testing; it's not a real endpoint, or
+        // at least not one that accepts a bare `season` param), so this
+        // silently found zero champs every time and fell all the way
+        // through to the Elo-based "projected" fallback below — which is
+        // why auto bids always showed the highest-Elo team even for
+        // seasons whose real conference tournaments had already finished.
+        //
+        // Fix: walk the actual conference-tournament window (~Feb 25 – Mar
+        // 18) one day at a time — ESPN's basketball scoreboard endpoint
+        // doesn't support dates=RANGE queries (confirmed separately; single
+        // 8-digit dates work) — and look for completed games whose notes
+        // headline reads as a true FINAL ("Big Ten Tournament - Final",
+        // "Atlantic 10 Championship - Final", etc. — word-boundary match on
+        // "final", explicitly excluding "Semifinal"/"Quarterfinal"). Both
+        // teams' conferences come from THIS season's own CSV rows (`data`,
+        // already loaded), not from parsing the conference name out of the
+        // headline text — so it never depends on ESPN's naming matching
+        // ours. If both teams share a conference, the winner is that
+        // conference's confirmed auto bid.
+        var teamToConf = {};
+        data.forEach(function(r){ if (r.team && r.conference) teamToConf[r.team] = r.conference; });
+
+        function dateSweepList(y, m0, d0, endM0, endD0) {
+          var out = [];
+          var d = new Date(Date.UTC(y, m0, d0));
+          var end = new Date(Date.UTC(y, endM0, endD0));
+          while (d <= end) {
+            out.push(''+d.getUTCFullYear()+String(d.getUTCMonth()+1).padStart(2,'0')+String(d.getUTCDate()).padStart(2,'0'));
+            d.setUTCDate(d.getUTCDate()+1);
+          }
+          return out;
+        }
+        // Month args are 0-indexed: 1=Feb, 2=Mar. Comfortably spans every
+        // conference's championship Sunday without reaching into NCAA
+        // Tournament dates (Round of 64 starts ~Mar 19-20) or the National
+        // Championship (early April), so a headline match here can't
+        // accidentally pick up the wrong game.
+        var dates = dateSweepList(season, 1, 25, 2, 18);
+
+        var champs = {};
+        var BATCH = 6;
+        for (var b = 0; b < dates.length; b += BATCH) {
+          var batch = dates.slice(b, b+BATCH);
+          await Promise.all(batch.map(function(d) {
+            var url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates='+d+'&groups=50&limit=500';
+            return fetch(url, {mode:'cors'})
+              .then(function(r){ return r.ok ? r.json() : null; })
+              .catch(function(){ return null; })
+              .then(function(sd) {
+                if (!sd || !sd.events) return;
+                sd.events.forEach(function(ev) {
+                  try {
+                    var comp = ev.competitions && ev.competitions[0]; if (!comp) return;
+                    if (!comp.status || !comp.status.type || !comp.status.type.completed) return;
+                    var notes = (comp.notes||ev.notes||[]).map(function(n){return n.headline||'';}).join(' ');
+                    if (!/\bfinal\b/i.test(notes) || /semifinal|quarterfinal/i.test(notes)) return;
+                    var competitors = comp.competitors||[];
+                    if (competitors.length !== 2) return;
+                    var winner=null, max=-1;
+                    competitors.forEach(function(c){ var s=parseFloat(c.score); if(!isNaN(s)&&s>max){max=s;winner=c;} });
+                    if (!winner) return;
+                    var loser = competitors.find(function(c){ return c!==winner; });
+                    var wn = winner.team.shortDisplayName || winner.team.displayName || '';
+                    var ln = loser && (loser.team.shortDisplayName || loser.team.displayName) || '';
+                    var wConf = teamToConf[wn], lConf = teamToConf[ln];
+                    if (wConf && wConf === lConf) champs[wConf] = wn;
+                  } catch(e){}
+                });
               });
-            }
-            extractTeams(data);
-            // Convert to simple name map
-            var result = {};
-            Object.keys(champs).forEach(function(k){ result[k] = champs[k].name; });
-            return result;
-          });
+          }));
+        }
+        // Shape matches what the caller below already expects: a
+        // lowercased-key -> team-name map, matched via confLow/confAlpha.
+        var result = {};
+        Object.keys(champs).forEach(function(k){ result[k.toLowerCase()] = champs[k]; });
+        return result;
       } else {
         // CBASE: fetch conference tournament championship games
         var yr = season;
@@ -4263,14 +4305,10 @@ async function findAvailableSeason() {
   // Conference membership comes straight from this season's own CSV
   // ("conference" column — hoopR writes full names like "Big Ten
   // Conference"), so it can never go stale the way a hand-typed roster
-  // would; ESPN is only consulted once per season, purely to map each CSV
-  // conference name to ESPN's numeric group id (fuzzy-matched, same
-  // technique renderBracketology already uses) so conference schedules can
-  // be fetched. Scope: CONFERENCE games only (not full non-conference
-  // slate) — keeps the live fetch to one call per conference instead of a
-  // full-season crawl, while still giving real conference standings to
-  // seed conference tournaments and a real (if resume-limited) Playoff
-  // Rating for NCAA at-large/seeding.
+  // would. The full season schedule (conference AND non-conference games)
+  // is fetched by sweeping ESPN's scoreboard one calendar day at a time —
+  // see pkbFetchSched for why (ESPN's basketball scoreboard endpoint
+  // doesn't support dates=RANGE queries the way football's does).
 
   var _pkb = {
     yr:null, confs:{}, confIds:{}, schedule:[], scores:{}, confGames:[],
@@ -4312,6 +4350,12 @@ async function findAvailableSeason() {
   // conference schedule can be fetched — fuzzy-matched the same way
   // renderBracketology() already matches CSV conference names to ESPN
   // conference-tournament-champ data (confLow/confAlpha normalization).
+  // Conference membership comes straight from the season's own CSV — no
+  // ESPN call needed here at all. (An earlier version of this function also
+  // fetched ESPN's standings once to resolve each conference to an ESPN
+  // group id, for a per-conference scoreboard fetch — that per-conference
+  // fetch has since been replaced by a single whole-slate sweep in
+  // pkbFetchSched, so the id lookup was dead weight and has been removed.)
   async function pkbFetchConferences(yr){
     if(!allSeasonData[yr]){
       try{ var raw=await fetchCSV(CFG.dataPath+yr+'.csv'); if(raw) allSeasonData[yr]=raw.map(coerceRow); }catch(e){}
@@ -4324,37 +4368,7 @@ async function findAvailableSeason() {
       if(!confs[c]) confs[c]=[];
       if(r.team) confs[c].push(r.team);
     });
-
-    var confIds={};
-    try{
-      var url='https://site.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings?season='+yr+'&group=50';
-      var res=await fetch(url,{mode:'cors'});
-      if(res.ok){
-        var data=await res.json();
-        var top=(data&&data.children)||[];
-        var espnConfs=top.map(function(n){ return {id:n&&n.id, name:(n&&n.name)||'', shortName:(n&&n.shortName)||''}; })
-          .filter(function(n){ return n.id; });
-        var norm=function(s){ return (s||'').toLowerCase().replace(/\s+conference$/i,'').trim(); };
-        var alpha=function(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]/g,''); };
-        var candidates=espnConfs.map(function(ec){
-          return {ec:ec, low:[norm(ec.name),norm(ec.shortName)], alpha:[alpha(ec.name),alpha(ec.shortName)]};
-        });
-        Object.keys(confs).forEach(function(csvConf){
-          var confLow=norm(csvConf), confAlpha=alpha(csvConf);
-          var best=candidates.find(function(c){
-            return c.low.indexOf(confLow)!==-1 || c.alpha.indexOf(confAlpha)!==-1;
-          });
-          if(!best) best=candidates.find(function(c){
-            return c.low.some(function(l){ return l && (confLow.indexOf(l)!==-1 || l.indexOf(confLow)!==-1); }) ||
-                   c.alpha.some(function(a){ return a && (confAlpha.indexOf(a)!==-1 || a.indexOf(confAlpha)!==-1); });
-          });
-          if(best) confIds[csvConf]=String(best.ec.id);
-        });
-      }
-    }catch(e){
-      if(typeof console!=='undefined') console.warn('pkbFetchConferences: ESPN id lookup failed —', e.message);
-    }
-    return {confs:confs, confIds:confIds};
+    return {confs:confs};
   }
 
   window.pkbLoadYear=async function(yr){
@@ -4369,29 +4383,49 @@ async function findAvailableSeason() {
     pkbDrawShell();
     pkbSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' conference alignment…</div>');
     var confData=await pkbFetchConferences(yr);
-    _pkb.confs=confData.confs; _pkb.confIds=confData.confIds;
+    _pkb.confs=confData.confs; _pkb.confIds={};
     pkbFetchSched(yr);
   };
 
+  // Walks the season one calendar day at a time and fetches that day's
+  // WHOLE D1 scoreboard in a single call — no per-conference filtering, so
+  // both conference AND non-conference games come back from the exact same
+  // sweep. This replaced an earlier per-conference, date-range-chunked
+  // design after live testing showed ESPN's men's-college-basketball
+  // scoreboard endpoint 404s on dates=START-END range queries (confirmed
+  // repeatedly — football's equivalent endpoint accepts ranges fine, this
+  // one doesn't), which meant the old fetch was silently returning zero
+  // games every time. Single 8-digit dates work reliably, so this fetches
+  // more times but each one actually succeeds.
+  function pkbSeasonDates(y0, yr){
+    var dates=[];
+    var d=new Date(Date.UTC(y0,10,1));           // Nov 1 of y0
+    var end=new Date(Date.UTC(yr,2,16));          // Mar 16 of yr — stops
+    // short of conference-tournament week so the regular-season schedule
+    // never mixes with conference-tournament games (those are simulated
+    // separately from the user's bracket picks, not fetched from ESPN).
+    while(d<=end){
+      var y=d.getUTCFullYear(), m=String(d.getUTCMonth()+1).padStart(2,'0'), dd=String(d.getUTCDate()).padStart(2,'0');
+      dates.push(''+y+m+dd);
+      d.setUTCDate(d.getUTCDate()+1);
+    }
+    return dates;
+  }
+
   async function pkbFetchSched(yr){
-    pkbSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' conference schedules from ESPN…</div>');
+    pkbSetReg('<div class="loading"><div class="spinner"></div>Loading '+yr+' schedule from ESPN…</div>');
     var games=[], seen={}, fetched=0;
     var y0=yr-1;
-    // Regular-season-only date windows spanning a CBB season (Nov of y0
-    // through mid-March of yr) — seasontype=2 below additionally excludes
-    // conference-tournament/postseason games ESPN might otherwise include,
-    // so this never overlaps with the conference-tournament bracket step.
-    var windows=[
-      y0+'1101-'+y0+'1130', y0+'1201-'+y0+'1231',
-      yr+'0101-'+yr+'0131', yr+'0201-'+yr+'0229', yr+'0301-'+yr+'0315'
-    ];
+    var dates=pkbSeasonDates(y0, yr);
 
-    var rosterSets={};
-    Object.keys(_pkb.confs).forEach(function(c){ rosterSets[c]=new Set(_pkb.confs[c]); });
+    // team -> its own CSV conference, for classifying each game as
+    // conference or non-conference play (and for skipping games against
+    // any team we have no Elo/roster data for at all).
+    var rosterOf={};
+    Object.keys(_pkb.confs).forEach(function(c){ (_pkb.confs[c]||[]).forEach(function(t){ rosterOf[t]=c; }); });
 
-    function processEvents(data, conf){
+    function processEvents(data){
       if(!data||!data.events) return;
-      var roster=rosterSets[conf];
       data.events.forEach(function(ev){
         try{
           var comp=ev.competitions&&ev.competitions[0]; if(!comp) return;
@@ -4401,19 +4435,21 @@ async function findAvailableSeason() {
           if(!home||!away) return;
           var hn=home.team.shortDisplayName||home.team.displayName;
           var an=away.team.shortDisplayName||away.team.displayName;
-          // Conference-games-only scope: keep only games where BOTH teams
-          // are on THIS conference's own CSV roster (extra safety beyond
-          // ESPN's own groups= filter, which includes non-conference games
-          // involving the conference's teams too).
-          if(!roster||!roster.has(hn)||!roster.has(an)) return;
+          var hConf=rosterOf[hn], aConf=rosterOf[an];
+          // Keep the game only if BOTH teams are ones we actually track
+          // (have Elo/roster data for) — an exhibition against a non-D1
+          // opponent, or a team missing from this season's CSV, can't be
+          // meaningfully scored here anyway.
+          if(!hConf||!aConf) return;
           var dt=ev.date?ev.date.slice(0,10):null;
           var key=ev.id||(hn+'_'+an+'_'+(dt||''));
           if(seen[key]) return; seen[key]=1;
-          var pairKey='pair:'+conf+'|'+[hn,an].sort().join('|')+'|'+(dt||'');
+          var pairKey='pair:'+[hn,an].sort().join('|')+'|'+(dt||'');
           if(seen[pairKey]) return; seen[pairKey]=1;
           var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
           var hs=completed?(parseInt(home.score)||null):null;
           var as_=completed?(parseInt(away.score)||null):null;
+          var conf=(hConf===aConf)?hConf:'Non-Conference';
           games.push({id:key,conf:conf,date:dt,homeTeam:hn,awayTeam:an,
             neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
           fetched++;
@@ -4421,25 +4457,20 @@ async function findAvailableSeason() {
       });
     }
 
-    async function fetchConfWindow(conf, gid, win){
-      var url='https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates='+win+'&groups='+gid+'&seasontype=2&limit=500';
+    async function fetchDate(d){
+      var url='https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates='+d+'&groups=50&limit=500';
       try{
         var res=await fetch(url,{mode:'cors'}); if(!res.ok) return;
         var data=await res.json();
-        processEvents(data, conf);
+        processEvents(data);
       }catch(e){}
     }
 
-    var tasks=[];
-    Object.keys(_pkb.confIds).forEach(function(conf){
-      var gid=_pkb.confIds[conf];
-      windows.forEach(function(w){ tasks.push({conf:conf,gid:gid,win:w}); });
-    });
-    var BATCH=4;
-    for(var b=0;b<tasks.length;b+=BATCH){
-      var batch=tasks.slice(b,b+BATCH);
-      await Promise.all(batch.map(function(t){ return fetchConfWindow(t.conf,t.gid,t.win); }));
-      pkbSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' conference schedules… '+fetched+' games found</div>');
+    var BATCH=6;
+    for(var b=0;b<dates.length;b+=BATCH){
+      var batch=dates.slice(b,b+BATCH);
+      await Promise.all(batch.map(fetchDate));
+      pkbSetReg('<div style="padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">Loading '+yr+' schedule… '+fetched+' games found ('+Math.min(b+BATCH,dates.length)+'/'+dates.length+' days)</div>');
     }
 
     games.sort(function(a,b){
@@ -4451,7 +4482,7 @@ async function findAvailableSeason() {
     if(!games.length){
       pkbSetReg('<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.78rem;color:var(--text-muted);text-align:center;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg)">'
         +'<div style="font-size:0.88rem;color:var(--text);margin-bottom:0.5rem">📅 '+yr+' schedule not available yet</div>'
-        +'ESPN hasn\'t published the '+yr+' CBB schedule yet, or no conference IDs matched.<br><br>'
+        +'ESPN hasn\'t published the '+yr+' CBB schedule yet.<br><br>'
         +'<button onclick="pkbLoadYear('+(yr-1)+')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.4rem 1.1rem;font-family:var(--font-mono);font-size:0.73rem;font-weight:600;cursor:pointer">Load '+(yr-1)+' season instead →</button>'
         +'</div>');
       return;
@@ -4492,12 +4523,21 @@ async function findAvailableSeason() {
       var winner=hs>as_?g.homeTeam:g.awayTeam;
       var loser=hs>as_?g.awayTeam:g.homeTeam;
       var teams=[winner,loser].sort();
-      var dedupKey=teams[0]+'|'+teams[1]+'|'+g.conf;
+      // Dedup by team pair + DATE (not just pair) — conference opponents
+      // commonly play twice in a season (home and away), and dropping the
+      // rematch as a "duplicate" silently undercounted every conference
+      // that does full round-robin-style home-and-home scheduling.
+      var dedupKey=teams[0]+'|'+teams[1]+'|'+g.conf+'|'+(g.date||g.id);
       if(counted[dedupKey]) continue; counted[dedupKey]=1;
       _pkb.wins[winner]=(_pkb.wins[winner]||0)+1;
       _pkb.losses[loser]=(_pkb.losses[loser]||0)+1;
-      _pkb.confWins[winner]=(_pkb.confWins[winner]||0)+1;
-      _pkb.confLoss[loser]=(_pkb.confLoss[loser]||0)+1;
+      // Only real conference games count toward conference W/L (used to
+      // seed conference tournaments) — a Non-Conference game still counts
+      // toward the overall record and Elo above, just not this.
+      if(g.conf!=='Non-Conference'){
+        _pkb.confWins[winner]=(_pkb.confWins[winner]||0)+1;
+        _pkb.confLoss[loser]=(_pkb.confLoss[loser]||0)+1;
+      }
       var margin=Math.abs(hs-as_);
       var rW=_pkb.eloSim[winner]||1500, rL=_pkb.eloSim[loser]||1500;
       var eW=1/(1+Math.pow(10,(rL-rW)/400));
@@ -4519,9 +4559,10 @@ async function findAvailableSeason() {
     });
 
     // Playoff Rating: Elo × win%^0.6 + √(quality-win resume) — identical
-    // formula to CFB's, scoped to whatever games are known here (conference
-    // regular season + conference tournament picks only; see the note in
-    // pkbFetchSched about why non-conference games aren't fetched).
+    // formula to CFB's. Now draws on the full schedule (conference AND
+    // non-conference games, plus conference-tournament picks), so the
+    // resume component actually sees true out-of-conference quality wins
+    // instead of being limited to conference play only.
     var beatenBy={}, counted2={};
     for(var gi=0;gi<_pkb.schedule.length;gi++){
       var g2=_pkb.schedule[gi];
@@ -4531,7 +4572,7 @@ async function findAvailableSeason() {
       if(isNaN(hs2)||isNaN(as2)||hs2===as2) continue;
       var winner2=hs2>as2?g2.homeTeam:g2.awayTeam;
       var loser2=hs2>as2?g2.awayTeam:g2.homeTeam;
-      var tk=[winner2,loser2].sort().join('|')+'|'+g2.conf;
+      var tk=[winner2,loser2].sort().join('|')+'|'+g2.conf+'|'+(g2.date||g2.id);
       if(counted2[tk]) continue; counted2[tk]=1;
       if(!beatenBy[winner2]) beatenBy[winner2]=[];
       beatenBy[winner2].push(loser2);
@@ -4670,7 +4711,7 @@ async function findAvailableSeason() {
       +'<select onchange="pkbLoadYear(parseInt(this.value))" style="font-family:var(--font-mono);font-size:0.7rem;background:var(--bg3);border:1px solid var(--border-md);color:var(--text);border-radius:var(--radius);padding:0.2rem 0.4rem">'+seasonOpts+'</select>'
       +'</div></div>'
       +'<div style="font-size:0.68rem;color:var(--text-muted);font-family:var(--font-mono);margin-top:0.4rem;line-height:1.55">'
-      +'Conference games only, schedule order · enter scores → conf tournament brackets decide auto bids → Elo/resume fills the NCAA field'
+      +'Full schedule, conference + non-conference · enter scores → conf tournament brackets decide auto bids → Elo/resume fills the NCAA field'
       +'</div>'
       +'<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.6rem;padding-top:0.6rem;border-top:1px solid var(--border);flex-wrap:wrap">'
       +'<span style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim)">⚡ Auto-predict using</span>'
@@ -4679,7 +4720,7 @@ async function findAvailableSeason() {
       +'<span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)">(home +60 Elo · scores simulated around the Elo gap)</span>'
       +'</div></div>'
       +'<div style="display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1rem;flex-wrap:wrap">'
-      +'<button onclick="pkbTab(\'reg\')" id="pkb-tab-reg" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid var(--accent);margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--accent)">📅 Conference Play</button>'
+      +'<button onclick="pkbTab(\'reg\')" id="pkb-tab-reg" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid var(--accent);margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--accent)">📅 Regular Season</button>'
       +'<button onclick="pkbTab(\'conf\')" id="pkb-tab-conf" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--text-muted)">🏆 Conf Tournaments</button>'
       +'<button onclick="pkbTab(\'ncaa\')" id="pkb-tab-ncaa" style="font-family:var(--font-mono);font-size:0.68rem;padding:0.42rem 0.9rem;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:transparent;cursor:pointer;color:var(--text-muted)">🎯 NCAA Bracket</button>'
       +'</div>'
@@ -4711,7 +4752,7 @@ async function findAvailableSeason() {
     var total=_pkb.schedule.length;
     var completed=_pkb.schedule.filter(function(g){return g.completed;}).length;
     var html='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem">'
-      +'<div id="pkb-count" style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim)">'+total+' conference games'+(completed?' · '+completed+' final':'')+' · '+picked+' predicted</div>'
+      +'<div id="pkb-count" style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim)">'+total+' games'+(completed?' · '+completed+' final':'')+' · '+picked+' predicted</div>'
       +'<button onclick="pkbTab(\'conf\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.35rem 1rem;font-family:var(--font-mono);font-size:0.72rem;font-weight:600;cursor:pointer">Next: Conf Tournaments →</button>'
       +'</div>';
     var byConf={};
@@ -4759,7 +4800,7 @@ async function findAvailableSeason() {
     }
     var picked=Object.keys(_pkb.scores).filter(function(i2){var s2=_pkb.scores[i2];return s2.homeScore!==''&&s2.homeScore!=null&&s2.awayScore!==''&&s2.awayScore!=null;}).length;
     var el=document.getElementById('pkb-count');
-    if(el) el.textContent=_pkb.schedule.length+' conference games · '+picked+' predicted';
+    if(el) el.textContent=_pkb.schedule.length+' games · '+picked+' predicted';
   };
 
   window.pkbAutoPredict=async function(){
@@ -4850,7 +4891,7 @@ async function findAvailableSeason() {
     }
 
     html+='<div style="margin-top:1.2rem;display:flex;gap:0.6rem">'
-      +'<button onclick="pkbTab(\'reg\')" style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);font-size:0.67rem;cursor:pointer">← Conference Play</button>'
+      +'<button onclick="pkbTab(\'reg\')" style="background:var(--bg3);color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:0.32rem 0.75rem;font-family:var(--font-mono);font-size:0.67rem;cursor:pointer">← Regular Season</button>'
       +'<button onclick="pkbTab(\'ncaa\')" style="background:var(--accent);color:#1a1611;border:none;border-radius:var(--radius);padding:0.35rem 1rem;font-family:var(--font-mono);font-size:0.72rem;font-weight:600;cursor:pointer">Next: NCAA Bracket →</button>'
       +'</div>';
 
