@@ -72,6 +72,7 @@
     <button class="tab" data-tab="history">Elo History</button>
     <button class="tab" data-tab="tracker">Season Tracker</button>
     <button class="tab" data-tab="greatest">Greatest Teams</button>
+    <button class="tab" data-tab="pickem">Season Pick'em</button>
     <button class="tab" data-tab="confhistory">Conference History</button>
   </div>
 
@@ -140,11 +141,15 @@
     <!-- populated by sport-page.js renderConfHistory() -->
   </div>
   <div id="panel-tourney" hidden></div>
+
+  <div id="panel-pickem" hidden>
+    <!-- populated by sport-page.js renderPickemCBB() -->
+  </div>
 </div><!-- .page -->
 
-<script src="../js/utils.js"></script>
-<script src="../js/season-tracker.js"></script>
-<script src="../js/sport-page.js"></script>
+<script src="../js/utils.js?v=31"></script>
+<script src="../js/season-tracker.js?v=31"></script>
+<script src="../js/sport-page.js?v=31"></script>
 <script>
 initSportPage({
   sport:     'CBB',
@@ -153,7 +158,7 @@ initSportPage({
   hca:       50,
   confLabel: 'Conference',
   kFactor:   30,
-  tabs:      ["rankings", "byconf", "bracketology", "predictor", "tourney"],
+  tabs:      ["rankings", "byconf", "bracketology", "predictor", "tourney", "pickem"],
 });
 </script>
   <script>
