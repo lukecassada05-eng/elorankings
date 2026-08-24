@@ -2,8 +2,790 @@
   "year": 2010,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "Temple Owls",
+      "loser": "Richmond Spiders",
+      "winner_score": 56,
+      "loser_score": 52,
+      "date": "2010-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL AT ATLANTIC CITY NJ"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Arkansas-Pine Bluff Golden Lions",
+      "winner_score": 73,
+      "loser_score": 44,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND AT JACKSONVILLE FL"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Vermont Catamounts",
+      "winner_score": 79,
+      "loser_score": 56,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT BUFFALO NY"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "UC Santa Barbara Gauchos",
+      "winner_score": 68,
+      "loser_score": 51,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT MILWAUKEE WI"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Morgan State Bears",
+      "winner_score": 77,
+      "loser_score": 50,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT BUFFALO NY"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Siena Saints",
+      "winner_score": 72,
+      "loser_score": 64,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND AT SPOKANE WA"
+    },
+    {
+      "winner": "Cornell Big Red",
+      "loser": "Temple Owls",
+      "winner_score": 78,
+      "loser_score": 65,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT JACKSONVILLE FL"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "New Mexico State Aggies",
+      "winner_score": 70,
+      "loser_score": 67,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT SPOKANE WA"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Wofford Terriers",
+      "winner_score": 53,
+      "loser_score": 49,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT JACKSONVILLE FL"
+    },
+    {
+      "winner": "Pittsburgh Panthers",
+      "loser": "Oakland Golden Grizzlies",
+      "winner_score": 89,
+      "loser_score": 66,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT MILWAUKEE"
+    },
+    {
+      "winner": "Maryland Terrapins",
+      "loser": "Houston Cougars",
+      "winner_score": 89,
+      "loser_score": 77,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT SPOKANE WA"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Florida State Seminoles",
+      "winner_score": 67,
+      "loser_score": 60,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT BUFFALO NY"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Utah State Aggies",
+      "winner_score": 69,
+      "loser_score": 53,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND AT SPOKANE WA"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Minnesota Golden Gophers",
+      "winner_score": 65,
+      "loser_score": 54,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT MILWAUKEE"
+    },
+    {
+      "winner": "Missouri Tigers",
+      "loser": "Clemson Tigers",
+      "winner_score": 86,
+      "loser_score": 78,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT BUFFALO NY"
+    },
+    {
+      "winner": "Georgia Tech Yellow Jackets",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 64,
+      "loser_score": 59,
+      "date": "2010-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT MILWAUKEE"
+    },
+    {
+      "winner": "California Golden Bears",
+      "loser": "Louisville Cardinals",
+      "winner_score": 77,
+      "loser_score": 62,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND AT JACKSONVILLE FL"
+    },
+    {
+      "winner": "Northern Iowa Panthers",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 69,
+      "loser_score": 67,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT OKLAHOMA CITY"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Wake Forest Demon Deacons",
+      "winner_score": 90,
+      "loser_score": 60,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT NEW ORLEANS"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "BYU Cougars",
+      "winner_score": 84,
+      "loser_score": 72,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT OKLAHOMA CITY"
+    },
+    {
+      "winner": "Washington Huskies",
+      "loser": "New Mexico Lobos",
+      "winner_score": 82,
+      "loser_score": 64,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT SAN JOSE CA"
+    },
+    {
+      "winner": "Saint Mary's Gaels",
+      "loser": "Villanova Wildcats",
+      "winner_score": 75,
+      "loser_score": 68,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PROVIDENCE RI"
+    },
+    {
+      "winner": "Butler Bulldogs",
+      "loser": "Murray State Racers",
+      "winner_score": 54,
+      "loser_score": 52,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SAN JOSE CA"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Ohio Bobcats",
+      "winner_score": 83,
+      "loser_score": 68,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT PROVIDENCE RI"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Old Dominion Monarchs",
+      "winner_score": 76,
+      "loser_score": 68,
+      "date": "2010-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT NEW ORLEANS"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "California Golden Bears",
+      "winner_score": 68,
+      "loser_score": 53,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT JACKSONVILLE FL"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 87,
+      "loser_score": 65,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT BUFFALO NY"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Georgia Tech Yellow Jackets",
+      "winner_score": 75,
+      "loser_score": 66,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT MILWAUKEE"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Missouri Tigers",
+      "winner_score": 68,
+      "loser_score": 59,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT BUFFALO NY"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 63,
+      "loser_score": 61,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT SPOKANE WA"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Maryland Terrapins",
+      "winner_score": 85,
+      "loser_score": 83,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT SPOKANE WA"
+    },
+    {
+      "winner": "Cornell Big Red",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 87,
+      "loser_score": 69,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT JACKSONVILLE FL"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Pittsburgh Panthers",
+      "winner_score": 71,
+      "loser_score": 68,
+      "date": "2010-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT MILWAUKEE"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 76,
+      "loser_score": 73,
+      "date": "2010-03-26",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST LOUIS MO"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 72,
+      "loser_score": 49,
+      "date": "2010-03-26",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT HOUSTON TX"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Northern Iowa Panthers",
+      "winner_score": 59,
+      "loser_score": 52,
+      "date": "2010-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST LOUIS MO"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 70,
+      "loser_score": 57,
+      "date": "2010-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT HOUSTON TX"
+    },
+    {
+      "winner": "Butler Bulldogs",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 63,
+      "loser_score": 56,
+      "date": "2010-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT SALT LAKE CITY UT"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 73,
+      "loser_score": 66,
+      "date": "2010-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT SYRACUSE NY"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 70,
+      "loser_score": 69,
+      "date": "2010-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT ST LOUIS"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Baylor Bears",
+      "winner_score": 78,
+      "loser_score": 71,
+      "date": "2010-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT HOUSTON"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Temple Owls",
+      "t2": "Richmond Spiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Richmond Spiders",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL AT ATLANTIC CITY NJ",
+      "date": "2010-03-14"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Arkansas-Pine Bluff Golden Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arkansas-Pine Bluff Golden Lions",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND AT JACKSONVILLE FL",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Morgan State Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Morgan State Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT BUFFALO NY",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Siena Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Siena Saints",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND AT SPOKANE WA",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Cornell Big Red",
+      "t2": "Temple Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Temple Owls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT JACKSONVILLE FL",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "New Mexico State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico State Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT SPOKANE WA",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Wofford Terriers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wofford Terriers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT JACKSONVILLE FL",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Pittsburgh Panthers",
+      "t2": "Oakland Golden Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oakland Golden Grizzlies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT MILWAUKEE",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida State Seminoles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT BUFFALO NY",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Utah State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah State Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND AT SPOKANE WA",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Minnesota Golden Gophers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Minnesota Golden Gophers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT MILWAUKEE",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Missouri Tigers",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Clemson Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT BUFFALO NY",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Georgia Tech Yellow Jackets",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma State Cowboys",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT MILWAUKEE",
+      "date": "2010-03-19"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Vermont Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vermont Catamounts",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT BUFFALO NY",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UC Santa Barbara Gauchos",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT MILWAUKEE WI",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT SPOKANE WA",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "California Golden Bears",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisville Cardinals",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND AT JACKSONVILLE FL",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Northern Iowa Panthers",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT OKLAHOMA CITY",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Washington Huskies",
+      "t2": "New Mexico Lobos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico Lobos",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT SAN JOSE CA",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Saint Mary's Gaels",
+      "t2": "Villanova Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Villanova Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PROVIDENCE RI",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Butler Bulldogs",
+      "t2": "Murray State Racers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Murray State Racers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SAN JOSE CA",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Ohio Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio Bobcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT PROVIDENCE RI",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Old Dominion Monarchs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Old Dominion Monarchs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT NEW ORLEANS",
+      "date": "2010-03-20"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Wake Forest Demon Deacons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wake Forest Demon Deacons",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT NEW ORLEANS",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "BYU Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "BYU Cougars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT OKLAHOMA CITY",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "California Golden Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "California Golden Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT JACKSONVILLE FL",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT BUFFALO NY",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia Tech Yellow Jackets",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT MILWAUKEE",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Missouri Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Missouri Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT BUFFALO NY",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT SPOKANE WA",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Maryland Terrapins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT SPOKANE WA",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Cornell Big Red",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT JACKSONVILLE FL",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Pittsburgh Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT MILWAUKEE",
+      "date": "2010-03-21"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST LOUIS MO",
+      "date": "2010-03-26"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT HOUSTON TX",
+      "date": "2010-03-26"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Northern Iowa Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Iowa Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST LOUIS MO",
+      "date": "2010-03-27"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT HOUSTON TX",
+      "date": "2010-03-27"
+    },
+    {
+      "t1": "Butler Bulldogs",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas State Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT SALT LAKE CITY UT",
+      "date": "2010-03-27"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT SYRACUSE NY",
+      "date": "2010-03-27"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT ST LOUIS",
+      "date": "2010-03-28"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT HOUSTON",
+      "date": "2010-03-28"
+    }
+  ],
+  "eliminated": [
+    "Richmond Spiders",
+    "Arkansas-Pine Bluff Golden Lions",
+    "Vermont Catamounts",
+    "UC Santa Barbara Gauchos",
+    "Morgan State Bears",
+    "Siena Saints",
+    "Temple Owls",
+    "New Mexico State Aggies",
+    "Wofford Terriers",
+    "Oakland Golden Grizzlies",
+    "Houston Cougars",
+    "Florida State Seminoles",
+    "Utah State Aggies",
+    "Minnesota Golden Gophers",
+    "Clemson Tigers",
+    "Oklahoma State Cowboys",
+    "Louisville Cardinals",
+    "Kansas Jayhawks",
+    "Wake Forest Demon Deacons",
+    "BYU Cougars",
+    "New Mexico Lobos",
+    "Villanova Wildcats",
+    "Murray State Racers",
+    "Ohio Bobcats",
+    "Old Dominion Monarchs",
+    "California Golden Bears",
+    "Gonzaga Bulldogs",
+    "Georgia Tech Yellow Jackets",
+    "Missouri Tigers",
+    "Texas A&M Aggies",
+    "Maryland Terrapins",
+    "Wisconsin Badgers",
+    "Pittsburgh Panthers",
+    "Ohio State Buckeyes",
+    "Saint Mary's Gaels",
+    "Northern Iowa Panthers",
+    "Purdue Boilermakers",
+    "Kansas State Wildcats",
+    "Kentucky Wildcats",
+    "Tennessee Volunteers",
+    "Baylor Bears"
+  ],
+  "updated": "2026-08-24 08:30 UTC"
 }

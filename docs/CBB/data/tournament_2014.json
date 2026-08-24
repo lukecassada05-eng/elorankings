@@ -2,8 +2,1693 @@
   "year": 2014,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "St. Bonaventure Bonnies",
+      "loser": "Saint Louis Billikens",
+      "winner_score": 71,
+      "loser_score": 68,
+      "date": "2014-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Saint Joseph's Hawks",
+      "loser": "Dayton Flyers",
+      "winner_score": 70,
+      "loser_score": 67,
+      "date": "2014-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Tulsa Golden Hurricane",
+      "loser": "Middle Tennessee Blue Raiders",
+      "winner_score": 76,
+      "loser_score": 69,
+      "date": "2014-03-14",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "North Dakota Fighting Hawks",
+      "loser": "Portland State Vikings",
+      "winner_score": 79,
+      "loser_score": 63,
+      "date": "2014-03-14",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Richmond Spiders",
+      "winner_score": 71,
+      "loser_score": 53,
+      "date": "2014-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Louisiana Tech Bulldogs",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 88,
+      "loser_score": 70,
+      "date": "2014-03-14",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Arkansas State Red Wolves",
+      "loser": "Little Rock Trojans",
+      "winner_score": 116,
+      "loser_score": 114,
+      "date": "2014-03-14",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Houston Cougars",
+      "winner_score": 94,
+      "loser_score": 65,
+      "date": "2014-03-14",
+      "round": "THE AMERICAN MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 94,
+      "loser_score": 83,
+      "date": "2014-03-14",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Providence Friars",
+      "loser": "Seton Hall Pirates",
+      "winner_score": 80,
+      "loser_score": 74,
+      "date": "2014-03-14",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "George Washington Revolutionaries",
+      "loser": "Massachusetts Minutemen",
+      "winner_score": 85,
+      "loser_score": 77,
+      "date": "2014-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Weber State Wildcats",
+      "loser": "Northern Colorado Bears",
+      "winner_score": 66,
+      "loser_score": 63,
+      "date": "2014-03-15",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "UNLV Rebels",
+      "winner_score": 59,
+      "loser_score": 51,
+      "date": "2014-03-15",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 58,
+      "loser_score": 56,
+      "date": "2014-03-15",
+      "round": "THE AMERICAN MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Xavier Musketeers",
+      "winner_score": 86,
+      "loser_score": 78,
+      "date": "2014-03-15",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Texas Longhorns",
+      "winner_score": 86,
+      "loser_score": 69,
+      "date": "2014-03-15",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Louisiana Ragin' Cajuns",
+      "loser": "UT Arlington Mavericks",
+      "winner_score": 91,
+      "loser_score": 85,
+      "date": "2014-03-15",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "New Mexico Lobos",
+      "loser": "Boise State Broncos",
+      "winner_score": 70,
+      "loser_score": 67,
+      "date": "2014-03-15",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "UAlbany Great Danes",
+      "loser": "Stony Brook Seawolves",
+      "winner_score": 69,
+      "loser_score": 60,
+      "date": "2014-03-15",
+      "round": "AMERICA EAST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Tulsa Golden Hurricane",
+      "loser": "Louisiana Tech Bulldogs",
+      "winner_score": 69,
+      "loser_score": 60,
+      "date": "2014-03-15",
+      "round": "C-USA MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Saint Joseph's Hawks",
+      "loser": "St. Bonaventure Bonnies",
+      "winner_score": 67,
+      "loser_score": 48,
+      "date": "2014-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Georgia State Panthers",
+      "loser": "Arkansas State Red Wolves",
+      "winner_score": 72,
+      "loser_score": 45,
+      "date": "2014-03-15",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "George Washington Revolutionaries",
+      "winner_score": 74,
+      "loser_score": 55,
+      "date": "2014-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Louisiana Ragin' Cajuns",
+      "loser": "Western Kentucky Hilltoppers",
+      "winner_score": 73,
+      "loser_score": 72,
+      "date": "2014-03-15",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "New Mexico Lobos",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 64,
+      "loser_score": 58,
+      "date": "2014-03-15",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "UConn Huskies",
+      "winner_score": 71,
+      "loser_score": 61,
+      "date": "2014-03-15",
+      "round": "THE AMERICAN MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Weber State Wildcats",
+      "loser": "North Dakota Fighting Hawks",
+      "winner_score": 88,
+      "loser_score": 67,
+      "date": "2014-03-16",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Providence Friars",
+      "loser": "Creighton Bluejays",
+      "winner_score": 65,
+      "loser_score": 58,
+      "date": "2014-03-16",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Baylor Bears",
+      "winner_score": 74,
+      "loser_score": 65,
+      "date": "2014-03-16",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Louisiana Ragin' Cajuns",
+      "loser": "Georgia State Panthers",
+      "winner_score": 82,
+      "loser_score": 81,
+      "date": "2014-03-16",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Saint Joseph's Hawks",
+      "loser": "VCU Rams",
+      "winner_score": 65,
+      "loser_score": 61,
+      "date": "2014-03-16",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Cal Poly Mustangs",
+      "loser": "Texas Southern Tigers",
+      "winner_score": 81,
+      "loser_score": 69,
+      "date": "2014-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Iowa Hawkeyes",
+      "winner_score": 78,
+      "loser_score": 65,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Dayton Flyers",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 60,
+      "loser_score": 59,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "American University Eagles",
+      "winner_score": 75,
+      "loser_score": 35,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Pittsburgh Panthers",
+      "loser": "Colorado Buffaloes",
+      "winner_score": 77,
+      "loser_score": 48,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Harvard Crimson",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 61,
+      "loser_score": 57,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Western Michigan Broncos",
+      "winner_score": 77,
+      "loser_score": 53,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "BYU Cougars",
+      "winner_score": 87,
+      "loser_score": 68,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "UAlbany Great Danes",
+      "winner_score": 67,
+      "loser_score": 55,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Delaware Blue Hens",
+      "winner_score": 93,
+      "loser_score": 78,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Saint Joseph's Hawks",
+      "winner_score": 89,
+      "loser_score": 81,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Wofford Terriers",
+      "winner_score": 57,
+      "loser_score": 40,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "NC State Wolfpack",
+      "winner_score": 83,
+      "loser_score": 80,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "North Dakota State Bison",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 80,
+      "loser_score": 75,
+      "date": "2014-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 87,
+      "loser_score": 85,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Milwaukee Panthers",
+      "winner_score": 73,
+      "loser_score": 53,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Manhattan Jaspers",
+      "winner_score": 71,
+      "loser_score": 64,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "New Mexico State Aggies",
+      "winner_score": 73,
+      "loser_score": 69,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Mercer Bears",
+      "loser": "Duke Blue Devils",
+      "winner_score": 78,
+      "loser_score": 71,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Nebraska Cornhuskers",
+      "winner_score": 74,
+      "loser_score": 60,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "New Mexico Lobos",
+      "winner_score": 58,
+      "loser_score": 53,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Weber State Wildcats",
+      "winner_score": 68,
+      "loser_score": 59,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Massachusetts Minutemen",
+      "winner_score": 86,
+      "loser_score": 67,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Louisiana Ragin' Cajuns",
+      "winner_score": 76,
+      "loser_score": 66,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Eastern Kentucky Colonels",
+      "winner_score": 80,
+      "loser_score": 69,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 85,
+      "loser_score": 77,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Memphis Tigers",
+      "loser": "George Washington Revolutionaries",
+      "winner_score": 71,
+      "loser_score": 66,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Providence Friars",
+      "winner_score": 79,
+      "loser_score": 77,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Wichita State Shockers",
+      "loser": "Cal Poly Mustangs",
+      "winner_score": 64,
+      "loser_score": 37,
+      "date": "2014-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Stephen F. Austin Lumberjacks",
+      "loser": "VCU Rams",
+      "winner_score": 77,
+      "loser_score": 75,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Coastal Carolina Chanticleers",
+      "winner_score": 70,
+      "loser_score": 59,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 56,
+      "loser_score": 49,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "North Carolina Central Eagles",
+      "winner_score": 93,
+      "loser_score": 75,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Tulsa Golden Hurricane",
+      "winner_score": 76,
+      "loser_score": 59,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Pittsburgh Panthers",
+      "winner_score": 61,
+      "loser_score": 45,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Saint Louis Billikens",
+      "winner_score": 66,
+      "loser_score": 51,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Texas Longhorns",
+      "winner_score": 79,
+      "loser_score": 65,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "North Dakota State Bison",
+      "winner_score": 63,
+      "loser_score": 44,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Dayton Flyers",
+      "loser": "Syracuse Orange",
+      "winner_score": 55,
+      "loser_score": 53,
+      "date": "2014-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Oregon Ducks",
+      "winner_score": 85,
+      "loser_score": 77,
+      "date": "2014-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Harvard Crimson",
+      "winner_score": 80,
+      "loser_score": 73,
+      "date": "2014-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Villanova Wildcats",
+      "winner_score": 77,
+      "loser_score": 65,
+      "date": "2014-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Stanford Cardinal",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 60,
+      "loser_score": 57,
+      "date": "2014-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Wichita State Shockers",
+      "winner_score": 78,
+      "loser_score": 76,
+      "date": "2014-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 85,
+      "loser_score": 83,
+      "date": "2014-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Mercer Bears",
+      "winner_score": 83,
+      "loser_score": 63,
+      "date": "2014-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Stephen F. Austin Lumberjacks",
+      "winner_score": 77,
+      "loser_score": 60,
+      "date": "2014-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Creighton Bluejays",
+      "winner_score": 85,
+      "loser_score": 55,
+      "date": "2014-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Memphis Tigers",
+      "winner_score": 78,
+      "loser_score": 60,
+      "date": "2014-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 84,
+      "loser_score": 61,
+      "date": "2014-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 73,
+      "loser_score": 71,
+      "date": "2014-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 81,
+      "loser_score": 76,
+      "date": "2014-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Louisville Cardinals",
+      "winner_score": 74,
+      "loser_score": 69,
+      "date": "2014-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 61,
+      "loser_score": 59,
+      "date": "2014-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Dayton Flyers",
+      "winner_score": 62,
+      "loser_score": 52,
+      "date": "2014-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Arizona Wildcats",
+      "winner_score": 64,
+      "loser_score": 63,
+      "date": "2014-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Michigan State Spartans",
+      "winner_score": 60,
+      "loser_score": 54,
+      "date": "2014-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Michigan Wolverines",
+      "winner_score": 75,
+      "loser_score": 72,
+      "date": "2014-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "St. Bonaventure Bonnies",
+      "t2": "Saint Louis Billikens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Louis Billikens",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "Saint Joseph's Hawks",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dayton Flyers",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "Tulsa Golden Hurricane",
+      "t2": "Middle Tennessee Blue Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Middle Tennessee Blue Raiders",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "North Dakota Fighting Hawks",
+      "t2": "Portland State Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Portland State Vikings",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Richmond Spiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Richmond Spiders",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "Louisiana Tech Bulldogs",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Miss Golden Eagles",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "Arkansas State Red Wolves",
+      "t2": "Little Rock Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Little Rock Trojans",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "THE AMERICAN MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "Providence Friars",
+      "t2": "Seton Hall Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seton Hall Pirates",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-14"
+    },
+    {
+      "t1": "George Washington Revolutionaries",
+      "t2": "Massachusetts Minutemen",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Massachusetts Minutemen",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Weber State Wildcats",
+      "t2": "Northern Colorado Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Colorado Bears",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "UNLV Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNLV Rebels",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cincinnati Bearcats",
+      "round": "THE AMERICAN MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "UT Arlington Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UT Arlington Mavericks",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "New Mexico Lobos",
+      "t2": "Boise State Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Boise State Broncos",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "UAlbany Great Danes",
+      "t2": "Stony Brook Seawolves",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Stony Brook Seawolves",
+      "round": "AMERICA EAST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Tulsa Golden Hurricane",
+      "t2": "Louisiana Tech Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisiana Tech Bulldogs",
+      "round": "C-USA MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Saint Joseph's Hawks",
+      "t2": "St. Bonaventure Bonnies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. Bonaventure Bonnies",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Georgia State Panthers",
+      "t2": "Arkansas State Red Wolves",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arkansas State Red Wolves",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "George Washington Revolutionaries",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "George Washington Revolutionaries",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "Western Kentucky Hilltoppers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Western Kentucky Hilltoppers",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "New Mexico Lobos",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UConn Huskies",
+      "round": "THE AMERICAN MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-15"
+    },
+    {
+      "t1": "Weber State Wildcats",
+      "t2": "North Dakota Fighting Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Dakota Fighting Hawks",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-16"
+    },
+    {
+      "t1": "Providence Friars",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-16"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-16"
+    },
+    {
+      "t1": "Louisiana Ragin' Cajuns",
+      "t2": "Georgia State Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia State Panthers",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-16"
+    },
+    {
+      "t1": "Saint Joseph's Hawks",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2014-03-16"
+    },
+    {
+      "t1": "Cal Poly Mustangs",
+      "t2": "Texas Southern Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Southern Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2014-03-19"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa Hawkeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Dayton Flyers",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "American University Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "American University Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Pittsburgh Panthers",
+      "t2": "Colorado Buffaloes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado Buffaloes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Harvard Crimson",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cincinnati Bearcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Western Michigan Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Western Michigan Broncos",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "BYU Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "BYU Cougars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "UAlbany Great Danes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UAlbany Great Danes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Delaware Blue Hens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Delaware Blue Hens",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Saint Joseph's Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Joseph's Hawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Wofford Terriers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wofford Terriers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NC State Wolfpack",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "North Dakota State Bison",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma Sooners",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2014-03-20"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona State Sun Devils",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Milwaukee Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Milwaukee Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Manhattan Jaspers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Manhattan Jaspers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "New Mexico State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico State Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Mercer Bears",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nebraska Cornhuskers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "New Mexico Lobos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico Lobos",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Weber State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Weber State Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Massachusetts Minutemen",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Massachusetts Minutemen",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisiana Ragin' Cajuns",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Eastern Kentucky Colonels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eastern Kentucky Colonels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma State Cowboys",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Memphis Tigers",
+      "t2": "George Washington Revolutionaries",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "George Washington Revolutionaries",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Providence Friars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Providence Friars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Wichita State Shockers",
+      "t2": "Cal Poly Mustangs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cal Poly Mustangs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2014-03-21"
+    },
+    {
+      "t1": "Stephen F. Austin Lumberjacks",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Coastal Carolina Chanticleers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas State Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "North Carolina Central Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Central Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Tulsa Golden Hurricane",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tulsa Golden Hurricane",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Pittsburgh Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Saint Louis Billikens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Louis Billikens",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "North Dakota State Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Dakota State Bison",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "Dayton Flyers",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND",
+      "date": "2014-03-22"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon Ducks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND",
+      "date": "2014-03-23"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Harvard Crimson",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Harvard Crimson",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND",
+      "date": "2014-03-23"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Villanova Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Villanova Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND",
+      "date": "2014-03-23"
+    },
+    {
+      "t1": "Stanford Cardinal",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND",
+      "date": "2014-03-23"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Wichita State Shockers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wichita State Shockers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND",
+      "date": "2014-03-23"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND",
+      "date": "2014-03-23"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Mercer Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Mercer Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND",
+      "date": "2014-03-23"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Stephen F. Austin Lumberjacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Stephen F. Austin Lumberjacks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND",
+      "date": "2014-03-23"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND",
+      "date": "2014-03-24"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Memphis Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Memphis Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND",
+      "date": "2014-03-24"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND",
+      "date": "2014-03-24"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2014-03-28"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16",
+      "date": "2014-03-28"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisville Cardinals",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2014-03-29"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Cavaliers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16",
+      "date": "2014-03-29"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dayton Flyers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8",
+      "date": "2014-03-29"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8",
+      "date": "2014-03-30"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8",
+      "date": "2014-03-30"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8",
+      "date": "2014-03-30"
+    }
+  ],
+  "eliminated": [
+    "Saint Louis Billikens",
+    "Dayton Flyers",
+    "Middle Tennessee Blue Raiders",
+    "Portland State Vikings",
+    "Richmond Spiders",
+    "Southern Miss Golden Eagles",
+    "Little Rock Trojans",
+    "Houston Cougars",
+    "Kansas Jayhawks",
+    "Seton Hall Pirates",
+    "Massachusetts Minutemen",
+    "Northern Colorado Bears",
+    "UNLV Rebels",
+    "Cincinnati Bearcats",
+    "Xavier Musketeers",
+    "Texas Longhorns",
+    "UT Arlington Mavericks",
+    "Boise State Broncos",
+    "Stony Brook Seawolves",
+    "Louisiana Tech Bulldogs",
+    "St. Bonaventure Bonnies",
+    "Arkansas State Red Wolves",
+    "George Washington Revolutionaries",
+    "Western Kentucky Hilltoppers",
+    "San Diego State Aztecs",
+    "UConn Huskies",
+    "North Dakota Fighting Hawks",
+    "Creighton Bluejays",
+    "Baylor Bears",
+    "Georgia State Panthers",
+    "VCU Rams",
+    "Texas Southern Tigers",
+    "Iowa Hawkeyes",
+    "Ohio State Buckeyes",
+    "American University Eagles",
+    "Colorado Buffaloes",
+    "Western Michigan Broncos",
+    "BYU Cougars",
+    "UAlbany Great Danes",
+    "Delaware Blue Hens",
+    "Saint Joseph's Hawks",
+    "Wofford Terriers",
+    "NC State Wolfpack",
+    "Oklahoma Sooners",
+    "Arizona State Sun Devils",
+    "Milwaukee Panthers",
+    "Manhattan Jaspers",
+    "New Mexico State Aggies",
+    "Duke Blue Devils",
+    "Nebraska Cornhuskers",
+    "New Mexico Lobos",
+    "Weber State Wildcats",
+    "Louisiana Ragin' Cajuns",
+    "Eastern Kentucky Colonels",
+    "Oklahoma State Cowboys",
+    "Providence Friars",
+    "Cal Poly Mustangs",
+    "Coastal Carolina Chanticleers",
+    "Kansas State Wildcats",
+    "North Carolina Central Eagles",
+    "Tulsa Golden Hurricane",
+    "Pittsburgh Panthers",
+    "North Dakota State Bison",
+    "Syracuse Orange",
+    "Oregon Ducks",
+    "Harvard Crimson",
+    "Villanova Wildcats",
+    "Wichita State Shockers",
+    "North Carolina Tar Heels",
+    "Mercer Bears",
+    "Stephen F. Austin Lumberjacks",
+    "Memphis Tigers",
+    "Gonzaga Bulldogs",
+    "Tennessee Volunteers",
+    "Iowa State Cyclones",
+    "Louisville Cardinals",
+    "Virginia Cavaliers",
+    "Arizona Wildcats",
+    "Michigan State Spartans",
+    "Michigan Wolverines"
+  ],
+  "updated": "2026-08-24 08:30 UTC"
 }

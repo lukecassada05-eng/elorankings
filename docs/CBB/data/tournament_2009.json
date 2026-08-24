@@ -2,8 +2,846 @@
   "year": 2009,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "Memphis Tigers",
+      "loser": "Tulsa Golden Hurricane",
+      "winner_score": 64,
+      "loser_score": 39,
+      "date": "2009-03-14",
+      "round": "C-USA MEN'S CHAMPIONSHIP - FINAL AT MEMPHIS TN"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Syracuse Orange",
+      "winner_score": 76,
+      "loser_score": 66,
+      "date": "2009-03-15",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - FINAL AT NEW YORK NY"
+    },
+    {
+      "winner": "Missouri Tigers",
+      "loser": "Baylor Bears",
+      "winner_score": 73,
+      "loser_score": 60,
+      "date": "2009-03-14",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - FINAL AT OKLAHOMA CITY OK"
+    },
+    {
+      "winner": "Utah Utes",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 52,
+      "loser_score": 50,
+      "date": "2009-03-14",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - FINAL AT LAS VEGAS NV"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Morehead State Eagles",
+      "winner_score": 74,
+      "loser_score": 54,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Pittsburgh Panthers",
+      "loser": "East Tennessee State Buccaneers",
+      "winner_score": 72,
+      "loser_score": 62,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1ST ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Robert Morris Colonials",
+      "winner_score": 77,
+      "loser_score": 62,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MINNEAPOLIS MN"
+    },
+    {
+      "winner": "Missouri Tigers",
+      "loser": "Cornell Big Red",
+      "winner_score": 78,
+      "loser_score": 59,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1ST ROUND AT BOISE ID"
+    },
+    {
+      "winner": "Cleveland State Vikings",
+      "loser": "Wake Forest Demon Deacons",
+      "winner_score": 84,
+      "loser_score": 69,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MIAMI FL"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Stephen F. Austin Lumberjacks",
+      "winner_score": 59,
+      "loser_score": 44,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1ST ROUND AT MIAMI FL"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "North Dakota State Bison",
+      "winner_score": 84,
+      "loser_score": 74,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MINNEAPOLIS MN"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Florida State Seminoles",
+      "winner_score": 61,
+      "loser_score": 59,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1ST ROUND AT BOISE ID"
+    },
+    {
+      "winner": "Arizona State Sun Devils",
+      "loser": "Temple Owls",
+      "winner_score": 66,
+      "loser_score": 57,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1ST ROUND AT MIAMI FL"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Portland State Vikings",
+      "winner_score": 77,
+      "loser_score": 59,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1ST ROUND AT BOISE ID"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "Utah State Aggies",
+      "winner_score": 58,
+      "loser_score": 57,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1ST ROUND AT BOISE ID"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Utah Utes",
+      "winner_score": 84,
+      "loser_score": 71,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MIAMI FL"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 77,
+      "loser_score": 75,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1ST ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Dayton Flyers",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 68,
+      "loser_score": 60,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MINNEAPOLIS MN"
+    },
+    {
+      "winner": "USC Trojans",
+      "loser": "Boston College Eagles",
+      "winner_score": 72,
+      "loser_score": 55,
+      "date": "2009-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MINNEAPOLIS MN"
+    },
+    {
+      "winner": "Siena Saints",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 74,
+      "loser_score": 72,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "LSU Tigers",
+      "winner_score": 84,
+      "loser_score": 70,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2ND ROUND AT GREENSBORO NC"
+    },
+    {
+      "winner": "Memphis Tigers",
+      "loser": "Maryland Terrapins",
+      "winner_score": 89,
+      "loser_score": 70,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2ND ROUND AT KANSAS CITY MO"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 92,
+      "loser_score": 66,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2ND ROUND AT PHILADELPHIA PA"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Texas Longhorns",
+      "winner_score": 74,
+      "loser_score": 69,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2ND ROUND AT GREENSBORO NC"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Michigan Wolverines",
+      "winner_score": 73,
+      "loser_score": 63,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2ND ROUND AT KANSAS CITY MO"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Western Kentucky Hilltoppers",
+      "winner_score": 83,
+      "loser_score": 81,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2ND ROUND AT PORTLAND OR"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "UCLA Bruins",
+      "winner_score": 89,
+      "loser_score": 69,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2ND ROUND AT PHILADELPHIA PA"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Washington Huskies",
+      "winner_score": 76,
+      "loser_score": 74,
+      "date": "2009-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2ND ROUND AT PORTLAND OR"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Siena Saints",
+      "winner_score": 79,
+      "loser_score": 72,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2ND ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Pittsburgh Panthers",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 84,
+      "loser_score": 76,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2ND ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "USC Trojans",
+      "winner_score": 74,
+      "loser_score": 69,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2ND ROUND AT MINNEAPOLIS MN"
+    },
+    {
+      "winner": "Missouri Tigers",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 83,
+      "loser_score": 79,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2ND ROUND AT BOISE ID"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 78,
+      "loser_score": 67,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2ND ROUND AT MIAMI FL"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Dayton Flyers",
+      "winner_score": 60,
+      "loser_score": 43,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2ND ROUND AT MINNEAPOLIS MN"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 60,
+      "loser_score": 49,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2ND ROUND AT BOISE ID"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Cleveland State Vikings",
+      "winner_score": 71,
+      "loser_score": 57,
+      "date": "2009-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2ND ROUND AT MIAMI FL"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Arizona Wildcats",
+      "winner_score": 103,
+      "loser_score": 64,
+      "date": "2009-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT INDIANAPOLIS IN"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Syracuse Orange",
+      "winner_score": 84,
+      "loser_score": 71,
+      "date": "2009-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT MEMPHIS TN"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 67,
+      "loser_score": 62,
+      "date": "2009-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT INDIANAPOLIS IN"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 98,
+      "loser_score": 77,
+      "date": "2009-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT MEMPHIS TN"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Missouri Tigers",
+      "winner_score": 82,
+      "loser_score": 75,
+      "date": "2009-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT GLENDALE AZ"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Pittsburgh Panthers",
+      "winner_score": 78,
+      "loser_score": 76,
+      "date": "2009-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT BOSTON MA"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Louisville Cardinals",
+      "winner_score": 64,
+      "loser_score": 52,
+      "date": "2009-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT INDIANAPOLIS IN"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 72,
+      "loser_score": 60,
+      "date": "2009-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT MEMPHIS TN"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Tulsa Golden Hurricane",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tulsa Golden Hurricane",
+      "round": "C-USA MEN'S CHAMPIONSHIP - FINAL AT MEMPHIS TN",
+      "date": "2009-03-14"
+    },
+    {
+      "t1": "Missouri Tigers",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - FINAL AT OKLAHOMA CITY OK",
+      "date": "2009-03-14"
+    },
+    {
+      "t1": "Utah Utes",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - FINAL AT LAS VEGAS NV",
+      "date": "2009-03-14"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - FINAL AT NEW YORK NY",
+      "date": "2009-03-15"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Morehead State Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Morehead State Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT DAYTON OH",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Pittsburgh Panthers",
+      "t2": "East Tennessee State Buccaneers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "East Tennessee State Buccaneers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1ST ROUND AT DAYTON OH",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Missouri Tigers",
+      "t2": "Cornell Big Red",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cornell Big Red",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1ST ROUND AT BOISE ID",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Stephen F. Austin Lumberjacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Stephen F. Austin Lumberjacks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1ST ROUND AT MIAMI FL",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "North Dakota State Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Dakota State Bison",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MINNEAPOLIS MN",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Arizona State Sun Devils",
+      "t2": "Temple Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Temple Owls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1ST ROUND AT MIAMI FL",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Portland State Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Portland State Vikings",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1ST ROUND AT BOISE ID",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "Utah State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah State Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1ST ROUND AT BOISE ID",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Utah Utes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah Utes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MIAMI FL",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1ST ROUND AT DAYTON OH",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Dayton Flyers",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "West Virginia Mountaineers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MINNEAPOLIS MN",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "USC Trojans",
+      "t2": "Boston College Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Boston College Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MINNEAPOLIS MN",
+      "date": "2009-03-20"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Robert Morris Colonials",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Robert Morris Colonials",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MINNEAPOLIS MN",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "Cleveland State Vikings",
+      "t2": "Wake Forest Demon Deacons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wake Forest Demon Deacons",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT MIAMI FL",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida State Seminoles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1ST ROUND AT BOISE ID",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "Siena Saints",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1ST ROUND AT DAYTON OH",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "LSU Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2ND ROUND AT GREENSBORO NC",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Maryland Terrapins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2ND ROUND AT KANSAS CITY MO",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2ND ROUND AT PHILADELPHIA PA",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2ND ROUND AT KANSAS CITY MO",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCLA Bruins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2ND ROUND AT PHILADELPHIA PA",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Washington Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Washington Huskies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2ND ROUND AT PORTLAND OR",
+      "date": "2009-03-21"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2ND ROUND AT GREENSBORO NC",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Western Kentucky Hilltoppers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Western Kentucky Hilltoppers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2ND ROUND AT PORTLAND OR",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Siena Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Siena Saints",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2ND ROUND AT DAYTON OH",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Pittsburgh Panthers",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma State Cowboys",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2ND ROUND AT DAYTON OH",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "USC Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "USC Trojans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2ND ROUND AT MINNEAPOLIS MN",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Missouri Tigers",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2ND ROUND AT BOISE ID",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona State Sun Devils",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2ND ROUND AT MIAMI FL",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dayton Flyers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2ND ROUND AT MINNEAPOLIS MN",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2ND ROUND AT BOISE ID",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Cleveland State Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cleveland State Vikings",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2ND ROUND AT MIAMI FL",
+      "date": "2009-03-22"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT INDIANAPOLIS IN",
+      "date": "2009-03-27"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT MEMPHIS TN",
+      "date": "2009-03-27"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT INDIANAPOLIS IN",
+      "date": "2009-03-28"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT MEMPHIS TN",
+      "date": "2009-03-28"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Missouri Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Missouri Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT GLENDALE AZ",
+      "date": "2009-03-28"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Pittsburgh Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT BOSTON MA",
+      "date": "2009-03-28"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisville Cardinals",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT INDIANAPOLIS IN",
+      "date": "2009-03-29"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma Sooners",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT MEMPHIS TN",
+      "date": "2009-03-29"
+    }
+  ],
+  "eliminated": [
+    "Tulsa Golden Hurricane",
+    "Syracuse Orange",
+    "Baylor Bears",
+    "San Diego State Aztecs",
+    "Morehead State Eagles",
+    "East Tennessee State Buccaneers",
+    "Robert Morris Colonials",
+    "Cornell Big Red",
+    "Wake Forest Demon Deacons",
+    "Stephen F. Austin Lumberjacks",
+    "North Dakota State Bison",
+    "Florida State Seminoles",
+    "Temple Owls",
+    "Portland State Vikings",
+    "Utah State Aggies",
+    "Utah Utes",
+    "Tennessee Volunteers",
+    "West Virginia Mountaineers",
+    "Boston College Eagles",
+    "Ohio State Buckeyes",
+    "LSU Tigers",
+    "Maryland Terrapins",
+    "Texas A&M Aggies",
+    "Texas Longhorns",
+    "Michigan Wolverines",
+    "Western Kentucky Hilltoppers",
+    "UCLA Bruins",
+    "Washington Huskies",
+    "Siena Saints",
+    "Oklahoma State Cowboys",
+    "USC Trojans",
+    "Marquette Golden Eagles",
+    "Arizona State Sun Devils",
+    "Dayton Flyers",
+    "Wisconsin Badgers",
+    "Cleveland State Vikings",
+    "Arizona Wildcats",
+    "Kansas Jayhawks",
+    "Gonzaga Bulldogs",
+    "Missouri Tigers",
+    "Pittsburgh Panthers",
+    "Louisville Cardinals",
+    "Oklahoma Sooners"
+  ],
+  "updated": "2026-08-24 08:30 UTC"
 }

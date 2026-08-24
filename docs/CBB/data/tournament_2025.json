@@ -2,8 +2,1113 @@
   "year": 2025,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:45 UTC"
+  "games": [
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Texas Longhorns",
+      "winner_score": 86,
+      "loser_score": 80,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - First Four"
+    },
+    {
+      "winner": "Mount St. Mary's Mountaineers",
+      "loser": "American University Eagles",
+      "winner_score": 83,
+      "loser_score": 72,
+      "date": "2025-03-19",
+      "round": "Men's Basketball Championship - East Region - First Four"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "SIU Edwardsville Cougars",
+      "winner_score": 78,
+      "loser_score": 40,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Alabama State Hornets",
+      "winner_score": 83,
+      "loser_score": 63,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Wofford Terriers",
+      "winner_score": 77,
+      "loser_score": 62,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "St. John's Red Storm",
+      "loser": "Omaha Mavericks",
+      "winner_score": 83,
+      "loser_score": 53,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Montana Grizzlies",
+      "winner_score": 85,
+      "loser_score": 66,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "UNC Wilmington Seahawks",
+      "winner_score": 82,
+      "loser_score": 72,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "High Point Panthers",
+      "winner_score": 75,
+      "loser_score": 63,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Yale Bulldogs",
+      "winner_score": 80,
+      "loser_score": 71,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "McNeese Cowboys",
+      "loser": "Clemson Tigers",
+      "winner_score": 69,
+      "loser_score": 67,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "UC San Diego Tritons",
+      "winner_score": 68,
+      "loser_score": 65,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "BYU Cougars",
+      "loser": "VCU Rams",
+      "winner_score": 80,
+      "loser_score": 71,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Drake Bulldogs",
+      "loser": "Missouri Tigers",
+      "winner_score": 67,
+      "loser_score": 57,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 79,
+      "loser_score": 72,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Utah State Aggies",
+      "winner_score": 72,
+      "loser_score": 47,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Louisville Cardinals",
+      "winner_score": 89,
+      "loser_score": 75,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Georgia Bulldogs",
+      "winner_score": 89,
+      "loser_score": 68,
+      "date": "2025-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Mount St. Mary's Mountaineers",
+      "winner_score": 93,
+      "loser_score": 49,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Norfolk State Spartans",
+      "winner_score": 95,
+      "loser_score": 69,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Robert Morris Colonials",
+      "winner_score": 90,
+      "loser_score": 81,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Bryant Bulldogs",
+      "winner_score": 87,
+      "loser_score": 62,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Lipscomb Bisons",
+      "winner_score": 82,
+      "loser_score": 55,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Troy Trojans",
+      "winner_score": 76,
+      "loser_score": 57,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Maryland Terrapins",
+      "loser": "Grand Canyon Lopes",
+      "winner_score": 81,
+      "loser_score": 49,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Akron Zips",
+      "winner_score": 93,
+      "loser_score": 65,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Colorado State Rams",
+      "loser": "Memphis Tigers",
+      "winner_score": 78,
+      "loser_score": 70,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Liberty Flames",
+      "winner_score": 81,
+      "loser_score": 52,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 71,
+      "loser_score": 64,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Xavier Musketeers",
+      "winner_score": 86,
+      "loser_score": 73,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Saint Mary's Gaels",
+      "loser": "Vanderbilt Commodores",
+      "winner_score": 59,
+      "loser_score": 56,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "New Mexico Lobos",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 75,
+      "loser_score": 66,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Mississippi State Bulldogs",
+      "winner_score": 75,
+      "loser_score": 72,
+      "date": "2025-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 67,
+      "loser_score": 59,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Creighton Bluejays",
+      "winner_score": 82,
+      "loser_score": 70,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 81,
+      "loser_score": 76,
+      "date": "2025-03-23",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "St. John's Red Storm",
+      "winner_score": 75,
+      "loser_score": 66,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "UCLA Bruins",
+      "winner_score": 67,
+      "loser_score": 58,
+      "date": "2025-03-23",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Drake Bulldogs",
+      "winner_score": 77,
+      "loser_score": 64,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "BYU Cougars",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 91,
+      "loser_score": 89,
+      "date": "2025-03-23",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "McNeese Cowboys",
+      "winner_score": 76,
+      "loser_score": 62,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 91,
+      "loser_score": 79,
+      "date": "2025-03-22",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "UConn Huskies",
+      "winner_score": 77,
+      "loser_score": 75,
+      "date": "2025-03-23",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Baylor Bears",
+      "winner_score": 89,
+      "loser_score": 66,
+      "date": "2025-03-23",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 80,
+      "loser_score": 66,
+      "date": "2025-03-23",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "New Mexico Lobos",
+      "winner_score": 71,
+      "loser_score": 63,
+      "date": "2025-03-24",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 84,
+      "loser_score": 75,
+      "date": "2025-03-23",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 91,
+      "loser_score": 78,
+      "date": "2025-03-24",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Maryland Terrapins",
+      "loser": "Colorado State Rams",
+      "winner_score": 72,
+      "loser_score": 71,
+      "date": "2025-03-23",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Oregon Ducks",
+      "winner_score": 87,
+      "loser_score": 83,
+      "date": "2025-03-24",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Michigan Wolverines",
+      "winner_score": 78,
+      "loser_score": 65,
+      "date": "2025-03-29",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 62,
+      "loser_score": 60,
+      "date": "2025-03-29",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Ole Miss Rebels",
+      "winner_score": 73,
+      "loser_score": 70,
+      "date": "2025-03-28",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 78,
+      "loser_score": 65,
+      "date": "2025-03-28",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 84,
+      "loser_score": 79,
+      "date": "2025-03-29",
+      "round": "Men's Basketball Championship - West Region - Elite 8"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 85,
+      "loser_score": 65,
+      "date": "2025-03-30",
+      "round": "Men's Basketball Championship - East Region - Elite 8"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 69,
+      "loser_score": 50,
+      "date": "2025-03-30",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Michigan State Spartans",
+      "winner_score": 70,
+      "loser_score": 64,
+      "date": "2025-03-30",
+      "round": "Men's Basketball Championship - South Region - Elite 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Mount St. Mary's Mountaineers",
+      "t2": "American University Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "American University Eagles",
+      "round": "Men's Basketball Championship - East Region - First Four",
+      "date": "2025-03-19"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "Men's Basketball Championship - Midwest Region - First Four",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "SIU Edwardsville Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "SIU Edwardsville Cougars",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Alabama State Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama State Hornets",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Wofford Terriers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wofford Terriers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Montana Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana Grizzlies",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "High Point Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "High Point Panthers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Yale Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Yale Bulldogs",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "McNeese Cowboys",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Clemson Tigers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "BYU Cougars",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Drake Bulldogs",
+      "t2": "Missouri Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Missouri Tigers",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisville Cardinals",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Georgia Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia Bulldogs",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2025-03-20"
+    },
+    {
+      "t1": "St. John's Red Storm",
+      "t2": "Omaha Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Omaha Mavericks",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNC Wilmington Seahawks",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "UC San Diego Tritons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UC San Diego Tritons",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Utah State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah State Aggies",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Mount St. Mary's Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Mount St. Mary's Mountaineers",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Norfolk State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Norfolk State Spartans",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Robert Morris Colonials",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Robert Morris Colonials",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Lipscomb Bisons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Lipscomb Bisons",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Troy Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Troy Trojans",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "Grand Canyon Lopes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Grand Canyon Lopes",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Akron Zips",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Akron Zips",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Colorado State Rams",
+      "t2": "Memphis Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Memphis Tigers",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Saint Mary's Gaels",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vanderbilt Commodores",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "New Mexico Lobos",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Mississippi State Bulldogs",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2025-03-21"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Bryant Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bryant Bulldogs",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Liberty Flames",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma Sooners",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "St. John's Red Storm",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. John's Red Storm",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Drake Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Drake Bulldogs",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "McNeese Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "McNeese Cowboys",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2025-03-22"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2025-03-23"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCLA Bruins",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2025-03-23"
+    },
+    {
+      "t1": "BYU Cougars",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2025-03-23"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UConn Huskies",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2025-03-23"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2025-03-23"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2025-03-23"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Illinois Fighting Illini",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2025-03-23"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "Colorado State Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado State Rams",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2025-03-23"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "New Mexico Lobos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico Lobos",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2025-03-24"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2025-03-24"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon Ducks",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2025-03-24"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Ole Miss Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ole Miss Rebels",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2025-03-28"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2025-03-28"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2025-03-29"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2025-03-29"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "Men's Basketball Championship - West Region - Elite 8",
+      "date": "2025-03-29"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama Crimson Tide",
+      "round": "Men's Basketball Championship - East Region - Elite 8",
+      "date": "2025-03-30"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8",
+      "date": "2025-03-30"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "Men's Basketball Championship - South Region - Elite 8",
+      "date": "2025-03-30"
+    }
+  ],
+  "eliminated": [
+    "Texas Longhorns",
+    "American University Eagles",
+    "SIU Edwardsville Cougars",
+    "Alabama State Hornets",
+    "Wofford Terriers",
+    "Omaha Mavericks",
+    "Montana Grizzlies",
+    "UNC Wilmington Seahawks",
+    "High Point Panthers",
+    "Yale Bulldogs",
+    "Clemson Tigers",
+    "UC San Diego Tritons",
+    "VCU Rams",
+    "Missouri Tigers",
+    "Kansas Jayhawks",
+    "Utah State Aggies",
+    "Louisville Cardinals",
+    "Georgia Bulldogs",
+    "Mount St. Mary's Mountaineers",
+    "Norfolk State Spartans",
+    "Robert Morris Colonials",
+    "Bryant Bulldogs",
+    "Lipscomb Bisons",
+    "Troy Trojans",
+    "Grand Canyon Lopes",
+    "Akron Zips",
+    "Memphis Tigers",
+    "Liberty Flames",
+    "North Carolina Tar Heels",
+    "Xavier Musketeers",
+    "Vanderbilt Commodores",
+    "Marquette Golden Eagles",
+    "Mississippi State Bulldogs",
+    "Oklahoma Sooners",
+    "Creighton Bluejays",
+    "Gonzaga Bulldogs",
+    "St. John's Red Storm",
+    "UCLA Bruins",
+    "Drake Bulldogs",
+    "Wisconsin Badgers",
+    "McNeese Cowboys",
+    "Texas A&M Aggies",
+    "UConn Huskies",
+    "Baylor Bears",
+    "Saint Mary's Gaels",
+    "New Mexico Lobos",
+    "Illinois Fighting Illini",
+    "Iowa State Cyclones",
+    "Colorado State Rams",
+    "Oregon Ducks",
+    "Michigan Wolverines",
+    "Purdue Boilermakers",
+    "Ole Miss Rebels",
+    "Kentucky Wildcats",
+    "Texas Tech Red Raiders",
+    "Alabama Crimson Tide",
+    "Tennessee Volunteers",
+    "Michigan State Spartans"
+  ],
+  "updated": "2026-08-24 08:31 UTC"
 }

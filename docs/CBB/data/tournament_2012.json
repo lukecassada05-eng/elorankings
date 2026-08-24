@@ -2,8 +2,1113 @@
   "year": 2012,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "Vermont Catamounts",
+      "loser": "Lamar Cardinals",
+      "winner_score": 71,
+      "loser_score": 59,
+      "date": "2012-03-14",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "South Florida Bulls",
+      "loser": "California Golden Bears",
+      "winner_score": 65,
+      "loser_score": 54,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Western Kentucky Hilltoppers",
+      "winner_score": 81,
+      "loser_score": 66,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT LOUISVILLE KY"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "UNC Asheville Bulldogs",
+      "winner_score": 72,
+      "loser_score": 65,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT PITTSBURGH"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Loyola Maryland Greyhounds",
+      "winner_score": 78,
+      "loser_score": 59,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT PITTSBURGH"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "South Dakota State Jackrabbits",
+      "winner_score": 68,
+      "loser_score": 60,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT ALBUQUERQUE NM"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "BYU Cougars",
+      "winner_score": 88,
+      "loser_score": 68,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT LOUISVILLE KY"
+    },
+    {
+      "winner": "Murray State Racers",
+      "loser": "Colorado State Rams",
+      "winner_score": 58,
+      "loser_score": 41,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT LOUISVILLE KY"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Montana Grizzlies",
+      "winner_score": 73,
+      "loser_score": 49,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT ALBUQUERQUE NM"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "New Mexico State Aggies",
+      "winner_score": 79,
+      "loser_score": 66,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PORTLAND OR"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Davidson Wildcats",
+      "winner_score": 69,
+      "loser_score": 62,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT PORTLAND OR"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Wichita State Shockers",
+      "winner_score": 62,
+      "loser_score": 59,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PORTLAND OR"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "Harvard Crimson",
+      "winner_score": 79,
+      "loser_score": 70,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT ALBUQUERQUE NM"
+    },
+    {
+      "winner": "New Mexico Lobos",
+      "loser": "Long Beach State Beach",
+      "winner_score": 75,
+      "loser_score": 68,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT PORTLAND OR"
+    },
+    {
+      "winner": "Colorado Buffaloes",
+      "loser": "UNLV Rebels",
+      "winner_score": 68,
+      "loser_score": 64,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT ALBUQUERQUE NM"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 70,
+      "loser_score": 64,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT PITTSBURGH"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 77,
+      "loser_score": 54,
+      "date": "2012-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT PITTSBURGH"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "UConn Huskies",
+      "winner_score": 77,
+      "loser_score": 64,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT LOUISVILLE KY"
+    },
+    {
+      "winner": "Norfolk State Spartans",
+      "loser": "Missouri Tigers",
+      "winner_score": 86,
+      "loser_score": 84,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT OMAHA NE"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Vermont Catamounts",
+      "winner_score": 77,
+      "loser_score": 58,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT GREENSBORO NC"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Long Island University Sharks",
+      "winner_score": 89,
+      "loser_score": 67,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT COLUMBUS OH"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Detroit Mercy Titans",
+      "winner_score": 65,
+      "loser_score": 50,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT OMAHA NE"
+    },
+    {
+      "winner": "Lehigh Mountain Hawks",
+      "loser": "Duke Blue Devils",
+      "winner_score": 75,
+      "loser_score": 70,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT GREENSBORO NC"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "St. Bonaventure Bonnies",
+      "winner_score": 66,
+      "loser_score": 63,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT NASHVILLE TN"
+    },
+    {
+      "winner": "Ohio Bobcats",
+      "loser": "Michigan Wolverines",
+      "winner_score": 65,
+      "loser_score": 60,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT NASHVILLE TN"
+    },
+    {
+      "winner": "Georgetown Hoyas",
+      "loser": "Belmont Bruins",
+      "winner_score": 74,
+      "loser_score": 59,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT COLUMBUS OH"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 58,
+      "loser_score": 57,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT GREENSBORO NC"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 79,
+      "loser_score": 65,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT COLUMBUS OH"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 72,
+      "loser_score": 69,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT OMAHA NE"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 71,
+      "loser_score": 45,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT OMAHA NE"
+    },
+    {
+      "winner": "Cincinnati Bearcats",
+      "loser": "Texas Longhorns",
+      "winner_score": 65,
+      "loser_score": 59,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT NASHVILLE TN"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "Memphis Tigers",
+      "winner_score": 61,
+      "loser_score": 54,
+      "date": "2012-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT COLUMBUS OH"
+    },
+    {
+      "winner": "South Florida Bulls",
+      "loser": "Temple Owls",
+      "winner_score": 58,
+      "loser_score": 44,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT NASHVILLE TN"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Notre Dame Fighting Irish",
+      "winner_score": 67,
+      "loser_score": 63,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT GREENSBORO NC"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 87,
+      "loser_score": 71,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT LOUISVILLE KY"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 75,
+      "loser_score": 59,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT PITTSBURGH"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 73,
+      "loser_score": 66,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT PITTSBURGH"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Colorado Buffaloes",
+      "winner_score": 80,
+      "loser_score": 63,
+      "date": "2012-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT ALBUQUERQUE NM"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "Murray State Racers",
+      "winner_score": 62,
+      "loser_score": 53,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT LOUISVILLE KY"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Vanderbilt Commodores",
+      "winner_score": 60,
+      "loser_score": 57,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT ALBUQUERQUE NM"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "VCU Rams",
+      "winner_score": 63,
+      "loser_score": 61,
+      "date": "2012-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT PORTLAND OR"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "New Mexico Lobos",
+      "winner_score": 59,
+      "loser_score": 56,
+      "date": "2012-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT PORTLAND OR"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Creighton Bluejays",
+      "winner_score": 87,
+      "loser_score": 73,
+      "date": "2012-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT GREENSBORO NC"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Saint Louis Billikens",
+      "winner_score": 65,
+      "loser_score": 61,
+      "date": "2012-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT COLUMBUS OH"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 63,
+      "loser_score": 60,
+      "date": "2012-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT OMAHA NE"
+    },
+    {
+      "winner": "Cincinnati Bearcats",
+      "loser": "Florida State Seminoles",
+      "winner_score": 62,
+      "loser_score": 56,
+      "date": "2012-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT NASHVILLE TN"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "Georgetown Hoyas",
+      "winner_score": 66,
+      "loser_score": 63,
+      "date": "2012-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT COLUMBUS OH"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Norfolk State Spartans",
+      "winner_score": 84,
+      "loser_score": 50,
+      "date": "2012-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT OMAHA NE"
+    },
+    {
+      "winner": "Ohio Bobcats",
+      "loser": "South Florida Bulls",
+      "winner_score": 62,
+      "loser_score": 56,
+      "date": "2012-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT NASHVILLE TN"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Lehigh Mountain Hawks",
+      "winner_score": 70,
+      "loser_score": 58,
+      "date": "2012-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT GREENSBORO NC"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Xavier Musketeers",
+      "winner_score": 75,
+      "loser_score": 70,
+      "date": "2012-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT ATLANTA"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Ohio Bobcats",
+      "winner_score": 73,
+      "loser_score": 65,
+      "date": "2012-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST. LOUIS"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Indiana Hoosiers",
+      "winner_score": 102,
+      "loser_score": 90,
+      "date": "2012-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT ATLANTA"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "NC State Wolfpack",
+      "winner_score": 60,
+      "loser_score": 57,
+      "date": "2012-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST. LOUIS"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Florida Gators",
+      "winner_score": 72,
+      "loser_score": 68,
+      "date": "2012-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT PHOENIX"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Syracuse Orange",
+      "winner_score": 77,
+      "loser_score": 70,
+      "date": "2012-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT BOSTON"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Baylor Bears",
+      "winner_score": 82,
+      "loser_score": 70,
+      "date": "2012-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT ATLANTA"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 80,
+      "loser_score": 67,
+      "date": "2012-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT ST. LOUIS"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Vermont Catamounts",
+      "t2": "Lamar Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Lamar Cardinals",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT DAYTON OH",
+      "date": "2012-03-14"
+    },
+    {
+      "t1": "South Florida Bulls",
+      "t2": "California Golden Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "California Golden Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT DAYTON OH",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Western Kentucky Hilltoppers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Western Kentucky Hilltoppers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT LOUISVILLE KY",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "UNC Asheville Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNC Asheville Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT PITTSBURGH",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "South Dakota State Jackrabbits",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Dakota State Jackrabbits",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT ALBUQUERQUE NM",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "BYU Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "BYU Cougars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT LOUISVILLE KY",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Colorado State Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado State Rams",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT LOUISVILLE KY",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Montana Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana Grizzlies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT ALBUQUERQUE NM",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Davidson Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Davidson Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT PORTLAND OR",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Wichita State Shockers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wichita State Shockers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PORTLAND OR",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "Harvard Crimson",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Harvard Crimson",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT ALBUQUERQUE NM",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "New Mexico Lobos",
+      "t2": "Long Beach State Beach",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Long Beach State Beach",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT PORTLAND OR",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Miss Golden Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT PITTSBURGH",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "West Virginia Mountaineers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT PITTSBURGH",
+      "date": "2012-03-15"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Loyola Maryland Greyhounds",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Loyola Maryland Greyhounds",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT PITTSBURGH",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "New Mexico State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico State Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PORTLAND OR",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Colorado Buffaloes",
+      "t2": "UNLV Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNLV Rebels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT ALBUQUERQUE NM",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UConn Huskies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT LOUISVILLE KY",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Norfolk State Spartans",
+      "t2": "Missouri Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Missouri Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT OMAHA NE",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Vermont Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vermont Catamounts",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT GREENSBORO NC",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Lehigh Mountain Hawks",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT GREENSBORO NC",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "St. Bonaventure Bonnies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. Bonaventure Bonnies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT NASHVILLE TN",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Ohio Bobcats",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT NASHVILLE TN",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Georgetown Hoyas",
+      "t2": "Belmont Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Belmont Bruins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT COLUMBUS OH",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama Crimson Tide",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT GREENSBORO NC",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT COLUMBUS OH",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT OMAHA NE",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Cavaliers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT OMAHA NE",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Cincinnati Bearcats",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT NASHVILLE TN",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "Memphis Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Memphis Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT COLUMBUS OH",
+      "date": "2012-03-16"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Long Island University Sharks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT COLUMBUS OH",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Detroit Mercy Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Detroit Mercy Titans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT OMAHA NE",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "South Florida Bulls",
+      "t2": "Temple Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Temple Owls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT NASHVILLE TN",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Notre Dame Fighting Irish",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Notre Dame Fighting Irish",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT GREENSBORO NC",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT LOUISVILLE KY",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas State Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT PITTSBURGH",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT PITTSBURGH",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "Murray State Racers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Murray State Racers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT LOUISVILLE KY",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vanderbilt Commodores",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT ALBUQUERQUE NM",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT PORTLAND OR",
+      "date": "2012-03-17"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Colorado Buffaloes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado Buffaloes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT ALBUQUERQUE NM",
+      "date": "2012-03-18"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "New Mexico Lobos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico Lobos",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT PORTLAND OR",
+      "date": "2012-03-18"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT GREENSBORO NC",
+      "date": "2012-03-18"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Saint Louis Billikens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Louis Billikens",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT COLUMBUS OH",
+      "date": "2012-03-18"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Georgetown Hoyas",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgetown Hoyas",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT COLUMBUS OH",
+      "date": "2012-03-18"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Norfolk State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Norfolk State Spartans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT OMAHA NE",
+      "date": "2012-03-18"
+    },
+    {
+      "t1": "Ohio Bobcats",
+      "t2": "South Florida Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Florida Bulls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT NASHVILLE TN",
+      "date": "2012-03-18"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT OMAHA NE",
+      "date": "2012-03-19"
+    },
+    {
+      "t1": "Cincinnati Bearcats",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida State Seminoles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT NASHVILLE TN",
+      "date": "2012-03-19"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Lehigh Mountain Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Lehigh Mountain Hawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT GREENSBORO NC",
+      "date": "2012-03-19"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT ATLANTA",
+      "date": "2012-03-23"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Ohio Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio Bobcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST. LOUIS",
+      "date": "2012-03-23"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Indiana Hoosiers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT ATLANTA",
+      "date": "2012-03-24"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NC State Wolfpack",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST. LOUIS",
+      "date": "2012-03-24"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gators",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT PHOENIX",
+      "date": "2012-03-24"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT BOSTON",
+      "date": "2012-03-24"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT ATLANTA",
+      "date": "2012-03-25"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT ST. LOUIS",
+      "date": "2012-03-25"
+    }
+  ],
+  "eliminated": [
+    "Lamar Cardinals",
+    "California Golden Bears",
+    "Western Kentucky Hilltoppers",
+    "UNC Asheville Bulldogs",
+    "Loyola Maryland Greyhounds",
+    "South Dakota State Jackrabbits",
+    "BYU Cougars",
+    "Colorado State Rams",
+    "Montana Grizzlies",
+    "New Mexico State Aggies",
+    "Davidson Wildcats",
+    "Wichita State Shockers",
+    "Harvard Crimson",
+    "Long Beach State Beach",
+    "UNLV Rebels",
+    "Southern Miss Golden Eagles",
+    "West Virginia Mountaineers",
+    "UConn Huskies",
+    "Missouri Tigers",
+    "Vermont Catamounts",
+    "Long Island University Sharks",
+    "Detroit Mercy Titans",
+    "Duke Blue Devils",
+    "St. Bonaventure Bonnies",
+    "Michigan Wolverines",
+    "Belmont Bruins",
+    "Alabama Crimson Tide",
+    "San Diego State Aztecs",
+    "Saint Mary's Gaels",
+    "Virginia Cavaliers",
+    "Texas Longhorns",
+    "Memphis Tigers",
+    "Temple Owls",
+    "Notre Dame Fighting Irish",
+    "Iowa State Cyclones",
+    "Kansas State Wildcats",
+    "Gonzaga Bulldogs",
+    "Colorado Buffaloes",
+    "Murray State Racers",
+    "Vanderbilt Commodores",
+    "VCU Rams",
+    "New Mexico Lobos",
+    "Creighton Bluejays",
+    "Saint Louis Billikens",
+    "Purdue Boilermakers",
+    "Florida State Seminoles",
+    "Georgetown Hoyas",
+    "Norfolk State Spartans",
+    "South Florida Bulls",
+    "Lehigh Mountain Hawks",
+    "Xavier Musketeers",
+    "Ohio Bobcats",
+    "Indiana Hoosiers",
+    "NC State Wolfpack",
+    "Florida Gators",
+    "Syracuse Orange",
+    "Baylor Bears",
+    "North Carolina Tar Heels"
+  ],
+  "updated": "2026-08-24 08:30 UTC"
 }

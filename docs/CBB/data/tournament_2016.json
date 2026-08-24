@@ -2,8 +2,1113 @@
   "year": 2016,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "Holy Cross Crusaders",
+      "loser": "Southern Jaguars",
+      "winner_score": 59,
+      "loser_score": 55,
+      "date": "2016-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - FIRST FOUR"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Tulsa Golden Hurricane",
+      "winner_score": 67,
+      "loser_score": 62,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - FIRST FOUR"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "UNC Wilmington Seahawks",
+      "winner_score": 93,
+      "loser_score": 85,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Butler Bulldogs",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 71,
+      "loser_score": 61,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Colorado Buffaloes",
+      "winner_score": 74,
+      "loser_score": 67,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Iona Gaels",
+      "winner_score": 94,
+      "loser_score": 81,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Yale Bulldogs",
+      "loser": "Baylor Bears",
+      "winner_score": 79,
+      "loser_score": 75,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Hampton Pirates",
+      "winner_score": 81,
+      "loser_score": 45,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Austin Peay Governors",
+      "winner_score": 105,
+      "loser_score": 79,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Little Rock Trojans",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 85,
+      "loser_score": 83,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Buffalo Bulls",
+      "winner_score": 79,
+      "loser_score": 72,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "Chattanooga Mocs",
+      "winner_score": 99,
+      "loser_score": 74,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Florida Gulf Coast Eagles",
+      "winner_score": 83,
+      "loser_score": 67,
+      "date": "2016-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Utah Utes",
+      "loser": "Fresno State Bulldogs",
+      "winner_score": 80,
+      "loser_score": 69,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Wichita State Shockers",
+      "loser": "Arizona Wildcats",
+      "winner_score": 65,
+      "loser_score": 55,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Stony Brook Seawolves",
+      "winner_score": 85,
+      "loser_score": 57,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Providence Friars",
+      "loser": "USC Trojans",
+      "winner_score": 70,
+      "loser_score": 69,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Seton Hall Pirates",
+      "winner_score": 68,
+      "loser_score": 52,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Dayton Flyers",
+      "winner_score": 70,
+      "loser_score": 51,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "UNC Asheville Bulldogs",
+      "winner_score": 86,
+      "loser_score": 56,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Oregon State Beavers",
+      "winner_score": 75,
+      "loser_score": 67,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Hawai'i Rainbow Warriors",
+      "loser": "California Golden Bears",
+      "winner_score": 77,
+      "loser_score": 66,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Middle Tennessee Blue Raiders",
+      "loser": "Michigan State Spartans",
+      "winner_score": 90,
+      "loser_score": 81,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Iowa Hawkeyes",
+      "loser": "Temple Owls",
+      "winner_score": 72,
+      "loser_score": 70,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Cal State Bakersfield Roadrunners",
+      "winner_score": 82,
+      "loser_score": 68,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Maryland Terrapins",
+      "loser": "South Dakota State Jackrabbits",
+      "winner_score": 79,
+      "loser_score": 74,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Pittsburgh Panthers",
+      "winner_score": 47,
+      "loser_score": 43,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Stephen F. Austin Lumberjacks",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 70,
+      "loser_score": 56,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Green Bay Phoenix",
+      "winner_score": 92,
+      "loser_score": 65,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Holy Cross Crusaders",
+      "winner_score": 91,
+      "loser_score": 52,
+      "date": "2016-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Weber State Wildcats",
+      "winner_score": 71,
+      "loser_score": 53,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Northern Iowa Panthers",
+      "loser": "Texas Longhorns",
+      "winner_score": 75,
+      "loser_score": 72,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Notre Dame Fighting Irish",
+      "loser": "Michigan Wolverines",
+      "winner_score": 70,
+      "loser_score": 63,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Saint Joseph's Hawks",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 78,
+      "loser_score": 76,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Wichita State Shockers",
+      "winner_score": 65,
+      "loser_score": 57,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Yale Bulldogs",
+      "winner_score": 71,
+      "loser_score": 64,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 73,
+      "loser_score": 67,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Little Rock Trojans",
+      "winner_score": 78,
+      "loser_score": 61,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Butler Bulldogs",
+      "winner_score": 77,
+      "loser_score": 69,
+      "date": "2016-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "UConn Huskies",
+      "winner_score": 73,
+      "loser_score": 61,
+      "date": "2016-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Utah Utes",
+      "winner_score": 82,
+      "loser_score": 59,
+      "date": "2016-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Providence Friars",
+      "winner_score": 85,
+      "loser_score": 66,
+      "date": "2016-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Iowa Hawkeyes",
+      "winner_score": 87,
+      "loser_score": 68,
+      "date": "2016-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Notre Dame Fighting Irish",
+      "loser": "Stephen F. Austin Lumberjacks",
+      "winner_score": 76,
+      "loser_score": 75,
+      "date": "2016-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "VCU Rams",
+      "winner_score": 85,
+      "loser_score": 81,
+      "date": "2016-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Middle Tennessee Blue Raiders",
+      "winner_score": 75,
+      "loser_score": 50,
+      "date": "2016-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Maryland Terrapins",
+      "loser": "Hawai'i Rainbow Warriors",
+      "winner_score": 73,
+      "loser_score": 60,
+      "date": "2016-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Northern Iowa Panthers",
+      "winner_score": 92,
+      "loser_score": 88,
+      "date": "2016-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Xavier Musketeers",
+      "winner_score": 66,
+      "loser_score": 63,
+      "date": "2016-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Saint Joseph's Hawks",
+      "winner_score": 69,
+      "loser_score": 64,
+      "date": "2016-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 84,
+      "loser_score": 71,
+      "date": "2016-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Notre Dame Fighting Irish",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 61,
+      "loser_score": 56,
+      "date": "2016-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 63,
+      "loser_score": 60,
+      "date": "2016-03-26",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Indiana Hoosiers",
+      "winner_score": 101,
+      "loser_score": 86,
+      "date": "2016-03-26",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Oregon Ducks",
+      "winner_score": 80,
+      "loser_score": 68,
+      "date": "2016-03-26",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 64,
+      "loser_score": 59,
+      "date": "2016-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 68,
+      "loser_score": 62,
+      "date": "2016-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Notre Dame Fighting Irish",
+      "winner_score": 88,
+      "loser_score": 74,
+      "date": "2016-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Holy Cross Crusaders",
+      "t2": "Southern Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Jaguars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - FIRST FOUR",
+      "date": "2016-03-16"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Tulsa Golden Hurricane",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tulsa Golden Hurricane",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - FIRST FOUR",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "UNC Wilmington Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNC Wilmington Seahawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Butler Bulldogs",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Colorado Buffaloes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado Buffaloes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Iona Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iona Gaels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Yale Bulldogs",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Hampton Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Hampton Pirates",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Austin Peay Governors",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Austin Peay Governors",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Little Rock Trojans",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Buffalo Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Buffalo Bulls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "Chattanooga Mocs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chattanooga Mocs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Florida Gulf Coast Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gulf Coast Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2016-03-17"
+    },
+    {
+      "t1": "Utah Utes",
+      "t2": "Fresno State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Fresno State Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Wichita State Shockers",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Stony Brook Seawolves",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Stony Brook Seawolves",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Providence Friars",
+      "t2": "USC Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "USC Trojans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Seton Hall Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seton Hall Pirates",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dayton Flyers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "UNC Asheville Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNC Asheville Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon State Beavers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Hawai'i Rainbow Warriors",
+      "t2": "California Golden Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "California Golden Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Middle Tennessee Blue Raiders",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Temple Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Temple Owls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Cal State Bakersfield Roadrunners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cal State Bakersfield Roadrunners",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "South Dakota State Jackrabbits",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Dakota State Jackrabbits",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Pittsburgh Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Stephen F. Austin Lumberjacks",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "West Virginia Mountaineers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Green Bay Phoenix",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Green Bay Phoenix",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Holy Cross Crusaders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Holy Cross Crusaders",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2016-03-18"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Weber State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Weber State Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Northern Iowa Panthers",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Saint Joseph's Hawks",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cincinnati Bearcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Wichita State Shockers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wichita State Shockers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Yale Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Yale Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Little Rock Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Little Rock Trojans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Butler Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Butler Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2016-03-19"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UConn Huskies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2016-03-20"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Utah Utes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah Utes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2016-03-20"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Providence Friars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Providence Friars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2016-03-20"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa Hawkeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2016-03-20"
+    },
+    {
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Stephen F. Austin Lumberjacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Stephen F. Austin Lumberjacks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2016-03-20"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2016-03-20"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Middle Tennessee Blue Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Middle Tennessee Blue Raiders",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2016-03-20"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "Hawai'i Rainbow Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Hawai'i Rainbow Warriors",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2016-03-20"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Northern Iowa Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Iowa Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2016-03-21"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2016-03-21"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Saint Joseph's Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Joseph's Hawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2016-03-21"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2016-03-25"
+    },
+    {
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16",
+      "date": "2016-03-25"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2016-03-26"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Indiana Hoosiers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16",
+      "date": "2016-03-26"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon Ducks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8",
+      "date": "2016-03-26"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8",
+      "date": "2016-03-27"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Cavaliers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8",
+      "date": "2016-03-27"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Notre Dame Fighting Irish",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Notre Dame Fighting Irish",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8",
+      "date": "2016-03-28"
+    }
+  ],
+  "eliminated": [
+    "Southern Jaguars",
+    "Tulsa Golden Hurricane",
+    "UNC Wilmington Seahawks",
+    "Texas Tech Red Raiders",
+    "Colorado Buffaloes",
+    "Iona Gaels",
+    "Baylor Bears",
+    "Hampton Pirates",
+    "Austin Peay Governors",
+    "Purdue Boilermakers",
+    "Buffalo Bulls",
+    "Chattanooga Mocs",
+    "Florida Gulf Coast Eagles",
+    "Fresno State Bulldogs",
+    "Arizona Wildcats",
+    "Stony Brook Seawolves",
+    "USC Trojans",
+    "Seton Hall Pirates",
+    "Dayton Flyers",
+    "UNC Asheville Bulldogs",
+    "Oregon State Beavers",
+    "California Golden Bears",
+    "Michigan State Spartans",
+    "Temple Owls",
+    "Cal State Bakersfield Roadrunners",
+    "South Dakota State Jackrabbits",
+    "Pittsburgh Panthers",
+    "West Virginia Mountaineers",
+    "Green Bay Phoenix",
+    "Holy Cross Crusaders",
+    "Weber State Wildcats",
+    "Texas Longhorns",
+    "Michigan Wolverines",
+    "Cincinnati Bearcats",
+    "Wichita State Shockers",
+    "Yale Bulldogs",
+    "Kentucky Wildcats",
+    "Little Rock Trojans",
+    "Butler Bulldogs",
+    "UConn Huskies",
+    "Utah Utes",
+    "Providence Friars",
+    "Iowa Hawkeyes",
+    "Stephen F. Austin Lumberjacks",
+    "VCU Rams",
+    "Middle Tennessee Blue Raiders",
+    "Hawai'i Rainbow Warriors",
+    "Northern Iowa Panthers",
+    "Xavier Musketeers",
+    "Saint Joseph's Hawks",
+    "Iowa State Cyclones",
+    "Wisconsin Badgers",
+    "Gonzaga Bulldogs",
+    "Indiana Hoosiers",
+    "Oregon Ducks",
+    "Kansas Jayhawks",
+    "Virginia Cavaliers",
+    "Notre Dame Fighting Irish"
+  ],
+  "updated": "2026-08-24 08:30 UTC"
 }

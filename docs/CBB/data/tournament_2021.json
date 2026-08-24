@@ -2,8 +2,1151 @@
   "year": 2021,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "St. Bonaventure Bonnies",
+      "loser": "VCU Rams",
+      "winner_score": 74,
+      "loser_score": 65,
+      "date": "2021-03-14",
+      "round": "Atlantic 10 Championship - Final"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Virginia Tech Hokies",
+      "winner_score": 75,
+      "loser_score": 70,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Colgate Raiders",
+      "winner_score": 85,
+      "loser_score": 68,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Drexel Dragons",
+      "winner_score": 78,
+      "loser_score": 49,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Utah State Aggies",
+      "winner_score": 65,
+      "loser_score": 53,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Oral Roberts Golden Eagles",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 75,
+      "loser_score": 72,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Hartford Hawks",
+      "winner_score": 79,
+      "loser_score": 55,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Loyola Chicago Ramblers",
+      "loser": "Georgia Tech Yellow Jackets",
+      "winner_score": 71,
+      "loser_score": 60,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Oregon State Beavers",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 70,
+      "loser_score": 56,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Liberty Flames",
+      "winner_score": 69,
+      "loser_score": 60,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 85,
+      "loser_score": 62,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Cleveland State Vikings",
+      "winner_score": 87,
+      "loser_score": 56,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "North Texas Mean Green",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 78,
+      "loser_score": 69,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Rutgers Scarlet Knights",
+      "loser": "Clemson Tigers",
+      "winner_score": 60,
+      "loser_score": 56,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 78,
+      "loser_score": 62,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Winthrop Eagles",
+      "winner_score": 73,
+      "loser_score": 63,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Morehead State Eagles",
+      "winner_score": 84,
+      "loser_score": 67,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Colorado Buffaloes",
+      "loser": "Georgetown Hoyas",
+      "winner_score": 96,
+      "loser_score": 73,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "UNC Greensboro Spartans",
+      "winner_score": 64,
+      "loser_score": 54,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Eastern Washington Eagles",
+      "winner_score": 93,
+      "loser_score": 84,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "LSU Tigers",
+      "loser": "St. Bonaventure Bonnies",
+      "winner_score": 76,
+      "loser_score": 61,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Texas Southern Tigers",
+      "winner_score": 82,
+      "loser_score": 66,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "UC Santa Barbara Gauchos",
+      "winner_score": 63,
+      "loser_score": 62,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Iona Gaels",
+      "winner_score": 68,
+      "loser_score": 55,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "USC Trojans",
+      "loser": "Drake Bulldogs",
+      "winner_score": 72,
+      "loser_score": 56,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Iowa Hawkeyes",
+      "loser": "Grand Canyon Lopes",
+      "winner_score": 86,
+      "loser_score": 74,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Maryland Terrapins",
+      "loser": "UConn Huskies",
+      "winner_score": 63,
+      "loser_score": 54,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Ohio Bobcats",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 62,
+      "loser_score": 58,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Missouri Tigers",
+      "winner_score": 72,
+      "loser_score": 68,
+      "date": "2021-03-20",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Norfolk State Spartans",
+      "winner_score": 98,
+      "loser_score": 55,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "BYU Cougars",
+      "winner_score": 73,
+      "loser_score": 62,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Abilene Christian Wildcats",
+      "loser": "Texas Longhorns",
+      "winner_score": 53,
+      "loser_score": 52,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Loyola Chicago Ramblers",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 71,
+      "loser_score": 58,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 76,
+      "loser_score": 63,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 75,
+      "loser_score": 72,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 68,
+      "loser_score": 66,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Rutgers Scarlet Knights",
+      "winner_score": 63,
+      "loser_score": 60,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Oral Roberts Golden Eagles",
+      "loser": "Florida Gators",
+      "winner_score": 81,
+      "loser_score": 78,
+      "date": "2021-03-21",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "North Texas Mean Green",
+      "winner_score": 84,
+      "loser_score": 61,
+      "date": "2021-03-22",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Oregon State Beavers",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 80,
+      "loser_score": 70,
+      "date": "2021-03-22",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Iowa Hawkeyes",
+      "winner_score": 95,
+      "loser_score": 80,
+      "date": "2021-03-22",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 87,
+      "loser_score": 71,
+      "date": "2021-03-22",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Abilene Christian Wildcats",
+      "winner_score": 67,
+      "loser_score": 47,
+      "date": "2021-03-22",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Ohio Bobcats",
+      "winner_score": 72,
+      "loser_score": 58,
+      "date": "2021-03-22",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "LSU Tigers",
+      "winner_score": 86,
+      "loser_score": 78,
+      "date": "2021-03-22",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Colorado Buffaloes",
+      "winner_score": 71,
+      "loser_score": 53,
+      "date": "2021-03-22",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Maryland Terrapins",
+      "winner_score": 96,
+      "loser_score": 77,
+      "date": "2021-03-23",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "USC Trojans",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 85,
+      "loser_score": 51,
+      "date": "2021-03-23",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Oregon State Beavers",
+      "loser": "Loyola Chicago Ramblers",
+      "winner_score": 65,
+      "loser_score": 58,
+      "date": "2021-03-27",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Villanova Wildcats",
+      "winner_score": 62,
+      "loser_score": 51,
+      "date": "2021-03-27",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Oral Roberts Golden Eagles",
+      "winner_score": 72,
+      "loser_score": 70,
+      "date": "2021-03-27",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Syracuse Orange",
+      "winner_score": 62,
+      "loser_score": 46,
+      "date": "2021-03-28",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Creighton Bluejays",
+      "winner_score": 83,
+      "loser_score": 65,
+      "date": "2021-03-28",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Florida State Seminoles",
+      "winner_score": 76,
+      "loser_score": 58,
+      "date": "2021-03-28",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 88,
+      "loser_score": 78,
+      "date": "2021-03-28",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "USC Trojans",
+      "loser": "Oregon Ducks",
+      "winner_score": 82,
+      "loser_score": 68,
+      "date": "2021-03-29",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Oregon State Beavers",
+      "winner_score": 67,
+      "loser_score": 61,
+      "date": "2021-03-29",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 81,
+      "loser_score": 72,
+      "date": "2021-03-30",
+      "round": "Men's Basketball Championship - South Region - Elite 8"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "USC Trojans",
+      "winner_score": 85,
+      "loser_score": 66,
+      "date": "2021-03-30",
+      "round": "Men's Basketball Championship - West Region - Elite 8"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Michigan Wolverines",
+      "winner_score": 51,
+      "loser_score": 49,
+      "date": "2021-03-31",
+      "round": "Men's Basketball Championship - East Region - Elite 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "St. Bonaventure Bonnies",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "Atlantic 10 Championship - Final",
+      "date": "2021-03-14"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Virginia Tech Hokies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Tech Hokies",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Colgate Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colgate Raiders",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Drexel Dragons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Drexel Dragons",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Utah State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah State Aggies",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Oral Roberts Golden Eagles",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Hartford Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Hartford Hawks",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Loyola Chicago Ramblers",
+      "t2": "Georgia Tech Yellow Jackets",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia Tech Yellow Jackets",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Liberty Flames",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Cleveland State Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cleveland State Vikings",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "North Texas Mean Green",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "Rutgers Scarlet Knights",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Clemson Tigers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Winthrop Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Winthrop Eagles",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Morehead State Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Morehead State Eagles",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Colorado Buffaloes",
+      "t2": "Georgetown Hoyas",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgetown Hoyas",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "UNC Greensboro Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNC Greensboro Spartans",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Eastern Washington Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eastern Washington Eagles",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "St. Bonaventure Bonnies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. Bonaventure Bonnies",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Texas Southern Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Southern Tigers",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UC Santa Barbara Gauchos",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Iona Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iona Gaels",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "USC Trojans",
+      "t2": "Drake Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Drake Bulldogs",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Grand Canyon Lopes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Grand Canyon Lopes",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UConn Huskies",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Ohio Bobcats",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Cavaliers",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Missouri Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Missouri Tigers",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2021-03-20"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Norfolk State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Norfolk State Spartans",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "BYU Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "BYU Cougars",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "Abilene Christian Wildcats",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "Loyola Chicago Ramblers",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Illinois Fighting Illini",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "West Virginia Mountaineers",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Rutgers Scarlet Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rutgers Scarlet Knights",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "Oral Roberts Golden Eagles",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gators",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2021-03-21"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "North Texas Mean Green",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Texas Mean Green",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2021-03-22"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma State Cowboys",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2021-03-22"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa Hawkeyes",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2021-03-22"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma Sooners",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2021-03-22"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Abilene Christian Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Abilene Christian Wildcats",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2021-03-22"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Ohio Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio Bobcats",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2021-03-22"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "LSU Tigers",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2021-03-22"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Colorado Buffaloes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado Buffaloes",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2021-03-22"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Maryland Terrapins",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2021-03-23"
+    },
+    {
+      "t1": "USC Trojans",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2021-03-23"
+    },
+    {
+      "t1": "Oregon State Beavers",
+      "t2": "Loyola Chicago Ramblers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Loyola Chicago Ramblers",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2021-03-27"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Villanova Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Villanova Wildcats",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2021-03-27"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Oral Roberts Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oral Roberts Golden Eagles",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2021-03-27"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2021-03-28"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2021-03-28"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida State Seminoles",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2021-03-28"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama Crimson Tide",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2021-03-28"
+    },
+    {
+      "t1": "USC Trojans",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon Ducks",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2021-03-29"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Oregon State Beavers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon State Beavers",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8",
+      "date": "2021-03-29"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arkansas Razorbacks",
+      "round": "Men's Basketball Championship - South Region - Elite 8",
+      "date": "2021-03-30"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "USC Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "USC Trojans",
+      "round": "Men's Basketball Championship - West Region - Elite 8",
+      "date": "2021-03-30"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "Men's Basketball Championship - East Region - Elite 8",
+      "date": "2021-03-31"
+    }
+  ],
+  "eliminated": [
+    "VCU Rams",
+    "Virginia Tech Hokies",
+    "Colgate Raiders",
+    "Drexel Dragons",
+    "Utah State Aggies",
+    "Ohio State Buckeyes",
+    "Hartford Hawks",
+    "Georgia Tech Yellow Jackets",
+    "Tennessee Volunteers",
+    "Liberty Flames",
+    "North Carolina Tar Heels",
+    "Cleveland State Vikings",
+    "Purdue Boilermakers",
+    "Clemson Tigers",
+    "San Diego State Aztecs",
+    "Winthrop Eagles",
+    "Morehead State Eagles",
+    "Georgetown Hoyas",
+    "UNC Greensboro Spartans",
+    "Eastern Washington Eagles",
+    "St. Bonaventure Bonnies",
+    "Texas Southern Tigers",
+    "UC Santa Barbara Gauchos",
+    "Iona Gaels",
+    "Drake Bulldogs",
+    "Grand Canyon Lopes",
+    "UConn Huskies",
+    "Virginia Cavaliers",
+    "Missouri Tigers",
+    "Norfolk State Spartans",
+    "BYU Cougars",
+    "Texas Longhorns",
+    "Illinois Fighting Illini",
+    "Wisconsin Badgers",
+    "West Virginia Mountaineers",
+    "Texas Tech Red Raiders",
+    "Rutgers Scarlet Knights",
+    "Florida Gators",
+    "North Texas Mean Green",
+    "Oklahoma State Cowboys",
+    "Iowa Hawkeyes",
+    "Oklahoma Sooners",
+    "Abilene Christian Wildcats",
+    "Ohio Bobcats",
+    "LSU Tigers",
+    "Colorado Buffaloes",
+    "Maryland Terrapins",
+    "Kansas Jayhawks",
+    "Loyola Chicago Ramblers",
+    "Villanova Wildcats",
+    "Oral Roberts Golden Eagles",
+    "Syracuse Orange",
+    "Creighton Bluejays",
+    "Florida State Seminoles",
+    "Alabama Crimson Tide",
+    "Oregon Ducks",
+    "Oregon State Beavers",
+    "Arkansas Razorbacks",
+    "USC Trojans",
+    "Michigan Wolverines"
+  ],
+  "updated": "2026-08-24 08:31 UTC"
 }

@@ -2,8 +2,1971 @@
   "year": 2013,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "Charlotte 49ers",
+      "loser": "Richmond Spiders",
+      "winner_score": 68,
+      "loser_score": 63,
+      "date": "2013-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 1st ROUND"
+    },
+    {
+      "winner": "Georgetown Hoyas",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 62,
+      "loser_score": 43,
+      "date": "2013-03-14",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 73,
+      "loser_score": 66,
+      "date": "2013-03-14",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Southern Miss Golden Eagles",
+      "loser": "UAB Blazers",
+      "winner_score": 81,
+      "loser_score": 66,
+      "date": "2013-03-14",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Pittsburgh Panthers",
+      "winner_score": 62,
+      "loser_score": 59,
+      "date": "2013-03-14",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Butler Bulldogs",
+      "loser": "Dayton Flyers",
+      "winner_score": 73,
+      "loser_score": 67,
+      "date": "2013-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 1st ROUND"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 91,
+      "loser_score": 63,
+      "date": "2013-03-14",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "UTEP Miners",
+      "loser": "Houston Cougars",
+      "winner_score": 80,
+      "loser_score": 69,
+      "date": "2013-03-14",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Weber State Wildcats",
+      "loser": "Northern Arizona Lumberjacks",
+      "winner_score": 84,
+      "loser_score": 58,
+      "date": "2013-03-14",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Houston Christian Huskies",
+      "loser": "Utah Valley Wolverines",
+      "winner_score": 76,
+      "loser_score": 74,
+      "date": "2013-03-14",
+      "round": "GREAT WEST MEN'S CHAMPIONSHIP - 1st ROUND"
+    },
+    {
+      "winner": "Saint Joseph's Hawks",
+      "loser": "Xavier Musketeers",
+      "winner_score": 58,
+      "loser_score": 57,
+      "date": "2013-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 1st ROUND"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "Texas Longhorns",
+      "winner_score": 66,
+      "loser_score": 49,
+      "date": "2013-03-14",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Memphis Tigers",
+      "loser": "Tulane Green Wave",
+      "winner_score": 81,
+      "loser_score": 68,
+      "date": "2013-03-14",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Villanova Wildcats",
+      "winner_score": 74,
+      "loser_score": 55,
+      "date": "2013-03-14",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "North Dakota Fighting Hawks",
+      "loser": "Southern Utah Thunderbirds",
+      "winner_score": 69,
+      "loser_score": 52,
+      "date": "2013-03-14",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Massachusetts Minutemen",
+      "loser": "George Washington Revolutionaries",
+      "winner_score": 77,
+      "loser_score": 72,
+      "date": "2013-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 1st ROUND"
+    },
+    {
+      "winner": "Oklahoma State Cowboys",
+      "loser": "Baylor Bears",
+      "winner_score": 74,
+      "loser_score": 72,
+      "date": "2013-03-15",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Tulsa Golden Hurricane",
+      "loser": "East Carolina Pirates",
+      "winner_score": 79,
+      "loser_score": 72,
+      "date": "2013-03-15",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Notre Dame Fighting Irish",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 73,
+      "loser_score": 65,
+      "date": "2013-03-15",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Northern Colorado Bears",
+      "loser": "Montana State Bobcats",
+      "winner_score": 69,
+      "loser_score": 56,
+      "date": "2013-03-15",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "Charlotte 49ers",
+      "winner_score": 72,
+      "loser_score": 55,
+      "date": "2013-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Butler Bulldogs",
+      "loser": "La Salle Explorers",
+      "winner_score": 69,
+      "loser_score": 58,
+      "date": "2013-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Southern Miss Golden Eagles",
+      "loser": "UTEP Miners",
+      "winner_score": 85,
+      "loser_score": 67,
+      "date": "2013-03-15",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Houston Christian Huskies",
+      "loser": "NJIT Highlanders",
+      "winner_score": 62,
+      "loser_score": 61,
+      "date": "2013-03-15",
+      "round": "GREAT WEST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Saint Joseph's Hawks",
+      "winner_score": 82,
+      "loser_score": 79,
+      "date": "2013-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Memphis Tigers",
+      "loser": "Tulsa Golden Hurricane",
+      "winner_score": 85,
+      "loser_score": 74,
+      "date": "2013-03-15",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Georgetown Hoyas",
+      "winner_score": 58,
+      "loser_score": 55,
+      "date": "2013-03-15",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Weber State Wildcats",
+      "loser": "North Dakota Fighting Hawks",
+      "winner_score": 76,
+      "loser_score": 74,
+      "date": "2013-03-15",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 88,
+      "loser_score": 73,
+      "date": "2013-03-15",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Chicago State Cougars",
+      "loser": "UT Rio Grande Valley Vaqueros",
+      "winner_score": 63,
+      "loser_score": 55,
+      "date": "2013-03-16",
+      "round": "GREAT WEST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "New Mexico Lobos",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 60,
+      "loser_score": 50,
+      "date": "2013-03-16",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Massachusetts Minutemen",
+      "loser": "Temple Owls",
+      "winner_score": 79,
+      "loser_score": 74,
+      "date": "2013-03-16",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Notre Dame Fighting Irish",
+      "winner_score": 69,
+      "loser_score": 57,
+      "date": "2013-03-16",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 68,
+      "loser_score": 57,
+      "date": "2013-03-16",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Montana Grizzlies",
+      "loser": "Northern Colorado Bears",
+      "winner_score": 70,
+      "loser_score": 56,
+      "date": "2013-03-16",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "UNLV Rebels",
+      "loser": "Colorado State Rams",
+      "winner_score": 75,
+      "loser_score": 65,
+      "date": "2013-03-16",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "UAlbany Great Danes",
+      "loser": "Vermont Catamounts",
+      "winner_score": 53,
+      "loser_score": 49,
+      "date": "2013-03-16",
+      "round": "AMERICA EAST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Memphis Tigers",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 91,
+      "loser_score": 79,
+      "date": "2013-03-16",
+      "round": "C-USA MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "Butler Bulldogs",
+      "winner_score": 67,
+      "loser_score": 56,
+      "date": "2013-03-16",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Massachusetts Minutemen",
+      "winner_score": 71,
+      "loser_score": 62,
+      "date": "2013-03-16",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 70,
+      "loser_score": 54,
+      "date": "2013-03-16",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "New Mexico Lobos",
+      "loser": "UNLV Rebels",
+      "winner_score": 63,
+      "loser_score": 56,
+      "date": "2013-03-16",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Chicago State Cougars",
+      "loser": "Houston Christian Huskies",
+      "winner_score": 75,
+      "loser_score": 60,
+      "date": "2013-03-17",
+      "round": "GREAT WEST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Syracuse Orange",
+      "winner_score": 78,
+      "loser_score": 61,
+      "date": "2013-03-17",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Montana Grizzlies",
+      "loser": "Weber State Wildcats",
+      "winner_score": 67,
+      "loser_score": 64,
+      "date": "2013-03-17",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "VCU Rams",
+      "winner_score": 62,
+      "loser_score": 56,
+      "date": "2013-03-17",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "James Madison Dukes",
+      "loser": "Long Island University Sharks",
+      "winner_score": 68,
+      "loser_score": 55,
+      "date": "2013-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "La Salle Explorers",
+      "loser": "Boise State Broncos",
+      "winner_score": 80,
+      "loser_score": 71,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Southern Jaguars",
+      "winner_score": 64,
+      "loser_score": 58,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SALT LAKE CITY"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "North Carolina A&T Aggies",
+      "winner_score": 79,
+      "loser_score": 48,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT LEXINGTON KY"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Valparaiso Beacons",
+      "winner_score": 65,
+      "loser_score": 54,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT AUBURN HILLS MI"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "South Dakota State Jackrabbits",
+      "winner_score": 71,
+      "loser_score": 56,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT AUBURN HILLS MI"
+    },
+    {
+      "winner": "Harvard Crimson",
+      "loser": "New Mexico Lobos",
+      "winner_score": 68,
+      "loser_score": 62,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SALT LAKE CITY"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "New Mexico State Aggies",
+      "winner_score": 64,
+      "loser_score": 44,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT SAN JOSE CA"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "Davidson Wildcats",
+      "winner_score": 59,
+      "loser_score": 58,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT LEXINGTON KY"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Montana Grizzlies",
+      "winner_score": 81,
+      "loser_score": 34,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT SAN JOSE CA"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Oklahoma State Cowboys",
+      "winner_score": 68,
+      "loser_score": 55,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT SAN JOSE CA"
+    },
+    {
+      "winner": "Memphis Tigers",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 54,
+      "loser_score": 52,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT AUBURN HILLS MI"
+    },
+    {
+      "winner": "Wichita State Shockers",
+      "loser": "Pittsburgh Panthers",
+      "winner_score": 73,
+      "loser_score": 55,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SALT LAKE CITY"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Belmont Bruins",
+      "winner_score": 81,
+      "loser_score": 64,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SALT LAKE CITY"
+    },
+    {
+      "winner": "Butler Bulldogs",
+      "loser": "Bucknell Bison",
+      "winner_score": 68,
+      "loser_score": 56,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT LEXINGTON KY"
+    },
+    {
+      "winner": "California Golden Bears",
+      "loser": "UNLV Rebels",
+      "winner_score": 64,
+      "loser_score": 61,
+      "date": "2013-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT SAN JOSE CA"
+    },
+    {
+      "winner": "Colorado State Rams",
+      "loser": "Missouri Tigers",
+      "winner_score": 84,
+      "loser_score": 72,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT LEXINGTON KY"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "Akron Zips",
+      "winner_score": 88,
+      "loser_score": 42,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT AUBURN HILLS MI"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Western Kentucky Hilltoppers",
+      "winner_score": 64,
+      "loser_score": 57,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT KANSAS CITY MO"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "James Madison Dukes",
+      "winner_score": 83,
+      "loser_score": 62,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Pacific Tigers",
+      "winner_score": 78,
+      "loser_score": 49,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT AUSTIN TX"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "UAlbany Great Danes",
+      "winner_score": 73,
+      "loser_score": 61,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT PHILADELPHIA"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Iona Gaels",
+      "winner_score": 95,
+      "loser_score": 70,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Florida Gulf Coast Eagles",
+      "loser": "Georgetown Hoyas",
+      "winner_score": 78,
+      "loser_score": 68,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PHILADELPHIA"
+    },
+    {
+      "winner": "La Salle Explorers",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 63,
+      "loser_score": 61,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT KANSAS CITY MO"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Northwestern State Demons",
+      "winner_score": 79,
+      "loser_score": 47,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT AUSTIN TX"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 57,
+      "loser_score": 46,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT KANSAS CITY MO"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 67,
+      "loser_score": 63,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT PHILADELPHIA"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Notre Dame Fighting Irish",
+      "winner_score": 76,
+      "loser_score": 58,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Minnesota Golden Gophers",
+      "loser": "UCLA Bruins",
+      "winner_score": 83,
+      "loser_score": 63,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT AUSTIN TX"
+    },
+    {
+      "winner": "Temple Owls",
+      "loser": "NC State Wolfpack",
+      "winner_score": 76,
+      "loser_score": 72,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Colorado Buffaloes",
+      "winner_score": 57,
+      "loser_score": 49,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT AUSTIN TX"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Villanova Wildcats",
+      "winner_score": 78,
+      "loser_score": 71,
+      "date": "2013-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT KANSAS CITY MO"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 70,
+      "loser_score": 55,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PHILADELPHIA"
+    },
+    {
+      "winner": "Wichita State Shockers",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 76,
+      "loser_score": 70,
+      "date": "2013-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT SALT LAKE CITY"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Colorado State Rams",
+      "winner_score": 82,
+      "loser_score": 56,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT LEXINGTON KY"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Memphis Tigers",
+      "winner_score": 70,
+      "loser_score": 48,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT AUBURN HILLS MI"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "VCU Rams",
+      "winner_score": 78,
+      "loser_score": 53,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT AUBURN HILLS MI"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Saint Louis Billikens",
+      "winner_score": 74,
+      "loser_score": 57,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT SAN JOSE CA"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "Butler Bulldogs",
+      "winner_score": 74,
+      "loser_score": 72,
+      "date": "2013-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT LEXINGTON KY"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "California Golden Bears",
+      "winner_score": 66,
+      "loser_score": 60,
+      "date": "2013-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT SAN JOSE CA"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Harvard Crimson",
+      "winner_score": 74,
+      "loser_score": 51,
+      "date": "2013-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT SALT LAKE CITY"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 70,
+      "loser_score": 58,
+      "date": "2013-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT KANSAS CITY MO"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "Temple Owls",
+      "winner_score": 58,
+      "loser_score": 52,
+      "date": "2013-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 63,
+      "loser_score": 59,
+      "date": "2013-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT AUSTIN TX"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Creighton Bluejays",
+      "winner_score": 66,
+      "loser_score": 50,
+      "date": "2013-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT PHILADELPHIA"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 78,
+      "loser_score": 75,
+      "date": "2013-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Minnesota Golden Gophers",
+      "winner_score": 78,
+      "loser_score": 64,
+      "date": "2013-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT AUSTIN TX"
+    },
+    {
+      "winner": "Florida Gulf Coast Eagles",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 81,
+      "loser_score": 71,
+      "date": "2013-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT PHILADELPHIA"
+    },
+    {
+      "winner": "La Salle Explorers",
+      "loser": "Ole Miss Rebels",
+      "winner_score": 76,
+      "loser_score": 74,
+      "date": "2013-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT KANSAS CITY MO"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Oregon Ducks",
+      "winner_score": 77,
+      "loser_score": 69,
+      "date": "2013-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT INDIANAPOLIS"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 87,
+      "loser_score": 85,
+      "date": "2013-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT ARLINGTON TX"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Michigan State Spartans",
+      "winner_score": 71,
+      "loser_score": 61,
+      "date": "2013-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT INDIANAPOLIS"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Florida Gulf Coast Eagles",
+      "winner_score": 62,
+      "loser_score": 50,
+      "date": "2013-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT ARLINGTON TX"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 55,
+      "loser_score": 39,
+      "date": "2013-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT WASHINGTON"
+    },
+    {
+      "winner": "Wichita State Shockers",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 70,
+      "loser_score": 66,
+      "date": "2013-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT LOS ANGELES"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Florida Gators",
+      "winner_score": 79,
+      "loser_score": 59,
+      "date": "2013-03-31",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT ARLINGTON TX"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Duke Blue Devils",
+      "winner_score": 85,
+      "loser_score": 63,
+      "date": "2013-03-31",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT INDIANAPOLIS"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Charlotte 49ers",
+      "t2": "Richmond Spiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Richmond Spiders",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 1st ROUND",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Georgetown Hoyas",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cincinnati Bearcats",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma Sooners",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "UAB Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UAB Blazers",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Pittsburgh Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Panthers",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Butler Bulldogs",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dayton Flyers",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 1st ROUND",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "UTEP Miners",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Weber State Wildcats",
+      "t2": "Northern Arizona Lumberjacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Arizona Lumberjacks",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Houston Christian Huskies",
+      "t2": "Utah Valley Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah Valley Wolverines",
+      "round": "GREAT WEST MEN'S CHAMPIONSHIP - 1st ROUND",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Saint Joseph's Hawks",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 1st ROUND",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Tulane Green Wave",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tulane Green Wave",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Villanova Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Villanova Wildcats",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "North Dakota Fighting Hawks",
+      "t2": "Southern Utah Thunderbirds",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Utah Thunderbirds",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-14"
+    },
+    {
+      "t1": "Massachusetts Minutemen",
+      "t2": "George Washington Revolutionaries",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "George Washington Revolutionaries",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 1st ROUND",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Oklahoma State Cowboys",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Tulsa Golden Hurricane",
+      "t2": "East Carolina Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "East Carolina Pirates",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Northern Colorado Bears",
+      "t2": "Montana State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana State Bobcats",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "Charlotte 49ers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Charlotte 49ers",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Butler Bulldogs",
+      "t2": "La Salle Explorers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "La Salle Explorers",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "UTEP Miners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UTEP Miners",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Houston Christian Huskies",
+      "t2": "NJIT Highlanders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NJIT Highlanders",
+      "round": "GREAT WEST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Saint Joseph's Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Joseph's Hawks",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Tulsa Golden Hurricane",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tulsa Golden Hurricane",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Georgetown Hoyas",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgetown Hoyas",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Weber State Wildcats",
+      "t2": "North Dakota Fighting Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Dakota Fighting Hawks",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-15"
+    },
+    {
+      "t1": "Chicago State Cougars",
+      "t2": "UT Rio Grande Valley Vaqueros",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UT Rio Grande Valley Vaqueros",
+      "round": "GREAT WEST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "New Mexico Lobos",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "Massachusetts Minutemen",
+      "t2": "Temple Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Temple Owls",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Notre Dame Fighting Irish",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Notre Dame Fighting Irish",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma State Cowboys",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "Montana Grizzlies",
+      "t2": "Northern Colorado Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Colorado Bears",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "UNLV Rebels",
+      "t2": "Colorado State Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado State Rams",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "UAlbany Great Danes",
+      "t2": "Vermont Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vermont Catamounts",
+      "round": "AMERICA EAST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Miss Golden Eagles",
+      "round": "C-USA MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "Butler Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Butler Bulldogs",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Massachusetts Minutemen",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Massachusetts Minutemen",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas State Wildcats",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "New Mexico Lobos",
+      "t2": "UNLV Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNLV Rebels",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2013-03-16"
+    },
+    {
+      "t1": "Chicago State Cougars",
+      "t2": "Houston Christian Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Christian Huskies",
+      "round": "GREAT WEST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2013-03-17"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2013-03-17"
+    },
+    {
+      "t1": "Montana Grizzlies",
+      "t2": "Weber State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Weber State Wildcats",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2013-03-17"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2013-03-17"
+    },
+    {
+      "t1": "James Madison Dukes",
+      "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Long Island University Sharks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND AT DAYTON OH",
+      "date": "2013-03-20"
+    },
+    {
+      "t1": "La Salle Explorers",
+      "t2": "Boise State Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Boise State Broncos",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND AT DAYTON OH",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Southern Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Jaguars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SALT LAKE CITY",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "North Carolina A&T Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina A&T Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT LEXINGTON KY",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Valparaiso Beacons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Valparaiso Beacons",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT AUBURN HILLS MI",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "South Dakota State Jackrabbits",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Dakota State Jackrabbits",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT AUBURN HILLS MI",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "New Mexico State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico State Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT SAN JOSE CA",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "Davidson Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Davidson Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT LEXINGTON KY",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Oklahoma State Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma State Cowboys",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT SAN JOSE CA",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT AUBURN HILLS MI",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Wichita State Shockers",
+      "t2": "Pittsburgh Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SALT LAKE CITY",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Belmont Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Belmont Bruins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SALT LAKE CITY",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Butler Bulldogs",
+      "t2": "Bucknell Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bucknell Bison",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT LEXINGTON KY",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "California Golden Bears",
+      "t2": "UNLV Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNLV Rebels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT SAN JOSE CA",
+      "date": "2013-03-21"
+    },
+    {
+      "t1": "Harvard Crimson",
+      "t2": "New Mexico Lobos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico Lobos",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT SALT LAKE CITY",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Montana Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana Grizzlies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT SAN JOSE CA",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Colorado State Rams",
+      "t2": "Missouri Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Missouri Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT LEXINGTON KY",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "Akron Zips",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Akron Zips",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT AUBURN HILLS MI",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "James Madison Dukes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "James Madison Dukes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT DAYTON OH",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Pacific Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pacific Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT AUSTIN TX",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "UAlbany Great Danes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UAlbany Great Danes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT PHILADELPHIA",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Iona Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iona Gaels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT DAYTON OH",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Florida Gulf Coast Eagles",
+      "t2": "Georgetown Hoyas",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgetown Hoyas",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PHILADELPHIA",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "La Salle Explorers",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas State Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT KANSAS CITY MO",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Northwestern State Demons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northwestern State Demons",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT AUSTIN TX",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT KANSAS CITY MO",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cincinnati Bearcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND AT PHILADELPHIA",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Temple Owls",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NC State Wolfpack",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT DAYTON OH",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Colorado Buffaloes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado Buffaloes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND AT AUSTIN TX",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Villanova Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Villanova Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT KANSAS CITY MO",
+      "date": "2013-03-22"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Western Kentucky Hilltoppers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Western Kentucky Hilltoppers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT KANSAS CITY MO",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Notre Dame Fighting Irish",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Notre Dame Fighting Irish",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND AT DAYTON OH",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "Minnesota Golden Gophers",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCLA Bruins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT AUSTIN TX",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma Sooners",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND AT PHILADELPHIA",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Colorado State Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado State Rams",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT LEXINGTON KY",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Memphis Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Memphis Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT AUBURN HILLS MI",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT AUBURN HILLS MI",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Saint Louis Billikens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Louis Billikens",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT SAN JOSE CA",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Harvard Crimson",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Harvard Crimson",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT SALT LAKE CITY",
+      "date": "2013-03-23"
+    },
+    {
+      "t1": "Wichita State Shockers",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT SALT LAKE CITY",
+      "date": "2013-03-24"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "Butler Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Butler Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT LEXINGTON KY",
+      "date": "2013-03-24"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "California Golden Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "California Golden Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT SAN JOSE CA",
+      "date": "2013-03-24"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT KANSAS CITY MO",
+      "date": "2013-03-24"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "Temple Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Temple Owls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT DAYTON OH",
+      "date": "2013-03-24"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT DAYTON OH",
+      "date": "2013-03-24"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Minnesota Golden Gophers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Minnesota Golden Gophers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT AUSTIN TX",
+      "date": "2013-03-24"
+    },
+    {
+      "t1": "Florida Gulf Coast Eagles",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT PHILADELPHIA",
+      "date": "2013-03-24"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Illinois Fighting Illini",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND AT AUSTIN TX",
+      "date": "2013-03-25"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 3rd ROUND AT PHILADELPHIA",
+      "date": "2013-03-25"
+    },
+    {
+      "t1": "La Salle Explorers",
+      "t2": "Ole Miss Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ole Miss Rebels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT KANSAS CITY MO",
+      "date": "2013-03-25"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon Ducks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT INDIANAPOLIS",
+      "date": "2013-03-29"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT ARLINGTON TX",
+      "date": "2013-03-29"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT INDIANAPOLIS",
+      "date": "2013-03-30"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Florida Gulf Coast Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gulf Coast Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16 AT ARLINGTON TX",
+      "date": "2013-03-30"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT WASHINGTON",
+      "date": "2013-03-30"
+    },
+    {
+      "t1": "Wichita State Shockers",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT LOS ANGELES",
+      "date": "2013-03-30"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gators",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT ARLINGTON TX",
+      "date": "2013-03-31"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT INDIANAPOLIS",
+      "date": "2013-03-31"
+    }
+  ],
+  "eliminated": [
+    "Richmond Spiders",
+    "Cincinnati Bearcats",
+    "Oklahoma Sooners",
+    "UAB Blazers",
+    "Pittsburgh Panthers",
+    "Dayton Flyers",
+    "Texas Tech Red Raiders",
+    "Houston Cougars",
+    "Northern Arizona Lumberjacks",
+    "Utah Valley Wolverines",
+    "Xavier Musketeers",
+    "Texas Longhorns",
+    "Tulane Green Wave",
+    "Villanova Wildcats",
+    "Southern Utah Thunderbirds",
+    "George Washington Revolutionaries",
+    "Baylor Bears",
+    "East Carolina Pirates",
+    "Marquette Golden Eagles",
+    "Montana State Bobcats",
+    "Charlotte 49ers",
+    "La Salle Explorers",
+    "UTEP Miners",
+    "NJIT Highlanders",
+    "Saint Joseph's Hawks",
+    "Tulsa Golden Hurricane",
+    "Georgetown Hoyas",
+    "North Dakota Fighting Hawks",
+    "Iowa State Cyclones",
+    "UT Rio Grande Valley Vaqueros",
+    "San Diego State Aztecs",
+    "Temple Owls",
+    "Notre Dame Fighting Irish",
+    "Oklahoma State Cowboys",
+    "Northern Colorado Bears",
+    "Colorado State Rams",
+    "Vermont Catamounts",
+    "Southern Miss Golden Eagles",
+    "Butler Bulldogs",
+    "Massachusetts Minutemen",
+    "Kansas State Wildcats",
+    "UNLV Rebels",
+    "Houston Christian Huskies",
+    "Syracuse Orange",
+    "Weber State Wildcats",
+    "VCU Rams",
+    "Long Island University Sharks",
+    "Boise State Broncos",
+    "Southern Jaguars",
+    "North Carolina A&T Aggies",
+    "Valparaiso Beacons",
+    "South Dakota State Jackrabbits",
+    "New Mexico Lobos",
+    "New Mexico State Aggies",
+    "Davidson Wildcats",
+    "Montana Grizzlies",
+    "Saint Mary's Gaels",
+    "Belmont Bruins",
+    "Bucknell Bison",
+    "Missouri Tigers",
+    "Akron Zips",
+    "Western Kentucky Hilltoppers",
+    "James Madison Dukes",
+    "Pacific Tigers",
+    "UAlbany Great Danes",
+    "Iona Gaels",
+    "Northwestern State Demons",
+    "Wisconsin Badgers",
+    "UCLA Bruins",
+    "NC State Wolfpack",
+    "Colorado Buffaloes",
+    "Gonzaga Bulldogs",
+    "Memphis Tigers",
+    "Saint Louis Billikens",
+    "California Golden Bears",
+    "Harvard Crimson",
+    "North Carolina Tar Heels",
+    "Illinois Fighting Illini",
+    "Creighton Bluejays",
+    "Minnesota Golden Gophers",
+    "Ole Miss Rebels",
+    "Oregon Ducks",
+    "Kansas Jayhawks",
+    "Michigan State Spartans",
+    "Florida Gulf Coast Eagles",
+    "Ohio State Buckeyes",
+    "Florida Gators",
+    "Duke Blue Devils"
+  ],
+  "updated": "2026-08-24 08:30 UTC"
 }

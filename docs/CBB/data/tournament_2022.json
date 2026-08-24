@@ -2,8 +2,1113 @@
   "year": 2022,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "Wright State Raiders",
+      "loser": "Bryant Bulldogs",
+      "winner_score": 93,
+      "loser_score": 82,
+      "date": "2022-03-16",
+      "round": "Men's Basketball Championship - South Region - First Four"
+    },
+    {
+      "winner": "Notre Dame Fighting Irish",
+      "loser": "Rutgers Scarlet Knights",
+      "winner_score": 89,
+      "loser_score": 87,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - West Region - First Four"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Colorado State Rams",
+      "winner_score": 75,
+      "loser_score": 63,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Providence Friars",
+      "loser": "South Dakota State Jackrabbits",
+      "winner_score": 66,
+      "loser_score": 57,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Memphis Tigers",
+      "loser": "Boise State Broncos",
+      "winner_score": 64,
+      "loser_score": 53,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Norfolk State Spartans",
+      "winner_score": 85,
+      "loser_score": 49,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Longwood Lancers",
+      "winner_score": 88,
+      "loser_score": 56,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Richmond Spiders",
+      "loser": "Iowa Hawkeyes",
+      "winner_score": 67,
+      "loser_score": 63,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Georgia State Panthers",
+      "winner_score": 93,
+      "loser_score": 72,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 95,
+      "loser_score": 63,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "New Mexico State Aggies",
+      "loser": "UConn Huskies",
+      "winner_score": 70,
+      "loser_score": 63,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Saint Peter's Peacocks",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 85,
+      "loser_score": 79,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Saint Mary's Gaels",
+      "loser": "Indiana Hoosiers",
+      "winner_score": 82,
+      "loser_score": 53,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 72,
+      "loser_score": 69,
+      "date": "2022-03-17",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Vermont Catamounts",
+      "winner_score": 75,
+      "loser_score": 71,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Akron Zips",
+      "winner_score": 57,
+      "loser_score": 53,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Murray State Racers",
+      "loser": "San Francisco Dons",
+      "winner_score": 92,
+      "loser_score": 87,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Texas Southern Tigers",
+      "winner_score": 83,
+      "loser_score": 56,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Loyola Chicago Ramblers",
+      "winner_score": 54,
+      "loser_score": 41,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Jacksonville State Gamecocks",
+      "winner_score": 80,
+      "loser_score": 61,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Montana State Bobcats",
+      "winner_score": 97,
+      "loser_score": 62,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Yale Bulldogs",
+      "winner_score": 78,
+      "loser_score": 56,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Delaware Blue Hens",
+      "winner_score": 80,
+      "loser_score": 60,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "USC Trojans",
+      "winner_score": 68,
+      "loser_score": 66,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Notre Dame Fighting Irish",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 78,
+      "loser_score": 64,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Virginia Tech Hokies",
+      "winner_score": 81,
+      "loser_score": 73,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Chattanooga Mocs",
+      "winner_score": 54,
+      "loser_score": 53,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Cal State Fullerton Titans",
+      "winner_score": 78,
+      "loser_score": 61,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Wright State Raiders",
+      "winner_score": 87,
+      "loser_score": 70,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "LSU Tigers",
+      "winner_score": 59,
+      "loser_score": 54,
+      "date": "2022-03-18",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Davidson Wildcats",
+      "winner_score": 74,
+      "loser_score": 73,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "UAB Blazers",
+      "winner_score": 82,
+      "loser_score": 68,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "TCU Horned Frogs",
+      "loser": "Seton Hall Pirates",
+      "winner_score": 69,
+      "loser_score": 42,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Colgate Raiders",
+      "winner_score": 67,
+      "loser_score": 60,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Baylor Bears",
+      "winner_score": 93,
+      "loser_score": 86,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Creighton Bluejays",
+      "winner_score": 79,
+      "loser_score": 72,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 76,
+      "loser_score": 68,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Providence Friars",
+      "loser": "Richmond Spiders",
+      "winner_score": 79,
+      "loser_score": 51,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 72,
+      "loser_score": 56,
+      "date": "2022-03-19",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Saint Peter's Peacocks",
+      "loser": "Murray State Racers",
+      "winner_score": 70,
+      "loser_score": 60,
+      "date": "2022-03-20",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "New Mexico State Aggies",
+      "winner_score": 53,
+      "loser_score": 48,
+      "date": "2022-03-20",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Memphis Tigers",
+      "winner_score": 82,
+      "loser_score": 78,
+      "date": "2022-03-20",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 68,
+      "loser_score": 53,
+      "date": "2022-03-20",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 71,
+      "loser_score": 61,
+      "date": "2022-03-20",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Michigan State Spartans",
+      "winner_score": 85,
+      "loser_score": 76,
+      "date": "2022-03-20",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 54,
+      "loser_score": 49,
+      "date": "2022-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Notre Dame Fighting Irish",
+      "winner_score": 59,
+      "loser_score": 53,
+      "date": "2022-03-20",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Auburn Tigers",
+      "winner_score": 79,
+      "loser_score": 61,
+      "date": "2022-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Texas Longhorns",
+      "winner_score": 81,
+      "loser_score": 71,
+      "date": "2022-03-21",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "TCU Horned Frogs",
+      "winner_score": 85,
+      "loser_score": 80,
+      "date": "2022-03-21",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Saint Peter's Peacocks",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 67,
+      "loser_score": 64,
+      "date": "2022-03-25",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Providence Friars",
+      "winner_score": 66,
+      "loser_score": 61,
+      "date": "2022-03-25",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "UCLA Bruins",
+      "winner_score": 73,
+      "loser_score": 66,
+      "date": "2022-03-26",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 70,
+      "loser_score": 56,
+      "date": "2022-03-26",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Houston Cougars",
+      "winner_score": 50,
+      "loser_score": 44,
+      "date": "2022-03-26",
+      "round": "Men's Basketball Championship - South Region - Elite 8"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 78,
+      "loser_score": 69,
+      "date": "2022-03-27",
+      "round": "Men's Basketball Championship - West Region - Elite 8"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Miami Hurricanes",
+      "winner_score": 76,
+      "loser_score": 50,
+      "date": "2022-03-27",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Saint Peter's Peacocks",
+      "winner_score": 69,
+      "loser_score": 49,
+      "date": "2022-03-27",
+      "round": "Men's Basketball Championship - East Region - Elite 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Wright State Raiders",
+      "t2": "Bryant Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bryant Bulldogs",
+      "round": "Men's Basketball Championship - South Region - First Four",
+      "date": "2022-03-16"
+    },
+    {
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Rutgers Scarlet Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rutgers Scarlet Knights",
+      "round": "Men's Basketball Championship - West Region - First Four",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Colorado State Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado State Rams",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Providence Friars",
+      "t2": "South Dakota State Jackrabbits",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Dakota State Jackrabbits",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Boise State Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Boise State Broncos",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Norfolk State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Norfolk State Spartans",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Longwood Lancers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Longwood Lancers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Richmond Spiders",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa Hawkeyes",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Georgia State Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia State Panthers",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "New Mexico State Aggies",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UConn Huskies",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Saint Peter's Peacocks",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Saint Mary's Gaels",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Indiana Hoosiers",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2022-03-17"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Vermont Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vermont Catamounts",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Akron Zips",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Akron Zips",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "San Francisco Dons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Francisco Dons",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Texas Southern Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Southern Tigers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Loyola Chicago Ramblers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Loyola Chicago Ramblers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Jacksonville State Gamecocks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Jacksonville State Gamecocks",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Montana State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana State Bobcats",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Yale Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Yale Bulldogs",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Delaware Blue Hens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Delaware Blue Hens",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "USC Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "USC Trojans",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama Crimson Tide",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Virginia Tech Hokies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Tech Hokies",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Chattanooga Mocs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chattanooga Mocs",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Cal State Fullerton Titans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cal State Fullerton Titans",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Wright State Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wright State Raiders",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "LSU Tigers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2022-03-18"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Davidson Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Davidson Wildcats",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "UAB Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UAB Blazers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Seton Hall Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seton Hall Pirates",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Colgate Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colgate Raiders",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "Providence Friars",
+      "t2": "Richmond Spiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Richmond Spiders",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2022-03-19"
+    },
+    {
+      "t1": "Saint Peter's Peacocks",
+      "t2": "Murray State Racers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Murray State Racers",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2022-03-20"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "New Mexico State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico State Aggies",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2022-03-20"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Memphis Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Memphis Tigers",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2022-03-20"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Illinois Fighting Illini",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2022-03-20"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2022-03-20"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2022-03-20"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2022-03-20"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Notre Dame Fighting Irish",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Notre Dame Fighting Irish",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2022-03-20"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Auburn Tigers",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2022-03-21"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2022-03-21"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "TCU Horned Frogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "TCU Horned Frogs",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2022-03-21"
+    },
+    {
+      "t1": "Saint Peter's Peacocks",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2022-03-25"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Providence Friars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Providence Friars",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2022-03-25"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCLA Bruins",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2022-03-26"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2022-03-26"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "Men's Basketball Championship - South Region - Elite 8",
+      "date": "2022-03-26"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arkansas Razorbacks",
+      "round": "Men's Basketball Championship - West Region - Elite 8",
+      "date": "2022-03-27"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Miami Hurricanes",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8",
+      "date": "2022-03-27"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Saint Peter's Peacocks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Peter's Peacocks",
+      "round": "Men's Basketball Championship - East Region - Elite 8",
+      "date": "2022-03-27"
+    }
+  ],
+  "eliminated": [
+    "Bryant Bulldogs",
+    "Rutgers Scarlet Knights",
+    "Colorado State Rams",
+    "South Dakota State Jackrabbits",
+    "Boise State Broncos",
+    "Norfolk State Spartans",
+    "Longwood Lancers",
+    "Iowa Hawkeyes",
+    "Georgia State Panthers",
+    "Marquette Golden Eagles",
+    "UConn Huskies",
+    "Kentucky Wildcats",
+    "Indiana Hoosiers",
+    "San Diego State Aztecs",
+    "Vermont Catamounts",
+    "Akron Zips",
+    "San Francisco Dons",
+    "Texas Southern Tigers",
+    "Loyola Chicago Ramblers",
+    "Jacksonville State Gamecocks",
+    "Montana State Bobcats",
+    "Yale Bulldogs",
+    "Delaware Blue Hens",
+    "USC Trojans",
+    "Alabama Crimson Tide",
+    "Virginia Tech Hokies",
+    "Chattanooga Mocs",
+    "Cal State Fullerton Titans",
+    "Wright State Raiders",
+    "LSU Tigers",
+    "Davidson Wildcats",
+    "UAB Blazers",
+    "Seton Hall Pirates",
+    "Colgate Raiders",
+    "Baylor Bears",
+    "Creighton Bluejays",
+    "Tennessee Volunteers",
+    "Richmond Spiders",
+    "Saint Mary's Gaels",
+    "Murray State Racers",
+    "New Mexico State Aggies",
+    "Memphis Tigers",
+    "Illinois Fighting Illini",
+    "Ohio State Buckeyes",
+    "Michigan State Spartans",
+    "Wisconsin Badgers",
+    "Notre Dame Fighting Irish",
+    "Auburn Tigers",
+    "Texas Longhorns",
+    "TCU Horned Frogs",
+    "Purdue Boilermakers",
+    "Providence Friars",
+    "UCLA Bruins",
+    "Iowa State Cyclones",
+    "Houston Cougars",
+    "Arkansas Razorbacks",
+    "Miami Hurricanes",
+    "Saint Peter's Peacocks"
+  ],
+  "updated": "2026-08-24 08:31 UTC"
 }

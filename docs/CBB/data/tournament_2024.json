@@ -2,8 +2,1131 @@
   "year": 2024,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:45 UTC"
+  "games": [
+    {
+      "winner": "Duquesne Dukes",
+      "loser": "Dayton Flyers",
+      "winner_score": 65,
+      "loser_score": 57,
+      "date": "2024-03-15",
+      "round": "Atlantic 10 Championship - Quarterfinal"
+    },
+    {
+      "winner": "Colorado Buffaloes",
+      "loser": "Boise State Broncos",
+      "winner_score": 60,
+      "loser_score": 53,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - South Region - First Four"
+    },
+    {
+      "winner": "Grambling Tigers",
+      "loser": "Montana State Bobcats",
+      "winner_score": 88,
+      "loser_score": 81,
+      "date": "2024-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - First Four"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Wagner Seahawks",
+      "winner_score": 90,
+      "loser_score": 62,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Long Beach State Beach",
+      "winner_score": 85,
+      "loser_score": 65,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "South Dakota State Jackrabbits",
+      "winner_score": 82,
+      "loser_score": 65,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Saint Peter's Peacocks",
+      "winner_score": 83,
+      "loser_score": 49,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Akron Zips",
+      "winner_score": 77,
+      "loser_score": 60,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Morehead State Eagles",
+      "winner_score": 85,
+      "loser_score": 69,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Oakland Golden Grizzlies",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 80,
+      "loser_score": 76,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Samford Bulldogs",
+      "winner_score": 93,
+      "loser_score": 89,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "McNeese Cowboys",
+      "winner_score": 86,
+      "loser_score": 65,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Duquesne Dukes",
+      "loser": "BYU Cougars",
+      "winner_score": 71,
+      "loser_score": 67,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "South Carolina Gamecocks",
+      "winner_score": 87,
+      "loser_score": 73,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 80,
+      "loser_score": 67,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Dayton Flyers",
+      "loser": "Nevada Wolf Pack",
+      "winner_score": 63,
+      "loser_score": 60,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Colorado State Rams",
+      "winner_score": 56,
+      "loser_score": 44,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Washington State Cougars",
+      "loser": "Drake Bulldogs",
+      "winner_score": 66,
+      "loser_score": 61,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Mississippi State Bulldogs",
+      "winner_score": 69,
+      "loser_score": 51,
+      "date": "2024-03-21",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Stetson Hatters",
+      "winner_score": 91,
+      "loser_score": 52,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Grambling Tigers",
+      "winner_score": 78,
+      "loser_score": 50,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Longwood Lancers",
+      "winner_score": 86,
+      "loser_score": 46,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "Western Kentucky Hilltoppers",
+      "winner_score": 87,
+      "loser_score": 69,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Colgate Raiders",
+      "winner_score": 92,
+      "loser_score": 67,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Yale Bulldogs",
+      "loser": "Auburn Tigers",
+      "winner_score": 78,
+      "loser_score": 76,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Vermont Catamounts",
+      "winner_score": 64,
+      "loser_score": 47,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Charleston Cougars",
+      "winner_score": 109,
+      "loser_score": 96,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "UAB Blazers",
+      "winner_score": 69,
+      "loser_score": 65,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "James Madison Dukes",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 72,
+      "loser_score": 61,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Grand Canyon Lopes",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 75,
+      "loser_score": 66,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Clemson Tigers",
+      "loser": "New Mexico Lobos",
+      "winner_score": 77,
+      "loser_score": 56,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Colorado Buffaloes",
+      "loser": "Florida Gators",
+      "winner_score": 102,
+      "loser_score": 100,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Northwestern Wildcats",
+      "loser": "Florida Atlantic Owls",
+      "winner_score": 77,
+      "loser_score": 65,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Nebraska Cornhuskers",
+      "winner_score": 98,
+      "loser_score": 83,
+      "date": "2024-03-22",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Utah State Aggies",
+      "loser": "TCU Horned Frogs",
+      "winner_score": 88,
+      "loser_score": 72,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Michigan State Spartans",
+      "winner_score": 85,
+      "loser_score": 69,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Dayton Flyers",
+      "winner_score": 78,
+      "loser_score": 68,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Washington State Cougars",
+      "winner_score": 67,
+      "loser_score": 56,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Texas Longhorns",
+      "winner_score": 62,
+      "loser_score": 58,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Duquesne Dukes",
+      "winner_score": 89,
+      "loser_score": 63,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Oregon Ducks",
+      "winner_score": 86,
+      "loser_score": 73,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 89,
+      "loser_score": 68,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "Oakland Golden Grizzlies",
+      "winner_score": 79,
+      "loser_score": 73,
+      "date": "2024-03-23",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Utah State Aggies",
+      "winner_score": 106,
+      "loser_score": 67,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Northwestern Wildcats",
+      "winner_score": 75,
+      "loser_score": 58,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 100,
+      "loser_score": 95,
+      "date": "2024-03-25",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "Colorado Buffaloes",
+      "winner_score": 81,
+      "loser_score": 77,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Clemson Tigers",
+      "loser": "Baylor Bears",
+      "winner_score": 72,
+      "loser_score": 64,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "James Madison Dukes",
+      "winner_score": 93,
+      "loser_score": 55,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Grand Canyon Lopes",
+      "winner_score": 72,
+      "loser_score": 61,
+      "date": "2024-03-24",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "Yale Bulldogs",
+      "winner_score": 85,
+      "loser_score": 57,
+      "date": "2024-03-25",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 80,
+      "loser_score": 68,
+      "date": "2024-03-29",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Houston Cougars",
+      "winner_score": 54,
+      "loser_score": 51,
+      "date": "2024-03-30",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 67,
+      "loser_score": 58,
+      "date": "2024-03-29",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Creighton Bluejays",
+      "winner_score": 82,
+      "loser_score": 75,
+      "date": "2024-03-30",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 77,
+      "loser_score": 52,
+      "date": "2024-03-30",
+      "round": "Men's Basketball Championship - East Region - Elite 8"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Clemson Tigers",
+      "winner_score": 89,
+      "loser_score": 82,
+      "date": "2024-03-31",
+      "round": "Men's Basketball Championship - West Region - Elite 8"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 72,
+      "loser_score": 66,
+      "date": "2024-03-31",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "Duke Blue Devils",
+      "winner_score": 76,
+      "loser_score": 64,
+      "date": "2024-03-31",
+      "round": "Men's Basketball Championship - South Region - Elite 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Duquesne Dukes",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dayton Flyers",
+      "round": "Atlantic 10 Championship - Quarterfinal",
+      "date": "2024-03-15"
+    },
+    {
+      "t1": "Grambling Tigers",
+      "t2": "Montana State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana State Bobcats",
+      "round": "Men's Basketball Championship - Midwest Region - First Four",
+      "date": "2024-03-20"
+    },
+    {
+      "t1": "Colorado Buffaloes",
+      "t2": "Boise State Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Boise State Broncos",
+      "round": "Men's Basketball Championship - South Region - First Four",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Wagner Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wagner Seahawks",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Long Beach State Beach",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Long Beach State Beach",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "South Dakota State Jackrabbits",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Dakota State Jackrabbits",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Akron Zips",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Akron Zips",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Morehead State Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Morehead State Eagles",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Oakland Golden Grizzlies",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "McNeese Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "McNeese Cowboys",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Duquesne Dukes",
+      "t2": "BYU Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "BYU Cougars",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "South Carolina Gamecocks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Carolina Gamecocks",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Dayton Flyers",
+      "t2": "Nevada Wolf Pack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nevada Wolf Pack",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Colorado State Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado State Rams",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Mississippi State Bulldogs",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2024-03-21"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Saint Peter's Peacocks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Peter's Peacocks",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Samford Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Samford Bulldogs",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Washington State Cougars",
+      "t2": "Drake Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Drake Bulldogs",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Stetson Hatters",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Stetson Hatters",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Grambling Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Grambling Tigers",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "Western Kentucky Hilltoppers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Western Kentucky Hilltoppers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Colgate Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colgate Raiders",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Yale Bulldogs",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Auburn Tigers",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Vermont Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vermont Catamounts",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "UAB Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UAB Blazers",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Clemson Tigers",
+      "t2": "New Mexico Lobos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico Lobos",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Colorado Buffaloes",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gators",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Northwestern Wildcats",
+      "t2": "Florida Atlantic Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Atlantic Owls",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nebraska Cornhuskers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2024-03-22"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Longwood Lancers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Longwood Lancers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Charleston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Charleston Cougars",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "James Madison Dukes",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "Grand Canyon Lopes",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "Utah State Aggies",
+      "t2": "TCU Horned Frogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "TCU Horned Frogs",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dayton Flyers",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Washington State Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Washington State Cougars",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Oakland Golden Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oakland Golden Grizzlies",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2024-03-23"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Duquesne Dukes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duquesne Dukes",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon Ducks",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Utah State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah State Aggies",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Northwestern Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northwestern Wildcats",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "Colorado Buffaloes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colorado Buffaloes",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "Clemson Tigers",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "James Madison Dukes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "James Madison Dukes",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Grand Canyon Lopes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Grand Canyon Lopes",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2024-03-24"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2024-03-25"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "Yale Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Yale Bulldogs",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2024-03-25"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2024-03-29"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2024-03-29"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2024-03-30"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2024-03-30"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Illinois Fighting Illini",
+      "round": "Men's Basketball Championship - East Region - Elite 8",
+      "date": "2024-03-30"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Clemson Tigers",
+      "round": "Men's Basketball Championship - West Region - Elite 8",
+      "date": "2024-03-31"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8",
+      "date": "2024-03-31"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "Men's Basketball Championship - South Region - Elite 8",
+      "date": "2024-03-31"
+    }
+  ],
+  "eliminated": [
+    "Dayton Flyers",
+    "Boise State Broncos",
+    "Montana State Bobcats",
+    "Wagner Seahawks",
+    "Long Beach State Beach",
+    "South Dakota State Jackrabbits",
+    "Saint Peter's Peacocks",
+    "Akron Zips",
+    "Morehead State Eagles",
+    "Kentucky Wildcats",
+    "Samford Bulldogs",
+    "McNeese Cowboys",
+    "BYU Cougars",
+    "South Carolina Gamecocks",
+    "Texas Tech Red Raiders",
+    "Nevada Wolf Pack",
+    "Colorado State Rams",
+    "Drake Bulldogs",
+    "Mississippi State Bulldogs",
+    "Stetson Hatters",
+    "Grambling Tigers",
+    "Longwood Lancers",
+    "Western Kentucky Hilltoppers",
+    "Colgate Raiders",
+    "Auburn Tigers",
+    "Vermont Catamounts",
+    "Charleston Cougars",
+    "UAB Blazers",
+    "Wisconsin Badgers",
+    "Saint Mary's Gaels",
+    "New Mexico Lobos",
+    "Florida Gators",
+    "Florida Atlantic Owls",
+    "Nebraska Cornhuskers",
+    "TCU Horned Frogs",
+    "Michigan State Spartans",
+    "Washington State Cougars",
+    "Texas Longhorns",
+    "Duquesne Dukes",
+    "Oregon Ducks",
+    "Kansas Jayhawks",
+    "Oakland Golden Grizzlies",
+    "Utah State Aggies",
+    "Northwestern Wildcats",
+    "Texas A&M Aggies",
+    "Colorado Buffaloes",
+    "Baylor Bears",
+    "James Madison Dukes",
+    "Grand Canyon Lopes",
+    "Yale Bulldogs",
+    "Gonzaga Bulldogs",
+    "Houston Cougars",
+    "Marquette Golden Eagles",
+    "Creighton Bluejays",
+    "Illinois Fighting Illini",
+    "Clemson Tigers",
+    "Tennessee Volunteers",
+    "Duke Blue Devils"
+  ],
+  "updated": "2026-08-24 08:31 UTC"
 }

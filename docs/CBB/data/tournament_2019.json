@@ -2,8 +2,2131 @@
   "year": 2019,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:44 UTC"
+  "games": [
+    {
+      "winner": "Rhode Island Rams",
+      "loser": "La Salle Explorers",
+      "winner_score": 76,
+      "loser_score": 57,
+      "date": "2019-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 2nd ROUND"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Providence Friars",
+      "winner_score": 73,
+      "loser_score": 62,
+      "date": "2019-03-14",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Baylor Bears",
+      "winner_score": 83,
+      "loser_score": 66,
+      "date": "2019-03-14",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Montana Grizzlies",
+      "loser": "Sacramento State Hornets",
+      "winner_score": 79,
+      "loser_score": 73,
+      "date": "2019-03-14",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "George Mason Patriots",
+      "loser": "George Washington Revolutionaries",
+      "winner_score": 61,
+      "loser_score": 57,
+      "date": "2019-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 2nd ROUND"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Creighton Bluejays",
+      "winner_score": 63,
+      "loser_score": 61,
+      "date": "2019-03-14",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "TCU Horned Frogs",
+      "winner_score": 70,
+      "loser_score": 61,
+      "date": "2019-03-14",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Nevada Wolf Pack",
+      "loser": "Boise State Broncos",
+      "winner_score": 77,
+      "loser_score": 69,
+      "date": "2019-03-14",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Weber State Wildcats",
+      "loser": "Portland State Vikings",
+      "winner_score": 81,
+      "loser_score": 71,
+      "date": "2019-03-14",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "UNLV Rebels",
+      "winner_score": 63,
+      "loser_score": 55,
+      "date": "2019-03-14",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "South Alabama Jaguars",
+      "loser": "Louisiana Ragin' Cajuns",
+      "winner_score": 70,
+      "loser_score": 69,
+      "date": "2019-03-14",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - 2nd ROUND"
+    },
+    {
+      "winner": "Saint Joseph's Hawks",
+      "loser": "Duquesne Dukes",
+      "winner_score": 92,
+      "loser_score": 86,
+      "date": "2019-03-14",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 2nd ROUND"
+    },
+    {
+      "winner": "Old Dominion Monarchs",
+      "loser": "Louisiana Tech Bulldogs",
+      "winner_score": 57,
+      "loser_score": 56,
+      "date": "2019-03-14",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "St. John's Red Storm",
+      "winner_score": 86,
+      "loser_score": 54,
+      "date": "2019-03-14",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "West Virginia Mountaineers",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 79,
+      "loser_score": 74,
+      "date": "2019-03-14",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Southern Utah Thunderbirds",
+      "loser": "Northern Colorado Bears",
+      "winner_score": 83,
+      "loser_score": 64,
+      "date": "2019-03-14",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "UAB Blazers",
+      "loser": "UTSA Roadrunners",
+      "winner_score": 85,
+      "loser_score": 76,
+      "date": "2019-03-14",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "UL Monroe Warhawks",
+      "loser": "Coastal Carolina Chanticleers",
+      "winner_score": 80,
+      "loser_score": 50,
+      "date": "2019-03-15",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - 2nd ROUND"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "Richmond Spiders",
+      "winner_score": 71,
+      "loser_score": 68,
+      "date": "2019-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 2nd ROUND"
+    },
+    {
+      "winner": "Utah State Aggies",
+      "loser": "New Mexico Lobos",
+      "winner_score": 91,
+      "loser_score": 83,
+      "date": "2019-03-15",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Western Kentucky Hilltoppers",
+      "loser": "North Texas Mean Green",
+      "winner_score": 67,
+      "loser_score": 51,
+      "date": "2019-03-15",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Seton Hall Pirates",
+      "loser": "Georgetown Hoyas",
+      "winner_score": 73,
+      "loser_score": 57,
+      "date": "2019-03-15",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Texas Longhorns",
+      "winner_score": 65,
+      "loser_score": 57,
+      "date": "2019-03-15",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Eastern Washington Eagles",
+      "loser": "Montana State Bobcats",
+      "winner_score": 90,
+      "loser_score": 84,
+      "date": "2019-03-15",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Southern Miss Golden Eagles",
+      "loser": "Marshall Thundering Herd",
+      "winner_score": 82,
+      "loser_score": 73,
+      "date": "2019-03-15",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Fresno State Bulldogs",
+      "loser": "Air Force Falcons",
+      "winner_score": 76,
+      "loser_score": 50,
+      "date": "2019-03-15",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Rhode Island Rams",
+      "loser": "VCU Rams",
+      "winner_score": 75,
+      "loser_score": 70,
+      "date": "2019-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Old Dominion Monarchs",
+      "loser": "UAB Blazers",
+      "winner_score": 61,
+      "loser_score": 59,
+      "date": "2019-03-15",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "St. Bonaventure Bonnies",
+      "loser": "George Mason Patriots",
+      "winner_score": 68,
+      "loser_score": 57,
+      "date": "2019-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Western Kentucky Hilltoppers",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 70,
+      "loser_score": 59,
+      "date": "2019-03-15",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Texas State Bobcats",
+      "loser": "South Alabama Jaguars",
+      "winner_score": 79,
+      "loser_score": 67,
+      "date": "2019-03-15",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Davidson Wildcats",
+      "loser": "Saint Joseph's Hawks",
+      "winner_score": 70,
+      "loser_score": 60,
+      "date": "2019-03-15",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Xavier Musketeers",
+      "winner_score": 71,
+      "loser_score": 67,
+      "date": "2019-03-15",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 63,
+      "loser_score": 59,
+      "date": "2019-03-15",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Montana Grizzlies",
+      "loser": "Weber State Wildcats",
+      "winner_score": 78,
+      "loser_score": 49,
+      "date": "2019-03-15",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Georgia Southern Eagles",
+      "loser": "UL Monroe Warhawks",
+      "winner_score": 81,
+      "loser_score": 67,
+      "date": "2019-03-16",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "Dayton Flyers",
+      "winner_score": 64,
+      "loser_score": 55,
+      "date": "2019-03-16",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "Nevada Wolf Pack",
+      "winner_score": 65,
+      "loser_score": 56,
+      "date": "2019-03-16",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Seton Hall Pirates",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 81,
+      "loser_score": 79,
+      "date": "2019-03-16",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 88,
+      "loser_score": 74,
+      "date": "2019-03-16",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Eastern Washington Eagles",
+      "loser": "Southern Utah Thunderbirds",
+      "winner_score": 77,
+      "loser_score": 61,
+      "date": "2019-03-16",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Utah State Aggies",
+      "loser": "Fresno State Bulldogs",
+      "winner_score": 85,
+      "loser_score": 60,
+      "date": "2019-03-16",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Vermont Catamounts",
+      "loser": "UMBC Retrievers",
+      "winner_score": 66,
+      "loser_score": 49,
+      "date": "2019-03-16",
+      "round": "AMERICA EAST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "St. Bonaventure Bonnies",
+      "loser": "Rhode Island Rams",
+      "winner_score": 68,
+      "loser_score": 51,
+      "date": "2019-03-16",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "Davidson Wildcats",
+      "winner_score": 67,
+      "loser_score": 44,
+      "date": "2019-03-16",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Georgia State Panthers",
+      "loser": "Texas State Bobcats",
+      "winner_score": 59,
+      "loser_score": 46,
+      "date": "2019-03-16",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Utah State Aggies",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 64,
+      "loser_score": 57,
+      "date": "2019-03-16",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 78,
+      "loser_score": 66,
+      "date": "2019-03-16",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "UT Arlington Mavericks",
+      "loser": "Georgia Southern Eagles",
+      "winner_score": 67,
+      "loser_score": 58,
+      "date": "2019-03-16",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Seton Hall Pirates",
+      "winner_score": 74,
+      "loser_score": 72,
+      "date": "2019-03-16",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Montana Grizzlies",
+      "loser": "Eastern Washington Eagles",
+      "winner_score": 68,
+      "loser_score": 62,
+      "date": "2019-03-17",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Old Dominion Monarchs",
+      "loser": "Western Kentucky Hilltoppers",
+      "winner_score": 62,
+      "loser_score": 56,
+      "date": "2019-03-17",
+      "round": "C-USA MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "St. Bonaventure Bonnies",
+      "winner_score": 55,
+      "loser_score": 53,
+      "date": "2019-03-17",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "Georgia State Panthers",
+      "loser": "UT Arlington Mavericks",
+      "winner_score": 73,
+      "loser_score": 64,
+      "date": "2019-03-17",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - FINAL"
+    },
+    {
+      "winner": "North Dakota State Bison",
+      "loser": "North Carolina Central Eagles",
+      "winner_score": 78,
+      "loser_score": 74,
+      "date": "2019-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - FIRST FOUR"
+    },
+    {
+      "winner": "Arizona State Sun Devils",
+      "loser": "St. John's Red Storm",
+      "winner_score": 74,
+      "loser_score": 65,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - FIRST FOUR"
+    },
+    {
+      "winner": "Minnesota Golden Gophers",
+      "loser": "Louisville Cardinals",
+      "winner_score": 86,
+      "loser_score": 76,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "LSU Tigers",
+      "loser": "Yale Bulldogs",
+      "winner_score": 79,
+      "loser_score": 74,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "New Mexico State Aggies",
+      "winner_score": 78,
+      "loser_score": 77,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Vermont Catamounts",
+      "winner_score": 76,
+      "loser_score": 69,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Bradley Braves",
+      "winner_score": 76,
+      "loser_score": 65,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Maryland Terrapins",
+      "loser": "Belmont Bruins",
+      "winner_score": 79,
+      "loser_score": 77,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Northeastern Huskies",
+      "winner_score": 87,
+      "loser_score": 53,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Murray State Racers",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 83,
+      "loser_score": 64,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Nevada Wolf Pack",
+      "winner_score": 70,
+      "loser_score": 61,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Abilene Christian Wildcats",
+      "winner_score": 79,
+      "loser_score": 44,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Fairleigh Dickinson Knights",
+      "winner_score": 87,
+      "loser_score": 49,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 61,
+      "loser_score": 57,
+      "date": "2019-03-21",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Wofford Terriers",
+      "loser": "Seton Hall Pirates",
+      "winner_score": 84,
+      "loser_score": 68,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Montana Grizzlies",
+      "winner_score": 74,
+      "loser_score": 55,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Syracuse Orange",
+      "winner_score": 78,
+      "loser_score": 69,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Old Dominion Monarchs",
+      "winner_score": 61,
+      "loser_score": 48,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Iowa Hawkeyes",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 79,
+      "loser_score": 72,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Ole Miss Rebels",
+      "winner_score": 95,
+      "loser_score": 72,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Northern Kentucky Norse",
+      "winner_score": 72,
+      "loser_score": 57,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "UC Irvine Anteaters",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 70,
+      "loser_score": 64,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Colgate Raiders",
+      "winner_score": 77,
+      "loser_score": 70,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Gardner-Webb Runnin' Bulldogs",
+      "winner_score": 71,
+      "loser_score": 56,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Buffalo Bulls",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 91,
+      "loser_score": 74,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 72,
+      "loser_score": 54,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "Washington Huskies",
+      "loser": "Utah State Aggies",
+      "winner_score": 78,
+      "loser_score": 61,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "North Dakota State Bison",
+      "winner_score": 85,
+      "loser_score": 62,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Georgia State Panthers",
+      "winner_score": 84,
+      "loser_score": 55,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Liberty Flames",
+      "loser": "Mississippi State Bulldogs",
+      "winner_score": 80,
+      "loser_score": 76,
+      "date": "2019-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Iona Gaels",
+      "winner_score": 88,
+      "loser_score": 73,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "UCF Knights",
+      "loser": "VCU Rams",
+      "winner_score": 73,
+      "loser_score": 58,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 62,
+      "loser_score": 59,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Virginia Tech Hokies",
+      "loser": "Saint Louis Billikens",
+      "winner_score": 66,
+      "loser_score": 52,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND"
+    },
+    {
+      "winner": "LSU Tigers",
+      "loser": "Maryland Terrapins",
+      "winner_score": 69,
+      "loser_score": 67,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Wofford Terriers",
+      "winner_score": 62,
+      "loser_score": 56,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Florida Gators",
+      "winner_score": 64,
+      "loser_score": 49,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Murray State Racers",
+      "winner_score": 90,
+      "loser_score": 62,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Baylor Bears",
+      "winner_score": 83,
+      "loser_score": 71,
+      "date": "2019-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Minnesota Golden Gophers",
+      "winner_score": 70,
+      "loser_score": 50,
+      "date": "2019-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Villanova Wildcats",
+      "winner_score": 87,
+      "loser_score": 61,
+      "date": "2019-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 89,
+      "loser_score": 75,
+      "date": "2019-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Iowa Hawkeyes",
+      "winner_score": 83,
+      "loser_score": 77,
+      "date": "2019-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Washington Huskies",
+      "winner_score": 81,
+      "loser_score": 59,
+      "date": "2019-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "UCF Knights",
+      "winner_score": 77,
+      "loser_score": 76,
+      "date": "2019-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Buffalo Bulls",
+      "winner_score": 78,
+      "loser_score": 58,
+      "date": "2019-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Virginia Tech Hokies",
+      "loser": "Liberty Flames",
+      "winner_score": 67,
+      "loser_score": 58,
+      "date": "2019-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 63,
+      "loser_score": 51,
+      "date": "2019-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 74,
+      "loser_score": 59,
+      "date": "2019-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "UC Irvine Anteaters",
+      "winner_score": 73,
+      "loser_score": 54,
+      "date": "2019-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "LSU Tigers",
+      "winner_score": 80,
+      "loser_score": 63,
+      "date": "2019-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 97,
+      "loser_score": 80,
+      "date": "2019-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Virginia Tech Hokies",
+      "winner_score": 75,
+      "loser_score": 73,
+      "date": "2019-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Houston Cougars",
+      "winner_score": 62,
+      "loser_score": 58,
+      "date": "2019-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 75,
+      "loser_score": 69,
+      "date": "2019-03-30",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 80,
+      "loser_score": 75,
+      "date": "2019-03-31",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 77,
+      "loser_score": 71,
+      "date": "2019-03-31",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Duke Blue Devils",
+      "winner_score": 68,
+      "loser_score": 67,
+      "date": "2019-03-31",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Rhode Island Rams",
+      "t2": "La Salle Explorers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "La Salle Explorers",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 2nd ROUND",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Providence Friars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Providence Friars",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Montana Grizzlies",
+      "t2": "Sacramento State Hornets",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Sacramento State Hornets",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "George Mason Patriots",
+      "t2": "George Washington Revolutionaries",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "George Washington Revolutionaries",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 2nd ROUND",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "TCU Horned Frogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "TCU Horned Frogs",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Nevada Wolf Pack",
+      "t2": "Boise State Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Boise State Broncos",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Weber State Wildcats",
+      "t2": "Portland State Vikings",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Portland State Vikings",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "UNLV Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNLV Rebels",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "South Alabama Jaguars",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisiana Ragin' Cajuns",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - 2nd ROUND",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Saint Joseph's Hawks",
+      "t2": "Duquesne Dukes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duquesne Dukes",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 2nd ROUND",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Old Dominion Monarchs",
+      "t2": "Louisiana Tech Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisiana Tech Bulldogs",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "St. John's Red Storm",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. John's Red Storm",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "West Virginia Mountaineers",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "Southern Utah Thunderbirds",
+      "t2": "Northern Colorado Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Colorado Bears",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "UAB Blazers",
+      "t2": "UTSA Roadrunners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UTSA Roadrunners",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-14"
+    },
+    {
+      "t1": "UL Monroe Warhawks",
+      "t2": "Coastal Carolina Chanticleers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Coastal Carolina Chanticleers",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - 2nd ROUND",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "Richmond Spiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Richmond Spiders",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - 2nd ROUND",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Utah State Aggies",
+      "t2": "New Mexico Lobos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico Lobos",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Western Kentucky Hilltoppers",
+      "t2": "North Texas Mean Green",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Texas Mean Green",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Seton Hall Pirates",
+      "t2": "Georgetown Hoyas",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgetown Hoyas",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Eastern Washington Eagles",
+      "t2": "Montana State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana State Bobcats",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Southern Miss Golden Eagles",
+      "t2": "Marshall Thundering Herd",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marshall Thundering Herd",
+      "round": "C-USA MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Fresno State Bulldogs",
+      "t2": "Air Force Falcons",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Air Force Falcons",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Rhode Island Rams",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Old Dominion Monarchs",
+      "t2": "UAB Blazers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UAB Blazers",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "St. Bonaventure Bonnies",
+      "t2": "George Mason Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "George Mason Patriots",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Western Kentucky Hilltoppers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Miss Golden Eagles",
+      "round": "C-USA MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Texas State Bobcats",
+      "t2": "South Alabama Jaguars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Alabama Jaguars",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Davidson Wildcats",
+      "t2": "Saint Joseph's Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Joseph's Hawks",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas State Wildcats",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Montana Grizzlies",
+      "t2": "Weber State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Weber State Wildcats",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-15"
+    },
+    {
+      "t1": "Georgia Southern Eagles",
+      "t2": "UL Monroe Warhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UL Monroe Warhawks",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "Dayton Flyers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Dayton Flyers",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - QUARTERFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "Nevada Wolf Pack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nevada Wolf Pack",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Seton Hall Pirates",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "West Virginia Mountaineers",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Eastern Washington Eagles",
+      "t2": "Southern Utah Thunderbirds",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Utah Thunderbirds",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Utah State Aggies",
+      "t2": "Fresno State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Fresno State Bulldogs",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Vermont Catamounts",
+      "t2": "UMBC Retrievers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UMBC Retrievers",
+      "round": "AMERICA EAST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "St. Bonaventure Bonnies",
+      "t2": "Rhode Island Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Rhode Island Rams",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "Davidson Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Davidson Wildcats",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Georgia State Panthers",
+      "t2": "Texas State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas State Bobcats",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Utah State Aggies",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "MOUNTAIN WEST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "PHILLIPS 66 BIG 12 MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "UT Arlington Mavericks",
+      "t2": "Georgia Southern Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia Southern Eagles",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - SEMIFINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Seton Hall Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seton Hall Pirates",
+      "round": "BIG EAST MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2019-03-16"
+    },
+    {
+      "t1": "Montana Grizzlies",
+      "t2": "Eastern Washington Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Eastern Washington Eagles",
+      "round": "BIG SKY MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2019-03-17"
+    },
+    {
+      "t1": "Old Dominion Monarchs",
+      "t2": "Western Kentucky Hilltoppers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Western Kentucky Hilltoppers",
+      "round": "C-USA MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2019-03-17"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "St. Bonaventure Bonnies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. Bonaventure Bonnies",
+      "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2019-03-17"
+    },
+    {
+      "t1": "Georgia State Panthers",
+      "t2": "UT Arlington Mavericks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UT Arlington Mavericks",
+      "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - FINAL",
+      "date": "2019-03-17"
+    },
+    {
+      "t1": "North Dakota State Bison",
+      "t2": "North Carolina Central Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Central Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - FIRST FOUR",
+      "date": "2019-03-20"
+    },
+    {
+      "t1": "Arizona State Sun Devils",
+      "t2": "St. John's Red Storm",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. John's Red Storm",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - FIRST FOUR",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Minnesota Golden Gophers",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisville Cardinals",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Yale Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Yale Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "New Mexico State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Mexico State Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Vermont Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vermont Catamounts",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Bradley Braves",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Bradley Braves",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "Belmont Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Belmont Bruins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Northeastern Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northeastern Huskies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Murray State Racers",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Nevada Wolf Pack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nevada Wolf Pack",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Abilene Christian Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Abilene Christian Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Fairleigh Dickinson Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Fairleigh Dickinson Knights",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2019-03-21"
+    },
+    {
+      "t1": "Wofford Terriers",
+      "t2": "Seton Hall Pirates",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seton Hall Pirates",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Montana Grizzlies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana Grizzlies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Old Dominion Monarchs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Old Dominion Monarchs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cincinnati Bearcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Ole Miss Rebels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ole Miss Rebels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Northern Kentucky Norse",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Kentucky Norse",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "UC Irvine Anteaters",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas State Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Colgate Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colgate Raiders",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Gardner-Webb Runnin' Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gardner-Webb Runnin' Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Buffalo Bulls",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona State Sun Devils",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Washington Huskies",
+      "t2": "Utah State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah State Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "North Dakota State Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Dakota State Bison",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Georgia State Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia State Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "Liberty Flames",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Mississippi State Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2019-03-22"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Iona Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iona Gaels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "UCF Knights",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "Virginia Tech Hokies",
+      "t2": "Saint Louis Billikens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Louis Billikens",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 1st ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "LSU Tigers",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Maryland Terrapins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Wofford Terriers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wofford Terriers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gators",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Murray State Racers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Murray State Racers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2019-03-23"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Minnesota Golden Gophers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Minnesota Golden Gophers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2019-03-24"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Villanova Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Villanova Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2019-03-24"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2019-03-24"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa Hawkeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2019-03-24"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Washington Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Washington Huskies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2019-03-24"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "UCF Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCF Knights",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2019-03-24"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Buffalo Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Buffalo Bulls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND",
+      "date": "2019-03-24"
+    },
+    {
+      "t1": "Virginia Tech Hokies",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Liberty Flames",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND",
+      "date": "2019-03-24"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma Sooners",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2019-03-25"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 2nd ROUND",
+      "date": "2019-03-25"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "UC Irvine Anteaters",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UC Irvine Anteaters",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND",
+      "date": "2019-03-25"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "LSU Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "LSU Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16",
+      "date": "2019-03-29"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2019-03-29"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Virginia Tech Hokies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Tech Hokies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16",
+      "date": "2019-03-30"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2019-03-30"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8",
+      "date": "2019-03-30"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8",
+      "date": "2019-03-31"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8",
+      "date": "2019-03-31"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8",
+      "date": "2019-03-31"
+    }
+  ],
+  "eliminated": [
+    "La Salle Explorers",
+    "Providence Friars",
+    "Baylor Bears",
+    "Sacramento State Hornets",
+    "George Washington Revolutionaries",
+    "Creighton Bluejays",
+    "TCU Horned Frogs",
+    "Boise State Broncos",
+    "Portland State Vikings",
+    "UNLV Rebels",
+    "Louisiana Ragin' Cajuns",
+    "Duquesne Dukes",
+    "Louisiana Tech Bulldogs",
+    "St. John's Red Storm",
+    "Texas Tech Red Raiders",
+    "Northern Colorado Bears",
+    "UTSA Roadrunners",
+    "Coastal Carolina Chanticleers",
+    "Richmond Spiders",
+    "New Mexico Lobos",
+    "North Texas Mean Green",
+    "Georgetown Hoyas",
+    "Texas Longhorns",
+    "Montana State Bobcats",
+    "Marshall Thundering Herd",
+    "Air Force Falcons",
+    "VCU Rams",
+    "UAB Blazers",
+    "George Mason Patriots",
+    "Southern Miss Golden Eagles",
+    "South Alabama Jaguars",
+    "Saint Joseph's Hawks",
+    "Xavier Musketeers",
+    "Kansas State Wildcats",
+    "Weber State Wildcats",
+    "UL Monroe Warhawks",
+    "Dayton Flyers",
+    "Nevada Wolf Pack",
+    "Marquette Golden Eagles",
+    "West Virginia Mountaineers",
+    "Southern Utah Thunderbirds",
+    "Fresno State Bulldogs",
+    "UMBC Retrievers",
+    "Rhode Island Rams",
+    "Davidson Wildcats",
+    "Texas State Bobcats",
+    "San Diego State Aztecs",
+    "Kansas Jayhawks",
+    "Georgia Southern Eagles",
+    "Seton Hall Pirates",
+    "Eastern Washington Eagles",
+    "Western Kentucky Hilltoppers",
+    "St. Bonaventure Bonnies",
+    "UT Arlington Mavericks",
+    "North Carolina Central Eagles",
+    "Louisville Cardinals",
+    "Yale Bulldogs",
+    "New Mexico State Aggies",
+    "Vermont Catamounts",
+    "Bradley Braves",
+    "Belmont Bruins",
+    "Northeastern Huskies",
+    "Abilene Christian Wildcats",
+    "Fairleigh Dickinson Knights",
+    "Saint Mary's Gaels",
+    "Montana Grizzlies",
+    "Syracuse Orange",
+    "Old Dominion Monarchs",
+    "Cincinnati Bearcats",
+    "Ole Miss Rebels",
+    "Northern Kentucky Norse",
+    "Colgate Raiders",
+    "Gardner-Webb Runnin' Bulldogs",
+    "Arizona State Sun Devils",
+    "Wisconsin Badgers",
+    "Utah State Aggies",
+    "North Dakota State Bison",
+    "Georgia State Panthers",
+    "Mississippi State Bulldogs",
+    "Iona Gaels",
+    "Iowa State Cyclones",
+    "Saint Louis Billikens",
+    "Maryland Terrapins",
+    "Wofford Terriers",
+    "Florida Gators",
+    "Murray State Racers",
+    "Minnesota Golden Gophers",
+    "Villanova Wildcats",
+    "Iowa Hawkeyes",
+    "Washington Huskies",
+    "UCF Knights",
+    "Buffalo Bulls",
+    "Liberty Flames",
+    "Oklahoma Sooners",
+    "Ohio State Buckeyes",
+    "UC Irvine Anteaters",
+    "LSU Tigers",
+    "North Carolina Tar Heels",
+    "Virginia Tech Hokies",
+    "Houston Cougars",
+    "Gonzaga Bulldogs",
+    "Purdue Boilermakers",
+    "Kentucky Wildcats",
+    "Duke Blue Devils"
+  ],
+  "updated": "2026-08-24 08:31 UTC"
 }

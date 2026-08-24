@@ -2,8 +2,1113 @@
   "year": 2026,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:45 UTC"
+  "games": [
+    {
+      "winner": "Miami (OH) RedHawks",
+      "loser": "SMU Mustangs",
+      "winner_score": 89,
+      "loser_score": 79,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - First Four"
+    },
+    {
+      "winner": "Prairie View A&M Panthers",
+      "loser": "Lehigh Mountain Hawks",
+      "winner_score": 67,
+      "loser_score": 55,
+      "date": "2026-03-18",
+      "round": "NCAA Men's Basketball Championship - South Region - First Four"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Siena Saints",
+      "winner_score": 71,
+      "loser_score": 65,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Howard Bison",
+      "winner_score": 101,
+      "loser_score": 80,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Idaho Vandals",
+      "winner_score": 78,
+      "loser_score": 47,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "North Dakota State Bison",
+      "winner_score": 92,
+      "loser_score": 67,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Pennsylvania Quakers",
+      "winner_score": 105,
+      "loser_score": 70,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Kennesaw State Owls",
+      "winner_score": 73,
+      "loser_score": 64,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Nebraska Cornhuskers",
+      "loser": "Troy Trojans",
+      "winner_score": 76,
+      "loser_score": 47,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Hawai'i Rainbow Warriors",
+      "winner_score": 97,
+      "loser_score": 78,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "High Point Panthers",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 83,
+      "loser_score": 82,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Vanderbilt Commodores",
+      "loser": "McNeese Cowboys",
+      "winner_score": 78,
+      "loser_score": 68,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "South Florida Bulls",
+      "winner_score": 83,
+      "loser_score": 79,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "VCU Rams",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 82,
+      "loser_score": 78,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "BYU Cougars",
+      "winner_score": 79,
+      "loser_score": 71,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Texas A&M Aggies",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 63,
+      "loser_score": 50,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "TCU Horned Frogs",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 66,
+      "loser_score": 64,
+      "date": "2026-03-19",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Saint Louis Billikens",
+      "loser": "Georgia Bulldogs",
+      "winner_score": 102,
+      "loser_score": 77,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Long Island University Sharks",
+      "winner_score": 92,
+      "loser_score": 58,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Prairie View A&M Panthers",
+      "winner_score": 114,
+      "loser_score": 55,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Tennessee State Tigers",
+      "winner_score": 108,
+      "loser_score": 74,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Queens University Royals",
+      "winner_score": 104,
+      "loser_score": 71,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Furman Paladins",
+      "winner_score": 82,
+      "loser_score": 71,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Wright State Raiders",
+      "winner_score": 82,
+      "loser_score": 73,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Hofstra Pride",
+      "winner_score": 90,
+      "loser_score": 70,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "California Baptist Lancers",
+      "winner_score": 68,
+      "loser_score": 60,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Akron Zips",
+      "winner_score": 91,
+      "loser_score": 71,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "St. John's Red Storm",
+      "loser": "Northern Iowa Panthers",
+      "winner_score": 79,
+      "loser_score": 53,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Miami (OH) RedHawks",
+      "winner_score": 78,
+      "loser_score": 56,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Santa Clara Broncos",
+      "winner_score": 89,
+      "loser_score": 84,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "UCF Knights",
+      "winner_score": 75,
+      "loser_score": 71,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Missouri Tigers",
+      "winner_score": 80,
+      "loser_score": 66,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Utah State Aggies",
+      "loser": "Villanova Wildcats",
+      "winner_score": 86,
+      "loser_score": 76,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Iowa Hawkeyes",
+      "loser": "Clemson Tigers",
+      "winner_score": 67,
+      "loser_score": 61,
+      "date": "2026-03-20",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Saint Louis Billikens",
+      "winner_score": 95,
+      "loser_score": 72,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "TCU Horned Frogs",
+      "winner_score": 81,
+      "loser_score": 58,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 88,
+      "loser_score": 57,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Louisville Cardinals",
+      "winner_score": 77,
+      "loser_score": 69,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 74,
+      "loser_score": 68,
+      "date": "2026-03-21",
+      "round": "NCAA Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "VCU Rams",
+      "winner_score": 76,
+      "loser_score": 55,
+      "date": "2026-03-22",
+      "round": "NCAA Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Nebraska Cornhuskers",
+      "loser": "Vanderbilt Commodores",
+      "winner_score": 74,
+      "loser_score": 72,
+      "date": "2026-03-22",
+      "round": "NCAA Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "High Point Panthers",
+      "winner_score": 94,
+      "loser_score": 88,
+      "date": "2026-03-22",
+      "round": "NCAA Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Iowa Hawkeyes",
+      "loser": "Florida Gators",
+      "winner_score": 73,
+      "loser_score": 72,
+      "date": "2026-03-22",
+      "round": "NCAA Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Utah State Aggies",
+      "winner_score": 78,
+      "loser_score": 66,
+      "date": "2026-03-23",
+      "round": "NCAA Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Miami Hurricanes",
+      "winner_score": 79,
+      "loser_score": 69,
+      "date": "2026-03-22",
+      "round": "NCAA Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Iowa State Cyclones",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 82,
+      "loser_score": 63,
+      "date": "2026-03-22",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "UCLA Bruins",
+      "winner_score": 73,
+      "loser_score": 57,
+      "date": "2026-03-23",
+      "round": "NCAA Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 79,
+      "loser_score": 72,
+      "date": "2026-03-22",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "St. John's Red Storm",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 67,
+      "loser_score": 65,
+      "date": "2026-03-22",
+      "round": "NCAA Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 90,
+      "loser_score": 65,
+      "date": "2026-03-23",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "St. John's Red Storm",
+      "winner_score": 80,
+      "loser_score": 75,
+      "date": "2026-03-27",
+      "round": "NCAA Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 90,
+      "loser_score": 77,
+      "date": "2026-03-27",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Michigan State Spartans",
+      "winner_score": 67,
+      "loser_score": 63,
+      "date": "2026-03-28",
+      "round": "NCAA Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 76,
+      "loser_score": 62,
+      "date": "2026-03-28",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 79,
+      "loser_score": 64,
+      "date": "2026-03-29",
+      "round": "NCAA Men's Basketball Championship - West Region - Elite 8"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Iowa Hawkeyes",
+      "winner_score": 71,
+      "loser_score": 59,
+      "date": "2026-03-28",
+      "round": "NCAA Men's Basketball Championship - South Region - Elite 8"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 95,
+      "loser_score": 62,
+      "date": "2026-03-29",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - Elite 8"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Duke Blue Devils",
+      "winner_score": 73,
+      "loser_score": 72,
+      "date": "2026-03-29",
+      "round": "NCAA Men's Basketball Championship - East Region - Elite 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Prairie View A&M Panthers",
+      "t2": "Lehigh Mountain Hawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Lehigh Mountain Hawks",
+      "round": "NCAA Men's Basketball Championship - South Region - First Four",
+      "date": "2026-03-18"
+    },
+    {
+      "t1": "Miami (OH) RedHawks",
+      "t2": "SMU Mustangs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "SMU Mustangs",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - First Four",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Siena Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Siena Saints",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Howard Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Howard Bison",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "North Dakota State Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Dakota State Bison",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Nebraska Cornhuskers",
+      "t2": "Troy Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Troy Trojans",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Hawai'i Rainbow Warriors",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Hawai'i Rainbow Warriors",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "High Point Panthers",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Vanderbilt Commodores",
+      "t2": "McNeese Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "McNeese Cowboys",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "South Florida Bulls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Florida Bulls",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "VCU Rams",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "BYU Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "BYU Cougars",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Texas A&M Aggies",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "date": "2026-03-19"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Idaho Vandals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Idaho Vandals",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Pennsylvania Quakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pennsylvania Quakers",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Kennesaw State Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kennesaw State Owls",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Saint Louis Billikens",
+      "t2": "Georgia Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Georgia Bulldogs",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Long Island University Sharks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Long Island University Sharks",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Tennessee State Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee State Tigers",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Queens University Royals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Queens University Royals",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Wright State Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wright State Raiders",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Hofstra Pride",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Hofstra Pride",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Akron Zips",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Akron Zips",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "St. John's Red Storm",
+      "t2": "Northern Iowa Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Iowa Panthers",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Miami (OH) RedHawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Miami (OH) RedHawks",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Santa Clara Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Santa Clara Broncos",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "UCF Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCF Knights",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Utah State Aggies",
+      "t2": "Villanova Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Villanova Wildcats",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Clemson Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Clemson Tigers",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round",
+      "date": "2026-03-20"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Prairie View A&M Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Prairie View A&M Panthers",
+      "round": "NCAA Men's Basketball Championship - South Region - 1st Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Furman Paladins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Furman Paladins",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "California Baptist Lancers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "California Baptist Lancers",
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Missouri Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Missouri Tigers",
+      "round": "NCAA Men's Basketball Championship - West Region - 1st Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Saint Louis Billikens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Louis Billikens",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "TCU Horned Frogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "TCU Horned Frogs",
+      "round": "NCAA Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "NCAA Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisville Cardinals",
+      "round": "NCAA Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "NCAA Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2026-03-21"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "NCAA Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2026-03-22"
+    },
+    {
+      "t1": "Nebraska Cornhuskers",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vanderbilt Commodores",
+      "round": "NCAA Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2026-03-22"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "High Point Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "High Point Panthers",
+      "round": "NCAA Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2026-03-22"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gators",
+      "round": "NCAA Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2026-03-22"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Miami Hurricanes",
+      "round": "NCAA Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2026-03-22"
+    },
+    {
+      "t1": "Iowa State Cyclones",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2026-03-22"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Cavaliers",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2026-03-22"
+    },
+    {
+      "t1": "St. John's Red Storm",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "NCAA Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2026-03-22"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Utah State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah State Aggies",
+      "round": "NCAA Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2026-03-23"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCLA Bruins",
+      "round": "NCAA Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2026-03-23"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2026-03-23"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "St. John's Red Storm",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "St. John's Red Storm",
+      "round": "NCAA Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2026-03-27"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama Crimson Tide",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2026-03-27"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "NCAA Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2026-03-28"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2026-03-28"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa Hawkeyes",
+      "round": "NCAA Men's Basketball Championship - South Region - Elite 8",
+      "date": "2026-03-28"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "NCAA Men's Basketball Championship - West Region - Elite 8",
+      "date": "2026-03-29"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - Elite 8",
+      "date": "2026-03-29"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "NCAA Men's Basketball Championship - East Region - Elite 8",
+      "date": "2026-03-29"
+    }
+  ],
+  "eliminated": [
+    "SMU Mustangs",
+    "Lehigh Mountain Hawks",
+    "Siena Saints",
+    "Howard Bison",
+    "Idaho Vandals",
+    "North Dakota State Bison",
+    "Pennsylvania Quakers",
+    "Kennesaw State Owls",
+    "Troy Trojans",
+    "Hawai'i Rainbow Warriors",
+    "Wisconsin Badgers",
+    "McNeese Cowboys",
+    "South Florida Bulls",
+    "North Carolina Tar Heels",
+    "BYU Cougars",
+    "Saint Mary's Gaels",
+    "Ohio State Buckeyes",
+    "Georgia Bulldogs",
+    "Long Island University Sharks",
+    "Prairie View A&M Panthers",
+    "Tennessee State Tigers",
+    "Queens University Royals",
+    "Furman Paladins",
+    "Wright State Raiders",
+    "Hofstra Pride",
+    "California Baptist Lancers",
+    "Akron Zips",
+    "Northern Iowa Panthers",
+    "Miami (OH) RedHawks",
+    "Santa Clara Broncos",
+    "UCF Knights",
+    "Missouri Tigers",
+    "Villanova Wildcats",
+    "Clemson Tigers",
+    "Saint Louis Billikens",
+    "TCU Horned Frogs",
+    "Texas A&M Aggies",
+    "Louisville Cardinals",
+    "Gonzaga Bulldogs",
+    "VCU Rams",
+    "Vanderbilt Commodores",
+    "High Point Panthers",
+    "Florida Gators",
+    "Utah State Aggies",
+    "Miami Hurricanes",
+    "Kentucky Wildcats",
+    "UCLA Bruins",
+    "Virginia Cavaliers",
+    "Kansas Jayhawks",
+    "Texas Tech Red Raiders",
+    "St. John's Red Storm",
+    "Alabama Crimson Tide",
+    "Michigan State Spartans",
+    "Iowa State Cyclones",
+    "Purdue Boilermakers",
+    "Iowa Hawkeyes",
+    "Tennessee Volunteers",
+    "Duke Blue Devils"
+  ],
+  "updated": "2026-08-24 08:31 UTC"
 }

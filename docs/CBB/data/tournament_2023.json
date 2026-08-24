@@ -2,8 +2,1151 @@
   "year": 2023,
   "sport": "CBB",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-08-23 19:45 UTC"
+  "games": [
+    {
+      "winner": "Texas A&M-Corpus Christi Islanders",
+      "loser": "Southeast Missouri State Redhawks",
+      "winner_score": 75,
+      "loser_score": 71,
+      "date": "2023-03-14",
+      "round": "Men's Basketball Championship - South Region - First Four"
+    },
+    {
+      "winner": "Pittsburgh Panthers",
+      "loser": "Mississippi State Bulldogs",
+      "winner_score": 60,
+      "loser_score": 59,
+      "date": "2023-03-15",
+      "round": "Men's Basketball Championship - Midwest Region - First Four"
+    },
+    {
+      "winner": "Fairleigh Dickinson Knights",
+      "loser": "Texas Southern Tigers",
+      "winner_score": 84,
+      "loser_score": 61,
+      "date": "2023-03-15",
+      "round": "Men's Basketball Championship - East Region - First Four"
+    },
+    {
+      "winner": "Arizona State Sun Devils",
+      "loser": "Nevada Wolf Pack",
+      "winner_score": 98,
+      "loser_score": 73,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - West Region - First Four"
+    },
+    {
+      "winner": "Maryland Terrapins",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 67,
+      "loser_score": 65,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Furman Paladins",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 68,
+      "loser_score": 67,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Missouri Tigers",
+      "loser": "Utah State Aggies",
+      "winner_score": 76,
+      "loser_score": 65,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Howard Bison",
+      "winner_score": 96,
+      "loser_score": 68,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Texas A&M-Corpus Christi Islanders",
+      "winner_score": 96,
+      "loser_score": 75,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "Charleston Cougars",
+      "winner_score": 63,
+      "loser_score": 57,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Princeton Tigers",
+      "loser": "Arizona Wildcats",
+      "winner_score": 59,
+      "loser_score": 55,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 73,
+      "loser_score": 63,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Auburn Tigers",
+      "loser": "Iowa Hawkeyes",
+      "winner_score": 83,
+      "loser_score": 75,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Oral Roberts Golden Eagles",
+      "winner_score": 74,
+      "loser_score": 51,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Northwestern Wildcats",
+      "loser": "Boise State Broncos",
+      "winner_score": 75,
+      "loser_score": 67,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Colgate Raiders",
+      "winner_score": 81,
+      "loser_score": 61,
+      "date": "2023-03-16",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Northern Kentucky Norse",
+      "winner_score": 63,
+      "loser_score": 52,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Louisiana Ragin' Cajuns",
+      "winner_score": 58,
+      "loser_score": 55,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "UNC Asheville Bulldogs",
+      "winner_score": 86,
+      "loser_score": 53,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Penn State Nittany Lions",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 76,
+      "loser_score": 59,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "USC Trojans",
+      "winner_score": 72,
+      "loser_score": 62,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Kennesaw State Owls",
+      "winner_score": 72,
+      "loser_score": 67,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "UC Santa Barbara Gauchos",
+      "winner_score": 74,
+      "loser_score": 56,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "Saint Mary's Gaels",
+      "loser": "VCU Rams",
+      "winner_score": 63,
+      "loser_score": 51,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Marquette Golden Eagles",
+      "loser": "Vermont Catamounts",
+      "winner_score": 78,
+      "loser_score": 61,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Pittsburgh Panthers",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 59,
+      "loser_score": 41,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "NC State Wolfpack",
+      "winner_score": 72,
+      "loser_score": 63,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - South Region - 1st Round"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Iona Gaels",
+      "winner_score": 87,
+      "loser_score": 63,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Fairleigh Dickinson Knights",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 63,
+      "loser_score": 58,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Providence Friars",
+      "winner_score": 61,
+      "loser_score": 53,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Grand Canyon Lopes",
+      "winner_score": 82,
+      "loser_score": 70,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Drake Bulldogs",
+      "winner_score": 63,
+      "loser_score": 56,
+      "date": "2023-03-17",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "Florida Atlantic Owls",
+      "loser": "Memphis Tigers",
+      "winner_score": 66,
+      "loser_score": 65,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "Montana State Bobcats",
+      "winner_score": 77,
+      "loser_score": 65,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - East Region - 1st Round"
+    },
+    {
+      "winner": "TCU Horned Frogs",
+      "loser": "Arizona State Sun Devils",
+      "winner_score": 72,
+      "loser_score": 70,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - West Region - 1st Round"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "Kent State Golden Flashes",
+      "winner_score": 71,
+      "loser_score": 60,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "Furman Paladins",
+      "winner_score": 75,
+      "loser_score": 52,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Tennessee Volunteers",
+      "loser": "Duke Blue Devils",
+      "winner_score": 65,
+      "loser_score": 52,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 72,
+      "loser_score": 71,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Princeton Tigers",
+      "loser": "Missouri Tigers",
+      "winner_score": 78,
+      "loser_score": 63,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Auburn Tigers",
+      "winner_score": 81,
+      "loser_score": 64,
+      "date": "2023-03-18",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Penn State Nittany Lions",
+      "winner_score": 71,
+      "loser_score": 66,
+      "date": "2023-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Northwestern Wildcats",
+      "winner_score": 68,
+      "loser_score": 63,
+      "date": "2023-03-19",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "Maryland Terrapins",
+      "winner_score": 73,
+      "loser_score": 51,
+      "date": "2023-03-19",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Pittsburgh Panthers",
+      "winner_score": 84,
+      "loser_score": 73,
+      "date": "2023-03-19",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 75,
+      "loser_score": 69,
+      "date": "2023-03-19",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Michigan State Spartans",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 69,
+      "loser_score": 60,
+      "date": "2023-03-19",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Saint Mary's Gaels",
+      "winner_score": 70,
+      "loser_score": 55,
+      "date": "2023-03-19",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Baylor Bears",
+      "winner_score": 85,
+      "loser_score": 76,
+      "date": "2023-03-19",
+      "round": "Men's Basketball Championship - South Region - 2nd Round"
+    },
+    {
+      "winner": "Florida Atlantic Owls",
+      "loser": "Fairleigh Dickinson Knights",
+      "winner_score": 78,
+      "loser_score": 70,
+      "date": "2023-03-20",
+      "round": "Men's Basketball Championship - East Region - 2nd Round"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Indiana Hoosiers",
+      "winner_score": 85,
+      "loser_score": 69,
+      "date": "2023-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "TCU Horned Frogs",
+      "winner_score": 84,
+      "loser_score": 81,
+      "date": "2023-03-20",
+      "round": "Men's Basketball Championship - West Region - 2nd Round"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 71,
+      "loser_score": 64,
+      "date": "2023-03-24",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Houston Cougars",
+      "winner_score": 89,
+      "loser_score": 75,
+      "date": "2023-03-24",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Creighton Bluejays",
+      "loser": "Princeton Tigers",
+      "winner_score": 86,
+      "loser_score": 75,
+      "date": "2023-03-25",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Texas Longhorns",
+      "loser": "Xavier Musketeers",
+      "winner_score": 83,
+      "loser_score": 71,
+      "date": "2023-03-25",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16"
+    },
+    {
+      "winner": "Florida Atlantic Owls",
+      "loser": "Kansas State Wildcats",
+      "winner_score": 79,
+      "loser_score": 76,
+      "date": "2023-03-25",
+      "round": "Men's Basketball Championship - East Region - Elite 8"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 82,
+      "loser_score": 54,
+      "date": "2023-03-26",
+      "round": "Men's Basketball Championship - West Region - Elite 8"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "Creighton Bluejays",
+      "winner_score": 57,
+      "loser_score": 56,
+      "date": "2023-03-26",
+      "round": "Men's Basketball Championship - South Region - Elite 8"
+    },
+    {
+      "winner": "Miami Hurricanes",
+      "loser": "Texas Longhorns",
+      "winner_score": 88,
+      "loser_score": 81,
+      "date": "2023-03-26",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Texas A&M-Corpus Christi Islanders",
+      "t2": "Southeast Missouri State Redhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southeast Missouri State Redhawks",
+      "round": "Men's Basketball Championship - South Region - First Four",
+      "date": "2023-03-14"
+    },
+    {
+      "t1": "Pittsburgh Panthers",
+      "t2": "Mississippi State Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Mississippi State Bulldogs",
+      "round": "Men's Basketball Championship - Midwest Region - First Four",
+      "date": "2023-03-15"
+    },
+    {
+      "t1": "Fairleigh Dickinson Knights",
+      "t2": "Texas Southern Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Southern Tigers",
+      "round": "Men's Basketball Championship - East Region - First Four",
+      "date": "2023-03-15"
+    },
+    {
+      "t1": "Arizona State Sun Devils",
+      "t2": "Nevada Wolf Pack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nevada Wolf Pack",
+      "round": "Men's Basketball Championship - West Region - First Four",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Maryland Terrapins",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "West Virginia Mountaineers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Furman Paladins",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Cavaliers",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Missouri Tigers",
+      "t2": "Utah State Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Utah State Aggies",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Howard Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Howard Bison",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Texas A&M-Corpus Christi Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M-Corpus Christi Islanders",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "Charleston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Charleston Cougars",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Princeton Tigers",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Illinois Fighting Illini",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Auburn Tigers",
+      "t2": "Iowa Hawkeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa Hawkeyes",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Oral Roberts Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oral Roberts Golden Eagles",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Northwestern Wildcats",
+      "t2": "Boise State Broncos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Boise State Broncos",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Colgate Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Colgate Raiders",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2023-03-16"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Northern Kentucky Norse",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northern Kentucky Norse",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Louisiana Ragin' Cajuns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisiana Ragin' Cajuns",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "UNC Asheville Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UNC Asheville Bulldogs",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Penn State Nittany Lions",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "USC Trojans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "USC Trojans",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Kennesaw State Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kennesaw State Owls",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "UC Santa Barbara Gauchos",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UC Santa Barbara Gauchos",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Saint Mary's Gaels",
+      "t2": "VCU Rams",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "VCU Rams",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Marquette Golden Eagles",
+      "t2": "Vermont Catamounts",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vermont Catamounts",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Pittsburgh Panthers",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NC State Wolfpack",
+      "round": "Men's Basketball Championship - South Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Iona Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iona Gaels",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Fairleigh Dickinson Knights",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Providence Friars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Providence Friars",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Grand Canyon Lopes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Grand Canyon Lopes",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Drake Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Drake Bulldogs",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2023-03-17"
+    },
+    {
+      "t1": "Florida Atlantic Owls",
+      "t2": "Memphis Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Memphis Tigers",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "Montana State Bobcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Montana State Bobcats",
+      "round": "Men's Basketball Championship - East Region - 1st Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "TCU Horned Frogs",
+      "t2": "Arizona State Sun Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona State Sun Devils",
+      "round": "Men's Basketball Championship - West Region - 1st Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "Kent State Golden Flashes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kent State Golden Flashes",
+      "round": "Men's Basketball Championship - Midwest Region - 1st Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "Furman Paladins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Furman Paladins",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "Tennessee Volunteers",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "Princeton Tigers",
+      "t2": "Missouri Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Missouri Tigers",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Auburn Tigers",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2023-03-18"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Penn State Nittany Lions",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Penn State Nittany Lions",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2023-03-19"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Northwestern Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Northwestern Wildcats",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2023-03-19"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Maryland Terrapins",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2023-03-19"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Pittsburgh Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Pittsburgh Panthers",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2023-03-19"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2023-03-19"
+    },
+    {
+      "t1": "Michigan State Spartans",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2023-03-19"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Saint Mary's Gaels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Mary's Gaels",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2023-03-19"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "Men's Basketball Championship - South Region - 2nd Round",
+      "date": "2023-03-19"
+    },
+    {
+      "t1": "Florida Atlantic Owls",
+      "t2": "Fairleigh Dickinson Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Fairleigh Dickinson Knights",
+      "round": "Men's Basketball Championship - East Region - 2nd Round",
+      "date": "2023-03-20"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Indiana Hoosiers",
+      "round": "Men's Basketball Championship - Midwest Region - 2nd Round",
+      "date": "2023-03-20"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "TCU Horned Frogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "TCU Horned Frogs",
+      "round": "Men's Basketball Championship - West Region - 2nd Round",
+      "date": "2023-03-20"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama Crimson Tide",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2023-03-24"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2023-03-24"
+    },
+    {
+      "t1": "Creighton Bluejays",
+      "t2": "Princeton Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Princeton Tigers",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2023-03-25"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "Men's Basketball Championship - Midwest Region - Sweet 16",
+      "date": "2023-03-25"
+    },
+    {
+      "t1": "Florida Atlantic Owls",
+      "t2": "Kansas State Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas State Wildcats",
+      "round": "Men's Basketball Championship - East Region - Elite 8",
+      "date": "2023-03-25"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "Men's Basketball Championship - West Region - Elite 8",
+      "date": "2023-03-26"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "Creighton Bluejays",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Creighton Bluejays",
+      "round": "Men's Basketball Championship - South Region - Elite 8",
+      "date": "2023-03-26"
+    },
+    {
+      "t1": "Miami Hurricanes",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "Men's Basketball Championship - Midwest Region - Elite 8",
+      "date": "2023-03-26"
+    }
+  ],
+  "eliminated": [
+    "Southeast Missouri State Redhawks",
+    "Mississippi State Bulldogs",
+    "Texas Southern Tigers",
+    "Nevada Wolf Pack",
+    "West Virginia Mountaineers",
+    "Virginia Cavaliers",
+    "Utah State Aggies",
+    "Howard Bison",
+    "Texas A&M-Corpus Christi Islanders",
+    "Charleston Cougars",
+    "Arizona Wildcats",
+    "Illinois Fighting Illini",
+    "Iowa Hawkeyes",
+    "Oral Roberts Golden Eagles",
+    "Boise State Broncos",
+    "Colgate Raiders",
+    "Northern Kentucky Norse",
+    "Louisiana Ragin' Cajuns",
+    "UNC Asheville Bulldogs",
+    "Texas A&M Aggies",
+    "USC Trojans",
+    "Kennesaw State Owls",
+    "UC Santa Barbara Gauchos",
+    "VCU Rams",
+    "Vermont Catamounts",
+    "Iowa State Cyclones",
+    "NC State Wolfpack",
+    "Iona Gaels",
+    "Purdue Boilermakers",
+    "Providence Friars",
+    "Grand Canyon Lopes",
+    "Drake Bulldogs",
+    "Memphis Tigers",
+    "Montana State Bobcats",
+    "Arizona State Sun Devils",
+    "Kent State Golden Flashes",
+    "Furman Paladins",
+    "Duke Blue Devils",
+    "Kansas Jayhawks",
+    "Missouri Tigers",
+    "Auburn Tigers",
+    "Penn State Nittany Lions",
+    "Northwestern Wildcats",
+    "Maryland Terrapins",
+    "Pittsburgh Panthers",
+    "Kentucky Wildcats",
+    "Marquette Golden Eagles",
+    "Saint Mary's Gaels",
+    "Baylor Bears",
+    "Fairleigh Dickinson Knights",
+    "Indiana Hoosiers",
+    "TCU Horned Frogs",
+    "Alabama Crimson Tide",
+    "Houston Cougars",
+    "Princeton Tigers",
+    "Xavier Musketeers",
+    "Kansas State Wildcats",
+    "Gonzaga Bulldogs",
+    "Creighton Bluejays",
+    "Texas Longhorns"
+  ],
+  "updated": "2026-08-24 08:31 UTC"
 }
