@@ -2268,11 +2268,61 @@ window.initSportPage = function(CFG) {
         Object.keys(champs).forEach(function(k){ result[k.toLowerCase()] = champs[k]; });
         return result;
       } else {
-        // CBASE: fetch conference tournament championship games
+        // CBASE: same fix as CBB, applied by direct analogy —
+        //
+        // The old version here had two bugs that together guaranteed it
+        // never found a real champion: (1) its first URL never included a
+        // `dates=` param at all, so instead of querying the *selected*
+        // season's conference-tournament window it queried ESPN's default
+        // "today" slate — meaningless for any season other than whatever
+        // happens to be in progress right now, and completely empty the
+        // rest of the year (this is CBASE's off-season as of this fix).
+        // (2) it flagged a game as "the champion" whenever any note
+        // headline merely CONTAINED the word "champion" — a false positive
+        // on every earlier round too, since ESPN labels those "<Conf>
+        // Championship - Quarterfinal" / "- Semifinal", which also contain
+        // "champion". Whichever round got processed first silently won.
+        //
+        // Fix, mirroring the CBB approach one-for-one: sweep the real
+        // conference-tournament window for the *selected* season with a
+        // proper dates= range, require a true final-round headline (ends
+        // in "- Final", not "- Semifinal"/"- Quarterfinal"/etc — same
+        // suffix rule already proven live for CBB, and used by the R
+        // backend's own fetch_conf_champs() for exactly this reason), and
+        // resolve both teams' conferences from THIS season's own CSV
+        // (`data`), not from parsing ESPN's own conference-name text —
+        // so it never depends on ESPN's naming matching ours. Only counts
+        // as an auto bid if both teams share a conference by our own data.
+        //
+        // Window is May 10 – Jun 3: regular-season conference tournaments
+        // mostly run mid-to-late May, but some (SEC, ACC) can run into the
+        // very start of June, so this is intentionally a bit wider than
+        // the R backend's May 15–28 window to avoid clipping a late final.
+        //
+        // NOTE: unlike CBB's endpoint (confirmed to 404 on dates=RANGE,
+        // requiring a day-by-day sweep), college baseball's scoreboard
+        // does accept dates=RANGE — this codebase's own R backend
+        // (update_college_baseball.R's fetch_cbase_season()) already
+        // fetches full season data this way successfully. This branch
+        // could not be re-verified against live ESPN data at fix time
+        // (the diagnostic tool available was returning an unrelated
+        // cached/default response for this endpoint no matter what params
+        // were sent), so if auto bids still look wrong for a past CBASE
+        // season after this ships, that's the first thing to re-check.
+        var teamToConf = {};
+        data.forEach(function(r){ if (r.team && r.conference) teamToConf[r.team] = r.conference; });
+
+        function isFinalRound(headline) {
+          var h = (headline||'').trim();
+          if (!h) return false;
+          if (/-\s*(semi|quarter|elite|first|second|1st|2nd|3rd)\s*final/i.test(h)) return false;
+          return /-\s*final\s*$/i.test(h);
+        }
+
         var yr = season;
-        var fromDate = yr + '0515'; var toDate = yr + '0528';
+        var fromDate = yr + '0510'; var toDate = yr + '0603';
         var urls = [
-          'https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard?limit=500&seasontype=3&groups=11',
+          'https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard?limit=500&dates='+fromDate+'-'+toDate+'&seasontype=3&groups=11',
           'https://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard?limit=500&dates='+fromDate+'-'+toDate+'&groups=11'
         ];
         return Promise.all(urls.map(function(u) {
@@ -2283,22 +2333,30 @@ window.initSportPage = function(CFG) {
           var champs = {};
           events.forEach(function(ev) {
             try {
-              var note = (ev.notes||[]).map(function(n){return n.headline||'';}).join(' ');
-              if (!/champion/i.test(note)) return;
               var comp = (ev.competitions||[])[0];
-              if (!comp || !comp.status.type.completed) return;
-              var winner=null, max=-1;
-              (comp.competitors||[]).forEach(function(c){ var s=parseFloat(c.score); if(!isNaN(s)&&s>max){max=s;winner=c;} });
-              if (!winner) return;
-              var wn = winner.team.shortDisplayName || winner.team.displayName || '';
-              if (ev.groups && ev.groups[0]) {
-                var g = ev.groups[0]; 
-                if (g.name) champs[g.name.toLowerCase()] = wn;
-                if (g.shortName) champs[g.shortName.toLowerCase()] = wn;
+              if (!comp || !comp.status || !comp.status.type || !comp.status.type.completed) return;
+              var notesArr = comp.notes || ev.notes || [];
+              var finalHeadline = null;
+              for (var i=0;i<notesArr.length;i++) {
+                var h = notesArr[i].headline || '';
+                if (isFinalRound(h)) { finalHeadline = h; break; }
               }
+              if (!finalHeadline) return;
+              var competitors = comp.competitors||[];
+              if (competitors.length !== 2) return;
+              var winner=null, max=-1;
+              competitors.forEach(function(c){ var s=parseFloat(c.score); if(!isNaN(s)&&s>max){max=s;winner=c;} });
+              if (!winner) return;
+              var loser = competitors.find(function(c){ return c!==winner; });
+              var wn = winner.team.shortDisplayName || winner.team.displayName || '';
+              var ln = loser && (loser.team.shortDisplayName || loser.team.displayName) || '';
+              var wConf = teamToConf[wn], lConf = teamToConf[ln];
+              if (wConf && wConf === lConf) champs[wConf] = wn;
             } catch(e){}
           });
-          return champs;
+          var result = {};
+          Object.keys(champs).forEach(function(k){ result[k.toLowerCase()] = champs[k]; });
+          return result;
         });
       }
     }
