@@ -4,15 +4,41 @@
   "completed": true,
   "games": [
     {
+      "winner": "Memphis Tigers",
+      "loser": "Southern Miss Golden Eagles",
+      "winner_score": 69,
+      "loser_score": 53,
+      "date": "2008-03-14",
+      "round": "C-USA Men's Championship - Semifinals"
+    },
+    {
       "winner": "Saint Joseph's Hawks",
       "loser": "Xavier Musketeers",
       "winner_score": 61,
       "loser_score": 53,
       "date": "2008-03-14",
       "round": "Atlantic 10 Men's Championship - Semifinals AT ATLANTIC CITY NJ"
+    },
+    {
+      "winner": "Memphis Tigers",
+      "loser": "Tulsa Golden Hurricane",
+      "winner_score": 77,
+      "loser_score": 51,
+      "date": "2008-03-15",
+      "round": "C-USA Men's Championship - Final"
     }
   ],
   "series": [
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Southern Miss Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Southern Miss Golden Eagles",
+      "round": "C-USA Men's Championship - Semifinals",
+      "date": "2008-03-14"
+    },
     {
       "t1": "Saint Joseph's Hawks",
       "t2": "Xavier Musketeers",
@@ -22,10 +48,22 @@
       "loser": "Xavier Musketeers",
       "round": "Atlantic 10 Men's Championship - Semifinals AT ATLANTIC CITY NJ",
       "date": "2008-03-14"
+    },
+    {
+      "t1": "Memphis Tigers",
+      "t2": "Tulsa Golden Hurricane",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tulsa Golden Hurricane",
+      "round": "C-USA Men's Championship - Final",
+      "date": "2008-03-15"
     }
   ],
   "eliminated": [
-    "Xavier Musketeers"
+    "Southern Miss Golden Eagles",
+    "Xavier Musketeers",
+    "Tulsa Golden Hurricane"
   ],
-  "updated": "2026-08-24 19:50 UTC"
+  "updated": "2026-08-25 08:07 UTC"
 }
