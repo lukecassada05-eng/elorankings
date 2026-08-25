@@ -143,7 +143,7 @@ fetch_scoreboard_games_daily <- function(sport_path, start_date, end_date,
                     "&limit=500&dates=", ds)
       data <- tryCatch(jsonlite::fromJSON(url, simplifyVector = FALSE),
                        error = function(e) NULL)
-      if (is.null(data) || length(data$events) == 0) { cur <- cur + 1; next }
+      if (is.null(data) || length(data$events) == 0) next
 
       for (ev in data$events) {
         tryCatch({
