@@ -372,6 +372,22 @@
       "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL"
     },
     {
+      "winner": "North Carolina A&T Aggies",
+      "loser": "Liberty Flames",
+      "winner_score": 73,
+      "loser_score": 72,
+      "date": "2013-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT DAYTON OH"
+    },
+    {
+      "winner": "Saint Mary's Gaels",
+      "loser": "Middle Tennessee Blue Raiders",
+      "winner_score": 67,
+      "loser_score": 54,
+      "date": "2013-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT DAYTON OH"
+    },
+    {
       "winner": "James Madison Dukes",
       "loser": "Long Island University Sharks",
       "winner_score": 68,
@@ -772,6 +788,38 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND AT KANSAS CITY MO"
     },
     {
+      "winner": "Marquette Golden Eagles",
+      "loser": "Miami Hurricanes",
+      "winner_score": 71,
+      "loser_score": 61,
+      "date": "2013-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16 AT WASHINGTON"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Arizona Wildcats",
+      "winner_score": 73,
+      "loser_score": 70,
+      "date": "2013-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16 AT LOS ANGELES"
+    },
+    {
+      "winner": "Syracuse Orange",
+      "loser": "Indiana Hoosiers",
+      "winner_score": 61,
+      "loser_score": 50,
+      "date": "2013-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16 AT WASHINGTON"
+    },
+    {
+      "winner": "Wichita State Shockers",
+      "loser": "La Salle Explorers",
+      "winner_score": 72,
+      "loser_score": 58,
+      "date": "2013-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16 AT LOS ANGELES"
+    },
+    {
       "winner": "Louisville Cardinals",
       "loser": "Oregon Ducks",
       "winner_score": 77,
@@ -834,6 +882,30 @@
       "loser_score": 63,
       "date": "2013-03-31",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT INDIANAPOLIS"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Wichita State Shockers",
+      "winner_score": 72,
+      "loser_score": 68,
+      "date": "2013-04-06",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT ATLANTA"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Syracuse Orange",
+      "winner_score": 61,
+      "loser_score": 56,
+      "date": "2013-04-07",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT ATLANTA"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Michigan Wolverines",
+      "winner_score": 82,
+      "loser_score": 76,
+      "date": "2013-04-09",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP AT ATLANTA"
     }
   ],
   "series": [
@@ -1296,6 +1368,26 @@
       "loser": "VCU Rams",
       "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL",
       "date": "2013-03-17"
+    },
+    {
+      "t1": "North Carolina A&T Aggies",
+      "t2": "Liberty Flames",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Liberty Flames",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT DAYTON OH",
+      "date": "2013-03-19"
+    },
+    {
+      "t1": "Saint Mary's Gaels",
+      "t2": "Middle Tennessee Blue Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Middle Tennessee Blue Raiders",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND AT DAYTON OH",
+      "date": "2013-03-20"
     },
     {
       "t1": "James Madison Dukes",
@@ -1798,6 +1890,46 @@
       "date": "2013-03-25"
     },
     {
+      "t1": "Marquette Golden Eagles",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Miami Hurricanes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16 AT WASHINGTON",
+      "date": "2013-03-28"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16 AT LOS ANGELES",
+      "date": "2013-03-28"
+    },
+    {
+      "t1": "Syracuse Orange",
+      "t2": "Indiana Hoosiers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Indiana Hoosiers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16 AT WASHINGTON",
+      "date": "2013-03-29"
+    },
+    {
+      "t1": "Wichita State Shockers",
+      "t2": "La Salle Explorers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "La Salle Explorers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16 AT LOS ANGELES",
+      "date": "2013-03-29"
+    },
+    {
       "t1": "Louisville Cardinals",
       "t2": "Oregon Ducks",
       "w1": 1,
@@ -1876,6 +2008,36 @@
       "loser": "Duke Blue Devils",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT INDIANAPOLIS",
       "date": "2013-03-31"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Wichita State Shockers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wichita State Shockers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT ATLANTA",
+      "date": "2013-04-06"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT ATLANTA",
+      "date": "2013-04-07"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP AT ATLANTA",
+      "date": "2013-04-09"
     }
   ],
   "eliminated": [
@@ -1925,6 +2087,8 @@
     "Syracuse Orange",
     "Weber State Wildcats",
     "VCU Rams",
+    "Liberty Flames",
+    "Middle Tennessee Blue Raiders",
     "Long Island University Sharks",
     "Boise State Broncos",
     "Southern Jaguars",
@@ -1960,13 +2124,18 @@
     "Creighton Bluejays",
     "Minnesota Golden Gophers",
     "Ole Miss Rebels",
+    "Miami Hurricanes",
+    "Arizona Wildcats",
+    "Indiana Hoosiers",
     "Oregon Ducks",
     "Kansas Jayhawks",
     "Michigan State Spartans",
     "Florida Gulf Coast Eagles",
     "Ohio State Buckeyes",
     "Florida Gators",
-    "Duke Blue Devils"
+    "Duke Blue Devils",
+    "Wichita State Shockers",
+    "Michigan Wolverines"
   ],
-  "updated": "2026-08-25 19:50 UTC"
+  "updated": "2026-08-26 08:17 UTC"
 }

@@ -12,6 +12,22 @@
       "round": "Atlantic 10 Championship - Quarterfinal"
     },
     {
+      "winner": "Colorado State Rams",
+      "loser": "Virginia Cavaliers",
+      "winner_score": 67,
+      "loser_score": 42,
+      "date": "2024-03-20",
+      "round": "Men's Basketball Championship - Midwest Region - First Four"
+    },
+    {
+      "winner": "Wagner Seahawks",
+      "loser": "Howard Bison",
+      "winner_score": 71,
+      "loser_score": 68,
+      "date": "2024-03-19",
+      "round": "Men's Basketball Championship - West Region - First Four"
+    },
+    {
       "winner": "Colorado Buffaloes",
       "loser": "Boise State Broncos",
       "winner_score": 60,
@@ -412,6 +428,38 @@
       "round": "Men's Basketball Championship - East Region - 2nd Round"
     },
     {
+      "winner": "UConn Huskies",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 82,
+      "loser_score": 52,
+      "date": "2024-03-28",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 89,
+      "loser_score": 87,
+      "date": "2024-03-29",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Clemson Tigers",
+      "loser": "Arizona Wildcats",
+      "winner_score": 77,
+      "loser_score": 72,
+      "date": "2024-03-28",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Iowa State Cyclones",
+      "winner_score": 72,
+      "loser_score": 69,
+      "date": "2024-03-29",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
       "winner": "Purdue Boilermakers",
       "loser": "Gonzaga Bulldogs",
       "winner_score": 80,
@@ -474,6 +522,30 @@
       "loser_score": 64,
       "date": "2024-03-31",
       "round": "Men's Basketball Championship - South Region - Elite 8"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "NC State Wolfpack",
+      "winner_score": 63,
+      "loser_score": 50,
+      "date": "2024-04-06",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Alabama Crimson Tide",
+      "winner_score": 86,
+      "loser_score": 72,
+      "date": "2024-04-07",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 75,
+      "loser_score": 60,
+      "date": "2024-04-09",
+      "round": "Men's Basketball Championship - National Championship"
     }
   ],
   "series": [
@@ -486,6 +558,26 @@
       "loser": "Dayton Flyers",
       "round": "Atlantic 10 Championship - Quarterfinal",
       "date": "2024-03-15"
+    },
+    {
+      "t1": "Wagner Seahawks",
+      "t2": "Howard Bison",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Howard Bison",
+      "round": "Men's Basketball Championship - West Region - First Four",
+      "date": "2024-03-19"
+    },
+    {
+      "t1": "Colorado State Rams",
+      "t2": "Virginia Cavaliers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Virginia Cavaliers",
+      "round": "Men's Basketball Championship - Midwest Region - First Four",
+      "date": "2024-03-20"
     },
     {
       "t1": "Grambling Tigers",
@@ -988,6 +1080,46 @@
       "date": "2024-03-25"
     },
     {
+      "t1": "UConn Huskies",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2024-03-28"
+    },
+    {
+      "t1": "Clemson Tigers",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2024-03-28"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2024-03-29"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Iowa State Cyclones",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Iowa State Cyclones",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2024-03-29"
+    },
+    {
       "t1": "Purdue Boilermakers",
       "t2": "Gonzaga Bulldogs",
       "w1": 1,
@@ -1066,10 +1198,42 @@
       "loser": "Duke Blue Devils",
       "round": "Men's Basketball Championship - South Region - Elite 8",
       "date": "2024-03-31"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NC State Wolfpack",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2024-04-06"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Alabama Crimson Tide",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Alabama Crimson Tide",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2024-04-07"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "Men's Basketball Championship - National Championship",
+      "date": "2024-04-09"
     }
   ],
   "eliminated": [
     "Dayton Flyers",
+    "Virginia Cavaliers",
+    "Howard Bison",
     "Boise State Broncos",
     "Montana State Bobcats",
     "Wagner Seahawks",
@@ -1119,6 +1283,10 @@
     "James Madison Dukes",
     "Grand Canyon Lopes",
     "Yale Bulldogs",
+    "San Diego State Aztecs",
+    "North Carolina Tar Heels",
+    "Arizona Wildcats",
+    "Iowa State Cyclones",
     "Gonzaga Bulldogs",
     "Houston Cougars",
     "Marquette Golden Eagles",
@@ -1126,7 +1294,10 @@
     "Illinois Fighting Illini",
     "Clemson Tigers",
     "Tennessee Volunteers",
-    "Duke Blue Devils"
+    "Duke Blue Devils",
+    "NC State Wolfpack",
+    "Alabama Crimson Tide",
+    "Purdue Boilermakers"
   ],
-  "updated": "2026-08-25 19:51 UTC"
+  "updated": "2026-08-26 08:19 UTC"
 }

@@ -4,6 +4,22 @@
   "completed": true,
   "games": [
     {
+      "winner": "North Carolina Tar Heels",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 95,
+      "loser_score": 68,
+      "date": "2025-03-19",
+      "round": "Men's Basketball Championship - South Region - First Four"
+    },
+    {
+      "winner": "Alabama State Hornets",
+      "loser": "Saint Francis Red Wolves",
+      "winner_score": 70,
+      "loser_score": 68,
+      "date": "2025-03-18",
+      "round": "Men's Basketball Championship - South Region - First Four"
+    },
+    {
       "winner": "Xavier Musketeers",
       "loser": "Texas Longhorns",
       "winner_score": 86,
@@ -404,6 +420,38 @@
       "round": "Men's Basketball Championship - East Region - 2nd Round"
     },
     {
+      "winner": "Florida Gators",
+      "loser": "Maryland Terrapins",
+      "winner_score": 87,
+      "loser_score": 71,
+      "date": "2025-03-27",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Arizona Wildcats",
+      "winner_score": 100,
+      "loser_score": 93,
+      "date": "2025-03-28",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "Alabama Crimson Tide",
+      "loser": "BYU Cougars",
+      "winner_score": 113,
+      "loser_score": 88,
+      "date": "2025-03-27",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 85,
+      "loser_score": 83,
+      "date": "2025-03-28",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
       "winner": "Auburn Tigers",
       "loser": "Michigan Wolverines",
       "winner_score": 78,
@@ -466,9 +514,53 @@
       "loser_score": 64,
       "date": "2025-03-30",
       "round": "Men's Basketball Championship - South Region - Elite 8"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Auburn Tigers",
+      "winner_score": 79,
+      "loser_score": 73,
+      "date": "2025-04-05",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Duke Blue Devils",
+      "winner_score": 70,
+      "loser_score": 67,
+      "date": "2025-04-06",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Houston Cougars",
+      "winner_score": 65,
+      "loser_score": 63,
+      "date": "2025-04-08",
+      "round": "Men's Basketball Championship - National Championship"
     }
   ],
   "series": [
+    {
+      "t1": "Alabama State Hornets",
+      "t2": "Saint Francis Red Wolves",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Saint Francis Red Wolves",
+      "round": "Men's Basketball Championship - South Region - First Four",
+      "date": "2025-03-18"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "Men's Basketball Championship - South Region - First Four",
+      "date": "2025-03-19"
+    },
     {
       "t1": "Mount St. Mary's Mountaineers",
       "t2": "American University Eagles",
@@ -970,6 +1062,46 @@
       "date": "2025-03-24"
     },
     {
+      "t1": "Florida Gators",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Maryland Terrapins",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2025-03-27"
+    },
+    {
+      "t1": "Alabama Crimson Tide",
+      "t2": "BYU Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "BYU Cougars",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2025-03-27"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2025-03-28"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arkansas Razorbacks",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2025-03-28"
+    },
+    {
       "t1": "Michigan State Spartans",
       "t2": "Ole Miss Rebels",
       "w1": 1,
@@ -1048,9 +1180,41 @@
       "loser": "Michigan State Spartans",
       "round": "Men's Basketball Championship - South Region - Elite 8",
       "date": "2025-03-30"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Auburn Tigers",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2025-04-05"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2025-04-06"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "Men's Basketball Championship - National Championship",
+      "date": "2025-04-08"
     }
   ],
   "eliminated": [
+    "San Diego State Aztecs",
+    "Saint Francis Red Wolves",
     "Texas Longhorns",
     "American University Eagles",
     "SIU Edwardsville Cougars",
@@ -1101,6 +1265,10 @@
     "Iowa State Cyclones",
     "Colorado State Rams",
     "Oregon Ducks",
+    "Maryland Terrapins",
+    "Arizona Wildcats",
+    "BYU Cougars",
+    "Arkansas Razorbacks",
     "Michigan Wolverines",
     "Purdue Boilermakers",
     "Ole Miss Rebels",
@@ -1108,7 +1276,10 @@
     "Texas Tech Red Raiders",
     "Alabama Crimson Tide",
     "Tennessee Volunteers",
-    "Michigan State Spartans"
+    "Michigan State Spartans",
+    "Auburn Tigers",
+    "Duke Blue Devils",
+    "Houston Cougars"
   ],
-  "updated": "2026-08-25 19:51 UTC"
+  "updated": "2026-08-26 08:20 UTC"
 }

@@ -4,6 +4,22 @@
   "completed": true,
   "games": [
     {
+      "winner": "Florida Gulf Coast Eagles",
+      "loser": "Fairleigh Dickinson Knights",
+      "winner_score": 96,
+      "loser_score": 65,
+      "date": "2016-03-15",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - FIRST FOUR"
+    },
+    {
+      "winner": "Wichita State Shockers",
+      "loser": "Vanderbilt Commodores",
+      "winner_score": 70,
+      "loser_score": 50,
+      "date": "2016-03-16",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - FIRST FOUR"
+    },
+    {
       "winner": "Holy Cross Crusaders",
       "loser": "Southern Jaguars",
       "winner_score": 59,
@@ -404,6 +420,38 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 2nd ROUND"
     },
     {
+      "winner": "Villanova Wildcats",
+      "loser": "Miami Hurricanes",
+      "winner_score": 92,
+      "loser_score": 69,
+      "date": "2016-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16"
+    },
+    {
+      "winner": "Oklahoma Sooners",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 77,
+      "loser_score": 63,
+      "date": "2016-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Maryland Terrapins",
+      "winner_score": 79,
+      "loser_score": 63,
+      "date": "2016-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16"
+    },
+    {
+      "winner": "Oregon Ducks",
+      "loser": "Duke Blue Devils",
+      "winner_score": 82,
+      "loser_score": 68,
+      "date": "2016-03-25",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
       "winner": "Virginia Cavaliers",
       "loser": "Iowa State Cyclones",
       "winner_score": 84,
@@ -466,9 +514,53 @@
       "loser_score": 74,
       "date": "2016-03-28",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Oklahoma Sooners",
+      "winner_score": 95,
+      "loser_score": 51,
+      "date": "2016-04-02",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Syracuse Orange",
+      "winner_score": 83,
+      "loser_score": 66,
+      "date": "2016-04-03",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 77,
+      "loser_score": 74,
+      "date": "2016-04-05",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP"
     }
   ],
   "series": [
+    {
+      "t1": "Florida Gulf Coast Eagles",
+      "t2": "Fairleigh Dickinson Knights",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Fairleigh Dickinson Knights",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - FIRST FOUR",
+      "date": "2016-03-15"
+    },
+    {
+      "t1": "Wichita State Shockers",
+      "t2": "Vanderbilt Commodores",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Vanderbilt Commodores",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - FIRST FOUR",
+      "date": "2016-03-16"
+    },
     {
       "t1": "Holy Cross Crusaders",
       "t2": "Southern Jaguars",
@@ -970,6 +1062,46 @@
       "date": "2016-03-21"
     },
     {
+      "t1": "Villanova Wildcats",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Miami Hurricanes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16",
+      "date": "2016-03-24"
+    },
+    {
+      "t1": "Oklahoma Sooners",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2016-03-24"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Maryland Terrapins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Maryland Terrapins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16",
+      "date": "2016-03-25"
+    },
+    {
+      "t1": "Oregon Ducks",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2016-03-25"
+    },
+    {
       "t1": "Virginia Cavaliers",
       "t2": "Iowa State Cyclones",
       "w1": 1,
@@ -1048,9 +1180,41 @@
       "loser": "Notre Dame Fighting Irish",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8",
       "date": "2016-03-28"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Oklahoma Sooners",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oklahoma Sooners",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2016-04-02"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2016-04-03"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP",
+      "date": "2016-04-05"
     }
   ],
   "eliminated": [
+    "Fairleigh Dickinson Knights",
+    "Vanderbilt Commodores",
     "Southern Jaguars",
     "Tulsa Golden Hurricane",
     "UNC Wilmington Seahawks",
@@ -1101,6 +1265,10 @@
     "Northern Iowa Panthers",
     "Xavier Musketeers",
     "Saint Joseph's Hawks",
+    "Miami Hurricanes",
+    "Texas A&M Aggies",
+    "Maryland Terrapins",
+    "Duke Blue Devils",
     "Iowa State Cyclones",
     "Wisconsin Badgers",
     "Gonzaga Bulldogs",
@@ -1108,7 +1276,10 @@
     "Oregon Ducks",
     "Kansas Jayhawks",
     "Virginia Cavaliers",
-    "Notre Dame Fighting Irish"
+    "Notre Dame Fighting Irish",
+    "Oklahoma Sooners",
+    "Syracuse Orange",
+    "North Carolina Tar Heels"
   ],
-  "updated": "2026-08-25 19:50 UTC"
+  "updated": "2026-08-26 08:18 UTC"
 }

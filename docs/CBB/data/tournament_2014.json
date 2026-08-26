@@ -252,6 +252,22 @@
       "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL"
     },
     {
+      "winner": "UAlbany Great Danes",
+      "loser": "Mount St. Mary's Mountaineers",
+      "winner_score": 71,
+      "loser_score": 64,
+      "date": "2014-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND"
+    },
+    {
+      "winner": "NC State Wolfpack",
+      "loser": "Xavier Musketeers",
+      "winner_score": 74,
+      "loser_score": 59,
+      "date": "2014-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
       "winner": "Cal Poly Mustangs",
       "loser": "Texas Southern Tigers",
       "winner_score": 81,
@@ -652,6 +668,38 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 3rd ROUND"
     },
     {
+      "winner": "Dayton Flyers",
+      "loser": "Stanford Cardinal",
+      "winner_score": 82,
+      "loser_score": 72,
+      "date": "2014-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Baylor Bears",
+      "winner_score": 69,
+      "loser_score": 52,
+      "date": "2014-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "UCLA Bruins",
+      "winner_score": 79,
+      "loser_score": 68,
+      "date": "2014-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 70,
+      "loser_score": 64,
+      "date": "2014-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
       "winner": "Michigan Wolverines",
       "loser": "Tennessee Volunteers",
       "winner_score": 73,
@@ -714,6 +762,30 @@
       "loser_score": 72,
       "date": "2014-03-30",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Florida Gators",
+      "winner_score": 63,
+      "loser_score": 53,
+      "date": "2014-04-05",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 74,
+      "loser_score": 73,
+      "date": "2014-04-06",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 60,
+      "loser_score": 54,
+      "date": "2014-04-08",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP"
     }
   ],
   "series": [
@@ -1026,6 +1098,26 @@
       "loser": "VCU Rams",
       "round": "ATLANTIC 10 MEN'S CHAMPIONSHIP - FINAL",
       "date": "2014-03-16"
+    },
+    {
+      "t1": "UAlbany Great Danes",
+      "t2": "Mount St. Mary's Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Mount St. Mary's Mountaineers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 1st ROUND",
+      "date": "2014-03-18"
+    },
+    {
+      "t1": "NC State Wolfpack",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2014-03-19"
     },
     {
       "t1": "Cal Poly Mustangs",
@@ -1528,6 +1620,46 @@
       "date": "2014-03-24"
     },
     {
+      "t1": "Dayton Flyers",
+      "t2": "Stanford Cardinal",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Stanford Cardinal",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16",
+      "date": "2014-03-27"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2014-03-27"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCLA Bruins",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16",
+      "date": "2014-03-28"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2014-03-28"
+    },
+    {
       "t1": "Michigan Wolverines",
       "t2": "Tennessee Volunteers",
       "w1": 1,
@@ -1606,6 +1738,36 @@
       "loser": "Michigan Wolverines",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8",
       "date": "2014-03-30"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gators",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2014-04-05"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2014-04-06"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP",
+      "date": "2014-04-08"
     }
   ],
   "eliminated": [
@@ -1640,6 +1802,7 @@
     "Baylor Bears",
     "Georgia State Panthers",
     "VCU Rams",
+    "Mount St. Mary's Mountaineers",
     "Texas Southern Tigers",
     "Iowa Hawkeyes",
     "Ohio State Buckeyes",
@@ -1682,13 +1845,18 @@
     "Stephen F. Austin Lumberjacks",
     "Memphis Tigers",
     "Gonzaga Bulldogs",
+    "Stanford Cardinal",
+    "UCLA Bruins",
     "Tennessee Volunteers",
     "Iowa State Cyclones",
     "Louisville Cardinals",
     "Virginia Cavaliers",
     "Arizona Wildcats",
     "Michigan State Spartans",
-    "Michigan Wolverines"
+    "Michigan Wolverines",
+    "Florida Gators",
+    "Wisconsin Badgers",
+    "Kentucky Wildcats"
   ],
-  "updated": "2026-08-25 19:50 UTC"
+  "updated": "2026-08-26 08:17 UTC"
 }

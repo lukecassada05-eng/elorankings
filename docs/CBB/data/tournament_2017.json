@@ -404,6 +404,38 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
     },
     {
+      "winner": "Oregon Ducks",
+      "loser": "Michigan Wolverines",
+      "winner_score": 69,
+      "loser_score": 68,
+      "date": "2017-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 61,
+      "loser_score": 58,
+      "date": "2017-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Purdue Boilermakers",
+      "winner_score": 98,
+      "loser_score": 66,
+      "date": "2017-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Xavier Musketeers",
+      "loser": "Arizona Wildcats",
+      "winner_score": 73,
+      "loser_score": 71,
+      "date": "2017-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
       "winner": "North Carolina Tar Heels",
       "loser": "Butler Bulldogs",
       "winner_score": 92,
@@ -466,6 +498,30 @@
       "loser_score": 73,
       "date": "2017-03-26",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "South Carolina Gamecocks",
+      "winner_score": 77,
+      "loser_score": 73,
+      "date": "2017-04-01",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Oregon Ducks",
+      "winner_score": 77,
+      "loser_score": 76,
+      "date": "2017-04-02",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 71,
+      "loser_score": 65,
+      "date": "2017-04-04",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP"
     }
   ],
   "series": [
@@ -970,6 +1026,46 @@
       "date": "2017-03-20"
     },
     {
+      "t1": "Oregon Ducks",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2017-03-23"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "West Virginia Mountaineers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2017-03-23"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Purdue Boilermakers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Purdue Boilermakers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2017-03-24"
+    },
+    {
+      "t1": "Xavier Musketeers",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2017-03-24"
+    },
+    {
       "t1": "North Carolina Tar Heels",
       "t2": "Butler Bulldogs",
       "w1": 1,
@@ -1048,6 +1144,36 @@
       "loser": "Kentucky Wildcats",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8",
       "date": "2017-03-26"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "South Carolina Gamecocks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "South Carolina Gamecocks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2017-04-01"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon Ducks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2017-04-02"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP",
+      "date": "2017-04-04"
     }
   ],
   "eliminated": [
@@ -1101,6 +1227,10 @@
     "USC Trojans",
     "Duke Blue Devils",
     "Cincinnati Bearcats",
+    "Michigan Wolverines",
+    "West Virginia Mountaineers",
+    "Purdue Boilermakers",
+    "Arizona Wildcats",
     "Butler Bulldogs",
     "Baylor Bears",
     "UCLA Bruins",
@@ -1108,7 +1238,10 @@
     "Xavier Musketeers",
     "Kansas Jayhawks",
     "Florida Gators",
-    "Kentucky Wildcats"
+    "Kentucky Wildcats",
+    "South Carolina Gamecocks",
+    "Oregon Ducks",
+    "Gonzaga Bulldogs"
   ],
-  "updated": "2026-08-25 19:50 UTC"
+  "updated": "2026-08-26 08:18 UTC"
 }

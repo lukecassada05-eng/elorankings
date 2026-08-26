@@ -436,6 +436,22 @@
       "round": "SUN BELT CONFERENCE MEN'S CHAMPIONSHIP - FINAL"
     },
     {
+      "winner": "Fairleigh Dickinson Knights",
+      "loser": "Prairie View A&M Panthers",
+      "winner_score": 82,
+      "loser_score": 76,
+      "date": "2019-03-19",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - FIRST FOUR"
+    },
+    {
+      "winner": "Belmont Bruins",
+      "loser": "Temple Owls",
+      "winner_score": 81,
+      "loser_score": 70,
+      "date": "2019-03-20",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - FIRST FOUR"
+    },
+    {
       "winner": "North Dakota State Bison",
       "loser": "North Carolina Central Eagles",
       "winner_score": 78,
@@ -836,6 +852,38 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 2nd ROUND"
     },
     {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "Florida State Seminoles",
+      "winner_score": 72,
+      "loser_score": 58,
+      "date": "2019-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 99,
+      "loser_score": 94,
+      "date": "2019-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Michigan Wolverines",
+      "winner_score": 63,
+      "loser_score": 44,
+      "date": "2019-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Oregon Ducks",
+      "winner_score": 53,
+      "loser_score": 49,
+      "date": "2019-03-29",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16"
+    },
+    {
       "winner": "Michigan State Spartans",
       "loser": "LSU Tigers",
       "winner_score": 80,
@@ -898,6 +946,30 @@
       "loser_score": 67,
       "date": "2019-03-31",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Auburn Tigers",
+      "winner_score": 63,
+      "loser_score": 62,
+      "date": "2019-04-06",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "Texas Tech Red Raiders",
+      "loser": "Michigan State Spartans",
+      "winner_score": 61,
+      "loser_score": 51,
+      "date": "2019-04-07",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "Virginia Cavaliers",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 85,
+      "loser_score": 77,
+      "date": "2019-04-09",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP"
     }
   ],
   "series": [
@@ -1442,6 +1514,26 @@
       "date": "2019-03-17"
     },
     {
+      "t1": "Fairleigh Dickinson Knights",
+      "t2": "Prairie View A&M Panthers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Prairie View A&M Panthers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - FIRST FOUR",
+      "date": "2019-03-19"
+    },
+    {
+      "t1": "Belmont Bruins",
+      "t2": "Temple Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Temple Owls",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - FIRST FOUR",
+      "date": "2019-03-20"
+    },
+    {
       "t1": "North Dakota State Bison",
       "t2": "North Carolina Central Eagles",
       "w1": 1,
@@ -1942,6 +2034,46 @@
       "date": "2019-03-25"
     },
     {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "Florida State Seminoles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida State Seminoles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2019-03-28"
+    },
+    {
+      "t1": "Purdue Boilermakers",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16",
+      "date": "2019-03-28"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2019-03-29"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Oregon Ducks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Oregon Ducks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16",
+      "date": "2019-03-29"
+    },
+    {
       "t1": "Michigan State Spartans",
       "t2": "LSU Tigers",
       "w1": 1,
@@ -2020,6 +2152,36 @@
       "loser": "Duke Blue Devils",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8",
       "date": "2019-03-31"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Auburn Tigers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Auburn Tigers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2019-04-06"
+    },
+    {
+      "t1": "Texas Tech Red Raiders",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2019-04-07"
+    },
+    {
+      "t1": "Virginia Cavaliers",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP",
+      "date": "2019-04-09"
     }
   ],
   "eliminated": [
@@ -2077,6 +2239,8 @@
     "Western Kentucky Hilltoppers",
     "St. Bonaventure Bonnies",
     "UT Arlington Mavericks",
+    "Prairie View A&M Panthers",
+    "Temple Owls",
     "North Carolina Central Eagles",
     "Louisville Cardinals",
     "Yale Bulldogs",
@@ -2119,6 +2283,10 @@
     "Oklahoma Sooners",
     "Ohio State Buckeyes",
     "UC Irvine Anteaters",
+    "Florida State Seminoles",
+    "Tennessee Volunteers",
+    "Michigan Wolverines",
+    "Oregon Ducks",
     "LSU Tigers",
     "North Carolina Tar Heels",
     "Virginia Tech Hokies",
@@ -2126,7 +2294,9 @@
     "Gonzaga Bulldogs",
     "Purdue Boilermakers",
     "Kentucky Wildcats",
-    "Duke Blue Devils"
+    "Duke Blue Devils",
+    "Auburn Tigers",
+    "Michigan State Spartans"
   ],
-  "updated": "2026-08-25 19:50 UTC"
+  "updated": "2026-08-26 08:19 UTC"
 }

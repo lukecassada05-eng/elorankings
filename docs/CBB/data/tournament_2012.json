@@ -404,6 +404,38 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - 3rd ROUND AT GREENSBORO NC"
     },
     {
+      "winner": "Syracuse Orange",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 64,
+      "loser_score": 63,
+      "date": "2012-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16 AT BOSTON"
+    },
+    {
+      "winner": "Louisville Cardinals",
+      "loser": "Michigan State Spartans",
+      "winner_score": 57,
+      "loser_score": 44,
+      "date": "2012-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16 AT PHOENIX"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Cincinnati Bearcats",
+      "winner_score": 81,
+      "loser_score": 66,
+      "date": "2012-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16 AT BOSTON"
+    },
+    {
+      "winner": "Florida Gators",
+      "loser": "Marquette Golden Eagles",
+      "winner_score": 68,
+      "loser_score": 58,
+      "date": "2012-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16 AT PHOENIX"
+    },
+    {
       "winner": "Baylor Bears",
       "loser": "Xavier Musketeers",
       "winner_score": 75,
@@ -466,6 +498,30 @@
       "loser_score": 67,
       "date": "2012-03-25",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT ST. LOUIS"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Louisville Cardinals",
+      "winner_score": 69,
+      "loser_score": 61,
+      "date": "2012-03-31",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT NEW ORLEANS"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Ohio State Buckeyes",
+      "winner_score": 64,
+      "loser_score": 62,
+      "date": "2012-04-01",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT NEW ORLEANS"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 67,
+      "loser_score": 59,
+      "date": "2012-04-03",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP AT NEW ORLEANS"
     }
   ],
   "series": [
@@ -970,6 +1026,46 @@
       "date": "2012-03-19"
     },
     {
+      "t1": "Syracuse Orange",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16 AT BOSTON",
+      "date": "2012-03-22"
+    },
+    {
+      "t1": "Louisville Cardinals",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16 AT PHOENIX",
+      "date": "2012-03-22"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Cincinnati Bearcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Cincinnati Bearcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - SWEET 16 AT BOSTON",
+      "date": "2012-03-23"
+    },
+    {
+      "t1": "Florida Gators",
+      "t2": "Marquette Golden Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Marquette Golden Eagles",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16 AT PHOENIX",
+      "date": "2012-03-23"
+    },
+    {
       "t1": "Baylor Bears",
       "t2": "Xavier Musketeers",
       "w1": 1,
@@ -1048,6 +1144,36 @@
       "loser": "North Carolina Tar Heels",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT ST. LOUIS",
       "date": "2012-03-25"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Louisville Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Louisville Cardinals",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT NEW ORLEANS",
+      "date": "2012-03-31"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Ohio State Buckeyes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Ohio State Buckeyes",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT NEW ORLEANS",
+      "date": "2012-04-01"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP AT NEW ORLEANS",
+      "date": "2012-04-03"
     }
   ],
   "eliminated": [
@@ -1101,6 +1227,10 @@
     "Norfolk State Spartans",
     "South Florida Bulls",
     "Lehigh Mountain Hawks",
+    "Wisconsin Badgers",
+    "Michigan State Spartans",
+    "Cincinnati Bearcats",
+    "Marquette Golden Eagles",
     "Xavier Musketeers",
     "Ohio Bobcats",
     "Indiana Hoosiers",
@@ -1108,7 +1238,10 @@
     "Florida Gators",
     "Syracuse Orange",
     "Baylor Bears",
-    "North Carolina Tar Heels"
+    "North Carolina Tar Heels",
+    "Louisville Cardinals",
+    "Ohio State Buckeyes",
+    "Kansas Jayhawks"
   ],
-  "updated": "2026-08-25 19:49 UTC"
+  "updated": "2026-08-26 08:17 UTC"
 }

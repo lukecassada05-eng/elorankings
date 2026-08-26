@@ -4,6 +4,22 @@
   "completed": true,
   "games": [
     {
+      "winner": "Texas Longhorns",
+      "loser": "NC State Wolfpack",
+      "winner_score": 68,
+      "loser_score": 66,
+      "date": "2026-03-18",
+      "round": "NCAA Men's Basketball Championship - West Region - First Four"
+    },
+    {
+      "winner": "Howard Bison",
+      "loser": "UMBC Retrievers",
+      "winner_score": 86,
+      "loser_score": 83,
+      "date": "2026-03-17",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - First Four"
+    },
+    {
       "winner": "Miami (OH) RedHawks",
       "loser": "SMU Mustangs",
       "winner_score": 89,
@@ -404,6 +420,38 @@
       "round": "NCAA Men's Basketball Championship - Midwest Region - 2nd Round"
     },
     {
+      "winner": "Arizona Wildcats",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 109,
+      "loser_score": 88,
+      "date": "2026-03-27",
+      "round": "NCAA Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Purdue Boilermakers",
+      "loser": "Texas Longhorns",
+      "winner_score": 79,
+      "loser_score": 77,
+      "date": "2026-03-26",
+      "round": "NCAA Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Illinois Fighting Illini",
+      "loser": "Houston Cougars",
+      "winner_score": 65,
+      "loser_score": 55,
+      "date": "2026-03-27",
+      "round": "NCAA Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Iowa Hawkeyes",
+      "loser": "Nebraska Cornhuskers",
+      "winner_score": 77,
+      "loser_score": 71,
+      "date": "2026-03-26",
+      "round": "NCAA Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
       "winner": "Duke Blue Devils",
       "loser": "St. John's Red Storm",
       "winner_score": 80,
@@ -466,9 +514,53 @@
       "loser_score": 72,
       "date": "2026-03-29",
       "round": "NCAA Men's Basketball Championship - East Region - Elite 8"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Arizona Wildcats",
+      "winner_score": 91,
+      "loser_score": 73,
+      "date": "2026-04-05",
+      "round": "NCAA Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Illinois Fighting Illini",
+      "winner_score": 71,
+      "loser_score": 62,
+      "date": "2026-04-04",
+      "round": "NCAA Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "UConn Huskies",
+      "winner_score": 69,
+      "loser_score": 63,
+      "date": "2026-04-07",
+      "round": "NCAA Men's Basketball Championship - National Championship"
     }
   ],
   "series": [
+    {
+      "t1": "Howard Bison",
+      "t2": "UMBC Retrievers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UMBC Retrievers",
+      "round": "NCAA Men's Basketball Championship - Midwest Region - First Four",
+      "date": "2026-03-17"
+    },
+    {
+      "t1": "Texas Longhorns",
+      "t2": "NC State Wolfpack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "NC State Wolfpack",
+      "round": "NCAA Men's Basketball Championship - West Region - First Four",
+      "date": "2026-03-18"
+    },
     {
       "t1": "Prairie View A&M Panthers",
       "t2": "Lehigh Mountain Hawks",
@@ -970,6 +1062,46 @@
       "date": "2026-03-23"
     },
     {
+      "t1": "Purdue Boilermakers",
+      "t2": "Texas Longhorns",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Longhorns",
+      "round": "NCAA Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2026-03-26"
+    },
+    {
+      "t1": "Iowa Hawkeyes",
+      "t2": "Nebraska Cornhuskers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nebraska Cornhuskers",
+      "round": "NCAA Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2026-03-26"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arkansas Razorbacks",
+      "round": "NCAA Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2026-03-27"
+    },
+    {
+      "t1": "Illinois Fighting Illini",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "NCAA Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2026-03-27"
+    },
+    {
       "t1": "Duke Blue Devils",
       "t2": "St. John's Red Storm",
       "w1": 1,
@@ -1048,9 +1180,41 @@
       "loser": "Duke Blue Devils",
       "round": "NCAA Men's Basketball Championship - East Region - Elite 8",
       "date": "2026-03-29"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Illinois Fighting Illini",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Illinois Fighting Illini",
+      "round": "NCAA Men's Basketball Championship - Final Four",
+      "date": "2026-04-04"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "NCAA Men's Basketball Championship - Final Four",
+      "date": "2026-04-05"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "UConn Huskies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UConn Huskies",
+      "round": "NCAA Men's Basketball Championship - National Championship",
+      "date": "2026-04-07"
     }
   ],
   "eliminated": [
+    "NC State Wolfpack",
+    "UMBC Retrievers",
     "SMU Mustangs",
     "Lehigh Mountain Hawks",
     "Siena Saints",
@@ -1101,6 +1265,10 @@
     "Virginia Cavaliers",
     "Kansas Jayhawks",
     "Texas Tech Red Raiders",
+    "Arkansas Razorbacks",
+    "Texas Longhorns",
+    "Houston Cougars",
+    "Nebraska Cornhuskers",
     "St. John's Red Storm",
     "Alabama Crimson Tide",
     "Michigan State Spartans",
@@ -1108,7 +1276,10 @@
     "Purdue Boilermakers",
     "Iowa Hawkeyes",
     "Tennessee Volunteers",
-    "Duke Blue Devils"
+    "Duke Blue Devils",
+    "Arizona Wildcats",
+    "Illinois Fighting Illini",
+    "UConn Huskies"
   ],
-  "updated": "2026-08-25 19:51 UTC"
+  "updated": "2026-08-26 08:20 UTC"
 }

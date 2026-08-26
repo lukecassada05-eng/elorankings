@@ -12,6 +12,38 @@
       "round": "Atlantic 10 Championship - Final"
     },
     {
+      "winner": "Texas Southern Tigers",
+      "loser": "Mount St. Mary's Mountaineers",
+      "winner_score": 60,
+      "loser_score": 52,
+      "date": "2021-03-18",
+      "round": "Men's Basketball Championship - East Region - First Four"
+    },
+    {
+      "winner": "Drake Bulldogs",
+      "loser": "Wichita State Shockers",
+      "winner_score": 53,
+      "loser_score": 52,
+      "date": "2021-03-18",
+      "round": "Men's Basketball Championship - West Region - First Four"
+    },
+    {
+      "winner": "Norfolk State Spartans",
+      "loser": "App State Mountaineers",
+      "winner_score": 54,
+      "loser_score": 53,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - West Region - First Four"
+    },
+    {
+      "winner": "UCLA Bruins",
+      "loser": "Michigan State Spartans",
+      "winner_score": 86,
+      "loser_score": 80,
+      "date": "2021-03-19",
+      "round": "Men's Basketball Championship - East Region - First Four"
+    },
+    {
       "winner": "Florida Gators",
       "loser": "Virginia Tech Hokies",
       "winner_score": 75,
@@ -482,6 +514,30 @@
       "loser_score": 49,
       "date": "2021-03-31",
       "round": "Men's Basketball Championship - East Region - Elite 8"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Houston Cougars",
+      "winner_score": 78,
+      "loser_score": 59,
+      "date": "2021-04-03",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "UCLA Bruins",
+      "winner_score": 93,
+      "loser_score": 90,
+      "date": "2021-04-04",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "Baylor Bears",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 86,
+      "loser_score": 70,
+      "date": "2021-04-06",
+      "round": "Men's Basketball Championship - National Championship"
     }
   ],
   "series": [
@@ -494,6 +550,46 @@
       "loser": "VCU Rams",
       "round": "Atlantic 10 Championship - Final",
       "date": "2021-03-14"
+    },
+    {
+      "t1": "Texas Southern Tigers",
+      "t2": "Mount St. Mary's Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Mount St. Mary's Mountaineers",
+      "round": "Men's Basketball Championship - East Region - First Four",
+      "date": "2021-03-18"
+    },
+    {
+      "t1": "Drake Bulldogs",
+      "t2": "Wichita State Shockers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wichita State Shockers",
+      "round": "Men's Basketball Championship - West Region - First Four",
+      "date": "2021-03-18"
+    },
+    {
+      "t1": "Norfolk State Spartans",
+      "t2": "App State Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "App State Mountaineers",
+      "round": "Men's Basketball Championship - West Region - First Four",
+      "date": "2021-03-19"
+    },
+    {
+      "t1": "UCLA Bruins",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "Men's Basketball Championship - East Region - First Four",
+      "date": "2021-03-19"
     },
     {
       "t1": "Florida Gators",
@@ -1084,10 +1180,44 @@
       "loser": "Michigan Wolverines",
       "round": "Men's Basketball Championship - East Region - Elite 8",
       "date": "2021-03-31"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Houston Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Houston Cougars",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2021-04-03"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCLA Bruins",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2021-04-04"
+    },
+    {
+      "t1": "Baylor Bears",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "Men's Basketball Championship - National Championship",
+      "date": "2021-04-06"
     }
   ],
   "eliminated": [
     "VCU Rams",
+    "Mount St. Mary's Mountaineers",
+    "Wichita State Shockers",
+    "App State Mountaineers",
+    "Michigan State Spartans",
     "Virginia Tech Hokies",
     "Colgate Raiders",
     "Drexel Dragons",
@@ -1146,7 +1276,10 @@
     "Oregon State Beavers",
     "Arkansas Razorbacks",
     "USC Trojans",
-    "Michigan Wolverines"
+    "Michigan Wolverines",
+    "Houston Cougars",
+    "UCLA Bruins",
+    "Gonzaga Bulldogs"
   ],
-  "updated": "2026-08-25 19:51 UTC"
+  "updated": "2026-08-26 08:19 UTC"
 }

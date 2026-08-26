@@ -420,6 +420,38 @@
       "round": "Men's Basketball Championship - West Region - 2nd Round"
     },
     {
+      "winner": "Kansas State Wildcats",
+      "loser": "Michigan State Spartans",
+      "winner_score": 98,
+      "loser_score": 93,
+      "date": "2023-03-23",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Arkansas Razorbacks",
+      "winner_score": 88,
+      "loser_score": 65,
+      "date": "2023-03-23",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Florida Atlantic Owls",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 62,
+      "loser_score": 55,
+      "date": "2023-03-24",
+      "round": "Men's Basketball Championship - East Region - Sweet 16"
+    },
+    {
+      "winner": "Gonzaga Bulldogs",
+      "loser": "UCLA Bruins",
+      "winner_score": 79,
+      "loser_score": 76,
+      "date": "2023-03-24",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
       "winner": "San Diego State Aztecs",
       "loser": "Alabama Crimson Tide",
       "winner_score": 71,
@@ -482,6 +514,30 @@
       "loser_score": 81,
       "date": "2023-03-26",
       "round": "Men's Basketball Championship - Midwest Region - Elite 8"
+    },
+    {
+      "winner": "San Diego State Aztecs",
+      "loser": "Florida Atlantic Owls",
+      "winner_score": 72,
+      "loser_score": 71,
+      "date": "2023-04-01",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "Miami Hurricanes",
+      "winner_score": 72,
+      "loser_score": 59,
+      "date": "2023-04-02",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "UConn Huskies",
+      "loser": "San Diego State Aztecs",
+      "winner_score": 76,
+      "loser_score": 59,
+      "date": "2023-04-04",
+      "round": "Men's Basketball Championship - National Championship"
     }
   ],
   "series": [
@@ -1006,6 +1062,46 @@
       "date": "2023-03-20"
     },
     {
+      "t1": "Kansas State Wildcats",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2023-03-23"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Arkansas Razorbacks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arkansas Razorbacks",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2023-03-23"
+    },
+    {
+      "t1": "Florida Atlantic Owls",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "Men's Basketball Championship - East Region - Sweet 16",
+      "date": "2023-03-24"
+    },
+    {
+      "t1": "Gonzaga Bulldogs",
+      "t2": "UCLA Bruins",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "UCLA Bruins",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2023-03-24"
+    },
+    {
       "t1": "San Diego State Aztecs",
       "t2": "Alabama Crimson Tide",
       "w1": 1,
@@ -1084,6 +1180,36 @@
       "loser": "Texas Longhorns",
       "round": "Men's Basketball Championship - Midwest Region - Elite 8",
       "date": "2023-03-26"
+    },
+    {
+      "t1": "San Diego State Aztecs",
+      "t2": "Florida Atlantic Owls",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Atlantic Owls",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2023-04-01"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "Miami Hurricanes",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Miami Hurricanes",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2023-04-02"
+    },
+    {
+      "t1": "UConn Huskies",
+      "t2": "San Diego State Aztecs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego State Aztecs",
+      "round": "Men's Basketball Championship - National Championship",
+      "date": "2023-04-04"
     }
   ],
   "eliminated": [
@@ -1139,6 +1265,10 @@
     "Fairleigh Dickinson Knights",
     "Indiana Hoosiers",
     "TCU Horned Frogs",
+    "Michigan State Spartans",
+    "Arkansas Razorbacks",
+    "Tennessee Volunteers",
+    "UCLA Bruins",
     "Alabama Crimson Tide",
     "Houston Cougars",
     "Princeton Tigers",
@@ -1146,7 +1276,10 @@
     "Kansas State Wildcats",
     "Gonzaga Bulldogs",
     "Creighton Bluejays",
-    "Texas Longhorns"
+    "Texas Longhorns",
+    "Florida Atlantic Owls",
+    "Miami Hurricanes",
+    "San Diego State Aztecs"
   ],
-  "updated": "2026-08-25 19:51 UTC"
+  "updated": "2026-08-26 08:19 UTC"
 }

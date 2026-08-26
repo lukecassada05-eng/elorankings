@@ -124,6 +124,22 @@
       "round": "THE AMERICAN MEN'S CHAMPIONSHIP - FINAL"
     },
     {
+      "winner": "Hampton Pirates",
+      "loser": "Manhattan Jaspers",
+      "winner_score": 74,
+      "loser_score": 64,
+      "date": "2015-03-17",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND"
+    },
+    {
+      "winner": "Ole Miss Rebels",
+      "loser": "BYU Cougars",
+      "winner_score": 94,
+      "loser_score": 90,
+      "date": "2015-03-18",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND"
+    },
+    {
       "winner": "Robert Morris Colonials",
       "loser": "North Florida Ospreys",
       "winner_score": 81,
@@ -524,6 +540,38 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 3rd ROUND"
     },
     {
+      "winner": "Notre Dame Fighting Irish",
+      "loser": "Wichita State Shockers",
+      "winner_score": 81,
+      "loser_score": 70,
+      "date": "2015-03-26",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 79,
+      "loser_score": 72,
+      "date": "2015-03-26",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Kentucky Wildcats",
+      "loser": "West Virginia Mountaineers",
+      "winner_score": 78,
+      "loser_score": 39,
+      "date": "2015-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Arizona Wildcats",
+      "loser": "Xavier Musketeers",
+      "winner_score": 68,
+      "loser_score": 60,
+      "date": "2015-03-27",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
       "winner": "Gonzaga Bulldogs",
       "loser": "UCLA Bruins",
       "winner_score": 74,
@@ -586,6 +634,30 @@
       "loser_score": 52,
       "date": "2015-03-29",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Michigan State Spartans",
+      "winner_score": 81,
+      "loser_score": 61,
+      "date": "2015-04-04",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "Wisconsin Badgers",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 71,
+      "loser_score": 64,
+      "date": "2015-04-05",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Wisconsin Badgers",
+      "winner_score": 68,
+      "loser_score": 63,
+      "date": "2015-04-07",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP"
     }
   ],
   "series": [
@@ -738,6 +810,26 @@
       "loser": "UConn Huskies",
       "round": "THE AMERICAN MEN'S CHAMPIONSHIP - FINAL",
       "date": "2015-03-15"
+    },
+    {
+      "t1": "Hampton Pirates",
+      "t2": "Manhattan Jaspers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Manhattan Jaspers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - 1st ROUND",
+      "date": "2015-03-17"
+    },
+    {
+      "t1": "Ole Miss Rebels",
+      "t2": "BYU Cougars",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "BYU Cougars",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - 1st ROUND",
+      "date": "2015-03-18"
     },
     {
       "t1": "Robert Morris Colonials",
@@ -1240,6 +1332,46 @@
       "date": "2015-03-23"
     },
     {
+      "t1": "Notre Dame Fighting Irish",
+      "t2": "Wichita State Shockers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wichita State Shockers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2015-03-26"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2015-03-26"
+    },
+    {
+      "t1": "Kentucky Wildcats",
+      "t2": "West Virginia Mountaineers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "West Virginia Mountaineers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16",
+      "date": "2015-03-27"
+    },
+    {
+      "t1": "Arizona Wildcats",
+      "t2": "Xavier Musketeers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Xavier Musketeers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2015-03-27"
+    },
+    {
       "t1": "Gonzaga Bulldogs",
       "t2": "UCLA Bruins",
       "w1": 1,
@@ -1318,6 +1450,36 @@
       "loser": "Gonzaga Bulldogs",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8",
       "date": "2015-03-29"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Michigan State Spartans",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan State Spartans",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2015-04-04"
+    },
+    {
+      "t1": "Wisconsin Badgers",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2015-04-05"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Wisconsin Badgers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wisconsin Badgers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP",
+      "date": "2015-04-07"
     }
   ],
   "eliminated": [
@@ -1336,6 +1498,8 @@
     "Georgia Southern Eagles",
     "Dayton Flyers",
     "UConn Huskies",
+    "Manhattan Jaspers",
+    "BYU Cougars",
     "North Florida Ospreys",
     "Boise State Broncos",
     "Northeastern Huskies",
@@ -1382,6 +1546,9 @@
     "Oregon Ducks",
     "Maryland Terrapins",
     "Northern Iowa Panthers",
+    "Wichita State Shockers",
+    "North Carolina Tar Heels",
+    "West Virginia Mountaineers",
     "UCLA Bruins",
     "NC State Wolfpack",
     "Utah Utes",
@@ -1389,7 +1556,10 @@
     "Arizona Wildcats",
     "Notre Dame Fighting Irish",
     "Louisville Cardinals",
-    "Gonzaga Bulldogs"
+    "Gonzaga Bulldogs",
+    "Michigan State Spartans",
+    "Kentucky Wildcats",
+    "Wisconsin Badgers"
   ],
-  "updated": "2026-08-25 19:50 UTC"
+  "updated": "2026-08-26 08:18 UTC"
 }

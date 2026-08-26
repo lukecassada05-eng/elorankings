@@ -404,6 +404,38 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - 2nd ROUND"
     },
     {
+      "winner": "Loyola Chicago Ramblers",
+      "loser": "Nevada Wolf Pack",
+      "winner_score": 69,
+      "loser_score": 68,
+      "date": "2018-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Texas A&M Aggies",
+      "winner_score": 99,
+      "loser_score": 72,
+      "date": "2018-03-22",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
+      "winner": "Kansas State Wildcats",
+      "loser": "Kentucky Wildcats",
+      "winner_score": 61,
+      "loser_score": 58,
+      "date": "2018-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16"
+    },
+    {
+      "winner": "Florida State Seminoles",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 75,
+      "loser_score": 60,
+      "date": "2018-03-23",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16"
+    },
+    {
       "winner": "Kansas Jayhawks",
       "loser": "Clemson Tigers",
       "winner_score": 80,
@@ -466,6 +498,30 @@
       "loser_score": 81,
       "date": "2018-03-25",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8"
+    },
+    {
+      "winner": "Michigan Wolverines",
+      "loser": "Loyola Chicago Ramblers",
+      "winner_score": 69,
+      "loser_score": 57,
+      "date": "2018-03-31",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Kansas Jayhawks",
+      "winner_score": 95,
+      "loser_score": 79,
+      "date": "2018-04-01",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Michigan Wolverines",
+      "winner_score": 79,
+      "loser_score": 62,
+      "date": "2018-04-03",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP"
     }
   ],
   "series": [
@@ -970,6 +1026,46 @@
       "date": "2018-03-19"
     },
     {
+      "t1": "Loyola Chicago Ramblers",
+      "t2": "Nevada Wolf Pack",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nevada Wolf Pack",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16",
+      "date": "2018-03-22"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Texas A&M Aggies",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M Aggies",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2018-03-22"
+    },
+    {
+      "t1": "Kansas State Wildcats",
+      "t2": "Kentucky Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kentucky Wildcats",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - SWEET 16",
+      "date": "2018-03-23"
+    },
+    {
+      "t1": "Florida State Seminoles",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - SWEET 16",
+      "date": "2018-03-23"
+    },
+    {
       "t1": "Kansas Jayhawks",
       "t2": "Clemson Tigers",
       "w1": 1,
@@ -1048,6 +1144,36 @@
       "loser": "Duke Blue Devils",
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8",
       "date": "2018-03-25"
+    },
+    {
+      "t1": "Michigan Wolverines",
+      "t2": "Loyola Chicago Ramblers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Loyola Chicago Ramblers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2018-03-31"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Kansas Jayhawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Kansas Jayhawks",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR",
+      "date": "2018-04-01"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - NATIONAL CHAMPIONSHIP",
+      "date": "2018-04-03"
     }
   ],
   "eliminated": [
@@ -1101,6 +1227,10 @@
     "UMBC Retrievers",
     "Xavier Musketeers",
     "Marshall Thundering Herd",
+    "Nevada Wolf Pack",
+    "Texas A&M Aggies",
+    "Kentucky Wildcats",
+    "Gonzaga Bulldogs",
     "Clemson Tigers",
     "West Virginia Mountaineers",
     "Syracuse Orange",
@@ -1108,7 +1238,10 @@
     "Kansas State Wildcats",
     "Florida State Seminoles",
     "Texas Tech Red Raiders",
-    "Duke Blue Devils"
+    "Duke Blue Devils",
+    "Loyola Chicago Ramblers",
+    "Kansas Jayhawks",
+    "Michigan Wolverines"
   ],
-  "updated": "2026-08-25 19:50 UTC"
+  "updated": "2026-08-26 08:18 UTC"
 }

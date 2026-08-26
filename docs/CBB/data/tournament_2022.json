@@ -4,6 +4,22 @@
   "completed": true,
   "games": [
     {
+      "winner": "Texas Southern Tigers",
+      "loser": "Texas A&M-Corpus Christi Islanders",
+      "winner_score": 76,
+      "loser_score": 67,
+      "date": "2022-03-15",
+      "round": "Men's Basketball Championship - Midwest Region - First Four"
+    },
+    {
+      "winner": "Indiana Hoosiers",
+      "loser": "Wyoming Cowboys",
+      "winner_score": 66,
+      "loser_score": 58,
+      "date": "2022-03-16",
+      "round": "Men's Basketball Championship - East Region - First Four"
+    },
+    {
       "winner": "Wright State Raiders",
       "loser": "Bryant Bulldogs",
       "winner_score": 93,
@@ -404,6 +420,38 @@
       "round": "Men's Basketball Championship - South Region - 2nd Round"
     },
     {
+      "winner": "Arkansas Razorbacks",
+      "loser": "Gonzaga Bulldogs",
+      "winner_score": 74,
+      "loser_score": 68,
+      "date": "2022-03-24",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Villanova Wildcats",
+      "loser": "Michigan Wolverines",
+      "winner_score": 63,
+      "loser_score": 55,
+      "date": "2022-03-24",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Texas Tech Red Raiders",
+      "winner_score": 78,
+      "loser_score": 73,
+      "date": "2022-03-25",
+      "round": "Men's Basketball Championship - West Region - Sweet 16"
+    },
+    {
+      "winner": "Houston Cougars",
+      "loser": "Arizona Wildcats",
+      "winner_score": 72,
+      "loser_score": 60,
+      "date": "2022-03-25",
+      "round": "Men's Basketball Championship - South Region - Sweet 16"
+    },
+    {
       "winner": "Saint Peter's Peacocks",
       "loser": "Purdue Boilermakers",
       "winner_score": 67,
@@ -466,9 +514,53 @@
       "loser_score": 49,
       "date": "2022-03-27",
       "round": "Men's Basketball Championship - East Region - Elite 8"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "Villanova Wildcats",
+      "winner_score": 81,
+      "loser_score": 65,
+      "date": "2022-04-02",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "North Carolina Tar Heels",
+      "loser": "Duke Blue Devils",
+      "winner_score": 81,
+      "loser_score": 77,
+      "date": "2022-04-03",
+      "round": "Men's Basketball Championship - Final Four"
+    },
+    {
+      "winner": "Kansas Jayhawks",
+      "loser": "North Carolina Tar Heels",
+      "winner_score": 72,
+      "loser_score": 69,
+      "date": "2022-04-05",
+      "round": "Men's Basketball Championship - National Championship"
     }
   ],
   "series": [
+    {
+      "t1": "Texas Southern Tigers",
+      "t2": "Texas A&M-Corpus Christi Islanders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas A&M-Corpus Christi Islanders",
+      "round": "Men's Basketball Championship - Midwest Region - First Four",
+      "date": "2022-03-15"
+    },
+    {
+      "t1": "Indiana Hoosiers",
+      "t2": "Wyoming Cowboys",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Wyoming Cowboys",
+      "round": "Men's Basketball Championship - East Region - First Four",
+      "date": "2022-03-16"
+    },
     {
       "t1": "Wright State Raiders",
       "t2": "Bryant Bulldogs",
@@ -970,6 +1062,46 @@
       "date": "2022-03-21"
     },
     {
+      "t1": "Arkansas Razorbacks",
+      "t2": "Gonzaga Bulldogs",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Gonzaga Bulldogs",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2022-03-24"
+    },
+    {
+      "t1": "Villanova Wildcats",
+      "t2": "Michigan Wolverines",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Michigan Wolverines",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2022-03-24"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Texas Tech Red Raiders",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Texas Tech Red Raiders",
+      "round": "Men's Basketball Championship - West Region - Sweet 16",
+      "date": "2022-03-25"
+    },
+    {
+      "t1": "Houston Cougars",
+      "t2": "Arizona Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Wildcats",
+      "round": "Men's Basketball Championship - South Region - Sweet 16",
+      "date": "2022-03-25"
+    },
+    {
       "t1": "Saint Peter's Peacocks",
       "t2": "Purdue Boilermakers",
       "w1": 1,
@@ -1048,9 +1180,41 @@
       "loser": "Saint Peter's Peacocks",
       "round": "Men's Basketball Championship - East Region - Elite 8",
       "date": "2022-03-27"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "Villanova Wildcats",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Villanova Wildcats",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2022-04-02"
+    },
+    {
+      "t1": "North Carolina Tar Heels",
+      "t2": "Duke Blue Devils",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Duke Blue Devils",
+      "round": "Men's Basketball Championship - Final Four",
+      "date": "2022-04-03"
+    },
+    {
+      "t1": "Kansas Jayhawks",
+      "t2": "North Carolina Tar Heels",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "North Carolina Tar Heels",
+      "round": "Men's Basketball Championship - National Championship",
+      "date": "2022-04-05"
     }
   ],
   "eliminated": [
+    "Texas A&M-Corpus Christi Islanders",
+    "Wyoming Cowboys",
     "Bryant Bulldogs",
     "Rutgers Scarlet Knights",
     "Colorado State Rams",
@@ -1101,6 +1265,10 @@
     "Auburn Tigers",
     "Texas Longhorns",
     "TCU Horned Frogs",
+    "Gonzaga Bulldogs",
+    "Michigan Wolverines",
+    "Texas Tech Red Raiders",
+    "Arizona Wildcats",
     "Purdue Boilermakers",
     "Providence Friars",
     "UCLA Bruins",
@@ -1108,7 +1276,10 @@
     "Houston Cougars",
     "Arkansas Razorbacks",
     "Miami Hurricanes",
-    "Saint Peter's Peacocks"
+    "Saint Peter's Peacocks",
+    "Villanova Wildcats",
+    "Duke Blue Devils",
+    "North Carolina Tar Heels"
   ],
-  "updated": "2026-08-25 19:51 UTC"
+  "updated": "2026-08-26 08:19 UTC"
 }
