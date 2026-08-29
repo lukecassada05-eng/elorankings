@@ -484,6 +484,22 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT SYRACUSE NY"
     },
     {
+      "winner": "Michigan State Spartans",
+      "loser": "Tennessee Volunteers",
+      "winner_score": 70,
+      "loser_score": 69,
+      "date": "2010-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT ST LOUIS"
+    },
+    {
+      "winner": "Duke Blue Devils",
+      "loser": "Baylor Bears",
+      "winner_score": 78,
+      "loser_score": 71,
+      "date": "2010-03-28",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT HOUSTON"
+    },
+    {
       "winner": "Butler Bulldogs",
       "loser": "Michigan State Spartans",
       "winner_score": 52,
@@ -1110,6 +1126,26 @@
       "date": "2010-03-27"
     },
     {
+      "t1": "Michigan State Spartans",
+      "t2": "Tennessee Volunteers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Tennessee Volunteers",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - ELITE 8 AT ST LOUIS",
+      "date": "2010-03-28"
+    },
+    {
+      "t1": "Duke Blue Devils",
+      "t2": "Baylor Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baylor Bears",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8 AT HOUSTON",
+      "date": "2010-03-28"
+    },
+    {
       "t1": "Butler Bulldogs",
       "t2": "Michigan State Spartans",
       "w1": 1,
@@ -1200,9 +1236,11 @@
     "Purdue Boilermakers",
     "Kansas State Wildcats",
     "Kentucky Wildcats",
+    "Tennessee Volunteers",
+    "Baylor Bears",
     "Michigan State Spartans",
     "West Virginia Mountaineers",
     "Butler Bulldogs"
   ],
-  "updated": "2026-08-29 02:19 UTC"
+  "updated": "2026-08-29 13:30 UTC"
 }
