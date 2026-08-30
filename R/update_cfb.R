@@ -1032,7 +1032,7 @@ for (yr in SEASONS) {
   }
   g <- g[!sapply(g$winner, resolve_team) %in% FAKE_TEAMS &
          !sapply(g$loser,  resolve_team) %in% FAKE_TEAMS, ]
-  if (nrow(g) < 50) { message("  Skip — only ", nrow(g), " games"); next }
+  if (nrow(g) < 5) { message("  Skip — only ", nrow(g), " games"); next }
   message("  ", nrow(g), " games")
 
   elo <- run_elo(g, k=30, iters=10, min_games=4)
