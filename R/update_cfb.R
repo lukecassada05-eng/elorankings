@@ -810,6 +810,11 @@ get_conf_static <- function(team, year) {
     if (year >= 2026) return("Mountain West")
     return("FCS")
   }
+  # Sacramento State: FCS (Big Sky) through 2025, MAC (football-only) 2026+
+  if (t %in% c("Sacramento State","Sacramento St","Sac State","Sac. State")) {
+    if (year >= 2026) return("MAC")
+    return("FCS")
+  }
   fcs_known <- c("App State","James Madison",
                  "Western Kentucky","Jacksonville State","Kennesaw State",
                  "Sam Houston","Georgia Southern","Coastal Carolina",
