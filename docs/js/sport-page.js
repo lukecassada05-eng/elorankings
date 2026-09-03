@@ -4061,7 +4061,22 @@ async function findAvailableSeason() {
 
       var existing=null;
       for(var i=0;i<_pk.confGames.length;i++){if(_pk.confGames[i].conf===conf){existing=_pk.confGames[i];break;}}
-      if(existing){existing.homeTeam=homeT;existing.awayTeam=awayT;}
+      if(existing){
+        // Conf standings — and therefore who the two leaders are — are
+        // recomputed from the regular-season scores every time this renders.
+        // If editing a regular-season score changed who leads the conference,
+        // any championship score/winner already entered belonged to the OLD
+        // pair of teams and no longer means anything for the new pair: reset
+        // it instead of silently reattaching a stale score/champion to
+        // whichever teams happen to be shown now (this used to leave a
+        // conference "champion" locked in — and credited with a CFP auto-bid
+        // — even after that team dropped out of the top two entirely).
+        if(existing.homeTeam!==homeT || existing.awayTeam!==awayT){
+          existing.homeTeam=homeT; existing.awayTeam=awayT;
+          existing.homeScore=null; existing.awayScore=null; existing.champ='';
+          delete _pk.confChamps[conf];
+        }
+      }
       var hs=(existing&&existing.homeScore!=null)?existing.homeScore:'';
       var as_=(existing&&existing.awayScore!=null)?existing.awayScore:'';
       var champ=(existing&&existing.champ)||'';
