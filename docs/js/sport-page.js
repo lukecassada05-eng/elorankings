@@ -3453,8 +3453,65 @@ async function findAvailableSeason() {
 
   function pkResolve(t){ return PK_ALIAS[t] || t; }
 
+  // ── Canonical team-name resolution ──────────────────────────────
+  // ESPN's schedule/scoreboard endpoint and its standings endpoint (the
+  // source of the conference rosters above) don't always agree on a team's
+  // short display name — e.g. one side may say "Iowa St" and the other
+  // "Iowa State". PK_ALIAS covers many of these by hand, but not every
+  // combination, and it's a static table that assumes one particular
+  // spelling on the roster side. Left unresolved, a game whose schedule-side
+  // name doesn't exactly match the roster's own spelling gets treated as if
+  // neither team's conference could be determined — which silently drops
+  // that game from BOTH teams' conference win/loss totals. That's what
+  // caused some teams to show fewer conference games than their conference
+  // peers even though every team actually played the same number. This adds
+  // a fuzzy (case/punctuation/"State"-vs-"St"-insensitive) fallback match
+  // against whichever roster is currently active, so a spelling mismatch
+  // degrades to "close enough" instead of "this game doesn't count."
+  var _pk_rosterIndex = null; // normalized key -> canonical roster team name
+  function pkNormKey(s){
+    return (s||'').toString()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g,'') // strip accents (e.g. Hawai'i)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g,' ')
+      .replace(/\bstate\b/g,'st')
+      .trim();
+  }
+  function pkBuildRosterIndex(){
+    _pk_rosterIndex={};
+    var confs=pkActiveConfs();
+    Object.keys(confs).forEach(function(conf){
+      (confs[conf]||[]).forEach(function(team){
+        var k=pkNormKey(team);
+        if(k && !_pk_rosterIndex[k]) _pk_rosterIndex[k]=team;
+      });
+    });
+  }
+  // Resolves any schedule/scoreboard-side team name to the exact string the
+  // active roster uses for that team, so every dictionary this module keys
+  // by team name (_pk.wins, _pk.confWins, _pk.eloSim, etc.) uses one
+  // consistent identity per team regardless of which ESPN endpoint a name
+  // came from. Falls back to the alias/raw name, unchanged, if no roster
+  // match can be found at all (e.g. an FCS opponent that isn't on any FBS
+  // conference roster) — same as the old behavior for those cases.
+  function pkCanon(name){
+    if(!name) return name;
+    var confs=pkActiveConfs();
+    for(var conf in confs){ if(confs[conf].indexOf(name)!==-1) return name; }
+    var aliased=PK_ALIAS[name];
+    if(aliased){ for(var c2 in confs){ if(confs[c2].indexOf(aliased)!==-1) return aliased; } }
+    if(!_pk_rosterIndex) pkBuildRosterIndex();
+    var hit=_pk_rosterIndex[pkNormKey(name)] || (aliased && _pk_rosterIndex[pkNormKey(aliased)]);
+    return hit || aliased || name;
+  }
+
   function pkConfOf(team){
-    var t = pkResolve(team);
+    // pkCanon (not pkResolve) — see its comment above for why: it tries the
+    // raw name against the live roster before ever trusting PK_ALIAS, then
+    // falls back to a fuzzy match, so a wrong or missing alias entry can't
+    // make this team's conference (and therefore its conference record)
+    // silently disappear.
+    var t = pkCanon(team);
     var confs = pkActiveConfs();
     for(var conf in confs){
       if(confs[conf].indexOf(t) !== -1) return conf;
@@ -3476,8 +3533,17 @@ async function findAvailableSeason() {
       if(!s||s.homeScore===''||s.awayScore===''||s.homeScore==null||s.awayScore==null) continue;
       var hs=parseInt(s.homeScore), as_=parseInt(s.awayScore);
       if(isNaN(hs)||isNaN(as_)||hs===as_) continue;
-      var winner=pkResolve(hs>as_?g.homeTeam:g.awayTeam);
-      var loser=pkResolve(hs>as_?g.awayTeam:g.homeTeam);
+      // pkCanon, not pkResolve: g.homeTeam/g.awayTeam were already snapped to
+      // the roster's exact spelling when the schedule was fetched (see
+      // pkCanon in processEvents). Calling the raw PK_ALIAS-only pkResolve()
+      // here would undo that — PK_ALIAS assumes one fixed spelling per team
+      // (e.g. "Florida State") that doesn't always match what the live
+      // roster/Elo data actually uses (e.g. "Florida St"), so it would
+      // re-corrupt an already-correct name right back into a mismatch.
+      // pkCanon is idempotent on an already-canonical name, so this is safe
+      // to call unconditionally.
+      var winner=pkCanon(hs>as_?g.homeTeam:g.awayTeam);
+      var loser=pkCanon(hs>as_?g.awayTeam:g.homeTeam);
       // Canonical pair key — no week number so ESPN week mismatches don't double-count
       // (Each pair of FBS teams only plays once per regular season)
       var teams=[winner,loser].sort();
@@ -3533,8 +3599,11 @@ async function findAvailableSeason() {
       if(!s||s.homeScore==null||s.awayScore==null) continue;
       var hs=parseInt(s.homeScore),as_=parseInt(s.awayScore);
       if(isNaN(hs)||isNaN(as_)||hs===as_) continue;
-      var winner=pkResolve(hs>as_?g.homeTeam:g.awayTeam);
-      var loser=pkResolve(hs>as_?g.awayTeam:g.homeTeam);
+      // Same reasoning as the identical spot above pkBuild's main loop: use
+      // pkCanon (roster-aware, idempotent) instead of the raw PK_ALIAS-only
+      // pkResolve, which could re-corrupt an already-canonical name.
+      var winner=pkCanon(hs>as_?g.homeTeam:g.awayTeam);
+      var loser=pkCanon(hs>as_?g.awayTeam:g.homeTeam);
       var t2=[winner,loser].sort();
       var dk2=t2[0]+'|'+t2[1];
       if(counted2[dk2]) continue;
@@ -3732,6 +3801,7 @@ async function findAvailableSeason() {
     var confData=await pkFetchConferences(yr);
     _pk.confs=confData.confs; _pk.divs=confData.divs; _pk.confIds=confData.confIds;
     _fbs_set=null; // invalidate cached FBS-team set so it rebuilds from the new roster
+    _pk_rosterIndex=null; // invalidate cached fuzzy roster-name index too
     pkFetchSched(yr);
   };
 
@@ -3773,6 +3843,15 @@ async function findAvailableSeason() {
           // Normalize ESPN's inconsistent shortDisplayName variants to the
           // canonical names the live-derived conference rosters use
           hn=_pk_norm[hn]||hn; an=_pk_norm[an]||an;
+          // Snap each name to the exact spelling the conference roster uses
+          // (exact match, PK_ALIAS, or a fuzzy match — see pkCanon) so every
+          // game stored in the schedule uses the SAME identity for a team
+          // that pkConfOf/pkTeam/standings look up later. Without this, a
+          // schedule-side spelling that didn't exactly match the roster's
+          // own spelling would get counted under a name nothing else
+          // recognized — silently dropping that game from the mismatched
+          // team's (and their opponent's) conference win/loss totals.
+          hn=pkCanon(hn); an=pkCanon(an);
           if(wk===15&&hn!=='Army'&&hn!=='Navy'&&an!=='Army'&&an!=='Navy') return;
           var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
           var dt=ev.date?ev.date.slice(0,10):null;
