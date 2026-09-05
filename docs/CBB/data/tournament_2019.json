@@ -916,22 +916,6 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16"
     },
     {
-      "winner": "Texas Tech Red Raiders",
-      "loser": "Gonzaga Bulldogs",
-      "winner_score": 75,
-      "loser_score": 69,
-      "date": "2019-03-30",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8"
-    },
-    {
-      "winner": "Virginia Cavaliers",
-      "loser": "Purdue Boilermakers",
-      "winner_score": 80,
-      "loser_score": 75,
-      "date": "2019-03-31",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8"
-    },
-    {
       "winner": "Auburn Tigers",
       "loser": "Kentucky Wildcats",
       "winner_score": 77,
@@ -2114,26 +2098,6 @@
       "date": "2019-03-30"
     },
     {
-      "t1": "Texas Tech Red Raiders",
-      "t2": "Gonzaga Bulldogs",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Gonzaga Bulldogs",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8",
-      "date": "2019-03-30"
-    },
-    {
-      "t1": "Virginia Cavaliers",
-      "t2": "Purdue Boilermakers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Purdue Boilermakers",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - SOUTH REGION - ELITE 8",
-      "date": "2019-03-31"
-    },
-    {
       "t1": "Auburn Tigers",
       "t2": "Kentucky Wildcats",
       "w1": 1,
@@ -2291,12 +2255,10 @@
     "North Carolina Tar Heels",
     "Virginia Tech Hokies",
     "Houston Cougars",
-    "Gonzaga Bulldogs",
-    "Purdue Boilermakers",
     "Kentucky Wildcats",
     "Duke Blue Devils",
     "Auburn Tigers",
     "Michigan State Spartans"
   ],
-  "updated": "2026-09-05 11:36 UTC"
+  "updated": "2026-09-05 21:14 UTC"
 }
