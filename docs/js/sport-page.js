@@ -3175,9 +3175,26 @@ window.initSportPage = function(CFG) {
   }
 
     // ── Auto-find available season ─────────────────────────────
+    // BUG FIX: this used to read/write `elo_season_<sport>` in localStorage,
+    // which never expires. Clicking a season button once — even just to
+    // glance at it — pinned that season as the default on every future
+    // visit, forever, since a saved value that's still in CFG.seasons
+    // (which it almost always is) short-circuits this function before
+    // EloSeason.withCurrent()'s corrected "current season" default is ever
+    // consulted, and before checkForNewerSeasons() (which only even runs in
+    // the *other* branch) gets a chance to run. In practice: pick 2025 once
+    // while the 2026 season didn't exist yet, and the site quietly keeps
+    // reopening on 2025 forever, even long after 2026 is the live season
+    // with real data (e.g. CFB's Playoff Chance feature, which only ever
+    // publishes for the current season — so it silently never appears).
+    // sessionStorage keeps the "remember my pick while I'm browsing" UX
+    // (flipping between seasons within one visit still sticks) without that
+    // pick outliving the browser tab into a future visit.
 async function findAvailableSeason() {
-    // Check localStorage for last-used season
-    const saved = localStorage.getItem('elo_season_' + CFG.sport);
+    // Check this browser tab's session for a season picked earlier in the
+    // same visit — NOT a season picked in some earlier, possibly long-past
+    // visit (see BUG FIX above).
+    const saved = sessionStorage.getItem('elo_season_' + CFG.sport);
     if (saved && CFG.seasons.includes(parseInt(saved))) return parseInt(saved);
     // Return newest season immediately — loadSeason shows empty state if no CSV
     // checkForNewerSeasons runs in background after load
@@ -5462,9 +5479,11 @@ async function findAvailableSeason() {
     if (firstTab) firstTab.click();
   });
 
-  // Persist season choice
+  // Persist season choice for the rest of this browser tab's visit only
+  // (see the BUG FIX note on findAvailableSeason() above — localStorage
+  // here is what made an old season pick stick forever).
   document.getElementById('seasonPicker')?.addEventListener('click', e => {
     if (e.target.classList.contains('season-btn'))
-      localStorage.setItem('elo_season_' + CFG.sport, e.target.textContent);
+      sessionStorage.setItem('elo_season_' + CFG.sport, e.target.textContent);
   });
 };
