@@ -228,6 +228,51 @@ if (nrow(remaining_raw) > 0) {
 }
 message("  ", nrow(remaining), " remaining games between tracked FBS teams.")
 
+# ── Broader display-only version of the remaining schedule ─────────
+# `remaining` above is the STRICT set fed into the Monte Carlo sim — both
+# sides must already have a real Elo rating, because simulating a game
+# against a team with no rating at all would mean injecting an arbitrary
+# placeholder rating into 2000 trials with no defensible basis. That's
+# fine for the simulation, but team_remaining_games() below feeds the
+# per-team schedule list the Resume tab actually displays (via
+# pcScenarioGames() in sport-page.js) — and a game against an FCS
+# opponent, or an FBS opponent who simply hasn't played their own first
+# game of the season yet (most often just means their opener is later
+# that same day/week than this run), is still a REAL game on the
+# schedule. Silently dropping it from `remaining` for simulation
+# purposes is correct; dropping it from the team's own displayed
+# schedule made real games disappear from view (the reported bug).
+#
+# So this keeps every remaining game where AT LEAST ONE side is a team
+# this run is tracking, falling back to ESPN's raw opponent name (and no
+# win probability — pcPct() on the frontend renders a missing win_prob
+# as "—") whenever the other side isn't a team with a real rating yet.
+# Note this intentionally does NOT feed the win-out scenario buckets
+# below (those still only cover the strict, fully-rated `remaining` set)
+# — a team whose schedule includes an as-yet-unrated opponent may very
+# rarely show one more game in its schedule list than its "win out
+# (N-0)" scenario sentence accounts for, until that opponent's own
+# rating catches up (typically within a day, once they've played).
+if (nrow(remaining_raw) > 0) {
+  keep_disp <- (!is.na(remaining_raw$home_c) | !is.na(remaining_raw$away_c)) &
+               !(!is.na(remaining_raw$home_c) & !is.na(remaining_raw$away_c) &
+                 remaining_raw$home_c == remaining_raw$away_c)
+  rd <- remaining_raw[keep_disp, ]
+  remaining_display <- data.frame(
+    home = ifelse(is.na(rd$home_c), rd$home, rd$home_c),
+    away = ifelse(is.na(rd$away_c), rd$away, rd$away_c),
+    neutral = rd$neutral,
+    home_tracked = !is.na(rd$home_c),
+    away_tracked = !is.na(rd$away_c),
+    stringsAsFactors = FALSE
+  )
+  remaining_display <- unique(remaining_display)
+} else {
+  remaining_display <- data.frame(home = character(0), away = character(0), neutral = logical(0),
+                                   home_tracked = logical(0), away_tracked = logical(0))
+}
+message("  ", nrow(remaining_display), " remaining games on tracked teams' schedules (incl. untracked opponents).")
+
 # ── Win probability for each remaining game (frozen Elo, never updated) ──
 elo0 <- setNames(teams_df$elo, teams_df$team)
 conf0 <- setNames(teams_df$conference, teams_df$team)
@@ -663,17 +708,29 @@ for (conf in names(conf_teams)) {
 }
 
 # ── Per-team output ──────────────────────────────────────────────
+# Sourced from remaining_display (see its definition above), not the
+# stricter `remaining` used for simulation — so every real game on a
+# team's schedule shows up here, even one against an opponent who
+# doesn't have a rating yet (win_prob comes back NA/null for that one
+# entry; the frontend renders that as "—" rather than hiding the game).
 team_remaining_games <- function(team) {
-  if (nrow(remaining) == 0) return(list())
-  rows <- remaining[remaining$home == team | remaining$away == team, ]
+  if (nrow(remaining_display) == 0) return(list())
+  rows <- remaining_display[remaining_display$home == team | remaining_display$away == team, ]
   if (!nrow(rows)) return(list())
   lapply(seq_len(nrow(rows)), function(i) {
     r <- rows[i, ]
     is_home <- identical(r$home, team)
     opp <- if (is_home) r$away else r$home
-    wp  <- if (is_home) r$p_home else (1 - r$p_home)
+    opp_tracked <- if (is_home) r$away_tracked else r$home_tracked
+    wp <- if (opp_tracked) {
+      p <- win_prob_home(r$home, r$away, r$neutral)
+      if (is_home) p else (1 - p)
+    } else NA_real_
+    is_conf_game <- opp_tracked && !is.na(conf0[[team]]) && !is.na(conf0[[opp]]) &&
+      conf0[[team]] == conf0[[opp]]
     list(opponent = opp, home = is_home, neutral = isTRUE(r$neutral),
-         win_prob = round(wp, 4), conference_game = !is.na(r$conf))
+         win_prob = round(wp, 4), conference_game = isTRUE(is_conf_game),
+         opponent_tracked = opp_tracked)
   })
 }
 
