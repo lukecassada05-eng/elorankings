@@ -828,7 +828,14 @@ window.initSportPage = function(CFG) {
     // Default guard against buy-game/low-sample opponents; overridden the
     // moment the user picks an explicit "min games" value from the filter
     // (including "Any games", which intentionally disables the guard).
-    const auto = Math.max(3, Math.ceil(maxGames * 0.4));
+    // BUG FIX: the floor of 3 games used to apply even when maxGames itself
+    // was below 3 — the first ~2 weeks of every new season, when nobody has
+    // played 3 games yet. That made the guard stricter than what's possible
+    // this season, filtering out literally every team and leaving both
+    // panels permanently stuck on "No movement yet" until week 2-3. Capping
+    // at maxGames means the guard can never demand more games than the
+    // season has actually produced yet.
+    const auto = Math.min(maxGames, Math.max(3, Math.ceil(maxGames * 0.4)));
     const minGamesForMovers = moversFilter.minGames === '' ? auto : (parseInt(moversFilter.minGames) || 0);
     const real = eligible.filter(r => r.games_played >= minGamesForMovers);
     const sorted = [...real].sort((a, b) => movement(b) - movement(a));
@@ -2662,8 +2669,8 @@ window.initSportPage = function(CFG) {
       <td class="team-name"><div class="pc-team-expand-lbl"><svg class="pc-team-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>${pcEsc(t.team)}${t.cfp_ineligible ? ' <span class="pc-approx-tag">ineligible</span>' : ''}</div></td>
       <td class="conf">${pcEsc(t.conference)}</td>
       <td class="record">${pcEsc(t.record)}</td>
-      <td class="num" data-val="${t.elo}">${t.elo.toFixed(1)}</td>
-      <td class="num" data-val="${t.pr}" style="color:var(--accent)">${t.pr.toFixed(1)}</td>
+      <td class="num" data-val="${t.elo||0}">${(t.elo||0).toFixed(1)}</td>
+      <td class="num" data-val="${t.pr||0}" style="color:var(--accent)">${(t.pr||0).toFixed(1)}</td>
       <td class="num" data-val="${t.reach_ccg_pct||0}">${pcPct(t.reach_ccg_pct)}</td>
       <td class="num" data-val="${t.playoff_pct||0}">${pcChanceCell(t.playoff_pct)}</td>
     </tr>`).join('');
