@@ -3925,6 +3925,19 @@ async function findAvailableSeason() {
         // Conference") only in Pick'em.
         var confName=(node&&node.shortName)||confFull;
         if(!confName) return;
+        // BUG FIX: this used to store ESPN's raw shortDisplayName here
+        // unresolved (e.g. "Florida St") while every other consumer of a
+        // team's identity — pkBuild()'s win/loss tally, pkConfOf(), eloBase
+        // from the R-pipeline CSVs — works in PK_ALIAS's canonical form
+        // (e.g. "Florida State"). Any team whose ESPN shortDisplayName
+        // differs from its PK_ALIAS target (Florida St, Ohio St, Penn St,
+        // Mississippi St, Pitt, and others) ended up with two identities:
+        // wins/losses got recorded under the resolved name, but the conf
+        // roster (what the standings table actually iterates) still had the
+        // raw name — so that team always showed a stuck 0-0 record and, on
+        // a large conference where only the top few by record are shown,
+        // could fall out of view entirely. Resolving here means the roster
+        // uses the same identity as everything else downstream.
         if(node.children&&node.children.length){
           var divMap={}, allTeams=[];
           node.children.forEach(function(div){
@@ -3934,14 +3947,16 @@ async function findAvailableSeason() {
             // what's left is just "East".
             var divName=rawDivName.replace(confName,'').replace(confFull,'').replace(/^[\s\-–—]+/,'') || rawDivName || 'Division';
             var dteams=((div.standings&&div.standings.entries)||[]).map(function(e){
-              return e&&e.team&&(e.team.shortDisplayName||e.team.displayName);
+              var nm=e&&e.team&&(e.team.shortDisplayName||e.team.displayName);
+              return nm?pkResolve(nm):null;
             }).filter(Boolean);
             if(dteams.length){ divMap[divName]=dteams; allTeams=allTeams.concat(dteams); }
           });
           if(allTeams.length){ confs[confName]=allTeams; divs[confName]=divMap; }
         }else{
           var teams=((node.standings&&node.standings.entries)||[]).map(function(e){
-            return e&&e.team&&(e.team.shortDisplayName||e.team.displayName);
+            var nm=e&&e.team&&(e.team.shortDisplayName||e.team.displayName);
+            return nm?pkResolve(nm):null;
           }).filter(Boolean);
           if(teams.length) confs[confName]=teams;
         }
@@ -4066,12 +4081,15 @@ async function findAvailableSeason() {
     // groups=80 returned gets fetched again via its own ESPN group id —
     // generalizes the old Pac-12-specific fix to any conference ESPN's
     // umbrella group happens to omit, this year or any future one.
+    // _pk.confs now stores PK_ALIAS-resolved names (see the fix above), so
+    // this coverage check resolves both sides through pkResolve too — same
+    // identity space, not just pkNorm's separate full-name/short-name pass.
     var coveredTeams={};
-    games.forEach(function(g){ coveredTeams[pkNorm(g.homeTeam)]=1; coveredTeams[pkNorm(g.awayTeam)]=1; });
+    games.forEach(function(g){ coveredTeams[pkResolve(pkNorm(g.homeTeam))]=1; coveredTeams[pkResolve(pkNorm(g.awayTeam))]=1; });
     var missingConfGroupIds=[];
     Object.keys(_pk.confs).forEach(function(confName){
       var teams=_pk.confs[confName]||[];
-      var anyCovered=teams.some(function(t){ return coveredTeams[pkNorm(t)]; });
+      var anyCovered=teams.some(function(t){ return coveredTeams[pkResolve(pkNorm(t))]; });
       if(!anyCovered && teams.length && _pk.confIds[confName]) missingConfGroupIds.push(_pk.confIds[confName]);
     });
     if(missingConfGroupIds.length){
