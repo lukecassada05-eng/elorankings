@@ -549,3 +549,112 @@ footer a:hover{color:var(--accent)}
   .lines-team-r  { text-align:left; }
   .lines-mid     { border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:0.45rem 0; }
 }
+
+/* ============================================================
+   CFB Playoff Chance (CFP Resume tab, active season only)
+   Namespaced with a pc- prefix so nothing here can collide with an
+   existing class of the same short name elsewhere on the site (e.g.
+   the generic .seed/.bracket-grid classes used by other tabs already
+   have different sizing/modifiers than this feature needs).
+   ============================================================ */
+.pc-section{margin-bottom:2rem}
+.pc-sec-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:0.85rem;flex-wrap:wrap}
+.pc-sec-title{font-family:var(--font-display);font-size:1.35rem;font-weight:700}
+.pc-sec-cap{font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.06em;color:var(--text-dim)}
+
+/* Methodology card */
+.pc-method-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.1rem 1.35rem;margin-bottom:1.75rem}
+.pc-method-card h3{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.8rem}
+.pc-method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.1rem}
+.pc-method-item-lbl{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.28rem}
+.pc-method-item-val{font-size:0.8rem;color:var(--text-muted);line-height:1.5}
+.pc-method-item-val b{color:var(--text);font-weight:500}
+
+/* Auto-bid tracker chips */
+.pc-autobid-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0.6rem;margin-bottom:1.75rem}
+.pc-autobid-chip{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.8rem 0.85rem}
+.pc-autobid-conf{font-family:var(--font-mono);font-size:0.56rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.45rem}
+.pc-autobid-team{font-weight:500;font-size:0.87rem;color:var(--text);margin-bottom:0.3rem}
+.pc-autobid-chance{font-family:var(--font-mono);font-size:0.64rem;color:var(--green-hi)}
+
+/* Field / bracket card */
+.pc-bracket-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:1.75rem}
+.pc-bracket-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.05rem 1.2rem}
+.pc-bracket-card-header{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.7rem}
+.pc-bracket-line{display:flex;align-items:center;gap:0.6rem;padding:0.38rem 0;border-bottom:1px solid var(--border)}
+.pc-bracket-line:last-child{border-bottom:none}
+.pc-seed{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:4px;background:var(--bg4);border:1px solid var(--border-md);font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted);flex-shrink:0}
+.pc-seed.bye{background:rgba(226,201,126,0.15);color:var(--accent);border-color:rgba(226,201,126,0.3)}
+.pc-bracket-line-team{flex:1;min-width:0}
+.pc-bracket-line-name{font-weight:500;font-size:0.85rem;color:var(--text)}
+.pc-bracket-line-conf{font-family:var(--font-mono);font-size:0.58rem;color:var(--text-dim);margin-top:0.1rem}
+.pc-bracket-line-chance{font-family:var(--font-mono);font-size:0.7rem;color:var(--green-hi);text-align:right;flex-shrink:0;width:42px}
+.pc-bracket-line.at-large .pc-bracket-line-chance{color:var(--text-muted)}
+
+/* Chance column (bar viz) — used inside the main .tbl table */
+.pc-chance-cell{display:flex;align-items:center;gap:0.55rem;justify-content:flex-end}
+.pc-chance-pct{font-family:var(--font-mono);font-size:0.74rem;width:36px;text-align:right}
+.pc-chance-bar-wrap{width:56px;height:5px;border-radius:3px;background:var(--bg4);overflow:hidden}
+.pc-chance-bar{height:100%;border-radius:3px}
+.pc-pct-in{color:var(--green-hi)} .pc-bar-in{background:var(--green)}
+.pc-pct-bubble{color:var(--accent)} .pc-bar-bubble{background:var(--accent)}
+.pc-pct-out{color:var(--text-dim)} .pc-bar-out{background:var(--text-dim);opacity:0.5}
+
+/* Conference championship matchup accordion */
+.pc-ccg-list{display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.75rem}
+.pc-ccg-row{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.pc-ccg-row[open]{border-color:var(--border-hi)}
+.pc-ccg-summary{list-style:none;cursor:pointer;padding:0.72rem 0.95rem;display:flex;align-items:center;gap:0.85rem;flex-wrap:wrap}
+.pc-ccg-summary::-webkit-details-marker{display:none}
+.pc-ccg-conf{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);width:112px;flex-shrink:0}
+.pc-ccg-matchup{font-weight:500;font-size:0.86rem;color:var(--text);flex:1;min-width:140px}
+.pc-ccg-matchup .vs{color:var(--text-dim);font-weight:400;margin:0 0.4rem;font-size:0.76rem}
+.pc-ccg-conf-pct{font-family:var(--font-mono);font-size:0.7rem;color:var(--green-hi);width:38px;text-align:right;flex-shrink:0}
+.pc-ccg-chev{width:13px;height:13px;flex-shrink:0;color:var(--text-dim);transition:transform 0.15s}
+.pc-ccg-row[open] .pc-ccg-chev{transform:rotate(180deg)}
+.pc-ccg-detail{padding:0 0.95rem 0.95rem;border-top:1px solid var(--border)}
+.pc-ccg-detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;padding-top:0.85rem}
+.pc-ccg-standings{font-family:var(--font-mono);font-size:0.72rem}
+.pc-ccg-standings-row{display:flex;justify-content:space-between;padding:0.18rem 0;color:var(--text-muted)}
+.pc-ccg-standings-row.lead{color:var(--text);font-weight:500}
+.pc-ccg-standings-row.ineligible{opacity:0.55;text-decoration:line-through}
+.pc-ccg-decided-lbl{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.32rem}
+.pc-ccg-decided-val{font-size:0.78rem;color:var(--text-muted);line-height:1.5}
+.pc-approx-tag{display:inline-block;font-family:var(--font-mono);font-size:0.54rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);background:var(--accent-dim);border:1px solid rgba(226,201,126,0.3);border-radius:3px;padding:0.08rem 0.35rem;margin-left:0.4rem}
+
+/* Per-team "what needs to happen" expandable row */
+tr.pc-selectable{cursor:pointer}
+tr.pc-selectable:hover{background:var(--bg3)}
+.pc-team-expand-lbl{display:flex;align-items:center;gap:0.4rem}
+.pc-team-chev{width:10px;height:10px;color:var(--text-dim);flex-shrink:0;transition:transform 0.15s}
+tr.pc-selected .pc-team-chev{transform:rotate(180deg);color:var(--accent)}
+tr.pc-selected td.team-name{color:var(--accent)}
+tr.pc-scenario-row td{background:var(--bg3);padding:1rem 1.2rem;border-bottom:1px solid var(--border)}
+.pc-scenario-wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:1.4rem}
+.pc-scenario-lbl{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.42rem}
+.pc-scenario-text{font-size:0.83rem;color:var(--text-muted);line-height:1.6}
+.pc-scenario-text b{color:var(--text);font-weight:500}
+.pc-scenario-games{display:flex;flex-direction:column;gap:0.38rem}
+.pc-scenario-game{display:flex;align-items:center;justify-content:space-between;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:0.48rem 0.68rem;font-size:0.76rem}
+.pc-scenario-game-opp{color:var(--text)}
+.pc-scenario-game-when{font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim)}
+.pc-scenario-game-prob{font-family:var(--font-mono);font-size:0.68rem;color:var(--green-hi)}
+
+/* Conference title game branch, inside a scenario row */
+.pc-scenario-full{grid-column:1 / -1;margin-top:0.85rem;padding-top:0.85rem;border-top:1px solid var(--border)}
+.pc-scenario-ccg-note{font-size:0.81rem;color:var(--text-muted);line-height:1.55;margin-bottom:0.7rem}
+.pc-scenario-ccg-note b{color:var(--text);font-weight:500}
+.pc-scenario-branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.55rem}
+.pc-branch{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:0.6rem 0.75rem}
+.pc-branch-lbl{font-family:var(--font-mono);font-size:0.56rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.28rem}
+.pc-branch-odds{font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-bottom:0.35rem}
+.pc-branch-pct{font-family:var(--font-display);font-size:1.25rem;font-weight:700;color:var(--text)}
+.pc-branch-pct.hi{color:var(--green-hi)}
+
+.pc-foot-cap{font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.85rem;text-align:center}
+.pc-inactive-note{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;color:var(--text-muted);font-size:0.85rem}
+
+@media(max-width:700px){
+  .pc-scenario-wrap{grid-template-columns:1fr}
+  .pc-ccg-detail-grid{grid-template-columns:1fr}
+}
