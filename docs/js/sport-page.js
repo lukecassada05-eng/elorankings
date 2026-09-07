@@ -2647,11 +2647,30 @@ window.initSportPage = function(CFG) {
     const lm = c.likely_matchup;
     const matchupHtml = lm ? lm.matchup.replace(' vs ', ' <span class="vs">vs</span> ') : 'Not enough of the race is decided yet';
     const pctHtml = lm ? pcPct(lm.pct) : '';
-    const standingsHtml = (c.standings || []).slice(0, 8).map(s => {
-      const isLeader = c.projected_ccg && (s.team === c.projected_ccg.team1 || s.team === c.projected_ccg.team2);
-      return `<div class="pc-ccg-standings-row${isLeader ? ' lead' : ''}${s.eligible ? '' : ' ineligible'}">
-        <span>${pcEsc(s.team)}</span><span>${pcEsc(s.conference_record)}</span></div>`;
-    }).join('');
+    // Ranked list of the top-8 most likely CCG matchups for this conference
+    // (not just the single favorite) — R's Monte Carlo sim already tallies
+    // every distinct matchup that came up across all trials; top_matchups is
+    // that full distribution, sorted, capped to 8. Falls back to the old
+    // plain standings list on data from before this field existed (the
+    // static CSV/JSON only refreshes on the next scheduled pipeline run —
+    // see update_cfb_playoff.R's top_matchups comment) so this never shows
+    // a blank panel in the meantime.
+    let matchupListHtml, matchupListLbl;
+    if (c.top_matchups && c.top_matchups.length) {
+      matchupListLbl = 'Most likely matchups';
+      matchupListHtml = c.top_matchups.map((m, i) => {
+        const mHtml = pcEsc(m.matchup).replace(' vs ', ' <span class="vs">vs</span> ');
+        return `<div class="pc-ccg-standings-row${i === 0 ? ' lead' : ''}">
+          <span>${mHtml}</span><span>${pcPct(m.pct)}</span></div>`;
+      }).join('');
+    } else {
+      matchupListLbl = 'Current standings (top 8)';
+      matchupListHtml = (c.standings || []).slice(0, 8).map(s => {
+        const isLeader = c.projected_ccg && (s.team === c.projected_ccg.team1 || s.team === c.projected_ccg.team2);
+        return `<div class="pc-ccg-standings-row${isLeader ? ' lead' : ''}${s.eligible ? '' : ' ineligible'}">
+          <span>${pcEsc(s.team)}</span><span>${pcEsc(s.conference_record)}</span></div>`;
+      }).join('');
+    }
     return `<details class="pc-ccg-row"${forceOpen ? ' open' : ''}>
       <summary class="pc-ccg-summary">
         <div class="pc-ccg-conf">${pcEsc(conf)}${c.has_divisions ? ' (divisions)' : ''}</div>
@@ -2660,7 +2679,7 @@ window.initSportPage = function(CFG) {
         <svg class="pc-ccg-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
       </summary>
       <div class="pc-ccg-detail"><div class="pc-ccg-detail-grid">
-        <div><div class="pc-ccg-decided-lbl">Current standings (top 8)</div><div class="pc-ccg-standings">${standingsHtml}</div></div>
+        <div><div class="pc-ccg-decided-lbl">${matchupListLbl}</div><div class="pc-ccg-standings">${matchupListHtml}</div></div>
         <div><div class="pc-ccg-decided-lbl">How the tiebreaker works<span class="pc-approx-tag">approx beyond common opp.</span></div>
         <div class="pc-ccg-decided-val">${pcEsc(c.tiebreak_note)}</div></div>
       </div></div>
