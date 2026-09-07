@@ -2628,38 +2628,73 @@ window.initSportPage = function(CFG) {
       </div>`;
   }
 
-  function pcCcgAccordion(pj) {
-    const confs = Object.keys(pj.conferences || {}).sort((a, b) => {
+  // Sorted conference key list — Power 4 first, then alphabetical. Shared by
+  // the "All conferences" list and the favorite-conference dropdown so both
+  // always agree on ordering.
+  function pcCcgConfOrder(pj) {
+    return Object.keys(pj.conferences || {}).sort((a, b) => {
       const pa = pj.conferences[a].power4, pb = pj.conferences[b].power4;
       if (pa !== pb) return pa ? -1 : 1;
       return a.localeCompare(b);
     });
-    const rows = confs.map((conf, i) => {
-      const c = pj.conferences[conf];
-      const lm = c.likely_matchup;
-      const matchupHtml = lm ? lm.matchup.replace(' vs ', ' <span class="vs">vs</span> ') : 'Not enough of the race is decided yet';
-      const pctHtml = lm ? pcPct(lm.pct) : '';
-      const standingsHtml = (c.standings || []).slice(0, 8).map(s => {
-        const isLeader = c.projected_ccg && (s.team === c.projected_ccg.team1 || s.team === c.projected_ccg.team2);
-        return `<div class="pc-ccg-standings-row${isLeader ? ' lead' : ''}${s.eligible ? '' : ' ineligible'}">
-          <span>${pcEsc(s.team)}</span><span>${pcEsc(s.conference_record)}</span></div>`;
-      }).join('');
-      return `<details class="pc-ccg-row"${i === 0 ? ' open' : ''}>
-        <summary class="pc-ccg-summary">
-          <div class="pc-ccg-conf">${pcEsc(conf)}${c.has_divisions ? ' (divisions)' : ''}</div>
-          <div class="pc-ccg-matchup">${matchupHtml}</div>
-          <div class="pc-ccg-conf-pct">${pctHtml}</div>
-          <svg class="pc-ccg-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </summary>
-        <div class="pc-ccg-detail"><div class="pc-ccg-detail-grid">
-          <div><div class="pc-ccg-decided-lbl">Current standings (top 8)</div><div class="pc-ccg-standings">${standingsHtml}</div></div>
-          <div><div class="pc-ccg-decided-lbl">How the tiebreaker works<span class="pc-approx-tag">approx beyond common opp.</span></div>
-          <div class="pc-ccg-decided-val">${pcEsc(c.tiebreak_note)}</div></div>
-        </div></div>
-      </details>`;
+  }
+
+  // One conference's accordion row. `forceOpen` is used when the dropdown
+  // has filtered the list down to a single conference — there's no other
+  // row to compare against, so just show it expanded instead of making the
+  // user click to open the only thing on screen.
+  function pcCcgRowHtml(conf, c, forceOpen) {
+    const lm = c.likely_matchup;
+    const matchupHtml = lm ? lm.matchup.replace(' vs ', ' <span class="vs">vs</span> ') : 'Not enough of the race is decided yet';
+    const pctHtml = lm ? pcPct(lm.pct) : '';
+    const standingsHtml = (c.standings || []).slice(0, 8).map(s => {
+      const isLeader = c.projected_ccg && (s.team === c.projected_ccg.team1 || s.team === c.projected_ccg.team2);
+      return `<div class="pc-ccg-standings-row${isLeader ? ' lead' : ''}${s.eligible ? '' : ' ineligible'}">
+        <span>${pcEsc(s.team)}</span><span>${pcEsc(s.conference_record)}</span></div>`;
     }).join('');
-    return `<div class="pc-sec-row"><div class="pc-sec-title" style="font-size:1.05rem">Conference championship races</div></div>
-      <div class="pc-ccg-list">${rows}</div>`;
+    return `<details class="pc-ccg-row"${forceOpen ? ' open' : ''}>
+      <summary class="pc-ccg-summary">
+        <div class="pc-ccg-conf">${pcEsc(conf)}${c.has_divisions ? ' (divisions)' : ''}</div>
+        <div class="pc-ccg-matchup">${matchupHtml}</div>
+        <div class="pc-ccg-conf-pct">${pctHtml}</div>
+        <svg class="pc-ccg-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="pc-ccg-detail"><div class="pc-ccg-detail-grid">
+        <div><div class="pc-ccg-decided-lbl">Current standings (top 8)</div><div class="pc-ccg-standings">${standingsHtml}</div></div>
+        <div><div class="pc-ccg-decided-lbl">How the tiebreaker works<span class="pc-approx-tag">approx beyond common opp.</span></div>
+        <div class="pc-ccg-decided-val">${pcEsc(c.tiebreak_note)}</div></div>
+      </div></div>
+    </details>`;
+  }
+
+  // filterConf: 'ALL' renders every conference (today's default), or a
+  // specific conference name to render just that one row, forced open.
+  function pcCcgRowsHtml(pj, filterConf) {
+    const confs = pcCcgConfOrder(pj);
+    if (filterConf && filterConf !== 'ALL' && pj.conferences && pj.conferences[filterConf]) {
+      return pcCcgRowHtml(filterConf, pj.conferences[filterConf], true);
+    }
+    return confs.map((conf, i) => pcCcgRowHtml(conf, pj.conferences[conf], i === 0)).join('');
+  }
+
+  function pcCcgAccordion(pj) {
+    const confs = pcCcgConfOrder(pj);
+    // Remembered for the current browser tab/visit only (sessionStorage, not
+    // localStorage) — same reasoning as the elo_season_<sport> pick above:
+    // a choice made once shouldn't silently override every future visit.
+    let saved = 'ALL';
+    try { saved = sessionStorage.getItem('pc_fav_conf_' + CFG.sport) || 'ALL'; } catch (e) {}
+    const initial = confs.indexOf(saved) !== -1 ? saved : 'ALL';
+    const options = ['<option value="ALL">All conferences</option>']
+      .concat(confs.map(c => `<option value="${pcEsc(c)}"${c === initial ? ' selected' : ''}>${pcEsc(c)}</option>`))
+      .join('');
+    return `<div class="pc-sec-row">
+        <div class="pc-sec-title" style="font-size:1.05rem">Conference championship races</div>
+        <div class="ctrl-group"><span class="ctrl-label">Favorite conference</span>
+          <select id="pc-ccg-conf-select">${options}</select>
+        </div>
+      </div>
+      <div class="pc-ccg-list" id="pc-ccg-list">${pcCcgRowsHtml(pj, initial)}</div>`;
   }
 
   function pcTeamTable(pj) {
@@ -2739,6 +2774,16 @@ window.initSportPage = function(CFG) {
   function renderPlayoffChance(el, pj) {
     el.innerHTML = pcMethodCard(pj) + pcAutobidRow(pj) + pcFieldCard(pj) + pcCcgAccordion(pj) + pcTeamTable(pj);
     makeSortable(document.getElementById('pcTable'));
+
+    const ccgSelect = document.getElementById('pc-ccg-conf-select');
+    if (ccgSelect) {
+      ccgSelect.addEventListener('change', () => {
+        const val = ccgSelect.value || 'ALL';
+        try { sessionStorage.setItem('pc_fav_conf_' + CFG.sport, val); } catch (e) {}
+        const list = document.getElementById('pc-ccg-list');
+        if (list) list.innerHTML = pcCcgRowsHtml(pj, val);
+      });
+    }
 
     const byTeam = {};
     (pj.teams || []).forEach(t => byTeam[t.team] = t);
