@@ -2764,8 +2764,13 @@ window.initSportPage = function(CFG) {
   }
 
   function pcScenarioGames(t) {
+    // opponent_tracked === false: a real game on the schedule against a team
+    // with no Elo yet (usually just means that opponent hasn't played their
+    // own first game of the season yet) — shown on the list instead of
+    // silently dropped, but with no win probability to give it since there's
+    // no rating to price the game from yet.
     const games = (t.remaining_games || []).map(g => `<div class="pc-scenario-game"><span class="pc-scenario-game-opp">${g.home ? 'vs ' : '@ '}${pcEsc(g.opponent)}${g.neutral ? ' (neutral)' : ''}</span>
-      <span class="pc-scenario-game-prob">${pcPct(g.win_prob)} to win</span></div>`).join('');
+      <span class="pc-scenario-game-prob"${g.opponent_tracked === false ? ' style="color:var(--text-dim)"' : ''}>${g.opponent_tracked === false ? 'opponent hasn\'t played yet' : pcPct(g.win_prob) + ' to win'}</span></div>`).join('');
     return `<div class="pc-scenario-games">${games || '<div style="color:var(--text-dim);font-size:0.78rem">No remaining games tracked.</div>'}</div>`;
   }
 
