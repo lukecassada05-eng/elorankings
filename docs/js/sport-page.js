@@ -3659,6 +3659,19 @@ async function findAvailableSeason() {
     "Washington St":"Washington St","Wash. State":"Washington St","Wash St":"Washington St","WSU":"Washington St",
     "Oregon St":"Oregon St","Texas St":"Texas St","Tex. St.":"Texas St","Texas St.":"Texas St",
     "Utah St":"Utah St","Utah St.":"Utah St","USU":"Utah St",
+    // BUG FIX: ESPN switched to returning the LONG form "Utah State" as this
+    // team's shortDisplayName (on BOTH the standings and scoreboard endpoints)
+    // now that it's in the newly-reformed 2026 Pac-12 — every other Pac-12
+    // team still gets ESPN's usual short form ("Boise St", "Colorado St",
+    // etc.), so this is a one-team ESPN data quirk, not a pattern. _pk_norm
+    // (used only for schedule-fetch team names) already remapped "Utah
+    // State"->"Utah St", but PK_ALIAS (used for the conference-roster fetch
+    // via pkResolve) had no entry for the long form — so the roster kept
+    // "Utah State" while the schedule used "Utah St", two different
+    // identities for the same team. That split made Utah State's entire
+    // 12-game schedule and W-L record invisible in Pick'em (0 games shown),
+    // same root-cause shape as the earlier Florida State standings bug.
+    "Utah State":"Utah St",
     "Colorado St":"Colorado St","CSU":"Colorado St","Colo. St.":"Colorado St",
     "Fresno St":"Fresno St","Fresno St.":"Fresno St",
     "Boise St":"Boise St","Boise St.":"Boise St","BSU":"Boise St",
