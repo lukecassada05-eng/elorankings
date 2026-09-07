@@ -232,6 +232,13 @@ message("  ", nrow(remaining), " remaining games between tracked FBS teams.")
 elo0 <- setNames(teams_df$elo, teams_df$team)
 conf0 <- setNames(teams_df$conference, teams_df$team)
 pr0  <- setNames(teams_df$pr, teams_df$team)
+# Defensive: a still-winless team's pr can come through as NA from the CSV
+# (the real fix is in update_cfb.R's resume_score, but this is cheap
+# insurance against any stale CSV that predates that fix, or any other
+# future source of NA here) — every downstream `pr0[[tm]]` consumer below
+# assumes a real number, and this feeds straight into the JSON `pr` field
+# that the frontend calls .toFixed() on with no null-guard.
+pr0[is.na(pr0)] <- 0
 wins0   <- setNames(teams_df$wins,   teams_df$team)
 losses0 <- setNames(teams_df$losses, teams_df$team)
 

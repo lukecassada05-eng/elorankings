@@ -733,7 +733,17 @@ for (yr in SEASONS) {
   # Prevents cupcake wins from inflating resume score
   resume  <- tapply(seq_len(nrow(g)), g$winner,
                     function(rows) sum(pmax(0, elo_lup[g$loser[rows]] - 1350), na.rm=TRUE))
-  out$resume_score <- round(resume[out$team], 1)
+  # BUG FIX: tapply() only produces an entry for teams that appear as a
+  # winner at least once — a team with zero wins this season is simply
+  # absent from `resume`, and indexing a named vector by a name it doesn't
+  # have returns NA (not 0). That NA then poisoned out$pr below (elo * ... +
+  # sqrt(NA) = NA), so EVERY still-winless team got pr = NA in the CSV —
+  # which, written out as JSON `null` further downstream, crashed the CFB
+  # Playoff Chance render entirely (t.pr.toFixed() on null throws), silently
+  # falling back to the classic Resume table with no visible error. A team
+  # with no wins has no resume bonus, which is 0, not "unknown" — same
+  # intent as the pmax(0, ...) floor already used everywhere else here.
+  out$resume_score <- round(ifelse(is.na(resume[out$team]), 0, resume[out$team]), 1)
   # PR = Elo × win_pct^0.6 + √(quality_resume)
   # win_pct^0.6 penalizes losing records (7-5 SEC team drops significantly)
   out$pr <- round(
