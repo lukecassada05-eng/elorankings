@@ -832,9 +832,19 @@ window.initSportPage = function(CFG) {
     const minGamesForMovers = moversFilter.minGames === '' ? auto : (parseInt(moversFilter.minGames) || 0);
     const real = eligible.filter(r => r.games_played >= minGamesForMovers);
     const sorted = [...real].sort((a, b) => movement(b) - movement(a));
+    // BUG FIX: this used to be sorted.slice(0, n) / sorted.slice(-n) with no
+    // regard for sign, so whenever fewer than n teams had actually moved up
+    // (e.g. a slow week, or a small conference filter), the Risers panel got
+    // padded out with teams that were actually FALLING — rendered with a red
+    // ▼ right under the "Biggest Risers" header. And with "Show all" (n set
+    // very high), slice(0, n) grabbed the entire sorted list as "risers",
+    // which then made the old overlap filter strip every team back out of
+    // Fallers, leaving that panel empty. Filtering by sign first fixes both:
+    // a team can only ever land in the list that matches which way it moved,
+    // and there's no overlap to filter since the two sets are now disjoint.
     return {
-      risers:  sorted.slice(0, n),
-      fallers: sorted.slice(-n).reverse().filter(r => !sorted.slice(0, n).includes(r)),
+      risers:  sorted.filter(r => movement(r) > 0).slice(0, n),
+      fallers: sorted.filter(r => movement(r) < 0).slice(-n).reverse(),
     };
   }
 
@@ -2493,9 +2503,31 @@ window.initSportPage = function(CFG) {
   }
 
   // ── Resume (CFB) ───────────────────────────────────────────
-  function renderResume() {
+  // CFB's Resume tab tries the Playoff Chance feature first (only ever
+  // published for the active/in-progress season — see
+  // R/update_cfb_playoff.R). A missing/failed fetch — historical season,
+  // season too early for the sim to have run yet, non-CFB sport — falls
+  // straight through to the classic resume-score table below, so this
+  // never needs an explicit "is this the active season" flag to maintain.
+  async function renderResume() {
     const el = document.getElementById('panel-resume');
-    if (!el||!data.length) return;
+    if (!el || !data.length) return;
+
+    if (CFG.sport === 'CFB') {
+      el.innerHTML = '<div class="loading"><div class="spinner"></div>Loading playoff picture…</div>';
+      try {
+        const url = CFG.dataPath.replace('CFB_Elo_', 'CFB_Playoff_') + currentSeason + '.json';
+        const resp = await fetch(url, { cache: 'no-store' });
+        if (resp.ok) {
+          const pj = await resp.json();
+          if (pj && pj.teams && pj.teams.length) { renderPlayoffChance(el, pj); return; }
+        }
+      } catch (e) { /* fall through to the classic table below */ }
+    }
+    renderResumeClassic(el);
+  }
+
+  function renderResumeClassic(el) {
     const sorted = [...data].sort((a,b)=>CFG.sport==='CFB'?(b.pr||b.elo||0)-(a.pr||a.elo||0):(b.resume_score||0)-(a.resume_score||0));
     const rows = sorted.slice(0,120).map((r,i)=>`<tr>
       <td class="rank">${i+1}</td><td class="team-name">${r.team}</td>
@@ -2515,6 +2547,215 @@ window.initSportPage = function(CFG) {
         <th data-type="num">Resume Score</th><th data-type="num">SOS</th><th>Best Win</th>
       </tr></thead><tbody>${rows}</tbody></table></div>`;
     makeSortable(document.getElementById('mainTable'));
+  }
+
+  // ────────────────────────────────────────────────────────────
+  // CFB PLAYOFF CHANCE (active season only)
+  // Renders R/update_cfb_playoff.R's server-side Monte Carlo output —
+  // this file does no simulation of its own, only string-builds HTML
+  // from numbers the backend already computed (see that script's header
+  // comment for the full methodology). Every helper below is prefixed
+  // pc* / .pc- so nothing here can collide with an existing same-named
+  // local (several other tabs declare their own small `pct()` helpers
+  // scoped to themselves) or an existing site-wide CSS class.
+  // ────────────────────────────────────────────────────────────
+  function pcEsc(s) { return String(s == null ? '' : s); }
+  function pcPct(x) { return (x == null || isNaN(x)) ? '—' : Math.round(x * 100) + '%'; }
+
+  function pcChanceCell(p) {
+    const v = (p == null) ? 0 : p;
+    const cls = v >= 0.5 ? 'in' : (v >= 0.03 ? 'bubble' : 'out');
+    const barPct = Math.max(2, Math.round(v * 100));
+    return `<div class="pc-chance-cell">
+      <div class="pc-chance-pct pc-pct-${cls}">${pcPct(v)}</div>
+      <div class="pc-chance-bar-wrap"><div class="pc-chance-bar pc-bar-${cls}" style="width:${barPct}%"></div></div>
+    </div>`;
+  }
+
+  function pcMethodCard(pj) {
+    const g5 = pj.auto_bid_conferences.filter(c => pj.power4_conferences.indexOf(c) === -1).join(' / ');
+    return `<div class="pc-method-card"><h3>How this works</h3><div class="pc-method-grid">
+      <div><div class="pc-method-item-lbl">Field</div><div class="pc-method-item-val"><b>12 teams</b> — top 4 seeds get a first-round bye, straight-seeded by Playoff Rating</div></div>
+      <div><div class="pc-method-item-lbl">Automatic bids (5)</div><div class="pc-method-item-val"><b>${pj.power4_conferences.join(' · ')}</b> champions, plus the highest-ranked champion among ${g5}</div></div>
+      <div><div class="pc-method-item-lbl">Remaining games</div><div class="pc-method-item-val">Win probability from each team's <b>current Elo</b> (+${pj.hca} HCA) — Elo itself is frozen; only Playoff Rating/records update per simulation</div></div>
+      <div><div class="pc-method-item-lbl">Where it runs</div><div class="pc-method-item-val">Simulated <b>server-side</b> during the scheduled update, not in your browser — this page just loads the finished numbers</div></div>
+    </div></div>`;
+  }
+
+  function pcAutobidRow(pj) {
+    const byTeam = {};
+    (pj.teams || []).forEach(t => byTeam[t.team] = t);
+    const chips = (pj.auto_bid_tracker || []).map(a => {
+      const t = a.team ? byTeam[a.team] : null;
+      const chance = t ? pcPct(t.win_ccg_pct) + ' to win conf.' : 'No projected leader yet';
+      return `<div class="pc-autobid-chip">
+        <div class="pc-autobid-conf">${pcEsc(a.conference)}${a.power4 ? '' : ' (highest G5)'}</div>
+        <div class="pc-autobid-team">${pcEsc(a.team || '—')}</div>
+        <div class="pc-autobid-chance">${chance}</div>
+      </div>`;
+    }).join('');
+    return `<div class="pc-sec-row"><div class="pc-sec-title" style="font-size:1.05rem">Automatic-bid tracker</div></div>
+      <div class="pc-autobid-row">${chips}</div>`;
+  }
+
+  function pcFieldCard(pj) {
+    const field = pj.field_today || [];
+    const rows = field.map(f => `<div class="pc-bracket-line${f.auto_bid ? '' : ' at-large'}">
+      <div class="pc-seed${f.bye ? ' bye' : ''}">${f.bye ? 'BYE' : f.seed}</div>
+      <div class="pc-bracket-line-team"><div class="pc-bracket-line-name">${pcEsc(f.team)}</div>
+      <div class="pc-bracket-line-conf">${pcEsc(f.conference)}${f.auto_bid ? ' · auto-bid' : ' · at-large'}</div></div>
+      <div class="pc-bracket-line-chance">#${f.seed}</div>
+    </div>`).join('');
+    const r1 = [[4,11],[5,10],[6,9],[7,8]].filter(p => field[p[1]]);
+    const r1html = r1.map(p => {
+      const hi = field[p[0]], lo = field[p[1]];
+      return `<div class="pc-bracket-line"><div class="pc-seed">${hi.seed}</div>
+        <div class="pc-bracket-line-team"><div class="pc-bracket-line-name">${pcEsc(hi.team)} <span style="color:var(--text-dim);font-weight:400">vs</span> ${pcEsc(lo.team)}</div>
+        <div class="pc-bracket-line-conf">at #${hi.seed} ${pcEsc(hi.team)}</div></div>
+        <div class="pc-bracket-line-chance">#${lo.seed}</div></div>`;
+    }).join('');
+    return `<div class="pc-sec-row"><div class="pc-sec-title" style="font-size:1.05rem">Projected field — if the season ended today</div></div>
+      <div class="pc-bracket-grid">
+        <div class="pc-bracket-card"><div class="pc-bracket-card-header">12-team field</div>${rows}</div>
+        <div class="pc-bracket-card"><div class="pc-bracket-card-header">First round (seeds 1-4 host)</div>${r1html || '<div style="color:var(--text-dim);font-size:0.8rem">Not enough of the field is settled yet.</div>'}</div>
+      </div>`;
+  }
+
+  function pcCcgAccordion(pj) {
+    const confs = Object.keys(pj.conferences || {}).sort((a, b) => {
+      const pa = pj.conferences[a].power4, pb = pj.conferences[b].power4;
+      if (pa !== pb) return pa ? -1 : 1;
+      return a.localeCompare(b);
+    });
+    const rows = confs.map((conf, i) => {
+      const c = pj.conferences[conf];
+      const lm = c.likely_matchup;
+      const matchupHtml = lm ? lm.matchup.replace(' vs ', ' <span class="vs">vs</span> ') : 'Not enough of the race is decided yet';
+      const pctHtml = lm ? pcPct(lm.pct) : '';
+      const standingsHtml = (c.standings || []).slice(0, 8).map(s => {
+        const isLeader = c.projected_ccg && (s.team === c.projected_ccg.team1 || s.team === c.projected_ccg.team2);
+        return `<div class="pc-ccg-standings-row${isLeader ? ' lead' : ''}${s.eligible ? '' : ' ineligible'}">
+          <span>${pcEsc(s.team)}</span><span>${pcEsc(s.conference_record)}</span></div>`;
+      }).join('');
+      return `<details class="pc-ccg-row"${i === 0 ? ' open' : ''}>
+        <summary class="pc-ccg-summary">
+          <div class="pc-ccg-conf">${pcEsc(conf)}${c.has_divisions ? ' (divisions)' : ''}</div>
+          <div class="pc-ccg-matchup">${matchupHtml}</div>
+          <div class="pc-ccg-conf-pct">${pctHtml}</div>
+          <svg class="pc-ccg-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="pc-ccg-detail"><div class="pc-ccg-detail-grid">
+          <div><div class="pc-ccg-decided-lbl">Current standings (top 8)</div><div class="pc-ccg-standings">${standingsHtml}</div></div>
+          <div><div class="pc-ccg-decided-lbl">How the tiebreaker works<span class="pc-approx-tag">approx beyond common opp.</span></div>
+          <div class="pc-ccg-decided-val">${pcEsc(c.tiebreak_note)}</div></div>
+        </div></div>
+      </details>`;
+    }).join('');
+    return `<div class="pc-sec-row"><div class="pc-sec-title" style="font-size:1.05rem">Conference championship races</div></div>
+      <div class="pc-ccg-list">${rows}</div>`;
+  }
+
+  function pcTeamTable(pj) {
+    const teams = (pj.teams || []).slice().sort((a, b) => (b.playoff_pct || 0) - (a.playoff_pct || 0));
+    const rowsHtml = teams.map((t, i) => `<tr class="pc-selectable" data-pc-team="${pcEsc(t.team).replace(/"/g,'&quot;')}">
+      <td class="rank">${i + 1}</td>
+      <td class="team-name"><div class="pc-team-expand-lbl"><svg class="pc-team-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>${pcEsc(t.team)}${t.cfp_ineligible ? ' <span class="pc-approx-tag">ineligible</span>' : ''}</div></td>
+      <td class="conf">${pcEsc(t.conference)}</td>
+      <td class="record">${pcEsc(t.record)}</td>
+      <td class="num" data-val="${t.elo}">${t.elo.toFixed(1)}</td>
+      <td class="num" data-val="${t.pr}" style="color:var(--accent)">${t.pr.toFixed(1)}</td>
+      <td class="num" data-val="${t.reach_ccg_pct||0}">${pcPct(t.reach_ccg_pct)}</td>
+      <td class="num" data-val="${t.playoff_pct||0}">${pcChanceCell(t.playoff_pct)}</td>
+    </tr>`).join('');
+    return `<div class="pc-sec-row"><div class="pc-sec-title" style="font-size:1.05rem">Every team</div>
+      <div class="pc-sec-cap">Click a row for what needs to happen</div></div>
+      <div class="table-wrap"><table class="tbl" id="pcTable"><thead><tr>
+        <th data-type="num">Rank</th><th>Team</th><th>Conf</th><th>Record</th>
+        <th data-type="num">Elo</th><th data-type="num">PR</th>
+        <th data-type="num">Reach CCG</th><th data-type="num">Playoff Chance</th>
+      </tr></thead><tbody>${rowsHtml}</tbody></table></div>
+      <div class="pc-foot-cap">${pj.n_trials.toLocaleString()} simulations · updated ${new Date(pj.updated_at).toLocaleString()}</div>`;
+  }
+
+  function pcScenarioText(t) {
+    if (t.cfp_ineligible) {
+      return '<div class="pc-scenario-text">Not CFP-eligible this season (NCAA-mandated FBS transition window).</div>';
+    }
+    const buckets = t.scenario.buckets || [];
+    const nRem = t.scenario.games_remaining;
+    const winOutPct = t.scenario.win_out_pct;
+    let needed = null;
+    for (let i = 0; i < buckets.length; i++) {
+      if (buckets[i].playoff_pct != null && buckets[i].playoff_pct >= 0.5) { needed = buckets[i].wins; break; }
+    }
+    const lines = [];
+    if ((t.playoff_pct || 0) >= 0.97) {
+      lines.push(`Very likely in — makes the field in <b>${pcPct(t.playoff_pct)}</b> of simulations already.`);
+    } else if (nRem === 0) {
+      lines.push(`No remaining regular-season games tracked — sits at <b>${pcPct(t.playoff_pct)}</b> to make the field from here.`);
+    } else if (needed != null) {
+      lines.push(`Needs to go at least <b>${needed}-${nRem-needed}</b> the rest of the way to be a better-than-even bet (currently <b>${pcPct(t.playoff_pct)}</b> overall).`);
+      if (winOutPct != null) lines.push(`Win out (${nRem}-0) and it jumps to <b>${pcPct(winOutPct)}</b>.`);
+    } else {
+      lines.push(`Even winning out (${nRem}-0 the rest of the way) only gets ${pcEsc(t.team)} to <b>${pcPct(winOutPct)}</b> — it needs help from other results too.`);
+    }
+    return `<div class="pc-scenario-text">${lines.join(' ')}</div>`;
+  }
+
+  function pcScenarioGames(t) {
+    const games = (t.remaining_games || []).map(g => `<div class="pc-scenario-game"><span class="pc-scenario-game-opp">${g.home ? 'vs ' : '@ '}${pcEsc(g.opponent)}${g.neutral ? ' (neutral)' : ''}</span>
+      <span class="pc-scenario-game-prob">${pcPct(g.win_prob)} to win</span></div>`).join('');
+    return `<div class="pc-scenario-games">${games || '<div style="color:var(--text-dim);font-size:0.78rem">No remaining games tracked.</div>'}</div>`;
+  }
+
+  function pcCcgBranch(t) {
+    if (!t.scenario.ccg_relevant || !t.scenario.ccg_buckets || !t.scenario.ccg_buckets.length) return '';
+    const row = t.scenario.ccg_buckets[t.scenario.ccg_buckets.length - 1];
+    const branch = (lbl, obj, hi) => `<div class="pc-branch"><div class="pc-branch-lbl">${lbl}</div>
+      <div class="pc-branch-pct${hi ? ' hi' : ''}">${pcPct(obj ? obj.playoff_pct : null)}</div></div>`;
+    return `<div class="pc-scenario-full">
+      <div class="pc-scenario-ccg-note">If <b>${pcEsc(t.team)}</b> wins out the rest of the regular season, here is how reaching (and winning) the conference title game splits its playoff odds:</div>
+      <div class="pc-scenario-branches">
+        ${branch('Doesn\'t reach CCG', row.no_reach, false)}
+        ${branch('Reaches, loses', row.reach_lose, false)}
+        ${branch('Reaches, wins', row.reach_win, true)}
+      </div></div>`;
+  }
+
+  function pcScenarioRowHtml(t) {
+    return `<div class="pc-scenario-wrap">
+      <div><div class="pc-scenario-lbl">What needs to happen</div>${pcScenarioText(t)}</div>
+      <div><div class="pc-scenario-lbl">Remaining games</div>${pcScenarioGames(t)}</div>
+    </div>${pcCcgBranch(t)}`;
+  }
+
+  function renderPlayoffChance(el, pj) {
+    el.innerHTML = pcMethodCard(pj) + pcAutobidRow(pj) + pcFieldCard(pj) + pcCcgAccordion(pj) + pcTeamTable(pj);
+    makeSortable(document.getElementById('pcTable'));
+
+    const byTeam = {};
+    (pj.teams || []).forEach(t => byTeam[t.team] = t);
+
+    document.querySelectorAll('#pcTable tbody tr.pc-selectable').forEach(row => {
+      row.addEventListener('click', () => {
+        const already = row.nextElementSibling && row.nextElementSibling.classList.contains('pc-scenario-row');
+        // Collapse any other open row first — one scenario open at a time.
+        document.querySelectorAll('#pcTable tr.pc-scenario-row').forEach(r => r.remove());
+        document.querySelectorAll('#pcTable tr.pc-selected').forEach(r => r.classList.remove('pc-selected'));
+        if (already) return; // click on the row that was already open just closes it
+
+        const t = byTeam[row.dataset.pcTeam];
+        if (!t) return;
+        row.classList.add('pc-selected');
+        const tr = document.createElement('tr');
+        tr.className = 'pc-scenario-row';
+        const td = document.createElement('td');
+        td.colSpan = row.children.length;
+        td.innerHTML = pcScenarioRowHtml(t);
+        tr.appendChild(td);
+        row.parentNode.insertBefore(tr, row.nextSibling);
+      });
+    });
   }
 
   // ── Elo History chart ──────────────────────────────────────
@@ -3453,65 +3694,8 @@ async function findAvailableSeason() {
 
   function pkResolve(t){ return PK_ALIAS[t] || t; }
 
-  // ── Canonical team-name resolution ──────────────────────────────
-  // ESPN's schedule/scoreboard endpoint and its standings endpoint (the
-  // source of the conference rosters above) don't always agree on a team's
-  // short display name — e.g. one side may say "Iowa St" and the other
-  // "Iowa State". PK_ALIAS covers many of these by hand, but not every
-  // combination, and it's a static table that assumes one particular
-  // spelling on the roster side. Left unresolved, a game whose schedule-side
-  // name doesn't exactly match the roster's own spelling gets treated as if
-  // neither team's conference could be determined — which silently drops
-  // that game from BOTH teams' conference win/loss totals. That's what
-  // caused some teams to show fewer conference games than their conference
-  // peers even though every team actually played the same number. This adds
-  // a fuzzy (case/punctuation/"State"-vs-"St"-insensitive) fallback match
-  // against whichever roster is currently active, so a spelling mismatch
-  // degrades to "close enough" instead of "this game doesn't count."
-  var _pk_rosterIndex = null; // normalized key -> canonical roster team name
-  function pkNormKey(s){
-    return (s||'').toString()
-      .normalize('NFD').replace(/[\u0300-\u036f]/g,'') // strip accents (e.g. Hawai'i)
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g,' ')
-      .replace(/\bstate\b/g,'st')
-      .trim();
-  }
-  function pkBuildRosterIndex(){
-    _pk_rosterIndex={};
-    var confs=pkActiveConfs();
-    Object.keys(confs).forEach(function(conf){
-      (confs[conf]||[]).forEach(function(team){
-        var k=pkNormKey(team);
-        if(k && !_pk_rosterIndex[k]) _pk_rosterIndex[k]=team;
-      });
-    });
-  }
-  // Resolves any schedule/scoreboard-side team name to the exact string the
-  // active roster uses for that team, so every dictionary this module keys
-  // by team name (_pk.wins, _pk.confWins, _pk.eloSim, etc.) uses one
-  // consistent identity per team regardless of which ESPN endpoint a name
-  // came from. Falls back to the alias/raw name, unchanged, if no roster
-  // match can be found at all (e.g. an FCS opponent that isn't on any FBS
-  // conference roster) — same as the old behavior for those cases.
-  function pkCanon(name){
-    if(!name) return name;
-    var confs=pkActiveConfs();
-    for(var conf in confs){ if(confs[conf].indexOf(name)!==-1) return name; }
-    var aliased=PK_ALIAS[name];
-    if(aliased){ for(var c2 in confs){ if(confs[c2].indexOf(aliased)!==-1) return aliased; } }
-    if(!_pk_rosterIndex) pkBuildRosterIndex();
-    var hit=_pk_rosterIndex[pkNormKey(name)] || (aliased && _pk_rosterIndex[pkNormKey(aliased)]);
-    return hit || aliased || name;
-  }
-
   function pkConfOf(team){
-    // pkCanon (not pkResolve) — see its comment above for why: it tries the
-    // raw name against the live roster before ever trusting PK_ALIAS, then
-    // falls back to a fuzzy match, so a wrong or missing alias entry can't
-    // make this team's conference (and therefore its conference record)
-    // silently disappear.
-    var t = pkCanon(team);
+    var t = pkResolve(team);
     var confs = pkActiveConfs();
     for(var conf in confs){
       if(confs[conf].indexOf(t) !== -1) return conf;
@@ -3533,17 +3717,8 @@ async function findAvailableSeason() {
       if(!s||s.homeScore===''||s.awayScore===''||s.homeScore==null||s.awayScore==null) continue;
       var hs=parseInt(s.homeScore), as_=parseInt(s.awayScore);
       if(isNaN(hs)||isNaN(as_)||hs===as_) continue;
-      // pkCanon, not pkResolve: g.homeTeam/g.awayTeam were already snapped to
-      // the roster's exact spelling when the schedule was fetched (see
-      // pkCanon in processEvents). Calling the raw PK_ALIAS-only pkResolve()
-      // here would undo that — PK_ALIAS assumes one fixed spelling per team
-      // (e.g. "Florida State") that doesn't always match what the live
-      // roster/Elo data actually uses (e.g. "Florida St"), so it would
-      // re-corrupt an already-correct name right back into a mismatch.
-      // pkCanon is idempotent on an already-canonical name, so this is safe
-      // to call unconditionally.
-      var winner=pkCanon(hs>as_?g.homeTeam:g.awayTeam);
-      var loser=pkCanon(hs>as_?g.awayTeam:g.homeTeam);
+      var winner=pkResolve(hs>as_?g.homeTeam:g.awayTeam);
+      var loser=pkResolve(hs>as_?g.awayTeam:g.homeTeam);
       // Canonical pair key — no week number so ESPN week mismatches don't double-count
       // (Each pair of FBS teams only plays once per regular season)
       var teams=[winner,loser].sort();
@@ -3599,11 +3774,8 @@ async function findAvailableSeason() {
       if(!s||s.homeScore==null||s.awayScore==null) continue;
       var hs=parseInt(s.homeScore),as_=parseInt(s.awayScore);
       if(isNaN(hs)||isNaN(as_)||hs===as_) continue;
-      // Same reasoning as the identical spot above pkBuild's main loop: use
-      // pkCanon (roster-aware, idempotent) instead of the raw PK_ALIAS-only
-      // pkResolve, which could re-corrupt an already-canonical name.
-      var winner=pkCanon(hs>as_?g.homeTeam:g.awayTeam);
-      var loser=pkCanon(hs>as_?g.awayTeam:g.homeTeam);
+      var winner=pkResolve(hs>as_?g.homeTeam:g.awayTeam);
+      var loser=pkResolve(hs>as_?g.awayTeam:g.homeTeam);
       var t2=[winner,loser].sort();
       var dk2=t2[0]+'|'+t2[1];
       if(counted2[dk2]) continue;
@@ -3801,7 +3973,6 @@ async function findAvailableSeason() {
     var confData=await pkFetchConferences(yr);
     _pk.confs=confData.confs; _pk.divs=confData.divs; _pk.confIds=confData.confIds;
     _fbs_set=null; // invalidate cached FBS-team set so it rebuilds from the new roster
-    _pk_rosterIndex=null; // invalidate cached fuzzy roster-name index too
     pkFetchSched(yr);
   };
 
@@ -3843,15 +4014,6 @@ async function findAvailableSeason() {
           // Normalize ESPN's inconsistent shortDisplayName variants to the
           // canonical names the live-derived conference rosters use
           hn=_pk_norm[hn]||hn; an=_pk_norm[an]||an;
-          // Snap each name to the exact spelling the conference roster uses
-          // (exact match, PK_ALIAS, or a fuzzy match — see pkCanon) so every
-          // game stored in the schedule uses the SAME identity for a team
-          // that pkConfOf/pkTeam/standings look up later. Without this, a
-          // schedule-side spelling that didn't exactly match the roster's
-          // own spelling would get counted under a name nothing else
-          // recognized — silently dropping that game from the mismatched
-          // team's (and their opponent's) conference win/loss totals.
-          hn=pkCanon(hn); an=pkCanon(an);
           if(wk===15&&hn!=='Army'&&hn!=='Navy'&&an!=='Army'&&an!=='Navy') return;
           var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
           var dt=ev.date?ev.date.slice(0,10):null;
@@ -4140,22 +4302,7 @@ async function findAvailableSeason() {
 
       var existing=null;
       for(var i=0;i<_pk.confGames.length;i++){if(_pk.confGames[i].conf===conf){existing=_pk.confGames[i];break;}}
-      if(existing){
-        // Conf standings — and therefore who the two leaders are — are
-        // recomputed from the regular-season scores every time this renders.
-        // If editing a regular-season score changed who leads the conference,
-        // any championship score/winner already entered belonged to the OLD
-        // pair of teams and no longer means anything for the new pair: reset
-        // it instead of silently reattaching a stale score/champion to
-        // whichever teams happen to be shown now (this used to leave a
-        // conference "champion" locked in — and credited with a CFP auto-bid
-        // — even after that team dropped out of the top two entirely).
-        if(existing.homeTeam!==homeT || existing.awayTeam!==awayT){
-          existing.homeTeam=homeT; existing.awayTeam=awayT;
-          existing.homeScore=null; existing.awayScore=null; existing.champ='';
-          delete _pk.confChamps[conf];
-        }
-      }
+      if(existing){existing.homeTeam=homeT;existing.awayTeam=awayT;}
       var hs=(existing&&existing.homeScore!=null)?existing.homeScore:'';
       var as_=(existing&&existing.awayScore!=null)?existing.awayScore:'';
       var champ=(existing&&existing.champ)||'';
@@ -4230,12 +4377,19 @@ async function findAvailableSeason() {
     if(lbl)lbl.innerHTML=e.champ?('Championship · <b style="color:var(--accent)">'+e.champ+' wins</b>'):'Championship · '+homeT+' vs '+awayT;
   };
 
-  // ── CFP BRACKET — 2025-26 RULES ──────────────────────────
-  // Rule: 5 highest-ranked conf champs get automatic bids
+  // ── CFP BRACKET — 2026 RULES ──────────────────────────────
+  // Rule: 5 automatic bids — the SEC, Big Ten, Big 12 and ACC champions,
+  //       EACH guaranteed regardless of ranking, plus the single
+  //       highest-ranked champion among the other auto-bid ("Group of
+  //       Five/Six") conferences (AAC, C-USA, MAC, Mountain West, Sun Belt,
+  //       Pac-12). NOT simply "the 5 highest-ranked conf champs" — a lower
+  //       Group-of-Five-style champ than the top one is at-large-only, same
+  //       as a non-champion. Matches POWER4/GROUP_AUTO in
+  //       R/update_cfb_playoff.R so both features agree.
   //       7 at-large bids fill remaining spots
   //       Seeds 1-4 = four HIGHEST-RANKED teams overall (get bye) — NOT necessarily conf champs
   //       Seeds 5-12 play first round (5v12, 6v11, 7v10, 8v9 at higher seed's campus)
-  //       If a conf champ ranked outside top 12 → bumped up to seed 12, 11, etc.
+  //       If an auto-bid team is ranked outside top 12 → bumped up to seed 12, 11, etc.
   //       Independent teams (Notre Dame) can only receive at-large bids
   function pkDrawCFP(){
     var el=document.getElementById('pk-cfp');if(!el) return;
@@ -4285,44 +4439,63 @@ async function findAvailableSeason() {
     }).filter(function(t){return t.elo>0;})
     .sort(function(a,b){return b.pr-a.pr;}); // sort by playoff rating
 
-    // Step 3: identify the 5 highest-ranked conf champions
+    // Step 3: identify the 5 real auto-bid teams under the actual 2026 CFP
+    // rule — NOT simply "top 5 highest-ranked conf champs regardless of
+    // conference" (that was the old, incorrect logic here). The real rule:
+    //   - The SEC, Big Ten, Big 12 and ACC champions are EACH guaranteed an
+    //     auto bid no matter how they're ranked (4 bids).
+    //   - The single highest-ranked champion among the remaining Group-of-
+    //     Five-style auto-bid conferences (AAC, C-USA, MAC, Mountain West,
+    //     Sun Belt, Pac-12) gets the 5th auto bid — every other one of those
+    //     conferences' champions, if they make the field at all, does so as
+    //     an at-large team, not an auto bid.
+    // Mirrors POWER4 / GROUP_AUTO in R/update_cfb_playoff.R so both features
+    // agree on what "auto bid" means.
     var champByTeam={};
     Object.values(confChampions).forEach(function(c){champByTeam[c.team]=c;});
-    var top5Champs=[],seenConf={};
-    for(var ri=0;ri<allRanked.length&&top5Champs.length<5;ri++){
+    var PK_POWER4=["SEC","Big Ten","Big 12","ACC"];
+    var allRankedByTeam={};
+    allRanked.forEach(function(t){allRankedByTeam[t.team]=t;});
+    var top5Champs=[];
+    PK_POWER4.forEach(function(conf){
+      var c=confChampions[conf];
+      if(c && allRankedByTeam[c.team]) top5Champs.push(Object.assign({},allRankedByTeam[c.team],{conf:conf}));
+    });
+    var groupAutoConfs=Object.keys(confChampions).filter(function(c){return PK_POWER4.indexOf(c)===-1;});
+    for(var ri=0;ri<allRanked.length;ri++){
       var t=allRanked[ri];
-      if(champByTeam[t.team]&&!seenConf[champByTeam[t.team].conf]){
-        top5Champs.push(Object.assign({},t,{conf:champByTeam[t.team].conf}));
-        seenConf[champByTeam[t.team].conf]=1;
-      }
+      var match=groupAutoConfs.filter(function(gc){return confChampions[gc].team===t.team;})[0];
+      if(match){top5Champs.push(Object.assign({},t,{conf:match}));break;}
     }
+    var autoBidTeams={};
+    top5Champs.forEach(function(c){autoBidTeams[c.team]=1;});
 
     // Step 4: build the 12-team field
     // Seeds 1-4: four highest-ranked teams OVERALL (bye) — can be anyone
-    // Must include all 5 conf champs; remaining 7 spots = at-large
+    // Must include all 5 auto-bid teams; remaining 7 spots = at-large
     var inField={};
     var seeds=[];
 
     // Pick seeds 1-4: top 4 from allRanked
     for(var i=0;i<allRanked.length&&seeds.length<4;i++){
       if(!inField[allRanked[i].team]){
-        seeds.push(Object.assign({},allRanked[i],{seed:seeds.length+1,bye:true,autoB:!!champByTeam[allRanked[i].team]}));
+        seeds.push(Object.assign({},allRanked[i],{seed:seeds.length+1,bye:true,autoB:!!autoBidTeams[allRanked[i].team]}));
         inField[allRanked[i].team]=1;
       }
     }
 
-    // Collect remaining conf champs not already in field (auto-bids for seeds 5-12)
+    // Collect remaining auto-bid teams not already in field (for seeds 5-12)
     var remainingChamps=top5Champs.filter(function(c){return !inField[c.team];});
 
-    // Seeds 5-12: fill from allRanked, ensuring remaining conf champs are included
+    // Seeds 5-12: fill from allRanked, ensuring remaining auto-bid teams are included
     var seeds5to12=[];
     var champNeeded=remainingChamps.slice();
     for(var i=0;i<allRanked.length&&seeds5to12.length<8;i++){
       var t=allRanked[i];
       if(inField[t.team]) continue;
-      // Remove from champNeeded if this is a conf champ
+      // Remove from champNeeded if this is an auto-bid team
       champNeeded=champNeeded.filter(function(c){return c.team!==t.team;});
-      seeds5to12.push(Object.assign({},t,{autoB:!!champByTeam[t.team]}));
+      seeds5to12.push(Object.assign({},t,{autoB:!!autoBidTeams[t.team]}));
       inField[t.team]=1;
     }
     // If any required conf champs still missing, bump them in (replacing lowest seeds)
