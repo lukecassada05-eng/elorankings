@@ -634,6 +634,16 @@ for (conf in names(conf_teams)) {
     best_i <- which.max(mc)
     list(matchup = names(mc)[best_i], pct = round(mc[[best_i]] / N_TRIALS, 4))
   } else NULL
+  # Full ranked matchup distribution (not just the single favorite) — every
+  # distinct "TeamA vs TeamB" pairing that came up as the CCG matchup across
+  # the N_TRIALS Monte Carlo runs, sorted by how often it happened, top 8.
+  # Powers the Resume tab's per-conference matchup list (see pcCcgRowHtml in
+  # sport-page.js) so it can show "who's most likely to play whom", not just
+  # who's most likely to win the conference.
+  top_matchups <- if (length(mc)) {
+    ord <- order(mc, decreasing = TRUE)[seq_len(min(8L, length(mc)))]
+    lapply(ord, function(i) list(matchup = names(mc)[i], pct = round(mc[[i]] / N_TRIALS, 4)))
+  } else list()
 
   today <- today_snapshot$conf_results[[conf]]
 
@@ -644,6 +654,7 @@ for (conf in names(conf_teams)) {
     projected_ccg = if (!is.null(today) && !is.na(today$p1)) list(team1 = today$p1, team2 = today$p2) else NULL,
     projected_champion_today = if (!is.null(today)) today$champion else NA_character_,
     likely_matchup = likely_matchup,
+    top_matchups = top_matchups,
     tiebreak_note = paste0("Head-to-head result, then record vs common conference opponents, then Playoff ",
                             "Rating. The last step is this site's own approximation for the real-world steps ",
                             "several conferences' tiebreaker rules fall back to (committee rankings or ",
