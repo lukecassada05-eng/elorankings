@@ -4148,8 +4148,15 @@ async function findAvailableSeason() {
           }
           // Skip completed games with no date — likely prior season data
           if(completed&&!dt) return;
-          var hs=completed?(parseInt(home.score)||null):null;
-          var as_=completed?(parseInt(away.score)||null):null;
+          // NOTE: must check isNaN, not `||null` — a legitimate 0 score (a
+          // shutout, e.g. "47-0") is falsy in JS, so `parseInt(x)||null`
+          // was quietly turning a real final score of 0 into "no score",
+          // which then hid the whole game's score AND left its (disabled,
+          // since the game IS completed) input permanently blank with no
+          // way to fix it.
+          var hsP=parseInt(home.score),asP=parseInt(away.score);
+          var hs=completed?(isNaN(hsP)?null:hsP):null;
+          var as_=completed?(isNaN(asP)?null:asP):null;
           // Skip FCS-only games: require at least one FBS team
           if(!pkIsFBS(hn)&&!pkIsFBS(an)) return;
           // Pair-based dedup: prevents same matchup appearing multiple times
@@ -4896,8 +4903,11 @@ async function findAvailableSeason() {
           var pairKey='pair:'+[hn,an].sort().join('|')+'|'+(dt||'');
           if(seen[pairKey]) return; seen[pairKey]=1;
           var completed=!!(comp.status&&comp.status.type&&comp.status.type.completed);
-          var hs=completed?(parseInt(home.score)||null):null;
-          var as_=completed?(parseInt(away.score)||null):null;
+          // Same 0-score fix as CFB's pkFetchSched above — isNaN, not `||null`,
+          // so a real final score of 0 doesn't get treated as "no score".
+          var hsP=parseInt(home.score),asP=parseInt(away.score);
+          var hs=completed?(isNaN(hsP)?null:hsP):null;
+          var as_=completed?(isNaN(asP)?null:asP):null;
           var conf=(hConf===aConf)?hConf:'Non-Conference';
           games.push({id:key,conf:conf,date:dt,homeTeam:hn,awayTeam:an,
             neutral:!!(comp.neutralSite),completed:completed,homeScore:hs,awayScore:as_});
