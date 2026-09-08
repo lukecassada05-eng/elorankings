@@ -394,8 +394,9 @@ get_conf_static <- function(team, year) {
   cusa_current <- c("UAB","Middle Tennessee","Western Kentucky","Florida Atlantic","FIU",
                     "UTEP","Rice","Kennesaw State","Jacksonville State",
                     "Sam Houston","Liberty","New Mexico State","UTSA","Louisiana Tech")
-  # UTEP: WAC 2001-2004, C-USA 2005+
+  # UTEP: WAC 2001-2004, C-USA 2005-2025, Mountain West 2026+
   if (t == "UTEP") {
+    if (year >= 2026) return("Mountain West")
     if (year >= 2005) return("C-USA")
     return("WAC")
   }

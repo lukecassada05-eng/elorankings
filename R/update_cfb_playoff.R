@@ -48,7 +48,7 @@ if (as.integer(format(Sys.Date(), "%m")) < 8) CURRENT_YEAR <- CURRENT_YEAR - 1
 OUT_DIR <- "docs/CFB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
-N_TRIALS <- 2000
+N_TRIALS <- 20000
 HCA <- 55  # must match CFG.hca in docs/sports/cfb.html
 
 # ── Conference structure (hand-kept in sync with PK_CONFS_FALLBACK /
@@ -306,14 +306,22 @@ if (nrow(remaining) > 0) {
 # ================================================================
 # Conference standings + tiebreaker engine
 #
-# Tiebreak cascade (2-team ties): head-to-head -> record vs common
-# conference opponents -> Playoff Rating (approximation; see file
-# header). 3+-way ties skip straight to Playoff Rating — resolving a
-# real multi-team tie fully (mini round-robin, then common opponents
-# among the group, etc.) needs per-conference bylaw detail this model
-# doesn't have; PR is the documented fallback either way, so this
-# keeps the same accuracy floor without pretending to more precision
-# than the 2-team case actually has.
+# Each conference has its own real, officially-published tiebreaker
+# procedure (see TIEBREAK_STEPS/TIEBREAK_NOTES below) — they are NOT
+# all the same. What every one of them has in common is that once
+# their own conference-internal, computable steps run out, the real
+# next step is something this project can't reproduce: the actual CFP
+# Selection Committee's rankings, a proprietary rating service
+# (SportSource Analytics, SP+, ESPN SOR, KPI, Anderson & Hester,
+# etc.), or literal randomness (a coin toss / commissioner's draw).
+# Playoff Rating (pr0) is this site's stand-in for THAT final step
+# only — never for a computable step this model is capable of running
+# itself, which is why the per-conference step lists below matter.
+#
+# 3+-way ties: real bylaws start with a "mini round-robin" — re-rank
+# just the tied teams using only games played among themselves — then
+# fall through the same 2-team cascade for any sub-ties that remain.
+# See rank_tied_block().
 # ================================================================
 
 h2h_winner_v <- function(t1, t2, w_vec, l_vec) {
@@ -340,11 +348,181 @@ common_opp_winner_v <- function(t1, t2, w_vec, l_vec) {
   if (p1 > p2) t1 else if (p2 > p1) t2 else NA_character_
 }
 
+# Win pct of `team` specifically against `opp` (not the combined-common-
+# opponents record common_opp_winner_v uses) — the building block for
+# "results against the highest-ranked common opponent" style rules.
+record_vs <- function(team, opp, w_vec, l_vec) {
+  hitw <- w_vec == team & l_vec == opp
+  hitl <- l_vec == team & w_vec == opp
+  n <- sum(hitw) + sum(hitl)
+  if (n == 0) return(NA_real_)
+  sum(hitw) / n
+}
+
+# "Next common opponent" tiebreak: several conferences (Big 12, Pac-12)
+# don't lump all common opponents' results together — they check the
+# single highest-ranked common opponent first, and only move to the
+# next-highest if that one alone doesn't settle it. This project has no
+# independent power ranking to order "highest-ranked" by other than its
+# own Playoff Rating, so pr0 is used as that ordering proxy here (a
+# genuine approximation, unlike the head-to-head/common-opponent steps
+# which are exact).
+next_common_opp_winner_v <- function(t1, t2, w_vec, l_vec) {
+  opp1 <- unique(c(l_vec[w_vec == t1], w_vec[l_vec == t1]))
+  opp2 <- unique(c(l_vec[w_vec == t2], w_vec[l_vec == t2]))
+  common <- setdiff(intersect(opp1, opp2), c(t1, t2))
+  if (!length(common)) return(NA_character_)
+  common <- common[order(-pr0[common])]
+  for (opp in common) {
+    r1 <- record_vs(t1, opp, w_vec, l_vec)
+    r2 <- record_vs(t2, opp, w_vec, l_vec)
+    if (is.na(r1) || is.na(r2)) next
+    if (r1 > r2) return(t1)
+    if (r2 > r1) return(t2)
+  }
+  NA_character_
+}
+
+# Combined win pct of each team's OWN opponents (a schedule-strength
+# comparison) — available as a tiebreak step for conferences whose real
+# procedure includes one; not currently wired to any conference below,
+# kept available for future per-conference tuning.
+sched_strength_winner_v <- function(t1, t2, w_vec, l_vec) {
+  opp_win_pct <- function(team) {
+    opps <- setdiff(unique(c(l_vec[w_vec == team], w_vec[l_vec == team])), team)
+    if (!length(opps)) return(NA_real_)
+    ow <- sum(w_vec %in% opps); ol <- sum(l_vec %in% opps)
+    if ((ow + ol) == 0) return(NA_real_)
+    ow / (ow + ol)
+  }
+  s1 <- opp_win_pct(t1); s2 <- opp_win_pct(t2)
+  if (is.na(s1) || is.na(s2)) return(NA_character_)
+  if (s1 > s2) t1 else if (s2 > s1) t2 else NA_character_
+}
+
+TIEBREAK_FN <- list(
+  h2h              = h2h_winner_v,
+  common_opp       = common_opp_winner_v,
+  next_common_opp  = next_common_opp_winner_v,
+  sched_strength   = sched_strength_winner_v
+)
+
+# Per-conference 2-team tiebreak step order, reflecting each conference's
+# own real, officially-published procedure — deliberately NOT the same
+# list for every conference. Steps not listed here for a conference are
+# not part of that conference's real rules (most notably: the ACC
+# dropped its common-opponents step for the 2026 season, and the
+# Mountain West / AAC / C-USA have no conference-internal computable
+# step at all beyond head-to-head in their real bylaws — both of those
+# are intentional, not omissions).
+TIEBREAK_STEPS <- list(
+  "SEC"            = c("h2h", "common_opp"),
+  "Big Ten"        = c("h2h", "common_opp"),
+  "Big 12"         = c("h2h", "next_common_opp", "common_opp"),
+  "ACC"            = c("h2h"),
+  "Pac-12"         = c("h2h", "next_common_opp", "common_opp"),
+  "Mountain West"  = c("h2h"),
+  "AAC"            = c("h2h"),
+  "Sun Belt"       = c("h2h", "common_opp"),
+  "MAC"            = c("h2h", "common_opp"),
+  "C-USA"          = c("h2h")
+)
+
+# Human-readable version of TIEBREAK_STEPS[[conf]] for the Resume tab —
+# names the real computable steps this site runs, and is explicit about
+# what Playoff Rating stands in for once those run out (see the section
+# header above for what that "real next step" actually is per
+# conference).
+TIEBREAK_NOTES <- list(
+  "SEC" = paste0("Head-to-head result, then record vs common conference opponents. The SEC's real next ",
+                 "step is the CFP Selection Committee's rankings, which this site can't reproduce — ",
+                 "Playoff Rating is this site's approximation for that step."),
+  "Big Ten" = paste0("Head-to-head result, then record vs common conference opponents. Playoff Rating is ",
+                 "this site's approximation for any step beyond that (the Big Ten's real procedure goes on ",
+                 "to compare results against the rest of the standings in order)."),
+  "Big 12" = paste0("Head-to-head result, then results against the highest-ranked common opponent, then ",
+                 "combined record vs all common opponents. Playoff Rating is this site's approximation for ",
+                 "any step beyond that."),
+  "ACC" = paste0("Head-to-head result only — the ACC removed the common-opponents step from its ",
+                 "tiebreaker procedure starting with the 2026 season. Playoff Rating is this site's ",
+                 "approximation for the ACC's real next step (a proprietary rating service this project ",
+                 "has no access to)."),
+  "Pac-12" = paste0("Head-to-head result, then results against the highest-ranked common opponent, then ",
+                 "combined record vs all common opponents. Playoff Rating is this site's approximation for ",
+                 "any step beyond that."),
+  "Mountain West" = paste0("Head-to-head result only — the Mountain West's real tiebreaker procedure has no ",
+                 "other conference-internal computable step before falling to a rating service this project ",
+                 "has no access to. Playoff Rating is this site's approximation for that step."),
+  "AAC" = paste0("Head-to-head result only — the AAC's real tiebreaker procedure has no other conference-",
+                 "internal computable step before falling to a rating service this project has no access ",
+                 "to. Playoff Rating is this site's approximation for that step."),
+  "Sun Belt" = paste0("Division leaders are ranked by DIVISIONAL win percentage (not whole-conference), ",
+                 "then head-to-head, then record vs common opponents within the division. Playoff Rating ",
+                 "is this site's approximation for any step beyond that."),
+  "MAC" = paste0("Head-to-head result, then record vs common conference opponents. Playoff Rating is this ",
+                 "site's approximation for any step beyond that."),
+  "C-USA" = paste0("Head-to-head result only — Conference USA's real tiebreaker procedure has no other ",
+                 "conference-internal computable step before falling to a rating service this project has ",
+                 "no access to. Playoff Rating is this site's approximation for that step.")
+)
+
+# Resolves a single 2-team tie by walking this conference's real step
+# order; falls back to NA (caller uses Playoff Rating) once the steps
+# run out without a decision.
+two_team_tiebreak <- function(t1, t2, w_vec, l_vec, conf) {
+  steps <- TIEBREAK_STEPS[[conf]]
+  if (is.null(steps)) steps <- "h2h"
+  for (step in steps) {
+    fn <- TIEBREAK_FN[[step]]
+    w <- fn(t1, t2, w_vec, l_vec)
+    if (!is.na(w)) return(w)
+  }
+  NA_character_
+}
+
+# Resolves a 3+-team tie: mini round-robin among just the tied teams
+# first (every real conference's bylaws start here), then the normal
+# per-conference 2-team cascade for any sub-ties the round-robin
+# doesn't fully separate, then Playoff Rating for whatever's left.
+rank_tied_block <- function(block, w_vec, l_vec, conf) {
+  n <- length(block)
+  hit <- (w_vec %in% block) & (l_vec %in% block)
+  mw <- w_vec[hit]; ml <- l_vec[hit]
+  cw <- setNames(integer(n), block); cl <- setNames(integer(n), block)
+  if (length(mw)) {
+    tw <- table(mw); tl <- table(ml)
+    hw <- intersect(names(tw), block); hl <- intersect(names(tl), block)
+    cw[hw] <- as.integer(tw[hw]); cl[hl] <- as.integer(tl[hl])
+  }
+  pct <- ifelse((cw + cl) > 0, cw / (cw + cl), NA_real_)
+  ord <- order(ifelse(is.na(pct), -1, pct), decreasing = TRUE)
+  st <- block[ord]; sp <- pct[ord]
+  out <- character(0); i <- 1
+  while (i <= n) {
+    j <- i
+    while (j < n && !is.na(sp[i]) && !is.na(sp[j + 1]) && abs(sp[j + 1] - sp[i]) < 1e-9) j <- j + 1
+    sub <- st[i:j]
+    if (length(sub) == 1) {
+      out <- c(out, sub)
+    } else if (length(sub) == 2) {
+      w <- two_team_tiebreak(sub[1], sub[2], w_vec, l_vec, conf)
+      if (is.na(w)) w <- sub[which.max(pr0[sub])]
+      out <- c(out, w, setdiff(sub, w))
+    } else {
+      out <- c(out, sub[order(-pr0[sub])])
+    }
+    i <- j + 1
+  }
+  out
+}
+
 # Ranks `teams` best-to-worst by conference record, resolving ties per
-# the cascade above. `w_vec`/`l_vec` = ALL conference games this trial
-# (winner/loser character vectors) for the whole conference (not just
-# `teams`) so common-opponent / cross-division results still count.
-rank_conf_teams <- function(teams, w_vec, l_vec) {
+# this conference's own cascade above. `w_vec`/`l_vec` = ALL conference
+# games this trial (winner/loser character vectors) relevant to this
+# ranking (the whole conference, or — for a Sun Belt division — just
+# that division's games) so common-opponent / cross-division results
+# still count where the real rules say they should.
+rank_conf_teams <- function(teams, w_vec, l_vec, conf) {
   n <- length(teams)
   if (n == 0) return(character(0))
   if (n == 1) return(teams)
@@ -366,12 +544,11 @@ rank_conf_teams <- function(teams, w_vec, l_vec) {
     if (length(block) == 1) {
       out <- c(out, block)
     } else if (length(block) == 2) {
-      w <- h2h_winner_v(block[1], block[2], w_vec, l_vec)
-      if (is.na(w)) w <- common_opp_winner_v(block[1], block[2], w_vec, l_vec)
+      w <- two_team_tiebreak(block[1], block[2], w_vec, l_vec, conf)
       if (is.na(w)) w <- block[which.max(pr0[block])]
       out <- c(out, w, setdiff(block, w))
     } else {
-      out <- c(out, block[order(-pr0[block])])
+      out <- c(out, rank_tied_block(block, w_vec, l_vec, conf))
     }
     i <- j + 1
   }
@@ -422,13 +599,19 @@ resolve_conf_champion <- function(conf, sim_w, sim_l, deterministic = FALSE) {
     leaders <- vapply(divs, function(dteams) {
       dteams <- intersect(dteams, pool)
       if (!length(dteams)) return(NA_character_)
-      rank_conf_teams(dteams, w_vec, l_vec)[1]
+      # Sun Belt's real tiebreaker for a divisional leader starts with
+      # DIVISIONAL win percentage specifically, not whole-conference win
+      # percentage — filter w_vec/l_vec down to games between two members
+      # of this division before ranking, so cross-division results (which
+      # don't count toward the divisional race) don't leak in.
+      div_hit <- w_vec %in% dteams & l_vec %in% dteams
+      rank_conf_teams(dteams, w_vec[div_hit], l_vec[div_hit], conf)[1]
     }, character(1))
     leaders <- leaders[!is.na(leaders)]
     if (length(leaders) < 2) return(list(champion = NA_character_, p1 = NA_character_, p2 = NA_character_))
     p1 <- leaders[1]; p2 <- leaders[2]
   } else {
-    top2 <- rank_conf_teams(pool, w_vec, l_vec)[1:2]
+    top2 <- rank_conf_teams(pool, w_vec, l_vec, conf)[1:2]
     p1 <- top2[1]; p2 <- top2[2]
   }
   if (is.na(p1) || is.na(p2)) return(list(champion = NA_character_, p1 = p1, p2 = p2))
@@ -663,7 +846,7 @@ for (conf in names(conf_teams)) {
   base_hit <- base_conf_of == conf
   w_vec <- base_conf_w[base_hit]; l_vec <- base_conf_l[base_hit]
   display_pool <- conf_teams[[conf]]
-  order_now <- rank_conf_teams(display_pool, w_vec, l_vec)
+  order_now <- rank_conf_teams(display_pool, w_vec, l_vec, conf)
 
   standings <- lapply(order_now, function(tm) {
     list(team = tm,
@@ -700,9 +883,10 @@ for (conf in names(conf_teams)) {
     projected_champion_today = if (!is.null(today)) today$champion else NA_character_,
     likely_matchup = likely_matchup,
     top_matchups = top_matchups,
-    tiebreak_note = paste0("Head-to-head result, then record vs common conference opponents, then Playoff ",
+    tiebreak_note = if (!is.null(TIEBREAK_NOTES[[conf]])) TIEBREAK_NOTES[[conf]] else paste0(
+                            "Head-to-head result, then record vs common conference opponents, then Playoff ",
                             "Rating. The last step is this site's own approximation for the real-world steps ",
-                            "several conferences' tiebreaker rules fall back to (committee rankings or ",
+                            "this conference's tiebreaker rules fall back to (committee rankings or ",
                             "proprietary rating services this project has no access to).")
   )
 }
