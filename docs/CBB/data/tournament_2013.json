@@ -885,22 +885,6 @@
     },
     {
       "winner": "Louisville Cardinals",
-      "loser": "Wichita State Shockers",
-      "winner_score": 72,
-      "loser_score": 68,
-      "date": "2013-04-06",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT ATLANTA"
-    },
-    {
-      "winner": "Michigan Wolverines",
-      "loser": "Syracuse Orange",
-      "winner_score": 61,
-      "loser_score": 56,
-      "date": "2013-04-07",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT ATLANTA"
-    },
-    {
-      "winner": "Louisville Cardinals",
       "loser": "Michigan Wolverines",
       "winner_score": 82,
       "loser_score": 76,
@@ -2011,26 +1995,6 @@
     },
     {
       "t1": "Louisville Cardinals",
-      "t2": "Wichita State Shockers",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Wichita State Shockers",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT ATLANTA",
-      "date": "2013-04-06"
-    },
-    {
-      "t1": "Michigan Wolverines",
-      "t2": "Syracuse Orange",
-      "w1": 1,
-      "w2": 0,
-      "done": true,
-      "loser": "Syracuse Orange",
-      "round": "MEN'S BASKETBALL CHAMPIONSHIP - FINAL FOUR AT ATLANTA",
-      "date": "2013-04-07"
-    },
-    {
-      "t1": "Louisville Cardinals",
       "t2": "Michigan Wolverines",
       "w1": 1,
       "w2": 0,
@@ -2134,8 +2098,7 @@
     "Ohio State Buckeyes",
     "Florida Gators",
     "Duke Blue Devils",
-    "Wichita State Shockers",
     "Michigan Wolverines"
   ],
-  "updated": "2026-09-09 21:56 UTC"
+  "updated": "2026-09-10 12:33 UTC"
 }
