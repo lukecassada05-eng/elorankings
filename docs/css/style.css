@@ -654,7 +654,16 @@ tr.pc-scenario-row td{background:var(--bg3);padding:1rem 1.2rem;border-bottom:1p
 .pc-foot-cap{font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.85rem;text-align:center}
 .pc-inactive-note{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;color:var(--text-muted);font-size:0.85rem}
 
+/* "What would help" rooting-interest cards, inside a scenario row */
+.pc-rooting-list{display:flex;flex-direction:column;gap:0.55rem}
+.pc-rooting-card{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:0.6rem 0.75rem;display:flex;align-items:center;justify-content:space-between;gap:0.75rem;flex-wrap:wrap}
+.pc-rooting-desc{font-size:0.81rem;color:var(--text-muted);line-height:1.5}
+.pc-rooting-desc b{color:var(--text);font-weight:500}
+.pc-rooting-date{font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-left:0.5rem}
+.pc-rooting-odds{display:flex;gap:0.5rem;flex-shrink:0}
+
 @media(max-width:700px){
   .pc-scenario-wrap{grid-template-columns:1fr}
   .pc-ccg-detail-grid{grid-template-columns:1fr}
+  .pc-rooting-card{flex-direction:column;align-items:flex-start}
 }
