@@ -149,7 +149,8 @@ parse_future_event <- function(ev) {
 
 `%||%` <- function(a, b) if (!is.null(a) && length(a) > 0 && !is.na(a[1])) a else b
 
-fetch_future_date <- function(ds) {
+fetch_future_date <- function(d) {
+  ds <- gsub("-", "", d)
   resp <- tryCatch(
     GET("https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
         query = list(dates = ds, groups = 80, limit = 300), timeout(30)),
@@ -160,9 +161,14 @@ fetch_future_date <- function(ds) {
   if (is.null(data) || length(data$events) == 0) return(NULL)
   rows <- Filter(Negate(is.null), lapply(data$events, parse_future_event))
   if (!length(rows)) return(NULL)
+  # `date` (the calendar day this fetch scanned, "YYYY-MM-DD") rides along
+  # on every row — needed by the per-team "what would help" rooting-interest
+  # cards below, purely for display context, never used in the simulation
+  # math itself.
   data.frame(home = sapply(rows, `[[`, "home"),
              away = sapply(rows, `[[`, "away"),
              neutral = sapply(rows, `[[`, "neutral"),
+             date = d,
              stringsAsFactors = FALSE)
 }
 
@@ -183,7 +189,7 @@ message("  Scanning ", length(fdates), " remaining regular-season dates...")
 
 future_rows <- list()
 for (d in as.character(fdates)) {
-  res <- tryCatch(fetch_future_date(gsub("-", "", d)), error = function(e) NULL)
+  res <- tryCatch(fetch_future_date(d), error = function(e) NULL)
   if (!is.null(res) && nrow(res) > 0) {
     future_rows <- c(future_rows, list(res))
     Sys.sleep(0.1)
@@ -193,7 +199,7 @@ for (d in as.character(fdates)) {
 }
 
 remaining_raw <- if (length(future_rows)) unique(do.call(rbind, future_rows)) else
-  data.frame(home = character(0), away = character(0), neutral = logical(0))
+  data.frame(home = character(0), away = character(0), neutral = logical(0), date = character(0))
 message("  Found ", nrow(remaining_raw), " remaining scheduled games (pre-filter).")
 
 # ── Resolve ESPN names to this season's canonical CSV team names ───
@@ -221,10 +227,14 @@ if (nrow(remaining_raw) > 0) {
   remaining <- remaining_raw[!is.na(remaining_raw$home_c) & !is.na(remaining_raw$away_c) &
                              remaining_raw$home_c != remaining_raw$away_c, ]
   remaining <- data.frame(home = remaining$home_c, away = remaining$away_c,
-                           neutral = remaining$neutral, stringsAsFactors = FALSE)
-  remaining <- unique(remaining)
+                           neutral = remaining$neutral, date = remaining$date, stringsAsFactors = FALSE)
+  # Dedup by team pair specifically (not the whole row) now that `date`
+  # rides along — the old plain unique() would stop deduping a game that
+  # ESPN happens to return under two adjacent calendar-day scans (a
+  # timezone-boundary quirk), which would double-count it in the sim.
+  remaining <- remaining[!duplicated(remaining[c("home", "away")]), ]
 } else {
-  remaining <- data.frame(home = character(0), away = character(0), neutral = logical(0))
+  remaining <- data.frame(home = character(0), away = character(0), neutral = logical(0), date = character(0))
 }
 message("  ", nrow(remaining), " remaining games between tracked FBS teams.")
 
@@ -682,6 +692,15 @@ if (nrow(remaining) > 0) {
   outcomes <- matrix(logical(0), nrow = 0, ncol = N_TRIALS)
 }
 
+# Records every trial's playoff-or-not outcome for every team (N_TRIALS x
+# teams). Filled in during the trial loop below. Combined with `outcomes`
+# above (same row order as `remaining`), this is what powers the per-team
+# "what would help" rooting-interest cards further down: conditioning a
+# team's playoff rate on a single OTHER game's simulated result is just a
+# matrix multiply away once both of these exist, and it's an exact figure
+# straight from the trials rather than a hand-picked heuristic.
+playoff_mat <- matrix(0, nrow = N_TRIALS, ncol = NT, dimnames = list(NULL, all_teams))
+
 run_trial <- function(t) {
   if (nrow(remaining) > 0) {
     home_wins <- outcomes[, t]
@@ -786,6 +805,7 @@ for (t in seq_len(N_TRIALS)) {
     bucket_playoff[made_mat] <- bucket_playoff[made_mat] + 1L
   }
   playoff_count <- playoff_count + as.integer(made_playoff[all_teams])
+  playoff_mat[t, ] <- as.numeric(made_playoff[all_teams])
 
   if (length(res$field)) {
     seeds <- seq_along(res$field)
@@ -827,6 +847,69 @@ for (t in seq_len(N_TRIALS)) {
                               round(as.numeric(Sys.time() - t0, units = "secs")), "s elapsed)")
 }
 message("  Simulation done in ", round(as.numeric(Sys.time() - t0, units = "secs")), "s.")
+
+# ================================================================
+# Per-team "what would help" rooting-interest computation
+#
+# For every remaining REGULAR-SEASON game NOT involving a given team,
+# measure how that team's own playoff odds differ across this run's
+# trials depending on which side won THAT one game — a real Monte
+# Carlo conditional probability, not a guess about which other games
+# "should" matter to them. `outcomes` (games x N_TRIALS, same row
+# order as `remaining`) already records which side won each remaining
+# game in every trial; `playoff_mat` (N_TRIALS x teams) records
+# whether each team made the field that trial. Two matrix
+# multiplications turn that into, for every (game, team) pair, that
+# team's playoff rate across trials where the home team won and across
+# trials where the away team won — the gap between those two numbers
+# is exactly how much that single result would move the needle.
+#
+# Conference championship games are deliberately excluded from this:
+# who even plays in a given CCG varies trial-to-trial (it depends on
+# every other simulated result that season), so there's no single
+# fixed "if X wins the CCG" event to condition on the same rigorous
+# way a fixed, already-scheduled regular season game allows. CCG
+# outcomes are still fully reflected in every team's overall
+# playoff_pct (they're simulated every trial) — they just don't get
+# their own rooting-interest card here.
+n_rem_games <- nrow(remaining)
+if (n_rem_games > 0) {
+  O <- outcomes * 1  # logical -> 0/1 numeric, games x N_TRIALS
+  cnt_home <- rowSums(O)
+  cnt_away <- N_TRIALS - cnt_home
+  sum_home <- O %*% playoff_mat             # games x teams
+  sum_away <- (1 - O) %*% playoff_mat       # games x teams
+  prob_if_home_wins <- sum_home / pmax(1, cnt_home)
+  prob_if_away_wins <- sum_away / pmax(1, cnt_away)
+} else {
+  prob_if_home_wins <- matrix(numeric(0), nrow = 0, ncol = NT, dimnames = list(NULL, all_teams))
+  prob_if_away_wins <- matrix(numeric(0), nrow = 0, ncol = NT, dimnames = list(NULL, all_teams))
+}
+
+# Top 5 (by swing) remaining games NOT involving `team`, each described as
+# whichever side winning helps `team` more — with both the "if it doesn't
+# happen" (the other side wins instead) and "if it happens" playoff odds,
+# straight from the trials conditioned on that one result.
+team_rooting_games <- function(team) {
+  if (n_rem_games == 0) return(list())
+  eligible <- which(remaining$home != team & remaining$away != team)
+  if (!length(eligible)) return(list())
+  ph <- prob_if_home_wins[eligible, team]
+  pa <- prob_if_away_wins[eligible, team]
+  swing <- abs(ph - pa)
+  ord <- eligible[order(swing, decreasing = TRUE)]
+  top <- ord[seq_len(min(5L, length(ord)))]
+  lapply(top, function(i) {
+    home_helps <- prob_if_home_wins[i, team] >= prob_if_away_wins[i, team]
+    list(
+      team_to_win = if (home_helps) remaining$home[i] else remaining$away[i],
+      team_to_lose = if (home_helps) remaining$away[i] else remaining$home[i],
+      date = remaining$date[i],
+      playoff_pct_if_happens = round(if (home_helps) prob_if_home_wins[i, team] else prob_if_away_wins[i, team], 4),
+      playoff_pct_if_not     = round(if (home_helps) prob_if_away_wins[i, team] else prob_if_home_wins[i, team], 4)
+    )
+  })
+}
 
 # ================================================================
 # "If the season ended today" snapshot — deterministic (no simulated
@@ -956,6 +1039,7 @@ teams_json <- lapply(all_teams, function(tm) {
     bye_pct       = round(bye_count[[tm]] / N_TRIALS, 4),
     avg_seed      = if (pc > 0) round(seed_sum[[tm]] / pc, 2) else NA,
     remaining_games = team_remaining_games(tm),
+    rooting_games = team_rooting_games(tm),
     scenario = list(
       games_remaining = team_n_remaining[[tm]],
       win_out_pct = {
