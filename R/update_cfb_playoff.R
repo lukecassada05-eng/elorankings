@@ -701,6 +701,14 @@ if (nrow(remaining) > 0) {
 # straight from the trials rather than a hand-picked heuristic.
 playoff_mat <- matrix(0, nrow = N_TRIALS, ncol = NT, dimnames = list(NULL, all_teams))
 
+# Records each trial's CCG champion for every conference (N_TRIALS x
+# conferences). Only actually used for a conference whose matchup turns out
+# to be the SAME pair in every single trial (see the "locked CCG" rooting-
+# interest section below) — but we don't know which conferences that'll be
+# until after the loop, so this records all of them along the way.
+ccg_champion_mat <- matrix(NA_character_, nrow = N_TRIALS, ncol = length(conf_teams),
+                            dimnames = list(NULL, names(conf_teams)))
+
 run_trial <- function(t) {
   if (nrow(remaining) > 0) {
     home_wins <- outcomes[, t]
@@ -820,6 +828,7 @@ for (t in seq_len(N_TRIALS)) {
     reach_ccg_count[r$p1] <- reach_ccg_count[r$p1] + 1L
     reach_ccg_count[r$p2] <- reach_ccg_count[r$p2] + 1L
     if (!is.na(r$champion)) win_ccg_count[r$champion] <- win_ccg_count[r$champion] + 1L
+    if (!is.na(r$champion)) ccg_champion_mat[t, conf] <- r$champion
 
     pair_key <- paste(sort(c(r$p1, r$p2)), collapse = " vs ")
     mc <- if (is.null(matchup_count[[conf]])) integer(0) else matchup_count[[conf]]
@@ -864,14 +873,13 @@ message("  Simulation done in ", round(as.numeric(Sys.time() - t0, units = "secs
 # trials where the away team won — the gap between those two numbers
 # is exactly how much that single result would move the needle.
 #
-# Conference championship games are deliberately excluded from this:
-# who even plays in a given CCG varies trial-to-trial (it depends on
-# every other simulated result that season), so there's no single
-# fixed "if X wins the CCG" event to condition on the same rigorous
-# way a fixed, already-scheduled regular season game allows. CCG
-# outcomes are still fully reflected in every team's overall
-# playoff_pct (they're simulated every trial) — they just don't get
-# their own rooting-interest card here.
+# Candidates are restricted to true FBS-vs-FBS games — both sides
+# already have to be in `all_teams` to reach `remaining` at all (see
+# `remaining`'s construction above), but a team still mid-transition
+# into FBS (fcs_transition_ineligible — currently just North Dakota
+# State) is excluded here too, since a game involving one isn't a real
+# FBS-vs-FBS rooting interest even though it's tracked for Elo/win-
+# probability purposes.
 n_rem_games <- nrow(remaining)
 if (n_rem_games > 0) {
   O <- outcomes * 1  # logical -> 0/1 numeric, games x N_TRIALS
@@ -886,27 +894,82 @@ if (n_rem_games > 0) {
   prob_if_away_wins <- matrix(numeric(0), nrow = 0, ncol = NT, dimnames = list(NULL, all_teams))
 }
 
-# Top 5 (by swing) remaining games NOT involving `team`, each described as
-# whichever side winning helps `team` more — with both the "if it doesn't
-# happen" (the other side wins instead) and "if it happens" playoff odds,
-# straight from the trials conditioned on that one result.
+# ── Conference championship games whose matchup is fully locked in ──────
+# Early in the season, a given conference's CCG matchup varies trial to
+# trial (it depends on every other simulated result that season), so there
+# is no single fixed "if X wins the CCG" event to condition on — that's
+# still true here, generally. But once a conference's race is far enough
+# along that literally EVERY trial produces the exact same two CCG
+# participants (matchup_count[[conf]] has exactly one pairing, at a count
+# of N_TRIALS), the matchup itself is no longer uncertain — only who wins
+# it is — and at that point it's exactly as conditionable as any other
+# fixed, two-team game. ccg_champion_mat (N_TRIALS x conferences, filled in
+# during the trial loop above) records who won that conference's CCG each
+# trial, which is all that's needed once the pairing itself is locked.
+locked_ccg <- list()
+for (conf in names(conf_teams)) {
+  mc <- if (is.null(matchup_count[[conf]])) integer(0) else matchup_count[[conf]]
+  if (length(mc) == 1 && mc[[1]] == N_TRIALS) {
+    pair <- strsplit(names(mc)[1], " vs ", fixed = TRUE)[[1]]
+    if (length(pair) == 2) {
+      a <- pair[1]; b <- pair[2]
+      a_wins <- ccg_champion_mat[, conf] == a
+      locked_ccg[[conf]] <- list(
+        a = a, b = b,
+        prob_a = colMeans(playoff_mat[a_wins, , drop = FALSE]),
+        prob_b = colMeans(playoff_mat[!a_wins, , drop = FALSE])
+      )
+    }
+  }
+}
+if (length(locked_ccg)) {
+  message("  CCG matchup(s) fully locked in — added to rooting-interest cards: ",
+          paste(names(locked_ccg), collapse = ", "))
+}
+
+# Top 5 (by swing) results NOT involving `team` and NOT already decided —
+# ordinary remaining games plus any locked-in CCG matchup from another
+# conference — each described as whichever side winning helps `team` more,
+# with both the "if it doesn't happen" (the other side wins instead) and
+# "if it happens" playoff odds, straight from the trials conditioned on
+# that one result.
 team_rooting_games <- function(team) {
-  if (n_rem_games == 0) return(list())
-  eligible <- which(remaining$home != team & remaining$away != team)
-  if (!length(eligible)) return(list())
-  ph <- prob_if_home_wins[eligible, team]
-  pa <- prob_if_away_wins[eligible, team]
-  swing <- abs(ph - pa)
-  ord <- eligible[order(swing, decreasing = TRUE)]
-  top <- ord[seq_len(min(5L, length(ord)))]
-  lapply(top, function(i) {
-    home_helps <- prob_if_home_wins[i, team] >= prob_if_away_wins[i, team]
+  candidates <- list()
+  if (n_rem_games > 0) {
+    eligible <- which(remaining$home != team & remaining$away != team &
+                       !(remaining$home %in% cfp_ineligible_teams) &
+                       !(remaining$away %in% cfp_ineligible_teams))
+    if (length(eligible)) {
+      swing <- abs(prob_if_home_wins[eligible, team] - prob_if_away_wins[eligible, team])
+      keep <- eligible[order(swing, decreasing = TRUE)][seq_len(min(5L, length(eligible)))]
+      for (i in keep) {
+        candidates[[length(candidates) + 1]] <- list(
+          a = remaining$home[i], b = remaining$away[i],
+          pa = unname(prob_if_home_wins[i, team]), pb = unname(prob_if_away_wins[i, team]),
+          date = remaining$date[i], label = NULL)
+      }
+    }
+  }
+  for (conf in names(locked_ccg)) {
+    lk <- locked_ccg[[conf]]
+    if (identical(team, lk$a) || identical(team, lk$b)) next  # can't root on your own CCG
+    candidates[[length(candidates) + 1]] <- list(
+      a = lk$a, b = lk$b,
+      pa = unname(lk$prob_a[[team]]), pb = unname(lk$prob_b[[team]]),
+      date = NA_character_, label = paste(conf, "Championship"))
+  }
+  if (!length(candidates)) return(list())
+  swings <- vapply(candidates, function(c) abs(c$pa - c$pb), numeric(1))
+  top <- candidates[order(swings, decreasing = TRUE)][seq_len(min(5L, length(candidates)))]
+  lapply(top, function(c) {
+    home_helps <- c$pa >= c$pb
     list(
-      team_to_win = if (home_helps) remaining$home[i] else remaining$away[i],
-      team_to_lose = if (home_helps) remaining$away[i] else remaining$home[i],
-      date = remaining$date[i],
-      playoff_pct_if_happens = round(if (home_helps) prob_if_home_wins[i, team] else prob_if_away_wins[i, team], 4),
-      playoff_pct_if_not     = round(if (home_helps) prob_if_away_wins[i, team] else prob_if_home_wins[i, team], 4)
+      team_to_win  = if (home_helps) c$a else c$b,
+      team_to_lose = if (home_helps) c$b else c$a,
+      date  = c$date,
+      label = c$label,
+      playoff_pct_if_happens = round(if (home_helps) c$pa else c$pb, 4),
+      playoff_pct_if_not     = round(if (home_helps) c$pb else c$pa, 4)
     )
   })
 }
