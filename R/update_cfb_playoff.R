@@ -48,7 +48,7 @@ if (as.integer(format(Sys.Date(), "%m")) < 8) CURRENT_YEAR <- CURRENT_YEAR - 1
 OUT_DIR <- "docs/CFB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
-N_TRIALS <- 20000
+N_TRIALS <- 100000
 HCA <- 55  # must match CFG.hca in docs/sports/cfb.html
 
 # ── Conference structure (hand-kept in sync with PK_CONFS_FALLBACK /
@@ -778,16 +778,47 @@ simulate_season <- function(winner_vec, loser_vec, deterministic = FALSE) {
     ch <- champions_by_conf[[conf]]
     if (!is.na(ch)) { field <- c(field, ch); auto_bid_teams <- c(auto_bid_teams, ch) }
   }
-  grp_champs <- champions_by_conf[intersect(GROUP_AUTO, names(champions_by_conf))]
-  grp_champs <- grp_champs[!is.na(grp_champs)]
-  if (length(grp_champs)) {
-    best <- grp_champs[[which.max(final_pr[unlist(grp_champs)])]]
+  # Group-of-Five-style auto bid (verified against 2026 CFP reporting):
+  # this bid does NOT require actually winning that conference's title —
+  # it goes to the single highest-rated team from ANY of these six
+  # conferences (AAC, C-USA, MAC, Mountain West, Sun Belt, Pac-12),
+  # champion or not. That conference-championship requirement was
+  # dropped for 2026 — a real, if under-reported, rule change (multiple
+  # Group of Five commissioners were reportedly unaware of it) — so
+  # pulling only from `champions_by_conf` here would misrepresent the
+  # actual selection rule, not just approximate it.
+  grp_pool <- unlist(conf_teams[intersect(GROUP_AUTO, names(conf_teams))], use.names = FALSE)
+  grp_pool <- setdiff(grp_pool, cfp_ineligible_teams)
+  if (length(grp_pool)) {
+    best <- grp_pool[[which.max(final_pr[grp_pool])]]
     if (!best %in% field) field <- c(field, best)
     auto_bid_teams <- c(auto_bid_teams, best)
   }
   pr_order <- setdiff(names(sort(final_pr, decreasing = TRUE)), cfp_ineligible_teams)
   need <- 12 - length(field)
   if (need > 0) field <- c(field, head(setdiff(pr_order, field), need))
+
+  # Notre Dame provision (2026 CFP rule, verified against current-season
+  # reporting): as an independent, Notre Dame has no conference to win and
+  # therefore no auto-bid path of its own — but if it finishes in the
+  # committee's top 12 overall (final_pr rank, this site's ranking proxy),
+  # it's guaranteed a field spot regardless of how the auto-bid/at-large
+  # math otherwise shakes out. This is a genuine override, not just "would
+  # they make it anyway": a weak auto-bid conference champion ranked
+  # outside the top 12 can otherwise squeeze a top-12 Notre Dame out of an
+  # at-large spot, since the field size is fixed at 12 either way — the
+  # rule exists specifically to stop that from happening.
+  nd_team <- "Notre Dame"
+  if (nd_team %in% pr_order && !(nd_team %in% field) && match(nd_team, pr_order) <= 12) {
+    at_large_now <- setdiff(field, auto_bid_teams)
+    if (length(at_large_now)) {
+      weakest <- at_large_now[which.min(final_pr[at_large_now])]
+      field <- setdiff(field, weakest)
+    } else if (length(field) >= 12) {
+      field <- field[-which.min(final_pr[field])]
+    }
+    field <- c(field, nd_team)
+  }
 
   field_sorted <- field[order(-final_pr[field])]
 
@@ -1146,13 +1177,18 @@ for (conf in intersect(POWER4, names(today_snapshot$champions_by_conf))) {
   auto_bid_tracker[[length(auto_bid_tracker) + 1]] <- list(
     conference = conf, power4 = TRUE, team = if (is.na(ch)) NULL else ch)
 }
-grp_today <- today_snapshot$champions_by_conf[intersect(GROUP_AUTO, names(today_snapshot$champions_by_conf))]
-grp_today <- grp_today[!is.na(grp_today)]
-if (length(grp_today)) {
-  best_conf <- names(grp_today)[which.max(pr0[unlist(grp_today)])]
+# Mirrors the real rule used in simulate_season(): this bid does NOT
+# require being that conference's champion — it's simply the single
+# highest-ranked team across all six Group-of-Five-style conferences.
+# (Previously this tracker only looked at each conference's projected
+# champion, which understated who'd actually hold the bid today.)
+grp_today_pool <- unlist(conf_teams[intersect(GROUP_AUTO, names(conf_teams))], use.names = FALSE)
+grp_today_pool <- setdiff(grp_today_pool, cfp_ineligible_teams)
+if (length(grp_today_pool)) {
+  best_today <- grp_today_pool[[which.max(pr0[grp_today_pool])]]
   auto_bid_tracker[[length(auto_bid_tracker) + 1]] <- list(
-    conference = best_conf, power4 = FALSE, team = grp_today[[best_conf]],
-    note = "Highest-ranked champion among the Group-of-Five-style auto conferences.")
+    conference = unname(conf0[[best_today]]), power4 = FALSE, team = best_today,
+    note = "Highest-ranked team among the Group-of-Five-style auto conferences (does not need to be that conference's champion).")
 }
 
 out_json <- list(
