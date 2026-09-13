@@ -2788,13 +2788,18 @@ window.initSportPage = function(CFG) {
       </div></div>`;
   }
 
-  // Top 5 remaining games NOT involving this team, each showing whichever
-  // side winning helps `t`'s playoff odds most, with the odds split both
-  // ways — straight from the R side's Monte Carlo trials (see
-  // team_rooting_games() in update_cfb_playoff.R), not a hand-picked list.
-  // Suppressed for CFP-ineligible teams (same as pcScenarioText): they
-  // can't make the field no matter what these games do, so every entry
-  // would just show a flat 0%/0% and add noise, not insight.
+  // Top 5 remaining games/locked conference championship matchups NOT
+  // involving this team, each showing whichever side winning helps `t`'s
+  // playoff odds most, with the odds split both ways — straight from the
+  // R side's Monte Carlo trials (see team_rooting_games() in
+  // update_cfb_playoff.R), not a hand-picked list. Restricted to real
+  // FBS-vs-FBS games on the R side; a conference championship only shows
+  // up here once that conference's matchup is fully locked in (both
+  // participants clinched), tagged with the conference name instead of a
+  // date since it doesn't have one yet. Suppressed for CFP-ineligible
+  // teams (same as pcScenarioText): they can't make the field no matter
+  // what these games do, so every entry would just show a flat 0%/0% and
+  // add noise, not insight.
   function pcRootingGames(t) {
     if (t.cfp_ineligible) return '';
     const games = t.rooting_games || [];
@@ -2805,13 +2810,16 @@ window.initSportPage = function(CFG) {
       if (isNaN(dt.getTime())) return '';
       return dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     };
-    const cards = games.map(g => `<div class="pc-rooting-card">
-      <div class="pc-rooting-desc"><b>${pcEsc(g.team_to_win)}</b> beats <b>${pcEsc(g.team_to_lose)}</b>${g.date ? `<span class="pc-rooting-date">${fmtDate(g.date)}</span>` : ''}</div>
+    const cards = games.map(g => {
+      const tag = g.label ? g.label : fmtDate(g.date);
+      return `<div class="pc-rooting-card">
+      <div class="pc-rooting-desc"><b>${pcEsc(g.team_to_win)}</b> beats <b>${pcEsc(g.team_to_lose)}</b>${tag ? `<span class="pc-rooting-date">${pcEsc(tag)}</span>` : ''}</div>
       <div class="pc-rooting-odds">
         <div class="pc-branch"><div class="pc-branch-lbl">If it doesn't happen</div><div class="pc-branch-pct">${pcPct(g.playoff_pct_if_not)}</div></div>
         <div class="pc-branch"><div class="pc-branch-lbl">If it happens</div><div class="pc-branch-pct hi">${pcPct(g.playoff_pct_if_happens)}</div></div>
       </div>
-    </div>`).join('');
+    </div>`;
+    }).join('');
     return `<div class="pc-scenario-full">
       <div class="pc-scenario-ccg-note">Results <b>${pcEsc(t.team)}</b> doesn't control, ranked by how much each would swing its playoff odds (top 5):</div>
       <div class="pc-rooting-list">${cards}</div>
