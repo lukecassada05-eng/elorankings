@@ -873,13 +873,15 @@ message("  Simulation done in ", round(as.numeric(Sys.time() - t0, units = "secs
 # trials where the away team won — the gap between those two numbers
 # is exactly how much that single result would move the needle.
 #
-# Candidates are restricted to true FBS-vs-FBS games — both sides
-# already have to be in `all_teams` to reach `remaining` at all (see
-# `remaining`'s construction above), but a team still mid-transition
-# into FBS (fcs_transition_ineligible — currently just North Dakota
-# State) is excluded here too, since a game involving one isn't a real
-# FBS-vs-FBS rooting interest even though it's tracked for Elo/win-
-# probability purposes.
+# Candidates are restricted to true FBS-vs-FBS games. Being in `all_teams`
+# (i.e. reaching `remaining` at all — see its construction above) is NOT
+# the same thing as being FBS: update_cfb.R tracks Elo for plenty of real
+# FCS teams too, so an FBS team's schedule has something to price a buy
+# game against — those teams get `conference == "FCS"` in teams_df, which
+# is the actual signal team_rooting_games() below filters on (is_fbs()).
+# A team still mid-transition into FBS (fcs_transition_ineligible —
+# currently just North Dakota State) is excluded too, even though it may
+# carry a real conference tag, since it can't make the field either way.
 n_rem_games <- nrow(remaining)
 if (n_rem_games > 0) {
   O <- outcomes * 1  # logical -> 0/1 numeric, games x N_TRIALS
@@ -936,9 +938,16 @@ if (length(locked_ccg)) {
 team_rooting_games <- function(team) {
   candidates <- list()
   if (n_rem_games > 0) {
+    # is_fbs(): the pipeline tracks Elo for plenty of FCS teams too (any
+    # buy-game opponent that played a tracked FBS team gets a rating so the
+    # FBS side's win probability has something real to price against) —
+    # update_cfb.R tags those teams' `conference` literally as "FCS". A real
+    # FBS-vs-FBS rooting-interest game just needs both sides to have a
+    # recorded conference that isn't that tag.
+    is_fbs <- function(t) !is.na(conf0[t]) && conf0[t] != "FCS"
     eligible <- which(remaining$home != team & remaining$away != team &
-                       !(remaining$home %in% cfp_ineligible_teams) &
-                       !(remaining$away %in% cfp_ineligible_teams))
+                       vapply(remaining$home, is_fbs, logical(1)) &
+                       vapply(remaining$away, is_fbs, logical(1)))
     if (length(eligible)) {
       swing <- abs(prob_if_home_wins[eligible, team] - prob_if_away_wins[eligible, team])
       keep <- eligible[order(swing, decreasing = TRUE)][seq_len(min(5L, length(eligible)))]
