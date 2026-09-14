@@ -2647,6 +2647,11 @@ window.initSportPage = function(CFG) {
     const lm = c.likely_matchup;
     const matchupHtml = lm ? lm.matchup.replace(' vs ', ' <span class="vs">vs</span> ') : 'Not enough of the race is decided yet';
     const pctHtml = lm ? pcPct(lm.pct) : '';
+    const avgBids = typeof c.avg_playoff_bids === 'number' ? c.avg_playoff_bids : null;
+    const confSize = (c.standings || []).length;
+    const avgBidsChip = avgBids !== null
+      ? `<div class="pc-ccg-avgbids" title="Average number of ${pcEsc(conf)} teams in the 12-team field across all simulated seasons">${avgBids.toFixed(2)} avg bid${avgBids === 1 ? '' : 's'}</div>`
+      : '';
     // Ranked list of the top-8 most likely CCG matchups for this conference
     // (not just the single favorite) — R's Monte Carlo sim already tallies
     // every distinct matchup that came up across all trials; top_matchups is
@@ -2675,6 +2680,7 @@ window.initSportPage = function(CFG) {
       <summary class="pc-ccg-summary">
         <div class="pc-ccg-conf">${pcEsc(conf)}${c.has_divisions ? ' (divisions)' : ''}</div>
         <div class="pc-ccg-matchup">${matchupHtml}</div>
+        ${avgBidsChip}
         <div class="pc-ccg-conf-pct">${pctHtml}</div>
         <svg class="pc-ccg-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
       </summary>
@@ -2682,6 +2688,8 @@ window.initSportPage = function(CFG) {
         <div><div class="pc-ccg-decided-lbl">${matchupListLbl}</div><div class="pc-ccg-standings">${matchupListHtml}</div></div>
         <div><div class="pc-ccg-decided-lbl">How the tiebreaker works<span class="pc-approx-tag">approx beyond common opp.</span></div>
         <div class="pc-ccg-decided-val">${pcEsc(c.tiebreak_note)}</div></div>
+        ${avgBids !== null ? `<div><div class="pc-ccg-decided-lbl">Average teams in the playoff field</div>
+        <div class="pc-ccg-decided-val">Across every simulated season, <b>${pcEsc(conf)}</b> lands <b>${avgBids.toFixed(2)}</b> team${avgBids === 1 ? '' : 's'} in the 12-team field on average${confSize ? ` (out of ${confSize} tracked teams)` : ''}.</div></div>` : ''}
       </div></div>
     </details>`;
   }
