@@ -1061,6 +1061,13 @@ for (conf in names(conf_teams)) {
 
   today <- today_snapshot$conf_results[[conf]]
 
+  # Expected number of this conference's teams in the 12-team field, across
+  # all N_TRIALS simulated seasons. By linearity of expectation this is just
+  # the sum of each team's individual playoff probability (playoff_count is
+  # already the cumulative per-team made-the-field tally from the trial
+  # loop above) — exact, no need to re-touch playoff_mat or re-loop trials.
+  avg_playoff_bids <- round(sum(playoff_count[conf_teams[[conf]]]) / N_TRIALS, 3)
+
   conferences_json[[conf]] <- list(
     has_divisions = !is.null(SUN_BELT_DIVS_FOR(conf)),
     power4 = conf %in% POWER4,
@@ -1069,6 +1076,7 @@ for (conf in names(conf_teams)) {
     projected_champion_today = if (!is.null(today)) today$champion else NA_character_,
     likely_matchup = likely_matchup,
     top_matchups = top_matchups,
+    avg_playoff_bids = avg_playoff_bids,
     tiebreak_note = if (!is.null(TIEBREAK_NOTES[[conf]])) TIEBREAK_NOTES[[conf]] else paste0(
                             "Head-to-head result, then record vs common conference opponents, then Playoff ",
                             "Rating. The last step is this site's own approximation for the real-world steps ",
