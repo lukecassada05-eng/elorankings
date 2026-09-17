@@ -468,6 +468,22 @@
       "round": "MEN'S BASKETBALL CHAMPIONSHIP - MIDWEST REGION - SWEET 16 AT ST. LOUIS"
     },
     {
+      "winner": "Louisville Cardinals",
+      "loser": "Florida Gators",
+      "winner_score": 72,
+      "loser_score": 68,
+      "date": "2012-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT PHOENIX"
+    },
+    {
+      "winner": "Ohio State Buckeyes",
+      "loser": "Syracuse Orange",
+      "winner_score": 77,
+      "loser_score": 70,
+      "date": "2012-03-24",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT BOSTON"
+    },
+    {
       "winner": "Kentucky Wildcats",
       "loser": "Baylor Bears",
       "winner_score": 82,
@@ -1090,6 +1106,26 @@
       "date": "2012-03-24"
     },
     {
+      "t1": "Louisville Cardinals",
+      "t2": "Florida Gators",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Florida Gators",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - WEST REGION - ELITE 8 AT PHOENIX",
+      "date": "2012-03-24"
+    },
+    {
+      "t1": "Ohio State Buckeyes",
+      "t2": "Syracuse Orange",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Syracuse Orange",
+      "round": "MEN'S BASKETBALL CHAMPIONSHIP - EAST REGION - ELITE 8 AT BOSTON",
+      "date": "2012-03-24"
+    },
+    {
       "t1": "Kentucky Wildcats",
       "t2": "Baylor Bears",
       "w1": 1,
@@ -1199,11 +1235,13 @@
     "Ohio Bobcats",
     "Indiana Hoosiers",
     "NC State Wolfpack",
+    "Florida Gators",
+    "Syracuse Orange",
     "Baylor Bears",
     "North Carolina Tar Heels",
     "Louisville Cardinals",
     "Ohio State Buckeyes",
     "Kansas Jayhawks"
   ],
-  "updated": "2026-09-16 21:27 UTC"
+  "updated": "2026-09-17 04:50 UTC"
 }
