@@ -1,0 +1,1329 @@
+date,home,away,winner,loser,winner_pts,loser_pts,end_type
+2017-10-01,St. Louis Blues,Washington Capitals,Washington Capitals,St. Louis Blues,4,3,REG
+2017-10-01,Philadelphia Flyers,New York Islanders,New York Islanders,Philadelphia Flyers,5,2,REG
+2017-10-02,Vegas Golden Knights,San Jose Sharks,San Jose Sharks,Vegas Golden Knights,5,3,REG
+2017-10-04,Winnipeg Jets,Toronto Maple Leafs,Toronto Maple Leafs,Winnipeg Jets,6,2,REG
+2017-10-05,Pittsburgh Penguins,St. Louis Blues,St. Louis Blues,Pittsburgh Penguins,5,4,OT
+2017-10-05,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,3,0,REG
+2017-10-05,San Jose Sharks,Philadelphia Flyers,Philadelphia Flyers,San Jose Sharks,5,3,REG
+2017-10-05,Boston Bruins,Nashville Predators,Boston Bruins,Nashville Predators,4,3,REG
+2017-10-05,Buffalo Sabres,Montreal Canadiens,Montreal Canadiens,Buffalo Sabres,3,2,SO
+2017-10-05,New York Rangers,Colorado Avalanche,Colorado Avalanche,New York Rangers,4,2,REG
+2017-10-05,Ottawa Senators,Washington Capitals,Washington Capitals,Ottawa Senators,5,4,SO
+2017-10-05,Detroit Red Wings,Minnesota Wild,Detroit Red Wings,Minnesota Wild,4,2,REG
+2017-10-06,Chicago Blackhawks,Pittsburgh Penguins,Chicago Blackhawks,Pittsburgh Penguins,5,1,REG
+2017-10-06,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,5,4,REG
+2017-10-06,Los Angeles Kings,Philadelphia Flyers,Los Angeles Kings,Philadelphia Flyers,2,0,REG
+2017-10-06,Columbus Blue Jackets,New York Islanders,Columbus Blue Jackets,New York Islanders,4,0,REG
+2017-10-06,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,5,3,REG
+2017-10-07,Dallas Stars,Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,2,1,REG
+2017-10-07,New Jersey Devils,Colorado Avalanche,New Jersey Devils,Colorado Avalanche,4,1,REG
+2017-10-07,Toronto Maple Leafs,New York Rangers,Toronto Maple Leafs,New York Rangers,8,5,REG
+2017-10-07,Ottawa Senators,Detroit Red Wings,Detroit Red Wings,Ottawa Senators,2,1,SO
+2017-10-07,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,5,4,REG
+2017-10-07,New York Islanders,Buffalo Sabres,New York Islanders,Buffalo Sabres,6,3,REG
+2017-10-07,Pittsburgh Penguins,Nashville Predators,Pittsburgh Penguins,Nashville Predators,4,0,REG
+2017-10-07,Washington Capitals,Montreal Canadiens,Washington Capitals,Montreal Canadiens,5,1,REG
+2017-10-07,Carolina Hurricanes,Minnesota Wild,Carolina Hurricanes,Minnesota Wild,5,4,SO
+2017-10-08,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,4,2,REG
+2017-10-08,Chicago Blackhawks,Columbus Blue Jackets,Chicago Blackhawks,Columbus Blue Jackets,5,1,REG
+2017-10-08,Arizona Coyotes,Vegas Golden Knights,Vegas Golden Knights,Arizona Coyotes,2,1,OT
+2017-10-08,Calgary Flames,Winnipeg Jets,Calgary Flames,Winnipeg Jets,6,3,REG
+2017-10-08,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,3,2,REG
+2017-10-08,Anaheim Ducks,Philadelphia Flyers,Philadelphia Flyers,Anaheim Ducks,3,2,OT
+2017-10-08,San Jose Sharks,Los Angeles Kings,Los Angeles Kings,San Jose Sharks,4,1,REG
+2017-10-08,New York Rangers,Montreal Canadiens,New York Rangers,Montreal Canadiens,2,0,REG
+2017-10-09,Boston Bruins,Colorado Avalanche,Colorado Avalanche,Boston Bruins,4,0,REG
+2017-10-09,New York Islanders,St. Louis Blues,St. Louis Blues,New York Islanders,3,2,SO
+2017-10-09,Buffalo Sabres,New Jersey Devils,New Jersey Devils,Buffalo Sabres,6,2,REG
+2017-10-09,Toronto Maple Leafs,Chicago Blackhawks,Toronto Maple Leafs,Chicago Blackhawks,4,3,OT
+2017-10-09,Tampa Bay Lightning,Washington Capitals,Tampa Bay Lightning,Washington Capitals,4,3,OT
+2017-10-10,Edmonton Oilers,Winnipeg Jets,Winnipeg Jets,Edmonton Oilers,5,2,REG
+2017-10-10,Anaheim Ducks,Calgary Flames,Calgary Flames,Anaheim Ducks,2,0,REG
+2017-10-10,New York Rangers,St. Louis Blues,St. Louis Blues,New York Rangers,3,1,REG
+2017-10-10,Carolina Hurricanes,Columbus Blue Jackets,Columbus Blue Jackets,Carolina Hurricanes,2,1,OT
+2017-10-10,Montreal Canadiens,Chicago Blackhawks,Chicago Blackhawks,Montreal Canadiens,3,1,REG
+2017-10-11,Nashville Predators,Philadelphia Flyers,Nashville Predators,Philadelphia Flyers,6,5,REG
+2017-10-11,Dallas Stars,Detroit Red Wings,Dallas Stars,Detroit Red Wings,4,2,REG
+2017-10-11,Vancouver Canucks,Ottawa Senators,Ottawa Senators,Vancouver Canucks,3,2,SO
+2017-10-11,Vegas Golden Knights,Arizona Coyotes,Vegas Golden Knights,Arizona Coyotes,5,2,REG
+2017-10-11,Toronto Maple Leafs,New Jersey Devils,New Jersey Devils,Toronto Maple Leafs,6,3,REG
+2017-10-11,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,3,2,REG
+2017-10-12,Colorado Avalanche,Boston Bruins,Colorado Avalanche,Boston Bruins,6,3,REG
+2017-10-12,Anaheim Ducks,New York Islanders,Anaheim Ducks,New York Islanders,3,2,REG
+2017-10-12,Los Angeles Kings,Calgary Flames,Calgary Flames,Los Angeles Kings,4,3,OT
+2017-10-12,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,5,4,REG
+2017-10-12,Florida Panthers,St. Louis Blues,Florida Panthers,St. Louis Blues,5,2,REG
+2017-10-13,Nashville Predators,Dallas Stars,Nashville Predators,Dallas Stars,4,1,REG
+2017-10-13,Chicago Blackhawks,Minnesota Wild,Minnesota Wild,Chicago Blackhawks,5,2,REG
+2017-10-13,Vancouver Canucks,Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,4,2,REG
+2017-10-13,Arizona Coyotes,Detroit Red Wings,Detroit Red Wings,Arizona Coyotes,4,2,REG
+2017-10-13,San Jose Sharks,Buffalo Sabres,San Jose Sharks,Buffalo Sabres,3,2,REG
+2017-10-13,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,5,2,REG
+2017-10-13,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,New York Rangers,3,1,REG
+2017-10-14,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,3,1,REG
+2017-10-14,Calgary Flames,Ottawa Senators,Ottawa Senators,Calgary Flames,4,0,REG
+2017-10-14,Vegas Golden Knights,Detroit Red Wings,Detroit Red Wings,Vegas Golden Knights,6,3,REG
+2017-10-14,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,4,3,OT
+2017-10-14,Tampa Bay Lightning,St. Louis Blues,Tampa Bay Lightning,St. Louis Blues,2,1,REG
+2017-10-14,New York Rangers,New Jersey Devils,New Jersey Devils,New York Rangers,3,2,REG
+2017-10-14,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,Washington Capitals,6,2,REG
+2017-10-14,Pittsburgh Penguins,Florida Panthers,Pittsburgh Penguins,Florida Panthers,4,3,REG
+2017-10-14,Winnipeg Jets,Carolina Hurricanes,Winnipeg Jets,Carolina Hurricanes,2,1,REG
+2017-10-15,Dallas Stars,Colorado Avalanche,Dallas Stars,Colorado Avalanche,3,1,REG
+2017-10-15,Minnesota Wild,Columbus Blue Jackets,Columbus Blue Jackets,Minnesota Wild,5,4,OT
+2017-10-15,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,Nashville Predators,2,1,OT
+2017-10-15,Arizona Coyotes,Boston Bruins,Boston Bruins,Arizona Coyotes,6,2,REG
+2017-10-15,Edmonton Oilers,Ottawa Senators,Ottawa Senators,Edmonton Oilers,5,1,REG
+2017-10-15,Vancouver Canucks,Calgary Flames,Calgary Flames,Vancouver Canucks,5,2,REG
+2017-10-15,Los Angeles Kings,Buffalo Sabres,Los Angeles Kings,Buffalo Sabres,4,2,REG
+2017-10-15,San Jose Sharks,New York Islanders,New York Islanders,San Jose Sharks,3,1,REG
+2017-10-15,Vegas Golden Knights,Boston Bruins,Vegas Golden Knights,Boston Bruins,3,1,REG
+2017-10-16,Anaheim Ducks,Buffalo Sabres,Buffalo Sabres,Anaheim Ducks,3,1,REG
+2017-10-16,Los Angeles Kings,New York Islanders,Los Angeles Kings,New York Islanders,3,2,REG
+2017-10-16,Detroit Red Wings,Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,3,2,REG
+2017-10-17,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,5,4,OT
+2017-10-17,Philadelphia Flyers,Florida Panthers,Philadelphia Flyers,Florida Panthers,5,1,REG
+2017-10-17,Washington Capitals,Toronto Maple Leafs,Toronto Maple Leafs,Washington Capitals,2,0,REG
+2017-10-17,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,5,4,SO
+2017-10-17,Ottawa Senators,Vancouver Canucks,Vancouver Canucks,Ottawa Senators,3,0,REG
+2017-10-18,Nashville Predators,Colorado Avalanche,Nashville Predators,Colorado Avalanche,4,1,REG
+2017-10-18,Winnipeg Jets,Columbus Blue Jackets,Columbus Blue Jackets,Winnipeg Jets,5,2,REG
+2017-10-18,Dallas Stars,Arizona Coyotes,Dallas Stars,Arizona Coyotes,3,1,REG
+2017-10-18,Edmonton Oilers,Carolina Hurricanes,Carolina Hurricanes,Edmonton Oilers,5,3,REG
+2017-10-18,Vegas Golden Knights,Buffalo Sabres,Vegas Golden Knights,Buffalo Sabres,5,4,OT
+2017-10-18,San Jose Sharks,Montreal Canadiens,San Jose Sharks,Montreal Canadiens,5,2,REG
+2017-10-18,Toronto Maple Leafs,Detroit Red Wings,Toronto Maple Leafs,Detroit Red Wings,6,3,REG
+2017-10-19,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,5,2,REG
+2017-10-19,Los Angeles Kings,Montreal Canadiens,Los Angeles Kings,Montreal Canadiens,5,1,REG
+2017-10-19,Boston Bruins,Vancouver Canucks,Boston Bruins,Vancouver Canucks,6,3,REG
+2017-10-19,New York Rangers,New York Islanders,New York Islanders,New York Rangers,4,3,SO
+2017-10-19,Columbus Blue Jackets,Tampa Bay Lightning,Tampa Bay Lightning,Columbus Blue Jackets,2,0,REG
+2017-10-19,Ottawa Senators,New Jersey Devils,New Jersey Devils,Ottawa Senators,5,4,OT
+2017-10-20,Chicago Blackhawks,Edmonton Oilers,Edmonton Oilers,Chicago Blackhawks,2,1,OT
+2017-10-20,Colorado Avalanche,St. Louis Blues,St. Louis Blues,Colorado Avalanche,4,3,REG
+2017-10-20,Calgary Flames,Carolina Hurricanes,Carolina Hurricanes,Calgary Flames,2,1,REG
+2017-10-20,Arizona Coyotes,Dallas Stars,Dallas Stars,Arizona Coyotes,5,4,REG
+2017-10-20,Buffalo Sabres,Vancouver Canucks,Vancouver Canucks,Buffalo Sabres,4,2,REG
+2017-10-20,New Jersey Devils,San Jose Sharks,San Jose Sharks,New Jersey Devils,3,0,REG
+2017-10-20,Detroit Red Wings,Washington Capitals,Washington Capitals,Detroit Red Wings,4,3,OT
+2017-10-20,Florida Panthers,Pittsburgh Penguins,Pittsburgh Penguins,Florida Panthers,4,3,REG
+2017-10-21,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,4,3,REG
+2017-10-21,Anaheim Ducks,Montreal Canadiens,Anaheim Ducks,Montreal Canadiens,6,2,REG
+2017-10-21,New York Rangers,Nashville Predators,New York Rangers,Nashville Predators,4,2,REG
+2017-10-21,Philadelphia Flyers,Edmonton Oilers,Philadelphia Flyers,Edmonton Oilers,2,1,REG
+2017-10-21,Boston Bruins,Buffalo Sabres,Buffalo Sabres,Boston Bruins,5,4,OT
+2017-10-21,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,6,3,REG
+2017-10-21,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,5,1,REG
+2017-10-21,New York Islanders,San Jose Sharks,New York Islanders,San Jose Sharks,5,3,REG
+2017-10-21,Columbus Blue Jackets,Los Angeles Kings,Los Angeles Kings,Columbus Blue Jackets,6,4,REG
+2017-10-21,Washington Capitals,Florida Panthers,Florida Panthers,Washington Capitals,4,1,REG
+2017-10-22,Dallas Stars,Carolina Hurricanes,Dallas Stars,Carolina Hurricanes,4,3,REG
+2017-10-22,Arizona Coyotes,Chicago Blackhawks,Chicago Blackhawks,Arizona Coyotes,4,2,REG
+2017-10-22,Calgary Flames,Minnesota Wild,Minnesota Wild,Calgary Flames,4,2,REG
+2017-10-22,Vegas Golden Knights,St. Louis Blues,Vegas Golden Knights,St. Louis Blues,3,2,OT
+2017-10-22,Detroit Red Wings,Vancouver Canucks,Vancouver Canucks,Detroit Red Wings,4,1,REG
+2017-10-23,Toronto Maple Leafs,Los Angeles Kings,Toronto Maple Leafs,Los Angeles Kings,3,2,REG
+2017-10-23,New York Rangers,San Jose Sharks,San Jose Sharks,New York Rangers,4,1,REG
+2017-10-26,Columbus Blue Jackets,Buffalo Sabres,Columbus Blue Jackets,Buffalo Sabres,5,1,REG
+2017-10-26,St. Louis Blues,Calgary Flames,St. Louis Blues,Calgary Flames,5,2,REG
+2017-10-26,Boston Bruins,San Jose Sharks,Boston Bruins,San Jose Sharks,2,1,REG
+2017-10-26,Toronto Maple Leafs,Carolina Hurricanes,Carolina Hurricanes,Toronto Maple Leafs,6,3,REG
+2017-10-26,New York Rangers,Arizona Coyotes,New York Rangers,Arizona Coyotes,5,2,REG
+2017-10-26,Pittsburgh Penguins,Winnipeg Jets,Pittsburgh Penguins,Winnipeg Jets,2,1,OT
+2017-10-26,Montreal Canadiens,Los Angeles Kings,Los Angeles Kings,Montreal Canadiens,4,0,REG
+2017-10-26,Ottawa Senators,Philadelphia Flyers,Ottawa Senators,Philadelphia Flyers,5,4,REG
+2017-10-26,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,3,2,REG
+2017-10-26,Florida Panthers,Anaheim Ducks,Florida Panthers,Anaheim Ducks,7,3,REG
+2017-10-27,Minnesota Wild,New York Islanders,Minnesota Wild,New York Islanders,6,4,REG
+2017-10-27,Edmonton Oilers,Dallas Stars,Edmonton Oilers,Dallas Stars,5,4,REG
+2017-10-27,Vancouver Canucks,Washington Capitals,Vancouver Canucks,Washington Capitals,6,2,REG
+2017-10-27,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,4,0,REG
+2017-10-27,New Jersey Devils,Ottawa Senators,New Jersey Devils,Ottawa Senators,5,4,SO
+2017-10-27,Columbus Blue Jackets,Winnipeg Jets,Columbus Blue Jackets,Winnipeg Jets,2,1,OT
+2017-10-27,Carolina Hurricanes,St. Louis Blues,St. Louis Blues,Carolina Hurricanes,2,1,REG
+2017-10-28,Chicago Blackhawks,Nashville Predators,Nashville Predators,Chicago Blackhawks,2,1,REG
+2017-10-28,Calgary Flames,Dallas Stars,Dallas Stars,Calgary Flames,2,1,REG
+2017-10-28,Buffalo Sabres,San Jose Sharks,San Jose Sharks,Buffalo Sabres,3,2,REG
+2017-10-28,Boston Bruins,Los Angeles Kings,Los Angeles Kings,Boston Bruins,2,1,OT
+2017-10-28,Toronto Maple Leafs,Philadelphia Flyers,Philadelphia Flyers,Toronto Maple Leafs,4,2,REG
+2017-10-28,Montreal Canadiens,New York Rangers,Montreal Canadiens,New York Rangers,5,4,REG
+2017-10-28,Tampa Bay Lightning,Anaheim Ducks,Anaheim Ducks,Tampa Bay Lightning,4,1,REG
+2017-10-28,Florida Panthers,Detroit Red Wings,Detroit Red Wings,Florida Panthers,3,2,SO
+2017-10-28,New Jersey Devils,Arizona Coyotes,New Jersey Devils,Arizona Coyotes,4,3,REG
+2017-10-29,St. Louis Blues,Columbus Blue Jackets,St. Louis Blues,Columbus Blue Jackets,4,1,REG
+2017-10-29,Nashville Predators,New York Islanders,New York Islanders,Nashville Predators,6,2,REG
+2017-10-29,Minnesota Wild,Pittsburgh Penguins,Minnesota Wild,Pittsburgh Penguins,2,1,REG
+2017-10-29,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,6,3,REG
+2017-10-29,Edmonton Oilers,Washington Capitals,Washington Capitals,Edmonton Oilers,5,2,REG
+2017-10-29,Carolina Hurricanes,Anaheim Ducks,Anaheim Ducks,Carolina Hurricanes,4,3,SO
+2017-10-29,Winnipeg Jets,Pittsburgh Penguins,Winnipeg Jets,Pittsburgh Penguins,5,1,REG
+2017-10-30,Calgary Flames,Washington Capitals,Calgary Flames,Washington Capitals,2,1,REG
+2017-10-30,New York Islanders,Vegas Golden Knights,New York Islanders,Vegas Golden Knights,6,3,REG
+2017-10-30,Philadelphia Flyers,Arizona Coyotes,Arizona Coyotes,Philadelphia Flyers,4,3,OT
+2017-10-30,Columbus Blue Jackets,Boston Bruins,Columbus Blue Jackets,Boston Bruins,4,3,SO
+2017-10-30,Ottawa Senators,Montreal Canadiens,Montreal Canadiens,Ottawa Senators,7,3,REG
+2017-10-30,Florida Panthers,Tampa Bay Lightning,Tampa Bay Lightning,Florida Panthers,8,5,REG
+2017-10-31,St. Louis Blues,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,4,2,REG
+2017-10-31,Vancouver Canucks,Dallas Stars,Dallas Stars,Vancouver Canucks,2,1,OT
+2017-10-31,San Jose Sharks,Toronto Maple Leafs,San Jose Sharks,Toronto Maple Leafs,3,2,REG
+2017-10-31,New York Rangers,Vegas Golden Knights,New York Rangers,Vegas Golden Knights,6,4,REG
+2017-10-31,Detroit Red Wings,Arizona Coyotes,Detroit Red Wings,Arizona Coyotes,5,3,REG
+2017-11-01,Minnesota Wild,Winnipeg Jets,Winnipeg Jets,Minnesota Wild,2,1,REG
+2017-11-02,Chicago Blackhawks,Philadelphia Flyers,Chicago Blackhawks,Philadelphia Flyers,3,0,REG
+2017-11-02,Edmonton Oilers,Pittsburgh Penguins,Pittsburgh Penguins,Edmonton Oilers,3,2,REG
+2017-11-02,Vancouver Canucks,New Jersey Devils,New Jersey Devils,Vancouver Canucks,2,0,REG
+2017-11-02,Anaheim Ducks,Toronto Maple Leafs,Toronto Maple Leafs,Anaheim Ducks,3,1,REG
+2017-11-02,San Jose Sharks,Nashville Predators,San Jose Sharks,Nashville Predators,4,1,REG
+2017-11-02,Boston Bruins,Vegas Golden Knights,Boston Bruins,Vegas Golden Knights,2,1,REG
+2017-11-02,Washington Capitals,New York Islanders,Washington Capitals,New York Islanders,4,3,REG
+2017-11-02,Ottawa Senators,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,3,1,REG
+2017-11-02,Tampa Bay Lightning,New York Rangers,New York Rangers,Tampa Bay Lightning,2,1,OT
+2017-11-02,Florida Panthers,Columbus Blue Jackets,Columbus Blue Jackets,Florida Panthers,7,3,REG
+2017-11-03,St. Louis Blues,Philadelphia Flyers,Philadelphia Flyers,St. Louis Blues,2,0,REG
+2017-11-03,Minnesota Wild,Montreal Canadiens,Minnesota Wild,Montreal Canadiens,6,3,REG
+2017-11-03,Winnipeg Jets,Dallas Stars,Winnipeg Jets,Dallas Stars,5,2,REG
+2017-11-03,Colorado Avalanche,Carolina Hurricanes,Colorado Avalanche,Carolina Hurricanes,5,3,REG
+2017-11-03,Calgary Flames,Pittsburgh Penguins,Calgary Flames,Pittsburgh Penguins,2,1,OT
+2017-11-03,Arizona Coyotes,Buffalo Sabres,Buffalo Sabres,Arizona Coyotes,5,4,REG
+2017-11-03,Los Angeles Kings,Toronto Maple Leafs,Los Angeles Kings,Toronto Maple Leafs,5,3,REG
+2017-11-04,Edmonton Oilers,New Jersey Devils,Edmonton Oilers,New Jersey Devils,6,3,REG
+2017-11-04,Anaheim Ducks,Nashville Predators,Nashville Predators,Anaheim Ducks,5,3,REG
+2017-11-04,Ottawa Senators,Vegas Golden Knights,Vegas Golden Knights,Ottawa Senators,5,4,REG
+2017-11-04,Boston Bruins,Washington Capitals,Washington Capitals,Boston Bruins,3,2,REG
+2017-11-04,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,5,4,SO
+2017-11-04,Florida Panthers,New York Rangers,New York Rangers,Florida Panthers,5,4,OT
+2017-11-04,Philadelphia Flyers,Colorado Avalanche,Colorado Avalanche,Philadelphia Flyers,5,4,SO
+2017-11-04,St. Louis Blues,Toronto Maple Leafs,St. Louis Blues,Toronto Maple Leafs,6,4,REG
+2017-11-04,Winnipeg Jets,Montreal Canadiens,Montreal Canadiens,Winnipeg Jets,5,4,OT
+2017-11-05,Dallas Stars,Buffalo Sabres,Dallas Stars,Buffalo Sabres,5,1,REG
+2017-11-05,Minnesota Wild,Chicago Blackhawks,Chicago Blackhawks,Minnesota Wild,2,0,REG
+2017-11-05,Arizona Coyotes,Carolina Hurricanes,Arizona Coyotes,Carolina Hurricanes,2,1,SO
+2017-11-05,Vancouver Canucks,Pittsburgh Penguins,Vancouver Canucks,Pittsburgh Penguins,4,2,REG
+2017-11-05,Los Angeles Kings,Nashville Predators,Nashville Predators,Los Angeles Kings,4,3,OT
+2017-11-05,San Jose Sharks,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,2,1,SO
+2017-11-05,Edmonton Oilers,Detroit Red Wings,Detroit Red Wings,Edmonton Oilers,4,0,REG
+2017-11-05,New York Islanders,Colorado Avalanche,New York Islanders,Colorado Avalanche,6,4,REG
+2017-11-06,Chicago Blackhawks,Montreal Canadiens,Montreal Canadiens,Chicago Blackhawks,2,0,REG
+2017-11-06,Calgary Flames,New Jersey Devils,Calgary Flames,New Jersey Devils,5,4,SO
+2017-11-07,Boston Bruins,Minnesota Wild,Boston Bruins,Minnesota Wild,5,3,REG
+2017-11-07,Toronto Maple Leafs,Vegas Golden Knights,Toronto Maple Leafs,Vegas Golden Knights,4,3,SO
+2017-11-07,New York Rangers,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,5,3,REG
+2017-11-07,Washington Capitals,Arizona Coyotes,Washington Capitals,Arizona Coyotes,3,2,OT
+2017-11-07,Dallas Stars,Winnipeg Jets,Winnipeg Jets,Dallas Stars,4,1,REG
+2017-11-07,Vancouver Canucks,Detroit Red Wings,Detroit Red Wings,Vancouver Canucks,3,2,REG
+2017-11-08,Buffalo Sabres,Washington Capitals,Buffalo Sabres,Washington Capitals,3,1,REG
+2017-11-08,New Jersey Devils,St. Louis Blues,St. Louis Blues,New Jersey Devils,3,1,REG
+2017-11-08,New York Islanders,Edmonton Oilers,Edmonton Oilers,New York Islanders,2,1,OT
+2017-11-08,Pittsburgh Penguins,Arizona Coyotes,Pittsburgh Penguins,Arizona Coyotes,3,1,REG
+2017-11-08,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,Florida Panthers,3,1,REG
+2017-11-08,Columbus Blue Jackets,Nashville Predators,Nashville Predators,Columbus Blue Jackets,3,1,REG
+2017-11-08,Montreal Canadiens,Vegas Golden Knights,Montreal Canadiens,Vegas Golden Knights,3,2,REG
+2017-11-08,Calgary Flames,Vancouver Canucks,Vancouver Canucks,Calgary Flames,5,3,REG
+2017-11-08,Anaheim Ducks,Los Angeles Kings,Los Angeles Kings,Anaheim Ducks,4,3,OT
+2017-11-09,Toronto Maple Leafs,Minnesota Wild,Toronto Maple Leafs,Minnesota Wild,4,2,REG
+2017-11-09,New York Rangers,Boston Bruins,New York Rangers,Boston Bruins,4,2,REG
+2017-11-09,San Jose Sharks,Tampa Bay Lightning,Tampa Bay Lightning,San Jose Sharks,5,1,REG
+2017-11-10,New Jersey Devils,Edmonton Oilers,Edmonton Oilers,New Jersey Devils,3,2,OT
+2017-11-10,Philadelphia Flyers,Chicago Blackhawks,Philadelphia Flyers,Chicago Blackhawks,3,1,REG
+2017-11-10,Montreal Canadiens,Minnesota Wild,Minnesota Wild,Montreal Canadiens,3,0,REG
+2017-11-10,St. Louis Blues,Arizona Coyotes,St. Louis Blues,Arizona Coyotes,3,2,SO
+2017-11-10,Calgary Flames,Detroit Red Wings,Calgary Flames,Detroit Red Wings,6,3,REG
+2017-11-10,Anaheim Ducks,Vancouver Canucks,Anaheim Ducks,Vancouver Canucks,4,1,REG
+2017-11-10,Los Angeles Kings,Tampa Bay Lightning,Tampa Bay Lightning,Los Angeles Kings,5,2,REG
+2017-11-10,Colorado Avalanche,Ottawa Senators,Ottawa Senators,Colorado Avalanche,4,3,OT
+2017-11-11,Buffalo Sabres,Florida Panthers,Florida Panthers,Buffalo Sabres,4,1,REG
+2017-11-11,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,Boston Bruins,3,2,OT
+2017-11-11,Washington Capitals,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,4,1,REG
+2017-11-11,Columbus Blue Jackets,Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,3,1,REG
+2017-11-11,Dallas Stars,New York Islanders,Dallas Stars,New York Islanders,4,0,REG
+2017-11-11,Vegas Golden Knights,Winnipeg Jets,Vegas Golden Knights,Winnipeg Jets,5,2,REG
+2017-11-11,New York Rangers,Edmonton Oilers,New York Rangers,Edmonton Oilers,4,2,REG
+2017-11-11,Ottawa Senators,Colorado Avalanche,Ottawa Senators,Colorado Avalanche,4,3,REG
+2017-11-12,Boston Bruins,Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,4,1,REG
+2017-11-12,Montreal Canadiens,Buffalo Sabres,Montreal Canadiens,Buffalo Sabres,2,1,OT
+2017-11-12,Detroit Red Wings,Columbus Blue Jackets,Columbus Blue Jackets,Detroit Red Wings,2,1,SO
+2017-11-12,New Jersey Devils,Florida Panthers,New Jersey Devils,Florida Panthers,2,1,REG
+2017-11-12,Carolina Hurricanes,Chicago Blackhawks,Chicago Blackhawks,Carolina Hurricanes,4,3,OT
+2017-11-12,St. Louis Blues,New York Islanders,New York Islanders,St. Louis Blues,5,2,REG
+2017-11-12,Nashville Predators,Pittsburgh Penguins,Nashville Predators,Pittsburgh Penguins,5,4,SO
+2017-11-12,Arizona Coyotes,Winnipeg Jets,Winnipeg Jets,Arizona Coyotes,4,1,REG
+2017-11-12,San Jose Sharks,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,4,0,REG
+2017-11-13,Washington Capitals,Edmonton Oilers,Washington Capitals,Edmonton Oilers,2,1,SO
+2017-11-13,Chicago Blackhawks,New Jersey Devils,New Jersey Devils,Chicago Blackhawks,7,5,REG
+2017-11-13,Anaheim Ducks,Tampa Bay Lightning,Tampa Bay Lightning,Anaheim Ducks,2,1,REG
+2017-11-13,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,2,1,REG
+2017-11-14,Carolina Hurricanes,Dallas Stars,Carolina Hurricanes,Dallas Stars,5,1,REG
+2017-11-14,Calgary Flames,St. Louis Blues,Calgary Flames,St. Louis Blues,7,4,REG
+2017-11-15,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,5,4,OT
+2017-11-15,Montreal Canadiens,Columbus Blue Jackets,Columbus Blue Jackets,Montreal Canadiens,2,1,OT
+2017-11-15,Florida Panthers,Dallas Stars,Florida Panthers,Dallas Stars,4,3,SO
+2017-11-15,Nashville Predators,Washington Capitals,Nashville Predators,Washington Capitals,6,3,REG
+2017-11-15,Minnesota Wild,Philadelphia Flyers,Minnesota Wild,Philadelphia Flyers,3,0,REG
+2017-11-15,Winnipeg Jets,Arizona Coyotes,Winnipeg Jets,Arizona Coyotes,4,1,REG
+2017-11-15,Edmonton Oilers,Vegas Golden Knights,Edmonton Oilers,Vegas Golden Knights,6,2,REG
+2017-11-15,Los Angeles Kings,Vancouver Canucks,Vancouver Canucks,Los Angeles Kings,3,2,REG
+2017-11-16,Detroit Red Wings,Calgary Flames,Detroit Red Wings,Calgary Flames,6,2,REG
+2017-11-16,Chicago Blackhawks,New York Rangers,Chicago Blackhawks,New York Rangers,6,3,REG
+2017-11-16,Anaheim Ducks,Boston Bruins,Anaheim Ducks,Boston Bruins,4,2,REG
+2017-11-17,New York Islanders,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,6,4,REG
+2017-11-17,Montreal Canadiens,Arizona Coyotes,Arizona Coyotes,Montreal Canadiens,5,4,REG
+2017-11-17,Ottawa Senators,Pittsburgh Penguins,Pittsburgh Penguins,Ottawa Senators,3,1,REG
+2017-11-17,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,Dallas Stars,5,1,REG
+2017-11-17,Minnesota Wild,Nashville Predators,Minnesota Wild,Nashville Predators,6,4,REG
+2017-11-17,Winnipeg Jets,Philadelphia Flyers,Winnipeg Jets,Philadelphia Flyers,3,2,SO
+2017-11-17,Colorado Avalanche,Washington Capitals,Colorado Avalanche,Washington Capitals,6,2,REG
+2017-11-17,Edmonton Oilers,St. Louis Blues,St. Louis Blues,Edmonton Oilers,4,1,REG
+2017-11-17,Vancouver Canucks,Vegas Golden Knights,Vegas Golden Knights,Vancouver Canucks,5,2,REG
+2017-11-17,Los Angeles Kings,Boston Bruins,Boston Bruins,Los Angeles Kings,2,1,REG
+2017-11-17,San Jose Sharks,Florida Panthers,Florida Panthers,San Jose Sharks,2,0,REG
+2017-11-18,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,New York Rangers,2,0,REG
+2017-11-18,Detroit Red Wings,Buffalo Sabres,Detroit Red Wings,Buffalo Sabres,3,1,REG
+2017-11-18,Philadelphia Flyers,Calgary Flames,Calgary Flames,Philadelphia Flyers,5,4,OT
+2017-11-18,Ottawa Senators,Arizona Coyotes,Arizona Coyotes,Ottawa Senators,3,2,OT
+2017-11-18,Dallas Stars,Edmonton Oilers,Dallas Stars,Edmonton Oilers,6,3,REG
+2017-11-18,Winnipeg Jets,New Jersey Devils,Winnipeg Jets,New Jersey Devils,5,2,REG
+2017-11-18,Los Angeles Kings,Florida Panthers,Los Angeles Kings,Florida Panthers,4,0,REG
+2017-11-19,Buffalo Sabres,Carolina Hurricanes,Carolina Hurricanes,Buffalo Sabres,3,1,REG
+2017-11-19,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,4,0,REG
+2017-11-19,Tampa Bay Lightning,New York Islanders,New York Islanders,Tampa Bay Lightning,5,3,REG
+2017-11-19,Pittsburgh Penguins,Chicago Blackhawks,Chicago Blackhawks,Pittsburgh Penguins,2,1,REG
+2017-11-19,Washington Capitals,Minnesota Wild,Washington Capitals,Minnesota Wild,3,1,REG
+2017-11-19,Nashville Predators,Colorado Avalanche,Nashville Predators,Colorado Avalanche,5,2,REG
+2017-11-19,Vancouver Canucks,St. Louis Blues,St. Louis Blues,Vancouver Canucks,4,3,OT
+2017-11-19,San Jose Sharks,Boston Bruins,Boston Bruins,San Jose Sharks,3,1,REG
+2017-11-19,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,New York Islanders,4,2,REG
+2017-11-19,Detroit Red Wings,Colorado Avalanche,Colorado Avalanche,Detroit Red Wings,4,3,OT
+2017-11-20,New York Rangers,Ottawa Senators,New York Rangers,Ottawa Senators,3,0,REG
+2017-11-20,Vegas Golden Knights,Los Angeles Kings,Vegas Golden Knights,Los Angeles Kings,4,2,REG
+2017-11-20,Anaheim Ducks,Florida Panthers,Anaheim Ducks,Florida Panthers,3,2,REG
+2017-11-21,Buffalo Sabres,Columbus Blue Jackets,Columbus Blue Jackets,Buffalo Sabres,3,2,REG
+2017-11-21,Toronto Maple Leafs,Arizona Coyotes,Arizona Coyotes,Toronto Maple Leafs,4,1,REG
+2017-11-21,Washington Capitals,Calgary Flames,Calgary Flames,Washington Capitals,4,1,REG
+2017-11-21,Nashville Predators,Winnipeg Jets,Nashville Predators,Winnipeg Jets,5,3,REG
+2017-11-21,Minnesota Wild,New Jersey Devils,New Jersey Devils,Minnesota Wild,4,3,OT
+2017-11-21,San Jose Sharks,Anaheim Ducks,Anaheim Ducks,San Jose Sharks,3,2,SO
+2017-11-22,Philadelphia Flyers,Vancouver Canucks,Vancouver Canucks,Philadelphia Flyers,5,2,REG
+2017-11-22,St. Louis Blues,Edmonton Oilers,St. Louis Blues,Edmonton Oilers,7,3,REG
+2017-11-22,Dallas Stars,Montreal Canadiens,Dallas Stars,Montreal Canadiens,3,1,REG
+2017-11-23,Buffalo Sabres,Minnesota Wild,Minnesota Wild,Buffalo Sabres,5,4,REG
+2017-11-23,Detroit Red Wings,Edmonton Oilers,Edmonton Oilers,Detroit Red Wings,6,2,REG
+2017-11-23,Florida Panthers,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,2,1,SO
+2017-11-23,New Jersey Devils,Boston Bruins,Boston Bruins,New Jersey Devils,3,2,SO
+2017-11-23,New York Islanders,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,4,3,OT
+2017-11-23,Pittsburgh Penguins,Vancouver Canucks,Vancouver Canucks,Pittsburgh Penguins,5,2,REG
+2017-11-23,Washington Capitals,Ottawa Senators,Washington Capitals,Ottawa Senators,5,2,REG
+2017-11-23,Carolina Hurricanes,New York Rangers,New York Rangers,Carolina Hurricanes,5,1,REG
+2017-11-23,Tampa Bay Lightning,Chicago Blackhawks,Tampa Bay Lightning,Chicago Blackhawks,3,2,OT
+2017-11-23,Nashville Predators,Montreal Canadiens,Nashville Predators,Montreal Canadiens,3,2,SO
+2017-11-23,Colorado Avalanche,Dallas Stars,Colorado Avalanche,Dallas Stars,3,0,REG
+2017-11-23,Arizona Coyotes,San Jose Sharks,San Jose Sharks,Arizona Coyotes,3,1,REG
+2017-11-23,Anaheim Ducks,Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,4,2,REG
+2017-11-23,Los Angeles Kings,Winnipeg Jets,Winnipeg Jets,Los Angeles Kings,2,1,REG
+2017-11-24,Boston Bruins,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,4,3,REG
+2017-11-24,Philadelphia Flyers,New York Islanders,New York Islanders,Philadelphia Flyers,5,4,OT
+2017-11-24,Minnesota Wild,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,3,2,SO
+2017-11-24,Anaheim Ducks,Winnipeg Jets,Winnipeg Jets,Anaheim Ducks,4,1,REG
+2017-11-24,Washington Capitals,Tampa Bay Lightning,Washington Capitals,Tampa Bay Lightning,3,1,REG
+2017-11-24,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,5,4,OT
+2017-11-25,Buffalo Sabres,Edmonton Oilers,Buffalo Sabres,Edmonton Oilers,3,1,REG
+2017-11-25,New Jersey Devils,Vancouver Canucks,New Jersey Devils,Vancouver Canucks,3,2,REG
+2017-11-25,New York Rangers,Detroit Red Wings,New York Rangers,Detroit Red Wings,2,1,OT
+2017-11-25,Columbus Blue Jackets,Ottawa Senators,Columbus Blue Jackets,Ottawa Senators,5,2,REG
+2017-11-25,Carolina Hurricanes,Toronto Maple Leafs,Toronto Maple Leafs,Carolina Hurricanes,5,4,REG
+2017-11-25,St. Louis Blues,Nashville Predators,Nashville Predators,St. Louis Blues,2,0,REG
+2017-11-25,Dallas Stars,Calgary Flames,Dallas Stars,Calgary Flames,6,4,REG
+2017-11-25,Arizona Coyotes,Los Angeles Kings,Arizona Coyotes,Los Angeles Kings,3,2,OT
+2017-11-26,Toronto Maple Leafs,Washington Capitals,Washington Capitals,Toronto Maple Leafs,4,2,REG
+2017-11-26,Montreal Canadiens,Buffalo Sabres,Montreal Canadiens,Buffalo Sabres,3,0,REG
+2017-11-26,Ottawa Senators,New York Islanders,New York Islanders,Ottawa Senators,2,1,REG
+2017-11-26,Detroit Red Wings,New Jersey Devils,New Jersey Devils,Detroit Red Wings,4,3,OT
+2017-11-26,Florida Panthers,Chicago Blackhawks,Chicago Blackhawks,Florida Panthers,4,1,REG
+2017-11-26,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,5,2,REG
+2017-11-26,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,6,3,REG
+2017-11-26,Arizona Coyotes,Vegas Golden Knights,Vegas Golden Knights,Arizona Coyotes,4,2,REG
+2017-11-26,Colorado Avalanche,Calgary Flames,Calgary Flames,Colorado Avalanche,3,2,REG
+2017-11-26,San Jose Sharks,Winnipeg Jets,San Jose Sharks,Winnipeg Jets,4,0,REG
+2017-11-26,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,2,1,SO
+2017-11-26,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,4,3,SO
+2017-11-26,New York Rangers,Vancouver Canucks,New York Rangers,Vancouver Canucks,4,3,SO
+2017-11-26,Boston Bruins,Edmonton Oilers,Edmonton Oilers,Boston Bruins,4,2,REG
+2017-11-28,New Jersey Devils,Florida Panthers,Florida Panthers,New Jersey Devils,3,2,REG
+2017-11-28,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,5,4,OT
+2017-11-28,Montreal Canadiens,Columbus Blue Jackets,Montreal Canadiens,Columbus Blue Jackets,3,1,REG
+2017-11-28,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,6,2,REG
+2017-11-28,Chicago Blackhawks,Anaheim Ducks,Chicago Blackhawks,Anaheim Ducks,7,3,REG
+2017-11-29,Buffalo Sabres,Tampa Bay Lightning,Tampa Bay Lightning,Buffalo Sabres,2,0,REG
+2017-11-29,New York Islanders,Vancouver Canucks,New York Islanders,Vancouver Canucks,5,2,REG
+2017-11-29,New York Rangers,Florida Panthers,Florida Panthers,New York Rangers,5,4,REG
+2017-11-29,Philadelphia Flyers,San Jose Sharks,San Jose Sharks,Philadelphia Flyers,3,1,REG
+2017-11-29,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,3,2,SO
+2017-11-29,Detroit Red Wings,Los Angeles Kings,Los Angeles Kings,Detroit Red Wings,4,1,REG
+2017-11-29,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,3,2,REG
+2017-11-29,Calgary Flames,Toronto Maple Leafs,Toronto Maple Leafs,Calgary Flames,4,1,REG
+2017-11-29,Edmonton Oilers,Arizona Coyotes,Edmonton Oilers,Arizona Coyotes,3,2,OT
+2017-11-29,Vegas Golden Knights,Dallas Stars,Dallas Stars,Vegas Golden Knights,3,0,REG
+2017-11-30,Boston Bruins,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,3,2,REG
+2017-11-30,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,Ottawa Senators,2,1,REG
+2017-11-30,St. Louis Blues,Anaheim Ducks,Anaheim Ducks,St. Louis Blues,3,2,REG
+2017-11-30,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,3,2,OT
+2017-12-01,Washington Capitals,Los Angeles Kings,Los Angeles Kings,Washington Capitals,5,2,REG
+2017-12-01,Detroit Red Wings,Montreal Canadiens,Montreal Canadiens,Detroit Red Wings,6,3,REG
+2017-12-01,Nashville Predators,Vancouver Canucks,Vancouver Canucks,Nashville Predators,5,3,REG
+2017-12-01,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,4,2,REG
+2017-12-01,Chicago Blackhawks,Dallas Stars,Dallas Stars,Chicago Blackhawks,4,3,OT
+2017-12-01,Calgary Flames,Arizona Coyotes,Calgary Flames,Arizona Coyotes,3,0,REG
+2017-12-01,Edmonton Oilers,Toronto Maple Leafs,Toronto Maple Leafs,Edmonton Oilers,6,4,REG
+2017-12-02,Buffalo Sabres,Pittsburgh Penguins,Pittsburgh Penguins,Buffalo Sabres,4,0,REG
+2017-12-02,New York Islanders,Ottawa Senators,Ottawa Senators,New York Islanders,6,5,REG
+2017-12-02,New York Rangers,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,5,1,REG
+2017-12-02,Columbus Blue Jackets,Anaheim Ducks,Columbus Blue Jackets,Anaheim Ducks,4,2,REG
+2017-12-02,Florida Panthers,San Jose Sharks,San Jose Sharks,Florida Panthers,2,1,REG
+2017-12-02,St. Louis Blues,Los Angeles Kings,Los Angeles Kings,St. Louis Blues,4,1,REG
+2017-12-02,Winnipeg Jets,Vegas Golden Knights,Winnipeg Jets,Vegas Golden Knights,7,4,REG
+2017-12-02,Colorado Avalanche,New Jersey Devils,New Jersey Devils,Colorado Avalanche,2,1,REG
+2017-12-02,Philadelphia Flyers,Boston Bruins,Boston Bruins,Philadelphia Flyers,3,0,REG
+2017-12-02,Minnesota Wild,St. Louis Blues,Minnesota Wild,St. Louis Blues,2,1,OT
+2017-12-03,Montreal Canadiens,Detroit Red Wings,Montreal Canadiens,Detroit Red Wings,5,1,REG
+2017-12-03,Tampa Bay Lightning,San Jose Sharks,Tampa Bay Lightning,San Jose Sharks,5,2,REG
+2017-12-03,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,5,1,REG
+2017-12-03,Washington Capitals,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,4,3,REG
+2017-12-03,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,2,1,REG
+2017-12-03,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,Florida Panthers,3,2,OT
+2017-12-03,Nashville Predators,Anaheim Ducks,Nashville Predators,Anaheim Ducks,3,2,SO
+2017-12-03,Arizona Coyotes,New Jersey Devils,Arizona Coyotes,New Jersey Devils,4,0,REG
+2017-12-03,Dallas Stars,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,3,2,SO
+2017-12-03,Calgary Flames,Edmonton Oilers,Edmonton Oilers,Calgary Flames,7,5,REG
+2017-12-04,Chicago Blackhawks,Los Angeles Kings,Los Angeles Kings,Chicago Blackhawks,3,1,REG
+2017-12-04,Winnipeg Jets,Ottawa Senators,Winnipeg Jets,Ottawa Senators,4,0,REG
+2017-12-04,Colorado Avalanche,Dallas Stars,Dallas Stars,Colorado Avalanche,6,2,REG
+2017-12-04,Vegas Golden Knights,Arizona Coyotes,Vegas Golden Knights,Arizona Coyotes,3,2,OT
+2017-12-05,Washington Capitals,San Jose Sharks,Washington Capitals,San Jose Sharks,4,1,REG
+2017-12-05,Florida Panthers,New York Islanders,New York Islanders,Florida Panthers,5,4,SO
+2017-12-05,Nashville Predators,Boston Bruins,Nashville Predators,Boston Bruins,5,3,REG
+2017-12-05,Calgary Flames,Philadelphia Flyers,Philadelphia Flyers,Calgary Flames,5,2,REG
+2017-12-06,Columbus Blue Jackets,New Jersey Devils,New Jersey Devils,Columbus Blue Jackets,4,1,REG
+2017-12-06,Pittsburgh Penguins,New York Rangers,New York Rangers,Pittsburgh Penguins,4,3,REG
+2017-12-06,Montreal Canadiens,St. Louis Blues,St. Louis Blues,Montreal Canadiens,4,3,REG
+2017-12-06,Detroit Red Wings,Winnipeg Jets,Detroit Red Wings,Winnipeg Jets,5,1,REG
+2017-12-06,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,New York Islanders,6,2,REG
+2017-12-06,Dallas Stars,Nashville Predators,Nashville Predators,Dallas Stars,5,2,REG
+2017-12-06,Colorado Avalanche,Buffalo Sabres,Buffalo Sabres,Colorado Avalanche,4,2,REG
+2017-12-06,Vancouver Canucks,Carolina Hurricanes,Vancouver Canucks,Carolina Hurricanes,3,0,REG
+2017-12-06,Vegas Golden Knights,Anaheim Ducks,Vegas Golden Knights,Anaheim Ducks,4,3,SO
+2017-12-06,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,Minnesota Wild,5,2,REG
+2017-12-07,Toronto Maple Leafs,Calgary Flames,Toronto Maple Leafs,Calgary Flames,2,1,SO
+2017-12-07,Washington Capitals,Chicago Blackhawks,Washington Capitals,Chicago Blackhawks,6,2,REG
+2017-12-07,Edmonton Oilers,Philadelphia Flyers,Philadelphia Flyers,Edmonton Oilers,4,2,REG
+2017-12-07,Anaheim Ducks,Ottawa Senators,Anaheim Ducks,Ottawa Senators,3,0,REG
+2017-12-08,Boston Bruins,Arizona Coyotes,Boston Bruins,Arizona Coyotes,5,1,REG
+2017-12-08,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,4,3,OT
+2017-12-08,Montreal Canadiens,Calgary Flames,Calgary Flames,Montreal Canadiens,3,2,OT
+2017-12-08,Tampa Bay Lightning,Colorado Avalanche,Tampa Bay Lightning,Colorado Avalanche,5,2,REG
+2017-12-08,Florida Panthers,Winnipeg Jets,Florida Panthers,Winnipeg Jets,6,4,REG
+2017-12-08,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,3,0,REG
+2017-12-08,Vancouver Canucks,Philadelphia Flyers,Philadelphia Flyers,Vancouver Canucks,4,1,REG
+2017-12-08,Los Angeles Kings,Ottawa Senators,Los Angeles Kings,Ottawa Senators,4,3,OT
+2017-12-08,San Jose Sharks,Carolina Hurricanes,San Jose Sharks,Carolina Hurricanes,5,4,OT
+2017-12-09,New Jersey Devils,Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,5,3,REG
+2017-12-09,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,4,2,REG
+2017-12-09,Nashville Predators,Vegas Golden Knights,Vegas Golden Knights,Nashville Predators,4,3,SO
+2017-12-09,Chicago Blackhawks,Buffalo Sabres,Chicago Blackhawks,Buffalo Sabres,3,2,OT
+2017-12-09,Anaheim Ducks,Minnesota Wild,Minnesota Wild,Anaheim Ducks,3,2,OT
+2017-12-09,Detroit Red Wings,St. Louis Blues,St. Louis Blues,Detroit Red Wings,5,1,REG
+2017-12-10,Boston Bruins,New York Islanders,Boston Bruins,New York Islanders,3,1,REG
+2017-12-10,Montreal Canadiens,Edmonton Oilers,Edmonton Oilers,Montreal Canadiens,6,2,REG
+2017-12-10,Tampa Bay Lightning,Winnipeg Jets,Tampa Bay Lightning,Winnipeg Jets,4,3,OT
+2017-12-10,Florida Panthers,Colorado Avalanche,Colorado Avalanche,Florida Panthers,7,3,REG
+2017-12-10,New York Rangers,New Jersey Devils,New York Rangers,New Jersey Devils,5,2,REG
+2017-12-10,Pittsburgh Penguins,Toronto Maple Leafs,Toronto Maple Leafs,Pittsburgh Penguins,4,3,REG
+2017-12-10,Dallas Stars,Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,5,3,REG
+2017-12-10,Calgary Flames,Vancouver Canucks,Calgary Flames,Vancouver Canucks,4,2,REG
+2017-12-10,San Jose Sharks,Ottawa Senators,San Jose Sharks,Ottawa Senators,4,0,REG
+2017-12-10,Los Angeles Kings,Carolina Hurricanes,Los Angeles Kings,Carolina Hurricanes,3,2,OT
+2017-12-11,Chicago Blackhawks,Arizona Coyotes,Chicago Blackhawks,Arizona Coyotes,3,1,REG
+2017-12-11,St. Louis Blues,Buffalo Sabres,St. Louis Blues,Buffalo Sabres,3,2,OT
+2017-12-11,San Jose Sharks,Minnesota Wild,Minnesota Wild,San Jose Sharks,4,3,OT
+2017-12-12,New York Islanders,Washington Capitals,New York Islanders,Washington Capitals,3,1,REG
+2017-12-12,New York Rangers,Dallas Stars,Dallas Stars,New York Rangers,2,1,SO
+2017-12-12,Pittsburgh Penguins,Colorado Avalanche,Colorado Avalanche,Pittsburgh Penguins,2,1,REG
+2017-12-12,Detroit Red Wings,Florida Panthers,Florida Panthers,Detroit Red Wings,2,1,OT
+2017-12-12,Winnipeg Jets,Vancouver Canucks,Winnipeg Jets,Vancouver Canucks,5,1,REG
+2017-12-12,Anaheim Ducks,Carolina Hurricanes,Anaheim Ducks,Carolina Hurricanes,3,2,REG
+2017-12-13,Buffalo Sabres,Ottawa Senators,Buffalo Sabres,Ottawa Senators,3,2,REG
+2017-12-13,New Jersey Devils,Los Angeles Kings,New Jersey Devils,Los Angeles Kings,5,1,REG
+2017-12-13,Philadelphia Flyers,Toronto Maple Leafs,Philadelphia Flyers,Toronto Maple Leafs,4,2,REG
+2017-12-13,Washington Capitals,Colorado Avalanche,Washington Capitals,Colorado Avalanche,5,2,REG
+2017-12-13,Columbus Blue Jackets,Edmonton Oilers,Edmonton Oilers,Columbus Blue Jackets,6,2,REG
+2017-12-13,St. Louis Blues,Tampa Bay Lightning,Tampa Bay Lightning,St. Louis Blues,3,0,REG
+2017-12-13,Minnesota Wild,Calgary Flames,Minnesota Wild,Calgary Flames,2,1,SO
+2017-12-13,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,Florida Panthers,3,2,OT
+2017-12-13,Vegas Golden Knights,Carolina Hurricanes,Carolina Hurricanes,Vegas Golden Knights,3,2,SO
+2017-12-14,Ottawa Senators,New York Rangers,Ottawa Senators,New York Rangers,3,2,REG
+2017-12-14,New York Islanders,Dallas Stars,Dallas Stars,New York Islanders,5,2,REG
+2017-12-14,Detroit Red Wings,Boston Bruins,Boston Bruins,Detroit Red Wings,3,2,OT
+2017-12-14,Vancouver Canucks,Nashville Predators,Nashville Predators,Vancouver Canucks,5,1,REG
+2017-12-15,Boston Bruins,Washington Capitals,Washington Capitals,Boston Bruins,5,3,REG
+2017-12-15,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,2,1,REG
+2017-12-15,Columbus Blue Jackets,New York Islanders,Columbus Blue Jackets,New York Islanders,6,4,REG
+2017-12-15,Montreal Canadiens,New Jersey Devils,Montreal Canadiens,New Jersey Devils,2,1,OT
+2017-12-15,St. Louis Blues,Anaheim Ducks,Anaheim Ducks,St. Louis Blues,3,1,REG
+2017-12-15,Minnesota Wild,Toronto Maple Leafs,Minnesota Wild,Toronto Maple Leafs,2,0,REG
+2017-12-15,Winnipeg Jets,Chicago Blackhawks,Chicago Blackhawks,Winnipeg Jets,5,1,REG
+2017-12-15,Colorado Avalanche,Florida Panthers,Colorado Avalanche,Florida Panthers,2,1,REG
+2017-12-15,Calgary Flames,San Jose Sharks,San Jose Sharks,Calgary Flames,3,2,REG
+2017-12-15,Edmonton Oilers,Nashville Predators,Nashville Predators,Edmonton Oilers,4,0,REG
+2017-12-15,Arizona Coyotes,Tampa Bay Lightning,Tampa Bay Lightning,Arizona Coyotes,4,1,REG
+2017-12-15,Vegas Golden Knights,Pittsburgh Penguins,Vegas Golden Knights,Pittsburgh Penguins,2,1,REG
+2017-12-16,Buffalo Sabres,Carolina Hurricanes,Carolina Hurricanes,Buffalo Sabres,5,4,OT
+2017-12-16,New Jersey Devils,Dallas Stars,New Jersey Devils,Dallas Stars,5,2,REG
+2017-12-16,New York Rangers,Los Angeles Kings,New York Rangers,Los Angeles Kings,4,2,REG
+2017-12-16,Detroit Red Wings,Toronto Maple Leafs,Detroit Red Wings,Toronto Maple Leafs,3,1,REG
+2017-12-16,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,San Jose Sharks,4,3,OT
+2017-12-16,Minnesota Wild,Edmonton Oilers,Edmonton Oilers,Minnesota Wild,3,2,REG
+2017-12-16,Boston Bruins,New York Rangers,New York Rangers,Boston Bruins,3,2,OT
+2017-12-17,Ottawa Senators,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,3,0,REG
+2017-12-17,New York Islanders,Los Angeles Kings,New York Islanders,Los Angeles Kings,4,3,OT
+2017-12-17,Philadelphia Flyers,Dallas Stars,Philadelphia Flyers,Dallas Stars,2,1,OT
+2017-12-17,St. Louis Blues,Winnipeg Jets,St. Louis Blues,Winnipeg Jets,2,0,REG
+2017-12-17,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,2,1,REG
+2017-12-17,Washington Capitals,Anaheim Ducks,Washington Capitals,Anaheim Ducks,3,2,OT
+2017-12-17,Arizona Coyotes,Pittsburgh Penguins,Pittsburgh Penguins,Arizona Coyotes,4,2,REG
+2017-12-17,Colorado Avalanche,Tampa Bay Lightning,Tampa Bay Lightning,Colorado Avalanche,6,5,REG
+2017-12-17,Calgary Flames,Nashville Predators,Nashville Predators,Calgary Flames,2,0,REG
+2017-12-17,Winnipeg Jets,St. Louis Blues,Winnipeg Jets,St. Louis Blues,4,0,REG
+2017-12-18,Chicago Blackhawks,Minnesota Wild,Chicago Blackhawks,Minnesota Wild,4,1,REG
+2017-12-18,Vancouver Canucks,Calgary Flames,Calgary Flames,Vancouver Canucks,5,1,REG
+2017-12-18,Vegas Golden Knights,Florida Panthers,Vegas Golden Knights,Florida Panthers,5,2,REG
+2017-12-19,Boston Bruins,Columbus Blue Jackets,Boston Bruins,Columbus Blue Jackets,6,2,REG
+2017-12-19,New Jersey Devils,Anaheim Ducks,New Jersey Devils,Anaheim Ducks,5,3,REG
+2017-12-19,Philadelphia Flyers,Los Angeles Kings,Los Angeles Kings,Philadelphia Flyers,4,1,REG
+2017-12-19,Colorado Avalanche,Pittsburgh Penguins,Colorado Avalanche,Pittsburgh Penguins,4,2,REG
+2017-12-19,Edmonton Oilers,San Jose Sharks,Edmonton Oilers,San Jose Sharks,5,3,REG
+2017-12-19,Toronto Maple Leafs,Carolina Hurricanes,Toronto Maple Leafs,Carolina Hurricanes,5,1,REG
+2017-12-20,New York Islanders,Detroit Red Wings,Detroit Red Wings,New York Islanders,6,3,REG
+2017-12-20,New York Rangers,Anaheim Ducks,New York Rangers,Anaheim Ducks,4,1,REG
+2017-12-20,Ottawa Senators,Minnesota Wild,Minnesota Wild,Ottawa Senators,6,4,REG
+2017-12-20,Buffalo Sabres,Boston Bruins,Boston Bruins,Buffalo Sabres,3,0,REG
+2017-12-20,Nashville Predators,Winnipeg Jets,Winnipeg Jets,Nashville Predators,6,4,REG
+2017-12-20,Dallas Stars,Washington Capitals,Washington Capitals,Dallas Stars,4,3,OT
+2017-12-20,Arizona Coyotes,Florida Panthers,Florida Panthers,Arizona Coyotes,3,2,REG
+2017-12-20,Vancouver Canucks,Montreal Canadiens,Montreal Canadiens,Vancouver Canucks,7,5,REG
+2017-12-20,Vegas Golden Knights,Tampa Bay Lightning,Vegas Golden Knights,Tampa Bay Lightning,4,3,REG
+2017-12-21,Columbus Blue Jackets,Toronto Maple Leafs,Columbus Blue Jackets,Toronto Maple Leafs,4,2,REG
+2017-12-21,Philadelphia Flyers,Detroit Red Wings,Philadelphia Flyers,Detroit Red Wings,4,3,REG
+2017-12-21,Calgary Flames,St. Louis Blues,Calgary Flames,St. Louis Blues,2,1,REG
+2017-12-22,Boston Bruins,Winnipeg Jets,Boston Bruins,Winnipeg Jets,2,1,SO
+2017-12-22,New Jersey Devils,New York Rangers,New Jersey Devils,New York Rangers,4,3,SO
+2017-12-22,New York Islanders,Anaheim Ducks,Anaheim Ducks,New York Islanders,5,4,OT
+2017-12-22,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,3,2,SO
+2017-12-22,Tampa Bay Lightning,Ottawa Senators,Tampa Bay Lightning,Ottawa Senators,4,3,SO
+2017-12-22,Nashville Predators,Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,4,1,REG
+2017-12-22,Dallas Stars,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,4,0,REG
+2017-12-22,Edmonton Oilers,St. Louis Blues,Edmonton Oilers,St. Louis Blues,3,2,REG
+2017-12-22,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,2,1,OT
+2017-12-22,San Jose Sharks,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,5,4,OT
+2017-12-23,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,4,2,REG
+2017-12-23,Florida Panthers,Minnesota Wild,Florida Panthers,Minnesota Wild,4,2,REG
+2017-12-23,Calgary Flames,Montreal Canadiens,Montreal Canadiens,Calgary Flames,3,2,REG
+2017-12-23,Arizona Coyotes,Washington Capitals,Arizona Coyotes,Washington Capitals,3,2,OT
+2017-12-23,Boston Bruins,Detroit Red Wings,Boston Bruins,Detroit Red Wings,3,1,REG
+2017-12-23,New York Islanders,Winnipeg Jets,New York Islanders,Winnipeg Jets,5,2,REG
+2017-12-24,Tampa Bay Lightning,Minnesota Wild,Tampa Bay Lightning,Minnesota Wild,3,0,REG
+2017-12-24,New Jersey Devils,Chicago Blackhawks,New Jersey Devils,Chicago Blackhawks,4,1,REG
+2017-12-24,New York Rangers,Toronto Maple Leafs,Toronto Maple Leafs,New York Rangers,3,2,REG
+2017-12-24,Pittsburgh Penguins,Anaheim Ducks,Anaheim Ducks,Pittsburgh Penguins,4,0,REG
+2017-12-24,Carolina Hurricanes,Buffalo Sabres,Carolina Hurricanes,Buffalo Sabres,4,2,REG
+2017-12-24,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,2,1,SO
+2017-12-24,Edmonton Oilers,Montreal Canadiens,Edmonton Oilers,Montreal Canadiens,4,1,REG
+2017-12-24,Dallas Stars,Nashville Predators,Dallas Stars,Nashville Predators,4,3,SO
+2017-12-24,Arizona Coyotes,Colorado Avalanche,Colorado Avalanche,Arizona Coyotes,6,2,REG
+2017-12-24,Vegas Golden Knights,Washington Capitals,Vegas Golden Knights,Washington Capitals,3,0,REG
+2017-12-24,Vancouver Canucks,St. Louis Blues,St. Louis Blues,Vancouver Canucks,3,1,REG
+2017-12-24,San Jose Sharks,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,2,0,REG
+2017-12-28,Boston Bruins,Ottawa Senators,Boston Bruins,Ottawa Senators,5,1,REG
+2017-12-28,New Jersey Devils,Detroit Red Wings,New Jersey Devils,Detroit Red Wings,3,1,REG
+2017-12-28,New York Islanders,Buffalo Sabres,New York Islanders,Buffalo Sabres,3,2,OT
+2017-12-28,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,5,4,SO
+2017-12-28,Carolina Hurricanes,Montreal Canadiens,Carolina Hurricanes,Montreal Canadiens,3,1,REG
+2017-12-28,St. Louis Blues,Nashville Predators,Nashville Predators,St. Louis Blues,2,1,REG
+2017-12-28,Minnesota Wild,Dallas Stars,Minnesota Wild,Dallas Stars,4,2,REG
+2017-12-28,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,4,3,REG
+2017-12-28,Colorado Avalanche,Arizona Coyotes,Arizona Coyotes,Colorado Avalanche,3,1,REG
+2017-12-28,Anaheim Ducks,Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,4,1,REG
+2017-12-29,Washington Capitals,Boston Bruins,Washington Capitals,Boston Bruins,4,3,SO
+2017-12-29,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,3,1,REG
+2017-12-29,Florida Panthers,Philadelphia Flyers,Florida Panthers,Philadelphia Flyers,3,2,REG
+2017-12-29,Arizona Coyotes,Toronto Maple Leafs,Toronto Maple Leafs,Arizona Coyotes,7,4,REG
+2017-12-29,Vancouver Canucks,Chicago Blackhawks,Vancouver Canucks,Chicago Blackhawks,5,2,REG
+2017-12-29,Los Angeles Kings,Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,3,2,OT
+2017-12-29,San Jose Sharks,Calgary Flames,San Jose Sharks,Calgary Flames,3,2,SO
+2017-12-30,New Jersey Devils,Buffalo Sabres,Buffalo Sabres,New Jersey Devils,4,3,OT
+2017-12-30,Ottawa Senators,Columbus Blue Jackets,Ottawa Senators,Columbus Blue Jackets,5,4,REG
+2017-12-30,Detroit Red Wings,New York Rangers,Detroit Red Wings,New York Rangers,3,2,SO
+2017-12-30,Tampa Bay Lightning,Philadelphia Flyers,Philadelphia Flyers,Tampa Bay Lightning,5,3,REG
+2017-12-30,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,2,1,REG
+2017-12-30,Minnesota Wild,Nashville Predators,Minnesota Wild,Nashville Predators,4,2,REG
+2017-12-30,Winnipeg Jets,New York Islanders,Winnipeg Jets,New York Islanders,4,2,REG
+2017-12-30,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,4,2,REG
+2017-12-30,Colorado Avalanche,Toronto Maple Leafs,Colorado Avalanche,Toronto Maple Leafs,4,3,OT
+2017-12-30,Edmonton Oilers,Chicago Blackhawks,Chicago Blackhawks,Edmonton Oilers,4,3,OT
+2017-12-30,Anaheim Ducks,Calgary Flames,Anaheim Ducks,Calgary Flames,2,1,REG
+2017-12-31,Ottawa Senators,Boston Bruins,Boston Bruins,Ottawa Senators,4,0,REG
+2017-12-31,Florida Panthers,Montreal Canadiens,Florida Panthers,Montreal Canadiens,2,0,REG
+2017-12-31,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,5,2,REG
+2017-12-31,St. Louis Blues,Carolina Hurricanes,St. Louis Blues,Carolina Hurricanes,3,2,REG
+2017-12-31,Nashville Predators,Minnesota Wild,Nashville Predators,Minnesota Wild,3,0,REG
+2017-12-31,Vancouver Canucks,Los Angeles Kings,Los Angeles Kings,Vancouver Canucks,4,3,REG
+2017-12-31,Vegas Golden Knights,Toronto Maple Leafs,Vegas Golden Knights,Toronto Maple Leafs,6,3,REG
+2017-12-31,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,5,2,REG
+2017-12-31,Columbus Blue Jackets,Tampa Bay Lightning,Tampa Bay Lightning,Columbus Blue Jackets,4,0,REG
+2018-01-01,Detroit Red Wings,Pittsburgh Penguins,Detroit Red Wings,Pittsburgh Penguins,4,1,REG
+2018-01-01,Edmonton Oilers,Winnipeg Jets,Winnipeg Jets,Edmonton Oilers,4,0,REG
+2018-01-01,Dallas Stars,San Jose Sharks,Dallas Stars,San Jose Sharks,4,0,REG
+2018-01-01,Colorado Avalanche,New York Islanders,Colorado Avalanche,New York Islanders,5,1,REG
+2018-01-01,Calgary Flames,Chicago Blackhawks,Calgary Flames,Chicago Blackhawks,4,3,OT
+2018-01-01,Buffalo Sabres,New York Rangers,New York Rangers,Buffalo Sabres,3,2,OT
+2018-01-03,Toronto Maple Leafs,Tampa Bay Lightning,Tampa Bay Lightning,Toronto Maple Leafs,2,0,REG
+2018-01-03,New York Islanders,Boston Bruins,Boston Bruins,New York Islanders,5,1,REG
+2018-01-03,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,5,1,REG
+2018-01-03,Carolina Hurricanes,Washington Capitals,Washington Capitals,Carolina Hurricanes,5,4,OT
+2018-01-03,Montreal Canadiens,San Jose Sharks,San Jose Sharks,Montreal Canadiens,4,1,REG
+2018-01-03,St. Louis Blues,New Jersey Devils,St. Louis Blues,New Jersey Devils,3,2,SO
+2018-01-03,Minnesota Wild,Florida Panthers,Minnesota Wild,Florida Panthers,5,1,REG
+2018-01-03,Dallas Stars,Columbus Blue Jackets,Columbus Blue Jackets,Dallas Stars,2,1,REG
+2018-01-03,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,3,2,OT
+2018-01-03,Edmonton Oilers,Los Angeles Kings,Los Angeles Kings,Edmonton Oilers,4,0,REG
+2018-01-03,Vancouver Canucks,Anaheim Ducks,Anaheim Ducks,Vancouver Canucks,4,0,REG
+2018-01-03,Vegas Golden Knights,Nashville Predators,Vegas Golden Knights,Nashville Predators,3,0,REG
+2018-01-04,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,Ottawa Senators,2,1,OT
+2018-01-04,New York Rangers,Chicago Blackhawks,Chicago Blackhawks,New York Rangers,5,2,REG
+2018-01-05,Toronto Maple Leafs,San Jose Sharks,Toronto Maple Leafs,San Jose Sharks,3,2,SO
+2018-01-05,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,New York Islanders,6,4,REG
+2018-01-05,Pittsburgh Penguins,Carolina Hurricanes,Carolina Hurricanes,Pittsburgh Penguins,4,0,REG
+2018-01-05,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,2,1,SO
+2018-01-05,St. Louis Blues,Vegas Golden Knights,St. Louis Blues,Vegas Golden Knights,2,1,REG
+2018-01-05,Minnesota Wild,Buffalo Sabres,Minnesota Wild,Buffalo Sabres,6,2,REG
+2018-01-05,Dallas Stars,New Jersey Devils,Dallas Stars,New Jersey Devils,4,3,REG
+2018-01-05,Colorado Avalanche,Columbus Blue Jackets,Colorado Avalanche,Columbus Blue Jackets,2,0,REG
+2018-01-05,Calgary Flames,Los Angeles Kings,Calgary Flames,Los Angeles Kings,4,3,REG
+2018-01-05,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,2,1,SO
+2018-01-05,Arizona Coyotes,Nashville Predators,Arizona Coyotes,Nashville Predators,3,2,OT
+2018-01-06,New York Islanders,Pittsburgh Penguins,Pittsburgh Penguins,New York Islanders,4,0,REG
+2018-01-06,Ottawa Senators,San Jose Sharks,Ottawa Senators,San Jose Sharks,6,5,OT
+2018-01-06,Detroit Red Wings,Florida Panthers,Detroit Red Wings,Florida Panthers,4,2,REG
+2018-01-06,Winnipeg Jets,Buffalo Sabres,Winnipeg Jets,Buffalo Sabres,4,3,REG
+2018-01-06,Chicago Blackhawks,Vegas Golden Knights,Vegas Golden Knights,Chicago Blackhawks,5,4,REG
+2018-01-06,Philadelphia Flyers,St. Louis Blues,Philadelphia Flyers,St. Louis Blues,6,3,REG
+2018-01-06,Dallas Stars,Edmonton Oilers,Dallas Stars,Edmonton Oilers,5,1,REG
+2018-01-07,Boston Bruins,Carolina Hurricanes,Boston Bruins,Carolina Hurricanes,5,1,REG
+2018-01-07,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,3,2,SO
+2018-01-07,Ottawa Senators,Tampa Bay Lightning,Ottawa Senators,Tampa Bay Lightning,6,3,REG
+2018-01-07,Arizona Coyotes,New York Rangers,New York Rangers,Arizona Coyotes,2,1,SO
+2018-01-07,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,Minnesota Wild,6,2,REG
+2018-01-07,Calgary Flames,Anaheim Ducks,Calgary Flames,Anaheim Ducks,3,2,REG
+2018-01-07,Los Angeles Kings,Nashville Predators,Nashville Predators,Los Angeles Kings,4,3,REG
+2018-01-07,New York Islanders,New Jersey Devils,New York Islanders,New Jersey Devils,5,4,SO
+2018-01-07,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,4,1,REG
+2018-01-07,Washington Capitals,St. Louis Blues,Washington Capitals,St. Louis Blues,4,3,OT
+2018-01-07,Chicago Blackhawks,Edmonton Oilers,Chicago Blackhawks,Edmonton Oilers,4,1,REG
+2018-01-07,Winnipeg Jets,San Jose Sharks,Winnipeg Jets,San Jose Sharks,4,1,REG
+2018-01-07,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,Florida Panthers,3,2,SO
+2018-01-08,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,5,2,REG
+2018-01-08,Detroit Red Wings,Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,5,2,REG
+2018-01-08,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,Boston Bruins,6,5,OT
+2018-01-08,Vegas Golden Knights,New York Rangers,Vegas Golden Knights,New York Rangers,2,1,REG
+2018-01-09,Toronto Maple Leafs,Columbus Blue Jackets,Columbus Blue Jackets,Toronto Maple Leafs,3,2,OT
+2018-01-10,Buffalo Sabres,Winnipeg Jets,Winnipeg Jets,Buffalo Sabres,7,4,REG
+2018-01-10,Washington Capitals,Vancouver Canucks,Washington Capitals,Vancouver Canucks,3,1,REG
+2018-01-10,Ottawa Senators,Chicago Blackhawks,Chicago Blackhawks,Ottawa Senators,6,2,REG
+2018-01-10,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,5,4,REG
+2018-01-10,St. Louis Blues,Florida Panthers,Florida Panthers,St. Louis Blues,7,4,REG
+2018-01-10,Nashville Predators,Edmonton Oilers,Nashville Predators,Edmonton Oilers,2,1,REG
+2018-01-10,Minnesota Wild,Calgary Flames,Calgary Flames,Minnesota Wild,3,2,OT
+2018-01-11,Toronto Maple Leafs,Ottawa Senators,Ottawa Senators,Toronto Maple Leafs,4,3,REG
+2018-01-11,Chicago Blackhawks,Minnesota Wild,Minnesota Wild,Chicago Blackhawks,2,1,REG
+2018-01-12,Buffalo Sabres,Columbus Blue Jackets,Buffalo Sabres,Columbus Blue Jackets,3,1,REG
+2018-01-12,Washington Capitals,Carolina Hurricanes,Carolina Hurricanes,Washington Capitals,3,1,REG
+2018-01-12,Tampa Bay Lightning,Calgary Flames,Calgary Flames,Tampa Bay Lightning,5,1,REG
+2018-01-13,Columbus Blue Jackets,Vancouver Canucks,Vancouver Canucks,Columbus Blue Jackets,5,2,REG
+2018-01-13,Florida Panthers,Calgary Flames,Calgary Flames,Florida Panthers,4,2,REG
+2018-01-13,Carolina Hurricanes,Washington Capitals,Washington Capitals,Carolina Hurricanes,4,3,REG
+2018-01-13,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,2,1,REG
+2018-01-13,Arizona Coyotes,Edmonton Oilers,Edmonton Oilers,Arizona Coyotes,4,2,REG
+2018-01-13,New York Rangers,New York Islanders,New York Islanders,New York Rangers,6,2,REG
+2018-01-13,Pittsburgh Penguins,Detroit Red Wings,Pittsburgh Penguins,Detroit Red Wings,4,1,REG
+2018-01-14,Montreal Canadiens,Boston Bruins,Boston Bruins,Montreal Canadiens,4,3,SO
+2018-01-14,New Jersey Devils,Philadelphia Flyers,Philadelphia Flyers,New Jersey Devils,5,3,REG
+2018-01-14,Minnesota Wild,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,4,1,REG
+2018-01-14,Dallas Stars,Colorado Avalanche,Colorado Avalanche,Dallas Stars,4,1,REG
+2018-01-14,Vegas Golden Knights,Edmonton Oilers,Edmonton Oilers,Vegas Golden Knights,3,2,OT
+2018-01-14,Los Angeles Kings,Anaheim Ducks,Anaheim Ducks,Los Angeles Kings,4,2,REG
+2018-01-14,San Jose Sharks,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,6,5,OT
+2018-01-14,Chicago Blackhawks,Detroit Red Wings,Detroit Red Wings,Chicago Blackhawks,4,0,REG
+2018-01-14,Carolina Hurricanes,Calgary Flames,Calgary Flames,Carolina Hurricanes,4,1,REG
+2018-01-15,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,5,2,REG
+2018-01-15,Minnesota Wild,Vancouver Canucks,Vancouver Canucks,Minnesota Wild,3,2,OT
+2018-01-15,Boston Bruins,Dallas Stars,Dallas Stars,Boston Bruins,3,2,OT
+2018-01-15,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,3,1,REG
+2018-01-15,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,4,1,REG
+2018-01-16,Montreal Canadiens,New York Islanders,New York Islanders,Montreal Canadiens,5,4,OT
+2018-01-17,Toronto Maple Leafs,St. Louis Blues,St. Louis Blues,Toronto Maple Leafs,2,1,OT
+2018-01-17,New York Islanders,New Jersey Devils,New Jersey Devils,New York Islanders,4,1,REG
+2018-01-17,New York Rangers,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,5,1,REG
+2018-01-17,Detroit Red Wings,Dallas Stars,Dallas Stars,Detroit Red Wings,4,2,REG
+2018-01-17,Arizona Coyotes,San Jose Sharks,San Jose Sharks,Arizona Coyotes,3,2,SO
+2018-01-18,Boston Bruins,Montreal Canadiens,Boston Bruins,Montreal Canadiens,4,1,REG
+2018-01-18,Anaheim Ducks,Pittsburgh Penguins,Anaheim Ducks,Pittsburgh Penguins,5,3,REG
+2018-01-19,New Jersey Devils,Washington Capitals,New Jersey Devils,Washington Capitals,4,3,OT
+2018-01-19,New York Islanders,Boston Bruins,Boston Bruins,New York Islanders,5,2,REG
+2018-01-19,Philadelphia Flyers,Toronto Maple Leafs,Philadelphia Flyers,Toronto Maple Leafs,3,2,OT
+2018-01-19,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,Dallas Stars,2,1,SO
+2018-01-19,New York Rangers,Buffalo Sabres,New York Rangers,Buffalo Sabres,4,3,REG
+2018-01-19,Ottawa Senators,St. Louis Blues,St. Louis Blues,Ottawa Senators,4,1,REG
+2018-01-19,Tampa Bay Lightning,Vegas Golden Knights,Vegas Golden Knights,Tampa Bay Lightning,4,1,REG
+2018-01-19,Nashville Predators,Arizona Coyotes,Nashville Predators,Arizona Coyotes,3,2,SO
+2018-01-19,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,5,3,REG
+2018-01-19,Los Angeles Kings,Pittsburgh Penguins,Pittsburgh Penguins,Los Angeles Kings,3,1,REG
+2018-01-20,Florida Panthers,Vegas Golden Knights,Florida Panthers,Vegas Golden Knights,4,3,OT
+2018-01-20,Washington Capitals,Montreal Canadiens,Montreal Canadiens,Washington Capitals,3,2,REG
+2018-01-20,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,2,1,REG
+2018-01-20,Buffalo Sabres,Dallas Stars,Dallas Stars,Buffalo Sabres,5,1,REG
+2018-01-20,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,3,1,REG
+2018-01-20,Colorado Avalanche,New York Rangers,Colorado Avalanche,New York Rangers,3,1,REG
+2018-01-20,Calgary Flames,Winnipeg Jets,Winnipeg Jets,Calgary Flames,2,1,SO
+2018-01-21,Montreal Canadiens,Boston Bruins,Boston Bruins,Montreal Canadiens,4,1,REG
+2018-01-21,Ottawa Senators,Toronto Maple Leafs,Toronto Maple Leafs,Ottawa Senators,4,3,REG
+2018-01-21,Detroit Red Wings,Carolina Hurricanes,Carolina Hurricanes,Detroit Red Wings,3,1,REG
+2018-01-21,St. Louis Blues,Arizona Coyotes,Arizona Coyotes,St. Louis Blues,5,2,REG
+2018-01-21,Nashville Predators,Florida Panthers,Nashville Predators,Florida Panthers,4,3,REG
+2018-01-21,San Jose Sharks,Pittsburgh Penguins,San Jose Sharks,Pittsburgh Penguins,2,1,REG
+2018-01-21,Chicago Blackhawks,New York Islanders,New York Islanders,Chicago Blackhawks,7,3,REG
+2018-01-21,Minnesota Wild,Tampa Bay Lightning,Minnesota Wild,Tampa Bay Lightning,5,2,REG
+2018-01-21,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,5,2,REG
+2018-01-21,Washington Capitals,Philadelphia Flyers,Philadelphia Flyers,Washington Capitals,2,1,OT
+2018-01-21,Carolina Hurricanes,Vegas Golden Knights,Vegas Golden Knights,Carolina Hurricanes,5,1,REG
+2018-01-22,Anaheim Ducks,San Jose Sharks,San Jose Sharks,Anaheim Ducks,6,2,REG
+2018-01-22,Los Angeles Kings,New York Rangers,Los Angeles Kings,New York Rangers,4,2,REG
+2018-01-23,Toronto Maple Leafs,Colorado Avalanche,Colorado Avalanche,Toronto Maple Leafs,4,2,REG
+2018-01-23,New Jersey Devils,Detroit Red Wings,Detroit Red Wings,New Jersey Devils,3,0,REG
+2018-01-23,Minnesota Wild,Ottawa Senators,Minnesota Wild,Ottawa Senators,3,1,REG
+2018-01-23,Chicago Blackhawks,Tampa Bay Lightning,Tampa Bay Lightning,Chicago Blackhawks,2,0,REG
+2018-01-23,Calgary Flames,Buffalo Sabres,Buffalo Sabres,Calgary Flames,2,1,OT
+2018-01-23,Arizona Coyotes,New York Islanders,Arizona Coyotes,New York Islanders,3,2,OT
+2018-01-24,Boston Bruins,New Jersey Devils,Boston Bruins,New Jersey Devils,3,2,REG
+2018-01-24,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,3,1,REG
+2018-01-24,Montreal Canadiens,Colorado Avalanche,Montreal Canadiens,Colorado Avalanche,4,2,REG
+2018-01-24,Detroit Red Wings,Philadelphia Flyers,Philadelphia Flyers,Detroit Red Wings,3,2,OT
+2018-01-24,St. Louis Blues,Ottawa Senators,St. Louis Blues,Ottawa Senators,3,0,REG
+2018-01-24,Nashville Predators,Tampa Bay Lightning,Tampa Bay Lightning,Nashville Predators,4,3,OT
+2018-01-24,Dallas Stars,Florida Panthers,Dallas Stars,Florida Panthers,5,1,REG
+2018-01-24,Edmonton Oilers,Buffalo Sabres,Buffalo Sabres,Edmonton Oilers,4,0,REG
+2018-01-24,Vancouver Canucks,Los Angeles Kings,Vancouver Canucks,Los Angeles Kings,6,2,REG
+2018-01-24,Vegas Golden Knights,Columbus Blue Jackets,Vegas Golden Knights,Columbus Blue Jackets,6,3,REG
+2018-01-24,Anaheim Ducks,New York Rangers,Anaheim Ducks,New York Rangers,6,3,REG
+2018-01-24,San Jose Sharks,Winnipeg Jets,Winnipeg Jets,San Jose Sharks,5,4,OT
+2018-01-25,Chicago Blackhawks,Toronto Maple Leafs,Toronto Maple Leafs,Chicago Blackhawks,3,2,OT
+2018-01-25,Calgary Flames,Los Angeles Kings,Los Angeles Kings,Calgary Flames,2,1,OT
+2018-01-26,New Jersey Devils,Nashville Predators,Nashville Predators,New Jersey Devils,3,0,REG
+2018-01-26,Philadelphia Flyers,Tampa Bay Lightning,Tampa Bay Lightning,Philadelphia Flyers,5,1,REG
+2018-01-26,Pittsburgh Penguins,Minnesota Wild,Pittsburgh Penguins,Minnesota Wild,6,3,REG
+2018-01-26,Montreal Canadiens,Carolina Hurricanes,Carolina Hurricanes,Montreal Canadiens,6,5,REG
+2018-01-26,Ottawa Senators,Boston Bruins,Boston Bruins,Ottawa Senators,3,2,REG
+2018-01-26,Detroit Red Wings,Chicago Blackhawks,Chicago Blackhawks,Detroit Red Wings,5,1,REG
+2018-01-26,Florida Panthers,Washington Capitals,Washington Capitals,Florida Panthers,4,2,REG
+2018-01-26,St. Louis Blues,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,3,1,REG
+2018-01-26,Dallas Stars,Toronto Maple Leafs,Toronto Maple Leafs,Dallas Stars,4,1,REG
+2018-01-26,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,4,3,SO
+2018-01-26,Arizona Coyotes,Columbus Blue Jackets,Columbus Blue Jackets,Arizona Coyotes,2,1,REG
+2018-01-26,Vancouver Canucks,Buffalo Sabres,Buffalo Sabres,Vancouver Canucks,4,0,REG
+2018-01-26,Vegas Golden Knights,New York Islanders,New York Islanders,Vegas Golden Knights,2,1,REG
+2018-01-26,Anaheim Ducks,Winnipeg Jets,Anaheim Ducks,Winnipeg Jets,4,3,SO
+2018-01-26,San Jose Sharks,New York Rangers,New York Rangers,San Jose Sharks,6,5,REG
+2018-01-31,Boston Bruins,Anaheim Ducks,Anaheim Ducks,Boston Bruins,3,1,REG
+2018-01-31,Buffalo Sabres,New Jersey Devils,New Jersey Devils,Buffalo Sabres,3,1,REG
+2018-01-31,New York Islanders,Florida Panthers,Florida Panthers,New York Islanders,4,1,REG
+2018-01-31,Pittsburgh Penguins,San Jose Sharks,Pittsburgh Penguins,San Jose Sharks,5,2,REG
+2018-01-31,Carolina Hurricanes,Ottawa Senators,Carolina Hurricanes,Ottawa Senators,2,1,REG
+2018-01-31,Columbus Blue Jackets,Minnesota Wild,Minnesota Wild,Columbus Blue Jackets,3,2,SO
+2018-01-31,St. Louis Blues,Montreal Canadiens,St. Louis Blues,Montreal Canadiens,3,1,REG
+2018-01-31,Nashville Predators,Chicago Blackhawks,Chicago Blackhawks,Nashville Predators,2,1,REG
+2018-01-31,Winnipeg Jets,Tampa Bay Lightning,Winnipeg Jets,Tampa Bay Lightning,3,1,REG
+2018-01-31,Dallas Stars,Los Angeles Kings,Los Angeles Kings,Dallas Stars,3,0,REG
+2018-01-31,Calgary Flames,Vegas Golden Knights,Vegas Golden Knights,Calgary Flames,4,2,REG
+2018-01-31,Vancouver Canucks,Colorado Avalanche,Vancouver Canucks,Colorado Avalanche,4,3,OT
+2018-02-01,Toronto Maple Leafs,New York Islanders,Toronto Maple Leafs,New York Islanders,4,0,REG
+2018-02-01,Detroit Red Wings,San Jose Sharks,Detroit Red Wings,San Jose Sharks,2,1,SO
+2018-02-01,Washington Capitals,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,5,3,REG
+2018-02-02,Boston Bruins,St. Louis Blues,Boston Bruins,St. Louis Blues,3,1,REG
+2018-02-02,Buffalo Sabres,Florida Panthers,Florida Panthers,Buffalo Sabres,4,2,REG
+2018-02-02,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,4,3,REG
+2018-02-02,New York Rangers,Toronto Maple Leafs,Toronto Maple Leafs,New York Rangers,4,0,REG
+2018-02-02,Carolina Hurricanes,Montreal Canadiens,Carolina Hurricanes,Montreal Canadiens,2,0,REG
+2018-02-02,Ottawa Senators,Anaheim Ducks,Ottawa Senators,Anaheim Ducks,2,1,OT
+2018-02-02,Winnipeg Jets,Vegas Golden Knights,Vegas Golden Knights,Winnipeg Jets,3,2,OT
+2018-02-02,Nashville Predators,Los Angeles Kings,Nashville Predators,Los Angeles Kings,4,0,REG
+2018-02-02,Calgary Flames,Tampa Bay Lightning,Tampa Bay Lightning,Calgary Flames,7,4,REG
+2018-02-02,Edmonton Oilers,Colorado Avalanche,Colorado Avalanche,Edmonton Oilers,4,3,OT
+2018-02-02,Arizona Coyotes,Dallas Stars,Dallas Stars,Arizona Coyotes,4,1,REG
+2018-02-02,Vancouver Canucks,Chicago Blackhawks,Vancouver Canucks,Chicago Blackhawks,4,2,REG
+2018-02-03,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,7,4,REG
+2018-02-03,Carolina Hurricanes,Detroit Red Wings,Detroit Red Wings,Carolina Hurricanes,4,1,REG
+2018-02-03,Columbus Blue Jackets,San Jose Sharks,San Jose Sharks,Columbus Blue Jackets,3,1,REG
+2018-02-03,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,5,2,REG
+2018-02-03,Montreal Canadiens,Anaheim Ducks,Montreal Canadiens,Anaheim Ducks,5,2,REG
+2018-02-03,Philadelphia Flyers,Ottawa Senators,Ottawa Senators,Philadelphia Flyers,4,3,SO
+2018-02-04,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,4,1,REG
+2018-02-04,Florida Panthers,Detroit Red Wings,Florida Panthers,Detroit Red Wings,3,2,REG
+2018-02-04,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,3,1,REG
+2018-02-04,New York Islanders,Columbus Blue Jackets,New York Islanders,Columbus Blue Jackets,4,3,REG
+2018-02-04,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,3,0,REG
+2018-02-04,Nashville Predators,New York Rangers,Nashville Predators,New York Rangers,5,2,REG
+2018-02-04,Dallas Stars,Minnesota Wild,Dallas Stars,Minnesota Wild,5,1,REG
+2018-02-04,Calgary Flames,Chicago Blackhawks,Calgary Flames,Chicago Blackhawks,4,3,OT
+2018-02-04,Vancouver Canucks,Tampa Bay Lightning,Tampa Bay Lightning,Vancouver Canucks,4,2,REG
+2018-02-04,Los Angeles Kings,Arizona Coyotes,Los Angeles Kings,Arizona Coyotes,4,0,REG
+2018-02-04,Washington Capitals,Vegas Golden Knights,Vegas Golden Knights,Washington Capitals,4,3,REG
+2018-02-04,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,Ottawa Senators,4,1,REG
+2018-02-04,Carolina Hurricanes,San Jose Sharks,San Jose Sharks,Carolina Hurricanes,3,1,REG
+2018-02-06,Toronto Maple Leafs,Anaheim Ducks,Toronto Maple Leafs,Anaheim Ducks,7,4,REG
+2018-02-06,New York Islanders,Nashville Predators,Nashville Predators,New York Islanders,5,4,OT
+2018-02-06,Dallas Stars,New York Rangers,Dallas Stars,New York Rangers,2,1,REG
+2018-02-06,Edmonton Oilers,Tampa Bay Lightning,Edmonton Oilers,Tampa Bay Lightning,6,2,REG
+2018-02-07,Buffalo Sabres,Anaheim Ducks,Anaheim Ducks,Buffalo Sabres,4,3,OT
+2018-02-07,Pittsburgh Penguins,Vegas Golden Knights,Pittsburgh Penguins,Vegas Golden Knights,5,4,REG
+2018-02-07,Carolina Hurricanes,Philadelphia Flyers,Philadelphia Flyers,Carolina Hurricanes,2,1,OT
+2018-02-07,Columbus Blue Jackets,Washington Capitals,Washington Capitals,Columbus Blue Jackets,3,2,REG
+2018-02-07,Ottawa Senators,New Jersey Devils,Ottawa Senators,New Jersey Devils,5,3,REG
+2018-02-07,Detroit Red Wings,Boston Bruins,Boston Bruins,Detroit Red Wings,3,2,REG
+2018-02-07,Florida Panthers,Vancouver Canucks,Florida Panthers,Vancouver Canucks,3,1,REG
+2018-02-07,St. Louis Blues,Minnesota Wild,Minnesota Wild,St. Louis Blues,6,2,REG
+2018-02-07,Winnipeg Jets,Arizona Coyotes,Winnipeg Jets,Arizona Coyotes,4,3,REG
+2018-02-07,Chicago Blackhawks,Calgary Flames,Calgary Flames,Chicago Blackhawks,3,2,REG
+2018-02-07,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,3,1,REG
+2018-02-08,Toronto Maple Leafs,Nashville Predators,Toronto Maple Leafs,Nashville Predators,3,2,SO
+2018-02-08,New York Rangers,Boston Bruins,Boston Bruins,New York Rangers,5,1,REG
+2018-02-08,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,5,2,REG
+2018-02-09,Buffalo Sabres,New York Islanders,Buffalo Sabres,New York Islanders,4,3,REG
+2018-02-09,New Jersey Devils,Calgary Flames,Calgary Flames,New Jersey Devils,3,2,REG
+2018-02-09,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,5,3,REG
+2018-02-09,Ottawa Senators,Nashville Predators,Ottawa Senators,Nashville Predators,4,3,OT
+2018-02-09,Tampa Bay Lightning,Vancouver Canucks,Tampa Bay Lightning,Vancouver Canucks,5,2,REG
+2018-02-09,St. Louis Blues,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,5,1,REG
+2018-02-09,Minnesota Wild,Arizona Coyotes,Arizona Coyotes,Minnesota Wild,4,3,OT
+2018-02-09,Chicago Blackhawks,Dallas Stars,Dallas Stars,Chicago Blackhawks,4,2,REG
+2018-02-09,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,5,3,REG
+2018-02-10,New York Islanders,Detroit Red Wings,New York Islanders,Detroit Red Wings,7,6,OT
+2018-02-10,New York Rangers,Calgary Flames,New York Rangers,Calgary Flames,4,3,REG
+2018-02-10,Washington Capitals,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,4,2,REG
+2018-02-10,Florida Panthers,Los Angeles Kings,Los Angeles Kings,Florida Panthers,3,1,REG
+2018-02-10,Carolina Hurricanes,Vancouver Canucks,Carolina Hurricanes,Vancouver Canucks,4,1,REG
+2018-02-10,Winnipeg Jets,St. Louis Blues,St. Louis Blues,Winnipeg Jets,5,2,REG
+2018-02-10,Dallas Stars,Pittsburgh Penguins,Dallas Stars,Pittsburgh Penguins,4,3,SO
+2018-02-10,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,3,2,REG
+2018-02-11,Boston Bruins,Buffalo Sabres,Buffalo Sabres,Boston Bruins,4,2,REG
+2018-02-11,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,6,3,REG
+2018-02-11,Montreal Canadiens,Nashville Predators,Nashville Predators,Montreal Canadiens,3,2,SO
+2018-02-11,Columbus Blue Jackets,New Jersey Devils,Columbus Blue Jackets,New Jersey Devils,5,1,REG
+2018-02-11,Tampa Bay Lightning,Los Angeles Kings,Tampa Bay Lightning,Los Angeles Kings,4,3,REG
+2018-02-11,Carolina Hurricanes,Colorado Avalanche,Carolina Hurricanes,Colorado Avalanche,3,1,REG
+2018-02-11,Minnesota Wild,Chicago Blackhawks,Minnesota Wild,Chicago Blackhawks,3,0,REG
+2018-02-11,Arizona Coyotes,Philadelphia Flyers,Philadelphia Flyers,Arizona Coyotes,4,3,SO
+2018-02-11,San Jose Sharks,Edmonton Oilers,San Jose Sharks,Edmonton Oilers,6,4,REG
+2018-02-11,St. Louis Blues,Pittsburgh Penguins,Pittsburgh Penguins,St. Louis Blues,4,1,REG
+2018-02-11,Washington Capitals,Detroit Red Wings,Detroit Red Wings,Washington Capitals,5,4,OT
+2018-02-11,Winnipeg Jets,New York Rangers,New York Rangers,Winnipeg Jets,3,1,REG
+2018-02-11,Dallas Stars,Vancouver Canucks,Vancouver Canucks,Dallas Stars,4,0,REG
+2018-02-12,Buffalo Sabres,Colorado Avalanche,Colorado Avalanche,Buffalo Sabres,5,4,REG
+2018-02-12,New Jersey Devils,Boston Bruins,Boston Bruins,New Jersey Devils,5,3,REG
+2018-02-12,New York Islanders,Calgary Flames,Calgary Flames,New York Islanders,3,2,REG
+2018-02-12,Vegas Golden Knights,Philadelphia Flyers,Philadelphia Flyers,Vegas Golden Knights,4,1,REG
+2018-02-12,Anaheim Ducks,San Jose Sharks,San Jose Sharks,Anaheim Ducks,3,2,SO
+2018-02-13,Toronto Maple Leafs,Tampa Bay Lightning,Toronto Maple Leafs,Tampa Bay Lightning,4,3,REG
+2018-02-13,Edmonton Oilers,Florida Panthers,Florida Panthers,Edmonton Oilers,7,5,REG
+2018-02-13,Arizona Coyotes,Chicago Blackhawks,Arizona Coyotes,Chicago Blackhawks,5,1,REG
+2018-02-14,Boston Bruins,Calgary Flames,Boston Bruins,Calgary Flames,5,2,REG
+2018-02-14,Buffalo Sabres,Tampa Bay Lightning,Buffalo Sabres,Tampa Bay Lightning,5,3,REG
+2018-02-14,New York Islanders,Columbus Blue Jackets,Columbus Blue Jackets,New York Islanders,4,1,REG
+2018-02-14,Philadelphia Flyers,New Jersey Devils,New Jersey Devils,Philadelphia Flyers,5,4,SO
+2018-02-14,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,6,3,REG
+2018-02-14,Carolina Hurricanes,Los Angeles Kings,Carolina Hurricanes,Los Angeles Kings,7,3,REG
+2018-02-14,Detroit Red Wings,Anaheim Ducks,Detroit Red Wings,Anaheim Ducks,2,1,REG
+2018-02-14,Nashville Predators,St. Louis Blues,Nashville Predators,St. Louis Blues,4,3,OT
+2018-02-14,Minnesota Wild,New York Rangers,Minnesota Wild,New York Rangers,3,2,REG
+2018-02-14,Winnipeg Jets,Washington Capitals,Winnipeg Jets,Washington Capitals,4,3,OT
+2018-02-14,Vegas Golden Knights,Chicago Blackhawks,Vegas Golden Knights,Chicago Blackhawks,5,2,REG
+2018-02-14,San Jose Sharks,Arizona Coyotes,Arizona Coyotes,San Jose Sharks,2,1,REG
+2018-02-15,Toronto Maple Leafs,Columbus Blue Jackets,Toronto Maple Leafs,Columbus Blue Jackets,6,3,REG
+2018-02-15,Colorado Avalanche,Montreal Canadiens,Colorado Avalanche,Montreal Canadiens,2,0,REG
+2018-02-15,Vancouver Canucks,Florida Panthers,Florida Panthers,Vancouver Canucks,4,3,REG
+2018-02-16,New Jersey Devils,Carolina Hurricanes,New Jersey Devils,Carolina Hurricanes,5,2,REG
+2018-02-16,New York Islanders,New York Rangers,New York Islanders,New York Rangers,3,0,REG
+2018-02-16,Pittsburgh Penguins,Los Angeles Kings,Pittsburgh Penguins,Los Angeles Kings,3,1,REG
+2018-02-16,Ottawa Senators,Buffalo Sabres,Ottawa Senators,Buffalo Sabres,3,2,OT
+2018-02-16,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,4,1,REG
+2018-02-16,Nashville Predators,Calgary Flames,Calgary Flames,Nashville Predators,4,3,REG
+2018-02-16,Minnesota Wild,Washington Capitals,Washington Capitals,Minnesota Wild,5,2,REG
+2018-02-16,Chicago Blackhawks,Anaheim Ducks,Anaheim Ducks,Chicago Blackhawks,3,2,REG
+2018-02-16,Arizona Coyotes,Montreal Canadiens,Arizona Coyotes,Montreal Canadiens,5,2,REG
+2018-02-16,Vegas Golden Knights,Edmonton Oilers,Vegas Golden Knights,Edmonton Oilers,4,1,REG
+2018-02-16,San Jose Sharks,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,4,1,REG
+2018-02-17,Columbus Blue Jackets,Philadelphia Flyers,Philadelphia Flyers,Columbus Blue Jackets,2,1,OT
+2018-02-17,Carolina Hurricanes,New York Islanders,New York Islanders,Carolina Hurricanes,3,0,REG
+2018-02-17,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,5,1,REG
+2018-02-17,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,2,1,REG
+2018-02-17,Buffalo Sabres,Los Angeles Kings,Los Angeles Kings,Buffalo Sabres,4,2,REG
+2018-02-17,Ottawa Senators,New York Rangers,Ottawa Senators,New York Rangers,6,3,REG
+2018-02-17,Minnesota Wild,Anaheim Ducks,Anaheim Ducks,Minnesota Wild,3,2,SO
+2018-02-18,Tampa Bay Lightning,New Jersey Devils,New Jersey Devils,Tampa Bay Lightning,4,3,REG
+2018-02-18,Pittsburgh Penguins,Toronto Maple Leafs,Pittsburgh Penguins,Toronto Maple Leafs,5,3,REG
+2018-02-18,Vegas Golden Knights,Montreal Canadiens,Vegas Golden Knights,Montreal Canadiens,6,3,REG
+2018-02-18,Nashville Predators,Detroit Red Wings,Detroit Red Wings,Nashville Predators,3,1,REG
+2018-02-18,Chicago Blackhawks,Washington Capitals,Chicago Blackhawks,Washington Capitals,5,1,REG
+2018-02-18,Calgary Flames,Florida Panthers,Florida Panthers,Calgary Flames,6,3,REG
+2018-02-18,Vancouver Canucks,Boston Bruins,Vancouver Canucks,Boston Bruins,5,1,REG
+2018-02-18,New York Rangers,Philadelphia Flyers,Philadelphia Flyers,New York Rangers,7,4,REG
+2018-02-18,Colorado Avalanche,Edmonton Oilers,Edmonton Oilers,Colorado Avalanche,4,2,REG
+2018-02-18,Carolina Hurricanes,New Jersey Devils,New Jersey Devils,Carolina Hurricanes,3,2,OT
+2018-02-18,Columbus Blue Jackets,Pittsburgh Penguins,Pittsburgh Penguins,Columbus Blue Jackets,5,2,REG
+2018-02-19,Detroit Red Wings,Toronto Maple Leafs,Toronto Maple Leafs,Detroit Red Wings,3,2,REG
+2018-02-19,Winnipeg Jets,Florida Panthers,Winnipeg Jets,Florida Panthers,6,2,REG
+2018-02-19,San Jose Sharks,Dallas Stars,San Jose Sharks,Dallas Stars,5,2,REG
+2018-02-19,New York Islanders,Minnesota Wild,Minnesota Wild,New York Islanders,5,3,REG
+2018-02-19,Buffalo Sabres,Washington Capitals,Washington Capitals,Buffalo Sabres,3,2,REG
+2018-02-19,Calgary Flames,Boston Bruins,Boston Bruins,Calgary Flames,2,1,OT
+2018-02-20,Nashville Predators,Ottawa Senators,Nashville Predators,Ottawa Senators,5,2,REG
+2018-02-20,Chicago Blackhawks,Los Angeles Kings,Los Angeles Kings,Chicago Blackhawks,3,1,REG
+2018-02-20,Vegas Golden Knights,Anaheim Ducks,Anaheim Ducks,Vegas Golden Knights,2,0,REG
+2018-02-21,New Jersey Devils,Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,2,1,REG
+2018-02-21,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,3,2,OT
+2018-02-21,Washington Capitals,Tampa Bay Lightning,Tampa Bay Lightning,Washington Capitals,4,2,REG
+2018-02-21,Detroit Red Wings,Nashville Predators,Nashville Predators,Detroit Red Wings,3,2,REG
+2018-02-21,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,3,2,REG
+2018-02-21,Winnipeg Jets,Los Angeles Kings,Los Angeles Kings,Winnipeg Jets,4,3,REG
+2018-02-21,Edmonton Oilers,Boston Bruins,Boston Bruins,Edmonton Oilers,3,2,REG
+2018-02-21,Vancouver Canucks,Colorado Avalanche,Colorado Avalanche,Vancouver Canucks,5,4,OT
+2018-02-22,Chicago Blackhawks,Ottawa Senators,Chicago Blackhawks,Ottawa Senators,3,2,SO
+2018-02-22,Anaheim Ducks,Dallas Stars,Anaheim Ducks,Dallas Stars,2,0,REG
+2018-02-22,Vegas Golden Knights,Calgary Flames,Vegas Golden Knights,Calgary Flames,7,3,REG
+2018-02-23,Toronto Maple Leafs,New York Islanders,Toronto Maple Leafs,New York Islanders,4,3,SO
+2018-02-23,New Jersey Devils,Minnesota Wild,Minnesota Wild,New Jersey Devils,4,2,REG
+2018-02-23,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,2,1,REG
+2018-02-23,Montreal Canadiens,New York Rangers,Montreal Canadiens,New York Rangers,3,1,REG
+2018-02-23,Ottawa Senators,Tampa Bay Lightning,Tampa Bay Lightning,Ottawa Senators,4,3,REG
+2018-02-23,Detroit Red Wings,Buffalo Sabres,Buffalo Sabres,Detroit Red Wings,3,2,OT
+2018-02-23,Florida Panthers,Washington Capitals,Florida Panthers,Washington Capitals,3,2,REG
+2018-02-23,Nashville Predators,San Jose Sharks,Nashville Predators,San Jose Sharks,5,1,REG
+2018-02-23,Edmonton Oilers,Colorado Avalanche,Edmonton Oilers,Colorado Avalanche,3,2,OT
+2018-02-23,Arizona Coyotes,Calgary Flames,Calgary Flames,Arizona Coyotes,5,2,REG
+2018-02-23,Los Angeles Kings,Dallas Stars,Dallas Stars,Los Angeles Kings,2,0,REG
+2018-02-24,New York Rangers,Minnesota Wild,Minnesota Wild,New York Rangers,4,1,REG
+2018-02-24,Carolina Hurricanes,Pittsburgh Penguins,Pittsburgh Penguins,Carolina Hurricanes,5,1,REG
+2018-02-24,St. Louis Blues,Winnipeg Jets,Winnipeg Jets,St. Louis Blues,4,0,REG
+2018-02-24,Chicago Blackhawks,San Jose Sharks,Chicago Blackhawks,San Jose Sharks,3,1,REG
+2018-02-24,Vegas Golden Knights,Vancouver Canucks,Vegas Golden Knights,Vancouver Canucks,6,3,REG
+2018-02-24,Ottawa Senators,Philadelphia Flyers,Philadelphia Flyers,Ottawa Senators,5,3,REG
+2018-02-24,Calgary Flames,Colorado Avalanche,Calgary Flames,Colorado Avalanche,5,1,REG
+2018-02-25,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,Boston Bruins,4,3,REG
+2018-02-25,Montreal Canadiens,Tampa Bay Lightning,Tampa Bay Lightning,Montreal Canadiens,4,3,SO
+2018-02-25,Detroit Red Wings,Carolina Hurricanes,Detroit Red Wings,Carolina Hurricanes,3,1,REG
+2018-02-25,Florida Panthers,Pittsburgh Penguins,Florida Panthers,Pittsburgh Penguins,6,5,REG
+2018-02-25,Washington Capitals,Buffalo Sabres,Washington Capitals,Buffalo Sabres,5,1,REG
+2018-02-25,Columbus Blue Jackets,Chicago Blackhawks,Columbus Blue Jackets,Chicago Blackhawks,3,2,REG
+2018-02-25,Dallas Stars,Winnipeg Jets,Winnipeg Jets,Dallas Stars,5,3,REG
+2018-02-25,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,2,0,REG
+2018-02-25,New Jersey Devils,New York Islanders,New Jersey Devils,New York Islanders,2,1,REG
+2018-02-25,Los Angeles Kings,Edmonton Oilers,Edmonton Oilers,Los Angeles Kings,4,3,REG
+2018-02-25,Nashville Predators,St. Louis Blues,Nashville Predators,St. Louis Blues,4,0,REG
+2018-02-25,Buffalo Sabres,Boston Bruins,Buffalo Sabres,Boston Bruins,4,1,REG
+2018-02-26,New York Rangers,Detroit Red Wings,Detroit Red Wings,New York Rangers,3,2,OT
+2018-02-26,Minnesota Wild,San Jose Sharks,Minnesota Wild,San Jose Sharks,3,2,OT
+2018-02-26,Anaheim Ducks,Edmonton Oilers,Edmonton Oilers,Anaheim Ducks,6,5,SO
+2018-02-26,Arizona Coyotes,Vancouver Canucks,Vancouver Canucks,Arizona Coyotes,3,1,REG
+2018-02-27,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,Washington Capitals,5,1,REG
+2018-02-27,Tampa Bay Lightning,Toronto Maple Leafs,Tampa Bay Lightning,Toronto Maple Leafs,4,3,SO
+2018-02-27,Colorado Avalanche,Vancouver Canucks,Colorado Avalanche,Vancouver Canucks,3,1,REG
+2018-02-27,Los Angeles Kings,Vegas Golden Knights,Los Angeles Kings,Vegas Golden Knights,3,2,OT
+2018-02-28,Boston Bruins,Carolina Hurricanes,Boston Bruins,Carolina Hurricanes,4,3,OT
+2018-02-28,Pittsburgh Penguins,New Jersey Devils,New Jersey Devils,Pittsburgh Penguins,3,2,REG
+2018-02-28,Washington Capitals,Ottawa Senators,Washington Capitals,Ottawa Senators,3,2,REG
+2018-02-28,Florida Panthers,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,3,2,OT
+2018-02-28,Minnesota Wild,St. Louis Blues,Minnesota Wild,St. Louis Blues,7,3,REG
+2018-02-28,Winnipeg Jets,Nashville Predators,Nashville Predators,Winnipeg Jets,6,5,REG
+2018-02-28,Dallas Stars,Calgary Flames,Dallas Stars,Calgary Flames,2,0,REG
+2018-02-28,Vegas Golden Knights,Los Angeles Kings,Los Angeles Kings,Vegas Golden Knights,4,1,REG
+2018-02-28,San Jose Sharks,Edmonton Oilers,San Jose Sharks,Edmonton Oilers,5,2,REG
+2018-03-01,Montreal Canadiens,New York Islanders,Montreal Canadiens,New York Islanders,3,1,REG
+2018-03-01,Tampa Bay Lightning,Buffalo Sabres,Buffalo Sabres,Tampa Bay Lightning,2,1,OT
+2018-03-01,St. Louis Blues,Detroit Red Wings,St. Louis Blues,Detroit Red Wings,2,1,REG
+2018-03-01,Colorado Avalanche,Calgary Flames,Colorado Avalanche,Calgary Flames,5,2,REG
+2018-03-01,Vancouver Canucks,New York Rangers,New York Rangers,Vancouver Canucks,6,5,OT
+2018-03-02,Boston Bruins,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,8,4,REG
+2018-03-02,Philadelphia Flyers,Carolina Hurricanes,Carolina Hurricanes,Philadelphia Flyers,4,1,REG
+2018-03-02,Florida Panthers,New Jersey Devils,Florida Panthers,New Jersey Devils,3,2,REG
+2018-03-02,Dallas Stars,Tampa Bay Lightning,Tampa Bay Lightning,Dallas Stars,5,4,OT
+2018-03-02,Edmonton Oilers,Nashville Predators,Nashville Predators,Edmonton Oilers,4,2,REG
+2018-03-02,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,Minnesota Wild,5,3,REG
+2018-03-02,San Jose Sharks,Chicago Blackhawks,San Jose Sharks,Chicago Blackhawks,6,2,REG
+2018-03-02,Los Angeles Kings,Columbus Blue Jackets,Los Angeles Kings,Columbus Blue Jackets,5,2,REG
+2018-03-03,New York Islanders,Montreal Canadiens,Montreal Canadiens,New York Islanders,6,3,REG
+2018-03-03,Florida Panthers,Buffalo Sabres,Florida Panthers,Buffalo Sabres,4,1,REG
+2018-03-03,Carolina Hurricanes,New Jersey Devils,Carolina Hurricanes,New Jersey Devils,3,1,REG
+2018-03-03,Winnipeg Jets,Detroit Red Wings,Winnipeg Jets,Detroit Red Wings,4,3,REG
+2018-03-03,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,Minnesota Wild,5,1,REG
+2018-03-03,Calgary Flames,New York Rangers,New York Rangers,Calgary Flames,3,1,REG
+2018-03-03,Vancouver Canucks,Nashville Predators,Nashville Predators,Vancouver Canucks,4,3,OT
+2018-03-03,Vegas Golden Knights,Ottawa Senators,Ottawa Senators,Vegas Golden Knights,5,4,REG
+2018-03-03,Anaheim Ducks,Columbus Blue Jackets,Anaheim Ducks,Columbus Blue Jackets,4,2,REG
+2018-03-03,Tampa Bay Lightning,Philadelphia Flyers,Tampa Bay Lightning,Philadelphia Flyers,7,6,SO
+2018-03-03,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,3,2,OT
+2018-03-03,Los Angeles Kings,Chicago Blackhawks,Chicago Blackhawks,Los Angeles Kings,5,3,REG
+2018-03-03,Boston Bruins,Montreal Canadiens,Boston Bruins,Montreal Canadiens,2,1,OT
+2018-03-03,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,3,2,OT
+2018-03-04,Washington Capitals,Toronto Maple Leafs,Washington Capitals,Toronto Maple Leafs,5,2,REG
+2018-03-04,Arizona Coyotes,Ottawa Senators,Arizona Coyotes,Ottawa Senators,2,1,REG
+2018-03-04,Edmonton Oilers,New York Rangers,New York Rangers,Edmonton Oilers,3,2,REG
+2018-03-04,Florida Panthers,Philadelphia Flyers,Florida Panthers,Philadelphia Flyers,4,1,REG
+2018-03-04,Colorado Avalanche,Nashville Predators,Nashville Predators,Colorado Avalanche,4,3,OT
+2018-03-04,Anaheim Ducks,Chicago Blackhawks,Anaheim Ducks,Chicago Blackhawks,6,3,REG
+2018-03-04,New Jersey Devils,Vegas Golden Knights,Vegas Golden Knights,New Jersey Devils,3,2,REG
+2018-03-05,Carolina Hurricanes,Winnipeg Jets,Winnipeg Jets,Carolina Hurricanes,3,2,REG
+2018-03-05,Minnesota Wild,Detroit Red Wings,Minnesota Wild,Detroit Red Wings,4,1,REG
+2018-03-05,San Jose Sharks,Columbus Blue Jackets,Columbus Blue Jackets,San Jose Sharks,4,2,REG
+2018-03-06,Pittsburgh Penguins,Calgary Flames,Pittsburgh Penguins,Calgary Flames,4,3,OT
+2018-03-06,Buffalo Sabres,Toronto Maple Leafs,Buffalo Sabres,Toronto Maple Leafs,5,3,REG
+2018-03-06,Dallas Stars,Ottawa Senators,Ottawa Senators,Dallas Stars,3,2,OT
+2018-03-06,Edmonton Oilers,Arizona Coyotes,Edmonton Oilers,Arizona Coyotes,4,3,OT
+2018-03-06,Vancouver Canucks,New York Islanders,Vancouver Canucks,New York Islanders,4,3,OT
+2018-03-07,Boston Bruins,Detroit Red Wings,Boston Bruins,Detroit Red Wings,6,5,OT
+2018-03-07,New Jersey Devils,Montreal Canadiens,New Jersey Devils,Montreal Canadiens,6,4,REG
+2018-03-07,New York Rangers,Winnipeg Jets,Winnipeg Jets,New York Rangers,3,0,REG
+2018-03-07,Columbus Blue Jackets,Vegas Golden Knights,Columbus Blue Jackets,Vegas Golden Knights,4,1,REG
+2018-03-07,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,5,4,OT
+2018-03-07,Nashville Predators,Dallas Stars,Nashville Predators,Dallas Stars,2,0,REG
+2018-03-07,Minnesota Wild,Carolina Hurricanes,Minnesota Wild,Carolina Hurricanes,6,2,REG
+2018-03-07,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,2,1,OT
+2018-03-07,Anaheim Ducks,Washington Capitals,Anaheim Ducks,Washington Capitals,4,0,REG
+2018-03-08,Buffalo Sabres,Calgary Flames,Calgary Flames,Buffalo Sabres,5,1,REG
+2018-03-08,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,5,2,REG
+2018-03-08,Vancouver Canucks,Arizona Coyotes,Arizona Coyotes,Vancouver Canucks,2,1,REG
+2018-03-09,Boston Bruins,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,3,2,REG
+2018-03-09,New Jersey Devils,Winnipeg Jets,Winnipeg Jets,New Jersey Devils,3,2,REG
+2018-03-09,Columbus Blue Jackets,Colorado Avalanche,Columbus Blue Jackets,Colorado Avalanche,5,4,OT
+2018-03-09,Ottawa Senators,Buffalo Sabres,Buffalo Sabres,Ottawa Senators,4,3,SO
+2018-03-09,Detroit Red Wings,Vegas Golden Knights,Vegas Golden Knights,Detroit Red Wings,4,0,REG
+2018-03-09,Tampa Bay Lightning,New York Rangers,Tampa Bay Lightning,New York Rangers,5,3,REG
+2018-03-09,Florida Panthers,Montreal Canadiens,Florida Panthers,Montreal Canadiens,4,0,REG
+2018-03-09,Nashville Predators,Anaheim Ducks,Nashville Predators,Anaheim Ducks,4,2,REG
+2018-03-09,Chicago Blackhawks,Carolina Hurricanes,Carolina Hurricanes,Chicago Blackhawks,3,2,REG
+2018-03-09,Edmonton Oilers,New York Islanders,Edmonton Oilers,New York Islanders,2,1,SO
+2018-03-09,Los Angeles Kings,Washington Capitals,Los Angeles Kings,Washington Capitals,3,1,REG
+2018-03-09,San Jose Sharks,St. Louis Blues,San Jose Sharks,St. Louis Blues,2,0,REG
+2018-03-10,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,3,2,REG
+2018-03-10,Ottawa Senators,Calgary Flames,Calgary Flames,Ottawa Senators,2,1,REG
+2018-03-10,Dallas Stars,Anaheim Ducks,Dallas Stars,Anaheim Ducks,2,1,REG
+2018-03-10,Vancouver Canucks,Minnesota Wild,Minnesota Wild,Vancouver Canucks,5,2,REG
+2018-03-10,Boston Bruins,Chicago Blackhawks,Boston Bruins,Chicago Blackhawks,7,4,REG
+2018-03-10,Buffalo Sabres,Vegas Golden Knights,Vegas Golden Knights,Buffalo Sabres,2,1,SO
+2018-03-10,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,3,2,SO
+2018-03-10,Philadelphia Flyers,Winnipeg Jets,Philadelphia Flyers,Winnipeg Jets,2,1,REG
+2018-03-10,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,5,2,REG
+2018-03-10,Los Angeles Kings,St. Louis Blues,St. Louis Blues,Los Angeles Kings,6,2,REG
+2018-03-10,San Jose Sharks,Washington Capitals,Washington Capitals,San Jose Sharks,2,0,REG
+2018-03-11,Toronto Maple Leafs,Pittsburgh Penguins,Toronto Maple Leafs,Pittsburgh Penguins,5,2,REG
+2018-03-11,Florida Panthers,New York Rangers,Florida Panthers,New York Rangers,4,3,SO
+2018-03-11,Nashville Predators,New Jersey Devils,New Jersey Devils,Nashville Predators,3,2,SO
+2018-03-11,Edmonton Oilers,Minnesota Wild,Edmonton Oilers,Minnesota Wild,4,1,REG
+2018-03-11,Chicago Blackhawks,Boston Bruins,Chicago Blackhawks,Boston Bruins,3,1,REG
+2018-03-11,Calgary Flames,New York Islanders,New York Islanders,Calgary Flames,5,2,REG
+2018-03-11,Pittsburgh Penguins,Dallas Stars,Pittsburgh Penguins,Dallas Stars,3,1,REG
+2018-03-12,New York Rangers,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,6,3,REG
+2018-03-12,Philadelphia Flyers,Vegas Golden Knights,Vegas Golden Knights,Philadelphia Flyers,3,2,REG
+2018-03-12,Washington Capitals,Winnipeg Jets,Washington Capitals,Winnipeg Jets,3,2,OT
+2018-03-12,Columbus Blue Jackets,Montreal Canadiens,Columbus Blue Jackets,Montreal Canadiens,5,2,REG
+2018-03-12,Florida Panthers,Ottawa Senators,Ottawa Senators,Florida Panthers,5,3,REG
+2018-03-13,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,4,2,REG
+2018-03-13,Los Angeles Kings,Vancouver Canucks,Los Angeles Kings,Vancouver Canucks,3,0,REG
+2018-03-13,San Jose Sharks,Detroit Red Wings,San Jose Sharks,Detroit Red Wings,5,3,REG
+2018-03-13,Carolina Hurricanes,Boston Bruins,Boston Bruins,Carolina Hurricanes,6,4,REG
+2018-03-13,Montreal Canadiens,Dallas Stars,Montreal Canadiens,Dallas Stars,4,2,REG
+2018-03-13,Tampa Bay Lightning,Ottawa Senators,Ottawa Senators,Tampa Bay Lightning,7,4,REG
+2018-03-14,Nashville Predators,Winnipeg Jets,Nashville Predators,Winnipeg Jets,3,1,REG
+2018-03-14,Minnesota Wild,Colorado Avalanche,Colorado Avalanche,Minnesota Wild,5,1,REG
+2018-03-14,Arizona Coyotes,Los Angeles Kings,Arizona Coyotes,Los Angeles Kings,4,3,SO
+2018-03-14,Toronto Maple Leafs,Dallas Stars,Toronto Maple Leafs,Dallas Stars,6,5,SO
+2018-03-15,New York Rangers,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,4,3,OT
+2018-03-15,Edmonton Oilers,San Jose Sharks,San Jose Sharks,Edmonton Oilers,4,3,OT
+2018-03-15,Vegas Golden Knights,New Jersey Devils,New Jersey Devils,Vegas Golden Knights,7,3,REG
+2018-03-15,Anaheim Ducks,Vancouver Canucks,Anaheim Ducks,Vancouver Canucks,3,0,REG
+2018-03-15,Buffalo Sabres,Toronto Maple Leafs,Toronto Maple Leafs,Buffalo Sabres,5,2,REG
+2018-03-15,New York Islanders,Washington Capitals,Washington Capitals,New York Islanders,7,3,REG
+2018-03-15,Philadelphia Flyers,Columbus Blue Jackets,Columbus Blue Jackets,Philadelphia Flyers,5,3,REG
+2018-03-15,Montreal Canadiens,Pittsburgh Penguins,Pittsburgh Penguins,Montreal Canadiens,5,3,REG
+2018-03-15,Florida Panthers,Boston Bruins,Florida Panthers,Boston Bruins,3,0,REG
+2018-03-16,St. Louis Blues,Colorado Avalanche,Colorado Avalanche,St. Louis Blues,4,1,REG
+2018-03-16,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,6,2,REG
+2018-03-16,Arizona Coyotes,Nashville Predators,Nashville Predators,Arizona Coyotes,3,2,REG
+2018-03-16,Los Angeles Kings,Detroit Red Wings,Los Angeles Kings,Detroit Red Wings,4,1,REG
+2018-03-16,Washington Capitals,New York Islanders,Washington Capitals,New York Islanders,6,3,REG
+2018-03-16,Ottawa Senators,Dallas Stars,Ottawa Senators,Dallas Stars,3,2,OT
+2018-03-17,Colorado Avalanche,Nashville Predators,Nashville Predators,Colorado Avalanche,4,2,REG
+2018-03-17,Calgary Flames,San Jose Sharks,San Jose Sharks,Calgary Flames,7,4,REG
+2018-03-17,Anaheim Ducks,Detroit Red Wings,Anaheim Ducks,Detroit Red Wings,4,2,REG
+2018-03-17,Vegas Golden Knights,Minnesota Wild,Minnesota Wild,Vegas Golden Knights,4,2,REG
+2018-03-17,Buffalo Sabres,Chicago Blackhawks,Buffalo Sabres,Chicago Blackhawks,5,3,REG
+2018-03-17,Florida Panthers,Edmonton Oilers,Edmonton Oilers,Florida Panthers,4,2,REG
+2018-03-17,Los Angeles Kings,New Jersey Devils,New Jersey Devils,Los Angeles Kings,3,0,REG
+2018-03-17,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,4,0,REG
+2018-03-17,Tampa Bay Lightning,Boston Bruins,Boston Bruins,Tampa Bay Lightning,3,0,REG
+2018-03-17,Carolina Hurricanes,Philadelphia Flyers,Philadelphia Flyers,Carolina Hurricanes,4,2,REG
+2018-03-17,Columbus Blue Jackets,Ottawa Senators,Columbus Blue Jackets,Ottawa Senators,2,1,REG
+2018-03-18,St. Louis Blues,New York Rangers,St. Louis Blues,New York Rangers,4,3,OT
+2018-03-18,Arizona Coyotes,Minnesota Wild,Minnesota Wild,Arizona Coyotes,3,1,REG
+2018-03-18,Vancouver Canucks,San Jose Sharks,San Jose Sharks,Vancouver Canucks,5,3,REG
+2018-03-18,Colorado Avalanche,Detroit Red Wings,Colorado Avalanche,Detroit Red Wings,5,1,REG
+2018-03-18,Vegas Golden Knights,Calgary Flames,Vegas Golden Knights,Calgary Flames,4,0,REG
+2018-03-18,Tampa Bay Lightning,Edmonton Oilers,Tampa Bay Lightning,Edmonton Oilers,3,1,REG
+2018-03-18,New York Islanders,Carolina Hurricanes,Carolina Hurricanes,New York Islanders,4,3,REG
+2018-03-18,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,Washington Capitals,6,3,REG
+2018-03-18,Chicago Blackhawks,St. Louis Blues,St. Louis Blues,Chicago Blackhawks,5,4,OT
+2018-03-18,Winnipeg Jets,Dallas Stars,Winnipeg Jets,Dallas Stars,4,2,REG
+2018-03-19,Anaheim Ducks,New Jersey Devils,Anaheim Ducks,New Jersey Devils,4,2,REG
+2018-03-19,Boston Bruins,Columbus Blue Jackets,Columbus Blue Jackets,Boston Bruins,5,4,OT
+2018-03-19,Buffalo Sabres,Nashville Predators,Nashville Predators,Buffalo Sabres,4,0,REG
+2018-03-19,Montreal Canadiens,Florida Panthers,Florida Panthers,Montreal Canadiens,2,0,REG
+2018-03-20,Minnesota Wild,Los Angeles Kings,Los Angeles Kings,Minnesota Wild,4,3,OT
+2018-03-20,Arizona Coyotes,Calgary Flames,Arizona Coyotes,Calgary Flames,5,2,REG
+2018-03-20,New York Islanders,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,4,1,REG
+2018-03-20,New York Rangers,Columbus Blue Jackets,Columbus Blue Jackets,New York Rangers,5,3,REG
+2018-03-20,Washington Capitals,Dallas Stars,Washington Capitals,Dallas Stars,4,3,REG
+2018-03-20,Carolina Hurricanes,Edmonton Oilers,Edmonton Oilers,Carolina Hurricanes,7,3,REG
+2018-03-20,Ottawa Senators,Florida Panthers,Florida Panthers,Ottawa Senators,6,2,REG
+2018-03-20,Detroit Red Wings,Philadelphia Flyers,Detroit Red Wings,Philadelphia Flyers,5,4,SO
+2018-03-20,Tampa Bay Lightning,Toronto Maple Leafs,Tampa Bay Lightning,Toronto Maple Leafs,4,3,REG
+2018-03-21,Winnipeg Jets,Los Angeles Kings,Winnipeg Jets,Los Angeles Kings,2,1,OT
+2018-03-21,Chicago Blackhawks,Colorado Avalanche,Colorado Avalanche,Chicago Blackhawks,5,1,REG
+2018-03-21,Vegas Golden Knights,Vancouver Canucks,Vegas Golden Knights,Vancouver Canucks,4,1,REG
+2018-03-21,San Jose Sharks,New Jersey Devils,San Jose Sharks,New Jersey Devils,6,2,REG
+2018-03-21,Buffalo Sabres,Arizona Coyotes,Arizona Coyotes,Buffalo Sabres,4,1,REG
+2018-03-21,Pittsburgh Penguins,Montreal Canadiens,Pittsburgh Penguins,Montreal Canadiens,5,3,REG
+2018-03-22,St. Louis Blues,Boston Bruins,St. Louis Blues,Boston Bruins,2,1,OT
+2018-03-22,Calgary Flames,Anaheim Ducks,Anaheim Ducks,Calgary Flames,4,0,REG
+2018-03-22,New York Islanders,Tampa Bay Lightning,Tampa Bay Lightning,New York Islanders,7,6,REG
+2018-03-22,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,New York Rangers,4,3,REG
+2018-03-22,Carolina Hurricanes,Arizona Coyotes,Carolina Hurricanes,Arizona Coyotes,6,5,REG
+2018-03-22,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,Florida Panthers,4,0,REG
+2018-03-22,Ottawa Senators,Edmonton Oilers,Edmonton Oilers,Ottawa Senators,6,2,REG
+2018-03-23,Nashville Predators,Toronto Maple Leafs,Toronto Maple Leafs,Nashville Predators,5,2,REG
+2018-03-23,Chicago Blackhawks,Vancouver Canucks,Vancouver Canucks,Chicago Blackhawks,5,2,REG
+2018-03-23,Colorado Avalanche,Los Angeles Kings,Los Angeles Kings,Colorado Avalanche,5,1,REG
+2018-03-23,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,2,1,OT
+2018-03-23,Buffalo Sabres,Montreal Canadiens,Montreal Canadiens,Buffalo Sabres,3,0,REG
+2018-03-23,Pittsburgh Penguins,New Jersey Devils,New Jersey Devils,Pittsburgh Penguins,4,3,OT
+2018-03-24,St. Louis Blues,Vancouver Canucks,St. Louis Blues,Vancouver Canucks,4,1,REG
+2018-03-24,Winnipeg Jets,Anaheim Ducks,Winnipeg Jets,Anaheim Ducks,3,2,OT
+2018-03-24,Dallas Stars,Boston Bruins,Boston Bruins,Dallas Stars,3,2,REG
+2018-03-24,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,2,1,SO
+2018-03-24,San Jose Sharks,Calgary Flames,San Jose Sharks,Calgary Flames,5,1,REG
+2018-03-24,Toronto Maple Leafs,Detroit Red Wings,Toronto Maple Leafs,Detroit Red Wings,4,3,REG
+2018-03-24,Montreal Canadiens,Washington Capitals,Washington Capitals,Montreal Canadiens,6,4,REG
+2018-03-24,Ottawa Senators,Carolina Hurricanes,Carolina Hurricanes,Ottawa Senators,5,2,REG
+2018-03-24,Florida Panthers,Arizona Coyotes,Florida Panthers,Arizona Coyotes,4,2,REG
+2018-03-24,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,2,1,REG
+2018-03-24,New York Islanders,Chicago Blackhawks,Chicago Blackhawks,New York Islanders,3,1,REG
+2018-03-24,New York Rangers,Buffalo Sabres,New York Rangers,Buffalo Sabres,5,1,REG
+2018-03-24,Columbus Blue Jackets,St. Louis Blues,St. Louis Blues,Columbus Blue Jackets,2,1,REG
+2018-03-25,Minnesota Wild,Nashville Predators,Minnesota Wild,Nashville Predators,4,1,REG
+2018-03-25,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,3,2,REG
+2018-03-25,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,5,4,OT
+2018-03-25,Dallas Stars,Vancouver Canucks,Vancouver Canucks,Dallas Stars,4,1,REG
+2018-03-25,Winnipeg Jets,Nashville Predators,Winnipeg Jets,Nashville Predators,5,4,SO
+2018-03-25,Minnesota Wild,Boston Bruins,Boston Bruins,Minnesota Wild,2,1,OT
+2018-03-26,Edmonton Oilers,Anaheim Ducks,Anaheim Ducks,Edmonton Oilers,5,4,OT
+2018-03-26,Toronto Maple Leafs,Buffalo Sabres,Buffalo Sabres,Toronto Maple Leafs,3,2,REG
+2018-03-26,New York Islanders,Florida Panthers,Florida Panthers,New York Islanders,3,0,REG
+2018-03-26,Carolina Hurricanes,Ottawa Senators,Carolina Hurricanes,Ottawa Senators,4,1,REG
+2018-03-26,New York Rangers,Washington Capitals,Washington Capitals,New York Rangers,4,2,REG
+2018-03-26,Montreal Canadiens,Detroit Red Wings,Montreal Canadiens,Detroit Red Wings,4,2,REG
+2018-03-26,Tampa Bay Lightning,Arizona Coyotes,Arizona Coyotes,Tampa Bay Lightning,4,1,REG
+2018-03-27,Chicago Blackhawks,San Jose Sharks,San Jose Sharks,Chicago Blackhawks,4,3,SO
+2018-03-27,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,4,1,REG
+2018-03-27,Los Angeles Kings,Calgary Flames,Los Angeles Kings,Calgary Flames,3,0,REG
+2018-03-27,New Jersey Devils,Carolina Hurricanes,New Jersey Devils,Carolina Hurricanes,4,3,REG
+2018-03-27,Ottawa Senators,New York Islanders,New York Islanders,Ottawa Senators,4,3,REG
+2018-03-27,Detroit Red Wings,Pittsburgh Penguins,Detroit Red Wings,Pittsburgh Penguins,5,2,REG
+2018-03-28,St. Louis Blues,San Jose Sharks,St. Louis Blues,San Jose Sharks,3,2,OT
+2018-03-28,Nashville Predators,Minnesota Wild,Nashville Predators,Minnesota Wild,2,1,SO
+2018-03-28,Winnipeg Jets,Boston Bruins,Winnipeg Jets,Boston Bruins,5,4,SO
+2018-03-28,Dallas Stars,Philadelphia Flyers,Dallas Stars,Philadelphia Flyers,3,2,OT
+2018-03-28,Edmonton Oilers,Columbus Blue Jackets,Columbus Blue Jackets,Edmonton Oilers,7,3,REG
+2018-03-28,Vancouver Canucks,Anaheim Ducks,Vancouver Canucks,Anaheim Ducks,4,1,REG
+2018-03-28,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,Florida Panthers,4,3,REG
+2018-03-29,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,3,2,OT
+2018-03-29,Colorado Avalanche,Philadelphia Flyers,Philadelphia Flyers,Colorado Avalanche,2,1,REG
+2018-03-29,Vegas Golden Knights,Arizona Coyotes,Arizona Coyotes,Vegas Golden Knights,3,2,REG
+2018-03-29,Boston Bruins,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,4,2,REG
+2018-03-29,Buffalo Sabres,Detroit Red Wings,Detroit Red Wings,Buffalo Sabres,6,3,REG
+2018-03-29,New Jersey Devils,Pittsburgh Penguins,Pittsburgh Penguins,New Jersey Devils,4,3,OT
+2018-03-29,Ottawa Senators,Florida Panthers,Ottawa Senators,Florida Panthers,3,2,OT
+2018-03-30,Nashville Predators,San Jose Sharks,Nashville Predators,San Jose Sharks,5,3,REG
+2018-03-30,Minnesota Wild,Dallas Stars,Minnesota Wild,Dallas Stars,5,2,REG
+2018-03-30,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,6,2,REG
+2018-03-30,Calgary Flames,Columbus Blue Jackets,Columbus Blue Jackets,Calgary Flames,5,1,REG
+2018-03-30,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,2,1,REG
+2018-03-30,Los Angeles Kings,Arizona Coyotes,Los Angeles Kings,Arizona Coyotes,4,2,REG
+2018-03-30,New York Islanders,Toronto Maple Leafs,Toronto Maple Leafs,New York Islanders,5,4,REG
+2018-03-30,New York Rangers,Tampa Bay Lightning,Tampa Bay Lightning,New York Rangers,7,3,REG
+2018-03-30,Washington Capitals,Carolina Hurricanes,Carolina Hurricanes,Washington Capitals,4,1,REG
+2018-03-31,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,4,0,REG
+2018-03-31,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,2,1,OT
+2018-03-31,Vegas Golden Knights,St. Louis Blues,Vegas Golden Knights,St. Louis Blues,4,3,OT
+2018-03-31,Boston Bruins,Florida Panthers,Boston Bruins,Florida Panthers,5,1,REG
+2018-03-31,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,Ottawa Senators,2,0,REG
+2018-03-31,Vancouver Canucks,Columbus Blue Jackets,Vancouver Canucks,Columbus Blue Jackets,5,4,OT
+2018-03-31,Toronto Maple Leafs,Winnipeg Jets,Winnipeg Jets,Toronto Maple Leafs,3,1,REG
+2018-03-31,New Jersey Devils,New York Islanders,New Jersey Devils,New York Islanders,4,3,REG
+2018-03-31,Pittsburgh Penguins,Montreal Canadiens,Pittsburgh Penguins,Montreal Canadiens,5,2,REG
+2018-03-31,Carolina Hurricanes,New York Rangers,New York Rangers,Carolina Hurricanes,2,1,REG
+2018-04-01,Nashville Predators,Buffalo Sabres,Buffalo Sabres,Nashville Predators,7,4,REG
+2018-04-01,Dallas Stars,Minnesota Wild,Dallas Stars,Minnesota Wild,4,1,REG
+2018-04-01,Arizona Coyotes,St. Louis Blues,Arizona Coyotes,St. Louis Blues,4,0,REG
+2018-04-01,Calgary Flames,Edmonton Oilers,Calgary Flames,Edmonton Oilers,3,2,REG
+2018-04-01,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,3,2,REG
+2018-04-01,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,Boston Bruins,4,3,OT
+2018-04-01,Tampa Bay Lightning,Nashville Predators,Nashville Predators,Tampa Bay Lightning,4,1,REG
+2018-04-01,Montreal Canadiens,New Jersey Devils,New Jersey Devils,Montreal Canadiens,2,1,REG
+2018-04-01,Pittsburgh Penguins,Washington Capitals,Washington Capitals,Pittsburgh Penguins,3,1,REG
+2018-04-02,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,4,3,OT
+2018-04-02,Toronto Maple Leafs,Buffalo Sabres,Toronto Maple Leafs,Buffalo Sabres,5,2,REG
+2018-04-02,Ottawa Senators,Winnipeg Jets,Winnipeg Jets,Ottawa Senators,6,5,REG
+2018-04-02,Florida Panthers,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,3,2,REG
+2018-04-03,St. Louis Blues,Washington Capitals,Washington Capitals,St. Louis Blues,4,2,REG
+2018-04-03,Minnesota Wild,Edmonton Oilers,Minnesota Wild,Edmonton Oilers,3,0,REG
+2018-04-03,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,3,1,REG
+2018-04-03,New Jersey Devils,New York Rangers,New Jersey Devils,New York Rangers,5,2,REG
+2018-04-03,New York Islanders,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,5,4,REG
+2018-04-03,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,5,4,OT
+2018-04-03,Montreal Canadiens,Winnipeg Jets,Winnipeg Jets,Montreal Canadiens,5,4,OT
+2018-04-03,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,Boston Bruins,4,0,REG
+2018-04-03,Florida Panthers,Nashville Predators,Florida Panthers,Nashville Predators,2,1,REG
+2018-04-04,Calgary Flames,Arizona Coyotes,Arizona Coyotes,Calgary Flames,4,1,REG
+2018-04-04,Vancouver Canucks,Vegas Golden Knights,Vegas Golden Knights,Vancouver Canucks,5,4,SO
+2018-04-04,San Jose Sharks,Dallas Stars,Dallas Stars,San Jose Sharks,4,2,REG
+2018-04-04,Buffalo Sabres,Ottawa Senators,Ottawa Senators,Buffalo Sabres,4,2,REG
+2018-04-05,St. Louis Blues,Chicago Blackhawks,Chicago Blackhawks,St. Louis Blues,4,3,REG
+2018-04-05,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,Minnesota Wild,3,1,REG
+2018-04-05,New Jersey Devils,Toronto Maple Leafs,New Jersey Devils,Toronto Maple Leafs,2,1,REG
+2018-04-05,New York Islanders,New York Rangers,New York Islanders,New York Rangers,2,1,REG
+2018-04-05,Philadelphia Flyers,Carolina Hurricanes,Philadelphia Flyers,Carolina Hurricanes,4,3,REG
+2018-04-05,Washington Capitals,Nashville Predators,Nashville Predators,Washington Capitals,4,3,REG
+2018-04-05,Columbus Blue Jackets,Pittsburgh Penguins,Pittsburgh Penguins,Columbus Blue Jackets,5,4,OT
+2018-04-05,Detroit Red Wings,Montreal Canadiens,Montreal Canadiens,Detroit Red Wings,4,3,REG
+2018-04-05,Florida Panthers,Boston Bruins,Florida Panthers,Boston Bruins,3,2,REG
+2018-04-06,Winnipeg Jets,Calgary Flames,Winnipeg Jets,Calgary Flames,2,1,REG
+2018-04-06,Edmonton Oilers,Vegas Golden Knights,Edmonton Oilers,Vegas Golden Knights,4,3,REG
+2018-04-06,Vancouver Canucks,Arizona Coyotes,Vancouver Canucks,Arizona Coyotes,4,3,OT
+2018-04-06,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,Minnesota Wild,5,4,OT
+2018-04-06,San Jose Sharks,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,4,2,REG
+2018-04-06,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,4,0,REG
+2018-04-06,Tampa Bay Lightning,Buffalo Sabres,Tampa Bay Lightning,Buffalo Sabres,7,5,REG
+2018-04-07,Chicago Blackhawks,St. Louis Blues,St. Louis Blues,Chicago Blackhawks,4,1,REG
+2018-04-07,Anaheim Ducks,Dallas Stars,Anaheim Ducks,Dallas Stars,5,3,REG
+2018-04-07,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,New York Rangers,4,0,REG
+2018-04-07,Boston Bruins,Ottawa Senators,Boston Bruins,Ottawa Senators,5,2,REG
+2018-04-07,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,4,2,REG
+2018-04-07,Detroit Red Wings,New York Islanders,New York Islanders,Detroit Red Wings,4,3,OT
+2018-04-07,Florida Panthers,Buffalo Sabres,Florida Panthers,Buffalo Sabres,4,3,REG
+2018-04-07,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,5,3,REG
+2018-04-07,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,3,2,OT
+2018-04-07,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,4,1,REG
+2018-04-08,Nashville Predators,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,4,2,REG
+2018-04-08,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,5,2,REG
+2018-04-08,Arizona Coyotes,Anaheim Ducks,Anaheim Ducks,Arizona Coyotes,3,0,REG
+2018-04-08,Calgary Flames,Vegas Golden Knights,Calgary Flames,Vegas Golden Knights,5,1,REG
+2018-04-08,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,3,2,SO
+2018-04-08,Los Angeles Kings,Dallas Stars,Dallas Stars,Los Angeles Kings,4,2,REG
+2018-04-08,San Jose Sharks,Minnesota Wild,Minnesota Wild,San Jose Sharks,6,3,REG
+2018-04-08,Boston Bruins,Florida Panthers,Florida Panthers,Boston Bruins,4,2,REG
+2018-04-11,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,3,2,REG
+2018-04-11,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,4,0,REG
+2018-04-12,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,5,2,REG
+2018-04-12,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,5,1,REG
+2018-04-12,Washington Capitals,Columbus Blue Jackets,Columbus Blue Jackets,Washington Capitals,4,3,OT
+2018-04-13,Nashville Predators,Colorado Avalanche,Nashville Predators,Colorado Avalanche,5,2,REG
+2018-04-13,Anaheim Ducks,San Jose Sharks,San Jose Sharks,Anaheim Ducks,3,0,REG
+2018-04-13,Pittsburgh Penguins,Philadelphia Flyers,Philadelphia Flyers,Pittsburgh Penguins,5,1,REG
+2018-04-13,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,4,1,REG
+2018-04-14,Vegas Golden Knights,Los Angeles Kings,Vegas Golden Knights,Los Angeles Kings,2,1,OT
+2018-04-14,Nashville Predators,Colorado Avalanche,Nashville Predators,Colorado Avalanche,5,4,REG
+2018-04-14,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,5,3,REG
+2018-04-15,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,7,3,REG
+2018-04-15,Anaheim Ducks,San Jose Sharks,San Jose Sharks,Anaheim Ducks,3,2,REG
+2018-04-15,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,5,1,REG
+2018-04-15,Minnesota Wild,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,6,2,REG
+2018-04-15,Washington Capitals,Columbus Blue Jackets,Columbus Blue Jackets,Washington Capitals,5,4,OT
+2018-04-16,Los Angeles Kings,Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,3,2,REG
+2018-04-16,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,Boston Bruins,4,2,REG
+2018-04-16,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,5,2,REG
+2018-04-17,Colorado Avalanche,Nashville Predators,Colorado Avalanche,Nashville Predators,5,3,REG
+2018-04-17,San Jose Sharks,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,5,1,REG
+2018-04-17,Columbus Blue Jackets,Washington Capitals,Washington Capitals,Columbus Blue Jackets,3,2,OT
+2018-04-18,Minnesota Wild,Winnipeg Jets,Winnipeg Jets,Minnesota Wild,2,0,REG
+2018-04-18,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,4,0,REG
+2018-04-18,New Jersey Devils,Tampa Bay Lightning,Tampa Bay Lightning,New Jersey Devils,3,1,REG
+2018-04-19,Colorado Avalanche,Nashville Predators,Nashville Predators,Colorado Avalanche,3,2,REG
+2018-04-19,San Jose Sharks,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,2,1,REG
+2018-04-19,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,3,1,REG
+2018-04-19,Columbus Blue Jackets,Washington Capitals,Washington Capitals,Columbus Blue Jackets,4,1,REG
+2018-04-20,Pittsburgh Penguins,Philadelphia Flyers,Philadelphia Flyers,Pittsburgh Penguins,4,2,REG
+2018-04-20,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,4,0,REG
+2018-04-21,Nashville Predators,Colorado Avalanche,Colorado Avalanche,Nashville Predators,2,1,REG
+2018-04-21,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,3,1,REG
+2018-04-21,Washington Capitals,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,4,3,OT
+2018-04-22,Boston Bruins,Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,4,3,REG
+2018-04-22,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,8,5,REG
+2018-04-22,Colorado Avalanche,Nashville Predators,Nashville Predators,Colorado Avalanche,4,0,REG
+2018-04-23,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,Boston Bruins,3,1,REG
+2018-04-23,Columbus Blue Jackets,Washington Capitals,Washington Capitals,Columbus Blue Jackets,6,3,REG
+2018-04-25,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,7,4,REG
+2018-04-26,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,3,2,REG
+2018-04-27,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,4,0,REG
+2018-04-28,Nashville Predators,Winnipeg Jets,Winnipeg Jets,Nashville Predators,4,1,REG
+2018-04-28,Tampa Bay Lightning,Boston Bruins,Boston Bruins,Tampa Bay Lightning,6,2,REG
+2018-04-29,Vegas Golden Knights,San Jose Sharks,San Jose Sharks,Vegas Golden Knights,4,3,OT
+2018-04-29,Washington Capitals,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,4,1,REG
+2018-04-29,Nashville Predators,Winnipeg Jets,Nashville Predators,Winnipeg Jets,5,4,OT
+2018-04-30,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,Boston Bruins,4,2,REG
+2018-05-01,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,4,3,OT
+2018-05-01,Pittsburgh Penguins,Washington Capitals,Washington Capitals,Pittsburgh Penguins,4,3,REG
+2018-05-02,Winnipeg Jets,Nashville Predators,Winnipeg Jets,Nashville Predators,7,4,REG
+2018-05-02,Boston Bruins,Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,4,1,REG
+2018-05-03,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,4,0,REG
+2018-05-03,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,3,1,REG
+2018-05-04,Winnipeg Jets,Nashville Predators,Nashville Predators,Winnipeg Jets,2,1,REG
+2018-05-04,Boston Bruins,Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,4,3,OT
+2018-05-05,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,5,3,REG
+2018-05-05,Washington Capitals,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,6,3,REG
+2018-05-06,Nashville Predators,Winnipeg Jets,Winnipeg Jets,Nashville Predators,6,2,REG
+2018-05-06,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,Boston Bruins,3,1,REG
+2018-05-06,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,3,0,REG
+2018-05-07,Pittsburgh Penguins,Washington Capitals,Washington Capitals,Pittsburgh Penguins,2,1,OT
+2018-05-08,Winnipeg Jets,Nashville Predators,Nashville Predators,Winnipeg Jets,4,0,REG
+2018-05-11,Nashville Predators,Winnipeg Jets,Winnipeg Jets,Nashville Predators,5,1,REG
+2018-05-12,Tampa Bay Lightning,Washington Capitals,Washington Capitals,Tampa Bay Lightning,4,2,REG
+2018-05-12,Winnipeg Jets,Vegas Golden Knights,Winnipeg Jets,Vegas Golden Knights,4,2,REG
+2018-05-14,Tampa Bay Lightning,Washington Capitals,Washington Capitals,Tampa Bay Lightning,6,2,REG
+2018-05-15,Winnipeg Jets,Vegas Golden Knights,Vegas Golden Knights,Winnipeg Jets,3,1,REG
+2018-05-16,Washington Capitals,Tampa Bay Lightning,Tampa Bay Lightning,Washington Capitals,4,2,REG
+2018-05-17,Vegas Golden Knights,Winnipeg Jets,Vegas Golden Knights,Winnipeg Jets,4,2,REG
+2018-05-18,Washington Capitals,Tampa Bay Lightning,Tampa Bay Lightning,Washington Capitals,4,2,REG
+2018-05-19,Vegas Golden Knights,Winnipeg Jets,Vegas Golden Knights,Winnipeg Jets,3,2,REG
+2018-05-19,Tampa Bay Lightning,Washington Capitals,Tampa Bay Lightning,Washington Capitals,3,2,REG
+2018-05-20,Winnipeg Jets,Vegas Golden Knights,Vegas Golden Knights,Winnipeg Jets,2,1,REG
+2018-05-22,Washington Capitals,Tampa Bay Lightning,Washington Capitals,Tampa Bay Lightning,3,0,REG
+2018-05-24,Tampa Bay Lightning,Washington Capitals,Washington Capitals,Tampa Bay Lightning,4,0,REG
+2018-05-29,Vegas Golden Knights,Washington Capitals,Vegas Golden Knights,Washington Capitals,6,4,REG
+2018-05-31,Vegas Golden Knights,Washington Capitals,Washington Capitals,Vegas Golden Knights,3,2,REG
+2018-06-03,Washington Capitals,Vegas Golden Knights,Washington Capitals,Vegas Golden Knights,3,1,REG
+2018-06-05,Washington Capitals,Vegas Golden Knights,Washington Capitals,Vegas Golden Knights,6,2,REG
+2018-06-08,Vegas Golden Knights,Washington Capitals,Washington Capitals,Vegas Golden Knights,4,3,REG

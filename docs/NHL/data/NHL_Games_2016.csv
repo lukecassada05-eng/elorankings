@@ -1,0 +1,1311 @@
+date,home,away,winner,loser,winner_pts,loser_pts,end_type
+2015-10-01,Montreal Canadiens,Ottawa Senators,Ottawa Senators,Montreal Canadiens,5,2,REG
+2015-10-01,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,Dallas Stars,3,2,REG
+2015-10-02,Minnesota Wild,Buffalo Sabres,Minnesota Wild,Buffalo Sabres,5,1,REG
+2015-10-02,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,5,2,REG
+2015-10-02,Winnipeg Jets,Calgary Flames,Winnipeg Jets,Calgary Flames,3,1,REG
+2015-10-02,Edmonton Oilers,Vancouver Canucks,Vancouver Canucks,Edmonton Oilers,5,2,REG
+2015-10-02,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,3,0,REG
+2015-10-02,Buffalo Sabres,Columbus Blue Jackets,Columbus Blue Jackets,Buffalo Sabres,6,4,REG
+2015-10-02,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,2,1,REG
+2015-10-02,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,3,2,SO
+2015-10-02,Washington Capitals,Boston Bruins,Washington Capitals,Boston Bruins,2,1,SO
+2015-10-02,Detroit Red Wings,Toronto Maple Leafs,Detroit Red Wings,Toronto Maple Leafs,4,2,REG
+2015-10-03,Arizona Coyotes,San Jose Sharks,San Jose Sharks,Arizona Coyotes,3,0,REG
+2015-10-03,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,Nashville Predators,5,1,REG
+2015-10-03,Florida Panthers,Tampa Bay Lightning,Tampa Bay Lightning,Florida Panthers,3,2,REG
+2015-10-03,Ottawa Senators,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,5,4,REG
+2015-10-03,Toronto Maple Leafs,Detroit Red Wings,Detroit Red Wings,Toronto Maple Leafs,2,1,REG
+2015-10-04,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,Dallas Stars,4,0,REG
+2015-10-04,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,San Jose Sharks,5,1,REG
+2015-10-04,Calgary Flames,Winnipeg Jets,Winnipeg Jets,Calgary Flames,3,2,REG
+2015-10-04,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,4,0,REG
+2015-10-04,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,3,2,OT
+2015-10-04,Washington Capitals,New York Islanders,Washington Capitals,New York Islanders,6,2,REG
+2015-10-07,Toronto Maple Leafs,Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,3,1,REG
+2015-10-08,Chicago Blackhawks,New York Rangers,New York Rangers,Chicago Blackhawks,3,2,REG
+2015-10-08,Calgary Flames,Vancouver Canucks,Vancouver Canucks,Calgary Flames,5,1,REG
+2015-10-08,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,5,1,REG
+2015-10-08,Boston Bruins,Winnipeg Jets,Winnipeg Jets,Boston Bruins,6,2,REG
+2015-10-08,Buffalo Sabres,Ottawa Senators,Ottawa Senators,Buffalo Sabres,3,1,REG
+2015-10-08,Tampa Bay Lightning,Philadelphia Flyers,Tampa Bay Lightning,Philadelphia Flyers,3,2,OT
+2015-10-09,Nashville Predators,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,2,1,REG
+2015-10-09,St. Louis Blues,Edmonton Oilers,St. Louis Blues,Edmonton Oilers,3,1,REG
+2015-10-09,Dallas Stars,Pittsburgh Penguins,Dallas Stars,Pittsburgh Penguins,3,0,REG
+2015-10-09,Colorado Avalanche,Minnesota Wild,Minnesota Wild,Colorado Avalanche,5,4,REG
+2015-10-09,Columbus Blue Jackets,New York Rangers,New York Rangers,Columbus Blue Jackets,4,2,REG
+2015-10-09,New Jersey Devils,Winnipeg Jets,Winnipeg Jets,New Jersey Devils,3,1,REG
+2015-10-09,Detroit Red Wings,Toronto Maple Leafs,Detroit Red Wings,Toronto Maple Leafs,4,0,REG
+2015-10-09,New York Islanders,Chicago Blackhawks,Chicago Blackhawks,New York Islanders,3,2,OT
+2015-10-10,Los Angeles Kings,Arizona Coyotes,Arizona Coyotes,Los Angeles Kings,4,1,REG
+2015-10-10,Buffalo Sabres,Tampa Bay Lightning,Tampa Bay Lightning,Buffalo Sabres,4,1,REG
+2015-10-10,Carolina Hurricanes,Detroit Red Wings,Detroit Red Wings,Carolina Hurricanes,4,3,REG
+2015-10-10,Florida Panthers,Philadelphia Flyers,Florida Panthers,Philadelphia Flyers,5,1,REG
+2015-10-10,New York Rangers,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,5,2,REG
+2015-10-10,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,5,3,REG
+2015-10-10,Boston Bruins,Montreal Canadiens,Montreal Canadiens,Boston Bruins,4,2,REG
+2015-10-10,Toronto Maple Leafs,Ottawa Senators,Ottawa Senators,Toronto Maple Leafs,5,4,SO
+2015-10-10,Nashville Predators,Edmonton Oilers,Nashville Predators,Edmonton Oilers,2,0,REG
+2015-10-11,Minnesota Wild,St. Louis Blues,Minnesota Wild,St. Louis Blues,3,2,REG
+2015-10-11,Chicago Blackhawks,New York Islanders,Chicago Blackhawks,New York Islanders,4,1,REG
+2015-10-11,Colorado Avalanche,Dallas Stars,Colorado Avalanche,Dallas Stars,6,3,REG
+2015-10-11,Arizona Coyotes,Pittsburgh Penguins,Arizona Coyotes,Pittsburgh Penguins,2,1,REG
+2015-10-11,Vancouver Canucks,Calgary Flames,Calgary Flames,Vancouver Canucks,3,2,OT
+2015-10-11,San Jose Sharks,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,2,0,REG
+2015-10-11,Ottawa Senators,Montreal Canadiens,Montreal Canadiens,Ottawa Senators,3,1,REG
+2015-10-12,Boston Bruins,Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,6,3,REG
+2015-10-12,New York Islanders,Winnipeg Jets,New York Islanders,Winnipeg Jets,4,2,REG
+2015-10-12,Buffalo Sabres,Columbus Blue Jackets,Buffalo Sabres,Columbus Blue Jackets,4,2,REG
+2015-10-13,Anaheim Ducks,Vancouver Canucks,Vancouver Canucks,Anaheim Ducks,2,1,SO
+2015-10-13,Pittsburgh Penguins,Montreal Canadiens,Montreal Canadiens,Pittsburgh Penguins,3,2,REG
+2015-10-13,New Jersey Devils,Nashville Predators,Nashville Predators,New Jersey Devils,3,1,REG
+2015-10-13,New York Rangers,Winnipeg Jets,Winnipeg Jets,New York Rangers,4,1,REG
+2015-10-13,Washington Capitals,San Jose Sharks,San Jose Sharks,Washington Capitals,4,0,REG
+2015-10-13,Carolina Hurricanes,Florida Panthers,Florida Panthers,Carolina Hurricanes,4,1,REG
+2015-10-13,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,3,1,REG
+2015-10-14,Dallas Stars,Edmonton Oilers,Dallas Stars,Edmonton Oilers,4,2,REG
+2015-10-14,Calgary Flames,St. Louis Blues,St. Louis Blues,Calgary Flames,4,3,REG
+2015-10-14,Los Angeles Kings,Vancouver Canucks,Vancouver Canucks,Los Angeles Kings,3,0,REG
+2015-10-14,Columbus Blue Jackets,Ottawa Senators,Ottawa Senators,Columbus Blue Jackets,7,3,REG
+2015-10-15,Philadelphia Flyers,Chicago Blackhawks,Philadelphia Flyers,Chicago Blackhawks,3,0,REG
+2015-10-15,Colorado Avalanche,Boston Bruins,Boston Bruins,Colorado Avalanche,6,2,REG
+2015-10-15,Anaheim Ducks,Arizona Coyotes,Arizona Coyotes,Anaheim Ducks,4,0,REG
+2015-10-15,New York Islanders,Nashville Predators,New York Islanders,Nashville Predators,4,3,REG
+2015-10-15,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,2,0,REG
+2015-10-15,Washington Capitals,Chicago Blackhawks,Washington Capitals,Chicago Blackhawks,4,1,REG
+2015-10-15,Montreal Canadiens,New York Rangers,Montreal Canadiens,New York Rangers,3,0,REG
+2015-10-15,Tampa Bay Lightning,Dallas Stars,Dallas Stars,Tampa Bay Lightning,5,3,REG
+2015-10-15,Florida Panthers,Buffalo Sabres,Florida Panthers,Buffalo Sabres,3,2,REG
+2015-10-16,Edmonton Oilers,St. Louis Blues,St. Louis Blues,Edmonton Oilers,4,2,REG
+2015-10-16,Arizona Coyotes,Minnesota Wild,Minnesota Wild,Arizona Coyotes,4,3,REG
+2015-10-16,New Jersey Devils,San Jose Sharks,San Jose Sharks,New Jersey Devils,2,1,SO
+2015-10-16,Columbus Blue Jackets,Toronto Maple Leafs,Toronto Maple Leafs,Columbus Blue Jackets,6,3,REG
+2015-10-16,Detroit Red Wings,Carolina Hurricanes,Carolina Hurricanes,Detroit Red Wings,5,3,REG
+2015-10-17,Winnipeg Jets,Calgary Flames,Winnipeg Jets,Calgary Flames,3,1,REG
+2015-10-17,Vancouver Canucks,St. Louis Blues,St. Louis Blues,Vancouver Canucks,4,3,REG
+2015-10-17,Anaheim Ducks,Colorado Avalanche,Colorado Avalanche,Anaheim Ducks,3,0,REG
+2015-10-17,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,Minnesota Wild,2,1,OT
+2015-10-17,Montreal Canadiens,Detroit Red Wings,Montreal Canadiens,Detroit Red Wings,4,1,REG
+2015-10-17,Ottawa Senators,Nashville Predators,Nashville Predators,Ottawa Senators,4,3,SO
+2015-10-17,Tampa Bay Lightning,Buffalo Sabres,Tampa Bay Lightning,Buffalo Sabres,2,1,REG
+2015-10-17,Florida Panthers,Dallas Stars,Dallas Stars,Florida Panthers,4,2,REG
+2015-10-17,Pittsburgh Penguins,Toronto Maple Leafs,Pittsburgh Penguins,Toronto Maple Leafs,2,1,REG
+2015-10-17,Washington Capitals,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,4,1,REG
+2015-10-17,New York Islanders,San Jose Sharks,New York Islanders,San Jose Sharks,6,3,REG
+2015-10-18,Chicago Blackhawks,Columbus Blue Jackets,Chicago Blackhawks,Columbus Blue Jackets,4,1,REG
+2015-10-18,Calgary Flames,Edmonton Oilers,Edmonton Oilers,Calgary Flames,5,2,REG
+2015-10-18,Arizona Coyotes,Boston Bruins,Boston Bruins,Arizona Coyotes,5,3,REG
+2015-10-18,New York Rangers,New Jersey Devils,New Jersey Devils,New York Rangers,2,1,OT
+2015-10-18,Winnipeg Jets,St. Louis Blues,St. Louis Blues,Winnipeg Jets,4,2,REG
+2015-10-19,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,Minnesota Wild,4,1,REG
+2015-10-19,Vancouver Canucks,Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,2,1,OT
+2015-10-19,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,2,1,REG
+2015-10-19,New York Rangers,San Jose Sharks,New York Rangers,San Jose Sharks,4,0,REG
+2015-10-20,New Jersey Devils,Arizona Coyotes,New Jersey Devils,Arizona Coyotes,3,2,OT
+2015-10-20,Pittsburgh Penguins,Florida Panthers,Pittsburgh Penguins,Florida Panthers,3,2,OT
+2015-10-20,Columbus Blue Jackets,New York Islanders,New York Islanders,Columbus Blue Jackets,4,0,REG
+2015-10-20,Philadelphia Flyers,Dallas Stars,Dallas Stars,Philadelphia Flyers,2,1,REG
+2015-10-20,Montreal Canadiens,St. Louis Blues,Montreal Canadiens,St. Louis Blues,3,0,REG
+2015-10-21,Nashville Predators,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,5,4,SO
+2015-10-21,Calgary Flames,Washington Capitals,Washington Capitals,Calgary Flames,6,2,REG
+2015-10-21,Buffalo Sabres,Toronto Maple Leafs,Buffalo Sabres,Toronto Maple Leafs,2,1,SO
+2015-10-22,Boston Bruins,Philadelphia Flyers,Philadelphia Flyers,Boston Bruins,5,4,OT
+2015-10-22,Edmonton Oilers,Detroit Red Wings,Edmonton Oilers,Detroit Red Wings,3,1,REG
+2015-10-22,New York Rangers,Arizona Coyotes,New York Rangers,Arizona Coyotes,4,1,REG
+2015-10-22,Pittsburgh Penguins,Dallas Stars,Dallas Stars,Pittsburgh Penguins,4,1,REG
+2015-10-22,Ottawa Senators,New Jersey Devils,New Jersey Devils,Ottawa Senators,5,4,SO
+2015-10-23,Nashville Predators,Anaheim Ducks,Nashville Predators,Anaheim Ducks,5,1,REG
+2015-10-23,Minnesota Wild,Columbus Blue Jackets,Minnesota Wild,Columbus Blue Jackets,3,2,REG
+2015-10-23,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,Florida Panthers,3,2,REG
+2015-10-23,Vancouver Canucks,Washington Capitals,Washington Capitals,Vancouver Canucks,3,2,REG
+2015-10-23,San Jose Sharks,Los Angeles Kings,Los Angeles Kings,San Jose Sharks,4,1,REG
+2015-10-23,Buffalo Sabres,Montreal Canadiens,Montreal Canadiens,Buffalo Sabres,6,2,REG
+2015-10-23,New York Islanders,Boston Bruins,Boston Bruins,New York Islanders,5,3,REG
+2015-10-24,Winnipeg Jets,Tampa Bay Lightning,Tampa Bay Lightning,Winnipeg Jets,4,3,OT
+2015-10-24,Calgary Flames,Detroit Red Wings,Calgary Flames,Detroit Red Wings,3,2,OT
+2015-10-24,Edmonton Oilers,Washington Capitals,Washington Capitals,Edmonton Oilers,7,4,REG
+2015-10-24,Los Angeles Kings,Carolina Hurricanes,Los Angeles Kings,Carolina Hurricanes,3,0,REG
+2015-10-24,Minnesota Wild,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,3,0,REG
+2015-10-24,Buffalo Sabres,New Jersey Devils,New Jersey Devils,Buffalo Sabres,4,3,REG
+2015-10-24,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,5,3,REG
+2015-10-24,Ottawa Senators,Arizona Coyotes,Arizona Coyotes,Ottawa Senators,4,1,REG
+2015-10-24,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,New York Rangers,3,2,SO
+2015-10-25,St. Louis Blues,New York Islanders,New York Islanders,St. Louis Blues,3,2,OT
+2015-10-25,Nashville Predators,Pittsburgh Penguins,Pittsburgh Penguins,Nashville Predators,2,1,OT
+2015-10-25,Dallas Stars,Florida Panthers,Florida Panthers,Dallas Stars,6,2,REG
+2015-10-25,Colorado Avalanche,Columbus Blue Jackets,Columbus Blue Jackets,Colorado Avalanche,4,3,REG
+2015-10-25,Vancouver Canucks,Detroit Red Wings,Detroit Red Wings,Vancouver Canucks,3,2,OT
+2015-10-25,San Jose Sharks,Carolina Hurricanes,San Jose Sharks,Carolina Hurricanes,5,2,REG
+2015-10-25,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,5,4,REG
+2015-10-25,New York Rangers,Calgary Flames,New York Rangers,Calgary Flames,4,1,REG
+2015-10-26,Edmonton Oilers,Los Angeles Kings,Los Angeles Kings,Edmonton Oilers,3,2,REG
+2015-10-26,New York Islanders,Calgary Flames,New York Islanders,Calgary Flames,4,0,REG
+2015-10-26,Toronto Maple Leafs,Arizona Coyotes,Arizona Coyotes,Toronto Maple Leafs,4,3,REG
+2015-10-27,Boston Bruins,Arizona Coyotes,Boston Bruins,Arizona Coyotes,4,0,REG
+2015-10-27,New Jersey Devils,Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,3,1,REG
+2015-10-27,Philadelphia Flyers,Buffalo Sabres,Buffalo Sabres,Philadelphia Flyers,4,3,OT
+2015-10-27,Detroit Red Wings,Carolina Hurricanes,Carolina Hurricanes,Detroit Red Wings,3,1,REG
+2015-10-27,Florida Panthers,Colorado Avalanche,Florida Panthers,Colorado Avalanche,4,1,REG
+2015-10-28,St. Louis Blues,Tampa Bay Lightning,St. Louis Blues,Tampa Bay Lightning,2,0,REG
+2015-10-28,Minnesota Wild,Edmonton Oilers,Minnesota Wild,Edmonton Oilers,4,3,REG
+2015-10-28,Winnipeg Jets,Los Angeles Kings,Los Angeles Kings,Winnipeg Jets,4,1,REG
+2015-10-28,Dallas Stars,Anaheim Ducks,Dallas Stars,Anaheim Ducks,4,3,REG
+2015-10-28,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,5,1,REG
+2015-10-28,Ottawa Senators,Calgary Flames,Ottawa Senators,Calgary Flames,5,4,SO
+2015-10-29,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,3,1,REG
+2015-10-29,San Jose Sharks,Nashville Predators,Nashville Predators,San Jose Sharks,2,1,REG
+2015-10-29,New York Islanders,Carolina Hurricanes,Carolina Hurricanes,New York Islanders,3,2,OT
+2015-10-29,Philadelphia Flyers,New Jersey Devils,New Jersey Devils,Philadelphia Flyers,4,1,REG
+2015-10-29,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,4,3,REG
+2015-10-29,Tampa Bay Lightning,Colorado Avalanche,Colorado Avalanche,Tampa Bay Lightning,2,1,REG
+2015-10-30,St. Louis Blues,Anaheim Ducks,St. Louis Blues,Anaheim Ducks,2,1,REG
+2015-10-30,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,3,1,REG
+2015-10-30,Dallas Stars,Vancouver Canucks,Dallas Stars,Vancouver Canucks,4,3,OT
+2015-10-30,Edmonton Oilers,Montreal Canadiens,Edmonton Oilers,Montreal Canadiens,4,3,REG
+2015-10-30,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,3,1,REG
+2015-10-30,New York Rangers,Toronto Maple Leafs,New York Rangers,Toronto Maple Leafs,3,1,REG
+2015-10-30,Washington Capitals,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,2,1,REG
+2015-10-30,Carolina Hurricanes,Colorado Avalanche,Carolina Hurricanes,Colorado Avalanche,3,2,REG
+2015-10-30,Detroit Red Wings,Ottawa Senators,Ottawa Senators,Detroit Red Wings,3,1,REG
+2015-10-30,Florida Panthers,Boston Bruins,Boston Bruins,Florida Panthers,3,1,REG
+2015-10-31,Minnesota Wild,Chicago Blackhawks,Minnesota Wild,Chicago Blackhawks,5,4,REG
+2015-10-31,Calgary Flames,Montreal Canadiens,Montreal Canadiens,Calgary Flames,6,2,REG
+2015-10-31,Arizona Coyotes,Vancouver Canucks,Vancouver Canucks,Arizona Coyotes,4,3,REG
+2015-10-31,New Jersey Devils,New York Islanders,New Jersey Devils,New York Islanders,3,2,SO
+2015-10-31,Dallas Stars,San Jose Sharks,Dallas Stars,San Jose Sharks,5,3,REG
+2015-10-31,Los Angeles Kings,Nashville Predators,Los Angeles Kings,Nashville Predators,4,3,OT
+2015-10-31,Toronto Maple Leafs,Pittsburgh Penguins,Pittsburgh Penguins,Toronto Maple Leafs,4,0,REG
+2015-10-31,Ottawa Senators,Detroit Red Wings,Detroit Red Wings,Ottawa Senators,5,3,REG
+2015-10-31,Tampa Bay Lightning,Boston Bruins,Boston Bruins,Tampa Bay Lightning,3,1,REG
+2015-10-31,Florida Panthers,Washington Capitals,Washington Capitals,Florida Panthers,2,1,OT
+2015-10-31,Columbus Blue Jackets,Winnipeg Jets,Winnipeg Jets,Columbus Blue Jackets,3,2,REG
+2015-11-01,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,3,2,OT
+2015-11-01,Edmonton Oilers,Calgary Flames,Calgary Flames,Edmonton Oilers,5,4,REG
+2015-11-01,Colorado Avalanche,San Jose Sharks,San Jose Sharks,Colorado Avalanche,4,3,REG
+2015-11-01,Carolina Hurricanes,Tampa Bay Lightning,Tampa Bay Lightning,Carolina Hurricanes,4,3,REG
+2015-11-02,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,5,1,REG
+2015-11-02,New York Islanders,Buffalo Sabres,Buffalo Sabres,New York Islanders,2,1,REG
+2015-11-02,Anaheim Ducks,Nashville Predators,Anaheim Ducks,Nashville Predators,4,2,REG
+2015-11-03,Toronto Maple Leafs,Dallas Stars,Toronto Maple Leafs,Dallas Stars,4,1,REG
+2015-11-03,Chicago Blackhawks,Los Angeles Kings,Chicago Blackhawks,Los Angeles Kings,4,2,REG
+2015-11-03,Vancouver Canucks,Philadelphia Flyers,Vancouver Canucks,Philadelphia Flyers,4,1,REG
+2015-11-04,Boston Bruins,Dallas Stars,Dallas Stars,Boston Bruins,5,3,REG
+2015-11-04,New York Islanders,New Jersey Devils,New York Islanders,New Jersey Devils,2,1,REG
+2015-11-04,New York Rangers,Washington Capitals,New York Rangers,Washington Capitals,5,2,REG
+2015-11-04,Montreal Canadiens,Ottawa Senators,Ottawa Senators,Montreal Canadiens,2,1,OT
+2015-11-04,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,2,1,REG
+2015-11-04,St. Louis Blues,Los Angeles Kings,Los Angeles Kings,St. Louis Blues,3,0,REG
+2015-11-04,Colorado Avalanche,Calgary Flames,Colorado Avalanche,Calgary Flames,6,3,REG
+2015-11-04,Edmonton Oilers,Philadelphia Flyers,Edmonton Oilers,Philadelphia Flyers,4,2,REG
+2015-11-04,San Jose Sharks,Columbus Blue Jackets,Columbus Blue Jackets,San Jose Sharks,5,2,REG
+2015-11-05,Toronto Maple Leafs,Winnipeg Jets,Winnipeg Jets,Toronto Maple Leafs,4,2,REG
+2015-11-05,Chicago Blackhawks,St. Louis Blues,St. Louis Blues,Chicago Blackhawks,6,5,OT
+2015-11-05,Vancouver Canucks,Pittsburgh Penguins,Pittsburgh Penguins,Vancouver Canucks,3,2,REG
+2015-11-05,Anaheim Ducks,Florida Panthers,Anaheim Ducks,Florida Panthers,3,2,SO
+2015-11-06,Buffalo Sabres,Tampa Bay Lightning,Tampa Bay Lightning,Buffalo Sabres,4,1,REG
+2015-11-06,Washington Capitals,Boston Bruins,Washington Capitals,Boston Bruins,4,1,REG
+2015-11-06,Montreal Canadiens,New York Islanders,Montreal Canadiens,New York Islanders,4,1,REG
+2015-11-06,Ottawa Senators,Winnipeg Jets,Ottawa Senators,Winnipeg Jets,3,2,SO
+2015-11-06,Minnesota Wild,Nashville Predators,Nashville Predators,Minnesota Wild,3,2,REG
+2015-11-06,Calgary Flames,Philadelphia Flyers,Calgary Flames,Philadelphia Flyers,2,1,OT
+2015-11-06,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,4,2,REG
+2015-11-06,Los Angeles Kings,Columbus Blue Jackets,Columbus Blue Jackets,Los Angeles Kings,3,2,REG
+2015-11-06,San Jose Sharks,Florida Panthers,San Jose Sharks,Florida Panthers,5,2,REG
+2015-11-07,Toronto Maple Leafs,Detroit Red Wings,Detroit Red Wings,Toronto Maple Leafs,2,1,OT
+2015-11-07,New Jersey Devils,Chicago Blackhawks,New Jersey Devils,Chicago Blackhawks,4,2,REG
+2015-11-07,Carolina Hurricanes,Dallas Stars,Dallas Stars,Carolina Hurricanes,4,1,REG
+2015-11-07,Colorado Avalanche,New York Rangers,New York Rangers,Colorado Avalanche,2,1,REG
+2015-11-07,Edmonton Oilers,Pittsburgh Penguins,Pittsburgh Penguins,Edmonton Oilers,2,1,REG
+2015-11-07,Anaheim Ducks,Columbus Blue Jackets,Anaheim Ducks,Columbus Blue Jackets,4,2,REG
+2015-11-07,Buffalo Sabres,Vancouver Canucks,Buffalo Sabres,Vancouver Canucks,3,2,REG
+2015-11-07,Los Angeles Kings,Florida Panthers,Los Angeles Kings,Florida Panthers,4,1,REG
+2015-11-08,Montreal Canadiens,Boston Bruins,Montreal Canadiens,Boston Bruins,4,2,REG
+2015-11-08,Washington Capitals,Toronto Maple Leafs,Washington Capitals,Toronto Maple Leafs,3,2,SO
+2015-11-08,Carolina Hurricanes,Ottawa Senators,Carolina Hurricanes,Ottawa Senators,3,2,OT
+2015-11-08,Winnipeg Jets,Philadelphia Flyers,Philadelphia Flyers,Winnipeg Jets,3,0,REG
+2015-11-08,Nashville Predators,St. Louis Blues,St. Louis Blues,Nashville Predators,4,0,REG
+2015-11-08,Arizona Coyotes,New York Rangers,New York Rangers,Arizona Coyotes,4,1,REG
+2015-11-08,Calgary Flames,Pittsburgh Penguins,Calgary Flames,Pittsburgh Penguins,5,2,REG
+2015-11-08,Detroit Red Wings,Dallas Stars,Dallas Stars,Detroit Red Wings,4,1,REG
+2015-11-08,New Jersey Devils,Vancouver Canucks,New Jersey Devils,Vancouver Canucks,4,3,OT
+2015-11-08,New York Islanders,Boston Bruins,Boston Bruins,New York Islanders,2,1,REG
+2015-11-09,Chicago Blackhawks,Edmonton Oilers,Chicago Blackhawks,Edmonton Oilers,4,2,REG
+2015-11-10,Anaheim Ducks,Arizona Coyotes,Arizona Coyotes,Anaheim Ducks,4,3,OT
+2015-11-11,New Jersey Devils,St. Louis Blues,St. Louis Blues,New Jersey Devils,2,0,REG
+2015-11-11,New York Rangers,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,3,0,REG
+2015-11-11,Philadelphia Flyers,Colorado Avalanche,Colorado Avalanche,Philadelphia Flyers,4,0,REG
+2015-11-11,Columbus Blue Jackets,Vancouver Canucks,Vancouver Canucks,Columbus Blue Jackets,5,3,REG
+2015-11-11,Tampa Bay Lightning,Buffalo Sabres,Buffalo Sabres,Tampa Bay Lightning,4,1,REG
+2015-11-11,Florida Panthers,Calgary Flames,Florida Panthers,Calgary Flames,4,3,REG
+2015-11-11,Nashville Predators,Ottawa Senators,Nashville Predators,Ottawa Senators,7,5,REG
+2015-11-11,Minnesota Wild,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,5,3,REG
+2015-11-11,Dallas Stars,Toronto Maple Leafs,Toronto Maple Leafs,Dallas Stars,3,2,REG
+2015-11-11,Los Angeles Kings,Arizona Coyotes,Arizona Coyotes,Los Angeles Kings,3,2,REG
+2015-11-11,San Jose Sharks,New York Islanders,New York Islanders,San Jose Sharks,4,2,REG
+2015-11-12,Pittsburgh Penguins,Montreal Canadiens,Pittsburgh Penguins,Montreal Canadiens,4,3,SO
+2015-11-12,Anaheim Ducks,Edmonton Oilers,Edmonton Oilers,Anaheim Ducks,4,3,OT
+2015-11-13,Boston Bruins,Colorado Avalanche,Colorado Avalanche,Boston Bruins,3,2,REG
+2015-11-13,New York Rangers,St. Louis Blues,New York Rangers,St. Louis Blues,6,3,REG
+2015-11-13,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,5,2,REG
+2015-11-13,Carolina Hurricanes,Minnesota Wild,Minnesota Wild,Carolina Hurricanes,3,2,OT
+2015-11-13,Ottawa Senators,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,3,2,REG
+2015-11-13,Tampa Bay Lightning,Calgary Flames,Tampa Bay Lightning,Calgary Flames,3,1,REG
+2015-11-13,Florida Panthers,Buffalo Sabres,Buffalo Sabres,Florida Panthers,3,2,REG
+2015-11-13,Nashville Predators,Toronto Maple Leafs,Toronto Maple Leafs,Nashville Predators,2,1,SO
+2015-11-13,Chicago Blackhawks,New Jersey Devils,New Jersey Devils,Chicago Blackhawks,3,2,REG
+2015-11-13,Dallas Stars,Winnipeg Jets,Dallas Stars,Winnipeg Jets,6,3,REG
+2015-11-13,Arizona Coyotes,Edmonton Oilers,Arizona Coyotes,Edmonton Oilers,4,1,REG
+2015-11-13,Los Angeles Kings,New York Islanders,Los Angeles Kings,New York Islanders,2,1,REG
+2015-11-14,Pittsburgh Penguins,Columbus Blue Jackets,Columbus Blue Jackets,Pittsburgh Penguins,2,1,REG
+2015-11-14,Washington Capitals,Calgary Flames,Calgary Flames,Washington Capitals,3,2,OT
+2015-11-14,Detroit Red Wings,San Jose Sharks,San Jose Sharks,Detroit Red Wings,3,2,REG
+2015-11-14,Anaheim Ducks,New York Islanders,New York Islanders,Anaheim Ducks,4,1,REG
+2015-11-14,Ottawa Senators,New York Rangers,New York Rangers,Ottawa Senators,2,1,SO
+2015-11-15,Boston Bruins,Detroit Red Wings,Boston Bruins,Detroit Red Wings,3,1,REG
+2015-11-15,Buffalo Sabres,San Jose Sharks,San Jose Sharks,Buffalo Sabres,2,1,OT
+2015-11-15,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,4,2,REG
+2015-11-15,Montreal Canadiens,Colorado Avalanche,Colorado Avalanche,Montreal Canadiens,5,1,REG
+2015-11-15,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,5,4,SO
+2015-11-15,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,4,0,REG
+2015-11-15,Carolina Hurricanes,Philadelphia Flyers,Philadelphia Flyers,Carolina Hurricanes,3,2,OT
+2015-11-15,Columbus Blue Jackets,Arizona Coyotes,Columbus Blue Jackets,Arizona Coyotes,5,2,REG
+2015-11-15,Nashville Predators,Winnipeg Jets,Nashville Predators,Winnipeg Jets,4,0,REG
+2015-11-15,St. Louis Blues,Chicago Blackhawks,Chicago Blackhawks,St. Louis Blues,4,2,REG
+2015-11-15,Dallas Stars,Minnesota Wild,Dallas Stars,Minnesota Wild,3,2,OT
+2015-11-15,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,4,3,REG
+2015-11-16,New York Rangers,Toronto Maple Leafs,New York Rangers,Toronto Maple Leafs,4,3,REG
+2015-11-16,Chicago Blackhawks,Calgary Flames,Chicago Blackhawks,Calgary Flames,4,1,REG
+2015-11-17,New York Islanders,Arizona Coyotes,New York Islanders,Arizona Coyotes,5,2,REG
+2015-11-17,Carolina Hurricanes,Anaheim Ducks,Anaheim Ducks,Carolina Hurricanes,4,1,REG
+2015-11-17,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,4,3,OT
+2015-11-17,Ottawa Senators,Detroit Red Wings,Detroit Red Wings,Ottawa Senators,4,3,OT
+2015-11-17,St. Louis Blues,Winnipeg Jets,St. Louis Blues,Winnipeg Jets,3,2,REG
+2015-11-18,Boston Bruins,San Jose Sharks,San Jose Sharks,Boston Bruins,5,4,REG
+2015-11-18,Buffalo Sabres,Dallas Stars,Dallas Stars,Buffalo Sabres,3,1,REG
+2015-11-18,Philadelphia Flyers,Los Angeles Kings,Los Angeles Kings,Philadelphia Flyers,3,2,SO
+2015-11-18,Columbus Blue Jackets,St. Louis Blues,Columbus Blue Jackets,St. Louis Blues,3,1,REG
+2015-11-18,Pittsburgh Penguins,Minnesota Wild,Pittsburgh Penguins,Minnesota Wild,4,3,REG
+2015-11-18,Toronto Maple Leafs,Colorado Avalanche,Toronto Maple Leafs,Colorado Avalanche,5,1,REG
+2015-11-18,Nashville Predators,Anaheim Ducks,Nashville Predators,Anaheim Ducks,3,2,REG
+2015-11-18,Calgary Flames,New Jersey Devils,Calgary Flames,New Jersey Devils,3,2,REG
+2015-11-19,Winnipeg Jets,Vancouver Canucks,Winnipeg Jets,Vancouver Canucks,4,1,REG
+2015-11-19,Detroit Red Wings,Washington Capitals,Washington Capitals,Detroit Red Wings,2,1,OT
+2015-11-19,Edmonton Oilers,Chicago Blackhawks,Chicago Blackhawks,Edmonton Oilers,4,3,OT
+2015-11-20,Boston Bruins,Minnesota Wild,Boston Bruins,Minnesota Wild,4,2,REG
+2015-11-20,Pittsburgh Penguins,Colorado Avalanche,Pittsburgh Penguins,Colorado Avalanche,4,3,REG
+2015-11-20,Washington Capitals,Dallas Stars,Dallas Stars,Washington Capitals,3,2,REG
+2015-11-20,Montreal Canadiens,Arizona Coyotes,Arizona Coyotes,Montreal Canadiens,3,2,REG
+2015-11-20,Ottawa Senators,Columbus Blue Jackets,Ottawa Senators,Columbus Blue Jackets,3,0,REG
+2015-11-20,Tampa Bay Lightning,New York Rangers,Tampa Bay Lightning,New York Rangers,2,1,REG
+2015-11-20,Florida Panthers,Anaheim Ducks,Anaheim Ducks,Florida Panthers,3,1,REG
+2015-11-20,St. Louis Blues,Buffalo Sabres,St. Louis Blues,Buffalo Sabres,3,2,SO
+2015-11-21,Carolina Hurricanes,Toronto Maple Leafs,Toronto Maple Leafs,Carolina Hurricanes,2,1,SO
+2015-11-21,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,Nashville Predators,4,0,REG
+2015-11-21,Detroit Red Wings,Los Angeles Kings,Detroit Red Wings,Los Angeles Kings,3,2,REG
+2015-11-21,New York Islanders,Montreal Canadiens,Montreal Canadiens,New York Islanders,5,3,REG
+2015-11-21,Calgary Flames,Chicago Blackhawks,Calgary Flames,Chicago Blackhawks,2,1,OT
+2015-11-21,Edmonton Oilers,New Jersey Devils,Edmonton Oilers,New Jersey Devils,5,1,REG
+2015-11-22,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,2,0,REG
+2015-11-22,Ottawa Senators,Philadelphia Flyers,Ottawa Senators,Philadelphia Flyers,4,0,REG
+2015-11-22,Tampa Bay Lightning,Anaheim Ducks,Tampa Bay Lightning,Anaheim Ducks,4,0,REG
+2015-11-22,Florida Panthers,New York Rangers,New York Rangers,Florida Panthers,5,4,OT
+2015-11-22,Pittsburgh Penguins,San Jose Sharks,San Jose Sharks,Pittsburgh Penguins,3,1,REG
+2015-11-22,Washington Capitals,Colorado Avalanche,Washington Capitals,Colorado Avalanche,7,3,REG
+2015-11-22,Winnipeg Jets,Arizona Coyotes,Winnipeg Jets,Arizona Coyotes,3,2,REG
+2015-11-22,St. Louis Blues,Detroit Red Wings,Detroit Red Wings,St. Louis Blues,4,3,OT
+2015-11-22,Dallas Stars,Buffalo Sabres,Dallas Stars,Buffalo Sabres,3,0,REG
+2015-11-22,Minnesota Wild,Nashville Predators,Minnesota Wild,Nashville Predators,4,0,REG
+2015-11-22,Vancouver Canucks,Chicago Blackhawks,Vancouver Canucks,Chicago Blackhawks,6,3,REG
+2015-11-22,Carolina Hurricanes,Los Angeles Kings,Carolina Hurricanes,Los Angeles Kings,4,3,REG
+2015-11-22,Columbus Blue Jackets,San Jose Sharks,San Jose Sharks,Columbus Blue Jackets,5,3,REG
+2015-11-23,Montreal Canadiens,New York Islanders,Montreal Canadiens,New York Islanders,4,2,REG
+2015-11-23,Vancouver Canucks,New Jersey Devils,New Jersey Devils,Vancouver Canucks,3,2,REG
+2015-11-24,Buffalo Sabres,St. Louis Blues,St. Louis Blues,Buffalo Sabres,2,1,REG
+2015-11-24,New York Rangers,Nashville Predators,New York Rangers,Nashville Predators,3,0,REG
+2015-11-24,Philadelphia Flyers,Carolina Hurricanes,Philadelphia Flyers,Carolina Hurricanes,3,2,OT
+2015-11-24,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,4,3,SO
+2015-11-24,Florida Panthers,Los Angeles Kings,Los Angeles Kings,Florida Panthers,3,1,REG
+2015-11-24,Winnipeg Jets,Colorado Avalanche,Colorado Avalanche,Winnipeg Jets,4,1,REG
+2015-11-25,Dallas Stars,Ottawa Senators,Ottawa Senators,Dallas Stars,7,4,REG
+2015-11-25,Anaheim Ducks,Calgary Flames,Anaheim Ducks,Calgary Flames,5,3,REG
+2015-11-26,Buffalo Sabres,Nashville Predators,Nashville Predators,Buffalo Sabres,3,2,REG
+2015-11-26,New Jersey Devils,Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,2,1,REG
+2015-11-26,New York Rangers,Montreal Canadiens,Montreal Canadiens,New York Rangers,5,1,REG
+2015-11-26,Pittsburgh Penguins,St. Louis Blues,Pittsburgh Penguins,St. Louis Blues,4,3,OT
+2015-11-26,Washington Capitals,Winnipeg Jets,Washington Capitals,Winnipeg Jets,5,3,REG
+2015-11-26,Carolina Hurricanes,Edmonton Oilers,Carolina Hurricanes,Edmonton Oilers,4,1,REG
+2015-11-26,Minnesota Wild,Vancouver Canucks,Vancouver Canucks,Minnesota Wild,3,2,REG
+2015-11-26,New York Islanders,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,3,1,REG
+2015-11-26,Detroit Red Wings,Boston Bruins,Boston Bruins,Detroit Red Wings,3,2,OT
+2015-11-26,Tampa Bay Lightning,Los Angeles Kings,Tampa Bay Lightning,Los Angeles Kings,2,1,SO
+2015-11-26,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,4,2,REG
+2015-11-26,Colorado Avalanche,Ottawa Senators,Ottawa Senators,Colorado Avalanche,5,3,REG
+2015-11-26,San Jose Sharks,Chicago Blackhawks,Chicago Blackhawks,San Jose Sharks,5,2,REG
+2015-11-27,Boston Bruins,New York Rangers,Boston Bruins,New York Rangers,4,3,REG
+2015-11-27,Philadelphia Flyers,Nashville Predators,Philadelphia Flyers,Nashville Predators,3,2,OT
+2015-11-27,Minnesota Wild,Winnipeg Jets,Winnipeg Jets,Minnesota Wild,3,1,REG
+2015-11-27,Anaheim Ducks,Chicago Blackhawks,Chicago Blackhawks,Anaheim Ducks,3,2,OT
+2015-11-27,Washington Capitals,Tampa Bay Lightning,Washington Capitals,Tampa Bay Lightning,4,2,REG
+2015-11-28,Buffalo Sabres,Carolina Hurricanes,Buffalo Sabres,Carolina Hurricanes,4,1,REG
+2015-11-28,New Jersey Devils,Montreal Canadiens,Montreal Canadiens,New Jersey Devils,3,2,SO
+2015-11-28,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,2,1,OT
+2015-11-28,Detroit Red Wings,Edmonton Oilers,Detroit Red Wings,Edmonton Oilers,4,3,OT
+2015-11-28,Florida Panthers,New York Islanders,Florida Panthers,New York Islanders,3,2,SO
+2015-11-28,Dallas Stars,Vancouver Canucks,Dallas Stars,Vancouver Canucks,3,2,SO
+2015-11-28,Arizona Coyotes,Calgary Flames,Arizona Coyotes,Calgary Flames,2,1,OT
+2015-11-28,New York Rangers,Philadelphia Flyers,Philadelphia Flyers,New York Rangers,3,0,REG
+2015-11-29,Toronto Maple Leafs,Washington Capitals,Washington Capitals,Toronto Maple Leafs,4,2,REG
+2015-11-29,Montreal Canadiens,New Jersey Devils,New Jersey Devils,Montreal Canadiens,3,2,OT
+2015-11-29,Tampa Bay Lightning,New York Islanders,New York Islanders,Tampa Bay Lightning,3,2,REG
+2015-11-29,Pittsburgh Penguins,Edmonton Oilers,Edmonton Oilers,Pittsburgh Penguins,3,2,SO
+2015-11-29,St. Louis Blues,Columbus Blue Jackets,St. Louis Blues,Columbus Blue Jackets,3,1,REG
+2015-11-29,Nashville Predators,Buffalo Sabres,Buffalo Sabres,Nashville Predators,4,1,REG
+2015-11-29,Minnesota Wild,Dallas Stars,Dallas Stars,Minnesota Wild,4,3,OT
+2015-11-29,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,5,3,REG
+2015-11-29,Arizona Coyotes,Ottawa Senators,Arizona Coyotes,Ottawa Senators,4,3,REG
+2015-11-29,San Jose Sharks,Calgary Flames,San Jose Sharks,Calgary Flames,5,2,REG
+2015-11-29,Los Angeles Kings,Chicago Blackhawks,Los Angeles Kings,Chicago Blackhawks,3,2,OT
+2015-11-29,Detroit Red Wings,Florida Panthers,Florida Panthers,Detroit Red Wings,2,1,OT
+2015-12-01,New York Islanders,Colorado Avalanche,New York Islanders,Colorado Avalanche,5,3,REG
+2015-12-01,New York Rangers,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,4,3,REG
+2015-12-01,Toronto Maple Leafs,Edmonton Oilers,Toronto Maple Leafs,Edmonton Oilers,3,0,REG
+2015-12-01,Anaheim Ducks,Vancouver Canucks,Anaheim Ducks,Vancouver Canucks,4,0,REG
+2015-12-02,New Jersey Devils,Colorado Avalanche,Colorado Avalanche,New Jersey Devils,2,1,REG
+2015-12-02,Montreal Canadiens,Columbus Blue Jackets,Montreal Canadiens,Columbus Blue Jackets,2,1,REG
+2015-12-02,Ottawa Senators,Philadelphia Flyers,Philadelphia Flyers,Ottawa Senators,4,2,REG
+2015-12-02,Detroit Red Wings,Buffalo Sabres,Detroit Red Wings,Buffalo Sabres,5,4,SO
+2015-12-02,St. Louis Blues,Florida Panthers,Florida Panthers,St. Louis Blues,3,1,REG
+2015-12-02,Nashville Predators,Arizona Coyotes,Nashville Predators,Arizona Coyotes,5,2,REG
+2015-12-02,Chicago Blackhawks,Minnesota Wild,Minnesota Wild,Chicago Blackhawks,2,1,REG
+2015-12-02,Calgary Flames,Dallas Stars,Calgary Flames,Dallas Stars,4,3,SO
+2015-12-02,Los Angeles Kings,Vancouver Canucks,Los Angeles Kings,Vancouver Canucks,2,1,OT
+2015-12-02,San Jose Sharks,Pittsburgh Penguins,Pittsburgh Penguins,San Jose Sharks,5,1,REG
+2015-12-03,Winnipeg Jets,Toronto Maple Leafs,Winnipeg Jets,Toronto Maple Leafs,5,1,REG
+2015-12-03,New York Islanders,New York Rangers,New York Islanders,New York Rangers,2,1,SO
+2015-12-03,Edmonton Oilers,Boston Bruins,Edmonton Oilers,Boston Bruins,3,2,SO
+2015-12-03,Anaheim Ducks,Tampa Bay Lightning,Tampa Bay Lightning,Anaheim Ducks,2,1,REG
+2015-12-04,New York Rangers,Colorado Avalanche,Colorado Avalanche,New York Rangers,2,1,REG
+2015-12-04,Carolina Hurricanes,New Jersey Devils,New Jersey Devils,Carolina Hurricanes,5,1,REG
+2015-12-04,Montreal Canadiens,Washington Capitals,Washington Capitals,Montreal Canadiens,3,2,REG
+2015-12-04,Ottawa Senators,Chicago Blackhawks,Ottawa Senators,Chicago Blackhawks,4,3,OT
+2015-12-04,Detroit Red Wings,Arizona Coyotes,Detroit Red Wings,Arizona Coyotes,5,1,REG
+2015-12-04,Nashville Predators,Florida Panthers,Florida Panthers,Nashville Predators,2,1,REG
+2015-12-04,Vancouver Canucks,Dallas Stars,Dallas Stars,Vancouver Canucks,4,2,REG
+2015-12-05,Buffalo Sabres,Arizona Coyotes,Buffalo Sabres,Arizona Coyotes,5,2,REG
+2015-12-05,New Jersey Devils,Philadelphia Flyers,Philadelphia Flyers,New Jersey Devils,4,3,OT
+2015-12-05,Columbus Blue Jackets,Florida Panthers,Florida Panthers,Columbus Blue Jackets,2,1,SO
+2015-12-05,New York Islanders,St. Louis Blues,New York Islanders,St. Louis Blues,2,1,SO
+2015-12-05,Calgary Flames,Boston Bruins,Calgary Flames,Boston Bruins,5,4,OT
+2015-12-05,Edmonton Oilers,Dallas Stars,Edmonton Oilers,Dallas Stars,2,1,OT
+2015-12-05,Winnipeg Jets,Washington Capitals,Winnipeg Jets,Washington Capitals,2,1,OT
+2015-12-05,Los Angeles Kings,Pittsburgh Penguins,Los Angeles Kings,Pittsburgh Penguins,5,3,REG
+2015-12-06,Ottawa Senators,New York Islanders,Ottawa Senators,New York Islanders,3,2,OT
+2015-12-06,Detroit Red Wings,Nashville Predators,Detroit Red Wings,Nashville Predators,5,4,OT
+2015-12-06,Carolina Hurricanes,Montreal Canadiens,Carolina Hurricanes,Montreal Canadiens,3,2,REG
+2015-12-06,St. Louis Blues,Toronto Maple Leafs,Toronto Maple Leafs,St. Louis Blues,4,1,REG
+2015-12-06,Philadelphia Flyers,Columbus Blue Jackets,Columbus Blue Jackets,Philadelphia Flyers,4,1,REG
+2015-12-06,Minnesota Wild,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,3,0,REG
+2015-12-06,Vancouver Canucks,Boston Bruins,Boston Bruins,Vancouver Canucks,4,0,REG
+2015-12-06,San Jose Sharks,Tampa Bay Lightning,Tampa Bay Lightning,San Jose Sharks,4,3,REG
+2015-12-06,Carolina Hurricanes,Arizona Coyotes,Carolina Hurricanes,Arizona Coyotes,5,4,REG
+2015-12-06,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,3,1,REG
+2015-12-07,New Jersey Devils,Florida Panthers,New Jersey Devils,Florida Panthers,4,2,REG
+2015-12-07,New York Rangers,Ottawa Senators,New York Rangers,Ottawa Senators,4,1,REG
+2015-12-07,Edmonton Oilers,Buffalo Sabres,Edmonton Oilers,Buffalo Sabres,4,2,REG
+2015-12-07,Anaheim Ducks,Pittsburgh Penguins,Anaheim Ducks,Pittsburgh Penguins,2,1,REG
+2015-12-07,Los Angeles Kings,Tampa Bay Lightning,Los Angeles Kings,Tampa Bay Lightning,3,1,REG
+2015-12-08,Boston Bruins,Nashville Predators,Nashville Predators,Boston Bruins,3,2,REG
+2015-12-08,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,Minnesota Wild,2,1,OT
+2015-12-08,Vancouver Canucks,Buffalo Sabres,Vancouver Canucks,Buffalo Sabres,5,2,REG
+2015-12-09,Philadelphia Flyers,New York Islanders,New York Islanders,Philadelphia Flyers,4,3,SO
+2015-12-09,Columbus Blue Jackets,Los Angeles Kings,Los Angeles Kings,Columbus Blue Jackets,3,2,OT
+2015-12-09,Washington Capitals,Detroit Red Wings,Washington Capitals,Detroit Red Wings,3,2,SO
+2015-12-09,Toronto Maple Leafs,New Jersey Devils,Toronto Maple Leafs,New Jersey Devils,3,2,SO
+2015-12-09,Florida Panthers,Ottawa Senators,Ottawa Senators,Florida Panthers,4,2,REG
+2015-12-09,St. Louis Blues,Arizona Coyotes,St. Louis Blues,Arizona Coyotes,4,1,REG
+2015-12-09,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,Nashville Predators,4,1,REG
+2015-12-09,Dallas Stars,Carolina Hurricanes,Dallas Stars,Carolina Hurricanes,6,5,REG
+2015-12-09,Calgary Flames,San Jose Sharks,Calgary Flames,San Jose Sharks,4,2,REG
+2015-12-10,Montreal Canadiens,Boston Bruins,Boston Bruins,Montreal Canadiens,3,1,REG
+2015-12-10,Edmonton Oilers,San Jose Sharks,Edmonton Oilers,San Jose Sharks,4,3,OT
+2015-12-10,Colorado Avalanche,Pittsburgh Penguins,Pittsburgh Penguins,Colorado Avalanche,4,2,REG
+2015-12-10,Vancouver Canucks,New York Rangers,Vancouver Canucks,New York Rangers,2,1,REG
+2015-12-11,Detroit Red Wings,Montreal Canadiens,Detroit Red Wings,Montreal Canadiens,3,2,REG
+2015-12-11,Tampa Bay Lightning,Ottawa Senators,Tampa Bay Lightning,Ottawa Senators,4,1,REG
+2015-12-11,Florida Panthers,Washington Capitals,Florida Panthers,Washington Capitals,4,1,REG
+2015-12-11,St. Louis Blues,Philadelphia Flyers,Philadelphia Flyers,St. Louis Blues,4,2,REG
+2015-12-11,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,5,1,REG
+2015-12-11,Winnipeg Jets,Columbus Blue Jackets,Winnipeg Jets,Columbus Blue Jackets,6,4,REG
+2015-12-11,Calgary Flames,Buffalo Sabres,Calgary Flames,Buffalo Sabres,4,3,REG
+2015-12-12,New Jersey Devils,Detroit Red Wings,New Jersey Devils,Detroit Red Wings,3,2,OT
+2015-12-12,Pittsburgh Penguins,Los Angeles Kings,Los Angeles Kings,Pittsburgh Penguins,3,2,SO
+2015-12-12,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,2,0,REG
+2015-12-12,Dallas Stars,Philadelphia Flyers,Dallas Stars,Philadelphia Flyers,3,1,REG
+2015-12-12,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,Minnesota Wild,2,1,OT
+2015-12-12,Edmonton Oilers,New York Rangers,Edmonton Oilers,New York Rangers,7,5,REG
+2015-12-12,Anaheim Ducks,Carolina Hurricanes,Carolina Hurricanes,Anaheim Ducks,5,1,REG
+2015-12-12,Boston Bruins,Florida Panthers,Boston Bruins,Florida Panthers,3,1,REG
+2015-12-13,Buffalo Sabres,Los Angeles Kings,Buffalo Sabres,Los Angeles Kings,2,1,OT
+2015-12-13,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,Ottawa Senators,3,1,REG
+2015-12-13,Tampa Bay Lightning,Washington Capitals,Washington Capitals,Tampa Bay Lightning,2,1,REG
+2015-12-13,Columbus Blue Jackets,New York Islanders,New York Islanders,Columbus Blue Jackets,3,2,OT
+2015-12-13,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,3,0,REG
+2015-12-13,Nashville Predators,Colorado Avalanche,Colorado Avalanche,Nashville Predators,3,2,REG
+2015-12-13,Arizona Coyotes,Carolina Hurricanes,Carolina Hurricanes,Arizona Coyotes,5,4,OT
+2015-12-13,Calgary Flames,New York Rangers,Calgary Flames,New York Rangers,5,4,OT
+2015-12-13,San Jose Sharks,Minnesota Wild,Minnesota Wild,San Jose Sharks,2,0,REG
+2015-12-13,New York Islanders,New Jersey Devils,New York Islanders,New Jersey Devils,4,0,REG
+2015-12-13,St. Louis Blues,Colorado Avalanche,Colorado Avalanche,St. Louis Blues,3,1,REG
+2015-12-14,Chicago Blackhawks,Vancouver Canucks,Chicago Blackhawks,Vancouver Canucks,4,0,REG
+2015-12-15,Boston Bruins,Edmonton Oilers,Edmonton Oilers,Boston Bruins,3,2,OT
+2015-12-15,Pittsburgh Penguins,Washington Capitals,Washington Capitals,Pittsburgh Penguins,4,1,REG
+2015-12-15,Columbus Blue Jackets,Tampa Bay Lightning,Tampa Bay Lightning,Columbus Blue Jackets,2,1,REG
+2015-12-15,Ottawa Senators,Los Angeles Kings,Ottawa Senators,Los Angeles Kings,5,3,REG
+2015-12-15,Detroit Red Wings,Buffalo Sabres,Buffalo Sabres,Detroit Red Wings,2,1,REG
+2015-12-16,Buffalo Sabres,New Jersey Devils,New Jersey Devils,Buffalo Sabres,2,0,REG
+2015-12-16,New York Islanders,Florida Panthers,Florida Panthers,New York Islanders,5,1,REG
+2015-12-16,New York Rangers,Edmonton Oilers,New York Rangers,Edmonton Oilers,4,2,REG
+2015-12-16,Philadelphia Flyers,Carolina Hurricanes,Philadelphia Flyers,Carolina Hurricanes,4,3,OT
+2015-12-16,Toronto Maple Leafs,Tampa Bay Lightning,Tampa Bay Lightning,Toronto Maple Leafs,5,4,OT
+2015-12-16,Montreal Canadiens,San Jose Sharks,San Jose Sharks,Montreal Canadiens,3,1,REG
+2015-12-16,Nashville Predators,Calgary Flames,Calgary Flames,Nashville Predators,2,1,OT
+2015-12-16,Minnesota Wild,Vancouver Canucks,Minnesota Wild,Vancouver Canucks,6,2,REG
+2015-12-16,Winnipeg Jets,St. Louis Blues,St. Louis Blues,Winnipeg Jets,4,3,REG
+2015-12-16,Chicago Blackhawks,Colorado Avalanche,Colorado Avalanche,Chicago Blackhawks,3,0,REG
+2015-12-16,Dallas Stars,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,5,1,REG
+2015-12-17,Washington Capitals,Ottawa Senators,Washington Capitals,Ottawa Senators,2,1,REG
+2015-12-17,Boston Bruins,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,3,0,REG
+2015-12-18,Buffalo Sabres,Anaheim Ducks,Buffalo Sabres,Anaheim Ducks,3,0,REG
+2015-12-18,New Jersey Devils,Florida Panthers,Florida Panthers,New Jersey Devils,5,1,REG
+2015-12-18,Philadelphia Flyers,Vancouver Canucks,Philadelphia Flyers,Vancouver Canucks,2,0,REG
+2015-12-18,Toronto Maple Leafs,San Jose Sharks,San Jose Sharks,Toronto Maple Leafs,5,4,OT
+2015-12-18,Montreal Canadiens,Los Angeles Kings,Los Angeles Kings,Montreal Canadiens,3,0,REG
+2015-12-18,St. Louis Blues,Nashville Predators,St. Louis Blues,Nashville Predators,2,1,REG
+2015-12-18,Minnesota Wild,New York Rangers,Minnesota Wild,New York Rangers,5,2,REG
+2015-12-18,Chicago Blackhawks,Edmonton Oilers,Chicago Blackhawks,Edmonton Oilers,4,0,REG
+2015-12-18,Dallas Stars,Calgary Flames,Calgary Flames,Dallas Stars,3,1,REG
+2015-12-18,Colorado Avalanche,New York Islanders,Colorado Avalanche,New York Islanders,2,1,REG
+2015-12-18,Arizona Coyotes,Columbus Blue Jackets,Columbus Blue Jackets,Arizona Coyotes,7,5,REG
+2015-12-19,Pittsburgh Penguins,Boston Bruins,Boston Bruins,Pittsburgh Penguins,6,2,REG
+2015-12-19,Washington Capitals,Tampa Bay Lightning,Washington Capitals,Tampa Bay Lightning,5,3,REG
+2015-12-19,Carolina Hurricanes,Florida Panthers,Florida Panthers,Carolina Hurricanes,2,0,REG
+2015-12-19,Ottawa Senators,San Jose Sharks,Ottawa Senators,San Jose Sharks,4,2,REG
+2015-12-19,Detroit Red Wings,Vancouver Canucks,Vancouver Canucks,Detroit Red Wings,4,3,SO
+2015-12-19,Winnipeg Jets,New York Rangers,Winnipeg Jets,New York Rangers,5,2,REG
+2015-12-19,Buffalo Sabres,Chicago Blackhawks,Chicago Blackhawks,Buffalo Sabres,3,2,SO
+2015-12-19,St. Louis Blues,Calgary Flames,St. Louis Blues,Calgary Flames,3,2,REG
+2015-12-20,Toronto Maple Leafs,Los Angeles Kings,Toronto Maple Leafs,Los Angeles Kings,4,0,REG
+2015-12-20,New Jersey Devils,Anaheim Ducks,Anaheim Ducks,New Jersey Devils,2,1,REG
+2015-12-20,Pittsburgh Penguins,Carolina Hurricanes,Carolina Hurricanes,Pittsburgh Penguins,2,1,REG
+2015-12-20,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,3,2,SO
+2015-12-20,Dallas Stars,Montreal Canadiens,Dallas Stars,Montreal Canadiens,6,2,REG
+2015-12-20,Nashville Predators,Minnesota Wild,Nashville Predators,Minnesota Wild,3,2,REG
+2015-12-20,Colorado Avalanche,Edmonton Oilers,Colorado Avalanche,Edmonton Oilers,5,1,REG
+2015-12-20,Florida Panthers,Vancouver Canucks,Florida Panthers,Vancouver Canucks,5,4,SO
+2015-12-20,Boston Bruins,New Jersey Devils,Boston Bruins,New Jersey Devils,2,1,SO
+2015-12-20,Tampa Bay Lightning,Ottawa Senators,Tampa Bay Lightning,Ottawa Senators,5,2,REG
+2015-12-21,Detroit Red Wings,Calgary Flames,Detroit Red Wings,Calgary Flames,4,2,REG
+2015-12-21,New York Rangers,Washington Capitals,Washington Capitals,New York Rangers,7,3,REG
+2015-12-21,Chicago Blackhawks,San Jose Sharks,Chicago Blackhawks,San Jose Sharks,4,3,OT
+2015-12-22,New York Islanders,Anaheim Ducks,New York Islanders,Anaheim Ducks,5,2,REG
+2015-12-22,Philadelphia Flyers,St. Louis Blues,Philadelphia Flyers,St. Louis Blues,4,3,REG
+2015-12-22,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,5,2,REG
+2015-12-22,Carolina Hurricanes,Washington Capitals,Washington Capitals,Carolina Hurricanes,2,1,REG
+2015-12-22,Nashville Predators,Montreal Canadiens,Nashville Predators,Montreal Canadiens,5,1,REG
+2015-12-22,Minnesota Wild,Dallas Stars,Dallas Stars,Minnesota Wild,6,3,REG
+2015-12-22,Colorado Avalanche,Toronto Maple Leafs,Toronto Maple Leafs,Colorado Avalanche,7,4,REG
+2015-12-22,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,3,1,REG
+2015-12-23,Boston Bruins,St. Louis Blues,St. Louis Blues,Boston Bruins,2,0,REG
+2015-12-23,New York Rangers,Anaheim Ducks,New York Rangers,Anaheim Ducks,3,2,OT
+2015-12-23,Detroit Red Wings,New Jersey Devils,New Jersey Devils,Detroit Red Wings,4,3,REG
+2015-12-23,Tampa Bay Lightning,Vancouver Canucks,Vancouver Canucks,Tampa Bay Lightning,2,1,REG
+2015-12-23,Florida Panthers,Ottawa Senators,Florida Panthers,Ottawa Senators,2,1,SO
+2015-12-23,Minnesota Wild,Montreal Canadiens,Minnesota Wild,Montreal Canadiens,2,1,REG
+2015-12-23,Dallas Stars,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,4,0,REG
+2015-12-23,Calgary Flames,Winnipeg Jets,Calgary Flames,Winnipeg Jets,4,1,REG
+2015-12-23,Arizona Coyotes,Toronto Maple Leafs,Arizona Coyotes,Toronto Maple Leafs,3,2,REG
+2015-12-23,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,5,3,REG
+2015-12-27,Boston Bruins,Buffalo Sabres,Buffalo Sabres,Boston Bruins,6,3,REG
+2015-12-27,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,5,2,REG
+2015-12-27,Washington Capitals,Montreal Canadiens,Washington Capitals,Montreal Canadiens,3,1,REG
+2015-12-27,Carolina Hurricanes,New Jersey Devils,Carolina Hurricanes,New Jersey Devils,3,1,REG
+2015-12-27,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,3,2,SO
+2015-12-27,Nashville Predators,Detroit Red Wings,Detroit Red Wings,Nashville Predators,3,2,REG
+2015-12-27,Minnesota Wild,Pittsburgh Penguins,Pittsburgh Penguins,Minnesota Wild,3,1,REG
+2015-12-27,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,4,3,OT
+2015-12-27,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,2,1,OT
+2015-12-27,Ottawa Senators,Boston Bruins,Ottawa Senators,Boston Bruins,3,1,REG
+2015-12-27,Florida Panthers,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,3,2,REG
+2015-12-27,New York Islanders,Toronto Maple Leafs,Toronto Maple Leafs,New York Islanders,3,1,REG
+2015-12-27,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,3,0,REG
+2015-12-28,Chicago Blackhawks,Carolina Hurricanes,Carolina Hurricanes,Chicago Blackhawks,2,1,REG
+2015-12-28,Colorado Avalanche,Arizona Coyotes,Arizona Coyotes,Colorado Avalanche,2,1,OT
+2015-12-28,Anaheim Ducks,Philadelphia Flyers,Anaheim Ducks,Philadelphia Flyers,4,2,REG
+2015-12-28,Calgary Flames,Edmonton Oilers,Calgary Flames,Edmonton Oilers,5,3,REG
+2015-12-29,Buffalo Sabres,Washington Capitals,Washington Capitals,Buffalo Sabres,2,0,REG
+2015-12-29,Tampa Bay Lightning,Montreal Canadiens,Montreal Canadiens,Tampa Bay Lightning,4,3,SO
+2015-12-29,Nashville Predators,New York Rangers,Nashville Predators,New York Rangers,5,3,REG
+2015-12-29,Minnesota Wild,Detroit Red Wings,Minnesota Wild,Detroit Red Wings,3,1,REG
+2015-12-29,Vancouver Canucks,Los Angeles Kings,Los Angeles Kings,Vancouver Canucks,4,0,REG
+2015-12-29,San Jose Sharks,Colorado Avalanche,Colorado Avalanche,San Jose Sharks,6,3,REG
+2015-12-30,Boston Bruins,Ottawa Senators,Boston Bruins,Ottawa Senators,7,3,REG
+2015-12-30,Toronto Maple Leafs,New York Islanders,New York Islanders,Toronto Maple Leafs,6,3,REG
+2015-12-30,New Jersey Devils,Carolina Hurricanes,New Jersey Devils,Carolina Hurricanes,3,2,REG
+2015-12-30,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,Dallas Stars,6,3,REG
+2015-12-30,Florida Panthers,Montreal Canadiens,Florida Panthers,Montreal Canadiens,3,1,REG
+2015-12-30,St. Louis Blues,Nashville Predators,St. Louis Blues,Nashville Predators,4,3,OT
+2015-12-30,Winnipeg Jets,Detroit Red Wings,Winnipeg Jets,Detroit Red Wings,4,1,REG
+2015-12-30,Edmonton Oilers,Los Angeles Kings,Los Angeles Kings,Edmonton Oilers,5,2,REG
+2015-12-30,Arizona Coyotes,Chicago Blackhawks,Chicago Blackhawks,Arizona Coyotes,7,5,REG
+2015-12-31,Pittsburgh Penguins,Toronto Maple Leafs,Toronto Maple Leafs,Pittsburgh Penguins,3,2,SO
+2015-12-31,Washington Capitals,Buffalo Sabres,Washington Capitals,Buffalo Sabres,5,2,REG
+2015-12-31,Ottawa Senators,New Jersey Devils,New Jersey Devils,Ottawa Senators,3,0,REG
+2015-12-31,Tampa Bay Lightning,New York Rangers,New York Rangers,Tampa Bay Lightning,5,2,REG
+2015-12-31,San Jose Sharks,Philadelphia Flyers,San Jose Sharks,Philadelphia Flyers,4,2,REG
+2015-12-31,Buffalo Sabres,New York Islanders,New York Islanders,Buffalo Sabres,2,1,REG
+2015-12-31,Detroit Red Wings,Pittsburgh Penguins,Pittsburgh Penguins,Detroit Red Wings,5,2,REG
+2015-12-31,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,Washington Capitals,4,2,REG
+2016-01-01,St. Louis Blues,Minnesota Wild,Minnesota Wild,St. Louis Blues,3,1,REG
+2016-01-01,Colorado Avalanche,Chicago Blackhawks,Chicago Blackhawks,Colorado Avalanche,4,3,OT
+2016-01-01,Dallas Stars,Nashville Predators,Dallas Stars,Nashville Predators,5,1,REG
+2016-01-01,Calgary Flames,Los Angeles Kings,Los Angeles Kings,Calgary Flames,4,1,REG
+2016-01-01,Arizona Coyotes,Winnipeg Jets,Arizona Coyotes,Winnipeg Jets,4,2,REG
+2016-01-01,Boston Bruins,Montreal Canadiens,Montreal Canadiens,Boston Bruins,5,1,REG
+2016-01-02,Vancouver Canucks,Anaheim Ducks,Vancouver Canucks,Anaheim Ducks,2,1,SO
+2016-01-02,Buffalo Sabres,Detroit Red Wings,Detroit Red Wings,Buffalo Sabres,4,3,REG
+2016-01-02,Edmonton Oilers,Arizona Coyotes,Edmonton Oilers,Arizona Coyotes,4,3,SO
+2016-01-02,Los Angeles Kings,Philadelphia Flyers,Los Angeles Kings,Philadelphia Flyers,2,1,REG
+2016-01-03,Toronto Maple Leafs,St. Louis Blues,Toronto Maple Leafs,St. Louis Blues,4,1,REG
+2016-01-03,Tampa Bay Lightning,Minnesota Wild,Tampa Bay Lightning,Minnesota Wild,3,2,SO
+2016-01-03,Florida Panthers,New York Rangers,Florida Panthers,New York Rangers,3,0,REG
+2016-01-03,New Jersey Devils,Dallas Stars,New Jersey Devils,Dallas Stars,3,2,OT
+2016-01-03,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,5,2,REG
+2016-01-03,Carolina Hurricanes,Nashville Predators,Nashville Predators,Carolina Hurricanes,2,1,OT
+2016-01-03,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,Washington Capitals,5,4,SO
+2016-01-03,Colorado Avalanche,Calgary Flames,Calgary Flames,Colorado Avalanche,4,0,REG
+2016-01-03,San Jose Sharks,Winnipeg Jets,Winnipeg Jets,San Jose Sharks,4,1,REG
+2016-01-03,New York Islanders,Dallas Stars,New York Islanders,Dallas Stars,6,5,REG
+2016-01-03,Florida Panthers,Minnesota Wild,Florida Panthers,Minnesota Wild,2,1,REG
+2016-01-04,Chicago Blackhawks,Ottawa Senators,Chicago Blackhawks,Ottawa Senators,3,0,REG
+2016-01-04,Anaheim Ducks,Winnipeg Jets,Anaheim Ducks,Winnipeg Jets,4,1,REG
+2016-01-05,St. Louis Blues,Ottawa Senators,Ottawa Senators,St. Louis Blues,3,2,OT
+2016-01-05,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,4,1,REG
+2016-01-05,Vancouver Canucks,Arizona Coyotes,Arizona Coyotes,Vancouver Canucks,3,2,REG
+2016-01-06,Boston Bruins,Washington Capitals,Washington Capitals,Boston Bruins,3,2,REG
+2016-01-06,Buffalo Sabres,Florida Panthers,Florida Panthers,Buffalo Sabres,5,1,REG
+2016-01-06,New York Rangers,Dallas Stars,New York Rangers,Dallas Stars,6,2,REG
+2016-01-06,Pittsburgh Penguins,Chicago Blackhawks,Chicago Blackhawks,Pittsburgh Penguins,3,2,OT
+2016-01-06,Columbus Blue Jackets,Minnesota Wild,Minnesota Wild,Columbus Blue Jackets,4,2,REG
+2016-01-06,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,4,3,REG
+2016-01-06,Nashville Predators,Winnipeg Jets,Winnipeg Jets,Nashville Predators,4,1,REG
+2016-01-06,Calgary Flames,Tampa Bay Lightning,Calgary Flames,Tampa Bay Lightning,3,1,REG
+2016-01-07,Montreal Canadiens,New Jersey Devils,Montreal Canadiens,New Jersey Devils,2,1,REG
+2016-01-07,Chicago Blackhawks,Pittsburgh Penguins,Chicago Blackhawks,Pittsburgh Penguins,3,1,REG
+2016-01-07,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,4,3,OT
+2016-01-07,Vancouver Canucks,Carolina Hurricanes,Vancouver Canucks,Carolina Hurricanes,3,2,REG
+2016-01-07,Anaheim Ducks,Toronto Maple Leafs,Toronto Maple Leafs,Anaheim Ducks,4,0,REG
+2016-01-08,New York Islanders,Washington Capitals,Washington Capitals,New York Islanders,4,1,REG
+2016-01-08,Ottawa Senators,Florida Panthers,Florida Panthers,Ottawa Senators,3,2,REG
+2016-01-08,Minnesota Wild,Philadelphia Flyers,Philadelphia Flyers,Minnesota Wild,4,3,OT
+2016-01-08,Dallas Stars,Winnipeg Jets,Dallas Stars,Winnipeg Jets,2,1,SO
+2016-01-08,Calgary Flames,Arizona Coyotes,Arizona Coyotes,Calgary Flames,2,1,REG
+2016-01-08,Los Angeles Kings,Toronto Maple Leafs,Los Angeles Kings,Toronto Maple Leafs,2,1,REG
+2016-01-08,San Jose Sharks,Detroit Red Wings,Detroit Red Wings,San Jose Sharks,2,1,REG
+2016-01-09,New Jersey Devils,Boston Bruins,Boston Bruins,New Jersey Devils,4,1,REG
+2016-01-09,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,4,1,REG
+2016-01-09,Chicago Blackhawks,Buffalo Sabres,Chicago Blackhawks,Buffalo Sabres,3,1,REG
+2016-01-09,Colorado Avalanche,Nashville Predators,Colorado Avalanche,Nashville Predators,5,3,REG
+2016-01-09,Edmonton Oilers,Tampa Bay Lightning,Tampa Bay Lightning,Edmonton Oilers,3,2,REG
+2016-01-09,Anaheim Ducks,St. Louis Blues,Anaheim Ducks,St. Louis Blues,4,3,SO
+2016-01-09,New York Rangers,Washington Capitals,Washington Capitals,New York Rangers,4,3,OT
+2016-01-09,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,New York Islanders,4,0,REG
+2016-01-10,Montreal Canadiens,Pittsburgh Penguins,Pittsburgh Penguins,Montreal Canadiens,3,1,REG
+2016-01-10,Ottawa Senators,Boston Bruins,Ottawa Senators,Boston Bruins,2,1,OT
+2016-01-10,Columbus Blue Jackets,Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,4,3,OT
+2016-01-10,San Jose Sharks,Toronto Maple Leafs,San Jose Sharks,Toronto Maple Leafs,4,0,REG
+2016-01-10,Dallas Stars,Minnesota Wild,Minnesota Wild,Dallas Stars,2,1,REG
+2016-01-10,Arizona Coyotes,Nashville Predators,Arizona Coyotes,Nashville Predators,4,0,REG
+2016-01-10,Vancouver Canucks,Tampa Bay Lightning,Tampa Bay Lightning,Vancouver Canucks,3,2,OT
+2016-01-10,Los Angeles Kings,St. Louis Blues,St. Louis Blues,Los Angeles Kings,2,1,SO
+2016-01-10,Winnipeg Jets,Buffalo Sabres,Buffalo Sabres,Winnipeg Jets,4,2,REG
+2016-01-11,Washington Capitals,Ottawa Senators,Washington Capitals,Ottawa Senators,5,1,REG
+2016-01-11,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,6,3,REG
+2016-01-11,Minnesota Wild,New Jersey Devils,New Jersey Devils,Minnesota Wild,2,1,REG
+2016-01-11,Anaheim Ducks,Detroit Red Wings,Detroit Red Wings,Anaheim Ducks,2,1,REG
+2016-01-11,Edmonton Oilers,Florida Panthers,Florida Panthers,Edmonton Oilers,2,1,REG
+2016-01-12,New York Rangers,Boston Bruins,New York Rangers,Boston Bruins,2,1,REG
+2016-01-12,Calgary Flames,San Jose Sharks,San Jose Sharks,Calgary Flames,5,4,REG
+2016-01-12,Vancouver Canucks,Florida Panthers,Vancouver Canucks,Florida Panthers,3,2,OT
+2016-01-12,Los Angeles Kings,Detroit Red Wings,Los Angeles Kings,Detroit Red Wings,4,2,REG
+2016-01-13,New York Islanders,Columbus Blue Jackets,New York Islanders,Columbus Blue Jackets,5,2,REG
+2016-01-13,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,3,2,OT
+2016-01-13,St. Louis Blues,New Jersey Devils,St. Louis Blues,New Jersey Devils,5,2,REG
+2016-01-13,Minnesota Wild,Buffalo Sabres,Buffalo Sabres,Minnesota Wild,3,2,REG
+2016-01-13,Winnipeg Jets,San Jose Sharks,San Jose Sharks,Winnipeg Jets,4,1,REG
+2016-01-13,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,Nashville Predators,3,2,REG
+2016-01-13,Colorado Avalanche,Tampa Bay Lightning,Tampa Bay Lightning,Colorado Avalanche,4,0,REG
+2016-01-13,Arizona Coyotes,Edmonton Oilers,Arizona Coyotes,Edmonton Oilers,4,3,OT
+2016-01-14,Toronto Maple Leafs,Columbus Blue Jackets,Columbus Blue Jackets,Toronto Maple Leafs,3,1,REG
+2016-01-14,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,Boston Bruins,3,2,REG
+2016-01-14,Calgary Flames,Florida Panthers,Calgary Flames,Florida Panthers,4,0,REG
+2016-01-14,Anaheim Ducks,Ottawa Senators,Anaheim Ducks,Ottawa Senators,4,1,REG
+2016-01-15,New York Islanders,New York Rangers,New York Islanders,New York Rangers,3,1,REG
+2016-01-15,Washington Capitals,Vancouver Canucks,Washington Capitals,Vancouver Canucks,4,1,REG
+2016-01-15,Montreal Canadiens,Chicago Blackhawks,Chicago Blackhawks,Montreal Canadiens,2,1,REG
+2016-01-15,St. Louis Blues,Carolina Hurricanes,Carolina Hurricanes,St. Louis Blues,4,1,REG
+2016-01-15,Winnipeg Jets,Nashville Predators,Winnipeg Jets,Nashville Predators,5,4,OT
+2016-01-15,Colorado Avalanche,New Jersey Devils,Colorado Avalanche,New Jersey Devils,3,0,REG
+2016-01-15,Arizona Coyotes,Detroit Red Wings,Detroit Red Wings,Arizona Coyotes,3,2,OT
+2016-01-15,San Jose Sharks,Edmonton Oilers,San Jose Sharks,Edmonton Oilers,2,1,SO
+2016-01-16,Buffalo Sabres,Boston Bruins,Boston Bruins,Buffalo Sabres,4,1,REG
+2016-01-16,Toronto Maple Leafs,Chicago Blackhawks,Chicago Blackhawks,Toronto Maple Leafs,4,1,REG
+2016-01-16,Carolina Hurricanes,Vancouver Canucks,Vancouver Canucks,Carolina Hurricanes,3,2,OT
+2016-01-16,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,5,4,OT
+2016-01-16,Anaheim Ducks,Dallas Stars,Anaheim Ducks,Dallas Stars,4,2,REG
+2016-01-16,Philadelphia Flyers,New York Rangers,New York Rangers,Philadelphia Flyers,3,2,SO
+2016-01-16,Arizona Coyotes,New Jersey Devils,New Jersey Devils,Arizona Coyotes,2,0,REG
+2016-01-16,Los Angeles Kings,Ottawa Senators,Ottawa Senators,Los Angeles Kings,5,3,REG
+2016-01-17,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,3,2,REG
+2016-01-17,Buffalo Sabres,Washington Capitals,Buffalo Sabres,Washington Capitals,4,1,REG
+2016-01-17,Columbus Blue Jackets,Colorado Avalanche,Columbus Blue Jackets,Colorado Avalanche,2,1,REG
+2016-01-17,St. Louis Blues,Montreal Canadiens,St. Louis Blues,Montreal Canadiens,4,3,OT
+2016-01-17,Nashville Predators,Minnesota Wild,Nashville Predators,Minnesota Wild,3,0,REG
+2016-01-17,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,2,1,SO
+2016-01-17,San Jose Sharks,Dallas Stars,San Jose Sharks,Dallas Stars,4,3,OT
+2016-01-17,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,4,0,REG
+2016-01-17,New York Islanders,Vancouver Canucks,Vancouver Canucks,New York Islanders,2,1,SO
+2016-01-17,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,3,1,REG
+2016-01-17,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,5,2,REG
+2016-01-18,Chicago Blackhawks,Montreal Canadiens,Chicago Blackhawks,Montreal Canadiens,5,2,REG
+2016-01-18,Detroit Red Wings,Philadelphia Flyers,Philadelphia Flyers,Detroit Red Wings,2,1,SO
+2016-01-18,Anaheim Ducks,Los Angeles Kings,Los Angeles Kings,Anaheim Ducks,3,2,REG
+2016-01-19,Florida Panthers,Edmonton Oilers,Edmonton Oilers,Florida Panthers,4,2,REG
+2016-01-19,St. Louis Blues,Pittsburgh Penguins,St. Louis Blues,Pittsburgh Penguins,5,2,REG
+2016-01-19,Winnipeg Jets,Colorado Avalanche,Colorado Avalanche,Winnipeg Jets,2,1,REG
+2016-01-19,Arizona Coyotes,Buffalo Sabres,Buffalo Sabres,Arizona Coyotes,2,1,REG
+2016-01-19,San Jose Sharks,Ottawa Senators,Ottawa Senators,San Jose Sharks,4,3,SO
+2016-01-20,New Jersey Devils,Calgary Flames,New Jersey Devils,Calgary Flames,4,2,REG
+2016-01-20,New York Rangers,Vancouver Canucks,New York Rangers,Vancouver Canucks,3,2,OT
+2016-01-20,Philadelphia Flyers,Toronto Maple Leafs,Toronto Maple Leafs,Philadelphia Flyers,3,2,REG
+2016-01-20,Columbus Blue Jackets,Washington Capitals,Washington Capitals,Columbus Blue Jackets,6,3,REG
+2016-01-20,Montreal Canadiens,Boston Bruins,Boston Bruins,Montreal Canadiens,4,1,REG
+2016-01-20,Tampa Bay Lightning,Edmonton Oilers,Tampa Bay Lightning,Edmonton Oilers,6,4,REG
+2016-01-20,Nashville Predators,Chicago Blackhawks,Chicago Blackhawks,Nashville Predators,4,1,REG
+2016-01-20,Los Angeles Kings,Dallas Stars,Los Angeles Kings,Dallas Stars,3,2,REG
+2016-01-21,Detroit Red Wings,St. Louis Blues,St. Louis Blues,Detroit Red Wings,2,1,REG
+2016-01-21,Colorado Avalanche,Buffalo Sabres,Colorado Avalanche,Buffalo Sabres,2,1,REG
+2016-01-21,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,Minnesota Wild,3,1,REG
+2016-01-22,Boston Bruins,Vancouver Canucks,Vancouver Canucks,Boston Bruins,4,2,REG
+2016-01-22,New Jersey Devils,Ottawa Senators,New Jersey Devils,Ottawa Senators,6,3,REG
+2016-01-22,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,4,3,REG
+2016-01-22,Columbus Blue Jackets,Calgary Flames,Calgary Flames,Columbus Blue Jackets,4,2,REG
+2016-01-22,Tampa Bay Lightning,Chicago Blackhawks,Tampa Bay Lightning,Chicago Blackhawks,2,1,REG
+2016-01-22,Winnipeg Jets,Nashville Predators,Nashville Predators,Winnipeg Jets,4,1,REG
+2016-01-22,Dallas Stars,Edmonton Oilers,Dallas Stars,Edmonton Oilers,3,2,REG
+2016-01-22,Arizona Coyotes,San Jose Sharks,San Jose Sharks,Arizona Coyotes,3,1,REG
+2016-01-22,Los Angeles Kings,Minnesota Wild,Minnesota Wild,Los Angeles Kings,3,0,REG
+2016-01-23,Buffalo Sabres,Detroit Red Wings,Detroit Red Wings,Buffalo Sabres,3,0,REG
+2016-01-23,Carolina Hurricanes,New York Rangers,New York Rangers,Carolina Hurricanes,4,1,REG
+2016-01-23,Ottawa Senators,New York Islanders,New York Islanders,Ottawa Senators,5,2,REG
+2016-01-23,Florida Panthers,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,4,0,REG
+2016-01-23,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,2,1,SO
+2016-01-23,Pittsburgh Penguins,Vancouver Canucks,Pittsburgh Penguins,Vancouver Canucks,5,4,REG
+2016-01-23,San Jose Sharks,Minnesota Wild,San Jose Sharks,Minnesota Wild,4,3,REG
+2016-01-24,Boston Bruins,Columbus Blue Jackets,Boston Bruins,Columbus Blue Jackets,3,2,SO
+2016-01-24,Toronto Maple Leafs,Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,3,2,SO
+2016-01-24,Detroit Red Wings,Anaheim Ducks,Anaheim Ducks,Detroit Red Wings,4,3,REG
+2016-01-24,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,5,2,REG
+2016-01-24,Winnipeg Jets,New Jersey Devils,New Jersey Devils,Winnipeg Jets,3,1,REG
+2016-01-24,Dallas Stars,Colorado Avalanche,Colorado Avalanche,Dallas Stars,3,1,REG
+2016-01-24,Arizona Coyotes,Los Angeles Kings,Arizona Coyotes,Los Angeles Kings,3,2,REG
+2016-01-24,Edmonton Oilers,Nashville Predators,Nashville Predators,Edmonton Oilers,4,1,REG
+2016-01-24,Ottawa Senators,New York Rangers,Ottawa Senators,New York Rangers,3,0,REG
+2016-01-24,Carolina Hurricanes,Calgary Flames,Carolina Hurricanes,Calgary Flames,5,2,REG
+2016-01-25,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,2,0,REG
+2016-01-25,San Jose Sharks,Los Angeles Kings,Los Angeles Kings,San Jose Sharks,3,2,OT
+2016-01-26,New York Islanders,Detroit Red Wings,Detroit Red Wings,New York Islanders,4,2,REG
+2016-01-26,Philadelphia Flyers,Boston Bruins,Boston Bruins,Philadelphia Flyers,3,2,REG
+2016-01-26,Columbus Blue Jackets,Montreal Canadiens,Columbus Blue Jackets,Montreal Canadiens,5,2,REG
+2016-01-26,New York Rangers,Buffalo Sabres,New York Rangers,Buffalo Sabres,6,3,REG
+2016-01-26,Dallas Stars,Calgary Flames,Dallas Stars,Calgary Flames,2,1,REG
+2016-01-26,Minnesota Wild,Arizona Coyotes,Arizona Coyotes,Minnesota Wild,2,1,SO
+2016-01-27,Boston Bruins,Anaheim Ducks,Anaheim Ducks,Boston Bruins,6,2,REG
+2016-01-27,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,2,0,REG
+2016-01-27,Carolina Hurricanes,Chicago Blackhawks,Carolina Hurricanes,Chicago Blackhawks,4,0,REG
+2016-01-27,Montreal Canadiens,Columbus Blue Jackets,Columbus Blue Jackets,Montreal Canadiens,5,2,REG
+2016-01-27,Ottawa Senators,Buffalo Sabres,Buffalo Sabres,Ottawa Senators,3,2,REG
+2016-01-27,Florida Panthers,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,5,1,REG
+2016-01-27,Winnipeg Jets,Arizona Coyotes,Winnipeg Jets,Arizona Coyotes,5,2,REG
+2016-01-27,Vancouver Canucks,Nashville Predators,Nashville Predators,Vancouver Canucks,2,1,REG
+2016-01-27,San Jose Sharks,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,5,1,REG
+2016-01-28,Washington Capitals,Philadelphia Flyers,Philadelphia Flyers,Washington Capitals,4,3,OT
+2016-01-28,Calgary Flames,Nashville Predators,Nashville Predators,Calgary Flames,2,1,REG
+2016-01-28,Los Angeles Kings,Colorado Avalanche,Colorado Avalanche,Los Angeles Kings,4,3,REG
+2016-02-03,Boston Bruins,Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,4,3,OT
+2016-02-03,New Jersey Devils,New York Rangers,New Jersey Devils,New York Rangers,3,2,REG
+2016-02-03,New York Islanders,Minnesota Wild,New York Islanders,Minnesota Wild,5,3,REG
+2016-02-03,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,4,2,REG
+2016-02-03,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,6,5,REG
+2016-02-03,Washington Capitals,Florida Panthers,Florida Panthers,Washington Capitals,5,2,REG
+2016-02-03,Winnipeg Jets,Dallas Stars,Dallas Stars,Winnipeg Jets,5,3,REG
+2016-02-03,Colorado Avalanche,Chicago Blackhawks,Chicago Blackhawks,Colorado Avalanche,2,1,REG
+2016-02-03,Edmonton Oilers,Columbus Blue Jackets,Edmonton Oilers,Columbus Blue Jackets,5,1,REG
+2016-02-03,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,6,2,REG
+2016-02-03,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,San Jose Sharks,3,2,REG
+2016-02-04,Montreal Canadiens,Buffalo Sabres,Buffalo Sabres,Montreal Canadiens,4,2,REG
+2016-02-04,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,3,1,REG
+2016-02-04,Calgary Flames,Carolina Hurricanes,Calgary Flames,Carolina Hurricanes,4,1,REG
+2016-02-05,Buffalo Sabres,Boston Bruins,Boston Bruins,Buffalo Sabres,3,2,SO
+2016-02-05,New York Rangers,Minnesota Wild,New York Rangers,Minnesota Wild,4,2,REG
+2016-02-05,Washington Capitals,New York Islanders,Washington Capitals,New York Islanders,3,2,REG
+2016-02-05,Toronto Maple Leafs,New Jersey Devils,Toronto Maple Leafs,New Jersey Devils,3,2,SO
+2016-02-05,Ottawa Senators,Edmonton Oilers,Edmonton Oilers,Ottawa Senators,6,2,REG
+2016-02-05,Florida Panthers,Detroit Red Wings,Florida Panthers,Detroit Red Wings,6,3,REG
+2016-02-05,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,3,1,REG
+2016-02-05,Nashville Predators,Philadelphia Flyers,Philadelphia Flyers,Nashville Predators,6,3,REG
+2016-02-05,Colorado Avalanche,Dallas Stars,Dallas Stars,Colorado Avalanche,4,3,OT
+2016-02-05,Arizona Coyotes,Chicago Blackhawks,Chicago Blackhawks,Arizona Coyotes,5,4,OT
+2016-02-05,Vancouver Canucks,Columbus Blue Jackets,Columbus Blue Jackets,Vancouver Canucks,2,1,SO
+2016-02-05,Los Angeles Kings,Anaheim Ducks,Anaheim Ducks,Los Angeles Kings,4,2,REG
+2016-02-06,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,6,3,REG
+2016-02-06,Winnipeg Jets,Carolina Hurricanes,Carolina Hurricanes,Winnipeg Jets,5,3,REG
+2016-02-06,Calgary Flames,Columbus Blue Jackets,Columbus Blue Jackets,Calgary Flames,2,1,REG
+2016-02-06,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,5,2,REG
+2016-02-06,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,3,2,SO
+2016-02-06,Philadelphia Flyers,New York Rangers,New York Rangers,Philadelphia Flyers,3,2,SO
+2016-02-06,Montreal Canadiens,Edmonton Oilers,Montreal Canadiens,Edmonton Oilers,5,1,REG
+2016-02-06,Detroit Red Wings,New York Islanders,Detroit Red Wings,New York Islanders,5,1,REG
+2016-02-07,Boston Bruins,Buffalo Sabres,Boston Bruins,Buffalo Sabres,2,1,OT
+2016-02-07,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,5,1,REG
+2016-02-07,Florida Panthers,Pittsburgh Penguins,Pittsburgh Penguins,Florida Panthers,3,2,OT
+2016-02-07,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,4,1,REG
+2016-02-07,Nashville Predators,San Jose Sharks,Nashville Predators,San Jose Sharks,6,2,REG
+2016-02-07,Dallas Stars,Chicago Blackhawks,Chicago Blackhawks,Dallas Stars,5,1,REG
+2016-02-07,Colorado Avalanche,Winnipeg Jets,Winnipeg Jets,Colorado Avalanche,4,2,REG
+2016-02-07,Vancouver Canucks,Calgary Flames,Calgary Flames,Vancouver Canucks,4,1,REG
+2016-02-07,Washington Capitals,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,3,2,REG
+2016-02-07,Montreal Canadiens,Carolina Hurricanes,Montreal Canadiens,Carolina Hurricanes,2,1,SO
+2016-02-07,New York Islanders,Edmonton Oilers,New York Islanders,Edmonton Oilers,5,1,REG
+2016-02-09,New York Rangers,New Jersey Devils,New York Rangers,New Jersey Devils,2,1,REG
+2016-02-09,Pittsburgh Penguins,Anaheim Ducks,Pittsburgh Penguins,Anaheim Ducks,6,2,REG
+2016-02-09,Ottawa Senators,Tampa Bay Lightning,Ottawa Senators,Tampa Bay Lightning,5,1,REG
+2016-02-09,Detroit Red Wings,Florida Panthers,Detroit Red Wings,Florida Panthers,3,0,REG
+2016-02-10,Boston Bruins,Los Angeles Kings,Los Angeles Kings,Boston Bruins,6,2,REG
+2016-02-10,Buffalo Sabres,Florida Panthers,Florida Panthers,Buffalo Sabres,7,4,REG
+2016-02-10,Philadelphia Flyers,Anaheim Ducks,Anaheim Ducks,Philadelphia Flyers,4,1,REG
+2016-02-10,Columbus Blue Jackets,New York Islanders,New York Islanders,Columbus Blue Jackets,3,2,SO
+2016-02-10,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,4,2,REG
+2016-02-10,New Jersey Devils,Edmonton Oilers,New Jersey Devils,Edmonton Oilers,2,1,REG
+2016-02-10,St. Louis Blues,Winnipeg Jets,Winnipeg Jets,St. Louis Blues,2,1,SO
+2016-02-10,Nashville Predators,Washington Capitals,Washington Capitals,Nashville Predators,5,3,REG
+2016-02-10,Minnesota Wild,Dallas Stars,Dallas Stars,Minnesota Wild,4,3,OT
+2016-02-10,Chicago Blackhawks,San Jose Sharks,San Jose Sharks,Chicago Blackhawks,2,0,REG
+2016-02-10,Colorado Avalanche,Vancouver Canucks,Vancouver Canucks,Colorado Avalanche,3,1,REG
+2016-02-10,Calgary Flames,Toronto Maple Leafs,Calgary Flames,Toronto Maple Leafs,4,3,REG
+2016-02-11,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,Ottawa Senators,3,1,REG
+2016-02-11,Pittsburgh Penguins,New York Rangers,New York Rangers,Pittsburgh Penguins,3,0,REG
+2016-02-11,Arizona Coyotes,Vancouver Canucks,Vancouver Canucks,Arizona Coyotes,2,1,REG
+2016-02-12,New York Islanders,Los Angeles Kings,New York Islanders,Los Angeles Kings,5,2,REG
+2016-02-12,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,5,1,REG
+2016-02-12,Columbus Blue Jackets,Anaheim Ducks,Columbus Blue Jackets,Anaheim Ducks,4,3,SO
+2016-02-12,Ottawa Senators,Colorado Avalanche,Colorado Avalanche,Ottawa Senators,4,3,REG
+2016-02-12,Minnesota Wild,Washington Capitals,Washington Capitals,Minnesota Wild,4,3,REG
+2016-02-12,Winnipeg Jets,Boston Bruins,Boston Bruins,Winnipeg Jets,6,2,REG
+2016-02-12,Chicago Blackhawks,Dallas Stars,Dallas Stars,Chicago Blackhawks,4,2,REG
+2016-02-12,Edmonton Oilers,Toronto Maple Leafs,Edmonton Oilers,Toronto Maple Leafs,5,2,REG
+2016-02-12,San Jose Sharks,Calgary Flames,Calgary Flames,San Jose Sharks,6,5,SO
+2016-02-13,Buffalo Sabres,Montreal Canadiens,Buffalo Sabres,Montreal Canadiens,6,4,REG
+2016-02-13,New York Rangers,Los Angeles Kings,Los Angeles Kings,New York Rangers,5,4,OT
+2016-02-13,Carolina Hurricanes,Pittsburgh Penguins,Pittsburgh Penguins,Carolina Hurricanes,2,1,SO
+2016-02-13,Detroit Red Wings,Colorado Avalanche,Colorado Avalanche,Detroit Red Wings,3,2,SO
+2016-02-13,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,Nashville Predators,4,3,OT
+2016-02-13,Florida Panthers,St. Louis Blues,St. Louis Blues,Florida Panthers,5,3,REG
+2016-02-13,Arizona Coyotes,Calgary Flames,Arizona Coyotes,Calgary Flames,4,1,REG
+2016-02-13,Philadelphia Flyers,New Jersey Devils,New Jersey Devils,Philadelphia Flyers,2,1,OT
+2016-02-13,Minnesota Wild,Boston Bruins,Boston Bruins,Minnesota Wild,4,2,REG
+2016-02-14,Florida Panthers,Nashville Predators,Nashville Predators,Florida Panthers,4,0,REG
+2016-02-14,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,New York Islanders,6,3,REG
+2016-02-14,Columbus Blue Jackets,Ottawa Senators,Columbus Blue Jackets,Ottawa Senators,4,2,REG
+2016-02-14,Vancouver Canucks,Toronto Maple Leafs,Toronto Maple Leafs,Vancouver Canucks,5,2,REG
+2016-02-14,Dallas Stars,Washington Capitals,Dallas Stars,Washington Capitals,4,3,REG
+2016-02-14,Chicago Blackhawks,Anaheim Ducks,Anaheim Ducks,Chicago Blackhawks,3,2,OT
+2016-02-14,Edmonton Oilers,Winnipeg Jets,Winnipeg Jets,Edmonton Oilers,2,1,SO
+2016-02-14,San Jose Sharks,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,4,1,REG
+2016-02-14,Buffalo Sabres,Colorado Avalanche,Buffalo Sabres,Colorado Avalanche,4,1,REG
+2016-02-14,Detroit Red Wings,Boston Bruins,Detroit Red Wings,Boston Bruins,6,5,REG
+2016-02-14,Tampa Bay Lightning,St. Louis Blues,St. Louis Blues,Tampa Bay Lightning,2,1,REG
+2016-02-15,New York Rangers,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,3,1,REG
+2016-02-15,New York Islanders,Detroit Red Wings,New York Islanders,Detroit Red Wings,4,1,REG
+2016-02-15,Calgary Flames,Anaheim Ducks,Anaheim Ducks,Calgary Flames,6,4,REG
+2016-02-16,Florida Panthers,Pittsburgh Penguins,Florida Panthers,Pittsburgh Penguins,2,1,SO
+2016-02-16,Nashville Predators,Dallas Stars,Dallas Stars,Nashville Predators,3,2,OT
+2016-02-16,Chicago Blackhawks,Toronto Maple Leafs,Chicago Blackhawks,Toronto Maple Leafs,6,2,REG
+2016-02-16,Arizona Coyotes,Montreal Canadiens,Arizona Coyotes,Montreal Canadiens,6,2,REG
+2016-02-16,Vancouver Canucks,Minnesota Wild,Minnesota Wild,Vancouver Canucks,5,2,REG
+2016-02-17,New Jersey Devils,Philadelphia Flyers,Philadelphia Flyers,New Jersey Devils,6,3,REG
+2016-02-17,Washington Capitals,Los Angeles Kings,Washington Capitals,Los Angeles Kings,3,1,REG
+2016-02-17,Carolina Hurricanes,Winnipeg Jets,Carolina Hurricanes,Winnipeg Jets,2,1,REG
+2016-02-17,Columbus Blue Jackets,Boston Bruins,Boston Bruins,Columbus Blue Jackets,2,1,OT
+2016-02-17,Ottawa Senators,Buffalo Sabres,Ottawa Senators,Buffalo Sabres,2,1,SO
+2016-02-17,Tampa Bay Lightning,San Jose Sharks,San Jose Sharks,Tampa Bay Lightning,4,2,REG
+2016-02-17,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,2,1,OT
+2016-02-17,Edmonton Oilers,Anaheim Ducks,Anaheim Ducks,Edmonton Oilers,5,3,REG
+2016-02-18,New York Rangers,Chicago Blackhawks,Chicago Blackhawks,New York Rangers,5,3,REG
+2016-02-18,Colorado Avalanche,Montreal Canadiens,Colorado Avalanche,Montreal Canadiens,3,2,REG
+2016-02-18,Calgary Flames,Minnesota Wild,Minnesota Wild,Calgary Flames,5,3,REG
+2016-02-19,New York Islanders,Washington Capitals,Washington Capitals,New York Islanders,3,2,OT
+2016-02-19,Pittsburgh Penguins,Detroit Red Wings,Pittsburgh Penguins,Detroit Red Wings,6,3,REG
+2016-02-19,Toronto Maple Leafs,New York Rangers,New York Rangers,Toronto Maple Leafs,4,2,REG
+2016-02-19,Ottawa Senators,Carolina Hurricanes,Ottawa Senators,Carolina Hurricanes,4,2,REG
+2016-02-19,Tampa Bay Lightning,Winnipeg Jets,Tampa Bay Lightning,Winnipeg Jets,6,5,SO
+2016-02-19,Florida Panthers,San Jose Sharks,San Jose Sharks,Florida Panthers,2,1,SO
+2016-02-19,St. Louis Blues,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,2,1,OT
+2016-02-19,Nashville Predators,Boston Bruins,Nashville Predators,Boston Bruins,2,0,REG
+2016-02-19,Edmonton Oilers,Minnesota Wild,Minnesota Wild,Edmonton Oilers,5,2,REG
+2016-02-19,Arizona Coyotes,Dallas Stars,Arizona Coyotes,Dallas Stars,6,3,REG
+2016-02-19,Vancouver Canucks,Anaheim Ducks,Anaheim Ducks,Vancouver Canucks,5,2,REG
+2016-02-20,Carolina Hurricanes,San Jose Sharks,Carolina Hurricanes,San Jose Sharks,5,2,REG
+2016-02-20,Columbus Blue Jackets,Buffalo Sabres,Buffalo Sabres,Columbus Blue Jackets,4,0,REG
+2016-02-20,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,3,2,SO
+2016-02-20,Calgary Flames,Vancouver Canucks,Calgary Flames,Vancouver Canucks,5,2,REG
+2016-02-20,Pittsburgh Penguins,Tampa Bay Lightning,Tampa Bay Lightning,Pittsburgh Penguins,4,2,REG
+2016-02-21,Toronto Maple Leafs,Philadelphia Flyers,Philadelphia Flyers,Toronto Maple Leafs,5,4,OT
+2016-02-21,Ottawa Senators,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,3,2,SO
+2016-02-21,Florida Panthers,Winnipeg Jets,Florida Panthers,Winnipeg Jets,3,1,REG
+2016-02-21,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,4,3,REG
+2016-02-21,Nashville Predators,Los Angeles Kings,Los Angeles Kings,Nashville Predators,2,1,OT
+2016-02-21,Dallas Stars,Boston Bruins,Boston Bruins,Dallas Stars,7,3,REG
+2016-02-21,Arizona Coyotes,St. Louis Blues,St. Louis Blues,Arizona Coyotes,6,4,REG
+2016-02-21,Edmonton Oilers,Colorado Avalanche,Colorado Avalanche,Edmonton Oilers,3,2,REG
+2016-02-21,Buffalo Sabres,Pittsburgh Penguins,Pittsburgh Penguins,Buffalo Sabres,4,3,REG
+2016-02-21,Minnesota Wild,Chicago Blackhawks,Minnesota Wild,Chicago Blackhawks,5,1,REG
+2016-02-22,Carolina Hurricanes,Tampa Bay Lightning,Tampa Bay Lightning,Carolina Hurricanes,4,2,REG
+2016-02-22,Anaheim Ducks,Calgary Flames,Anaheim Ducks,Calgary Flames,5,2,REG
+2016-02-22,Vancouver Canucks,Colorado Avalanche,Vancouver Canucks,Colorado Avalanche,5,1,REG
+2016-02-23,Boston Bruins,Columbus Blue Jackets,Columbus Blue Jackets,Boston Bruins,6,4,REG
+2016-02-23,Washington Capitals,Arizona Coyotes,Washington Capitals,Arizona Coyotes,3,2,REG
+2016-02-23,Montreal Canadiens,Nashville Predators,Nashville Predators,Montreal Canadiens,2,1,SO
+2016-02-23,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,6,3,REG
+2016-02-24,New Jersey Devils,New York Rangers,New Jersey Devils,New York Rangers,5,2,REG
+2016-02-24,Carolina Hurricanes,Philadelphia Flyers,Carolina Hurricanes,Philadelphia Flyers,3,1,REG
+2016-02-24,Toronto Maple Leafs,Nashville Predators,Nashville Predators,Toronto Maple Leafs,3,2,REG
+2016-02-24,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,2,1,SO
+2016-02-24,Tampa Bay Lightning,Arizona Coyotes,Tampa Bay Lightning,Arizona Coyotes,2,1,REG
+2016-02-24,Minnesota Wild,New York Islanders,New York Islanders,Minnesota Wild,4,1,REG
+2016-02-24,Winnipeg Jets,Dallas Stars,Dallas Stars,Winnipeg Jets,5,3,REG
+2016-02-24,Edmonton Oilers,Ottawa Senators,Ottawa Senators,Edmonton Oilers,4,1,REG
+2016-02-24,Los Angeles Kings,Calgary Flames,Los Angeles Kings,Calgary Flames,2,1,REG
+2016-02-25,Washington Capitals,Montreal Canadiens,Montreal Canadiens,Washington Capitals,4,3,REG
+2016-02-25,Boston Bruins,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,5,1,REG
+2016-02-25,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,4,3,SO
+2016-02-26,Philadelphia Flyers,Minnesota Wild,Philadelphia Flyers,Minnesota Wild,3,2,REG
+2016-02-26,Columbus Blue Jackets,New Jersey Devils,Columbus Blue Jackets,New Jersey Devils,5,1,REG
+2016-02-26,Toronto Maple Leafs,Carolina Hurricanes,Toronto Maple Leafs,Carolina Hurricanes,3,1,REG
+2016-02-26,Florida Panthers,Arizona Coyotes,Florida Panthers,Arizona Coyotes,3,2,REG
+2016-02-26,St. Louis Blues,New York Rangers,New York Rangers,St. Louis Blues,2,1,REG
+2016-02-26,Chicago Blackhawks,Nashville Predators,Nashville Predators,Chicago Blackhawks,3,1,REG
+2016-02-26,Dallas Stars,Winnipeg Jets,Winnipeg Jets,Dallas Stars,6,3,REG
+2016-02-26,Calgary Flames,New York Islanders,New York Islanders,Calgary Flames,2,1,OT
+2016-02-26,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,Ottawa Senators,5,3,REG
+2016-02-26,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,2,1,REG
+2016-02-27,New Jersey Devils,Tampa Bay Lightning,Tampa Bay Lightning,New Jersey Devils,4,0,REG
+2016-02-27,Washington Capitals,Minnesota Wild,Washington Capitals,Minnesota Wild,3,2,REG
+2016-02-27,Carolina Hurricanes,Boston Bruins,Boston Bruins,Carolina Hurricanes,4,1,REG
+2016-02-27,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,2,1,OT
+2016-02-27,San Jose Sharks,Buffalo Sabres,Buffalo Sabres,San Jose Sharks,3,1,REG
+2016-02-27,Philadelphia Flyers,Arizona Coyotes,Philadelphia Flyers,Arizona Coyotes,4,2,REG
+2016-02-27,Pittsburgh Penguins,Winnipeg Jets,Pittsburgh Penguins,Winnipeg Jets,4,1,REG
+2016-02-27,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,Florida Panthers,4,3,SO
+2016-02-27,Nashville Predators,St. Louis Blues,Nashville Predators,St. Louis Blues,4,0,REG
+2016-02-27,Dallas Stars,New York Rangers,New York Rangers,Dallas Stars,3,2,REG
+2016-02-28,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,4,1,REG
+2016-02-28,Colorado Avalanche,Detroit Red Wings,Detroit Red Wings,Colorado Avalanche,5,3,REG
+2016-02-28,Calgary Flames,Ottawa Senators,Ottawa Senators,Calgary Flames,6,4,REG
+2016-02-28,Los Angeles Kings,Buffalo Sabres,Los Angeles Kings,Buffalo Sabres,2,0,REG
+2016-02-28,Chicago Blackhawks,Washington Capitals,Chicago Blackhawks,Washington Capitals,3,2,REG
+2016-02-28,Carolina Hurricanes,St. Louis Blues,St. Louis Blues,Carolina Hurricanes,5,2,REG
+2016-02-28,Minnesota Wild,Florida Panthers,Minnesota Wild,Florida Panthers,3,1,REG
+2016-02-28,Boston Bruins,Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,4,1,REG
+2016-02-29,Vancouver Canucks,San Jose Sharks,San Jose Sharks,Vancouver Canucks,4,1,REG
+2016-02-29,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,4,2,REG
+2016-02-29,Edmonton Oilers,New York Islanders,Edmonton Oilers,New York Islanders,3,1,REG
+2016-03-01,New York Rangers,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,2,1,REG
+2016-03-01,Philadelphia Flyers,Calgary Flames,Philadelphia Flyers,Calgary Flames,5,3,REG
+2016-03-01,Pittsburgh Penguins,Arizona Coyotes,Pittsburgh Penguins,Arizona Coyotes,4,0,REG
+2016-03-01,Toronto Maple Leafs,Tampa Bay Lightning,Tampa Bay Lightning,Toronto Maple Leafs,2,1,REG
+2016-03-01,Dallas Stars,Detroit Red Wings,Detroit Red Wings,Dallas Stars,3,2,OT
+2016-03-01,San Jose Sharks,Montreal Canadiens,San Jose Sharks,Montreal Canadiens,6,2,REG
+2016-03-02,Boston Bruins,Calgary Flames,Boston Bruins,Calgary Flames,2,1,REG
+2016-03-02,New Jersey Devils,Carolina Hurricanes,Carolina Hurricanes,New Jersey Devils,3,1,REG
+2016-03-02,Buffalo Sabres,Edmonton Oilers,Edmonton Oilers,Buffalo Sabres,2,1,OT
+2016-03-02,Ottawa Senators,St. Louis Blues,St. Louis Blues,Ottawa Senators,4,3,SO
+2016-03-02,Washington Capitals,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,3,2,REG
+2016-03-02,Nashville Predators,Dallas Stars,Nashville Predators,Dallas Stars,5,3,REG
+2016-03-02,Minnesota Wild,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,6,3,REG
+2016-03-02,Winnipeg Jets,Florida Panthers,Florida Panthers,Winnipeg Jets,3,2,REG
+2016-03-02,Vancouver Canucks,New York Islanders,New York Islanders,Vancouver Canucks,3,2,REG
+2016-03-03,Washington Capitals,Toronto Maple Leafs,Washington Capitals,Toronto Maple Leafs,3,2,REG
+2016-03-03,Detroit Red Wings,Chicago Blackhawks,Chicago Blackhawks,Detroit Red Wings,5,2,REG
+2016-03-03,Anaheim Ducks,Montreal Canadiens,Anaheim Ducks,Montreal Canadiens,3,2,SO
+2016-03-04,Boston Bruins,Chicago Blackhawks,Boston Bruins,Chicago Blackhawks,4,2,REG
+2016-03-04,Buffalo Sabres,Calgary Flames,Buffalo Sabres,Calgary Flames,6,3,REG
+2016-03-04,Philadelphia Flyers,Edmonton Oilers,Edmonton Oilers,Philadelphia Flyers,4,0,REG
+2016-03-04,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,4,1,REG
+2016-03-04,Toronto Maple Leafs,Minnesota Wild,Minnesota Wild,Toronto Maple Leafs,2,1,REG
+2016-03-04,Ottawa Senators,Tampa Bay Lightning,Tampa Bay Lightning,Ottawa Senators,4,1,REG
+2016-03-04,Nashville Predators,New Jersey Devils,New Jersey Devils,Nashville Predators,5,4,OT
+2016-03-04,Winnipeg Jets,New York Islanders,New York Islanders,Winnipeg Jets,4,3,OT
+2016-03-04,Colorado Avalanche,Florida Panthers,Colorado Avalanche,Florida Panthers,3,2,REG
+2016-03-04,Arizona Coyotes,Anaheim Ducks,Anaheim Ducks,Arizona Coyotes,5,1,REG
+2016-03-04,Vancouver Canucks,San Jose Sharks,San Jose Sharks,Vancouver Canucks,3,2,REG
+2016-03-04,Los Angeles Kings,Montreal Canadiens,Los Angeles Kings,Montreal Canadiens,3,2,REG
+2016-03-05,Washington Capitals,New York Rangers,New York Rangers,Washington Capitals,3,2,REG
+2016-03-05,Columbus Blue Jackets,Edmonton Oilers,Columbus Blue Jackets,Edmonton Oilers,6,3,REG
+2016-03-05,Dallas Stars,New Jersey Devils,Dallas Stars,New Jersey Devils,4,2,REG
+2016-03-05,Buffalo Sabres,Minnesota Wild,Minnesota Wild,Buffalo Sabres,3,2,SO
+2016-03-05,Pittsburgh Penguins,Calgary Flames,Calgary Flames,Pittsburgh Penguins,4,2,REG
+2016-03-05,Colorado Avalanche,Nashville Predators,Nashville Predators,Colorado Avalanche,5,2,REG
+2016-03-05,Los Angeles Kings,Anaheim Ducks,Anaheim Ducks,Los Angeles Kings,3,2,REG
+2016-03-06,Boston Bruins,Washington Capitals,Washington Capitals,Boston Bruins,2,1,OT
+2016-03-06,Toronto Maple Leafs,Ottawa Senators,Ottawa Senators,Toronto Maple Leafs,3,2,REG
+2016-03-06,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,4,3,OT
+2016-03-06,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,4,0,REG
+2016-03-06,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,4,2,REG
+2016-03-06,Arizona Coyotes,Florida Panthers,Arizona Coyotes,Florida Panthers,5,1,REG
+2016-03-06,San Jose Sharks,Vancouver Canucks,Vancouver Canucks,San Jose Sharks,4,2,REG
+2016-03-06,Ottawa Senators,Dallas Stars,Dallas Stars,Ottawa Senators,2,1,REG
+2016-03-06,New Jersey Devils,Pittsburgh Penguins,Pittsburgh Penguins,New Jersey Devils,5,1,REG
+2016-03-06,New York Rangers,New York Islanders,New York Islanders,New York Rangers,6,4,REG
+2016-03-06,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,4,1,REG
+2016-03-07,Winnipeg Jets,Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,2,1,REG
+2016-03-07,Minnesota Wild,St. Louis Blues,St. Louis Blues,Minnesota Wild,4,2,REG
+2016-03-08,Philadelphia Flyers,Tampa Bay Lightning,Philadelphia Flyers,Tampa Bay Lightning,4,2,REG
+2016-03-08,Toronto Maple Leafs,Buffalo Sabres,Buffalo Sabres,Toronto Maple Leafs,4,3,SO
+2016-03-08,Florida Panthers,Boston Bruins,Boston Bruins,Florida Panthers,5,4,OT
+2016-03-08,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,3,1,REG
+2016-03-08,Calgary Flames,San Jose Sharks,San Jose Sharks,Calgary Flames,2,1,OT
+2016-03-08,Anaheim Ducks,Washington Capitals,Washington Capitals,Anaheim Ducks,2,1,SO
+2016-03-08,Los Angeles Kings,Vancouver Canucks,Los Angeles Kings,Vancouver Canucks,5,1,REG
+2016-03-09,Buffalo Sabres,New York Rangers,New York Rangers,Buffalo Sabres,4,2,REG
+2016-03-09,Carolina Hurricanes,Ottawa Senators,Carolina Hurricanes,Ottawa Senators,4,3,SO
+2016-03-09,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,5,3,REG
+2016-03-09,New York Islanders,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,2,1,REG
+2016-03-09,Montreal Canadiens,Dallas Stars,Montreal Canadiens,Dallas Stars,4,3,OT
+2016-03-09,Winnipeg Jets,Nashville Predators,Nashville Predators,Winnipeg Jets,4,2,REG
+2016-03-09,Edmonton Oilers,San Jose Sharks,San Jose Sharks,Edmonton Oilers,3,0,REG
+2016-03-10,Toronto Maple Leafs,New York Islanders,Toronto Maple Leafs,New York Islanders,4,3,SO
+2016-03-10,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,3,2,SO
+2016-03-10,Calgary Flames,Nashville Predators,Calgary Flames,Nashville Predators,3,2,OT
+2016-03-10,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,3,0,REG
+2016-03-10,Vancouver Canucks,Arizona Coyotes,Vancouver Canucks,Arizona Coyotes,3,2,OT
+2016-03-10,Los Angeles Kings,Washington Capitals,Los Angeles Kings,Washington Capitals,4,3,OT
+2016-03-11,Boston Bruins,Carolina Hurricanes,Carolina Hurricanes,Boston Bruins,3,2,OT
+2016-03-11,Montreal Canadiens,Buffalo Sabres,Montreal Canadiens,Buffalo Sabres,3,2,REG
+2016-03-11,Detroit Red Wings,Winnipeg Jets,Detroit Red Wings,Winnipeg Jets,3,2,REG
+2016-03-11,Florida Panthers,Ottawa Senators,Florida Panthers,Ottawa Senators,6,2,REG
+2016-03-11,Minnesota Wild,Edmonton Oilers,Edmonton Oilers,Minnesota Wild,2,1,REG
+2016-03-11,San Jose Sharks,New Jersey Devils,New Jersey Devils,San Jose Sharks,3,0,REG
+2016-03-12,Columbus Blue Jackets,Pittsburgh Penguins,Pittsburgh Penguins,Columbus Blue Jackets,3,2,REG
+2016-03-12,Tampa Bay Lightning,Philadelphia Flyers,Philadelphia Flyers,Tampa Bay Lightning,3,1,REG
+2016-03-12,St. Louis Blues,Anaheim Ducks,St. Louis Blues,Anaheim Ducks,5,2,REG
+2016-03-12,Dallas Stars,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,5,2,REG
+2016-03-12,Calgary Flames,Arizona Coyotes,Arizona Coyotes,Calgary Flames,4,1,REG
+2016-03-12,Boston Bruins,New York Islanders,Boston Bruins,New York Islanders,3,1,REG
+2016-03-12,Buffalo Sabres,Carolina Hurricanes,Buffalo Sabres,Carolina Hurricanes,3,2,OT
+2016-03-12,Detroit Red Wings,New York Rangers,Detroit Red Wings,New York Rangers,3,2,OT
+2016-03-13,Montreal Canadiens,Minnesota Wild,Minnesota Wild,Montreal Canadiens,4,1,REG
+2016-03-13,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,4,0,REG
+2016-03-13,Florida Panthers,Philadelphia Flyers,Florida Panthers,Philadelphia Flyers,5,4,SO
+2016-03-13,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,3,2,REG
+2016-03-13,Dallas Stars,St. Louis Blues,St. Louis Blues,Dallas Stars,5,4,OT
+2016-03-13,Edmonton Oilers,Arizona Coyotes,Arizona Coyotes,Edmonton Oilers,4,0,REG
+2016-03-13,Vancouver Canucks,Nashville Predators,Vancouver Canucks,Nashville Predators,4,2,REG
+2016-03-13,Los Angeles Kings,New Jersey Devils,New Jersey Devils,Los Angeles Kings,2,1,OT
+2016-03-13,San Jose Sharks,Washington Capitals,San Jose Sharks,Washington Capitals,5,2,REG
+2016-03-13,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,5,3,REG
+2016-03-13,Columbus Blue Jackets,Tampa Bay Lightning,Tampa Bay Lightning,Columbus Blue Jackets,4,0,REG
+2016-03-14,New York Islanders,Florida Panthers,New York Islanders,Florida Panthers,3,2,REG
+2016-03-15,Chicago Blackhawks,Los Angeles Kings,Los Angeles Kings,Chicago Blackhawks,4,0,REG
+2016-03-15,Calgary Flames,St. Louis Blues,Calgary Flames,St. Louis Blues,7,4,REG
+2016-03-15,Edmonton Oilers,Nashville Predators,Nashville Predators,Edmonton Oilers,3,2,REG
+2016-03-15,Vancouver Canucks,Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,5,2,REG
+2016-03-15,Anaheim Ducks,New Jersey Devils,Anaheim Ducks,New Jersey Devils,5,1,REG
+2016-03-15,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,2,1,SO
+2016-03-15,Washington Capitals,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,2,1,OT
+2016-03-15,Philadelphia Flyers,Detroit Red Wings,Philadelphia Flyers,Detroit Red Wings,4,3,REG
+2016-03-15,Toronto Maple Leafs,Tampa Bay Lightning,Toronto Maple Leafs,Tampa Bay Lightning,4,1,REG
+2016-03-15,Montreal Canadiens,Florida Panthers,Florida Panthers,Montreal Canadiens,4,1,REG
+2016-03-15,Ottawa Senators,Minnesota Wild,Ottawa Senators,Minnesota Wild,3,2,OT
+2016-03-16,Dallas Stars,Los Angeles Kings,Los Angeles Kings,Dallas Stars,5,2,REG
+2016-03-16,San Jose Sharks,Boston Bruins,San Jose Sharks,Boston Bruins,3,2,REG
+2016-03-16,Buffalo Sabres,Montreal Canadiens,Montreal Canadiens,Buffalo Sabres,3,2,OT
+2016-03-17,Chicago Blackhawks,Philadelphia Flyers,Philadelphia Flyers,Chicago Blackhawks,3,2,REG
+2016-03-17,Edmonton Oilers,St. Louis Blues,Edmonton Oilers,St. Louis Blues,6,4,REG
+2016-03-17,Calgary Flames,Winnipeg Jets,Calgary Flames,Winnipeg Jets,4,1,REG
+2016-03-17,Vancouver Canucks,Colorado Avalanche,Colorado Avalanche,Vancouver Canucks,3,1,REG
+2016-03-17,Anaheim Ducks,New York Rangers,New York Rangers,Anaheim Ducks,2,1,REG
+2016-03-17,New Jersey Devils,Minnesota Wild,New Jersey Devils,Minnesota Wild,7,4,REG
+2016-03-17,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,4,2,REG
+2016-03-17,Columbus Blue Jackets,Detroit Red Wings,Detroit Red Wings,Columbus Blue Jackets,3,1,REG
+2016-03-17,Toronto Maple Leafs,Florida Panthers,Florida Panthers,Toronto Maple Leafs,4,1,REG
+2016-03-18,Nashville Predators,New York Islanders,Nashville Predators,New York Islanders,4,2,REG
+2016-03-18,Dallas Stars,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,4,3,REG
+2016-03-18,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,San Jose Sharks,3,1,REG
+2016-03-18,Los Angeles Kings,New York Rangers,Los Angeles Kings,New York Rangers,4,3,OT
+2016-03-18,Buffalo Sabres,Ottawa Senators,Buffalo Sabres,Ottawa Senators,3,1,REG
+2016-03-18,Washington Capitals,Nashville Predators,Washington Capitals,Nashville Predators,4,1,REG
+2016-03-19,Winnipeg Jets,Chicago Blackhawks,Chicago Blackhawks,Winnipeg Jets,4,0,REG
+2016-03-19,Calgary Flames,Colorado Avalanche,Colorado Avalanche,Calgary Flames,4,3,SO
+2016-03-19,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,2,0,REG
+2016-03-19,Anaheim Ducks,Boston Bruins,Anaheim Ducks,Boston Bruins,4,0,REG
+2016-03-19,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,4,1,REG
+2016-03-19,Minnesota Wild,Carolina Hurricanes,Minnesota Wild,Carolina Hurricanes,3,2,SO
+2016-03-19,San Jose Sharks,New York Rangers,San Jose Sharks,New York Rangers,4,1,REG
+2016-03-19,Toronto Maple Leafs,Buffalo Sabres,Toronto Maple Leafs,Buffalo Sabres,4,1,REG
+2016-03-19,Ottawa Senators,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,4,0,REG
+2016-03-19,Florida Panthers,Detroit Red Wings,Detroit Red Wings,Florida Panthers,5,3,REG
+2016-03-19,Columbus Blue Jackets,New Jersey Devils,Columbus Blue Jackets,New Jersey Devils,6,3,REG
+2016-03-20,Dallas Stars,New York Islanders,Dallas Stars,New York Islanders,3,0,REG
+2016-03-20,Vancouver Canucks,St. Louis Blues,St. Louis Blues,Vancouver Canucks,3,0,REG
+2016-03-20,Arizona Coyotes,Tampa Bay Lightning,Tampa Bay Lightning,Arizona Coyotes,2,0,REG
+2016-03-20,Los Angeles Kings,Boston Bruins,Los Angeles Kings,Boston Bruins,2,1,REG
+2016-03-20,Winnipeg Jets,Anaheim Ducks,Anaheim Ducks,Winnipeg Jets,3,2,OT
+2016-03-20,New Jersey Devils,Columbus Blue Jackets,New Jersey Devils,Columbus Blue Jackets,2,1,REG
+2016-03-20,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,6,2,REG
+2016-03-20,Montreal Canadiens,Calgary Flames,Calgary Flames,Montreal Canadiens,4,1,REG
+2016-03-21,Chicago Blackhawks,Minnesota Wild,Minnesota Wild,Chicago Blackhawks,3,2,SO
+2016-03-21,Edmonton Oilers,Colorado Avalanche,Colorado Avalanche,Edmonton Oilers,3,2,REG
+2016-03-21,San Jose Sharks,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,3,0,REG
+2016-03-21,New York Rangers,Florida Panthers,New York Rangers,Florida Panthers,4,2,REG
+2016-03-21,New York Islanders,Philadelphia Flyers,Philadelphia Flyers,New York Islanders,4,1,REG
+2016-03-21,Toronto Maple Leafs,Calgary Flames,Toronto Maple Leafs,Calgary Flames,5,2,REG
+2016-03-22,Nashville Predators,Los Angeles Kings,Nashville Predators,Los Angeles Kings,5,2,REG
+2016-03-22,Carolina Hurricanes,Buffalo Sabres,Buffalo Sabres,Carolina Hurricanes,3,2,REG
+2016-03-22,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,3,2,SO
+2016-03-22,Montreal Canadiens,Anaheim Ducks,Montreal Canadiens,Anaheim Ducks,4,3,REG
+2016-03-22,Ottawa Senators,Washington Capitals,Washington Capitals,Ottawa Senators,4,2,REG
+2016-03-22,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,6,2,REG
+2016-03-23,Winnipeg Jets,Vancouver Canucks,Winnipeg Jets,Vancouver Canucks,2,0,REG
+2016-03-23,Minnesota Wild,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,2,1,REG
+2016-03-23,Chicago Blackhawks,Dallas Stars,Dallas Stars,Chicago Blackhawks,6,2,REG
+2016-03-23,Arizona Coyotes,Edmonton Oilers,Arizona Coyotes,Edmonton Oilers,4,2,REG
+2016-03-23,New York Islanders,Ottawa Senators,New York Islanders,Ottawa Senators,3,1,REG
+2016-03-24,New York Rangers,Boston Bruins,New York Rangers,Boston Bruins,5,2,REG
+2016-03-24,Boston Bruins,Florida Panthers,Florida Panthers,Boston Bruins,4,1,REG
+2016-03-24,Pittsburgh Penguins,New Jersey Devils,New Jersey Devils,Pittsburgh Penguins,3,0,REG
+2016-03-24,Columbus Blue Jackets,Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,3,2,REG
+2016-03-24,Toronto Maple Leafs,Anaheim Ducks,Toronto Maple Leafs,Anaheim Ducks,6,5,OT
+2016-03-24,Detroit Red Wings,Montreal Canadiens,Detroit Red Wings,Montreal Canadiens,4,3,REG
+2016-03-25,Nashville Predators,Vancouver Canucks,Nashville Predators,Vancouver Canucks,3,2,SO
+2016-03-25,Minnesota Wild,Calgary Flames,Minnesota Wild,Calgary Flames,6,2,REG
+2016-03-25,Winnipeg Jets,Los Angeles Kings,Winnipeg Jets,Los Angeles Kings,4,1,REG
+2016-03-25,Colorado Avalanche,Philadelphia Flyers,Philadelphia Flyers,Colorado Avalanche,4,2,REG
+2016-03-25,Arizona Coyotes,Dallas Stars,Arizona Coyotes,Dallas Stars,3,1,REG
+2016-03-25,San Jose Sharks,Edmonton Oilers,Edmonton Oilers,San Jose Sharks,6,3,REG
+2016-03-25,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,New York Islanders,7,4,REG
+2016-03-26,St. Louis Blues,Vancouver Canucks,St. Louis Blues,Vancouver Canucks,4,0,REG
+2016-03-26,Buffalo Sabres,Winnipeg Jets,Buffalo Sabres,Winnipeg Jets,3,2,REG
+2016-03-26,Detroit Red Wings,Pittsburgh Penguins,Pittsburgh Penguins,Detroit Red Wings,6,2,REG
+2016-03-26,Colorado Avalanche,Minnesota Wild,Minnesota Wild,Colorado Avalanche,4,0,REG
+2016-03-26,San Jose Sharks,Dallas Stars,Dallas Stars,San Jose Sharks,4,2,REG
+2016-03-26,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,3,1,REG
+2016-03-26,Montreal Canadiens,New York Rangers,New York Rangers,Montreal Canadiens,5,2,REG
+2016-03-26,Ottawa Senators,Anaheim Ducks,Anaheim Ducks,Ottawa Senators,4,3,OT
+2016-03-26,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,5,2,REG
+2016-03-26,Washington Capitals,St. Louis Blues,St. Louis Blues,Washington Capitals,4,0,REG
+2016-03-26,Carolina Hurricanes,New York Islanders,New York Islanders,Carolina Hurricanes,4,3,OT
+2016-03-27,Nashville Predators,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,5,1,REG
+2016-03-27,Calgary Flames,Chicago Blackhawks,Chicago Blackhawks,Calgary Flames,4,1,REG
+2016-03-27,Arizona Coyotes,Philadelphia Flyers,Arizona Coyotes,Philadelphia Flyers,2,1,REG
+2016-03-27,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,6,4,REG
+2016-03-27,Carolina Hurricanes,New Jersey Devils,Carolina Hurricanes,New Jersey Devils,3,2,REG
+2016-03-27,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,3,2,OT
+2016-03-28,Vancouver Canucks,Chicago Blackhawks,Chicago Blackhawks,Vancouver Canucks,3,2,REG
+2016-03-28,Philadelphia Flyers,Winnipeg Jets,Philadelphia Flyers,Winnipeg Jets,3,2,OT
+2016-03-28,Washington Capitals,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,4,1,REG
+2016-03-28,Detroit Red Wings,Buffalo Sabres,Detroit Red Wings,Buffalo Sabres,3,2,REG
+2016-03-28,Tampa Bay Lightning,Toronto Maple Leafs,Tampa Bay Lightning,Toronto Maple Leafs,3,0,REG
+2016-03-29,Nashville Predators,Colorado Avalanche,Colorado Avalanche,Nashville Predators,4,3,REG
+2016-03-29,Edmonton Oilers,Anaheim Ducks,Anaheim Ducks,Edmonton Oilers,2,1,REG
+2016-03-29,Arizona Coyotes,Calgary Flames,Calgary Flames,Arizona Coyotes,5,2,REG
+2016-03-29,San Jose Sharks,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,5,2,REG
+2016-03-29,New Jersey Devils,Boston Bruins,New Jersey Devils,Boston Bruins,2,1,REG
+2016-03-29,New York Islanders,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,2,1,SO
+2016-03-29,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,5,4,SO
+2016-03-29,Montreal Canadiens,Detroit Red Wings,Montreal Canadiens,Detroit Red Wings,4,3,REG
+2016-03-29,Florida Panthers,Toronto Maple Leafs,Toronto Maple Leafs,Florida Panthers,5,2,REG
+2016-03-30,Minnesota Wild,Chicago Blackhawks,Minnesota Wild,Chicago Blackhawks,4,1,REG
+2016-03-30,St. Louis Blues,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,3,1,REG
+2016-03-30,Dallas Stars,Nashville Predators,Dallas Stars,Nashville Predators,5,2,REG
+2016-03-30,Vancouver Canucks,San Jose Sharks,San Jose Sharks,Vancouver Canucks,4,1,REG
+2016-03-30,Winnipeg Jets,Ottawa Senators,Ottawa Senators,Winnipeg Jets,2,1,REG
+2016-03-31,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,Washington Capitals,2,1,SO
+2016-03-31,Anaheim Ducks,Calgary Flames,Anaheim Ducks,Calgary Flames,7,3,REG
+2016-03-31,Buffalo Sabres,Toronto Maple Leafs,Buffalo Sabres,Toronto Maple Leafs,4,1,REG
+2016-03-31,New York Islanders,Columbus Blue Jackets,New York Islanders,Columbus Blue Jackets,4,3,REG
+2016-03-31,Pittsburgh Penguins,Nashville Predators,Pittsburgh Penguins,Nashville Predators,5,2,REG
+2016-03-31,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,New York Rangers,4,3,REG
+2016-03-31,Tampa Bay Lightning,Montreal Canadiens,Montreal Canadiens,Tampa Bay Lightning,3,0,REG
+2016-03-31,Florida Panthers,New Jersey Devils,Florida Panthers,New Jersey Devils,3,2,REG
+2016-04-01,Minnesota Wild,Ottawa Senators,Ottawa Senators,Minnesota Wild,3,2,REG
+2016-04-01,Dallas Stars,Arizona Coyotes,Dallas Stars,Arizona Coyotes,4,1,REG
+2016-04-01,Los Angeles Kings,Calgary Flames,Los Angeles Kings,Calgary Flames,3,0,REG
+2016-04-01,San Jose Sharks,Vancouver Canucks,Vancouver Canucks,San Jose Sharks,4,2,REG
+2016-04-01,Detroit Red Wings,Minnesota Wild,Detroit Red Wings,Minnesota Wild,3,2,REG
+2016-04-02,St. Louis Blues,Boston Bruins,Boston Bruins,St. Louis Blues,6,5,REG
+2016-04-02,Winnipeg Jets,Chicago Blackhawks,Chicago Blackhawks,Winnipeg Jets,5,4,OT
+2016-04-02,Colorado Avalanche,Washington Capitals,Washington Capitals,Colorado Avalanche,4,2,REG
+2016-04-02,Anaheim Ducks,Vancouver Canucks,Vancouver Canucks,Anaheim Ducks,3,2,REG
+2016-04-02,New York Islanders,Pittsburgh Penguins,Pittsburgh Penguins,New York Islanders,4,0,REG
+2016-04-02,Philadelphia Flyers,Ottawa Senators,Philadelphia Flyers,Ottawa Senators,3,2,REG
+2016-04-02,Los Angeles Kings,Dallas Stars,Dallas Stars,Los Angeles Kings,3,2,REG
+2016-04-02,Toronto Maple Leafs,Detroit Red Wings,Detroit Red Wings,Toronto Maple Leafs,3,2,REG
+2016-04-02,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,3,1,REG
+2016-04-02,Florida Panthers,Montreal Canadiens,Florida Panthers,Montreal Canadiens,4,3,REG
+2016-04-02,New York Rangers,Buffalo Sabres,Buffalo Sabres,New York Rangers,4,3,REG
+2016-04-02,Carolina Hurricanes,Columbus Blue Jackets,Columbus Blue Jackets,Carolina Hurricanes,5,1,REG
+2016-04-03,Nashville Predators,San Jose Sharks,San Jose Sharks,Nashville Predators,3,2,SO
+2016-04-03,Edmonton Oilers,Calgary Flames,Calgary Flames,Edmonton Oilers,4,0,REG
+2016-04-03,Arizona Coyotes,Washington Capitals,Arizona Coyotes,Washington Capitals,3,0,REG
+2016-04-03,Chicago Blackhawks,Boston Bruins,Chicago Blackhawks,Boston Bruins,6,4,REG
+2016-04-03,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,6,2,REG
+2016-04-04,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,5,1,REG
+2016-04-04,Colorado Avalanche,St. Louis Blues,St. Louis Blues,Colorado Avalanche,5,1,REG
+2016-04-04,Anaheim Ducks,Dallas Stars,Anaheim Ducks,Dallas Stars,3,1,REG
+2016-04-04,New York Islanders,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,5,2,REG
+2016-04-04,Columbus Blue Jackets,New York Rangers,New York Rangers,Columbus Blue Jackets,4,2,REG
+2016-04-04,Toronto Maple Leafs,Florida Panthers,Florida Panthers,Toronto Maple Leafs,4,3,REG
+2016-04-05,St. Louis Blues,Arizona Coyotes,St. Louis Blues,Arizona Coyotes,5,2,REG
+2016-04-05,Vancouver Canucks,Los Angeles Kings,Vancouver Canucks,Los Angeles Kings,3,2,REG
+2016-04-05,Boston Bruins,Carolina Hurricanes,Carolina Hurricanes,Boston Bruins,2,1,SO
+2016-04-05,New Jersey Devils,Buffalo Sabres,Buffalo Sabres,New Jersey Devils,3,1,REG
+2016-04-05,Washington Capitals,New York Islanders,New York Islanders,Washington Capitals,4,3,OT
+2016-04-05,New York Rangers,Tampa Bay Lightning,New York Rangers,Tampa Bay Lightning,3,2,REG
+2016-04-05,Montreal Canadiens,Florida Panthers,Florida Panthers,Montreal Canadiens,4,1,REG
+2016-04-05,Ottawa Senators,Pittsburgh Penguins,Pittsburgh Penguins,Ottawa Senators,5,3,REG
+2016-04-06,Nashville Predators,Colorado Avalanche,Nashville Predators,Colorado Avalanche,4,3,REG
+2016-04-06,Minnesota Wild,San Jose Sharks,San Jose Sharks,Minnesota Wild,3,0,REG
+2016-04-06,Chicago Blackhawks,Arizona Coyotes,Chicago Blackhawks,Arizona Coyotes,6,2,REG
+2016-04-06,Calgary Flames,Los Angeles Kings,Los Angeles Kings,Calgary Flames,5,4,OT
+2016-04-06,Anaheim Ducks,Winnipeg Jets,Winnipeg Jets,Anaheim Ducks,2,1,OT
+2016-04-06,Toronto Maple Leafs,Columbus Blue Jackets,Columbus Blue Jackets,Toronto Maple Leafs,5,1,REG
+2016-04-06,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,6,2,REG
+2016-04-07,Detroit Red Wings,Philadelphia Flyers,Detroit Red Wings,Philadelphia Flyers,3,0,REG
+2016-04-07,Boston Bruins,Detroit Red Wings,Boston Bruins,Detroit Red Wings,5,2,REG
+2016-04-07,New Jersey Devils,Tampa Bay Lightning,Tampa Bay Lightning,New Jersey Devils,4,2,REG
+2016-04-07,New York Rangers,New York Islanders,New York Islanders,New York Rangers,4,1,REG
+2016-04-07,Philadelphia Flyers,Toronto Maple Leafs,Toronto Maple Leafs,Philadelphia Flyers,4,3,OT
+2016-04-07,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,4,3,OT
+2016-04-07,Carolina Hurricanes,Montreal Canadiens,Montreal Canadiens,Carolina Hurricanes,4,2,REG
+2016-04-07,Ottawa Senators,Florida Panthers,Ottawa Senators,Florida Panthers,3,1,REG
+2016-04-08,Nashville Predators,Arizona Coyotes,Nashville Predators,Arizona Coyotes,3,2,OT
+2016-04-08,Chicago Blackhawks,St. Louis Blues,St. Louis Blues,Chicago Blackhawks,2,1,OT
+2016-04-08,Dallas Stars,Colorado Avalanche,Dallas Stars,Colorado Avalanche,4,2,REG
+2016-04-08,Calgary Flames,Vancouver Canucks,Calgary Flames,Vancouver Canucks,7,3,REG
+2016-04-08,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,2,1,REG
+2016-04-08,San Jose Sharks,Winnipeg Jets,Winnipeg Jets,San Jose Sharks,5,4,REG
+2016-04-08,Buffalo Sabres,Columbus Blue Jackets,Columbus Blue Jackets,Buffalo Sabres,4,1,REG
+2016-04-09,Boston Bruins,Ottawa Senators,Ottawa Senators,Boston Bruins,5,1,REG
+2016-04-09,New York Rangers,Detroit Red Wings,New York Rangers,Detroit Red Wings,3,2,REG
+2016-04-09,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,3,1,REG
+2016-04-09,Colorado Avalanche,Anaheim Ducks,Anaheim Ducks,Colorado Avalanche,5,3,REG
+2016-04-09,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,5,2,REG
+2016-04-09,Florida Panthers,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,5,2,REG
+2016-04-09,New Jersey Devils,Toronto Maple Leafs,New Jersey Devils,Toronto Maple Leafs,5,1,REG
+2016-04-09,Columbus Blue Jackets,Chicago Blackhawks,Columbus Blue Jackets,Chicago Blackhawks,5,4,OT
+2016-04-09,Minnesota Wild,Calgary Flames,Calgary Flames,Minnesota Wild,2,1,REG
+2016-04-09,New York Islanders,Buffalo Sabres,Buffalo Sabres,New York Islanders,4,3,OT
+2016-04-10,St. Louis Blues,Washington Capitals,Washington Capitals,St. Louis Blues,5,1,REG
+2016-04-10,Dallas Stars,Nashville Predators,Dallas Stars,Nashville Predators,3,2,REG
+2016-04-10,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,4,3,SO
+2016-04-10,Los Angeles Kings,Winnipeg Jets,Winnipeg Jets,Los Angeles Kings,4,3,SO
+2016-04-10,New York Islanders,Philadelphia Flyers,Philadelphia Flyers,New York Islanders,5,2,REG
+2016-04-10,Washington Capitals,Anaheim Ducks,Anaheim Ducks,Washington Capitals,2,0,REG
+2016-04-13,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,3,2,REG
+2016-04-14,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,5,2,REG
+2016-04-14,Washington Capitals,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,2,0,REG
+2016-04-15,Florida Panthers,New York Islanders,New York Islanders,Florida Panthers,5,4,REG
+2016-04-15,Dallas Stars,Minnesota Wild,Dallas Stars,Minnesota Wild,4,0,REG
+2016-04-15,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,4,3,REG
+2016-04-15,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,5,2,REG
+2016-04-15,Florida Panthers,New York Islanders,Florida Panthers,New York Islanders,3,1,REG
+2016-04-16,St. Louis Blues,Chicago Blackhawks,Chicago Blackhawks,St. Louis Blues,3,2,REG
+2016-04-16,Anaheim Ducks,Nashville Predators,Nashville Predators,Anaheim Ducks,3,2,REG
+2016-04-16,Pittsburgh Penguins,New York Rangers,New York Rangers,Pittsburgh Penguins,4,2,REG
+2016-04-16,Washington Capitals,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,4,1,REG
+2016-04-17,Dallas Stars,Minnesota Wild,Dallas Stars,Minnesota Wild,2,1,REG
+2016-04-17,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,2,1,REG
+2016-04-17,Chicago Blackhawks,St. Louis Blues,St. Louis Blues,Chicago Blackhawks,3,2,REG
+2016-04-17,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,2,0,REG
+2016-04-18,New York Islanders,Florida Panthers,New York Islanders,Florida Panthers,4,3,OT
+2016-04-18,Anaheim Ducks,Nashville Predators,Nashville Predators,Anaheim Ducks,3,2,REG
+2016-04-18,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,5,1,REG
+2016-04-19,Minnesota Wild,Dallas Stars,Minnesota Wild,Dallas Stars,5,3,REG
+2016-04-19,San Jose Sharks,Los Angeles Kings,Los Angeles Kings,San Jose Sharks,2,1,OT
+2016-04-19,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,3,1,REG
+2016-04-19,Detroit Red Wings,Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,3,2,REG
+2016-04-20,Chicago Blackhawks,St. Louis Blues,St. Louis Blues,Chicago Blackhawks,4,3,REG
+2016-04-20,Nashville Predators,Anaheim Ducks,Anaheim Ducks,Nashville Predators,3,0,REG
+2016-04-20,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,Washington Capitals,2,1,REG
+2016-04-21,New York Islanders,Florida Panthers,Florida Panthers,New York Islanders,2,1,REG
+2016-04-21,Minnesota Wild,Dallas Stars,Dallas Stars,Minnesota Wild,3,2,REG
+2016-04-21,San Jose Sharks,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,3,2,REG
+2016-04-21,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,4,0,REG
+2016-04-22,Nashville Predators,Anaheim Ducks,Anaheim Ducks,Nashville Predators,4,1,REG
+2016-04-22,St. Louis Blues,Chicago Blackhawks,Chicago Blackhawks,St. Louis Blues,4,3,OT
+2016-04-22,Washington Capitals,Philadelphia Flyers,Philadelphia Flyers,Washington Capitals,2,0,REG
+2016-04-23,Florida Panthers,New York Islanders,New York Islanders,Florida Panthers,2,1,OT
+2016-04-23,Dallas Stars,Minnesota Wild,Minnesota Wild,Dallas Stars,5,4,OT
+2016-04-23,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,6,3,REG
+2016-04-23,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,6,3,REG
+2016-04-23,Anaheim Ducks,Nashville Predators,Anaheim Ducks,Nashville Predators,5,2,REG
+2016-04-24,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,6,3,REG
+2016-04-24,Minnesota Wild,Dallas Stars,Dallas Stars,Minnesota Wild,5,4,REG
+2016-04-24,New York Islanders,Florida Panthers,New York Islanders,Florida Panthers,2,1,OT
+2016-04-26,Nashville Predators,Anaheim Ducks,Nashville Predators,Anaheim Ducks,3,1,REG
+2016-04-26,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,3,2,REG
+2016-04-27,Tampa Bay Lightning,New York Islanders,New York Islanders,Tampa Bay Lightning,5,3,REG
+2016-04-28,Anaheim Ducks,Nashville Predators,Nashville Predators,Anaheim Ducks,2,1,REG
+2016-04-29,Washington Capitals,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,4,3,OT
+2016-04-30,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,2,1,REG
+2016-04-30,San Jose Sharks,Nashville Predators,San Jose Sharks,Nashville Predators,5,2,REG
+2016-04-30,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,New York Islanders,4,1,REG
+2016-05-01,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,2,1,REG
+2016-05-01,Dallas Stars,St. Louis Blues,St. Louis Blues,Dallas Stars,4,3,OT
+2016-05-02,San Jose Sharks,Nashville Predators,San Jose Sharks,Nashville Predators,3,2,REG
+2016-05-03,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,3,2,REG
+2016-05-03,New York Islanders,Tampa Bay Lightning,Tampa Bay Lightning,New York Islanders,5,4,OT
+2016-05-04,Nashville Predators,San Jose Sharks,Nashville Predators,San Jose Sharks,4,1,REG
+2016-05-04,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,5,1,REG
+2016-05-05,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,3,2,OT
+2016-05-06,St. Louis Blues,Dallas Stars,Dallas Stars,St. Louis Blues,3,2,OT
+2016-05-06,Nashville Predators,San Jose Sharks,Nashville Predators,San Jose Sharks,4,3,OT
+2016-05-06,New York Islanders,Tampa Bay Lightning,Tampa Bay Lightning,New York Islanders,2,1,OT
+2016-05-07,Dallas Stars,St. Louis Blues,St. Louis Blues,Dallas Stars,4,1,REG
+2016-05-07,Washington Capitals,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,3,1,REG
+2016-05-08,San Jose Sharks,Nashville Predators,San Jose Sharks,Nashville Predators,5,1,REG
+2016-05-08,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,New York Islanders,4,0,REG
+2016-05-10,St. Louis Blues,Dallas Stars,Dallas Stars,St. Louis Blues,3,2,REG
+2016-05-10,Nashville Predators,San Jose Sharks,Nashville Predators,San Jose Sharks,4,3,OT
+2016-05-11,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,4,3,OT
+2016-05-12,Dallas Stars,St. Louis Blues,St. Louis Blues,Dallas Stars,5,1,REG
+2016-05-13,San Jose Sharks,Nashville Predators,San Jose Sharks,Nashville Predators,4,0,REG
+2016-05-14,Pittsburgh Penguins,Tampa Bay Lightning,Tampa Bay Lightning,Pittsburgh Penguins,3,1,REG
+2016-05-16,St. Louis Blues,San Jose Sharks,St. Louis Blues,San Jose Sharks,2,1,REG
+2016-05-17,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,3,2,OT
+2016-05-18,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,4,0,REG
+2016-05-19,Tampa Bay Lightning,Pittsburgh Penguins,Pittsburgh Penguins,Tampa Bay Lightning,4,2,REG
+2016-05-20,San Jose Sharks,St. Louis Blues,San Jose Sharks,St. Louis Blues,3,0,REG
+2016-05-21,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,4,3,REG
+2016-05-21,San Jose Sharks,St. Louis Blues,St. Louis Blues,San Jose Sharks,6,3,REG
+2016-05-23,Pittsburgh Penguins,Tampa Bay Lightning,Tampa Bay Lightning,Pittsburgh Penguins,4,3,OT
+2016-05-24,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,6,3,REG
+2016-05-25,Tampa Bay Lightning,Pittsburgh Penguins,Pittsburgh Penguins,Tampa Bay Lightning,5,2,REG
+2016-05-26,San Jose Sharks,St. Louis Blues,San Jose Sharks,St. Louis Blues,5,2,REG
+2016-05-27,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,2,1,REG
+2016-05-31,Pittsburgh Penguins,San Jose Sharks,Pittsburgh Penguins,San Jose Sharks,3,2,REG
+2016-06-02,Pittsburgh Penguins,San Jose Sharks,Pittsburgh Penguins,San Jose Sharks,2,1,OT
+2016-06-05,San Jose Sharks,Pittsburgh Penguins,San Jose Sharks,Pittsburgh Penguins,3,2,OT
+2016-06-07,San Jose Sharks,Pittsburgh Penguins,Pittsburgh Penguins,San Jose Sharks,3,1,REG
+2016-06-10,Pittsburgh Penguins,San Jose Sharks,San Jose Sharks,Pittsburgh Penguins,4,2,REG
+2016-06-13,San Jose Sharks,Pittsburgh Penguins,Pittsburgh Penguins,San Jose Sharks,3,1,REG

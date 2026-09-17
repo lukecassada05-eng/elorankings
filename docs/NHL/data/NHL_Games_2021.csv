@@ -1,0 +1,924 @@
+date,home,away,winner,loser,winner_pts,loser_pts,end_type
+2021-01-13,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,6,3,REG
+2021-01-14,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,5,4,OT
+2021-01-14,Tampa Bay Lightning,Chicago Blackhawks,Tampa Bay Lightning,Chicago Blackhawks,5,1,REG
+2021-01-14,Edmonton Oilers,Vancouver Canucks,Vancouver Canucks,Edmonton Oilers,5,3,REG
+2021-01-14,Colorado Avalanche,St. Louis Blues,St. Louis Blues,Colorado Avalanche,4,1,REG
+2021-01-15,Buffalo Sabres,Washington Capitals,Washington Capitals,Buffalo Sabres,6,4,REG
+2021-01-15,New Jersey Devils,Boston Bruins,Boston Bruins,New Jersey Devils,3,2,SO
+2021-01-15,New York Rangers,New York Islanders,New York Islanders,New York Rangers,4,0,REG
+2021-01-15,Detroit Red Wings,Carolina Hurricanes,Carolina Hurricanes,Detroit Red Wings,3,0,REG
+2021-01-15,Nashville Predators,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,3,1,REG
+2021-01-15,Winnipeg Jets,Calgary Flames,Winnipeg Jets,Calgary Flames,4,3,OT
+2021-01-15,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,5,2,REG
+2021-01-15,Arizona Coyotes,San Jose Sharks,San Jose Sharks,Arizona Coyotes,4,3,SO
+2021-01-15,Vegas Golden Knights,Anaheim Ducks,Vegas Golden Knights,Anaheim Ducks,5,2,REG
+2021-01-15,Los Angeles Kings,Minnesota Wild,Minnesota Wild,Los Angeles Kings,4,3,OT
+2021-01-16,Buffalo Sabres,Washington Capitals,Washington Capitals,Buffalo Sabres,2,1,REG
+2021-01-16,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,5,2,REG
+2021-01-16,Tampa Bay Lightning,Chicago Blackhawks,Tampa Bay Lightning,Chicago Blackhawks,5,2,REG
+2021-01-16,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,5,3,REG
+2021-01-16,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,4,0,REG
+2021-01-16,New Jersey Devils,Boston Bruins,New Jersey Devils,Boston Bruins,2,1,OT
+2021-01-16,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,San Jose Sharks,5,3,REG
+2021-01-17,New York Rangers,New York Islanders,New York Rangers,New York Islanders,4,0,REG
+2021-01-17,Detroit Red Wings,Carolina Hurricanes,Detroit Red Wings,Carolina Hurricanes,4,2,REG
+2021-01-17,Ottawa Senators,Toronto Maple Leafs,Toronto Maple Leafs,Ottawa Senators,3,2,REG
+2021-01-17,Edmonton Oilers,Montreal Canadiens,Montreal Canadiens,Edmonton Oilers,5,1,REG
+2021-01-17,Nashville Predators,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,5,2,REG
+2021-01-17,Los Angeles Kings,Minnesota Wild,Minnesota Wild,Los Angeles Kings,4,3,OT
+2021-01-17,Calgary Flames,Vancouver Canucks,Calgary Flames,Vancouver Canucks,3,0,REG
+2021-01-17,Vegas Golden Knights,Anaheim Ducks,Vegas Golden Knights,Anaheim Ducks,2,1,OT
+2021-01-17,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,4,3,SO
+2021-01-18,Florida Panthers,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,5,2,REG
+2021-01-18,Detroit Red Wings,Columbus Blue Jackets,Columbus Blue Jackets,Detroit Red Wings,3,2,REG
+2021-01-19,Toronto Maple Leafs,Winnipeg Jets,Toronto Maple Leafs,Winnipeg Jets,3,1,REG
+2021-01-19,Philadelphia Flyers,Buffalo Sabres,Buffalo Sabres,Philadelphia Flyers,5,1,REG
+2021-01-19,St. Louis Blues,San Jose Sharks,St. Louis Blues,San Jose Sharks,5,4,REG
+2021-01-19,Nashville Predators,Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,4,2,REG
+2021-01-19,Calgary Flames,Vancouver Canucks,Calgary Flames,Vancouver Canucks,5,2,REG
+2021-01-19,Edmonton Oilers,Montreal Canadiens,Montreal Canadiens,Edmonton Oilers,3,1,REG
+2021-01-19,Vegas Golden Knights,Arizona Coyotes,Vegas Golden Knights,Arizona Coyotes,4,2,REG
+2021-01-20,New York Rangers,New Jersey Devils,New Jersey Devils,New York Rangers,4,3,REG
+2021-01-20,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,3,0,REG
+2021-01-20,Florida Panthers,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,5,4,OT
+2021-01-20,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,5,4,OT
+2021-01-20,Ottawa Senators,Winnipeg Jets,Winnipeg Jets,Ottawa Senators,4,3,OT
+2021-01-20,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,3,2,OT
+2021-01-20,Los Angeles Kings,Colorado Avalanche,Colorado Avalanche,Los Angeles Kings,3,2,REG
+2021-01-21,Toronto Maple Leafs,Edmonton Oilers,Edmonton Oilers,Toronto Maple Leafs,3,1,REG
+2021-01-21,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,2,1,SO
+2021-01-21,Anaheim Ducks,Minnesota Wild,Minnesota Wild,Anaheim Ducks,3,2,REG
+2021-01-21,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,6,5,SO
+2021-01-21,Vegas Golden Knights,Arizona Coyotes,Vegas Golden Knights,Arizona Coyotes,5,2,REG
+2021-01-22,Boston Bruins,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,5,4,SO
+2021-01-22,New York Islanders,New Jersey Devils,New York Islanders,New Jersey Devils,4,1,REG
+2021-01-22,Columbus Blue Jackets,Tampa Bay Lightning,Tampa Bay Lightning,Columbus Blue Jackets,3,2,OT
+2021-01-22,Ottawa Senators,Winnipeg Jets,Winnipeg Jets,Ottawa Senators,4,1,REG
+2021-01-22,Vancouver Canucks,Montreal Canadiens,Montreal Canadiens,Vancouver Canucks,7,3,REG
+2021-01-22,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,4,2,REG
+2021-01-23,Washington Capitals,Buffalo Sabres,Washington Capitals,Buffalo Sabres,4,3,SO
+2021-01-23,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,4,3,SO
+2021-01-23,Toronto Maple Leafs,Edmonton Oilers,Toronto Maple Leafs,Edmonton Oilers,4,2,REG
+2021-01-23,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,4,1,REG
+2021-01-23,Minnesota Wild,San Jose Sharks,Minnesota Wild,San Jose Sharks,4,1,REG
+2021-01-23,Dallas Stars,Nashville Predators,Dallas Stars,Nashville Predators,4,0,REG
+2021-01-23,Arizona Coyotes,Vegas Golden Knights,Arizona Coyotes,Vegas Golden Knights,5,2,REG
+2021-01-23,Anaheim Ducks,Colorado Avalanche,Colorado Avalanche,Anaheim Ducks,3,2,OT
+2021-01-23,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,5,2,REG
+2021-01-24,Boston Bruins,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,5,1,REG
+2021-01-24,Vancouver Canucks,Montreal Canadiens,Montreal Canadiens,Vancouver Canucks,5,2,REG
+2021-01-24,St. Louis Blues,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,4,2,REG
+2021-01-24,Winnipeg Jets,Ottawa Senators,Winnipeg Jets,Ottawa Senators,6,3,REG
+2021-01-24,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,6,2,REG
+2021-01-24,Washington Capitals,Buffalo Sabres,Buffalo Sabres,Washington Capitals,4,3,SO
+2021-01-24,Calgary Flames,Toronto Maple Leafs,Toronto Maple Leafs,Calgary Flames,3,2,REG
+2021-01-25,New Jersey Devils,New York Islanders,New Jersey Devils,New York Islanders,2,0,REG
+2021-01-25,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,3,2,REG
+2021-01-25,St. Louis Blues,Los Angeles Kings,Los Angeles Kings,St. Louis Blues,6,3,REG
+2021-01-25,Minnesota Wild,San Jose Sharks,San Jose Sharks,Minnesota Wild,5,3,REG
+2021-01-25,Dallas Stars,Nashville Predators,Dallas Stars,Nashville Predators,3,2,REG
+2021-01-25,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,3,1,REG
+2021-01-25,Winnipeg Jets,Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,4,3,REG
+2021-01-26,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,Ottawa Senators,5,1,REG
+2021-01-27,Boston Bruins,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,3,2,OT
+2021-01-27,Buffalo Sabres,New York Rangers,Buffalo Sabres,New York Rangers,3,2,REG
+2021-01-27,New Jersey Devils,Philadelphia Flyers,Philadelphia Flyers,New Jersey Devils,5,3,REG
+2021-01-27,Washington Capitals,New York Islanders,Washington Capitals,New York Islanders,3,2,REG
+2021-01-27,Columbus Blue Jackets,Florida Panthers,Florida Panthers,Columbus Blue Jackets,4,3,SO
+2021-01-27,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,3,2,OT
+2021-01-27,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,6,4,REG
+2021-01-27,Minnesota Wild,Los Angeles Kings,Los Angeles Kings,Minnesota Wild,2,1,REG
+2021-01-27,Dallas Stars,Detroit Red Wings,Dallas Stars,Detroit Red Wings,2,1,OT
+2021-01-27,Calgary Flames,Toronto Maple Leafs,Toronto Maple Leafs,Calgary Flames,4,3,REG
+2021-01-27,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,7,3,REG
+2021-01-27,Vegas Golden Knights,St. Louis Blues,St. Louis Blues,Vegas Golden Knights,5,4,SO
+2021-01-28,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,2,1,SO
+2021-01-28,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,Ottawa Senators,5,1,REG
+2021-01-29,Boston Bruins,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,4,1,REG
+2021-01-29,Buffalo Sabres,New York Rangers,New York Rangers,Buffalo Sabres,3,2,OT
+2021-01-29,New Jersey Devils,Philadelphia Flyers,Philadelphia Flyers,New Jersey Devils,3,1,REG
+2021-01-29,Washington Capitals,New York Islanders,Washington Capitals,New York Islanders,6,3,REG
+2021-01-29,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,Florida Panthers,3,2,SO
+2021-01-29,Montreal Canadiens,Calgary Flames,Montreal Canadiens,Calgary Flames,4,2,REG
+2021-01-29,Minnesota Wild,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,5,3,REG
+2021-01-29,Dallas Stars,Detroit Red Wings,Dallas Stars,Detroit Red Wings,7,3,REG
+2021-01-29,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,3,0,REG
+2021-01-29,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,3,2,REG
+2021-01-29,Edmonton Oilers,Toronto Maple Leafs,Toronto Maple Leafs,Edmonton Oilers,4,3,REG
+2021-01-29,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,Ottawa Senators,4,1,REG
+2021-01-30,Chicago Blackhawks,Columbus Blue Jackets,Columbus Blue Jackets,Chicago Blackhawks,2,1,REG
+2021-01-30,Buffalo Sabres,New Jersey Devils,Buffalo Sabres,New Jersey Devils,4,3,SO
+2021-01-31,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,5,4,OT
+2021-01-31,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,New York Islanders,3,2,OT
+2021-01-31,Washington Capitals,Boston Bruins,Washington Capitals,Boston Bruins,4,3,OT
+2021-01-31,Carolina Hurricanes,Dallas Stars,Carolina Hurricanes,Dallas Stars,4,1,REG
+2021-01-31,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,Nashville Predators,4,3,REG
+2021-01-31,Detroit Red Wings,Florida Panthers,Florida Panthers,Detroit Red Wings,3,2,OT
+2021-01-31,Montreal Canadiens,Calgary Flames,Calgary Flames,Montreal Canadiens,2,0,REG
+2021-01-31,Edmonton Oilers,Toronto Maple Leafs,Edmonton Oilers,Toronto Maple Leafs,4,3,OT
+2021-01-31,Minnesota Wild,Colorado Avalanche,Colorado Avalanche,Minnesota Wild,5,1,REG
+2021-01-31,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,5,1,REG
+2021-01-31,Winnipeg Jets,Vancouver Canucks,Vancouver Canucks,Winnipeg Jets,4,1,REG
+2021-01-31,Buffalo Sabres,New Jersey Devils,New Jersey Devils,Buffalo Sabres,5,3,REG
+2021-01-31,Carolina Hurricanes,Dallas Stars,Carolina Hurricanes,Dallas Stars,4,3,SO
+2021-01-31,Detroit Red Wings,Florida Panthers,Florida Panthers,Detroit Red Wings,3,2,REG
+2021-02-01,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,New York Islanders,4,3,OT
+2021-02-01,Chicago Blackhawks,Columbus Blue Jackets,Chicago Blackhawks,Columbus Blue Jackets,3,1,REG
+2021-02-01,Minnesota Wild,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,4,3,OT
+2021-02-01,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,4,1,REG
+2021-02-01,Edmonton Oilers,Ottawa Senators,Edmonton Oilers,Ottawa Senators,8,5,REG
+2021-02-02,New York Rangers,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,3,1,REG
+2021-02-02,Washington Capitals,Boston Bruins,Boston Bruins,Washington Capitals,5,3,REG
+2021-02-02,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,Nashville Predators,5,2,REG
+2021-02-02,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,6,2,REG
+2021-02-02,Winnipeg Jets,Calgary Flames,Calgary Flames,Winnipeg Jets,4,3,SO
+2021-02-03,Columbus Blue Jackets,Dallas Stars,Dallas Stars,Columbus Blue Jackets,6,3,REG
+2021-02-03,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,5,3,REG
+2021-02-03,Chicago Blackhawks,Carolina Hurricanes,Carolina Hurricanes,Chicago Blackhawks,4,3,SO
+2021-02-03,St. Louis Blues,Arizona Coyotes,St. Louis Blues,Arizona Coyotes,4,3,REG
+2021-02-03,Winnipeg Jets,Calgary Flames,Winnipeg Jets,Calgary Flames,3,2,REG
+2021-02-03,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,Minnesota Wild,2,1,REG
+2021-02-03,Edmonton Oilers,Ottawa Senators,Edmonton Oilers,Ottawa Senators,4,2,REG
+2021-02-03,Los Angeles Kings,Anaheim Ducks,Anaheim Ducks,Los Angeles Kings,3,1,REG
+2021-02-03,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,5,1,REG
+2021-02-04,Philadelphia Flyers,Boston Bruins,Boston Bruins,Philadelphia Flyers,4,3,OT
+2021-02-05,New York Rangers,Washington Capitals,New York Rangers,Washington Capitals,4,2,REG
+2021-02-05,Florida Panthers,Nashville Predators,Nashville Predators,Florida Panthers,6,5,OT
+2021-02-05,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,Dallas Stars,4,3,REG
+2021-02-05,Montreal Canadiens,Ottawa Senators,Ottawa Senators,Montreal Canadiens,3,2,REG
+2021-02-05,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,7,3,REG
+2021-02-05,Chicago Blackhawks,Carolina Hurricanes,Chicago Blackhawks,Carolina Hurricanes,6,4,REG
+2021-02-05,St. Louis Blues,Arizona Coyotes,Arizona Coyotes,St. Louis Blues,4,3,REG
+2021-02-05,Winnipeg Jets,Calgary Flames,Winnipeg Jets,Calgary Flames,4,1,REG
+2021-02-06,Philadelphia Flyers,Boston Bruins,Boston Bruins,Philadelphia Flyers,2,1,REG
+2021-02-06,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,3,1,REG
+2021-02-06,Florida Panthers,Nashville Predators,Florida Panthers,Nashville Predators,2,1,REG
+2021-02-06,Vegas Golden Knights,Los Angeles Kings,Vegas Golden Knights,Los Angeles Kings,5,2,REG
+2021-02-06,Anaheim Ducks,San Jose Sharks,San Jose Sharks,Anaheim Ducks,5,4,SO
+2021-02-06,Ottawa Senators,Montreal Canadiens,Montreal Canadiens,Ottawa Senators,2,1,REG
+2021-02-06,St. Louis Blues,Arizona Coyotes,Arizona Coyotes,St. Louis Blues,3,1,REG
+2021-02-07,New York Islanders,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,4,3,REG
+2021-02-07,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,5,1,REG
+2021-02-07,Calgary Flames,Edmonton Oilers,Calgary Flames,Edmonton Oilers,6,4,REG
+2021-02-07,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,San Jose Sharks,2,1,SO
+2021-02-07,Washington Capitals,Philadelphia Flyers,Philadelphia Flyers,Washington Capitals,7,4,REG
+2021-02-07,Florida Panthers,Detroit Red Wings,Detroit Red Wings,Florida Panthers,4,1,REG
+2021-02-07,Columbus Blue Jackets,Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,6,5,REG
+2021-02-07,Dallas Stars,Chicago Blackhawks,Chicago Blackhawks,Dallas Stars,2,1,OT
+2021-02-07,Vegas Golden Knights,Los Angeles Kings,Vegas Golden Knights,Los Angeles Kings,4,3,REG
+2021-02-09,New York Rangers,New York Islanders,New York Islanders,New York Rangers,2,0,REG
+2021-02-09,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,3,2,REG
+2021-02-09,Ottawa Senators,Edmonton Oilers,Edmonton Oilers,Ottawa Senators,3,1,REG
+2021-02-09,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,3,1,REG
+2021-02-09,Nashville Predators,Tampa Bay Lightning,Tampa Bay Lightning,Nashville Predators,4,1,REG
+2021-02-09,St. Louis Blues,Arizona Coyotes,Arizona Coyotes,St. Louis Blues,4,3,SO
+2021-02-10,Florida Panthers,Detroit Red Wings,Florida Panthers,Detroit Red Wings,2,1,REG
+2021-02-10,Ottawa Senators,Edmonton Oilers,Edmonton Oilers,Ottawa Senators,3,2,REG
+2021-02-10,Nashville Predators,Tampa Bay Lightning,Tampa Bay Lightning,Nashville Predators,5,1,REG
+2021-02-10,Dallas Stars,Chicago Blackhawks,Chicago Blackhawks,Dallas Stars,2,1,OT
+2021-02-10,Calgary Flames,Winnipeg Jets,Calgary Flames,Winnipeg Jets,3,2,REG
+2021-02-10,Vegas Golden Knights,Anaheim Ducks,Vegas Golden Knights,Anaheim Ducks,5,4,REG
+2021-02-10,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,4,3,SO
+2021-02-11,New York Rangers,Boston Bruins,Boston Bruins,New York Rangers,3,2,OT
+2021-02-11,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,4,2,REG
+2021-02-12,New York Islanders,Pittsburgh Penguins,Pittsburgh Penguins,New York Islanders,4,3,SO
+2021-02-12,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,5,2,REG
+2021-02-12,Chicago Blackhawks,Columbus Blue Jackets,Columbus Blue Jackets,Chicago Blackhawks,6,5,REG
+2021-02-12,Nashville Predators,Detroit Red Wings,Nashville Predators,Detroit Red Wings,3,2,REG
+2021-02-12,Montreal Canadiens,Edmonton Oilers,Edmonton Oilers,Montreal Canadiens,3,0,REG
+2021-02-12,Winnipeg Jets,Ottawa Senators,Winnipeg Jets,Ottawa Senators,5,1,REG
+2021-02-12,Dallas Stars,Carolina Hurricanes,Carolina Hurricanes,Dallas Stars,5,3,REG
+2021-02-12,Vancouver Canucks,Calgary Flames,Calgary Flames,Vancouver Canucks,3,1,REG
+2021-02-12,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,San Jose Sharks,6,2,REG
+2021-02-13,Arizona Coyotes,St. Louis Blues,St. Louis Blues,Arizona Coyotes,4,1,REG
+2021-02-13,Winnipeg Jets,Ottawa Senators,Ottawa Senators,Winnipeg Jets,2,1,REG
+2021-02-13,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,3,1,REG
+2021-02-14,New York Islanders,Boston Bruins,New York Islanders,Boston Bruins,4,2,REG
+2021-02-14,Florida Panthers,Tampa Bay Lightning,Tampa Bay Lightning,Florida Panthers,5,1,REG
+2021-02-14,Toronto Maple Leafs,Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,2,1,REG
+2021-02-14,Chicago Blackhawks,Columbus Blue Jackets,Chicago Blackhawks,Columbus Blue Jackets,3,2,OT
+2021-02-14,Nashville Predators,Detroit Red Wings,Detroit Red Wings,Nashville Predators,4,2,REG
+2021-02-14,Dallas Stars,Carolina Hurricanes,Carolina Hurricanes,Dallas Stars,4,3,SO
+2021-02-14,Arizona Coyotes,St. Louis Blues,St. Louis Blues,Arizona Coyotes,5,4,OT
+2021-02-14,Vancouver Canucks,Calgary Flames,Vancouver Canucks,Calgary Flames,3,1,REG
+2021-02-14,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,Washington Capitals,6,3,REG
+2021-02-16,Buffalo Sabres,New York Islanders,New York Islanders,Buffalo Sabres,3,1,REG
+2021-02-16,Toronto Maple Leafs,Ottawa Senators,Ottawa Senators,Toronto Maple Leafs,6,5,OT
+2021-02-16,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,7,3,REG
+2021-02-16,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,6,4,REG
+2021-02-16,Detroit Red Wings,Chicago Blackhawks,Chicago Blackhawks,Detroit Red Wings,3,2,OT
+2021-02-16,Edmonton Oilers,Winnipeg Jets,Winnipeg Jets,Edmonton Oilers,6,5,REG
+2021-02-16,Vancouver Canucks,Calgary Flames,Calgary Flames,Vancouver Canucks,4,3,OT
+2021-02-16,San Jose Sharks,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,3,2,REG
+2021-02-17,Buffalo Sabres,New York Islanders,New York Islanders,Buffalo Sabres,3,0,REG
+2021-02-17,Pittsburgh Penguins,Washington Capitals,Washington Capitals,Pittsburgh Penguins,3,1,REG
+2021-02-17,New York Rangers,New Jersey Devils,New Jersey Devils,New York Rangers,5,2,REG
+2021-02-17,Vegas Golden Knights,Colorado Avalanche,Colorado Avalanche,Vegas Golden Knights,3,2,REG
+2021-02-17,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,Minnesota Wild,4,0,REG
+2021-02-17,Carolina Hurricanes,Florida Panthers,Florida Panthers,Carolina Hurricanes,4,3,OT
+2021-02-18,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,2,1,REG
+2021-02-18,Detroit Red Wings,Chicago Blackhawks,Chicago Blackhawks,Detroit Red Wings,2,0,REG
+2021-02-18,Calgary Flames,Vancouver Canucks,Vancouver Canucks,Calgary Flames,5,1,REG
+2021-02-18,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,3,2,REG
+2021-02-19,Boston Bruins,New Jersey Devils,New Jersey Devils,Boston Bruins,3,2,REG
+2021-02-19,Philadelphia Flyers,New York Rangers,New York Rangers,Philadelphia Flyers,3,2,SO
+2021-02-19,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,4,1,REG
+2021-02-19,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,Nashville Predators,3,0,REG
+2021-02-19,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,7,3,REG
+2021-02-19,Washington Capitals,Buffalo Sabres,Washington Capitals,Buffalo Sabres,3,1,REG
+2021-02-19,St. Louis Blues,San Jose Sharks,St. Louis Blues,San Jose Sharks,3,2,OT
+2021-02-19,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,3,2,SO
+2021-02-19,Anaheim Ducks,Minnesota Wild,Minnesota Wild,Anaheim Ducks,3,1,REG
+2021-02-20,Carolina Hurricanes,Chicago Blackhawks,Carolina Hurricanes,Chicago Blackhawks,5,3,REG
+2021-02-20,Detroit Red Wings,Florida Panthers,Florida Panthers,Detroit Red Wings,6,2,REG
+2021-02-20,Calgary Flames,Edmonton Oilers,Edmonton Oilers,Calgary Flames,2,1,REG
+2021-02-20,Vancouver Canucks,Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,2,0,REG
+2021-02-20,New Jersey Devils,Buffalo Sabres,Buffalo Sabres,New Jersey Devils,3,2,REG
+2021-02-20,Washington Capitals,New York Rangers,New York Rangers,Washington Capitals,4,1,REG
+2021-02-20,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,3,2,REG
+2021-02-20,Detroit Red Wings,Florida Panthers,Detroit Red Wings,Florida Panthers,2,1,REG
+2021-02-21,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,3,2,REG
+2021-02-21,Columbus Blue Jackets,Nashville Predators,Nashville Predators,Columbus Blue Jackets,4,2,REG
+2021-02-21,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,5,3,REG
+2021-02-21,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,4,2,REG
+2021-02-21,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,4,0,REG
+2021-02-21,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,5,4,REG
+2021-02-21,Anaheim Ducks,Minnesota Wild,Minnesota Wild,Anaheim Ducks,5,1,REG
+2021-02-21,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,5,1,REG
+2021-02-21,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,4,3,REG
+2021-02-22,Ottawa Senators,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,3,2,OT
+2021-02-22,Boston Bruins,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,7,3,REG
+2021-02-22,Vancouver Canucks,Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,4,3,OT
+2021-02-23,Carolina Hurricanes,Tampa Bay Lightning,Tampa Bay Lightning,Carolina Hurricanes,4,2,REG
+2021-02-23,Toronto Maple Leafs,Calgary Flames,Calgary Flames,Toronto Maple Leafs,3,0,REG
+2021-02-23,Florida Panthers,Dallas Stars,Florida Panthers,Dallas Stars,3,1,REG
+2021-02-23,New York Islanders,Buffalo Sabres,New York Islanders,Buffalo Sabres,3,2,REG
+2021-02-23,St. Louis Blues,Los Angeles Kings,Los Angeles Kings,St. Louis Blues,3,0,REG
+2021-02-23,Colorado Avalanche,Vegas Golden Knights,Vegas Golden Knights,Colorado Avalanche,3,0,REG
+2021-02-23,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,4,3,REG
+2021-02-23,San Jose Sharks,Minnesota Wild,Minnesota Wild,San Jose Sharks,6,2,REG
+2021-02-24,New Jersey Devils,Buffalo Sabres,Buffalo Sabres,New Jersey Devils,4,1,REG
+2021-02-24,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,3,2,OT
+2021-02-24,Columbus Blue Jackets,Chicago Blackhawks,Chicago Blackhawks,Columbus Blue Jackets,6,5,SO
+2021-02-24,Ottawa Senators,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,5,4,SO
+2021-02-24,Detroit Red Wings,Nashville Predators,Nashville Predators,Detroit Red Wings,2,0,REG
+2021-02-24,Vancouver Canucks,Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,4,3,REG
+2021-02-24,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,3,0,REG
+2021-02-24,Florida Panthers,Dallas Stars,Dallas Stars,Florida Panthers,3,0,REG
+2021-02-25,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,New York Rangers,4,3,REG
+2021-02-25,Toronto Maple Leafs,Calgary Flames,Toronto Maple Leafs,Calgary Flames,2,1,OT
+2021-02-25,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,4,3,SO
+2021-02-25,Colorado Avalanche,Minnesota Wild,Minnesota Wild,Colorado Avalanche,6,2,REG
+2021-02-25,St. Louis Blues,Los Angeles Kings,Los Angeles Kings,St. Louis Blues,2,1,REG
+2021-02-26,New York Islanders,Boston Bruins,New York Islanders,Boston Bruins,6,2,REG
+2021-02-26,Washington Capitals,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,5,2,REG
+2021-02-26,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,3,1,REG
+2021-02-26,Florida Panthers,Dallas Stars,Florida Panthers,Dallas Stars,3,2,REG
+2021-02-26,Columbus Blue Jackets,Chicago Blackhawks,Chicago Blackhawks,Columbus Blue Jackets,2,0,REG
+2021-02-26,Ottawa Senators,Calgary Flames,Ottawa Senators,Calgary Flames,5,1,REG
+2021-02-26,Buffalo Sabres,New Jersey Devils,New Jersey Devils,Buffalo Sabres,4,3,OT
+2021-02-26,Detroit Red Wings,Nashville Predators,Detroit Red Wings,Nashville Predators,5,2,REG
+2021-02-26,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,6,3,REG
+2021-02-26,Vancouver Canucks,Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,3,0,REG
+2021-02-27,New York Rangers,Boston Bruins,New York Rangers,Boston Bruins,6,2,REG
+2021-02-27,Minnesota Wild,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,3,1,REG
+2021-02-27,Arizona Coyotes,Colorado Avalanche,Colorado Avalanche,Arizona Coyotes,3,2,REG
+2021-02-27,Buffalo Sabres,Philadelphia Flyers,Philadelphia Flyers,Buffalo Sabres,3,0,REG
+2021-02-27,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,5,2,REG
+2021-02-27,Ottawa Senators,Calgary Flames,Calgary Flames,Ottawa Senators,6,3,REG
+2021-02-27,Nashville Predators,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,2,1,REG
+2021-02-28,New York Islanders,Pittsburgh Penguins,Pittsburgh Penguins,New York Islanders,4,3,OT
+2021-02-28,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,Dallas Stars,4,0,REG
+2021-02-28,Florida Panthers,Carolina Hurricanes,Carolina Hurricanes,Florida Panthers,4,3,SO
+2021-02-28,Edmonton Oilers,Toronto Maple Leafs,Toronto Maple Leafs,Edmonton Oilers,4,0,REG
+2021-02-28,Chicago Blackhawks,Detroit Red Wings,Detroit Red Wings,Chicago Blackhawks,5,3,REG
+2021-02-28,Minnesota Wild,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,4,3,OT
+2021-02-28,Arizona Coyotes,Colorado Avalanche,Colorado Avalanche,Arizona Coyotes,6,2,REG
+2021-02-28,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,2,1,OT
+2021-02-28,Anaheim Ducks,Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,3,2,OT
+2021-02-28,San Jose Sharks,St. Louis Blues,St. Louis Blues,San Jose Sharks,7,6,REG
+2021-02-28,New York Rangers,Boston Bruins,Boston Bruins,New York Rangers,4,1,REG
+2021-02-28,Buffalo Sabres,Philadelphia Flyers,Philadelphia Flyers,Buffalo Sabres,3,0,REG
+2021-02-28,Nashville Predators,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,3,1,REG
+2021-02-28,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,3,2,REG
+2021-02-28,New York Islanders,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,2,0,REG
+2021-03-01,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,6,2,REG
+2021-03-02,Florida Panthers,Carolina Hurricanes,Carolina Hurricanes,Florida Panthers,3,2,OT
+2021-03-02,Ottawa Senators,Calgary Flames,Ottawa Senators,Calgary Flames,5,1,REG
+2021-03-02,Winnipeg Jets,Vancouver Canucks,Vancouver Canucks,Winnipeg Jets,4,0,REG
+2021-03-02,Edmonton Oilers,Toronto Maple Leafs,Toronto Maple Leafs,Edmonton Oilers,3,0,REG
+2021-03-02,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,5,4,OT
+2021-03-02,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,5,4,REG
+2021-03-02,San Jose Sharks,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,6,2,REG
+2021-03-03,New Jersey Devils,New York Islanders,New York Islanders,New Jersey Devils,2,1,REG
+2021-03-03,New York Rangers,Buffalo Sabres,New York Rangers,Buffalo Sabres,3,2,REG
+2021-03-03,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,5,2,REG
+2021-03-03,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,4,1,REG
+2021-03-03,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,Ottawa Senators,3,1,REG
+2021-03-03,Winnipeg Jets,Vancouver Canucks,Winnipeg Jets,Vancouver Canucks,5,2,REG
+2021-03-03,Nashville Predators,Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,4,2,REG
+2021-03-03,Dallas Stars,Tampa Bay Lightning,Tampa Bay Lightning,Dallas Stars,2,0,REG
+2021-03-04,Boston Bruins,Washington Capitals,Washington Capitals,Boston Bruins,2,1,SO
+2021-03-04,Edmonton Oilers,Toronto Maple Leafs,Toronto Maple Leafs,Edmonton Oilers,5,1,REG
+2021-03-04,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,3,2,REG
+2021-03-04,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,5,1,REG
+2021-03-04,Los Angeles Kings,Arizona Coyotes,Arizona Coyotes,Los Angeles Kings,3,2,REG
+2021-03-04,San Jose Sharks,Colorado Avalanche,Colorado Avalanche,San Jose Sharks,4,0,REG
+2021-03-05,Carolina Hurricanes,Detroit Red Wings,Carolina Hurricanes,Detroit Red Wings,5,2,REG
+2021-03-05,Pittsburgh Penguins,Philadelphia Flyers,Philadelphia Flyers,Pittsburgh Penguins,4,3,REG
+2021-03-05,Montreal Canadiens,Winnipeg Jets,Winnipeg Jets,Montreal Canadiens,4,3,OT
+2021-03-05,New Jersey Devils,New York Rangers,New York Rangers,New Jersey Devils,5,1,REG
+2021-03-05,New York Islanders,Buffalo Sabres,New York Islanders,Buffalo Sabres,5,2,REG
+2021-03-05,Chicago Blackhawks,Tampa Bay Lightning,Tampa Bay Lightning,Chicago Blackhawks,3,2,OT
+2021-03-05,Nashville Predators,Florida Panthers,Florida Panthers,Nashville Predators,5,4,REG
+2021-03-05,Dallas Stars,Columbus Blue Jackets,Columbus Blue Jackets,Dallas Stars,3,2,REG
+2021-03-05,Calgary Flames,Ottawa Senators,Calgary Flames,Ottawa Senators,7,3,REG
+2021-03-05,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,3,1,REG
+2021-03-06,Boston Bruins,Washington Capitals,Boston Bruins,Washington Capitals,5,1,REG
+2021-03-06,Chicago Blackhawks,Tampa Bay Lightning,Chicago Blackhawks,Tampa Bay Lightning,4,3,SO
+2021-03-06,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,3,2,OT
+2021-03-06,Arizona Coyotes,Minnesota Wild,Minnesota Wild,Arizona Coyotes,5,1,REG
+2021-03-06,Los Angeles Kings,St. Louis Blues,St. Louis Blues,Los Angeles Kings,3,2,OT
+2021-03-06,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,5,4,OT
+2021-03-06,New Jersey Devils,New York Rangers,New York Rangers,New Jersey Devils,6,3,REG
+2021-03-06,New York Islanders,Buffalo Sabres,New York Islanders,Buffalo Sabres,5,2,REG
+2021-03-06,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,4,3,REG
+2021-03-06,Nashville Predators,Florida Panthers,Florida Panthers,Nashville Predators,6,2,REG
+2021-03-07,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,5,1,REG
+2021-03-07,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,4,2,REG
+2021-03-07,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,Minnesota Wild,5,2,REG
+2021-03-07,Dallas Stars,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,4,0,REG
+2021-03-07,Colorado Avalanche,Anaheim Ducks,Anaheim Ducks,Colorado Avalanche,5,4,OT
+2021-03-07,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,St. Louis Blues,4,3,OT
+2021-03-07,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,3,2,REG
+2021-03-07,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,4,0,REG
+2021-03-07,New York Islanders,Buffalo Sabres,New York Islanders,Buffalo Sabres,5,2,REG
+2021-03-07,Chicago Blackhawks,Tampa Bay Lightning,Tampa Bay Lightning,Chicago Blackhawks,6,3,REG
+2021-03-07,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,Florida Panthers,4,2,REG
+2021-03-08,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,3,1,REG
+2021-03-08,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,5,1,REG
+2021-03-08,Dallas Stars,Nashville Predators,Nashville Predators,Dallas Stars,4,3,SO
+2021-03-08,Calgary Flames,Ottawa Senators,Ottawa Senators,Calgary Flames,4,3,SO
+2021-03-09,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,2,0,REG
+2021-03-09,Edmonton Oilers,Ottawa Senators,Edmonton Oilers,Ottawa Senators,3,2,REG
+2021-03-09,Colorado Avalanche,Arizona Coyotes,Arizona Coyotes,Colorado Avalanche,3,2,REG
+2021-03-09,San Jose Sharks,St. Louis Blues,San Jose Sharks,St. Louis Blues,3,2,OT
+2021-03-09,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,2,1,SO
+2021-03-09,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,6,5,OT
+2021-03-09,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,4,2,REG
+2021-03-10,New York Islanders,Boston Bruins,New York Islanders,Boston Bruins,2,1,SO
+2021-03-10,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,5,4,SO
+2021-03-10,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,5,4,OT
+2021-03-10,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,3,2,OT
+2021-03-10,Columbus Blue Jackets,Florida Panthers,Florida Panthers,Columbus Blue Jackets,4,2,REG
+2021-03-10,Toronto Maple Leafs,Winnipeg Jets,Winnipeg Jets,Toronto Maple Leafs,4,3,REG
+2021-03-10,Detroit Red Wings,Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,4,3,OT
+2021-03-10,Dallas Stars,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,5,1,REG
+2021-03-11,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,4,3,REG
+2021-03-11,Edmonton Oilers,Ottawa Senators,Edmonton Oilers,Ottawa Senators,5,1,REG
+2021-03-11,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,2,1,OT
+2021-03-11,Anaheim Ducks,Los Angeles Kings,Los Angeles Kings,Anaheim Ducks,5,1,REG
+2021-03-11,Vancouver Canucks,Montreal Canadiens,Montreal Canadiens,Vancouver Canucks,5,1,REG
+2021-03-12,Boston Bruins,New York Rangers,Boston Bruins,New York Rangers,4,0,REG
+2021-03-12,Buffalo Sabres,Pittsburgh Penguins,Pittsburgh Penguins,Buffalo Sabres,5,2,REG
+2021-03-12,New York Islanders,New Jersey Devils,New York Islanders,New Jersey Devils,5,3,REG
+2021-03-12,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,5,3,REG
+2021-03-12,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,5,1,REG
+2021-03-12,Columbus Blue Jackets,Florida Panthers,Florida Panthers,Columbus Blue Jackets,5,4,OT
+2021-03-12,Toronto Maple Leafs,Winnipeg Jets,Toronto Maple Leafs,Winnipeg Jets,4,3,OT
+2021-03-12,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,6,4,REG
+2021-03-12,Dallas Stars,Chicago Blackhawks,Chicago Blackhawks,Dallas Stars,4,2,REG
+2021-03-12,Calgary Flames,Montreal Canadiens,Calgary Flames,Montreal Canadiens,2,1,REG
+2021-03-13,St. Louis Blues,Vegas Golden Knights,Vegas Golden Knights,St. Louis Blues,5,4,OT
+2021-03-13,Minnesota Wild,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,4,0,REG
+2021-03-13,Edmonton Oilers,Ottawa Senators,Edmonton Oilers,Ottawa Senators,6,2,REG
+2021-03-13,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,2,0,REG
+2021-03-13,Anaheim Ducks,San Jose Sharks,San Jose Sharks,Anaheim Ducks,4,0,REG
+2021-03-13,Boston Bruins,New York Rangers,New York Rangers,Boston Bruins,4,0,REG
+2021-03-13,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,Dallas Stars,4,3,OT
+2021-03-14,Buffalo Sabres,Pittsburgh Penguins,Pittsburgh Penguins,Buffalo Sabres,3,0,REG
+2021-03-14,New Jersey Devils,New York Islanders,New York Islanders,New Jersey Devils,3,2,REG
+2021-03-14,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,5,4,REG
+2021-03-14,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,Nashville Predators,6,3,REG
+2021-03-14,Florida Panthers,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,4,2,REG
+2021-03-14,Toronto Maple Leafs,Winnipeg Jets,Winnipeg Jets,Toronto Maple Leafs,5,2,REG
+2021-03-14,Calgary Flames,Montreal Canadiens,Calgary Flames,Montreal Canadiens,3,1,REG
+2021-03-14,St. Louis Blues,Vegas Golden Knights,Vegas Golden Knights,St. Louis Blues,5,1,REG
+2021-03-14,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,2,1,REG
+2021-03-14,Anaheim Ducks,San Jose Sharks,San Jose Sharks,Anaheim Ducks,3,1,REG
+2021-03-14,Minnesota Wild,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,4,1,REG
+2021-03-14,Detroit Red Wings,Carolina Hurricanes,Carolina Hurricanes,Detroit Red Wings,2,1,REG
+2021-03-14,Columbus Blue Jackets,Dallas Stars,Dallas Stars,Columbus Blue Jackets,2,1,SO
+2021-03-14,New Jersey Devils,New York Islanders,New York Islanders,New Jersey Devils,3,2,SO
+2021-03-14,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,4,1,REG
+2021-03-14,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,4,3,REG
+2021-03-15,Tampa Bay Lightning,Nashville Predators,Nashville Predators,Tampa Bay Lightning,4,1,REG
+2021-03-15,New York Rangers,Philadelphia Flyers,Philadelphia Flyers,New York Rangers,5,4,OT
+2021-03-15,Florida Panthers,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,6,3,REG
+2021-03-15,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,Boston Bruins,4,1,REG
+2021-03-15,Ottawa Senators,Vancouver Canucks,Vancouver Canucks,Ottawa Senators,3,2,OT
+2021-03-15,Buffalo Sabres,Washington Capitals,Washington Capitals,Buffalo Sabres,4,0,REG
+2021-03-16,Winnipeg Jets,Montreal Canadiens,Montreal Canadiens,Winnipeg Jets,4,2,REG
+2021-03-16,Calgary Flames,Edmonton Oilers,Calgary Flames,Edmonton Oilers,4,3,REG
+2021-03-16,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,2,1,REG
+2021-03-16,New Jersey Devils,Buffalo Sabres,New Jersey Devils,Buffalo Sabres,3,2,REG
+2021-03-16,Washington Capitals,New York Islanders,Washington Capitals,New York Islanders,3,1,REG
+2021-03-16,Pittsburgh Penguins,Boston Bruins,Boston Bruins,Pittsburgh Penguins,2,1,REG
+2021-03-16,Detroit Red Wings,Carolina Hurricanes,Detroit Red Wings,Carolina Hurricanes,4,2,REG
+2021-03-17,Minnesota Wild,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,3,0,REG
+2021-03-17,Dallas Stars,Tampa Bay Lightning,Tampa Bay Lightning,Dallas Stars,4,3,SO
+2021-03-17,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,8,4,REG
+2021-03-17,Ottawa Senators,Vancouver Canucks,Vancouver Canucks,Ottawa Senators,3,2,SO
+2021-03-17,New York Rangers,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,4,0,REG
+2021-03-18,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,4,3,OT
+2021-03-18,Calgary Flames,Edmonton Oilers,Edmonton Oilers,Calgary Flames,7,3,REG
+2021-03-18,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,5,4,REG
+2021-03-18,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,St. Louis Blues,4,1,REG
+2021-03-18,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,3,2,REG
+2021-03-18,Buffalo Sabres,Boston Bruins,Boston Bruins,Buffalo Sabres,4,1,REG
+2021-03-18,New York Islanders,Philadelphia Flyers,Philadelphia Flyers,New York Islanders,4,3,REG
+2021-03-18,Carolina Hurricanes,Columbus Blue Jackets,Columbus Blue Jackets,Carolina Hurricanes,3,2,OT
+2021-03-18,Tampa Bay Lightning,Chicago Blackhawks,Tampa Bay Lightning,Chicago Blackhawks,4,2,REG
+2021-03-18,Florida Panthers,Nashville Predators,Nashville Predators,Florida Panthers,2,1,REG
+2021-03-18,Detroit Red Wings,Dallas Stars,Detroit Red Wings,Dallas Stars,3,2,REG
+2021-03-19,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,2,1,REG
+2021-03-19,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,Minnesota Wild,5,1,REG
+2021-03-19,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,3,2,OT
+2021-03-19,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,2,1,REG
+2021-03-19,Montreal Canadiens,Vancouver Canucks,Vancouver Canucks,Montreal Canadiens,3,2,OT
+2021-03-19,Toronto Maple Leafs,Calgary Flames,Calgary Flames,Toronto Maple Leafs,4,3,REG
+2021-03-20,San Jose Sharks,St. Louis Blues,St. Louis Blues,San Jose Sharks,2,1,SO
+2021-03-20,Los Angeles Kings,Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,4,2,REG
+2021-03-20,New Jersey Devils,Pittsburgh Penguins,Pittsburgh Penguins,New Jersey Devils,3,1,REG
+2021-03-20,Florida Panthers,Nashville Predators,Florida Panthers,Nashville Predators,2,0,REG
+2021-03-20,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,Minnesota Wild,4,0,REG
+2021-03-20,Tampa Bay Lightning,Chicago Blackhawks,Tampa Bay Lightning,Chicago Blackhawks,4,1,REG
+2021-03-20,New York Islanders,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,5,1,REG
+2021-03-20,Carolina Hurricanes,Columbus Blue Jackets,Columbus Blue Jackets,Carolina Hurricanes,3,2,SO
+2021-03-20,Detroit Red Wings,Dallas Stars,Dallas Stars,Detroit Red Wings,3,0,REG
+2021-03-20,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,5,4,SO
+2021-03-20,Toronto Maple Leafs,Calgary Flames,Toronto Maple Leafs,Calgary Flames,2,0,REG
+2021-03-20,Washington Capitals,New York Rangers,New York Rangers,Washington Capitals,3,1,REG
+2021-03-21,Anaheim Ducks,Arizona Coyotes,Arizona Coyotes,Anaheim Ducks,5,1,REG
+2021-03-21,San Jose Sharks,St. Louis Blues,St. Louis Blues,San Jose Sharks,5,2,REG
+2021-03-21,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,4,2,REG
+2021-03-21,Pittsburgh Penguins,New Jersey Devils,New Jersey Devils,Pittsburgh Penguins,2,1,OT
+2021-03-21,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,5,3,REG
+2021-03-21,Los Angeles Kings,Vegas Golden Knights,Los Angeles Kings,Vegas Golden Knights,3,1,REG
+2021-03-22,Dallas Stars,Nashville Predators,Nashville Predators,Dallas Stars,4,3,SO
+2021-03-22,New York Rangers,Buffalo Sabres,New York Rangers,Buffalo Sabres,5,3,REG
+2021-03-22,Columbus Blue Jackets,Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,3,0,REG
+2021-03-22,Ottawa Senators,Calgary Flames,Ottawa Senators,Calgary Flames,2,1,REG
+2021-03-22,Philadelphia Flyers,New York Islanders,New York Islanders,Philadelphia Flyers,2,1,OT
+2021-03-22,Minnesota Wild,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,2,1,REG
+2021-03-23,Vancouver Canucks,Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,4,0,REG
+2021-03-23,Arizona Coyotes,Colorado Avalanche,Colorado Avalanche,Arizona Coyotes,5,1,REG
+2021-03-23,Vegas Golden Knights,St. Louis Blues,Vegas Golden Knights,St. Louis Blues,5,1,REG
+2021-03-23,San Jose Sharks,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,2,1,REG
+2021-03-23,Philadelphia Flyers,New Jersey Devils,New Jersey Devils,Philadelphia Flyers,4,3,REG
+2021-03-24,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,Florida Panthers,3,2,REG
+2021-03-24,Nashville Predators,Detroit Red Wings,Nashville Predators,Detroit Red Wings,2,0,REG
+2021-03-24,Dallas Stars,Tampa Bay Lightning,Tampa Bay Lightning,Dallas Stars,2,1,REG
+2021-03-24,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,5,4,SO
+2021-03-24,Ottawa Senators,Calgary Flames,Ottawa Senators,Calgary Flames,3,1,REG
+2021-03-24,Minnesota Wild,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,3,2,REG
+2021-03-25,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,5,2,REG
+2021-03-25,Vancouver Canucks,Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,5,1,REG
+2021-03-25,San Jose Sharks,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,4,2,REG
+2021-03-25,Boston Bruins,New York Islanders,New York Islanders,Boston Bruins,4,3,OT
+2021-03-25,Philadelphia Flyers,New York Rangers,New York Rangers,Philadelphia Flyers,7,3,REG
+2021-03-25,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,4,3,REG
+2021-03-25,Columbus Blue Jackets,Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,4,3,OT
+2021-03-25,Ottawa Senators,Toronto Maple Leafs,Toronto Maple Leafs,Ottawa Senators,3,2,OT
+2021-03-25,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,4,0,REG
+2021-03-26,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,Florida Panthers,3,0,REG
+2021-03-26,Nashville Predators,Detroit Red Wings,Nashville Predators,Detroit Red Wings,5,1,REG
+2021-03-26,Minnesota Wild,St. Louis Blues,Minnesota Wild,St. Louis Blues,2,0,REG
+2021-03-26,Dallas Stars,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,4,3,REG
+2021-03-26,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,5,1,REG
+2021-03-26,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,4,0,REG
+2021-03-27,St. Louis Blues,Anaheim Ducks,Anaheim Ducks,St. Louis Blues,4,1,REG
+2021-03-27,Calgary Flames,Winnipeg Jets,Winnipeg Jets,Calgary Flames,3,2,REG
+2021-03-27,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,San Jose Sharks,5,2,REG
+2021-03-27,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,New York Rangers,2,1,REG
+2021-03-27,Boston Bruins,Buffalo Sabres,Boston Bruins,Buffalo Sabres,3,2,REG
+2021-03-27,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,3,1,REG
+2021-03-27,Colorado Avalanche,Vegas Golden Knights,Vegas Golden Knights,Colorado Avalanche,3,2,OT
+2021-03-27,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,4,3,REG
+2021-03-27,Toronto Maple Leafs,Edmonton Oilers,Toronto Maple Leafs,Edmonton Oilers,4,3,OT
+2021-03-27,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,6,3,REG
+2021-03-28,Chicago Blackhawks,Nashville Predators,Nashville Predators,Chicago Blackhawks,3,1,REG
+2021-03-28,Dallas Stars,Florida Panthers,Florida Panthers,Dallas Stars,4,3,OT
+2021-03-28,Calgary Flames,Winnipeg Jets,Calgary Flames,Winnipeg Jets,4,2,REG
+2021-03-28,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,San Jose Sharks,4,0,REG
+2021-03-28,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,5,4,REG
+2021-03-28,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,4,1,REG
+2021-03-28,St. Louis Blues,Anaheim Ducks,Anaheim Ducks,St. Louis Blues,3,2,OT
+2021-03-28,Dallas Stars,Florida Panthers,Florida Panthers,Dallas Stars,4,1,REG
+2021-03-29,Chicago Blackhawks,Nashville Predators,Nashville Predators,Chicago Blackhawks,3,2,REG
+2021-03-29,Buffalo Sabres,Philadelphia Flyers,Philadelphia Flyers,Buffalo Sabres,4,3,OT
+2021-03-29,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,2,1,REG
+2021-03-29,Toronto Maple Leafs,Edmonton Oilers,Edmonton Oilers,Toronto Maple Leafs,3,2,OT
+2021-03-30,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,5,2,REG
+2021-03-30,Calgary Flames,Winnipeg Jets,Winnipeg Jets,Calgary Flames,5,1,REG
+2021-03-30,Vegas Golden Knights,Los Angeles Kings,Vegas Golden Knights,Los Angeles Kings,4,1,REG
+2021-03-30,San Jose Sharks,Minnesota Wild,San Jose Sharks,Minnesota Wild,4,3,SO
+2021-03-30,Boston Bruins,New Jersey Devils,Boston Bruins,New Jersey Devils,5,4,SO
+2021-03-30,New York Rangers,Washington Capitals,New York Rangers,Washington Capitals,5,2,REG
+2021-03-30,Tampa Bay Lightning,Columbus Blue Jackets,Columbus Blue Jackets,Tampa Bay Lightning,3,1,REG
+2021-03-30,Florida Panthers,Detroit Red Wings,Florida Panthers,Detroit Red Wings,4,1,REG
+2021-03-30,Montreal Canadiens,Edmonton Oilers,Montreal Canadiens,Edmonton Oilers,4,0,REG
+2021-03-30,Chicago Blackhawks,Carolina Hurricanes,Chicago Blackhawks,Carolina Hurricanes,2,1,REG
+2021-03-31,Nashville Predators,Dallas Stars,Nashville Predators,Dallas Stars,3,2,OT
+2021-03-31,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,5,1,REG
+2021-03-31,Winnipeg Jets,Toronto Maple Leafs,Toronto Maple Leafs,Winnipeg Jets,3,1,REG
+2021-04-01,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,7,3,REG
+2021-04-01,Vegas Golden Knights,Los Angeles Kings,Los Angeles Kings,Vegas Golden Knights,4,2,REG
+2021-04-01,San Jose Sharks,Minnesota Wild,San Jose Sharks,Minnesota Wild,4,2,REG
+2021-04-01,Boston Bruins,Pittsburgh Penguins,Pittsburgh Penguins,Boston Bruins,4,1,REG
+2021-04-01,Buffalo Sabres,New York Rangers,New York Rangers,Buffalo Sabres,3,2,OT
+2021-04-01,New York Islanders,Washington Capitals,New York Islanders,Washington Capitals,8,4,REG
+2021-04-01,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,3,2,REG
+2021-04-01,Florida Panthers,Detroit Red Wings,Florida Panthers,Detroit Red Wings,3,2,OT
+2021-04-01,Ottawa Senators,Montreal Canadiens,Montreal Canadiens,Ottawa Senators,4,1,REG
+2021-04-02,Chicago Blackhawks,Carolina Hurricanes,Carolina Hurricanes,Chicago Blackhawks,4,3,REG
+2021-04-02,Nashville Predators,Dallas Stars,Dallas Stars,Nashville Predators,4,1,REG
+2021-04-02,Vegas Golden Knights,Minnesota Wild,Minnesota Wild,Vegas Golden Knights,3,2,SO
+2021-04-02,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,2,1,OT
+2021-04-03,Winnipeg Jets,Toronto Maple Leafs,Toronto Maple Leafs,Winnipeg Jets,2,1,SO
+2021-04-03,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,3,2,REG
+2021-04-03,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,3,2,REG
+2021-04-03,Anaheim Ducks,Arizona Coyotes,Arizona Coyotes,Anaheim Ducks,4,2,REG
+2021-04-03,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,3,0,REG
+2021-04-03,Boston Bruins,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,7,5,REG
+2021-04-03,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,2,1,REG
+2021-04-03,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,3,0,REG
+2021-04-03,Buffalo Sabres,New York Rangers,Buffalo Sabres,New York Rangers,3,2,SO
+2021-04-03,New York Islanders,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,3,2,SO
+2021-04-03,Carolina Hurricanes,Dallas Stars,Dallas Stars,Carolina Hurricanes,3,2,REG
+2021-04-03,Florida Panthers,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,5,2,REG
+2021-04-03,Montreal Canadiens,Ottawa Senators,Ottawa Senators,Montreal Canadiens,6,3,REG
+2021-04-04,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,2,1,REG
+2021-04-04,Vegas Golden Knights,Minnesota Wild,Minnesota Wild,Vegas Golden Knights,2,1,REG
+2021-04-04,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,3,2,REG
+2021-04-04,Tampa Bay Lightning,Detroit Red Wings,Detroit Red Wings,Tampa Bay Lightning,5,1,REG
+2021-04-04,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,5,4,REG
+2021-04-04,Florida Panthers,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,3,0,REG
+2021-04-05,Calgary Flames,Toronto Maple Leafs,Toronto Maple Leafs,Calgary Flames,4,2,REG
+2021-04-05,Anaheim Ducks,Arizona Coyotes,Arizona Coyotes,Anaheim Ducks,3,2,OT
+2021-04-05,Montreal Canadiens,Edmonton Oilers,Montreal Canadiens,Edmonton Oilers,3,2,OT
+2021-04-05,Winnipeg Jets,Ottawa Senators,Winnipeg Jets,Ottawa Senators,4,3,REG
+2021-04-05,Boston Bruins,Philadelphia Flyers,Philadelphia Flyers,Boston Bruins,3,2,OT
+2021-04-06,St. Louis Blues,Vegas Golden Knights,Vegas Golden Knights,St. Louis Blues,5,1,REG
+2021-04-06,Minnesota Wild,Colorado Avalanche,Colorado Avalanche,Minnesota Wild,5,4,REG
+2021-04-06,Calgary Flames,Toronto Maple Leafs,Toronto Maple Leafs,Calgary Flames,5,3,REG
+2021-04-06,Los Angeles Kings,Arizona Coyotes,Arizona Coyotes,Los Angeles Kings,5,2,REG
+2021-04-06,New Jersey Devils,Buffalo Sabres,Buffalo Sabres,New Jersey Devils,5,3,REG
+2021-04-06,New York Rangers,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,8,4,REG
+2021-04-06,Philadelphia Flyers,Boston Bruins,Boston Bruins,Philadelphia Flyers,4,2,REG
+2021-04-06,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,Florida Panthers,5,2,REG
+2021-04-06,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,4,2,REG
+2021-04-06,Detroit Red Wings,Nashville Predators,Nashville Predators,Detroit Red Wings,3,2,SO
+2021-04-07,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,Dallas Stars,4,2,REG
+2021-04-07,San Jose Sharks,Anaheim Ducks,Anaheim Ducks,San Jose Sharks,5,1,REG
+2021-04-07,Ottawa Senators,Edmonton Oilers,Edmonton Oilers,Ottawa Senators,4,2,REG
+2021-04-07,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,3,2,REG
+2021-04-08,St. Louis Blues,Vegas Golden Knights,St. Louis Blues,Vegas Golden Knights,3,1,REG
+2021-04-08,Minnesota Wild,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,7,3,REG
+2021-04-08,Los Angeles Kings,Arizona Coyotes,Los Angeles Kings,Arizona Coyotes,4,3,REG
+2021-04-08,Buffalo Sabres,New Jersey Devils,New Jersey Devils,Buffalo Sabres,6,3,REG
+2021-04-08,New York Islanders,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,3,2,SO
+2021-04-08,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,5,2,REG
+2021-04-08,Washington Capitals,Boston Bruins,Boston Bruins,Washington Capitals,4,2,REG
+2021-04-08,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,Florida Panthers,3,0,REG
+2021-04-08,Columbus Blue Jackets,Tampa Bay Lightning,Tampa Bay Lightning,Columbus Blue Jackets,6,4,REG
+2021-04-08,Montreal Canadiens,Winnipeg Jets,Winnipeg Jets,Montreal Canadiens,4,2,REG
+2021-04-08,Ottawa Senators,Edmonton Oilers,Edmonton Oilers,Ottawa Senators,3,1,REG
+2021-04-08,Detroit Red Wings,Nashville Predators,Nashville Predators,Detroit Red Wings,5,1,REG
+2021-04-09,Chicago Blackhawks,Dallas Stars,Dallas Stars,Chicago Blackhawks,5,1,REG
+2021-04-09,New Jersey Devils,Pittsburgh Penguins,Pittsburgh Penguins,New Jersey Devils,6,4,REG
+2021-04-09,New York Islanders,New York Rangers,New York Rangers,New York Islanders,4,1,REG
+2021-04-09,Buffalo Sabres,Washington Capitals,Washington Capitals,Buffalo Sabres,4,3,REG
+2021-04-10,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,5,1,REG
+2021-04-10,Vegas Golden Knights,Arizona Coyotes,Vegas Golden Knights,Arizona Coyotes,7,4,REG
+2021-04-10,Anaheim Ducks,Colorado Avalanche,Colorado Avalanche,Anaheim Ducks,2,0,REG
+2021-04-10,San Jose Sharks,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,5,2,REG
+2021-04-10,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,Boston Bruins,3,2,REG
+2021-04-10,Dallas Stars,Florida Panthers,Dallas Stars,Florida Panthers,4,1,REG
+2021-04-10,Carolina Hurricanes,Detroit Red Wings,Detroit Red Wings,Carolina Hurricanes,5,4,SO
+2021-04-10,Columbus Blue Jackets,Chicago Blackhawks,Chicago Blackhawks,Columbus Blue Jackets,4,3,REG
+2021-04-10,Montreal Canadiens,Winnipeg Jets,Winnipeg Jets,Montreal Canadiens,4,0,REG
+2021-04-10,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,6,5,REG
+2021-04-11,Nashville Predators,Tampa Bay Lightning,Tampa Bay Lightning,Nashville Predators,3,0,REG
+2021-04-11,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,3,2,OT
+2021-04-11,Calgary Flames,Edmonton Oilers,Calgary Flames,Edmonton Oilers,4,0,REG
+2021-04-11,San Jose Sharks,Los Angeles Kings,Los Angeles Kings,San Jose Sharks,4,2,REG
+2021-04-11,Philadelphia Flyers,Buffalo Sabres,Buffalo Sabres,Philadelphia Flyers,5,3,REG
+2021-04-11,Anaheim Ducks,Colorado Avalanche,Colorado Avalanche,Anaheim Ducks,4,1,REG
+2021-04-11,New Jersey Devils,Pittsburgh Penguins,Pittsburgh Penguins,New Jersey Devils,5,2,REG
+2021-04-11,New York Islanders,New York Rangers,New York Islanders,New York Rangers,3,2,OT
+2021-04-11,Boston Bruins,Washington Capitals,Washington Capitals,Boston Bruins,5,1,REG
+2021-04-12,Nashville Predators,Dallas Stars,Nashville Predators,Dallas Stars,3,2,SO
+2021-04-12,Carolina Hurricanes,Detroit Red Wings,Detroit Red Wings,Carolina Hurricanes,3,1,REG
+2021-04-12,Columbus Blue Jackets,Chicago Blackhawks,Chicago Blackhawks,Columbus Blue Jackets,4,3,OT
+2021-04-12,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,4,2,REG
+2021-04-12,Ottawa Senators,Winnipeg Jets,Ottawa Senators,Winnipeg Jets,4,2,REG
+2021-04-13,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,4,2,REG
+2021-04-13,Los Angeles Kings,Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,4,2,REG
+2021-04-13,San Jose Sharks,Anaheim Ducks,Anaheim Ducks,San Jose Sharks,4,0,REG
+2021-04-13,New Jersey Devils,New York Rangers,New York Rangers,New Jersey Devils,3,0,REG
+2021-04-13,Boston Bruins,Buffalo Sabres,Boston Bruins,Buffalo Sabres,3,2,SO
+2021-04-13,Washington Capitals,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,5,1,REG
+2021-04-13,Toronto Maple Leafs,Calgary Flames,Calgary Flames,Toronto Maple Leafs,3,2,OT
+2021-04-14,Nashville Predators,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,6,2,REG
+2021-04-14,Dallas Stars,Florida Panthers,Florida Panthers,Dallas Stars,3,2,OT
+2021-04-14,Minnesota Wild,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,5,2,REG
+2021-04-14,Montreal Canadiens,Calgary Flames,Calgary Flames,Montreal Canadiens,4,1,REG
+2021-04-14,Ottawa Senators,Winnipeg Jets,Winnipeg Jets,Ottawa Senators,3,2,REG
+2021-04-14,St. Louis Blues,Colorado Avalanche,Colorado Avalanche,St. Louis Blues,4,3,REG
+2021-04-15,Los Angeles Kings,Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,6,2,REG
+2021-04-15,San Jose Sharks,Anaheim Ducks,Anaheim Ducks,San Jose Sharks,4,1,REG
+2021-04-15,Boston Bruins,New York Islanders,Boston Bruins,New York Islanders,4,1,REG
+2021-04-15,New York Rangers,New Jersey Devils,New York Rangers,New Jersey Devils,4,0,REG
+2021-04-15,Washington Capitals,Buffalo Sabres,Buffalo Sabres,Washington Capitals,5,2,REG
+2021-04-15,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,4,1,REG
+2021-04-15,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,3,2,OT
+2021-04-15,Pittsburgh Penguins,Philadelphia Flyers,Philadelphia Flyers,Pittsburgh Penguins,2,1,SO
+2021-04-15,Toronto Maple Leafs,Winnipeg Jets,Winnipeg Jets,Toronto Maple Leafs,5,2,REG
+2021-04-15,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,4,1,REG
+2021-04-16,Dallas Stars,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,4,1,REG
+2021-04-16,Montreal Canadiens,Calgary Flames,Montreal Canadiens,Calgary Flames,2,1,REG
+2021-04-16,Boston Bruins,New York Islanders,Boston Bruins,New York Islanders,3,0,REG
+2021-04-17,Minnesota Wild,San Jose Sharks,Minnesota Wild,San Jose Sharks,3,2,REG
+2021-04-17,Anaheim Ducks,Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,4,0,REG
+2021-04-17,New York Rangers,New Jersey Devils,New York Rangers,New Jersey Devils,6,3,REG
+2021-04-17,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,6,3,REG
+2021-04-17,Buffalo Sabres,Pittsburgh Penguins,Pittsburgh Penguins,Buffalo Sabres,3,2,REG
+2021-04-17,Montreal Canadiens,Ottawa Senators,Ottawa Senators,Montreal Canadiens,4,0,REG
+2021-04-17,Arizona Coyotes,St. Louis Blues,Arizona Coyotes,St. Louis Blues,3,2,REG
+2021-04-17,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,3,1,REG
+2021-04-17,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,5,3,REG
+2021-04-17,Detroit Red Wings,Chicago Blackhawks,Chicago Blackhawks,Detroit Red Wings,4,0,REG
+2021-04-17,Winnipeg Jets,Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,3,0,REG
+2021-04-18,Minnesota Wild,San Jose Sharks,Minnesota Wild,San Jose Sharks,5,2,REG
+2021-04-18,Dallas Stars,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,5,1,REG
+2021-04-18,Boston Bruins,Washington Capitals,Boston Bruins,Washington Capitals,6,3,REG
+2021-04-18,New Jersey Devils,New York Rangers,New York Rangers,New Jersey Devils,5,3,REG
+2021-04-18,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,4,2,REG
+2021-04-18,Anaheim Ducks,Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,5,2,REG
+2021-04-18,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,3,2,OT
+2021-04-19,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,3,2,OT
+2021-04-19,Florida Panthers,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,4,2,REG
+2021-04-19,Dallas Stars,Detroit Red Wings,Dallas Stars,Detroit Red Wings,3,2,SO
+2021-04-20,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,5,2,REG
+2021-04-20,Calgary Flames,Ottawa Senators,Ottawa Senators,Calgary Flames,4,2,REG
+2021-04-20,Edmonton Oilers,Montreal Canadiens,Edmonton Oilers,Montreal Canadiens,4,1,REG
+2021-04-20,Arizona Coyotes,Minnesota Wild,Minnesota Wild,Arizona Coyotes,5,2,REG
+2021-04-20,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,3,2,SO
+2021-04-20,Buffalo Sabres,Boston Bruins,Boston Bruins,Buffalo Sabres,2,0,REG
+2021-04-20,New York Islanders,New York Rangers,New York Islanders,New York Rangers,5,1,REG
+2021-04-20,Tampa Bay Lightning,Carolina Hurricanes,Carolina Hurricanes,Tampa Bay Lightning,4,1,REG
+2021-04-20,Florida Panthers,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,5,1,REG
+2021-04-20,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,7,6,REG
+2021-04-21,Dallas Stars,Detroit Red Wings,Dallas Stars,Detroit Red Wings,5,2,REG
+2021-04-21,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,6,3,REG
+2021-04-21,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,4,1,REG
+2021-04-21,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,Nashville Predators,5,4,OT
+2021-04-22,Arizona Coyotes,Minnesota Wild,Minnesota Wild,Arizona Coyotes,4,1,REG
+2021-04-22,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,5,2,REG
+2021-04-22,Edmonton Oilers,Montreal Canadiens,Montreal Canadiens,Edmonton Oilers,4,3,REG
+2021-04-22,Winnipeg Jets,Toronto Maple Leafs,Toronto Maple Leafs,Winnipeg Jets,5,3,REG
+2021-04-22,Buffalo Sabres,Boston Bruins,Boston Bruins,Buffalo Sabres,5,1,REG
+2021-04-22,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,3,1,REG
+2021-04-22,Florida Panthers,Carolina Hurricanes,Carolina Hurricanes,Florida Panthers,4,2,REG
+2021-04-22,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,5,1,REG
+2021-04-22,New York Rangers,Philadelphia Flyers,Philadelphia Flyers,New York Rangers,3,2,REG
+2021-04-22,Detroit Red Wings,Dallas Stars,Detroit Red Wings,Dallas Stars,7,3,REG
+2021-04-23,St. Louis Blues,Colorado Avalanche,Colorado Avalanche,St. Louis Blues,4,2,REG
+2021-04-23,Vancouver Canucks,Ottawa Senators,Ottawa Senators,Vancouver Canucks,3,0,REG
+2021-04-23,Buffalo Sabres,Boston Bruins,Buffalo Sabres,Boston Bruins,6,4,REG
+2021-04-23,New York Rangers,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,4,1,REG
+2021-04-24,Chicago Blackhawks,Nashville Predators,Nashville Predators,Chicago Blackhawks,3,1,REG
+2021-04-24,Calgary Flames,Montreal Canadiens,Calgary Flames,Montreal Canadiens,4,2,REG
+2021-04-24,Los Angeles Kings,Minnesota Wild,Minnesota Wild,Los Angeles Kings,4,2,REG
+2021-04-24,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,4,2,REG
+2021-04-24,St. Louis Blues,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,5,3,REG
+2021-04-24,New York Islanders,Washington Capitals,Washington Capitals,New York Islanders,6,3,REG
+2021-04-24,Florida Panthers,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,4,3,OT
+2021-04-24,Detroit Red Wings,Dallas Stars,Dallas Stars,Detroit Red Wings,2,1,OT
+2021-04-24,Winnipeg Jets,Toronto Maple Leafs,Toronto Maple Leafs,Winnipeg Jets,4,1,REG
+2021-04-24,Calgary Flames,Montreal Canadiens,Calgary Flames,Montreal Canadiens,5,2,REG
+2021-04-25,San Jose Sharks,Minnesota Wild,Minnesota Wild,San Jose Sharks,6,3,REG
+2021-04-25,Anaheim Ducks,Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,5,1,REG
+2021-04-25,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,Ottawa Senators,4,2,REG
+2021-04-25,Los Angeles Kings,Arizona Coyotes,Arizona Coyotes,Los Angeles Kings,4,0,REG
+2021-04-25,New York Rangers,Buffalo Sabres,New York Rangers,Buffalo Sabres,6,3,REG
+2021-04-25,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,4,3,SO
+2021-04-25,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,4,3,OT
+2021-04-26,Calgary Flames,Montreal Canadiens,Montreal Canadiens,Calgary Flames,2,1,REG
+2021-04-26,Ottawa Senators,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,2,1,REG
+2021-04-26,St. Louis Blues,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,4,1,REG
+2021-04-26,Dallas Stars,Carolina Hurricanes,Dallas Stars,Carolina Hurricanes,4,3,OT
+2021-04-27,Nashville Predators,Florida Panthers,Nashville Predators,Florida Panthers,4,1,REG
+2021-04-27,Winnipeg Jets,Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,5,1,REG
+2021-04-27,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,4,1,REG
+2021-04-27,San Jose Sharks,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,6,4,REG
+2021-04-27,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,6,4,REG
+2021-04-27,New York Rangers,Buffalo Sabres,New York Rangers,Buffalo Sabres,3,1,REG
+2021-04-27,Pittsburgh Penguins,Boston Bruins,Boston Bruins,Pittsburgh Penguins,3,1,REG
+2021-04-28,Chicago Blackhawks,Tampa Bay Lightning,Tampa Bay Lightning,Chicago Blackhawks,7,4,REG
+2021-04-28,Nashville Predators,Florida Panthers,Florida Panthers,Nashville Predators,7,4,REG
+2021-04-28,Dallas Stars,Carolina Hurricanes,Carolina Hurricanes,Dallas Stars,5,1,REG
+2021-04-28,Ottawa Senators,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,6,3,REG
+2021-04-28,Minnesota Wild,St. Louis Blues,St. Louis Blues,Minnesota Wild,4,3,REG
+2021-04-29,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,4,1,REG
+2021-04-29,Winnipeg Jets,Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,3,1,REG
+2021-04-29,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,5,2,REG
+2021-04-29,Los Angeles Kings,Anaheim Ducks,Anaheim Ducks,Los Angeles Kings,3,2,REG
+2021-04-29,San Jose Sharks,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,4,2,REG
+2021-04-29,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,Dallas Stars,3,0,REG
+2021-04-29,Boston Bruins,Buffalo Sabres,Boston Bruins,Buffalo Sabres,5,2,REG
+2021-04-29,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,5,3,REG
+2021-04-29,New York Rangers,New York Islanders,New York Islanders,New York Rangers,4,0,REG
+2021-04-29,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,5,4,OT
+2021-04-29,Carolina Hurricanes,Detroit Red Wings,Carolina Hurricanes,Detroit Red Wings,3,1,REG
+2021-04-29,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,4,1,REG
+2021-04-30,Chicago Blackhawks,Florida Panthers,Florida Panthers,Chicago Blackhawks,4,3,OT
+2021-04-30,Minnesota Wild,St. Louis Blues,St. Louis Blues,Minnesota Wild,5,4,OT
+2021-04-30,Edmonton Oilers,Calgary Flames,Calgary Flames,Edmonton Oilers,3,1,REG
+2021-04-30,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,5,3,REG
+2021-05-01,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,3,0,REG
+2021-05-01,Arizona Coyotes,Vegas Golden Knights,Arizona Coyotes,Vegas Golden Knights,3,0,REG
+2021-05-01,Anaheim Ducks,Los Angeles Kings,Los Angeles Kings,Anaheim Ducks,2,1,REG
+2021-05-01,Boston Bruins,Buffalo Sabres,Boston Bruins,Buffalo Sabres,6,2,REG
+2021-05-01,New York Islanders,New York Rangers,New York Islanders,New York Rangers,3,0,REG
+2021-05-01,Philadelphia Flyers,New Jersey Devils,New Jersey Devils,Philadelphia Flyers,4,1,REG
+2021-05-01,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,3,0,REG
+2021-05-01,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,2,1,OT
+2021-05-01,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,Ottawa Senators,3,2,OT
+2021-05-01,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,5,1,REG
+2021-05-02,Chicago Blackhawks,Florida Panthers,Florida Panthers,Chicago Blackhawks,5,4,REG
+2021-05-02,Minnesota Wild,St. Louis Blues,Minnesota Wild,St. Louis Blues,4,3,OT
+2021-05-02,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,4,3,REG
+2021-05-02,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,4,1,REG
+2021-05-02,Arizona Coyotes,Vegas Golden Knights,Vegas Golden Knights,Arizona Coyotes,3,2,OT
+2021-05-02,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,6,2,REG
+2021-05-02,Detroit Red Wings,Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,2,1,REG
+2021-05-03,Buffalo Sabres,New York Islanders,Buffalo Sabres,New York Islanders,4,2,REG
+2021-05-03,New Jersey Devils,Boston Bruins,Boston Bruins,New Jersey Devils,3,0,REG
+2021-05-03,New York Rangers,Washington Capitals,Washington Capitals,New York Rangers,6,3,REG
+2021-05-03,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,6,2,REG
+2021-05-03,Carolina Hurricanes,Chicago Blackhawks,Carolina Hurricanes,Chicago Blackhawks,5,2,REG
+2021-05-03,Columbus Blue Jackets,Nashville Predators,Nashville Predators,Columbus Blue Jackets,4,3,OT
+2021-05-03,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,3,2,OT
+2021-05-03,Ottawa Senators,Winnipeg Jets,Ottawa Senators,Winnipeg Jets,2,1,REG
+2021-05-03,Florida Panthers,Dallas Stars,Florida Panthers,Dallas Stars,5,4,OT
+2021-05-04,St. Louis Blues,Anaheim Ducks,St. Louis Blues,Anaheim Ducks,3,1,REG
+2021-05-04,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,6,5,REG
+2021-05-04,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,3,2,REG
+2021-05-04,Vancouver Canucks,Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,5,3,REG
+2021-05-04,San Jose Sharks,Colorado Avalanche,Colorado Avalanche,San Jose Sharks,5,4,OT
+2021-05-04,Buffalo Sabres,New York Islanders,Buffalo Sabres,New York Islanders,4,3,SO
+2021-05-04,New Jersey Devils,Boston Bruins,New Jersey Devils,Boston Bruins,4,3,OT
+2021-05-04,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,7,3,REG
+2021-05-04,Carolina Hurricanes,Chicago Blackhawks,Carolina Hurricanes,Chicago Blackhawks,6,3,REG
+2021-05-05,Vancouver Canucks,Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,4,1,REG
+2021-05-05,Ottawa Senators,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,5,1,REG
+2021-05-05,New York Rangers,Washington Capitals,Washington Capitals,New York Rangers,4,2,REG
+2021-05-05,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,Nashville Predators,4,2,REG
+2021-05-05,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,Dallas Stars,6,2,REG
+2021-05-06,St. Louis Blues,Anaheim Ducks,Anaheim Ducks,St. Louis Blues,3,2,SO
+2021-05-06,Minnesota Wild,Vegas Golden Knights,Vegas Golden Knights,Minnesota Wild,3,2,OT
+2021-05-06,Calgary Flames,Winnipeg Jets,Winnipeg Jets,Calgary Flames,4,0,REG
+2021-05-06,San Jose Sharks,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,3,2,REG
+2021-05-06,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,4,2,REG
+2021-05-06,Boston Bruins,New York Rangers,Boston Bruins,New York Rangers,4,0,REG
+2021-05-06,New York Islanders,New Jersey Devils,New Jersey Devils,New York Islanders,2,1,REG
+2021-05-06,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,8,4,REG
+2021-05-06,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,5,2,REG
+2021-05-06,Carolina Hurricanes,Chicago Blackhawks,Chicago Blackhawks,Carolina Hurricanes,2,1,OT
+2021-05-07,Edmonton Oilers,Vancouver Canucks,Vancouver Canucks,Edmonton Oilers,6,3,REG
+2021-05-07,Washington Capitals,Philadelphia Flyers,Philadelphia Flyers,Washington Capitals,4,2,REG
+2021-05-07,Columbus Blue Jackets,Detroit Red Wings,Detroit Red Wings,Columbus Blue Jackets,5,2,REG
+2021-05-07,Tampa Bay Lightning,Dallas Stars,Dallas Stars,Tampa Bay Lightning,5,2,REG
+2021-05-08,Minnesota Wild,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,4,3,OT
+2021-05-08,Vegas Golden Knights,St. Louis Blues,Vegas Golden Knights,St. Louis Blues,4,3,OT
+2021-05-08,Los Angeles Kings,Colorado Avalanche,Colorado Avalanche,Los Angeles Kings,3,2,REG
+2021-05-08,San Jose Sharks,Arizona Coyotes,Arizona Coyotes,San Jose Sharks,5,2,REG
+2021-05-08,Boston Bruins,New York Rangers,New York Rangers,Boston Bruins,5,4,REG
+2021-05-08,New York Islanders,New Jersey Devils,New York Islanders,New Jersey Devils,5,1,REG
+2021-05-08,Washington Capitals,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,2,1,OT
+2021-05-08,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,5,1,REG
+2021-05-08,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,5,4,OT
+2021-05-08,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,3,2,REG
+2021-05-08,Winnipeg Jets,Ottawa Senators,Ottawa Senators,Winnipeg Jets,4,2,REG
+2021-05-09,Nashville Predators,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,3,1,REG
+2021-05-09,Minnesota Wild,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,4,3,OT
+2021-05-09,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,4,3,REG
+2021-05-09,Vegas Golden Knights,St. Louis Blues,Vegas Golden Knights,St. Louis Blues,4,1,REG
+2021-05-09,Los Angeles Kings,Colorado Avalanche,Colorado Avalanche,Los Angeles Kings,3,2,REG
+2021-05-09,San Jose Sharks,Arizona Coyotes,Arizona Coyotes,San Jose Sharks,5,4,OT
+2021-05-09,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,Dallas Stars,4,2,REG
+2021-05-10,Calgary Flames,Ottawa Senators,Calgary Flames,Ottawa Senators,5,1,REG
+2021-05-10,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,4,0,REG
+2021-05-10,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,4,2,REG
+2021-05-10,Montreal Canadiens,Edmonton Oilers,Edmonton Oilers,Montreal Canadiens,4,3,OT
+2021-05-10,Boston Bruins,New York Islanders,Boston Bruins,New York Islanders,3,2,OT
+2021-05-11,Nashville Predators,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,4,0,REG
+2021-05-11,Chicago Blackhawks,Dallas Stars,Dallas Stars,Chicago Blackhawks,5,4,OT
+2021-05-11,Winnipeg Jets,Vancouver Canucks,Vancouver Canucks,Winnipeg Jets,3,1,REG
+2021-05-11,Vegas Golden Knights,Colorado Avalanche,Colorado Avalanche,Vegas Golden Knights,2,1,REG
+2021-05-11,Los Angeles Kings,St. Louis Blues,St. Louis Blues,Los Angeles Kings,2,1,OT
+2021-05-11,Washington Capitals,Boston Bruins,Washington Capitals,Boston Bruins,2,1,REG
+2021-05-12,Winnipeg Jets,Vancouver Canucks,Winnipeg Jets,Vancouver Canucks,4,0,REG
+2021-05-12,Montreal Canadiens,Edmonton Oilers,Edmonton Oilers,Montreal Canadiens,4,3,OT
+2021-05-13,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,4,3,OT
+2021-05-13,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,4,0,REG
+2021-05-13,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,4,0,REG
+2021-05-13,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,4,0,REG
+2021-05-14,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,7,3,REG
+2021-05-14,Calgary Flames,Vancouver Canucks,Calgary Flames,Vancouver Canucks,4,1,REG
+2021-05-14,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,5,1,REG
+2021-05-15,Winnipeg Jets,Toronto Maple Leafs,Winnipeg Jets,Toronto Maple Leafs,4,2,REG
+2021-05-15,Edmonton Oilers,Vancouver Canucks,Vancouver Canucks,Edmonton Oilers,4,1,REG
+2021-05-15,Washington Capitals,Boston Bruins,Washington Capitals,Boston Bruins,3,2,OT
+2021-05-16,Pittsburgh Penguins,New York Islanders,New York Islanders,Pittsburgh Penguins,4,3,OT
+2021-05-16,Florida Panthers,Tampa Bay Lightning,Tampa Bay Lightning,Florida Panthers,5,4,REG
+2021-05-17,Vancouver Canucks,Calgary Flames,Calgary Flames,Vancouver Canucks,6,5,OT
+2021-05-17,Washington Capitals,Boston Bruins,Boston Bruins,Washington Capitals,4,3,OT
+2021-05-18,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,5,2,REG
+2021-05-18,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,4,1,REG
+2021-05-18,Vancouver Canucks,Calgary Flames,Vancouver Canucks,Calgary Flames,4,2,REG
+2021-05-18,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,2,1,REG
+2021-05-19,Florida Panthers,Tampa Bay Lightning,Tampa Bay Lightning,Florida Panthers,3,1,REG
+2021-05-19,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,3,1,REG
+2021-05-19,Calgary Flames,Vancouver Canucks,Calgary Flames,Vancouver Canucks,6,2,REG
+2021-05-19,Boston Bruins,Washington Capitals,Boston Bruins,Washington Capitals,3,2,OT
+2021-05-20,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,3,0,REG
+2021-05-20,Edmonton Oilers,Winnipeg Jets,Winnipeg Jets,Edmonton Oilers,4,1,REG
+2021-05-20,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,6,3,REG
+2021-05-20,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,6,5,OT
+2021-05-20,New York Islanders,Pittsburgh Penguins,Pittsburgh Penguins,New York Islanders,5,4,REG
+2021-05-20,Toronto Maple Leafs,Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,2,1,REG
+2021-05-21,Minnesota Wild,Vegas Golden Knights,Vegas Golden Knights,Minnesota Wild,5,2,REG
+2021-05-21,Boston Bruins,Washington Capitals,Boston Bruins,Washington Capitals,4,1,REG
+2021-05-21,Nashville Predators,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,5,4,OT
+2021-05-22,St. Louis Blues,Colorado Avalanche,Colorado Avalanche,St. Louis Blues,5,1,REG
+2021-05-22,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,6,2,REG
+2021-05-22,New York Islanders,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,4,1,REG
+2021-05-22,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,5,1,REG
+2021-05-23,Minnesota Wild,Vegas Golden Knights,Vegas Golden Knights,Minnesota Wild,4,0,REG
+2021-05-23,Nashville Predators,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,4,3,OT
+2021-05-23,St. Louis Blues,Colorado Avalanche,Colorado Avalanche,St. Louis Blues,5,2,REG
+2021-05-23,Washington Capitals,Boston Bruins,Boston Bruins,Washington Capitals,3,1,REG
+2021-05-23,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,5,4,OT
+2021-05-24,Pittsburgh Penguins,New York Islanders,New York Islanders,Pittsburgh Penguins,3,2,OT
+2021-05-24,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,2,1,REG
+2021-05-25,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,4,1,REG
+2021-05-25,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,4,3,OT
+2021-05-25,Vegas Golden Knights,Minnesota Wild,Minnesota Wild,Vegas Golden Knights,4,2,REG
+2021-05-25,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,4,0,REG
+2021-05-26,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,3,2,OT
+2021-05-26,New York Islanders,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,5,3,REG
+2021-05-27,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,4,0,REG
+2021-05-27,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,3,0,REG
+2021-05-27,Toronto Maple Leafs,Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,4,3,OT
+2021-05-28,Nashville Predators,Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,4,3,OT
+2021-05-29,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,6,2,REG
+2021-05-29,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,3,2,OT
+2021-05-30,Boston Bruins,New York Islanders,Boston Bruins,New York Islanders,5,2,REG
+2021-05-30,Carolina Hurricanes,Tampa Bay Lightning,Tampa Bay Lightning,Carolina Hurricanes,2,1,REG
+2021-05-31,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,5,1,REG
+2021-05-31,Toronto Maple Leafs,Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,3,1,REG
+2021-05-31,Boston Bruins,New York Islanders,New York Islanders,Boston Bruins,4,3,OT
+2021-06-01,Carolina Hurricanes,Tampa Bay Lightning,Tampa Bay Lightning,Carolina Hurricanes,2,1,REG
+2021-06-02,Winnipeg Jets,Montreal Canadiens,Montreal Canadiens,Winnipeg Jets,5,3,REG
+2021-06-03,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,3,2,OT
+2021-06-03,New York Islanders,Boston Bruins,Boston Bruins,New York Islanders,2,1,OT
+2021-06-04,Tampa Bay Lightning,Carolina Hurricanes,Carolina Hurricanes,Tampa Bay Lightning,3,2,OT
+2021-06-05,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,3,2,REG
+2021-06-05,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,6,4,REG
+2021-06-05,New York Islanders,Boston Bruins,New York Islanders,Boston Bruins,4,1,REG
+2021-06-06,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,5,1,REG
+2021-06-07,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,5,1,REG
+2021-06-07,Boston Bruins,New York Islanders,New York Islanders,Boston Bruins,5,4,REG
+2021-06-08,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,3,2,OT
+2021-06-08,Carolina Hurricanes,Tampa Bay Lightning,Tampa Bay Lightning,Carolina Hurricanes,2,0,REG
+2021-06-09,Colorado Avalanche,Vegas Golden Knights,Vegas Golden Knights,Colorado Avalanche,3,2,OT
+2021-06-09,New York Islanders,Boston Bruins,New York Islanders,Boston Bruins,6,2,REG
+2021-06-11,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,6,3,REG
+2021-06-13,Tampa Bay Lightning,New York Islanders,New York Islanders,Tampa Bay Lightning,2,1,REG
+2021-06-15,Vegas Golden Knights,Montreal Canadiens,Vegas Golden Knights,Montreal Canadiens,4,1,REG
+2021-06-16,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,New York Islanders,4,2,REG
+2021-06-17,Vegas Golden Knights,Montreal Canadiens,Montreal Canadiens,Vegas Golden Knights,3,2,REG
+2021-06-18,New York Islanders,Tampa Bay Lightning,Tampa Bay Lightning,New York Islanders,2,1,REG
+2021-06-19,Montreal Canadiens,Vegas Golden Knights,Montreal Canadiens,Vegas Golden Knights,3,2,OT
+2021-06-20,New York Islanders,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,3,2,REG
+2021-06-21,Montreal Canadiens,Vegas Golden Knights,Vegas Golden Knights,Montreal Canadiens,2,1,OT
+2021-06-22,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,New York Islanders,4,0,REG
+2021-06-23,Vegas Golden Knights,Montreal Canadiens,Montreal Canadiens,Vegas Golden Knights,4,1,REG
+2021-06-24,New York Islanders,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,3,2,OT
+2021-06-25,Montreal Canadiens,Vegas Golden Knights,Montreal Canadiens,Vegas Golden Knights,3,2,OT
+2021-06-29,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,5,1,REG
+2021-07-01,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,3,1,REG
