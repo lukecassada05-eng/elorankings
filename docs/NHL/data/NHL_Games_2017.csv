@@ -39,6 +39,11 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2016-10-06,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,5,1,REG
 2016-10-07,Edmonton Oilers,Winnipeg Jets,Edmonton Oilers,Winnipeg Jets,5,2,REG
 2016-10-07,Vancouver Canucks,Calgary Flames,Vancouver Canucks,Calgary Flames,4,0,REG
+2016-10-07,Toronto Maple Leafs,Detroit Red Wings,Detroit Red Wings,Toronto Maple Leafs,2,1,REG
+2016-10-07,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,Washington Capitals,3,2,SO
+2016-10-07,Ottawa Senators,Buffalo Sabres,Buffalo Sabres,Ottawa Senators,4,2,REG
+2016-10-08,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,San Jose Sharks,3,1,REG
+2016-10-08,Los Angeles Kings,Dallas Stars,Dallas Stars,Los Angeles Kings,6,3,REG
 2016-10-08,Pittsburgh Penguins,Columbus Blue Jackets,Columbus Blue Jackets,Pittsburgh Penguins,5,3,REG
 2016-10-08,Detroit Red Wings,Toronto Maple Leafs,Detroit Red Wings,Toronto Maple Leafs,4,3,REG
 2016-10-08,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,Nashville Predators,5,3,REG
@@ -81,6 +86,10 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2016-10-16,New York Islanders,Anaheim Ducks,New York Islanders,Anaheim Ducks,3,2,OT
 2016-10-16,Edmonton Oilers,Buffalo Sabres,Buffalo Sabres,Edmonton Oilers,6,2,REG
 2016-10-17,Vancouver Canucks,Carolina Hurricanes,Vancouver Canucks,Carolina Hurricanes,4,3,OT
+2016-10-17,New York Rangers,San Jose Sharks,New York Rangers,San Jose Sharks,7,4,REG
+2016-10-17,Pittsburgh Penguins,Colorado Avalanche,Colorado Avalanche,Pittsburgh Penguins,4,3,OT
+2016-10-17,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,Ottawa Senators,5,1,REG
+2016-10-18,Winnipeg Jets,Boston Bruins,Boston Bruins,Winnipeg Jets,4,1,REG
 2016-10-18,New Jersey Devils,Anaheim Ducks,New Jersey Devils,Anaheim Ducks,2,1,REG
 2016-10-18,New York Islanders,San Jose Sharks,San Jose Sharks,New York Islanders,3,2,REG
 2016-10-18,Washington Capitals,Colorado Avalanche,Washington Capitals,Colorado Avalanche,3,0,REG
@@ -109,6 +118,18 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2016-10-21,New York Islanders,Arizona Coyotes,New York Islanders,Arizona Coyotes,3,2,REG
 2016-10-21,Columbus Blue Jackets,Chicago Blackhawks,Columbus Blue Jackets,Chicago Blackhawks,3,2,REG
 2016-10-21,Detroit Red Wings,Nashville Predators,Detroit Red Wings,Nashville Predators,5,3,REG
+2016-10-22,Boston Bruins,Montreal Canadiens,Montreal Canadiens,Boston Bruins,4,2,REG
+2016-10-22,Ottawa Senators,Tampa Bay Lightning,Tampa Bay Lightning,Ottawa Senators,4,1,REG
+2016-10-22,Detroit Red Wings,San Jose Sharks,Detroit Red Wings,San Jose Sharks,3,0,REG
+2016-10-22,Florida Panthers,Colorado Avalanche,Florida Panthers,Colorado Avalanche,5,2,REG
+2016-10-22,New Jersey Devils,Minnesota Wild,New Jersey Devils,Minnesota Wild,2,1,OT
+2016-10-22,Philadelphia Flyers,Carolina Hurricanes,Philadelphia Flyers,Carolina Hurricanes,6,3,REG
+2016-10-22,Washington Capitals,New York Rangers,New York Rangers,Washington Capitals,4,2,REG
+2016-10-22,Chicago Blackhawks,Toronto Maple Leafs,Chicago Blackhawks,Toronto Maple Leafs,5,4,SO
+2016-10-23,Nashville Predators,Pittsburgh Penguins,Nashville Predators,Pittsburgh Penguins,5,1,REG
+2016-10-23,Dallas Stars,Columbus Blue Jackets,Columbus Blue Jackets,Dallas Stars,3,0,REG
+2016-10-23,Calgary Flames,St. Louis Blues,St. Louis Blues,Calgary Flames,6,4,REG
+2016-10-23,Los Angeles Kings,Vancouver Canucks,Los Angeles Kings,Vancouver Canucks,4,3,SO
 2016-10-23,Winnipeg Jets,Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,3,0,REG
 2016-10-23,New York Islanders,Minnesota Wild,New York Islanders,Minnesota Wild,6,3,REG
 2016-10-23,New York Rangers,Arizona Coyotes,New York Rangers,Arizona Coyotes,3,2,REG
@@ -152,6 +173,14 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2016-10-30,Arizona Coyotes,Colorado Avalanche,Colorado Avalanche,Arizona Coyotes,3,2,REG
 2016-10-30,Vancouver Canucks,Washington Capitals,Washington Capitals,Vancouver Canucks,5,2,REG
 2016-10-30,San Jose Sharks,Nashville Predators,San Jose Sharks,Nashville Predators,4,1,REG
+2016-10-30,Winnipeg Jets,Buffalo Sabres,Buffalo Sabres,Winnipeg Jets,3,1,REG
+2016-10-30,Detroit Red Wings,Florida Panthers,Florida Panthers,Detroit Red Wings,5,2,REG
+2016-10-30,Carolina Hurricanes,Philadelphia Flyers,Philadelphia Flyers,Carolina Hurricanes,4,3,REG
+2016-10-30,New York Islanders,Toronto Maple Leafs,New York Islanders,Toronto Maple Leafs,5,1,REG
+2016-10-30,New York Rangers,Tampa Bay Lightning,New York Rangers,Tampa Bay Lightning,5,1,REG
+2016-10-30,Chicago Blackhawks,Los Angeles Kings,Chicago Blackhawks,Los Angeles Kings,3,0,REG
+2016-10-31,Edmonton Oilers,Ottawa Senators,Ottawa Senators,Edmonton Oilers,2,0,REG
+2016-10-31,Calgary Flames,Washington Capitals,Washington Capitals,Calgary Flames,3,1,REG
 2016-11-01,New York Rangers,St. Louis Blues,New York Rangers,St. Louis Blues,4,0,REG
 2016-11-01,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,Dallas Stars,3,2,OT
 2016-11-01,New York Islanders,Tampa Bay Lightning,Tampa Bay Lightning,New York Islanders,5,1,REG
@@ -802,6 +831,7 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2017-02-08,Nashville Predators,Vancouver Canucks,Nashville Predators,Vancouver Canucks,4,2,REG
 2017-02-08,Winnipeg Jets,Minnesota Wild,Minnesota Wild,Winnipeg Jets,4,2,REG
 2017-02-08,Colorado Avalanche,Montreal Canadiens,Colorado Avalanche,Montreal Canadiens,4,0,REG
+2017-02-09,Minnesota Wild,Chicago Blackhawks,Chicago Blackhawks,Minnesota Wild,4,3,OT
 2017-02-10,Boston Bruins,San Jose Sharks,Boston Bruins,San Jose Sharks,6,3,REG
 2017-02-10,Buffalo Sabres,Anaheim Ducks,Anaheim Ducks,Buffalo Sabres,5,2,REG
 2017-02-10,New York Rangers,Nashville Predators,New York Rangers,Nashville Predators,4,3,REG
