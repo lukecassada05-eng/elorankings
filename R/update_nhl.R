@@ -94,10 +94,21 @@ parse_event <- function(ev) {
     # Cap margin at 4 (OT wins counted)
     wp <- pmin(max(hs,as_), min(hs,as_) + 4)
     lp <- min(hs,as_)
+    # end_type: NHL points (standings_engine.R) need to know whether a game
+    # ended in regulation, overtime, or a shootout — a plain win/loss count
+    # can't reproduce real NHL points (2 for any win, 1 for an OT/SO loss,
+    # 0 for a regulation loss) or the RW/ROW tiebreaker columns. ESPN's
+    # status.type.shortDetail reads "Final" for regulation, "Final/OT" or
+    # "Final/SO" otherwise (confirmed via direct API testing).
+    detail <- tryCatch(comp$status$type$shortDetail %||% comp$status$type$detail %||% "", error=function(e) "")
+    end_type <- if (grepl("SO", detail, fixed=TRUE)) "SO" else if (grepl("OT", detail, fixed=TRUE)) "OT" else "REG"
+    gdate <- tryCatch(substr(comp$date, 1, 10), error=function(e) NA_character_)
     list(winner=if(hs>as_)hn else an, loser=if(hs>as_)an else hn,
-         winner_pts=wp, loser_pts=lp)
+         winner_pts=wp, loser_pts=lp,
+         home=hn, away=an, date=gdate, end_type=end_type)
   }, error=function(e) NULL)
 }
+# %||% already defined by R/elo_engine.R, sourced above.
 
 fetch_day <- function(ds) {
   resp <- tryCatch(
@@ -122,6 +133,10 @@ fetch_day <- function(ds) {
     loser      = sapply(rows, `[[`, "loser"),
     winner_pts = as.numeric(sapply(rows, `[[`, "winner_pts")),
     loser_pts  = as.numeric(sapply(rows, `[[`, "loser_pts")),
+    home       = sapply(rows, `[[`, "home"),
+    away       = sapply(rows, `[[`, "away"),
+    date       = sapply(rows, `[[`, "date"),
+    end_type   = sapply(rows, `[[`, "end_type"),
     stringsAsFactors = FALSE
   )
 }
@@ -166,4 +181,10 @@ for (yr in SEASONS) {
   out <- attach_movers(out, out_path)
   write_csv(out, out_path)
   message("  -> ", nrow(out), " teams | NA conf: ", sum(is.na(out$conference)))
+
+  # Regular-season game log for the standings/tiebreaker engine — see the
+  # matching comment in update_nba.R for why this wasn't persisted before.
+  games_path <- file.path(OUT_DIR, paste0("NHL_Games_", yr, ".csv"))
+  write_csv(g[, c("date","home","away","winner","loser","winner_pts","loser_pts","end_type")], games_path)
+  message("  -> ", nrow(g), " games log written to ", basename(games_path))
 }

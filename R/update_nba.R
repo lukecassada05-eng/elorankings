@@ -144,8 +144,13 @@ parse_event <- function(ev) {
     if (is.na(hs)||is.na(as_)||is.null(hn)||is.null(an)||hs==as_||hs<70) return(NULL)
     # Filter out All-Star / special teams
     if (!toupper(hn) %in% NBA_SET || !toupper(an) %in% NBA_SET) return(NULL)
+    # Date, home/away identity: needed by R/standings_engine.R for real
+    # division/conference-record and head-to-head tiebreakers (not used by
+    # the Elo loop itself, which only reads winner/loser/pts).
+    gdate <- tryCatch(substr(comp$date, 1, 10), error=function(e) NA_character_)
     list(winner=if(hs>as_)hn else an, loser=if(hs>as_)an else hn,
-         winner_pts=max(hs,as_), loser_pts=min(hs,as_))
+         winner_pts=max(hs,as_), loser_pts=min(hs,as_),
+         home=hn, away=an, date=gdate)
   }, error=function(e) NULL)
 }
 
@@ -162,6 +167,8 @@ fetch_day <- function(ds) {
   data.frame(winner=sapply(rows,`[[`,"winner"),loser=sapply(rows,`[[`,"loser"),
              winner_pts=as.numeric(sapply(rows,`[[`,"winner_pts")),
              loser_pts=as.numeric(sapply(rows,`[[`,"loser_pts")),
+             home=sapply(rows,`[[`,"home"),away=sapply(rows,`[[`,"away"),
+             date=sapply(rows,`[[`,"date"),
              stringsAsFactors=FALSE)
 }
 
@@ -208,4 +215,12 @@ for (s in SEASONS) {
   out <- attach_movers(out, out_path)
   write_csv(out, out_path)
   message("  -> ", nrow(out), " teams | NA conf: ", sum(is.na(out$conference)))
+
+  # Regular-season game log (winner/loser/scores/home-away/date) for the
+  # standings/tiebreaker engine (R/standings_engine.R via
+  # R/update_current_standings.R) — the Elo loop above never needed this
+  # beyond winner/loser/pts, so it was never persisted before.
+  games_path <- file.path(OUT_DIR, paste0("NBA_Games_", s, ".csv"))
+  write_csv(g[, c("date","home","away","winner","loser","winner_pts","loser_pts")], games_path)
+  message("  -> ", nrow(g), " games log written to ", basename(games_path))
 }

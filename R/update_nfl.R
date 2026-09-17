@@ -69,9 +69,14 @@ all_games <- load_schedules(seasons = SEASONS) %>%
     winner     = if_else(home_score > away_score, home_team, away_team),
     loser      = if_else(home_score > away_score, away_team, home_team),
     winner_pts = pmax(home_score, away_score),
-    loser_pts  = pmin(home_score, away_score)
+    loser_pts  = pmin(home_score, away_score),
+    # gameday: standard nflreadr column, needed by the standings/tiebreaker
+    # engine (head-to-head, division/conference record, common-games,
+    # strength of victory/schedule) — the Elo loop never needed a date, so
+    # it was never carried through before.
+    date       = as.character(gameday)
   ) %>%
-  select(season, winner, loser, winner_pts, loser_pts)
+  select(season, winner, loser, winner_pts, loser_pts, home_team, away_team, date)
 
 # ── Per-season Elo ────────────────────────────────────────────
 for (s in sort(unique(all_games$season))) {
@@ -88,4 +93,16 @@ for (s in sort(unique(all_games$season))) {
 
   write_csv(out, out_path)
   message("  -> ", nrow(out), " teams")
+
+  # Regular-season game log for the standings/tiebreaker engine — see the
+  # matching comment in update_nba.R for why this wasn't persisted before.
+  # Column names normalized to home/away (not home_team/away_team) to match
+  # the other three sports' games CSVs — R/standings_engine.R reads one
+  # consistent schema across all of them.
+  games_out <- g[, c("date","home_team","away_team","winner","loser","winner_pts","loser_pts")]
+  names(games_out)[names(games_out) == "home_team"] <- "home"
+  names(games_out)[names(games_out) == "away_team"] <- "away"
+  games_path <- file.path(OUT_DIR, paste0("NFL_Games_", s, ".csv"))
+  write_csv(games_out, games_path)
+  message("  -> ", nrow(g), " games log written to ", basename(games_path))
 }

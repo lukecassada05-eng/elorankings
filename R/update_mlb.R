@@ -60,7 +60,16 @@ get_mlb_season <- function(yr) {
   }
   message("  Fetching MLB ", yr, "...")
   tryCatch({
-    mlb_schedule(season = yr) %>%
+    sched <- mlb_schedule(season = yr)
+    # Date column: R/standings_engine.R needs real per-game dates (for the
+    # MLB "second half of season" tiebreaker step and general head-to-head/
+    # division-record lookups) — the Elo loop never needed one before, so
+    # this was never captured. baseballr's mlb_schedule() column name for
+    # this has varied across package versions; try the known candidates
+    # rather than hard-failing the whole fetch if one doesn't exist.
+    date_col <- intersect(c("date", "game_date", "official_date"), names(sched))
+    sched$.game_date <- if (length(date_col)) as.character(sched[[date_col[1]]]) else NA_character_
+    sched %>%
       filter(
         game_type == "R",
         !is.na(teams_home_score),
@@ -73,20 +82,19 @@ get_mlb_season <- function(yr) {
         loser      = if_else(teams_home_score > teams_away_score,
                              teams_away_team_name, teams_home_team_name),
         winner_pts = pmax(teams_home_score, teams_away_score),
-        loser_pts  = pmin(teams_home_score, teams_away_score)
+        loser_pts  = pmin(teams_home_score, teams_away_score),
+        home       = teams_home_team_name,
+        away       = teams_away_team_name,
+        date       = .game_date
       ) %>%
       filter(!is.na(winner), !is.na(loser), winner != loser) %>%
-      select(winner, loser, winner_pts, loser_pts) |>
+      select(winner, loser, winner_pts, loser_pts, home, away, date) |>
       # Normalize franchise name changes for consistency
       mutate(
-        winner = case_when(
-          winner == "Oakland Athletics" ~ "Athletics",
-          TRUE ~ winner
-        ),
-        loser = case_when(
-          loser == "Oakland Athletics" ~ "Athletics",
-          TRUE ~ loser
-        )
+        winner = case_when(winner == "Oakland Athletics" ~ "Athletics", TRUE ~ winner),
+        loser  = case_when(loser  == "Oakland Athletics" ~ "Athletics", TRUE ~ loser),
+        home   = case_when(home   == "Oakland Athletics" ~ "Athletics", TRUE ~ home),
+        away   = case_when(away   == "Oakland Athletics" ~ "Athletics", TRUE ~ away)
       )
   }, error = function(e) { message("  ERROR: ", e$message); NULL })
 }
@@ -108,4 +116,10 @@ for (yr in SEASONS) {
 
   write_csv(out, out_path)
   message("  -> ", nrow(out), " teams")
+
+  # Regular-season game log for the standings/tiebreaker engine — see the
+  # matching comment in update_nba.R for why this wasn't persisted before.
+  games_path <- file.path(OUT_DIR, paste0("MLB_Games_", yr, ".csv"))
+  write_csv(g[, c("date","home","away","winner","loser","winner_pts","loser_pts")], games_path)
+  message("  -> ", nrow(g), " games log written to ", basename(games_path))
 }

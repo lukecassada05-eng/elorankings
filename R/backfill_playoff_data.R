@@ -3,6 +3,8 @@
 
 suppressPackageStartupMessages({ library(jsonlite) })
 
+CURRENT_YEAR <- as.integer(format(Sys.Date(), "%Y"))
+
 # ── Normalise round name: strip "Game N" suffix so all games in a series share a key ──
 normalise_round <- function(rnd) {
   if (is.null(rnd)||is.na(rnd)||!nchar(rnd)) return("")
@@ -118,16 +120,23 @@ cbb_is_ncaa_round <- function(rnd) {
 
 # ── Fetch scoreboard games, one calendar day at a time ──────────────────────
 # fetch_scoreboard_games() above chunks its ESPN calls into ~31-day windows
-# using dates=START-END range queries. That works for the other sports it's
-# used for, but confirmed via direct testing does NOT work for
-# basketball/mens-college-basketball — every ranged query against that
-# endpoint 404s, while a single 8-digit date (dates=YYYYMMDD) succeeds every
-# time. Since fetch_cbb_games() only ever called the range-based fetcher,
-# every chunk silently failed and this sport's tournament_YYYY.json has been
-# shipping with empty games/series (despite completed=TRUE) for a while.
-# This walks day-by-day instead — more requests, but each one actually
-# returns data. Mirrors fetch_scoreboard_games()'s own per-event parsing so
-# the two stay consistent in what they extract.
+# using dates=START-END range queries. This was originally believed to work
+# for every sport except basketball/mens-college-basketball — but direct
+# testing (Sep 2026) shows ranged dates=START-END queries return HTTP 400
+# for EVERY ESPN site.api scoreboard endpoint this script touches: NBA, NHL,
+# MLB, NFL, and college-baseball, not just CBB. A single 8-digit date
+# (dates=YYYYMMDD) succeeds every time on all of them. Since
+# write_tournament_json() only ever called the range-based fetcher for those
+# five sports, every chunk silently failed (tryCatch -> NULL -> "no events"
+# -> next) and every one of their tournament_YYYY.json files has been
+# shipping with empty games/series despite completed=TRUE — for entire
+# seasons that actually finished, not just ones still in progress. This
+# walks day-by-day instead — more requests, but each one actually returns
+# data. Mirrors fetch_scoreboard_games()'s own per-event parsing so the two
+# stay consistent in what they extract. fetch_scoreboard_games() itself is
+# left in place above (now unused — write_tournament_json() below has been
+# switched to call this function instead) rather than deleted, so the fix
+# stays a single-line change at its one call site instead of a rewrite.
 fetch_scoreboard_games_daily <- function(sport_path, start_date, end_date,
                                          season_types = c("3")) {
   all_games <- list()
@@ -330,11 +339,34 @@ write_tournament_json <- function(sport, season_yr, games_yr, out_dir,
     message("    Skipping — not started yet"); return(invisible(NULL))
   }
 
+  # Skip re-fetching a season that's fully in the past AND already has a
+  # good, populated file on disk — that data can never change again.
+  # Without this, every run re-fetches all ~25 years for every sport from
+  # scratch (this function has no other caching), and switching to the
+  # day-by-day fetcher above means dozens of ESPN calls per season instead
+  # of ~3 — multiplied by running every 3 hours instead of twice a day,
+  # that's enough request volume to risk ESPN rate-limiting/blocking this
+  # job outright. Only the current/in-progress season (not yet past its own
+  # window) and any past season still missing or empty ever gets re-fetched.
+  out_file <- file.path(out_dir, paste0("tournament_", season_yr, ".json"))
+  if (today > end && file.exists(out_file)) {
+    prev <- tryCatch(jsonlite::fromJSON(out_file, simplifyVector = FALSE), error = function(e) NULL)
+    if (!is.null(prev) && isTRUE(prev$completed) && length(prev$games) > 0) {
+      message("    Already have a completed, populated file (", length(prev$games),
+              " games) — skipping re-fetch")
+      return(invisible(NULL))
+    }
+  }
+
   games <- if (sport == "CBB") {
     fetch_cbb_games(season_yr, start, min(end, today))
   } else {
     stypes <- if (sport == "NBA") c("3", "5") else c("3")
-    fetch_scoreboard_games(
+    # fetch_scoreboard_games_daily(), not fetch_scoreboard_games() — see the
+    # comment above fetch_scoreboard_games_daily()'s definition. The ranged
+    # dates=START-END fetcher 400s on every one of these endpoints, so every
+    # sport here was silently getting back zero games on every run.
+    fetch_scoreboard_games_daily(
       switch(sport,
         NBA   = "basketball/nba",
         NHL   = "hockey/nhl",
@@ -349,12 +381,29 @@ write_tournament_json <- function(sport, season_yr, games_yr, out_dir,
   built     <- build_series(games, win_to_advance)
   completed <- today > end
 
+  # Guard against a transient ESPN failure silently blanking out data this
+  # or a previous run already correctly captured — e.g. a current,
+  # in-progress season that already has some completed-round games on file,
+  # where this run's fetch hits a hiccup and comes back empty. Deliberately
+  # NOT gated on `completed`: an in-progress season's partial data is just
+  # as vulnerable to being clobbered as a finished one's. (The skip-if-
+  # already-complete guard above this function's fetch call handles the
+  # fully-finished, nothing-left-to-fetch case; this one covers every other
+  # case where a fetch happened but came back suspiciously empty.)
+  if (length(games) == 0 && file.exists(out_file)) {
+    prev <- tryCatch(jsonlite::fromJSON(out_file, simplifyVector = FALSE), error = function(e) NULL)
+    if (!is.null(prev) && length(prev$games) > 0) {
+      message("    Fetch returned 0 games but a previous file has ", length(prev$games),
+              " — keeping existing file, not overwriting")
+      return(invisible(NULL))
+    }
+  }
+
   result <- list(
     year = season_yr, sport = sport, completed = completed,
     games = games, series = built$series, eliminated = built$eliminated,
     updated = format(Sys.time(), "%Y-%m-%d %H:%M UTC")
   )
-  out_file <- file.path(out_dir, paste0("tournament_", season_yr, ".json"))
   jsonlite::write_json(result, out_file, auto_unbox = TRUE, pretty = TRUE)
   message("    -> ", basename(out_file), " | ", length(games), " games | ",
           length(built$series), " series | completed=", completed)
@@ -406,13 +455,21 @@ get_dates <- function(sport, yr, games_yr) {
   d
 }
 
+# Upper bound of every `seasons` range is CURRENT_YEAR+1 rather than a
+# hardcoded year. It used to be a hardcoded year on each line, and NFL's was
+# never bumped past 2025 — so as of the 2026 season, this config never even
+# attempted a tournament_2026.json for NFL at all (not "skipped, too early",
+# literally never in the loop). write_tournament_json() already no-ops
+# cleanly ("not started yet") for any season/year whose game window hasn't
+# begun, so padding every sport a year past CURRENT_YEAR costs at most one
+# harmless extra iteration each run and this whole bug class can't recur.
 configs <- list(
-  list(sport="NBA",   dir="docs/NBA/data",   win=4, seasons=2002:2026, off=0),
-  list(sport="NHL",   dir="docs/NHL/data",   win=4, seasons=2013:2026, off=0),
-  list(sport="MLB",   dir="docs/MLB/data",   win=3, seasons=2001:2026, off=0),
-  list(sport="NFL",   dir="docs/NFL/data",   win=1, seasons=2001:2025, off=1),
-  list(sport="CBB",   dir="docs/CBB/data",   win=1, seasons=2003:2026, off=0),
-  list(sport="CBASE", dir="docs/CollegeBaseball/data", win=2, seasons=2018:2026, off=0)
+  list(sport="NBA",   dir="docs/NBA/data",   win=4, seasons=2002:(CURRENT_YEAR+1), off=0),
+  list(sport="NHL",   dir="docs/NHL/data",   win=4, seasons=2013:(CURRENT_YEAR+1), off=0),
+  list(sport="MLB",   dir="docs/MLB/data",   win=3, seasons=2001:(CURRENT_YEAR+1), off=0),
+  list(sport="NFL",   dir="docs/NFL/data",   win=1, seasons=2001:(CURRENT_YEAR+1), off=1),
+  list(sport="CBB",   dir="docs/CBB/data",   win=1, seasons=2003:(CURRENT_YEAR+1), off=0),
+  list(sport="CBASE", dir="docs/CollegeBaseball/data", win=2, seasons=2018:(CURRENT_YEAR+1), off=0)
 )
 
 # BUG FIX: write_tournament_json() had no error isolation at the call site,
