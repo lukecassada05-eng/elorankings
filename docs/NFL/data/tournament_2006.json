@@ -2,8 +2,163 @@
   "year": 2006,
   "sport": "NFL",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-09-17 16:59 UTC"
+  "games": [
+    {
+      "winner": "Indianapolis Colts",
+      "loser": "Baltimore Ravens",
+      "winner_score": 15,
+      "loser_score": 6,
+      "date": "2007-01-13",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "New Orleans Saints",
+      "loser": "Philadelphia Eagles",
+      "winner_score": 27,
+      "loser_score": 24,
+      "date": "2007-01-14",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Chicago Bears",
+      "loser": "Seattle Seahawks",
+      "winner_score": 27,
+      "loser_score": 24,
+      "date": "2007-01-14",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "New England Patriots",
+      "loser": "San Diego Chargers",
+      "winner_score": 24,
+      "loser_score": 21,
+      "date": "2007-01-14",
+      "round": "DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Chicago Bears",
+      "loser": "New Orleans Saints",
+      "winner_score": 39,
+      "loser_score": 14,
+      "date": "2007-01-21",
+      "round": "NFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Indianapolis Colts",
+      "loser": "New England Patriots",
+      "winner_score": 38,
+      "loser_score": 34,
+      "date": "2007-01-21",
+      "round": "AFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Indianapolis Colts",
+      "loser": "Chicago Bears",
+      "winner_score": 29,
+      "loser_score": 17,
+      "date": "2007-02-04",
+      "round": "Super Bowl XLI"
+    },
+    {
+      "winner": "Afc",
+      "loser": "Nfc",
+      "winner_score": 31,
+      "loser_score": 28,
+      "date": "2007-02-10",
+      "round": "AT HAWAII"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Indianapolis Colts",
+      "t2": "Baltimore Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baltimore Ravens",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2007-01-13"
+    },
+    {
+      "t1": "New Orleans Saints",
+      "t2": "Philadelphia Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Philadelphia Eagles",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2007-01-14"
+    },
+    {
+      "t1": "Chicago Bears",
+      "t2": "Seattle Seahawks",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Seattle Seahawks",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2007-01-14"
+    },
+    {
+      "t1": "New England Patriots",
+      "t2": "San Diego Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego Chargers",
+      "round": "DIVISIONAL PLAYOFFS",
+      "date": "2007-01-14"
+    },
+    {
+      "t1": "Chicago Bears",
+      "t2": "New Orleans Saints",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New Orleans Saints",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2007-01-21"
+    },
+    {
+      "t1": "Indianapolis Colts",
+      "t2": "New England Patriots",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New England Patriots",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2007-01-21"
+    },
+    {
+      "t1": "Indianapolis Colts",
+      "t2": "Chicago Bears",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Chicago Bears",
+      "round": "Super Bowl XLI",
+      "date": "2007-02-04"
+    },
+    {
+      "t1": "Afc",
+      "t2": "Nfc",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Nfc",
+      "round": "AT HAWAII",
+      "date": "2007-02-10"
+    }
+  ],
+  "eliminated": [
+    "Baltimore Ravens",
+    "Philadelphia Eagles",
+    "Seattle Seahawks",
+    "San Diego Chargers",
+    "New Orleans Saints",
+    "New England Patriots",
+    "Chicago Bears",
+    "Nfc"
+  ],
+  "updated": "2026-09-17 18:35 UTC"
 }

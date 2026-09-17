@@ -2,8 +2,106 @@
   "year": 2008,
   "sport": "NFL",
   "completed": true,
-  "games": [],
-  "series": [],
-  "eliminated": [],
-  "updated": "2026-09-17 16:59 UTC"
+  "games": [
+    {
+      "winner": "Philadelphia Eagles",
+      "loser": "New York Giants",
+      "winner_score": 23,
+      "loser_score": 11,
+      "date": "2009-01-11",
+      "round": "NFC DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Pittsburgh Steelers",
+      "loser": "San Diego Chargers",
+      "winner_score": 35,
+      "loser_score": 24,
+      "date": "2009-01-11",
+      "round": "AFC DIVISIONAL PLAYOFFS"
+    },
+    {
+      "winner": "Arizona Cardinals",
+      "loser": "Philadelphia Eagles",
+      "winner_score": 32,
+      "loser_score": 25,
+      "date": "2009-01-18",
+      "round": "NFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Pittsburgh Steelers",
+      "loser": "Baltimore Ravens",
+      "winner_score": 23,
+      "loser_score": 14,
+      "date": "2009-01-18",
+      "round": "AFC CHAMPIONSHIP"
+    },
+    {
+      "winner": "Pittsburgh Steelers",
+      "loser": "Arizona Cardinals",
+      "winner_score": 27,
+      "loser_score": 23,
+      "date": "2009-02-01",
+      "round": "Super Bowl XLIII"
+    }
+  ],
+  "series": [
+    {
+      "t1": "Philadelphia Eagles",
+      "t2": "New York Giants",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "New York Giants",
+      "round": "NFC DIVISIONAL PLAYOFFS",
+      "date": "2009-01-11"
+    },
+    {
+      "t1": "Pittsburgh Steelers",
+      "t2": "San Diego Chargers",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "San Diego Chargers",
+      "round": "AFC DIVISIONAL PLAYOFFS",
+      "date": "2009-01-11"
+    },
+    {
+      "t1": "Arizona Cardinals",
+      "t2": "Philadelphia Eagles",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Philadelphia Eagles",
+      "round": "NFC CHAMPIONSHIP",
+      "date": "2009-01-18"
+    },
+    {
+      "t1": "Pittsburgh Steelers",
+      "t2": "Baltimore Ravens",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Baltimore Ravens",
+      "round": "AFC CHAMPIONSHIP",
+      "date": "2009-01-18"
+    },
+    {
+      "t1": "Pittsburgh Steelers",
+      "t2": "Arizona Cardinals",
+      "w1": 1,
+      "w2": 0,
+      "done": true,
+      "loser": "Arizona Cardinals",
+      "round": "Super Bowl XLIII",
+      "date": "2009-02-01"
+    }
+  ],
+  "eliminated": [
+    "New York Giants",
+    "San Diego Chargers",
+    "Philadelphia Eagles",
+    "Baltimore Ravens",
+    "Arizona Cardinals"
+  ],
+  "updated": "2026-09-17 18:36 UTC"
 }
