@@ -1911,21 +1911,33 @@ window.initSportPage = function(CFG) {
     var isCompleted = d.completed === true;
     var hasGames    = (d.games||[]).length > 0;
 
-    // ── Early return: data not loaded ───────────────────────────
+    // ── Data not loaded: past years stop here, current/upcoming falls
+    // through to a projected field below ──────────────────────────
     if (d._notLoaded) {
-      var _icon={NBA:'🏀',NHL:'🏒',MLB:'⚾',NFL:'🏈',CBB:'🏀',CBASE:'⚾'}[CFG.sport]||'🏆';
-      var _title={NBA:'NBA Playoffs',NHL:'Stanley Cup Playoffs',MLB:'MLB Playoffs',
-        NFL:'NFL Playoffs',CBB:'NCAA Tournament',CBASE:'NCAA Baseball Tournament'}[CFG.sport]||'Playoffs';
       var _isPast = d.year < new Date().getFullYear();
-      el.innerHTML = '<div class="section-header"><span>'+_icon+' '+d.year+' '+_title+'</span></div>'
-        +(_isPast
-          ? '<div style="padding:0.5rem 0.75rem;background:var(--bg3);border-radius:var(--radius);border:1px solid var(--border);font-size:0.75rem;color:var(--text-dim);margin-bottom:1rem">'
-            +'⚠️ Playoff data not yet loaded for '+d.year+'. Run the <strong>Backfill Playoff Data</strong> workflow in GitHub Actions to generate it, then refresh.</div>'
-          : '<div style="padding:0.4rem 0;font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">'
-            +'📅 Playoffs not yet started — showing projected odds.</div>');
-      // Show projected odds
-      el.innerHTML += ''; // projected odds shown below via _renderTourneyData re-call
-      return;
+      if (_isPast) {
+        var _icon={NBA:'🏀',NHL:'🏒',MLB:'⚾',NFL:'🏈',CBB:'🏀',CBASE:'⚾'}[CFG.sport]||'🏆';
+        var _title={NBA:'NBA Playoffs',NHL:'Stanley Cup Playoffs',MLB:'MLB Playoffs',
+          NFL:'NFL Playoffs',CBB:'NCAA Tournament',CBASE:'NCAA Baseball Tournament'}[CFG.sport]||'Playoffs';
+        el.innerHTML = '<div class="section-header"><span>'+_icon+' '+d.year+' '+_title+'</span></div>'
+          +'<div style="padding:0.5rem 0.75rem;background:var(--bg3);border-radius:var(--radius);border:1px solid var(--border);font-size:0.75rem;color:var(--text-dim);margin-bottom:1rem">'
+          +'⚠️ Playoff data not yet loaded for '+d.year+'. Run the <strong>Backfill Playoff Data</strong> workflow in GitHub Actions to generate it, then refresh.</div>';
+        return;
+      }
+      // Current/upcoming season with no tournament_YYYY.json yet (postseason
+      // hasn't started, or hasn't been confirmed/backfilled). Previously
+      // this stopped here with just a placeholder banner — deliberately NOT
+      // returning now: hasGames/isCompleted are both false and seriesList
+      // is empty, so the Monte Carlo further down falls back to the current
+      // top-N teams by Elo rating (see "if (!allTeams.length && data.length)"
+      // below), simulates a bracket from there, and the "📅 Playoffs not yet
+      // started — projected odds" banner already coded further down covers
+      // the messaging. That's the actual "show the current field" view —
+      // it just was never reached because of the unconditional return that
+      // used to be here. It's an Elo-rank approximation of the field, not
+      // real conference/division standings-based seeding (NBA/NHL/MLB/NFL
+      // playoff seeding isn't pure league-wide rank) — worth knowing if the
+      // projected seed order looks off from the real standings picture.
     }
 
     // ── Monte Carlo ─────────────────────────────────────────────
@@ -1942,8 +1954,22 @@ window.initSportPage = function(CFG) {
       [s.t1,s.t2].forEach(function(t){if(!seenT[t]){seenT[t]=1;allTeams.push(t);}});
     });
     if (!allTeams.length && data.length) {
-      var n=CFG.sport==='NFL'?14:CFG.sport==='MLB'?12:CFG.sport==='CBB'?64:16;
-      data.slice().sort(function(a,b){return b.elo-a.elo;}).slice(0,n).forEach(function(r){allTeams.push(r.team);});
+      // Prefer the real standings-based field (R/update_current_standings.R —
+      // division winners/wildcards/play-in picture from actual records +
+      // official tiebreakers) over a pure Elo-rank cut whenever the pipeline
+      // has computed one, so the bracket sim below simulates from the sport's
+      // actual current playoff picture instead of "top N teams by rating".
+      // Only NBA/NHL/MLB/NFL ever have d.current_field; every other sport
+      // (CBB/CBASE/soccer/CFB) falls through to the Elo cut exactly as before.
+      if (d.current_field && d.current_field.length) {
+        d.current_field.forEach(function(r){
+          if (r.status !== 'outside' && r.team && !seenT[r.team]) { seenT[r.team]=1; allTeams.push(r.team); }
+        });
+      }
+      if (!allTeams.length) {
+        var n=CFG.sport==='NFL'?14:CFG.sport==='MLB'?12:CFG.sport==='CBB'?64:16;
+        data.slice().sort(function(a,b){return b.elo-a.elo;}).slice(0,n).forEach(function(r){allTeams.push(r.team);});
+      }
     }
 
     var champCount={};
@@ -2009,6 +2035,69 @@ window.initSportPage = function(CFG) {
     // ── escXml ──────────────────────────────────────────────────
     function escXml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
+    // ── Real standings + tiebreaker-based seeding ─────────────────
+    // Renders R/update_current_standings.R's output (d.standings = per-
+    // division records, d.current_field = conference/league seeding via
+    // R/standings_engine.R's official tiebreaker cascades) when present.
+    // This is genuine record-and-tiebreaker data, NOT the Elo-rank
+    // approximation the bracket sim below falls back to when it's absent —
+    // see R/standings_engine.R's own HONESTY NOTE for exactly which of each
+    // league's real tiebreaker steps are computed here vs. where a residual
+    // tie still falls back to Elo. It's a "if the season ended today"
+    // snapshot, not a final/locked bracket.
+    function renderRealStandings() {
+      if (!d.standings || !Object.keys(d.standings).length) return '';
+      var STATUS_LABEL = {
+        clinched_top6:'Playoff seed', play_in:'Play-in field',
+        division_top3:'Division qualifier', wildcard:'Wildcard',
+        division_winner:'Division winner'
+      };
+      var out = '<div style="margin-bottom:1rem">'
+        + '<div style="font-size:0.72rem;color:var(--text-dim);margin-bottom:0.5rem">'
+        + '📊 Real standings — actual '+CFG.sport+' records and official tiebreaker rules '
+        + '(head-to-head, division/conference record, and more). Snapshot as of today, not a final bracket.</div>';
+
+      out += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem;margin-bottom:0.6rem">';
+      Object.keys(d.standings).forEach(function(dv) {
+        var rows = d.standings[dv] || [];
+        out += '<div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:0.45rem 0.55rem">'
+          + '<div style="font-size:0.65rem;font-weight:600;color:var(--text-dim);margin-bottom:0.25rem;text-transform:uppercase;letter-spacing:0.04em">'+escXml(dv)+'</div>';
+        rows.forEach(function(r) {
+          var extra = (r.points !== undefined && r.points !== null) ? ' · '+r.points+'pt' : '';
+          out += '<div style="display:flex;justify-content:space-between;font-size:0.7rem;padding:0.1rem 0">'
+            + '<span>'+r.rank+'. '+escXml(r.team)+'</span>'
+            + '<span style="color:var(--text-dim)">'+r.wins+'-'+r.losses+extra+'</span></div>';
+        });
+        out += '</div>';
+      });
+      out += '</div>';
+
+      if (d.current_field && d.current_field.length) {
+        out += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.5rem;margin-bottom:0.75rem">';
+        var byConf = {};
+        d.current_field.forEach(function(r) { (byConf[r.conference || '—'] = byConf[r.conference || '—'] || []).push(r); });
+        Object.keys(byConf).forEach(function(conf) {
+          var rows = byConf[conf].filter(function(r){return r.status!=='outside';}).sort(function(a,b){
+            var sa=(a.seed===null||a.seed===undefined)?99:a.seed, sb=(b.seed===null||b.seed===undefined)?99:b.seed;
+            return sa-sb;
+          });
+          if (!rows.length) return;
+          out += '<div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:0.45rem 0.55rem">'
+            + '<div style="font-size:0.65rem;font-weight:600;color:var(--text-dim);margin-bottom:0.25rem;text-transform:uppercase;letter-spacing:0.04em">'+escXml(conf)+'</div>';
+          rows.forEach(function(r) {
+            var seedTxt = (r.seed===null||r.seed===undefined) ? '—' : r.seed;
+            out += '<div style="display:flex;justify-content:space-between;gap:0.4rem;font-size:0.7rem;padding:0.1rem 0">'
+              + '<span>'+seedTxt+'. '+escXml(r.team)+'</span>'
+              + '<span style="color:var(--text-dim);font-size:0.63rem">'+escXml(STATUS_LABEL[r.status]||r.status||'')+'</span></div>';
+          });
+          out += '</div>';
+        });
+        out += '</div>';
+      }
+      out += '</div>';
+      return out;
+    }
+
     // ── Render ──────────────────────────────────────────────────
     var icon={NBA:'🏀',NHL:'🏒',MLB:'⚾',NFL:'🏈',CBB:'🏀',CBASE:'⚾'}[CFG.sport]||'🏆';
     var sportTitle={NBA:'NBA Playoffs',NHL:'Stanley Cup Playoffs',MLB:'MLB Playoffs',
@@ -2024,6 +2113,7 @@ window.initSportPage = function(CFG) {
       +'</div>';
     if(d.updated)html+='<div style="font-size:0.6rem;color:var(--text-dim);margin-bottom:0.6rem">Updated '+d.updated+'</div>';
     if(!hasGames&&!isCompleted)html+='<div style="font-size:0.75rem;color:var(--accent);margin-bottom:0.75rem">📅 Playoffs not yet started — projected odds.</div>';
+    html += renderRealStandings();
 
     // ── SVG bracket ─────────────────────────────────────────────
     if(rounds.length){
