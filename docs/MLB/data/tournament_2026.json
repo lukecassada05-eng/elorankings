@@ -252,9 +252,9 @@
       {
         "team": "Tampa Bay Rays",
         "rank": 1,
-        "wins": 92,
+        "wins": 93,
         "losses": 59,
-        "win_pct": 0.609
+        "win_pct": 0.612
       },
       {
         "team": "New York Yankees",
@@ -333,9 +333,9 @@
       {
         "team": "San Diego Padres",
         "rank": 2,
-        "wins": 83,
+        "wins": 84,
         "losses": 69,
-        "win_pct": 0.546
+        "win_pct": 0.549
       },
       {
         "team": "Arizona Diamondbacks",
@@ -355,8 +355,8 @@
         "team": "Colorado Rockies",
         "rank": 5,
         "wins": 56,
-        "losses": 96,
-        "win_pct": 0.368
+        "losses": 97,
+        "win_pct": 0.366
       }
     ],
     "NL East": [
@@ -459,8 +459,8 @@
         "team": "Athletics",
         "rank": 4,
         "wins": 61,
-        "losses": 91,
-        "win_pct": 0.401
+        "losses": 92,
+        "win_pct": 0.399
       },
       {
         "team": "Los Angeles Angels",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-17 18:47 UTC"
+  "current_field_updated": "2026-09-17 21:28 UTC"
 }
