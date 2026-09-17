@@ -1,0 +1,1430 @@
+date,home,away,winner,loser,winner_pts,loser_pts,end_type
+2023-10-01,Ottawa Senators,Florida Panthers,Ottawa Senators,Florida Panthers,4,2,REG
+2023-10-01,Arizona Coyotes,Anaheim Ducks,Anaheim Ducks,Arizona Coyotes,5,4,REG
+2023-10-01,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,5,1,REG
+2023-10-01,Colorado Avalanche,Dallas Stars,Colorado Avalanche,Dallas Stars,4,3,OT
+2023-10-02,Pittsburgh Penguins,Ottawa Senators,Ottawa Senators,Pittsburgh Penguins,3,0,REG
+2023-10-02,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,Boston Bruins,3,1,REG
+2023-10-02,New Jersey Devils,New York Islanders,New Jersey Devils,New York Islanders,6,5,REG
+2023-10-02,Columbus Blue Jackets,St. Louis Blues,Columbus Blue Jackets,St. Louis Blues,5,3,REG
+2023-10-02,Toronto Maple Leafs,Montreal Canadiens,Montreal Canadiens,Toronto Maple Leafs,5,4,OT
+2023-10-03,Calgary Flames,Winnipeg Jets,Calgary Flames,Winnipeg Jets,5,4,REG
+2023-10-03,Seattle Kraken,Edmonton Oilers,Edmonton Oilers,Seattle Kraken,4,1,REG
+2023-10-03,Boston Bruins,Washington Capitals,Washington Capitals,Boston Bruins,5,4,OT
+2023-10-03,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,2,0,REG
+2023-10-04,Dallas Stars,Colorado Avalanche,Dallas Stars,Colorado Avalanche,3,1,REG
+2023-10-04,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,4,2,REG
+2023-10-04,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,4,1,REG
+2023-10-04,Vegas Golden Knights,San Jose Sharks,San Jose Sharks,Vegas Golden Knights,2,0,REG
+2023-10-04,Columbus Blue Jackets,Buffalo Sabres,Columbus Blue Jackets,Buffalo Sabres,5,3,REG
+2023-10-04,Pittsburgh Penguins,Detroit Red Wings,Detroit Red Wings,Pittsburgh Penguins,2,1,REG
+2023-10-04,New Jersey Devils,New York Rangers,New Jersey Devils,New York Rangers,5,2,REG
+2023-10-05,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,6,2,REG
+2023-10-05,Vancouver Canucks,Seattle Kraken,Seattle Kraken,Vancouver Canucks,2,1,REG
+2023-10-05,Columbus Blue Jackets,Washington Capitals,Washington Capitals,Columbus Blue Jackets,4,2,REG
+2023-10-05,Toronto Maple Leafs,Detroit Red Wings,Toronto Maple Leafs,Detroit Red Wings,4,3,OT
+2023-10-05,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,6,3,REG
+2023-10-05,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,New York Islanders,5,2,REG
+2023-10-05,New York Rangers,Boston Bruins,Boston Bruins,New York Rangers,3,1,REG
+2023-10-06,Nashville Predators,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,5,1,REG
+2023-10-06,Dallas Stars,St. Louis Blues,St. Louis Blues,Dallas Stars,4,0,REG
+2023-10-06,Winnipeg Jets,Ottawa Senators,Ottawa Senators,Winnipeg Jets,3,0,REG
+2023-10-06,Chicago Blackhawks,Minnesota Wild,Minnesota Wild,Chicago Blackhawks,3,2,SO
+2023-10-06,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,San Jose Sharks,4,3,OT
+2023-10-06,Anaheim Ducks,Arizona Coyotes,Arizona Coyotes,Anaheim Ducks,4,2,REG
+2023-10-06,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,4,3,REG
+2023-10-06,Buffalo Sabres,Pittsburgh Penguins,Pittsburgh Penguins,Buffalo Sabres,7,4,REG
+2023-10-06,New York Islanders,New Jersey Devils,New Jersey Devils,New York Islanders,3,0,REG
+2023-10-06,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,4,1,REG
+2023-10-07,Edmonton Oilers,Seattle Kraken,Edmonton Oilers,Seattle Kraken,3,1,REG
+2023-10-07,Vancouver Canucks,Calgary Flames,Vancouver Canucks,Calgary Flames,3,1,REG
+2023-10-07,Los Angeles Kings,Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,7,4,REG
+2023-10-07,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,5,1,REG
+2023-10-07,Florida Panthers,Tampa Bay Lightning,Tampa Bay Lightning,Florida Panthers,4,2,REG
+2023-10-07,Minnesota Wild,Dallas Stars,Minnesota Wild,Dallas Stars,4,0,REG
+2023-10-07,Washington Capitals,Columbus Blue Jackets,Columbus Blue Jackets,Washington Capitals,4,2,REG
+2023-10-07,Detroit Red Wings,Toronto Maple Leafs,Detroit Red Wings,Toronto Maple Leafs,4,3,REG
+2023-10-07,Ottawa Senators,Montreal Canadiens,Montreal Canadiens,Ottawa Senators,6,4,REG
+2023-10-08,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,5,3,REG
+2023-10-10,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,Nashville Predators,5,3,REG
+2023-10-11,Pittsburgh Penguins,Chicago Blackhawks,Chicago Blackhawks,Pittsburgh Penguins,4,2,REG
+2023-10-11,Vegas Golden Knights,Seattle Kraken,Vegas Golden Knights,Seattle Kraken,4,1,REG
+2023-10-11,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,6,5,SO
+2023-10-11,Carolina Hurricanes,Ottawa Senators,Carolina Hurricanes,Ottawa Senators,5,3,REG
+2023-10-11,Boston Bruins,Chicago Blackhawks,Boston Bruins,Chicago Blackhawks,3,1,REG
+2023-10-12,Calgary Flames,Winnipeg Jets,Calgary Flames,Winnipeg Jets,5,3,REG
+2023-10-12,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,5,1,REG
+2023-10-12,Los Angeles Kings,Colorado Avalanche,Colorado Avalanche,Los Angeles Kings,5,2,REG
+2023-10-12,Buffalo Sabres,New York Rangers,New York Rangers,Buffalo Sabres,5,1,REG
+2023-10-12,Columbus Blue Jackets,Philadelphia Flyers,Philadelphia Flyers,Columbus Blue Jackets,4,2,REG
+2023-10-12,New Jersey Devils,Detroit Red Wings,New Jersey Devils,Detroit Red Wings,4,3,REG
+2023-10-13,Nashville Predators,Seattle Kraken,Nashville Predators,Seattle Kraken,3,0,REG
+2023-10-13,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,2,1,SO
+2023-10-13,Minnesota Wild,Florida Panthers,Minnesota Wild,Florida Panthers,2,0,REG
+2023-10-13,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,4,1,REG
+2023-10-13,New Jersey Devils,Arizona Coyotes,Arizona Coyotes,New Jersey Devils,4,3,SO
+2023-10-13,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,4,0,REG
+2023-10-14,Ottawa Senators,Philadelphia Flyers,Ottawa Senators,Philadelphia Flyers,5,2,REG
+2023-10-14,Winnipeg Jets,Florida Panthers,Winnipeg Jets,Florida Panthers,6,4,REG
+2023-10-14,Boston Bruins,Nashville Predators,Boston Bruins,Nashville Predators,3,2,REG
+2023-10-14,Toronto Maple Leafs,Minnesota Wild,Toronto Maple Leafs,Minnesota Wild,7,4,REG
+2023-10-14,Montreal Canadiens,Chicago Blackhawks,Montreal Canadiens,Chicago Blackhawks,3,2,REG
+2023-10-14,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,6,4,REG
+2023-10-14,Pittsburgh Penguins,Calgary Flames,Pittsburgh Penguins,Calgary Flames,5,2,REG
+2023-10-14,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,New York Rangers,5,3,REG
+2023-10-14,New York Islanders,Buffalo Sabres,New York Islanders,Buffalo Sabres,3,2,REG
+2023-10-15,St. Louis Blues,Seattle Kraken,St. Louis Blues,Seattle Kraken,2,1,SO
+2023-10-15,Edmonton Oilers,Vancouver Canucks,Vancouver Canucks,Edmonton Oilers,4,3,REG
+2023-10-15,Vegas Golden Knights,Anaheim Ducks,Vegas Golden Knights,Anaheim Ducks,4,1,REG
+2023-10-15,San Jose Sharks,Colorado Avalanche,Colorado Avalanche,San Jose Sharks,2,1,SO
+2023-10-15,Los Angeles Kings,Carolina Hurricanes,Carolina Hurricanes,Los Angeles Kings,6,5,SO
+2023-10-15,Ottawa Senators,Tampa Bay Lightning,Ottawa Senators,Tampa Bay Lightning,5,2,REG
+2023-10-16,Anaheim Ducks,Carolina Hurricanes,Anaheim Ducks,Carolina Hurricanes,6,3,REG
+2023-10-16,Toronto Maple Leafs,Chicago Blackhawks,Chicago Blackhawks,Toronto Maple Leafs,4,1,REG
+2023-10-16,New Jersey Devils,Florida Panthers,Florida Panthers,New Jersey Devils,4,3,REG
+2023-10-16,New York Rangers,Arizona Coyotes,New York Rangers,Arizona Coyotes,2,1,REG
+2023-10-16,Washington Capitals,Calgary Flames,Washington Capitals,Calgary Flames,3,2,SO
+2023-10-16,Columbus Blue Jackets,Detroit Red Wings,Detroit Red Wings,Columbus Blue Jackets,4,0,REG
+2023-10-17,Philadelphia Flyers,Vancouver Canucks,Philadelphia Flyers,Vancouver Canucks,2,0,REG
+2023-10-17,Montreal Canadiens,Minnesota Wild,Minnesota Wild,Montreal Canadiens,5,2,REG
+2023-10-17,Buffalo Sabres,Tampa Bay Lightning,Buffalo Sabres,Tampa Bay Lightning,3,2,OT
+2023-10-18,Nashville Predators,Edmonton Oilers,Edmonton Oilers,Nashville Predators,5,1,REG
+2023-10-18,Winnipeg Jets,Los Angeles Kings,Los Angeles Kings,Winnipeg Jets,5,1,REG
+2023-10-18,Seattle Kraken,Colorado Avalanche,Colorado Avalanche,Seattle Kraken,4,1,REG
+2023-10-18,Vegas Golden Knights,Dallas Stars,Vegas Golden Knights,Dallas Stars,3,2,SO
+2023-10-18,San Jose Sharks,Carolina Hurricanes,Carolina Hurricanes,San Jose Sharks,6,3,REG
+2023-10-18,Ottawa Senators,Washington Capitals,Ottawa Senators,Washington Capitals,5,1,REG
+2023-10-18,Detroit Red Wings,Pittsburgh Penguins,Detroit Red Wings,Pittsburgh Penguins,6,3,REG
+2023-10-19,Buffalo Sabres,Calgary Flames,Calgary Flames,Buffalo Sabres,4,3,REG
+2023-10-19,Tampa Bay Lightning,Vancouver Canucks,Tampa Bay Lightning,Vancouver Canucks,4,3,REG
+2023-10-19,Florida Panthers,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,3,1,REG
+2023-10-19,New York Rangers,Nashville Predators,Nashville Predators,New York Rangers,4,1,REG
+2023-10-19,Philadelphia Flyers,Edmonton Oilers,Philadelphia Flyers,Edmonton Oilers,4,1,REG
+2023-10-20,St. Louis Blues,Arizona Coyotes,Arizona Coyotes,St. Louis Blues,6,2,REG
+2023-10-20,Minnesota Wild,Los Angeles Kings,Los Angeles Kings,Minnesota Wild,7,3,REG
+2023-10-20,Winnipeg Jets,Vegas Golden Knights,Vegas Golden Knights,Winnipeg Jets,5,3,REG
+2023-10-20,Anaheim Ducks,Dallas Stars,Dallas Stars,Anaheim Ducks,3,2,REG
+2023-10-20,Seattle Kraken,Carolina Hurricanes,Seattle Kraken,Carolina Hurricanes,7,4,REG
+2023-10-20,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,4,0,REG
+2023-10-20,San Jose Sharks,Boston Bruins,Boston Bruins,San Jose Sharks,3,1,REG
+2023-10-20,Columbus Blue Jackets,Calgary Flames,Columbus Blue Jackets,Calgary Flames,3,1,REG
+2023-10-20,New York Islanders,New Jersey Devils,New Jersey Devils,New York Islanders,5,4,OT
+2023-10-21,Ottawa Senators,Detroit Red Wings,Detroit Red Wings,Ottawa Senators,5,2,REG
+2023-10-21,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,2,1,REG
+2023-10-21,Buffalo Sabres,New York Islanders,Buffalo Sabres,New York Islanders,3,1,REG
+2023-10-21,Montreal Canadiens,Washington Capitals,Montreal Canadiens,Washington Capitals,3,2,OT
+2023-10-21,Tampa Bay Lightning,Toronto Maple Leafs,Toronto Maple Leafs,Tampa Bay Lightning,4,3,OT
+2023-10-21,Florida Panthers,Vancouver Canucks,Vancouver Canucks,Florida Panthers,5,3,REG
+2023-10-22,Chicago Blackhawks,Vegas Golden Knights,Vegas Golden Knights,Chicago Blackhawks,5,3,REG
+2023-10-22,St. Louis Blues,Pittsburgh Penguins,St. Louis Blues,Pittsburgh Penguins,4,2,REG
+2023-10-22,Nashville Predators,San Jose Sharks,Nashville Predators,San Jose Sharks,5,1,REG
+2023-10-22,Dallas Stars,Philadelphia Flyers,Dallas Stars,Philadelphia Flyers,5,4,OT
+2023-10-22,Minnesota Wild,Columbus Blue Jackets,Columbus Blue Jackets,Minnesota Wild,5,4,OT
+2023-10-22,Colorado Avalanche,Carolina Hurricanes,Colorado Avalanche,Carolina Hurricanes,6,4,REG
+2023-10-22,Edmonton Oilers,Winnipeg Jets,Winnipeg Jets,Edmonton Oilers,3,2,OT
+2023-10-22,Seattle Kraken,New York Rangers,New York Rangers,Seattle Kraken,4,1,REG
+2023-10-22,Los Angeles Kings,Boston Bruins,Boston Bruins,Los Angeles Kings,4,2,REG
+2023-10-22,Detroit Red Wings,Calgary Flames,Detroit Red Wings,Calgary Flames,6,2,REG
+2023-10-23,Anaheim Ducks,Boston Bruins,Boston Bruins,Anaheim Ducks,3,1,REG
+2023-10-23,Buffalo Sabres,Montreal Canadiens,Montreal Canadiens,Buffalo Sabres,3,1,REG
+2023-10-24,Washington Capitals,Toronto Maple Leafs,Toronto Maple Leafs,Washington Capitals,4,1,REG
+2023-10-24,Ottawa Senators,Buffalo Sabres,Buffalo Sabres,Ottawa Senators,6,4,REG
+2023-10-24,Tampa Bay Lightning,Carolina Hurricanes,Tampa Bay Lightning,Carolina Hurricanes,3,0,REG
+2023-10-24,Montreal Canadiens,New Jersey Devils,New Jersey Devils,Montreal Canadiens,5,2,REG
+2023-10-24,Pittsburgh Penguins,Dallas Stars,Dallas Stars,Pittsburgh Penguins,4,1,REG
+2023-10-24,Florida Panthers,San Jose Sharks,Florida Panthers,San Jose Sharks,3,1,REG
+2023-10-25,New York Islanders,Colorado Avalanche,Colorado Avalanche,New York Islanders,7,4,REG
+2023-10-25,Detroit Red Wings,Seattle Kraken,Seattle Kraken,Detroit Red Wings,5,4,OT
+2023-10-25,Columbus Blue Jackets,Anaheim Ducks,Anaheim Ducks,Columbus Blue Jackets,3,2,OT
+2023-10-25,Chicago Blackhawks,Boston Bruins,Boston Bruins,Chicago Blackhawks,3,0,REG
+2023-10-25,Winnipeg Jets,St. Louis Blues,Winnipeg Jets,St. Louis Blues,4,2,REG
+2023-10-25,Minnesota Wild,Edmonton Oilers,Minnesota Wild,Edmonton Oilers,7,4,REG
+2023-10-25,Nashville Predators,Vancouver Canucks,Vancouver Canucks,Nashville Predators,3,2,REG
+2023-10-25,Calgary Flames,New York Rangers,New York Rangers,Calgary Flames,3,1,REG
+2023-10-25,Los Angeles Kings,Arizona Coyotes,Los Angeles Kings,Arizona Coyotes,6,3,REG
+2023-10-25,Vegas Golden Knights,Philadelphia Flyers,Vegas Golden Knights,Philadelphia Flyers,3,2,REG
+2023-10-25,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,6,4,REG
+2023-10-26,Boston Bruins,Anaheim Ducks,Anaheim Ducks,Boston Bruins,4,3,OT
+2023-10-26,Montreal Canadiens,Columbus Blue Jackets,Montreal Canadiens,Columbus Blue Jackets,4,3,OT
+2023-10-26,Detroit Red Wings,Winnipeg Jets,Winnipeg Jets,Detroit Red Wings,4,1,REG
+2023-10-26,Tampa Bay Lightning,San Jose Sharks,Tampa Bay Lightning,San Jose Sharks,4,0,REG
+2023-10-26,Pittsburgh Penguins,Colorado Avalanche,Pittsburgh Penguins,Colorado Avalanche,4,0,REG
+2023-10-26,Carolina Hurricanes,Seattle Kraken,Carolina Hurricanes,Seattle Kraken,3,2,OT
+2023-10-26,Philadelphia Flyers,Minnesota Wild,Philadelphia Flyers,Minnesota Wild,6,2,REG
+2023-10-26,New York Islanders,Ottawa Senators,New York Islanders,Ottawa Senators,3,2,REG
+2023-10-27,Dallas Stars,Toronto Maple Leafs,Toronto Maple Leafs,Dallas Stars,4,1,REG
+2023-10-27,Calgary Flames,St. Louis Blues,St. Louis Blues,Calgary Flames,3,0,REG
+2023-10-27,Edmonton Oilers,New York Rangers,New York Rangers,Edmonton Oilers,3,0,REG
+2023-10-27,Vegas Golden Knights,Chicago Blackhawks,Chicago Blackhawks,Vegas Golden Knights,4,3,OT
+2023-10-27,New Jersey Devils,Buffalo Sabres,New Jersey Devils,Buffalo Sabres,5,4,REG
+2023-10-27,Washington Capitals,Minnesota Wild,Washington Capitals,Minnesota Wild,3,2,SO
+2023-10-27,Carolina Hurricanes,San Jose Sharks,Carolina Hurricanes,San Jose Sharks,3,0,REG
+2023-10-28,Vancouver Canucks,St. Louis Blues,Vancouver Canucks,St. Louis Blues,4,0,REG
+2023-10-28,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,5,4,REG
+2023-10-28,Philadelphia Flyers,Anaheim Ducks,Anaheim Ducks,Philadelphia Flyers,7,4,REG
+2023-10-28,Florida Panthers,Seattle Kraken,Florida Panthers,Seattle Kraken,3,2,REG
+2023-10-28,Boston Bruins,Detroit Red Wings,Boston Bruins,Detroit Red Wings,4,1,REG
+2023-10-28,Montreal Canadiens,Winnipeg Jets,Montreal Canadiens,Winnipeg Jets,4,3,SO
+2023-10-28,Pittsburgh Penguins,Ottawa Senators,Ottawa Senators,Pittsburgh Penguins,5,2,REG
+2023-10-28,Columbus Blue Jackets,New York Islanders,New York Islanders,Columbus Blue Jackets,2,0,REG
+2023-10-28,Nashville Predators,Toronto Maple Leafs,Nashville Predators,Toronto Maple Leafs,3,2,OT
+2023-10-29,Vancouver Canucks,New York Rangers,New York Rangers,Vancouver Canucks,4,3,OT
+2023-10-29,Los Angeles Kings,Vegas Golden Knights,Vegas Golden Knights,Los Angeles Kings,4,3,SO
+2023-10-29,Buffalo Sabres,Colorado Avalanche,Buffalo Sabres,Colorado Avalanche,4,0,REG
+2023-10-29,New Jersey Devils,Minnesota Wild,New Jersey Devils,Minnesota Wild,4,3,REG
+2023-10-29,Washington Capitals,San Jose Sharks,Washington Capitals,San Jose Sharks,3,1,REG
+2023-10-29,Edmonton Oilers,Calgary Flames,Edmonton Oilers,Calgary Flames,5,2,REG
+2023-10-30,Philadelphia Flyers,Carolina Hurricanes,Carolina Hurricanes,Philadelphia Flyers,3,2,REG
+2023-10-30,Boston Bruins,Florida Panthers,Boston Bruins,Florida Panthers,3,2,OT
+2023-10-30,Tampa Bay Lightning,Seattle Kraken,Seattle Kraken,Tampa Bay Lightning,4,3,OT
+2023-10-30,Pittsburgh Penguins,Anaheim Ducks,Anaheim Ducks,Pittsburgh Penguins,4,3,REG
+2023-10-30,New York Islanders,Detroit Red Wings,Detroit Red Wings,New York Islanders,4,3,OT
+2023-10-30,Winnipeg Jets,New York Rangers,New York Rangers,Winnipeg Jets,3,2,OT
+2023-10-31,Dallas Stars,Columbus Blue Jackets,Dallas Stars,Columbus Blue Jackets,5,3,REG
+2023-10-31,Arizona Coyotes,Chicago Blackhawks,Arizona Coyotes,Chicago Blackhawks,5,1,REG
+2023-10-31,Vegas Golden Knights,Montreal Canadiens,Vegas Golden Knights,Montreal Canadiens,3,2,SO
+2023-11-01,Toronto Maple Leafs,Los Angeles Kings,Los Angeles Kings,Toronto Maple Leafs,4,1,REG
+2023-11-01,Vancouver Canucks,Nashville Predators,Vancouver Canucks,Nashville Predators,5,2,REG
+2023-11-01,Philadelphia Flyers,Buffalo Sabres,Buffalo Sabres,Philadelphia Flyers,5,2,REG
+2023-11-02,Calgary Flames,Dallas Stars,Dallas Stars,Calgary Flames,4,3,REG
+2023-11-02,Colorado Avalanche,St. Louis Blues,Colorado Avalanche,St. Louis Blues,4,1,REG
+2023-11-02,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,4,3,OT
+2023-11-02,Ottawa Senators,Los Angeles Kings,Los Angeles Kings,Ottawa Senators,3,2,REG
+2023-11-02,Detroit Red Wings,Florida Panthers,Florida Panthers,Detroit Red Wings,2,0,REG
+2023-11-02,New York Rangers,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,2,1,REG
+2023-11-02,Washington Capitals,New York Islanders,New York Islanders,Washington Capitals,3,0,REG
+2023-11-02,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,4,2,REG
+2023-11-02,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,3,2,SO
+2023-11-03,Minnesota Wild,New Jersey Devils,New Jersey Devils,Minnesota Wild,5,3,REG
+2023-11-03,Edmonton Oilers,Dallas Stars,Dallas Stars,Edmonton Oilers,4,3,REG
+2023-11-03,Arizona Coyotes,Montreal Canadiens,Arizona Coyotes,Montreal Canadiens,3,2,REG
+2023-11-03,Vegas Golden Knights,Winnipeg Jets,Vegas Golden Knights,Winnipeg Jets,5,2,REG
+2023-11-03,Seattle Kraken,Nashville Predators,Seattle Kraken,Nashville Predators,4,2,REG
+2023-11-03,San Jose Sharks,Vancouver Canucks,Vancouver Canucks,San Jose Sharks,5,1,REG
+2023-11-03,Buffalo Sabres,Philadelphia Flyers,Philadelphia Flyers,Buffalo Sabres,5,1,REG
+2023-11-04,St. Louis Blues,New Jersey Devils,St. Louis Blues,New Jersey Devils,4,1,REG
+2023-11-04,Edmonton Oilers,Nashville Predators,Nashville Predators,Edmonton Oilers,5,2,REG
+2023-11-04,Arizona Coyotes,Winnipeg Jets,Winnipeg Jets,Arizona Coyotes,5,3,REG
+2023-11-04,Toronto Maple Leafs,Buffalo Sabres,Buffalo Sabres,Toronto Maple Leafs,6,4,REG
+2023-11-04,Ottawa Senators,Tampa Bay Lightning,Tampa Bay Lightning,Ottawa Senators,6,4,REG
+2023-11-04,Detroit Red Wings,Boston Bruins,Detroit Red Wings,Boston Bruins,5,4,REG
+2023-11-04,Washington Capitals,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,2,1,REG
+2023-11-04,St. Louis Blues,Montreal Canadiens,St. Louis Blues,Montreal Canadiens,6,3,REG
+2023-11-04,Philadelphia Flyers,Los Angeles Kings,Los Angeles Kings,Philadelphia Flyers,4,0,REG
+2023-11-04,New York Islanders,Carolina Hurricanes,Carolina Hurricanes,New York Islanders,4,3,OT
+2023-11-05,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,Florida Panthers,5,2,REG
+2023-11-05,Minnesota Wild,New York Rangers,Minnesota Wild,New York Rangers,5,4,SO
+2023-11-05,Vancouver Canucks,Dallas Stars,Vancouver Canucks,Dallas Stars,2,0,REG
+2023-11-05,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,4,0,REG
+2023-11-05,San Jose Sharks,Pittsburgh Penguins,Pittsburgh Penguins,San Jose Sharks,6,2,REG
+2023-11-05,Seattle Kraken,Calgary Flames,Calgary Flames,Seattle Kraken,6,3,REG
+2023-11-06,Chicago Blackhawks,New Jersey Devils,New Jersey Devils,Chicago Blackhawks,4,2,REG
+2023-11-06,Anaheim Ducks,Vegas Golden Knights,Anaheim Ducks,Vegas Golden Knights,4,2,REG
+2023-11-07,Toronto Maple Leafs,Tampa Bay Lightning,Toronto Maple Leafs,Tampa Bay Lightning,6,5,OT
+2023-11-07,Florida Panthers,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,5,4,OT
+2023-11-07,Dallas Stars,Boston Bruins,Boston Bruins,Dallas Stars,3,2,REG
+2023-11-07,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,6,2,REG
+2023-11-08,Montreal Canadiens,Tampa Bay Lightning,Tampa Bay Lightning,Montreal Canadiens,5,3,REG
+2023-11-08,Carolina Hurricanes,Buffalo Sabres,Carolina Hurricanes,Buffalo Sabres,3,2,OT
+2023-11-08,New York Islanders,Minnesota Wild,Minnesota Wild,New York Islanders,4,2,REG
+2023-11-08,New York Rangers,Detroit Red Wings,New York Rangers,Detroit Red Wings,5,3,REG
+2023-11-08,St. Louis Blues,Winnipeg Jets,Winnipeg Jets,St. Louis Blues,5,2,REG
+2023-11-08,Calgary Flames,Nashville Predators,Calgary Flames,Nashville Predators,4,2,REG
+2023-11-08,Arizona Coyotes,Seattle Kraken,Arizona Coyotes,Seattle Kraken,4,3,SO
+2023-11-08,Colorado Avalanche,New Jersey Devils,Colorado Avalanche,New Jersey Devils,6,3,REG
+2023-11-08,Anaheim Ducks,Pittsburgh Penguins,Pittsburgh Penguins,Anaheim Ducks,2,0,REG
+2023-11-08,San Jose Sharks,Philadelphia Flyers,San Jose Sharks,Philadelphia Flyers,2,1,REG
+2023-11-09,Toronto Maple Leafs,Ottawa Senators,Ottawa Senators,Toronto Maple Leafs,6,3,REG
+2023-11-09,Washington Capitals,Florida Panthers,Florida Panthers,Washington Capitals,4,3,OT
+2023-11-09,Vegas Golden Knights,Los Angeles Kings,Los Angeles Kings,Vegas Golden Knights,4,1,REG
+2023-11-10,Boston Bruins,New York Islanders,Boston Bruins,New York Islanders,5,2,REG
+2023-11-10,Ottawa Senators,Vancouver Canucks,Vancouver Canucks,Ottawa Senators,5,2,REG
+2023-11-10,Detroit Red Wings,Montreal Canadiens,Montreal Canadiens,Detroit Red Wings,3,2,OT
+2023-11-10,Tampa Bay Lightning,Chicago Blackhawks,Chicago Blackhawks,Tampa Bay Lightning,5,3,REG
+2023-11-10,New York Rangers,Minnesota Wild,New York Rangers,Minnesota Wild,4,1,REG
+2023-11-10,Columbus Blue Jackets,Dallas Stars,Dallas Stars,Columbus Blue Jackets,5,2,REG
+2023-11-10,St. Louis Blues,Arizona Coyotes,St. Louis Blues,Arizona Coyotes,2,1,REG
+2023-11-10,Winnipeg Jets,Nashville Predators,Winnipeg Jets,Nashville Predators,6,3,REG
+2023-11-10,Colorado Avalanche,Seattle Kraken,Seattle Kraken,Colorado Avalanche,4,3,REG
+2023-11-10,Los Angeles Kings,Pittsburgh Penguins,Pittsburgh Penguins,Los Angeles Kings,4,3,OT
+2023-11-10,San Jose Sharks,Edmonton Oilers,San Jose Sharks,Edmonton Oilers,3,2,REG
+2023-11-11,Buffalo Sabres,Minnesota Wild,Buffalo Sabres,Minnesota Wild,3,2,REG
+2023-11-11,Toronto Maple Leafs,Calgary Flames,Toronto Maple Leafs,Calgary Flames,5,4,SO
+2023-11-11,Florida Panthers,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,5,2,REG
+2023-11-11,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,4,2,REG
+2023-11-11,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,4,0,REG
+2023-11-11,Anaheim Ducks,Philadelphia Flyers,Philadelphia Flyers,Anaheim Ducks,6,3,REG
+2023-11-11,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,5,4,REG
+2023-11-11,Winnipeg Jets,Dallas Stars,Dallas Stars,Winnipeg Jets,3,2,REG
+2023-11-12,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,5,2,REG
+2023-11-12,Montreal Canadiens,Boston Bruins,Montreal Canadiens,Boston Bruins,3,2,OT
+2023-11-12,Ottawa Senators,Calgary Flames,Ottawa Senators,Calgary Flames,4,1,REG
+2023-11-12,Tampa Bay Lightning,Carolina Hurricanes,Carolina Hurricanes,Tampa Bay Lightning,4,0,REG
+2023-11-12,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,4,0,REG
+2023-11-12,New York Islanders,Washington Capitals,Washington Capitals,New York Islanders,4,1,REG
+2023-11-12,Nashville Predators,Arizona Coyotes,Arizona Coyotes,Nashville Predators,7,5,REG
+2023-11-12,Colorado Avalanche,St. Louis Blues,St. Louis Blues,Colorado Avalanche,6,2,REG
+2023-11-12,Seattle Kraken,Edmonton Oilers,Edmonton Oilers,Seattle Kraken,4,1,REG
+2023-11-12,Los Angeles Kings,Philadelphia Flyers,Philadelphia Flyers,Los Angeles Kings,4,2,REG
+2023-11-12,Florida Panthers,Chicago Blackhawks,Florida Panthers,Chicago Blackhawks,4,3,REG
+2023-11-12,Minnesota Wild,Dallas Stars,Dallas Stars,Minnesota Wild,7,3,REG
+2023-11-13,Montreal Canadiens,Vancouver Canucks,Vancouver Canucks,Montreal Canadiens,5,2,REG
+2023-11-13,New York Rangers,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,4,3,SO
+2023-11-13,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,San Jose Sharks,4,1,REG
+2023-11-14,Edmonton Oilers,New York Islanders,Edmonton Oilers,New York Islanders,4,1,REG
+2023-11-14,Seattle Kraken,Colorado Avalanche,Colorado Avalanche,Seattle Kraken,5,1,REG
+2023-11-15,Buffalo Sabres,Boston Bruins,Boston Bruins,Buffalo Sabres,5,2,REG
+2023-11-15,Montreal Canadiens,Calgary Flames,Calgary Flames,Montreal Canadiens,2,1,REG
+2023-11-15,Washington Capitals,Vegas Golden Knights,Washington Capitals,Vegas Golden Knights,3,0,REG
+2023-11-15,Columbus Blue Jackets,Pittsburgh Penguins,Pittsburgh Penguins,Columbus Blue Jackets,5,3,REG
+2023-11-15,St. Louis Blues,Tampa Bay Lightning,St. Louis Blues,Tampa Bay Lightning,4,0,REG
+2023-11-15,Nashville Predators,Anaheim Ducks,Anaheim Ducks,Nashville Predators,3,2,REG
+2023-11-15,Dallas Stars,Arizona Coyotes,Dallas Stars,Arizona Coyotes,4,3,OT
+2023-11-15,Winnipeg Jets,New Jersey Devils,Winnipeg Jets,New Jersey Devils,6,3,REG
+2023-11-15,San Jose Sharks,Florida Panthers,Florida Panthers,San Jose Sharks,5,3,REG
+2023-11-16,Carolina Hurricanes,Philadelphia Flyers,Philadelphia Flyers,Carolina Hurricanes,3,1,REG
+2023-11-16,Edmonton Oilers,Seattle Kraken,Edmonton Oilers,Seattle Kraken,4,3,OT
+2023-11-16,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,6,2,REG
+2023-11-16,Vancouver Canucks,New York Islanders,Vancouver Canucks,New York Islanders,4,3,OT
+2023-11-16,Ottawa Senators,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,5,4,OT
+2023-11-17,Montreal Canadiens,Vegas Golden Knights,Vegas Golden Knights,Montreal Canadiens,6,5,REG
+2023-11-17,Pittsburgh Penguins,New Jersey Devils,New Jersey Devils,Pittsburgh Penguins,5,2,REG
+2023-11-17,Columbus Blue Jackets,Arizona Coyotes,Arizona Coyotes,Columbus Blue Jackets,3,2,REG
+2023-11-17,Chicago Blackhawks,Tampa Bay Lightning,Tampa Bay Lightning,Chicago Blackhawks,4,2,REG
+2023-11-17,Calgary Flames,Vancouver Canucks,Calgary Flames,Vancouver Canucks,5,2,REG
+2023-11-17,Seattle Kraken,New York Islanders,Seattle Kraken,New York Islanders,4,3,SO
+2023-11-17,Los Angeles Kings,Florida Panthers,Los Angeles Kings,Florida Panthers,2,1,REG
+2023-11-17,San Jose Sharks,St. Louis Blues,San Jose Sharks,St. Louis Blues,5,1,REG
+2023-11-17,Detroit Red Wings,Toronto Maple Leafs,Toronto Maple Leafs,Detroit Red Wings,3,2,REG
+2023-11-18,Winnipeg Jets,Buffalo Sabres,Winnipeg Jets,Buffalo Sabres,3,2,REG
+2023-11-18,Anaheim Ducks,Florida Panthers,Florida Panthers,Anaheim Ducks,2,1,REG
+2023-11-18,Ottawa Senators,Minnesota Wild,Ottawa Senators,Minnesota Wild,2,1,SO
+2023-11-18,Philadelphia Flyers,Vegas Golden Knights,Philadelphia Flyers,Vegas Golden Knights,4,3,OT
+2023-11-18,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,4,2,REG
+2023-11-18,Tampa Bay Lightning,Edmonton Oilers,Tampa Bay Lightning,Edmonton Oilers,6,4,REG
+2023-11-19,Boston Bruins,Montreal Canadiens,Boston Bruins,Montreal Canadiens,5,2,REG
+2023-11-19,New Jersey Devils,New York Rangers,New York Rangers,New Jersey Devils,5,3,REG
+2023-11-19,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,4,2,REG
+2023-11-19,Winnipeg Jets,Arizona Coyotes,Winnipeg Jets,Arizona Coyotes,5,2,REG
+2023-11-19,Calgary Flames,New York Islanders,New York Islanders,Calgary Flames,5,4,SO
+2023-11-19,Washington Capitals,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,4,3,REG
+2023-11-19,Dallas Stars,Colorado Avalanche,Colorado Avalanche,Dallas Stars,6,3,REG
+2023-11-19,Vancouver Canucks,Seattle Kraken,Seattle Kraken,Vancouver Canucks,4,3,REG
+2023-11-19,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,St. Louis Blues,5,1,REG
+2023-11-19,Minnesota Wild,Toronto Maple Leafs,Toronto Maple Leafs,Minnesota Wild,4,3,OT
+2023-11-19,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,5,2,REG
+2023-11-19,Pittsburgh Penguins,Vegas Golden Knights,Pittsburgh Penguins,Vegas Golden Knights,3,0,REG
+2023-11-20,Chicago Blackhawks,Buffalo Sabres,Buffalo Sabres,Chicago Blackhawks,3,2,REG
+2023-11-20,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,3,1,REG
+2023-11-21,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,Boston Bruins,5,4,OT
+2023-11-21,Florida Panthers,Edmonton Oilers,Florida Panthers,Edmonton Oilers,5,3,REG
+2023-11-21,Nashville Predators,Colorado Avalanche,Nashville Predators,Colorado Avalanche,4,3,REG
+2023-11-21,Dallas Stars,New York Rangers,Dallas Stars,New York Rangers,6,3,REG
+2023-11-21,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,4,1,REG
+2023-11-21,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,San Jose Sharks,3,1,REG
+2023-11-21,Seattle Kraken,Calgary Flames,Calgary Flames,Seattle Kraken,4,3,OT
+2023-11-23,Detroit Red Wings,New Jersey Devils,Detroit Red Wings,New Jersey Devils,4,0,REG
+2023-11-23,Tampa Bay Lightning,Winnipeg Jets,Winnipeg Jets,Tampa Bay Lightning,3,2,OT
+2023-11-23,Florida Panthers,Boston Bruins,Boston Bruins,Florida Panthers,3,1,REG
+2023-11-23,Washington Capitals,Buffalo Sabres,Washington Capitals,Buffalo Sabres,4,3,OT
+2023-11-23,Carolina Hurricanes,Edmonton Oilers,Carolina Hurricanes,Edmonton Oilers,6,3,REG
+2023-11-23,Columbus Blue Jackets,Chicago Blackhawks,Columbus Blue Jackets,Chicago Blackhawks,7,3,REG
+2023-11-23,New York Islanders,Philadelphia Flyers,New York Islanders,Philadelphia Flyers,3,2,REG
+2023-11-23,Nashville Predators,Calgary Flames,Nashville Predators,Calgary Flames,4,2,REG
+2023-11-23,Arizona Coyotes,St. Louis Blues,St. Louis Blues,Arizona Coyotes,6,5,REG
+2023-11-23,Dallas Stars,Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,2,1,OT
+2023-11-23,Colorado Avalanche,Vancouver Canucks,Colorado Avalanche,Vancouver Canucks,5,2,REG
+2023-11-23,Anaheim Ducks,Montreal Canadiens,Montreal Canadiens,Anaheim Ducks,4,3,REG
+2023-11-23,Seattle Kraken,San Jose Sharks,Seattle Kraken,San Jose Sharks,5,1,REG
+2023-11-24,Boston Bruins,Detroit Red Wings,Detroit Red Wings,Boston Bruins,5,2,REG
+2023-11-24,Philadelphia Flyers,New York Rangers,New York Rangers,Philadelphia Flyers,3,1,REG
+2023-11-24,Chicago Blackhawks,Toronto Maple Leafs,Chicago Blackhawks,Toronto Maple Leafs,4,3,OT
+2023-11-24,Washington Capitals,Edmonton Oilers,Edmonton Oilers,Washington Capitals,4,0,REG
+2023-11-24,St. Louis Blues,Nashville Predators,Nashville Predators,St. Louis Blues,7,3,REG
+2023-11-24,New Jersey Devils,Columbus Blue Jackets,Columbus Blue Jackets,New Jersey Devils,2,1,REG
+2023-11-24,Anaheim Ducks,Los Angeles Kings,Los Angeles Kings,Anaheim Ducks,5,2,REG
+2023-11-24,San Jose Sharks,Montreal Canadiens,Montreal Canadiens,San Jose Sharks,3,2,SO
+2023-11-24,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,3,2,REG
+2023-11-25,Ottawa Senators,New York Islanders,New York Islanders,Ottawa Senators,5,3,REG
+2023-11-25,Carolina Hurricanes,Tampa Bay Lightning,Tampa Bay Lightning,Carolina Hurricanes,6,2,REG
+2023-11-25,Florida Panthers,Winnipeg Jets,Winnipeg Jets,Florida Panthers,3,0,REG
+2023-11-25,Dallas Stars,Calgary Flames,Calgary Flames,Dallas Stars,7,4,REG
+2023-11-25,Minnesota Wild,Colorado Avalanche,Colorado Avalanche,Minnesota Wild,3,2,REG
+2023-11-25,Seattle Kraken,Vancouver Canucks,Vancouver Canucks,Seattle Kraken,5,1,REG
+2023-11-25,New York Rangers,Boston Bruins,New York Rangers,Boston Bruins,7,4,REG
+2023-11-25,Los Angeles Kings,Montreal Canadiens,Los Angeles Kings,Montreal Canadiens,4,0,REG
+2023-11-26,New Jersey Devils,Buffalo Sabres,New Jersey Devils,Buffalo Sabres,6,2,REG
+2023-11-26,Pittsburgh Penguins,Toronto Maple Leafs,Pittsburgh Penguins,Toronto Maple Leafs,3,2,REG
+2023-11-26,Colorado Avalanche,Calgary Flames,Colorado Avalanche,Calgary Flames,3,1,REG
+2023-11-26,Vegas Golden Knights,Arizona Coyotes,Arizona Coyotes,Vegas Golden Knights,2,0,REG
+2023-11-26,San Jose Sharks,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,4,3,REG
+2023-11-26,Detroit Red Wings,Minnesota Wild,Detroit Red Wings,Minnesota Wild,4,1,REG
+2023-11-26,Chicago Blackhawks,St. Louis Blues,St. Louis Blues,Chicago Blackhawks,4,2,REG
+2023-11-26,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,3,2,REG
+2023-11-27,Nashville Predators,Winnipeg Jets,Nashville Predators,Winnipeg Jets,3,2,REG
+2023-11-27,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,6,2,REG
+2023-11-28,Ottawa Senators,Florida Panthers,Florida Panthers,Ottawa Senators,4,0,REG
+2023-11-28,New York Rangers,Buffalo Sabres,Buffalo Sabres,New York Rangers,5,1,REG
+2023-11-28,Columbus Blue Jackets,Boston Bruins,Columbus Blue Jackets,Boston Bruins,5,2,REG
+2023-11-28,Colorado Avalanche,Tampa Bay Lightning,Colorado Avalanche,Tampa Bay Lightning,4,1,REG
+2023-11-28,Calgary Flames,Vegas Golden Knights,Calgary Flames,Vegas Golden Knights,2,1,OT
+2023-11-28,San Jose Sharks,Washington Capitals,San Jose Sharks,Washington Capitals,2,1,REG
+2023-11-29,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,Florida Panthers,2,1,SO
+2023-11-29,New Jersey Devils,New York Islanders,New Jersey Devils,New York Islanders,5,4,REG
+2023-11-29,Philadelphia Flyers,Carolina Hurricanes,Carolina Hurricanes,Philadelphia Flyers,4,1,REG
+2023-11-29,Nashville Predators,Pittsburgh Penguins,Nashville Predators,Pittsburgh Penguins,3,2,OT
+2023-11-29,Minnesota Wild,St. Louis Blues,Minnesota Wild,St. Louis Blues,3,1,REG
+2023-11-29,Winnipeg Jets,Dallas Stars,Dallas Stars,Winnipeg Jets,2,0,REG
+2023-11-29,Chicago Blackhawks,Seattle Kraken,Chicago Blackhawks,Seattle Kraken,4,3,REG
+2023-11-29,Edmonton Oilers,Vegas Golden Knights,Edmonton Oilers,Vegas Golden Knights,5,4,SO
+2023-11-29,Arizona Coyotes,Tampa Bay Lightning,Arizona Coyotes,Tampa Bay Lightning,3,1,REG
+2023-11-29,Vancouver Canucks,Anaheim Ducks,Vancouver Canucks,Anaheim Ducks,3,1,REG
+2023-11-30,Columbus Blue Jackets,Montreal Canadiens,Montreal Canadiens,Columbus Blue Jackets,4,2,REG
+2023-11-30,New York Rangers,Detroit Red Wings,New York Rangers,Detroit Red Wings,3,2,REG
+2023-11-30,Los Angeles Kings,Washington Capitals,Washington Capitals,Los Angeles Kings,2,1,REG
+2023-12-01,Boston Bruins,San Jose Sharks,Boston Bruins,San Jose Sharks,3,0,REG
+2023-12-01,Toronto Maple Leafs,Seattle Kraken,Toronto Maple Leafs,Seattle Kraken,4,3,SO
+2023-12-01,Montreal Canadiens,Florida Panthers,Florida Panthers,Montreal Canadiens,5,1,REG
+2023-12-01,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,5,1,REG
+2023-12-01,Tampa Bay Lightning,Pittsburgh Penguins,Pittsburgh Penguins,Tampa Bay Lightning,4,2,REG
+2023-12-01,Philadelphia Flyers,New Jersey Devils,New Jersey Devils,Philadelphia Flyers,4,3,OT
+2023-12-01,Carolina Hurricanes,New York Islanders,New York Islanders,Carolina Hurricanes,5,4,OT
+2023-12-01,St. Louis Blues,Buffalo Sabres,St. Louis Blues,Buffalo Sabres,6,4,REG
+2023-12-01,Nashville Predators,Minnesota Wild,Minnesota Wild,Nashville Predators,5,1,REG
+2023-12-01,Winnipeg Jets,Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,3,1,REG
+2023-12-01,Calgary Flames,Dallas Stars,Calgary Flames,Dallas Stars,4,3,OT
+2023-12-01,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,4,3,OT
+2023-12-01,Vancouver Canucks,Vegas Golden Knights,Vegas Golden Knights,Vancouver Canucks,4,1,REG
+2023-12-01,Anaheim Ducks,Washington Capitals,Washington Capitals,Anaheim Ducks,5,4,REG
+2023-12-02,New Jersey Devils,San Jose Sharks,San Jose Sharks,New Jersey Devils,6,3,REG
+2023-12-02,Columbus Blue Jackets,Ottawa Senators,Columbus Blue Jackets,Ottawa Senators,4,2,REG
+2023-12-02,Dallas Stars,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,5,1,REG
+2023-12-02,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,3,1,REG
+2023-12-02,Nashville Predators,New York Rangers,New York Rangers,Nashville Predators,4,3,REG
+2023-12-02,Florida Panthers,New York Islanders,New York Islanders,Florida Panthers,4,3,REG
+2023-12-03,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,4,3,OT
+2023-12-03,Montreal Canadiens,Detroit Red Wings,Detroit Red Wings,Montreal Canadiens,5,4,OT
+2023-12-03,Ottawa Senators,Seattle Kraken,Ottawa Senators,Seattle Kraken,2,0,REG
+2023-12-03,Pittsburgh Penguins,Philadelphia Flyers,Philadelphia Flyers,Pittsburgh Penguins,4,3,SO
+2023-12-03,Carolina Hurricanes,Buffalo Sabres,Carolina Hurricanes,Buffalo Sabres,6,2,REG
+2023-12-03,Arizona Coyotes,St. Louis Blues,Arizona Coyotes,St. Louis Blues,4,1,REG
+2023-12-03,Calgary Flames,Vancouver Canucks,Vancouver Canucks,Calgary Flames,4,3,REG
+2023-12-03,Vegas Golden Knights,Washington Capitals,Vegas Golden Knights,Washington Capitals,4,1,REG
+2023-12-03,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,4,3,SO
+2023-12-03,Minnesota Wild,Chicago Blackhawks,Minnesota Wild,Chicago Blackhawks,4,1,REG
+2023-12-03,New York Rangers,San Jose Sharks,New York Rangers,San Jose Sharks,6,5,REG
+2023-12-04,Boston Bruins,Columbus Blue Jackets,Boston Bruins,Columbus Blue Jackets,3,1,REG
+2023-12-04,Buffalo Sabres,Nashville Predators,Nashville Predators,Buffalo Sabres,2,1,REG
+2023-12-04,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,4,1,REG
+2023-12-05,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,Dallas Stars,4,0,REG
+2023-12-05,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,2,1,OT
+2023-12-05,Montreal Canadiens,Seattle Kraken,Montreal Canadiens,Seattle Kraken,4,2,REG
+2023-12-05,Winnipeg Jets,Carolina Hurricanes,Winnipeg Jets,Carolina Hurricanes,2,1,REG
+2023-12-05,Arizona Coyotes,Washington Capitals,Arizona Coyotes,Washington Capitals,4,0,REG
+2023-12-05,Vegas Golden Knights,St. Louis Blues,St. Louis Blues,Vegas Golden Knights,2,1,OT
+2023-12-06,Ottawa Senators,New York Rangers,Ottawa Senators,New York Rangers,6,2,REG
+2023-12-06,Columbus Blue Jackets,Los Angeles Kings,Los Angeles Kings,Columbus Blue Jackets,4,3,OT
+2023-12-06,Buffalo Sabres,Detroit Red Wings,Detroit Red Wings,Buffalo Sabres,5,3,REG
+2023-12-06,New York Islanders,San Jose Sharks,San Jose Sharks,New York Islanders,5,4,OT
+2023-12-06,Chicago Blackhawks,Nashville Predators,Nashville Predators,Chicago Blackhawks,4,3,SO
+2023-12-06,Colorado Avalanche,Anaheim Ducks,Colorado Avalanche,Anaheim Ducks,3,2,REG
+2023-12-06,Calgary Flames,Minnesota Wild,Minnesota Wild,Calgary Flames,5,2,REG
+2023-12-06,Vancouver Canucks,New Jersey Devils,New Jersey Devils,Vancouver Canucks,6,5,REG
+2023-12-07,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,3,1,REG
+2023-12-07,Florida Panthers,Dallas Stars,Florida Panthers,Dallas Stars,5,4,REG
+2023-12-07,St. Louis Blues,Vegas Golden Knights,Vegas Golden Knights,St. Louis Blues,6,3,REG
+2023-12-07,Edmonton Oilers,Carolina Hurricanes,Edmonton Oilers,Carolina Hurricanes,5,1,REG
+2023-12-08,Boston Bruins,Buffalo Sabres,Buffalo Sabres,Boston Bruins,3,1,REG
+2023-12-08,Montreal Canadiens,Los Angeles Kings,Los Angeles Kings,Montreal Canadiens,4,0,REG
+2023-12-08,Ottawa Senators,Toronto Maple Leafs,Toronto Maple Leafs,Ottawa Senators,4,3,REG
+2023-12-08,Detroit Red Wings,San Jose Sharks,San Jose Sharks,Detroit Red Wings,6,5,OT
+2023-12-08,New York Islanders,Columbus Blue Jackets,New York Islanders,Columbus Blue Jackets,7,3,REG
+2023-12-08,Washington Capitals,Dallas Stars,Dallas Stars,Washington Capitals,5,4,SO
+2023-12-08,Nashville Predators,Tampa Bay Lightning,Nashville Predators,Tampa Bay Lightning,5,1,REG
+2023-12-08,Colorado Avalanche,Winnipeg Jets,Winnipeg Jets,Colorado Avalanche,4,2,REG
+2023-12-08,Calgary Flames,Carolina Hurricanes,Calgary Flames,Carolina Hurricanes,3,2,REG
+2023-12-08,Arizona Coyotes,Philadelphia Flyers,Philadelphia Flyers,Arizona Coyotes,4,1,REG
+2023-12-08,Vancouver Canucks,Minnesota Wild,Vancouver Canucks,Minnesota Wild,2,0,REG
+2023-12-08,Seattle Kraken,New Jersey Devils,New Jersey Devils,Seattle Kraken,2,1,REG
+2023-12-09,Florida Panthers,Pittsburgh Penguins,Florida Panthers,Pittsburgh Penguins,3,1,REG
+2023-12-09,Columbus Blue Jackets,St. Louis Blues,Columbus Blue Jackets,St. Louis Blues,5,2,REG
+2023-12-09,Edmonton Oilers,Minnesota Wild,Edmonton Oilers,Minnesota Wild,4,3,REG
+2023-12-09,Boston Bruins,Arizona Coyotes,Boston Bruins,Arizona Coyotes,5,3,REG
+2023-12-09,Dallas Stars,Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,5,1,REG
+2023-12-09,Calgary Flames,New Jersey Devils,New Jersey Devils,Calgary Flames,4,2,REG
+2023-12-10,Buffalo Sabres,Montreal Canadiens,Montreal Canadiens,Buffalo Sabres,3,2,SO
+2023-12-10,Toronto Maple Leafs,Nashville Predators,Toronto Maple Leafs,Nashville Predators,4,0,REG
+2023-12-10,Detroit Red Wings,Ottawa Senators,Ottawa Senators,Detroit Red Wings,5,1,REG
+2023-12-10,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,4,0,REG
+2023-12-10,New York Islanders,Los Angeles Kings,New York Islanders,Los Angeles Kings,3,2,OT
+2023-12-10,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,3,1,REG
+2023-12-10,Colorado Avalanche,Philadelphia Flyers,Philadelphia Flyers,Colorado Avalanche,5,2,REG
+2023-12-10,Vancouver Canucks,Carolina Hurricanes,Vancouver Canucks,Carolina Hurricanes,4,3,REG
+2023-12-10,Seattle Kraken,Tampa Bay Lightning,Tampa Bay Lightning,Seattle Kraken,4,3,OT
+2023-12-10,Columbus Blue Jackets,Florida Panthers,Florida Panthers,Columbus Blue Jackets,5,2,REG
+2023-12-10,Edmonton Oilers,New Jersey Devils,Edmonton Oilers,New Jersey Devils,4,1,REG
+2023-12-11,Montreal Canadiens,Nashville Predators,Nashville Predators,Montreal Canadiens,2,1,REG
+2023-12-11,New York Rangers,Los Angeles Kings,New York Rangers,Los Angeles Kings,4,1,REG
+2023-12-11,Chicago Blackhawks,Washington Capitals,Washington Capitals,Chicago Blackhawks,4,2,REG
+2023-12-11,Anaheim Ducks,Winnipeg Jets,Winnipeg Jets,Anaheim Ducks,4,2,REG
+2023-12-11,Seattle Kraken,Minnesota Wild,Minnesota Wild,Seattle Kraken,3,0,REG
+2023-12-11,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,5,4,SO
+2023-12-12,Buffalo Sabres,Arizona Coyotes,Buffalo Sabres,Arizona Coyotes,5,2,REG
+2023-12-12,New York Islanders,Toronto Maple Leafs,New York Islanders,Toronto Maple Leafs,4,3,OT
+2023-12-12,Dallas Stars,Detroit Red Wings,Dallas Stars,Detroit Red Wings,6,3,REG
+2023-12-12,Colorado Avalanche,Calgary Flames,Colorado Avalanche,Calgary Flames,6,5,REG
+2023-12-13,Ottawa Senators,Carolina Hurricanes,Carolina Hurricanes,Ottawa Senators,4,1,REG
+2023-12-13,New York Rangers,Toronto Maple Leafs,Toronto Maple Leafs,New York Rangers,7,3,REG
+2023-12-13,Pittsburgh Penguins,Arizona Coyotes,Pittsburgh Penguins,Arizona Coyotes,4,2,REG
+2023-12-13,St. Louis Blues,Detroit Red Wings,Detroit Red Wings,St. Louis Blues,6,4,REG
+2023-12-13,Nashville Predators,Philadelphia Flyers,Nashville Predators,Philadelphia Flyers,3,2,OT
+2023-12-13,Vancouver Canucks,Tampa Bay Lightning,Vancouver Canucks,Tampa Bay Lightning,4,1,REG
+2023-12-13,Vegas Golden Knights,Calgary Flames,Vegas Golden Knights,Calgary Flames,5,4,OT
+2023-12-13,Seattle Kraken,Florida Panthers,Seattle Kraken,Florida Panthers,4,0,REG
+2023-12-13,Edmonton Oilers,Chicago Blackhawks,Edmonton Oilers,Chicago Blackhawks,4,1,REG
+2023-12-13,San Jose Sharks,Winnipeg Jets,San Jose Sharks,Winnipeg Jets,2,1,REG
+2023-12-14,Montreal Canadiens,Pittsburgh Penguins,Pittsburgh Penguins,Montreal Canadiens,4,3,SO
+2023-12-14,New Jersey Devils,Boston Bruins,New Jersey Devils,Boston Bruins,2,1,OT
+2023-12-14,New York Islanders,Anaheim Ducks,New York Islanders,Anaheim Ducks,4,3,REG
+2023-12-14,Colorado Avalanche,Buffalo Sabres,Colorado Avalanche,Buffalo Sabres,5,1,REG
+2023-12-14,Los Angeles Kings,Winnipeg Jets,Winnipeg Jets,Los Angeles Kings,5,2,REG
+2023-12-15,Toronto Maple Leafs,Columbus Blue Jackets,Columbus Blue Jackets,Toronto Maple Leafs,6,5,OT
+2023-12-15,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,Washington Capitals,4,3,SO
+2023-12-15,Detroit Red Wings,Carolina Hurricanes,Carolina Hurricanes,Detroit Red Wings,2,1,REG
+2023-12-15,St. Louis Blues,Ottawa Senators,St. Louis Blues,Ottawa Senators,4,2,REG
+2023-12-15,Minnesota Wild,Calgary Flames,Minnesota Wild,Calgary Flames,3,2,SO
+2023-12-15,Edmonton Oilers,Tampa Bay Lightning,Tampa Bay Lightning,Edmonton Oilers,7,4,REG
+2023-12-15,Vancouver Canucks,Florida Panthers,Vancouver Canucks,Florida Panthers,4,0,REG
+2023-12-15,Seattle Kraken,Chicago Blackhawks,Seattle Kraken,Chicago Blackhawks,5,1,REG
+2023-12-16,New York Rangers,Anaheim Ducks,New York Rangers,Anaheim Ducks,5,1,REG
+2023-12-16,Carolina Hurricanes,Nashville Predators,Nashville Predators,Carolina Hurricanes,6,5,OT
+2023-12-16,New York Islanders,Boston Bruins,Boston Bruins,New York Islanders,5,4,SO
+2023-12-16,Dallas Stars,Ottawa Senators,Dallas Stars,Ottawa Senators,5,4,REG
+2023-12-16,Vegas Golden Knights,Buffalo Sabres,Buffalo Sabres,Vegas Golden Knights,5,2,REG
+2023-12-16,Minnesota Wild,Vancouver Canucks,Minnesota Wild,Vancouver Canucks,2,1,SO
+2023-12-17,Boston Bruins,New York Rangers,New York Rangers,Boston Bruins,2,1,OT
+2023-12-17,Toronto Maple Leafs,Pittsburgh Penguins,Toronto Maple Leafs,Pittsburgh Penguins,4,0,REG
+2023-12-17,Montreal Canadiens,New York Islanders,Montreal Canadiens,New York Islanders,5,3,REG
+2023-12-17,Columbus Blue Jackets,New Jersey Devils,New Jersey Devils,Columbus Blue Jackets,6,3,REG
+2023-12-17,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,6,2,REG
+2023-12-17,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,4,3,OT
+2023-12-17,Nashville Predators,Washington Capitals,Nashville Predators,Washington Capitals,3,1,REG
+2023-12-17,Arizona Coyotes,Buffalo Sabres,Arizona Coyotes,Buffalo Sabres,2,0,REG
+2023-12-17,Calgary Flames,Tampa Bay Lightning,Calgary Flames,Tampa Bay Lightning,4,2,REG
+2023-12-17,Edmonton Oilers,Florida Panthers,Florida Panthers,Edmonton Oilers,5,1,REG
+2023-12-17,Seattle Kraken,Los Angeles Kings,Los Angeles Kings,Seattle Kraken,3,2,SO
+2023-12-17,Chicago Blackhawks,Vancouver Canucks,Vancouver Canucks,Chicago Blackhawks,4,3,REG
+2023-12-17,Carolina Hurricanes,Washington Capitals,Washington Capitals,Carolina Hurricanes,2,1,SO
+2023-12-18,New Jersey Devils,Anaheim Ducks,Anaheim Ducks,New Jersey Devils,5,1,REG
+2023-12-18,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,6,2,REG
+2023-12-18,Vegas Golden Knights,Ottawa Senators,Vegas Golden Knights,Ottawa Senators,6,3,REG
+2023-12-19,Detroit Red Wings,Anaheim Ducks,Anaheim Ducks,Detroit Red Wings,4,3,REG
+2023-12-19,Pittsburgh Penguins,Minnesota Wild,Pittsburgh Penguins,Minnesota Wild,4,3,REG
+2023-12-19,Winnipeg Jets,Montreal Canadiens,Montreal Canadiens,Winnipeg Jets,3,2,OT
+2023-12-19,Dallas Stars,Seattle Kraken,Dallas Stars,Seattle Kraken,4,3,OT
+2023-12-19,Calgary Flames,Florida Panthers,Calgary Flames,Florida Panthers,3,1,REG
+2023-12-20,Boston Bruins,Minnesota Wild,Minnesota Wild,Boston Bruins,4,3,OT
+2023-12-20,Buffalo Sabres,Columbus Blue Jackets,Columbus Blue Jackets,Buffalo Sabres,8,4,REG
+2023-12-20,Toronto Maple Leafs,New York Rangers,New York Rangers,Toronto Maple Leafs,5,2,REG
+2023-12-20,Tampa Bay Lightning,St. Louis Blues,Tampa Bay Lightning,St. Louis Blues,5,1,REG
+2023-12-20,New Jersey Devils,Philadelphia Flyers,Philadelphia Flyers,New Jersey Devils,3,2,OT
+2023-12-20,Carolina Hurricanes,Vegas Golden Knights,Carolina Hurricanes,Vegas Golden Knights,6,3,REG
+2023-12-20,New York Islanders,Edmonton Oilers,New York Islanders,Edmonton Oilers,3,1,REG
+2023-12-20,Nashville Predators,Vancouver Canucks,Vancouver Canucks,Nashville Predators,5,2,REG
+2023-12-20,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,3,2,REG
+2023-12-20,Arizona Coyotes,Ottawa Senators,Arizona Coyotes,Ottawa Senators,4,3,REG
+2023-12-20,San Jose Sharks,Los Angeles Kings,Los Angeles Kings,San Jose Sharks,4,1,REG
+2023-12-21,Washington Capitals,New York Islanders,Washington Capitals,New York Islanders,3,2,OT
+2023-12-21,Winnipeg Jets,Detroit Red Wings,Winnipeg Jets,Detroit Red Wings,5,2,REG
+2023-12-21,Los Angeles Kings,Seattle Kraken,Seattle Kraken,Los Angeles Kings,2,1,REG
+2023-12-22,Buffalo Sabres,Toronto Maple Leafs,Buffalo Sabres,Toronto Maple Leafs,7,3,REG
+2023-12-22,Tampa Bay Lightning,Vegas Golden Knights,Tampa Bay Lightning,Vegas Golden Knights,5,4,REG
+2023-12-22,Florida Panthers,St. Louis Blues,St. Louis Blues,Florida Panthers,4,1,REG
+2023-12-22,Philadelphia Flyers,Nashville Predators,Nashville Predators,Philadelphia Flyers,4,2,REG
+2023-12-22,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,2,1,SO
+2023-12-22,Columbus Blue Jackets,Washington Capitals,Washington Capitals,Columbus Blue Jackets,3,2,OT
+2023-12-22,New Jersey Devils,Edmonton Oilers,Edmonton Oilers,New Jersey Devils,6,3,REG
+2023-12-22,Dallas Stars,Vancouver Canucks,Dallas Stars,Vancouver Canucks,4,3,OT
+2023-12-22,Minnesota Wild,Montreal Canadiens,Minnesota Wild,Montreal Canadiens,4,3,OT
+2023-12-22,Colorado Avalanche,Ottawa Senators,Colorado Avalanche,Ottawa Senators,6,4,REG
+2023-12-22,Anaheim Ducks,Calgary Flames,Calgary Flames,Anaheim Ducks,3,0,REG
+2023-12-22,San Jose Sharks,Arizona Coyotes,Arizona Coyotes,San Jose Sharks,5,2,REG
+2023-12-23,Detroit Red Wings,Philadelphia Flyers,Detroit Red Wings,Philadelphia Flyers,7,6,SO
+2023-12-23,New York Rangers,Edmonton Oilers,Edmonton Oilers,New York Rangers,4,3,REG
+2023-12-23,Winnipeg Jets,Boston Bruins,Winnipeg Jets,Boston Bruins,5,1,REG
+2023-12-23,Chicago Blackhawks,Montreal Canadiens,Montreal Canadiens,Chicago Blackhawks,5,2,REG
+2023-12-23,Nashville Predators,Dallas Stars,Dallas Stars,Nashville Predators,3,2,REG
+2023-12-23,Florida Panthers,Vegas Golden Knights,Florida Panthers,Vegas Golden Knights,4,2,REG
+2023-12-24,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,5,4,OT
+2023-12-24,New Jersey Devils,Detroit Red Wings,New Jersey Devils,Detroit Red Wings,3,2,REG
+2023-12-24,Washington Capitals,Tampa Bay Lightning,Tampa Bay Lightning,Washington Capitals,2,1,SO
+2023-12-24,Columbus Blue Jackets,Toronto Maple Leafs,Toronto Maple Leafs,Columbus Blue Jackets,4,1,REG
+2023-12-24,Minnesota Wild,Boston Bruins,Minnesota Wild,Boston Bruins,3,2,REG
+2023-12-24,Carolina Hurricanes,New York Islanders,New York Islanders,Carolina Hurricanes,5,4,REG
+2023-12-24,New York Rangers,Buffalo Sabres,New York Rangers,Buffalo Sabres,4,3,OT
+2023-12-24,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,7,5,REG
+2023-12-24,Anaheim Ducks,Seattle Kraken,Seattle Kraken,Anaheim Ducks,3,2,REG
+2023-12-24,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,4,1,REG
+2023-12-24,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,San Jose Sharks,7,4,REG
+2023-12-24,Los Angeles Kings,Calgary Flames,Los Angeles Kings,Calgary Flames,5,3,REG
+2023-12-28,Toronto Maple Leafs,Ottawa Senators,Ottawa Senators,Toronto Maple Leafs,4,2,REG
+2023-12-28,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,3,2,REG
+2023-12-28,New Jersey Devils,Columbus Blue Jackets,New Jersey Devils,Columbus Blue Jackets,4,3,OT
+2023-12-28,New York Rangers,Washington Capitals,New York Rangers,Washington Capitals,5,1,REG
+2023-12-28,Buffalo Sabres,Boston Bruins,Boston Bruins,Buffalo Sabres,4,1,REG
+2023-12-28,New York Islanders,Pittsburgh Penguins,Pittsburgh Penguins,New York Islanders,4,0,REG
+2023-12-28,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,2,1,REG
+2023-12-28,Nashville Predators,Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,5,2,REG
+2023-12-28,Minnesota Wild,Detroit Red Wings,Minnesota Wild,Detroit Red Wings,6,3,REG
+2023-12-28,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,2,1,OT
+2023-12-28,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,5,4,OT
+2023-12-28,Calgary Flames,Seattle Kraken,Seattle Kraken,Calgary Flames,2,1,REG
+2023-12-28,Anaheim Ducks,Vegas Golden Knights,Anaheim Ducks,Vegas Golden Knights,5,2,REG
+2023-12-28,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,San Jose Sharks,5,1,REG
+2023-12-29,Carolina Hurricanes,Montreal Canadiens,Carolina Hurricanes,Montreal Canadiens,5,3,REG
+2023-12-29,Vancouver Canucks,Philadelphia Flyers,Philadelphia Flyers,Vancouver Canucks,4,1,REG
+2023-12-29,Vegas Golden Knights,Los Angeles Kings,Vegas Golden Knights,Los Angeles Kings,3,2,REG
+2023-12-29,San Jose Sharks,Edmonton Oilers,Edmonton Oilers,San Jose Sharks,4,0,REG
+2023-12-30,Ottawa Senators,New Jersey Devils,New Jersey Devils,Ottawa Senators,6,2,REG
+2023-12-30,Detroit Red Wings,Nashville Predators,Detroit Red Wings,Nashville Predators,5,4,OT
+2023-12-30,Florida Panthers,New York Rangers,Florida Panthers,New York Rangers,4,3,REG
+2023-12-30,Columbus Blue Jackets,Toronto Maple Leafs,Columbus Blue Jackets,Toronto Maple Leafs,6,5,OT
+2023-12-30,New York Islanders,Washington Capitals,New York Islanders,Washington Capitals,5,1,REG
+2023-12-30,St. Louis Blues,Colorado Avalanche,Colorado Avalanche,St. Louis Blues,2,1,REG
+2023-12-30,Dallas Stars,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,5,4,OT
+2023-12-30,Anaheim Ducks,Arizona Coyotes,Arizona Coyotes,Anaheim Ducks,2,0,REG
+2023-12-30,Seattle Kraken,Philadelphia Flyers,Seattle Kraken,Philadelphia Flyers,2,1,OT
+2023-12-30,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,4,2,REG
+2023-12-30,Buffalo Sabres,Columbus Blue Jackets,Buffalo Sabres,Columbus Blue Jackets,3,2,OT
+2023-12-31,Boston Bruins,New Jersey Devils,Boston Bruins,New Jersey Devils,5,2,REG
+2023-12-31,Toronto Maple Leafs,Carolina Hurricanes,Carolina Hurricanes,Toronto Maple Leafs,3,2,REG
+2023-12-31,Tampa Bay Lightning,New York Rangers,New York Rangers,Tampa Bay Lightning,5,1,REG
+2023-12-31,Florida Panthers,Montreal Canadiens,Florida Panthers,Montreal Canadiens,4,1,REG
+2023-12-31,Pittsburgh Penguins,St. Louis Blues,Pittsburgh Penguins,St. Louis Blues,4,2,REG
+2023-12-31,Washington Capitals,Nashville Predators,Nashville Predators,Washington Capitals,3,2,SO
+2023-12-31,Los Angeles Kings,Edmonton Oilers,Edmonton Oilers,Los Angeles Kings,3,2,SO
+2023-12-31,Minnesota Wild,Winnipeg Jets,Winnipeg Jets,Minnesota Wild,3,2,REG
+2023-12-31,Detroit Red Wings,Boston Bruins,Boston Bruins,Detroit Red Wings,5,3,REG
+2023-12-31,Ottawa Senators,Buffalo Sabres,Ottawa Senators,Buffalo Sabres,5,1,REG
+2023-12-31,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,New York Islanders,3,1,REG
+2024-01-01,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,4,3,REG
+2024-01-01,Dallas Stars,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,5,1,REG
+2024-01-01,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,3,1,REG
+2024-01-01,Calgary Flames,Philadelphia Flyers,Calgary Flames,Philadelphia Flyers,4,3,REG
+2024-01-01,Anaheim Ducks,Edmonton Oilers,Edmonton Oilers,Anaheim Ducks,6,2,REG
+2024-01-01,Seattle Kraken,Vegas Golden Knights,Seattle Kraken,Vegas Golden Knights,3,0,REG
+2024-01-03,New York Rangers,Carolina Hurricanes,Carolina Hurricanes,New York Rangers,5,1,REG
+2024-01-03,Columbus Blue Jackets,Boston Bruins,Boston Bruins,Columbus Blue Jackets,4,1,REG
+2024-01-03,Pittsburgh Penguins,Washington Capitals,Washington Capitals,Pittsburgh Penguins,4,3,REG
+2024-01-03,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,3,0,REG
+2024-01-03,Dallas Stars,Montreal Canadiens,Montreal Canadiens,Dallas Stars,4,3,REG
+2024-01-03,Minnesota Wild,Calgary Flames,Calgary Flames,Minnesota Wild,3,1,REG
+2024-01-03,Winnipeg Jets,Tampa Bay Lightning,Winnipeg Jets,Tampa Bay Lightning,4,2,REG
+2024-01-03,Colorado Avalanche,New York Islanders,Colorado Avalanche,New York Islanders,5,4,OT
+2024-01-03,Edmonton Oilers,Philadelphia Flyers,Edmonton Oilers,Philadelphia Flyers,5,2,REG
+2024-01-03,Arizona Coyotes,Florida Panthers,Florida Panthers,Arizona Coyotes,4,1,REG
+2024-01-03,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,Ottawa Senators,6,3,REG
+2024-01-03,Los Angeles Kings,Toronto Maple Leafs,Toronto Maple Leafs,Los Angeles Kings,3,0,REG
+2024-01-03,San Jose Sharks,Detroit Red Wings,Detroit Red Wings,San Jose Sharks,5,3,REG
+2024-01-04,Washington Capitals,New Jersey Devils,New Jersey Devils,Washington Capitals,6,3,REG
+2024-01-04,Anaheim Ducks,Toronto Maple Leafs,Toronto Maple Leafs,Anaheim Ducks,2,1,OT
+2024-01-05,Boston Bruins,Pittsburgh Penguins,Pittsburgh Penguins,Boston Bruins,6,5,REG
+2024-01-05,Montreal Canadiens,Buffalo Sabres,Buffalo Sabres,Montreal Canadiens,5,1,REG
+2024-01-05,New York Rangers,Chicago Blackhawks,New York Rangers,Chicago Blackhawks,4,1,REG
+2024-01-05,Philadelphia Flyers,Columbus Blue Jackets,Columbus Blue Jackets,Philadelphia Flyers,3,2,SO
+2024-01-05,St. Louis Blues,Vancouver Canucks,St. Louis Blues,Vancouver Canucks,2,1,REG
+2024-01-05,Nashville Predators,Calgary Flames,Calgary Flames,Nashville Predators,6,3,REG
+2024-01-05,Dallas Stars,Colorado Avalanche,Colorado Avalanche,Dallas Stars,5,4,OT
+2024-01-05,Minnesota Wild,Tampa Bay Lightning,Tampa Bay Lightning,Minnesota Wild,4,1,REG
+2024-01-05,Arizona Coyotes,New York Islanders,New York Islanders,Arizona Coyotes,5,1,REG
+2024-01-05,Vegas Golden Knights,Florida Panthers,Florida Panthers,Vegas Golden Knights,4,1,REG
+2024-01-05,Seattle Kraken,Ottawa Senators,Seattle Kraken,Ottawa Senators,4,1,REG
+2024-01-05,Los Angeles Kings,Detroit Red Wings,Detroit Red Wings,Los Angeles Kings,4,3,SO
+2024-01-05,San Jose Sharks,Winnipeg Jets,Winnipeg Jets,San Jose Sharks,2,1,REG
+2024-01-06,New Jersey Devils,Chicago Blackhawks,New Jersey Devils,Chicago Blackhawks,4,2,REG
+2024-01-06,Washington Capitals,Carolina Hurricanes,Carolina Hurricanes,Washington Capitals,6,2,REG
+2024-01-06,Anaheim Ducks,Winnipeg Jets,Winnipeg Jets,Anaheim Ducks,3,1,REG
+2024-01-06,Philadelphia Flyers,Calgary Flames,Philadelphia Flyers,Calgary Flames,3,2,REG
+2024-01-06,Colorado Avalanche,Florida Panthers,Florida Panthers,Colorado Avalanche,8,4,REG
+2024-01-07,Boston Bruins,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,7,3,REG
+2024-01-07,Montreal Canadiens,New York Rangers,Montreal Canadiens,New York Rangers,4,3,SO
+2024-01-07,New Jersey Devils,Vancouver Canucks,Vancouver Canucks,New Jersey Devils,6,4,REG
+2024-01-07,Pittsburgh Penguins,Buffalo Sabres,Buffalo Sabres,Pittsburgh Penguins,3,1,REG
+2024-01-07,Columbus Blue Jackets,Minnesota Wild,Minnesota Wild,Columbus Blue Jackets,4,3,OT
+2024-01-07,San Jose Sharks,Toronto Maple Leafs,Toronto Maple Leafs,San Jose Sharks,4,1,REG
+2024-01-07,Carolina Hurricanes,St. Louis Blues,St. Louis Blues,Carolina Hurricanes,2,1,SO
+2024-01-07,Dallas Stars,Nashville Predators,Nashville Predators,Dallas Stars,4,3,REG
+2024-01-07,Edmonton Oilers,Ottawa Senators,Edmonton Oilers,Ottawa Senators,3,1,REG
+2024-01-07,Vegas Golden Knights,New York Islanders,Vegas Golden Knights,New York Islanders,5,2,REG
+2024-01-07,Washington Capitals,Los Angeles Kings,Washington Capitals,Los Angeles Kings,4,3,REG
+2024-01-07,Chicago Blackhawks,Calgary Flames,Chicago Blackhawks,Calgary Flames,4,3,REG
+2024-01-08,Arizona Coyotes,Winnipeg Jets,Winnipeg Jets,Arizona Coyotes,6,2,REG
+2024-01-08,Anaheim Ducks,Detroit Red Wings,Detroit Red Wings,Anaheim Ducks,3,2,REG
+2024-01-09,New York Rangers,Vancouver Canucks,Vancouver Canucks,New York Rangers,6,3,REG
+2024-01-09,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,4,1,REG
+2024-01-09,Minnesota Wild,Dallas Stars,Dallas Stars,Minnesota Wild,4,0,REG
+2024-01-09,Colorado Avalanche,Boston Bruins,Colorado Avalanche,Boston Bruins,4,3,SO
+2024-01-10,Buffalo Sabres,Seattle Kraken,Seattle Kraken,Buffalo Sabres,5,2,REG
+2024-01-10,Toronto Maple Leafs,San Jose Sharks,Toronto Maple Leafs,San Jose Sharks,5,1,REG
+2024-01-10,Tampa Bay Lightning,Los Angeles Kings,Tampa Bay Lightning,Los Angeles Kings,3,2,OT
+2024-01-10,New York Islanders,Vancouver Canucks,Vancouver Canucks,New York Islanders,5,2,REG
+2024-01-10,St. Louis Blues,Florida Panthers,Florida Panthers,St. Louis Blues,5,1,REG
+2024-01-10,Nashville Predators,Anaheim Ducks,Anaheim Ducks,Nashville Predators,5,3,REG
+2024-01-10,Winnipeg Jets,Columbus Blue Jackets,Winnipeg Jets,Columbus Blue Jackets,4,0,REG
+2024-01-10,Chicago Blackhawks,Edmonton Oilers,Edmonton Oilers,Chicago Blackhawks,2,1,REG
+2024-01-10,Calgary Flames,Ottawa Senators,Calgary Flames,Ottawa Senators,6,3,REG
+2024-01-10,Arizona Coyotes,Boston Bruins,Arizona Coyotes,Boston Bruins,4,3,OT
+2024-01-11,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,3,2,SO
+2024-01-11,Dallas Stars,Minnesota Wild,Dallas Stars,Minnesota Wild,6,2,REG
+2024-01-11,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,3,0,REG
+2024-01-12,Buffalo Sabres,Ottawa Senators,Buffalo Sabres,Ottawa Senators,5,3,REG
+2024-01-12,Montreal Canadiens,San Jose Sharks,San Jose Sharks,Montreal Canadiens,3,2,REG
+2024-01-12,Detroit Red Wings,Edmonton Oilers,Edmonton Oilers,Detroit Red Wings,3,2,OT
+2024-01-12,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,4,3,OT
+2024-01-12,Florida Panthers,Los Angeles Kings,Florida Panthers,Los Angeles Kings,3,2,OT
+2024-01-12,Pittsburgh Penguins,Vancouver Canucks,Vancouver Canucks,Pittsburgh Penguins,4,3,OT
+2024-01-12,Washington Capitals,Seattle Kraken,Seattle Kraken,Washington Capitals,4,1,REG
+2024-01-12,Carolina Hurricanes,Anaheim Ducks,Carolina Hurricanes,Anaheim Ducks,6,3,REG
+2024-01-12,New York Islanders,Toronto Maple Leafs,New York Islanders,Toronto Maple Leafs,4,3,OT
+2024-01-12,St. Louis Blues,New York Rangers,St. Louis Blues,New York Rangers,5,2,REG
+2024-01-12,Winnipeg Jets,Chicago Blackhawks,Winnipeg Jets,Chicago Blackhawks,2,1,REG
+2024-01-12,Arizona Coyotes,Calgary Flames,Calgary Flames,Arizona Coyotes,6,2,REG
+2024-01-12,Vegas Golden Knights,Boston Bruins,Vegas Golden Knights,Boston Bruins,2,1,OT
+2024-01-13,Dallas Stars,Nashville Predators,Nashville Predators,Dallas Stars,6,3,REG
+2024-01-13,Minnesota Wild,Philadelphia Flyers,Philadelphia Flyers,Minnesota Wild,4,3,OT
+2024-01-13,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,3,2,REG
+2024-01-13,Ottawa Senators,San Jose Sharks,Ottawa Senators,San Jose Sharks,5,4,REG
+2024-01-13,Florida Panthers,New Jersey Devils,New Jersey Devils,Florida Panthers,4,1,REG
+2024-01-14,Toronto Maple Leafs,Colorado Avalanche,Colorado Avalanche,Toronto Maple Leafs,5,3,REG
+2024-01-14,Montreal Canadiens,Edmonton Oilers,Edmonton Oilers,Montreal Canadiens,2,1,OT
+2024-01-14,Detroit Red Wings,Los Angeles Kings,Detroit Red Wings,Los Angeles Kings,5,3,REG
+2024-01-14,Tampa Bay Lightning,Anaheim Ducks,Tampa Bay Lightning,Anaheim Ducks,5,1,REG
+2024-01-14,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,3,2,OT
+2024-01-14,Columbus Blue Jackets,Seattle Kraken,Seattle Kraken,Columbus Blue Jackets,7,4,REG
+2024-01-14,Winnipeg Jets,Philadelphia Flyers,Philadelphia Flyers,Winnipeg Jets,2,0,REG
+2024-01-14,Chicago Blackhawks,Dallas Stars,Dallas Stars,Chicago Blackhawks,3,1,REG
+2024-01-14,St. Louis Blues,Boston Bruins,Boston Bruins,St. Louis Blues,4,3,OT
+2024-01-14,Nashville Predators,New York Islanders,Nashville Predators,New York Islanders,3,1,REG
+2024-01-14,Minnesota Wild,Arizona Coyotes,Arizona Coyotes,Minnesota Wild,4,0,REG
+2024-01-14,Vegas Golden Knights,Calgary Flames,Calgary Flames,Vegas Golden Knights,3,1,REG
+2024-01-14,New York Rangers,Washington Capitals,New York Rangers,Washington Capitals,2,1,REG
+2024-01-15,Toronto Maple Leafs,Detroit Red Wings,Detroit Red Wings,Toronto Maple Leafs,4,2,REG
+2024-01-15,Buffalo Sabres,San Jose Sharks,Buffalo Sabres,San Jose Sharks,3,0,REG
+2024-01-15,Boston Bruins,New Jersey Devils,Boston Bruins,New Jersey Devils,3,0,REG
+2024-01-15,Florida Panthers,Anaheim Ducks,Anaheim Ducks,Florida Panthers,5,4,OT
+2024-01-15,Columbus Blue Jackets,Vancouver Canucks,Columbus Blue Jackets,Vancouver Canucks,4,3,SO
+2024-01-15,Pittsburgh Penguins,Seattle Kraken,Pittsburgh Penguins,Seattle Kraken,3,0,REG
+2024-01-15,Carolina Hurricanes,Los Angeles Kings,Los Angeles Kings,Carolina Hurricanes,5,2,REG
+2024-01-15,Minnesota Wild,New York Islanders,Minnesota Wild,New York Islanders,4,0,REG
+2024-01-15,Vegas Golden Knights,Nashville Predators,Vegas Golden Knights,Nashville Predators,4,1,REG
+2024-01-16,Montreal Canadiens,Colorado Avalanche,Montreal Canadiens,Colorado Avalanche,4,3,REG
+2024-01-16,St. Louis Blues,Philadelphia Flyers,Philadelphia Flyers,St. Louis Blues,4,2,REG
+2024-01-17,Ottawa Senators,Colorado Avalanche,Colorado Avalanche,Ottawa Senators,7,4,REG
+2024-01-17,New York Rangers,Seattle Kraken,New York Rangers,Seattle Kraken,5,2,REG
+2024-01-17,Washington Capitals,Anaheim Ducks,Washington Capitals,Anaheim Ducks,2,0,REG
+2024-01-17,Dallas Stars,Los Angeles Kings,Dallas Stars,Los Angeles Kings,5,1,REG
+2024-01-17,Winnipeg Jets,New York Islanders,Winnipeg Jets,New York Islanders,4,2,REG
+2024-01-17,Chicago Blackhawks,San Jose Sharks,Chicago Blackhawks,San Jose Sharks,2,1,SO
+2024-01-17,Calgary Flames,Arizona Coyotes,Calgary Flames,Arizona Coyotes,3,2,OT
+2024-01-17,Edmonton Oilers,Toronto Maple Leafs,Edmonton Oilers,Toronto Maple Leafs,4,2,REG
+2024-01-18,Florida Panthers,Detroit Red Wings,Detroit Red Wings,Florida Panthers,3,2,OT
+2024-01-18,New Jersey Devils,Montreal Canadiens,Montreal Canadiens,New Jersey Devils,3,2,REG
+2024-01-19,Boston Bruins,Colorado Avalanche,Boston Bruins,Colorado Avalanche,5,2,REG
+2024-01-19,Ottawa Senators,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,6,2,REG
+2024-01-19,Tampa Bay Lightning,Minnesota Wild,Tampa Bay Lightning,Minnesota Wild,7,3,REG
+2024-01-19,Philadelphia Flyers,Dallas Stars,Philadelphia Flyers,Dallas Stars,5,1,REG
+2024-01-19,Washington Capitals,St. Louis Blues,Washington Capitals,St. Louis Blues,5,2,REG
+2024-01-19,Buffalo Sabres,Chicago Blackhawks,Buffalo Sabres,Chicago Blackhawks,3,0,REG
+2024-01-19,Calgary Flames,Toronto Maple Leafs,Toronto Maple Leafs,Calgary Flames,4,3,REG
+2024-01-19,Edmonton Oilers,Seattle Kraken,Edmonton Oilers,Seattle Kraken,4,2,REG
+2024-01-19,Los Angeles Kings,Nashville Predators,Nashville Predators,Los Angeles Kings,2,1,REG
+2024-01-19,Vancouver Canucks,Arizona Coyotes,Vancouver Canucks,Arizona Coyotes,2,1,REG
+2024-01-19,Vegas Golden Knights,New York Rangers,Vegas Golden Knights,New York Rangers,5,1,REG
+2024-01-20,Florida Panthers,Minnesota Wild,Minnesota Wild,Florida Panthers,6,4,REG
+2024-01-20,Carolina Hurricanes,Detroit Red Wings,Carolina Hurricanes,Detroit Red Wings,4,2,REG
+2024-01-20,Columbus Blue Jackets,New Jersey Devils,New Jersey Devils,Columbus Blue Jackets,4,1,REG
+2024-01-20,Chicago Blackhawks,New York Islanders,Chicago Blackhawks,New York Islanders,4,3,OT
+2024-01-20,Buffalo Sabres,Tampa Bay Lightning,Tampa Bay Lightning,Buffalo Sabres,3,1,REG
+2024-01-20,Philadelphia Flyers,Colorado Avalanche,Colorado Avalanche,Philadelphia Flyers,7,4,REG
+2024-01-20,Ottawa Senators,Winnipeg Jets,Winnipeg Jets,Ottawa Senators,2,1,OT
+2024-01-20,Arizona Coyotes,Nashville Predators,Arizona Coyotes,Nashville Predators,3,2,REG
+2024-01-21,Boston Bruins,Montreal Canadiens,Boston Bruins,Montreal Canadiens,8,4,REG
+2024-01-21,New Jersey Devils,Dallas Stars,Dallas Stars,New Jersey Devils,6,2,REG
+2024-01-21,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,6,4,REG
+2024-01-21,St. Louis Blues,Washington Capitals,St. Louis Blues,Washington Capitals,3,0,REG
+2024-01-21,Calgary Flames,Edmonton Oilers,Edmonton Oilers,Calgary Flames,3,1,REG
+2024-01-21,Vegas Golden Knights,Pittsburgh Penguins,Vegas Golden Knights,Pittsburgh Penguins,3,2,REG
+2024-01-21,San Jose Sharks,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,5,3,REG
+2024-01-21,Los Angeles Kings,New York Rangers,Los Angeles Kings,New York Rangers,2,1,REG
+2024-01-21,Philadelphia Flyers,Ottawa Senators,Ottawa Senators,Philadelphia Flyers,5,3,REG
+2024-01-21,Carolina Hurricanes,Minnesota Wild,Minnesota Wild,Carolina Hurricanes,5,2,REG
+2024-01-22,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,2,1,REG
+2024-01-22,New York Islanders,Dallas Stars,New York Islanders,Dallas Stars,3,2,OT
+2024-01-22,Anaheim Ducks,New York Rangers,New York Rangers,Anaheim Ducks,5,2,REG
+2024-01-22,Seattle Kraken,Toronto Maple Leafs,Toronto Maple Leafs,Seattle Kraken,3,1,REG
+2024-01-23,Boston Bruins,Winnipeg Jets,Boston Bruins,Winnipeg Jets,4,1,REG
+2024-01-23,New Jersey Devils,Vegas Golden Knights,New Jersey Devils,Vegas Golden Knights,6,5,OT
+2024-01-23,Nashville Predators,Florida Panthers,Florida Panthers,Nashville Predators,4,1,REG
+2024-01-23,Arizona Coyotes,Pittsburgh Penguins,Arizona Coyotes,Pittsburgh Penguins,5,2,REG
+2024-01-23,Vancouver Canucks,Chicago Blackhawks,Vancouver Canucks,Chicago Blackhawks,2,0,REG
+2024-01-23,Los Angeles Kings,San Jose Sharks,San Jose Sharks,Los Angeles Kings,4,3,SO
+2024-01-24,Montreal Canadiens,Ottawa Senators,Ottawa Senators,Montreal Canadiens,4,1,REG
+2024-01-24,Detroit Red Wings,Dallas Stars,Dallas Stars,Detroit Red Wings,5,4,REG
+2024-01-24,Philadelphia Flyers,Tampa Bay Lightning,Tampa Bay Lightning,Philadelphia Flyers,6,3,REG
+2024-01-24,New York Islanders,Vegas Golden Knights,Vegas Golden Knights,New York Islanders,3,2,REG
+2024-01-24,Minnesota Wild,Washington Capitals,Minnesota Wild,Washington Capitals,5,3,REG
+2024-01-24,Calgary Flames,St. Louis Blues,St. Louis Blues,Calgary Flames,4,3,REG
+2024-01-24,Edmonton Oilers,Columbus Blue Jackets,Edmonton Oilers,Columbus Blue Jackets,4,1,REG
+2024-01-24,Anaheim Ducks,Buffalo Sabres,Anaheim Ducks,Buffalo Sabres,4,2,REG
+2024-01-24,San Jose Sharks,New York Rangers,San Jose Sharks,New York Rangers,3,2,OT
+2024-01-25,Florida Panthers,Arizona Coyotes,Florida Panthers,Arizona Coyotes,6,2,REG
+2024-01-25,Boston Bruins,Carolina Hurricanes,Carolina Hurricanes,Boston Bruins,3,2,REG
+2024-01-25,Colorado Avalanche,Washington Capitals,Colorado Avalanche,Washington Capitals,6,2,REG
+2024-01-25,Vancouver Canucks,St. Louis Blues,St. Louis Blues,Vancouver Canucks,4,3,OT
+2024-01-25,Seattle Kraken,Chicago Blackhawks,Seattle Kraken,Chicago Blackhawks,6,2,REG
+2024-01-25,Los Angeles Kings,Buffalo Sabres,Buffalo Sabres,Los Angeles Kings,5,3,REG
+2024-01-26,Montreal Canadiens,New York Islanders,Montreal Canadiens,New York Islanders,4,3,REG
+2024-01-26,Ottawa Senators,Boston Bruins,Boston Bruins,Ottawa Senators,3,2,OT
+2024-01-26,Detroit Red Wings,Philadelphia Flyers,Detroit Red Wings,Philadelphia Flyers,3,0,REG
+2024-01-26,Tampa Bay Lightning,Arizona Coyotes,Tampa Bay Lightning,Arizona Coyotes,6,3,REG
+2024-01-26,Carolina Hurricanes,New Jersey Devils,Carolina Hurricanes,New Jersey Devils,3,2,REG
+2024-01-26,Dallas Stars,Anaheim Ducks,Dallas Stars,Anaheim Ducks,4,3,OT
+2024-01-26,Minnesota Wild,Nashville Predators,Nashville Predators,Minnesota Wild,3,2,REG
+2024-01-26,Calgary Flames,Columbus Blue Jackets,Columbus Blue Jackets,Calgary Flames,5,2,REG
+2024-01-26,Edmonton Oilers,Chicago Blackhawks,Edmonton Oilers,Chicago Blackhawks,3,0,REG
+2024-01-27,New York Rangers,Vegas Golden Knights,Vegas Golden Knights,New York Rangers,5,2,REG
+2024-01-27,Pittsburgh Penguins,Florida Panthers,Florida Panthers,Pittsburgh Penguins,3,2,SO
+2024-01-27,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,5,1,REG
+2024-01-27,Seattle Kraken,St. Louis Blues,St. Louis Blues,Seattle Kraken,4,3,OT
+2024-01-27,Philadelphia Flyers,Boston Bruins,Boston Bruins,Philadelphia Flyers,6,2,REG
+2024-01-27,Dallas Stars,Washington Capitals,Dallas Stars,Washington Capitals,5,4,OT
+2024-01-27,Edmonton Oilers,Nashville Predators,Edmonton Oilers,Nashville Predators,4,1,REG
+2024-01-27,San Jose Sharks,Buffalo Sabres,Buffalo Sabres,San Jose Sharks,5,2,REG
+2024-01-28,Ottawa Senators,New York Rangers,New York Rangers,Ottawa Senators,6,2,REG
+2024-01-28,Tampa Bay Lightning,New Jersey Devils,Tampa Bay Lightning,New Jersey Devils,6,3,REG
+2024-01-28,Pittsburgh Penguins,Montreal Canadiens,Pittsburgh Penguins,Montreal Canadiens,3,2,OT
+2024-01-28,Carolina Hurricanes,Arizona Coyotes,Carolina Hurricanes,Arizona Coyotes,3,1,REG
+2024-01-28,Winnipeg Jets,Toronto Maple Leafs,Toronto Maple Leafs,Winnipeg Jets,4,2,REG
+2024-01-28,New York Islanders,Florida Panthers,Florida Panthers,New York Islanders,3,2,OT
+2024-01-28,Detroit Red Wings,Vegas Golden Knights,Detroit Red Wings,Vegas Golden Knights,5,2,REG
+2024-01-28,Minnesota Wild,Anaheim Ducks,Anaheim Ducks,Minnesota Wild,3,2,REG
+2024-01-28,Vancouver Canucks,Columbus Blue Jackets,Vancouver Canucks,Columbus Blue Jackets,5,4,OT
+2024-01-28,St. Louis Blues,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,4,3,OT
+2024-01-29,Seattle Kraken,Columbus Blue Jackets,Seattle Kraken,Columbus Blue Jackets,4,2,REG
+2024-01-30,Ottawa Senators,Nashville Predators,Ottawa Senators,Nashville Predators,4,3,OT
+2024-01-31,San Jose Sharks,Seattle Kraken,San Jose Sharks,Seattle Kraken,2,0,REG
+2024-02-01,Detroit Red Wings,Ottawa Senators,Ottawa Senators,Detroit Red Wings,3,2,OT
+2024-02-01,Nashville Predators,Los Angeles Kings,Los Angeles Kings,Nashville Predators,4,2,REG
+2024-02-01,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,San Jose Sharks,3,2,OT
+2024-02-06,Toronto Maple Leafs,New York Islanders,New York Islanders,Toronto Maple Leafs,3,2,REG
+2024-02-06,New York Rangers,Colorado Avalanche,New York Rangers,Colorado Avalanche,2,1,OT
+2024-02-07,Boston Bruins,Calgary Flames,Calgary Flames,Boston Bruins,4,1,REG
+2024-02-07,Buffalo Sabres,Dallas Stars,Dallas Stars,Buffalo Sabres,2,1,REG
+2024-02-07,Florida Panthers,Philadelphia Flyers,Philadelphia Flyers,Florida Panthers,2,1,REG
+2024-02-07,Pittsburgh Penguins,Winnipeg Jets,Pittsburgh Penguins,Winnipeg Jets,3,0,REG
+2024-02-07,Washington Capitals,Montreal Canadiens,Montreal Canadiens,Washington Capitals,5,2,REG
+2024-02-07,Carolina Hurricanes,Vancouver Canucks,Vancouver Canucks,Carolina Hurricanes,3,2,REG
+2024-02-07,New Jersey Devils,Colorado Avalanche,New Jersey Devils,Colorado Avalanche,5,3,REG
+2024-02-07,Vegas Golden Knights,Edmonton Oilers,Vegas Golden Knights,Edmonton Oilers,3,1,REG
+2024-02-08,Toronto Maple Leafs,Dallas Stars,Toronto Maple Leafs,Dallas Stars,5,4,REG
+2024-02-08,New York Rangers,Tampa Bay Lightning,New York Rangers,Tampa Bay Lightning,3,1,REG
+2024-02-08,Chicago Blackhawks,Minnesota Wild,Minnesota Wild,Chicago Blackhawks,2,1,REG
+2024-02-09,Boston Bruins,Vancouver Canucks,Boston Bruins,Vancouver Canucks,4,0,REG
+2024-02-09,Florida Panthers,Washington Capitals,Florida Panthers,Washington Capitals,4,2,REG
+2024-02-09,New Jersey Devils,Calgary Flames,Calgary Flames,New Jersey Devils,5,3,REG
+2024-02-09,Philadelphia Flyers,Winnipeg Jets,Philadelphia Flyers,Winnipeg Jets,4,1,REG
+2024-02-09,Carolina Hurricanes,Colorado Avalanche,Carolina Hurricanes,Colorado Avalanche,5,2,REG
+2024-02-09,New York Islanders,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,6,2,REG
+2024-02-09,Arizona Coyotes,Vegas Golden Knights,Vegas Golden Knights,Arizona Coyotes,3,2,REG
+2024-02-10,Minnesota Wild,Pittsburgh Penguins,Minnesota Wild,Pittsburgh Penguins,3,2,REG
+2024-02-10,Chicago Blackhawks,New York Rangers,New York Rangers,Chicago Blackhawks,4,3,OT
+2024-02-10,Anaheim Ducks,Edmonton Oilers,Edmonton Oilers,Anaheim Ducks,5,3,REG
+2024-02-10,Buffalo Sabres,St. Louis Blues,St. Louis Blues,Buffalo Sabres,3,1,REG
+2024-02-10,Montreal Canadiens,Dallas Stars,Dallas Stars,Montreal Canadiens,3,2,REG
+2024-02-10,Detroit Red Wings,Vancouver Canucks,Detroit Red Wings,Vancouver Canucks,4,3,OT
+2024-02-10,New York Islanders,Calgary Flames,Calgary Flames,New York Islanders,5,2,REG
+2024-02-10,Boston Bruins,Washington Capitals,Washington Capitals,Boston Bruins,3,0,REG
+2024-02-10,Florida Panthers,Colorado Avalanche,Florida Panthers,Colorado Avalanche,4,0,REG
+2024-02-11,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,5,3,REG
+2024-02-11,Philadelphia Flyers,Seattle Kraken,Philadelphia Flyers,Seattle Kraken,3,2,REG
+2024-02-11,Columbus Blue Jackets,Tampa Bay Lightning,Tampa Bay Lightning,Columbus Blue Jackets,4,2,REG
+2024-02-11,Winnipeg Jets,Pittsburgh Penguins,Winnipeg Jets,Pittsburgh Penguins,2,1,REG
+2024-02-11,Nashville Predators,Arizona Coyotes,Nashville Predators,Arizona Coyotes,5,4,OT
+2024-02-11,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,4,0,REG
+2024-02-11,Montreal Canadiens,St. Louis Blues,St. Louis Blues,Montreal Canadiens,6,2,REG
+2024-02-11,Washington Capitals,Vancouver Canucks,Vancouver Canucks,Washington Capitals,3,2,OT
+2024-02-13,New Jersey Devils,Seattle Kraken,New Jersey Devils,Seattle Kraken,3,1,REG
+2024-02-13,New York Rangers,Calgary Flames,New York Rangers,Calgary Flames,2,0,REG
+2024-02-13,Philadelphia Flyers,Arizona Coyotes,Philadelphia Flyers,Arizona Coyotes,5,3,REG
+2024-02-13,Vegas Golden Knights,Minnesota Wild,Minnesota Wild,Vegas Golden Knights,5,3,REG
+2024-02-14,Boston Bruins,Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,3,2,SO
+2024-02-14,Buffalo Sabres,Los Angeles Kings,Buffalo Sabres,Los Angeles Kings,4,0,REG
+2024-02-14,Toronto Maple Leafs,St. Louis Blues,Toronto Maple Leafs,St. Louis Blues,4,1,REG
+2024-02-14,Montreal Canadiens,Anaheim Ducks,Montreal Canadiens,Anaheim Ducks,4,0,REG
+2024-02-14,Ottawa Senators,Columbus Blue Jackets,Ottawa Senators,Columbus Blue Jackets,6,3,REG
+2024-02-14,Washington Capitals,Colorado Avalanche,Colorado Avalanche,Washington Capitals,6,3,REG
+2024-02-14,New York Islanders,Seattle Kraken,Seattle Kraken,New York Islanders,2,1,SO
+2024-02-14,Nashville Predators,New Jersey Devils,New Jersey Devils,Nashville Predators,4,2,REG
+2024-02-14,Dallas Stars,Carolina Hurricanes,Dallas Stars,Carolina Hurricanes,4,2,REG
+2024-02-14,Chicago Blackhawks,Vancouver Canucks,Vancouver Canucks,Chicago Blackhawks,4,2,REG
+2024-02-14,Edmonton Oilers,Detroit Red Wings,Edmonton Oilers,Detroit Red Wings,8,4,REG
+2024-02-15,Pittsburgh Penguins,Florida Panthers,Florida Panthers,Pittsburgh Penguins,5,2,REG
+2024-02-15,Arizona Coyotes,Minnesota Wild,Minnesota Wild,Arizona Coyotes,3,1,REG
+2024-02-16,Boston Bruins,Seattle Kraken,Seattle Kraken,Boston Bruins,4,1,REG
+2024-02-16,Buffalo Sabres,Florida Panthers,Florida Panthers,Buffalo Sabres,4,0,REG
+2024-02-16,Toronto Maple Leafs,Philadelphia Flyers,Toronto Maple Leafs,Philadelphia Flyers,4,3,OT
+2024-02-16,Ottawa Senators,Anaheim Ducks,Anaheim Ducks,Ottawa Senators,5,1,REG
+2024-02-16,Tampa Bay Lightning,Colorado Avalanche,Tampa Bay Lightning,Colorado Avalanche,6,3,REG
+2024-02-16,New Jersey Devils,Los Angeles Kings,Los Angeles Kings,New Jersey Devils,2,1,REG
+2024-02-16,New York Rangers,Montreal Canadiens,New York Rangers,Montreal Canadiens,7,4,REG
+2024-02-16,St. Louis Blues,Edmonton Oilers,St. Louis Blues,Edmonton Oilers,6,3,REG
+2024-02-16,Nashville Predators,Dallas Stars,Dallas Stars,Nashville Predators,6,2,REG
+2024-02-16,Chicago Blackhawks,Pittsburgh Penguins,Pittsburgh Penguins,Chicago Blackhawks,4,1,REG
+2024-02-16,Calgary Flames,San Jose Sharks,San Jose Sharks,Calgary Flames,6,3,REG
+2024-02-16,Vancouver Canucks,Detroit Red Wings,Vancouver Canucks,Detroit Red Wings,4,1,REG
+2024-02-17,Arizona Coyotes,Carolina Hurricanes,Carolina Hurricanes,Arizona Coyotes,5,1,REG
+2024-02-17,Boston Bruins,Los Angeles Kings,Los Angeles Kings,Boston Bruins,5,4,OT
+2024-02-17,Dallas Stars,Edmonton Oilers,Edmonton Oilers,Dallas Stars,4,3,OT
+2024-02-17,Chicago Blackhawks,Ottawa Senators,Chicago Blackhawks,Ottawa Senators,3,2,REG
+2024-02-17,Calgary Flames,Detroit Red Wings,Detroit Red Wings,Calgary Flames,4,0,REG
+2024-02-17,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,6,2,REG
+2024-02-17,St. Louis Blues,Nashville Predators,Nashville Predators,St. Louis Blues,5,2,REG
+2024-02-17,Minnesota Wild,Buffalo Sabres,Buffalo Sabres,Minnesota Wild,3,2,OT
+2024-02-18,Toronto Maple Leafs,Anaheim Ducks,Toronto Maple Leafs,Anaheim Ducks,6,2,REG
+2024-02-18,Montreal Canadiens,Washington Capitals,Washington Capitals,Montreal Canadiens,4,3,REG
+2024-02-18,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,6,3,REG
+2024-02-18,Vancouver Canucks,Winnipeg Jets,Winnipeg Jets,Vancouver Canucks,4,2,REG
+2024-02-18,Vegas Golden Knights,Carolina Hurricanes,Carolina Hurricanes,Vegas Golden Knights,3,1,REG
+2024-02-18,San Jose Sharks,Columbus Blue Jackets,Columbus Blue Jackets,San Jose Sharks,4,3,REG
+2024-02-18,New York Islanders,New York Rangers,New York Rangers,New York Islanders,6,5,OT
+2024-02-18,Pittsburgh Penguins,Los Angeles Kings,Los Angeles Kings,Pittsburgh Penguins,2,1,REG
+2024-02-18,Colorado Avalanche,Arizona Coyotes,Colorado Avalanche,Arizona Coyotes,4,3,REG
+2024-02-19,Buffalo Sabres,Anaheim Ducks,Anaheim Ducks,Buffalo Sabres,4,3,REG
+2024-02-19,Boston Bruins,Dallas Stars,Boston Bruins,Dallas Stars,4,3,SO
+2024-02-19,St. Louis Blues,Toronto Maple Leafs,Toronto Maple Leafs,St. Louis Blues,4,2,REG
+2024-02-19,Minnesota Wild,Vancouver Canucks,Minnesota Wild,Vancouver Canucks,10,7,REG
+2024-02-19,Seattle Kraken,Detroit Red Wings,Detroit Red Wings,Seattle Kraken,4,3,OT
+2024-02-19,Calgary Flames,Winnipeg Jets,Calgary Flames,Winnipeg Jets,6,3,REG
+2024-02-19,Arizona Coyotes,Edmonton Oilers,Edmonton Oilers,Arizona Coyotes,6,3,REG
+2024-02-19,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,4,0,REG
+2024-02-20,Carolina Hurricanes,Chicago Blackhawks,Carolina Hurricanes,Chicago Blackhawks,6,3,REG
+2024-02-20,Tampa Bay Lightning,Ottawa Senators,Ottawa Senators,Tampa Bay Lightning,4,2,REG
+2024-02-21,Florida Panthers,Ottawa Senators,Florida Panthers,Ottawa Senators,3,2,OT
+2024-02-21,New York Rangers,Dallas Stars,New York Rangers,Dallas Stars,3,1,REG
+2024-02-21,Pittsburgh Penguins,New York Islanders,New York Islanders,Pittsburgh Penguins,5,4,OT
+2024-02-21,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,6,2,REG
+2024-02-21,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,Minnesota Wild,6,3,REG
+2024-02-21,Colorado Avalanche,Vancouver Canucks,Colorado Avalanche,Vancouver Canucks,3,1,REG
+2024-02-21,Vegas Golden Knights,Nashville Predators,Nashville Predators,Vegas Golden Knights,5,3,REG
+2024-02-21,Los Angeles Kings,Columbus Blue Jackets,Los Angeles Kings,Columbus Blue Jackets,5,1,REG
+2024-02-22,Montreal Canadiens,Buffalo Sabres,Buffalo Sabres,Montreal Canadiens,3,2,REG
+2024-02-22,Chicago Blackhawks,Philadelphia Flyers,Philadelphia Flyers,Chicago Blackhawks,3,1,REG
+2024-02-22,Edmonton Oilers,Boston Bruins,Boston Bruins,Edmonton Oilers,6,5,OT
+2024-02-22,Arizona Coyotes,Toronto Maple Leafs,Toronto Maple Leafs,Arizona Coyotes,6,3,REG
+2024-02-22,Anaheim Ducks,Columbus Blue Jackets,Columbus Blue Jackets,Anaheim Ducks,7,4,REG
+2024-02-23,Ottawa Senators,Dallas Stars,Ottawa Senators,Dallas Stars,4,1,REG
+2024-02-23,Detroit Red Wings,Colorado Avalanche,Detroit Red Wings,Colorado Avalanche,2,1,OT
+2024-02-23,Tampa Bay Lightning,Washington Capitals,Washington Capitals,Tampa Bay Lightning,5,3,REG
+2024-02-23,New Jersey Devils,New York Rangers,New York Rangers,New Jersey Devils,5,1,REG
+2024-02-23,Pittsburgh Penguins,Montreal Canadiens,Pittsburgh Penguins,Montreal Canadiens,4,1,REG
+2024-02-23,St. Louis Blues,New York Islanders,St. Louis Blues,New York Islanders,4,0,REG
+2024-02-23,Calgary Flames,Boston Bruins,Calgary Flames,Boston Bruins,3,2,OT
+2024-02-23,Vegas Golden Knights,Toronto Maple Leafs,Toronto Maple Leafs,Vegas Golden Knights,7,3,REG
+2024-02-23,Seattle Kraken,Vancouver Canucks,Seattle Kraken,Vancouver Canucks,5,2,REG
+2024-02-23,Los Angeles Kings,Nashville Predators,Nashville Predators,Los Angeles Kings,4,1,REG
+2024-02-24,Columbus Blue Jackets,Buffalo Sabres,Buffalo Sabres,Columbus Blue Jackets,2,1,REG
+2024-02-24,Chicago Blackhawks,Winnipeg Jets,Winnipeg Jets,Chicago Blackhawks,3,2,OT
+2024-02-24,Edmonton Oilers,Minnesota Wild,Minnesota Wild,Edmonton Oilers,4,2,REG
+2024-02-24,Detroit Red Wings,St. Louis Blues,Detroit Red Wings,St. Louis Blues,5,1,REG
+2024-02-24,New Jersey Devils,Montreal Canadiens,New Jersey Devils,Montreal Canadiens,4,3,REG
+2024-02-24,New York Islanders,Tampa Bay Lightning,Tampa Bay Lightning,New York Islanders,4,2,REG
+2024-02-24,Philadelphia Flyers,New York Rangers,New York Rangers,Philadelphia Flyers,2,1,REG
+2024-02-24,Florida Panthers,Washington Capitals,Florida Panthers,Washington Capitals,3,2,OT
+2024-02-25,Ottawa Senators,Vegas Golden Knights,Ottawa Senators,Vegas Golden Knights,4,3,SO
+2024-02-25,Colorado Avalanche,Toronto Maple Leafs,Toronto Maple Leafs,Colorado Avalanche,4,3,REG
+2024-02-25,Vancouver Canucks,Boston Bruins,Vancouver Canucks,Boston Bruins,3,2,OT
+2024-02-25,Carolina Hurricanes,Dallas Stars,Dallas Stars,Carolina Hurricanes,2,1,REG
+2024-02-25,Edmonton Oilers,Calgary Flames,Calgary Flames,Edmonton Oilers,6,3,REG
+2024-02-25,San Jose Sharks,Nashville Predators,Nashville Predators,San Jose Sharks,4,2,REG
+2024-02-25,Seattle Kraken,Minnesota Wild,Minnesota Wild,Seattle Kraken,5,2,REG
+2024-02-25,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,3,2,SO
+2024-02-25,New Jersey Devils,Tampa Bay Lightning,Tampa Bay Lightning,New Jersey Devils,4,1,REG
+2024-02-25,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,7,6,REG
+2024-02-25,Buffalo Sabres,Carolina Hurricanes,Buffalo Sabres,Carolina Hurricanes,3,2,SO
+2024-02-25,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,New York Rangers,4,2,REG
+2024-02-25,Chicago Blackhawks,Detroit Red Wings,Detroit Red Wings,Chicago Blackhawks,3,2,OT
+2024-02-25,Winnipeg Jets,Arizona Coyotes,Winnipeg Jets,Arizona Coyotes,4,3,OT
+2024-02-26,Anaheim Ducks,Nashville Predators,Nashville Predators,Anaheim Ducks,4,2,REG
+2024-02-27,Washington Capitals,Ottawa Senators,Washington Capitals,Ottawa Senators,6,3,REG
+2024-02-27,Dallas Stars,New York Islanders,New York Islanders,Dallas Stars,3,2,OT
+2024-02-27,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,4,2,REG
+2024-02-27,Seattle Kraken,Boston Bruins,Seattle Kraken,Boston Bruins,4,3,SO
+2024-02-28,Toronto Maple Leafs,Vegas Golden Knights,Vegas Golden Knights,Toronto Maple Leafs,6,2,REG
+2024-02-28,Montreal Canadiens,Arizona Coyotes,Montreal Canadiens,Arizona Coyotes,4,2,REG
+2024-02-28,Detroit Red Wings,Washington Capitals,Detroit Red Wings,Washington Capitals,7,3,REG
+2024-02-28,Florida Panthers,Buffalo Sabres,Florida Panthers,Buffalo Sabres,3,2,REG
+2024-02-28,Philadelphia Flyers,Tampa Bay Lightning,Philadelphia Flyers,Tampa Bay Lightning,6,2,REG
+2024-02-28,Nashville Predators,Ottawa Senators,Nashville Predators,Ottawa Senators,4,1,REG
+2024-02-28,Minnesota Wild,Carolina Hurricanes,Carolina Hurricanes,Minnesota Wild,3,2,REG
+2024-02-28,Winnipeg Jets,St. Louis Blues,Winnipeg Jets,St. Louis Blues,4,2,REG
+2024-02-28,Calgary Flames,Los Angeles Kings,Calgary Flames,Los Angeles Kings,4,2,REG
+2024-02-28,Colorado Avalanche,Dallas Stars,Colorado Avalanche,Dallas Stars,5,1,REG
+2024-02-28,Vancouver Canucks,Pittsburgh Penguins,Pittsburgh Penguins,Vancouver Canucks,4,3,OT
+2024-02-28,San Jose Sharks,New Jersey Devils,New Jersey Devils,San Jose Sharks,6,2,REG
+2024-02-29,New York Rangers,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,4,1,REG
+2024-02-29,Edmonton Oilers,St. Louis Blues,Edmonton Oilers,St. Louis Blues,3,2,OT
+2024-03-01,Boston Bruins,Vegas Golden Knights,Boston Bruins,Vegas Golden Knights,5,4,REG
+2024-03-01,Toronto Maple Leafs,Arizona Coyotes,Toronto Maple Leafs,Arizona Coyotes,4,2,REG
+2024-03-01,Detroit Red Wings,New York Islanders,New York Islanders,Detroit Red Wings,5,3,REG
+2024-03-01,Tampa Bay Lightning,Buffalo Sabres,Buffalo Sabres,Tampa Bay Lightning,3,2,OT
+2024-03-01,Florida Panthers,Montreal Canadiens,Florida Panthers,Montreal Canadiens,4,3,SO
+2024-03-01,Columbus Blue Jackets,Carolina Hurricanes,Carolina Hurricanes,Columbus Blue Jackets,4,2,REG
+2024-03-01,Nashville Predators,Minnesota Wild,Nashville Predators,Minnesota Wild,5,1,REG
+2024-03-01,Dallas Stars,Winnipeg Jets,Dallas Stars,Winnipeg Jets,4,1,REG
+2024-03-01,Chicago Blackhawks,Colorado Avalanche,Colorado Avalanche,Chicago Blackhawks,4,0,REG
+2024-03-01,Vancouver Canucks,Los Angeles Kings,Los Angeles Kings,Vancouver Canucks,5,1,REG
+2024-03-01,Seattle Kraken,Pittsburgh Penguins,Seattle Kraken,Pittsburgh Penguins,2,0,REG
+2024-03-01,San Jose Sharks,Anaheim Ducks,Anaheim Ducks,San Jose Sharks,6,4,REG
+2024-03-02,Ottawa Senators,Arizona Coyotes,Arizona Coyotes,Ottawa Senators,5,3,REG
+2024-03-02,Washington Capitals,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,5,2,REG
+2024-03-02,Anaheim Ducks,New Jersey Devils,Anaheim Ducks,New Jersey Devils,4,3,REG
+2024-03-02,Carolina Hurricanes,Winnipeg Jets,Winnipeg Jets,Carolina Hurricanes,5,3,REG
+2024-03-02,Detroit Red Wings,Florida Panthers,Florida Panthers,Detroit Red Wings,4,0,REG
+2024-03-02,Seattle Kraken,Edmonton Oilers,Edmonton Oilers,Seattle Kraken,2,1,REG
+2024-03-02,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,3,1,REG
+2024-03-02,Nashville Predators,Colorado Avalanche,Nashville Predators,Colorado Avalanche,5,1,REG
+2024-03-03,Buffalo Sabres,Vegas Golden Knights,Buffalo Sabres,Vegas Golden Knights,6,2,REG
+2024-03-03,Toronto Maple Leafs,New York Rangers,Toronto Maple Leafs,New York Rangers,4,3,SO
+2024-03-03,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,4,3,SO
+2024-03-03,Philadelphia Flyers,Ottawa Senators,Philadelphia Flyers,Ottawa Senators,4,2,REG
+2024-03-03,New York Islanders,Boston Bruins,New York Islanders,Boston Bruins,5,1,REG
+2024-03-03,Chicago Blackhawks,Columbus Blue Jackets,Columbus Blue Jackets,Chicago Blackhawks,5,2,REG
+2024-03-03,Dallas Stars,San Jose Sharks,Dallas Stars,San Jose Sharks,3,2,SO
+2024-03-03,Calgary Flames,Pittsburgh Penguins,Calgary Flames,Pittsburgh Penguins,4,3,REG
+2024-03-03,Washington Capitals,Arizona Coyotes,Arizona Coyotes,Washington Capitals,5,2,REG
+2024-03-03,Los Angeles Kings,New Jersey Devils,Los Angeles Kings,New Jersey Devils,5,1,REG
+2024-03-04,Buffalo Sabres,Winnipeg Jets,Winnipeg Jets,Buffalo Sabres,5,2,REG
+2024-03-04,Minnesota Wild,San Jose Sharks,Minnesota Wild,San Jose Sharks,4,3,REG
+2024-03-04,Anaheim Ducks,Vancouver Canucks,Vancouver Canucks,Anaheim Ducks,2,1,REG
+2024-03-04,Edmonton Oilers,Pittsburgh Penguins,Edmonton Oilers,Pittsburgh Penguins,5,1,REG
+2024-03-05,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,4,1,REG
+2024-03-05,New York Rangers,Florida Panthers,Florida Panthers,New York Rangers,4,2,REG
+2024-03-05,Philadelphia Flyers,St. Louis Blues,St. Louis Blues,Philadelphia Flyers,2,1,SO
+2024-03-05,Columbus Blue Jackets,Vegas Golden Knights,Columbus Blue Jackets,Vegas Golden Knights,6,3,REG
+2024-03-05,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,4,0,REG
+2024-03-05,Calgary Flames,Seattle Kraken,Seattle Kraken,Calgary Flames,4,2,REG
+2024-03-06,New Jersey Devils,Florida Panthers,Florida Panthers,New Jersey Devils,5,3,REG
+2024-03-06,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,5,3,REG
+2024-03-06,Boston Bruins,Edmonton Oilers,Edmonton Oilers,Boston Bruins,2,1,OT
+2024-03-06,New York Islanders,St. Louis Blues,New York Islanders,St. Louis Blues,4,2,REG
+2024-03-06,Nashville Predators,Montreal Canadiens,Montreal Canadiens,Nashville Predators,4,3,OT
+2024-03-06,Winnipeg Jets,Seattle Kraken,Seattle Kraken,Winnipeg Jets,4,3,REG
+2024-03-06,Arizona Coyotes,Chicago Blackhawks,Chicago Blackhawks,Arizona Coyotes,5,2,REG
+2024-03-06,Los Angeles Kings,Vancouver Canucks,Vancouver Canucks,Los Angeles Kings,2,1,OT
+2024-03-06,San Jose Sharks,Dallas Stars,Dallas Stars,San Jose Sharks,7,6,OT
+2024-03-07,Toronto Maple Leafs,Buffalo Sabres,Toronto Maple Leafs,Buffalo Sabres,2,1,OT
+2024-03-07,Colorado Avalanche,Detroit Red Wings,Colorado Avalanche,Detroit Red Wings,6,2,REG
+2024-03-07,Anaheim Ducks,Ottawa Senators,Anaheim Ducks,Ottawa Senators,2,1,REG
+2024-03-08,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,4,1,REG
+2024-03-08,Tampa Bay Lightning,Calgary Flames,Calgary Flames,Tampa Bay Lightning,6,3,REG
+2024-03-08,Florida Panthers,Philadelphia Flyers,Philadelphia Flyers,Florida Panthers,2,1,REG
+2024-03-08,New Jersey Devils,St. Louis Blues,New Jersey Devils,St. Louis Blues,4,1,REG
+2024-03-08,Pittsburgh Penguins,Washington Capitals,Washington Capitals,Pittsburgh Penguins,4,0,REG
+2024-03-08,Carolina Hurricanes,Montreal Canadiens,Carolina Hurricanes,Montreal Canadiens,4,1,REG
+2024-03-08,Columbus Blue Jackets,Edmonton Oilers,Columbus Blue Jackets,Edmonton Oilers,4,2,REG
+2024-03-08,Nashville Predators,Buffalo Sabres,Nashville Predators,Buffalo Sabres,4,2,REG
+2024-03-08,Arizona Coyotes,Minnesota Wild,Minnesota Wild,Arizona Coyotes,5,2,REG
+2024-03-08,Vegas Golden Knights,Vancouver Canucks,Vancouver Canucks,Vegas Golden Knights,3,1,REG
+2024-03-08,Los Angeles Kings,Ottawa Senators,Los Angeles Kings,Ottawa Senators,4,3,OT
+2024-03-08,San Jose Sharks,New York Islanders,New York Islanders,San Jose Sharks,6,2,REG
+2024-03-09,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,Minnesota Wild,2,1,OT
+2024-03-09,Arizona Coyotes,Detroit Red Wings,Arizona Coyotes,Detroit Red Wings,4,0,REG
+2024-03-09,Anaheim Ducks,Dallas Stars,Dallas Stars,Anaheim Ducks,6,2,REG
+2024-03-09,Seattle Kraken,Winnipeg Jets,Winnipeg Jets,Seattle Kraken,3,0,REG
+2024-03-09,Buffalo Sabres,Edmonton Oilers,Buffalo Sabres,Edmonton Oilers,3,2,SO
+2024-03-09,New Jersey Devils,Carolina Hurricanes,Carolina Hurricanes,New Jersey Devils,4,2,REG
+2024-03-09,Columbus Blue Jackets,Nashville Predators,Nashville Predators,Columbus Blue Jackets,2,1,REG
+2024-03-09,Boston Bruins,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,5,1,REG
+2024-03-09,Florida Panthers,Calgary Flames,Florida Panthers,Calgary Flames,5,1,REG
+2024-03-10,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,3,2,REG
+2024-03-10,Tampa Bay Lightning,Philadelphia Flyers,Tampa Bay Lightning,Philadelphia Flyers,4,0,REG
+2024-03-10,Washington Capitals,Chicago Blackhawks,Washington Capitals,Chicago Blackhawks,4,1,REG
+2024-03-10,San Jose Sharks,Ottawa Senators,San Jose Sharks,Ottawa Senators,2,1,REG
+2024-03-10,New York Rangers,St. Louis Blues,New York Rangers,St. Louis Blues,4,0,REG
+2024-03-10,Vancouver Canucks,Winnipeg Jets,Vancouver Canucks,Winnipeg Jets,4,0,REG
+2024-03-10,Vegas Golden Knights,Detroit Red Wings,Vegas Golden Knights,Detroit Red Wings,5,3,REG
+2024-03-10,Los Angeles Kings,Dallas Stars,Dallas Stars,Los Angeles Kings,4,1,REG
+2024-03-10,Pittsburgh Penguins,Edmonton Oilers,Edmonton Oilers,Pittsburgh Penguins,4,0,REG
+2024-03-10,Minnesota Wild,Nashville Predators,Minnesota Wild,Nashville Predators,4,3,OT
+2024-03-10,Carolina Hurricanes,Calgary Flames,Carolina Hurricanes,Calgary Flames,6,2,REG
+2024-03-10,Chicago Blackhawks,Arizona Coyotes,Chicago Blackhawks,Arizona Coyotes,7,4,REG
+2024-03-11,Anaheim Ducks,New York Islanders,New York Islanders,Anaheim Ducks,5,1,REG
+2024-03-11,Boston Bruins,St. Louis Blues,St. Louis Blues,Boston Bruins,5,1,REG
+2024-03-11,New York Rangers,New Jersey Devils,New York Rangers,New Jersey Devils,3,1,REG
+2024-03-11,Winnipeg Jets,Washington Capitals,Winnipeg Jets,Washington Capitals,3,0,REG
+2024-03-12,Los Angeles Kings,New York Islanders,Los Angeles Kings,New York Islanders,3,0,REG
+2024-03-12,Buffalo Sabres,Detroit Red Wings,Buffalo Sabres,Detroit Red Wings,7,3,REG
+2024-03-12,Montreal Canadiens,Columbus Blue Jackets,Montreal Canadiens,Columbus Blue Jackets,3,0,REG
+2024-03-12,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,2,1,OT
+2024-03-12,Philadelphia Flyers,San Jose Sharks,Philadelphia Flyers,San Jose Sharks,3,2,REG
+2024-03-13,Dallas Stars,Florida Panthers,Florida Panthers,Dallas Stars,4,3,REG
+2024-03-13,Minnesota Wild,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,4,1,REG
+2024-03-13,Chicago Blackhawks,Anaheim Ducks,Chicago Blackhawks,Anaheim Ducks,6,2,REG
+2024-03-13,Calgary Flames,Colorado Avalanche,Colorado Avalanche,Calgary Flames,6,2,REG
+2024-03-13,Seattle Kraken,Vegas Golden Knights,Vegas Golden Knights,Seattle Kraken,5,4,OT
+2024-03-13,St. Louis Blues,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,3,1,REG
+2024-03-13,Winnipeg Jets,Nashville Predators,Nashville Predators,Winnipeg Jets,4,2,REG
+2024-03-14,Edmonton Oilers,Washington Capitals,Edmonton Oilers,Washington Capitals,6,2,REG
+2024-03-14,Vancouver Canucks,Colorado Avalanche,Colorado Avalanche,Vancouver Canucks,4,3,OT
+2024-03-14,Buffalo Sabres,New York Islanders,Buffalo Sabres,New York Islanders,4,0,REG
+2024-03-14,Montreal Canadiens,Boston Bruins,Boston Bruins,Montreal Canadiens,2,1,OT
+2024-03-14,Detroit Red Wings,Arizona Coyotes,Arizona Coyotes,Detroit Red Wings,4,1,REG
+2024-03-14,Tampa Bay Lightning,New York Rangers,Tampa Bay Lightning,New York Rangers,6,3,REG
+2024-03-14,Pittsburgh Penguins,San Jose Sharks,Pittsburgh Penguins,San Jose Sharks,6,3,REG
+2024-03-14,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes,Florida Panthers,4,0,REG
+2024-03-14,Columbus Blue Jackets,Ottawa Senators,Ottawa Senators,Columbus Blue Jackets,3,2,SO
+2024-03-14,Philadelphia Flyers,Toronto Maple Leafs,Toronto Maple Leafs,Philadelphia Flyers,6,2,REG
+2024-03-15,Dallas Stars,New Jersey Devils,New Jersey Devils,Dallas Stars,6,2,REG
+2024-03-15,Minnesota Wild,Anaheim Ducks,Minnesota Wild,Anaheim Ducks,2,0,REG
+2024-03-15,Calgary Flames,Vegas Golden Knights,Calgary Flames,Vegas Golden Knights,4,1,REG
+2024-03-15,Seattle Kraken,Washington Capitals,Washington Capitals,Seattle Kraken,2,1,REG
+2024-03-16,Winnipeg Jets,Anaheim Ducks,Winnipeg Jets,Anaheim Ducks,4,0,REG
+2024-03-16,Chicago Blackhawks,Los Angeles Kings,Los Angeles Kings,Chicago Blackhawks,4,0,REG
+2024-03-16,Detroit Red Wings,Buffalo Sabres,Detroit Red Wings,Buffalo Sabres,4,1,REG
+2024-03-16,New York Islanders,Ottawa Senators,Ottawa Senators,New York Islanders,4,3,OT
+2024-03-16,Pittsburgh Penguins,New York Rangers,New York Rangers,Pittsburgh Penguins,7,4,REG
+2024-03-16,Arizona Coyotes,New Jersey Devils,Arizona Coyotes,New Jersey Devils,4,1,REG
+2024-03-16,Florida Panthers,Tampa Bay Lightning,Tampa Bay Lightning,Florida Panthers,5,3,REG
+2024-03-16,Boston Bruins,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,6,5,REG
+2024-03-16,Toronto Maple Leafs,Carolina Hurricanes,Carolina Hurricanes,Toronto Maple Leafs,5,4,SO
+2024-03-16,Columbus Blue Jackets,San Jose Sharks,Columbus Blue Jackets,San Jose Sharks,4,2,REG
+2024-03-16,Calgary Flames,Montreal Canadiens,Calgary Flames,Montreal Canadiens,5,2,REG
+2024-03-17,St. Louis Blues,Minnesota Wild,St. Louis Blues,Minnesota Wild,3,2,SO
+2024-03-17,Dallas Stars,Los Angeles Kings,Dallas Stars,Los Angeles Kings,4,1,REG
+2024-03-17,Edmonton Oilers,Colorado Avalanche,Colorado Avalanche,Edmonton Oilers,3,2,OT
+2024-03-17,Vancouver Canucks,Washington Capitals,Washington Capitals,Vancouver Canucks,2,1,REG
+2024-03-17,Seattle Kraken,Nashville Predators,Nashville Predators,Seattle Kraken,4,1,REG
+2024-03-17,New York Rangers,New York Islanders,New York Rangers,New York Islanders,5,2,REG
+2024-03-17,Vegas Golden Knights,New Jersey Devils,Vegas Golden Knights,New Jersey Devils,3,1,REG
+2024-03-17,Ottawa Senators,Carolina Hurricanes,Carolina Hurricanes,Ottawa Senators,6,2,REG
+2024-03-17,Pittsburgh Penguins,Detroit Red Wings,Pittsburgh Penguins,Detroit Red Wings,6,3,REG
+2024-03-17,Columbus Blue Jackets,Winnipeg Jets,Winnipeg Jets,Columbus Blue Jackets,5,1,REG
+2024-03-17,Chicago Blackhawks,San Jose Sharks,Chicago Blackhawks,San Jose Sharks,5,2,REG
+2024-03-17,St. Louis Blues,Anaheim Ducks,St. Louis Blues,Anaheim Ducks,4,2,REG
+2024-03-19,Calgary Flames,Washington Capitals,Washington Capitals,Calgary Flames,5,2,REG
+2024-03-19,Seattle Kraken,Buffalo Sabres,Buffalo Sabres,Seattle Kraken,6,2,REG
+2024-03-19,Boston Bruins,Ottawa Senators,Boston Bruins,Ottawa Senators,6,2,REG
+2024-03-19,Detroit Red Wings,Columbus Blue Jackets,Detroit Red Wings,Columbus Blue Jackets,4,3,OT
+2024-03-19,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,5,2,REG
+2024-03-19,New York Rangers,Winnipeg Jets,Winnipeg Jets,New York Rangers,4,2,REG
+2024-03-19,Philadelphia Flyers,Toronto Maple Leafs,Philadelphia Flyers,Toronto Maple Leafs,4,3,REG
+2024-03-19,New York Islanders,Carolina Hurricanes,Carolina Hurricanes,New York Islanders,4,1,REG
+2024-03-20,St. Louis Blues,Colorado Avalanche,Colorado Avalanche,St. Louis Blues,4,3,REG
+2024-03-20,Nashville Predators,San Jose Sharks,Nashville Predators,San Jose Sharks,6,2,REG
+2024-03-20,Edmonton Oilers,Montreal Canadiens,Edmonton Oilers,Montreal Canadiens,3,2,OT
+2024-03-20,Vancouver Canucks,Buffalo Sabres,Vancouver Canucks,Buffalo Sabres,3,2,REG
+2024-03-20,Vegas Golden Knights,Tampa Bay Lightning,Tampa Bay Lightning,Vegas Golden Knights,5,3,REG
+2024-03-20,Anaheim Ducks,Minnesota Wild,Minnesota Wild,Anaheim Ducks,4,0,REG
+2024-03-20,Los Angeles Kings,Chicago Blackhawks,Los Angeles Kings,Chicago Blackhawks,6,2,REG
+2024-03-20,Washington Capitals,Toronto Maple Leafs,Toronto Maple Leafs,Washington Capitals,7,3,REG
+2024-03-21,Dallas Stars,Arizona Coyotes,Dallas Stars,Arizona Coyotes,5,2,REG
+2024-03-21,Los Angeles Kings,Minnesota Wild,Los Angeles Kings,Minnesota Wild,4,0,REG
+2024-03-21,Boston Bruins,New York Rangers,New York Rangers,Boston Bruins,5,2,REG
+2024-03-21,Ottawa Senators,St. Louis Blues,St. Louis Blues,Ottawa Senators,5,2,REG
+2024-03-21,Detroit Red Wings,New York Islanders,Detroit Red Wings,New York Islanders,6,3,REG
+2024-03-21,New Jersey Devils,Winnipeg Jets,New Jersey Devils,Winnipeg Jets,4,1,REG
+2024-03-21,Carolina Hurricanes,Philadelphia Flyers,Carolina Hurricanes,Philadelphia Flyers,3,2,OT
+2024-03-21,Florida Panthers,Nashville Predators,Nashville Predators,Florida Panthers,3,0,REG
+2024-03-22,Edmonton Oilers,Buffalo Sabres,Edmonton Oilers,Buffalo Sabres,7,3,REG
+2024-03-22,Vancouver Canucks,Montreal Canadiens,Vancouver Canucks,Montreal Canadiens,4,1,REG
+2024-03-22,Anaheim Ducks,Chicago Blackhawks,Anaheim Ducks,Chicago Blackhawks,4,0,REG
+2024-03-22,Vegas Golden Knights,Seattle Kraken,Vegas Golden Knights,Seattle Kraken,3,1,REG
+2024-03-22,San Jose Sharks,Tampa Bay Lightning,Tampa Bay Lightning,San Jose Sharks,4,1,REG
+2024-03-22,Washington Capitals,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,7,6,SO
+2024-03-23,Dallas Stars,Pittsburgh Penguins,Dallas Stars,Pittsburgh Penguins,4,2,REG
+2024-03-23,Colorado Avalanche,Columbus Blue Jackets,Colorado Avalanche,Columbus Blue Jackets,5,1,REG
+2024-03-23,Arizona Coyotes,Seattle Kraken,Arizona Coyotes,Seattle Kraken,2,1,OT
+2024-03-23,New York Islanders,Winnipeg Jets,New York Islanders,Winnipeg Jets,6,3,REG
+2024-03-23,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,Boston Bruins,3,2,REG
+2024-03-23,Minnesota Wild,St. Louis Blues,St. Louis Blues,Minnesota Wild,5,4,OT
+2024-03-23,Toronto Maple Leafs,Edmonton Oilers,Toronto Maple Leafs,Edmonton Oilers,6,3,REG
+2024-03-23,New Jersey Devils,Ottawa Senators,Ottawa Senators,New Jersey Devils,5,2,REG
+2024-03-24,New York Rangers,Florida Panthers,New York Rangers,Florida Panthers,4,3,SO
+2024-03-24,Vancouver Canucks,Calgary Flames,Vancouver Canucks,Calgary Flames,4,2,REG
+2024-03-24,Vegas Golden Knights,Columbus Blue Jackets,Vegas Golden Knights,Columbus Blue Jackets,4,2,REG
+2024-03-24,Los Angeles Kings,Tampa Bay Lightning,Los Angeles Kings,Tampa Bay Lightning,4,3,OT
+2024-03-24,San Jose Sharks,Chicago Blackhawks,Chicago Blackhawks,San Jose Sharks,5,4,OT
+2024-03-24,Washington Capitals,Winnipeg Jets,Washington Capitals,Winnipeg Jets,3,0,REG
+2024-03-24,Colorado Avalanche,Pittsburgh Penguins,Colorado Avalanche,Pittsburgh Penguins,5,4,OT
+2024-03-24,New York Islanders,New Jersey Devils,New Jersey Devils,New York Islanders,4,0,REG
+2024-03-24,Ottawa Senators,Edmonton Oilers,Ottawa Senators,Edmonton Oilers,5,3,REG
+2024-03-24,Philadelphia Flyers,Florida Panthers,Florida Panthers,Philadelphia Flyers,4,1,REG
+2024-03-24,Carolina Hurricanes,Toronto Maple Leafs,Carolina Hurricanes,Toronto Maple Leafs,2,1,REG
+2024-03-25,Arizona Coyotes,Dallas Stars,Dallas Stars,Arizona Coyotes,4,2,REG
+2024-03-25,Anaheim Ducks,Tampa Bay Lightning,Tampa Bay Lightning,Anaheim Ducks,3,2,OT
+2024-03-25,Calgary Flames,Buffalo Sabres,Buffalo Sabres,Calgary Flames,4,1,REG
+2024-03-25,Seattle Kraken,Montreal Canadiens,Montreal Canadiens,Seattle Kraken,5,1,REG
+2024-03-26,St. Louis Blues,Vegas Golden Knights,Vegas Golden Knights,St. Louis Blues,2,1,OT
+2024-03-26,Vancouver Canucks,Los Angeles Kings,Los Angeles Kings,Vancouver Canucks,3,2,REG
+2024-03-26,Florida Panthers,Boston Bruins,Boston Bruins,Florida Panthers,4,3,REG
+2024-03-26,New York Rangers,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,6,5,OT
+2024-03-26,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,4,1,REG
+2024-03-26,Washington Capitals,Detroit Red Wings,Washington Capitals,Detroit Red Wings,4,3,OT
+2024-03-26,Toronto Maple Leafs,New Jersey Devils,New Jersey Devils,Toronto Maple Leafs,6,3,REG
+2024-03-27,Nashville Predators,Vegas Golden Knights,Nashville Predators,Vegas Golden Knights,5,4,OT
+2024-03-27,Winnipeg Jets,Edmonton Oilers,Edmonton Oilers,Winnipeg Jets,4,3,OT
+2024-03-27,Chicago Blackhawks,Calgary Flames,Chicago Blackhawks,Calgary Flames,3,1,REG
+2024-03-27,Colorado Avalanche,Montreal Canadiens,Montreal Canadiens,Colorado Avalanche,2,1,REG
+2024-03-27,Arizona Coyotes,Columbus Blue Jackets,Arizona Coyotes,Columbus Blue Jackets,6,2,REG
+2024-03-27,Seattle Kraken,Anaheim Ducks,Seattle Kraken,Anaheim Ducks,4,0,REG
+2024-03-27,San Jose Sharks,Dallas Stars,Dallas Stars,San Jose Sharks,6,3,REG
+2024-03-27,Buffalo Sabres,Ottawa Senators,Ottawa Senators,Buffalo Sabres,6,2,REG
+2024-03-27,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,Boston Bruins,3,1,REG
+2024-03-28,Toronto Maple Leafs,Washington Capitals,Toronto Maple Leafs,Washington Capitals,5,1,REG
+2024-03-28,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,4,1,REG
+2024-03-28,Ottawa Senators,Chicago Blackhawks,Ottawa Senators,Chicago Blackhawks,2,0,REG
+2024-03-28,Florida Panthers,New York Islanders,New York Islanders,Florida Panthers,3,2,REG
+2024-03-28,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,3,2,REG
+2024-03-28,Carolina Hurricanes,Detroit Red Wings,Carolina Hurricanes,Detroit Red Wings,4,0,REG
+2024-03-29,St. Louis Blues,Calgary Flames,St. Louis Blues,Calgary Flames,5,3,REG
+2024-03-29,Minnesota Wild,San Jose Sharks,Minnesota Wild,San Jose Sharks,3,1,REG
+2024-03-29,Winnipeg Jets,Vegas Golden Knights,Vegas Golden Knights,Winnipeg Jets,4,1,REG
+2024-03-29,Colorado Avalanche,New York Rangers,New York Rangers,Colorado Avalanche,3,2,SO
+2024-03-29,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,4,1,REG
+2024-03-29,Vancouver Canucks,Dallas Stars,Dallas Stars,Vancouver Canucks,3,1,REG
+2024-03-29,Arizona Coyotes,Nashville Predators,Arizona Coyotes,Nashville Predators,8,4,REG
+2024-03-29,Seattle Kraken,Anaheim Ducks,Seattle Kraken,Anaheim Ducks,4,2,REG
+2024-03-29,Buffalo Sabres,New Jersey Devils,Buffalo Sabres,New Jersey Devils,5,2,REG
+2024-03-30,Florida Panthers,Detroit Red Wings,Florida Panthers,Detroit Red Wings,3,2,SO
+2024-03-30,Minnesota Wild,Vegas Golden Knights,Vegas Golden Knights,Minnesota Wild,2,1,OT
+2024-03-30,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,5,1,REG
+2024-03-30,Colorado Avalanche,Nashville Predators,Colorado Avalanche,Nashville Predators,7,4,REG
+2024-03-30,Arizona Coyotes,New York Rangers,New York Rangers,Arizona Coyotes,8,5,REG
+2024-03-30,Buffalo Sabres,Toronto Maple Leafs,Toronto Maple Leafs,Buffalo Sabres,3,0,REG
+2024-03-30,Montreal Canadiens,Carolina Hurricanes,Carolina Hurricanes,Montreal Canadiens,3,0,REG
+2024-03-30,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,New York Islanders,4,1,REG
+2024-03-30,Philadelphia Flyers,Chicago Blackhawks,Chicago Blackhawks,Philadelphia Flyers,5,1,REG
+2024-03-30,Washington Capitals,Boston Bruins,Boston Bruins,Washington Capitals,3,2,SO
+2024-03-30,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,4,3,SO
+2024-03-30,Winnipeg Jets,Ottawa Senators,Ottawa Senators,Winnipeg Jets,3,2,REG
+2024-03-31,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,4,0,REG
+2024-03-31,Calgary Flames,Los Angeles Kings,Calgary Flames,Los Angeles Kings,4,2,REG
+2024-03-31,Seattle Kraken,Dallas Stars,Dallas Stars,Seattle Kraken,3,0,REG
+2024-03-31,Vancouver Canucks,Anaheim Ducks,Vancouver Canucks,Anaheim Ducks,3,2,REG
+2024-04-01,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,Florida Panthers,6,4,REG
+2024-04-01,Tampa Bay Lightning,Detroit Red Wings,Detroit Red Wings,Tampa Bay Lightning,4,2,REG
+2024-04-01,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,5,2,REG
+2024-04-01,Philadelphia Flyers,New York Islanders,New York Islanders,Philadelphia Flyers,4,3,OT
+2024-04-01,Columbus Blue Jackets,Colorado Avalanche,Columbus Blue Jackets,Colorado Avalanche,4,1,REG
+2024-04-02,St. Louis Blues,Edmonton Oilers,St. Louis Blues,Edmonton Oilers,3,2,OT
+2024-04-02,Winnipeg Jets,Los Angeles Kings,Winnipeg Jets,Los Angeles Kings,4,3,REG
+2024-04-02,San Jose Sharks,Seattle Kraken,Seattle Kraken,San Jose Sharks,4,2,REG
+2024-04-02,Buffalo Sabres,Washington Capitals,Buffalo Sabres,Washington Capitals,6,2,REG
+2024-04-02,Montreal Canadiens,Florida Panthers,Montreal Canadiens,Florida Panthers,5,3,REG
+2024-04-02,New Jersey Devils,Pittsburgh Penguins,Pittsburgh Penguins,New Jersey Devils,6,3,REG
+2024-04-02,New York Islanders,Chicago Blackhawks,New York Islanders,Chicago Blackhawks,2,1,REG
+2024-04-03,Nashville Predators,Boston Bruins,Boston Bruins,Nashville Predators,3,0,REG
+2024-04-03,Minnesota Wild,Ottawa Senators,Minnesota Wild,Ottawa Senators,3,2,REG
+2024-04-03,Calgary Flames,Anaheim Ducks,Anaheim Ducks,Calgary Flames,5,3,REG
+2024-04-03,Vegas Golden Knights,Vancouver Canucks,Vegas Golden Knights,Vancouver Canucks,6,3,REG
+2024-04-03,Toronto Maple Leafs,Tampa Bay Lightning,Tampa Bay Lightning,Toronto Maple Leafs,4,1,REG
+2024-04-03,New York Rangers,New Jersey Devils,New York Rangers,New Jersey Devils,4,3,REG
+2024-04-04,Dallas Stars,Edmonton Oilers,Dallas Stars,Edmonton Oilers,4,0,REG
+2024-04-04,Los Angeles Kings,Seattle Kraken,Los Angeles Kings,Seattle Kraken,5,2,REG
+2024-04-04,Arizona Coyotes,Vancouver Canucks,Vancouver Canucks,Arizona Coyotes,2,1,REG
+2024-04-04,Montreal Canadiens,Tampa Bay Lightning,Tampa Bay Lightning,Montreal Canadiens,7,4,REG
+2024-04-04,Ottawa Senators,Florida Panthers,Florida Panthers,Ottawa Senators,4,0,REG
+2024-04-04,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,4,1,REG
+2024-04-04,Carolina Hurricanes,Boston Bruins,Boston Bruins,Carolina Hurricanes,4,1,REG
+2024-04-04,Columbus Blue Jackets,New York Islanders,New York Islanders,Columbus Blue Jackets,4,2,REG
+2024-04-05,Nashville Predators,St. Louis Blues,Nashville Predators,St. Louis Blues,6,3,REG
+2024-04-05,Minnesota Wild,Colorado Avalanche,Colorado Avalanche,Minnesota Wild,5,2,REG
+2024-04-05,Winnipeg Jets,Calgary Flames,Winnipeg Jets,Calgary Flames,5,2,REG
+2024-04-05,San Jose Sharks,Los Angeles Kings,Los Angeles Kings,San Jose Sharks,2,1,REG
+2024-04-05,Buffalo Sabres,Philadelphia Flyers,Buffalo Sabres,Philadelphia Flyers,4,2,REG
+2024-04-05,Detroit Red Wings,New York Rangers,New York Rangers,Detroit Red Wings,4,3,REG
+2024-04-05,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,Washington Capitals,4,2,REG
+2024-04-06,Edmonton Oilers,Colorado Avalanche,Edmonton Oilers,Colorado Avalanche,6,2,REG
+2024-04-06,Arizona Coyotes,Vegas Golden Knights,Arizona Coyotes,Vegas Golden Knights,7,4,REG
+2024-04-06,Anaheim Ducks,Seattle Kraken,Seattle Kraken,Anaheim Ducks,3,1,REG
+2024-04-06,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,5,4,REG
+2024-04-06,Boston Bruins,Florida Panthers,Boston Bruins,Florida Panthers,3,2,OT
+2024-04-06,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,Dallas Stars,3,2,REG
+2024-04-06,Minnesota Wild,Winnipeg Jets,Winnipeg Jets,Minnesota Wild,4,2,REG
+2024-04-06,San Jose Sharks,St. Louis Blues,San Jose Sharks,St. Louis Blues,3,2,OT
+2024-04-06,Montreal Canadiens,Toronto Maple Leafs,Toronto Maple Leafs,Montreal Canadiens,4,2,REG
+2024-04-06,Ottawa Senators,New Jersey Devils,New Jersey Devils,Ottawa Senators,4,3,REG
+2024-04-06,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,6,2,REG
+2024-04-06,New York Islanders,Nashville Predators,New York Islanders,Nashville Predators,2,0,REG
+2024-04-07,Calgary Flames,Edmonton Oilers,Edmonton Oilers,Calgary Flames,4,2,REG
+2024-04-07,Los Angeles Kings,Vancouver Canucks,Los Angeles Kings,Vancouver Canucks,6,3,REG
+2024-04-07,Detroit Red Wings,Buffalo Sabres,Detroit Red Wings,Buffalo Sabres,3,1,REG
+2024-04-07,Chicago Blackhawks,Minnesota Wild,Minnesota Wild,Chicago Blackhawks,4,0,REG
+2024-04-07,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,3,0,REG
+2024-04-07,Washington Capitals,Ottawa Senators,Ottawa Senators,Washington Capitals,3,2,OT
+2024-04-07,San Jose Sharks,Arizona Coyotes,Arizona Coyotes,San Jose Sharks,5,2,REG
+2024-04-07,New Jersey Devils,Nashville Predators,Nashville Predators,New Jersey Devils,3,2,SO
+2024-04-07,New York Rangers,Montreal Canadiens,New York Rangers,Montreal Canadiens,5,2,REG
+2024-04-08,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,6,5,SO
+2024-04-08,Colorado Avalanche,Dallas Stars,Dallas Stars,Colorado Avalanche,7,4,REG
+2024-04-08,Toronto Maple Leafs,Pittsburgh Penguins,Toronto Maple Leafs,Pittsburgh Penguins,3,2,OT
+2024-04-09,Vancouver Canucks,Vegas Golden Knights,Vancouver Canucks,Vegas Golden Knights,4,3,REG
+2024-04-09,Boston Bruins,Carolina Hurricanes,Carolina Hurricanes,Boston Bruins,4,1,REG
+2024-04-09,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,7,3,REG
+2024-04-09,Detroit Red Wings,Washington Capitals,Washington Capitals,Detroit Red Wings,2,1,REG
+2024-04-09,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,5,2,REG
+2024-04-09,Florida Panthers,Ottawa Senators,Florida Panthers,Ottawa Senators,2,0,REG
+2024-04-09,New Jersey Devils,Toronto Maple Leafs,Toronto Maple Leafs,New Jersey Devils,5,2,REG
+2024-04-09,New York Islanders,New York Rangers,New York Islanders,New York Rangers,4,2,REG
+2024-04-10,Nashville Predators,Winnipeg Jets,Winnipeg Jets,Nashville Predators,4,3,OT
+2024-04-10,Dallas Stars,Buffalo Sabres,Dallas Stars,Buffalo Sabres,3,2,REG
+2024-04-10,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,Minnesota Wild,5,2,REG
+2024-04-10,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,3,1,REG
+2024-04-10,Seattle Kraken,Arizona Coyotes,Seattle Kraken,Arizona Coyotes,4,0,REG
+2024-04-10,San Jose Sharks,Calgary Flames,Calgary Flames,San Jose Sharks,3,2,OT
+2024-04-11,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,5,2,REG
+2024-04-11,Edmonton Oilers,Vegas Golden Knights,Edmonton Oilers,Vegas Golden Knights,5,1,REG
+2024-04-11,Vancouver Canucks,Arizona Coyotes,Arizona Coyotes,Vancouver Canucks,4,3,OT
+2024-04-11,Buffalo Sabres,Washington Capitals,Buffalo Sabres,Washington Capitals,4,2,REG
+2024-04-11,Toronto Maple Leafs,New Jersey Devils,New Jersey Devils,Toronto Maple Leafs,6,5,REG
+2024-04-11,Tampa Bay Lightning,Ottawa Senators,Ottawa Senators,Tampa Bay Lightning,3,2,SO
+2024-04-11,Florida Panthers,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,4,0,REG
+2024-04-11,New York Rangers,Philadelphia Flyers,Philadelphia Flyers,New York Rangers,4,1,REG
+2024-04-11,Pittsburgh Penguins,Detroit Red Wings,Pittsburgh Penguins,Detroit Red Wings,6,5,OT
+2024-04-11,New York Islanders,Montreal Canadiens,New York Islanders,Montreal Canadiens,3,2,OT
+2024-04-12,Dallas Stars,Winnipeg Jets,Winnipeg Jets,Dallas Stars,3,0,REG
+2024-04-12,Seattle Kraken,San Jose Sharks,San Jose Sharks,Seattle Kraken,3,1,REG
+2024-04-12,Los Angeles Kings,Calgary Flames,Los Angeles Kings,Calgary Flames,4,1,REG
+2024-04-13,St. Louis Blues,Carolina Hurricanes,Carolina Hurricanes,St. Louis Blues,5,2,REG
+2024-04-13,Chicago Blackhawks,Nashville Predators,Nashville Predators,Chicago Blackhawks,5,1,REG
+2024-04-13,Edmonton Oilers,Arizona Coyotes,Arizona Coyotes,Edmonton Oilers,3,2,OT
+2024-04-13,Vegas Golden Knights,Minnesota Wild,Vegas Golden Knights,Minnesota Wild,6,2,REG
+2024-04-13,Anaheim Ducks,Calgary Flames,Calgary Flames,Anaheim Ducks,6,3,REG
+2024-04-13,New York Rangers,New York Islanders,New York Rangers,New York Islanders,3,2,SO
+2024-04-13,Dallas Stars,Seattle Kraken,Dallas Stars,Seattle Kraken,3,1,REG
+2024-04-13,Colorado Avalanche,Winnipeg Jets,Winnipeg Jets,Colorado Avalanche,4,0,REG
+2024-04-13,Florida Panthers,Buffalo Sabres,Florida Panthers,Buffalo Sabres,3,2,OT
+2024-04-13,Washington Capitals,Tampa Bay Lightning,Washington Capitals,Tampa Bay Lightning,4,2,REG
+2024-04-13,Toronto Maple Leafs,Detroit Red Wings,Detroit Red Wings,Toronto Maple Leafs,5,4,OT
+2024-04-13,Ottawa Senators,Montreal Canadiens,Ottawa Senators,Montreal Canadiens,5,4,SO
+2024-04-14,Pittsburgh Penguins,Boston Bruins,Boston Bruins,Pittsburgh Penguins,6,4,REG
+2024-04-14,Nashville Predators,Columbus Blue Jackets,Nashville Predators,Columbus Blue Jackets,6,4,REG
+2024-04-14,Edmonton Oilers,Vancouver Canucks,Vancouver Canucks,Edmonton Oilers,3,1,REG
+2024-04-14,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,3,1,REG
+2024-04-14,San Jose Sharks,Minnesota Wild,Minnesota Wild,San Jose Sharks,6,2,REG
+2024-04-14,St. Louis Blues,Seattle Kraken,St. Louis Blues,Seattle Kraken,4,1,REG
+2024-04-14,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,4,3,OT
+2024-04-14,Chicago Blackhawks,Carolina Hurricanes,Carolina Hurricanes,Chicago Blackhawks,4,2,REG
+2024-04-15,Calgary Flames,Arizona Coyotes,Calgary Flames,Arizona Coyotes,6,5,REG
+2024-04-15,Detroit Red Wings,Montreal Canadiens,Detroit Red Wings,Montreal Canadiens,5,4,OT
+2024-04-15,Tampa Bay Lightning,Buffalo Sabres,Buffalo Sabres,Tampa Bay Lightning,4,2,REG
+2024-04-15,New Jersey Devils,New York Islanders,New York Islanders,New Jersey Devils,4,1,REG
+2024-04-15,Pittsburgh Penguins,Nashville Predators,Pittsburgh Penguins,Nashville Predators,4,2,REG
+2024-04-15,Washington Capitals,Boston Bruins,Washington Capitals,Boston Bruins,2,0,REG
+2024-04-15,New York Rangers,Ottawa Senators,New York Rangers,Ottawa Senators,4,0,REG
+2024-04-16,Edmonton Oilers,San Jose Sharks,Edmonton Oilers,San Jose Sharks,6,2,REG
+2024-04-16,Los Angeles Kings,Minnesota Wild,Minnesota Wild,Los Angeles Kings,3,1,REG
+2024-04-16,Boston Bruins,Ottawa Senators,Ottawa Senators,Boston Bruins,3,1,REG
+2024-04-16,Montreal Canadiens,Detroit Red Wings,Detroit Red Wings,Montreal Canadiens,5,4,SO
+2024-04-16,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,2,1,REG
+2024-04-16,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,6,3,REG
+2024-04-16,Florida Panthers,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,5,2,REG
+2024-04-17,Winnipeg Jets,Seattle Kraken,Winnipeg Jets,Seattle Kraken,4,3,REG
+2024-04-17,Vegas Golden Knights,Chicago Blackhawks,Vegas Golden Knights,Chicago Blackhawks,3,1,REG
+2024-04-17,Vancouver Canucks,Calgary Flames,Vancouver Canucks,Calgary Flames,4,1,REG
+2024-04-17,Tampa Bay Lightning,Toronto Maple Leafs,Tampa Bay Lightning,Toronto Maple Leafs,6,4,REG
+2024-04-17,New York Islanders,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,5,4,REG
+2024-04-18,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,2,1,SO
+2024-04-18,Arizona Coyotes,Edmonton Oilers,Arizona Coyotes,Edmonton Oilers,5,2,REG
+2024-04-18,Minnesota Wild,Seattle Kraken,Seattle Kraken,Minnesota Wild,4,3,REG
+2024-04-19,Winnipeg Jets,Vancouver Canucks,Winnipeg Jets,Vancouver Canucks,4,2,REG
+2024-04-19,Calgary Flames,San Jose Sharks,Calgary Flames,San Jose Sharks,5,1,REG
+2024-04-19,Colorado Avalanche,Edmonton Oilers,Colorado Avalanche,Edmonton Oilers,5,1,REG
+2024-04-19,Vegas Golden Knights,Anaheim Ducks,Anaheim Ducks,Vegas Golden Knights,4,1,REG
+2024-04-19,Los Angeles Kings,Chicago Blackhawks,Los Angeles Kings,Chicago Blackhawks,5,4,OT
+2024-04-20,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,New York Islanders,3,1,REG
+2024-04-21,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,5,1,REG
+2024-04-21,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,3,2,REG
+2024-04-21,New York Rangers,Washington Capitals,New York Rangers,Washington Capitals,4,1,REG
+2024-04-21,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,7,6,REG
+2024-04-22,Vancouver Canucks,Nashville Predators,Vancouver Canucks,Nashville Predators,4,2,REG
+2024-04-22,Boston Bruins,Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,3,2,REG
+2024-04-22,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,New York Islanders,5,3,REG
+2024-04-23,Dallas Stars,Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,4,3,REG
+2024-04-23,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,7,4,REG
+2024-04-23,New York Rangers,Washington Capitals,New York Rangers,Washington Capitals,4,3,REG
+2024-04-23,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,3,2,OT
+2024-04-24,Winnipeg Jets,Colorado Avalanche,Colorado Avalanche,Winnipeg Jets,5,2,REG
+2024-04-24,Vancouver Canucks,Nashville Predators,Nashville Predators,Vancouver Canucks,4,1,REG
+2024-04-24,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,4,2,REG
+2024-04-25,Dallas Stars,Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,3,1,REG
+2024-04-25,Edmonton Oilers,Los Angeles Kings,Los Angeles Kings,Edmonton Oilers,5,4,OT
+2024-04-25,Tampa Bay Lightning,Florida Panthers,Florida Panthers,Tampa Bay Lightning,5,3,REG
+2024-04-25,New York Islanders,Carolina Hurricanes,Carolina Hurricanes,New York Islanders,3,2,REG
+2024-04-26,Washington Capitals,New York Rangers,New York Rangers,Washington Capitals,3,1,REG
+2024-04-26,Nashville Predators,Vancouver Canucks,Vancouver Canucks,Nashville Predators,2,1,REG
+2024-04-27,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,6,2,REG
+2024-04-27,Los Angeles Kings,Edmonton Oilers,Edmonton Oilers,Los Angeles Kings,5,1,REG
+2024-04-27,New York Islanders,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,3,2,OT
+2024-04-27,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,Florida Panthers,6,3,REG
+2024-04-28,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,3,1,REG
+2024-04-28,Vegas Golden Knights,Dallas Stars,Dallas Stars,Vegas Golden Knights,3,2,OT
+2024-04-28,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,5,1,REG
+2024-04-28,Nashville Predators,Vancouver Canucks,Vancouver Canucks,Nashville Predators,4,3,OT
+2024-04-29,Washington Capitals,New York Rangers,New York Rangers,Washington Capitals,4,2,REG
+2024-04-29,Florida Panthers,Tampa Bay Lightning,Florida Panthers,Tampa Bay Lightning,5,1,REG
+2024-04-30,Vegas Golden Knights,Dallas Stars,Dallas Stars,Vegas Golden Knights,4,2,REG
+2024-04-30,Boston Bruins,Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,2,1,OT
+2024-04-30,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,New York Islanders,6,3,REG
+2024-05-01,Winnipeg Jets,Colorado Avalanche,Colorado Avalanche,Winnipeg Jets,6,3,REG
+2024-05-01,Vancouver Canucks,Nashville Predators,Nashville Predators,Vancouver Canucks,2,1,REG
+2024-05-01,Dallas Stars,Vegas Golden Knights,Dallas Stars,Vegas Golden Knights,3,2,REG
+2024-05-02,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,4,3,REG
+2024-05-03,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,Boston Bruins,2,1,REG
+2024-05-04,Vegas Golden Knights,Dallas Stars,Vegas Golden Knights,Dallas Stars,2,0,REG
+2024-05-05,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,2,1,OT
+2024-05-05,New York Rangers,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,4,3,REG
+2024-05-05,Dallas Stars,Vegas Golden Knights,Dallas Stars,Vegas Golden Knights,2,1,REG
+2024-05-07,Florida Panthers,Boston Bruins,Boston Bruins,Florida Panthers,5,1,REG
+2024-05-07,New York Rangers,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,4,3,OT
+2024-05-08,Dallas Stars,Colorado Avalanche,Colorado Avalanche,Dallas Stars,4,3,OT
+2024-05-08,Florida Panthers,Boston Bruins,Florida Panthers,Boston Bruins,5,1,REG
+2024-05-09,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,5,4,REG
+2024-05-09,Carolina Hurricanes,New York Rangers,New York Rangers,Carolina Hurricanes,3,2,OT
+2024-05-10,Dallas Stars,Colorado Avalanche,Dallas Stars,Colorado Avalanche,5,3,REG
+2024-05-10,Boston Bruins,Florida Panthers,Florida Panthers,Boston Bruins,6,2,REG
+2024-05-11,Vancouver Canucks,Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,4,3,OT
+2024-05-11,Carolina Hurricanes,New York Rangers,Carolina Hurricanes,New York Rangers,4,3,REG
+2024-05-12,Colorado Avalanche,Dallas Stars,Dallas Stars,Colorado Avalanche,4,1,REG
+2024-05-12,Boston Bruins,Florida Panthers,Florida Panthers,Boston Bruins,3,2,REG
+2024-05-13,Edmonton Oilers,Vancouver Canucks,Vancouver Canucks,Edmonton Oilers,4,3,REG
+2024-05-13,New York Rangers,Carolina Hurricanes,Carolina Hurricanes,New York Rangers,4,1,REG
+2024-05-14,Colorado Avalanche,Dallas Stars,Dallas Stars,Colorado Avalanche,5,1,REG
+2024-05-14,Florida Panthers,Boston Bruins,Boston Bruins,Florida Panthers,2,1,REG
+2024-05-15,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,3,2,REG
+2024-05-16,Dallas Stars,Colorado Avalanche,Colorado Avalanche,Dallas Stars,5,3,REG
+2024-05-16,Carolina Hurricanes,New York Rangers,New York Rangers,Carolina Hurricanes,5,3,REG
+2024-05-17,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,3,2,REG
+2024-05-17,Boston Bruins,Florida Panthers,Florida Panthers,Boston Bruins,2,1,REG
+2024-05-18,Colorado Avalanche,Dallas Stars,Dallas Stars,Colorado Avalanche,2,1,OT
+2024-05-19,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,5,1,REG
+2024-05-21,Vancouver Canucks,Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,3,2,REG
+2024-05-23,New York Rangers,Florida Panthers,Florida Panthers,New York Rangers,3,0,REG
+2024-05-24,Dallas Stars,Edmonton Oilers,Edmonton Oilers,Dallas Stars,3,2,OT
+2024-05-25,New York Rangers,Florida Panthers,New York Rangers,Florida Panthers,2,1,OT
+2024-05-26,Dallas Stars,Edmonton Oilers,Dallas Stars,Edmonton Oilers,3,1,REG
+2024-05-26,Florida Panthers,New York Rangers,New York Rangers,Florida Panthers,5,4,OT
+2024-05-28,Edmonton Oilers,Dallas Stars,Dallas Stars,Edmonton Oilers,5,3,REG
+2024-05-29,Florida Panthers,New York Rangers,Florida Panthers,New York Rangers,3,2,OT
+2024-05-30,Edmonton Oilers,Dallas Stars,Edmonton Oilers,Dallas Stars,5,2,REG
+2024-05-31,New York Rangers,Florida Panthers,Florida Panthers,New York Rangers,3,2,REG
+2024-06-01,Dallas Stars,Edmonton Oilers,Edmonton Oilers,Dallas Stars,3,1,REG
+2024-06-02,Florida Panthers,New York Rangers,Florida Panthers,New York Rangers,2,1,REG
+2024-06-03,Edmonton Oilers,Dallas Stars,Edmonton Oilers,Dallas Stars,2,1,REG
+2024-06-09,Florida Panthers,Edmonton Oilers,Florida Panthers,Edmonton Oilers,3,0,REG
+2024-06-11,Florida Panthers,Edmonton Oilers,Florida Panthers,Edmonton Oilers,4,1,REG
+2024-06-14,Edmonton Oilers,Florida Panthers,Florida Panthers,Edmonton Oilers,4,3,REG
+2024-06-16,Edmonton Oilers,Florida Panthers,Edmonton Oilers,Florida Panthers,5,1,REG
+2024-06-19,Florida Panthers,Edmonton Oilers,Edmonton Oilers,Florida Panthers,5,3,REG
+2024-06-22,Edmonton Oilers,Florida Panthers,Edmonton Oilers,Florida Panthers,5,1,REG
+2024-06-25,Florida Panthers,Edmonton Oilers,Florida Panthers,Edmonton Oilers,2,1,REG
