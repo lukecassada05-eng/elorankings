@@ -79,14 +79,6 @@
       "note": null
     },
     {
-      "team": "Minnesota Twins",
-      "conference": "AL",
-      "division": "AL Central",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "Detroit Tigers",
       "conference": "AL",
       "division": "AL Central",
@@ -98,6 +90,14 @@
       "team": "Seattle Mariners",
       "conference": "AL",
       "division": "AL West",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Minnesota Twins",
+      "conference": "AL",
+      "division": "AL Central",
       "seed": null,
       "status": "outside",
       "note": null
@@ -412,18 +412,18 @@
         "win_pct": 0.51
       },
       {
-        "team": "Minnesota Twins",
+        "team": "Detroit Tigers",
         "rank": 3,
         "wins": 72,
         "losses": 81,
         "win_pct": 0.471
       },
       {
-        "team": "Detroit Tigers",
+        "team": "Minnesota Twins",
         "rank": 4,
-        "wins": 72,
-        "losses": 81,
-        "win_pct": 0.471
+        "wins": 71,
+        "losses": 82,
+        "win_pct": 0.464
       },
       {
         "team": "Kansas City Royals",
@@ -465,11 +465,11 @@
       {
         "team": "Los Angeles Angels",
         "rank": 5,
-        "wins": 58,
-        "losses": 95,
-        "win_pct": 0.379
+        "wins": 59,
+        "losses": 94,
+        "win_pct": 0.386
       }
     ]
   },
-  "current_field_updated": "2026-09-18 04:31 UTC"
+  "current_field_updated": "2026-09-18 11:19 UTC"
 }
