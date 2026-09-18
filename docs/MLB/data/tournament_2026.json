@@ -151,17 +151,17 @@
       "note": "Division winner"
     },
     {
-      "team": "Chicago Cubs",
+      "team": "Philadelphia Phillies",
       "conference": "NL",
-      "division": "NL Central",
+      "division": "NL East",
       "seed": 4,
       "status": "wildcard",
       "note": "Wildcard"
     },
     {
-      "team": "Philadelphia Phillies",
+      "team": "Chicago Cubs",
       "conference": "NL",
-      "division": "NL East",
+      "division": "NL Central",
       "seed": 5,
       "status": "wildcard",
       "note": "Wildcard"
@@ -207,17 +207,17 @@
       "note": null
     },
     {
-      "team": "Washington Nationals",
+      "team": "Cincinnati Reds",
       "conference": "NL",
-      "division": "NL East",
+      "division": "NL Central",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Cincinnati Reds",
+      "team": "Washington Nationals",
       "conference": "NL",
-      "division": "NL Central",
+      "division": "NL East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -297,15 +297,15 @@
         "team": "Chicago Cubs",
         "rank": 2,
         "wins": 85,
-        "losses": 68,
-        "win_pct": 0.556
+        "losses": 69,
+        "win_pct": 0.552
       },
       {
         "team": "Pittsburgh Pirates",
         "rank": 3,
         "wins": 76,
-        "losses": 77,
-        "win_pct": 0.497
+        "losses": 78,
+        "win_pct": 0.494
       },
       {
         "team": "St. Louis Cardinals",
@@ -317,9 +317,9 @@
       {
         "team": "Cincinnati Reds",
         "rank": 5,
-        "wins": 71,
+        "wins": 72,
         "losses": 82,
-        "win_pct": 0.464
+        "win_pct": 0.468
       }
     ],
     "NL West": [
@@ -428,9 +428,9 @@
       {
         "team": "Kansas City Royals",
         "rank": 5,
-        "wins": 67,
+        "wins": 68,
         "losses": 86,
-        "win_pct": 0.438
+        "win_pct": 0.442
       }
     ],
     "AL West": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-18 21:16 UTC"
+  "current_field_updated": "2026-09-18 23:28 UTC"
 }
