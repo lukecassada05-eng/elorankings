@@ -159,17 +159,17 @@
       "note": "Wildcard"
     },
     {
-      "team": "Philadelphia Phillies",
+      "team": "San Diego Padres",
       "conference": "NL",
-      "division": "NL East",
+      "division": "NL West",
       "seed": 5,
       "status": "wildcard",
       "note": "Wildcard"
     },
     {
-      "team": "San Diego Padres",
+      "team": "Philadelphia Phillies",
       "conference": "NL",
-      "division": "NL West",
+      "division": "NL East",
       "seed": 6,
       "status": "wildcard",
       "note": "Wildcard"
@@ -252,9 +252,9 @@
       {
         "team": "Tampa Bay Rays",
         "rank": 1,
-        "wins": 93,
+        "wins": 94,
         "losses": 60,
-        "win_pct": 0.608
+        "win_pct": 0.61
       },
       {
         "team": "New York Yankees",
@@ -267,8 +267,8 @@
         "team": "Boston Red Sox",
         "rank": 3,
         "wins": 84,
-        "losses": 70,
-        "win_pct": 0.545
+        "losses": 71,
+        "win_pct": 0.542
       },
       {
         "team": "Toronto Blue Jays",
@@ -281,17 +281,17 @@
         "team": "Baltimore Orioles",
         "rank": 5,
         "wins": 75,
-        "losses": 79,
-        "win_pct": 0.487
+        "losses": 80,
+        "win_pct": 0.484
       }
     ],
     "NL Central": [
       {
         "team": "Milwaukee Brewers",
         "rank": 1,
-        "wins": 96,
+        "wins": 97,
         "losses": 58,
-        "win_pct": 0.623
+        "win_pct": 0.626
       },
       {
         "team": "Chicago Cubs",
@@ -371,8 +371,8 @@
         "team": "Philadelphia Phillies",
         "rank": 2,
         "wins": 85,
-        "losses": 69,
-        "win_pct": 0.552
+        "losses": 70,
+        "win_pct": 0.548
       },
       {
         "team": "Miami Marlins",
@@ -391,18 +391,18 @@
       {
         "team": "New York Mets",
         "rank": 5,
-        "wins": 70,
+        "wins": 71,
         "losses": 84,
-        "win_pct": 0.455
+        "win_pct": 0.458
       }
     ],
     "AL Central": [
       {
         "team": "Cleveland Guardians",
         "rank": 1,
-        "wins": 79,
+        "wins": 80,
         "losses": 75,
-        "win_pct": 0.513
+        "win_pct": 0.516
       },
       {
         "team": "Chicago White Sox",
@@ -459,8 +459,8 @@
         "team": "Athletics",
         "rank": 4,
         "wins": 61,
-        "losses": 93,
-        "win_pct": 0.396
+        "losses": 94,
+        "win_pct": 0.394
       },
       {
         "team": "Los Angeles Angels",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-19 20:42 UTC"
+  "current_field_updated": "2026-09-19 23:07 UTC"
 }
