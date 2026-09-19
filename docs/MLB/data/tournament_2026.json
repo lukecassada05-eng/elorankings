@@ -407,16 +407,16 @@
       {
         "team": "Chicago White Sox",
         "rank": 2,
-        "wins": 78,
+        "wins": 79,
         "losses": 76,
-        "win_pct": 0.506
+        "win_pct": 0.51
       },
       {
         "team": "Detroit Tigers",
         "rank": 3,
         "wins": 73,
-        "losses": 81,
-        "win_pct": 0.474
+        "losses": 82,
+        "win_pct": 0.471
       },
       {
         "team": "Minnesota Twins",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-19 16:11 UTC"
+  "current_field_updated": "2026-09-19 20:42 UTC"
 }
