@@ -79,7 +79,7 @@
       "note": null
     },
     {
-      "team": "Detroit Tigers",
+      "team": "Minnesota Twins",
       "conference": "AL",
       "division": "AL Central",
       "seed": null,
@@ -95,7 +95,7 @@
       "note": null
     },
     {
-      "team": "Minnesota Twins",
+      "team": "Detroit Tigers",
       "conference": "AL",
       "division": "AL Central",
       "seed": null,
@@ -273,9 +273,9 @@
       {
         "team": "St. Louis Cardinals",
         "rank": 4,
-        "wins": 75,
+        "wins": 76,
         "losses": 80,
-        "win_pct": 0.484
+        "win_pct": 0.487
       },
       {
         "team": "Cincinnati Reds",
@@ -326,9 +326,9 @@
       {
         "team": "Los Angeles Dodgers",
         "rank": 1,
-        "wins": 95,
-        "losses": 61,
-        "win_pct": 0.609
+        "wins": 96,
+        "losses": 60,
+        "win_pct": 0.615
       },
       {
         "team": "San Diego Padres",
@@ -347,9 +347,9 @@
       {
         "team": "San Francisco Giants",
         "rank": 4,
-        "wins": 66,
-        "losses": 91,
-        "win_pct": 0.42
+        "wins": 65,
+        "losses": 92,
+        "win_pct": 0.414
       },
       {
         "team": "Colorado Rockies",
@@ -385,8 +385,8 @@
         "team": "Washington Nationals",
         "rank": 4,
         "wins": 73,
-        "losses": 82,
-        "win_pct": 0.471
+        "losses": 83,
+        "win_pct": 0.468
       },
       {
         "team": "New York Mets",
@@ -400,30 +400,30 @@
       {
         "team": "Cleveland Guardians",
         "rank": 1,
-        "wins": 80,
+        "wins": 81,
         "losses": 75,
-        "win_pct": 0.516
+        "win_pct": 0.519
       },
       {
         "team": "Chicago White Sox",
         "rank": 2,
-        "wins": 79,
+        "wins": 80,
         "losses": 76,
-        "win_pct": 0.51
-      },
-      {
-        "team": "Detroit Tigers",
-        "rank": 3,
-        "wins": 73,
-        "losses": 82,
-        "win_pct": 0.471
+        "win_pct": 0.513
       },
       {
         "team": "Minnesota Twins",
-        "rank": 4,
-        "wins": 72,
+        "rank": 3,
+        "wins": 73,
         "losses": 83,
-        "win_pct": 0.465
+        "win_pct": 0.468
+      },
+      {
+        "team": "Detroit Tigers",
+        "rank": 4,
+        "wins": 73,
+        "losses": 83,
+        "win_pct": 0.468
       },
       {
         "team": "Kansas City Royals",
@@ -459,17 +459,17 @@
         "team": "Athletics",
         "rank": 4,
         "wins": 61,
-        "losses": 94,
-        "win_pct": 0.394
+        "losses": 95,
+        "win_pct": 0.391
       },
       {
         "team": "Los Angeles Angels",
         "rank": 5,
         "wins": 60,
-        "losses": 95,
-        "win_pct": 0.387
+        "losses": 96,
+        "win_pct": 0.385
       }
     ]
   },
-  "current_field_updated": "2026-09-20 21:03 UTC"
+  "current_field_updated": "2026-09-20 23:24 UTC"
 }
