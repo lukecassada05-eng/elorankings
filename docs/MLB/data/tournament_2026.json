@@ -79,14 +79,6 @@
       "note": null
     },
     {
-      "team": "Minnesota Twins",
-      "conference": "AL",
-      "division": "AL Central",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "Detroit Tigers",
       "conference": "AL",
       "division": "AL Central",
@@ -98,6 +90,14 @@
       "team": "Seattle Mariners",
       "conference": "AL",
       "division": "AL West",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Minnesota Twins",
+      "conference": "AL",
+      "division": "AL Central",
       "seed": null,
       "status": "outside",
       "note": null
@@ -333,9 +333,9 @@
       {
         "team": "San Diego Padres",
         "rank": 2,
-        "wins": 85,
+        "wins": 86,
         "losses": 69,
-        "win_pct": 0.552
+        "win_pct": 0.555
       },
       {
         "team": "Arizona Diamondbacks",
@@ -378,8 +378,8 @@
         "team": "Miami Marlins",
         "rank": 3,
         "wins": 76,
-        "losses": 78,
-        "win_pct": 0.494
+        "losses": 79,
+        "win_pct": 0.49
       },
       {
         "team": "Washington Nationals",
@@ -428,9 +428,9 @@
       {
         "team": "Los Angeles Angels",
         "rank": 5,
-        "wins": 59,
-        "losses": 96,
-        "win_pct": 0.381
+        "wins": 60,
+        "losses": 95,
+        "win_pct": 0.387
       }
     ],
     "AL Central": [
@@ -449,18 +449,18 @@
         "win_pct": 0.51
       },
       {
-        "team": "Minnesota Twins",
+        "team": "Detroit Tigers",
         "rank": 3,
         "wins": 73,
         "losses": 82,
         "win_pct": 0.471
       },
       {
-        "team": "Detroit Tigers",
+        "team": "Minnesota Twins",
         "rank": 4,
-        "wins": 73,
-        "losses": 82,
-        "win_pct": 0.471
+        "wins": 72,
+        "losses": 83,
+        "win_pct": 0.465
       },
       {
         "team": "Kansas City Royals",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-20 04:55 UTC"
+  "current_field_updated": "2026-09-20 11:23 UTC"
 }
