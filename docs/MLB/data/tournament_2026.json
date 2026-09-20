@@ -23,7 +23,7 @@
       "note": "Division winner — first-round bye"
     },
     {
-      "team": "Houston Astros",
+      "team": "Texas Rangers",
       "conference": "AL",
       "division": "AL West",
       "seed": 3,
@@ -55,7 +55,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "Texas Rangers",
+      "team": "Houston Astros",
       "conference": "AL",
       "division": "AL West",
       "seed": null,
@@ -79,6 +79,14 @@
       "note": null
     },
     {
+      "team": "Minnesota Twins",
+      "conference": "AL",
+      "division": "AL Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "Detroit Tigers",
       "conference": "AL",
       "division": "AL Central",
@@ -90,14 +98,6 @@
       "team": "Seattle Mariners",
       "conference": "AL",
       "division": "AL West",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Minnesota Twins",
-      "conference": "AL",
-      "division": "AL Central",
       "seed": null,
       "status": "outside",
       "note": null
@@ -248,6 +248,43 @@
     }
   ],
   "standings": {
+    "NL Central": [
+      {
+        "team": "Milwaukee Brewers",
+        "rank": 1,
+        "wins": 97,
+        "losses": 58,
+        "win_pct": 0.626
+      },
+      {
+        "team": "Chicago Cubs",
+        "rank": 2,
+        "wins": 86,
+        "losses": 69,
+        "win_pct": 0.555
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "rank": 3,
+        "wins": 78,
+        "losses": 77,
+        "win_pct": 0.503
+      },
+      {
+        "team": "St. Louis Cardinals",
+        "rank": 4,
+        "wins": 75,
+        "losses": 80,
+        "win_pct": 0.484
+      },
+      {
+        "team": "Cincinnati Reds",
+        "rank": 5,
+        "wins": 72,
+        "losses": 83,
+        "win_pct": 0.465
+      }
+    ],
     "AL East": [
       {
         "team": "Tampa Bay Rays",
@@ -260,8 +297,8 @@
         "team": "New York Yankees",
         "rank": 2,
         "wins": 89,
-        "losses": 64,
-        "win_pct": 0.582
+        "losses": 65,
+        "win_pct": 0.578
       },
       {
         "team": "Boston Red Sox",
@@ -274,8 +311,8 @@
         "team": "Toronto Blue Jays",
         "rank": 4,
         "wins": 76,
-        "losses": 78,
-        "win_pct": 0.494
+        "losses": 79,
+        "win_pct": 0.49
       },
       {
         "team": "Baltimore Orioles",
@@ -285,50 +322,13 @@
         "win_pct": 0.484
       }
     ],
-    "NL Central": [
-      {
-        "team": "Milwaukee Brewers",
-        "rank": 1,
-        "wins": 97,
-        "losses": 58,
-        "win_pct": 0.626
-      },
-      {
-        "team": "Chicago Cubs",
-        "rank": 2,
-        "wins": 85,
-        "losses": 69,
-        "win_pct": 0.552
-      },
-      {
-        "team": "Pittsburgh Pirates",
-        "rank": 3,
-        "wins": 77,
-        "losses": 77,
-        "win_pct": 0.5
-      },
-      {
-        "team": "St. Louis Cardinals",
-        "rank": 4,
-        "wins": 75,
-        "losses": 79,
-        "win_pct": 0.487
-      },
-      {
-        "team": "Cincinnati Reds",
-        "rank": 5,
-        "wins": 72,
-        "losses": 82,
-        "win_pct": 0.468
-      }
-    ],
     "NL West": [
       {
         "team": "Los Angeles Dodgers",
         "rank": 1,
-        "wins": 94,
+        "wins": 95,
         "losses": 60,
-        "win_pct": 0.61
+        "win_pct": 0.613
       },
       {
         "team": "San Diego Padres",
@@ -340,32 +340,32 @@
       {
         "team": "Arizona Diamondbacks",
         "rank": 3,
-        "wins": 80,
+        "wins": 81,
         "losses": 74,
-        "win_pct": 0.519
+        "win_pct": 0.523
       },
       {
         "team": "San Francisco Giants",
         "rank": 4,
         "wins": 65,
-        "losses": 90,
-        "win_pct": 0.419
+        "losses": 91,
+        "win_pct": 0.417
       },
       {
         "team": "Colorado Rockies",
         "rank": 5,
-        "wins": 56,
+        "wins": 57,
         "losses": 98,
-        "win_pct": 0.364
+        "win_pct": 0.368
       }
     ],
     "NL East": [
       {
         "team": "Atlanta Braves",
         "rank": 1,
-        "wins": 90,
+        "wins": 91,
         "losses": 65,
-        "win_pct": 0.581
+        "win_pct": 0.583
       },
       {
         "team": "Philadelphia Phillies",
@@ -384,9 +384,9 @@
       {
         "team": "Washington Nationals",
         "rank": 4,
-        "wins": 72,
+        "wins": 73,
         "losses": 82,
-        "win_pct": 0.468
+        "win_pct": 0.471
       },
       {
         "team": "New York Mets",
@@ -394,6 +394,43 @@
         "wins": 71,
         "losses": 84,
         "win_pct": 0.458
+      }
+    ],
+    "AL West": [
+      {
+        "team": "Texas Rangers",
+        "rank": 1,
+        "wins": 78,
+        "losses": 77,
+        "win_pct": 0.503
+      },
+      {
+        "team": "Houston Astros",
+        "rank": 2,
+        "wins": 77,
+        "losses": 78,
+        "win_pct": 0.497
+      },
+      {
+        "team": "Seattle Mariners",
+        "rank": 3,
+        "wins": 72,
+        "losses": 83,
+        "win_pct": 0.465
+      },
+      {
+        "team": "Athletics",
+        "rank": 4,
+        "wins": 61,
+        "losses": 94,
+        "win_pct": 0.394
+      },
+      {
+        "team": "Los Angeles Angels",
+        "rank": 5,
+        "wins": 59,
+        "losses": 96,
+        "win_pct": 0.381
       }
     ],
     "AL Central": [
@@ -412,64 +449,27 @@
         "win_pct": 0.51
       },
       {
-        "team": "Detroit Tigers",
+        "team": "Minnesota Twins",
         "rank": 3,
         "wins": 73,
         "losses": 82,
         "win_pct": 0.471
       },
       {
-        "team": "Minnesota Twins",
+        "team": "Detroit Tigers",
         "rank": 4,
-        "wins": 72,
+        "wins": 73,
         "losses": 82,
-        "win_pct": 0.468
+        "win_pct": 0.471
       },
       {
         "team": "Kansas City Royals",
         "rank": 5,
         "wins": 67,
-        "losses": 87,
-        "win_pct": 0.435
-      }
-    ],
-    "AL West": [
-      {
-        "team": "Houston Astros",
-        "rank": 1,
-        "wins": 77,
-        "losses": 77,
-        "win_pct": 0.5
-      },
-      {
-        "team": "Texas Rangers",
-        "rank": 2,
-        "wins": 77,
-        "losses": 77,
-        "win_pct": 0.5
-      },
-      {
-        "team": "Seattle Mariners",
-        "rank": 3,
-        "wins": 72,
-        "losses": 82,
-        "win_pct": 0.468
-      },
-      {
-        "team": "Athletics",
-        "rank": 4,
-        "wins": 61,
-        "losses": 94,
-        "win_pct": 0.394
-      },
-      {
-        "team": "Los Angeles Angels",
-        "rank": 5,
-        "wins": 59,
-        "losses": 95,
-        "win_pct": 0.383
+        "losses": 88,
+        "win_pct": 0.432
       }
     ]
   },
-  "current_field_updated": "2026-09-19 23:07 UTC"
+  "current_field_updated": "2026-09-20 04:27 UTC"
 }
