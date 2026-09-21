@@ -2624,6 +2624,27 @@ window.initSportPage = function(CFG) {
     renderResumeClassic(el);
   }
 
+  // Resume Score formatting/header — sport-agnostic by magnitude rather than
+  // a hardcoded sport check, since different sports' resume_score columns
+  // use different scales (see R/update_cfb.R vs R/update_cbb.R):
+  //  - CFB's resume_score is a raw quality-win-credit sum (no compression),
+  //    typically in the hundreds/thousands — toFixed(0) is the right call.
+  //  - CBB's resume_score is the FOURTH ROOT of that same kind of sum (see
+  //    R/update_cbb.R's own comment for why), so it's always well under
+  //    100 — toFixed(0) on a ~9-14 range would collapse most of the country
+  //    into a handful of indistinguishable integers, erasing exactly the
+  //    separation the metric exists to show. One extra decimal fixes that.
+  function fmtResumeScore(v) {
+    const n = Number(v);
+    return n < 100 ? n.toFixed(1) : n.toFixed(0);
+  }
+  function resumeScoreHeader() {
+    if (CFG.sport === 'CBB') {
+      return `<th data-type="num" title="Resume Score = fourth root of (sum of opponent Elo minus 1000 for each win, floored at 0 per game) — an Elo-based proxy for resume strength, not the real NET/Quadrant metric used by the NCAA selection committee. Does not account for game location (home/neutral/away).">Resume Score ⓘ</th>`;
+    }
+    return '<th data-type="num">Resume Score</th>';
+  }
+
   function renderResumeClassic(el) {
     const sorted = [...data].sort((a,b)=>CFG.sport==='CFB'?(b.pr||b.elo||0)-(a.pr||a.elo||0):(b.resume_score||0)-(a.resume_score||0));
     const rows = sorted.slice(0,120).map((r,i)=>`<tr>
@@ -2632,7 +2653,7 @@ window.initSportPage = function(CFG) {
       <td class="elo" data-val="${r.elo}">${r.elo.toFixed(1)}</td>
       ${CFG.sport==='CFB'?`<td class="num" data-val="${r.pr||r.elo}" style="color:var(--accent);font-weight:500">${(r.pr||r.elo).toFixed(1)}</td>`:''}
       <td class="record">${r.record}</td>
-      <td class="num" data-val="${r.resume_score||0}">${r.resume_score>0?Number(r.resume_score).toFixed(0):'—'}</td>
+      <td class="num" data-val="${r.resume_score||0}">${r.resume_score>0?fmtResumeScore(r.resume_score):'—'}</td>
       <td class="num">${r.sos>0?r.sos.toFixed(1):'—'}</td>
       <td class="num">${r.best_win_team?r.best_win_team.substring(0,16):'—'}</td>
     </tr>`).join('');
@@ -2641,7 +2662,7 @@ window.initSportPage = function(CFG) {
         <th data-type="num">Elo</th>
         ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo × win_pct^0.6 + √(quality resume)">PR ⓘ</th>':''}
         <th>Record</th>
-        <th data-type="num">Resume Score</th><th data-type="num">SOS</th><th>Best Win</th>
+        ${resumeScoreHeader()}<th data-type="num">SOS</th><th>Best Win</th>
       </tr></thead><tbody>${rows}</tbody></table></div>`;
     makeSortable(document.getElementById('mainTable'));
   }
