@@ -144,6 +144,36 @@ for (s in SEASONS) {
 
   out <- build_output(elo, season=s, conf_map=res$conf_map, sos_map=sos,
                       conf_champ_map=conf_champ_map)
+
+  # ── Resume score: quality-win credit ────────────────────────
+  # Sum of (opponent Elo − 1000) across wins only, floored at 0 PER GAME
+  # (pmax(0, ...) before summing) — a win over a sub-1000 opponent can
+  # never subtract from the total. Teams can legitimately drop below 1000
+  # in this Elo system (any team under 4 games played gets its rating
+  # halved each iteration — see run_elo()'s min_games damping), so the
+  # per-game floor isn't just defensive, it's a real case here.
+  #
+  # A ~30-game CBB season means raw sums run into the tens of thousands,
+  # so resume_score itself (not just an internal intermediate) is the
+  # FOURTH ROOT of that sum — a monotonic compression down to a readable
+  # single/low-double-digit scale, same relative ordering, smaller number.
+  #
+  # This is a disclosed Elo-based approximation of "résumé strength," not
+  # the NCAA selection committee's real NET/Quadrant system: no live NET
+  # feed, no scoring-margin/efficiency inputs, and — notably — no game
+  # location (home/neutral/away), which the real Quad system weights
+  # heavily and this script doesn't have the data to reproduce (the games
+  # extracted above carry no date/site, only winner/loser/score). Same
+  # "honest approximation" spirit as R/update_cfb.R's resume_score /
+  # Playoff Rating and R/standings_engine.R's HONESTY NOTE.
+  elo_lup    <- setNames(elo$elo, elo$team)
+  resume_raw <- tapply(seq_len(nrow(res$games)), res$games$winner,
+                       function(rows) sum(pmax(0, elo_lup[res$games$loser[rows]] - 1000), na.rm = TRUE))
+  # tapply() only produces an entry for teams with >=1 win — a winless
+  # team is simply absent (not 0), so index-by-name would return NA; a
+  # winless team's resume is 0, not "unknown" (same fix as update_cfb.R).
+  out$resume_score <- round(ifelse(is.na(resume_raw[out$team]), 0, resume_raw[out$team]) ^ 0.25, 2)
+
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
   out <- attach_movers(out, out_path)
   write_csv(out, out_path)
