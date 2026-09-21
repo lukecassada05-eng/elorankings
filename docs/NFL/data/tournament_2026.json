@@ -95,17 +95,17 @@
       "note": null
     },
     {
-      "team": "MIA",
+      "team": "HOU",
       "conference": "AFC",
-      "division": "AFC East",
+      "division": "AFC South",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "HOU",
+      "team": "MIA",
       "conference": "AFC",
-      "division": "AFC South",
+      "division": "AFC East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -135,17 +135,17 @@
       "note": null
     },
     {
-      "team": "MIN",
+      "team": "SEA",
       "conference": "NFC",
-      "division": "NFC North",
+      "division": "NFC West",
       "seed": 1,
       "status": "division_winner",
       "note": "Division winner"
     },
     {
-      "team": "SF",
+      "team": "MIN",
       "conference": "NFC",
-      "division": "NFC West",
+      "division": "NFC North",
       "seed": 2,
       "status": "division_winner",
       "note": "Division winner"
@@ -167,26 +167,18 @@
       "note": "Division winner"
     },
     {
-      "team": "PHI",
+      "team": "SF",
       "conference": "NFC",
-      "division": "NFC East",
+      "division": "NFC West",
       "seed": 5,
       "status": "wildcard",
       "note": "Wildcard"
     },
     {
-      "team": "SEA",
+      "team": "PHI",
       "conference": "NFC",
-      "division": "NFC West",
+      "division": "NFC East",
       "seed": 6,
-      "status": "wildcard",
-      "note": "Wildcard"
-    },
-    {
-      "team": "ARI",
-      "conference": "NFC",
-      "division": "NFC West",
-      "seed": 7,
       "status": "wildcard",
       "note": "Wildcard"
     },
@@ -194,9 +186,9 @@
       "team": "DET",
       "conference": "NFC",
       "division": "NFC North",
-      "seed": null,
-      "status": "outside",
-      "note": null
+      "seed": 7,
+      "status": "wildcard",
+      "note": "Wildcard"
     },
     {
       "team": "NO",
@@ -215,22 +207,6 @@
       "note": null
     },
     {
-      "team": "GB",
-      "conference": "NFC",
-      "division": "NFC North",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "WAS",
-      "conference": "NFC",
-      "division": "NFC East",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "DAL",
       "conference": "NFC",
       "division": "NFC East",
@@ -239,9 +215,33 @@
       "note": null
     },
     {
+      "team": "GB",
+      "conference": "NFC",
+      "division": "NFC North",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "ARI",
+      "conference": "NFC",
+      "division": "NFC West",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "LA",
       "conference": "NFC",
       "division": "NFC West",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "WAS",
+      "conference": "NFC",
+      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -294,6 +294,66 @@
         "win_pct": 0.5
       }
     ],
+    "NFC West": [
+      {
+        "team": "SEA",
+        "rank": 1,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1
+      },
+      {
+        "team": "SF",
+        "rank": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1
+      },
+      {
+        "team": "ARI",
+        "rank": 3,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5
+      },
+      {
+        "team": "LA",
+        "rank": 4,
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0
+      }
+    ],
+    "AFC West": [
+      {
+        "team": "KC",
+        "rank": 1,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1
+      },
+      {
+        "team": "LV",
+        "rank": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1
+      },
+      {
+        "team": "DEN",
+        "rank": 3,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5
+      },
+      {
+        "team": "LAC",
+        "rank": 4,
+        "wins": 0,
+        "losses": 2,
+        "win_pct": 0
+      }
+    ],
     "AFC East": [
       {
         "team": "BUF",
@@ -320,7 +380,7 @@
         "team": "MIA",
         "rank": 4,
         "wins": 0,
-        "losses": 1,
+        "losses": 2,
         "win_pct": 0
       }
     ],
@@ -370,17 +430,17 @@
         "win_pct": 1
       },
       {
-        "team": "WAS",
+        "team": "DAL",
         "rank": 3,
-        "wins": 0,
+        "wins": 1,
         "losses": 1,
-        "win_pct": 0
+        "win_pct": 0.5
       },
       {
-        "team": "DAL",
+        "team": "WAS",
         "rank": 4,
         "wins": 0,
-        "losses": 1,
+        "losses": 2,
         "win_pct": 0
       }
     ],
@@ -440,70 +500,10 @@
         "team": "IND",
         "rank": 4,
         "wins": 0,
-        "losses": 1,
-        "win_pct": 0
-      }
-    ],
-    "AFC West": [
-      {
-        "team": "KC",
-        "rank": 1,
-        "wins": 1,
-        "losses": 0,
-        "win_pct": 1
-      },
-      {
-        "team": "LV",
-        "rank": 2,
-        "wins": 1,
-        "losses": 0,
-        "win_pct": 1
-      },
-      {
-        "team": "DEN",
-        "rank": 3,
-        "wins": 1,
-        "losses": 1,
-        "win_pct": 0.5
-      },
-      {
-        "team": "LAC",
-        "rank": 4,
-        "wins": 0,
-        "losses": 1,
-        "win_pct": 0
-      }
-    ],
-    "NFC West": [
-      {
-        "team": "SF",
-        "rank": 1,
-        "wins": 1,
-        "losses": 0,
-        "win_pct": 1
-      },
-      {
-        "team": "SEA",
-        "rank": 2,
-        "wins": 1,
-        "losses": 0,
-        "win_pct": 1
-      },
-      {
-        "team": "ARI",
-        "rank": 3,
-        "wins": 1,
-        "losses": 0,
-        "win_pct": 1
-      },
-      {
-        "team": "LA",
-        "rank": 4,
-        "wins": 0,
-        "losses": 1,
+        "losses": 2,
         "win_pct": 0
       }
     ]
   },
-  "current_field_updated": "2026-09-20 23:24 UTC"
+  "current_field_updated": "2026-09-21 04:42 UTC"
 }

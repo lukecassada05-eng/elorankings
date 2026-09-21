@@ -252,9 +252,9 @@
       {
         "team": "Milwaukee Brewers",
         "rank": 1,
-        "wins": 97,
+        "wins": 98,
         "losses": 58,
-        "win_pct": 0.626
+        "win_pct": 0.628
       },
       {
         "team": "Chicago Cubs",
@@ -318,8 +318,8 @@
         "team": "Baltimore Orioles",
         "rank": 5,
         "wins": 75,
-        "losses": 80,
-        "win_pct": 0.484
+        "losses": 81,
+        "win_pct": 0.481
       }
     ],
     "NL West": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-20 23:24 UTC"
+  "current_field_updated": "2026-09-21 04:42 UTC"
 }
