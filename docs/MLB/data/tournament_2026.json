@@ -55,17 +55,17 @@
       "note": "Wildcard"
     },
     {
-      "team": "Toronto Blue Jays",
+      "team": "Houston Astros",
       "conference": "AL",
-      "division": "AL East",
+      "division": "AL West",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Houston Astros",
+      "team": "Toronto Blue Jays",
       "conference": "AL",
-      "division": "AL West",
+      "division": "AL East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -310,16 +310,16 @@
       {
         "team": "Toronto Blue Jays",
         "rank": 4,
-        "wins": 78,
-        "losses": 79,
-        "win_pct": 0.497
+        "wins": 77,
+        "losses": 80,
+        "win_pct": 0.49
       },
       {
         "team": "Baltimore Orioles",
         "rank": 5,
-        "wins": 75,
-        "losses": 82,
-        "win_pct": 0.478
+        "wins": 76,
+        "losses": 81,
+        "win_pct": 0.484
       }
     ],
     "NL West": [
@@ -347,9 +347,9 @@
       {
         "team": "San Francisco Giants",
         "rank": 4,
-        "wins": 65,
+        "wins": 66,
         "losses": 92,
-        "win_pct": 0.414
+        "win_pct": 0.418
       },
       {
         "team": "Colorado Rockies",
@@ -422,8 +422,8 @@
         "team": "Minnesota Twins",
         "rank": 4,
         "wins": 73,
-        "losses": 83,
-        "win_pct": 0.468
+        "losses": 84,
+        "win_pct": 0.465
       },
       {
         "team": "Kansas City Royals",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-22 00:15 UTC"
+  "current_field_updated": "2026-09-22 02:29 UTC"
 }
