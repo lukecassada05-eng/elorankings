@@ -2292,54 +2292,36 @@ window.initSportPage = function(CFG) {
     const is76    = isCBB && season >= 2027;
     const total   = is76 ? 76 : (isCBB ? 68 : 64);
 
-    // ── Bracket Score (CBB only): blends Elo, Resume Score, and SOS ─────
-    // instead of ranking/seeding the field by Elo alone. Elo/SOS live on
-    // roughly the same scale (both are Elo-space numbers, ~1300-2800 for
-    // this sport); Resume Score is a compressed ⁴√-scale number, usually
-    // single/low-double digits (see fmtResumeScore's comment above). Mixing
-    // those raw scales directly would let Elo/SOS swamp Resume Score
-    // completely, so each is min-max normalized to 0-1 across this
-    // season's full team pool before blending — the composite itself also
-    // lands in [0,1] (shown ×100 in the UI for readability).
+    // ── At-large selection & seeding (CBB only): by Resume Score, not Elo ──
+    // This mirrors how the real NCAA selection committee actually works:
+    // at-large bids and seed lines are decided off résumé (NET/quadrant
+    // record/strength of record), not off a predictive power rating like
+    // KenPom — a power rating answers "who'd win tomorrow," a résumé
+    // answers "who's earned it." Conference auto-bids are the one spot
+    // that stays Elo — see the fallback sort a few dozen lines down — since
+    // predicting who wins next week's conference tournament genuinely is a
+    // "who's better right now" question, not a résumé one.
     //
-    // Weights (50% Elo / 35% Resume Score / 15% SOS) are a judgment call,
-    // not a derived constant: Elo gets the largest share since it's this
-    // site's most complete, most-tested signal; Resume Score gets real
-    // weight since that's the whole point of this feature (a team's actual
-    // wins, not just its predictive rating); SOS gets the smallest share
-    // deliberately, since it's already a real ingredient of Resume Score
-    // (which only credits wins over opponents above a 1000-Elo floor) — a
-    // full independent weight for it here would double-count schedule
-    // strength. Easy single spot to retune if the balance looks off.
+    // Resume Score already has SOS baked into it (it only credits wins over
+    // opponents above a 1000-Elo floor), so there's no separate SOS term
+    // here — adding one back in would just double-count schedule strength.
     //
     // Degrades gracefully for a season with no resume_score column at all
-    // (pre-dates this feature): every team's resume_score comes through
-    // as 0 (see coerceRow in utils.js), so resumeRange.span is 0, and
-    // resumeNorm is 0 for everyone — the composite quietly falls back to
-    // a pure Elo/SOS blend instead of erroring or dividing by zero.
+    // (pre-dates this feature): if every team's resume_score comes through
+    // as 0 (see coerceRow in utils.js), there's no signal to rank on, so
+    // this falls back to Elo for that season instead of leaving the whole
+    // field tied at 0.
     //
     // CBASE keeps the original pure-Elo bracket — it has no resume_score
-    // data (that column only exists on CBB's CSVs), so there's nothing to
-    // blend for it; forcing this formula there would just add 0 everywhere
-    // for no benefit.
-    const BRACKET_WEIGHTS = { elo: 0.5, resume: 0.35, sos: 0.15 };
-    function minMaxOf(vals) {
-      const mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals);
-      return { min: mn, span: (mx - mn) || 1 };
+    // data (that column only exists on CBB's CSVs).
+    const resumeAvailable = isCBB && data.some(r => (r.resume_score || 0) > 0);
+    // Single switch used everywhere below for at-large/seeding: CBB ranks
+    // by Resume Score (falling back to Elo pre-feature), CBASE and any
+    // other sport with this tab keeps ranking by Elo exactly as before.
+    function rankValue(r) {
+      if (!isCBB) return r.elo || 0;
+      return resumeAvailable ? (r.resume_score || 0) : (r.elo || 0);
     }
-    const eloRange    = minMaxOf(data.map(r => r.elo || 0));
-    const resumeRange = minMaxOf(data.map(r => r.resume_score || 0));
-    const sosRange    = minMaxOf(data.map(r => r.sos || 0));
-    function bracketScore(r) {
-      const eN = ((r.elo || 0) - eloRange.min) / eloRange.span;
-      const rN = ((r.resume_score || 0) - resumeRange.min) / resumeRange.span;
-      const sN = ((r.sos || 0) - sosRange.min) / sosRange.span;
-      return BRACKET_WEIGHTS.elo * eN + BRACKET_WEIGHTS.resume * rN + BRACKET_WEIGHTS.sos * sN;
-    }
-    // Single switch used everywhere below: CBB ranks/seeds by the blended
-    // Bracket Score, every other sport with this tab (CBASE) keeps ranking
-    // by Elo exactly as before.
-    function rankValue(r) { return isCBB ? bracketScore(r) : (r.elo || 0); }
 
     // ── Fetch conference tournament champions from ESPN ────────────────────────
     // CBB: conf tournaments run late Feb–mid March (seasontype=3)
@@ -2588,7 +2570,7 @@ window.initSportPage = function(CFG) {
       var autoBids  = Object.values(byConf);
       var autoTeams = new Set(autoBids.map(function(r){return r.team;}));
 
-      // At-large selection and overall seeding both rank by Bracket Score
+      // At-large selection and overall seeding both rank by Resume Score
       // for CBB (Elo alone for every other sport this tab covers) — see
       // rankValue()'s definition above.
       var atLarge = data
@@ -2648,14 +2630,14 @@ window.initSportPage = function(CFG) {
                 '<div style="flex:1;min-width:0">' +
                   '<div class="bracket-line-team">' + r.team + '</div>' +
                   '<div class="bracket-line-conf">' + (r.conference||'\u2014') + ' \u00b7 Elo ' + r.elo.toFixed(1) +
-                    (isCBB ? ' \u00b7 BS ' + (bracketScore(r)*100).toFixed(1) : '') + '</div>' +
+                    (isCBB ? ' \u00b7 RS ' + fmtResumeScore(r.resume_score||0) : '') + '</div>' +
                 '</div>' + tag + '</div>';
             }).join('') + '</div>';
         }).join('') + '</div>' +
         '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.75rem;padding:0.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius)">' +
         (isCBB
           ? 'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected conf-tourney winner (by Elo)\u2002\u00b7\u2002' +
-            'BS\u00a0=\u00a0Bracket Score (0-100) \u2014 at-large selection and seeding are ranked by a blend of 50% Elo, 35% Resume Score, 15% SOS, each normalized across this season\'s full D1 field, not by Elo alone'
+            'RS\u00a0=\u00a0Resume Score \u2014 at-large selection and seeding are ranked by Resume Score, not Elo, matching how the real selection committee weighs r\u00e9sum\u00e9 over a predictive rating (falls back to Elo for seasons before this metric existed)'
           : 'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected (highest Elo)\u2002\u00b7\u2002At-large by Elo') +
         '</div>';
     });
