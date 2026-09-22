@@ -310,16 +310,16 @@
       {
         "team": "Toronto Blue Jays",
         "rank": 4,
-        "wins": 77,
+        "wins": 78,
         "losses": 79,
-        "win_pct": 0.494
+        "win_pct": 0.497
       },
       {
         "team": "Baltimore Orioles",
         "rank": 5,
         "wins": 75,
-        "losses": 81,
-        "win_pct": 0.481
+        "losses": 82,
+        "win_pct": 0.478
       }
     ],
     "NL West": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-21 23:36 UTC"
+  "current_field_updated": "2026-09-22 00:15 UTC"
 }
