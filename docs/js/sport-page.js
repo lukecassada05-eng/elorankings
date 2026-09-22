@@ -2635,10 +2635,13 @@ window.initSportPage = function(CFG) {
   //    R/update_cbb.R's own comment for why), so it's always well under
   //    100 — toFixed(0) on a ~9-14 range would collapse most of the country
   //    into a handful of indistinguishable integers, erasing exactly the
-  //    separation the metric exists to show. One extra decimal fixes that.
+  //    separation the metric exists to show. Three decimals (bumped up from
+  //    one) makes that separation visible; R/update_cbb.R now rounds
+  //    resume_score to 4 decimal places so there's real precision behind
+  //    all three of them, not trailing zeros.
   function fmtResumeScore(v) {
     const n = Number(v);
-    return n < 100 ? n.toFixed(1) : n.toFixed(0);
+    return n < 100 ? n.toFixed(3) : n.toFixed(0);
   }
   function resumeScoreHeader() {
     if (CFG.sport === 'CBB') {
