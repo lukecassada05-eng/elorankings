@@ -172,7 +172,16 @@ for (s in SEASONS) {
   # tapply() only produces an entry for teams with >=1 win — a winless
   # team is simply absent (not 0), so index-by-name would return NA; a
   # winless team's resume is 0, not "unknown" (same fix as update_cfb.R).
-  out$resume_score <- round(ifelse(is.na(resume_raw[out$team]), 0, resume_raw[out$team]) ^ 0.25, 2)
+  #
+  # as.numeric() wrapper is load-bearing, not cosmetic: tapply()'s result
+  # carries class "array" (with a dim attribute) even though it's 1-D, and
+  # indexing it by name — resume_raw[out$team] — preserves that array
+  # class straight through ifelse()/round() into the new column. readr::
+  # write_csv() refuses to write a matrix/array-classed column ("x must
+  # not contain list or matrix columns"), which broke every CBB season's
+  # write the first time this ran in GitHub Actions. as.numeric() collapses
+  # it back to a plain atomic vector before it ever reaches `out`.
+  out$resume_score <- round(as.numeric(ifelse(is.na(resume_raw[out$team]), 0, resume_raw[out$team])) ^ 0.25, 2)
 
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
   out <- attach_movers(out, out_path)
