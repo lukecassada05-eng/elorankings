@@ -2292,6 +2292,55 @@ window.initSportPage = function(CFG) {
     const is76    = isCBB && season >= 2027;
     const total   = is76 ? 76 : (isCBB ? 68 : 64);
 
+    // ── Bracket Score (CBB only): blends Elo, Resume Score, and SOS ─────
+    // instead of ranking/seeding the field by Elo alone. Elo/SOS live on
+    // roughly the same scale (both are Elo-space numbers, ~1300-2800 for
+    // this sport); Resume Score is a compressed ⁴√-scale number, usually
+    // single/low-double digits (see fmtResumeScore's comment above). Mixing
+    // those raw scales directly would let Elo/SOS swamp Resume Score
+    // completely, so each is min-max normalized to 0-1 across this
+    // season's full team pool before blending — the composite itself also
+    // lands in [0,1] (shown ×100 in the UI for readability).
+    //
+    // Weights (50% Elo / 35% Resume Score / 15% SOS) are a judgment call,
+    // not a derived constant: Elo gets the largest share since it's this
+    // site's most complete, most-tested signal; Resume Score gets real
+    // weight since that's the whole point of this feature (a team's actual
+    // wins, not just its predictive rating); SOS gets the smallest share
+    // deliberately, since it's already a real ingredient of Resume Score
+    // (which only credits wins over opponents above a 1000-Elo floor) — a
+    // full independent weight for it here would double-count schedule
+    // strength. Easy single spot to retune if the balance looks off.
+    //
+    // Degrades gracefully for a season with no resume_score column at all
+    // (pre-dates this feature): every team's resume_score comes through
+    // as 0 (see coerceRow in utils.js), so resumeRange.span is 0, and
+    // resumeNorm is 0 for everyone — the composite quietly falls back to
+    // a pure Elo/SOS blend instead of erroring or dividing by zero.
+    //
+    // CBASE keeps the original pure-Elo bracket — it has no resume_score
+    // data (that column only exists on CBB's CSVs), so there's nothing to
+    // blend for it; forcing this formula there would just add 0 everywhere
+    // for no benefit.
+    const BRACKET_WEIGHTS = { elo: 0.5, resume: 0.35, sos: 0.15 };
+    function minMaxOf(vals) {
+      const mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals);
+      return { min: mn, span: (mx - mn) || 1 };
+    }
+    const eloRange    = minMaxOf(data.map(r => r.elo || 0));
+    const resumeRange = minMaxOf(data.map(r => r.resume_score || 0));
+    const sosRange    = minMaxOf(data.map(r => r.sos || 0));
+    function bracketScore(r) {
+      const eN = ((r.elo || 0) - eloRange.min) / eloRange.span;
+      const rN = ((r.resume_score || 0) - resumeRange.min) / resumeRange.span;
+      const sN = ((r.sos || 0) - sosRange.min) / sosRange.span;
+      return BRACKET_WEIGHTS.elo * eN + BRACKET_WEIGHTS.resume * rN + BRACKET_WEIGHTS.sos * sN;
+    }
+    // Single switch used everywhere below: CBB ranks/seeds by the blended
+    // Bracket Score, every other sport with this tab (CBASE) keeps ranking
+    // by Elo exactly as before.
+    function rankValue(r) { return isCBB ? bracketScore(r) : (r.elo || 0); }
+
     // ── Fetch conference tournament champions from ESPN ────────────────────────
     // CBB: conf tournaments run late Feb–mid March (seasontype=3)
     // CBASE: conf tournaments run mid-May (seasontype=3)
@@ -2523,7 +2572,11 @@ window.initSportPage = function(CFG) {
           if (csvChamp) champTeam = {team: csvChamp, confirmed: true};
         }
 
-        // 3. Fallback: highest Elo
+        // 3. Fallback: highest Elo — deliberately Elo alone, not Bracket
+        // Score. This is predicting who WINS this conference's tournament
+        // (a future-games question, which is exactly what a predictive
+        // rating is for), not evaluating who's EARNED an at-large bid —
+        // Resume Score/SOS don't belong in "who's most likely to win."
         if (!champTeam) {
           var best = teams.slice().sort(function(a,b){return b.elo-a.elo;})[0];
           champTeam = {team: best, confirmed: false};
@@ -2535,12 +2588,15 @@ window.initSportPage = function(CFG) {
       var autoBids  = Object.values(byConf);
       var autoTeams = new Set(autoBids.map(function(r){return r.team;}));
 
+      // At-large selection and overall seeding both rank by Bracket Score
+      // for CBB (Elo alone for every other sport this tab covers) — see
+      // rankValue()'s definition above.
       var atLarge = data
         .filter(function(r){ return !autoTeams.has(r.team) && !EXCLUDE.has(r.conference||''); })
-        .sort(function(a,b){ return b.elo - a.elo; })
+        .sort(function(a,b){ return rankValue(b) - rankValue(a); })
         .slice(0, total - autoBids.length);
 
-      var field = autoBids.concat(atLarge).sort(function(a,b){ return b.elo - a.elo; });
+      var field = autoBids.concat(atLarge).sort(function(a,b){ return rankValue(b) - rankValue(a); });
 
       // Seeds
       var seeds;
@@ -2591,12 +2647,16 @@ window.initSportPage = function(CFG) {
                 '<div class="seed ' + (parseInt(seed)<=3?'s'+seed:'') + '">' + seed + '</div>' +
                 '<div style="flex:1;min-width:0">' +
                   '<div class="bracket-line-team">' + r.team + '</div>' +
-                  '<div class="bracket-line-conf">' + (r.conference||'\u2014') + ' \u00b7 ' + r.elo.toFixed(1) + '</div>' +
+                  '<div class="bracket-line-conf">' + (r.conference||'\u2014') + ' \u00b7 Elo ' + r.elo.toFixed(1) +
+                    (isCBB ? ' \u00b7 BS ' + (bracketScore(r)*100).toFixed(1) : '') + '</div>' +
                 '</div>' + tag + '</div>';
             }).join('') + '</div>';
         }).join('') + '</div>' +
         '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.75rem;padding:0.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius)">' +
-        'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected (highest Elo)\u2002\u00b7\u2002At-large by Elo' +
+        (isCBB
+          ? 'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected conf-tourney winner (by Elo)\u2002\u00b7\u2002' +
+            'BS\u00a0=\u00a0Bracket Score (0-100) \u2014 at-large selection and seeding are ranked by a blend of 50% Elo, 35% Resume Score, 15% SOS, each normalized across this season\'s full D1 field, not by Elo alone'
+          : 'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected (highest Elo)\u2002\u00b7\u2002At-large by Elo') +
         '</div>';
     });
   }
@@ -2635,13 +2695,14 @@ window.initSportPage = function(CFG) {
   //    R/update_cbb.R's own comment for why), so it's always well under
   //    100 — toFixed(0) on a ~9-14 range would collapse most of the country
   //    into a handful of indistinguishable integers, erasing exactly the
-  //    separation the metric exists to show. Three decimals (bumped up from
-  //    one) makes that separation visible; R/update_cbb.R now rounds
-  //    resume_score to 4 decimal places so there's real precision behind
-  //    all three of them, not trailing zeros.
+  //    separation the metric exists to show. No toFixed() rounding is
+  //    applied here at all — this shows the value exactly as it comes out
+  //    of the CSV (R/update_cbb.R already rounds resume_score to 4 decimal
+  //    places on the backend; this is display-side, it doesn't re-round on
+  //    top of that).
   function fmtResumeScore(v) {
     const n = Number(v);
-    return n < 100 ? n.toFixed(3) : n.toFixed(0);
+    return n < 100 ? String(n) : n.toFixed(0);
   }
   function resumeScoreHeader() {
     if (CFG.sport === 'CBB') {
