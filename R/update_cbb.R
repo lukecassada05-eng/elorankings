@@ -181,7 +181,10 @@ for (s in SEASONS) {
   # not contain list or matrix columns"), which broke every CBB season's
   # write the first time this ran in GitHub Actions. as.numeric() collapses
   # it back to a plain atomic vector before it ever reaches `out`.
-  out$resume_score <- round(as.numeric(ifelse(is.na(resume_raw[out$team]), 0, resume_raw[out$team])) ^ 0.25, 2)
+  # Rounded to 4 decimal places (was 2) so the frontend's extra display
+  # precision (fmtResumeScore in docs/js/sport-page.js, now 3 decimals) has
+  # real digits behind it instead of trailing zeros.
+  out$resume_score <- round(as.numeric(ifelse(is.na(resume_raw[out$team]), 0, resume_raw[out$team])) ^ 0.25, 4)
 
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
   out <- attach_movers(out, out_path)
