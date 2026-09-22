@@ -1031,7 +1031,9 @@ window.initSportPage = function(CFG) {
         </td>
         ${CFG.sport==='CFB'?`<td class="num" data-val="${r.pr||r.elo}" style="color:var(--accent);font-weight:500">${(r.pr||r.elo).toFixed(1)}</td>`:''}
         <td class="num" data-val="${r.wins||0}">${r.record||'—'}</td>
-        <td class="num" data-val="${r.win_pct||0}">${r.win_pct!=null?(r.win_pct*100).toFixed(1)+'%':'—'}</td>
+        ${CFG.sport==='CBB'
+          ? `<td class="num" data-val="${r.resume_score||0}">${r.resume_score>0?fmtResumeScore(r.resume_score):'—'}</td>`
+          : `<td class="num" data-val="${r.win_pct||0}">${r.win_pct!=null?(r.win_pct*100).toFixed(1)+'%':'—'}</td>`}
         <td class="num" data-val="${r.sos||0}">${r.sos!=null?Number(r.sos).toFixed(1):'—'}</td>
         <td class="num" data-val="${r.best_win_elo||0}">${bwn?('<span style="font-size:0.78rem">'+bwn+' <span style="color:var(--text-dim);font-family:var(--font-mono);font-size:0.68rem">('+bw+')</span></span>'):'—'}</td>
         ${extra}
@@ -1044,7 +1046,7 @@ window.initSportPage = function(CFG) {
         <th data-type="num">Elo</th>
         ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo × win_pct^0.6 + √(quality resume)">PR ⓘ</th>':''}
         <th data-type="num">Record</th>
-        <th data-type="num">Win%</th><th data-type="num">SOS</th>
+        ${CFG.sport==='CBB'?resumeScoreHeader():'<th data-type="num">Win%</th>'}<th data-type="num">SOS</th>
         <th data-type="num">Best Win</th>${extraHeaders}
       </tr></thead><tbody>${rows}</tbody>
     </table></div>`;
