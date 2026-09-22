@@ -151,7 +151,7 @@
       "note": "Division winner"
     },
     {
-      "team": "NYG",
+      "team": "PHI",
       "conference": "NFC",
       "division": "NFC East",
       "seed": 3,
@@ -175,20 +175,36 @@
       "note": "Wildcard"
     },
     {
-      "team": "PHI",
+      "team": "DET",
       "conference": "NFC",
-      "division": "NFC East",
+      "division": "NFC North",
       "seed": 6,
       "status": "wildcard",
       "note": "Wildcard"
     },
     {
-      "team": "DET",
+      "team": "LA",
       "conference": "NFC",
-      "division": "NFC North",
+      "division": "NFC West",
       "seed": 7,
       "status": "wildcard",
       "note": "Wildcard"
+    },
+    {
+      "team": "NYG",
+      "conference": "NFC",
+      "division": "NFC East",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "DAL",
+      "conference": "NFC",
+      "division": "NFC East",
+      "seed": null,
+      "status": "outside",
+      "note": null
     },
     {
       "team": "NO",
@@ -207,14 +223,6 @@
       "note": null
     },
     {
-      "team": "DAL",
-      "conference": "NFC",
-      "division": "NFC East",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "GB",
       "conference": "NFC",
       "division": "NFC North",
@@ -224,14 +232,6 @@
     },
     {
       "team": "ARI",
-      "conference": "NFC",
-      "division": "NFC West",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "LA",
       "conference": "NFC",
       "division": "NFC West",
       "seed": null,
@@ -310,18 +310,18 @@
         "win_pct": 1
       },
       {
-        "team": "ARI",
+        "team": "LA",
         "rank": 3,
         "wins": 1,
         "losses": 1,
         "win_pct": 0.5
       },
       {
-        "team": "LA",
+        "team": "ARI",
         "rank": 4,
-        "wins": 0,
+        "wins": 1,
         "losses": 1,
-        "win_pct": 0
+        "win_pct": 0.5
       }
     ],
     "AFC West": [
@@ -416,18 +416,18 @@
     ],
     "NFC East": [
       {
-        "team": "NYG",
+        "team": "PHI",
         "rank": 1,
-        "wins": 1,
+        "wins": 2,
         "losses": 0,
         "win_pct": 1
       },
       {
-        "team": "PHI",
+        "team": "NYG",
         "rank": 2,
-        "wins": 2,
-        "losses": 0,
-        "win_pct": 1
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5
       },
       {
         "team": "DAL",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-22 03:13 UTC"
+  "current_field_updated": "2026-09-22 05:00 UTC"
 }
