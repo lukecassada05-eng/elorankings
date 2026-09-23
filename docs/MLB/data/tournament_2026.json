@@ -311,15 +311,15 @@
         "team": "Toronto Blue Jays",
         "rank": 4,
         "wins": 77,
-        "losses": 80,
-        "win_pct": 0.49
+        "losses": 81,
+        "win_pct": 0.487
       },
       {
         "team": "Baltimore Orioles",
         "rank": 5,
-        "wins": 76,
+        "wins": 77,
         "losses": 81,
-        "win_pct": 0.484
+        "win_pct": 0.487
       }
     ],
     "NL Central": [
@@ -384,9 +384,9 @@
       {
         "team": "Washington Nationals",
         "rank": 4,
-        "wins": 74,
+        "wins": 75,
         "losses": 84,
-        "win_pct": 0.468
+        "win_pct": 0.472
       },
       {
         "team": "New York Mets",
@@ -422,8 +422,8 @@
         "team": "Detroit Tigers",
         "rank": 4,
         "wins": 74,
-        "losses": 84,
-        "win_pct": 0.468
+        "losses": 85,
+        "win_pct": 0.465
       },
       {
         "team": "Kansas City Royals",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-23 16:58 UTC"
+  "current_field_updated": "2026-09-23 21:44 UTC"
 }
