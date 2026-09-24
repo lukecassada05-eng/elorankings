@@ -87,17 +87,17 @@
       "note": null
     },
     {
-      "team": "Detroit Tigers",
+      "team": "Seattle Mariners",
       "conference": "AL",
-      "division": "AL Central",
+      "division": "AL West",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Seattle Mariners",
+      "team": "Detroit Tigers",
       "conference": "AL",
-      "division": "AL West",
+      "division": "AL Central",
       "seed": null,
       "status": "outside",
       "note": null
@@ -438,8 +438,8 @@
         "team": "Houston Astros",
         "rank": 1,
         "wins": 78,
-        "losses": 79,
-        "win_pct": 0.497
+        "losses": 80,
+        "win_pct": 0.494
       },
       {
         "team": "Texas Rangers",
@@ -451,9 +451,9 @@
       {
         "team": "Seattle Mariners",
         "rank": 3,
-        "wins": 73,
+        "wins": 74,
         "losses": 84,
-        "win_pct": 0.465
+        "win_pct": 0.468
       },
       {
         "team": "Athletics",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-24 04:32 UTC"
+  "current_field_updated": "2026-09-24 11:46 UTC"
 }
