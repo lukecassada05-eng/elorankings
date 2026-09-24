@@ -23,7 +23,7 @@
       "note": "Division winner — first-round bye"
     },
     {
-      "team": "Houston Astros",
+      "team": "Texas Rangers",
       "conference": "AL",
       "division": "AL West",
       "seed": 3,
@@ -55,7 +55,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "Texas Rangers",
+      "team": "Houston Astros",
       "conference": "AL",
       "division": "AL West",
       "seed": null,
@@ -259,23 +259,23 @@
       {
         "team": "Chicago Cubs",
         "rank": 2,
-        "wins": 87,
+        "wins": 88,
         "losses": 71,
-        "win_pct": 0.551
+        "win_pct": 0.553
       },
       {
         "team": "Pittsburgh Pirates",
         "rank": 3,
-        "wins": 80,
+        "wins": 81,
         "losses": 78,
-        "win_pct": 0.506
+        "win_pct": 0.509
       },
       {
         "team": "St. Louis Cardinals",
         "rank": 4,
         "wins": 77,
-        "losses": 81,
-        "win_pct": 0.487
+        "losses": 82,
+        "win_pct": 0.484
       },
       {
         "team": "Cincinnati Reds",
@@ -303,9 +303,9 @@
       {
         "team": "Arizona Diamondbacks",
         "rank": 3,
-        "wins": 84,
+        "wins": 85,
         "losses": 74,
-        "win_pct": 0.532
+        "win_pct": 0.535
       },
       {
         "team": "San Francisco Giants",
@@ -318,8 +318,8 @@
         "team": "Colorado Rockies",
         "rank": 5,
         "wins": 57,
-        "losses": 101,
-        "win_pct": 0.361
+        "losses": 102,
+        "win_pct": 0.358
       }
     ],
     "AL East": [
@@ -378,8 +378,8 @@
         "team": "Miami Marlins",
         "rank": 3,
         "wins": 78,
-        "losses": 80,
-        "win_pct": 0.494
+        "losses": 81,
+        "win_pct": 0.491
       },
       {
         "team": "Washington Nationals",
@@ -392,8 +392,8 @@
         "team": "New York Mets",
         "rank": 5,
         "wins": 73,
-        "losses": 85,
-        "win_pct": 0.462
+        "losses": 86,
+        "win_pct": 0.459
       }
     ],
     "AL Central": [
@@ -407,9 +407,9 @@
       {
         "team": "Chicago White Sox",
         "rank": 2,
-        "wins": 81,
+        "wins": 82,
         "losses": 77,
-        "win_pct": 0.513
+        "win_pct": 0.516
       },
       {
         "team": "Minnesota Twins",
@@ -429,20 +429,20 @@
         "team": "Kansas City Royals",
         "rank": 5,
         "wins": 68,
-        "losses": 90,
-        "win_pct": 0.43
+        "losses": 91,
+        "win_pct": 0.428
       }
     ],
     "AL West": [
       {
-        "team": "Houston Astros",
+        "team": "Texas Rangers",
         "rank": 1,
-        "wins": 78,
+        "wins": 79,
         "losses": 80,
-        "win_pct": 0.494
+        "win_pct": 0.497
       },
       {
-        "team": "Texas Rangers",
+        "team": "Houston Astros",
         "rank": 2,
         "wins": 78,
         "losses": 80,
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-24 17:15 UTC"
+  "current_field_updated": "2026-09-24 21:42 UTC"
 }
