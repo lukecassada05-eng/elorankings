@@ -223,14 +223,6 @@
       "note": null
     },
     {
-      "team": "GB",
-      "conference": "NFC",
-      "division": "NFC North",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "ARI",
       "conference": "NFC",
       "division": "NFC West",
@@ -239,17 +231,25 @@
       "note": null
     },
     {
-      "team": "WAS",
+      "team": "ATL",
       "conference": "NFC",
-      "division": "NFC East",
+      "division": "NFC South",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "ATL",
+      "team": "GB",
       "conference": "NFC",
-      "division": "NFC South",
+      "division": "NFC North",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "WAS",
+      "conference": "NFC",
+      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -264,36 +264,6 @@
     }
   ],
   "standings": {
-    "NFC North": [
-      {
-        "team": "MIN",
-        "rank": 1,
-        "wins": 2,
-        "losses": 0,
-        "win_pct": 1
-      },
-      {
-        "team": "CHI",
-        "rank": 2,
-        "wins": 1,
-        "losses": 1,
-        "win_pct": 0.5
-      },
-      {
-        "team": "GB",
-        "rank": 3,
-        "wins": 1,
-        "losses": 1,
-        "win_pct": 0.5
-      },
-      {
-        "team": "DET",
-        "rank": 4,
-        "wins": 1,
-        "losses": 1,
-        "win_pct": 0.5
-      }
-    ],
     "NFC West": [
       {
         "team": "SEA",
@@ -322,6 +292,36 @@
         "wins": 1,
         "losses": 1,
         "win_pct": 0.5
+      }
+    ],
+    "NFC North": [
+      {
+        "team": "MIN",
+        "rank": 1,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1
+      },
+      {
+        "team": "CHI",
+        "rank": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5
+      },
+      {
+        "team": "DET",
+        "rank": 3,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5
+      },
+      {
+        "team": "GB",
+        "rank": 4,
+        "wins": 1,
+        "losses": 2,
+        "win_pct": 0.333
       }
     ],
     "AFC West": [
@@ -462,9 +462,9 @@
       {
         "team": "ATL",
         "rank": 3,
-        "wins": 0,
+        "wins": 1,
         "losses": 2,
-        "win_pct": 0
+        "win_pct": 0.333
       },
       {
         "team": "TB",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-24 21:42 UTC"
+  "current_field_updated": "2026-09-25 04:50 UTC"
 }
