@@ -260,8 +260,8 @@
         "team": "Chicago Cubs",
         "rank": 2,
         "wins": 88,
-        "losses": 71,
-        "win_pct": 0.553
+        "losses": 72,
+        "win_pct": 0.55
       },
       {
         "team": "Pittsburgh Pirates",
@@ -334,22 +334,22 @@
         "team": "New York Yankees",
         "rank": 2,
         "wins": 92,
-        "losses": 67,
-        "win_pct": 0.579
+        "losses": 68,
+        "win_pct": 0.575
       },
       {
         "team": "Boston Red Sox",
         "rank": 3,
-        "wins": 85,
+        "wins": 86,
         "losses": 74,
-        "win_pct": 0.535
+        "win_pct": 0.537
       },
       {
         "team": "Baltimore Orioles",
         "rank": 4,
-        "wins": 78,
+        "wins": 79,
         "losses": 81,
-        "win_pct": 0.491
+        "win_pct": 0.494
       },
       {
         "team": "Toronto Blue Jays",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-25 17:16 UTC"
+  "current_field_updated": "2026-09-25 21:44 UTC"
 }
