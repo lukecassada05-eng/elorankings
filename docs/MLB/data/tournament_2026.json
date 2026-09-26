@@ -267,8 +267,8 @@
         "team": "Pittsburgh Pirates",
         "rank": 3,
         "wins": 81,
-        "losses": 79,
-        "win_pct": 0.506
+        "losses": 80,
+        "win_pct": 0.503
       },
       {
         "team": "St. Louis Cardinals",
@@ -280,9 +280,9 @@
       {
         "team": "Cincinnati Reds",
         "rank": 5,
-        "wins": 74,
+        "wins": 75,
         "losses": 86,
-        "win_pct": 0.462
+        "win_pct": 0.466
       }
     ],
     "NL West": [
@@ -355,8 +355,45 @@
         "team": "Toronto Blue Jays",
         "rank": 5,
         "wins": 78,
+        "losses": 83,
+        "win_pct": 0.484
+      }
+    ],
+    "NL East": [
+      {
+        "team": "Atlanta Braves",
+        "rank": 1,
+        "wins": 94,
+        "losses": 68,
+        "win_pct": 0.58
+      },
+      {
+        "team": "Philadelphia Phillies",
+        "rank": 2,
+        "wins": 87,
+        "losses": 73,
+        "win_pct": 0.544
+      },
+      {
+        "team": "Miami Marlins",
+        "rank": 3,
+        "wins": 79,
         "losses": 82,
-        "win_pct": 0.488
+        "win_pct": 0.491
+      },
+      {
+        "team": "Washington Nationals",
+        "rank": 4,
+        "wins": 76,
+        "losses": 85,
+        "win_pct": 0.472
+      },
+      {
+        "team": "New York Mets",
+        "rank": 5,
+        "wins": 74,
+        "losses": 87,
+        "win_pct": 0.46
       }
     ],
     "AL Central": [
@@ -384,9 +421,9 @@
       {
         "team": "Detroit Tigers",
         "rank": 4,
-        "wins": 75,
+        "wins": 76,
         "losses": 85,
-        "win_pct": 0.469
+        "win_pct": 0.472
       },
       {
         "team": "Kansas City Royals",
@@ -394,43 +431,6 @@
         "wins": 68,
         "losses": 92,
         "win_pct": 0.425
-      }
-    ],
-    "NL East": [
-      {
-        "team": "Atlanta Braves",
-        "rank": 1,
-        "wins": 93,
-        "losses": 68,
-        "win_pct": 0.578
-      },
-      {
-        "team": "Philadelphia Phillies",
-        "rank": 2,
-        "wins": 87,
-        "losses": 73,
-        "win_pct": 0.544
-      },
-      {
-        "team": "Miami Marlins",
-        "rank": 3,
-        "wins": 79,
-        "losses": 81,
-        "win_pct": 0.494
-      },
-      {
-        "team": "Washington Nationals",
-        "rank": 4,
-        "wins": 76,
-        "losses": 84,
-        "win_pct": 0.475
-      },
-      {
-        "team": "New York Mets",
-        "rank": 5,
-        "wins": 73,
-        "losses": 87,
-        "win_pct": 0.456
       }
     ],
     "AL West": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-26 16:33 UTC"
+  "current_field_updated": "2026-09-26 21:26 UTC"
 }
