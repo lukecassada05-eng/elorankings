@@ -23,7 +23,7 @@
       "note": "Division winner — first-round bye"
     },
     {
-      "team": "Houston Astros",
+      "team": "Texas Rangers",
       "conference": "AL",
       "division": "AL West",
       "seed": 3,
@@ -55,7 +55,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "Texas Rangers",
+      "team": "Houston Astros",
       "conference": "AL",
       "division": "AL West",
       "seed": null,
@@ -289,9 +289,9 @@
       {
         "team": "Los Angeles Dodgers",
         "rank": 1,
-        "wins": 98,
+        "wins": 99,
         "losses": 62,
-        "win_pct": 0.613
+        "win_pct": 0.615
       },
       {
         "team": "San Diego Padres",
@@ -311,15 +311,15 @@
         "team": "San Francisco Giants",
         "rank": 4,
         "wins": 66,
-        "losses": 95,
-        "win_pct": 0.41
+        "losses": 96,
+        "win_pct": 0.407
       },
       {
         "team": "Colorado Rockies",
         "rank": 5,
-        "wins": 57,
+        "wins": 58,
         "losses": 103,
-        "win_pct": 0.356
+        "win_pct": 0.36
       }
     ],
     "AL East": [
@@ -401,22 +401,22 @@
         "team": "Cleveland Guardians",
         "rank": 1,
         "wins": 84,
-        "losses": 76,
-        "win_pct": 0.525
+        "losses": 77,
+        "win_pct": 0.522
       },
       {
         "team": "Chicago White Sox",
         "rank": 2,
         "wins": 83,
-        "losses": 77,
-        "win_pct": 0.519
+        "losses": 78,
+        "win_pct": 0.516
       },
       {
         "team": "Minnesota Twins",
         "rank": 3,
         "wins": 76,
-        "losses": 84,
-        "win_pct": 0.475
+        "losses": 85,
+        "win_pct": 0.472
       },
       {
         "team": "Detroit Tigers",
@@ -428,21 +428,21 @@
       {
         "team": "Kansas City Royals",
         "rank": 5,
-        "wins": 68,
+        "wins": 69,
         "losses": 92,
-        "win_pct": 0.425
+        "win_pct": 0.429
       }
     ],
     "AL West": [
       {
-        "team": "Houston Astros",
+        "team": "Texas Rangers",
         "rank": 1,
-        "wins": 79,
+        "wins": 80,
         "losses": 81,
-        "win_pct": 0.494
+        "win_pct": 0.497
       },
       {
-        "team": "Texas Rangers",
+        "team": "Houston Astros",
         "rank": 2,
         "wins": 79,
         "losses": 81,
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-09-26 21:26 UTC"
+  "current_field_updated": "2026-09-26 23:45 UTC"
 }
