@@ -1,0 +1,565 @@
+{
+  "year": 2027,
+  "sport": "NHL",
+  "completed": false,
+  "games": [],
+  "series": [],
+  "eliminated": [],
+  "current_field": [
+    {
+      "team": "Ottawa Senators",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": 1,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Tampa Bay Lightning",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": 2,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Boston Bruins",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": 3,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "New York Rangers",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": 1,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "New York Islanders",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": 2,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Pittsburgh Penguins",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": 3,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Washington Capitals",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": 4,
+      "status": "wildcard",
+      "note": "Conference wildcard"
+    },
+    {
+      "team": "Columbus Blue Jackets",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": 5,
+      "status": "wildcard",
+      "note": "Conference wildcard"
+    },
+    {
+      "team": "Carolina Hurricanes",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Buffalo Sabres",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "New Jersey Devils",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Montreal Canadiens",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Florida Panthers",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Philadelphia Flyers",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Toronto Maple Leafs",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Detroit Red Wings",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Minnesota Wild",
+      "conference": "Western",
+      "division": "Central",
+      "seed": 1,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Colorado Avalanche",
+      "conference": "Western",
+      "division": "Central",
+      "seed": 2,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Winnipeg Jets",
+      "conference": "Western",
+      "division": "Central",
+      "seed": 3,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Edmonton Oilers",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": 1,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Anaheim Ducks",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": 2,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "San Jose Sharks",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": 3,
+      "status": "division_top3",
+      "note": "Top 3 in division"
+    },
+    {
+      "team": "Seattle Kraken",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": 4,
+      "status": "wildcard",
+      "note": "Conference wildcard"
+    },
+    {
+      "team": "Utah Mammoth",
+      "conference": "Western",
+      "division": "Central",
+      "seed": 5,
+      "status": "wildcard",
+      "note": "Conference wildcard"
+    },
+    {
+      "team": "Vegas Golden Knights",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "St. Louis Blues",
+      "conference": "Western",
+      "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Nashville Predators",
+      "conference": "Western",
+      "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Los Angeles Kings",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Vancouver Canucks",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Chicago Blackhawks",
+      "conference": "Western",
+      "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Dallas Stars",
+      "conference": "Western",
+      "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Calgary Flames",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    }
+  ],
+  "standings": {
+    "Metropolitan": [
+      {
+        "team": "New York Rangers",
+        "rank": 1,
+        "wins": 3,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 6,
+        "points_pct": 1
+      },
+      {
+        "team": "New York Islanders",
+        "rank": 2,
+        "wins": 1,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 2,
+        "points_pct": 1
+      },
+      {
+        "team": "Pittsburgh Penguins",
+        "rank": 3,
+        "wins": 1,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 2,
+        "points_pct": 1
+      },
+      {
+        "team": "Washington Capitals",
+        "rank": 4,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Carolina Hurricanes",
+        "rank": 5,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Columbus Blue Jackets",
+        "rank": 6,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "New Jersey Devils",
+        "rank": 7,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Philadelphia Flyers",
+        "rank": 8,
+        "wins": 0,
+        "losses": 2,
+        "win_pct": 0,
+        "points": 2,
+        "points_pct": 0.5
+      }
+    ],
+    "Central": [
+      {
+        "team": "Minnesota Wild",
+        "rank": 1,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 4,
+        "points_pct": 1
+      },
+      {
+        "team": "Colorado Avalanche",
+        "rank": 2,
+        "wins": 1,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 2,
+        "points_pct": 1
+      },
+      {
+        "team": "Winnipeg Jets",
+        "rank": 3,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 3,
+        "points_pct": 0.75
+      },
+      {
+        "team": "Utah Mammoth",
+        "rank": 4,
+        "wins": 2,
+        "losses": 1,
+        "win_pct": 0.667,
+        "points": 4,
+        "points_pct": 0.667
+      },
+      {
+        "team": "St. Louis Blues",
+        "rank": 5,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Nashville Predators",
+        "rank": 6,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Chicago Blackhawks",
+        "rank": 7,
+        "wins": 0,
+        "losses": 2,
+        "win_pct": 0,
+        "points": 0,
+        "points_pct": 0
+      },
+      {
+        "team": "Dallas Stars",
+        "rank": 8,
+        "wins": 0,
+        "losses": 2,
+        "win_pct": 0,
+        "points": 0,
+        "points_pct": 0
+      }
+    ],
+    "Pacific": [
+      {
+        "team": "Edmonton Oilers",
+        "rank": 1,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 4,
+        "points_pct": 1
+      },
+      {
+        "team": "Anaheim Ducks",
+        "rank": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 4,
+        "points_pct": 1
+      },
+      {
+        "team": "San Jose Sharks",
+        "rank": 3,
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 4,
+        "points_pct": 1
+      },
+      {
+        "team": "Seattle Kraken",
+        "rank": 4,
+        "wins": 2,
+        "losses": 1,
+        "win_pct": 0.667,
+        "points": 4,
+        "points_pct": 0.667
+      },
+      {
+        "team": "Vegas Golden Knights",
+        "rank": 5,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Los Angeles Kings",
+        "rank": 6,
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0,
+        "points": 1,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Vancouver Canucks",
+        "rank": 7,
+        "wins": 1,
+        "losses": 2,
+        "win_pct": 0.333,
+        "points": 2,
+        "points_pct": 0.333
+      },
+      {
+        "team": "Calgary Flames",
+        "rank": 8,
+        "wins": 0,
+        "losses": 3,
+        "win_pct": 0,
+        "points": 0,
+        "points_pct": 0
+      }
+    ],
+    "Atlantic": [
+      {
+        "team": "Ottawa Senators",
+        "rank": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 2,
+        "points_pct": 1
+      },
+      {
+        "team": "Tampa Bay Lightning",
+        "rank": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Boston Bruins",
+        "rank": 3,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Buffalo Sabres",
+        "rank": 4,
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Montreal Canadiens",
+        "rank": 5,
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0,
+        "points": 1,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Florida Panthers",
+        "rank": 6,
+        "wins": 0,
+        "losses": 2,
+        "win_pct": 0,
+        "points": 2,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Toronto Maple Leafs",
+        "rank": 7,
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0,
+        "points": 0,
+        "points_pct": 0
+      },
+      {
+        "team": "Detroit Red Wings",
+        "rank": 8,
+        "wins": 0,
+        "losses": 2,
+        "win_pct": 0,
+        "points": 0,
+        "points_pct": 0
+      }
+    ]
+  },
+  "current_field_updated": "2026-10-05 22:10 UTC"
+}
