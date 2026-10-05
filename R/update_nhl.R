@@ -179,7 +179,19 @@ for (yr in SEASONS) {
   message("NHL ", yr, "...")
   g <- fetch_nhl_season(yr)
   message("  Games found: ", if(is.null(g)) "NULL" else nrow(g))
-  if (is.null(g)||nrow(g)<50) { message("  Skip — ",if(is.null(g))0 else nrow(g)," games"); next }
+  # BUG FIX: this used to require >=50 league-wide games before writing
+  # anything for a season — meaning a brand-new season (opening night
+  # onward) published nothing at all for its first ~1-2 weeks, during
+  # which the frontend's season picker defaults to that season's label
+  # (see EloSeason.withCurrent() in utils.js) and showed "No data yet"
+  # instead of real rankings. That 50-game floor was also redundant:
+  # run_elo()'s own min_games (below) already halves any individual
+  # team's rating on every iteration until it has played min_games games,
+  # which is the actual, precise defense against small-sample Elo
+  # distortion — applied per team, not as a blunt all-or-nothing gate on
+  # the whole league. Now only a real zero-games case (bye week before a
+  # season starts, fetch failure) skips the write.
+  if (is.null(g)||nrow(g)<1) { message("  Skip — ",if(is.null(g))0 else nrow(g)," games"); next }
   message("  ", nrow(g), " games")
   elo <- run_elo(g, k=25, iters=10, min_games=4)
   elo <- attach_best_wins(elo, g)
