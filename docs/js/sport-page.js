@@ -3477,10 +3477,32 @@ async function findAvailableSeason() {
     // visit (see BUG FIX above).
     const saved = sessionStorage.getItem('elo_season_' + CFG.sport);
     if (saved && CFG.seasons.includes(parseInt(saved))) return parseInt(saved);
-    // Return newest season immediately — loadSeason shows empty state if no CSV
-    // checkForNewerSeasons runs in background after load
+
+    // BUG FIX: this used to return CFG.seasons[0] unconditionally, trusting
+    // loadSeason()'s empty-state fallback to cover a missing CSV. But
+    // CFG.seasons[0] isn't just "the newest season we know about" — after
+    // EloSeason.withCurrent() runs (see the top of initSportPage), it's
+    // whatever season label SHOULD be current per the calendar, which
+    // flips the instant this sport's season boundary passes (e.g. NHL
+    // flips to the next year's label on Oct 1). The R pipeline deliberately
+    // waits for a real minimum slate of games before publishing that
+    // season's first CSV (NHL's update script skips a season entirely
+    // under ~50 total games), so there's a real window — days to a couple
+    // weeks right at the start of every sport's season, for every sport —
+    // where CFG.seasons[0] has no data behind it yet. Landing new visitors
+    // on a "No data yet" empty state during that window reads as "the site
+    // is broken," not "the season just started." A single cheap HEAD
+    // check on just that one season avoids it: if it's not ready, fall
+    // back to the next season down, which (being already-hardcoded in
+    // CFG.seasons rather than freshly computed) is known to have been
+    // published previously.
+    const newest = CFG.seasons[0];
     setTimeout(() => checkForNewerSeasons(), 2000);
-    return CFG.seasons[0];
+    try {
+      const r = await fetch(CFG.dataPath + newest + '.csv?t=' + Date.now(), {method:'HEAD'});
+      if (r.ok) return newest;
+    } catch (_) { /* fall through to the fallback below */ }
+    return CFG.seasons.length > 1 ? CFG.seasons[1] : newest;
   }
 
   // ── Conference / Division / League History ────────────────
