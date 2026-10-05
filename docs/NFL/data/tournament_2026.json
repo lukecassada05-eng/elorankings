@@ -183,25 +183,25 @@
       "note": "Wildcard"
     },
     {
-      "team": "DET",
+      "team": "LA",
       "conference": "NFC",
-      "division": "NFC North",
+      "division": "NFC West",
       "seed": 7,
       "status": "wildcard",
       "note": "Wildcard"
     },
     {
-      "team": "LA",
+      "team": "PHI",
       "conference": "NFC",
-      "division": "NFC West",
+      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "PHI",
+      "team": "DET",
       "conference": "NFC",
-      "division": "NFC East",
+      "division": "NFC North",
       "seed": null,
       "status": "outside",
       "note": null
@@ -340,14 +340,14 @@
         "win_pct": 0.75
       },
       {
-        "team": "DET",
+        "team": "GB",
         "rank": 3,
         "wins": 2,
-        "losses": 1,
-        "win_pct": 0.667
+        "losses": 2,
+        "win_pct": 0.5
       },
       {
-        "team": "GB",
+        "team": "DET",
         "rank": 4,
         "wins": 2,
         "losses": 2,
@@ -382,6 +382,36 @@
         "wins": 0,
         "losses": 4,
         "win_pct": 0
+      }
+    ],
+    "AFC North": [
+      {
+        "team": "CLE",
+        "rank": 1,
+        "wins": 3,
+        "losses": 1,
+        "win_pct": 0.75
+      },
+      {
+        "team": "BAL",
+        "rank": 2,
+        "wins": 3,
+        "losses": 1,
+        "win_pct": 0.75
+      },
+      {
+        "team": "PIT",
+        "rank": 3,
+        "wins": 2,
+        "losses": 2,
+        "win_pct": 0.5
+      },
+      {
+        "team": "CIN",
+        "rank": 4,
+        "wins": 2,
+        "losses": 2,
+        "win_pct": 0.5
       }
     ],
     "AFC East": [
@@ -444,43 +474,13 @@
         "win_pct": 0.25
       }
     ],
-    "AFC North": [
-      {
-        "team": "CLE",
-        "rank": 1,
-        "wins": 3,
-        "losses": 1,
-        "win_pct": 0.75
-      },
-      {
-        "team": "BAL",
-        "rank": 2,
-        "wins": 3,
-        "losses": 1,
-        "win_pct": 0.75
-      },
-      {
-        "team": "PIT",
-        "rank": 3,
-        "wins": 2,
-        "losses": 2,
-        "win_pct": 0.5
-      },
-      {
-        "team": "CIN",
-        "rank": 4,
-        "wins": 2,
-        "losses": 2,
-        "win_pct": 0.5
-      }
-    ],
     "NFC South": [
       {
         "team": "CAR",
         "rank": 1,
-        "wins": 1,
+        "wins": 2,
         "losses": 2,
-        "win_pct": 0.333
+        "win_pct": 0.5
       },
       {
         "team": "ATL",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-05 00:12 UTC"
+  "current_field_updated": "2026-10-05 05:25 UTC"
 }
