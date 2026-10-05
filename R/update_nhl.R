@@ -28,9 +28,16 @@ OUT_DIR  <- "docs/NHL/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
 # ── Allowlist of real NHL franchises (all eras) ───────────────
+# "Utah Mammoth" added below: the Arizona Coyotes relocated to Utah for
+# 2024-25 under the placeholder name "Utah Hockey Club", then took the
+# permanent name "Utah Mammoth" starting the 2025-26 season — ESPN's API
+# reports the new displayName, and without it here every game "Utah
+# Mammoth" plays in gets silently filtered out by the `%in% NHL_SET` check
+# in parse_event(), which is why the team vanished from the output
+# entirely (31 teams instead of 32) rather than just showing 0 games.
 NHL_TEAMS <- c(
   "Anaheim Ducks","Atlanta Thrashers","Arizona Coyotes","Utah Hockey Club",
-  "Utah HC","Boston Bruins","Buffalo Sabres","Calgary Flames",
+  "Utah HC","Utah Mammoth","Boston Bruins","Buffalo Sabres","Calgary Flames",
   "Carolina Hurricanes","Hartford Whalers","Chicago Blackhawks",
   "Colorado Avalanche","Quebec Nordiques","Columbus Blue Jackets",
   "Dallas Stars","Minnesota North Stars","Detroit Red Wings",
@@ -60,6 +67,7 @@ DIVS <- c(
   "Pittsburgh Penguins"="Metropolitan","Washington Capitals"="Metropolitan",
   # Central
   "Arizona Coyotes"="Central","Utah Hockey Club"="Central","Utah HC"="Central",
+  "Utah Mammoth"="Central",
   "Chicago Blackhawks"="Central","Colorado Avalanche"="Central",
   "Dallas Stars"="Central","Minnesota Wild"="Central",
   "Nashville Predators"="Central","St. Louis Blues"="Central",

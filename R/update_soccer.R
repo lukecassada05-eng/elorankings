@@ -19,19 +19,43 @@ cur_month <- as.integer(format(Sys.Date(), "%m"))
 cur_year  <- as.integer(format(Sys.Date(), "%Y"))
 # Season ends May/June; if Aug+ current season has started so end_year = next year
 LAST_END  <- if (cur_month >= 8) cur_year + 1 else cur_year
-# Only update current season — historical CSVs are already correct
-# Include next season so it auto-populates when football-data.co.uk has data
-END_YEARS <- c(LAST_END, LAST_END + 1L)
+# Also reprocess the season that JUST ended (LAST_END - 1), not only
+# current + next. "Historical seasons are already correct" turned out to
+# be a false assumption: the Bundesliga league-code bug fixed above (see
+# LEAGUES) went live at some point mid-season and nobody caught it until
+# the affected season (ending 2026) had already rolled off this window
+# and become permanently frozen — the normal twice-daily run never
+# touches a season once it's one cycle old, so a bug like that can hide
+# for a full year. Keeping one trailing season in the window means a
+# fetch/labeling bug fixed shortly after a season ends still gets a
+# chance to self-heal on the very next scheduled run instead of staying
+# wrong until someone notices and manually intervenes.
+END_YEARS <- c(LAST_END - 1L, LAST_END, LAST_END + 1L)
 message("Soccer: updating seasons ending ", paste(END_YEARS, collapse=", "))
 
 # ── League definitions (EXACT same as your working code) ─────
 # code = football-data.co.uk file code
+#
+# BUG FIX: Germany's codes were D0=Bundesliga / D1=2. Bundesliga. That
+# stopped being correct at some point — football-data.co.uk's current
+# file layout for the German leagues is D1=Bundesliga / D2=2. Bundesliga.
+# Confirmed directly: /mmz4281/2526/D0.csv 404s (not a valid code any
+# more), while /mmz4281/2526/D1.csv returns the actual top-flight clubs
+# (Bayern Munich, Dortmund, Leverkusen, RB Leipzig, etc.) — exactly the
+# teams this file's old D0/D1 mapping had fetching successfully under
+# D1 but then mislabeling "2. Bundesliga", since D1 was configured as
+# the second-division name. D0 silently returning nothing (read_csv
+# errors, fetch_league() returns NULL) meant the real "Bundesliga" name
+# never got used at all — every Bundesliga club's conf_map entry came
+# from the wrongly-named D1 fetch instead. This fix doesn't retroactively
+# correct already-published season files on its own (see the END_YEARS
+# note above — widening that window is what lets this self-heal).
 LEAGUES <- list(
   list(code="E0",  name="Premier League",       country="ENG"),
   list(code="E1",  name="Championship",          country="ENG"),
   list(code="SC0", name="Scottish Premiership",  country="SCO"),
-  list(code="D0",  name="Bundesliga",            country="GER"),
-  list(code="D1",  name="2. Bundesliga",         country="GER"),
+  list(code="D1",  name="Bundesliga",            country="GER"),
+  list(code="D2",  name="2. Bundesliga",         country="GER"),
   list(code="I1",  name="Serie A",               country="ITA"),
   list(code="I2",  name="Serie B",               country="ITA"),
   list(code="SP1", name="La Liga",               country="ESP"),
