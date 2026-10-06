@@ -191,6 +191,22 @@
       "note": "Wildcard"
     },
     {
+      "team": "ATL",
+      "conference": "NFC",
+      "division": "NFC South",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "GB",
+      "conference": "NFC",
+      "division": "NFC North",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "PHI",
       "conference": "NFC",
       "division": "NFC East",
@@ -215,17 +231,9 @@
       "note": null
     },
     {
-      "team": "GB",
+      "team": "WAS",
       "conference": "NFC",
-      "division": "NFC North",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "ATL",
-      "conference": "NFC",
-      "division": "NFC South",
+      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -234,14 +242,6 @@
       "team": "NO",
       "conference": "NFC",
       "division": "NFC South",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "WAS",
-      "conference": "NFC",
-      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -444,6 +444,36 @@
         "win_pct": 0
       }
     ],
+    "NFC South": [
+      {
+        "team": "CAR",
+        "rank": 1,
+        "wins": 2,
+        "losses": 2,
+        "win_pct": 0.5
+      },
+      {
+        "team": "ATL",
+        "rank": 2,
+        "wins": 2,
+        "losses": 2,
+        "win_pct": 0.5
+      },
+      {
+        "team": "NO",
+        "rank": 3,
+        "wins": 1,
+        "losses": 3,
+        "win_pct": 0.25
+      },
+      {
+        "team": "TB",
+        "rank": 4,
+        "wins": 0,
+        "losses": 4,
+        "win_pct": 0
+      }
+    ],
     "NFC East": [
       {
         "team": "NYG",
@@ -473,37 +503,7 @@
         "losses": 3,
         "win_pct": 0.25
       }
-    ],
-    "NFC South": [
-      {
-        "team": "CAR",
-        "rank": 1,
-        "wins": 2,
-        "losses": 2,
-        "win_pct": 0.5
-      },
-      {
-        "team": "ATL",
-        "rank": 2,
-        "wins": 1,
-        "losses": 2,
-        "win_pct": 0.333
-      },
-      {
-        "team": "NO",
-        "rank": 3,
-        "wins": 1,
-        "losses": 2,
-        "win_pct": 0.333
-      },
-      {
-        "team": "TB",
-        "rank": 4,
-        "wins": 0,
-        "losses": 4,
-        "win_pct": 0
-      }
     ]
   },
-  "current_field_updated": "2026-10-05 22:17 UTC"
+  "current_field_updated": "2026-10-06 06:13 UTC"
 }
