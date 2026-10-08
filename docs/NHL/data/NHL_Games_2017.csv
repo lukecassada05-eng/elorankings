@@ -1058,6 +1058,18 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2017-03-16,Calgary Flames,Boston Bruins,Boston Bruins,Calgary Flames,5,2,REG
 2017-03-16,Colorado Avalanche,Detroit Red Wings,Colorado Avalanche,Detroit Red Wings,3,1,REG
 2017-03-16,Anaheim Ducks,St. Louis Blues,Anaheim Ducks,St. Louis Blues,2,1,REG
+2017-03-16,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,6,2,REG
+2017-03-16,New York Islanders,Winnipeg Jets,Winnipeg Jets,New York Islanders,4,2,REG
+2017-03-16,Washington Capitals,Nashville Predators,Nashville Predators,Washington Capitals,2,1,OT
+2017-03-16,Carolina Hurricanes,Minnesota Wild,Carolina Hurricanes,Minnesota Wild,3,1,REG
+2017-03-16,Columbus Blue Jackets,Florida Panthers,Columbus Blue Jackets,Florida Panthers,2,1,REG
+2017-03-16,Ottawa Senators,Chicago Blackhawks,Chicago Blackhawks,Ottawa Senators,2,1,REG
+2017-03-16,Tampa Bay Lightning,Toronto Maple Leafs,Toronto Maple Leafs,Tampa Bay Lightning,4,0,REG
+2017-03-17,Edmonton Oilers,Boston Bruins,Edmonton Oilers,Boston Bruins,7,4,REG
+2017-03-17,Vancouver Canucks,Dallas Stars,Dallas Stars,Vancouver Canucks,4,2,REG
+2017-03-17,Arizona Coyotes,Detroit Red Wings,Detroit Red Wings,Arizona Coyotes,5,4,SO
+2017-03-17,Los Angeles Kings,Buffalo Sabres,Los Angeles Kings,Buffalo Sabres,2,0,REG
+2017-03-17,San Jose Sharks,St. Louis Blues,St. Louis Blues,San Jose Sharks,4,1,REG
 2017-03-17,New York Rangers,Florida Panthers,Florida Panthers,New York Rangers,4,3,SO
 2017-03-17,Pittsburgh Penguins,New Jersey Devils,Pittsburgh Penguins,New Jersey Devils,6,4,REG
 2017-03-18,Calgary Flames,Dallas Stars,Calgary Flames,Dallas Stars,3,1,REG
@@ -1097,6 +1109,18 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2017-03-22,Columbus Blue Jackets,Toronto Maple Leafs,Toronto Maple Leafs,Columbus Blue Jackets,5,2,REG
 2017-03-23,New York Rangers,New York Islanders,New York Islanders,New York Rangers,3,2,REG
 2017-03-23,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,4,3,REG
+2017-03-23,Boston Bruins,Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,6,3,REG
+2017-03-23,Washington Capitals,Columbus Blue Jackets,Washington Capitals,Columbus Blue Jackets,2,1,SO
+2017-03-23,Toronto Maple Leafs,New Jersey Devils,Toronto Maple Leafs,New Jersey Devils,4,2,REG
+2017-03-23,Montreal Canadiens,Carolina Hurricanes,Carolina Hurricanes,Montreal Canadiens,4,1,REG
+2017-03-23,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,2,1,SO
+2017-03-23,Florida Panthers,Arizona Coyotes,Florida Panthers,Arizona Coyotes,3,1,REG
+2017-03-24,St. Louis Blues,Vancouver Canucks,St. Louis Blues,Vancouver Canucks,4,1,REG
+2017-03-24,Nashville Predators,Calgary Flames,Nashville Predators,Calgary Flames,3,1,REG
+2017-03-24,Minnesota Wild,Philadelphia Flyers,Philadelphia Flyers,Minnesota Wild,3,1,REG
+2017-03-24,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,Dallas Stars,3,2,SO
+2017-03-24,Colorado Avalanche,Edmonton Oilers,Edmonton Oilers,Colorado Avalanche,7,4,REG
+2017-03-24,Los Angeles Kings,Winnipeg Jets,Los Angeles Kings,Winnipeg Jets,5,2,REG
 2017-03-24,Pittsburgh Penguins,New York Islanders,New York Islanders,Pittsburgh Penguins,4,3,SO
 2017-03-24,Detroit Red Wings,Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,2,1,OT
 2017-03-25,Dallas Stars,San Jose Sharks,Dallas Stars,San Jose Sharks,5,1,REG
@@ -1154,6 +1178,54 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2017-04-01,Calgary Flames,San Jose Sharks,Calgary Flames,San Jose Sharks,5,2,REG
 2017-04-01,Vancouver Canucks,Los Angeles Kings,Los Angeles Kings,Vancouver Canucks,2,0,REG
 2017-04-01,Arizona Coyotes,Washington Capitals,Arizona Coyotes,Washington Capitals,6,3,REG
+2017-04-01,Boston Bruins,Florida Panthers,Boston Bruins,Florida Panthers,5,2,REG
+2017-04-01,Nashville Predators,Minnesota Wild,Nashville Predators,Minnesota Wild,3,0,REG
+2017-04-01,Detroit Red Wings,Toronto Maple Leafs,Toronto Maple Leafs,Detroit Red Wings,5,4,REG
+2017-04-01,Tampa Bay Lightning,Montreal Canadiens,Montreal Canadiens,Tampa Bay Lightning,2,1,OT
+2017-04-01,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,3,0,REG
+2017-04-01,Carolina Hurricanes,Dallas Stars,Dallas Stars,Carolina Hurricanes,3,0,REG
+2017-04-01,Winnipeg Jets,Ottawa Senators,Winnipeg Jets,Ottawa Senators,4,2,REG
+2017-04-02,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,3,2,OT
+2017-04-02,Chicago Blackhawks,Boston Bruins,Boston Bruins,Chicago Blackhawks,3,2,REG
+2017-04-02,Buffalo Sabres,New York Islanders,New York Islanders,Buffalo Sabres,4,2,REG
+2017-04-02,St. Louis Blues,Nashville Predators,St. Louis Blues,Nashville Predators,4,1,REG
+2017-04-02,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,3,2,REG
+2017-04-02,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,Dallas Stars,6,3,REG
+2017-04-02,Columbus Blue Jackets,Washington Capitals,Washington Capitals,Columbus Blue Jackets,3,2,REG
+2017-04-02,Minnesota Wild,Colorado Avalanche,Minnesota Wild,Colorado Avalanche,5,2,REG
+2017-04-02,Vancouver Canucks,San Jose Sharks,San Jose Sharks,Vancouver Canucks,3,1,REG
+2017-04-02,New York Rangers,Philadelphia Flyers,New York Rangers,Philadelphia Flyers,4,3,REG
+2017-04-03,Calgary Flames,Anaheim Ducks,Anaheim Ducks,Calgary Flames,4,3,REG
+2017-04-03,Los Angeles Kings,Arizona Coyotes,Arizona Coyotes,Los Angeles Kings,2,1,REG
+2017-04-03,Buffalo Sabres,Toronto Maple Leafs,Toronto Maple Leafs,Buffalo Sabres,4,2,REG
+2017-04-03,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,Ottawa Senators,5,4,SO
+2017-04-03,Florida Panthers,Montreal Canadiens,Montreal Canadiens,Florida Panthers,4,1,REG
+2017-04-04,Boston Bruins,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,4,0,REG
+2017-04-04,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,4,1,REG
+2017-04-04,Toronto Maple Leafs,Washington Capitals,Washington Capitals,Toronto Maple Leafs,4,1,REG
+2017-04-04,Ottawa Senators,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,2,0,REG
+2017-04-05,St. Louis Blues,Winnipeg Jets,Winnipeg Jets,St. Louis Blues,5,2,REG
+2017-04-05,Nashville Predators,New York Islanders,New York Islanders,Nashville Predators,2,1,OT
+2017-04-05,Minnesota Wild,Carolina Hurricanes,Minnesota Wild,Carolina Hurricanes,5,3,REG
+2017-04-05,Dallas Stars,Arizona Coyotes,Dallas Stars,Arizona Coyotes,3,2,OT
+2017-04-05,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,4,3,OT
+2017-04-05,Anaheim Ducks,Calgary Flames,Anaheim Ducks,Calgary Flames,3,1,REG
+2017-04-05,Los Angeles Kings,Edmonton Oilers,Los Angeles Kings,Edmonton Oilers,6,4,REG
+2017-04-05,San Jose Sharks,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,3,1,REG
+2017-04-05,Buffalo Sabres,Montreal Canadiens,Buffalo Sabres,Montreal Canadiens,2,1,REG
+2017-04-06,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,2,0,REG
+2017-04-06,Boston Bruins,Ottawa Senators,Ottawa Senators,Boston Bruins,2,1,SO
+2017-04-06,New Jersey Devils,Pittsburgh Penguins,Pittsburgh Penguins,New Jersey Devils,7,4,REG
+2017-04-06,Carolina Hurricanes,New York Islanders,New York Islanders,Carolina Hurricanes,3,0,REG
+2017-04-06,Columbus Blue Jackets,Winnipeg Jets,Winnipeg Jets,Columbus Blue Jackets,5,4,REG
+2017-04-06,Toronto Maple Leafs,Tampa Bay Lightning,Tampa Bay Lightning,Toronto Maple Leafs,4,1,REG
+2017-04-06,Florida Panthers,St. Louis Blues,St. Louis Blues,Florida Panthers,6,3,REG
+2017-04-07,Dallas Stars,Nashville Predators,Nashville Predators,Dallas Stars,7,3,REG
+2017-04-07,Colorado Avalanche,Minnesota Wild,Minnesota Wild,Colorado Avalanche,4,3,REG
+2017-04-07,Arizona Coyotes,Vancouver Canucks,Arizona Coyotes,Vancouver Canucks,4,3,REG
+2017-04-07,Anaheim Ducks,Chicago Blackhawks,Anaheim Ducks,Chicago Blackhawks,4,0,REG
+2017-04-07,Los Angeles Kings,Calgary Flames,Calgary Flames,Los Angeles Kings,4,1,REG
+2017-04-07,San Jose Sharks,Edmonton Oilers,Edmonton Oilers,San Jose Sharks,4,2,REG
 2017-04-07,Montreal Canadiens,Tampa Bay Lightning,Tampa Bay Lightning,Montreal Canadiens,4,2,REG
 2017-04-08,Ottawa Senators,New York Rangers,Ottawa Senators,New York Rangers,3,1,REG
 2017-04-08,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,4,2,REG
@@ -1204,6 +1276,9 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2017-04-18,New York Rangers,Montreal Canadiens,New York Rangers,Montreal Canadiens,2,1,REG
 2017-04-18,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,5,4,REG
 2017-04-19,San Jose Sharks,Edmonton Oilers,San Jose Sharks,Edmonton Oilers,4,0,REG
+2017-04-19,Toronto Maple Leafs,Washington Capitals,Washington Capitals,Toronto Maple Leafs,5,4,REG
+2017-04-20,St. Louis Blues,Minnesota Wild,Minnesota Wild,St. Louis Blues,2,0,REG
+2017-04-20,Calgary Flames,Anaheim Ducks,Anaheim Ducks,Calgary Flames,3,1,REG
 2017-04-20,Montreal Canadiens,New York Rangers,New York Rangers,Montreal Canadiens,3,2,OT
 2017-04-20,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,5,2,REG
 2017-04-21,Nashville Predators,Chicago Blackhawks,Nashville Predators,Chicago Blackhawks,4,1,REG
@@ -1215,6 +1290,8 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2017-04-23,San Jose Sharks,Edmonton Oilers,Edmonton Oilers,San Jose Sharks,3,1,REG
 2017-04-23,Boston Bruins,Ottawa Senators,Ottawa Senators,Boston Bruins,3,2,OT
 2017-04-23,Toronto Maple Leafs,Washington Capitals,Washington Capitals,Toronto Maple Leafs,2,1,OT
+2017-04-27,St. Louis Blues,Nashville Predators,Nashville Predators,St. Louis Blues,4,3,REG
+2017-04-27,Anaheim Ducks,Edmonton Oilers,Edmonton Oilers,Anaheim Ducks,5,3,REG
 2017-04-27,Ottawa Senators,New York Rangers,Ottawa Senators,New York Rangers,2,1,REG
 2017-04-27,Washington Capitals,Pittsburgh Penguins,Pittsburgh Penguins,Washington Capitals,3,2,REG
 2017-04-29,St. Louis Blues,Nashville Predators,St. Louis Blues,Nashville Predators,3,2,REG
@@ -1231,6 +1308,8 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2017-05-04,New York Rangers,Ottawa Senators,New York Rangers,Ottawa Senators,4,1,REG
 2017-05-06,St. Louis Blues,Nashville Predators,St. Louis Blues,Nashville Predators,2,1,REG
 2017-05-06,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,4,3,OT
+2017-05-06,Ottawa Senators,New York Rangers,Ottawa Senators,New York Rangers,5,4,OT
+2017-05-06,Washington Capitals,Pittsburgh Penguins,Washington Capitals,Pittsburgh Penguins,4,2,REG
 2017-05-07,Nashville Predators,St. Louis Blues,Nashville Predators,St. Louis Blues,3,1,REG
 2017-05-07,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,5,1,REG
 2017-05-08,Pittsburgh Penguins,Washington Capitals,Washington Capitals,Pittsburgh Penguins,5,2,REG
@@ -1243,6 +1322,7 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2017-05-17,Nashville Predators,Anaheim Ducks,Nashville Predators,Anaheim Ducks,2,1,REG
 2017-05-18,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,5,1,REG
 2017-05-19,Nashville Predators,Anaheim Ducks,Anaheim Ducks,Nashville Predators,3,2,OT
+2017-05-20,Ottawa Senators,Pittsburgh Penguins,Pittsburgh Penguins,Ottawa Senators,3,2,REG
 2017-05-20,Anaheim Ducks,Nashville Predators,Nashville Predators,Anaheim Ducks,3,1,REG
 2017-05-21,Pittsburgh Penguins,Ottawa Senators,Pittsburgh Penguins,Ottawa Senators,4,0,REG
 2017-05-23,Nashville Predators,Anaheim Ducks,Nashville Predators,Anaheim Ducks,6,3,REG
