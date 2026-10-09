@@ -119,14 +119,6 @@
       "note": null
     },
     {
-      "team": "HOU",
-      "conference": "AFC",
-      "division": "AFC South",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "TEN",
       "conference": "AFC",
       "division": "AFC South",
@@ -135,17 +127,25 @@
       "note": null
     },
     {
-      "team": "SF",
-      "conference": "NFC",
-      "division": "NFC West",
-      "seed": 1,
-      "status": "division_winner",
-      "note": "Division winner"
+      "team": "HOU",
+      "conference": "AFC",
+      "division": "AFC South",
+      "seed": null,
+      "status": "outside",
+      "note": null
     },
     {
       "team": "MIN",
       "conference": "NFC",
       "division": "NFC North",
+      "seed": 1,
+      "status": "division_winner",
+      "note": "Division winner"
+    },
+    {
+      "team": "SF",
+      "conference": "NFC",
+      "division": "NFC West",
       "seed": 2,
       "status": "division_winner",
       "note": "Division winner"
@@ -469,9 +469,9 @@
       {
         "team": "TB",
         "rank": 4,
-        "wins": 0,
+        "wins": 1,
         "losses": 4,
-        "win_pct": 0
+        "win_pct": 0.2
       }
     ],
     "NFC East": [
@@ -493,8 +493,8 @@
         "team": "DAL",
         "rank": 3,
         "wins": 2,
-        "losses": 2,
-        "win_pct": 0.5
+        "losses": 3,
+        "win_pct": 0.4
       },
       {
         "team": "WAS",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-09 01:33 UTC"
+  "current_field_updated": "2026-10-09 10:42 UTC"
 }
