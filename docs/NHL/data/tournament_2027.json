@@ -332,10 +332,10 @@
         "team": "Philadelphia Flyers",
         "rank": 8,
         "wins": 0,
-        "losses": 4,
+        "losses": 5,
         "win_pct": 0,
         "points": 2,
-        "points_pct": 0.25
+        "points_pct": 0.2
       }
     ],
     "Atlantic": [
@@ -369,11 +369,11 @@
       {
         "team": "Boston Bruins",
         "rank": 4,
-        "wins": 2,
+        "wins": 3,
         "losses": 2,
-        "win_pct": 0.5,
-        "points": 4,
-        "points_pct": 0.5
+        "win_pct": 0.6,
+        "points": 6,
+        "points_pct": 0.6
       },
       {
         "team": "Buffalo Sabres",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-10 17:29 UTC"
+  "current_field_updated": "2026-10-10 21:48 UTC"
 }
