@@ -119,7 +119,7 @@
       "note": null
     },
     {
-      "team": "TEN",
+      "team": "HOU",
       "conference": "AFC",
       "division": "AFC South",
       "seed": null,
@@ -127,7 +127,7 @@
       "note": null
     },
     {
-      "team": "HOU",
+      "team": "TEN",
       "conference": "AFC",
       "division": "AFC South",
       "seed": null,
@@ -183,20 +183,12 @@
       "note": "Wildcard"
     },
     {
-      "team": "LA",
-      "conference": "NFC",
-      "division": "NFC West",
-      "seed": 7,
-      "status": "wildcard",
-      "note": "Wildcard"
-    },
-    {
       "team": "ATL",
       "conference": "NFC",
       "division": "NFC South",
-      "seed": null,
-      "status": "outside",
-      "note": null
+      "seed": 7,
+      "status": "wildcard",
+      "note": "Wildcard"
     },
     {
       "team": "GB",
@@ -207,9 +199,9 @@
       "note": null
     },
     {
-      "team": "PHI",
+      "team": "LA",
       "conference": "NFC",
-      "division": "NFC East",
+      "division": "NFC West",
       "seed": null,
       "status": "outside",
       "note": null
@@ -218,6 +210,14 @@
       "team": "DET",
       "conference": "NFC",
       "division": "NFC North",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "PHI",
+      "conference": "NFC",
+      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -358,9 +358,9 @@
       {
         "team": "JAX",
         "rank": 1,
-        "wins": 3,
+        "wins": 4,
         "losses": 1,
-        "win_pct": 0.75
+        "win_pct": 0.8
       },
       {
         "team": "IND",
@@ -486,8 +486,8 @@
         "team": "PHI",
         "rank": 2,
         "wins": 2,
-        "losses": 2,
-        "win_pct": 0.5
+        "losses": 3,
+        "win_pct": 0.4
       },
       {
         "team": "DAL",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-11 12:54 UTC"
+  "current_field_updated": "2026-10-11 19:45 UTC"
 }
