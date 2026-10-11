@@ -277,20 +277,20 @@
       {
         "team": "Anaheim Ducks",
         "rank": 2,
-        "wins": 3,
+        "wins": 4,
         "losses": 1,
-        "win_pct": 0.75,
-        "points": 6,
-        "points_pct": 0.75
+        "win_pct": 0.8,
+        "points": 8,
+        "points_pct": 0.8
       },
       {
         "team": "Vegas Golden Knights",
         "rank": 3,
-        "wins": 3,
+        "wins": 4,
         "losses": 1,
-        "win_pct": 0.75,
-        "points": 6,
-        "points_pct": 0.75
+        "win_pct": 0.8,
+        "points": 8,
+        "points_pct": 0.8
       },
       {
         "team": "Seattle Kraken",
@@ -314,10 +314,10 @@
         "team": "Los Angeles Kings",
         "rank": 6,
         "wins": 0,
-        "losses": 2,
+        "losses": 3,
         "win_pct": 0,
-        "points": 1,
-        "points_pct": 0.25
+        "points": 2,
+        "points_pct": 0.333
       },
       {
         "team": "Vancouver Canucks",
@@ -332,7 +332,7 @@
         "team": "Calgary Flames",
         "rank": 8,
         "wins": 0,
-        "losses": 4,
+        "losses": 5,
         "win_pct": 0,
         "points": 0,
         "points_pct": 0
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-11 04:01 UTC"
+  "current_field_updated": "2026-10-11 05:33 UTC"
 }
