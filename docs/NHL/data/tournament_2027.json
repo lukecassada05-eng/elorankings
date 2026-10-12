@@ -239,17 +239,17 @@
       "note": null
     },
     {
-      "team": "Vancouver Canucks",
+      "team": "Chicago Blackhawks",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Central",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Chicago Blackhawks",
+      "team": "Vancouver Canucks",
       "conference": "Western",
-      "division": "Central",
+      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
@@ -295,11 +295,11 @@
       {
         "team": "Seattle Kraken",
         "rank": 4,
-        "wins": 3,
+        "wins": 4,
         "losses": 2,
-        "win_pct": 0.6,
-        "points": 6,
-        "points_pct": 0.6
+        "win_pct": 0.667,
+        "points": 8,
+        "points_pct": 0.667
       },
       {
         "team": "San Jose Sharks",
@@ -323,10 +323,10 @@
         "team": "Vancouver Canucks",
         "rank": 7,
         "wins": 1,
-        "losses": 4,
-        "win_pct": 0.2,
+        "losses": 5,
+        "win_pct": 0.167,
         "points": 2,
-        "points_pct": 0.2
+        "points_pct": 0.167
       },
       {
         "team": "Calgary Flames",
@@ -342,11 +342,11 @@
       {
         "team": "New York Rangers",
         "rank": 1,
-        "wins": 4,
+        "wins": 5,
         "losses": 1,
-        "win_pct": 0.8,
-        "points": 8,
-        "points_pct": 0.8
+        "win_pct": 0.833,
+        "points": 10,
+        "points_pct": 0.833
       },
       {
         "team": "Carolina Hurricanes",
@@ -361,10 +361,10 @@
         "team": "Washington Capitals",
         "rank": 3,
         "wins": 3,
-        "losses": 1,
-        "win_pct": 0.75,
+        "losses": 2,
+        "win_pct": 0.6,
         "points": 6,
-        "points_pct": 0.75
+        "points_pct": 0.6
       },
       {
         "team": "New York Islanders",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-11 19:45 UTC"
+  "current_field_updated": "2026-10-12 00:45 UTC"
 }
