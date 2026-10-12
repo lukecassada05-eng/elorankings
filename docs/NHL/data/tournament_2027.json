@@ -63,12 +63,20 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "New York Islanders",
+      "team": "Buffalo Sabres",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
+    },
+    {
+      "team": "New York Islanders",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": null,
+      "status": "outside",
+      "note": null
     },
     {
       "team": "Columbus Blue Jackets",
@@ -96,14 +104,6 @@
     },
     {
       "team": "Florida Panthers",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Buffalo Sabres",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -450,20 +450,20 @@
         "points_pct": 0.6
       },
       {
-        "team": "Florida Panthers",
+        "team": "Buffalo Sabres",
         "rank": 5,
-        "wins": 1,
+        "wins": 3,
         "losses": 3,
-        "win_pct": 0.25,
-        "points": 4,
+        "win_pct": 0.5,
+        "points": 6,
         "points_pct": 0.5
       },
       {
-        "team": "Buffalo Sabres",
+        "team": "Florida Panthers",
         "rank": 6,
-        "wins": 2,
-        "losses": 3,
-        "win_pct": 0.4,
+        "wins": 1,
+        "losses": 4,
+        "win_pct": 0.2,
         "points": 4,
         "points_pct": 0.4
       },
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-12 11:02 UTC"
+  "current_field_updated": "2026-10-12 21:32 UTC"
 }
