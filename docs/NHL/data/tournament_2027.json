@@ -119,17 +119,17 @@
       "note": null
     },
     {
-      "team": "Philadelphia Flyers",
+      "team": "Montreal Canadiens",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Montreal Canadiens",
+      "team": "Philadelphia Flyers",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": null,
       "status": "outside",
       "note": null
@@ -351,11 +351,11 @@
       {
         "team": "Carolina Hurricanes",
         "rank": 2,
-        "wins": 4,
+        "wins": 5,
         "losses": 1,
-        "win_pct": 0.8,
-        "points": 8,
-        "points_pct": 0.8
+        "win_pct": 0.833,
+        "points": 10,
+        "points_pct": 0.833
       },
       {
         "team": "Washington Capitals",
@@ -406,10 +406,10 @@
         "team": "Philadelphia Flyers",
         "rank": 8,
         "wins": 0,
-        "losses": 5,
+        "losses": 6,
         "win_pct": 0,
         "points": 2,
-        "points_pct": 0.2
+        "points_pct": 0.167
       }
     ],
     "Atlantic": [
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-12 00:45 UTC"
+  "current_field_updated": "2026-10-12 11:02 UTC"
 }

@@ -15,10 +15,18 @@
       "note": "Division winner"
     },
     {
+      "team": "BAL",
+      "conference": "AFC",
+      "division": "AFC North",
+      "seed": 2,
+      "status": "division_winner",
+      "note": "Division winner"
+    },
+    {
       "team": "JAX",
       "conference": "AFC",
       "division": "AFC South",
-      "seed": 2,
+      "seed": 3,
       "status": "division_winner",
       "note": "Division winner"
     },
@@ -26,14 +34,6 @@
       "team": "BUF",
       "conference": "AFC",
       "division": "AFC East",
-      "seed": 3,
-      "status": "division_winner",
-      "note": "Division winner"
-    },
-    {
-      "team": "BAL",
-      "conference": "AFC",
-      "division": "AFC North",
       "seed": 4,
       "status": "division_winner",
       "note": "Division winner"
@@ -418,9 +418,9 @@
       {
         "team": "BAL",
         "rank": 1,
-        "wins": 3,
+        "wins": 4,
         "losses": 1,
-        "win_pct": 0.75
+        "win_pct": 0.8
       },
       {
         "team": "CLE",
@@ -456,8 +456,8 @@
         "team": "ATL",
         "rank": 2,
         "wins": 2,
-        "losses": 2,
-        "win_pct": 0.5
+        "losses": 3,
+        "win_pct": 0.4
       },
       {
         "team": "NO",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-12 00:45 UTC"
+  "current_field_updated": "2026-10-12 11:02 UTC"
 }
