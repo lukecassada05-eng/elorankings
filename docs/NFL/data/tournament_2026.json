@@ -15,10 +15,18 @@
       "note": "Division winner"
     },
     {
+      "team": "BUF",
+      "conference": "AFC",
+      "division": "AFC East",
+      "seed": 2,
+      "status": "division_winner",
+      "note": "Division winner"
+    },
+    {
       "team": "BAL",
       "conference": "AFC",
       "division": "AFC North",
-      "seed": 2,
+      "seed": 3,
       "status": "division_winner",
       "note": "Division winner"
     },
@@ -26,14 +34,6 @@
       "team": "JAX",
       "conference": "AFC",
       "division": "AFC South",
-      "seed": 3,
-      "status": "division_winner",
-      "note": "Division winner"
-    },
-    {
-      "team": "BUF",
-      "conference": "AFC",
-      "division": "AFC East",
       "seed": 4,
       "status": "division_winner",
       "note": "Division winner"
@@ -207,6 +207,14 @@
       "note": null
     },
     {
+      "team": "PHI",
+      "conference": "NFC",
+      "division": "NFC East",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "ATL",
       "conference": "NFC",
       "division": "NFC South",
@@ -216,14 +224,6 @@
     },
     {
       "team": "DAL",
-      "conference": "NFC",
-      "division": "NFC East",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "PHI",
       "conference": "NFC",
       "division": "NFC East",
       "seed": null,
@@ -283,8 +283,8 @@
         "team": "LA",
         "rank": 3,
         "wins": 2,
-        "losses": 2,
-        "win_pct": 0.5
+        "losses": 3,
+        "win_pct": 0.4
       },
       {
         "team": "ARI",
@@ -388,9 +388,9 @@
       {
         "team": "BUF",
         "rank": 1,
-        "wins": 3,
+        "wins": 4,
         "losses": 1,
-        "win_pct": 0.75
+        "win_pct": 0.8
       },
       {
         "team": "NE",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-12 21:32 UTC"
+  "current_field_updated": "2026-10-13 06:48 UTC"
 }
