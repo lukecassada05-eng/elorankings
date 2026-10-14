@@ -15,7 +15,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Tampa Bay Lightning",
+      "team": "Boston Bruins",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": 2,
@@ -23,7 +23,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Boston Bruins",
+      "team": "Tampa Bay Lightning",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": 3,
@@ -199,17 +199,17 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "San Jose Sharks",
+      "team": "St. Louis Blues",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Central",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "St. Louis Blues",
+      "team": "San Jose Sharks",
       "conference": "Western",
-      "division": "Central",
+      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
@@ -264,6 +264,80 @@
     }
   ],
   "standings": {
+    "Pacific": [
+      {
+        "team": "Edmonton Oilers",
+        "rank": 1,
+        "wins": 5,
+        "losses": 0,
+        "win_pct": 1,
+        "points": 10,
+        "points_pct": 1
+      },
+      {
+        "team": "Vegas Golden Knights",
+        "rank": 2,
+        "wins": 5,
+        "losses": 2,
+        "win_pct": 0.714,
+        "points": 10,
+        "points_pct": 0.714
+      },
+      {
+        "team": "Seattle Kraken",
+        "rank": 3,
+        "wins": 5,
+        "losses": 2,
+        "win_pct": 0.714,
+        "points": 10,
+        "points_pct": 0.714
+      },
+      {
+        "team": "Anaheim Ducks",
+        "rank": 4,
+        "wins": 4,
+        "losses": 2,
+        "win_pct": 0.667,
+        "points": 8,
+        "points_pct": 0.667
+      },
+      {
+        "team": "San Jose Sharks",
+        "rank": 5,
+        "wins": 3,
+        "losses": 3,
+        "win_pct": 0.5,
+        "points": 6,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Los Angeles Kings",
+        "rank": 6,
+        "wins": 0,
+        "losses": 4,
+        "win_pct": 0,
+        "points": 2,
+        "points_pct": 0.25
+      },
+      {
+        "team": "Calgary Flames",
+        "rank": 7,
+        "wins": 1,
+        "losses": 5,
+        "win_pct": 0.167,
+        "points": 2,
+        "points_pct": 0.167
+      },
+      {
+        "team": "Vancouver Canucks",
+        "rank": 8,
+        "wins": 1,
+        "losses": 6,
+        "win_pct": 0.143,
+        "points": 2,
+        "points_pct": 0.143
+      }
+    ],
     "Metropolitan": [
       {
         "team": "New York Rangers",
@@ -338,80 +412,6 @@
         "points_pct": 0.214
       }
     ],
-    "Pacific": [
-      {
-        "team": "Edmonton Oilers",
-        "rank": 1,
-        "wins": 4,
-        "losses": 0,
-        "win_pct": 1,
-        "points": 8,
-        "points_pct": 1
-      },
-      {
-        "team": "Vegas Golden Knights",
-        "rank": 2,
-        "wins": 5,
-        "losses": 2,
-        "win_pct": 0.714,
-        "points": 10,
-        "points_pct": 0.714
-      },
-      {
-        "team": "Seattle Kraken",
-        "rank": 3,
-        "wins": 5,
-        "losses": 2,
-        "win_pct": 0.714,
-        "points": 10,
-        "points_pct": 0.714
-      },
-      {
-        "team": "Anaheim Ducks",
-        "rank": 4,
-        "wins": 4,
-        "losses": 2,
-        "win_pct": 0.667,
-        "points": 8,
-        "points_pct": 0.667
-      },
-      {
-        "team": "San Jose Sharks",
-        "rank": 5,
-        "wins": 3,
-        "losses": 2,
-        "win_pct": 0.6,
-        "points": 6,
-        "points_pct": 0.6
-      },
-      {
-        "team": "Los Angeles Kings",
-        "rank": 6,
-        "wins": 0,
-        "losses": 3,
-        "win_pct": 0,
-        "points": 2,
-        "points_pct": 0.333
-      },
-      {
-        "team": "Calgary Flames",
-        "rank": 7,
-        "wins": 1,
-        "losses": 5,
-        "win_pct": 0.167,
-        "points": 2,
-        "points_pct": 0.167
-      },
-      {
-        "team": "Vancouver Canucks",
-        "rank": 8,
-        "wins": 1,
-        "losses": 6,
-        "win_pct": 0.143,
-        "points": 2,
-        "points_pct": 0.143
-      }
-    ],
     "Atlantic": [
       {
         "team": "Ottawa Senators",
@@ -423,7 +423,7 @@
         "points_pct": 0.714
       },
       {
-        "team": "Tampa Bay Lightning",
+        "team": "Boston Bruins",
         "rank": 2,
         "wins": 4,
         "losses": 2,
@@ -432,13 +432,13 @@
         "points_pct": 0.667
       },
       {
-        "team": "Boston Bruins",
+        "team": "Tampa Bay Lightning",
         "rank": 3,
-        "wins": 3,
+        "wins": 4,
         "losses": 2,
-        "win_pct": 0.6,
-        "points": 6,
-        "points_pct": 0.6
+        "win_pct": 0.667,
+        "points": 8,
+        "points_pct": 0.667
       },
       {
         "team": "Buffalo Sabres",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-14 04:48 UTC"
+  "current_field_updated": "2026-10-14 11:52 UTC"
 }
