@@ -135,18 +135,10 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Utah Jazz",
+      "team": "LA Clippers",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Pacific",
       "seed": 2,
-      "status": "clinched_top6",
-      "note": "Top 6 — direct playoff seed"
-    },
-    {
-      "team": "Denver Nuggets",
-      "conference": "Western",
-      "division": "Northwest",
-      "seed": 3,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
@@ -154,6 +146,14 @@
       "team": "New Orleans Pelicans",
       "conference": "Western",
       "division": "Southwest",
+      "seed": 3,
+      "status": "clinched_top6",
+      "note": "Top 6 — direct playoff seed"
+    },
+    {
+      "team": "Utah Jazz",
+      "conference": "Western",
+      "division": "Northwest",
       "seed": 4,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -183,14 +183,6 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "LA Clippers",
-      "conference": "Western",
-      "division": "Pacific",
-      "seed": null,
-      "status": "play_in",
-      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
-    },
-    {
       "team": "Houston Rockets",
       "conference": "Western",
       "division": "Southwest",
@@ -202,6 +194,14 @@
       "team": "Los Angeles Lakers",
       "conference": "Western",
       "division": "Pacific",
+      "seed": null,
+      "status": "play_in",
+      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
+    },
+    {
+      "team": "Denver Nuggets",
+      "conference": "Western",
+      "division": "Northwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -324,18 +324,18 @@
     ],
     "Pacific": [
       {
-        "team": "Golden State Warriors",
+        "team": "LA Clippers",
         "rank": 1,
+        "wins": 2,
+        "losses": 1,
+        "win_pct": 0.667
+      },
+      {
+        "team": "Golden State Warriors",
+        "rank": 2,
         "wins": 3,
         "losses": 2,
         "win_pct": 0.6
-      },
-      {
-        "team": "LA Clippers",
-        "rank": 2,
-        "wins": 1,
-        "losses": 1,
-        "win_pct": 0.5
       },
       {
         "team": "Los Angeles Lakers",
@@ -375,18 +375,18 @@
         "win_pct": 0.667
       },
       {
-        "team": "Denver Nuggets",
-        "rank": 3,
-        "wins": 2,
-        "losses": 1,
-        "win_pct": 0.667
-      },
-      {
         "team": "Minnesota Timberwolves",
-        "rank": 4,
+        "rank": 3,
         "wins": 3,
         "losses": 2,
         "win_pct": 0.6
+      },
+      {
+        "team": "Denver Nuggets",
+        "rank": 4,
+        "wins": 2,
+        "losses": 2,
+        "win_pct": 0.5
       },
       {
         "team": "Oklahoma City Thunder",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-15 04:27 UTC"
+  "current_field_updated": "2026-10-15 11:32 UTC"
 }
