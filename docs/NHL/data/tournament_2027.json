@@ -111,7 +111,7 @@
       "note": null
     },
     {
-      "team": "Montreal Canadiens",
+      "team": "Detroit Red Wings",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -119,7 +119,7 @@
       "note": null
     },
     {
-      "team": "Detroit Red Wings",
+      "team": "Montreal Canadiens",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -207,6 +207,14 @@
       "note": null
     },
     {
+      "team": "Dallas Stars",
+      "conference": "Western",
+      "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "San Jose Sharks",
       "conference": "Western",
       "division": "Pacific",
@@ -216,14 +224,6 @@
     },
     {
       "team": "Nashville Predators",
-      "conference": "Western",
-      "division": "Central",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Dallas Stars",
       "conference": "Western",
       "division": "Central",
       "seed": null,
@@ -369,11 +369,11 @@
       {
         "team": "Washington Capitals",
         "rank": 4,
-        "wins": 3,
+        "wins": 4,
         "losses": 3,
-        "win_pct": 0.5,
-        "points": 6,
-        "points_pct": 0.5
+        "win_pct": 0.571,
+        "points": 8,
+        "points_pct": 0.571
       },
       {
         "team": "New Jersey Devils",
@@ -468,16 +468,16 @@
         "points_pct": 0.5
       },
       {
-        "team": "Montreal Canadiens",
+        "team": "Detroit Red Wings",
         "rank": 7,
         "wins": 1,
-        "losses": 3,
-        "win_pct": 0.25,
+        "losses": 4,
+        "win_pct": 0.2,
         "points": 3,
-        "points_pct": 0.375
+        "points_pct": 0.3
       },
       {
-        "team": "Detroit Red Wings",
+        "team": "Montreal Canadiens",
         "rank": 8,
         "wins": 1,
         "losses": 4,
@@ -518,10 +518,10 @@
         "team": "Colorado Avalanche",
         "rank": 4,
         "wins": 3,
-        "losses": 2,
-        "win_pct": 0.6,
-        "points": 6,
-        "points_pct": 0.6
+        "losses": 3,
+        "win_pct": 0.5,
+        "points": 7,
+        "points_pct": 0.583
       },
       {
         "team": "St. Louis Blues",
@@ -533,22 +533,22 @@
         "points_pct": 0.583
       },
       {
-        "team": "Nashville Predators",
+        "team": "Dallas Stars",
         "rank": 6,
+        "wins": 3,
+        "losses": 4,
+        "win_pct": 0.429,
+        "points": 7,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Nashville Predators",
+        "rank": 7,
         "wins": 2,
         "losses": 4,
         "win_pct": 0.333,
         "points": 6,
         "points_pct": 0.5
-      },
-      {
-        "team": "Dallas Stars",
-        "rank": 7,
-        "wins": 2,
-        "losses": 4,
-        "win_pct": 0.333,
-        "points": 5,
-        "points_pct": 0.417
       },
       {
         "team": "Chicago Blackhawks",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-14 21:46 UTC"
+  "current_field_updated": "2026-10-15 04:27 UTC"
 }
