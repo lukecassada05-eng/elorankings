@@ -277,11 +277,11 @@
       {
         "team": "Vegas Golden Knights",
         "rank": 2,
-        "wins": 5,
+        "wins": 6,
         "losses": 2,
-        "win_pct": 0.714,
-        "points": 10,
-        "points_pct": 0.714
+        "win_pct": 0.75,
+        "points": 12,
+        "points_pct": 0.75
       },
       {
         "team": "Seattle Kraken",
@@ -332,10 +332,10 @@
         "team": "Calgary Flames",
         "rank": 8,
         "wins": 1,
-        "losses": 5,
-        "win_pct": 0.167,
+        "losses": 6,
+        "win_pct": 0.143,
         "points": 2,
-        "points_pct": 0.167
+        "points_pct": 0.143
       }
     ],
     "Metropolitan": [
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-16 04:25 UTC"
+  "current_field_updated": "2026-10-16 11:38 UTC"
 }
