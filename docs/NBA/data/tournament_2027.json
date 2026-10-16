@@ -55,14 +55,6 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Toronto Raptors",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": null,
-      "status": "play_in",
-      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
-    },
-    {
       "team": "Orlando Magic",
       "conference": "Eastern",
       "division": "Southeast",
@@ -74,6 +66,14 @@
       "team": "Chicago Bulls",
       "conference": "Eastern",
       "division": "Central",
+      "seed": null,
+      "status": "play_in",
+      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
+    },
+    {
+      "team": "Toronto Raptors",
+      "conference": "Eastern",
+      "division": "Atlantic",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -151,10 +151,18 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
+      "team": "Houston Rockets",
+      "conference": "Western",
+      "division": "Southwest",
+      "seed": 4,
+      "status": "clinched_top6",
+      "note": "Top 6 — direct playoff seed"
+    },
+    {
       "team": "Utah Jazz",
       "conference": "Western",
       "division": "Northwest",
-      "seed": 4,
+      "seed": 5,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
@@ -162,7 +170,7 @@
       "team": "Memphis Grizzlies",
       "conference": "Western",
       "division": "Southwest",
-      "seed": 5,
+      "seed": 6,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
@@ -170,22 +178,14 @@
       "team": "Golden State Warriors",
       "conference": "Western",
       "division": "Pacific",
-      "seed": 6,
-      "status": "clinched_top6",
-      "note": "Top 6 — direct playoff seed"
-    },
-    {
-      "team": "Minnesota Timberwolves",
-      "conference": "Western",
-      "division": "Northwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Houston Rockets",
+      "team": "Minnesota Timberwolves",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Northwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -304,8 +304,8 @@
         "team": "Toronto Raptors",
         "rank": 3,
         "wins": 2,
-        "losses": 1,
-        "win_pct": 0.667
+        "losses": 2,
+        "win_pct": 0.5
       },
       {
         "team": "Philadelphia 76ers",
@@ -317,9 +317,9 @@
       {
         "team": "New York Knicks",
         "rank": 5,
-        "wins": 0,
+        "wins": 1,
         "losses": 4,
-        "win_pct": 0
+        "win_pct": 0.2
       }
     ],
     "Pacific": [
@@ -392,8 +392,8 @@
         "team": "Oklahoma City Thunder",
         "rank": 5,
         "wins": 1,
-        "losses": 3,
-        "win_pct": 0.25
+        "losses": 4,
+        "win_pct": 0.2
       }
     ],
     "Southwest": [
@@ -405,18 +405,18 @@
         "win_pct": 0.667
       },
       {
-        "team": "Memphis Grizzlies",
+        "team": "Houston Rockets",
         "rank": 2,
         "wins": 2,
         "losses": 1,
         "win_pct": 0.667
       },
       {
-        "team": "Houston Rockets",
+        "team": "Memphis Grizzlies",
         "rank": 3,
-        "wins": 1,
+        "wins": 2,
         "losses": 1,
-        "win_pct": 0.5
+        "win_pct": 0.667
       },
       {
         "team": "Dallas Mavericks",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-15 21:34 UTC"
+  "current_field_updated": "2026-10-16 04:25 UTC"
 }
