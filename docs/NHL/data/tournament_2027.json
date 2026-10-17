@@ -103,7 +103,7 @@
       "note": null
     },
     {
-      "team": "Pittsburgh Penguins",
+      "team": "Columbus Blue Jackets",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": null,
@@ -111,7 +111,7 @@
       "note": null
     },
     {
-      "team": "Columbus Blue Jackets",
+      "team": "Pittsburgh Penguins",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": null,
@@ -385,22 +385,22 @@
         "points_pct": 0.571
       },
       {
-        "team": "Pittsburgh Penguins",
-        "rank": 6,
-        "wins": 2,
-        "losses": 4,
-        "win_pct": 0.333,
-        "points": 5,
-        "points_pct": 0.417
-      },
-      {
         "team": "Columbus Blue Jackets",
-        "rank": 7,
+        "rank": 6,
         "wins": 2,
         "losses": 3,
         "win_pct": 0.4,
         "points": 4,
         "points_pct": 0.4
+      },
+      {
+        "team": "Pittsburgh Penguins",
+        "rank": 7,
+        "wins": 2,
+        "losses": 5,
+        "win_pct": 0.286,
+        "points": 5,
+        "points_pct": 0.357
       },
       {
         "team": "Philadelphia Flyers",
@@ -443,11 +443,11 @@
       {
         "team": "Colorado Avalanche",
         "rank": 4,
-        "wins": 3,
+        "wins": 4,
         "losses": 3,
-        "win_pct": 0.5,
-        "points": 7,
-        "points_pct": 0.583
+        "win_pct": 0.571,
+        "points": 9,
+        "points_pct": 0.643
       },
       {
         "team": "St. Louis Blues",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-16 23:41 UTC"
+  "current_field_updated": "2026-10-17 04:16 UTC"
 }
