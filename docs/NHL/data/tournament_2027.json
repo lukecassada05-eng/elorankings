@@ -47,7 +47,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New York Islanders",
+      "team": "Washington Capitals",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 3,
@@ -55,7 +55,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Washington Capitals",
+      "team": "New York Islanders",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 4,
@@ -63,15 +63,15 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "New Jersey Devils",
+      "team": "Florida Panthers",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
     },
     {
-      "team": "Florida Panthers",
+      "team": "Buffalo Sabres",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -79,9 +79,9 @@
       "note": null
     },
     {
-      "team": "Buffalo Sabres",
+      "team": "New Jersey Devils",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": null,
       "status": "outside",
       "note": null
@@ -358,8 +358,17 @@
         "points_pct": 0.75
       },
       {
-        "team": "New York Islanders",
+        "team": "Washington Capitals",
         "rank": 3,
+        "wins": 5,
+        "losses": 3,
+        "win_pct": 0.625,
+        "points": 10,
+        "points_pct": 0.625
+      },
+      {
+        "team": "New York Islanders",
+        "rank": 4,
         "wins": 3,
         "losses": 3,
         "win_pct": 0.5,
@@ -367,22 +376,13 @@
         "points_pct": 0.583
       },
       {
-        "team": "Washington Capitals",
-        "rank": 4,
-        "wins": 4,
-        "losses": 3,
-        "win_pct": 0.571,
-        "points": 8,
-        "points_pct": 0.571
-      },
-      {
         "team": "New Jersey Devils",
         "rank": 5,
         "wins": 4,
-        "losses": 3,
-        "win_pct": 0.571,
+        "losses": 4,
+        "win_pct": 0.5,
         "points": 8,
-        "points_pct": 0.571
+        "points_pct": 0.5
       },
       {
         "team": "Columbus Blue Jackets",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-17 15:39 UTC"
+  "current_field_updated": "2026-10-17 20:11 UTC"
 }
