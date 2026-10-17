@@ -15,7 +15,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Tampa Bay Lightning",
+      "team": "Boston Bruins",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": 2,
@@ -23,7 +23,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Boston Bruins",
+      "team": "Tampa Bay Lightning",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": 3,
@@ -183,17 +183,17 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Anaheim Ducks",
+      "team": "Colorado Avalanche",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Central",
       "seed": 4,
       "status": "wildcard",
       "note": "Conference wildcard"
     },
     {
-      "team": "Colorado Avalanche",
+      "team": "Anaheim Ducks",
       "conference": "Western",
-      "division": "Central",
+      "division": "Pacific",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
@@ -296,10 +296,10 @@
         "team": "Anaheim Ducks",
         "rank": 4,
         "wins": 4,
-        "losses": 2,
-        "win_pct": 0.667,
+        "losses": 3,
+        "win_pct": 0.571,
         "points": 8,
-        "points_pct": 0.667
+        "points_pct": 0.571
       },
       {
         "team": "San Jose Sharks",
@@ -497,7 +497,7 @@
         "points_pct": 0.75
       },
       {
-        "team": "Tampa Bay Lightning",
+        "team": "Boston Bruins",
         "rank": 2,
         "wins": 5,
         "losses": 2,
@@ -506,13 +506,13 @@
         "points_pct": 0.714
       },
       {
-        "team": "Boston Bruins",
+        "team": "Tampa Bay Lightning",
         "rank": 3,
-        "wins": 4,
+        "wins": 5,
         "losses": 2,
-        "win_pct": 0.667,
-        "points": 8,
-        "points_pct": 0.667
+        "win_pct": 0.714,
+        "points": 10,
+        "points_pct": 0.714
       },
       {
         "team": "Florida Panthers",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-17 04:16 UTC"
+  "current_field_updated": "2026-10-17 10:43 UTC"
 }
