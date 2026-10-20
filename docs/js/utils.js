@@ -189,9 +189,15 @@ window.coerceRow = function(r) {
   // Use pr from CSV if available (R computes: Elo × win_pct^0.6 + √quality_resume)
   // Fall back to computing it client-side for sports that don't have a pr column
   const pr_csv = parseFloat(r.pr);
+  // Sign-preserving sqrt: CBB's resume_score can now be negative (a bad
+  // resume — see R/update_cbb.R's loss-penalty term), and Math.sqrt() of a
+  // negative number is NaN in JS. Math.sign(x)*Math.sqrt(Math.abs(x)) keeps
+  // this fallback from silently going NaN for any sport whose resume_score
+  // can dip below 0, same reasoning as R's sign(net)*abs(net)^0.25.
+  const signedSqrt = (x) => Math.sign(x) * Math.sqrt(Math.abs(x));
   const pr = !isNaN(pr_csv) && pr_csv > 0
     ? pr_csv
-    : elo * Math.pow(Math.max(0.01, win_pct), 0.6) + Math.sqrt(resume_score);
+    : elo * Math.pow(Math.max(0.01, win_pct), 0.6) + signedSqrt(resume_score);
   // Rolling-checkpoint movement columns (added by R/elo_engine.R's attach_movers()).
   // Older CSVs written before that shipped won't have these — parseFloat(undefined)
   // is NaN, so elo_change/baseline_elo come through as null and callers fall back

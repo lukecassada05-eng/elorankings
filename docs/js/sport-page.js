@@ -986,6 +986,14 @@ window.initSportPage = function(CFG) {
     const minElo = Math.min(...filtered.map(r=>r.elo));
     const avgElo = filtered.reduce((s,r)=>s+r.elo,0)/(filtered.length||1);
     const searchQ = (document.getElementById('teamSearch')?.value || '').toLowerCase();
+    // Resume Score can legitimately be negative now (a bad-loss penalty that
+    // outweighs win credit — see R/update_cbb.R's sign-preserving fourth
+    // root), so "is this season's resume_score column populated at all"
+    // can no longer be tested with `> 0` without hiding real negative
+    // scores as if they were missing data. Pre-feature seasons have every
+    // row defaulting to exactly 0 (see coerceRow in utils.js); a season
+    // with the feature will have essentially no team land on exactly 0.
+    const resumeAvailable = CFG.sport === 'CBB' && data.some(r => (r.resume_score || 0) !== 0);
 
     const ctrlHtml = `<div class="controls">
       <div class="ctrl-group">
@@ -1032,7 +1040,7 @@ window.initSportPage = function(CFG) {
         ${CFG.sport==='CFB'?`<td class="num" data-val="${r.pr||r.elo}" style="color:var(--accent);font-weight:500">${(r.pr||r.elo).toFixed(1)}</td>`:''}
         <td class="num" data-val="${r.wins||0}">${r.record||'—'}</td>
         ${CFG.sport==='CBB'
-          ? `<td class="num" data-val="${r.resume_score||0}">${r.resume_score>0?fmtResumeScore(r.resume_score):'—'}</td>`
+          ? `<td class="num" data-val="${r.resume_score||0}">${resumeAvailable?fmtResumeScore(r.resume_score||0):'—'}</td>`
           : `<td class="num" data-val="${r.win_pct||0}">${r.win_pct!=null?(r.win_pct*100).toFixed(1)+'%':'—'}</td>`}
         <td class="num" data-val="${r.sos||0}">${r.sos!=null?Number(r.sos).toFixed(1):'—'}</td>
         <td class="num" data-val="${r.best_win_elo||0}">${bwn?('<span style="font-size:0.78rem">'+bwn+' <span style="color:var(--text-dim);font-family:var(--font-mono);font-size:0.68rem">('+bw+')</span></span>'):'—'}</td>
@@ -2302,19 +2310,22 @@ window.initSportPage = function(CFG) {
     // predicting who wins next week's conference tournament genuinely is a
     // "who's better right now" question, not a résumé one.
     //
-    // Resume Score already has SOS baked into it (it only credits wins over
-    // opponents above a 1000-Elo floor), so there's no separate SOS term
-    // here — adding one back in would just double-count schedule strength.
+    // Resume Score already has SOS baked into it (wins credit opponent Elo
+    // above an 850 floor, losses are penalized against a 3000 baseline —
+    // see R/update_cbb.R), so there's no separate SOS term here — adding
+    // one back in would just double-count schedule strength.
     //
     // Degrades gracefully for a season with no resume_score column at all
     // (pre-dates this feature): if every team's resume_score comes through
-    // as 0 (see coerceRow in utils.js), there's no signal to rank on, so
-    // this falls back to Elo for that season instead of leaving the whole
-    // field tied at 0.
+    // as exactly 0 (see coerceRow in utils.js), there's no signal to rank
+    // on, so this falls back to Elo for that season instead of leaving the
+    // whole field tied at 0. (Post-feature, resume_score can be negative
+    // for a bad resume — that's real signal, not a missing-data case, which
+    // is why this checks `!== 0` rather than `> 0`.)
     //
     // CBASE keeps the original pure-Elo bracket — it has no resume_score
     // data (that column only exists on CBB's CSVs).
-    const resumeAvailable = isCBB && data.some(r => (r.resume_score || 0) > 0);
+    const resumeAvailable = isCBB && data.some(r => (r.resume_score || 0) !== 0);
     // Single switch used everywhere below for at-large/seeding: CBB ranks
     // by Resume Score (falling back to Elo pre-feature), CBASE and any
     // other sport with this tab keeps ranking by Elo exactly as before.
@@ -2688,12 +2699,15 @@ window.initSportPage = function(CFG) {
   }
   function resumeScoreHeader() {
     if (CFG.sport === 'CBB') {
-      return `<th data-type="num" title="Resume Score = fourth root of (sum of opponent Elo minus 1000 for each win, floored at 0 per game) — an Elo-based proxy for resume strength, not the real NET/Quadrant metric used by the NCAA selection committee. Does not account for game location (home/neutral/away).">Resume Score ⓘ</th>`;
+      return `<th data-type="num" title="Resume Score = sign-preserving fourth root of (sum of opponent Elo minus 850 for each win, minus sum of max(0, (3000 minus opponent Elo) / 2) for each loss, both floored at 0 per game) — an Elo-based proxy for resume strength, not the real NET/Quadrant metric used by the NCAA selection committee. Can be negative for a weak resume (a tough loss never costs more than 0, but credit from wins can be outweighed by losses). Does not account for game location (home/neutral/away).">Resume Score ⓘ</th>`;
     }
     return '<th data-type="num">Resume Score</th>';
   }
 
   function renderResumeClassic(el) {
+    // Same "can legitimately be negative now" reasoning as renderRankings()
+    // above — don't treat a real negative resume_score as missing data.
+    const resumeAvailable = CFG.sport === 'CBB' && data.some(r => (r.resume_score || 0) !== 0);
     const sorted = [...data].sort((a,b)=>CFG.sport==='CFB'?(b.pr||b.elo||0)-(a.pr||a.elo||0):(b.resume_score||0)-(a.resume_score||0));
     const rows = sorted.slice(0,120).map((r,i)=>`<tr>
       <td class="rank">${i+1}</td><td class="team-name">${r.team}</td>
@@ -2701,7 +2715,7 @@ window.initSportPage = function(CFG) {
       <td class="elo" data-val="${r.elo}">${r.elo.toFixed(1)}</td>
       ${CFG.sport==='CFB'?`<td class="num" data-val="${r.pr||r.elo}" style="color:var(--accent);font-weight:500">${(r.pr||r.elo).toFixed(1)}</td>`:''}
       <td class="record">${r.record}</td>
-      <td class="num" data-val="${r.resume_score||0}">${r.resume_score>0?fmtResumeScore(r.resume_score):'—'}</td>
+      <td class="num" data-val="${r.resume_score||0}">${resumeAvailable?fmtResumeScore(r.resume_score||0):'—'}</td>
       <td class="num">${r.sos>0?r.sos.toFixed(1):'—'}</td>
       <td class="num">${r.best_win_team?r.best_win_team.substring(0,16):'—'}</td>
     </tr>`).join('');
