@@ -145,18 +145,58 @@ for (s in SEASONS) {
   out <- build_output(elo, season=s, conf_map=res$conf_map, sos_map=sos,
                       conf_champ_map=conf_champ_map)
 
-  # ── Resume score: quality-win credit ────────────────────────
-  # Sum of (opponent Elo − 1000) across wins only, floored at 0 PER GAME
-  # (pmax(0, ...) before summing) — a win over a sub-1000 opponent can
-  # never subtract from the total. Teams can legitimately drop below 1000
-  # in this Elo system (any team under 4 games played gets its rating
-  # halved each iteration — see run_elo()'s min_games damping), so the
-  # per-game floor isn't just defensive, it's a real case here.
+  # ── Resume score: quality-win credit MINUS bad-loss penalty ─────────
+  # Sum of (opponent Elo − WIN_BASE) across wins, minus a penalty summed
+  # across losses, both floored at 0 PER GAME (pmax(0, ...) before
+  # summing). Replaces the old win-only formula — see chat history for the
+  # real-2025-26-data trial this was validated against before shipping.
+  #
+  # WIN_BASE = 850 (was 1000): a win over a sub-850 opponent still earns
+  # nothing, but this credits more of a strong team's actual win total
+  # than 1000 did — chosen specifically so a very-high-volume, lower-SOS
+  # team (e.g. a 32-2 season against a weaker conference) isn't buried by
+  # teams with fewer, higher-quality wins purely because of where the old
+  # floor sat. Teams can legitimately drop below either floor in this Elo
+  # system (any team under 4 games played gets its rating halved each
+  # iteration — see run_elo()'s min_games damping), so the per-game floor
+  # isn't just defensive, it's a real case here.
+  #
+  # LOSS_BASE / LOSS_DIVISOR = 3000 / 2: each loss costs
+  # max(0, (3000 − opponent_elo) / 2) — losing to a stronger opponent
+  # costs less than losing to a weak one. 3000 sits ~230 points above the
+  # real 2025-26 Elo ceiling (Michigan, 2766.4), so under real data this
+  # basically never zeroes out — every loss costs *something* even
+  # against the best team in the country — but it still differentiates a
+  # bad loss from a defensible one.
+  #
+  # SAFETY NET (per-game floor on the loss side, mirroring the win-side
+  # floor above): without pmax(0, ...) here, a loss to an opponent whose
+  # Elo exceeds LOSS_BASE would make (LOSS_BASE − opponent_elo) negative,
+  # which would SUBTRACT from the penalty total — i.e. literally increase
+  # a team's résumé score for losing a game. That can't happen with real
+  # 2025-26 data (nothing is within 230 points of 3000), but a single
+  # exceptional team in a future season could cross it, and this floor is
+  # what guarantees a loss can never be worth more than 0 points — never
+  # a gain — regardless of who it's against.
   #
   # A ~30-game CBB season means raw sums run into the tens of thousands,
   # so resume_score itself (not just an internal intermediate) is the
-  # FOURTH ROOT of that sum — a monotonic compression down to a readable
-  # single/low-double-digit scale, same relative ordering, smaller number.
+  # FOURTH ROOT of that net value — a monotonic compression down to a
+  # readable single/low-double-digit scale, same relative ordering,
+  # smaller number.
+  #
+  # SIGN-PRESERVING ROOT: net^0.25 on a negative net produces NaN in R —
+  # raising a negative number to a fractional power is undefined over the
+  # reals (confirmed directly: (-2700)^0.25 returns NaN with a warning).
+  # Any team whose loss penalty exceeds its win credit — a mediocre
+  # record against a tough schedule, exactly the bubble-caliber case this
+  # metric most needs to differentiate — would hit that. sign(net) *
+  # abs(net)^0.25 keeps the same ordering and the same compression on
+  # both sides of zero, so a bad résumé now shows as a real negative
+  # number instead of NA/blank. (The frontend's display and tooltip code
+  # — fmtResumeScore/resumeScoreHeader in docs/js/sport-page.js — were
+  # updated alongside this so a negative score renders as the actual
+  # number, not as "no data available".)
   #
   # This is a disclosed Elo-based approximation of "résumé strength," not
   # the NCAA selection committee's real NET/Quadrant system: no live NET
@@ -166,25 +206,35 @@ for (s in SEASONS) {
   # extracted above carry no date/site, only winner/loser/score). Same
   # "honest approximation" spirit as R/update_cfb.R's resume_score /
   # Playoff Rating and R/standings_engine.R's HONESTY NOTE.
-  elo_lup    <- setNames(elo$elo, elo$team)
-  resume_raw <- tapply(seq_len(nrow(res$games)), res$games$winner,
-                       function(rows) sum(pmax(0, elo_lup[res$games$loser[rows]] - 1000), na.rm = TRUE))
-  # tapply() only produces an entry for teams with >=1 win — a winless
-  # team is simply absent (not 0), so index-by-name would return NA; a
-  # winless team's resume is 0, not "unknown" (same fix as update_cfb.R).
+  WIN_BASE     <- 850
+  LOSS_BASE    <- 3000
+  LOSS_DIVISOR <- 2
+
+  elo_lup <- setNames(elo$elo, elo$team)
+  win_raw <- tapply(seq_len(nrow(res$games)), res$games$winner,
+                    function(rows) sum(pmax(0, elo_lup[res$games$loser[rows]] - WIN_BASE), na.rm = TRUE))
+  loss_raw <- tapply(seq_len(nrow(res$games)), res$games$loser,
+                     function(rows) sum(pmax(0, (LOSS_BASE - elo_lup[res$games$winner[rows]]) / LOSS_DIVISOR), na.rm = TRUE))
+  # tapply() only produces an entry for teams with >=1 win (win_raw) or
+  # >=1 loss (loss_raw) — an undefeated team is simply absent from
+  # loss_raw, so index-by-name would return NA; absent means 0, not
+  # "unknown" (same fix as update_cfb.R, now applied on both sides).
   #
   # as.numeric() wrapper is load-bearing, not cosmetic: tapply()'s result
   # carries class "array" (with a dim attribute) even though it's 1-D, and
-  # indexing it by name — resume_raw[out$team] — preserves that array
-  # class straight through ifelse()/round() into the new column. readr::
+  # indexing it by name — win_raw[out$team] — preserves that array class
+  # straight through ifelse()/round() into the new column. readr::
   # write_csv() refuses to write a matrix/array-classed column ("x must
   # not contain list or matrix columns"), which broke every CBB season's
   # write the first time this ran in GitHub Actions. as.numeric() collapses
   # it back to a plain atomic vector before it ever reaches `out`.
+  win_sum  <- as.numeric(ifelse(is.na(win_raw[out$team]),  0, win_raw[out$team]))
+  loss_sum <- as.numeric(ifelse(is.na(loss_raw[out$team]), 0, loss_raw[out$team]))
+  net <- win_sum - loss_sum
   # Rounded to 4 decimal places (was 2) so the frontend's extra display
   # precision (fmtResumeScore in docs/js/sport-page.js, now 3 decimals) has
   # real digits behind it instead of trailing zeros.
-  out$resume_score <- round(as.numeric(ifelse(is.na(resume_raw[out$team]), 0, resume_raw[out$team])) ^ 0.25, 4)
+  out$resume_score <- round(sign(net) * abs(net) ^ 0.25, 4)
 
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
   out <- attach_movers(out, out_path)
