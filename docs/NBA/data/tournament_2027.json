@@ -207,6 +207,14 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
+      "team": "Oklahoma City Thunder",
+      "conference": "Western",
+      "division": "Northwest",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "San Antonio Spurs",
       "conference": "Western",
       "division": "Southwest",
@@ -226,14 +234,6 @@
       "team": "Phoenix Suns",
       "conference": "Western",
       "division": "Pacific",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Oklahoma City Thunder",
-      "conference": "Western",
-      "division": "Northwest",
       "seed": null,
       "status": "outside",
       "note": null
@@ -274,8 +274,8 @@
         "team": "San Antonio Spurs",
         "rank": 4,
         "wins": 2,
-        "losses": 3,
-        "win_pct": 0.4
+        "losses": 4,
+        "win_pct": 0.333
       },
       {
         "team": "Dallas Mavericks",
@@ -428,9 +428,9 @@
       {
         "team": "Oklahoma City Thunder",
         "rank": 5,
-        "wins": 1,
+        "wins": 2,
         "losses": 4,
-        "win_pct": 0.2
+        "win_pct": 0.333
       }
     ],
     "Pacific": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-21 04:32 UTC"
+  "current_field_updated": "2026-10-21 11:54 UTC"
 }

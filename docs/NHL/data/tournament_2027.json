@@ -31,7 +31,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New York Rangers",
+      "team": "Carolina Hurricanes",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 1,
@@ -39,7 +39,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Carolina Hurricanes",
+      "team": "New York Rangers",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 2,
@@ -278,19 +278,19 @@
         "team": "Vegas Golden Knights",
         "rank": 2,
         "wins": 7,
-        "losses": 2,
-        "win_pct": 0.778,
+        "losses": 3,
+        "win_pct": 0.7,
         "points": 14,
-        "points_pct": 0.778
+        "points_pct": 0.7
       },
       {
         "team": "Seattle Kraken",
         "rank": 3,
-        "wins": 5,
+        "wins": 6,
         "losses": 4,
-        "win_pct": 0.556,
-        "points": 11,
-        "points_pct": 0.611
+        "win_pct": 0.6,
+        "points": 13,
+        "points_pct": 0.65
       },
       {
         "team": "San Jose Sharks",
@@ -332,24 +332,24 @@
         "team": "Vancouver Canucks",
         "rank": 8,
         "wins": 1,
-        "losses": 8,
-        "win_pct": 0.111,
+        "losses": 9,
+        "win_pct": 0.1,
         "points": 3,
-        "points_pct": 0.167
+        "points_pct": 0.15
       }
     ],
     "Metropolitan": [
       {
-        "team": "New York Rangers",
+        "team": "Carolina Hurricanes",
         "rank": 1,
-        "wins": 7,
+        "wins": 8,
         "losses": 2,
-        "win_pct": 0.778,
-        "points": 14,
-        "points_pct": 0.778
+        "win_pct": 0.8,
+        "points": 16,
+        "points_pct": 0.8
       },
       {
-        "team": "Carolina Hurricanes",
+        "team": "New York Rangers",
         "rank": 2,
         "wins": 7,
         "losses": 2,
@@ -416,11 +416,11 @@
       {
         "team": "Tampa Bay Lightning",
         "rank": 1,
-        "wins": 6,
+        "wins": 7,
         "losses": 2,
-        "win_pct": 0.75,
-        "points": 12,
-        "points_pct": 0.75
+        "win_pct": 0.778,
+        "points": 14,
+        "points_pct": 0.778
       },
       {
         "team": "Boston Bruins",
@@ -471,9 +471,9 @@
         "team": "Detroit Red Wings",
         "rank": 7,
         "wins": 3,
-        "losses": 4,
-        "win_pct": 0.429,
-        "points": 7,
+        "losses": 5,
+        "win_pct": 0.375,
+        "points": 8,
         "points_pct": 0.5
       },
       {
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-21 04:32 UTC"
+  "current_field_updated": "2026-10-21 11:54 UTC"
 }
