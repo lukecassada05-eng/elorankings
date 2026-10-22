@@ -55,18 +55,10 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Florida Panthers",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": 4,
-      "status": "wildcard",
-      "note": "Conference wildcard"
-    },
-    {
       "team": "Washington Capitals",
       "conference": "Eastern",
       "division": "Metropolitan",
-      "seed": 5,
+      "seed": 4,
       "status": "wildcard",
       "note": "Conference wildcard"
     },
@@ -74,12 +66,12 @@
       "team": "New Jersey Devils",
       "conference": "Eastern",
       "division": "Metropolitan",
-      "seed": null,
-      "status": "outside",
-      "note": null
+      "seed": 5,
+      "status": "wildcard",
+      "note": "Conference wildcard"
     },
     {
-      "team": "Buffalo Sabres",
+      "team": "Toronto Maple Leafs",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -87,7 +79,15 @@
       "note": null
     },
     {
-      "team": "Toronto Maple Leafs",
+      "team": "Florida Panthers",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Buffalo Sabres",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -387,11 +387,11 @@
       {
         "team": "Philadelphia Flyers",
         "rank": 6,
-        "wins": 2,
+        "wins": 3,
         "losses": 8,
-        "win_pct": 0.2,
-        "points": 7,
-        "points_pct": 0.35
+        "win_pct": 0.273,
+        "points": 9,
+        "points_pct": 0.409
       },
       {
         "team": "Columbus Blue Jackets",
@@ -434,23 +434,23 @@
       {
         "team": "Ottawa Senators",
         "rank": 3,
-        "wins": 6,
+        "wins": 7,
         "losses": 3,
-        "win_pct": 0.667,
-        "points": 12,
-        "points_pct": 0.667
+        "win_pct": 0.7,
+        "points": 14,
+        "points_pct": 0.7
+      },
+      {
+        "team": "Toronto Maple Leafs",
+        "rank": 4,
+        "wins": 4,
+        "losses": 5,
+        "win_pct": 0.444,
+        "points": 10,
+        "points_pct": 0.556
       },
       {
         "team": "Florida Panthers",
-        "rank": 4,
-        "wins": 4,
-        "losses": 4,
-        "win_pct": 0.5,
-        "points": 10,
-        "points_pct": 0.625
-      },
-      {
-        "team": "Buffalo Sabres",
         "rank": 5,
         "wins": 4,
         "losses": 5,
@@ -459,13 +459,13 @@
         "points_pct": 0.556
       },
       {
-        "team": "Toronto Maple Leafs",
+        "team": "Buffalo Sabres",
         "rank": 6,
         "wins": 4,
-        "losses": 5,
-        "win_pct": 0.444,
+        "losses": 6,
+        "win_pct": 0.4,
         "points": 10,
-        "points_pct": 0.556
+        "points_pct": 0.5
       },
       {
         "team": "Detroit Red Wings",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-21 21:52 UTC"
+  "current_field_updated": "2026-10-22 04:34 UTC"
 }
