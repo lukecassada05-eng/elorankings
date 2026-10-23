@@ -1,33 +1,33 @@
 season,rank,team,conference,elo,wins,losses,games_played,win_pct,record,best_win_team,best_win_elo,sos,conf_champ,updated_at,baseline_elo,baseline_date,elo_change
-2027,1,Edmonton Oilers,Pacific,1847.3,8,1,9,0.889,8-1,Carolina Hurricanes,1641.7,1513,NA,2026-10-23T17:00:55Z,1798.9,2026-10-19,48.4
-2027,2,Tampa Bay Lightning,Atlantic,1744.2,7,2,9,0.778,7-2,New York Islanders,1602.1,1545.6,NA,2026-10-23T17:00:55Z,1694.3,2026-10-19,49.9
-2027,3,New York Rangers,Metropolitan,1718.4,7,3,10,0.7,7-3,Tampa Bay Lightning,1744.2,1548.2,NA,2026-10-23T17:00:55Z,1728.9,2026-10-19,-10.5
-2027,4,Boston Bruins,Atlantic,1686.4,7,3,10,0.7,7-3,Utah Mammoth,1621.1,1498.1,NA,2026-10-23T17:00:55Z,1689.9,2026-10-19,-3.5
-2027,5,Carolina Hurricanes,Metropolitan,1641.7,8,3,11,0.727,8-3,Washington Capitals,1566.8,1418,NA,2026-10-23T17:00:55Z,1740.4,2026-10-19,-98.7
-2027,6,Utah Mammoth,Central,1621.1,7,4,11,0.636,7-4,Edmonton Oilers,1847.3,1555.3,NA,2026-10-23T17:00:55Z,1653.1,2026-10-19,-32
-2027,7,New York Islanders,Metropolitan,1602.1,5,4,9,0.556,5-4,New Jersey Devils,1578.1,1508.6,NA,2026-10-23T17:00:55Z,1597.2,2026-10-19,4.9
-2027,8,Dallas Stars,Central,1599.2,6,4,10,0.6,6-4,Boston Bruins,1686.4,1463.2,NA,2026-10-23T17:00:55Z,1524.2,2026-10-19,75
-2027,9,Seattle Kraken,Pacific,1583,7,4,11,0.636,7-4,Utah Mammoth,1621.1,1512.8,NA,2026-10-23T17:00:55Z,1525.4,2026-10-19,57.6
-2027,10,New Jersey Devils,Metropolitan,1578.1,6,4,10,0.6,6-4,New York Rangers,1718.4,1500.3,NA,2026-10-23T17:00:55Z,1516.8,2026-10-19,61.3
-2027,11,Washington Capitals,Metropolitan,1566.8,5,4,9,0.556,5-4,New York Rangers,1718.4,1555.8,NA,2026-10-23T17:00:55Z,1660.7,2026-10-19,-93.9
-2027,12,Minnesota Wild,Central,1565.8,6,5,11,0.545,6-5,Boston Bruins,1686.4,1497.4,NA,2026-10-23T17:00:55Z,1664.1,2026-10-19,-98.3
-2027,13,Toronto Maple Leafs,Atlantic,1559,5,5,10,0.5,5-5,New York Rangers,1718.4,1503.7,NA,2026-10-23T17:00:55Z,1423.3,2026-10-19,135.7
-2027,14,Vegas Golden Knights,Pacific,1557.1,7,4,11,0.636,7-4,Seattle Kraken,1583,1466,NA,2026-10-23T17:00:55Z,1697.1,2026-10-19,-140
-2027,15,St. Louis Blues,Central,1541.9,5,5,10,0.5,5-5,Dallas Stars,1599.2,1477.8,NA,2026-10-23T17:00:55Z,1445,2026-10-19,96.9
-2027,16,Ottawa Senators,Atlantic,1522.4,7,4,11,0.636,7-4,Boston Bruins,1686.4,1505.1,NA,2026-10-23T17:00:55Z,1515.8,2026-10-19,6.6
-2027,17,San Jose Sharks,Pacific,1515.5,6,5,11,0.545,6-5,St. Louis Blues,1541.9,1525.1,NA,2026-10-23T17:00:55Z,1425.4,2026-10-19,90.1
-2027,18,Colorado Avalanche,Central,1497.1,4,5,9,0.444,4-5,Dallas Stars,1599.2,1483.9,NA,2026-10-23T17:00:55Z,1523,2026-10-19,-25.9
-2027,19,Los Angeles Kings,Pacific,1471.5,2,5,7,0.286,2-5,New York Islanders,1602.1,1589.8,NA,2026-10-23T17:00:55Z,1250.9,2026-10-19,220.6
-2027,20,Detroit Red Wings,Atlantic,1469.5,4,5,9,0.444,4-5,Ottawa Senators,1522.4,1504,NA,2026-10-23T17:00:55Z,1443.4,2026-10-19,26.1
-2027,21,Winnipeg Jets,Central,1436.7,4,6,10,0.4,4-6,Minnesota Wild,1565.8,1512.6,NA,2026-10-23T17:00:55Z,1527.2,2026-10-19,-90.5
-2027,22,Nashville Predators,Central,1432.6,3,6,9,0.333,3-6,Dallas Stars,1599.2,1537.9,NA,2026-10-23T17:00:55Z,1464.9,2026-10-19,-32.3
-2027,23,Philadelphia Flyers,Metropolitan,1409.2,3,8,11,0.273,3-8,Ottawa Senators,1522.4,1563,NA,2026-10-23T17:00:55Z,1290.9,2026-10-19,118.3
-2027,24,Anaheim Ducks,Pacific,1407.1,4,6,10,0.4,4-6,Vegas Golden Knights,1557.1,1538.2,NA,2026-10-23T17:00:55Z,1530,2026-10-19,-122.9
-2027,25,Chicago Blackhawks,Central,1387.3,3,5,8,0.375,3-5,St. Louis Blues,1541.9,1510,NA,2026-10-23T17:00:55Z,1381.8,2026-10-19,5.5
-2027,26,Florida Panthers,Atlantic,1353.1,4,6,10,0.4,4-6,Seattle Kraken,1583,1415.6,NA,2026-10-23T17:00:55Z,1512.3,2026-10-19,-159.2
-2027,27,Pittsburgh Penguins,Metropolitan,1330.3,3,7,10,0.3,3-7,Dallas Stars,1599.2,1457.6,NA,2026-10-23T17:00:55Z,1265.6,2026-10-19,64.7
-2027,28,Buffalo Sabres,Atlantic,1306.9,4,6,10,0.4,4-6,Minnesota Wild,1565.8,1434.6,NA,2026-10-23T17:00:55Z,1374.9,2026-10-19,-68
-2027,29,Calgary Flames,Pacific,1301.3,3,6,9,0.333,3-6,Carolina Hurricanes,1641.7,1492.4,NA,2026-10-23T17:00:55Z,1197.3,2026-10-19,104
-2027,30,Montreal Canadiens,Atlantic,1293.4,2,5,7,0.286,2-5,Buffalo Sabres,1306.9,1443,NA,2026-10-23T17:00:55Z,1346.2,2026-10-19,-52.8
-2027,31,Columbus Blue Jackets,Metropolitan,1264,2,5,7,0.286,2-5,Pittsburgh Penguins,1330.3,1468.3,NA,2026-10-23T17:00:55Z,1351.2,2026-10-19,-87.2
-2027,32,Vancouver Canucks,Pacific,1189.8,1,10,11,0.091,1-10,Calgary Flames,1301.3,1586.8,NA,2026-10-23T17:00:55Z,1239.6,2026-10-19,-49.8
+2027,1,Edmonton Oilers,Pacific,1847.3,8,1,9,0.889,8-1,Carolina Hurricanes,1641.7,1513,NA,2026-10-23T21:25:31Z,1798.9,2026-10-19,48.4
+2027,2,Tampa Bay Lightning,Atlantic,1744.2,7,2,9,0.778,7-2,New York Islanders,1602.1,1545.6,NA,2026-10-23T21:25:31Z,1694.3,2026-10-19,49.9
+2027,3,New York Rangers,Metropolitan,1718.4,7,3,10,0.7,7-3,Tampa Bay Lightning,1744.2,1548.2,NA,2026-10-23T21:25:31Z,1728.9,2026-10-19,-10.5
+2027,4,Boston Bruins,Atlantic,1686.4,7,3,10,0.7,7-3,Utah Mammoth,1621.1,1498.1,NA,2026-10-23T21:25:31Z,1689.9,2026-10-19,-3.5
+2027,5,Carolina Hurricanes,Metropolitan,1641.7,8,3,11,0.727,8-3,Washington Capitals,1566.8,1418,NA,2026-10-23T21:25:31Z,1740.4,2026-10-19,-98.7
+2027,6,Utah Mammoth,Central,1621.1,7,4,11,0.636,7-4,Edmonton Oilers,1847.3,1555.3,NA,2026-10-23T21:25:31Z,1653.1,2026-10-19,-32
+2027,7,New York Islanders,Metropolitan,1602.1,5,4,9,0.556,5-4,New Jersey Devils,1578.1,1508.6,NA,2026-10-23T21:25:31Z,1597.2,2026-10-19,4.9
+2027,8,Dallas Stars,Central,1599.2,6,4,10,0.6,6-4,Boston Bruins,1686.4,1463.2,NA,2026-10-23T21:25:31Z,1524.2,2026-10-19,75
+2027,9,Seattle Kraken,Pacific,1583,7,4,11,0.636,7-4,Utah Mammoth,1621.1,1512.8,NA,2026-10-23T21:25:31Z,1525.4,2026-10-19,57.6
+2027,10,New Jersey Devils,Metropolitan,1578.1,6,4,10,0.6,6-4,New York Rangers,1718.4,1500.3,NA,2026-10-23T21:25:31Z,1516.8,2026-10-19,61.3
+2027,11,Washington Capitals,Metropolitan,1566.8,5,4,9,0.556,5-4,New York Rangers,1718.4,1555.8,NA,2026-10-23T21:25:31Z,1660.7,2026-10-19,-93.9
+2027,12,Minnesota Wild,Central,1565.8,6,5,11,0.545,6-5,Boston Bruins,1686.4,1497.4,NA,2026-10-23T21:25:31Z,1664.1,2026-10-19,-98.3
+2027,13,Toronto Maple Leafs,Atlantic,1559,5,5,10,0.5,5-5,New York Rangers,1718.4,1503.7,NA,2026-10-23T21:25:31Z,1423.3,2026-10-19,135.7
+2027,14,Vegas Golden Knights,Pacific,1557.1,7,4,11,0.636,7-4,Seattle Kraken,1583,1466,NA,2026-10-23T21:25:31Z,1697.1,2026-10-19,-140
+2027,15,St. Louis Blues,Central,1541.9,5,5,10,0.5,5-5,Dallas Stars,1599.2,1477.8,NA,2026-10-23T21:25:31Z,1445,2026-10-19,96.9
+2027,16,Ottawa Senators,Atlantic,1522.4,7,4,11,0.636,7-4,Boston Bruins,1686.4,1505.1,NA,2026-10-23T21:25:31Z,1515.8,2026-10-19,6.6
+2027,17,San Jose Sharks,Pacific,1515.5,6,5,11,0.545,6-5,St. Louis Blues,1541.9,1525.1,NA,2026-10-23T21:25:31Z,1425.4,2026-10-19,90.1
+2027,18,Colorado Avalanche,Central,1497.1,4,5,9,0.444,4-5,Dallas Stars,1599.2,1483.9,NA,2026-10-23T21:25:31Z,1523,2026-10-19,-25.9
+2027,19,Los Angeles Kings,Pacific,1471.5,2,5,7,0.286,2-5,New York Islanders,1602.1,1589.8,NA,2026-10-23T21:25:31Z,1250.9,2026-10-19,220.6
+2027,20,Detroit Red Wings,Atlantic,1469.5,4,5,9,0.444,4-5,Ottawa Senators,1522.4,1504,NA,2026-10-23T21:25:31Z,1443.4,2026-10-19,26.1
+2027,21,Winnipeg Jets,Central,1436.7,4,6,10,0.4,4-6,Minnesota Wild,1565.8,1512.6,NA,2026-10-23T21:25:31Z,1527.2,2026-10-19,-90.5
+2027,22,Nashville Predators,Central,1432.6,3,6,9,0.333,3-6,Dallas Stars,1599.2,1537.9,NA,2026-10-23T21:25:31Z,1464.9,2026-10-19,-32.3
+2027,23,Philadelphia Flyers,Metropolitan,1409.2,3,8,11,0.273,3-8,Ottawa Senators,1522.4,1563,NA,2026-10-23T21:25:31Z,1290.9,2026-10-19,118.3
+2027,24,Anaheim Ducks,Pacific,1407.1,4,6,10,0.4,4-6,Vegas Golden Knights,1557.1,1538.2,NA,2026-10-23T21:25:31Z,1530,2026-10-19,-122.9
+2027,25,Chicago Blackhawks,Central,1387.3,3,5,8,0.375,3-5,St. Louis Blues,1541.9,1510,NA,2026-10-23T21:25:31Z,1381.8,2026-10-19,5.5
+2027,26,Florida Panthers,Atlantic,1353.1,4,6,10,0.4,4-6,Seattle Kraken,1583,1415.6,NA,2026-10-23T21:25:31Z,1512.3,2026-10-19,-159.2
+2027,27,Pittsburgh Penguins,Metropolitan,1330.3,3,7,10,0.3,3-7,Dallas Stars,1599.2,1457.6,NA,2026-10-23T21:25:31Z,1265.6,2026-10-19,64.7
+2027,28,Buffalo Sabres,Atlantic,1306.9,4,6,10,0.4,4-6,Minnesota Wild,1565.8,1434.6,NA,2026-10-23T21:25:31Z,1374.9,2026-10-19,-68
+2027,29,Calgary Flames,Pacific,1301.3,3,6,9,0.333,3-6,Carolina Hurricanes,1641.7,1492.4,NA,2026-10-23T21:25:31Z,1197.3,2026-10-19,104
+2027,30,Montreal Canadiens,Atlantic,1293.4,2,5,7,0.286,2-5,Buffalo Sabres,1306.9,1443,NA,2026-10-23T21:25:31Z,1346.2,2026-10-19,-52.8
+2027,31,Columbus Blue Jackets,Metropolitan,1264,2,5,7,0.286,2-5,Pittsburgh Penguins,1330.3,1468.3,NA,2026-10-23T21:25:31Z,1351.2,2026-10-19,-87.2
+2027,32,Vancouver Canucks,Pacific,1189.8,1,10,11,0.091,1-10,Calgary Flames,1301.3,1586.8,NA,2026-10-23T21:25:31Z,1239.6,2026-10-19,-49.8
