@@ -159,28 +159,20 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Utah Jazz",
+      "team": "New Orleans Pelicans",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Southwest",
       "seed": 5,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Denver Nuggets",
+      "team": "Utah Jazz",
       "conference": "Western",
       "division": "Northwest",
       "seed": 6,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
-    },
-    {
-      "team": "New Orleans Pelicans",
-      "conference": "Western",
-      "division": "Southwest",
-      "seed": null,
-      "status": "play_in",
-      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
       "team": "Golden State Warriors",
@@ -192,6 +184,14 @@
     },
     {
       "team": "Minnesota Timberwolves",
+      "conference": "Western",
+      "division": "Northwest",
+      "seed": null,
+      "status": "play_in",
+      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
+    },
+    {
+      "team": "Denver Nuggets",
       "conference": "Western",
       "division": "Northwest",
       "seed": null,
@@ -449,27 +449,27 @@
         "win_pct": 0.6
       },
       {
-        "team": "Denver Nuggets",
-        "rank": 3,
-        "wins": 3,
-        "losses": 2,
-        "win_pct": 0.6
-      },
-      {
         "team": "Minnesota Timberwolves",
-        "rank": 4,
+        "rank": 3,
         "wins": 4,
         "losses": 3,
         "win_pct": 0.571
       },
       {
+        "team": "Denver Nuggets",
+        "rank": 4,
+        "wins": 3,
+        "losses": 3,
+        "win_pct": 0.5
+      },
+      {
         "team": "Oklahoma City Thunder",
         "rank": 5,
-        "wins": 2,
+        "wins": 3,
         "losses": 4,
-        "win_pct": 0.333
+        "win_pct": 0.429
       }
     ]
   },
-  "current_field_updated": "2026-10-23 04:38 UTC"
+  "current_field_updated": "2026-10-23 11:43 UTC"
 }

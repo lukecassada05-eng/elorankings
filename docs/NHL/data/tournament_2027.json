@@ -79,6 +79,14 @@
       "note": null
     },
     {
+      "team": "Detroit Red Wings",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "Buffalo Sabres",
       "conference": "Eastern",
       "division": "Atlantic",
@@ -88,14 +96,6 @@
     },
     {
       "team": "Florida Panthers",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Detroit Red Wings",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -135,7 +135,7 @@
       "note": null
     },
     {
-      "team": "Utah Mammoth",
+      "team": "Dallas Stars",
       "conference": "Western",
       "division": "Central",
       "seed": 1,
@@ -143,7 +143,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Dallas Stars",
+      "team": "Utah Mammoth",
       "conference": "Western",
       "division": "Central",
       "seed": 2,
@@ -277,11 +277,11 @@
       {
         "team": "Seattle Kraken",
         "rank": 2,
-        "wins": 6,
+        "wins": 7,
         "losses": 4,
-        "win_pct": 0.6,
-        "points": 13,
-        "points_pct": 0.65
+        "win_pct": 0.636,
+        "points": 15,
+        "points_pct": 0.682
       },
       {
         "team": "Vegas Golden Knights",
@@ -332,10 +332,10 @@
         "team": "Vancouver Canucks",
         "rank": 8,
         "wins": 1,
-        "losses": 9,
-        "win_pct": 0.1,
+        "losses": 10,
+        "win_pct": 0.091,
         "points": 3,
-        "points_pct": 0.15
+        "points_pct": 0.136
       }
     ],
     "Atlantic": [
@@ -376,16 +376,16 @@
         "points_pct": 0.6
       },
       {
-        "team": "Buffalo Sabres",
+        "team": "Detroit Red Wings",
         "rank": 5,
         "wins": 4,
-        "losses": 6,
-        "win_pct": 0.4,
+        "losses": 5,
+        "win_pct": 0.444,
         "points": 10,
-        "points_pct": 0.5
+        "points_pct": 0.556
       },
       {
-        "team": "Florida Panthers",
+        "team": "Buffalo Sabres",
         "rank": 6,
         "wins": 4,
         "losses": 6,
@@ -394,12 +394,12 @@
         "points_pct": 0.5
       },
       {
-        "team": "Detroit Red Wings",
+        "team": "Florida Panthers",
         "rank": 7,
-        "wins": 3,
-        "losses": 5,
-        "win_pct": 0.375,
-        "points": 8,
+        "wins": 4,
+        "losses": 6,
+        "win_pct": 0.4,
+        "points": 10,
         "points_pct": 0.5
       },
       {
@@ -488,22 +488,22 @@
     ],
     "Central": [
       {
-        "team": "Utah Mammoth",
-        "rank": 1,
-        "wins": 7,
-        "losses": 3,
-        "win_pct": 0.7,
-        "points": 14,
-        "points_pct": 0.7
-      },
-      {
         "team": "Dallas Stars",
-        "rank": 2,
+        "rank": 1,
         "wins": 6,
         "losses": 4,
         "win_pct": 0.6,
         "points": 13,
         "points_pct": 0.65
+      },
+      {
+        "team": "Utah Mammoth",
+        "rank": 2,
+        "wins": 7,
+        "losses": 4,
+        "win_pct": 0.636,
+        "points": 14,
+        "points_pct": 0.636
       },
       {
         "team": "Minnesota Wild",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-23 04:38 UTC"
+  "current_field_updated": "2026-10-23 11:43 UTC"
 }
