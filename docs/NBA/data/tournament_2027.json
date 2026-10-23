@@ -318,8 +318,8 @@
         "team": "Cleveland Cavaliers",
         "rank": 5,
         "wins": 1,
-        "losses": 2,
-        "win_pct": 0.333
+        "losses": 3,
+        "win_pct": 0.25
       }
     ],
     "Southeast": [
@@ -384,9 +384,9 @@
       {
         "team": "Philadelphia 76ers",
         "rank": 4,
-        "wins": 2,
+        "wins": 3,
         "losses": 3,
-        "win_pct": 0.4
+        "win_pct": 0.5
       },
       {
         "team": "New York Knicks",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-22 21:51 UTC"
+  "current_field_updated": "2026-10-23 04:38 UTC"
 }
