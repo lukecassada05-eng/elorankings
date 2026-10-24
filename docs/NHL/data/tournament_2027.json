@@ -314,10 +314,10 @@
         "team": "Los Angeles Kings",
         "rank": 6,
         "wins": 2,
-        "losses": 5,
-        "win_pct": 0.286,
+        "losses": 6,
+        "win_pct": 0.25,
         "points": 6,
-        "points_pct": 0.429
+        "points_pct": 0.375
       },
       {
         "team": "Calgary Flames",
@@ -369,11 +369,11 @@
       {
         "team": "New Jersey Devils",
         "rank": 4,
-        "wins": 6,
+        "wins": 7,
         "losses": 4,
-        "win_pct": 0.6,
-        "points": 12,
-        "points_pct": 0.6
+        "win_pct": 0.636,
+        "points": 14,
+        "points_pct": 0.636
       },
       {
         "team": "Washington Capitals",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-24 20:53 UTC"
+  "current_field_updated": "2026-10-24 23:23 UTC"
 }
