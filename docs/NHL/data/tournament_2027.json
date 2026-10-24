@@ -223,7 +223,7 @@
       "note": null
     },
     {
-      "team": "Los Angeles Kings",
+      "team": "Anaheim Ducks",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -231,7 +231,7 @@
       "note": null
     },
     {
-      "team": "Anaheim Ducks",
+      "team": "Los Angeles Kings",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -302,22 +302,22 @@
         "points_pct": 0.591
       },
       {
-        "team": "Los Angeles Kings",
+        "team": "Anaheim Ducks",
         "rank": 5,
+        "wins": 5,
+        "losses": 6,
+        "win_pct": 0.455,
+        "points": 10,
+        "points_pct": 0.455
+      },
+      {
+        "team": "Los Angeles Kings",
+        "rank": 6,
         "wins": 2,
         "losses": 5,
         "win_pct": 0.286,
         "points": 6,
         "points_pct": 0.429
-      },
-      {
-        "team": "Anaheim Ducks",
-        "rank": 6,
-        "wins": 4,
-        "losses": 6,
-        "win_pct": 0.4,
-        "points": 8,
-        "points_pct": 0.4
       },
       {
         "team": "Calgary Flames",
@@ -388,10 +388,10 @@
         "team": "Philadelphia Flyers",
         "rank": 6,
         "wins": 3,
-        "losses": 8,
-        "win_pct": 0.273,
+        "losses": 9,
+        "win_pct": 0.25,
         "points": 9,
-        "points_pct": 0.409
+        "points_pct": 0.375
       },
       {
         "team": "Pittsburgh Penguins",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-24 16:15 UTC"
+  "current_field_updated": "2026-10-24 20:53 UTC"
 }
