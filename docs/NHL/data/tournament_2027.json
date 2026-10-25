@@ -135,7 +135,7 @@
       "note": null
     },
     {
-      "team": "Dallas Stars",
+      "team": "Utah Mammoth",
       "conference": "Western",
       "division": "Central",
       "seed": 1,
@@ -143,7 +143,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Utah Mammoth",
+      "team": "Dallas Stars",
       "conference": "Western",
       "division": "Central",
       "seed": 2,
@@ -352,10 +352,10 @@
         "team": "Tampa Bay Lightning",
         "rank": 2,
         "wins": 7,
-        "losses": 3,
-        "win_pct": 0.7,
-        "points": 14,
-        "points_pct": 0.7
+        "losses": 4,
+        "win_pct": 0.636,
+        "points": 15,
+        "points_pct": 0.682
       },
       {
         "team": "Ottawa Senators",
@@ -488,22 +488,22 @@
     ],
     "Central": [
       {
-        "team": "Dallas Stars",
+        "team": "Utah Mammoth",
         "rank": 1,
+        "wins": 8,
+        "losses": 4,
+        "win_pct": 0.667,
+        "points": 16,
+        "points_pct": 0.667
+      },
+      {
+        "team": "Dallas Stars",
+        "rank": 2,
         "wins": 6,
         "losses": 4,
         "win_pct": 0.6,
         "points": 13,
         "points_pct": 0.65
-      },
-      {
-        "team": "Utah Mammoth",
-        "rank": 2,
-        "wins": 7,
-        "losses": 4,
-        "win_pct": 0.636,
-        "points": 14,
-        "points_pct": 0.636
       },
       {
         "team": "Minnesota Wild",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-25 02:11 UTC"
+  "current_field_updated": "2026-10-25 04:36 UTC"
 }
