@@ -2326,12 +2326,28 @@ window.initSportPage = function(CFG) {
     // CBASE keeps the original pure-Elo bracket — it has no resume_score
     // data (that column only exists on CBB's CSVs).
     const resumeAvailable = isCBB && data.some(r => (r.resume_score || 0) !== 0);
+    // Bracketology is a "what did the field look like going into
+    // Selection Sunday" question, for a completed season — so it has to
+    // rank off the PRE-tournament Elo/Resume Score snapshot (see
+    // R/update_cbb.R's pre_tourney_elo/pre_tourney_resume_score columns),
+    // not the final/live numbers, which for a completed season already
+    // include the NCAA Tournament itself — something the real committee
+    // never saw. These two columns are null for a season written before
+    // this shipped (or simply not yet computed), so this falls back to
+    // the live elo/resume_score exactly as before in that case — and for
+    // the CURRENT in-progress season, R writes pre_tourney_* equal to the
+    // live numbers anyway (there's no tournament yet to separate from),
+    // so this never shows something different from what you'd expect
+    // mid-season. The Rankings/Resume tabs are deliberately NOT touched
+    // here — those are the final/whole-season view on purpose.
+    function cbbElo(r)   { return r.pre_tourney_elo != null ? r.pre_tourney_elo : r.elo; }
+    function cbbRS(r)    { return r.pre_tourney_resume_score != null ? r.pre_tourney_resume_score : r.resume_score; }
     // Single switch used everywhere below for at-large/seeding: CBB ranks
     // by Resume Score (falling back to Elo pre-feature), CBASE and any
     // other sport with this tab keeps ranking by Elo exactly as before.
     function rankValue(r) {
       if (!isCBB) return r.elo || 0;
-      return resumeAvailable ? (r.resume_score || 0) : (r.elo || 0);
+      return resumeAvailable ? (cbbRS(r) || 0) : (cbbElo(r) || 0);
     }
 
     // ── Fetch conference tournament champions from ESPN ────────────────────────
@@ -2570,8 +2586,13 @@ window.initSportPage = function(CFG) {
         // (a future-games question, which is exactly what a predictive
         // rating is for), not evaluating who's EARNED an at-large bid —
         // Resume Score/SOS don't belong in "who's most likely to win."
+        // Pre-tournament Elo specifically (not live/final) for the same
+        // reason as rankValue() above — predicting a conference-tournament
+        // winner is itself a pre-NCAA-Tournament question for a completed
+        // season, so the final/live Elo (which already includes the NCAA
+        // Tournament's own rating movement) is the wrong snapshot here too.
         if (!champTeam) {
-          var best = teams.slice().sort(function(a,b){return b.elo-a.elo;})[0];
+          var best = teams.slice().sort(function(a,b){return (isCBB?cbbElo(b):b.elo)-(isCBB?cbbElo(a):a.elo);})[0];
           champTeam = {team: best, confirmed: false};
         }
 
@@ -2591,20 +2612,55 @@ window.initSportPage = function(CFG) {
 
       var field = autoBids.concat(atLarge).sort(function(a,b){ return rankValue(b) - rankValue(a); });
 
-      // Seeds
-      var seeds;
-      if (isCBB && is76) {
-        seeds = Array.from({length:76}, function(_,i){ return Math.floor(i/4)+1; });
-      } else if (isCBB) {
-        seeds = [1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,
-                 8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,
-                 12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,16,16];
-      } else {
-        seeds = Array.from({length:64}, function(_,i){ return Math.floor(i/4)+1; });
-      }
+      // Seeds — computed, not hardcoded to a fixed shape, because which
+      // seed line absorbs the First Four / Opening Round overflow teams
+      // genuinely varies season to season (it falls out of where those
+      // teams land in the real overall ranking, not a fixed rule) — this
+      // used to hardcode the at-large overflow to always be an 11 seed
+      // and the auto-bid overflow to always be a 16 seed, which is usually
+      // right but not guaranteed, and the is76 branch was worse: it ran
+      // seed = floor(i/4)+1 across all 76 teams with no compression at
+      // all, producing seed numbers up to 19 — real brackets never go
+      // past a 16 seed, the extra teams double up on existing lines via
+      // the Opening Round instead of creating new ones.
+      //
+      // General approach (works for 64/68/76/any future total without a
+      // format-specific branch): every team NOT in a First Four/Opening
+      // Round pairing gets its own "slot"; each pairing (lowest vs lowest
+      // within its own auto/at-large pool, same grouping used in the
+      // CBB pick'em engine's pkbBuildNCAAField) collapses to ONE slot,
+      // represented by its stronger participant — same convention the
+      // real bracket uses (a pairing is seeded as a unit; the winner
+      // inherits that seed). That always yields exactly 64 slots
+      // (byeTeams + pairs = (128-total) + (total-64)/1... see pairUp math
+      // below), so seed = floor(slotIndex/4)+1 always lands in 1-16.
+      var gamesNeeded = isCBB ? Math.max(0, total - 64) : 0;
+      var autoGamesN = Math.ceil(gamesNeeded/2), atLargeGamesN = gamesNeeded - autoGamesN;
+      var ffAutoTeams = autoGamesN>0
+        ? autoBids.slice().sort(function(a,b){return rankValue(b)-rankValue(a);}).slice(-(autoGamesN*2))
+        : [];
+      var ffAtLargeTeams = atLargeGamesN>0 ? atLarge.slice(-(atLargeGamesN*2)) : []; // atLarge already sorted desc
+      var ffTeamSet = new Set(ffAutoTeams.concat(ffAtLargeTeams).map(function(r){return r.team;}));
 
-      field.forEach(function(r,i){
-        r._seed = seeds[i] || (Math.floor(i/4)+1);
+      var byeTeams = field.filter(function(r){ return !ffTeamSet.has(r.team); });
+      var ffPairs = [];
+      function pairUpWorstFirst(pool){
+        var sorted = pool.slice().sort(function(a,b){return rankValue(a)-rankValue(b);}); // worst first
+        for (var i=0;i<sorted.length;i+=2) if (sorted[i+1]) ffPairs.push([sorted[i], sorted[i+1]]);
+      }
+      pairUpWorstFirst(ffAutoTeams);
+      pairUpWorstFirst(ffAtLargeTeams);
+
+      var slots = byeTeams.map(function(r){ return {rep:rankValue(r), teams:[r]}; })
+        .concat(ffPairs.map(function(p){ return {rep:Math.max(rankValue(p[0]),rankValue(p[1])), teams:p}; }))
+        .sort(function(a,b){ return b.rep-a.rep; });
+
+      slots.forEach(function(slot,i){
+        var seed = Math.floor(i/4)+1;
+        slot.teams.forEach(function(r){ r._seed = seed; });
+      });
+
+      field.forEach(function(r){
         r._auto = autoTeams.has(r.team);
       });
 
@@ -2640,15 +2696,15 @@ window.initSportPage = function(CFG) {
                 '<div class="seed ' + (parseInt(seed)<=3?'s'+seed:'') + '">' + seed + '</div>' +
                 '<div style="flex:1;min-width:0">' +
                   '<div class="bracket-line-team">' + r.team + '</div>' +
-                  '<div class="bracket-line-conf">' + (r.conference||'\u2014') + ' \u00b7 Elo ' + r.elo.toFixed(1) +
-                    (isCBB ? ' \u00b7 RS ' + fmtResumeScore(r.resume_score||0) : '') + '</div>' +
+                  '<div class="bracket-line-conf">' + (r.conference||'\u2014') + ' \u00b7 Elo ' + (isCBB?cbbElo(r):r.elo).toFixed(1) +
+                    (isCBB ? ' \u00b7 RS ' + fmtResumeScore(cbbRS(r)||0) : '') + '</div>' +
                 '</div>' + tag + '</div>';
             }).join('') + '</div>';
         }).join('') + '</div>' +
         '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.75rem;padding:0.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius)">' +
         (isCBB
           ? 'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected conf-tourney winner (by Elo)\u2002\u00b7\u2002' +
-            'RS\u00a0=\u00a0Resume Score \u2014 at-large selection and seeding are ranked by Resume Score, not Elo, matching how the real selection committee weighs r\u00e9sum\u00e9 over a predictive rating (falls back to Elo for seasons before this metric existed)'
+            'RS\u00a0=\u00a0Resume Score \u2014 at-large selection and seeding are ranked by Resume Score, not Elo, matching how the real selection committee weighs r\u00e9sum\u00e9 over a predictive rating (falls back to Elo for seasons before this metric existed). Both Elo and RS shown here are the PRE-Tournament snapshot (through conference tournaments, before the NCAA Tournament itself) for a completed season \u2014 the Rankings/Resume tabs show the final, whole-season numbers instead.'
           : 'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected (highest Elo)\u2002\u00b7\u2002At-large by Elo') +
         '</div>';
     });
@@ -2699,7 +2755,7 @@ window.initSportPage = function(CFG) {
   }
   function resumeScoreHeader() {
     if (CFG.sport === 'CBB') {
-      return `<th data-type="num" title="Resume Score = sign-preserving fourth root of (sum of opponent Elo minus 850 for each win, minus sum of max(0, (3000 minus opponent Elo) / 2) for each loss, both floored at 0 per game) — an Elo-based proxy for resume strength, not the real NET/Quadrant metric used by the NCAA selection committee. Can be negative for a weak resume (a tough loss never costs more than 0, but credit from wins can be outweighed by losses). Does not account for game location (home/neutral/away).">Resume Score ⓘ</th>`;
+      return `<th data-type="num" title="Resume Score = sign-preserving fourth root of (sum of opponent Elo minus 900 for each win, minus sum of max(0, (3000 minus opponent Elo) / 2) for each loss, both floored at 0 per game) — an Elo-based proxy for resume strength, not the real NET/Quadrant metric used by the NCAA selection committee. Can be negative for a weak resume (a tough loss never costs more than 0, but credit from wins can be outweighed by losses). Does not account for game location (home/neutral/away).">Resume Score ⓘ</th>`;
     }
     return '<th data-type="num">Resume Score</th>';
   }
@@ -5010,7 +5066,7 @@ async function findAvailableSeason() {
   var _pkb = {
     yr:null, confs:{}, confIds:{}, schedule:[], scores:{}, confGames:[],
     wins:{}, losses:{}, confWins:{}, confLoss:{}, eloBase:{}, eloSim:{},
-    playoffRating:{}, confBrackets:{}, confChamps:{},
+    resumeScore:{}, confBrackets:{}, confChamps:{},
     ncaaFirstFour:null, ncaaBracket:null
   };
 
@@ -5022,7 +5078,7 @@ async function findAvailableSeason() {
     var elo=_pkb.eloSim[t]||_pkb.eloBase[t]||1500;
     return {team:t, cw:_pkb.confWins[t]||0, cl:_pkb.confLoss[t]||0,
             w:_pkb.wins[t]||0, l:_pkb.losses[t]||0,
-            elo:elo, pr:_pkb.playoffRating[t]||elo};
+            elo:elo, rs:_pkb.resumeScore[t]||0};
   }
 
   function pkbSort(teams){
@@ -5031,7 +5087,13 @@ async function findAvailableSeason() {
       if(Math.abs(bcp-acp)>0.001) return bcp-acp;
       var awp=(a.w+a.l)?a.w/(a.w+a.l):0, bwp=(b.w+b.l)?b.w/(b.w+b.l):0;
       if(Math.abs(bwp-awp)>0.001) return bwp-awp;
-      return (b.pr||b.elo||1500)-(a.pr||a.elo||1500);
+      // Elo tiebreak, not Resume Score — this is only ever used to pick a
+      // *projected* conference-tournament winner/standings order before
+      // it's decided, which is a "who's better right now" question (same
+      // reasoning renderBracketology() already documents for its own
+      // auto-bid placeholder). Resume Score is reserved for the NCAA
+      // at-large/seeding logic below, where it belongs.
+      return (b.elo||1500)-(a.elo||1500);
     });
   }
 
@@ -5258,12 +5320,19 @@ async function findAvailableSeason() {
       _pkb.eloSim[loser]=rL-delta;
     });
 
-    // Playoff Rating: Elo × win%^0.6 + √(quality-win resume) — identical
-    // formula to CFB's. Now draws on the full schedule (conference AND
-    // non-conference games, plus conference-tournament picks), so the
-    // resume component actually sees true out-of-conference quality wins
-    // instead of being limited to conference play only.
-    var beatenBy={}, counted2={};
+    // Resume Score — this MUST mirror R/update_cbb.R's resume_score formula
+    // exactly, not CFB's Playoff Rating (Elo × win%^0.6 + √resume). This
+    // used to literally reuse that CFB formula here, which is wrong on
+    // three separate counts for CBB: it has no loss penalty at all, it
+    // uses an arbitrary quality threshold (1350) instead of the real win
+    // baseline, and it blends in Elo — but the live site's own at-large/
+    // seeding logic for CBB explicitly ranks by Resume Score ALONE, not
+    // Elo (see the "At-large selection & seeding (CBB only)" comment in
+    // renderBracketology() above), so this simulation needs to match that,
+    // not CFB's approach. Draws on the full schedule (conference AND
+    // non-conference games, plus conference-tournament picks), so it sees
+    // true out-of-conference quality wins/losses, not just conference play.
+    var beatenBy={}, lostTo={}, counted2={};
     for(var gi=0;gi<_pkb.schedule.length;gi++){
       var g2=_pkb.schedule[gi];
       var s2=_pkb.scores[g2.id];
@@ -5276,28 +5345,42 @@ async function findAvailableSeason() {
       if(counted2[tk]) continue; counted2[tk]=1;
       if(!beatenBy[winner2]) beatenBy[winner2]=[];
       beatenBy[winner2].push(loser2);
+      if(!lostTo[loser2]) lostTo[loser2]=[];
+      lostTo[loser2].push(winner2);
     }
     (_pkb.confGames||[]).forEach(function(cg){
       if(!cg.winner) return;
       var loser=(cg.teamA===cg.winner)?cg.teamB:cg.teamA;
       if(!beatenBy[cg.winner]) beatenBy[cg.winner]=[];
       beatenBy[cg.winner].push(loser);
+      if(!lostTo[loser]) lostTo[loser]=[];
+      lostTo[loser].push(cg.winner);
     });
 
-    _pkb.playoffRating={};
+    // Same three constants as R/update_cbb.R's resume_score — keep these in
+    // sync with that file if any of them ever change again.
+    var RS_WIN_BASE=900, RS_LOSS_BASE=3000, RS_LOSS_DIVISOR=2;
+    _pkb.resumeScore={};
     Object.keys(_pkb.eloSim).forEach(function(team){
-      var teamElo=_pkb.eloSim[team]||1500;
-      var beaten=beatenBy[team]||[];
-      var resumeSum=0;
-      beaten.forEach(function(opp){
+      var winSum=0;
+      (beatenBy[team]||[]).forEach(function(opp){
         var oppElo=_pkb.eloSim[opp]||_pkb.eloBase[opp]||1500;
-        resumeSum+=Math.max(0, oppElo-1350);
+        winSum+=Math.max(0, oppElo-RS_WIN_BASE); // per-game floor, same as R
       });
-      var resumeScore=resumeSum>0?Math.sqrt(resumeSum):0;
-      var gp=(_pkb.wins[team]||0)+(_pkb.losses[team]||0);
-      var wp=gp>0?(_pkb.wins[team]||0)/gp:0.5;
-      var wpFactor=Math.pow(Math.max(0.01,wp),0.6);
-      _pkb.playoffRating[team]=teamElo*wpFactor+resumeScore;
+      var lossSum=0;
+      (lostTo[team]||[]).forEach(function(opp){
+        var oppElo=_pkb.eloSim[opp]||_pkb.eloBase[opp]||1500;
+        // SAFETY NET: floored at 0 per game — a loss can never be worth
+        // more than 0 points, even to an opponent whose (simulated) Elo
+        // exceeds RS_LOSS_BASE. Mirrors the win-side floor above and the
+        // identical floor in R/update_cbb.R.
+        lossSum+=Math.max(0, (RS_LOSS_BASE-oppElo)/RS_LOSS_DIVISOR);
+      });
+      var net=winSum-lossSum;
+      // Sign-preserving fourth root — net^0.25 on a negative net is NaN in
+      // JS same as it is in R, so this keeps a bad resume as a real
+      // negative number instead of silently going NaN.
+      _pkb.resumeScore[team]=(net>=0?1:-1)*Math.pow(Math.abs(net), 0.25);
     });
   }
 
@@ -5633,7 +5716,10 @@ async function findAvailableSeason() {
   }
 
   function pkbPairFF(teams){
-    var sorted=teams.slice().sort(function(a,b){ return a.pr-b.pr; }); // worst first
+    // Worst Resume Score first within the pool, so e.g. the #1 and #2
+    // lowest auto bids meet, then #3 and #4, etc. — same convention the
+    // real committee uses (68-seed vs 67-seed, 66 vs 65).
+    var sorted=teams.slice().sort(function(a,b){ return a.rs-b.rs; });
     var games=[];
     for(var i=0;i<sorted.length;i+=2){ games.push({a:sorted[i], b:sorted[i+1]}); }
     return games;
@@ -5641,8 +5727,28 @@ async function findAvailableSeason() {
 
   // Builds the full at-large/auto-bid field. No real geographic regions are
   // modeled (there's no reliable way to generate them) — disclosed to the
-  // user as a known limitation; seeding and bracket order are by Playoff
-  // Rating rank only.
+  // user as a known limitation; seeding and bracket order are by Resume
+  // Score rank only (matching how the real selection committee and this
+  // site's own at-large/seeding logic both work — see the "At-large
+  // selection & seeding (CBB only)" comment in renderBracketology() above).
+  //
+  // Format: starting with the 2026-27 season (season 2027+ in this site's
+  // convention), the NCAA tournament expanded from 68 to 76 teams — 32
+  // auto bids (one per conference, up from 31) and 44 at-large bids (up
+  // from 36), with the old 4-game First Four replaced by a 12-game Opening
+  // Round: the 12 lowest-seeded auto bids play each other (6 games, no
+  // crossover with at-large teams) and the 12 lowest-seeded at-large teams
+  // play each other (6 games) — same "auto bids only play auto bids,
+  // at-large only plays at-large" rule as the old First Four, just scaled
+  // up. gamesNeeded/autoGames/atLargeGames below already generalize to
+  // this (gamesNeeded = total-64 = 12 for the new format, 4 for the old
+  // one; splitting it in half gives the right auto/at-large count either
+  // way) — no format-specific branching needed beyond `total` itself.
+  // Which seed line (11 vs 12, or 16) each pool's winners land on isn't
+  // fixed by rule — it falls out of where those teams rank on the overall
+  // seed list once the First Four/Opening Round winners are slotted in, so
+  // this is handled generically by sorting the full field by Resume Score
+  // and assigning seedArr64 in order below, not by hardcoding a seed line.
   function pkbBuildNCAAField(){
     var season=_pkb.yr;
     var is76=season>=2027; // same 76-team-format cutoff renderBracketology() uses
@@ -5655,22 +5761,22 @@ async function findAvailableSeason() {
       if(!team||autoTeamSet[team]) return;
       autoTeamSet[team]=1;
       var row=pkbTeamRow(team);
-      autoBids.push({team:team, conf:conf, confirmed:!!_pkb.confChamps[conf], pr:row.pr, elo:row.elo});
+      autoBids.push({team:team, conf:conf, confirmed:!!_pkb.confChamps[conf], rs:row.rs, elo:row.elo});
     });
-    autoBids.sort(function(a,b){ return b.pr-a.pr; });
+    autoBids.sort(function(a,b){ return b.rs-a.rs; });
 
     var allTeams=[];
     Object.keys(_pkb.confs).forEach(function(conf){ (_pkb.confs[conf]||[]).forEach(function(t){ allTeams.push({team:t,conf:conf}); }); });
     var atLarge=allTeams.filter(function(t){ return !autoTeamSet[t.team]; }).map(function(t){
       var row=pkbTeamRow(t.team);
-      return {team:t.team, conf:t.conf, pr:row.pr, elo:row.elo};
-    }).sort(function(a,b){ return b.pr-a.pr; }).slice(0, Math.max(0,total-autoBids.length));
+      return {team:t.team, conf:t.conf, rs:row.rs, elo:row.elo};
+    }).sort(function(a,b){ return b.rs-a.rs; }).slice(0, Math.max(0,total-autoBids.length));
 
-    var field=autoBids.concat(atLarge).sort(function(a,b){ return b.pr-a.pr; });
+    var field=autoBids.concat(atLarge).sort(function(a,b){ return b.rs-a.rs; });
 
-    var gamesNeeded=total-64; // First Four game count — 4 for 68-team, generalizes for a future 76-team format
+    var gamesNeeded=total-64; // Opening Round game count — 4 for 68-team, 12 for 76-team
     var autoGames=Math.ceil(gamesNeeded/2), atLargeGames=gamesNeeded-autoGames;
-    var ffAutoTeams=autoBids.slice().sort(function(a,b){return b.pr-a.pr;}).slice(-(autoGames*2));
+    var ffAutoTeams=autoBids.slice().sort(function(a,b){return b.rs-a.rs;}).slice(-(autoGames*2));
     var ffAtLargeTeams=atLarge.slice(-(atLargeGames*2));
 
     return {field:field, autoBids:autoBids, atLarge:atLarge, ffAutoTeams:ffAutoTeams, ffAtLargeTeams:ffAtLargeTeams, total:total, is76:is76};
@@ -5692,15 +5798,16 @@ async function findAvailableSeason() {
     var allDecided=ff.games.length>0 && ff.games.every(function(g,i){ return ff.results[i]; });
 
     var html='<div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);margin-bottom:1rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:0.75rem 1rem;line-height:1.6">'
-      +'Auto bids = each conference\'s tournament winner from your picks (or the projected regular-season leader if not decided yet). At-large bids and seeding by Playoff Rating (Elo × win% + resume) — the same formula CFB\'s CFP Bracket uses. No geographic regions are simulated; bracket order follows Playoff Rating rank only.'
+      +'Auto bids = each conference\'s tournament winner from your picks (or the projected regular-season leader if not decided yet). At-large bids and seeding by Resume Score — the same metric this site uses for every other CBB at-large/seeding view, not a predictive Elo rating. No geographic regions are simulated; bracket order follows Resume Score rank only.'
+      +(fieldData.is76?' 76-team field: 32 auto bids, 44 at-large, 12-game Opening Round (lowest auto bids play lowest auto bids, lowest at-large plays lowest at-large — no crossover).':' 68-team field: 4-game First Four (lowest auto bids play lowest auto bids, lowest at-large plays lowest at-large).')
       +'</div>';
 
-    html+='<div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.5rem">First Four ('+fieldData.autoBids.length+' auto bids · '+fieldData.atLarge.length+' at-large · '+fieldData.total+' total)</div>';
+    html+='<div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.5rem">'+(fieldData.is76?'Opening Round':'First Four')+' ('+fieldData.autoBids.length+' auto bids · '+fieldData.atLarge.length+' at-large · '+fieldData.total+' total)</div>';
     html+='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.6rem;margin-bottom:1.2rem">';
     ff.games.forEach(function(g,i){
       var picked=ff.results[i];
       html+='<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:0.6rem">'
-        +'<div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);margin-bottom:0.35rem">'+g.kind+' · First Four</div>'
+        +'<div style="font-size:0.58rem;color:var(--text-dim);font-family:var(--font-mono);margin-bottom:0.35rem">'+g.kind+' · '+(fieldData.is76?'Opening Round':'First Four')+'</div>'
         +[g.a,g.b].map(function(t){
           var isPick=picked===t.team;
           return '<button onclick="pkbFirstFourAdvance('+i+',\''+String(t.team).replace(/'/g,"\\'")+'\')" style="display:block;width:100%;text-align:left;margin-bottom:0.25rem;padding:0.3rem 0.5rem;border-radius:var(--radius);border:1px solid '+(isPick?'var(--accent)':'var(--border-md)')+';background:'+(isPick?'rgba(226,201,126,0.12)':'var(--bg3)')+';color:'+(isPick?'var(--accent)':'var(--text)')+';font-size:0.74rem;font-weight:'+(isPick?'600':'400')+';cursor:pointer">'+t.team+' <span style="font-size:0.55rem;color:var(--text-dim);float:right">'+(t.conf||'')+'</span></button>';
@@ -5710,7 +5817,7 @@ async function findAvailableSeason() {
     html+='</div>';
 
     if(!allDecided){
-      html+='<div style="text-align:center;padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim)">Pick all First Four winners to unlock the full bracket ↑</div>';
+      html+='<div style="text-align:center;padding:1rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim)">Pick all '+(fieldData.is76?'Opening Round':'First Four')+' winners to unlock the full bracket ↑</div>';
       el.innerHTML=html;
       return;
     }
@@ -5723,7 +5830,7 @@ async function findAvailableSeason() {
       if(g.kind==='Auto-bid') autoTeamsFinal.push(winnerObj); else atLargeTeamsFinal.push(winnerObj);
     });
 
-    var final64=autoTeamsFinal.concat(atLargeTeamsFinal).sort(function(a,b){ return b.pr-a.pr; });
+    var final64=autoTeamsFinal.concat(atLargeTeamsFinal).sort(function(a,b){ return b.rs-a.rs; });
     var seedArr64=[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,
                    8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,12,12,12,12,
                    13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16];

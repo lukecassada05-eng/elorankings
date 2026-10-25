@@ -204,6 +204,16 @@ window.coerceRow = function(r) {
   // to the 1500 season-start baseline until the next scheduled run backfills them.
   const elo_change_csv   = parseFloat(r.elo_change);
   const baseline_elo_csv = parseFloat(r.baseline_elo);
+  // Pre-tournament Elo/Resume Score snapshot (added by R/update_cbb.R,
+  // CBB-only) — the Bracketology tab uses these instead of the live/final
+  // elo/resume_score, since a completed season's final numbers include
+  // the NCAA Tournament itself, which the real committee never saw when
+  // setting the field. Same graceful-degradation pattern as elo_change/
+  // baseline_elo above: a CSV written before this shipped just won't have
+  // the column, parseFloat(undefined) is NaN, and callers fall back to
+  // the live elo/resume_score until the next scheduled run backfills it.
+  const pre_tourney_elo_csv = parseFloat(r.pre_tourney_elo);
+  const pre_tourney_rs_csv  = parseFloat(r.pre_tourney_resume_score);
   return {
     ...r,
     rank:         parseInt(r.rank)          || 0,
@@ -219,6 +229,8 @@ window.coerceRow = function(r) {
     elo_change:   isNaN(elo_change_csv)   ? null : elo_change_csv,
     baseline_elo: isNaN(baseline_elo_csv) ? null : baseline_elo_csv,
     baseline_date: r.baseline_date || null,
+    pre_tourney_elo:          isNaN(pre_tourney_elo_csv) ? null : pre_tourney_elo_csv,
+    pre_tourney_resume_score: isNaN(pre_tourney_rs_csv)  ? null : pre_tourney_rs_csv,
   };
 };
 
