@@ -85,7 +85,10 @@ get_cbb_season <- function(season) {
         loser_pts  = pmin(home_pts, away_pts)
       ) %>%
       filter(!is.na(winner), !is.na(loser), winner != loser) %>%
-      select(winner, loser, winner_pts, loser_pts)
+      # `date` is kept (not dropped) specifically so the pre-tournament Elo/
+      # Resume Score snapshot below can filter the NCAA Tournament itself
+      # back out — see that block's comment for why.
+      select(winner, loser, winner_pts, loser_pts, date)
 
     if (nrow(games) == 0) return(NULL)
 
@@ -95,7 +98,24 @@ get_cbb_season <- function(season) {
 
 for (s in SEASONS) {
   res <- get_cbb_season(s)
-  if (is.null(res) || nrow(res$games) < 50) {
+  # BUG FIX: this used to require >=50 league-wide games before writing
+  # anything for a season — same bug, same fix, as R/update_nhl.R's
+  # identical floor (see that file's comment for the full writeup). A
+  # brand-new season published nothing at all for its first several days
+  # of games, during which the frontend's season picker defaults to that
+  # season's label (EloSeason.withCurrent() in docs/js/utils.js) and shows
+  # "No data yet" instead of real rankings — and the floor was redundant
+  # here too: run_elo()'s own min_games (below) already damps any
+  # individual team's rating until it has played min_games games, which is
+  # the real, precise defense against small-sample distortion, applied per
+  # team rather than as an all-or-nothing league-wide gate. The
+  # conference-map build above already tolerates a team not yet having a
+  # resolvable conference (logged as "NA conf" and left NA, not blocked on)
+  # — a team that hasn't played yet simply won't appear in res$games at
+  # all, which is a normal, already-handled case, not a reason to skip the
+  # whole season's write. Now only a real zero-games case (off-season,
+  # fetch failure) skips the write.
+  if (is.null(res) || nrow(res$games) < 1) {
     message("  Skipping CBB ", s)
     next
   }
@@ -151,12 +171,13 @@ for (s in SEASONS) {
   # summing). Replaces the old win-only formula — see chat history for the
   # real-2025-26-data trial this was validated against before shipping.
   #
-  # WIN_BASE = 850 (was 1000): a win over a sub-850 opponent still earns
-  # nothing, but this credits more of a strong team's actual win total
-  # than 1000 did — chosen specifically so a very-high-volume, lower-SOS
-  # team (e.g. a 32-2 season against a weaker conference) isn't buried by
-  # teams with fewer, higher-quality wins purely because of where the old
-  # floor sat. Teams can legitimately drop below either floor in this Elo
+  # WIN_BASE = 900 (was 1000, briefly 850): a win over a sub-900 opponent
+  # still earns nothing, but this credits more of a strong team's actual
+  # win total than 1000 did — chosen specifically so a very-high-volume,
+  # lower-SOS team (e.g. a 32-2 season against a weaker conference) isn't
+  # buried by teams with fewer, higher-quality wins purely because of
+  # where the old floor sat. Teams can legitimately drop below either floor
+  # in this Elo
   # system (any team under 4 games played gets its rating halved each
   # iteration — see run_elo()'s min_games damping), so the per-game floor
   # isn't just defensive, it's a real case here.
@@ -206,7 +227,7 @@ for (s in SEASONS) {
   # extracted above carry no date/site, only winner/loser/score). Same
   # "honest approximation" spirit as R/update_cfb.R's resume_score /
   # Playoff Rating and R/standings_engine.R's HONESTY NOTE.
-  WIN_BASE     <- 850
+  WIN_BASE     <- 900
   LOSS_BASE    <- 3000
   LOSS_DIVISOR <- 2
 
@@ -235,6 +256,70 @@ for (s in SEASONS) {
   # precision (fmtResumeScore in docs/js/sport-page.js, now 3 decimals) has
   # real digits behind it instead of trailing zeros.
   out$resume_score <- round(sign(net) * abs(net) ^ 0.25, 4)
+
+  # ── Pre-tournament Elo/Resume Score snapshot ────────────────────────
+  # The Rankings tab is meant to show the FINAL, whole-season picture for
+  # a completed season — Elo and Resume Score computed over every game,
+  # NCAA Tournament included. The Bracketology tab is a different
+  # question: "what did the field/seeding look like going into Selection
+  # Sunday", which by definition can only be answered with games that had
+  # already happened BEFORE the committee picked the field — the real
+  # committee never saw the Tournament's own results, so folding them into
+  # the number used for seeding is incoherent for any completed season.
+  # This computes exactly the same two numbers (same WIN_BASE/LOSS_BASE/
+  # LOSS_DIVISOR/safety-net/sign-preserving-root formula and the same
+  # run_elo() params) a second time, over a games subset that stops at the
+  # NCAA Tournament's start.
+  #
+  # Cutoff: March 18 of the season's own spring year — the same date the
+  # frontend's own conference-tournament-champion sweep already assumes
+  # the window ends by (see fetchConfChamps() in docs/js/sport-page.js:
+  # "Round of 64 starts ~Mar 19-20"), so the two already agree on where
+  # "the regular season + conference tournaments" stops and "the NCAA
+  # Tournament" begins, rather than introducing a second, possibly
+  # inconsistent definition of the same boundary. A date-based cutoff was
+  # chosen over trying to classify individual games as NCAA-Tournament-or-
+  # not (the way write_cbb_tournament_json() below attempts to, off
+  # notes_headline/season_type) specifically because that classification
+  # is the one documented at the bottom of this file as unreliable against
+  # hoopR's schedule data for this exact purpose.
+  #
+  # For the CURRENT, in-progress season this cutoff hasn't been reached
+  # yet, so pre_games == res$games (nothing to exclude) and these two
+  # columns come out identical to the live elo/resume_score above — which
+  # is correct: there's no "final" season to distinguish from "pre-
+  # tournament" until the season actually finishes.
+  cutoff    <- as.Date(paste0(s, "-03-18"))
+  pre_games <- res$games[!is.na(res$games$date) & res$games$date <= cutoff, ]
+
+  if (nrow(pre_games) >= 1) {
+    elo_pre     <- run_elo(pre_games, k=30, iters=10, min_games=4)
+    elo_pre_lup <- setNames(elo_pre$elo, elo_pre$team)
+
+    win_raw_pre  <- tapply(seq_len(nrow(pre_games)), pre_games$winner,
+                           function(rows) sum(pmax(0, elo_pre_lup[pre_games$loser[rows]] - WIN_BASE), na.rm = TRUE))
+    loss_raw_pre <- tapply(seq_len(nrow(pre_games)), pre_games$loser,
+                           function(rows) sum(pmax(0, (LOSS_BASE - elo_pre_lup[pre_games$winner[rows]]) / LOSS_DIVISOR), na.rm = TRUE))
+    win_sum_pre  <- as.numeric(ifelse(is.na(win_raw_pre[out$team]),  0, win_raw_pre[out$team]))
+    loss_sum_pre <- as.numeric(ifelse(is.na(loss_raw_pre[out$team]), 0, loss_raw_pre[out$team]))
+    net_pre      <- win_sum_pre - loss_sum_pre
+
+    # A team entirely absent from elo_pre_lup (no pre-cutoff games at all —
+    # shouldn't happen for a real D-I team, but a mid-season addition to
+    # the schedule or a data gap could produce one) falls back to the
+    # live/final numbers rather than a bare 1500/0, so it never looks like
+    # a data error in the Bracketology view.
+    out$pre_tourney_elo <- ifelse(is.na(elo_pre_lup[out$team]), out$elo, elo_pre_lup[out$team])
+    out$pre_tourney_resume_score <- round(
+      ifelse(is.na(elo_pre_lup[out$team]), out$resume_score, sign(net_pre) * abs(net_pre) ^ 0.25),
+      4
+    )
+  } else {
+    # No games at all before the cutoff (e.g. a data gap) — fall back to
+    # the live numbers rather than writing NA into a brand-new column.
+    out$pre_tourney_elo <- out$elo
+    out$pre_tourney_resume_score <- out$resume_score
+  }
 
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
   out <- attach_movers(out, out_path)
