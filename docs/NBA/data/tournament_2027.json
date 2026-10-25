@@ -79,7 +79,7 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Miami Heat",
+      "team": "Charlotte Hornets",
       "conference": "Eastern",
       "division": "Southeast",
       "seed": null,
@@ -87,7 +87,7 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Charlotte Hornets",
+      "team": "Miami Heat",
       "conference": "Eastern",
       "division": "Southeast",
       "seed": null,
@@ -345,18 +345,18 @@
         "win_pct": 0.5
       },
       {
-        "team": "Miami Heat",
+        "team": "Charlotte Hornets",
         "rank": 4,
         "wins": 3,
         "losses": 4,
         "win_pct": 0.429
       },
       {
-        "team": "Charlotte Hornets",
+        "team": "Miami Heat",
         "rank": 5,
-        "wins": 2,
-        "losses": 4,
-        "win_pct": 0.333
+        "wins": 3,
+        "losses": 5,
+        "win_pct": 0.375
       }
     ],
     "Atlantic": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-24 23:23 UTC"
+  "current_field_updated": "2026-10-25 02:11 UTC"
 }

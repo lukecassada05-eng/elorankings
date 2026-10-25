@@ -39,7 +39,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New York Rangers",
+      "team": "New York Islanders",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 2,
@@ -47,7 +47,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New York Islanders",
+      "team": "New Jersey Devils",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 3,
@@ -55,7 +55,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New Jersey Devils",
+      "team": "New York Rangers",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 4,
@@ -111,14 +111,6 @@
       "note": null
     },
     {
-      "team": "Philadelphia Flyers",
-      "conference": "Eastern",
-      "division": "Metropolitan",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "Pittsburgh Penguins",
       "conference": "Eastern",
       "division": "Metropolitan",
@@ -128,6 +120,14 @@
     },
     {
       "team": "Columbus Blue Jackets",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Philadelphia Flyers",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": null,
@@ -183,15 +183,15 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "San Jose Sharks",
+      "team": "Colorado Avalanche",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Central",
       "seed": 4,
       "status": "wildcard",
       "note": "Conference wildcard"
     },
     {
-      "team": "Colorado Avalanche",
+      "team": "Winnipeg Jets",
       "conference": "Western",
       "division": "Central",
       "seed": 5,
@@ -199,15 +199,15 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "St. Louis Blues",
+      "team": "San Jose Sharks",
       "conference": "Western",
-      "division": "Central",
+      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Winnipeg Jets",
+      "team": "St. Louis Blues",
       "conference": "Western",
       "division": "Central",
       "seed": null,
@@ -269,10 +269,10 @@
         "team": "Edmonton Oilers",
         "rank": 1,
         "wins": 8,
-        "losses": 1,
-        "win_pct": 0.889,
+        "losses": 2,
+        "win_pct": 0.8,
         "points": 16,
-        "points_pct": 0.889
+        "points_pct": 0.8
       },
       {
         "team": "Seattle Kraken",
@@ -287,19 +287,19 @@
         "team": "Vegas Golden Knights",
         "rank": 3,
         "wins": 7,
-        "losses": 4,
-        "win_pct": 0.636,
-        "points": 14,
-        "points_pct": 0.636
+        "losses": 5,
+        "win_pct": 0.583,
+        "points": 15,
+        "points_pct": 0.625
       },
       {
         "team": "San Jose Sharks",
         "rank": 4,
         "wins": 6,
-        "losses": 5,
-        "win_pct": 0.545,
+        "losses": 6,
+        "win_pct": 0.5,
         "points": 13,
-        "points_pct": 0.591
+        "points_pct": 0.542
       },
       {
         "team": "Anaheim Ducks",
@@ -338,89 +338,15 @@
         "points_pct": 0.136
       }
     ],
-    "Metropolitan": [
+    "Atlantic": [
       {
-        "team": "Carolina Hurricanes",
+        "team": "Boston Bruins",
         "rank": 1,
         "wins": 8,
         "losses": 3,
         "win_pct": 0.727,
         "points": 17,
         "points_pct": 0.773
-      },
-      {
-        "team": "New York Rangers",
-        "rank": 2,
-        "wins": 7,
-        "losses": 3,
-        "win_pct": 0.7,
-        "points": 14,
-        "points_pct": 0.7
-      },
-      {
-        "team": "New York Islanders",
-        "rank": 3,
-        "wins": 5,
-        "losses": 4,
-        "win_pct": 0.556,
-        "points": 12,
-        "points_pct": 0.667
-      },
-      {
-        "team": "New Jersey Devils",
-        "rank": 4,
-        "wins": 7,
-        "losses": 4,
-        "win_pct": 0.636,
-        "points": 14,
-        "points_pct": 0.636
-      },
-      {
-        "team": "Washington Capitals",
-        "rank": 5,
-        "wins": 5,
-        "losses": 4,
-        "win_pct": 0.556,
-        "points": 10,
-        "points_pct": 0.556
-      },
-      {
-        "team": "Philadelphia Flyers",
-        "rank": 6,
-        "wins": 3,
-        "losses": 9,
-        "win_pct": 0.25,
-        "points": 9,
-        "points_pct": 0.375
-      },
-      {
-        "team": "Pittsburgh Penguins",
-        "rank": 7,
-        "wins": 3,
-        "losses": 7,
-        "win_pct": 0.3,
-        "points": 7,
-        "points_pct": 0.35
-      },
-      {
-        "team": "Columbus Blue Jackets",
-        "rank": 8,
-        "wins": 2,
-        "losses": 5,
-        "win_pct": 0.286,
-        "points": 4,
-        "points_pct": 0.286
-      }
-    ],
-    "Atlantic": [
-      {
-        "team": "Boston Bruins",
-        "rank": 1,
-        "wins": 7,
-        "losses": 3,
-        "win_pct": 0.7,
-        "points": 15,
-        "points_pct": 0.75
       },
       {
         "team": "Tampa Bay Lightning",
@@ -434,20 +360,20 @@
       {
         "team": "Ottawa Senators",
         "rank": 3,
-        "wins": 7,
+        "wins": 8,
         "losses": 4,
-        "win_pct": 0.636,
-        "points": 14,
-        "points_pct": 0.636
+        "win_pct": 0.667,
+        "points": 16,
+        "points_pct": 0.667
       },
       {
         "team": "Toronto Maple Leafs",
         "rank": 4,
-        "wins": 5,
+        "wins": 6,
         "losses": 5,
-        "win_pct": 0.5,
-        "points": 12,
-        "points_pct": 0.6
+        "win_pct": 0.545,
+        "points": 14,
+        "points_pct": 0.636
       },
       {
         "team": "Detroit Red Wings",
@@ -462,9 +388,9 @@
         "team": "Buffalo Sabres",
         "rank": 6,
         "wins": 4,
-        "losses": 6,
-        "win_pct": 0.4,
-        "points": 10,
+        "losses": 7,
+        "win_pct": 0.364,
+        "points": 11,
         "points_pct": 0.5
       },
       {
@@ -484,6 +410,80 @@
         "win_pct": 0.375,
         "points": 8,
         "points_pct": 0.5
+      }
+    ],
+    "Metropolitan": [
+      {
+        "team": "Carolina Hurricanes",
+        "rank": 1,
+        "wins": 9,
+        "losses": 3,
+        "win_pct": 0.75,
+        "points": 19,
+        "points_pct": 0.792
+      },
+      {
+        "team": "New York Islanders",
+        "rank": 2,
+        "wins": 5,
+        "losses": 4,
+        "win_pct": 0.556,
+        "points": 12,
+        "points_pct": 0.667
+      },
+      {
+        "team": "New Jersey Devils",
+        "rank": 3,
+        "wins": 7,
+        "losses": 4,
+        "win_pct": 0.636,
+        "points": 14,
+        "points_pct": 0.636
+      },
+      {
+        "team": "New York Rangers",
+        "rank": 4,
+        "wins": 7,
+        "losses": 4,
+        "win_pct": 0.636,
+        "points": 14,
+        "points_pct": 0.636
+      },
+      {
+        "team": "Washington Capitals",
+        "rank": 5,
+        "wins": 6,
+        "losses": 4,
+        "win_pct": 0.6,
+        "points": 12,
+        "points_pct": 0.6
+      },
+      {
+        "team": "Pittsburgh Penguins",
+        "rank": 6,
+        "wins": 4,
+        "losses": 7,
+        "win_pct": 0.364,
+        "points": 9,
+        "points_pct": 0.409
+      },
+      {
+        "team": "Columbus Blue Jackets",
+        "rank": 7,
+        "wins": 3,
+        "losses": 5,
+        "win_pct": 0.375,
+        "points": 6,
+        "points_pct": 0.375
+      },
+      {
+        "team": "Philadelphia Flyers",
+        "rank": 8,
+        "wins": 3,
+        "losses": 9,
+        "win_pct": 0.25,
+        "points": 9,
+        "points_pct": 0.375
       }
     ],
     "Central": [
@@ -524,17 +524,8 @@
         "points_pct": 0.55
       },
       {
-        "team": "St. Louis Blues",
-        "rank": 5,
-        "wins": 5,
-        "losses": 5,
-        "win_pct": 0.5,
-        "points": 11,
-        "points_pct": 0.55
-      },
-      {
         "team": "Winnipeg Jets",
-        "rank": 6,
+        "rank": 5,
         "wins": 4,
         "losses": 6,
         "win_pct": 0.4,
@@ -542,12 +533,21 @@
         "points_pct": 0.55
       },
       {
+        "team": "St. Louis Blues",
+        "rank": 6,
+        "wins": 5,
+        "losses": 6,
+        "win_pct": 0.455,
+        "points": 11,
+        "points_pct": 0.5
+      },
+      {
         "team": "Nashville Predators",
         "rank": 7,
         "wins": 3,
-        "losses": 6,
-        "win_pct": 0.333,
-        "points": 9,
+        "losses": 7,
+        "win_pct": 0.3,
+        "points": 10,
         "points_pct": 0.5
       },
       {
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-24 23:23 UTC"
+  "current_field_updated": "2026-10-25 02:11 UTC"
 }
