@@ -223,17 +223,17 @@
       "note": null
     },
     {
-      "team": "Dallas Mavericks",
+      "team": "Phoenix Suns",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Phoenix Suns",
+      "team": "Dallas Mavericks",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Southwest",
       "seed": null,
       "status": "outside",
       "note": null
@@ -452,15 +452,15 @@
         "team": "Golden State Warriors",
         "rank": 3,
         "wins": 4,
-        "losses": 4,
-        "win_pct": 0.5
+        "losses": 5,
+        "win_pct": 0.444
       },
       {
         "team": "Phoenix Suns",
         "rank": 4,
-        "wins": 1,
+        "wins": 2,
         "losses": 5,
-        "win_pct": 0.167
+        "win_pct": 0.286
       },
       {
         "team": "Sacramento Kings",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-25 04:36 UTC"
+  "current_field_updated": "2026-10-25 11:23 UTC"
 }

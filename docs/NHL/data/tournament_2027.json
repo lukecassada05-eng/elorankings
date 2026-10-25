@@ -79,14 +79,6 @@
       "note": null
     },
     {
-      "team": "Detroit Red Wings",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "Buffalo Sabres",
       "conference": "Eastern",
       "division": "Atlantic",
@@ -96,6 +88,14 @@
     },
     {
       "team": "Florida Panthers",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Detroit Red Wings",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -143,7 +143,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Dallas Stars",
+      "team": "Minnesota Wild",
       "conference": "Western",
       "division": "Central",
       "seed": 2,
@@ -151,7 +151,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Minnesota Wild",
+      "team": "Dallas Stars",
       "conference": "Western",
       "division": "Central",
       "seed": 3,
@@ -167,7 +167,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Seattle Kraken",
+      "team": "Vegas Golden Knights",
       "conference": "Western",
       "division": "Pacific",
       "seed": 2,
@@ -175,7 +175,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Vegas Golden Knights",
+      "team": "Seattle Kraken",
       "conference": "Western",
       "division": "Pacific",
       "seed": 3,
@@ -231,6 +231,14 @@
       "note": null
     },
     {
+      "team": "Calgary Flames",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "Los Angeles Kings",
       "conference": "Western",
       "division": "Pacific",
@@ -242,14 +250,6 @@
       "team": "Chicago Blackhawks",
       "conference": "Western",
       "division": "Central",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Calgary Flames",
-      "conference": "Western",
-      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
@@ -275,16 +275,16 @@
         "points_pct": 0.8
       },
       {
-        "team": "Seattle Kraken",
+        "team": "Vegas Golden Knights",
         "rank": 2,
         "wins": 7,
-        "losses": 4,
-        "win_pct": 0.636,
+        "losses": 5,
+        "win_pct": 0.583,
         "points": 15,
-        "points_pct": 0.682
+        "points_pct": 0.625
       },
       {
-        "team": "Vegas Golden Knights",
+        "team": "Seattle Kraken",
         "rank": 3,
         "wins": 7,
         "losses": 5,
@@ -311,22 +311,22 @@
         "points_pct": 0.455
       },
       {
-        "team": "Los Angeles Kings",
+        "team": "Calgary Flames",
         "rank": 6,
+        "wins": 4,
+        "losses": 6,
+        "win_pct": 0.4,
+        "points": 8,
+        "points_pct": 0.4
+      },
+      {
+        "team": "Los Angeles Kings",
+        "rank": 7,
         "wins": 2,
         "losses": 6,
         "win_pct": 0.25,
         "points": 6,
         "points_pct": 0.375
-      },
-      {
-        "team": "Calgary Flames",
-        "rank": 7,
-        "wins": 3,
-        "losses": 6,
-        "win_pct": 0.333,
-        "points": 6,
-        "points_pct": 0.333
       },
       {
         "team": "Vancouver Canucks",
@@ -376,17 +376,8 @@
         "points_pct": 0.636
       },
       {
-        "team": "Detroit Red Wings",
-        "rank": 5,
-        "wins": 4,
-        "losses": 5,
-        "win_pct": 0.444,
-        "points": 10,
-        "points_pct": 0.556
-      },
-      {
         "team": "Buffalo Sabres",
-        "rank": 6,
+        "rank": 5,
         "wins": 4,
         "losses": 7,
         "win_pct": 0.364,
@@ -395,6 +386,15 @@
       },
       {
         "team": "Florida Panthers",
+        "rank": 6,
+        "wins": 4,
+        "losses": 6,
+        "win_pct": 0.4,
+        "points": 10,
+        "points_pct": 0.5
+      },
+      {
+        "team": "Detroit Red Wings",
         "rank": 7,
         "wins": 4,
         "losses": 6,
@@ -497,22 +497,22 @@
         "points_pct": 0.667
       },
       {
-        "team": "Dallas Stars",
+        "team": "Minnesota Wild",
         "rank": 2,
+        "wins": 7,
+        "losses": 5,
+        "win_pct": 0.583,
+        "points": 16,
+        "points_pct": 0.667
+      },
+      {
+        "team": "Dallas Stars",
+        "rank": 3,
         "wins": 6,
         "losses": 4,
         "win_pct": 0.6,
         "points": 13,
         "points_pct": 0.65
-      },
-      {
-        "team": "Minnesota Wild",
-        "rank": 3,
-        "wins": 6,
-        "losses": 5,
-        "win_pct": 0.545,
-        "points": 14,
-        "points_pct": 0.636
       },
       {
         "team": "Colorado Avalanche",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-25 04:36 UTC"
+  "current_field_updated": "2026-10-25 11:23 UTC"
 }
