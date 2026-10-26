@@ -183,7 +183,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Colorado Avalanche",
+      "team": "Nashville Predators",
       "conference": "Western",
       "division": "Central",
       "seed": 4,
@@ -199,6 +199,14 @@
       "note": "Conference wildcard"
     },
     {
+      "team": "Colorado Avalanche",
+      "conference": "Western",
+      "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "St. Louis Blues",
       "conference": "Western",
       "division": "Central",
@@ -208,14 +216,6 @@
     },
     {
       "team": "Winnipeg Jets",
-      "conference": "Western",
-      "division": "Central",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Nashville Predators",
       "conference": "Western",
       "division": "Central",
       "seed": null,
@@ -515,16 +515,16 @@
         "points_pct": 0.667
       },
       {
-        "team": "Colorado Avalanche",
+        "team": "Nashville Predators",
         "rank": 4,
-        "wins": 5,
-        "losses": 5,
-        "win_pct": 0.5,
-        "points": 11,
-        "points_pct": 0.55
+        "wins": 4,
+        "losses": 7,
+        "win_pct": 0.364,
+        "points": 12,
+        "points_pct": 0.545
       },
       {
-        "team": "St. Louis Blues",
+        "team": "Colorado Avalanche",
         "rank": 5,
         "wins": 5,
         "losses": 6,
@@ -533,21 +533,21 @@
         "points_pct": 0.5
       },
       {
-        "team": "Winnipeg Jets",
+        "team": "St. Louis Blues",
         "rank": 6,
-        "wins": 4,
-        "losses": 7,
-        "win_pct": 0.364,
+        "wins": 5,
+        "losses": 6,
+        "win_pct": 0.455,
         "points": 11,
         "points_pct": 0.5
       },
       {
-        "team": "Nashville Predators",
+        "team": "Winnipeg Jets",
         "rank": 7,
-        "wins": 3,
+        "wins": 4,
         "losses": 7,
-        "win_pct": 0.3,
-        "points": 10,
+        "win_pct": 0.364,
+        "points": 11,
         "points_pct": 0.5
       },
       {
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-26 02:15 UTC"
+  "current_field_updated": "2026-10-26 04:32 UTC"
 }

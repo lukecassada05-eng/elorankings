@@ -39,18 +39,10 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Philadelphia 76ers",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": 5,
-      "status": "clinched_top6",
-      "note": "Top 6 — direct playoff seed"
-    },
-    {
       "team": "Washington Wizards",
       "conference": "Eastern",
       "division": "Southeast",
-      "seed": 6,
+      "seed": 5,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
@@ -58,14 +50,22 @@
       "team": "Toronto Raptors",
       "conference": "Eastern",
       "division": "Atlantic",
-      "seed": null,
-      "status": "play_in",
-      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
+      "seed": 6,
+      "status": "clinched_top6",
+      "note": "Top 6 — direct playoff seed"
     },
     {
       "team": "Chicago Bulls",
       "conference": "Eastern",
       "division": "Central",
+      "seed": null,
+      "status": "play_in",
+      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
+    },
+    {
+      "team": "Philadelphia 76ers",
+      "conference": "Eastern",
+      "division": "Atlantic",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -127,7 +127,7 @@
       "note": null
     },
     {
-      "team": "Houston Rockets",
+      "team": "Memphis Grizzlies",
       "conference": "Western",
       "division": "Southwest",
       "seed": 1,
@@ -135,7 +135,7 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Memphis Grizzlies",
+      "team": "Houston Rockets",
       "conference": "Western",
       "division": "Southwest",
       "seed": 2,
@@ -252,9 +252,9 @@
       {
         "team": "Detroit Pistons",
         "rank": 1,
-        "wins": 5,
+        "wins": 6,
         "losses": 1,
-        "win_pct": 0.833
+        "win_pct": 0.857
       },
       {
         "team": "Chicago Bulls",
@@ -287,14 +287,14 @@
     ],
     "Southwest": [
       {
-        "team": "Houston Rockets",
+        "team": "Memphis Grizzlies",
         "rank": 1,
-        "wins": 5,
+        "wins": 6,
         "losses": 1,
-        "win_pct": 0.833
+        "win_pct": 0.857
       },
       {
-        "team": "Memphis Grizzlies",
+        "team": "Houston Rockets",
         "rank": 2,
         "wins": 5,
         "losses": 1,
@@ -331,14 +331,14 @@
         "win_pct": 0.833
       },
       {
-        "team": "Philadelphia 76ers",
+        "team": "Toronto Raptors",
         "rank": 2,
         "wins": 4,
-        "losses": 3,
-        "win_pct": 0.571
+        "losses": 4,
+        "win_pct": 0.5
       },
       {
-        "team": "Toronto Raptors",
+        "team": "Philadelphia 76ers",
         "rank": 3,
         "wins": 4,
         "losses": 4,
@@ -466,10 +466,10 @@
         "team": "Sacramento Kings",
         "rank": 5,
         "wins": 0,
-        "losses": 7,
+        "losses": 8,
         "win_pct": 0
       }
     ]
   },
-  "current_field_updated": "2026-10-26 02:15 UTC"
+  "current_field_updated": "2026-10-26 04:32 UTC"
 }
