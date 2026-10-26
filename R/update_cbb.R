@@ -314,11 +314,26 @@ for (s in SEASONS) {
       ifelse(is.na(elo_pre_lup[out$team]), out$resume_score, sign(net_pre) * abs(net_pre) ^ 0.25),
       4
     )
+
+    # Pre-tournament SOS — same idea as above (what the schedule strength
+    # looked like before the Tournament itself started), computed with the
+    # same compute_sos() used for the live `sos` column, just over
+    # pre_games/elo_pre instead of the full season. This is CSV-only data:
+    # per explicit request it is NOT surfaced in the Bracketology tab (no
+    # frontend change accompanies this), unlike pre_tourney_elo/
+    # pre_tourney_resume_score above which that tab does use. Rounded to 1
+    # decimal to match build_output()'s rounding of the live `sos` column.
+    sos_pre <- compute_sos(pre_games, elo_pre)
+    out$pre_tourney_sos <- round(
+      ifelse(is.na(sos_pre[out$team]), out$sos, sos_pre[out$team]),
+      1
+    )
   } else {
     # No games at all before the cutoff (e.g. a data gap) — fall back to
     # the live numbers rather than writing NA into a brand-new column.
     out$pre_tourney_elo <- out$elo
     out$pre_tourney_resume_score <- out$resume_score
+    out$pre_tourney_sos <- out$sos
   }
 
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
