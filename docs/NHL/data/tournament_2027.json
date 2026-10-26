@@ -135,7 +135,7 @@
       "note": null
     },
     {
-      "team": "Dallas Stars",
+      "team": "Minnesota Wild",
       "conference": "Western",
       "division": "Central",
       "seed": 1,
@@ -143,7 +143,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Utah Mammoth",
+      "team": "Dallas Stars",
       "conference": "Western",
       "division": "Central",
       "seed": 2,
@@ -151,7 +151,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Minnesota Wild",
+      "team": "Utah Mammoth",
       "conference": "Western",
       "division": "Central",
       "seed": 3,
@@ -332,10 +332,10 @@
         "team": "Vancouver Canucks",
         "rank": 8,
         "wins": 1,
-        "losses": 10,
-        "win_pct": 0.091,
+        "losses": 11,
+        "win_pct": 0.083,
         "points": 3,
-        "points_pct": 0.136
+        "points_pct": 0.125
       }
     ],
     "Atlantic": [
@@ -488,8 +488,17 @@
     ],
     "Central": [
       {
-        "team": "Dallas Stars",
+        "team": "Minnesota Wild",
         "rank": 1,
+        "wins": 8,
+        "losses": 5,
+        "win_pct": 0.615,
+        "points": 18,
+        "points_pct": 0.692
+      },
+      {
+        "team": "Dallas Stars",
+        "rank": 2,
         "wins": 7,
         "losses": 4,
         "win_pct": 0.636,
@@ -498,19 +507,10 @@
       },
       {
         "team": "Utah Mammoth",
-        "rank": 2,
+        "rank": 3,
         "wins": 8,
         "losses": 4,
         "win_pct": 0.667,
-        "points": 16,
-        "points_pct": 0.667
-      },
-      {
-        "team": "Minnesota Wild",
-        "rank": 3,
-        "wins": 7,
-        "losses": 5,
-        "win_pct": 0.583,
         "points": 16,
         "points_pct": 0.667
       },
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-26 04:32 UTC"
+  "current_field_updated": "2026-10-26 13:33 UTC"
 }
