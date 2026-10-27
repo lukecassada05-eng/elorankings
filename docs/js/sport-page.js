@@ -2813,7 +2813,7 @@ window.initSportPage = function(CFG) {
   // See R/update_cbb.R for the backend computation; this is just the
   // tooltip/label.
   function momentumHeader() {
-    return `<th data-type="num" title="Momentum = Elo recomputed with each team's own last 12 games weighted ~3x, minus their season Elo — positive means recent form is running hotter than the season average, negative means colder. Only ever uses regular-season/conference-tournament games, never the NCAA Tournament itself, even for a completed season.">Momentum ⓘ</th>`;
+    return `<th data-type="num" title="Momentum = how a team's last 12 non-tournament games compare to what its season Elo predicted against those specific opponents (sum of actual result minus expected win probability, in Elo points) — positive means recent results are outrunning the season rating, negative means they're falling short. Only ever uses regular-season/conference-tournament games, never the NCAA Tournament itself, even for a completed season. Needs at least 12 non-tournament games on record; shows — otherwise.">Momentum ⓘ</th>`;
   }
 
   // Momentum cell — color-coded signed delta, 1 decimal to match Elo's own
