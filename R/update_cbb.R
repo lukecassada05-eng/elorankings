@@ -230,6 +230,14 @@ for (s in SEASONS) {
   WIN_BASE     <- 900
   LOSS_BASE    <- 3000
   LOSS_DIVISOR <- 2
+  # Momentum window/weight — used by the Momentum computation further down
+  # (after the pre-tournament snapshot block). A team's own last
+  # MOMENTUM_WINDOW games (by date) are repeated MOMENTUM_WEIGHT times when
+  # refitting a "recent form" Elo; momentum is the gap between that and the
+  # season's pre-tournament Elo. Tunable the same way as the three
+  # constants above.
+  MOMENTUM_WINDOW <- 12
+  MOMENTUM_WEIGHT <- 3
 
   elo_lup <- setNames(elo$elo, elo$team)
   win_raw <- tapply(seq_len(nrow(res$games)), res$games$winner,
@@ -328,12 +336,65 @@ for (s in SEASONS) {
       ifelse(is.na(sos_pre[out$team]), out$sos, sos_pre[out$team]),
       1
     )
+
+    # ── Momentum ──────────────────────────────────────────────────────
+    # "Is this team playing better or worse lately than their season-long
+    # number suggests?" — a recency-weighted Elo refit on the SAME
+    # non-tournament games (pre_games) used above, where each team's own
+    # last MOMENTUM_WINDOW games (by date) are repeated MOMENTUM_WEIGHT
+    # times in the game list passed to run_elo(). Repeating a game is a
+    # simple, symmetric way to give it extra pull on the fitted rating
+    # without breaking Elo's zero-sum per-game update (both participants
+    # still trade the same delta on every occurrence, however many times
+    # it's repeated). momentum is the gap between that recency-weighted
+    # rating and the plain pre-tournament Elo above — positive means
+    # recent form is running hotter than the season average, negative
+    # means colder.
+    #
+    # Deliberately built on pre_games, not res$games — the whole point is
+    # a team's CURRENT form, and NCAA Tournament games (a) only exist for
+    # a completed season and (b) would pull this the wrong way (e.g. a
+    # team that just got blown out in the Tournament would show as "cold"
+    # for a season that's long over, which isn't a meaningful "momentum"
+    # read for anything by then) — so, like pre_tourney_elo/resume_score/
+    # sos above, this is always a PRE-tournament number, never a final one.
+    #
+    # Approximate by design: a game is "recent" from the perspective of
+    # whichever of its two teams has it among their own last
+    # MOMENTUM_WINDOW games — so a single game can occasionally be
+    # up-weighted on behalf of only one of its two participants (e.g. a
+    # team with very few games treats all of them as "recent", even one
+    # that's old news for a busier opponent). Acceptable for a lightweight
+    # form indicator; not a claim of rigor on par with resume_score.
+    team_recent_idx <- function(t) {
+      rows <- c(which(pre_games$winner == t), which(pre_games$loser == t))
+      if (!length(rows)) return(integer(0))
+      rows[order(pre_games$date[rows], decreasing = TRUE)][seq_len(min(MOMENTUM_WINDOW, length(rows)))]
+    }
+    all_teams_pre <- unique(c(pre_games$winner, pre_games$loser))
+    recent_idx    <- unique(unlist(lapply(all_teams_pre, team_recent_idx)))
+
+    weight_vec     <- ifelse(seq_len(nrow(pre_games)) %in% recent_idx, MOMENTUM_WEIGHT, 1)
+    momentum_games <- pre_games[rep(seq_len(nrow(pre_games)), times = weight_vec), ]
+
+    elo_momentum     <- run_elo(momentum_games, k=30, iters=10, min_games=4)
+    elo_momentum_lup <- setNames(elo_momentum$elo, elo_momentum$team)
+
+    # A team absent from the recency-weighted fit (shouldn't happen — it's
+    # built from the same pre_games as elo_pre above) falls back to 0
+    # (no signal) rather than NA.
+    out$momentum <- round(
+      ifelse(is.na(elo_momentum_lup[out$team]), 0, elo_momentum_lup[out$team] - out$pre_tourney_elo),
+      1
+    )
   } else {
     # No games at all before the cutoff (e.g. a data gap) — fall back to
     # the live numbers rather than writing NA into a brand-new column.
     out$pre_tourney_elo <- out$elo
     out$pre_tourney_resume_score <- out$resume_score
     out$pre_tourney_sos <- out$sos
+    # No pre-cutoff games means no "recent form" to compute either.
+    out$momentum <- 0
   }
 
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
