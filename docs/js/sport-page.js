@@ -1043,6 +1043,7 @@ window.initSportPage = function(CFG) {
           ? `<td class="num" data-val="${r.resume_score||0}">${resumeAvailable?fmtResumeScore(r.resume_score||0):'—'}</td>`
           : `<td class="num" data-val="${r.win_pct||0}">${r.win_pct!=null?(r.win_pct*100).toFixed(1)+'%':'—'}</td>`}
         <td class="num" data-val="${r.sos||0}">${r.sos!=null?Number(r.sos).toFixed(1):'—'}</td>
+        ${CFG.sport==='CBB'?momentumCell(r):''}
         <td class="num" data-val="${r.best_win_elo||0}">${bwn?('<span style="font-size:0.78rem">'+bwn+' <span style="color:var(--text-dim);font-family:var(--font-mono);font-size:0.68rem">('+bw+')</span></span>'):'—'}</td>
         ${extra}
       </tr>`;
@@ -1055,6 +1056,7 @@ window.initSportPage = function(CFG) {
         ${CFG.sport==='CFB'?'<th data-type="num" title="Playoff Rating = Elo × win_pct^0.6 + √(quality resume)">PR ⓘ</th>':''}
         <th data-type="num">Record</th>
         ${CFG.sport==='CBB'?resumeScoreHeader():'<th data-type="num">Win%</th>'}<th data-type="num">SOS</th>
+        ${CFG.sport==='CBB'?momentumHeader():''}
         <th data-type="num">Best Win</th>${extraHeaders}
       </tr></thead><tbody>${rows}</tbody>
     </table></div>`;
@@ -2605,10 +2607,18 @@ window.initSportPage = function(CFG) {
       // At-large selection and overall seeding both rank by Resume Score
       // for CBB (Elo alone for every other sport this tab covers) — see
       // rankValue()'s definition above.
-      var atLarge = data
+      //
+      // atLargePool keeps every non-auto-bid team in rank order (not just
+      // the ones who made the field) so the "missed the bracket" list below
+      // can pull the next teams right past the cutoff line, for both the
+      // 68- and 76-team formats (atLargeCutoff already accounts for
+      // whichever `total`/`autoBids.length` applies).
+      var atLargePool  = data
         .filter(function(r){ return !autoTeams.has(r.team) && !EXCLUDE.has(r.conference||''); })
-        .sort(function(a,b){ return rankValue(b) - rankValue(a); })
-        .slice(0, total - autoBids.length);
+        .sort(function(a,b){ return rankValue(b) - rankValue(a); });
+      var atLargeCutoff = total - autoBids.length;
+      var atLarge = atLargePool.slice(0, atLargeCutoff);
+      var missedField = atLargePool.slice(atLargeCutoff, atLargeCutoff + 12);
 
       var field = autoBids.concat(atLarge).sort(function(a,b){ return rankValue(b) - rankValue(a); });
 
@@ -2681,6 +2691,44 @@ window.initSportPage = function(CFG) {
       var bySeed = {};
       field.forEach(function(r){ if(!bySeed[r._seed]) bySeed[r._seed]=[]; bySeed[r._seed].push(r); });
 
+      // ── "Missed the Bracket" — the next 12 teams right past the at-large
+      // cutoff line (missedField, built above alongside atLarge/atLargePool),
+      // straight by rank regardless of auto-bid status — correct for both
+      // the 68- and 76-team formats since atLargeCutoff already derives
+      // from whichever `total`/`autoBids.length` applies this season. Uses
+      // the same pre-tournament Elo/RS (cbbElo/cbbRS) as the bracket itself,
+      // and is CBB-only (CBASE has no at-large/auto-bid concept here).
+      // Reuses the bracket-grid/bracket-card/bracket-line classes so it
+      // matches the bracket's own look with no new CSS.
+      var missedHtml = '';
+      if (isCBB && missedField.length) {
+        var missedGroups = [
+          {label: 'First Four Out', teams: missedField.slice(0, 4)},
+          {label: 'Next ' + Math.max(0, missedField.length - 4) + ' Out', teams: missedField.slice(4)}
+        ].filter(function(g){ return g.teams.length; });
+        var seen = 0;
+        missedHtml = '<div style="margin-top:1rem">' +
+          '<div style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:0.5rem">Missed the Bracket</div>' +
+          '<div class="bracket-grid">' +
+          missedGroups.map(function(g) {
+            var html = '<div class="bracket-card">' +
+              '<div class="bracket-card-header">' + g.label + '</div>' +
+              g.teams.map(function(r) {
+                seen += 1;
+                var overallPos = atLargeCutoff + seen;
+                return '<div class="bracket-line">' +
+                  '<div class="seed">' + overallPos + '</div>' +
+                  '<div style="flex:1;min-width:0">' +
+                    '<div class="bracket-line-team">' + r.team + '</div>' +
+                    '<div class="bracket-line-conf">' + (r.conference||'—') + ' · Elo ' + cbbElo(r).toFixed(1) +
+                      ' · RS ' + fmtResumeScore(cbbRS(r)||0) + '</div>' +
+                  '</div></div>';
+              }).join('') + '</div>';
+            return html;
+          }).join('') +
+          '</div></div>';
+      }
+
       el.innerHTML = '<div class="bracket-grid">' +
         Object.entries(bySeed).map(function(e) {
           var seed = e[0]; var teams = e[1];
@@ -2701,6 +2749,7 @@ window.initSportPage = function(CFG) {
                 '</div>' + tag + '</div>';
             }).join('') + '</div>';
         }).join('') + '</div>' +
+        missedHtml +
         '<div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);margin-top:0.75rem;padding:0.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius)">' +
         (isCBB
           ? 'CHAMP\u00a0=\u00a0confirmed conf tournament winner\u2002\u00b7\u2002AUTO\u2605\u00a0=\u00a0projected conf-tourney winner (by Elo)\u2002\u00b7\u2002' +
@@ -2758,6 +2807,24 @@ window.initSportPage = function(CFG) {
       return `<th data-type="num" title="Resume Score = sign-preserving fourth root of (sum of opponent Elo minus 900 for each win, minus sum of max(0, (3000 minus opponent Elo) / 2) for each loss, both floored at 0 per game) — an Elo-based proxy for resume strength, not the real NET/Quadrant metric used by the NCAA selection committee. Can be negative for a weak resume (a tough loss never costs more than 0, but credit from wins can be outweighed by losses). Does not account for game location (home/neutral/away).">Resume Score ⓘ</th>`;
     }
     return '<th data-type="num">Resume Score</th>';
+  }
+
+  // Momentum header — CBB-only, Rankings tab only (not Resume/Bracketology).
+  // See R/update_cbb.R for the backend computation; this is just the
+  // tooltip/label.
+  function momentumHeader() {
+    return `<th data-type="num" title="Momentum = Elo recomputed with each team's own last 12 games weighted ~3x, minus their season Elo — positive means recent form is running hotter than the season average, negative means colder. Only ever uses regular-season/conference-tournament games, never the NCAA Tournament itself, even for a completed season.">Momentum ⓘ</th>`;
+  }
+
+  // Momentum cell — color-coded signed delta, 1 decimal to match Elo's own
+  // rounding. Null (CSV written before this shipped) shows as '—' rather
+  // than a misleading 0.0.
+  function momentumCell(r) {
+    if (r.momentum == null) return '<td class="num" data-val="0">—</td>';
+    const v = r.momentum;
+    const clr = v > 0.5 ? 'var(--green-hi)' : v < -0.5 ? 'var(--red-hi)' : 'var(--text-dim)';
+    const txt = (v > 0 ? '+' : '') + v.toFixed(1);
+    return `<td class="num" data-val="${v}"><span style="color:${clr};font-weight:600">${txt}</span></td>`;
   }
 
   function renderResumeClassic(el) {

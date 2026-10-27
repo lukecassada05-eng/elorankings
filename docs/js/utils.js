@@ -214,6 +214,17 @@ window.coerceRow = function(r) {
   // the live elo/resume_score until the next scheduled run backfills it.
   const pre_tourney_elo_csv = parseFloat(r.pre_tourney_elo);
   const pre_tourney_rs_csv  = parseFloat(r.pre_tourney_resume_score);
+  // Momentum (added by R/update_cbb.R, CBB-only): a recency-weighted Elo
+  // computed from the team's own last 12 non-tournament games (weighted
+  // ~3x) minus their season-long pre-tournament Elo — positive means the
+  // team's recent form is running hotter than their full-season average,
+  // negative means colder. Always derived from non-tournament games only
+  // (see R/update_cbb.R's pre_games), so a completed season's NCAA
+  // Tournament run never feeds this number. Same graceful-degradation
+  // pattern as elo_change/pre_tourney_elo above: a CSV written before this
+  // shipped just won't have the column, parseFloat(undefined) is NaN, and
+  // callers treat it as unavailable (null) rather than a real 0.
+  const momentum_csv = parseFloat(r.momentum);
   return {
     ...r,
     rank:         parseInt(r.rank)          || 0,
@@ -231,6 +242,7 @@ window.coerceRow = function(r) {
     baseline_date: r.baseline_date || null,
     pre_tourney_elo:          isNaN(pre_tourney_elo_csv) ? null : pre_tourney_elo_csv,
     pre_tourney_resume_score: isNaN(pre_tourney_rs_csv)  ? null : pre_tourney_rs_csv,
+    momentum:                 isNaN(momentum_csv)        ? null : momentum_csv,
   };
 };
 
