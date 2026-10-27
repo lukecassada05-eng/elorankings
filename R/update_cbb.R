@@ -230,14 +230,15 @@ for (s in SEASONS) {
   WIN_BASE     <- 900
   LOSS_BASE    <- 3000
   LOSS_DIVISOR <- 2
-  # Momentum window/weight — used by the Momentum computation further down
-  # (after the pre-tournament snapshot block). A team's own last
-  # MOMENTUM_WINDOW games (by date) are repeated MOMENTUM_WEIGHT times when
-  # refitting a "recent form" Elo; momentum is the gap between that and the
-  # season's pre-tournament Elo. Tunable the same way as the three
+  # Momentum window — used by the Momentum computation further down (after
+  # the pre-tournament snapshot block). A team needs at least this many
+  # total non-tournament games before "their last MOMENTUM_WINDOW games"
+  # means anything distinct from "their whole season" — below it, momentum
+  # comes out NA (see that block's own comment for why, and for why this
+  # used to also have a MOMENTUM_WEIGHT re-fit step that got removed after
+  # it turned out to be badly biased). Tunable the same way as the three
   # constants above.
   MOMENTUM_WINDOW <- 12
-  MOMENTUM_WEIGHT <- 3
 
   elo_lup <- setNames(elo$elo, elo$team)
   win_raw <- tapply(seq_len(nrow(res$games)), res$games$winner,
@@ -339,54 +340,84 @@ for (s in SEASONS) {
 
     # ── Momentum ──────────────────────────────────────────────────────
     # "Is this team playing better or worse lately than their season-long
-    # number suggests?" — a recency-weighted Elo refit on the SAME
-    # non-tournament games (pre_games) used above, where each team's own
-    # last MOMENTUM_WINDOW games (by date) are repeated MOMENTUM_WEIGHT
-    # times in the game list passed to run_elo(). Repeating a game is a
-    # simple, symmetric way to give it extra pull on the fitted rating
-    # without breaking Elo's zero-sum per-game update (both participants
-    # still trade the same delta on every occurrence, however many times
-    # it's repeated). momentum is the gap between that recency-weighted
-    # rating and the plain pre-tournament Elo above — positive means
-    # recent form is running hotter than the season average, negative
-    # means colder.
+    # rating would predict?"
     #
-    # Deliberately built on pre_games, not res$games — the whole point is
-    # a team's CURRENT form, and NCAA Tournament games (a) only exist for
-    # a completed season and (b) would pull this the wrong way (e.g. a
-    # team that just got blown out in the Tournament would show as "cold"
-    # for a season that's long over, which isn't a meaningful "momentum"
-    # read for anything by then) — so, like pre_tourney_elo/resume_score/
-    # sos above, this is always a PRE-tournament number, never a final one.
+    # REVISED after shipping — the first version of this re-ran run_elo()
+    # on a copy of pre_games with each team's own last MOMENTUM_WINDOW
+    # games repeated 3x, then took the gap vs the plain pre-tournament
+    # Elo. That looked fine on paper (duplicating a game still trades the
+    # same delta between the same two teams, so it seemed zero-sum) but
+    # was badly biased in practice, confirmed directly against the live
+    # site's own data (nearly every team showed a large positive number)
+    # and reproduced in a standalone simulation before writing this
+    # replacement. Two compounding causes: (1) run_elo()'s min_games
+    # halving counts RAW OCCURRENCES in the games list, so tripling a
+    # team's games pushes its cumulative games_played past min_games
+    # sooner — this real dataset has hundreds of "teams" that are tiny
+    # schools playing exactly ONE buy game against a real D-I opponent
+    # all season, and tripling their one game let them dodge 2 of their
+    # usual 3 halving passes, producing an enormous bogus number for
+    # them, and for every real team that had beaten one of them (that
+    # win got tripled too, flagged "recent" on the patsy's behalf even
+    # when it wasn't recent for the real team at all); and (2) even with
+    # that edge case removed, run_elo() reprocesses its game list for
+    # `iters` passes using each pass's already-diverged ratings as the
+    # input to the next — a reinforcing loop, not one that converges to
+    # a stable equilibrium — so a team's final rating depends on how
+    # much total "volume" got fed through it, and reweighting a subset
+    # of games changes that volume unevenly across teams.
     #
-    # Approximate by design: a game is "recent" from the perspective of
-    # whichever of its two teams has it among their own last
-    # MOMENTUM_WINDOW games — so a single game can occasionally be
-    # up-weighted on behalf of only one of its two participants (e.g. a
-    # team with very few games treats all of them as "recent", even one
-    # that's old news for a busier opponent). Acceptable for a lightweight
-    # form indicator; not a claim of rigor on par with resume_score.
-    team_recent_idx <- function(t) {
+    # Fix: don't re-fit Elo at all. Compare actual results in a team's
+    # last MOMENTUM_WINDOW non-tournament games to what its ALREADY-
+    # COMPUTED, stable pre-tournament Elo (elo_pre_lup above) would have
+    # predicted against those specific opponents' own stable Elo — the
+    # same win-probability formula run_elo() itself uses for one game,
+    # just scored once per recent game instead of iterated. Each game
+    # contributes k·log(margin+1)·(actual − expected); summing that over
+    # the window gives a rating-point "performance surplus": positive
+    # means recent results have outrun what the season rating expected,
+    # negative means they've fallen short. Nothing here re-fits or
+    # reweights a game list, so it can't change how many games a team is
+    # considered to have played, and it can't compound across iterations
+    # — it only ever compares one already-known number (actual) against
+    # another (expected, from numbers already computed above).
+    #
+    # Built on pre_games, not res$games, for the same reason as
+    # pre_tourney_elo/resume_score/sos above: NCAA Tournament games only
+    # exist for a completed season and would pull a "current form" read
+    # the wrong way for a season that's long over — this is always a
+    # PRE-tournament number. A team needs at least MOMENTUM_WINDOW total
+    # non-tournament games for "last MOMENTUM_WINDOW" to mean anything
+    # distinct from "its whole season" (and, not incidentally, that's
+    # also what kept the old version's one-game patsy teams out of the
+    # bug above) — below that, momentum comes out NA rather than a
+    # number built from too little data.
+    all_teams_pre    <- unique(c(pre_games$winner, pre_games$loser))
+    team_total_games <- table(c(pre_games$winner, pre_games$loser))
+    momentum_vec     <- setNames(rep(NA_real_, length(all_teams_pre)), all_teams_pre)
+
+    for (t in all_teams_pre) {
+      if (is.na(team_total_games[t]) || team_total_games[t] < MOMENTUM_WINDOW) next
+      Rt <- elo_pre_lup[t]
+      if (is.na(Rt)) next
       rows <- c(which(pre_games$winner == t), which(pre_games$loser == t))
-      if (!length(rows)) return(integer(0))
-      rows[order(pre_games$date[rows], decreasing = TRUE)][seq_len(min(MOMENTUM_WINDOW, length(rows)))]
+      rows <- rows[order(pre_games$date[rows], decreasing = TRUE)][seq_len(MOMENTUM_WINDOW)]
+      surplus <- 0
+      for (i in rows) {
+        is_winner <- pre_games$winner[i] == t
+        opp <- if (is_winner) pre_games$loser[i] else pre_games$winner[i]
+        Ro  <- elo_pre_lup[opp]
+        if (is.na(Ro)) next
+        ew     <- 1.0 / (1.0 + 10^((unname(Ro) - unname(Rt)) / 400.0))
+        actual <- if (is_winner) 1 else 0
+        margin <- max(as.numeric(pre_games$winner_pts[i]) - as.numeric(pre_games$loser_pts[i]), 1)
+        adj_k  <- 30 * log(margin + 1)
+        surplus <- surplus + adj_k * (actual - ew)
+      }
+      momentum_vec[t] <- surplus
     }
-    all_teams_pre <- unique(c(pre_games$winner, pre_games$loser))
-    recent_idx    <- unique(unlist(lapply(all_teams_pre, team_recent_idx)))
 
-    weight_vec     <- ifelse(seq_len(nrow(pre_games)) %in% recent_idx, MOMENTUM_WEIGHT, 1)
-    momentum_games <- pre_games[rep(seq_len(nrow(pre_games)), times = weight_vec), ]
-
-    elo_momentum     <- run_elo(momentum_games, k=30, iters=10, min_games=4)
-    elo_momentum_lup <- setNames(elo_momentum$elo, elo_momentum$team)
-
-    # A team absent from the recency-weighted fit (shouldn't happen — it's
-    # built from the same pre_games as elo_pre above) falls back to 0
-    # (no signal) rather than NA.
-    out$momentum <- round(
-      ifelse(is.na(elo_momentum_lup[out$team]), 0, elo_momentum_lup[out$team] - out$pre_tourney_elo),
-      1
-    )
+    out$momentum <- round(ifelse(is.na(momentum_vec[out$team]), NA_real_, momentum_vec[out$team]), 1)
   } else {
     # No games at all before the cutoff (e.g. a data gap) — fall back to
     # the live numbers rather than writing NA into a brand-new column.
@@ -394,7 +425,7 @@ for (s in SEASONS) {
     out$pre_tourney_resume_score <- out$resume_score
     out$pre_tourney_sos <- out$sos
     # No pre-cutoff games means no "recent form" to compute either.
-    out$momentum <- 0
+    out$momentum <- NA_real_
   }
 
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
