@@ -1,31 +1,31 @@
 season,rank,team,conference,elo,wins,losses,games_played,win_pct,record,best_win_team,best_win_elo,sos,conf_champ,updated_at,baseline_elo,baseline_date,elo_change
-2027,1,Detroit Pistons,Central,1919.5,6,1,7,0.857,6-1,Boston Celtics,1859.1,1515.8,NA,2026-10-27T13:19:37Z,1756.1,2026-10-22,163.4
-2027,2,Houston Rockets,Southwest,1893.3,6,1,7,0.857,6-1,Atlanta Hawks,1748.6,1571.6,NA,2026-10-27T13:19:37Z,1327,2026-10-22,566.3
-2027,3,Memphis Grizzlies,Southwest,1880.1,7,1,8,0.875,7-1,Atlanta Hawks,1748.6,1448.9,NA,2026-10-27T13:19:37Z,1767.5,2026-10-22,112.6
-2027,4,Boston Celtics,Atlantic,1859.1,6,1,7,0.857,6-1,Cleveland Cavaliers,1522.3,1497.3,NA,2026-10-27T13:19:37Z,1693.5,2026-10-22,165.6
-2027,5,Atlanta Hawks,Southeast,1748.6,6,3,9,0.667,6-3,Oklahoma City Thunder,1597.4,1629.9,NA,2026-10-27T13:19:37Z,1640.5,2026-10-22,108.1
-2027,6,Minnesota Timberwolves,Northwest,1616.7,6,4,10,0.6,6-4,Orlando Magic,1562.3,1448.4,NA,2026-10-27T13:19:37Z,1331.1,2026-10-22,285.6
-2027,7,Portland Trail Blazers,Northwest,1609.2,4,1,5,0.8,4-1,Golden State Warriors,1524.5,1248,NA,2026-10-27T13:19:37Z,1262.7,2026-10-22,346.5
-2027,8,Oklahoma City Thunder,Northwest,1597.4,5,4,9,0.556,5-4,San Antonio Spurs,1431.6,1472.6,NA,2026-10-27T13:19:37Z,1229.2,2026-10-22,368.2
-2027,9,Orlando Magic,Southeast,1562.3,4,3,7,0.571,4-3,Memphis Grizzlies,1880.1,1541.4,NA,2026-10-27T13:19:37Z,1693.1,2026-10-22,-130.8
-2027,10,Los Angeles Lakers,Pacific,1540.2,5,3,8,0.625,5-3,Golden State Warriors,1524.5,1344.8,NA,2026-10-27T13:19:37Z,1141.9,2026-10-22,398.3
-2027,11,Golden State Warriors,Pacific,1524.5,5,5,10,0.5,5-5,Portland Trail Blazers,1609.2,1479.9,NA,2026-10-27T13:19:37Z,1436.7,2026-10-22,87.8
-2027,12,Cleveland Cavaliers,Central,1522.3,3,3,6,0.5,3-3,Minnesota Timberwolves,1616.7,1580.6,NA,2026-10-27T13:19:37Z,1276.8,2026-10-22,245.5
-2027,13,Philadelphia 76ers,Atlantic,1512.6,4,4,8,0.5,4-4,Cleveland Cavaliers,1522.3,1495.9,NA,2026-10-27T13:19:37Z,1362.9,2026-10-22,149.7
-2027,14,Toronto Raptors,Atlantic,1504.3,4,4,8,0.5,4-4,Washington Wizards,1425.2,1423.3,NA,2026-10-27T13:19:37Z,1358.7,2026-10-22,145.6
-2027,15,Charlotte Hornets,Southeast,1504,4,4,8,0.5,4-4,Washington Wizards,1425.2,1537.6,NA,2026-10-27T13:19:37Z,1319.6,2026-10-22,184.4
-2027,16,Dallas Mavericks,Southwest,1491.6,3,5,8,0.375,3-5,Houston Rockets,1893.3,1633.8,NA,2026-10-27T13:19:37Z,1233.1,2026-10-22,258.5
-2027,17,Utah Jazz,Northwest,1443.6,4,4,8,0.5,4-4,San Antonio Spurs,1431.6,1532.6,NA,2026-10-27T13:19:37Z,1559,2026-10-22,-115.4
-2027,18,San Antonio Spurs,Southwest,1431.6,3,5,8,0.375,3-5,Dallas Mavericks,1491.6,1463,NA,2026-10-27T13:19:37Z,1178.6,2026-10-22,253
-2027,19,Washington Wizards,Southeast,1425.2,4,4,8,0.5,4-4,Detroit Pistons,1919.5,1430.4,NA,2026-10-27T13:19:37Z,1568.7,2026-10-22,-143.5
-2027,20,Denver Nuggets,Northwest,1424.3,4,4,8,0.5,4-4,Los Angeles Lakers,1540.2,1471.2,NA,2026-10-27T13:19:37Z,1504.6,2026-10-22,-80.3
-2027,21,Indiana Pacers,Central,1415.7,3,5,8,0.375,3-5,Minnesota Timberwolves,1616.7,1463,NA,2026-10-27T13:19:37Z,1372.1,2026-10-22,43.6
-2027,22,LA Clippers,Pacific,1415.4,3,3,6,0.5,3-3,Golden State Warriors,1524.5,1423.6,NA,2026-10-27T13:19:37Z,1409.5,2026-10-22,5.9
-2027,23,Chicago Bulls,Central,1413.5,4,5,9,0.444,4-5,Minnesota Timberwolves,1616.7,1498.5,NA,2026-10-27T13:19:37Z,1559.5,2026-10-22,-146
-2027,24,Miami Heat,Southeast,1403.3,3,6,9,0.333,3-6,Toronto Raptors,1504.3,1553,NA,2026-10-27T13:19:37Z,1673.9,2026-10-22,-270.6
-2027,25,New Orleans Pelicans,Southwest,1391.2,3,4,7,0.429,3-4,Oklahoma City Thunder,1597.4,1457.3,NA,2026-10-27T13:19:37Z,1556.6,2026-10-22,-165.4
-2027,26,Brooklyn Nets,Atlantic,1370.4,3,4,7,0.429,3-4,Philadelphia 76ers,1512.6,1469.6,NA,2026-10-27T13:19:37Z,1665.4,2026-10-22,-295
-2027,27,Phoenix Suns,Pacific,1289.1,2,6,8,0.25,2-6,Golden State Warriors,1524.5,1546.4,NA,2026-10-27T13:19:37Z,1129,2026-10-22,160.1
-2027,28,Milwaukee Bucks,Central,1244,3,6,9,0.333,3-6,Oklahoma City Thunder,1597.4,1479.4,NA,2026-10-27T13:19:37Z,1141.1,2026-10-22,102.9
-2027,29,New York Knicks,Atlantic,1096.3,1,7,8,0.125,1-7,Toronto Raptors,1504.3,1562.1,NA,2026-10-27T13:19:37Z,1029.9,2026-10-22,66.4
-2027,30,Sacramento Kings,Pacific,950.9,0,8,8,0,0-8,NA,NA,1568.8,NA,2026-10-27T13:19:37Z,801.4,2026-10-22,149.5
+2027,1,Detroit Pistons,Central,1919.5,6,1,7,0.857,6-1,Boston Celtics,1859.1,1515.8,NA,2026-10-27T15:17:54Z,1756.1,2026-10-22,163.4
+2027,2,Houston Rockets,Southwest,1893.3,6,1,7,0.857,6-1,Atlanta Hawks,1748.6,1571.6,NA,2026-10-27T15:17:54Z,1327,2026-10-22,566.3
+2027,3,Memphis Grizzlies,Southwest,1880.1,7,1,8,0.875,7-1,Atlanta Hawks,1748.6,1448.9,NA,2026-10-27T15:17:54Z,1767.5,2026-10-22,112.6
+2027,4,Boston Celtics,Atlantic,1859.1,6,1,7,0.857,6-1,Cleveland Cavaliers,1522.3,1497.3,NA,2026-10-27T15:17:54Z,1693.5,2026-10-22,165.6
+2027,5,Atlanta Hawks,Southeast,1748.6,6,3,9,0.667,6-3,Oklahoma City Thunder,1597.4,1629.9,NA,2026-10-27T15:17:54Z,1640.5,2026-10-22,108.1
+2027,6,Minnesota Timberwolves,Northwest,1616.7,6,4,10,0.6,6-4,Orlando Magic,1562.3,1448.4,NA,2026-10-27T15:17:54Z,1331.1,2026-10-22,285.6
+2027,7,Portland Trail Blazers,Northwest,1609.2,4,1,5,0.8,4-1,Golden State Warriors,1524.5,1248,NA,2026-10-27T15:17:54Z,1262.7,2026-10-22,346.5
+2027,8,Oklahoma City Thunder,Northwest,1597.4,5,4,9,0.556,5-4,San Antonio Spurs,1431.6,1472.6,NA,2026-10-27T15:17:54Z,1229.2,2026-10-22,368.2
+2027,9,Orlando Magic,Southeast,1562.3,4,3,7,0.571,4-3,Memphis Grizzlies,1880.1,1541.4,NA,2026-10-27T15:17:54Z,1693.1,2026-10-22,-130.8
+2027,10,Los Angeles Lakers,Pacific,1540.2,5,3,8,0.625,5-3,Golden State Warriors,1524.5,1344.8,NA,2026-10-27T15:17:54Z,1141.9,2026-10-22,398.3
+2027,11,Golden State Warriors,Pacific,1524.5,5,5,10,0.5,5-5,Portland Trail Blazers,1609.2,1479.9,NA,2026-10-27T15:17:54Z,1436.7,2026-10-22,87.8
+2027,12,Cleveland Cavaliers,Central,1522.3,3,3,6,0.5,3-3,Minnesota Timberwolves,1616.7,1580.6,NA,2026-10-27T15:17:54Z,1276.8,2026-10-22,245.5
+2027,13,Philadelphia 76ers,Atlantic,1512.6,4,4,8,0.5,4-4,Cleveland Cavaliers,1522.3,1495.9,NA,2026-10-27T15:17:54Z,1362.9,2026-10-22,149.7
+2027,14,Toronto Raptors,Atlantic,1504.3,4,4,8,0.5,4-4,Washington Wizards,1425.2,1423.3,NA,2026-10-27T15:17:54Z,1358.7,2026-10-22,145.6
+2027,15,Charlotte Hornets,Southeast,1504,4,4,8,0.5,4-4,Washington Wizards,1425.2,1537.6,NA,2026-10-27T15:17:54Z,1319.6,2026-10-22,184.4
+2027,16,Dallas Mavericks,Southwest,1491.6,3,5,8,0.375,3-5,Houston Rockets,1893.3,1633.8,NA,2026-10-27T15:17:54Z,1233.1,2026-10-22,258.5
+2027,17,Utah Jazz,Northwest,1443.6,4,4,8,0.5,4-4,San Antonio Spurs,1431.6,1532.6,NA,2026-10-27T15:17:54Z,1559,2026-10-22,-115.4
+2027,18,San Antonio Spurs,Southwest,1431.6,3,5,8,0.375,3-5,Dallas Mavericks,1491.6,1463,NA,2026-10-27T15:17:54Z,1178.6,2026-10-22,253
+2027,19,Washington Wizards,Southeast,1425.2,4,4,8,0.5,4-4,Detroit Pistons,1919.5,1430.4,NA,2026-10-27T15:17:54Z,1568.7,2026-10-22,-143.5
+2027,20,Denver Nuggets,Northwest,1424.3,4,4,8,0.5,4-4,Los Angeles Lakers,1540.2,1471.2,NA,2026-10-27T15:17:54Z,1504.6,2026-10-22,-80.3
+2027,21,Indiana Pacers,Central,1415.7,3,5,8,0.375,3-5,Minnesota Timberwolves,1616.7,1463,NA,2026-10-27T15:17:54Z,1372.1,2026-10-22,43.6
+2027,22,LA Clippers,Pacific,1415.4,3,3,6,0.5,3-3,Golden State Warriors,1524.5,1423.6,NA,2026-10-27T15:17:54Z,1409.5,2026-10-22,5.9
+2027,23,Chicago Bulls,Central,1413.5,4,5,9,0.444,4-5,Minnesota Timberwolves,1616.7,1498.5,NA,2026-10-27T15:17:54Z,1559.5,2026-10-22,-146
+2027,24,Miami Heat,Southeast,1403.3,3,6,9,0.333,3-6,Toronto Raptors,1504.3,1553,NA,2026-10-27T15:17:54Z,1673.9,2026-10-22,-270.6
+2027,25,New Orleans Pelicans,Southwest,1391.2,3,4,7,0.429,3-4,Oklahoma City Thunder,1597.4,1457.3,NA,2026-10-27T15:17:54Z,1556.6,2026-10-22,-165.4
+2027,26,Brooklyn Nets,Atlantic,1370.4,3,4,7,0.429,3-4,Philadelphia 76ers,1512.6,1469.6,NA,2026-10-27T15:17:54Z,1665.4,2026-10-22,-295
+2027,27,Phoenix Suns,Pacific,1289.1,2,6,8,0.25,2-6,Golden State Warriors,1524.5,1546.4,NA,2026-10-27T15:17:54Z,1129,2026-10-22,160.1
+2027,28,Milwaukee Bucks,Central,1244,3,6,9,0.333,3-6,Oklahoma City Thunder,1597.4,1479.4,NA,2026-10-27T15:17:54Z,1141.1,2026-10-22,102.9
+2027,29,New York Knicks,Atlantic,1096.3,1,7,8,0.125,1-7,Toronto Raptors,1504.3,1562.1,NA,2026-10-27T15:17:54Z,1029.9,2026-10-22,66.4
+2027,30,Sacramento Kings,Pacific,950.9,0,8,8,0,0-8,NA,NA,1568.8,NA,2026-10-27T15:17:54Z,801.4,2026-10-22,149.5
