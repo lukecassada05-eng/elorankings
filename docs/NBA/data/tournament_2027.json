@@ -151,18 +151,10 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Los Angeles Lakers",
-      "conference": "Western",
-      "division": "Pacific",
-      "seed": 4,
-      "status": "clinched_top6",
-      "note": "Top 6 — direct playoff seed"
-    },
-    {
       "team": "Minnesota Timberwolves",
       "conference": "Western",
       "division": "Northwest",
-      "seed": 5,
+      "seed": 4,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
@@ -170,6 +162,14 @@
       "team": "Oklahoma City Thunder",
       "conference": "Western",
       "division": "Northwest",
+      "seed": 5,
+      "status": "clinched_top6",
+      "note": "Top 6 — direct playoff seed"
+    },
+    {
+      "team": "Los Angeles Lakers",
+      "conference": "Western",
+      "division": "Pacific",
       "seed": 6,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -400,9 +400,9 @@
       {
         "team": "Portland Trail Blazers",
         "rank": 1,
-        "wins": 4,
+        "wins": 5,
         "losses": 1,
-        "win_pct": 0.8
+        "win_pct": 0.833
       },
       {
         "team": "Minnesota Timberwolves",
@@ -438,8 +438,8 @@
         "team": "Los Angeles Lakers",
         "rank": 1,
         "wins": 5,
-        "losses": 3,
-        "win_pct": 0.625
+        "losses": 4,
+        "win_pct": 0.556
       },
       {
         "team": "LA Clippers",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-28 05:36 UTC"
+  "current_field_updated": "2026-10-28 12:52 UTC"
 }

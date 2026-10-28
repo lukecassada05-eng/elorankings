@@ -183,17 +183,17 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "San Jose Sharks",
+      "team": "Nashville Predators",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Central",
       "seed": 4,
       "status": "wildcard",
       "note": "Conference wildcard"
     },
     {
-      "team": "Nashville Predators",
+      "team": "San Jose Sharks",
       "conference": "Western",
-      "division": "Central",
+      "division": "Pacific",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
@@ -405,11 +405,11 @@
       {
         "team": "Buffalo Sabres",
         "rank": 8,
-        "wins": 4,
+        "wins": 5,
         "losses": 7,
-        "win_pct": 0.364,
-        "points": 11,
-        "points_pct": 0.5
+        "win_pct": 0.417,
+        "points": 13,
+        "points_pct": 0.542
       }
     ],
     "Pacific": [
@@ -444,10 +444,10 @@
         "team": "San Jose Sharks",
         "rank": 4,
         "wins": 6,
-        "losses": 6,
-        "win_pct": 0.5,
+        "losses": 7,
+        "win_pct": 0.462,
         "points": 13,
-        "points_pct": 0.542
+        "points_pct": 0.5
       },
       {
         "team": "Anaheim Ducks",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-28 05:36 UTC"
+  "current_field_updated": "2026-10-28 12:52 UTC"
 }
