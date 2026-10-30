@@ -289,9 +289,9 @@
       {
         "team": "GB",
         "rank": 4,
-        "wins": 4,
+        "wins": 5,
         "losses": 3,
-        "win_pct": 0.571
+        "win_pct": 0.625
       }
     ],
     "AFC East": [
@@ -449,8 +449,8 @@
         "team": "CAR",
         "rank": 1,
         "wins": 3,
-        "losses": 3,
-        "win_pct": 0.5
+        "losses": 4,
+        "win_pct": 0.429
       },
       {
         "team": "ATL",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-30 01:01 UTC"
+  "current_field_updated": "2026-10-30 10:07 UTC"
 }
