@@ -63,12 +63,20 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Ottawa Senators",
+      "team": "Florida Panthers",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
+    },
+    {
+      "team": "Ottawa Senators",
+      "conference": "Eastern",
+      "division": "Atlantic",
+      "seed": null,
+      "status": "outside",
+      "note": null
     },
     {
       "team": "New York Rangers",
@@ -80,14 +88,6 @@
     },
     {
       "team": "Detroit Red Wings",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Florida Panthers",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -215,6 +215,14 @@
       "note": null
     },
     {
+      "team": "Calgary Flames",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "Los Angeles Kings",
       "conference": "Western",
       "division": "Pacific",
@@ -234,14 +242,6 @@
       "team": "Winnipeg Jets",
       "conference": "Western",
       "division": "Central",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Calgary Flames",
-      "conference": "Western",
-      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
@@ -295,11 +295,11 @@
       {
         "team": "New Jersey Devils",
         "rank": 4,
-        "wins": 8,
+        "wins": 9,
         "losses": 5,
-        "win_pct": 0.615,
-        "points": 16,
-        "points_pct": 0.615
+        "win_pct": 0.643,
+        "points": 18,
+        "points_pct": 0.643
       },
       {
         "team": "New York Rangers",
@@ -352,19 +352,19 @@
         "team": "Vegas Golden Knights",
         "rank": 2,
         "wins": 8,
-        "losses": 5,
-        "win_pct": 0.615,
+        "losses": 6,
+        "win_pct": 0.571,
         "points": 17,
-        "points_pct": 0.654
+        "points_pct": 0.607
       },
       {
         "team": "Seattle Kraken",
         "rank": 3,
         "wins": 8,
-        "losses": 5,
-        "win_pct": 0.615,
+        "losses": 6,
+        "win_pct": 0.571,
         "points": 17,
-        "points_pct": 0.654
+        "points_pct": 0.607
       },
       {
         "team": "San Jose Sharks",
@@ -376,8 +376,17 @@
         "points_pct": 0.536
       },
       {
-        "team": "Los Angeles Kings",
+        "team": "Calgary Flames",
         "rank": 5,
+        "wins": 6,
+        "losses": 7,
+        "win_pct": 0.462,
+        "points": 12,
+        "points_pct": 0.462
+      },
+      {
+        "team": "Los Angeles Kings",
+        "rank": 6,
         "wins": 4,
         "losses": 7,
         "win_pct": 0.364,
@@ -386,21 +395,12 @@
       },
       {
         "team": "Anaheim Ducks",
-        "rank": 6,
+        "rank": 7,
         "wins": 5,
         "losses": 8,
         "win_pct": 0.385,
         "points": 11,
         "points_pct": 0.423
-      },
-      {
-        "team": "Calgary Flames",
-        "rank": 7,
-        "wins": 5,
-        "losses": 7,
-        "win_pct": 0.417,
-        "points": 10,
-        "points_pct": 0.417
       },
       {
         "team": "Vancouver Canucks",
@@ -471,10 +471,10 @@
         "team": "Winnipeg Jets",
         "rank": 7,
         "wins": 4,
-        "losses": 9,
-        "win_pct": 0.308,
+        "losses": 10,
+        "win_pct": 0.286,
         "points": 11,
-        "points_pct": 0.423
+        "points_pct": 0.393
       },
       {
         "team": "Chicago Blackhawks",
@@ -515,8 +515,17 @@
         "points_pct": 0.636
       },
       {
-        "team": "Ottawa Senators",
+        "team": "Florida Panthers",
         "rank": 4,
+        "wins": 7,
+        "losses": 6,
+        "win_pct": 0.538,
+        "points": 16,
+        "points_pct": 0.615
+      },
+      {
+        "team": "Ottawa Senators",
+        "rank": 5,
         "wins": 8,
         "losses": 6,
         "win_pct": 0.571,
@@ -525,15 +534,6 @@
       },
       {
         "team": "Detroit Red Wings",
-        "rank": 5,
-        "wins": 6,
-        "losses": 6,
-        "win_pct": 0.5,
-        "points": 14,
-        "points_pct": 0.583
-      },
-      {
-        "team": "Florida Panthers",
         "rank": 6,
         "wins": 6,
         "losses": 6,
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-10-30 22:33 UTC"
+  "current_field_updated": "2026-10-31 05:20 UTC"
 }
