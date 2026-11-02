@@ -39,7 +39,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Washington Capitals",
+      "team": "New Jersey Devils",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 2,
@@ -47,7 +47,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New Jersey Devils",
+      "team": "Washington Capitals",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 3,
@@ -111,6 +111,14 @@
       "note": null
     },
     {
+      "team": "Philadelphia Flyers",
+      "conference": "Eastern",
+      "division": "Metropolitan",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "Pittsburgh Penguins",
       "conference": "Eastern",
       "division": "Metropolitan",
@@ -127,14 +135,6 @@
       "note": null
     },
     {
-      "team": "Philadelphia Flyers",
-      "conference": "Eastern",
-      "division": "Metropolitan",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "Minnesota Wild",
       "conference": "Western",
       "division": "Central",
@@ -143,7 +143,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Utah Mammoth",
+      "team": "Dallas Stars",
       "conference": "Western",
       "division": "Central",
       "seed": 2,
@@ -151,7 +151,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Dallas Stars",
+      "team": "Utah Mammoth",
       "conference": "Western",
       "division": "Central",
       "seed": 3,
@@ -268,29 +268,29 @@
       {
         "team": "Carolina Hurricanes",
         "rank": 1,
-        "wins": 11,
+        "wins": 12,
         "losses": 3,
-        "win_pct": 0.786,
-        "points": 23,
-        "points_pct": 0.821
-      },
-      {
-        "team": "Washington Capitals",
-        "rank": 2,
-        "wins": 8,
-        "losses": 4,
-        "win_pct": 0.667,
-        "points": 16,
-        "points_pct": 0.667
+        "win_pct": 0.8,
+        "points": 25,
+        "points_pct": 0.833
       },
       {
         "team": "New Jersey Devils",
-        "rank": 3,
+        "rank": 2,
         "wins": 9,
         "losses": 5,
         "win_pct": 0.643,
         "points": 18,
         "points_pct": 0.643
+      },
+      {
+        "team": "Washington Capitals",
+        "rank": 3,
+        "wins": 8,
+        "losses": 5,
+        "win_pct": 0.615,
+        "points": 16,
+        "points_pct": 0.615
       },
       {
         "team": "New York Islanders",
@@ -311,8 +311,17 @@
         "points_pct": 0.583
       },
       {
-        "team": "Pittsburgh Penguins",
+        "team": "Philadelphia Flyers",
         "rank": 6,
+        "wins": 4,
+        "losses": 11,
+        "win_pct": 0.267,
+        "points": 12,
+        "points_pct": 0.4
+      },
+      {
+        "team": "Pittsburgh Penguins",
+        "rank": 7,
         "wins": 4,
         "losses": 9,
         "win_pct": 0.308,
@@ -321,21 +330,12 @@
       },
       {
         "team": "Columbus Blue Jackets",
-        "rank": 7,
+        "rank": 8,
         "wins": 4,
         "losses": 7,
         "win_pct": 0.364,
         "points": 8,
         "points_pct": 0.364
-      },
-      {
-        "team": "Philadelphia Flyers",
-        "rank": 8,
-        "wins": 3,
-        "losses": 11,
-        "win_pct": 0.214,
-        "points": 10,
-        "points_pct": 0.357
       }
     ],
     "Pacific": [
@@ -416,29 +416,29 @@
       {
         "team": "Minnesota Wild",
         "rank": 1,
-        "wins": 9,
+        "wins": 10,
         "losses": 6,
-        "win_pct": 0.6,
-        "points": 21,
-        "points_pct": 0.7
-      },
-      {
-        "team": "Utah Mammoth",
-        "rank": 2,
-        "wins": 9,
-        "losses": 5,
-        "win_pct": 0.643,
-        "points": 18,
-        "points_pct": 0.643
+        "win_pct": 0.625,
+        "points": 23,
+        "points_pct": 0.719
       },
       {
         "team": "Dallas Stars",
-        "rank": 3,
+        "rank": 2,
         "wins": 8,
         "losses": 6,
         "win_pct": 0.571,
         "points": 17,
         "points_pct": 0.607
+      },
+      {
+        "team": "Utah Mammoth",
+        "rank": 3,
+        "wins": 9,
+        "losses": 6,
+        "win_pct": 0.6,
+        "points": 18,
+        "points_pct": 0.6
       },
       {
         "team": "Colorado Avalanche",
@@ -471,10 +471,10 @@
         "team": "Winnipeg Jets",
         "rank": 7,
         "wins": 4,
-        "losses": 10,
-        "win_pct": 0.286,
+        "losses": 11,
+        "win_pct": 0.267,
         "points": 11,
-        "points_pct": 0.393
+        "points_pct": 0.367
       },
       {
         "team": "Chicago Blackhawks",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-01 20:00 UTC"
+  "current_field_updated": "2026-11-02 00:48 UTC"
 }
