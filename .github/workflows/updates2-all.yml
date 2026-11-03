@@ -2,29 +2,14 @@ name: Update All Elo Rankings
 
 on:
   schedule:
-    - cron: '0 7 * * *'
-    - cron: '0 19 * * *'
+    - cron: '0 */3 * * *'  # every 3 hours, on the hour (UTC): 00,03,06,09,12,15,18,21
   workflow_dispatch:
 
 permissions:
   contents: write
 
 env:
-  R_VERSION: 'release'
-
-# R_VERSION used to be pinned to a specific release ('4.4.2'), which broke
-# the hoopR/baseballr install step once R moved past 4.4.x: those packages
-# (and compiled deps like Rcpp/RcppParallel/stringi) come from
-# sportsdataverse.r-universe.dev, which only serves pre-built BINARIES for
-# whatever R release is current, so install.packages() silently fell back
-# to compiling from source and failed ("had non-zero exit status"). The
-# literal 'release' value (r-lib/actions/setup-r's own default) always
-# tracks the current R version, so this can't go stale the same way again.
-# libicu-dev was added to the hoopR/baseballr/nflreadr jobs' system deps as
-# a defensive fallback for stringi (ICU) in case a source build is ever
-# needed for some other reason, and install.packages() was switched from
-# quiet=TRUE to quiet=FALSE everywhere so a future failure's real error
-# shows up in the Actions log instead of just a one-line summary.
+  R_VERSION: '4.4.2'
 
 jobs:
 
@@ -35,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: System deps
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
       - uses: r-lib/actions/setup-r@v2
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
@@ -48,7 +33,7 @@ jobs:
           Rscript -e "
             install.packages(c('nflreadr','dplyr','readr'),
               repos=c(nflverse='https://nflverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=FALSE)
+              quiet=TRUE)
             stopifnot(requireNamespace('nflreadr',quietly=TRUE))
             message('packages OK')
           "
@@ -70,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: System deps
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
       - uses: r-lib/actions/setup-r@v2
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
@@ -83,7 +68,7 @@ jobs:
           Rscript -e "
             install.packages(c('hoopR','dplyr','readr'),
               repos=c(sportsdataverse='https://sportsdataverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=FALSE)
+              quiet=TRUE)
             stopifnot(requireNamespace('hoopR',quietly=TRUE))
             message('packages OK')
           "
@@ -105,7 +90,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: System deps
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
       - uses: r-lib/actions/setup-r@v2
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
@@ -118,7 +103,7 @@ jobs:
           Rscript -e "
             install.packages(c('baseballr','dplyr','readr'),
               repos=c(sportsdataverse='https://sportsdataverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=FALSE)
+              quiet=TRUE)
             stopifnot(requireNamespace('baseballr',quietly=TRUE))
             message('packages OK')
           "
@@ -140,7 +125,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: System deps
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
       - uses: r-lib/actions/setup-r@v2
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
@@ -153,7 +138,7 @@ jobs:
           Rscript -e "
             install.packages(c('hoopR','dplyr','readr','lubridate'),
               repos=c(sportsdataverse='https://sportsdataverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=FALSE)
+              quiet=TRUE)
             stopifnot(requireNamespace('hoopR',quietly=TRUE))
             message('packages OK')
           "
@@ -187,7 +172,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr','httr','jsonlite'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
             stopifnot(requireNamespace('httr',quietly=TRUE))
             message('packages OK')
           "
@@ -221,7 +206,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr','httr','jsonlite'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
             stopifnot(requireNamespace('httr',quietly=TRUE))
             message('packages OK')
           "
@@ -255,7 +240,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
             message('packages OK')
           "
       - name: Run update
@@ -288,7 +273,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr','httr','jsonlite'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
             stopifnot(requireNamespace('httr',quietly=TRUE))
             message('packages OK')
           "
@@ -358,7 +343,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('jsonlite','httr'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
             stopifnot(requireNamespace('jsonlite',quietly=TRUE))
             message('packages OK')
           "
@@ -371,6 +356,103 @@ jobs:
           git add docs/
           git diff --staged --quiet && echo "No playoff data changes" && exit 0
           git commit -m "data(playoffs): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── Real standings + tiebreakers (runs AFTER backfill, commits to main) ─
+  # Needs this run's <SPORT>_Elo_<yr>.csv / <SPORT>_Games_<yr>.csv (only on
+  # main once nba/nhl/mlb/nfl are merged in) and writes current_field/
+  # standings into the SAME tournament_<yr>.json files backfill_playoff_data.R
+  # writes real games/series/eliminated into — running after backfill (not
+  # in parallel with it via needs:[merge]) means this job's checkout already
+  # has backfill's latest commit, so its read-merge-write of that JSON is
+  # never racing backfill's own commit to the same files.
+  current_standings:
+    name: "Current Standings & Tiebreakers"
+    runs-on: ubuntu-latest
+    needs: [backfill]
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-standings-${{ runner.os }}-${{ env.R_VERSION }}-v4
+          restore-keys: r-standings-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages(c('dplyr','readr','jsonlite'),
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+            stopifnot(requireNamespace('jsonlite',quietly=TRUE))
+            message('packages OK')
+          "
+      - name: Run current standings + tiebreakers
+        run: Rscript R/update_current_standings.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/NBA/data/ docs/NHL/data/ docs/MLB/data/ docs/NFL/data/
+          git diff --staged --quiet && echo "No standings changes" && exit 0
+          git commit -m "data(standings): $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep $((i * 3))
+          done
+
+  # ── CFB Playoff Chance sim (runs AFTER merge, commits to main) ─
+  # Needs this run's CFB_Elo_<yr>.csv / CFB_Games_<yr>.csv, which only
+  # exist on main once the cfb job's branch has been merged in — same
+  # reason `backfill` waits on `merge` rather than on `cfb` directly.
+  # Active-season-only and a complete no-op (exits 0, no commit) outside
+  # the regular season or once conference championship week starts —
+  # see R/update_cfb_playoff.R's own guards for why.
+  cfb_playoff:
+    name: "CFB Playoff Chance"
+    runs-on: ubuntu-latest
+    needs: [merge]
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
+      - uses: r-lib/actions/setup-r@v2
+        with: { r-version: '${{ env.R_VERSION }}' }
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-cfbplayoff-${{ runner.os }}-${{ env.R_VERSION }}-v4
+          restore-keys: r-cfbplayoff-${{ runner.os }}-
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            install.packages(c('dplyr','readr','httr','jsonlite'),
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+            stopifnot(requireNamespace('httr',quietly=TRUE))
+            message('packages OK')
+          "
+      - name: Run playoff chance sim
+        run: Rscript R/update_cfb_playoff.R
+      - name: Commit directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/CFB/data/
+          git diff --staged --quiet && echo "No playoff chance changes" && exit 0
+          git commit -m "data(cfb-playoff): $(date -u '+%Y-%m-%d %H:%M UTC')"
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push origin main && break
             echo "Push attempt $i failed, retrying..."
