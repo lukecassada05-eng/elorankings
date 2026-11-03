@@ -9,7 +9,21 @@ permissions:
   contents: write
 
 env:
-  R_VERSION: '4.4.2'
+  R_VERSION: 'release'
+
+# R_VERSION used to be pinned to a specific release ('4.4.2'), which broke
+# the hoopR/baseballr install step once R moved past 4.4.x: those packages
+# (and compiled deps like Rcpp/RcppParallel/stringi) come from
+# sportsdataverse.r-universe.dev, which only serves pre-built BINARIES for
+# whatever R release is current, so install.packages() silently fell back
+# to compiling from source and failed ("had non-zero exit status"). The
+# literal 'release' value (r-lib/actions/setup-r's own default) always
+# tracks the current R version, so this can't go stale the same way again.
+# libicu-dev was added to the hoopR/baseballr/nflreadr jobs' system deps as
+# a defensive fallback for stringi (ICU) in case a source build is ever
+# needed for some other reason, and install.packages() was switched from
+# quiet=TRUE to quiet=FALSE everywhere so a future failure's real error
+# shows up in the Actions log instead of just a one-line summary.
 
 jobs:
 
@@ -20,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: System deps
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
       - uses: r-lib/actions/setup-r@v2
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
@@ -33,7 +47,7 @@ jobs:
           Rscript -e "
             install.packages(c('nflreadr','dplyr','readr'),
               repos=c(nflverse='https://nflverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=TRUE)
+              quiet=FALSE)
             stopifnot(requireNamespace('nflreadr',quietly=TRUE))
             message('packages OK')
           "
@@ -55,7 +69,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: System deps
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
       - uses: r-lib/actions/setup-r@v2
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
@@ -68,7 +82,7 @@ jobs:
           Rscript -e "
             install.packages(c('hoopR','dplyr','readr'),
               repos=c(sportsdataverse='https://sportsdataverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=TRUE)
+              quiet=FALSE)
             stopifnot(requireNamespace('hoopR',quietly=TRUE))
             message('packages OK')
           "
@@ -90,7 +104,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: System deps
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
       - uses: r-lib/actions/setup-r@v2
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
@@ -103,7 +117,7 @@ jobs:
           Rscript -e "
             install.packages(c('baseballr','dplyr','readr'),
               repos=c(sportsdataverse='https://sportsdataverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=TRUE)
+              quiet=FALSE)
             stopifnot(requireNamespace('baseballr',quietly=TRUE))
             message('packages OK')
           "
@@ -125,7 +139,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: System deps
-        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
       - uses: r-lib/actions/setup-r@v2
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
@@ -138,7 +152,7 @@ jobs:
           Rscript -e "
             install.packages(c('hoopR','dplyr','readr','lubridate'),
               repos=c(sportsdataverse='https://sportsdataverse.r-universe.dev', CRAN='https://cloud.r-project.org'),
-              quiet=TRUE)
+              quiet=FALSE)
             stopifnot(requireNamespace('hoopR',quietly=TRUE))
             message('packages OK')
           "
@@ -172,7 +186,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr','httr','jsonlite'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
             stopifnot(requireNamespace('httr',quietly=TRUE))
             message('packages OK')
           "
@@ -206,7 +220,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr','httr','jsonlite'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
             stopifnot(requireNamespace('httr',quietly=TRUE))
             message('packages OK')
           "
@@ -240,7 +254,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
             message('packages OK')
           "
       - name: Run update
@@ -273,7 +287,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr','httr','jsonlite'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
             stopifnot(requireNamespace('httr',quietly=TRUE))
             message('packages OK')
           "
@@ -343,7 +357,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('jsonlite','httr'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
             stopifnot(requireNamespace('jsonlite',quietly=TRUE))
             message('packages OK')
           "
@@ -391,7 +405,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr','jsonlite'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
             stopifnot(requireNamespace('jsonlite',quietly=TRUE))
             message('packages OK')
           "
@@ -440,7 +454,7 @@ jobs:
         run: |
           Rscript -e "
             install.packages(c('dplyr','readr','httr','jsonlite'),
-              repos=c(CRAN='https://cloud.r-project.org'), quiet=TRUE)
+              repos=c(CRAN='https://cloud.r-project.org'), quiet=FALSE)
             stopifnot(requireNamespace('httr',quietly=TRUE))
             message('packages OK')
           "
