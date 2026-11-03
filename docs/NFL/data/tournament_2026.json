@@ -167,7 +167,7 @@
       "note": "Division winner"
     },
     {
-      "team": "DET",
+      "team": "CHI",
       "conference": "NFC",
       "division": "NFC North",
       "seed": 5,
@@ -175,7 +175,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "CHI",
+      "team": "DET",
       "conference": "NFC",
       "division": "NFC North",
       "seed": 6,
@@ -191,7 +191,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "SEA",
+      "team": "LA",
       "conference": "NFC",
       "division": "NFC West",
       "seed": null,
@@ -199,7 +199,7 @@
       "note": null
     },
     {
-      "team": "LA",
+      "team": "SEA",
       "conference": "NFC",
       "division": "NFC West",
       "seed": null,
@@ -264,6 +264,36 @@
     }
   ],
   "standings": {
+    "NFC North": [
+      {
+        "team": "MIN",
+        "rank": 1,
+        "wins": 6,
+        "losses": 1,
+        "win_pct": 0.857
+      },
+      {
+        "team": "CHI",
+        "rank": 2,
+        "wins": 6,
+        "losses": 2,
+        "win_pct": 0.75
+      },
+      {
+        "team": "DET",
+        "rank": 3,
+        "wins": 5,
+        "losses": 2,
+        "win_pct": 0.714
+      },
+      {
+        "team": "GB",
+        "rank": 4,
+        "wins": 5,
+        "losses": 3,
+        "win_pct": 0.625
+      }
+    ],
     "AFC East": [
       {
         "team": "BUF",
@@ -292,66 +322,6 @@
         "wins": 1,
         "losses": 6,
         "win_pct": 0.143
-      }
-    ],
-    "NFC North": [
-      {
-        "team": "MIN",
-        "rank": 1,
-        "wins": 6,
-        "losses": 1,
-        "win_pct": 0.857
-      },
-      {
-        "team": "DET",
-        "rank": 2,
-        "wins": 5,
-        "losses": 2,
-        "win_pct": 0.714
-      },
-      {
-        "team": "CHI",
-        "rank": 3,
-        "wins": 5,
-        "losses": 2,
-        "win_pct": 0.714
-      },
-      {
-        "team": "GB",
-        "rank": 4,
-        "wins": 5,
-        "losses": 3,
-        "win_pct": 0.625
-      }
-    ],
-    "NFC West": [
-      {
-        "team": "SF",
-        "rank": 1,
-        "wins": 6,
-        "losses": 1,
-        "win_pct": 0.857
-      },
-      {
-        "team": "SEA",
-        "rank": 2,
-        "wins": 4,
-        "losses": 3,
-        "win_pct": 0.571
-      },
-      {
-        "team": "LA",
-        "rank": 3,
-        "wins": 4,
-        "losses": 4,
-        "win_pct": 0.5
-      },
-      {
-        "team": "ARI",
-        "rank": 4,
-        "wins": 3,
-        "losses": 5,
-        "win_pct": 0.375
       }
     ],
     "AFC South": [
@@ -384,34 +354,34 @@
         "win_pct": 0.125
       }
     ],
-    "AFC West": [
+    "NFC West": [
       {
-        "team": "DEN",
+        "team": "SF",
         "rank": 1,
         "wins": 6,
-        "losses": 2,
-        "win_pct": 0.75
+        "losses": 1,
+        "win_pct": 0.857
       },
       {
-        "team": "KC",
+        "team": "SEA",
         "rank": 2,
-        "wins": 5,
-        "losses": 2,
-        "win_pct": 0.714
+        "wins": 4,
+        "losses": 4,
+        "win_pct": 0.5
       },
       {
-        "team": "LV",
+        "team": "LA",
         "rank": 3,
         "wins": 4,
         "losses": 4,
         "win_pct": 0.5
       },
       {
-        "team": "LAC",
+        "team": "ARI",
         "rank": 4,
-        "wins": 0,
-        "losses": 7,
-        "win_pct": 0
+        "wins": 3,
+        "losses": 5,
+        "win_pct": 0.375
       }
     ],
     "AFC North": [
@@ -442,6 +412,36 @@
         "wins": 4,
         "losses": 4,
         "win_pct": 0.5
+      }
+    ],
+    "AFC West": [
+      {
+        "team": "DEN",
+        "rank": 1,
+        "wins": 6,
+        "losses": 2,
+        "win_pct": 0.75
+      },
+      {
+        "team": "KC",
+        "rank": 2,
+        "wins": 5,
+        "losses": 2,
+        "win_pct": 0.714
+      },
+      {
+        "team": "LV",
+        "rank": 3,
+        "wins": 4,
+        "losses": 4,
+        "win_pct": 0.5
+      },
+      {
+        "team": "LAC",
+        "rank": 4,
+        "wins": 0,
+        "losses": 7,
+        "win_pct": 0
       }
     ],
     "NFC South": [
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-02 21:57 UTC"
+  "current_field_updated": "2026-11-03 06:30 UTC"
 }
