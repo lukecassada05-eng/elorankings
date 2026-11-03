@@ -1,69 +1,259 @@
 # ================================================================
 # R/update_cbb.R  —  College Basketball Elo, 2003-current
-# FIX: Conference lookup now uses `conference_competition == TRUE`
-#      rows to build a team_id -> conference_name map.
-#      For teams not in that map (non-power-conference), we use
-#      groups_name from any game they appear in.
+# Data: ESPN scoreboard API, fetched day-by-day — same pathway as
+#       R/update_cfb.R, replacing the previous hoopR::load_mbb_schedule()
+#       pipeline (see "DATA SOURCE SWITCH" below for why, and what was/
+#       wasn't preserved by the switch).
+#
+# DATA SOURCE SWITCH (ESPN-direct, matching update_cfb.R):
+# This used to pull every season's schedule from hoopR::load_mbb_schedule(),
+# which doesn't talk to ESPN itself — it reads a pre-built dataset from the
+# sportsdataverse/hoopR-mbb-data GitHub repo, which re-scrapes ESPN and
+# republishes on its OWN schedule (about once a day, ~07:00 UTC). That
+# extra hop meant this script could never be any fresher than that daily
+# upstream refresh no matter how often this workflow itself ran — confirmed
+# directly against a brand-new 2026-27 season showing only a handful of
+# games days after real games had been played. update_cfb.R never has this
+# problem, because it hits ESPN's own scoreboard API directly, one calendar
+# day at a time — this file now does the same thing, so CBB freshness is
+# bounded only by ESPN's own data, exactly like CFB.
+#
+# EQUIVALENCE FOR SETTLED SEASONS: for any season that's already over, this
+# should produce the SAME game list as before — both the old and new paths
+# are ultimately reading the same ESPN schedule/box-score data (hoopR-mbb-
+# data's own pipeline IS an ESPN scoreboard scraper, just upstream of this
+# script instead of inside it), filtered the same way (completed games
+# only, no ties, two distinct teams, scoped to Division I via groups=50 —
+# the same group code already used elsewhere in this file for
+# fetch_conf_champs()). The conference-assignment ALGORITHM for a settled
+# season is also left untouched (same conf_rows/any_rows/build_map logic,
+# same priority order) — it just now reads its groups_name/
+# conference_competition inputs from this file's own per-game ESPN fetch
+# instead of from hoopR's dataframe columns, which carry the identical
+# fields under identical semantics (confirmed directly against live ESPN
+# responses: a real conference game carries an event-level `groups` object
+# with the conference's full name and `conferenceCompetition:true` on its
+# competition; a non-conference game carries neither).
+#
+# NEW-SEASON CONFERENCE FIX: the OLD schedule-derived conf_map can only
+# resolve a team's conference once it's PLAYED a game ESPN tags with
+# groups_name metadata — harmless for a settled season (every team has
+# dozens of those by the end), but broken for the first days of a brand
+# new one, which is exactly the bug reported against the 2026-27 season.
+# ESPN's STANDINGS endpoint (fetch_cbb_conf_map() below) carries conference
+# membership directly — it's how ESPN organizes the groupings, not
+# something derived from results — so it's correct from day one, and
+# because the request is scoped to group=50 (Division I only — confirmed
+# directly against ESPN: the root of that response is labeled "NCAA
+# Division I"), any team that doesn't show up in it genuinely isn't
+# Division I, which is exactly what "D2-or-worse stays NA" requires. This
+# is used ONLY for the current/next season (s >= CURRENT_SEASON, applied in
+# the main loop below) — a settled season keeps the schedule-derived
+# conf_map exactly as it behaved before this file ever talked to ESPN
+# directly, so no historical conference data changes either.
 # ================================================================
 
 suppressPackageStartupMessages({
-  library(hoopR)
-  library(dplyr)
   library(readr)
-  library(lubridate)
+  library(httr)
+  library(jsonlite)
 })
 source("R/elo_engine.R")
 Sys.setenv(TZ = "America/New_York")
 
-CURRENT_SEASON <- most_recent_mbb_season()
+# CURRENT_SEASON uses the same end-year convention as everywhere else in
+# this file (season 2027 == the 2026-27 season — confirmed directly against
+# ESPN's own standings endpoint, which reports season=2027 as
+# seasonDisplayName "2026-27"). Once the calendar reaches July, the next
+# men's season is the one coming up, so CURRENT_SEASON rolls forward a year
+# ahead of the regular Jan-Jun "that season is still live" window. This
+# replaces hoopR::most_recent_mbb_season() now that hoopR is no longer
+# attached for the main fetch loop — write_cbb_tournament_json() further
+# down still calls hoopR::load_mbb_schedule() by its full :: name, which is
+# untouched by this change and keeps working as long as the hoopR package
+# stays installed; it just no longer needs to be library()'d here.
+today          <- Sys.Date()
+CURRENT_SEASON <- as.integer(format(today, "%Y")) +
+                  (if (as.integer(format(today, "%m")) >= 7) 1L else 0L)
 SEASONS        <- 2003:(CURRENT_SEASON + 1L)  # +1 catches next season if started
 OUT_DIR        <- "docs/CBB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
+# ── Parse one ESPN scoreboard event ───────────────────────────────
+# Mirrors update_cfb.R's parse_event(), plus the extra fields (home/away
+# name, groups_name, conference_competition) the schedule-derived conf_map
+# below needs — hoopR's load_mbb_schedule() used to hand these over as
+# dataframe columns; ESPN's own event JSON carries the same two signals
+# directly (confirmed live): a real conference game's competition object
+# has conferenceCompetition:true and the EVENT object carries a `groups`
+# object naming the conference; a non-conference game has neither.
+parse_cbb_event <- function(ev) {
+  tryCatch({
+    comp <- ev$competitions[[1]]
+    if (!isTRUE(comp$status$type$completed)) return(NULL)
+    comps <- comp$competitors
+    if (length(comps) != 2) return(NULL)
+    hi  <- which(sapply(comps, `[[`, "homeAway") == "home")
+    ai  <- which(sapply(comps, `[[`, "homeAway") == "away")
+    if (!length(hi) || !length(ai)) return(NULL)
+    hs  <- suppressWarnings(as.numeric(comps[[hi]]$score))
+    as_ <- suppressWarnings(as.numeric(comps[[ai]]$score))
+    hn  <- comps[[hi]]$team$shortDisplayName
+    an  <- comps[[ai]]$team$shortDisplayName
+    if (is.na(hs) || is.na(as_) || is.null(hn) || is.null(an) ||
+        hs == as_ || hn == an) return(NULL)
+
+    # ESPN has returned the event-level `groups` field both as a single
+    # object and as a list of group objects — handle either shape rather
+    # than assume one.
+    g  <- ev$groups
+    gn <- NA_character_
+    if (!is.null(g) && length(g) > 0) {
+      nm <- if (!is.null(g$name)) g$name else g[[1]]$name
+      if (!is.null(nm) && nchar(nm)) gn <- nm
+    }
+
+    list(winner = if (hs > as_) hn else an,
+         loser  = if (hs > as_) an else hn,
+         winner_pts = max(hs, as_), loser_pts = min(hs, as_),
+         home_name = hn, away_name = an,
+         groups_name = gn,
+         conference_competition = isTRUE(comp$conferenceCompetition))
+  }, error = function(e) NULL)
+}
+
+# ── Fetch one calendar day's completed D-I games ───────────────────
+# groups=50 is the same Division I scope already used by
+# fetch_conf_champs()'s groups_param elsewhere in this file.
+fetch_cbb_date <- function(ds) {
+  resp <- tryCatch(
+    GET("https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard",
+        query = list(dates = ds, groups = 50, limit = 400), timeout(30)),
+    error = function(e) NULL)
+  if (is.null(resp) || status_code(resp) != 200) return(NULL)
+  data <- tryCatch(fromJSON(rawToChar(resp$content), simplifyDataFrame = FALSE),
+                   error = function(e) NULL)
+  if (is.null(data) || length(data$events) == 0) return(NULL)
+  rows <- Filter(Negate(is.null), lapply(data$events, parse_cbb_event))
+  if (!length(rows)) return(NULL)
+  data.frame(
+    winner      = sapply(rows, `[[`, "winner"),
+    loser       = sapply(rows, `[[`, "loser"),
+    winner_pts  = as.numeric(sapply(rows, `[[`, "winner_pts")),
+    loser_pts   = as.numeric(sapply(rows, `[[`, "loser_pts")),
+    date        = as.Date(ds, format = "%Y%m%d"),
+    home_name   = sapply(rows, `[[`, "home_name"),
+    away_name   = sapply(rows, `[[`, "away_name"),
+    groups_name = sapply(rows, `[[`, "groups_name"),
+    conference_competition = sapply(rows, `[[`, "conference_competition"),
+    stringsAsFactors = FALSE
+  )
+}
+
+# ── Which calendar days to query for a season ──────────────────────
+# Season `s` (end-year convention) runs Nov 1 of (s-1) through mid-April of
+# s — generous on both ends (real D-I tip-off is NCAA-set in early November
+# and the championship game is the first Monday of April) so this is a
+# SUPERSET of hoopR's own season window, not a narrower one: the goal for a
+# settled season is to miss nothing that was there before, not to trim it.
+# A non-game day just comes back empty from ESPN (handled below), so the
+# wider window costs a little extra request volume and nothing else.
+cbb_game_dates <- function(s) {
+  all_dates <- seq(as.Date(paste0(s - 1L, "-11-01")), as.Date(paste0(s, "-04-15")), by = "1 day")
+  all_dates[all_dates <= Sys.Date()]
+}
+
+# ── Live Division I conference map (current/next season only) ─────
+# See "NEW-SEASON CONFERENCE FIX" at the top of this file. Mirrors
+# update_cfb.R's fetch_cfb_conf_map() almost exactly — same candidate-path
+# probing, same per-entry extraction — just a different sport_path/season
+# scope (`group=50` instead of CFB's `level=1`).
+fetch_cbb_conf_map <- function(season) {
+  url <- paste0(
+    "https://site.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings",
+    "?season=", season, "&group=50"
+  )
+  data <- tryCatch(jsonlite::fromJSON(url, simplifyVector = FALSE), error = function(e) NULL)
+  if (is.null(data)) return(character(0))
+
+  candidates <- list(data$children, data$standings$groups, data$groups)
+  groups <- Find(function(g) length(g) > 0, candidates)
+  if (is.null(groups)) return(character(0))
+
+  out <- character(0)
+  for (g in groups) {
+    conf_name <- tryCatch(
+      g$name %||% g$shortName %||% g$abbreviation, error = function(e) NULL
+    )
+    if (is.null(conf_name) || !nchar(conf_name)) next
+    entries <- tryCatch(g$standings$entries, error = function(e) NULL)
+    if (is.null(entries)) entries <- tryCatch(g$entries, error = function(e) NULL)
+    if (is.null(entries)) next
+    for (e in entries) {
+      team_name <- tryCatch(
+        e$team$shortDisplayName %||% e$team$displayName %||% e$team$name,
+        error = function(e2) NULL
+      )
+      if (!is.null(team_name) && nchar(team_name) > 0) out[[team_name]] <- conf_name
+    }
+  }
+  out
+}
+
 get_cbb_season <- function(season) {
   message("  CBB ", season, "...")
   tryCatch({
-    sched <- load_mbb_schedule(seasons = season) %>%
-      mutate(date = as.Date(date)) %>%
-      filter(
-        home_id != away_id,
-        !is.na(home_id), !is.na(away_id),
-        !is.na(home_score), !is.na(away_score),
-        as.numeric(home_score) != as.numeric(away_score),
-        date <= Sys.Date()
-      )
+    dates     <- cbb_game_dates(season)
+    all_games <- list()
+    for (d in as.character(dates)) {
+      res <- fetch_cbb_date(gsub("-", "", d))
+      if (!is.null(res) && nrow(res) > 0) {
+        all_games <- c(all_games, list(res))
+        Sys.sleep(0.15)  # polite delay only on game days
+      } else {
+        Sys.sleep(0.02)  # minimal delay on non-game days
+      }
+    }
+    if (!length(all_games)) return(NULL)
+
+    sched <- unique(do.call(rbind, all_games))
+    sched <- sched[!is.na(sched$winner) & sched$winner != "" &
+                   sched$winner != sched$loser, ]
     if (nrow(sched) == 0) return(NULL)
 
-    # ── Build team->conference map ─────────────────────────────
-    # Use ALL rows with non-empty groups_name, not just conference_competition.
-    # This covers many more teams since non-conf games also carry groups_name.
-    # Priority: conference_competition games first, then any groups_name row.
+    # ── Build team->conference map (settled-season behavior, SAME
+    # algorithm as before — see the big comment at the top of this file
+    # for why it's unchanged) ──────────────────────────────────────
+    # NOTE: the old dplyr version wrote this as
+    # `isTRUE(conference_competition) | conference_competition == TRUE` —
+    # isTRUE() isn't vectorized, so against a whole column that clause
+    # always evaluated to a single FALSE and the OR silently fell through
+    # to the `== TRUE` half for every row. Written directly here as the
+    # vectorized check that was actually doing the work, to the same
+    # effect (parse_cbb_event() always hands conference_competition a
+    # clean TRUE/FALSE, never NA, so `== TRUE` alone is safe).
+    conf_rows <- sched[sched$conference_competition == TRUE &
+                       !is.na(sched$groups_name) &
+                       trimws(sched$groups_name) != "", ]
+    # exclude numeric group IDs — kept for defensive parity with the old
+    # hoopR-column version; this file's own groups_name is always a human
+    # name or NA, never a raw numeric ID, so this is normally a no-op.
+    any_rows <- sched[!is.na(sched$groups_name) &
+                      trimws(sched$groups_name) != "" &
+                      !grepl("^[0-9]+$", trimws(sched$groups_name)), ]
 
-    # Step 1: from conference games (most reliable)
-    conf_rows <- sched %>%
-      filter(isTRUE(conference_competition) | conference_competition == TRUE,
-             !is.na(groups_name), trimws(groups_name) != "")
-
-    # Step 2: from ANY game with groups_name (catches remaining teams)
-    any_rows <- sched %>%
-      filter(!is.na(groups_name), trimws(groups_name) != "",
-             !grepl("^[0-9]+$", trimws(groups_name)))  # exclude numeric group IDs
-
-    # Build maps: team_name -> conference
     build_map <- function(df) {
       if (nrow(df) == 0) return(character(0))
-      home <- setNames(df$groups_name, df$home_short_display_name)
-      away <- setNames(df$groups_name, df$away_short_display_name)
+      home <- setNames(df$groups_name, df$home_name)
+      away <- setNames(df$groups_name, df$away_name)
       both <- c(home, away)
-      # Deduplicate: prefer the first assignment
       both[!duplicated(names(both))]
     }
 
     conf_map_priority <- build_map(conf_rows)
     conf_map_any      <- build_map(any_rows)
 
-    # Merge: priority map wins, fill gaps with any_rows map
-    all_names  <- unique(c(names(conf_map_priority), names(conf_map_any)))
+    all_names <- unique(c(names(conf_map_priority), names(conf_map_any)))
     conf_map <- ifelse(
       !is.na(conf_map_priority[all_names]),
       conf_map_priority[all_names],
@@ -72,24 +262,7 @@ get_cbb_season <- function(season) {
     names(conf_map) <- all_names
     conf_map <- conf_map[!is.na(names(conf_map)) & names(conf_map) != ""]
 
-    # ── Build games ────────────────────────────────────────────
-    games <- sched %>%
-      mutate(
-        home_pts   = as.numeric(home_score),
-        away_pts   = as.numeric(away_score),
-        winner     = if_else(home_pts > away_pts,
-                             home_short_display_name, away_short_display_name),
-        loser      = if_else(home_pts < away_pts,
-                             home_short_display_name, away_short_display_name),
-        winner_pts = pmax(home_pts, away_pts),
-        loser_pts  = pmin(home_pts, away_pts)
-      ) %>%
-      filter(!is.na(winner), !is.na(loser), winner != loser) %>%
-      # `date` is kept (not dropped) specifically so the pre-tournament Elo/
-      # Resume Score snapshot below can filter the NCAA Tournament itself
-      # back out — see that block's comment for why.
-      select(winner, loser, winner_pts, loser_pts, date)
-
+    games <- sched[, c("winner", "loser", "winner_pts", "loser_pts", "date")]
     if (nrow(games) == 0) return(NULL)
 
     list(games = games, conf_map = conf_map)
@@ -119,6 +292,26 @@ for (s in SEASONS) {
     message("  Skipping CBB ", s)
     next
   }
+
+  # ── Live D1 conference lookup — current/next season only ───────────
+  # See "NEW-SEASON CONFERENCE FIX" at the top of this file. A settled
+  # season (s < CURRENT_SEASON) keeps res$conf_map exactly as
+  # get_cbb_season() built it — no change here. For the current/next
+  # season, the live standings-based map is authoritative and already
+  # scoped to Division I, so it REPLACES the schedule-derived guess
+  # rather than merely filling gaps in it — that schedule-derived guess
+  # is precisely the thing that was unreliable this early in a new
+  # season. Any team the live map doesn't resolve (including a real
+  # non-D1 opponent in a buy game) is left for the last-known-conference
+  # fallback further down, then NA — never promoted into a conference it
+  # doesn't belong to.
+  if (s >= CURRENT_SEASON) {
+    live_conf_map <- fetch_cbb_conf_map(s)
+    message("  Live D1 conference map (", s, "): ", length(live_conf_map), " teams",
+            if (!length(live_conf_map)) " — keeping schedule-derived map as fallback" else "")
+    if (length(live_conf_map) > 0) res$conf_map <- live_conf_map
+  }
+
   elo <- run_elo(res$games, k=30, iters=10, min_games=4)
   elo <- attach_best_wins(elo, res$games)
   sos <- compute_sos(res$games, elo)
@@ -426,6 +619,35 @@ for (s in SEASONS) {
     out$pre_tourney_sos <- out$sos
     # No pre-cutoff games means no "recent form" to compute either.
     out$momentum <- NA_real_
+  }
+
+  # ── Conference fallback: carry forward last season's conference ───────
+  # Early in a brand-new season, ESPN's schedule feed often hasn't populated
+  # a resolvable `groups_name` conference field yet for every team (see
+  # get_cbb_season()'s conf_map comment above) — a team's first few games of
+  # the year can come through with conference=NA even though it obviously
+  # still belongs to the same conference it played in last season. SEASONS
+  # is processed in ascending order (see top of file), so by the time season
+  # `s` gets here, season `s-1`'s CSV has ALREADY been written to disk —
+  # either earlier in this very run, or left over from a prior run — so it
+  # can be read back here purely to fill the gap. This never overrides a
+  # conference that THIS season's own data already resolved, only fills in
+  # where it's still NA: conference realignment is rare and always announced
+  # well ahead of the season, so "last known conference" is a safe stand-in
+  # for "currently unresolved," not a claim that nothing ever changes.
+  na_conf <- is.na(out$conference)
+  if (any(na_conf)) {
+    prev_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s - 1L, ".csv"))
+    prev_conf <- tryCatch({
+      if (file.exists(prev_path)) {
+        p <- readr::read_csv(prev_path, show_col_types = FALSE)
+        setNames(p$conference, p$team)
+      } else NULL
+    }, error = function(e) NULL)
+    if (!is.null(prev_conf)) {
+      fallback <- prev_conf[out$team[na_conf]]
+      out$conference[na_conf] <- ifelse(is.na(fallback), NA_character_, unname(fallback))
+    }
   }
 
   out_path <- file.path(OUT_DIR, paste0("CBB_Elo_", s, ".csv"))
