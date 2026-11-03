@@ -24,6 +24,31 @@ env:
 # needed for some other reason, and install.packages() was switched from
 # quiet=TRUE to quiet=FALSE everywhere so a future failure's real error
 # shows up in the Actions log instead of just a one-line summary.
+#
+# FOLLOW-UP FIX: switching to R_VERSION: 'release' fixed the ORIGINAL
+# install failure, but exposed a second, pre-existing bug: every job's
+# cache key embedded the literal STRING '${{ env.R_VERSION }}' (i.e.
+# "release" or "4.4.2"), not the actual resolved R version number. R
+# installed fine under the new value (confirmed R 4.6.2 in the next run's
+# logs), but GitHub's cache `restore-keys:` prefix fallback then silently
+# restored an OLDER cache — built back when R_VERSION was still '4.4.2' —
+# because the exact key changed (so it missed) but the loose prefix
+# (`r-nfl-${{ runner.os }}-`) still matched. That handed low-level
+# compiled packages (rlang, vctrs, data.table) back from a build done
+# under the OLD R version, while dplyr/readr/hoopR/baseballr/nflreadr
+# themselves got freshly recompiled against the NEW one — a straight ABI
+# mismatch between the two, which is exactly what "undefined symbol:
+# SETLENGTH" when dyn.load()-ing rlang.so/vctrs.so/data_table.so means
+# (SETLENGTH's exported form differs across R's own internals between
+# versions). Fix: every setup-r step now has `id: setup-r`, and every
+# cache key uses `${{ steps.setup-r.outputs.installed-r-version }}` — the
+# REAL resolved version (e.g. "4.6.2"), not the 'release'/'4.4.2' literal
+# — so the key actually changes whenever R's version changes. The old
+# `restore-keys:` prefix fallback was removed entirely rather than just
+# updated, since ANY prefix-based fallback can again silently hand back a
+# different-R-version cache the next time R updates; a clean (slightly
+# slower) rebuild on a cache miss is the safe failure mode here, a silent
+# ABI-mismatched restore across every job is not.
 
 jobs:
 
@@ -36,12 +61,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-nfl-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-nfl-${{ runner.os }}-
+          key: r-nfl-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -71,12 +96,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-nba-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-nba-${{ runner.os }}-
+          key: r-nba-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -106,12 +131,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-mlb-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-mlb-${{ runner.os }}-
+          key: r-mlb-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -141,12 +166,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-cbb-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-cbb-${{ runner.os }}-
+          key: r-cbb-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -176,12 +201,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-cfb-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-cfb-${{ runner.os }}-
+          key: r-cfb-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -210,12 +235,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-nhl-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-nhl-${{ runner.os }}-
+          key: r-nhl-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -244,12 +269,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-soccer-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-soccer-${{ runner.os }}-
+          key: r-soccer-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -277,12 +302,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-cbase-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-cbase-${{ runner.os }}-
+          key: r-cbase-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -347,12 +372,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-backfill-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-backfill-${{ runner.os }}-
+          key: r-backfill-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -395,12 +420,12 @@ jobs:
           ref: main
           fetch-depth: 0
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-standings-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-standings-${{ runner.os }}-
+          key: r-standings-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
@@ -444,12 +469,12 @@ jobs:
       - name: System deps
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
       - uses: r-lib/actions/setup-r@v2
+        id: setup-r
         with: { r-version: '${{ env.R_VERSION }}' }
       - uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: r-cfbplayoff-${{ runner.os }}-${{ env.R_VERSION }}-v4
-          restore-keys: r-cfbplayoff-${{ runner.os }}-
+          key: r-cfbplayoff-${{ runner.os }}-${{ steps.setup-r.outputs.installed-r-version }}-v5
       - name: Install R packages
         run: |
           Rscript -e "
