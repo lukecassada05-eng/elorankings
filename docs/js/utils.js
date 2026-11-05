@@ -227,6 +227,18 @@ window.coerceRow = function(r) {
   // have the column, parseFloat(undefined) is NaN, and
   // callers treat it as unavailable (null) rather than a real 0.
   const momentum_csv = parseFloat(r.momentum);
+  // Luck (added by R/update_cbb.R, CBB-only): raw wins-above/below-expected,
+  // where "expected" comes from a SEPARATE, opponent-adjusted scoring-margin
+  // rating (never win/loss-driven, unlike Elo) run through a logistic curve
+  // fit to this season's own games — the same spirit as KenPom's Luck
+  // rating. Positive means the team has won more games than its margin
+  // profile predicted (winning close games it "shouldn't"), negative means
+  // fewer. Always over pre-tournament games only (regular season +
+  // conference tournaments), same cutoff as momentum/pre_tourney_* above.
+  // Same graceful-degradation pattern: a CSV written before this shipped
+  // just won't have the column, parseFloat(undefined) is NaN, and callers
+  // treat it as unavailable (null) rather than a real 0.
+  const luck_csv = parseFloat(r.luck);
   return {
     ...r,
     rank:         parseInt(r.rank)          || 0,
@@ -245,6 +257,7 @@ window.coerceRow = function(r) {
     pre_tourney_elo:          isNaN(pre_tourney_elo_csv) ? null : pre_tourney_elo_csv,
     pre_tourney_resume_score: isNaN(pre_tourney_rs_csv)  ? null : pre_tourney_rs_csv,
     momentum:                 isNaN(momentum_csv)        ? null : momentum_csv,
+    luck:                     isNaN(luck_csv)            ? null : luck_csv,
   };
 };
 

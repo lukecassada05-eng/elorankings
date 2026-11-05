@@ -1044,6 +1044,7 @@ window.initSportPage = function(CFG) {
           : `<td class="num" data-val="${r.win_pct||0}">${r.win_pct!=null?(r.win_pct*100).toFixed(1)+'%':'—'}</td>`}
         <td class="num" data-val="${r.sos||0}">${r.sos!=null?Number(r.sos).toFixed(1):'—'}</td>
         ${CFG.sport==='CBB'?momentumCell(r):''}
+        ${CFG.sport==='CBB'?luckCell(r):''}
         <td class="num" data-val="${r.best_win_elo||0}">${bwn?('<span style="font-size:0.78rem">'+bwn+' <span style="color:var(--text-dim);font-family:var(--font-mono);font-size:0.68rem">('+bw+')</span></span>'):'—'}</td>
         ${extra}
       </tr>`;
@@ -1057,6 +1058,7 @@ window.initSportPage = function(CFG) {
         <th data-type="num">Record</th>
         ${CFG.sport==='CBB'?resumeScoreHeader():'<th data-type="num">Win%</th>'}<th data-type="num">SOS</th>
         ${CFG.sport==='CBB'?momentumHeader():''}
+        ${CFG.sport==='CBB'?luckHeader():''}
         <th data-type="num">Best Win</th>${extraHeaders}
       </tr></thead><tbody>${rows}</tbody>
     </table></div>`;
@@ -2822,6 +2824,22 @@ window.initSportPage = function(CFG) {
   function momentumCell(r) {
     if (r.momentum == null) return '<td class="num" data-val="0">—</td>';
     const v = r.momentum;
+    const clr = v > 0.5 ? 'var(--green-hi)' : v < -0.5 ? 'var(--red-hi)' : 'var(--text-dim)';
+    const txt = (v > 0 ? '+' : '') + v.toFixed(1);
+    return `<td class="num" data-val="${v}"><span style="color:${clr};font-weight:600">${txt}</span></td>`;
+  }
+
+  // Luck header — CBB-only, Rankings tab only (not Resume/Bracketology),
+  // sits right after Momentum. See R/update_cbb.R for the backend
+  // computation; this is just the tooltip/label.
+  function luckHeader() {
+    return `<th data-type="num" title="Luck = raw wins above/below what this team's scoring-margin profile predicts, once adjusted for schedule strength — built the same way KenPom's Luck rating is: from a SEPARATE opponent-adjusted margin rating (never win/loss-driven, unlike Elo) run through a win-probability curve fit to this season's games. Positive means the team has won more games than its margin profile says it should have (winning close games it 'shouldn't'); negative means fewer. Only ever uses regular-season/conference-tournament games, never the NCAA Tournament itself, even for a completed season.">Luck ⓘ</th>`;
+  }
+
+  // Luck cell — same color-coded signed style as Momentum, 1 decimal.
+  function luckCell(r) {
+    if (r.luck == null) return '<td class="num" data-val="0">—</td>';
+    const v = r.luck;
     const clr = v > 0.5 ? 'var(--green-hi)' : v < -0.5 ? 'var(--red-hi)' : 'var(--text-dim)';
     const txt = (v > 0 ? '+' : '') + v.toFixed(1);
     return `<td class="num" data-val="${v}"><span style="color:${clr};font-weight:600">${txt}</span></td>`;
