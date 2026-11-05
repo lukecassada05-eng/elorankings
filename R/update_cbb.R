@@ -79,14 +79,52 @@ SEASONS        <- 2003:(CURRENT_SEASON + 1L)  # +1 catches next season if starte
 OUT_DIR        <- "docs/CBB/data"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
+# ── Team-name aliases: ESPN's CURRENT short display name -> the name
+# already baked into every one of this site's prior CBB CSVs ───────────
+# ESPN's live API returns a team's CURRENT branding even when you query
+# an old, already-completed game — confirmed directly by diffing this
+# site's existing (pre-switch) CBB_Elo_2026.csv against a fresh pull for
+# the same season: 4 teams came back under a different shortDisplayName
+# than they had before, out of 727 total (everyone else matched exactly).
+# One of them lines up with a real university-system rebrand (New Orleans
+# -> LSU N Orleans); the other 3 look like ESPN-side short-name tweaks.
+# Without this map, a rebrand silently splits one team's identity across
+# seasons (and, confusingly, can be a source of real rating drift too —
+# see the ORDER-SENSITIVITY note on get_cbb_season() below for why even a
+# single renamed team can nudge OTHER teams' Elo). This re-maps the
+# specific cases found so far back to the name this site has always used,
+# so team-name strings stay stable for anything (a table, a saved search,
+# another project) that keys off of them. A future rebrand not yet seen
+# here could introduce a new case — add it below if one turns up.
+CBB_NAME_ALIASES <- c(
+  "East Texas A&M" = "E Texas A&M",
+  "LSU N Orleans"  = "New Orleans",
+  "S Indiana"      = "So Indiana",
+  "St Thomas"      = "St Thomas (MN)"
+)
+canon_team_name <- function(nm) {
+  if (is.null(nm) || is.na(nm)) return(nm)
+  if (nm %in% names(CBB_NAME_ALIASES)) unname(CBB_NAME_ALIASES[nm]) else nm
+}
+
 # ── Parse one ESPN scoreboard event ───────────────────────────────
 # Mirrors update_cfb.R's parse_event(), plus the extra fields (home/away
 # name, groups_name, conference_competition) the schedule-derived conf_map
 # below needs — hoopR's load_mbb_schedule() used to hand these over as
 # dataframe columns; ESPN's own event JSON carries the same two signals
 # directly (confirmed live): a real conference game's competition object
-# has conferenceCompetition:true and the EVENT object carries a `groups`
-# object naming the conference; a non-conference game has neither.
+# has conferenceCompetition:true AND carries a `groups` object naming the
+# conference; a non-conference game has neither.
+#
+# BUG FIX: this used to read `ev$groups` (the EVENT object) — confirmed
+# directly against raw ESPN JSON that `groups` actually lives one level
+# down, on the COMPETITION object (`ev$competitions[[1]]$groups`, i.e.
+# `comp$groups` below); the event object itself never has a `groups` key
+# at all. That meant `gn` was NA_character_ for literally every game, so
+# conf_rows/any_rows (built below) always came out empty and every team
+# in every settled season wrote conference=NA — exactly the "conferences
+# got messed up" report, and not limited to the new season like the
+# original NEW-SEASON CONFERENCE FIX further up assumed.
 parse_cbb_event <- function(ev) {
   tryCatch({
     comp <- ev$competitions[[1]]
@@ -98,15 +136,15 @@ parse_cbb_event <- function(ev) {
     if (!length(hi) || !length(ai)) return(NULL)
     hs  <- suppressWarnings(as.numeric(comps[[hi]]$score))
     as_ <- suppressWarnings(as.numeric(comps[[ai]]$score))
-    hn  <- comps[[hi]]$team$shortDisplayName
-    an  <- comps[[ai]]$team$shortDisplayName
+    hn  <- canon_team_name(comps[[hi]]$team$shortDisplayName)
+    an  <- canon_team_name(comps[[ai]]$team$shortDisplayName)
     if (is.na(hs) || is.na(as_) || is.null(hn) || is.null(an) ||
         hs == as_ || hn == an) return(NULL)
 
-    # ESPN has returned the event-level `groups` field both as a single
-    # object and as a list of group objects — handle either shape rather
-    # than assume one.
-    g  <- ev$groups
+    # groups lives on the COMPETITION object, not the event — see BUG FIX
+    # note above. ESPN has returned it both as a single object and as a
+    # list of group objects — handle either shape rather than assume one.
+    g  <- comp$groups
     gn <- NA_character_
     if (!is.null(g) && length(g) > 0) {
       nm <- if (!is.null(g$name)) g$name else g[[1]]$name
@@ -191,7 +229,7 @@ fetch_cbb_conf_map <- function(season) {
     if (is.null(entries)) next
     for (e in entries) {
       team_name <- tryCatch(
-        e$team$shortDisplayName %||% e$team$displayName %||% e$team$name,
+        canon_team_name(e$team$shortDisplayName %||% e$team$displayName %||% e$team$name),
         error = function(e2) NULL
       )
       if (!is.null(team_name) && nchar(team_name) > 0) out[[team_name]] <- conf_name
@@ -264,6 +302,36 @@ get_cbb_season <- function(season) {
 
     games <- sched[, c("winner", "loser", "winner_pts", "loser_pts", "date")]
     if (nrow(games) == 0) return(NULL)
+
+    # ── ORDER-SENSITIVITY: run_elo() in R/elo_engine.R is NOT an
+    # order-independent fit — each game updates both teams' ratings
+    # IMMEDIATELY, in row order, before the next game is processed (see
+    # elo_engine.R's inner `for (i in seq_len(nrow(games)))` loop), so the
+    # exact row order of `games` changes the final Elo numbers even when
+    # every team's win/loss TOTALS come out identical. This is the real
+    # explanation for Elo/Momentum/Resume Score shifting on this season's
+    # very first ESPN-direct run even though the underlying records
+    # didn't: diffing this site's pre-switch CBB_Elo_2026.csv against a
+    # fresh pull showed Michigan's 2025-26 record unchanged at 37-3/40
+    # games (and Michigan's real NCAA-title run, 37-3, is independently
+    # confirmed public record), with only 4 of 727 team names differing
+    # (see CBB_NAME_ALIASES above, now fixed) — nothing that should move
+    # a single team's rating by 60+ points on its own. hoopR's internal
+    # row order wasn't necessarily chronological, isn't documented, and
+    # isn't something this file can see or reproduce now that hoopR is no
+    # longer in the fetch path — so the exact pre-switch numbers can't be
+    # reconstructed without it. What CAN be fixed, and matters more going
+    # forward: without an explicit sort, THIS file's own row order isn't
+    # even guaranteed stable run to run either, since it depends on
+    # whatever order ESPN's scoreboard API happens to return a given
+    # day's events in — which is not documented as stable. Sorting here
+    # pins that order to something deterministic and reproducible (date,
+    # then winner/loser as a tiebreak for same-day games), so re-running
+    # this exact season's data from this point on always reproduces the
+    # same numbers, rather than silently drifting again on some unrelated
+    # future change.
+    games <- games[order(games$date, games$winner, games$loser), ]
+    rownames(games) <- NULL
 
     list(games = games, conf_map = conf_map)
   }, error = function(e) { message("  ERROR: ", e$message); NULL })
@@ -517,6 +585,22 @@ for (s in SEASONS) {
       4
     )
 
+    # Pre-tournament record — wins/losses/games actually played inside
+    # pre_games (regular season + conference tournaments, same cutoff as
+    # every other pre_tourney_* column here), as opposed to `wins`/
+    # `losses`/`record` on this same row, which are FINAL/whole-season
+    # totals including the NCAA Tournament. Plain game counts, not an
+    # Elo-weighted anything, so a straight table() count is all this
+    # needs — no dependence on elo_pre_lup, unlike the blocks above.
+    pre_wins_tbl <- table(pre_games$winner)
+    pre_loss_tbl <- table(pre_games$loser)
+    pre_wins_n   <- as.numeric(ifelse(is.na(pre_wins_tbl[out$team]), 0, pre_wins_tbl[out$team]))
+    pre_loss_n   <- as.numeric(ifelse(is.na(pre_loss_tbl[out$team]), 0, pre_loss_tbl[out$team]))
+    out$pre_tourney_wins         <- pre_wins_n
+    out$pre_tourney_losses       <- pre_loss_n
+    out$pre_tourney_games_played <- pre_wins_n + pre_loss_n
+    out$pre_tourney_record       <- paste0(pre_wins_n, "-", pre_loss_n)
+
     # Pre-tournament SOS — same idea as above (what the schedule strength
     # looked like before the Tournament itself started), computed with the
     # same compute_sos() used for the live `sos` column, just over
@@ -701,6 +785,10 @@ for (s in SEASONS) {
     out$pre_tourney_elo <- out$elo
     out$pre_tourney_resume_score <- out$resume_score
     out$pre_tourney_sos <- out$sos
+    out$pre_tourney_wins         <- out$wins
+    out$pre_tourney_losses       <- out$losses
+    out$pre_tourney_games_played <- out$games_played
+    out$pre_tourney_record       <- out$record
     # No pre-cutoff games means no "recent form"/"luck" to compute either.
     out$momentum <- NA_real_
     out$luck     <- NA_real_
