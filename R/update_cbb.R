@@ -611,14 +611,99 @@ for (s in SEASONS) {
     }
 
     out$momentum <- round(ifelse(is.na(momentum_vec[out$team]), NA_real_, momentum_vec[out$team]), 1)
+
+    # ── Luck ────────────────────────────────────────────────────────────
+    # "How many more (or fewer) games has this team won than its own
+    # schedule-adjusted scoring-MARGIN profile says it should have?" — the
+    # same question KenPom's Luck rating answers, built the same way his
+    # is: from a rating driven purely by scoring margin, never by win/loss
+    # itself, so a team that keeps winning close games it "shouldn't" (by
+    # margin) shows positive, and a team that keeps losing close games it
+    # "should" win by margin shows negative.
+    #
+    # This can't reuse elo_pre_lup the way Momentum does. Elo IS fit from
+    # win/loss (margin only scales HOW MUCH a win/loss moves the rating,
+    # via adj_k) — "actual result vs. what my own Elo predicts" compares a
+    # team's record against a rating built largely from that same record.
+    # Momentum gets away with a similar comparison only because it's
+    # restricted to the most recent 12 games against a rating mostly built
+    # from the other ~20 or so — real dilution, not real independence. A
+    # season-long Luck number needs a rating that's genuinely independent
+    # of win/loss from the start, so this builds a SECOND rating here,
+    # never used anywhere else in this file: an opponent-adjusted scoring-
+    # margin rating, solved the same iterative way a "Simple Rating
+    # System" (Sports-Reference/Massey-style) is — each team's rating is
+    # the average, across its games, of (that game's own point margin +
+    # that game's opponent's current rating), repeated until it stops
+    # moving. Purely margin-driven, never looks at who won or lost, so
+    # there's no circularity feeding into it. Same pre_games/cutoff as
+    # everything else in this block — regular season + conference
+    # tournaments, never the NCAA Tournament itself.
+    MARGIN_RATING_ITERS <- 100
+    MARGIN_RATING_TOL   <- 1e-4
+
+    margin_edge_team <- c(pre_games$winner, pre_games$loser)
+    margin_edge_opp  <- c(pre_games$loser,  pre_games$winner)
+    margin_diff      <- pre_games$winner_pts - pre_games$loser_pts
+    margin_edge_val  <- c(margin_diff, -margin_diff)
+
+    margin_rating <- setNames(rep(0, length(all_teams_pre)), all_teams_pre)
+    for (iter in seq_len(MARGIN_RATING_ITERS)) {
+      step        <- margin_edge_val + margin_rating[margin_edge_opp]
+      new_rating  <- tapply(step, margin_edge_team, mean)
+      new_rating  <- setNames(as.numeric(new_rating), names(new_rating))[names(margin_rating)]
+      delta       <- max(abs(new_rating - margin_rating))
+      margin_rating <- new_rating
+      if (delta < MARGIN_RATING_TOL) break
+    }
+    # Recenter so the league-wide average margin rating is exactly 0 —
+    # standard SRS convention, and keeps this from drifting season to
+    # season as a pure artifact of wherever the iteration happens to start.
+    margin_rating <- margin_rating - mean(margin_rating)
+
+    # Convert a margin-rating gap between two teams into a predicted win
+    # probability — this file's version of the pythagorean/log5 curve
+    # KenPom calibrates for the same purpose. Fit fresh each season
+    # (logistic regression, one slope + intercept, over every pre-
+    # tournament game from both teams' perspective) rather than assumed,
+    # since how spread out ratings are — and so how much a given margin-
+    # rating gap should "mean" in win-probability terms — isn't the same
+    # in the first week of a season as it is in week 15.
+    luck_edge_actual <- c(rep(1L, nrow(pre_games)), rep(0L, nrow(pre_games)))
+    luck_edge_diff   <- margin_rating[margin_edge_team] - margin_rating[margin_edge_opp]
+
+    luck_fit <- tryCatch(
+      suppressWarnings(glm(luck_edge_actual ~ luck_edge_diff, family = binomial(link = "logit"))),
+      error = function(e) NULL
+    )
+    pred_prob <- if (!is.null(luck_fit)) {
+      as.numeric(predict(luck_fit, type = "response"))
+    } else {
+      # Too few/too lopsided games to fit a curve (very early season) —
+      # fall back to flat 50/50 so Luck stays computable (and honest: with
+      # no real curve, there's nothing yet to call a team better or worse
+      # than "expected" relative to) rather than erroring the whole
+      # season's write out.
+      rep(0.5, length(luck_edge_diff))
+    }
+
+    luck_contrib <- luck_edge_actual - pred_prob
+    luck_vec_raw <- tapply(luck_contrib, margin_edge_team, sum)
+    luck_vec     <- setNames(as.numeric(luck_vec_raw), names(luck_vec_raw))
+
+    # Raw wins-above/below-expected (e.g. +2.3 = "won about 2 more games
+    # than its margin-based schedule-adjusted profile predicted") — NOT a
+    # per-game rate the way KenPom displays his own version.
+    out$luck <- round(ifelse(is.na(luck_vec[out$team]), NA_real_, luck_vec[out$team]), 1)
   } else {
     # No games at all before the cutoff (e.g. a data gap) — fall back to
     # the live numbers rather than writing NA into a brand-new column.
     out$pre_tourney_elo <- out$elo
     out$pre_tourney_resume_score <- out$resume_score
     out$pre_tourney_sos <- out$sos
-    # No pre-cutoff games means no "recent form" to compute either.
+    # No pre-cutoff games means no "recent form"/"luck" to compute either.
     out$momentum <- NA_real_
+    out$luck     <- NA_real_
   }
 
   # ── Conference fallback: carry forward last season's conference ───────
