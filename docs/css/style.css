@@ -122,7 +122,15 @@ option{background:var(--bg3);color:var(--text)}
 .search-icon{position:absolute;left:0.55rem;top:50%;transform:translateY(-50%);color:var(--text-dim);font-size:0.8rem;pointer-events:none}
 
 /* ── Table ── */
-.table-wrap{border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+/* FIX: was overflow:hidden, which CLIPS the table once its natural content
+   width exceeds the page container (1140px) — exactly what started
+   happening to the rightmost columns (Best Win) once Momentum and Luck
+   were added on the CBB Rankings tab, each pushing the table a bit wider.
+   overflow-x:auto makes it scroll horizontally instead of clipping, same
+   as the (previously mobile-only) rule further down already does — now
+   the behavior is consistent at every width instead of only kicking in
+   under the 768px breakpoint. */
+.table-wrap{border:1px solid var(--border);border-radius:var(--radius-lg);overflow-x:auto}
 .tbl{width:100%;border-collapse:collapse;font-size:0.83rem}
 .tbl thead th{background:var(--bg3);padding:0.65rem 0.85rem;text-align:left;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;transition:color 0.15s}
 .tbl thead th:hover{color:var(--text)}
