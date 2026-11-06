@@ -23,17 +23,17 @@
       "note": "Division winner"
     },
     {
-      "team": "PIT",
+      "team": "JAX",
       "conference": "AFC",
-      "division": "AFC North",
+      "division": "AFC South",
       "seed": 3,
       "status": "division_winner",
       "note": "Division winner"
     },
     {
-      "team": "JAX",
+      "team": "PIT",
       "conference": "AFC",
-      "division": "AFC South",
+      "division": "AFC North",
       "seed": 4,
       "status": "division_winner",
       "note": "Division winner"
@@ -328,9 +328,9 @@
       {
         "team": "JAX",
         "rank": 1,
-        "wins": 5,
+        "wins": 6,
         "losses": 2,
-        "win_pct": 0.714
+        "win_pct": 0.75
       },
       {
         "team": "HOU",
@@ -410,8 +410,8 @@
         "team": "BAL",
         "rank": 4,
         "wins": 4,
-        "losses": 4,
-        "win_pct": 0.5
+        "losses": 5,
+        "win_pct": 0.444
       }
     ],
     "AFC West": [
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-06 02:06 UTC"
+  "current_field_updated": "2026-11-06 07:19 UTC"
 }
