@@ -47,7 +47,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New York Rangers",
+      "team": "Washington Capitals",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 3,
@@ -63,9 +63,9 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Florida Panthers",
+      "team": "New York Rangers",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
@@ -79,7 +79,7 @@
       "note": null
     },
     {
-      "team": "Washington Capitals",
+      "team": "New York Islanders",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": null,
@@ -87,9 +87,9 @@
       "note": null
     },
     {
-      "team": "New York Islanders",
+      "team": "Florida Panthers",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": null,
       "status": "outside",
       "note": null
@@ -295,11 +295,11 @@
       {
         "team": "Nashville Predators",
         "rank": 4,
-        "wins": 7,
+        "wins": 8,
         "losses": 9,
-        "win_pct": 0.438,
-        "points": 19,
-        "points_pct": 0.594
+        "win_pct": 0.471,
+        "points": 21,
+        "points_pct": 0.618
       },
       {
         "team": "Colorado Avalanche",
@@ -314,10 +314,10 @@
         "team": "St. Louis Blues",
         "rank": 6,
         "wins": 7,
-        "losses": 9,
-        "win_pct": 0.438,
+        "losses": 10,
+        "win_pct": 0.412,
         "points": 16,
-        "points_pct": 0.5
+        "points_pct": 0.471
       },
       {
         "team": "Winnipeg Jets",
@@ -432,7 +432,7 @@
         "points_pct": 0.688
       },
       {
-        "team": "New York Rangers",
+        "team": "Washington Capitals",
         "rank": 3,
         "wins": 9,
         "losses": 6,
@@ -441,13 +441,13 @@
         "points_pct": 0.6
       },
       {
-        "team": "Washington Capitals",
+        "team": "New York Rangers",
         "rank": 4,
-        "wins": 8,
+        "wins": 9,
         "losses": 6,
-        "win_pct": 0.571,
-        "points": 16,
-        "points_pct": 0.571
+        "win_pct": 0.6,
+        "points": 18,
+        "points_pct": 0.6
       },
       {
         "team": "New York Islanders",
@@ -524,22 +524,22 @@
         "points_pct": 0.618
       },
       {
-        "team": "Florida Panthers",
-        "rank": 5,
-        "wins": 8,
-        "losses": 7,
-        "win_pct": 0.533,
-        "points": 18,
-        "points_pct": 0.6
-      },
-      {
         "team": "Buffalo Sabres",
-        "rank": 6,
+        "rank": 5,
         "wins": 8,
         "losses": 8,
         "win_pct": 0.5,
         "points": 19,
         "points_pct": 0.594
+      },
+      {
+        "team": "Florida Panthers",
+        "rank": 6,
+        "wins": 8,
+        "losses": 8,
+        "win_pct": 0.5,
+        "points": 18,
+        "points_pct": 0.562
       },
       {
         "team": "Toronto Maple Leafs",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-07 17:56 UTC"
+  "current_field_updated": "2026-11-07 21:51 UTC"
 }
