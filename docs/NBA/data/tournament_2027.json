@@ -39,17 +39,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Cleveland Cavaliers",
+      "team": "Toronto Raptors",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Atlantic",
       "seed": 5,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Toronto Raptors",
+      "team": "Cleveland Cavaliers",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Central",
       "seed": 6,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -58,6 +58,14 @@
       "team": "Washington Wizards",
       "conference": "Eastern",
       "division": "Southeast",
+      "seed": null,
+      "status": "play_in",
+      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
+    },
+    {
+      "team": "New York Knicks",
+      "conference": "Eastern",
+      "division": "Atlantic",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -83,14 +91,6 @@
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
-      "status": "play_in",
-      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
-    },
-    {
-      "team": "New York Knicks",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": null,
       "status": "outside",
       "note": null
     },
@@ -103,17 +103,17 @@
       "note": null
     },
     {
-      "team": "Indiana Pacers",
+      "team": "Charlotte Hornets",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Southeast",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Charlotte Hornets",
+      "team": "Indiana Pacers",
       "conference": "Eastern",
-      "division": "Southeast",
+      "division": "Central",
       "seed": null,
       "status": "outside",
       "note": null
@@ -308,14 +308,14 @@
         "win_pct": 0.5
       },
       {
-        "team": "Brooklyn Nets",
+        "team": "New York Knicks",
         "rank": 4,
-        "wins": 5,
-        "losses": 7,
-        "win_pct": 0.417
+        "wins": 6,
+        "losses": 8,
+        "win_pct": 0.429
       },
       {
-        "team": "New York Knicks",
+        "team": "Brooklyn Nets",
         "rank": 5,
         "wins": 5,
         "losses": 8,
@@ -377,16 +377,16 @@
       {
         "team": "Denver Nuggets",
         "rank": 3,
-        "wins": 7,
+        "wins": 8,
         "losses": 5,
-        "win_pct": 0.583
+        "win_pct": 0.615
       },
       {
         "team": "Oklahoma City Thunder",
         "rank": 4,
-        "wins": 8,
+        "wins": 9,
         "losses": 6,
-        "win_pct": 0.571
+        "win_pct": 0.6
       },
       {
         "team": "Utah Jazz",
@@ -408,8 +408,8 @@
         "team": "Cleveland Cavaliers",
         "rank": 2,
         "wins": 6,
-        "losses": 6,
-        "win_pct": 0.5
+        "losses": 7,
+        "win_pct": 0.462
       },
       {
         "team": "Chicago Bulls",
@@ -422,8 +422,8 @@
         "team": "Indiana Pacers",
         "rank": 4,
         "wins": 4,
-        "losses": 9,
-        "win_pct": 0.308
+        "losses": 10,
+        "win_pct": 0.286
       },
       {
         "team": "Milwaukee Bucks",
@@ -437,16 +437,16 @@
       {
         "team": "Atlanta Hawks",
         "rank": 1,
-        "wins": 10,
+        "wins": 11,
         "losses": 5,
-        "win_pct": 0.667
+        "win_pct": 0.688
       },
       {
         "team": "Washington Wizards",
         "rank": 2,
         "wins": 6,
-        "losses": 7,
-        "win_pct": 0.462
+        "losses": 8,
+        "win_pct": 0.429
       },
       {
         "team": "Miami Heat",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-07 21:51 UTC"
+  "current_field_updated": "2026-11-08 04:17 UTC"
 }
