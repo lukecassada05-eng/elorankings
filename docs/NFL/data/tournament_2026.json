@@ -23,33 +23,33 @@
       "note": "Division winner"
     },
     {
-      "team": "JAX",
+      "team": "PIT",
       "conference": "AFC",
-      "division": "AFC South",
+      "division": "AFC North",
       "seed": 3,
       "status": "division_winner",
       "note": "Division winner"
     },
     {
-      "team": "PIT",
+      "team": "JAX",
       "conference": "AFC",
-      "division": "AFC North",
+      "division": "AFC South",
       "seed": 4,
       "status": "division_winner",
       "note": "Division winner"
     },
     {
-      "team": "CIN",
+      "team": "KC",
       "conference": "AFC",
-      "division": "AFC North",
+      "division": "AFC West",
       "seed": 5,
       "status": "wildcard",
       "note": "Wildcard"
     },
     {
-      "team": "KC",
+      "team": "CIN",
       "conference": "AFC",
-      "division": "AFC West",
+      "division": "AFC North",
       "seed": 6,
       "status": "wildcard",
       "note": "Wildcard"
@@ -159,7 +159,7 @@
       "note": "Division winner"
     },
     {
-      "team": "CAR",
+      "team": "TB",
       "conference": "NFC",
       "division": "NFC South",
       "seed": 4,
@@ -167,7 +167,7 @@
       "note": "Division winner"
     },
     {
-      "team": "CHI",
+      "team": "DET",
       "conference": "NFC",
       "division": "NFC North",
       "seed": 5,
@@ -175,7 +175,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "DET",
+      "team": "CHI",
       "conference": "NFC",
       "division": "NFC North",
       "seed": 6,
@@ -207,7 +207,15 @@
       "note": null
     },
     {
-      "team": "TB",
+      "team": "DAL",
+      "conference": "NFC",
+      "division": "NFC East",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "CAR",
       "conference": "NFC",
       "division": "NFC South",
       "seed": null,
@@ -223,9 +231,9 @@
       "note": null
     },
     {
-      "team": "DAL",
+      "team": "NO",
       "conference": "NFC",
-      "division": "NFC East",
+      "division": "NFC South",
       "seed": null,
       "status": "outside",
       "note": null
@@ -242,14 +250,6 @@
       "team": "WAS",
       "conference": "NFC",
       "division": "NFC East",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "NO",
-      "conference": "NFC",
-      "division": "NFC South",
       "seed": null,
       "status": "outside",
       "note": null
@@ -273,18 +273,18 @@
         "win_pct": 0.857
       },
       {
-        "team": "CHI",
+        "team": "DET",
         "rank": 2,
         "wins": 6,
         "losses": 2,
         "win_pct": 0.75
       },
       {
-        "team": "DET",
+        "team": "CHI",
         "rank": 3,
-        "wins": 5,
+        "wins": 6,
         "losses": 2,
-        "win_pct": 0.714
+        "win_pct": 0.75
       },
       {
         "team": "GB",
@@ -313,15 +313,15 @@
         "team": "NYJ",
         "rank": 3,
         "wins": 2,
-        "losses": 6,
-        "win_pct": 0.25
+        "losses": 7,
+        "win_pct": 0.222
       },
       {
         "team": "MIA",
         "rank": 4,
         "wins": 1,
-        "losses": 6,
-        "win_pct": 0.143
+        "losses": 7,
+        "win_pct": 0.125
       }
     ],
     "AFC South": [
@@ -343,8 +343,8 @@
         "team": "IND",
         "rank": 3,
         "wins": 2,
-        "losses": 6,
-        "win_pct": 0.25
+        "losses": 7,
+        "win_pct": 0.222
       },
       {
         "team": "TEN",
@@ -363,14 +363,14 @@
         "win_pct": 0.857
       },
       {
-        "team": "SEA",
+        "team": "LA",
         "rank": 2,
-        "wins": 4,
+        "wins": 5,
         "losses": 4,
-        "win_pct": 0.5
+        "win_pct": 0.556
       },
       {
-        "team": "LA",
+        "team": "SEA",
         "rank": 3,
         "wins": 4,
         "losses": 4,
@@ -382,6 +382,36 @@
         "wins": 3,
         "losses": 5,
         "win_pct": 0.375
+      }
+    ],
+    "AFC West": [
+      {
+        "team": "DEN",
+        "rank": 1,
+        "wins": 7,
+        "losses": 2,
+        "win_pct": 0.778
+      },
+      {
+        "team": "KC",
+        "rank": 2,
+        "wins": 6,
+        "losses": 2,
+        "win_pct": 0.75
+      },
+      {
+        "team": "LV",
+        "rank": 3,
+        "wins": 4,
+        "losses": 4,
+        "win_pct": 0.5
+      },
+      {
+        "team": "LAC",
+        "rank": 4,
+        "wins": 0,
+        "losses": 7,
+        "win_pct": 0
       }
     ],
     "AFC North": [
@@ -403,8 +433,8 @@
         "team": "CLE",
         "rank": 3,
         "wins": 5,
-        "losses": 3,
-        "win_pct": 0.625
+        "losses": 4,
+        "win_pct": 0.556
       },
       {
         "team": "BAL",
@@ -414,96 +444,66 @@
         "win_pct": 0.444
       }
     ],
-    "AFC West": [
-      {
-        "team": "DEN",
-        "rank": 1,
-        "wins": 6,
-        "losses": 2,
-        "win_pct": 0.75
-      },
-      {
-        "team": "KC",
-        "rank": 2,
-        "wins": 5,
-        "losses": 2,
-        "win_pct": 0.714
-      },
-      {
-        "team": "LV",
-        "rank": 3,
-        "wins": 4,
-        "losses": 4,
-        "win_pct": 0.5
-      },
-      {
-        "team": "LAC",
-        "rank": 4,
-        "wins": 0,
-        "losses": 7,
-        "win_pct": 0
-      }
-    ],
     "NFC South": [
       {
-        "team": "CAR",
+        "team": "TB",
         "rank": 1,
         "wins": 3,
-        "losses": 4,
-        "win_pct": 0.429
+        "losses": 5,
+        "win_pct": 0.375
       },
       {
-        "team": "TB",
+        "team": "CAR",
         "rank": 2,
+        "wins": 3,
+        "losses": 5,
+        "win_pct": 0.375
+      },
+      {
+        "team": "NO",
+        "rank": 3,
         "wins": 3,
         "losses": 5,
         "win_pct": 0.375
       },
       {
         "team": "ATL",
-        "rank": 3,
+        "rank": 4,
         "wins": 3,
         "losses": 6,
         "win_pct": 0.333
-      },
-      {
-        "team": "NO",
-        "rank": 4,
-        "wins": 2,
-        "losses": 5,
-        "win_pct": 0.286
       }
     ],
     "NFC East": [
       {
         "team": "NYG",
         "rank": 1,
-        "wins": 4,
+        "wins": 5,
         "losses": 2,
-        "win_pct": 0.667
+        "win_pct": 0.714
       },
       {
         "team": "DAL",
         "rank": 2,
-        "wins": 3,
+        "wins": 4,
         "losses": 5,
-        "win_pct": 0.375
+        "win_pct": 0.444
       },
       {
         "team": "WAS",
         "rank": 3,
         "wins": 2,
-        "losses": 4,
-        "win_pct": 0.333
+        "losses": 5,
+        "win_pct": 0.286
       },
       {
         "team": "PHI",
         "rank": 4,
         "wins": 2,
-        "losses": 6,
-        "win_pct": 0.25
+        "losses": 7,
+        "win_pct": 0.222
       }
     ]
   },
-  "current_field_updated": "2026-11-08 19:54 UTC"
+  "current_field_updated": "2026-11-08 22:45 UTC"
 }

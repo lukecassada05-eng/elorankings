@@ -499,11 +499,11 @@
       {
         "team": "Boston Bruins",
         "rank": 2,
-        "wins": 11,
+        "wins": 12,
         "losses": 5,
-        "win_pct": 0.688,
-        "points": 23,
-        "points_pct": 0.719
+        "win_pct": 0.706,
+        "points": 25,
+        "points_pct": 0.735
       },
       {
         "team": "Montreal Canadiens",
@@ -536,10 +536,10 @@
         "team": "Florida Panthers",
         "rank": 6,
         "wins": 8,
-        "losses": 8,
-        "win_pct": 0.5,
+        "losses": 9,
+        "win_pct": 0.471,
         "points": 18,
-        "points_pct": 0.562
+        "points_pct": 0.529
       },
       {
         "team": "Toronto Maple Leafs",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-08 19:54 UTC"
+  "current_field_updated": "2026-11-08 22:45 UTC"
 }
