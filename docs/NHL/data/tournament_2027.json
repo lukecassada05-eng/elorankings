@@ -342,11 +342,11 @@
       {
         "team": "Edmonton Oilers",
         "rank": 1,
-        "wins": 11,
+        "wins": 12,
         "losses": 5,
-        "win_pct": 0.688,
-        "points": 24,
-        "points_pct": 0.75
+        "win_pct": 0.706,
+        "points": 26,
+        "points_pct": 0.765
       },
       {
         "team": "Vegas Golden Knights",
@@ -406,10 +406,10 @@
         "team": "Vancouver Canucks",
         "rank": 8,
         "wins": 2,
-        "losses": 15,
-        "win_pct": 0.118,
+        "losses": 16,
+        "win_pct": 0.111,
         "points": 5,
-        "points_pct": 0.147
+        "points_pct": 0.139
       }
     ],
     "Central": [
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-08 05:47 UTC"
+  "current_field_updated": "2026-11-08 13:05 UTC"
 }
