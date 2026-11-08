@@ -39,17 +39,17 @@
       "note": "Division winner"
     },
     {
-      "team": "KC",
+      "team": "CIN",
       "conference": "AFC",
-      "division": "AFC West",
+      "division": "AFC North",
       "seed": 5,
       "status": "wildcard",
       "note": "Wildcard"
     },
     {
-      "team": "CIN",
+      "team": "KC",
       "conference": "AFC",
-      "division": "AFC North",
+      "division": "AFC West",
       "seed": 6,
       "status": "wildcard",
       "note": "Wildcard"
@@ -223,17 +223,17 @@
       "note": null
     },
     {
-      "team": "ATL",
+      "team": "DAL",
       "conference": "NFC",
-      "division": "NFC South",
+      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "DAL",
+      "team": "ATL",
       "conference": "NFC",
-      "division": "NFC East",
+      "division": "NFC South",
       "seed": null,
       "status": "outside",
       "note": null
@@ -395,9 +395,9 @@
       {
         "team": "CIN",
         "rank": 2,
-        "wins": 5,
+        "wins": 6,
         "losses": 2,
-        "win_pct": 0.714
+        "win_pct": 0.75
       },
       {
         "team": "CLE",
@@ -463,8 +463,8 @@
         "team": "ATL",
         "rank": 3,
         "wins": 3,
-        "losses": 5,
-        "win_pct": 0.375
+        "losses": 6,
+        "win_pct": 0.333
       },
       {
         "team": "NO",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-08 13:05 UTC"
+  "current_field_updated": "2026-11-08 19:54 UTC"
 }
