@@ -127,17 +127,17 @@
       "note": null
     },
     {
-      "team": "Houston Rockets",
+      "team": "Portland Trail Blazers",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Northwest",
       "seed": 1,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Portland Trail Blazers",
+      "team": "Houston Rockets",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Southwest",
       "seed": 2,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -223,7 +223,7 @@
       "note": null
     },
     {
-      "team": "LA Clippers",
+      "team": "Phoenix Suns",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -231,7 +231,7 @@
       "note": null
     },
     {
-      "team": "Phoenix Suns",
+      "team": "LA Clippers",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -248,41 +248,41 @@
     }
   ],
   "standings": {
-    "Southwest": [
+    "Pacific": [
       {
-        "team": "Houston Rockets",
+        "team": "Golden State Warriors",
         "rank": 1,
-        "wins": 9,
-        "losses": 3,
-        "win_pct": 0.75
-      },
-      {
-        "team": "Memphis Grizzlies",
-        "rank": 2,
-        "wins": 9,
-        "losses": 4,
-        "win_pct": 0.692
-      },
-      {
-        "team": "San Antonio Spurs",
-        "rank": 3,
-        "wins": 9,
+        "wins": 11,
         "losses": 5,
-        "win_pct": 0.643
+        "win_pct": 0.688
       },
       {
-        "team": "New Orleans Pelicans",
+        "team": "Los Angeles Lakers",
+        "rank": 2,
+        "wins": 10,
+        "losses": 5,
+        "win_pct": 0.667
+      },
+      {
+        "team": "Phoenix Suns",
+        "rank": 3,
+        "wins": 4,
+        "losses": 9,
+        "win_pct": 0.308
+      },
+      {
+        "team": "LA Clippers",
         "rank": 4,
-        "wins": 7,
-        "losses": 6,
-        "win_pct": 0.538
+        "wins": 3,
+        "losses": 8,
+        "win_pct": 0.273
       },
       {
-        "team": "Dallas Mavericks",
+        "team": "Sacramento Kings",
         "rank": 5,
-        "wins": 6,
-        "losses": 7,
-        "win_pct": 0.462
+        "wins": 1,
+        "losses": 13,
+        "win_pct": 0.071
       }
     ],
     "Atlantic": [
@@ -322,41 +322,41 @@
         "win_pct": 0.385
       }
     ],
-    "Pacific": [
+    "Southwest": [
       {
-        "team": "Golden State Warriors",
+        "team": "Houston Rockets",
         "rank": 1,
-        "wins": 10,
-        "losses": 5,
-        "win_pct": 0.667
+        "wins": 9,
+        "losses": 4,
+        "win_pct": 0.692
       },
       {
-        "team": "Los Angeles Lakers",
+        "team": "Memphis Grizzlies",
         "rank": 2,
-        "wins": 10,
-        "losses": 5,
-        "win_pct": 0.667
+        "wins": 9,
+        "losses": 4,
+        "win_pct": 0.692
       },
       {
-        "team": "LA Clippers",
+        "team": "San Antonio Spurs",
         "rank": 3,
-        "wins": 3,
-        "losses": 8,
-        "win_pct": 0.273
+        "wins": 9,
+        "losses": 5,
+        "win_pct": 0.643
       },
       {
-        "team": "Phoenix Suns",
+        "team": "New Orleans Pelicans",
         "rank": 4,
-        "wins": 3,
-        "losses": 9,
-        "win_pct": 0.25
+        "wins": 7,
+        "losses": 6,
+        "win_pct": 0.538
       },
       {
-        "team": "Sacramento Kings",
+        "team": "Dallas Mavericks",
         "rank": 5,
-        "wins": 1,
-        "losses": 13,
-        "win_pct": 0.071
+        "wins": 6,
+        "losses": 7,
+        "win_pct": 0.462
       }
     ],
     "Northwest": [
@@ -459,8 +459,8 @@
         "team": "Orlando Magic",
         "rank": 4,
         "wins": 5,
-        "losses": 7,
-        "win_pct": 0.417
+        "losses": 8,
+        "win_pct": 0.385
       },
       {
         "team": "Charlotte Hornets",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-08 04:17 UTC"
+  "current_field_updated": "2026-11-08 05:47 UTC"
 }

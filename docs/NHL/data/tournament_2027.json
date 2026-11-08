@@ -119,7 +119,7 @@
       "note": null
     },
     {
-      "team": "Philadelphia Flyers",
+      "team": "Pittsburgh Penguins",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": null,
@@ -127,7 +127,7 @@
       "note": null
     },
     {
-      "team": "Pittsburgh Penguins",
+      "team": "Philadelphia Flyers",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": null,
@@ -183,7 +183,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Utah Mammoth",
+      "team": "Colorado Avalanche",
       "conference": "Western",
       "division": "Central",
       "seed": 4,
@@ -191,7 +191,7 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Colorado Avalanche",
+      "team": "Utah Mammoth",
       "conference": "Western",
       "division": "Central",
       "seed": 5,
@@ -215,14 +215,6 @@
       "note": null
     },
     {
-      "team": "Los Angeles Kings",
-      "conference": "Western",
-      "division": "Pacific",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "Calgary Flames",
       "conference": "Western",
       "division": "Pacific",
@@ -234,6 +226,14 @@
       "team": "Winnipeg Jets",
       "conference": "Western",
       "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Los Angeles Kings",
+      "conference": "Western",
+      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
@@ -320,22 +320,22 @@
         "points_pct": 0.429
       },
       {
-        "team": "Philadelphia Flyers",
+        "team": "Pittsburgh Penguins",
         "rank": 7,
+        "wins": 5,
+        "losses": 11,
+        "win_pct": 0.312,
+        "points": 12,
+        "points_pct": 0.375
+      },
+      {
+        "team": "Philadelphia Flyers",
+        "rank": 8,
         "wins": 4,
         "losses": 13,
         "win_pct": 0.235,
         "points": 12,
         "points_pct": 0.353
-      },
-      {
-        "team": "Pittsburgh Penguins",
-        "rank": 8,
-        "wins": 4,
-        "losses": 11,
-        "win_pct": 0.267,
-        "points": 10,
-        "points_pct": 0.333
       }
     ],
     "Pacific": [
@@ -376,22 +376,22 @@
         "points_pct": 0.559
       },
       {
-        "team": "Los Angeles Kings",
-        "rank": 5,
-        "wins": 5,
-        "losses": 8,
-        "win_pct": 0.385,
-        "points": 12,
-        "points_pct": 0.462
-      },
-      {
         "team": "Calgary Flames",
-        "rank": 6,
+        "rank": 5,
         "wins": 7,
         "losses": 10,
         "win_pct": 0.412,
         "points": 15,
         "points_pct": 0.441
+      },
+      {
+        "team": "Los Angeles Kings",
+        "rank": 6,
+        "wins": 5,
+        "losses": 9,
+        "win_pct": 0.357,
+        "points": 12,
+        "points_pct": 0.429
       },
       {
         "team": "San Jose Sharks",
@@ -441,22 +441,22 @@
         "points_pct": 0.618
       },
       {
-        "team": "Utah Mammoth",
+        "team": "Colorado Avalanche",
         "rank": 4,
+        "wins": 9,
+        "losses": 8,
+        "win_pct": 0.529,
+        "points": 20,
+        "points_pct": 0.588
+      },
+      {
+        "team": "Utah Mammoth",
+        "rank": 5,
         "wins": 10,
         "losses": 8,
         "win_pct": 0.556,
         "points": 21,
         "points_pct": 0.583
-      },
-      {
-        "team": "Colorado Avalanche",
-        "rank": 5,
-        "wins": 8,
-        "losses": 8,
-        "win_pct": 0.5,
-        "points": 18,
-        "points_pct": 0.562
       },
       {
         "team": "St. Louis Blues",
@@ -554,12 +554,12 @@
         "team": "Detroit Red Wings",
         "rank": 8,
         "wins": 7,
-        "losses": 9,
-        "win_pct": 0.438,
+        "losses": 10,
+        "win_pct": 0.412,
         "points": 16,
-        "points_pct": 0.5
+        "points_pct": 0.471
       }
     ]
   },
-  "current_field_updated": "2026-11-08 04:17 UTC"
+  "current_field_updated": "2026-11-08 05:47 UTC"
 }
