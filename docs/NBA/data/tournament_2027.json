@@ -259,9 +259,9 @@
       {
         "team": "Philadelphia 76ers",
         "rank": 2,
-        "wins": 9,
+        "wins": 10,
         "losses": 5,
-        "win_pct": 0.643
+        "win_pct": 0.667
       },
       {
         "team": "Toronto Raptors",
@@ -378,8 +378,8 @@
         "team": "Chicago Bulls",
         "rank": 3,
         "wins": 4,
-        "losses": 9,
-        "win_pct": 0.308
+        "losses": 10,
+        "win_pct": 0.286
       },
       {
         "team": "Indiana Pacers",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-08 22:45 UTC"
+  "current_field_updated": "2026-11-09 00:58 UTC"
 }

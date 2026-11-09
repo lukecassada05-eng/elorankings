@@ -71,17 +71,17 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Buffalo Sabres",
+      "team": "New York Islanders",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "New York Islanders",
+      "team": "Buffalo Sabres",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": null,
       "status": "outside",
       "note": null
@@ -351,11 +351,11 @@
       {
         "team": "Vegas Golden Knights",
         "rank": 2,
-        "wins": 10,
+        "wins": 11,
         "losses": 7,
-        "win_pct": 0.588,
-        "points": 22,
-        "points_pct": 0.647
+        "win_pct": 0.611,
+        "points": 24,
+        "points_pct": 0.667
       },
       {
         "team": "Seattle Kraken",
@@ -527,10 +527,10 @@
         "team": "Buffalo Sabres",
         "rank": 5,
         "wins": 8,
-        "losses": 8,
-        "win_pct": 0.5,
+        "losses": 9,
+        "win_pct": 0.471,
         "points": 19,
-        "points_pct": 0.594
+        "points_pct": 0.559
       },
       {
         "team": "Florida Panthers",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-08 22:45 UTC"
+  "current_field_updated": "2026-11-09 00:58 UTC"
 }
