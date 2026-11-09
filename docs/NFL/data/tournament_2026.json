@@ -223,14 +223,6 @@
       "note": null
     },
     {
-      "team": "ARI",
-      "conference": "NFC",
-      "division": "NFC West",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "NO",
       "conference": "NFC",
       "division": "NFC South",
@@ -242,6 +234,14 @@
       "team": "ATL",
       "conference": "NFC",
       "division": "NFC South",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "ARI",
+      "conference": "NFC",
+      "division": "NFC West",
       "seed": null,
       "status": "outside",
       "note": null
@@ -289,9 +289,9 @@
       {
         "team": "GB",
         "rank": 4,
-        "wins": 5,
+        "wins": 6,
         "losses": 3,
-        "win_pct": 0.625
+        "win_pct": 0.667
       }
     ],
     "AFC East": [
@@ -306,8 +306,8 @@
         "team": "NE",
         "rank": 2,
         "wins": 5,
-        "losses": 3,
-        "win_pct": 0.625
+        "losses": 4,
+        "win_pct": 0.556
       },
       {
         "team": "NYJ",
@@ -333,25 +333,25 @@
         "win_pct": 0.875
       },
       {
-        "team": "LA",
+        "team": "SEA",
         "rank": 2,
         "wins": 5,
         "losses": 4,
         "win_pct": 0.556
       },
       {
-        "team": "SEA",
+        "team": "LA",
         "rank": 3,
-        "wins": 4,
+        "wins": 5,
         "losses": 4,
-        "win_pct": 0.5
+        "win_pct": 0.556
       },
       {
         "team": "ARI",
         "rank": 4,
         "wins": 3,
-        "losses": 5,
-        "win_pct": 0.375
+        "losses": 6,
+        "win_pct": 0.333
       }
     ],
     "AFC South": [
@@ -365,9 +365,9 @@
       {
         "team": "HOU",
         "rank": 2,
-        "wins": 2,
+        "wins": 3,
         "losses": 5,
-        "win_pct": 0.286
+        "win_pct": 0.375
       },
       {
         "team": "IND",
@@ -410,7 +410,7 @@
         "team": "LAC",
         "rank": 4,
         "wins": 0,
-        "losses": 7,
+        "losses": 8,
         "win_pct": 0
       }
     ],
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-09 00:58 UTC"
+  "current_field_updated": "2026-11-09 04:28 UTC"
 }
