@@ -159,7 +159,7 @@
       "note": "Division winner"
     },
     {
-      "team": "TB",
+      "team": "CAR",
       "conference": "NFC",
       "division": "NFC South",
       "seed": 4,
@@ -167,7 +167,7 @@
       "note": "Division winner"
     },
     {
-      "team": "DET",
+      "team": "CHI",
       "conference": "NFC",
       "division": "NFC North",
       "seed": 5,
@@ -175,7 +175,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "CHI",
+      "team": "DET",
       "conference": "NFC",
       "division": "NFC North",
       "seed": 6,
@@ -215,7 +215,7 @@
       "note": null
     },
     {
-      "team": "CAR",
+      "team": "NO",
       "conference": "NFC",
       "division": "NFC South",
       "seed": null,
@@ -223,7 +223,7 @@
       "note": null
     },
     {
-      "team": "NO",
+      "team": "TB",
       "conference": "NFC",
       "division": "NFC South",
       "seed": null,
@@ -273,14 +273,14 @@
         "win_pct": 0.857
       },
       {
-        "team": "DET",
+        "team": "CHI",
         "rank": 2,
-        "wins": 6,
+        "wins": 7,
         "losses": 2,
-        "win_pct": 0.75
+        "win_pct": 0.778
       },
       {
-        "team": "CHI",
+        "team": "DET",
         "rank": 3,
         "wins": 6,
         "losses": 2,
@@ -446,25 +446,25 @@
     ],
     "NFC South": [
       {
-        "team": "TB",
+        "team": "CAR",
         "rank": 1,
         "wins": 3,
         "losses": 5,
         "win_pct": 0.375
       },
       {
-        "team": "CAR",
+        "team": "NO",
         "rank": 2,
         "wins": 3,
         "losses": 5,
         "win_pct": 0.375
       },
       {
-        "team": "NO",
+        "team": "TB",
         "rank": 3,
         "wins": 3,
-        "losses": 5,
-        "win_pct": 0.375
+        "losses": 6,
+        "win_pct": 0.333
       },
       {
         "team": "ATL",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-09 04:28 UTC"
+  "current_field_updated": "2026-11-09 11:21 UTC"
 }

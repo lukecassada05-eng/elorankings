@@ -47,12 +47,20 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Cleveland Cavaliers",
+      "team": "Miami Heat",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Southeast",
       "seed": 6,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
+    },
+    {
+      "team": "Cleveland Cavaliers",
+      "conference": "Eastern",
+      "division": "Central",
+      "seed": null,
+      "status": "play_in",
+      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
       "team": "Washington Wizards",
@@ -66,14 +74,6 @@
       "team": "New York Knicks",
       "conference": "Eastern",
       "division": "Atlantic",
-      "seed": null,
-      "status": "play_in",
-      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
-    },
-    {
-      "team": "Miami Heat",
-      "conference": "Eastern",
-      "division": "Southeast",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -215,6 +215,14 @@
       "note": null
     },
     {
+      "team": "LA Clippers",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "Phoenix Suns",
       "conference": "Western",
       "division": "Pacific",
@@ -226,14 +234,6 @@
       "team": "Utah Jazz",
       "conference": "Western",
       "division": "Northwest",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "LA Clippers",
-      "conference": "Western",
-      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
@@ -264,25 +264,25 @@
         "win_pct": 0.688
       },
       {
-        "team": "Phoenix Suns",
+        "team": "LA Clippers",
         "rank": 3,
+        "wins": 4,
+        "losses": 8,
+        "win_pct": 0.333
+      },
+      {
+        "team": "Phoenix Suns",
+        "rank": 4,
         "wins": 4,
         "losses": 9,
         "win_pct": 0.308
       },
       {
-        "team": "LA Clippers",
-        "rank": 4,
-        "wins": 3,
-        "losses": 8,
-        "win_pct": 0.273
-      },
-      {
         "team": "Sacramento Kings",
         "rank": 5,
         "wins": 1,
-        "losses": 13,
-        "win_pct": 0.071
+        "losses": 14,
+        "win_pct": 0.067
       }
     ],
     "Atlantic": [
@@ -348,8 +348,8 @@
         "team": "New Orleans Pelicans",
         "rank": 4,
         "wins": 7,
-        "losses": 6,
-        "win_pct": 0.538
+        "losses": 7,
+        "win_pct": 0.5
       },
       {
         "team": "Dallas Mavericks",
@@ -442,14 +442,14 @@
         "win_pct": 0.688
       },
       {
-        "team": "Washington Wizards",
+        "team": "Miami Heat",
         "rank": 2,
-        "wins": 6,
+        "wins": 7,
         "losses": 8,
-        "win_pct": 0.429
+        "win_pct": 0.467
       },
       {
-        "team": "Miami Heat",
+        "team": "Washington Wizards",
         "rank": 3,
         "wins": 6,
         "losses": 8,
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-09 04:28 UTC"
+  "current_field_updated": "2026-11-09 11:21 UTC"
 }
