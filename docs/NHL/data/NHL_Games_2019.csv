@@ -668,6 +668,28 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-01-11,Vancouver Canucks,Arizona Coyotes,Arizona Coyotes,Vancouver Canucks,4,3,OT
 2019-01-11,Vegas Golden Knights,San Jose Sharks,San Jose Sharks,Vegas Golden Knights,3,2,REG
 2019-01-11,Los Angeles Kings,Ottawa Senators,Ottawa Senators,Los Angeles Kings,4,1,REG
+2019-01-12,Carolina Hurricanes,Buffalo Sabres,Carolina Hurricanes,Buffalo Sabres,4,3,REG
+2019-01-12,Winnipeg Jets,Detroit Red Wings,Winnipeg Jets,Detroit Red Wings,4,2,REG
+2019-01-12,Calgary Flames,Florida Panthers,Calgary Flames,Florida Panthers,4,3,REG
+2019-01-12,Anaheim Ducks,Pittsburgh Penguins,Pittsburgh Penguins,Anaheim Ducks,7,4,REG
+2019-01-12,New Jersey Devils,Philadelphia Flyers,New Jersey Devils,Philadelphia Flyers,3,2,REG
+2019-01-12,New York Islanders,New York Rangers,New York Rangers,New York Islanders,2,1,REG
+2019-01-13,Buffalo Sabres,Tampa Bay Lightning,Tampa Bay Lightning,Buffalo Sabres,5,3,REG
+2019-01-13,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,3,2,REG
+2019-01-13,Montreal Canadiens,Colorado Avalanche,Montreal Canadiens,Colorado Avalanche,3,0,REG
+2019-01-13,Washington Capitals,Columbus Blue Jackets,Columbus Blue Jackets,Washington Capitals,2,1,OT
+2019-01-13,Minnesota Wild,Detroit Red Wings,Detroit Red Wings,Minnesota Wild,5,2,REG
+2019-01-13,Chicago Blackhawks,Vegas Golden Knights,Vegas Golden Knights,Chicago Blackhawks,4,3,OT
+2019-01-13,Dallas Stars,St. Louis Blues,St. Louis Blues,Dallas Stars,3,1,REG
+2019-01-13,Edmonton Oilers,Arizona Coyotes,Arizona Coyotes,Edmonton Oilers,3,2,REG
+2019-01-13,San Jose Sharks,Ottawa Senators,San Jose Sharks,Ottawa Senators,4,1,REG
+2019-01-13,Los Angeles Kings,Pittsburgh Penguins,Los Angeles Kings,Pittsburgh Penguins,5,2,REG
+2019-01-13,Carolina Hurricanes,Nashville Predators,Carolina Hurricanes,Nashville Predators,6,3,REG
+2019-01-13,Columbus Blue Jackets,New York Rangers,Columbus Blue Jackets,New York Rangers,7,5,REG
+2019-01-13,Winnipeg Jets,Anaheim Ducks,Winnipeg Jets,Anaheim Ducks,4,3,OT
+2019-01-14,New York Islanders,Tampa Bay Lightning,New York Islanders,Tampa Bay Lightning,5,1,REG
+2019-01-14,Vancouver Canucks,Florida Panthers,Vancouver Canucks,Florida Panthers,5,1,REG
+2019-01-14,Calgary Flames,Arizona Coyotes,Calgary Flames,Arizona Coyotes,5,1,REG
 2019-01-15,Toronto Maple Leafs,Colorado Avalanche,Colorado Avalanche,Toronto Maple Leafs,6,3,REG
 2019-01-15,New Jersey Devils,Chicago Blackhawks,New Jersey Devils,Chicago Blackhawks,8,5,REG
 2019-01-15,Philadelphia Flyers,Minnesota Wild,Philadelphia Flyers,Minnesota Wild,7,4,REG
@@ -684,6 +706,11 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-01-16,Winnipeg Jets,Vegas Golden Knights,Winnipeg Jets,Vegas Golden Knights,4,1,REG
 2019-01-16,Dallas Stars,Tampa Bay Lightning,Tampa Bay Lightning,Dallas Stars,2,0,REG
 2019-01-16,San Jose Sharks,Pittsburgh Penguins,San Jose Sharks,Pittsburgh Penguins,5,2,REG
+2019-01-17,Ottawa Senators,Colorado Avalanche,Ottawa Senators,Colorado Avalanche,5,2,REG
+2019-01-17,Philadelphia Flyers,Boston Bruins,Philadelphia Flyers,Boston Bruins,4,3,REG
+2019-01-17,Calgary Flames,Buffalo Sabres,Buffalo Sabres,Calgary Flames,4,3,OT
+2019-01-17,Vancouver Canucks,Edmonton Oilers,Edmonton Oilers,Vancouver Canucks,3,2,SO
+2019-01-17,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,San Jose Sharks,6,3,REG
 2019-01-18,Boston Bruins,St. Louis Blues,Boston Bruins,St. Louis Blues,5,2,REG
 2019-01-18,New York Islanders,New Jersey Devils,New York Islanders,New Jersey Devils,4,1,REG
 2019-01-18,New York Rangers,Chicago Blackhawks,New York Rangers,Chicago Blackhawks,4,3,REG
@@ -691,6 +718,13 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-01-18,Nashville Predators,Winnipeg Jets,Winnipeg Jets,Nashville Predators,5,1,REG
 2019-01-18,Minnesota Wild,Anaheim Ducks,Anaheim Ducks,Minnesota Wild,3,0,REG
 2019-01-18,Dallas Stars,Los Angeles Kings,Los Angeles Kings,Dallas Stars,2,1,REG
+2019-01-19,Florida Panthers,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,3,1,REG
+2019-01-19,Columbus Blue Jackets,Montreal Canadiens,Montreal Canadiens,Columbus Blue Jackets,4,1,REG
+2019-01-19,Washington Capitals,New York Islanders,New York Islanders,Washington Capitals,2,0,REG
+2019-01-19,Carolina Hurricanes,Ottawa Senators,Ottawa Senators,Carolina Hurricanes,4,1,REG
+2019-01-19,Calgary Flames,Detroit Red Wings,Calgary Flames,Detroit Red Wings,6,4,REG
+2019-01-19,Arizona Coyotes,Pittsburgh Penguins,Pittsburgh Penguins,Arizona Coyotes,3,2,OT
+2019-01-19,Vancouver Canucks,Buffalo Sabres,Vancouver Canucks,Buffalo Sabres,4,3,REG
 2019-01-19,New Jersey Devils,Anaheim Ducks,Anaheim Ducks,New Jersey Devils,3,2,REG
 2019-01-19,Colorado Avalanche,Los Angeles Kings,Colorado Avalanche,Los Angeles Kings,5,1,REG
 2019-01-20,Boston Bruins,New York Rangers,New York Rangers,Boston Bruins,3,2,REG
@@ -702,10 +736,28 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-01-20,Minnesota Wild,Columbus Blue Jackets,Minnesota Wild,Columbus Blue Jackets,2,1,REG
 2019-01-20,Edmonton Oilers,Calgary Flames,Calgary Flames,Edmonton Oilers,5,2,REG
 2019-01-20,Vegas Golden Knights,Pittsburgh Penguins,Vegas Golden Knights,Pittsburgh Penguins,7,3,REG
+2019-01-20,Chicago Blackhawks,Washington Capitals,Chicago Blackhawks,Washington Capitals,8,5,REG
+2019-01-20,New York Islanders,Anaheim Ducks,New York Islanders,Anaheim Ducks,3,0,REG
+2019-01-20,Vancouver Canucks,Detroit Red Wings,Vancouver Canucks,Detroit Red Wings,3,2,REG
+2019-01-21,Toronto Maple Leafs,Arizona Coyotes,Arizona Coyotes,Toronto Maple Leafs,4,2,REG
+2019-01-21,Edmonton Oilers,Carolina Hurricanes,Carolina Hurricanes,Edmonton Oilers,7,4,REG
 2019-01-21,Colorado Avalanche,Nashville Predators,Nashville Predators,Colorado Avalanche,4,1,REG
 2019-01-21,Los Angeles Kings,St. Louis Blues,Los Angeles Kings,St. Louis Blues,4,3,REG
 2019-01-21,Vegas Golden Knights,Minnesota Wild,Minnesota Wild,Vegas Golden Knights,4,2,REG
 2019-01-22,Florida Panthers,San Jose Sharks,Florida Panthers,San Jose Sharks,6,2,REG
+2019-01-23,Washington Capitals,San Jose Sharks,San Jose Sharks,Washington Capitals,7,6,OT
+2019-01-23,Ottawa Senators,Arizona Coyotes,Arizona Coyotes,Ottawa Senators,3,2,REG
+2019-01-23,Chicago Blackhawks,New York Islanders,Chicago Blackhawks,New York Islanders,3,2,SO
+2019-01-23,Calgary Flames,Carolina Hurricanes,Calgary Flames,Carolina Hurricanes,3,2,OT
+2019-01-23,Edmonton Oilers,Detroit Red Wings,Detroit Red Wings,Edmonton Oilers,3,2,REG
+2019-01-24,Toronto Maple Leafs,Washington Capitals,Toronto Maple Leafs,Washington Capitals,6,3,REG
+2019-01-24,Montreal Canadiens,Arizona Coyotes,Montreal Canadiens,Arizona Coyotes,2,1,REG
+2019-01-24,Colorado Avalanche,Minnesota Wild,Minnesota Wild,Colorado Avalanche,5,2,REG
+2019-01-24,Vegas Golden Knights,Nashville Predators,Nashville Predators,Vegas Golden Knights,2,1,REG
+2019-01-24,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,5,1,REG
+2019-01-24,Vancouver Canucks,Carolina Hurricanes,Carolina Hurricanes,Vancouver Canucks,5,2,REG
+2019-01-29,Philadelphia Flyers,Winnipeg Jets,Philadelphia Flyers,Winnipeg Jets,3,1,REG
+2019-01-29,Pittsburgh Penguins,New Jersey Devils,New Jersey Devils,Pittsburgh Penguins,6,3,REG
 2019-01-30,Boston Bruins,Winnipeg Jets,Winnipeg Jets,Boston Bruins,4,3,SO
 2019-01-30,Columbus Blue Jackets,Buffalo Sabres,Buffalo Sabres,Columbus Blue Jackets,5,4,REG
 2019-01-31,Pittsburgh Penguins,Tampa Bay Lightning,Pittsburgh Penguins,Tampa Bay Lightning,4,2,REG
@@ -734,6 +786,22 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-02-03,San Jose Sharks,Arizona Coyotes,San Jose Sharks,Arizona Coyotes,3,2,OT
 2019-02-03,Montreal Canadiens,Edmonton Oilers,Montreal Canadiens,Edmonton Oilers,4,3,OT
 2019-02-03,Carolina Hurricanes,Calgary Flames,Calgary Flames,Carolina Hurricanes,4,3,REG
+2019-02-05,Toronto Maple Leafs,Anaheim Ducks,Toronto Maple Leafs,Anaheim Ducks,5,1,REG
+2019-02-05,New York Rangers,Los Angeles Kings,Los Angeles Kings,New York Rangers,4,3,OT
+2019-02-05,Philadelphia Flyers,Vancouver Canucks,Philadelphia Flyers,Vancouver Canucks,2,1,REG
+2019-02-05,Dallas Stars,Arizona Coyotes,Dallas Stars,Arizona Coyotes,5,4,REG
+2019-02-06,Boston Bruins,New York Islanders,Boston Bruins,New York Islanders,3,1,REG
+2019-02-06,Buffalo Sabres,Minnesota Wild,Buffalo Sabres,Minnesota Wild,5,4,SO
+2019-02-06,Florida Panthers,St. Louis Blues,St. Louis Blues,Florida Panthers,3,2,REG
+2019-02-06,New Jersey Devils,Los Angeles Kings,Los Angeles Kings,New Jersey Devils,5,1,REG
+2019-02-06,Pittsburgh Penguins,Carolina Hurricanes,Carolina Hurricanes,Pittsburgh Penguins,4,0,REG
+2019-02-06,Washington Capitals,Vancouver Canucks,Washington Capitals,Vancouver Canucks,3,2,REG
+2019-02-06,Montreal Canadiens,Anaheim Ducks,Montreal Canadiens,Anaheim Ducks,4,1,REG
+2019-02-06,Tampa Bay Lightning,Vegas Golden Knights,Vegas Golden Knights,Tampa Bay Lightning,3,2,SO
+2019-02-06,Nashville Predators,Arizona Coyotes,Nashville Predators,Arizona Coyotes,5,2,REG
+2019-02-06,Winnipeg Jets,San Jose Sharks,San Jose Sharks,Winnipeg Jets,3,2,OT
+2019-02-06,Colorado Avalanche,Columbus Blue Jackets,Columbus Blue Jackets,Colorado Avalanche,6,3,REG
+2019-02-06,Edmonton Oilers,Chicago Blackhawks,Chicago Blackhawks,Edmonton Oilers,6,2,REG
 2019-02-07,Toronto Maple Leafs,Ottawa Senators,Toronto Maple Leafs,Ottawa Senators,5,4,REG
 2019-02-07,New York Rangers,Boston Bruins,New York Rangers,Boston Bruins,4,3,SO
 2019-02-08,Buffalo Sabres,Carolina Hurricanes,Carolina Hurricanes,Buffalo Sabres,6,5,OT
@@ -764,6 +832,14 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-02-10,Edmonton Oilers,San Jose Sharks,San Jose Sharks,Edmonton Oilers,5,2,REG
 2019-02-10,Vancouver Canucks,Calgary Flames,Vancouver Canucks,Calgary Flames,4,3,SO
 2019-02-10,Vegas Golden Knights,Columbus Blue Jackets,Columbus Blue Jackets,Vegas Golden Knights,4,3,REG
+2019-02-10,Nashville Predators,St. Louis Blues,St. Louis Blues,Nashville Predators,5,4,OT
+2019-02-10,Boston Bruins,Colorado Avalanche,Boston Bruins,Colorado Avalanche,2,1,OT
+2019-02-10,Buffalo Sabres,Winnipeg Jets,Winnipeg Jets,Buffalo Sabres,3,1,REG
+2019-02-10,New Jersey Devils,Carolina Hurricanes,New Jersey Devils,Carolina Hurricanes,3,2,REG
+2019-02-10,New York Islanders,Minnesota Wild,New York Islanders,Minnesota Wild,2,1,REG
+2019-02-10,Chicago Blackhawks,Detroit Red Wings,Chicago Blackhawks,Detroit Red Wings,5,2,REG
+2019-02-10,Florida Panthers,Tampa Bay Lightning,Tampa Bay Lightning,Florida Panthers,5,2,REG
+2019-02-11,New York Rangers,Toronto Maple Leafs,New York Rangers,Toronto Maple Leafs,4,1,REG
 2019-02-12,Philadelphia Flyers,Pittsburgh Penguins,Pittsburgh Penguins,Philadelphia Flyers,4,1,REG
 2019-02-12,Washington Capitals,Los Angeles Kings,Washington Capitals,Los Angeles Kings,6,4,REG
 2019-02-12,Vancouver Canucks,San Jose Sharks,San Jose Sharks,Vancouver Canucks,6,2,REG
@@ -780,10 +856,45 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-02-13,Colorado Avalanche,Toronto Maple Leafs,Toronto Maple Leafs,Colorado Avalanche,5,2,REG
 2019-02-13,Vegas Golden Knights,Arizona Coyotes,Arizona Coyotes,Vegas Golden Knights,5,2,REG
 2019-02-14,Pittsburgh Penguins,Edmonton Oilers,Pittsburgh Penguins,Edmonton Oilers,3,1,REG
+2019-02-15,Florida Panthers,Calgary Flames,Florida Panthers,Calgary Flames,3,2,SO
+2019-02-15,Columbus Blue Jackets,New York Islanders,New York Islanders,Columbus Blue Jackets,3,0,REG
+2019-02-15,Detroit Red Wings,Ottawa Senators,Detroit Red Wings,Ottawa Senators,3,2,REG
+2019-02-15,Tampa Bay Lightning,Dallas Stars,Tampa Bay Lightning,Dallas Stars,4,0,REG
+2019-02-15,Nashville Predators,Montreal Canadiens,Nashville Predators,Montreal Canadiens,3,1,REG
+2019-02-15,Winnipeg Jets,Colorado Avalanche,Colorado Avalanche,Winnipeg Jets,4,1,REG
+2019-02-15,Chicago Blackhawks,New Jersey Devils,Chicago Blackhawks,New Jersey Devils,5,2,REG
+2019-02-15,Arizona Coyotes,St. Louis Blues,St. Louis Blues,Arizona Coyotes,4,0,REG
+2019-02-15,Vegas Golden Knights,Toronto Maple Leafs,Toronto Maple Leafs,Vegas Golden Knights,6,3,REG
+2019-02-15,Los Angeles Kings,Vancouver Canucks,Vancouver Canucks,Los Angeles Kings,4,3,SO
+2019-02-15,San Jose Sharks,Washington Capitals,Washington Capitals,San Jose Sharks,5,1,REG
 2019-02-16,Buffalo Sabres,New York Rangers,New York Rangers,Buffalo Sabres,6,2,REG
 2019-02-16,Carolina Hurricanes,Edmonton Oilers,Carolina Hurricanes,Edmonton Oilers,3,1,REG
 2019-02-16,Minnesota Wild,New Jersey Devils,New Jersey Devils,Minnesota Wild,5,4,OT
 2019-02-16,Anaheim Ducks,Boston Bruins,Boston Bruins,Anaheim Ducks,3,0,REG
+2019-02-16,Philadelphia Flyers,Detroit Red Wings,Philadelphia Flyers,Detroit Red Wings,6,5,OT
+2019-02-16,Pittsburgh Penguins,Calgary Flames,Calgary Flames,Pittsburgh Penguins,5,4,REG
+2019-02-16,Colorado Avalanche,St. Louis Blues,St. Louis Blues,Colorado Avalanche,3,0,REG
+2019-02-17,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,3,0,REG
+2019-02-17,New York Islanders,Edmonton Oilers,New York Islanders,Edmonton Oilers,5,2,REG
+2019-02-17,Winnipeg Jets,Ottawa Senators,Ottawa Senators,Winnipeg Jets,4,3,OT
+2019-02-17,Arizona Coyotes,Toronto Maple Leafs,Arizona Coyotes,Toronto Maple Leafs,2,0,REG
+2019-02-17,Carolina Hurricanes,Dallas Stars,Carolina Hurricanes,Dallas Stars,3,0,REG
+2019-02-17,Chicago Blackhawks,Columbus Blue Jackets,Columbus Blue Jackets,Chicago Blackhawks,5,2,REG
+2019-02-17,Vegas Golden Knights,Nashville Predators,Vegas Golden Knights,Nashville Predators,5,1,REG
+2019-02-17,San Jose Sharks,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,3,2,REG
+2019-02-17,Los Angeles Kings,Boston Bruins,Boston Bruins,Los Angeles Kings,4,2,REG
+2019-02-17,Pittsburgh Penguins,New York Rangers,Pittsburgh Penguins,New York Rangers,6,5,REG
+2019-02-17,Minnesota Wild,St. Louis Blues,St. Louis Blues,Minnesota Wild,4,0,REG
+2019-02-17,New Jersey Devils,Buffalo Sabres,New Jersey Devils,Buffalo Sabres,4,1,REG
+2019-02-17,Detroit Red Wings,Philadelphia Flyers,Philadelphia Flyers,Detroit Red Wings,3,1,REG
+2019-02-18,Florida Panthers,Montreal Canadiens,Florida Panthers,Montreal Canadiens,6,3,REG
+2019-02-18,Anaheim Ducks,Washington Capitals,Anaheim Ducks,Washington Capitals,5,2,REG
+2019-02-18,Calgary Flames,Arizona Coyotes,Calgary Flames,Arizona Coyotes,5,2,REG
+2019-02-19,Columbus Blue Jackets,Tampa Bay Lightning,Tampa Bay Lightning,Columbus Blue Jackets,5,1,REG
+2019-02-19,Chicago Blackhawks,Ottawa Senators,Chicago Blackhawks,Ottawa Senators,8,7,REG
+2019-02-19,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,3,0,REG
+2019-02-19,San Jose Sharks,Boston Bruins,Boston Bruins,San Jose Sharks,6,5,OT
+2019-02-19,Los Angeles Kings,Washington Capitals,Washington Capitals,Los Angeles Kings,3,2,REG
 2019-02-20,Florida Panthers,Buffalo Sabres,Florida Panthers,Buffalo Sabres,4,2,REG
 2019-02-20,New Jersey Devils,Pittsburgh Penguins,Pittsburgh Penguins,New Jersey Devils,4,3,REG
 2019-02-20,Philadelphia Flyers,Tampa Bay Lightning,Tampa Bay Lightning,Philadelphia Flyers,5,2,REG
@@ -797,11 +908,33 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-02-21,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,5,1,REG
 2019-02-21,Calgary Flames,New York Islanders,Calgary Flames,New York Islanders,4,2,REG
 2019-02-21,Vegas Golden Knights,Boston Bruins,Boston Bruins,Vegas Golden Knights,3,2,SO
+2019-02-22,Toronto Maple Leafs,Washington Capitals,Washington Capitals,Toronto Maple Leafs,3,2,REG
+2019-02-22,Florida Panthers,Carolina Hurricanes,Carolina Hurricanes,Florida Panthers,4,3,REG
+2019-02-22,New Jersey Devils,Ottawa Senators,New Jersey Devils,Ottawa Senators,4,0,REG
+2019-02-22,New York Rangers,Minnesota Wild,Minnesota Wild,New York Rangers,4,1,REG
+2019-02-22,Pittsburgh Penguins,San Jose Sharks,San Jose Sharks,Pittsburgh Penguins,4,0,REG
+2019-02-22,Montreal Canadiens,Philadelphia Flyers,Montreal Canadiens,Philadelphia Flyers,5,1,REG
+2019-02-22,Tampa Bay Lightning,Buffalo Sabres,Tampa Bay Lightning,Buffalo Sabres,2,1,SO
+2019-02-22,Nashville Predators,Los Angeles Kings,Nashville Predators,Los Angeles Kings,2,1,REG
+2019-02-22,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,5,2,REG
+2019-02-22,Edmonton Oilers,New York Islanders,Edmonton Oilers,New York Islanders,4,3,OT
+2019-02-22,Vancouver Canucks,Arizona Coyotes,Arizona Coyotes,Vancouver Canucks,3,2,OT
 2019-02-23,Ottawa Senators,Columbus Blue Jackets,Columbus Blue Jackets,Ottawa Senators,3,0,REG
 2019-02-23,Detroit Red Wings,Minnesota Wild,Minnesota Wild,Detroit Red Wings,3,2,REG
 2019-02-23,Chicago Blackhawks,Colorado Avalanche,Colorado Avalanche,Chicago Blackhawks,5,3,REG
 2019-02-23,Calgary Flames,Anaheim Ducks,Calgary Flames,Anaheim Ducks,2,1,REG
 2019-02-23,Vegas Golden Knights,Winnipeg Jets,Winnipeg Jets,Vegas Golden Knights,6,3,REG
+2019-02-23,Buffalo Sabres,Washington Capitals,Buffalo Sabres,Washington Capitals,5,2,REG
+2019-02-23,New York Rangers,New Jersey Devils,New York Rangers,New Jersey Devils,5,2,REG
+2019-02-23,St. Louis Blues,Boston Bruins,St. Louis Blues,Boston Bruins,2,1,SO
+2019-02-23,Florida Panthers,Los Angeles Kings,Florida Panthers,Los Angeles Kings,5,1,REG
+2019-02-23,Columbus Blue Jackets,San Jose Sharks,Columbus Blue Jackets,San Jose Sharks,4,0,REG
+2019-02-23,Dallas Stars,Carolina Hurricanes,Carolina Hurricanes,Dallas Stars,3,0,REG
+2019-02-23,Nashville Predators,Colorado Avalanche,Colorado Avalanche,Nashville Predators,4,0,REG
+2019-02-24,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,6,3,REG
+2019-02-24,Philadelphia Flyers,Pittsburgh Penguins,Philadelphia Flyers,Pittsburgh Penguins,4,3,OT
+2019-02-24,Edmonton Oilers,Anaheim Ducks,Edmonton Oilers,Anaheim Ducks,2,1,REG
+2019-02-24,Vancouver Canucks,New York Islanders,New York Islanders,Vancouver Canucks,4,0,REG
 2019-02-24,Washington Capitals,New York Rangers,Washington Capitals,New York Rangers,6,5,OT
 2019-02-24,Detroit Red Wings,San Jose Sharks,San Jose Sharks,Detroit Red Wings,5,3,REG
 2019-02-24,Chicago Blackhawks,Dallas Stars,Dallas Stars,Chicago Blackhawks,4,3,REG
@@ -825,6 +958,35 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-02-27,Winnipeg Jets,Minnesota Wild,Minnesota Wild,Winnipeg Jets,3,2,REG
 2019-02-27,Arizona Coyotes,Florida Panthers,Arizona Coyotes,Florida Panthers,4,3,SO
 2019-02-27,Vegas Golden Knights,Dallas Stars,Vegas Golden Knights,Dallas Stars,4,1,REG
+2019-02-28,Toronto Maple Leafs,Edmonton Oilers,Toronto Maple Leafs,Edmonton Oilers,6,2,REG
+2019-02-28,New Jersey Devils,Calgary Flames,Calgary Flames,New Jersey Devils,2,1,REG
+2019-02-28,New York Rangers,Tampa Bay Lightning,Tampa Bay Lightning,New York Rangers,4,3,OT
+2019-02-28,Colorado Avalanche,Vancouver Canucks,Colorado Avalanche,Vancouver Canucks,3,2,SO
+2019-02-28,Anaheim Ducks,Chicago Blackhawks,Chicago Blackhawks,Anaheim Ducks,4,3,REG
+2019-03-01,New York Islanders,Toronto Maple Leafs,New York Islanders,Toronto Maple Leafs,5,1,REG
+2019-03-01,Columbus Blue Jackets,Philadelphia Flyers,Columbus Blue Jackets,Philadelphia Flyers,4,3,OT
+2019-03-01,Boston Bruins,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,4,1,REG
+2019-03-01,Ottawa Senators,Edmonton Oilers,Edmonton Oilers,Ottawa Senators,4,2,REG
+2019-03-01,Arizona Coyotes,Vancouver Canucks,Arizona Coyotes,Vancouver Canucks,5,2,REG
+2019-03-01,Vegas Golden Knights,Florida Panthers,Vegas Golden Knights,Florida Panthers,6,5,SO
+2019-03-01,Los Angeles Kings,Dallas Stars,Dallas Stars,Los Angeles Kings,4,3,OT
+2019-03-02,Buffalo Sabres,Pittsburgh Penguins,Buffalo Sabres,Pittsburgh Penguins,4,3,OT
+2019-03-02,New Jersey Devils,Philadelphia Flyers,Philadelphia Flyers,New Jersey Devils,6,3,REG
+2019-03-02,New York Islanders,Washington Capitals,Washington Capitals,New York Islanders,3,1,REG
+2019-03-02,New York Rangers,Montreal Canadiens,Montreal Canadiens,New York Rangers,4,2,REG
+2019-03-02,Carolina Hurricanes,St. Louis Blues,Carolina Hurricanes,St. Louis Blues,5,2,REG
+2019-03-02,Winnipeg Jets,Nashville Predators,Winnipeg Jets,Nashville Predators,5,3,REG
+2019-03-02,Anaheim Ducks,Vegas Golden Knights,Vegas Golden Knights,Anaheim Ducks,3,0,REG
+2019-03-02,San Jose Sharks,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,4,3,REG
+2019-03-02,Columbus Blue Jackets,Edmonton Oilers,Edmonton Oilers,Columbus Blue Jackets,4,0,REG
+2019-03-02,Los Angeles Kings,Chicago Blackhawks,Los Angeles Kings,Chicago Blackhawks,6,3,REG
+2019-03-03,Toronto Maple Leafs,Buffalo Sabres,Toronto Maple Leafs,Buffalo Sabres,5,2,REG
+2019-03-03,Montreal Canadiens,Pittsburgh Penguins,Pittsburgh Penguins,Montreal Canadiens,5,1,REG
+2019-03-03,Tampa Bay Lightning,Ottawa Senators,Tampa Bay Lightning,Ottawa Senators,5,1,REG
+2019-03-03,Florida Panthers,Carolina Hurricanes,Carolina Hurricanes,Florida Panthers,4,3,OT
+2019-03-03,St. Louis Blues,Dallas Stars,Dallas Stars,St. Louis Blues,4,1,REG
+2019-03-03,Arizona Coyotes,Detroit Red Wings,Arizona Coyotes,Detroit Red Wings,3,1,REG
+2019-03-03,Calgary Flames,Minnesota Wild,Minnesota Wild,Calgary Flames,4,2,REG
 2019-03-03,New York Rangers,Washington Capitals,Washington Capitals,New York Rangers,3,2,SO
 2019-03-03,New York Islanders,Philadelphia Flyers,Philadelphia Flyers,New York Islanders,4,1,REG
 2019-03-03,Vegas Golden Knights,Vancouver Canucks,Vegas Golden Knights,Vancouver Canucks,3,0,REG
@@ -844,10 +1006,37 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-03-06,Colorado Avalanche,Detroit Red Wings,Colorado Avalanche,Detroit Red Wings,4,3,OT
 2019-03-06,Arizona Coyotes,Anaheim Ducks,Anaheim Ducks,Arizona Coyotes,3,1,REG
 2019-03-06,Los Angeles Kings,Montreal Canadiens,Montreal Canadiens,Los Angeles Kings,3,1,REG
+2019-03-07,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,5,3,REG
+2019-03-07,Vancouver Canucks,Toronto Maple Leafs,Vancouver Canucks,Toronto Maple Leafs,3,2,OT
+2019-03-07,Anaheim Ducks,St. Louis Blues,St. Louis Blues,Anaheim Ducks,5,4,REG
+2019-03-07,Vegas Golden Knights,Calgary Flames,Vegas Golden Knights,Calgary Flames,2,1,REG
+2019-03-08,Boston Bruins,Florida Panthers,Boston Bruins,Florida Panthers,4,3,REG
+2019-03-08,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,3,0,REG
+2019-03-08,Ottawa Senators,New York Islanders,New York Islanders,Ottawa Senators,4,2,REG
+2019-03-08,Detroit Red Wings,New York Rangers,Detroit Red Wings,New York Rangers,3,2,SO
+2019-03-08,Tampa Bay Lightning,Minnesota Wild,Minnesota Wild,Tampa Bay Lightning,3,0,REG
+2019-03-08,Chicago Blackhawks,Buffalo Sabres,Chicago Blackhawks,Buffalo Sabres,5,4,SO
+2019-03-08,Dallas Stars,Colorado Avalanche,Dallas Stars,Colorado Avalanche,4,0,REG
+2019-03-08,Edmonton Oilers,Vancouver Canucks,Edmonton Oilers,Vancouver Canucks,3,2,REG
+2019-03-08,Arizona Coyotes,Calgary Flames,Arizona Coyotes,Calgary Flames,2,0,REG
+2019-03-08,Los Angeles Kings,St. Louis Blues,St. Louis Blues,Los Angeles Kings,4,0,REG
+2019-03-08,San Jose Sharks,Montreal Canadiens,San Jose Sharks,Montreal Canadiens,5,2,REG
 2019-03-09,Florida Panthers,Minnesota Wild,Florida Panthers,Minnesota Wild,6,2,REG
 2019-03-09,Washington Capitals,New Jersey Devils,Washington Capitals,New Jersey Devils,3,0,REG
 2019-03-09,Carolina Hurricanes,Winnipeg Jets,Winnipeg Jets,Carolina Hurricanes,5,1,REG
 2019-03-09,Anaheim Ducks,Montreal Canadiens,Anaheim Ducks,Montreal Canadiens,6,2,REG
+2019-03-09,Colorado Avalanche,Buffalo Sabres,Colorado Avalanche,Buffalo Sabres,3,0,REG
+2019-03-09,San Jose Sharks,St. Louis Blues,San Jose Sharks,St. Louis Blues,3,2,OT
+2019-03-10,Boston Bruins,Ottawa Senators,Boston Bruins,Ottawa Senators,3,2,REG
+2019-03-10,Tampa Bay Lightning,Detroit Red Wings,Tampa Bay Lightning,Detroit Red Wings,3,2,REG
+2019-03-10,New York Islanders,Philadelphia Flyers,Philadelphia Flyers,New York Islanders,5,2,REG
+2019-03-10,New York Rangers,New Jersey Devils,New York Rangers,New Jersey Devils,4,2,REG
+2019-03-10,Columbus Blue Jackets,Pittsburgh Penguins,Columbus Blue Jackets,Pittsburgh Penguins,4,1,REG
+2019-03-10,Edmonton Oilers,Toronto Maple Leafs,Toronto Maple Leafs,Edmonton Oilers,3,2,REG
+2019-03-10,Nashville Predators,Carolina Hurricanes,Carolina Hurricanes,Nashville Predators,5,3,REG
+2019-03-10,Dallas Stars,Chicago Blackhawks,Chicago Blackhawks,Dallas Stars,2,1,REG
+2019-03-10,Arizona Coyotes,Los Angeles Kings,Arizona Coyotes,Los Angeles Kings,4,2,REG
+2019-03-10,Vancouver Canucks,Vegas Golden Knights,Vegas Golden Knights,Vancouver Canucks,6,2,REG
 2019-03-10,Florida Panthers,Detroit Red Wings,Florida Panthers,Detroit Red Wings,5,1,REG
 2019-03-10,Washington Capitals,Winnipeg Jets,Washington Capitals,Winnipeg Jets,3,1,REG
 2019-03-10,Pittsburgh Penguins,Boston Bruins,Pittsburgh Penguins,Boston Bruins,4,2,REG
@@ -868,6 +1057,19 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-03-13,Winnipeg Jets,San Jose Sharks,San Jose Sharks,Winnipeg Jets,5,4,REG
 2019-03-13,Calgary Flames,New Jersey Devils,Calgary Flames,New Jersey Devils,8,4,REG
 2019-03-13,Anaheim Ducks,Nashville Predators,Anaheim Ducks,Nashville Predators,3,2,REG
+2019-03-13,Toronto Maple Leafs,Chicago Blackhawks,Chicago Blackhawks,Toronto Maple Leafs,5,4,REG
+2019-03-14,Edmonton Oilers,New Jersey Devils,New Jersey Devils,Edmonton Oilers,6,3,REG
+2019-03-14,Vancouver Canucks,New York Rangers,Vancouver Canucks,New York Rangers,4,1,REG
+2019-03-14,Buffalo Sabres,Pittsburgh Penguins,Pittsburgh Penguins,Buffalo Sabres,4,0,REG
+2019-03-14,New York Islanders,Montreal Canadiens,New York Islanders,Montreal Canadiens,2,1,REG
+2019-03-14,Philadelphia Flyers,Washington Capitals,Washington Capitals,Philadelphia Flyers,5,2,REG
+2019-03-14,Ottawa Senators,St. Louis Blues,Ottawa Senators,St. Louis Blues,2,0,REG
+2019-03-14,Detroit Red Wings,Tampa Bay Lightning,Tampa Bay Lightning,Detroit Red Wings,5,4,REG
+2019-03-15,Minnesota Wild,Dallas Stars,Dallas Stars,Minnesota Wild,4,1,REG
+2019-03-15,Winnipeg Jets,Boston Bruins,Winnipeg Jets,Boston Bruins,4,3,REG
+2019-03-15,Arizona Coyotes,Anaheim Ducks,Arizona Coyotes,Anaheim Ducks,5,1,REG
+2019-03-15,Los Angeles Kings,Nashville Predators,Nashville Predators,Los Angeles Kings,3,1,REG
+2019-03-15,San Jose Sharks,Florida Panthers,Florida Panthers,San Jose Sharks,4,2,REG
 2019-03-15,Toronto Maple Leafs,Philadelphia Flyers,Toronto Maple Leafs,Philadelphia Flyers,7,6,REG
 2019-03-15,Columbus Blue Jackets,Carolina Hurricanes,Columbus Blue Jackets,Carolina Hurricanes,3,0,REG
 2019-03-16,Dallas Stars,Vegas Golden Knights,Vegas Golden Knights,Dallas Stars,2,1,REG
@@ -897,6 +1099,16 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-03-19,Chicago Blackhawks,Vancouver Canucks,Vancouver Canucks,Chicago Blackhawks,3,2,OT
 2019-03-19,Los Angeles Kings,Winnipeg Jets,Winnipeg Jets,Los Angeles Kings,3,2,REG
 2019-03-19,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,7,3,REG
+2019-03-19,New York Islanders,Boston Bruins,Boston Bruins,New York Islanders,4,0,REG
+2019-03-19,New York Rangers,Detroit Red Wings,Detroit Red Wings,New York Rangers,3,2,REG
+2019-03-19,Philadelphia Flyers,Montreal Canadiens,Montreal Canadiens,Philadelphia Flyers,3,1,REG
+2019-03-19,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,3,2,SO
+2019-03-19,New Jersey Devils,Washington Capitals,Washington Capitals,New Jersey Devils,4,1,REG
+2019-03-20,St. Louis Blues,Edmonton Oilers,St. Louis Blues,Edmonton Oilers,6,2,REG
+2019-03-20,Nashville Predators,Toronto Maple Leafs,Nashville Predators,Toronto Maple Leafs,3,0,REG
+2019-03-20,Minnesota Wild,Colorado Avalanche,Colorado Avalanche,Minnesota Wild,3,1,REG
+2019-03-20,Dallas Stars,Florida Panthers,Dallas Stars,Florida Panthers,4,2,REG
+2019-03-20,Calgary Flames,Columbus Blue Jackets,Calgary Flames,Columbus Blue Jackets,4,2,REG
 2019-03-20,Buffalo Sabres,Toronto Maple Leafs,Toronto Maple Leafs,Buffalo Sabres,4,2,REG
 2019-03-20,Washington Capitals,Tampa Bay Lightning,Tampa Bay Lightning,Washington Capitals,5,4,OT
 2019-03-21,Vancouver Canucks,Ottawa Senators,Vancouver Canucks,Ottawa Senators,7,4,REG
@@ -915,11 +1127,33 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-03-22,Los Angeles Kings,San Jose Sharks,Los Angeles Kings,San Jose Sharks,4,2,REG
 2019-03-22,Washington Capitals,Minnesota Wild,Minnesota Wild,Washington Capitals,2,1,REG
 2019-03-23,Anaheim Ducks,San Jose Sharks,Anaheim Ducks,San Jose Sharks,4,3,OT
+2019-03-23,New Jersey Devils,Arizona Coyotes,New Jersey Devils,Arizona Coyotes,2,1,SO
+2019-03-23,Philadelphia Flyers,New York Islanders,New York Islanders,Philadelphia Flyers,4,2,REG
+2019-03-23,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,4,2,REG
+2019-03-23,Edmonton Oilers,Ottawa Senators,Ottawa Senators,Edmonton Oilers,4,3,OT
+2019-03-23,Toronto Maple Leafs,New York Rangers,New York Rangers,Toronto Maple Leafs,2,1,OT
+2019-03-23,Montreal Canadiens,Buffalo Sabres,Montreal Canadiens,Buffalo Sabres,7,4,REG
+2019-03-23,Florida Panthers,Boston Bruins,Boston Bruins,Florida Panthers,7,3,REG
+2019-03-23,Carolina Hurricanes,Minnesota Wild,Carolina Hurricanes,Minnesota Wild,5,1,REG
+2019-03-23,Winnipeg Jets,Nashville Predators,Winnipeg Jets,Nashville Predators,4,0,REG
+2019-03-24,St. Louis Blues,Tampa Bay Lightning,St. Louis Blues,Tampa Bay Lightning,4,3,REG
+2019-03-24,Dallas Stars,Pittsburgh Penguins,Pittsburgh Penguins,Dallas Stars,3,2,REG
+2019-03-24,Vancouver Canucks,Calgary Flames,Calgary Flames,Vancouver Canucks,3,1,REG
+2019-03-24,Vegas Golden Knights,Detroit Red Wings,Detroit Red Wings,Vegas Golden Knights,3,2,OT
+2019-03-24,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,4,3,SO
 2019-03-24,Washington Capitals,Philadelphia Flyers,Washington Capitals,Philadelphia Flyers,3,1,REG
 2019-03-24,New York Islanders,Arizona Coyotes,New York Islanders,Arizona Coyotes,2,0,REG
 2019-03-24,Carolina Hurricanes,Montreal Canadiens,Carolina Hurricanes,Montreal Canadiens,2,1,OT
 2019-03-25,Chicago Blackhawks,Colorado Avalanche,Chicago Blackhawks,Colorado Avalanche,2,1,OT
 2019-03-25,Vancouver Canucks,Columbus Blue Jackets,Columbus Blue Jackets,Vancouver Canucks,4,0,REG
+2019-03-25,Toronto Maple Leafs,Florida Panthers,Toronto Maple Leafs,Florida Panthers,7,5,REG
+2019-03-25,New Jersey Devils,Buffalo Sabres,New Jersey Devils,Buffalo Sabres,3,1,REG
+2019-03-25,New York Rangers,Pittsburgh Penguins,Pittsburgh Penguins,New York Rangers,5,2,REG
+2019-03-25,Tampa Bay Lightning,Boston Bruins,Tampa Bay Lightning,Boston Bruins,5,4,REG
+2019-03-26,St. Louis Blues,Vegas Golden Knights,St. Louis Blues,Vegas Golden Knights,3,1,REG
+2019-03-26,Winnipeg Jets,Dallas Stars,Dallas Stars,Winnipeg Jets,5,2,REG
+2019-03-26,Calgary Flames,Los Angeles Kings,Los Angeles Kings,Calgary Flames,3,0,REG
+2019-03-26,San Jose Sharks,Detroit Red Wings,Detroit Red Wings,San Jose Sharks,3,2,REG
 2019-03-26,Washington Capitals,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,4,1,REG
 2019-03-26,Columbus Blue Jackets,New York Islanders,Columbus Blue Jackets,New York Islanders,4,0,REG
 2019-03-26,Montreal Canadiens,Florida Panthers,Montreal Canadiens,Florida Panthers,5,1,REG
@@ -930,6 +1164,14 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-03-27,Boston Bruins,New York Rangers,Boston Bruins,New York Rangers,6,3,REG
 2019-03-28,Calgary Flames,Dallas Stars,Dallas Stars,Calgary Flames,2,1,REG
 2019-03-28,Colorado Avalanche,Vegas Golden Knights,Colorado Avalanche,Vegas Golden Knights,4,3,REG
+2019-03-28,Buffalo Sabres,Detroit Red Wings,Detroit Red Wings,Buffalo Sabres,5,4,OT
+2019-03-28,Carolina Hurricanes,Washington Capitals,Washington Capitals,Carolina Hurricanes,3,2,REG
+2019-03-28,Columbus Blue Jackets,Montreal Canadiens,Columbus Blue Jackets,Montreal Canadiens,6,2,REG
+2019-03-28,Ottawa Senators,Florida Panthers,Florida Panthers,Ottawa Senators,5,2,REG
+2019-03-29,Winnipeg Jets,New York Islanders,New York Islanders,Winnipeg Jets,5,4,REG
+2019-03-29,Edmonton Oilers,Dallas Stars,Dallas Stars,Edmonton Oilers,3,2,SO
+2019-03-29,Vancouver Canucks,Los Angeles Kings,Vancouver Canucks,Los Angeles Kings,3,2,SO
+2019-03-29,San Jose Sharks,Chicago Blackhawks,Chicago Blackhawks,San Jose Sharks,5,4,REG
 2019-03-29,New York Rangers,St. Louis Blues,New York Rangers,St. Louis Blues,4,2,REG
 2019-03-29,Pittsburgh Penguins,Nashville Predators,Nashville Predators,Pittsburgh Penguins,3,1,REG
 2019-03-29,Detroit Red Wings,New Jersey Devils,Detroit Red Wings,New Jersey Devils,4,0,REG
@@ -948,6 +1190,12 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-03-31,Edmonton Oilers,Anaheim Ducks,Anaheim Ducks,Edmonton Oilers,5,1,REG
 2019-03-31,Vancouver Canucks,Dallas Stars,Vancouver Canucks,Dallas Stars,3,2,SO
 2019-03-31,Los Angeles Kings,Chicago Blackhawks,Los Angeles Kings,Chicago Blackhawks,3,2,OT
+2019-03-31,Philadelphia Flyers,New York Rangers,New York Rangers,Philadelphia Flyers,3,0,REG
+2019-03-31,Pittsburgh Penguins,Carolina Hurricanes,Pittsburgh Penguins,Carolina Hurricanes,3,1,REG
+2019-03-31,Arizona Coyotes,Minnesota Wild,Arizona Coyotes,Minnesota Wild,4,0,REG
+2019-03-31,Buffalo Sabres,Columbus Blue Jackets,Columbus Blue Jackets,Buffalo Sabres,4,0,REG
+2019-03-31,Detroit Red Wings,Boston Bruins,Detroit Red Wings,Boston Bruins,6,3,REG
+2019-04-01,San Jose Sharks,Calgary Flames,Calgary Flames,San Jose Sharks,5,3,REG
 2019-04-01,Florida Panthers,Washington Capitals,Florida Panthers,Washington Capitals,5,3,REG
 2019-04-01,New Jersey Devils,New York Rangers,New Jersey Devils,New York Rangers,4,2,REG
 2019-04-01,New York Islanders,Toronto Maple Leafs,Toronto Maple Leafs,New York Islanders,2,1,REG
@@ -956,6 +1204,16 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-04-02,Chicago Blackhawks,Winnipeg Jets,Winnipeg Jets,Chicago Blackhawks,4,3,OT
 2019-04-02,Vegas Golden Knights,Edmonton Oilers,Vegas Golden Knights,Edmonton Oilers,3,1,REG
 2019-04-02,Los Angeles Kings,Calgary Flames,Calgary Flames,Los Angeles Kings,6,2,REG
+2019-04-02,Buffalo Sabres,Nashville Predators,Nashville Predators,Buffalo Sabres,3,2,REG
+2019-04-02,Columbus Blue Jackets,Boston Bruins,Boston Bruins,Columbus Blue Jackets,6,2,REG
+2019-04-02,Toronto Maple Leafs,Carolina Hurricanes,Carolina Hurricanes,Toronto Maple Leafs,4,1,REG
+2019-04-02,Montreal Canadiens,Tampa Bay Lightning,Montreal Canadiens,Tampa Bay Lightning,4,2,REG
+2019-04-02,Detroit Red Wings,Pittsburgh Penguins,Detroit Red Wings,Pittsburgh Penguins,4,1,REG
+2019-04-03,Minnesota Wild,Winnipeg Jets,Minnesota Wild,Winnipeg Jets,5,1,REG
+2019-04-03,Dallas Stars,Philadelphia Flyers,Dallas Stars,Philadelphia Flyers,6,2,REG
+2019-04-03,Colorado Avalanche,Edmonton Oilers,Colorado Avalanche,Edmonton Oilers,6,2,REG
+2019-04-03,Vancouver Canucks,San Jose Sharks,Vancouver Canucks,San Jose Sharks,4,2,REG
+2019-04-03,Arizona Coyotes,Los Angeles Kings,Los Angeles Kings,Arizona Coyotes,3,1,REG
 2019-04-03,New York Rangers,Ottawa Senators,Ottawa Senators,New York Rangers,4,1,REG
 2019-04-04,Chicago Blackhawks,St. Louis Blues,Chicago Blackhawks,St. Louis Blues,4,3,SO
 2019-04-04,Anaheim Ducks,Calgary Flames,Anaheim Ducks,Calgary Flames,3,1,REG
@@ -971,6 +1229,9 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-04-05,Colorado Avalanche,Winnipeg Jets,Colorado Avalanche,Winnipeg Jets,3,2,OT
 2019-04-05,Edmonton Oilers,San Jose Sharks,San Jose Sharks,Edmonton Oilers,3,2,REG
 2019-04-05,Vegas Golden Knights,Arizona Coyotes,Arizona Coyotes,Vegas Golden Knights,4,1,REG
+2019-04-05,New York Rangers,Columbus Blue Jackets,Columbus Blue Jackets,New York Rangers,3,2,SO
+2019-04-06,Chicago Blackhawks,Dallas Stars,Chicago Blackhawks,Dallas Stars,5,1,REG
+2019-04-06,Anaheim Ducks,Los Angeles Kings,Anaheim Ducks,Los Angeles Kings,5,2,REG
 2019-04-06,Boston Bruins,Tampa Bay Lightning,Tampa Bay Lightning,Boston Bruins,6,3,REG
 2019-04-06,St. Louis Blues,Vancouver Canucks,St. Louis Blues,Vancouver Canucks,3,2,SO
 2019-04-06,Montreal Canadiens,Toronto Maple Leafs,Montreal Canadiens,Toronto Maple Leafs,6,5,SO
@@ -991,43 +1252,84 @@ date,home,away,winner,loser,winner_pts,loser_pts,end_type
 2019-04-11,Winnipeg Jets,St. Louis Blues,St. Louis Blues,Winnipeg Jets,2,1,REG
 2019-04-11,Nashville Predators,Dallas Stars,Dallas Stars,Nashville Predators,3,2,REG
 2019-04-11,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,5,2,REG
+2019-04-11,Boston Bruins,Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,4,1,REG
+2019-04-11,Washington Capitals,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,4,2,REG
+2019-04-12,Calgary Flames,Colorado Avalanche,Calgary Flames,Colorado Avalanche,4,0,REG
 2019-04-12,Tampa Bay Lightning,Columbus Blue Jackets,Columbus Blue Jackets,Tampa Bay Lightning,5,1,REG
 2019-04-12,New York Islanders,Pittsburgh Penguins,New York Islanders,Pittsburgh Penguins,3,1,REG
 2019-04-13,Winnipeg Jets,St. Louis Blues,St. Louis Blues,Winnipeg Jets,4,3,REG
 2019-04-13,San Jose Sharks,Vegas Golden Knights,Vegas Golden Knights,San Jose Sharks,5,3,REG
+2019-04-13,Washington Capitals,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,4,3,OT
+2019-04-13,Nashville Predators,Dallas Stars,Nashville Predators,Dallas Stars,2,1,OT
+2019-04-14,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,4,1,REG
+2019-04-14,Calgary Flames,Colorado Avalanche,Colorado Avalanche,Calgary Flames,3,2,OT
 2019-04-14,Pittsburgh Penguins,New York Islanders,New York Islanders,Pittsburgh Penguins,4,1,REG
 2019-04-14,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,3,1,REG
 2019-04-14,St. Louis Blues,Winnipeg Jets,Winnipeg Jets,St. Louis Blues,6,3,REG
 2019-04-15,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,6,3,REG
+2019-04-15,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,Boston Bruins,3,2,REG
+2019-04-15,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,Washington Capitals,4,0,REG
+2019-04-16,Dallas Stars,Nashville Predators,Nashville Predators,Dallas Stars,3,2,REG
+2019-04-16,Colorado Avalanche,Calgary Flames,Colorado Avalanche,Calgary Flames,6,2,REG
 2019-04-16,Columbus Blue Jackets,Tampa Bay Lightning,Columbus Blue Jackets,Tampa Bay Lightning,7,3,REG
 2019-04-16,Pittsburgh Penguins,New York Islanders,New York Islanders,Pittsburgh Penguins,3,1,REG
 2019-04-17,St. Louis Blues,Winnipeg Jets,Winnipeg Jets,St. Louis Blues,2,1,OT
 2019-04-17,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,4,0,REG
+2019-04-17,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,6,4,REG
+2019-04-18,Dallas Stars,Nashville Predators,Dallas Stars,Nashville Predators,5,1,REG
+2019-04-18,Colorado Avalanche,Calgary Flames,Colorado Avalanche,Calgary Flames,3,2,OT
+2019-04-18,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,Washington Capitals,2,1,REG
+2019-04-19,Winnipeg Jets,St. Louis Blues,St. Louis Blues,Winnipeg Jets,3,2,REG
+2019-04-19,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,5,2,REG
 2019-04-19,Boston Bruins,Toronto Maple Leafs,Toronto Maple Leafs,Boston Bruins,2,1,REG
 2019-04-20,Calgary Flames,Colorado Avalanche,Colorado Avalanche,Calgary Flames,5,1,REG
 2019-04-20,Nashville Predators,Dallas Stars,Dallas Stars,Nashville Predators,5,3,REG
 2019-04-20,St. Louis Blues,Winnipeg Jets,St. Louis Blues,Winnipeg Jets,3,2,REG
 2019-04-21,Washington Capitals,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,4,0,REG
+2019-04-21,Toronto Maple Leafs,Boston Bruins,Boston Bruins,Toronto Maple Leafs,4,2,REG
+2019-04-21,Vegas Golden Knights,San Jose Sharks,San Jose Sharks,Vegas Golden Knights,2,1,OT
+2019-04-22,Carolina Hurricanes,Washington Capitals,Carolina Hurricanes,Washington Capitals,5,2,REG
+2019-04-23,Dallas Stars,Nashville Predators,Dallas Stars,Nashville Predators,2,1,OT
+2019-04-23,Boston Bruins,Toronto Maple Leafs,Boston Bruins,Toronto Maple Leafs,5,1,REG
+2019-04-24,San Jose Sharks,Vegas Golden Knights,San Jose Sharks,Vegas Golden Knights,5,4,OT
+2019-04-24,Washington Capitals,Carolina Hurricanes,Carolina Hurricanes,Washington Capitals,4,3,OT
 2019-04-25,Boston Bruins,Columbus Blue Jackets,Boston Bruins,Columbus Blue Jackets,3,2,OT
 2019-04-26,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,3,2,REG
+2019-04-27,San Jose Sharks,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,5,2,REG
 2019-04-27,St. Louis Blues,Dallas Stars,Dallas Stars,St. Louis Blues,4,2,REG
 2019-04-28,Boston Bruins,Columbus Blue Jackets,Columbus Blue Jackets,Boston Bruins,3,2,OT
+2019-04-28,New York Islanders,Carolina Hurricanes,Carolina Hurricanes,New York Islanders,2,1,REG
+2019-04-28,San Jose Sharks,Colorado Avalanche,Colorado Avalanche,San Jose Sharks,4,3,REG
+2019-04-30,Dallas Stars,St. Louis Blues,St. Louis Blues,Dallas Stars,4,3,REG
 2019-04-30,Columbus Blue Jackets,Boston Bruins,Columbus Blue Jackets,Boston Bruins,2,1,REG
 2019-05-01,Colorado Avalanche,San Jose Sharks,San Jose Sharks,Colorado Avalanche,4,2,REG
+2019-05-01,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,New York Islanders,5,2,REG
+2019-05-02,Dallas Stars,St. Louis Blues,Dallas Stars,St. Louis Blues,4,2,REG
 2019-05-02,Columbus Blue Jackets,Boston Bruins,Boston Bruins,Columbus Blue Jackets,4,1,REG
 2019-05-03,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,3,0,REG
+2019-05-03,Carolina Hurricanes,New York Islanders,Carolina Hurricanes,New York Islanders,5,2,REG
+2019-05-04,St. Louis Blues,Dallas Stars,Dallas Stars,St. Louis Blues,2,1,REG
 2019-05-04,Boston Bruins,Columbus Blue Jackets,Boston Bruins,Columbus Blue Jackets,4,3,REG
 2019-05-05,San Jose Sharks,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,2,1,REG
 2019-05-05,Dallas Stars,St. Louis Blues,St. Louis Blues,Dallas Stars,4,1,REG
 2019-05-06,Columbus Blue Jackets,Boston Bruins,Boston Bruins,Columbus Blue Jackets,3,0,REG
 2019-05-07,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,San Jose Sharks,4,3,OT
 2019-05-08,St. Louis Blues,Dallas Stars,St. Louis Blues,Dallas Stars,2,1,OT
+2019-05-09,San Jose Sharks,Colorado Avalanche,San Jose Sharks,Colorado Avalanche,3,2,REG
+2019-05-10,Boston Bruins,Carolina Hurricanes,Boston Bruins,Carolina Hurricanes,5,2,REG
+2019-05-12,San Jose Sharks,St. Louis Blues,San Jose Sharks,St. Louis Blues,6,3,REG
+2019-05-12,Boston Bruins,Carolina Hurricanes,Boston Bruins,Carolina Hurricanes,6,2,REG
 2019-05-14,San Jose Sharks,St. Louis Blues,St. Louis Blues,San Jose Sharks,4,2,REG
+2019-05-15,Carolina Hurricanes,Boston Bruins,Boston Bruins,Carolina Hurricanes,2,1,REG
 2019-05-16,St. Louis Blues,San Jose Sharks,San Jose Sharks,St. Louis Blues,5,4,OT
+2019-05-17,Carolina Hurricanes,Boston Bruins,Boston Bruins,Carolina Hurricanes,4,0,REG
+2019-05-18,St. Louis Blues,San Jose Sharks,St. Louis Blues,San Jose Sharks,2,1,REG
 2019-05-19,San Jose Sharks,St. Louis Blues,St. Louis Blues,San Jose Sharks,4,0,REG
 2019-05-22,St. Louis Blues,San Jose Sharks,St. Louis Blues,San Jose Sharks,5,1,REG
+2019-05-28,Boston Bruins,St. Louis Blues,Boston Bruins,St. Louis Blues,4,2,REG
 2019-05-30,Boston Bruins,St. Louis Blues,St. Louis Blues,Boston Bruins,3,2,OT
 2019-06-02,St. Louis Blues,Boston Bruins,Boston Bruins,St. Louis Blues,6,2,REG
+2019-06-04,St. Louis Blues,Boston Bruins,St. Louis Blues,Boston Bruins,4,2,REG
 2019-06-07,Boston Bruins,St. Louis Blues,St. Louis Blues,Boston Bruins,2,1,REG
 2019-06-10,St. Louis Blues,Boston Bruins,Boston Bruins,St. Louis Blues,5,1,REG
 2019-06-13,Boston Bruins,St. Louis Blues,St. Louis Blues,Boston Bruins,4,1,REG
