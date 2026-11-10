@@ -332,10 +332,10 @@
         "team": "Vancouver Canucks",
         "rank": 8,
         "wins": 2,
-        "losses": 16,
-        "win_pct": 0.111,
+        "losses": 17,
+        "win_pct": 0.105,
         "points": 5,
-        "points_pct": 0.139
+        "points_pct": 0.132
       }
     ],
     "Metropolitan": [
@@ -396,11 +396,11 @@
       {
         "team": "Philadelphia Flyers",
         "rank": 7,
-        "wins": 4,
+        "wins": 5,
         "losses": 14,
-        "win_pct": 0.222,
-        "points": 13,
-        "points_pct": 0.361
+        "win_pct": 0.263,
+        "points": 15,
+        "points_pct": 0.395
       },
       {
         "team": "Pittsburgh Penguins",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-10 04:32 UTC"
+  "current_field_updated": "2026-11-10 06:08 UTC"
 }
