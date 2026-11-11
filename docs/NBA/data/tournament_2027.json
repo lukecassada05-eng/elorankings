@@ -23,17 +23,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Philadelphia 76ers",
+      "team": "Atlanta Hawks",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Southeast",
       "seed": 3,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Atlanta Hawks",
+      "team": "Philadelphia 76ers",
       "conference": "Eastern",
-      "division": "Southeast",
+      "division": "Atlantic",
       "seed": 4,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -47,7 +47,7 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Toronto Raptors",
+      "team": "New York Knicks",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": 6,
@@ -55,7 +55,7 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "New York Knicks",
+      "team": "Toronto Raptors",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -285,6 +285,43 @@
         "win_pct": 0.067
       }
     ],
+    "Atlantic": [
+      {
+        "team": "Boston Celtics",
+        "rank": 1,
+        "wins": 13,
+        "losses": 2,
+        "win_pct": 0.867
+      },
+      {
+        "team": "Philadelphia 76ers",
+        "rank": 2,
+        "wins": 10,
+        "losses": 6,
+        "win_pct": 0.625
+      },
+      {
+        "team": "Toronto Raptors",
+        "rank": 3,
+        "wins": 7,
+        "losses": 8,
+        "win_pct": 0.467
+      },
+      {
+        "team": "New York Knicks",
+        "rank": 4,
+        "wins": 7,
+        "losses": 8,
+        "win_pct": 0.467
+      },
+      {
+        "team": "Brooklyn Nets",
+        "rank": 5,
+        "wins": 5,
+        "losses": 9,
+        "win_pct": 0.357
+      }
+    ],
     "Southwest": [
       {
         "team": "Houston Rockets",
@@ -320,43 +357,6 @@
         "wins": 7,
         "losses": 8,
         "win_pct": 0.467
-      }
-    ],
-    "Atlantic": [
-      {
-        "team": "Boston Celtics",
-        "rank": 1,
-        "wins": 12,
-        "losses": 2,
-        "win_pct": 0.857
-      },
-      {
-        "team": "Philadelphia 76ers",
-        "rank": 2,
-        "wins": 10,
-        "losses": 5,
-        "win_pct": 0.667
-      },
-      {
-        "team": "Toronto Raptors",
-        "rank": 3,
-        "wins": 7,
-        "losses": 8,
-        "win_pct": 0.467
-      },
-      {
-        "team": "New York Knicks",
-        "rank": 4,
-        "wins": 6,
-        "losses": 8,
-        "win_pct": 0.429
-      },
-      {
-        "team": "Brooklyn Nets",
-        "rank": 5,
-        "wins": 5,
-        "losses": 9,
-        "win_pct": 0.357
       }
     ],
     "Northwest": [
@@ -429,8 +429,8 @@
         "team": "Milwaukee Bucks",
         "rank": 5,
         "wins": 3,
-        "losses": 12,
-        "win_pct": 0.2
+        "losses": 13,
+        "win_pct": 0.188
       }
     ],
     "Southeast": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-10 21:40 UTC"
+  "current_field_updated": "2026-11-11 04:37 UTC"
 }
