@@ -268,11 +268,11 @@
       {
         "team": "Carolina Hurricanes",
         "rank": 1,
-        "wins": 14,
+        "wins": 15,
         "losses": 4,
-        "win_pct": 0.778,
-        "points": 29,
-        "points_pct": 0.806
+        "win_pct": 0.789,
+        "points": 31,
+        "points_pct": 0.816
       },
       {
         "team": "New Jersey Devils",
@@ -361,10 +361,10 @@
         "team": "Seattle Kraken",
         "rank": 3,
         "wins": 9,
-        "losses": 7,
-        "win_pct": 0.562,
+        "losses": 8,
+        "win_pct": 0.529,
         "points": 19,
-        "points_pct": 0.594
+        "points_pct": 0.559
       },
       {
         "team": "Anaheim Ducks",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-12 15:01 UTC"
+  "current_field_updated": "2026-11-12 22:10 UTC"
 }
