@@ -323,10 +323,10 @@
         "team": "Philadelphia Flyers",
         "rank": 7,
         "wins": 5,
-        "losses": 14,
-        "win_pct": 0.263,
-        "points": 15,
-        "points_pct": 0.395
+        "losses": 15,
+        "win_pct": 0.25,
+        "points": 16,
+        "points_pct": 0.4
       },
       {
         "team": "Pittsburgh Penguins",
@@ -342,11 +342,11 @@
       {
         "team": "Edmonton Oilers",
         "rank": 1,
-        "wins": 13,
+        "wins": 14,
         "losses": 5,
-        "win_pct": 0.722,
-        "points": 28,
-        "points_pct": 0.778
+        "win_pct": 0.737,
+        "points": 30,
+        "points_pct": 0.789
       },
       {
         "team": "Vegas Golden Knights",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-12 04:25 UTC"
+  "current_field_updated": "2026-11-12 05:43 UTC"
 }
