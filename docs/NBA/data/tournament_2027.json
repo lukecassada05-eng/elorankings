@@ -143,17 +143,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "San Antonio Spurs",
+      "team": "Portland Trail Blazers",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Northwest",
       "seed": 3,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Portland Trail Blazers",
+      "team": "San Antonio Spurs",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Southwest",
       "seed": 4,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -191,17 +191,17 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Oklahoma City Thunder",
+      "team": "Dallas Mavericks",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Southwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Dallas Mavericks",
+      "team": "Oklahoma City Thunder",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Northwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -363,9 +363,9 @@
       {
         "team": "Portland Trail Blazers",
         "rank": 1,
-        "wins": 9,
+        "wins": 10,
         "losses": 4,
-        "win_pct": 0.692
+        "win_pct": 0.714
       },
       {
         "team": "Minnesota Timberwolves",
@@ -385,8 +385,8 @@
         "team": "Oklahoma City Thunder",
         "rank": 4,
         "wins": 9,
-        "losses": 7,
-        "win_pct": 0.562
+        "losses": 8,
+        "win_pct": 0.529
       },
       {
         "team": "Utah Jazz",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-12 05:43 UTC"
+  "current_field_updated": "2026-11-12 07:54 UTC"
 }
