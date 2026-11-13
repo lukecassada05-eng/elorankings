@@ -63,7 +63,7 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Toronto Raptors",
+      "team": "New York Knicks",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -71,7 +71,7 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "New York Knicks",
+      "team": "Toronto Raptors",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": null,
@@ -191,17 +191,17 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Dallas Mavericks",
+      "team": "Oklahoma City Thunder",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Northwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Oklahoma City Thunder",
+      "team": "Dallas Mavericks",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Southwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -248,6 +248,43 @@
     }
   ],
   "standings": {
+    "Atlantic": [
+      {
+        "team": "Boston Celtics",
+        "rank": 1,
+        "wins": 14,
+        "losses": 2,
+        "win_pct": 0.875
+      },
+      {
+        "team": "Philadelphia 76ers",
+        "rank": 2,
+        "wins": 11,
+        "losses": 6,
+        "win_pct": 0.647
+      },
+      {
+        "team": "New York Knicks",
+        "rank": 3,
+        "wins": 7,
+        "losses": 9,
+        "win_pct": 0.438
+      },
+      {
+        "team": "Toronto Raptors",
+        "rank": 4,
+        "wins": 7,
+        "losses": 10,
+        "win_pct": 0.412
+      },
+      {
+        "team": "Brooklyn Nets",
+        "rank": 5,
+        "wins": 6,
+        "losses": 9,
+        "win_pct": 0.4
+      }
+    ],
     "Southwest": [
       {
         "team": "Houston Rockets",
@@ -274,8 +311,8 @@
         "team": "Dallas Mavericks",
         "rank": 4,
         "wins": 8,
-        "losses": 7,
-        "win_pct": 0.533
+        "losses": 8,
+        "win_pct": 0.5
       },
       {
         "team": "New Orleans Pelicans",
@@ -283,43 +320,6 @@
         "wins": 7,
         "losses": 9,
         "win_pct": 0.438
-      }
-    ],
-    "Atlantic": [
-      {
-        "team": "Boston Celtics",
-        "rank": 1,
-        "wins": 14,
-        "losses": 2,
-        "win_pct": 0.875
-      },
-      {
-        "team": "Philadelphia 76ers",
-        "rank": 2,
-        "wins": 10,
-        "losses": 6,
-        "win_pct": 0.625
-      },
-      {
-        "team": "Toronto Raptors",
-        "rank": 3,
-        "wins": 7,
-        "losses": 9,
-        "win_pct": 0.438
-      },
-      {
-        "team": "New York Knicks",
-        "rank": 4,
-        "wins": 7,
-        "losses": 9,
-        "win_pct": 0.438
-      },
-      {
-        "team": "Brooklyn Nets",
-        "rank": 5,
-        "wins": 6,
-        "losses": 9,
-        "win_pct": 0.4
       }
     ],
     "Pacific": [
@@ -370,9 +370,9 @@
       {
         "team": "Minnesota Timberwolves",
         "rank": 2,
-        "wins": 11,
+        "wins": 12,
         "losses": 6,
-        "win_pct": 0.647
+        "win_pct": 0.667
       },
       {
         "team": "Denver Nuggets",
@@ -400,9 +400,9 @@
       {
         "team": "Detroit Pistons",
         "rank": 1,
-        "wins": 10,
+        "wins": 11,
         "losses": 4,
-        "win_pct": 0.714
+        "win_pct": 0.733
       },
       {
         "team": "Cleveland Cavaliers",
@@ -459,8 +459,8 @@
         "team": "Washington Wizards",
         "rank": 4,
         "wins": 6,
-        "losses": 10,
-        "win_pct": 0.375
+        "losses": 11,
+        "win_pct": 0.353
       },
       {
         "team": "Charlotte Hornets",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-13 02:43 UTC"
+  "current_field_updated": "2026-11-13 04:52 UTC"
 }
