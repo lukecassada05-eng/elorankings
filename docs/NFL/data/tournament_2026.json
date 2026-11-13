@@ -215,6 +215,14 @@
       "note": null
     },
     {
+      "team": "WAS",
+      "conference": "NFC",
+      "division": "NFC East",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "NO",
       "conference": "NFC",
       "division": "NFC South",
@@ -242,14 +250,6 @@
       "team": "ARI",
       "conference": "NFC",
       "division": "NFC West",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "WAS",
-      "conference": "NFC",
-      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -479,8 +479,8 @@
         "team": "NYG",
         "rank": 1,
         "wins": 5,
-        "losses": 2,
-        "win_pct": 0.714
+        "losses": 3,
+        "win_pct": 0.625
       },
       {
         "team": "DAL",
@@ -492,9 +492,9 @@
       {
         "team": "WAS",
         "rank": 3,
-        "wins": 2,
+        "wins": 3,
         "losses": 5,
-        "win_pct": 0.286
+        "win_pct": 0.375
       },
       {
         "team": "PHI",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-13 04:52 UTC"
+  "current_field_updated": "2026-11-13 14:25 UTC"
 }

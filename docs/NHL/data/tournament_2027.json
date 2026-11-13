@@ -71,17 +71,17 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Florida Panthers",
+      "team": "New York Islanders",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "New York Islanders",
+      "team": "Florida Panthers",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": null,
       "status": "outside",
       "note": null
@@ -304,11 +304,11 @@
       {
         "team": "New York Islanders",
         "rank": 5,
-        "wins": 7,
+        "wins": 8,
         "losses": 9,
-        "win_pct": 0.438,
-        "points": 18,
-        "points_pct": 0.562
+        "win_pct": 0.471,
+        "points": 20,
+        "points_pct": 0.588
       },
       {
         "team": "Philadelphia Flyers",
@@ -471,10 +471,10 @@
         "team": "Los Angeles Kings",
         "rank": 7,
         "wins": 5,
-        "losses": 10,
-        "win_pct": 0.333,
+        "losses": 11,
+        "win_pct": 0.312,
         "points": 12,
-        "points_pct": 0.4
+        "points_pct": 0.375
       },
       {
         "team": "Vancouver Canucks",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-13 04:52 UTC"
+  "current_field_updated": "2026-11-13 14:25 UTC"
 }
