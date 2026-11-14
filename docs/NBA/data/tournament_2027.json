@@ -39,7 +39,7 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Miami Heat",
+      "team": "Orlando Magic",
       "conference": "Eastern",
       "division": "Southeast",
       "seed": 5,
@@ -47,17 +47,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Cleveland Cavaliers",
+      "team": "Miami Heat",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Southeast",
       "seed": 6,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Orlando Magic",
+      "team": "Cleveland Cavaliers",
       "conference": "Eastern",
-      "division": "Southeast",
+      "division": "Central",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -87,6 +87,14 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
+      "team": "Indiana Pacers",
+      "conference": "Eastern",
+      "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "Washington Wizards",
       "conference": "Eastern",
       "division": "Southeast",
@@ -98,14 +106,6 @@
       "team": "Charlotte Hornets",
       "conference": "Eastern",
       "division": "Southeast",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Indiana Pacers",
-      "conference": "Eastern",
-      "division": "Central",
       "seed": null,
       "status": "outside",
       "note": null
@@ -267,8 +267,8 @@
         "team": "New York Knicks",
         "rank": 3,
         "wins": 7,
-        "losses": 9,
-        "win_pct": 0.438
+        "losses": 10,
+        "win_pct": 0.412
       },
       {
         "team": "Toronto Raptors",
@@ -414,9 +414,9 @@
       {
         "team": "Indiana Pacers",
         "rank": 3,
-        "wins": 5,
+        "wins": 6,
         "losses": 11,
-        "win_pct": 0.312
+        "win_pct": 0.353
       },
       {
         "team": "Chicago Bulls",
@@ -429,8 +429,8 @@
         "team": "Milwaukee Bucks",
         "rank": 5,
         "wins": 3,
-        "losses": 14,
-        "win_pct": 0.176
+        "losses": 15,
+        "win_pct": 0.167
       }
     ],
     "Southeast": [
@@ -442,18 +442,18 @@
         "win_pct": 0.647
       },
       {
-        "team": "Miami Heat",
+        "team": "Orlando Magic",
         "rank": 2,
         "wins": 8,
         "losses": 8,
         "win_pct": 0.5
       },
       {
-        "team": "Orlando Magic",
+        "team": "Miami Heat",
         "rank": 3,
-        "wins": 7,
+        "wins": 8,
         "losses": 8,
-        "win_pct": 0.467
+        "win_pct": 0.5
       },
       {
         "team": "Washington Wizards",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-13 21:40 UTC"
+  "current_field_updated": "2026-11-14 04:01 UTC"
 }
