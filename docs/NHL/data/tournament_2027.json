@@ -175,7 +175,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Seattle Kraken",
+      "team": "Anaheim Ducks",
       "conference": "Western",
       "division": "Pacific",
       "seed": 3,
@@ -191,17 +191,17 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Anaheim Ducks",
+      "team": "Utah Mammoth",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Central",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
     },
     {
-      "team": "Utah Mammoth",
+      "team": "Seattle Kraken",
       "conference": "Western",
-      "division": "Central",
+      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
@@ -268,11 +268,11 @@
       {
         "team": "Carolina Hurricanes",
         "rank": 1,
-        "wins": 15,
+        "wins": 16,
         "losses": 4,
-        "win_pct": 0.789,
-        "points": 31,
-        "points_pct": 0.816
+        "win_pct": 0.8,
+        "points": 33,
+        "points_pct": 0.825
       },
       {
         "team": "New Jersey Devils",
@@ -432,22 +432,22 @@
         "points_pct": 0.675
       },
       {
-        "team": "Seattle Kraken",
-        "rank": 3,
-        "wins": 9,
-        "losses": 8,
-        "win_pct": 0.529,
-        "points": 19,
-        "points_pct": 0.559
-      },
-      {
         "team": "Anaheim Ducks",
-        "rank": 4,
+        "rank": 3,
         "wins": 10,
         "losses": 9,
         "win_pct": 0.526,
         "points": 21,
         "points_pct": 0.553
+      },
+      {
+        "team": "Seattle Kraken",
+        "rank": 4,
+        "wins": 9,
+        "losses": 9,
+        "win_pct": 0.5,
+        "points": 19,
+        "points_pct": 0.528
       },
       {
         "team": "Calgary Flames",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-14 20:18 UTC"
+  "current_field_updated": "2026-11-14 21:45 UTC"
 }
