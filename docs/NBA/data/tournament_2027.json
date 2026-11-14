@@ -135,18 +135,10 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Los Angeles Lakers",
-      "conference": "Western",
-      "division": "Pacific",
-      "seed": 2,
-      "status": "clinched_top6",
-      "note": "Top 6 — direct playoff seed"
-    },
-    {
       "team": "Portland Trail Blazers",
       "conference": "Western",
       "division": "Northwest",
-      "seed": 3,
+      "seed": 2,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
@@ -154,6 +146,14 @@
       "team": "San Antonio Spurs",
       "conference": "Western",
       "division": "Southwest",
+      "seed": 3,
+      "status": "clinched_top6",
+      "note": "Top 6 — direct playoff seed"
+    },
+    {
+      "team": "Los Angeles Lakers",
+      "conference": "Western",
+      "division": "Pacific",
       "seed": 4,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -167,17 +167,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Golden State Warriors",
+      "team": "Minnesota Timberwolves",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Northwest",
       "seed": 6,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Minnesota Timberwolves",
+      "team": "Golden State Warriors",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Pacific",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -191,17 +191,17 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Oklahoma City Thunder",
+      "team": "Dallas Mavericks",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Southwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Dallas Mavericks",
+      "team": "Oklahoma City Thunder",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Northwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -296,9 +296,9 @@
       {
         "team": "San Antonio Spurs",
         "rank": 2,
-        "wins": 12,
+        "wins": 13,
         "losses": 5,
-        "win_pct": 0.706
+        "win_pct": 0.722
       },
       {
         "team": "Memphis Grizzlies",
@@ -334,8 +334,8 @@
         "team": "Golden State Warriors",
         "rank": 2,
         "wins": 12,
-        "losses": 6,
-        "win_pct": 0.667
+        "losses": 7,
+        "win_pct": 0.632
       },
       {
         "team": "Phoenix Suns",
@@ -347,25 +347,25 @@
       {
         "team": "LA Clippers",
         "rank": 4,
-        "wins": 4,
+        "wins": 5,
         "losses": 9,
-        "win_pct": 0.308
+        "win_pct": 0.357
       },
       {
         "team": "Sacramento Kings",
         "rank": 5,
         "wins": 1,
-        "losses": 15,
-        "win_pct": 0.062
+        "losses": 16,
+        "win_pct": 0.059
       }
     ],
     "Northwest": [
       {
         "team": "Portland Trail Blazers",
         "rank": 1,
-        "wins": 10,
+        "wins": 11,
         "losses": 4,
-        "win_pct": 0.714
+        "win_pct": 0.733
       },
       {
         "team": "Minnesota Timberwolves",
@@ -385,8 +385,8 @@
         "team": "Oklahoma City Thunder",
         "rank": 4,
         "wins": 9,
-        "losses": 8,
-        "win_pct": 0.529
+        "losses": 9,
+        "win_pct": 0.5
       },
       {
         "team": "Utah Jazz",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-14 04:58 UTC"
+  "current_field_updated": "2026-11-14 07:02 UTC"
 }

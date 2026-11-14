@@ -286,11 +286,11 @@
       {
         "team": "New York Rangers",
         "rank": 3,
-        "wins": 11,
+        "wins": 12,
         "losses": 7,
-        "win_pct": 0.611,
-        "points": 22,
-        "points_pct": 0.611
+        "win_pct": 0.632,
+        "points": 24,
+        "points_pct": 0.632
       },
       {
         "team": "Washington Capitals",
@@ -351,11 +351,11 @@
       {
         "team": "Nashville Predators",
         "rank": 2,
-        "wins": 10,
+        "wins": 11,
         "losses": 9,
-        "win_pct": 0.526,
-        "points": 25,
-        "points_pct": 0.658
+        "win_pct": 0.55,
+        "points": 27,
+        "points_pct": 0.675
       },
       {
         "team": "Dallas Stars",
@@ -426,10 +426,10 @@
         "team": "Vegas Golden Knights",
         "rank": 2,
         "wins": 12,
-        "losses": 7,
-        "win_pct": 0.632,
-        "points": 26,
-        "points_pct": 0.684
+        "losses": 8,
+        "win_pct": 0.6,
+        "points": 27,
+        "points_pct": 0.675
       },
       {
         "team": "Seattle Kraken",
@@ -480,10 +480,10 @@
         "team": "Vancouver Canucks",
         "rank": 8,
         "wins": 2,
-        "losses": 17,
-        "win_pct": 0.105,
+        "losses": 18,
+        "win_pct": 0.1,
         "points": 5,
-        "points_pct": 0.132
+        "points_pct": 0.125
       }
     ],
     "Atlantic": [
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-14 04:58 UTC"
+  "current_field_updated": "2026-11-14 07:02 UTC"
 }
