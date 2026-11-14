@@ -23,23 +23,23 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Atlanta Hawks",
+      "team": "Philadelphia 76ers",
       "conference": "Eastern",
-      "division": "Southeast",
+      "division": "Atlantic",
       "seed": 3,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Philadelphia 76ers",
+      "team": "Atlanta Hawks",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Southeast",
       "seed": 4,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Orlando Magic",
+      "team": "Miami Heat",
       "conference": "Eastern",
       "division": "Southeast",
       "seed": 5,
@@ -47,7 +47,7 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Miami Heat",
+      "team": "Orlando Magic",
       "conference": "Eastern",
       "division": "Southeast",
       "seed": 6,
@@ -103,17 +103,17 @@
       "note": null
     },
     {
-      "team": "Charlotte Hornets",
+      "team": "Chicago Bulls",
       "conference": "Eastern",
-      "division": "Southeast",
+      "division": "Central",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Chicago Bulls",
+      "team": "Charlotte Hornets",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Southeast",
       "seed": null,
       "status": "outside",
       "note": null
@@ -289,9 +289,9 @@
       {
         "team": "Houston Rockets",
         "rank": 1,
-        "wins": 11,
+        "wins": 12,
         "losses": 4,
-        "win_pct": 0.733
+        "win_pct": 0.75
       },
       {
         "team": "San Antonio Spurs",
@@ -303,9 +303,9 @@
       {
         "team": "Memphis Grizzlies",
         "rank": 3,
-        "wins": 10,
+        "wins": 11,
         "losses": 5,
-        "win_pct": 0.667
+        "win_pct": 0.688
       },
       {
         "team": "Dallas Mavericks",
@@ -318,8 +318,8 @@
         "team": "New Orleans Pelicans",
         "rank": 5,
         "wins": 7,
-        "losses": 9,
-        "win_pct": 0.438
+        "losses": 10,
+        "win_pct": 0.412
       }
     ],
     "Pacific": [
@@ -392,8 +392,8 @@
         "team": "Utah Jazz",
         "rank": 5,
         "wins": 4,
-        "losses": 12,
-        "win_pct": 0.25
+        "losses": 13,
+        "win_pct": 0.235
       }
     ],
     "Central": [
@@ -408,8 +408,8 @@
         "team": "Cleveland Cavaliers",
         "rank": 2,
         "wins": 7,
-        "losses": 8,
-        "win_pct": 0.467
+        "losses": 9,
+        "win_pct": 0.438
       },
       {
         "team": "Indiana Pacers",
@@ -421,9 +421,9 @@
       {
         "team": "Chicago Bulls",
         "rank": 4,
-        "wins": 4,
+        "wins": 5,
         "losses": 11,
-        "win_pct": 0.267
+        "win_pct": 0.312
       },
       {
         "team": "Milwaukee Bucks",
@@ -438,18 +438,18 @@
         "team": "Atlanta Hawks",
         "rank": 1,
         "wins": 11,
-        "losses": 6,
-        "win_pct": 0.647
-      },
-      {
-        "team": "Orlando Magic",
-        "rank": 2,
-        "wins": 8,
-        "losses": 8,
-        "win_pct": 0.5
+        "losses": 7,
+        "win_pct": 0.611
       },
       {
         "team": "Miami Heat",
+        "rank": 2,
+        "wins": 9,
+        "losses": 8,
+        "win_pct": 0.529
+      },
+      {
+        "team": "Orlando Magic",
         "rank": 3,
         "wins": 8,
         "losses": 8,
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-14 04:01 UTC"
+  "current_field_updated": "2026-11-14 04:43 UTC"
 }
