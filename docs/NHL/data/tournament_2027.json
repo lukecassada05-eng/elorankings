@@ -199,17 +199,17 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Seattle Kraken",
+      "team": "Winnipeg Jets",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Central",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Winnipeg Jets",
+      "team": "Seattle Kraken",
       "conference": "Western",
-      "division": "Central",
+      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
@@ -387,11 +387,11 @@
       {
         "team": "Winnipeg Jets",
         "rank": 6,
-        "wins": 9,
+        "wins": 10,
         "losses": 11,
-        "win_pct": 0.45,
-        "points": 21,
-        "points_pct": 0.525
+        "win_pct": 0.476,
+        "points": 23,
+        "points_pct": 0.548
       },
       {
         "team": "St. Louis Blues",
@@ -406,10 +406,10 @@
         "team": "Chicago Blackhawks",
         "rank": 8,
         "wins": 5,
-        "losses": 13,
-        "win_pct": 0.278,
-        "points": 11,
-        "points_pct": 0.306
+        "losses": 14,
+        "win_pct": 0.263,
+        "points": 12,
+        "points_pct": 0.316
       }
     ],
     "Pacific": [
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-14 21:45 UTC"
+  "current_field_updated": "2026-11-15 00:53 UTC"
 }
