@@ -215,6 +215,14 @@
       "note": null
     },
     {
+      "team": "Calgary Flames",
+      "conference": "Western",
+      "division": "Pacific",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "St. Louis Blues",
       "conference": "Western",
       "division": "Central",
@@ -224,14 +232,6 @@
     },
     {
       "team": "San Jose Sharks",
-      "conference": "Western",
-      "division": "Pacific",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "Calgary Flames",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -450,8 +450,17 @@
         "points_pct": 0.525
       },
       {
-        "team": "San Jose Sharks",
+        "team": "Calgary Flames",
         "rank": 5,
+        "wins": 9,
+        "losses": 11,
+        "win_pct": 0.45,
+        "points": 19,
+        "points_pct": 0.475
+      },
+      {
+        "team": "San Jose Sharks",
+        "rank": 6,
         "wins": 9,
         "losses": 13,
         "win_pct": 0.409,
@@ -459,22 +468,13 @@
         "points_pct": 0.455
       },
       {
-        "team": "Calgary Flames",
-        "rank": 6,
-        "wins": 8,
-        "losses": 11,
-        "win_pct": 0.421,
-        "points": 17,
-        "points_pct": 0.447
-      },
-      {
         "team": "Los Angeles Kings",
         "rank": 7,
         "wins": 5,
-        "losses": 11,
-        "win_pct": 0.312,
+        "losses": 12,
+        "win_pct": 0.294,
         "points": 12,
-        "points_pct": 0.375
+        "points_pct": 0.353
       },
       {
         "team": "Vancouver Canucks",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-15 06:27 UTC"
+  "current_field_updated": "2026-11-15 10:45 UTC"
 }
