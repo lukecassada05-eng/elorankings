@@ -87,14 +87,6 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Indiana Pacers",
-      "conference": "Eastern",
-      "division": "Central",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
       "team": "Washington Wizards",
       "conference": "Eastern",
       "division": "Southeast",
@@ -104,6 +96,14 @@
     },
     {
       "team": "Chicago Bulls",
+      "conference": "Eastern",
+      "division": "Central",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
+      "team": "Indiana Pacers",
       "conference": "Eastern",
       "division": "Central",
       "seed": null,
@@ -259,9 +259,9 @@
       {
         "team": "Philadelphia 76ers",
         "rank": 2,
-        "wins": 11,
+        "wins": 12,
         "losses": 6,
-        "win_pct": 0.647
+        "win_pct": 0.667
       },
       {
         "team": "New York Knicks",
@@ -422,8 +422,8 @@
         "team": "Indiana Pacers",
         "rank": 4,
         "wins": 6,
-        "losses": 11,
-        "win_pct": 0.353
+        "losses": 12,
+        "win_pct": 0.333
       },
       {
         "team": "Milwaukee Bucks",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-15 18:54 UTC"
+  "current_field_updated": "2026-11-15 21:55 UTC"
 }
