@@ -167,17 +167,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Minnesota Timberwolves",
+      "team": "Golden State Warriors",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Pacific",
       "seed": 6,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Golden State Warriors",
+      "team": "Minnesota Timberwolves",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Northwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -191,17 +191,17 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Dallas Mavericks",
+      "team": "Oklahoma City Thunder",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Northwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Oklahoma City Thunder",
+      "team": "Dallas Mavericks",
       "conference": "Western",
-      "division": "Northwest",
+      "division": "Southwest",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -281,8 +281,8 @@
         "team": "Brooklyn Nets",
         "rank": 5,
         "wins": 6,
-        "losses": 9,
-        "win_pct": 0.4
+        "losses": 10,
+        "win_pct": 0.375
       }
     ],
     "Southwest": [
@@ -303,23 +303,23 @@
       {
         "team": "Memphis Grizzlies",
         "rank": 3,
-        "wins": 11,
+        "wins": 12,
         "losses": 5,
-        "win_pct": 0.688
+        "win_pct": 0.706
       },
       {
         "team": "Dallas Mavericks",
         "rank": 4,
         "wins": 8,
-        "losses": 8,
-        "win_pct": 0.5
+        "losses": 9,
+        "win_pct": 0.471
       },
       {
         "team": "New Orleans Pelicans",
         "rank": 5,
         "wins": 7,
-        "losses": 10,
-        "win_pct": 0.412
+        "losses": 11,
+        "win_pct": 0.389
       }
     ],
     "Pacific": [
@@ -371,15 +371,15 @@
         "team": "Minnesota Timberwolves",
         "rank": 2,
         "wins": 12,
-        "losses": 6,
-        "win_pct": 0.667
+        "losses": 7,
+        "win_pct": 0.632
       },
       {
         "team": "Denver Nuggets",
         "rank": 3,
-        "wins": 9,
+        "wins": 10,
         "losses": 6,
-        "win_pct": 0.6
+        "win_pct": 0.625
       },
       {
         "team": "Oklahoma City Thunder",
@@ -401,29 +401,29 @@
         "team": "Detroit Pistons",
         "rank": 1,
         "wins": 11,
-        "losses": 4,
-        "win_pct": 0.733
+        "losses": 5,
+        "win_pct": 0.688
       },
       {
         "team": "Cleveland Cavaliers",
         "rank": 2,
-        "wins": 7,
+        "wins": 8,
         "losses": 9,
-        "win_pct": 0.438
+        "win_pct": 0.471
       },
       {
-        "team": "Indiana Pacers",
+        "team": "Chicago Bulls",
         "rank": 3,
         "wins": 6,
         "losses": 11,
         "win_pct": 0.353
       },
       {
-        "team": "Chicago Bulls",
+        "team": "Indiana Pacers",
         "rank": 4,
-        "wins": 5,
+        "wins": 6,
         "losses": 11,
-        "win_pct": 0.312
+        "win_pct": 0.353
       },
       {
         "team": "Milwaukee Bucks",
@@ -444,9 +444,9 @@
       {
         "team": "Miami Heat",
         "rank": 2,
-        "wins": 9,
+        "wins": 10,
         "losses": 8,
-        "win_pct": 0.529
+        "win_pct": 0.556
       },
       {
         "team": "Orlando Magic",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-15 01:06 UTC"
+  "current_field_updated": "2026-11-15 06:27 UTC"
 }
