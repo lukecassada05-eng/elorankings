@@ -328,9 +328,9 @@
       {
         "team": "SF",
         "rank": 1,
-        "wins": 7,
+        "wins": 8,
         "losses": 1,
-        "win_pct": 0.875
+        "win_pct": 0.889
       },
       {
         "team": "SEA",
@@ -486,8 +486,8 @@
         "team": "DAL",
         "rank": 2,
         "wins": 4,
-        "losses": 5,
-        "win_pct": 0.444
+        "losses": 6,
+        "win_pct": 0.4
       },
       {
         "team": "WAS",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-16 01:08 UTC"
+  "current_field_updated": "2026-11-16 02:46 UTC"
 }
