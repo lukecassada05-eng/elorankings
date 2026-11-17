@@ -23,7 +23,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Montreal Canadiens",
+      "team": "Boston Bruins",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": 3,
@@ -55,7 +55,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Boston Bruins",
+      "team": "Montreal Canadiens",
       "conference": "Eastern",
       "division": "Atlantic",
       "seed": 4,
@@ -191,7 +191,7 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Utah Mammoth",
+      "team": "Winnipeg Jets",
       "conference": "Western",
       "division": "Central",
       "seed": 5,
@@ -199,17 +199,17 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Winnipeg Jets",
+      "team": "Seattle Kraken",
       "conference": "Western",
-      "division": "Central",
+      "division": "Pacific",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Seattle Kraken",
+      "team": "Utah Mammoth",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Central",
       "seed": null,
       "status": "outside",
       "note": null
@@ -286,11 +286,11 @@
       {
         "team": "New York Rangers",
         "rank": 3,
-        "wins": 12,
+        "wins": 13,
         "losses": 7,
-        "win_pct": 0.632,
-        "points": 24,
-        "points_pct": 0.632
+        "win_pct": 0.65,
+        "points": 26,
+        "points_pct": 0.65
       },
       {
         "team": "New York Islanders",
@@ -376,22 +376,22 @@
         "points_pct": 0.625
       },
       {
-        "team": "Utah Mammoth",
-        "rank": 5,
-        "wins": 10,
-        "losses": 10,
-        "win_pct": 0.5,
-        "points": 22,
-        "points_pct": 0.55
-      },
-      {
         "team": "Winnipeg Jets",
-        "rank": 6,
+        "rank": 5,
         "wins": 10,
         "losses": 11,
         "win_pct": 0.476,
         "points": 23,
         "points_pct": 0.548
+      },
+      {
+        "team": "Utah Mammoth",
+        "rank": 6,
+        "wins": 10,
+        "losses": 11,
+        "win_pct": 0.476,
+        "points": 22,
+        "points_pct": 0.524
       },
       {
         "team": "St. Louis Blues",
@@ -479,11 +479,11 @@
       {
         "team": "Vancouver Canucks",
         "rank": 8,
-        "wins": 3,
+        "wins": 4,
         "losses": 18,
-        "win_pct": 0.143,
-        "points": 7,
-        "points_pct": 0.167
+        "win_pct": 0.182,
+        "points": 9,
+        "points_pct": 0.205
       }
     ],
     "Atlantic": [
@@ -506,22 +506,22 @@
         "points_pct": 0.667
       },
       {
-        "team": "Montreal Canadiens",
-        "rank": 3,
-        "wins": 10,
-        "losses": 8,
-        "win_pct": 0.556,
-        "points": 24,
-        "points_pct": 0.667
-      },
-      {
         "team": "Boston Bruins",
-        "rank": 4,
+        "rank": 3,
         "wins": 12,
         "losses": 7,
         "win_pct": 0.632,
         "points": 25,
         "points_pct": 0.658
+      },
+      {
+        "team": "Montreal Canadiens",
+        "rank": 4,
+        "wins": 10,
+        "losses": 9,
+        "win_pct": 0.526,
+        "points": 24,
+        "points_pct": 0.632
       },
       {
         "team": "Florida Panthers",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-17 03:46 UTC"
+  "current_field_updated": "2026-11-17 05:53 UTC"
 }

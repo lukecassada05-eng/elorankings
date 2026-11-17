@@ -71,17 +71,17 @@
       "note": null
     },
     {
-      "team": "BAL",
+      "team": "LV",
       "conference": "AFC",
-      "division": "AFC North",
+      "division": "AFC West",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "LV",
+      "team": "BAL",
       "conference": "AFC",
-      "division": "AFC West",
+      "division": "AFC North",
       "seed": null,
       "status": "outside",
       "note": null
@@ -111,6 +111,14 @@
       "note": null
     },
     {
+      "team": "LAC",
+      "conference": "AFC",
+      "division": "AFC West",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "MIA",
       "conference": "AFC",
       "division": "AFC East",
@@ -122,14 +130,6 @@
       "team": "TEN",
       "conference": "AFC",
       "division": "AFC South",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "LAC",
-      "conference": "AFC",
-      "division": "AFC West",
       "seed": null,
       "status": "outside",
       "note": null
@@ -380,8 +380,8 @@
         "team": "BAL",
         "rank": 4,
         "wins": 4,
-        "losses": 5,
-        "win_pct": 0.444
+        "losses": 6,
+        "win_pct": 0.4
       }
     ],
     "AFC West": [
@@ -409,9 +409,9 @@
       {
         "team": "LAC",
         "rank": 4,
-        "wins": 0,
+        "wins": 1,
         "losses": 8,
-        "win_pct": 0
+        "win_pct": 0.111
       }
     ],
     "AFC South": [
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-17 03:46 UTC"
+  "current_field_updated": "2026-11-17 05:53 UTC"
 }
