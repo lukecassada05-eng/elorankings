@@ -215,7 +215,7 @@
       "note": null
     },
     {
-      "team": "LA Clippers",
+      "team": "Phoenix Suns",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -223,7 +223,7 @@
       "note": null
     },
     {
-      "team": "Phoenix Suns",
+      "team": "LA Clippers",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -289,9 +289,9 @@
       {
         "team": "Los Angeles Lakers",
         "rank": 1,
-        "wins": 14,
+        "wins": 15,
         "losses": 5,
-        "win_pct": 0.737
+        "win_pct": 0.75
       },
       {
         "team": "Golden State Warriors",
@@ -301,18 +301,18 @@
         "win_pct": 0.6
       },
       {
-        "team": "LA Clippers",
-        "rank": 3,
-        "wins": 6,
-        "losses": 9,
-        "win_pct": 0.4
-      },
-      {
         "team": "Phoenix Suns",
-        "rank": 4,
+        "rank": 3,
         "wins": 7,
         "losses": 11,
         "win_pct": 0.389
+      },
+      {
+        "team": "LA Clippers",
+        "rank": 4,
+        "wins": 6,
+        "losses": 10,
+        "win_pct": 0.375
       },
       {
         "team": "Sacramento Kings",
@@ -391,9 +391,9 @@
       {
         "team": "Utah Jazz",
         "rank": 5,
-        "wins": 4,
+        "wins": 5,
         "losses": 14,
-        "win_pct": 0.222
+        "win_pct": 0.263
       }
     ],
     "Central": [
@@ -466,10 +466,10 @@
         "team": "Charlotte Hornets",
         "rank": 5,
         "wins": 5,
-        "losses": 12,
-        "win_pct": 0.294
+        "losses": 13,
+        "win_pct": 0.278
       }
     ]
   },
-  "current_field_updated": "2026-11-18 05:07 UTC"
+  "current_field_updated": "2026-11-18 11:45 UTC"
 }
