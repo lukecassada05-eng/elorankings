@@ -55,17 +55,17 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New York Islanders",
+      "team": "Boston Bruins",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": 4,
       "status": "wildcard",
       "note": "Conference wildcard"
     },
     {
-      "team": "Boston Bruins",
+      "team": "New York Islanders",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
@@ -95,17 +95,17 @@
       "note": null
     },
     {
-      "team": "Detroit Red Wings",
+      "team": "Philadelphia Flyers",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Philadelphia Flyers",
+      "team": "Detroit Red Wings",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": null,
       "status": "outside",
       "note": null
@@ -151,7 +151,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Colorado Avalanche",
+      "team": "Nashville Predators",
       "conference": "Western",
       "division": "Central",
       "seed": 3,
@@ -183,7 +183,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "Nashville Predators",
+      "team": "Colorado Avalanche",
       "conference": "Western",
       "division": "Central",
       "seed": 4,
@@ -284,17 +284,8 @@
         "points_pct": 0.667
       },
       {
-        "team": "Colorado Avalanche",
-        "rank": 3,
-        "wins": 11,
-        "losses": 9,
-        "win_pct": 0.55,
-        "points": 25,
-        "points_pct": 0.625
-      },
-      {
         "team": "Nashville Predators",
-        "rank": 4,
+        "rank": 3,
         "wins": 11,
         "losses": 11,
         "win_pct": 0.5,
@@ -302,13 +293,22 @@
         "points_pct": 0.614
       },
       {
+        "team": "Colorado Avalanche",
+        "rank": 4,
+        "wins": 11,
+        "losses": 10,
+        "win_pct": 0.524,
+        "points": 25,
+        "points_pct": 0.595
+      },
+      {
         "team": "Utah Mammoth",
         "rank": 5,
-        "wins": 10,
+        "wins": 11,
         "losses": 11,
-        "win_pct": 0.476,
-        "points": 22,
-        "points_pct": 0.524
+        "win_pct": 0.5,
+        "points": 24,
+        "points_pct": 0.545
       },
       {
         "team": "Winnipeg Jets",
@@ -352,10 +352,10 @@
         "team": "New Jersey Devils",
         "rank": 2,
         "wins": 15,
-        "losses": 6,
-        "win_pct": 0.714,
+        "losses": 7,
+        "win_pct": 0.682,
         "points": 30,
-        "points_pct": 0.714
+        "points_pct": 0.682
       },
       {
         "team": "New York Rangers",
@@ -508,20 +508,20 @@
       {
         "team": "Montreal Canadiens",
         "rank": 3,
-        "wins": 10,
+        "wins": 11,
         "losses": 9,
-        "win_pct": 0.526,
-        "points": 24,
-        "points_pct": 0.632
+        "win_pct": 0.55,
+        "points": 26,
+        "points_pct": 0.65
       },
       {
         "team": "Boston Bruins",
         "rank": 4,
-        "wins": 12,
+        "wins": 13,
         "losses": 8,
-        "win_pct": 0.6,
-        "points": 25,
-        "points_pct": 0.625
+        "win_pct": 0.619,
+        "points": 27,
+        "points_pct": 0.643
       },
       {
         "team": "Florida Panthers",
@@ -545,10 +545,10 @@
         "team": "Detroit Red Wings",
         "rank": 7,
         "wins": 8,
-        "losses": 12,
-        "win_pct": 0.4,
+        "losses": 13,
+        "win_pct": 0.381,
         "points": 18,
-        "points_pct": 0.45
+        "points_pct": 0.429
       },
       {
         "team": "Toronto Maple Leafs",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-19 02:46 UTC"
+  "current_field_updated": "2026-11-19 07:16 UTC"
 }
