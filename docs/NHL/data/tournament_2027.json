@@ -277,11 +277,11 @@
       {
         "team": "Dallas Stars",
         "rank": 2,
-        "wins": 13,
+        "wins": 14,
         "losses": 8,
-        "win_pct": 0.619,
-        "points": 28,
-        "points_pct": 0.667
+        "win_pct": 0.636,
+        "points": 30,
+        "points_pct": 0.682
       },
       {
         "team": "Colorado Avalanche",
@@ -426,19 +426,19 @@
         "team": "Vegas Golden Knights",
         "rank": 2,
         "wins": 12,
-        "losses": 10,
-        "win_pct": 0.545,
-        "points": 28,
-        "points_pct": 0.636
+        "losses": 11,
+        "win_pct": 0.522,
+        "points": 29,
+        "points_pct": 0.63
       },
       {
         "team": "Seattle Kraken",
         "rank": 3,
-        "wins": 9,
+        "wins": 10,
         "losses": 9,
-        "win_pct": 0.5,
-        "points": 19,
-        "points_pct": 0.528
+        "win_pct": 0.526,
+        "points": 21,
+        "points_pct": 0.553
       },
       {
         "team": "Anaheim Ducks",
@@ -480,10 +480,10 @@
         "team": "Vancouver Canucks",
         "rank": 8,
         "wins": 4,
-        "losses": 18,
-        "win_pct": 0.182,
+        "losses": 19,
+        "win_pct": 0.174,
         "points": 9,
-        "points_pct": 0.205
+        "points_pct": 0.196
       }
     ],
     "Atlantic": [
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-20 05:08 UTC"
+  "current_field_updated": "2026-11-20 07:14 UTC"
 }
