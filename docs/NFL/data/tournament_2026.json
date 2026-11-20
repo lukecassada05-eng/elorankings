@@ -71,6 +71,14 @@
       "note": null
     },
     {
+      "team": "HOU",
+      "conference": "AFC",
+      "division": "AFC South",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "LV",
       "conference": "AFC",
       "division": "AFC West",
@@ -82,14 +90,6 @@
       "team": "BAL",
       "conference": "AFC",
       "division": "AFC North",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "HOU",
-      "conference": "AFC",
-      "division": "AFC South",
       "seed": null,
       "status": "outside",
       "note": null
@@ -425,16 +425,16 @@
       {
         "team": "HOU",
         "rank": 2,
-        "wins": 3,
+        "wins": 4,
         "losses": 6,
-        "win_pct": 0.333
+        "win_pct": 0.4
       },
       {
         "team": "IND",
         "rank": 3,
         "wins": 3,
-        "losses": 7,
-        "win_pct": 0.3
+        "losses": 8,
+        "win_pct": 0.273
       },
       {
         "team": "TEN",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-20 03:01 UTC"
+  "current_field_updated": "2026-11-20 05:08 UTC"
 }
