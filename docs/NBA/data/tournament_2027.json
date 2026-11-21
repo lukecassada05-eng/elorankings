@@ -15,17 +15,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Detroit Pistons",
+      "team": "Philadelphia 76ers",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Atlantic",
       "seed": 2,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Philadelphia 76ers",
+      "team": "Detroit Pistons",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Central",
       "seed": 3,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -55,14 +55,6 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "New York Knicks",
-      "conference": "Eastern",
-      "division": "Atlantic",
-      "seed": null,
-      "status": "play_in",
-      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
-    },
-    {
       "team": "Cleveland Cavaliers",
       "conference": "Eastern",
       "division": "Central",
@@ -71,9 +63,9 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Chicago Bulls",
+      "team": "New York Knicks",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Atlantic",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -90,6 +82,14 @@
       "team": "Toronto Raptors",
       "conference": "Eastern",
       "division": "Atlantic",
+      "seed": null,
+      "status": "play_in",
+      "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
+    },
+    {
+      "team": "Chicago Bulls",
+      "conference": "Eastern",
+      "division": "Central",
       "seed": null,
       "status": "outside",
       "note": null
@@ -135,23 +135,23 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Houston Rockets",
+      "team": "Los Angeles Lakers",
       "conference": "Western",
-      "division": "Southwest",
+      "division": "Pacific",
       "seed": 2,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Los Angeles Lakers",
+      "team": "San Antonio Spurs",
       "conference": "Western",
-      "division": "Pacific",
+      "division": "Southwest",
       "seed": 3,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "San Antonio Spurs",
+      "team": "Houston Rockets",
       "conference": "Western",
       "division": "Southwest",
       "seed": 4,
@@ -257,18 +257,18 @@
         "win_pct": 0.75
       },
       {
-        "team": "Houston Rockets",
-        "rank": 2,
-        "wins": 14,
-        "losses": 5,
-        "win_pct": 0.737
-      },
-      {
         "team": "San Antonio Spurs",
-        "rank": 3,
+        "rank": 2,
         "wins": 15,
         "losses": 6,
         "win_pct": 0.714
+      },
+      {
+        "team": "Houston Rockets",
+        "rank": 3,
+        "wins": 14,
+        "losses": 6,
+        "win_pct": 0.7
       },
       {
         "team": "Dallas Mavericks",
@@ -281,8 +281,8 @@
         "team": "New Orleans Pelicans",
         "rank": 5,
         "wins": 8,
-        "losses": 12,
-        "win_pct": 0.4
+        "losses": 13,
+        "win_pct": 0.381
       }
     ],
     "Atlantic": [
@@ -310,53 +310,16 @@
       {
         "team": "Toronto Raptors",
         "rank": 4,
-        "wins": 7,
+        "wins": 8,
         "losses": 13,
-        "win_pct": 0.35
+        "win_pct": 0.381
       },
       {
         "team": "Brooklyn Nets",
         "rank": 5,
         "wins": 6,
-        "losses": 12,
-        "win_pct": 0.333
-      }
-    ],
-    "Central": [
-      {
-        "team": "Detroit Pistons",
-        "rank": 1,
-        "wins": 13,
-        "losses": 5,
-        "win_pct": 0.722
-      },
-      {
-        "team": "Cleveland Cavaliers",
-        "rank": 2,
-        "wins": 9,
-        "losses": 10,
-        "win_pct": 0.474
-      },
-      {
-        "team": "Chicago Bulls",
-        "rank": 3,
-        "wins": 7,
-        "losses": 12,
-        "win_pct": 0.368
-      },
-      {
-        "team": "Indiana Pacers",
-        "rank": 4,
-        "wins": 6,
         "losses": 13,
         "win_pct": 0.316
-      },
-      {
-        "team": "Milwaukee Bucks",
-        "rank": 5,
-        "wins": 3,
-        "losses": 18,
-        "win_pct": 0.143
       }
     ],
     "Northwest": [
@@ -377,32 +340,32 @@
       {
         "team": "Denver Nuggets",
         "rank": 3,
-        "wins": 11,
+        "wins": 12,
         "losses": 7,
-        "win_pct": 0.611
+        "win_pct": 0.632
       },
       {
         "team": "Oklahoma City Thunder",
         "rank": 4,
-        "wins": 10,
+        "wins": 11,
         "losses": 10,
-        "win_pct": 0.5
+        "win_pct": 0.524
       },
       {
         "team": "Utah Jazz",
         "rank": 5,
         "wins": 6,
-        "losses": 14,
-        "win_pct": 0.3
+        "losses": 15,
+        "win_pct": 0.286
       }
     ],
     "Pacific": [
       {
         "team": "Los Angeles Lakers",
         "rank": 1,
-        "wins": 15,
+        "wins": 16,
         "losses": 6,
-        "win_pct": 0.714
+        "win_pct": 0.727
       },
       {
         "team": "Golden State Warriors",
@@ -414,9 +377,9 @@
       {
         "team": "Phoenix Suns",
         "rank": 3,
-        "wins": 8,
+        "wins": 9,
         "losses": 11,
-        "win_pct": 0.421
+        "win_pct": 0.45
       },
       {
         "team": "LA Clippers",
@@ -429,8 +392,8 @@
         "team": "Sacramento Kings",
         "rank": 5,
         "wins": 1,
-        "losses": 18,
-        "win_pct": 0.053
+        "losses": 19,
+        "win_pct": 0.05
       }
     ],
     "Southeast": [
@@ -451,16 +414,16 @@
       {
         "team": "Orlando Magic",
         "rank": 3,
-        "wins": 9,
+        "wins": 10,
         "losses": 9,
-        "win_pct": 0.5
+        "win_pct": 0.526
       },
       {
         "team": "Washington Wizards",
         "rank": 4,
-        "wins": 7,
+        "wins": 8,
         "losses": 13,
-        "win_pct": 0.35
+        "win_pct": 0.381
       },
       {
         "team": "Charlotte Hornets",
@@ -469,7 +432,44 @@
         "losses": 14,
         "win_pct": 0.263
       }
+    ],
+    "Central": [
+      {
+        "team": "Detroit Pistons",
+        "rank": 1,
+        "wins": 13,
+        "losses": 6,
+        "win_pct": 0.684
+      },
+      {
+        "team": "Cleveland Cavaliers",
+        "rank": 2,
+        "wins": 10,
+        "losses": 10,
+        "win_pct": 0.5
+      },
+      {
+        "team": "Chicago Bulls",
+        "rank": 3,
+        "wins": 7,
+        "losses": 13,
+        "win_pct": 0.35
+      },
+      {
+        "team": "Indiana Pacers",
+        "rank": 4,
+        "wins": 6,
+        "losses": 14,
+        "win_pct": 0.3
+      },
+      {
+        "team": "Milwaukee Bucks",
+        "rank": 5,
+        "wins": 3,
+        "losses": 18,
+        "win_pct": 0.143
+      }
     ]
   },
-  "current_field_updated": "2026-11-21 03:16 UTC"
+  "current_field_updated": "2026-11-21 11:02 UTC"
 }
