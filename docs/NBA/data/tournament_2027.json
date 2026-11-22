@@ -55,17 +55,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Cleveland Cavaliers",
+      "team": "New York Knicks",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Atlantic",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "New York Knicks",
+      "team": "Cleveland Cavaliers",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Central",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -127,7 +127,7 @@
       "note": null
     },
     {
-      "team": "Memphis Grizzlies",
+      "team": "San Antonio Spurs",
       "conference": "Western",
       "division": "Southwest",
       "seed": 1,
@@ -143,7 +143,7 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "San Antonio Spurs",
+      "team": "Memphis Grizzlies",
       "conference": "Western",
       "division": "Southwest",
       "seed": 3,
@@ -159,7 +159,7 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Portland Trail Blazers",
+      "team": "Minnesota Timberwolves",
       "conference": "Western",
       "division": "Northwest",
       "seed": 5,
@@ -167,7 +167,7 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Minnesota Timberwolves",
+      "team": "Portland Trail Blazers",
       "conference": "Western",
       "division": "Northwest",
       "seed": 6,
@@ -250,14 +250,14 @@
   "standings": {
     "Southwest": [
       {
-        "team": "Memphis Grizzlies",
+        "team": "San Antonio Spurs",
         "rank": 1,
-        "wins": 15,
-        "losses": 5,
-        "win_pct": 0.75
+        "wins": 16,
+        "losses": 6,
+        "win_pct": 0.727
       },
       {
-        "team": "San Antonio Spurs",
+        "team": "Memphis Grizzlies",
         "rank": 2,
         "wins": 15,
         "losses": 6,
@@ -273,69 +273,32 @@
       {
         "team": "Dallas Mavericks",
         "rank": 4,
-        "wins": 9,
-        "losses": 10,
-        "win_pct": 0.474
-      },
-      {
-        "team": "New Orleans Pelicans",
-        "rank": 5,
-        "wins": 8,
-        "losses": 13,
-        "win_pct": 0.381
-      }
-    ],
-    "Atlantic": [
-      {
-        "team": "Boston Celtics",
-        "rank": 1,
-        "wins": 15,
-        "losses": 4,
-        "win_pct": 0.789
-      },
-      {
-        "team": "Philadelphia 76ers",
-        "rank": 2,
-        "wins": 15,
-        "losses": 6,
-        "win_pct": 0.714
-      },
-      {
-        "team": "New York Knicks",
-        "rank": 3,
         "wins": 10,
         "losses": 10,
         "win_pct": 0.5
       },
       {
-        "team": "Toronto Raptors",
-        "rank": 4,
-        "wins": 8,
-        "losses": 13,
-        "win_pct": 0.381
-      },
-      {
-        "team": "Brooklyn Nets",
+        "team": "New Orleans Pelicans",
         "rank": 5,
-        "wins": 6,
-        "losses": 13,
-        "win_pct": 0.316
+        "wins": 8,
+        "losses": 14,
+        "win_pct": 0.364
       }
     ],
     "Northwest": [
       {
-        "team": "Portland Trail Blazers",
+        "team": "Minnesota Timberwolves",
         "rank": 1,
-        "wins": 12,
-        "losses": 6,
-        "win_pct": 0.667
+        "wins": 15,
+        "losses": 8,
+        "win_pct": 0.652
       },
       {
-        "team": "Minnesota Timberwolves",
+        "team": "Portland Trail Blazers",
         "rank": 2,
-        "wins": 14,
-        "losses": 8,
-        "win_pct": 0.636
+        "wins": 12,
+        "losses": 7,
+        "win_pct": 0.632
       },
       {
         "team": "Denver Nuggets",
@@ -357,6 +320,43 @@
         "wins": 6,
         "losses": 15,
         "win_pct": 0.286
+      }
+    ],
+    "Atlantic": [
+      {
+        "team": "Boston Celtics",
+        "rank": 1,
+        "wins": 15,
+        "losses": 5,
+        "win_pct": 0.75
+      },
+      {
+        "team": "Philadelphia 76ers",
+        "rank": 2,
+        "wins": 15,
+        "losses": 6,
+        "win_pct": 0.714
+      },
+      {
+        "team": "New York Knicks",
+        "rank": 3,
+        "wins": 11,
+        "losses": 10,
+        "win_pct": 0.524
+      },
+      {
+        "team": "Toronto Raptors",
+        "rank": 4,
+        "wins": 8,
+        "losses": 13,
+        "win_pct": 0.381
+      },
+      {
+        "team": "Brooklyn Nets",
+        "rank": 5,
+        "wins": 6,
+        "losses": 13,
+        "win_pct": 0.316
       }
     ],
     "Pacific": [
@@ -385,15 +385,15 @@
         "team": "LA Clippers",
         "rank": 4,
         "wins": 6,
-        "losses": 11,
-        "win_pct": 0.353
+        "losses": 12,
+        "win_pct": 0.333
       },
       {
         "team": "Sacramento Kings",
         "rank": 5,
-        "wins": 1,
+        "wins": 2,
         "losses": 19,
-        "win_pct": 0.05
+        "win_pct": 0.095
       }
     ],
     "Southeast": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-22 01:29 UTC"
+  "current_field_updated": "2026-11-22 09:03 UTC"
 }
