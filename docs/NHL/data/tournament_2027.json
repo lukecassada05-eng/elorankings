@@ -223,7 +223,7 @@
       "note": null
     },
     {
-      "team": "San Jose Sharks",
+      "team": "Calgary Flames",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -231,7 +231,7 @@
       "note": null
     },
     {
-      "team": "Calgary Flames",
+      "team": "San Jose Sharks",
       "conference": "Western",
       "division": "Pacific",
       "seed": null,
@@ -331,22 +331,22 @@
       {
         "team": "Chicago Blackhawks",
         "rank": 8,
-        "wins": 6,
+        "wins": 7,
         "losses": 15,
-        "win_pct": 0.286,
-        "points": 14,
-        "points_pct": 0.333
+        "win_pct": 0.318,
+        "points": 16,
+        "points_pct": 0.364
       }
     ],
     "Metropolitan": [
       {
         "team": "Carolina Hurricanes",
         "rank": 1,
-        "wins": 16,
+        "wins": 17,
         "losses": 5,
-        "win_pct": 0.762,
-        "points": 34,
-        "points_pct": 0.81
+        "win_pct": 0.773,
+        "points": 36,
+        "points_pct": 0.818
       },
       {
         "team": "New Jersey Devils",
@@ -417,10 +417,10 @@
         "team": "Edmonton Oilers",
         "rank": 1,
         "wins": 16,
-        "losses": 6,
-        "win_pct": 0.727,
+        "losses": 7,
+        "win_pct": 0.696,
         "points": 34,
-        "points_pct": 0.773
+        "points_pct": 0.739
       },
       {
         "team": "Vegas Golden Knights",
@@ -450,7 +450,7 @@
         "points_pct": 0.5
       },
       {
-        "team": "San Jose Sharks",
+        "team": "Calgary Flames",
         "rank": 5,
         "wins": 10,
         "losses": 14,
@@ -459,13 +459,13 @@
         "points_pct": 0.458
       },
       {
-        "team": "Calgary Flames",
+        "team": "San Jose Sharks",
         "rank": 6,
         "wins": 10,
-        "losses": 13,
-        "win_pct": 0.435,
-        "points": 21,
-        "points_pct": 0.457
+        "losses": 14,
+        "win_pct": 0.417,
+        "points": 22,
+        "points_pct": 0.458
       },
       {
         "team": "Los Angeles Kings",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-21 19:15 UTC"
+  "current_field_updated": "2026-11-22 01:29 UTC"
 }
