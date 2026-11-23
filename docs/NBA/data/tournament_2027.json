@@ -23,17 +23,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Detroit Pistons",
+      "team": "Atlanta Hawks",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Southeast",
       "seed": 3,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Atlanta Hawks",
+      "team": "Detroit Pistons",
       "conference": "Eastern",
-      "division": "Southeast",
+      "division": "Central",
       "seed": 4,
       "status": "clinched_top6",
       "note": "Top 6 — direct playoff seed"
@@ -400,9 +400,9 @@
       {
         "team": "Atlanta Hawks",
         "rank": 1,
-        "wins": 14,
+        "wins": 15,
         "losses": 7,
-        "win_pct": 0.667
+        "win_pct": 0.682
       },
       {
         "team": "Miami Heat",
@@ -438,8 +438,8 @@
         "team": "Detroit Pistons",
         "rank": 1,
         "wins": 13,
-        "losses": 6,
-        "win_pct": 0.684
+        "losses": 7,
+        "win_pct": 0.65
       },
       {
         "team": "Cleveland Cavaliers",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-22 19:31 UTC"
+  "current_field_updated": "2026-11-23 00:14 UTC"
 }

@@ -47,7 +47,7 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New York Rangers",
+      "team": "New York Islanders",
       "conference": "Eastern",
       "division": "Metropolitan",
       "seed": 3,
@@ -55,17 +55,17 @@
       "note": "Top 3 in division"
     },
     {
-      "team": "New York Islanders",
+      "team": "Montreal Canadiens",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": 4,
       "status": "wildcard",
       "note": "Conference wildcard"
     },
     {
-      "team": "Montreal Canadiens",
+      "team": "New York Rangers",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": 5,
       "status": "wildcard",
       "note": "Conference wildcard"
@@ -268,11 +268,11 @@
       {
         "team": "Carolina Hurricanes",
         "rank": 1,
-        "wins": 17,
+        "wins": 18,
         "losses": 5,
-        "win_pct": 0.773,
-        "points": 36,
-        "points_pct": 0.818
+        "win_pct": 0.783,
+        "points": 38,
+        "points_pct": 0.826
       },
       {
         "team": "New Jersey Devils",
@@ -284,22 +284,22 @@
         "points_pct": 0.652
       },
       {
-        "team": "New York Rangers",
-        "rank": 3,
-        "wins": 13,
-        "losses": 7,
-        "win_pct": 0.65,
-        "points": 26,
-        "points_pct": 0.65
-      },
-      {
         "team": "New York Islanders",
-        "rank": 4,
+        "rank": 3,
         "wins": 11,
         "losses": 10,
         "win_pct": 0.524,
         "points": 27,
         "points_pct": 0.643
+      },
+      {
+        "team": "New York Rangers",
+        "rank": 4,
+        "wins": 13,
+        "losses": 8,
+        "win_pct": 0.619,
+        "points": 26,
+        "points_pct": 0.619
       },
       {
         "team": "Philadelphia Flyers",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-22 19:31 UTC"
+  "current_field_updated": "2026-11-23 00:14 UTC"
 }
