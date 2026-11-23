@@ -294,43 +294,13 @@
         "win_pct": 0.1
       }
     ],
-    "NFC North": [
-      {
-        "team": "DET",
-        "rank": 1,
-        "wins": 8,
-        "losses": 2,
-        "win_pct": 0.8
-      },
-      {
-        "team": "CHI",
-        "rank": 2,
-        "wins": 8,
-        "losses": 2,
-        "win_pct": 0.8
-      },
-      {
-        "team": "MIN",
-        "rank": 3,
-        "wins": 7,
-        "losses": 2,
-        "win_pct": 0.778
-      },
-      {
-        "team": "GB",
-        "rank": 4,
-        "wins": 6,
-        "losses": 4,
-        "win_pct": 0.6
-      }
-    ],
     "NFC West": [
       {
         "team": "SF",
         "rank": 1,
-        "wins": 8,
+        "wins": 9,
         "losses": 1,
-        "win_pct": 0.889
+        "win_pct": 0.9
       },
       {
         "team": "SEA",
@@ -382,6 +352,36 @@
         "wins": 1,
         "losses": 9,
         "win_pct": 0.1
+      }
+    ],
+    "NFC North": [
+      {
+        "team": "DET",
+        "rank": 1,
+        "wins": 8,
+        "losses": 2,
+        "win_pct": 0.8
+      },
+      {
+        "team": "CHI",
+        "rank": 2,
+        "wins": 8,
+        "losses": 2,
+        "win_pct": 0.8
+      },
+      {
+        "team": "MIN",
+        "rank": 3,
+        "wins": 7,
+        "losses": 3,
+        "win_pct": 0.7
+      },
+      {
+        "team": "GB",
+        "rank": 4,
+        "wins": 6,
+        "losses": 4,
+        "win_pct": 0.6
       }
     ],
     "AFC North": [
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-23 01:55 UTC"
+  "current_field_updated": "2026-11-23 05:58 UTC"
 }

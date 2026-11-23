@@ -191,7 +191,7 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "Utah Mammoth",
+      "team": "St. Louis Blues",
       "conference": "Western",
       "division": "Central",
       "seed": 5,
@@ -199,7 +199,7 @@
       "note": "Conference wildcard"
     },
     {
-      "team": "St. Louis Blues",
+      "team": "Utah Mammoth",
       "conference": "Western",
       "division": "Central",
       "seed": null,
@@ -376,7 +376,7 @@
         "points_pct": 0.614
       },
       {
-        "team": "Utah Mammoth",
+        "team": "St. Louis Blues",
         "rank": 5,
         "wins": 12,
         "losses": 11,
@@ -385,13 +385,13 @@
         "points_pct": 0.565
       },
       {
-        "team": "St. Louis Blues",
+        "team": "Utah Mammoth",
         "rank": 6,
-        "wins": 11,
+        "wins": 12,
         "losses": 11,
-        "win_pct": 0.5,
-        "points": 24,
-        "points_pct": 0.545
+        "win_pct": 0.522,
+        "points": 26,
+        "points_pct": 0.565
       },
       {
         "team": "Winnipeg Jets",
@@ -405,11 +405,11 @@
       {
         "team": "Chicago Blackhawks",
         "rank": 8,
-        "wins": 7,
+        "wins": 8,
         "losses": 15,
-        "win_pct": 0.318,
-        "points": 16,
-        "points_pct": 0.364
+        "win_pct": 0.348,
+        "points": 18,
+        "points_pct": 0.391
       }
     ],
     "Pacific": [
@@ -417,10 +417,10 @@
         "team": "Edmonton Oilers",
         "rank": 1,
         "wins": 16,
-        "losses": 7,
-        "win_pct": 0.696,
-        "points": 34,
-        "points_pct": 0.739
+        "losses": 8,
+        "win_pct": 0.667,
+        "points": 35,
+        "points_pct": 0.729
       },
       {
         "team": "Vegas Golden Knights",
@@ -480,10 +480,10 @@
         "team": "Vancouver Canucks",
         "rank": 8,
         "wins": 5,
-        "losses": 19,
-        "win_pct": 0.208,
+        "losses": 20,
+        "win_pct": 0.2,
         "points": 11,
-        "points_pct": 0.229
+        "points_pct": 0.22
       }
     ],
     "Atlantic": [
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-23 01:55 UTC"
+  "current_field_updated": "2026-11-23 05:58 UTC"
 }
