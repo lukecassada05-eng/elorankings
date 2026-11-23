@@ -15,7 +15,7 @@
       "note": "Division winner"
     },
     {
-      "team": "KC",
+      "team": "DEN",
       "conference": "AFC",
       "division": "AFC West",
       "seed": 2,
@@ -23,23 +23,23 @@
       "note": "Division winner"
     },
     {
-      "team": "JAX",
+      "team": "CIN",
       "conference": "AFC",
-      "division": "AFC South",
+      "division": "AFC North",
       "seed": 3,
       "status": "division_winner",
       "note": "Division winner"
     },
     {
-      "team": "CIN",
+      "team": "JAX",
       "conference": "AFC",
-      "division": "AFC North",
+      "division": "AFC South",
       "seed": 4,
       "status": "division_winner",
       "note": "Division winner"
     },
     {
-      "team": "DEN",
+      "team": "KC",
       "conference": "AFC",
       "division": "AFC West",
       "seed": 5,
@@ -356,25 +356,25 @@
     ],
     "AFC West": [
       {
-        "team": "KC",
+        "team": "DEN",
         "rank": 1,
         "wins": 8,
         "losses": 2,
         "win_pct": 0.8
       },
       {
-        "team": "DEN",
+        "team": "KC",
         "rank": 2,
-        "wins": 7,
+        "wins": 8,
         "losses": 2,
-        "win_pct": 0.778
+        "win_pct": 0.8
       },
       {
         "team": "LV",
         "rank": 3,
         "wins": 4,
-        "losses": 6,
-        "win_pct": 0.4
+        "losses": 7,
+        "win_pct": 0.364
       },
       {
         "team": "LAC",
@@ -419,8 +419,8 @@
         "team": "JAX",
         "rank": 1,
         "wins": 7,
-        "losses": 2,
-        "win_pct": 0.778
+        "losses": 3,
+        "win_pct": 0.7
       },
       {
         "team": "HOU",
@@ -478,9 +478,9 @@
       {
         "team": "NYG",
         "rank": 1,
-        "wins": 5,
+        "wins": 6,
         "losses": 3,
-        "win_pct": 0.625
+        "win_pct": 0.667
       },
       {
         "team": "DAL",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-23 00:14 UTC"
+  "current_field_updated": "2026-11-23 01:55 UTC"
 }

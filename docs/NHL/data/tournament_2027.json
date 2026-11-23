@@ -79,17 +79,17 @@
       "note": null
     },
     {
-      "team": "Philadelphia Flyers",
+      "team": "Buffalo Sabres",
       "conference": "Eastern",
-      "division": "Metropolitan",
+      "division": "Atlantic",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "Buffalo Sabres",
+      "team": "Philadelphia Flyers",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Metropolitan",
       "seed": null,
       "status": "outside",
       "note": null
@@ -491,10 +491,10 @@
         "team": "Tampa Bay Lightning",
         "rank": 1,
         "wins": 15,
-        "losses": 7,
-        "win_pct": 0.682,
+        "losses": 8,
+        "win_pct": 0.652,
         "points": 32,
-        "points_pct": 0.727
+        "points_pct": 0.696
       },
       {
         "team": "Ottawa Senators",
@@ -535,11 +535,11 @@
       {
         "team": "Buffalo Sabres",
         "rank": 6,
-        "wins": 9,
+        "wins": 10,
         "losses": 14,
-        "win_pct": 0.391,
-        "points": 22,
-        "points_pct": 0.478
+        "win_pct": 0.417,
+        "points": 24,
+        "points_pct": 0.5
       },
       {
         "team": "Detroit Red Wings",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-23 00:14 UTC"
+  "current_field_updated": "2026-11-23 01:55 UTC"
 }
