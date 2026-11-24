@@ -342,11 +342,11 @@
       {
         "team": "Minnesota Wild",
         "rank": 1,
-        "wins": 17,
+        "wins": 18,
         "losses": 8,
-        "win_pct": 0.68,
-        "points": 39,
-        "points_pct": 0.78
+        "win_pct": 0.692,
+        "points": 41,
+        "points_pct": 0.788
       },
       {
         "team": "Dallas Stars",
@@ -434,29 +434,29 @@
       {
         "team": "Seattle Kraken",
         "rank": 3,
-        "wins": 10,
+        "wins": 11,
         "losses": 10,
-        "win_pct": 0.5,
-        "points": 21,
-        "points_pct": 0.525
+        "win_pct": 0.524,
+        "points": 23,
+        "points_pct": 0.548
       },
       {
         "team": "San Jose Sharks",
         "rank": 4,
         "wins": 11,
-        "losses": 14,
-        "win_pct": 0.44,
+        "losses": 15,
+        "win_pct": 0.423,
         "points": 24,
-        "points_pct": 0.48
+        "points_pct": 0.462
       },
       {
         "team": "Anaheim Ducks",
         "rank": 5,
         "wins": 11,
-        "losses": 13,
-        "win_pct": 0.458,
+        "losses": 14,
+        "win_pct": 0.44,
         "points": 23,
-        "points_pct": 0.479
+        "points_pct": 0.46
       },
       {
         "team": "Calgary Flames",
@@ -561,5 +561,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-24 05:17 UTC"
+  "current_field_updated": "2026-11-24 08:45 UTC"
 }
