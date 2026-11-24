@@ -23,17 +23,17 @@
       "note": "Division winner"
     },
     {
-      "team": "CIN",
+      "team": "JAX",
       "conference": "AFC",
-      "division": "AFC North",
+      "division": "AFC South",
       "seed": 3,
       "status": "division_winner",
       "note": "Division winner"
     },
     {
-      "team": "JAX",
+      "team": "CIN",
       "conference": "AFC",
-      "division": "AFC South",
+      "division": "AFC North",
       "seed": 4,
       "status": "division_winner",
       "note": "Division winner"
@@ -389,8 +389,8 @@
         "team": "CIN",
         "rank": 1,
         "wins": 7,
-        "losses": 2,
-        "win_pct": 0.778
+        "losses": 3,
+        "win_pct": 0.7
       },
       {
         "team": "CLE",
@@ -492,9 +492,9 @@
       {
         "team": "WAS",
         "rank": 3,
-        "wins": 3,
+        "wins": 4,
         "losses": 5,
-        "win_pct": 0.375
+        "win_pct": 0.444
       },
       {
         "team": "PHI",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-23 23:48 UTC"
+  "current_field_updated": "2026-11-24 05:17 UTC"
 }
