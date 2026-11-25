@@ -273,9 +273,9 @@
       {
         "team": "Dallas Mavericks",
         "rank": 4,
-        "wins": 11,
+        "wins": 12,
         "losses": 10,
-        "win_pct": 0.524
+        "win_pct": 0.545
       },
       {
         "team": "New Orleans Pelicans",
@@ -304,8 +304,8 @@
         "team": "Denver Nuggets",
         "rank": 3,
         "wins": 13,
-        "losses": 7,
-        "win_pct": 0.65
+        "losses": 8,
+        "win_pct": 0.619
       },
       {
         "team": "Oklahoma City Thunder",
@@ -320,43 +320,6 @@
         "wins": 6,
         "losses": 17,
         "win_pct": 0.261
-      }
-    ],
-    "Pacific": [
-      {
-        "team": "Los Angeles Lakers",
-        "rank": 1,
-        "wins": 17,
-        "losses": 6,
-        "win_pct": 0.739
-      },
-      {
-        "team": "Golden State Warriors",
-        "rank": 2,
-        "wins": 13,
-        "losses": 10,
-        "win_pct": 0.565
-      },
-      {
-        "team": "Phoenix Suns",
-        "rank": 3,
-        "wins": 10,
-        "losses": 11,
-        "win_pct": 0.476
-      },
-      {
-        "team": "LA Clippers",
-        "rank": 4,
-        "wins": 6,
-        "losses": 13,
-        "win_pct": 0.316
-      },
-      {
-        "team": "Sacramento Kings",
-        "rank": 5,
-        "wins": 2,
-        "losses": 20,
-        "win_pct": 0.091
       }
     ],
     "Southeast": [
@@ -394,6 +357,43 @@
         "wins": 5,
         "losses": 15,
         "win_pct": 0.25
+      }
+    ],
+    "Pacific": [
+      {
+        "team": "Los Angeles Lakers",
+        "rank": 1,
+        "wins": 17,
+        "losses": 6,
+        "win_pct": 0.739
+      },
+      {
+        "team": "Golden State Warriors",
+        "rank": 2,
+        "wins": 13,
+        "losses": 10,
+        "win_pct": 0.565
+      },
+      {
+        "team": "Phoenix Suns",
+        "rank": 3,
+        "wins": 10,
+        "losses": 11,
+        "win_pct": 0.476
+      },
+      {
+        "team": "LA Clippers",
+        "rank": 4,
+        "wins": 6,
+        "losses": 13,
+        "win_pct": 0.316
+      },
+      {
+        "team": "Sacramento Kings",
+        "rank": 5,
+        "wins": 2,
+        "losses": 20,
+        "win_pct": 0.091
       }
     ],
     "Atlantic": [
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-25 04:35 UTC"
+  "current_field_updated": "2026-11-25 17:16 UTC"
 }
