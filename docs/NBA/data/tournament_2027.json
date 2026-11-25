@@ -55,17 +55,17 @@
       "note": "Top 6 — direct playoff seed"
     },
     {
-      "team": "Orlando Magic",
+      "team": "Cleveland Cavaliers",
       "conference": "Eastern",
-      "division": "Southeast",
+      "division": "Central",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Cleveland Cavaliers",
+      "team": "Orlando Magic",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Southeast",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
@@ -378,8 +378,8 @@
         "team": "Orlando Magic",
         "rank": 3,
         "wins": 10,
-        "losses": 10,
-        "win_pct": 0.5
+        "losses": 11,
+        "win_pct": 0.476
       },
       {
         "team": "Washington Wizards",
@@ -437,9 +437,9 @@
       {
         "team": "Detroit Pistons",
         "rank": 1,
-        "wins": 13,
+        "wins": 14,
         "losses": 7,
-        "win_pct": 0.65
+        "win_pct": 0.667
       },
       {
         "team": "Cleveland Cavaliers",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-24 20:18 UTC"
+  "current_field_updated": "2026-11-25 02:51 UTC"
 }
