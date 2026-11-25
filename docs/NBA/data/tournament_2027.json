@@ -385,8 +385,8 @@
         "team": "Washington Wizards",
         "rank": 4,
         "wins": 9,
-        "losses": 13,
-        "win_pct": 0.409
+        "losses": 14,
+        "win_pct": 0.391
       },
       {
         "team": "Charlotte Hornets",
@@ -400,9 +400,9 @@
       {
         "team": "Boston Celtics",
         "rank": 1,
-        "wins": 15,
+        "wins": 16,
         "losses": 6,
-        "win_pct": 0.714
+        "win_pct": 0.727
       },
       {
         "team": "Philadelphia 76ers",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-25 02:51 UTC"
+  "current_field_updated": "2026-11-25 04:35 UTC"
 }
