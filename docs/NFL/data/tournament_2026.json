@@ -191,17 +191,17 @@
       "note": "Wildcard"
     },
     {
-      "team": "GB",
+      "team": "SEA",
       "conference": "NFC",
-      "division": "NFC North",
+      "division": "NFC West",
       "seed": null,
       "status": "outside",
       "note": null
     },
     {
-      "team": "SEA",
+      "team": "GB",
       "conference": "NFC",
-      "division": "NFC West",
+      "division": "NFC North",
       "seed": null,
       "status": "outside",
       "note": null
@@ -303,14 +303,14 @@
         "win_pct": 0.9
       },
       {
-        "team": "SEA",
+        "team": "LA",
         "rank": 2,
-        "wins": 6,
+        "wins": 7,
         "losses": 4,
-        "win_pct": 0.6
+        "win_pct": 0.636
       },
       {
-        "team": "LA",
+        "team": "SEA",
         "rank": 3,
         "wins": 6,
         "losses": 4,
@@ -380,8 +380,8 @@
         "team": "GB",
         "rank": 4,
         "wins": 6,
-        "losses": 4,
-        "win_pct": 0.6
+        "losses": 5,
+        "win_pct": 0.545
       }
     ],
     "AFC North": [
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-26 03:20 UTC"
+  "current_field_updated": "2026-11-26 12:18 UTC"
 }
