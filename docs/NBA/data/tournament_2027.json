@@ -79,17 +79,17 @@
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Toronto Raptors",
+      "team": "Chicago Bulls",
       "conference": "Eastern",
-      "division": "Atlantic",
+      "division": "Central",
       "seed": null,
       "status": "play_in",
       "note": "Play-in tournament (seeds 7-10); exact 7/8/9/10 slot depends on play-in games, not modeled here"
     },
     {
-      "team": "Chicago Bulls",
+      "team": "Toronto Raptors",
       "conference": "Eastern",
-      "division": "Central",
+      "division": "Atlantic",
       "seed": null,
       "status": "outside",
       "note": null
@@ -429,8 +429,8 @@
         "team": "Charlotte Hornets",
         "rank": 5,
         "wins": 5,
-        "losses": 15,
-        "win_pct": 0.25
+        "losses": 16,
+        "win_pct": 0.238
       }
     ],
     "Central": [
@@ -451,9 +451,9 @@
       {
         "team": "Chicago Bulls",
         "rank": 3,
-        "wins": 8,
+        "wins": 9,
         "losses": 14,
-        "win_pct": 0.364
+        "win_pct": 0.391
       },
       {
         "team": "Indiana Pacers",
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-26 01:56 UTC"
+  "current_field_updated": "2026-11-26 03:20 UTC"
 }
