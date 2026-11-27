@@ -268,9 +268,9 @@
       {
         "team": "BUF",
         "rank": 1,
-        "wins": 9,
+        "wins": 10,
         "losses": 1,
-        "win_pct": 0.9
+        "win_pct": 0.909
       },
       {
         "team": "NE",
@@ -336,8 +336,8 @@
         "team": "KC",
         "rank": 2,
         "wins": 8,
-        "losses": 2,
-        "win_pct": 0.8
+        "losses": 3,
+        "win_pct": 0.727
       },
       {
         "team": "LV",
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-27 03:55 UTC"
+  "current_field_updated": "2026-11-27 15:46 UTC"
 }
