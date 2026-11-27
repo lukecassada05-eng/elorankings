@@ -207,6 +207,14 @@
       "note": null
     },
     {
+      "team": "WAS",
+      "conference": "NFC",
+      "division": "NFC East",
+      "seed": null,
+      "status": "outside",
+      "note": null
+    },
+    {
       "team": "DAL",
       "conference": "NFC",
       "division": "NFC East",
@@ -215,7 +223,7 @@
       "note": null
     },
     {
-      "team": "WAS",
+      "team": "PHI",
       "conference": "NFC",
       "division": "NFC East",
       "seed": null,
@@ -242,14 +250,6 @@
       "team": "NO",
       "conference": "NFC",
       "division": "NFC South",
-      "seed": null,
-      "status": "outside",
-      "note": null
-    },
-    {
-      "team": "PHI",
-      "conference": "NFC",
-      "division": "NFC East",
       "seed": null,
       "status": "outside",
       "note": null
@@ -483,27 +483,27 @@
         "win_pct": 0.667
       },
       {
-        "team": "DAL",
-        "rank": 2,
-        "wins": 5,
-        "losses": 6,
-        "win_pct": 0.455
-      },
-      {
         "team": "WAS",
-        "rank": 3,
+        "rank": 2,
         "wins": 4,
         "losses": 5,
         "win_pct": 0.444
       },
       {
+        "team": "DAL",
+        "rank": 3,
+        "wins": 5,
+        "losses": 7,
+        "win_pct": 0.417
+      },
+      {
         "team": "PHI",
         "rank": 4,
-        "wins": 3,
+        "wins": 4,
         "losses": 7,
-        "win_pct": 0.3
+        "win_pct": 0.364
       }
     ]
   },
-  "current_field_updated": "2026-11-27 01:17 UTC"
+  "current_field_updated": "2026-11-27 03:55 UTC"
 }
