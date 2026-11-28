@@ -47,7 +47,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "CLE",
+      "team": "PIT",
       "conference": "AFC",
       "division": "AFC North",
       "seed": 6,
@@ -55,7 +55,7 @@
       "note": "Wildcard"
     },
     {
-      "team": "PIT",
+      "team": "CLE",
       "conference": "AFC",
       "division": "AFC North",
       "seed": 7,
@@ -324,36 +324,6 @@
         "win_pct": 0.273
       }
     ],
-    "AFC West": [
-      {
-        "team": "DEN",
-        "rank": 1,
-        "wins": 8,
-        "losses": 2,
-        "win_pct": 0.8
-      },
-      {
-        "team": "KC",
-        "rank": 2,
-        "wins": 8,
-        "losses": 3,
-        "win_pct": 0.727
-      },
-      {
-        "team": "LV",
-        "rank": 3,
-        "wins": 4,
-        "losses": 7,
-        "win_pct": 0.364
-      },
-      {
-        "team": "LAC",
-        "rank": 4,
-        "wins": 1,
-        "losses": 9,
-        "win_pct": 0.1
-      }
-    ],
     "NFC North": [
       {
         "team": "CHI",
@@ -393,14 +363,14 @@
         "win_pct": 0.7
       },
       {
-        "team": "CLE",
+        "team": "PIT",
         "rank": 2,
-        "wins": 6,
+        "wins": 7,
         "losses": 4,
-        "win_pct": 0.6
+        "win_pct": 0.636
       },
       {
-        "team": "PIT",
+        "team": "CLE",
         "rank": 3,
         "wins": 6,
         "losses": 4,
@@ -412,6 +382,36 @@
         "wins": 4,
         "losses": 7,
         "win_pct": 0.364
+      }
+    ],
+    "AFC West": [
+      {
+        "team": "DEN",
+        "rank": 1,
+        "wins": 8,
+        "losses": 3,
+        "win_pct": 0.727
+      },
+      {
+        "team": "KC",
+        "rank": 2,
+        "wins": 8,
+        "losses": 3,
+        "win_pct": 0.727
+      },
+      {
+        "team": "LV",
+        "rank": 3,
+        "wins": 4,
+        "losses": 7,
+        "win_pct": 0.364
+      },
+      {
+        "team": "LAC",
+        "rank": 4,
+        "wins": 1,
+        "losses": 9,
+        "win_pct": 0.1
       }
     ],
     "AFC South": [
@@ -505,5 +505,5 @@
       }
     ]
   },
-  "current_field_updated": "2026-11-27 20:51 UTC"
+  "current_field_updated": "2026-11-28 00:23 UTC"
 }
